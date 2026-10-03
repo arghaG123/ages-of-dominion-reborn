@@ -5,6 +5,7 @@ import contract from '../src/data/implementation-contract.json' with { type: 'js
 import { command, newCampaign, validate } from '../src/core/campaign.js';
 import { legalTargets, meleeCommand, startBattle, strike, validateBattle } from '../src/core/battle.js';
 import { decode, encode, load, save, SAVE_KEY } from '../src/core/save.js';
+import { camera } from '../src/client/projection.js';
 
 const fresh = () => newCampaign(contract, data, 1000);
 const act = (state, id, type, payload, now = 1000) => command(state, { id, type, payload }, now, data);
@@ -118,4 +119,13 @@ test('a damaged live save can be replaced without dropping the preserved bytes o
   assert.equal(memory.getItem(SAVE_KEY + '-damaged'), 'broken-save');
   assert.deepEqual(load(memory, data).state.id, next.id);
   assert.equal(load(memory, data).state.clock, 5000);
+});
+
+test('short landscape stages keep one camera and at least 80 percent of the stage width', () => {
+  for (const [width, height] of [[825, 263], [933, 312], [1180, 708], [1280, 608]]) {
+    const fit = camera([1376, 768], width, height);
+    const shown = Math.min(width, 1376 * fit.scale);
+    assert.ok(shown / width >= 0.8, `${width}x${height} shows ${shown}`);
+    assert.ok(fit.scale > 0);
+  }
 });

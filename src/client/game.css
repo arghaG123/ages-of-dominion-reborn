@@ -30,12 +30,9 @@ button[aria-current="true"]{background:#3d3424}
 #nav{display:flex;gap:8px;overflow:auto}
 .plot{cursor:pointer}
 .plot:focus-visible{outline:3px solid #70b9c5}
-.plot polygon{stroke:#d5b573;stroke-width:2}
+.plot polygon{fill:transparent;stroke:transparent;stroke-width:2}
 .plot.selected polygon{stroke:#70b9c5;stroke-width:4}
-.plot text{fill:#fff8e8;font-size:16px;text-anchor:middle;pointer-events:none}
-.plot .building{fill:#77655299}
-.plot .empty{fill:#40544a66}
-.plot .scaffold{fill:#645341cc;stroke-dasharray:8 4}
+.plot .scaffold{fill:transparent;stroke:#d5b573;stroke-dasharray:8 4}
 .fog{fill:#10171bcc;stroke:none}
 .water{fill:#3d6d8866;stroke:none}
 .site{fill:#40544a88;stroke:#d5b573;stroke-width:2}

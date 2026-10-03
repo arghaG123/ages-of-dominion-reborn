@@ -5,6 +5,8 @@ export function inverse(matrix, [x, y]) {
   return [(d*(x-e)-c*(y-f))/det,(-b*(x-e)+a*(y-f))/det];
 }
 export function camera(source, width, height) {
-  const scale = Math.min(width/source[0], height/source[1]);
-  return { scale, offset: [(width-source[0]*scale)/2,(height-source[1]*scale)/2] };
+  const contain = Math.min(width / source[0], height / source[1]);
+  const cover = Math.max(width / source[0], height / source[1]);
+  const scale = contain * source[0] < width * 0.8 ? cover : contain;
+  return { scale, offset: [(width - source[0] * scale) / 2, (height - source[1] * scale) / 2], mode: scale === contain ? 'contain' : 'cover' };
 }

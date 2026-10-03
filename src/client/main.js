@@ -122,9 +122,6 @@ function kingdom() {
     const job = state.buildJobs.find(j => j.plotId === plot.id);
     const group = element('g', { class: 'plot' + (plot.id === selected ? ' selected' : ''), tabindex: 0, role: 'button', 'aria-label': `${plot.id}: ${plot.type ?? 'empty plot'} level ${plot.level}` });
     group.append(element('polygon', { class: job ? 'scaffold' : plot.level ? 'building' : 'empty', points: [[x, y], [x + w, y], [x + w, y + h], [x, y + h]].map(v => project(matrix, v).join(',')).join(' ') }));
-    const text = element('text', { x: centre[0], y: centre[1] + 5 });
-    text.textContent = job ? '…' : plot.type ? plot.level : '+';
-    group.append(text);
     const box = world.getBoundingClientRect(), scale = camera([1376, 768], box.width, box.height).scale || 1, diameter = 48 / scale;
     group.append(element('rect', { x: centre[0] - diameter / 2, y: centre[1] - diameter / 2, width: diameter, height: diameter, fill: 'transparent' }));
     group.onclick = () => { selected = plot.id; render(); };
@@ -146,6 +143,13 @@ function kingdom() {
   say(`Walls are level ${state.walls.level}. Day ${state.day}, weather ${state.weather}. The Stone Hall stays on the shared camera and is not accepted. A contact-scale framing proposal is recorded and the contract is unchanged. ${cue()}`);
 }
 
+function fitScene() {
+  const rect = $('world').getBoundingClientRect();
+  if (rect.width < 1 || rect.height < 1) return;
+  const fit = camera([1376, 768], rect.width, rect.height);
+  $('world').setAttribute('preserveAspectRatio', fit.mode === 'cover' ? 'xMidYMid slice' : 'xMidYMid meet');
+  $('terrain').style.objectFit = fit.mode;
+}
 function sourceFromPointer(event) {
   const rect = $('world').getBoundingClientRect();
   const fit = camera([1376, 768], rect.width, rect.height);
@@ -405,6 +409,7 @@ function render() {
   if (state && view !== 'home') rememberView(localStorage, view, screens);
   $('status').textContent = state ? `${data.AGES[state.age].n} · day ${state.day}` : 'No campaign';
   draw[view]();
+  fitScene();
   if (resumeNote && view !== 'home') {
     say(resumeNote + ' Dismissing this report does not credit the clock again.');
     $('choices').prepend(button('Dismiss resume report', () => { resumeNote = ''; render(); }));
