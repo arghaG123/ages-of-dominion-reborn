@@ -571,6 +571,44 @@ export function createEncounterBattle(state, data) {
   });
 }
 
+export function createDuelBattle(state, data) {
+  const allies = fieldStacks(state, data, state.army.filter(stack => stack.count > 0).slice(0, 3), ALLIED_CELLS, 'p');
+  const pack = [];
+  const enemy = { id: 'duel-e', kind: 'creature', type: 'wolf', age: state.age, count: 4, rank: 0, xp: 0 };
+  pack.push(enemy);
+  const enemies = fieldStacks(state, data, pack, ENEMY_CELLS, 'e');
+  const stats = heroStats(state, data);
+  return startBattle({
+    id: `duel-${state.day}-${state.revision}`,
+    positioned: true,
+    practice: 'campaign',
+    rngState: state.rngState,
+    mana: state.hero.mana,
+    wisdom: state.hero.skills.wisdom,
+    hero: { atk: stats.atk, def: stats.def, pow: stats.pow, kno: stats.kno, luck: stats.luck, skills: { ...state.hero.skills }, shootBon: 0 },
+    stacks: [...allies.fielded, ...enemies.fielded],
+    encounterId: `duel-${state.day}`,
+    difficulty: 1,
+  });
+}
+
+export function createChallengeBattle(seed, code) {
+  if (!Number.isInteger(seed) || seed < 0 || seed > 0xffffffff || typeof code !== 'string' || !code || code.length > 64) throw new Error('Invalid challenge');
+  const stack = (id, side, x, y, count) => ({
+    id, side, x, y, count, maxCount: count, atk: 4, def: 3, dmin: 2, dmax: 3, uhp: 10, top: 10, spd: 5, rng: 0, shots: 0, fly: 0,
+  });
+  return startBattle({
+    id: `challenge-${code}`,
+    positioned: true,
+    practice: 'challenge',
+    rngState: seed >>> 0,
+    mana: 0,
+    wisdom: 0,
+    stacks: [stack('ch-p', 'p', 1, 8, 6), stack('ch-e', 'e', 5, 1, 4)],
+    difficulty: 1,
+  });
+}
+
 export function createSkirmishBattle(state) {
   const stack = (id, side, x, y, count) => ({
     id, side, x, y, count, maxCount: count, atk: 4, def: 3, dmin: 2, dmax: 3, uhp: 10, top: 10, spd: 5, rng: 0, shots: 0, fly: 0,

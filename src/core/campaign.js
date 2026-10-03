@@ -3,7 +3,8 @@ import contract from '../data/implementation-contract.json' with { type: 'json' 
 import { adventureMap, routeCost } from './navigation.js';
 import { addRankXp, dwellingCost, dwellingPool, dwellingTerms, endDay, grantHeroXp, makePack, rankForXp, rollLoot } from './mechanics.js';
 import { GEAR_SLOTS, RIVALS, SKILL_IDS, agePrice, dailyMoves, forgeOffer, gateHp, heroStats, manaMax, marketQuote, recruitCost, towerPurchaseCost, validItem } from './rules.js';
-import { castSpell, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, playOut, retreat, strike, validateBattle, wait as battleWait } from './battle.js';
+import { castSpell, createChallengeBattle, createDuelBattle, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, playOut, retreat, strike, validateBattle, wait as battleWait } from './battle.js';
+import { advanceDefense, createDefense, deployHero, earlyCall, validateDefense } from './defense.js';
 export const SCHEMA = 1;
 export { gateHp, heroStats, manaMax, dailyMoves };
 const producers = { farm: ['food', .55], lumber: ['wood', .45], quarry: ['stone', .35], mine: ['gold', .25] };
@@ -22,7 +23,7 @@ export function newCampaign(contract, data, now, seed = 123456789) {
     army: [{ id: 'army-1', kind: 'role', type: 'melee', age: 0, count: 12, rank: 0, xp: 0 }, { id: 'army-2', kind: 'role', type: 'ranged', age: 0, count: 8, rank: 0, xp: 0 }],
     towers: [{ id: 'tower-1', fam: 'arrow', tier: 0, rank: 0, xp: 0 }, { id: 'tower-2', fam: 'slow', tier: 0, rank: 0, xp: 0 }],
     inventory: [], story: { flags: {} }, quests: {}, tutorial: { step: 0, skipped: false },
-    settings: { music: .6, sfx: .8, reducedMotion: false }, weather: 'clear', adventure: null, battle: null, dwelling: null,
+    settings: { music: .6, sfx: .8, reducedMotion: false }, weather: 'clear', adventure: null, battle: null, defense: null, dwelling: null,
     settledTransactions: {}
   };
   validate(state, data); return state;
@@ -100,6 +101,7 @@ export function validate(s, data) {
   if (!s.story || typeof s.story.flags !== 'object' || !s.tutorial || !Number.isInteger(s.tutorial.step) || s.tutorial.step < 0 || typeof s.tutorial.skipped !== 'boolean') throw new Error('Invalid campaign progress');
   if (s.story?.rival != null && !RIVALS.includes(s.story.rival)) throw new Error('Invalid rival');
   validateBattle(s.battle);
+  validateDefense(s.defense);
   const ids = [hero.id, ...s.army.map(a => a.id), ...s.towers.map(t => t.id), ...s.inventory.map(i => i.id), ...equipped.map(i => i.id), ...s.buildJobs.map(j => j.id)];
   if (ids.some(id => typeof id !== 'string' || !id) || new Set(ids).size !== ids.length) throw new Error('Invalid campaign entity identity');
   return true;
@@ -183,7 +185,8 @@ export function formatResume(report) {
 function applyBattleResult(s, data) {
   const battle = s.battle;
   if (!battle || battle.status !== 'RESOLVED' || !battle.pendingSettlement || battle.settled) throw new Error('No pending battle result');
-  if (battle.practice === 'skirmish') {
+  if (battle.practice === 'skirmish' || battle.practice === 'challenge') {
+    if (battle.practice === 'challenge') s.story.flags[`challenge:${battle.id}`] = battle.outcome?.winner ?? 'none';
     s.battle = null;
     return;
   }
@@ -235,6 +238,27 @@ function applyBattleResult(s, data) {
   s.story.flags[flag] = winner;
   s.battle = null;
 }
+function settleDefense(s, data) {
+  const session = s.defense;
+  if (!session || session.status !== 'RESOLVED' || !session.pendingSettlement) throw new Error('No pending defense result');
+  if (session.practice === 'endless') {
+    s.story.flags[`endless:${session.id}`] = session.clearedWaves;
+    s.defense = null;
+    return;
+  }
+  if (session.winner === 'p') {
+    const difficulty = session.difficulty || 1;
+    s.resources.gold += Math.round(150 * difficulty);
+    s.resources.food += Math.round(100 * difficulty);
+    const hall = s.plots.find(plot => plot.id === 'townhall');
+    grantHeroXp(s, data, Math.round(90 * difficulty), hall?.level ?? 1);
+    rollLoot(s, data, difficulty * 0.6).forEach((drop, index) => {
+      s.inventory.push({ ...drop, id: `siege-${s.revision}-${index}-${drop.slot || drop.artifactId || 'drop'}` });
+    });
+  }
+  s.story.flags[`siege:${session.id}`] = session.winner;
+  s.defense = null;
+}
 export function command(state, input, now, data) {
   validate(state, data);
   if (typeof input?.id !== 'string' || !input.id || input.id.length > 128 || !Number.isFinite(now) || now < state.clock) throw new Error('Invalid transaction/time');
@@ -246,7 +270,9 @@ export function command(state, input, now, data) {
   const s = advance(state, now, data);
   const payload = input.payload ?? {};
   const battlePending = s.battle && (s.battle.status === 'ACTIVE' || s.battle.pendingSettlement);
+  const defensePending = s.defense && (s.defense.status === 'ACTIVE' || s.defense.pendingSettlement);
   if (battlePending && input.type !== 'BATTLE' && input.type !== 'SETTLE_BATTLE') throw new Error('Battle result is pending');
+  if (defensePending && !['DEFENSE', 'SETTLE_DEFENSE', 'EARLY_CALL', 'DEPLOY_DEFENSE'].includes(input.type)) throw new Error('Defense result is pending');
   if (input.type === 'BUILD') {
     const { plotId, building } = payload;
     const p = plotId === 'walls' ? s.walls : s.plots.find(p => p.id === plotId);
@@ -385,10 +411,36 @@ export function command(state, input, now, data) {
     } else throw new Error('Unsupported battle command');
   } else if (input.type === 'SETTLE_BATTLE') applyBattleResult(s, data);
   else if (input.type === 'START_SKIRMISH') {
-    if (s.battle) throw new Error('Battle already open');
+    if (s.battle || s.defense) throw new Error('Battle already open');
     if (s.adventure?.pendingEncounter && String(s.adventure.pendingEncounter.status).startsWith('UNRESOLVED')) throw new Error('Unresolved encounter');
     s.battle = createSkirmishBattle(s);
-  } else if (input.type === 'END_DAY') {
+  } else if (input.type === 'START_DUEL') {
+    if (s.battle || s.defense) throw new Error('Battle already open');
+    s.battle = createDuelBattle(s, data);
+  } else if (input.type === 'START_CHALLENGE') {
+    if (s.battle || s.defense) throw new Error('Battle already open');
+    s.battle = createChallengeBattle(payload.seed, payload.code);
+  } else if (input.type === 'START_SIEGE') {
+    if (s.battle || s.defense) throw new Error('Battle already open');
+    s.defense = createDefense(s, data, { practice: 'siege', waves: 5 });
+  } else if (input.type === 'START_ENDLESS') {
+    if (s.battle || s.defense) throw new Error('Battle already open');
+    s.defense = createDefense(s, data, { practice: 'endless', waves: 3 });
+  } else if (input.type === 'DEFENSE') {
+    if (!s.defense || s.defense.status !== 'ACTIVE') throw new Error('No active defense');
+    s.defense = advanceDefense(s.defense, payload.dt ?? 0, { paused: payload.paused === true, speed: payload.speed });
+  } else if (input.type === 'DEPLOY_DEFENSE') {
+    if (!s.defense || s.defense.status !== 'ACTIVE') throw new Error('No active defense');
+    const gold = s.resources.gold;
+    s.defense = deployHero(s.defense, heroStats(s, data).atk);
+    if (s.resources.gold !== gold) throw new Error('Deployment fee');
+  } else if (input.type === 'EARLY_CALL') {
+    if (!s.defense) throw new Error('No active defense');
+    const gold = s.resources.gold;
+    s.defense = earlyCall(s.defense);
+    s.resources.gold = gold + 25 * (s.age + 1);
+  } else if (input.type === 'SETTLE_DEFENSE') settleDefense(s, data);
+  else if (input.type === 'END_DAY') {
     endDay(s, data);
     if (s.adventure) s.adventure.moves = dailyMoves(s, data);
   } else if (input.type === 'SPEND_POINT') {

@@ -15,9 +15,9 @@ const svgNS = 'http://www.w3.org/2000/svg';
 const ages = ['stone', 'bronze', 'iron', 'medieval', 'gunpowder', 'industrial', 'modern', 'future'];
 const screens = ['home', 'kingdom', 'adventure', 'hero', 'army', 'forge', 'market', 'tactical', 'defense', 'story', 'war', 'settings'];
 const blocked = {
-  tactical: 'Development tokens mark stacks. They are not accepted unit paintings. Defense firing and the other War options are still open.',
-  defense: 'Wave counts and role multipliers are implemented. Lane movement, firing and interception are not a finished defense simulation.',
-  war: 'Skirmish stays isolated from the campaign. The five War options remain in scope.',
+  tactical: 'Stacks are markers until reviewed unit paintings replace them. The battle rules are live.',
+  defense: 'Defense uses a fixed 1/60 step. Pause and background do not fire. There is no kill income.',
+  war: 'Skirmish and Challenge do not pay campaign gold. Siege and Duel settle campaign rewards once.',
   skills: 'Skill offers and experience use the documented thresholds. Positive morale does not grant an extra turn while that choice is open.',
   loot: 'Loot and dwelling offers persist with the saved random state.'
 };
@@ -313,10 +313,21 @@ function tactical() {
 
 function defense() {
   board('defense');
-  $('selected').textContent = 'Defense';
-  for (const tower of state.towers) $('choices').append(button('Retrofit ' + tower.fam + ' tier ' + tower.tier, () => act('RETROFIT', { towerId: tower.id })));
-  for (const family of Object.keys(data.TOWERS)) $('choices').append(button('Buy ' + data.TOWERS[family].n, () => act('BUY_TOWER', { family })));
-  say(blocked.defense);
+  const session = state.defense;
+  $('selected').textContent = session ? `${session.practice} core ${Math.max(0, Math.round(session.core))}` : 'Defense';
+  if (session?.status === 'ACTIVE') {
+    $('choices').append(button(session.paused ? 'Resume' : 'Pause', () => act('DEFENSE', { paused: !session.paused, dt: 0 })));
+    $('choices').append(button(session.speed === 2 ? 'Speed 1x' : 'Speed 2x', () => act('DEFENSE', { speed: session.speed === 2 ? 1 : 2, dt: 0 })));
+    $('choices').append(button('Deploy hero', () => act('DEPLOY_DEFENSE', {}), session.heroDeployed));
+    if (session.practice === 'siege') $('choices').append(button('Early call', () => act('EARLY_CALL', {})));
+  }
+  if (session?.pendingSettlement) $('choices').append(button('Apply the defense result', () => act('SETTLE_DEFENSE', {})));
+  if (!session) {
+    for (const tower of state.towers) $('choices').append(button('Retrofit ' + tower.fam + ' tier ' + tower.tier, () => act('RETROFIT', { towerId: tower.id })));
+    for (const family of Object.keys(data.TOWERS)) $('choices').append(button('Buy ' + data.TOWERS[family].n, () => act('BUY_TOWER', { family })));
+  }
+  const wave = session ? `Wave ${session.clearedWaves}/${session.waves}. ` : '';
+  say(wave + blocked.defense);
 }
 
 function story() {
@@ -330,7 +341,10 @@ function war() {
   clearWorld();
   $('selected').textContent = 'War';
   $('choices').append(button('Skirmish', () => { act('START_SKIRMISH', {}); if (state.battle) { view = 'tactical'; render(); } }));
-  for (const name of ['Campaign Siege', 'Tactical Duel', 'Endless', 'Challenge']) $('choices').append(button(name, () => say(name + '. ' + blocked.war)));
+  $('choices').append(button('Campaign Siege', () => { act('START_SIEGE', {}); if (state.defense) { view = 'defense'; render(); } }));
+  $('choices').append(button('Tactical Duel', () => { act('START_DUEL', {}); if (state.battle) { view = 'tactical'; render(); } }));
+  $('choices').append(button('Endless', () => { act('START_ENDLESS', {}); if (state.defense) { view = 'defense'; render(); } }));
+  $('choices').append(button('Challenge', () => { act('START_CHALLENGE', { seed: state.seed >>> 0, code: `day-${state.day}` }); if (state.battle) { view = 'tactical'; render(); } }));
 }
 
 function settings() {
@@ -399,7 +413,15 @@ function render() {
 
 function installLifecycle() {
   if (timer) return;
-  timer = setInterval(() => { if (state && !suspended) { state = advanceReported(state, Date.now(), data).state; if (view === 'kingdom' || view === 'adventure') render(); } }, 250);
+  timer = setInterval(() => {
+    if (!state || suspended) return;
+    const now = Date.now();
+    state = advanceReported(state, now, data).state;
+    if (view === 'defense' && state.defense?.status === 'ACTIVE' && !state.defense.paused) {
+      try { state = command(state, { id: crypto.randomUUID(), type: 'DEFENSE', payload: { dt: 0.25, speed: state.defense.speed } }, now, data); } catch { /* A rejected step does not invent a later attack. */ }
+    }
+    if (view === 'kingdom' || view === 'adventure' || view === 'defense') render();
+  }, 250);
 }
 $('save').onclick = () => { if (state) persist(); };
 $('context').onclick = () => setPanel(!$('panel').classList.contains('open'));
