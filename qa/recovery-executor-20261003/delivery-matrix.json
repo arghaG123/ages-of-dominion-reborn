@@ -1,0 +1,262 @@
+{
+  "uiCrops": {
+    "resource-food": {
+      "source": "assets/delivery/stone-starter-20261003/derivatives/v2/resource-food.png",
+      "sourceSHA256": "af2ef872598b99d5457793551c8297c3d136ab6e1113edb19da73fd3f7a635ef",
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-food.png",
+      "sha256": "ed179605ff6f8cc49c646db30f2c7c0ffa48386b7f29f7ed094ec1907feaea57",
+      "x": 138,
+      "y": 113,
+      "width": 725,
+      "height": 775
+    },
+    "resource-wood": {
+      "source": "assets/delivery/stone-starter-20261003/derivatives/v2/resource-wood.png",
+      "sourceSHA256": "98124471d8d7c8055a73d1c62dce1e5ed4c0fb329d6fa5a77a1e9eb5bcebede8",
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-wood.png",
+      "sha256": "a12c5fa391a0714425dc6999fc106431669ff2a174fe7cdc5c3c2006989ae4cc",
+      "x": 132,
+      "y": 178,
+      "width": 767,
+      "height": 678
+    },
+    "resource-stone": {
+      "source": "assets/delivery/stone-starter-20261003/derivatives/v2/resource-stone.png",
+      "sourceSHA256": "fe3eb2bf114243f5053c9ce5d8834e85646e4e710a7aad40ec51b9f426e540b3",
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-stone.png",
+      "sha256": "0bb29408e63951addf2d05d61e9a67ff1ba764a75be4945994e79ce5f5222f6f",
+      "x": 126,
+      "y": 162,
+      "width": 771,
+      "height": 694
+    },
+    "resource-gold": {
+      "source": "assets/delivery/stone-starter-20261003/derivatives/v3/resource-gold.png",
+      "sourceSHA256": "fd1d293143ab7d08312fc6a435bfc8d1c437792616b5f56edf97f050584b27c9",
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-gold.png",
+      "sha256": "8020977b795d23c2647bb7d0442976dc1345cf68f650116536d152ee22ca8d9e",
+      "x": 169,
+      "y": 158,
+      "width": 681,
+      "height": 710
+    },
+    "skill-offense": {
+      "source": "assets/delivery/stone-starter-20261003/derivatives/v2/skill-offense.png",
+      "sourceSHA256": "cb71c50e6c1f5bdd208e0ab45c3cfc2acecc70372210bbe0ac1d18ec54a91922",
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v4-ui/skill-offense.png",
+      "sha256": "1a9a57f5c9a6c27d62c37368c63368c8df741facd558a7c5a464fc6a554ffb05",
+      "x": 160,
+      "y": 164,
+      "width": 705,
+      "height": 699
+    }
+  },
+  "hall": {
+    "source": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+    "sourceSHA256": "f359a8b72100be8ad78eaf61eede19bc8b2db3bd0a1d071050a51edce22cc37c",
+    "opaqueBounds": [
+      0,
+      21,
+      1023,
+      999
+    ],
+    "silhouetteTip": {
+      "y": 999,
+      "confidence": "low",
+      "kind": "visible lower silhouette, includes dirt and plinth, not a foundation corner"
+    },
+    "roofExtremity": {
+      "y": 21,
+      "confidence": "low",
+      "kind": "highest opaque pixel, a silhouette bound, not a foundation corner"
+    },
+    "roofPercentile": {
+      "y": 67.0,
+      "confidence": "low",
+      "kind": "0.3 percentile of opaque rows, not a foundation corner"
+    },
+    "wallContact": {
+      "centroid": [
+        541.81,
+        968.31
+      ],
+      "width": 555.0,
+      "count": 278,
+      "left": 11.0,
+      "right": 1014.0,
+      "below": 969.0,
+      "confidence": "medium",
+      "kind": "Lowest non-thatch silhouette band. Roof tips are not corners."
+    },
+    "entrance": {
+      "x": 512.5,
+      "confidence": "low",
+      "kind": "inferred from the span midpoint, not a surveyed door quad"
+    },
+    "contactPointCount": 278,
+    "footprintScale": 0.3288,
+    "frameLimitedScale": 0.1312,
+    "scaleResidual": 0.399,
+    "roofSourceYAtFootprintScale": -185.22552799999994,
+    "percentileRoofSourceYAtFootprintScale": -170.10072799999995,
+    "opaquePixelsOutsideFrameAtFootprintScale": 385665,
+    "siteCenter": [
+      578.75,
+      126.25
+    ],
+    "magentaSamples": {
+      "roofEave": {
+        "x": 889,
+        "y": 316,
+        "centerRGBA": [
+          213,
+          170,
+          123,
+          255
+        ],
+        "magentaIn5x5": 0,
+        "confidence": "visible pixel sample"
+      },
+      "rightRim": {
+        "x": 1006,
+        "y": 486,
+        "centerRGBA": [
+          148,
+          80,
+          95,
+          255
+        ],
+        "magentaIn5x5": 1,
+        "confidence": "visible pixel sample"
+      }
+    },
+    "magentaSampleCount": 104,
+    "activeMatrixUnchanged": [
+      [
+        0.1312,
+        0.0,
+        507.66565
+      ],
+      [
+        0.0,
+        0.1312,
+        -0.79026
+      ]
+    ],
+    "activeContractUnchanged": true,
+    "contractSHA256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+  },
+  "identityGaps": [
+    {
+      "id": "troop-bronze-heavy",
+      "requiredRole": "Charioteer",
+      "batch": "production-07-20261003",
+      "sourceFile": "assets/production/production-07-20261003/images/08-troop-bronze-heavy.png",
+      "sourceSHA256": "107f35364f9b29104b182368ec512e42fed7f18eb4d4ce7b16de89b73e99809c",
+      "status": "FAIL",
+      "reason": "Collected source shows a human infantry figure. The frozen heavy roster requires the named vehicle, mount or crew. The figure can remain as crew or costume reference. The roster name is unchanged.",
+      "attemptedLocalRepair": "None. A pose crop cannot create the missing vehicle or mount.",
+      "proposedRequest": "One landscape cutout of the Charioteer only, age-matched, no extra infantry identity, contact ground visible, no guide panel.",
+      "note": "Useful only as crew or costume reference. The roster name is not renamed and the identity is not delivered."
+    },
+    {
+      "id": "troop-iron-heavy",
+      "requiredRole": "War Elephant",
+      "batch": "production-07-20261003",
+      "sourceFile": "assets/production/production-07-20261003/images/11-troop-iron-heavy.png",
+      "sourceSHA256": "923cbcd530a0630ad5e096d60a09dfee1e5877626ca8d4aec80bb2b6018d2bfe",
+      "status": "FAIL",
+      "reason": "Collected source shows a human infantry figure. The frozen heavy roster requires the named vehicle, mount or crew. The figure can remain as crew or costume reference. The roster name is unchanged.",
+      "attemptedLocalRepair": "None. A pose crop cannot create the missing vehicle or mount.",
+      "proposedRequest": "One landscape cutout of the War Elephant only, age-matched, no extra infantry identity, contact ground visible, no guide panel.",
+      "note": "Useful only as crew or costume reference. The roster name is not renamed and the identity is not delivered."
+    },
+    {
+      "id": "troop-gunpowder-heavy",
+      "requiredRole": "Cannon Crew",
+      "batch": "production-07-20261003",
+      "sourceFile": "assets/production/production-07-20261003/images/17-troop-gunpowder-heavy.png",
+      "sourceSHA256": "741a70c6a50ef5b8aaa6afe04409128e4c3d09dbfbd2d6d90ecb396894f55d19",
+      "status": "FAIL",
+      "reason": "Collected source shows a human infantry figure. The frozen heavy roster requires the named vehicle, mount or crew. The figure can remain as crew or costume reference. The roster name is unchanged.",
+      "attemptedLocalRepair": "None. A pose crop cannot create the missing vehicle or mount.",
+      "proposedRequest": "One landscape cutout of the Cannon Crew only, age-matched, no extra infantry identity, contact ground visible, no guide panel.",
+      "note": "Useful only as crew or costume reference. The roster name is not renamed and the identity is not delivered."
+    },
+    {
+      "id": "troop-industrial-heavy",
+      "requiredRole": "Steam Walker",
+      "batch": "production-07-20261003",
+      "sourceFile": "assets/production/production-07-20261003/images/20-troop-industrial-heavy.png",
+      "sourceSHA256": "c47ad942abd00358dc60d6e980ff82a1692d63a47cc275d7bea54a14f2a0a102",
+      "status": "FAIL",
+      "reason": "Collected source shows a human infantry figure. The frozen heavy roster requires the named vehicle, mount or crew. The figure can remain as crew or costume reference. The roster name is unchanged.",
+      "attemptedLocalRepair": "None. A pose crop cannot create the missing vehicle or mount.",
+      "proposedRequest": "One landscape cutout of the Steam Walker only, age-matched, no extra infantry identity, contact ground visible, no guide panel.",
+      "note": "Useful only as crew or costume reference. The roster name is not renamed and the identity is not delivered."
+    },
+    {
+      "id": "troop-modern-heavy",
+      "requiredRole": "Battle Tank",
+      "batch": "production-07-20261003",
+      "sourceFile": "assets/production/production-07-20261003/images/23-troop-modern-heavy.png",
+      "sourceSHA256": "ad4fd5e8c8bcfb82945f3351df575aa8eb9bedfbe16e8aef0bc0460d96130a40",
+      "status": "FAIL",
+      "reason": "Collected source shows a human infantry figure. The frozen heavy roster requires the named vehicle, mount or crew. The figure can remain as crew or costume reference. The roster name is unchanged.",
+      "attemptedLocalRepair": "None. A pose crop cannot create the missing vehicle or mount.",
+      "proposedRequest": "One landscape cutout of the Battle Tank only, age-matched, no extra infantry identity, contact ground visible, no guide panel.",
+      "note": "Useful only as crew or costume reference. The roster name is not renamed and the identity is not delivered."
+    },
+    {
+      "id": "troop-future-heavy",
+      "requiredRole": "Hover Tank",
+      "batch": "production-07-20261003",
+      "sourceFile": "assets/production/production-07-20261003/images/26-troop-future-heavy.png",
+      "sourceSHA256": "c2ec850173f90169c2d369178a66b67814a48bfa1bf53199bd87cf4c7f318f12",
+      "status": "FAIL",
+      "reason": "Collected source shows a human infantry figure. The frozen heavy roster requires the named vehicle, mount or crew. The figure can remain as crew or costume reference. The roster name is unchanged.",
+      "attemptedLocalRepair": "None. A pose crop cannot create the missing vehicle or mount.",
+      "proposedRequest": "One landscape cutout of the Hover Tank only, age-matched, no extra infantry identity, contact ground visible, no guide panel.",
+      "note": "Useful only as crew or costume reference. The roster name is not renamed and the identity is not delivered."
+    },
+    {
+      "id": "tower-iron-splash",
+      "requiredRole": "Iron splash tower without gunpowder",
+      "batch": "production-08-20261003",
+      "sourceFile": "assets/production/production-08-20261003/images/06-tower-iron-splash.png",
+      "sourceSHA256": "3d838e9715a0173bdf09f010a2d96d6679070f40a0d4fb63437799047d1de8be",
+      "status": "FAIL",
+      "reason": "The Iron splash source is cannon-like. Iron has no gunpowder. Local cropping cannot replace the weapon.",
+      "attemptedLocalRepair": "None.",
+      "proposedRequest": "One Iron-age splash tower using torsion, oil or stone, with the action separated from a baked beam.",
+      "requiredIdentity": "Onager",
+      "note": "The frozen Iron splash name is Onager. A cannon-like source is not that identity. No repurchase is authorized here."
+    },
+    {
+      "id": "troop-stone-heavy",
+      "requiredRole": "Bone Crusher",
+      "batch": "production-07-20261003",
+      "sourceFile": "assets/production/production-07-20261003/images/05-troop-stone-heavy.png",
+      "sourceSHA256": "97cace9a0053023b56699db46a12eea109f9b45648a7ab3bc890b3d4595f39a0",
+      "status": "UNVERIFIED",
+      "reason": "Weapon and body form are not settled. Do not rename the roster or treat the file as a completed rig.",
+      "attemptedLocalRepair": "None in this pass.",
+      "proposedRequest": "Review the existing figure before any replacement request.",
+      "note": "Useful only as crew or costume reference. The roster name is not renamed and the identity is not delivered."
+    },
+    {
+      "id": "troop-medieval-heavy",
+      "requiredRole": "Siege Knight",
+      "batch": "production-07-20261003",
+      "sourceFile": "assets/production/production-07-20261003/images/14-troop-medieval-heavy.png",
+      "sourceSHA256": "35d876e74dc8e1e67b9cbd473cd76be0d70d06868149581780d4243703f76d13",
+      "status": "UNVERIFIED",
+      "reason": "Weapon and body form are not settled. Do not rename the roster or treat the file as a completed rig.",
+      "attemptedLocalRepair": "None in this pass.",
+      "proposedRequest": "Review the existing figure before any replacement request.",
+      "note": "Useful only as crew or costume reference. The roster name is not renamed and the identity is not delivered."
+    }
+  ],
+  "rigStatus": "Stick poses are not textured articulated rigs. Mount, vehicle and hidden-part reconstruction is unsupported for the six heavy identities.",
+  "workerSheet": "A worker pair plus transport is three subjects. A blank fourth guide position is not missing content."
+}

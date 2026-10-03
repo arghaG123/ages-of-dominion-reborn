@@ -1,0 +1,639 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-03T08:19:05.442Z",
+  "reviewOnly": true,
+  "samples": [
+    {
+      "id": "home",
+      "title": "Home",
+      "group": "world",
+      "view": {
+        "layout": "home"
+      },
+      "description": "A quiet title screen with a local campaign at the centre and four clear actions.",
+      "remaining": "New layout proposal with correct product title. Background is an existing recovery candidate, not finished home artwork.",
+      "sources": [
+        "hall"
+      ]
+    },
+    {
+      "id": "classes",
+      "title": "Class selection",
+      "group": "world",
+      "view": {
+        "layout": "classes"
+      },
+      "description": "All eight identities visible together before the first campaign.",
+      "remaining": "Six existing class paintings pass source-content review. Ancient Knight and Warlock artwork remain missing. The pending tiles expose those gaps.",
+      "sources": [
+        "ranger",
+        "mage",
+        "paladin",
+        "barbarian",
+        "necromancer",
+        "healer"
+      ]
+    },
+    {
+      "id": "new-game",
+      "title": "New campaign confirmation",
+      "group": "world",
+      "view": {
+        "layout": "new-game"
+      },
+      "description": "A deliberate choice before replacing an existing local campaign.",
+      "remaining": "Layout study. Confirmation, backup and save replacement must be implemented by the executor.",
+      "sources": []
+    },
+    {
+      "id": "kingdom-day1",
+      "title": "Kingdom · sparse Day 1",
+      "group": "world",
+      "view": {
+        "layout": "day1"
+      },
+      "description": "Upper civic seat, nine upper and eight lower buildable plots, with the world kept dominant.",
+      "remaining": "Actual collected Stone terrain with proposed site positions. Baked pad borders/actors and missing Hall cutout remain visible recovery work. This is a registration study, not the finished starter town.",
+      "sources": [
+        "hall",
+        "farm",
+        "lumber"
+      ]
+    },
+    {
+      "id": "kingdom-stone-recovered",
+      "title": "Kingdom · recovered Stone placement",
+      "group": "world",
+      "view": {
+        "layout": "recovered-kingdom"
+      },
+      "description": "Hall only on the repaired Stone terrain, with seventeen empty pads and no walls.",
+      "remaining": "Day-one composite at the selected contract size. The producer placement proof is a separate file and does not change starting levels. Owner acceptance is pending.",
+      "sources": [
+        "hall",
+        "farm",
+        "lumber",
+        "quarry",
+        "mine"
+      ]
+    },
+    {
+      "id": "ui-resources-offense",
+      "title": "Resources and Offense",
+      "group": "world",
+      "view": {
+        "layout": "recovered-ui"
+      },
+      "description": "Food, Wood, Stone and Gold at HUD size, with the recovered Offense plaque.",
+      "remaining": "18px symbols in a 28px rail at every contract size, using the reference start amounts. Owner acceptance is pending.",
+      "sources": [
+        "food",
+        "wood",
+        "rock",
+        "gold",
+        "offense"
+      ]
+    },
+    {
+      "id": "kingdom-stone",
+      "title": "Kingdom · Stone",
+      "group": "world",
+      "view": {
+        "reference": "03-kingdom-stone.jpg"
+      },
+      "description": "A grown town in the Stone age. Review the architecture, materials, density and the prominence of the world.",
+      "remaining": "Existing appearance reference. The eight independent paintings do not establish shared plot/river/camera registration; generated labels are not game rules.",
+      "sources": [
+        "hall",
+        "farm",
+        "lumber",
+        "quarry",
+        "mine"
+      ]
+    },
+    {
+      "id": "kingdom-bronze",
+      "title": "Kingdom · Bronze",
+      "group": "world",
+      "view": {
+        "reference": "04-kingdom-bronze.jpg"
+      },
+      "description": "A grown town in the Bronze age. Review the architecture, materials, density and the prominence of the world.",
+      "remaining": "Existing appearance reference. The eight independent paintings do not establish shared plot/river/camera registration; generated labels are not game rules.",
+      "sources": []
+    },
+    {
+      "id": "kingdom-iron",
+      "title": "Kingdom · Iron",
+      "group": "world",
+      "view": {
+        "reference": "05-kingdom-iron.jpg"
+      },
+      "description": "A grown town in the Iron age. Review the architecture, materials, density and the prominence of the world.",
+      "remaining": "Existing appearance reference. The eight independent paintings do not establish shared plot/river/camera registration; generated labels are not game rules.",
+      "sources": []
+    },
+    {
+      "id": "kingdom-medieval",
+      "title": "Kingdom · Medieval",
+      "group": "world",
+      "view": {
+        "reference": "06-kingdom-medieval.jpg"
+      },
+      "description": "A grown town in the Medieval age. Review the architecture, materials, density and the prominence of the world.",
+      "remaining": "Existing appearance reference. The eight independent paintings do not establish shared plot/river/camera registration; generated labels are not game rules.",
+      "sources": []
+    },
+    {
+      "id": "kingdom-gunpowder",
+      "title": "Kingdom · Gunpowder",
+      "group": "world",
+      "view": {
+        "reference": "07-kingdom-gunpowder.jpg"
+      },
+      "description": "A grown town in the Gunpowder age. Review the architecture, materials, density and the prominence of the world.",
+      "remaining": "Existing appearance reference. The eight independent paintings do not establish shared plot/river/camera registration; generated labels are not game rules.",
+      "sources": []
+    },
+    {
+      "id": "kingdom-industrial",
+      "title": "Kingdom · Industrial",
+      "group": "world",
+      "view": {
+        "reference": "08-kingdom-industrial.jpg"
+      },
+      "description": "A grown town in the Industrial age. Review the architecture, materials, density and the prominence of the world.",
+      "remaining": "Existing appearance reference. The eight independent paintings do not establish shared plot/river/camera registration; generated labels are not game rules.",
+      "sources": []
+    },
+    {
+      "id": "kingdom-modern",
+      "title": "Kingdom · Modern",
+      "group": "world",
+      "view": {
+        "reference": "09-kingdom-modern.jpg"
+      },
+      "description": "A grown town in the Modern age. Review the architecture, materials, density and the prominence of the world.",
+      "remaining": "Existing appearance reference. The eight independent paintings do not establish shared plot/river/camera registration; generated labels are not game rules.",
+      "sources": []
+    },
+    {
+      "id": "kingdom-future",
+      "title": "Kingdom · Future",
+      "group": "world",
+      "view": {
+        "reference": "10-kingdom-future.jpg"
+      },
+      "description": "A grown town in the Future age. Review the architecture, materials, density and the prominence of the world.",
+      "remaining": "Existing appearance reference. Future masonry carryover and invented labels remain rejected details; the whole kit and shared geography need correction.",
+      "sources": []
+    },
+    {
+      "id": "construction",
+      "title": "Build & upgrade",
+      "group": "world",
+      "view": {
+        "layout": "construction"
+      },
+      "description": "A compact selected-plot sheet, with cost and facility requirements visible before confirmation.",
+      "remaining": "Layout study beside collected terrain. Actual construction stages, costs and object grounding need executor assembly.",
+      "sources": [
+        "farm",
+        "lumber",
+        "quarry",
+        "mine"
+      ]
+    },
+    {
+      "id": "offline",
+      "title": "Offline return",
+      "group": "world",
+      "view": {
+        "layout": "offline"
+      },
+      "description": "A small return summary over the same Kingdom, with one clear way back into play.",
+      "remaining": "Illustrative layout; no production or completion amounts are invented here. Actual duration and credited results must come from the campaign.",
+      "sources": []
+    },
+    {
+      "id": "market",
+      "title": "Market",
+      "group": "world",
+      "view": {
+        "layout": "market"
+      },
+      "description": "Trade from a sheet in the town, with Food, Wood and Stone exchanged against Gold.",
+      "remaining": "Bronze-unlocked layout sample; no extra building or currency. Trade preview shows the specified 100-resource / 120-Gold example, not an executed transaction.",
+      "sources": [
+        "food",
+        "wood",
+        "rock",
+        "gold"
+      ]
+    },
+    {
+      "id": "adventure",
+      "title": "Adventure · overview",
+      "group": "modes",
+      "view": {
+        "reference": "11-adventure-overview.jpg"
+      },
+      "description": "An inhabited continuous valley with the hero, roads, sites and a small edge HUD.",
+      "remaining": "Existing appearance reference. Final map must use the hidden 16×10 topology, persistent fog and registered sites; no baked labels or actors.",
+      "sources": [
+        "ranger"
+      ]
+    },
+    {
+      "id": "adventure-crossing",
+      "title": "Adventure · crossing",
+      "group": "modes",
+      "view": {
+        "reference": "12-adventure-crossing.jpg"
+      },
+      "description": "Review the bridge, hero scale, ground contact and route readability.",
+      "remaining": "Existing appearance reference; natural travel and legal deck/approach mapping remain separate checks.",
+      "sources": []
+    },
+    {
+      "id": "adventure-foot",
+      "title": "Adventure · on foot",
+      "group": "modes",
+      "view": {
+        "reference": "13-adventure-foot.jpg"
+      },
+      "description": "A readable hero and nearby site encounter without covering the map.",
+      "remaining": "Existing appearance reference. Foot/mount identity and real articulated travel are not verified by this still image.",
+      "sources": [
+        "ranger"
+      ]
+    },
+    {
+      "id": "tactical-deploy",
+      "title": "Tactical · deployment",
+      "group": "modes",
+      "view": {
+        "reference": "14-tactical-deployment.jpg"
+      },
+      "description": "The arena fills the screen while roster and legal deployment cues remain compact.",
+      "remaining": "Existing appearance reference. Final battlefield needs two registered crossings, six stack slots and the separate commander; no resource rail.",
+      "sources": []
+    },
+    {
+      "id": "tactical",
+      "title": "Tactical · action",
+      "group": "modes",
+      "view": {
+        "reference": "15-tactical-action.jpg"
+      },
+      "description": "Distinct troops and clear action choices, with the battlefield carrying most of the view.",
+      "remaining": "Existing appearance reference; generated title/stats are not adopted. Deployment, reachability, damage and turn resolution are not visually accepted.",
+      "sources": []
+    },
+    {
+      "id": "results",
+      "title": "Battle result",
+      "group": "modes",
+      "view": {
+        "reference": "16-battle-result.jpg"
+      },
+      "description": "Survivors and consequences should read immediately, with one clear return action.",
+      "remaining": "Existing appearance reference. Real survivor counts, rewards and originating-site return need implementation; no treasury rail on results.",
+      "sources": []
+    },
+    {
+      "id": "defense-prep",
+      "title": "Defense · preparation",
+      "group": "modes",
+      "view": {
+        "reference": "17-defense-preparation.jpg"
+      },
+      "description": "The winding lane, gate and empty tower locations before the wave.",
+      "remaining": "Existing appearance reference. Separate gate and towers, free deployment and the exact 9×15 lane remain required.",
+      "sources": []
+    },
+    {
+      "id": "defense",
+      "title": "Defense · wave",
+      "group": "modes",
+      "view": {
+        "reference": "18-defense-wave.jpg"
+      },
+      "description": "Active defenders and visible threats, with the lane and gate kept readable.",
+      "remaining": "Existing appearance reference. No kill cash or temporary purse is adopted; waves, silhouettes, projectiles and motion need actual assembled evidence.",
+      "sources": []
+    },
+    {
+      "id": "hero",
+      "title": "Hero & six equipment slots",
+      "group": "hero",
+      "view": {
+        "reference": "19-hero-equipment.jpg"
+      },
+      "description": "A full-body character, the six true slots and a readable stats area.",
+      "remaining": "Existing appearance reference. “Greaves and Gauntlets” and generated names/numbers are not adopted. Six slots are Helm, Weapon, Offhand, Armor, Boots and Accessory.",
+      "sources": [
+        "ranger",
+        "paladin",
+        "barbarian"
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Skill tree · nine skills",
+      "group": "hero",
+      "view": {
+        "layout": "skills"
+      },
+      "description": "Nine distinct square emblems, with each skill’s level and prerequisite read separately.",
+      "remaining": "New layout using all nine existing motifs and the revised Offense plaque. Perspective, matte, edges and final tree spacing remain recovery work.",
+      "sources": [
+        "offense"
+      ]
+    },
+    {
+      "id": "spells",
+      "title": "Spellbook · eight spells",
+      "group": "hero",
+      "view": {
+        "layout": "spells"
+      },
+      "description": "Eight circular spell glyphs with one selected detail area and a casting action.",
+      "remaining": "New layout using the eight existing glyphs. Eligibility, costs and targets are not invented; final icon rectification and alpha are still pending.",
+      "sources": []
+    },
+    {
+      "id": "forge",
+      "title": "Forge",
+      "group": "hero",
+      "view": {
+        "reference": "22-forge.jpg"
+      },
+      "description": "The selected item owns the stage, with six categories and quality choices kept together.",
+      "remaining": "Existing appearance reference. Generated item names, costs and extra currency are not adopted. Armory requirement and real crafting outcomes remain required.",
+      "sources": []
+    },
+    {
+      "id": "inventory",
+      "title": "Inventory",
+      "group": "hero",
+      "view": {
+        "reference": "23-inventory.jpg"
+      },
+      "description": "Carried and equipped items can be compared without hiding the character.",
+      "remaining": "Existing appearance reference. Slot compatibility, actual bag limits and comparison deltas need implementation.",
+      "sources": []
+    },
+    {
+      "id": "army",
+      "title": "Army roster",
+      "group": "hero",
+      "view": {
+        "reference": "24-army.jpg"
+      },
+      "description": "Recruitable role families and neutral creatures use large identifiable silhouettes.",
+      "remaining": "Existing appearance reference. Real quantity/rank/capacity and permitted reinforce/split/merge actions remain separate gates.",
+      "sources": []
+    },
+    {
+      "id": "codex",
+      "title": "Creature codex",
+      "group": "hero",
+      "view": {
+        "layout": "codex"
+      },
+      "description": "All eight neutral identities, with their ground or flying role made clear.",
+      "remaining": "Layout-only sample. Creature production art is not yet available in the three collected batches; no reference painting is passed off as a finished creature.",
+      "sources": []
+    },
+    {
+      "id": "war",
+      "title": "War · five options",
+      "group": "campaign",
+      "view": {
+        "layout": "war"
+      },
+      "description": "The five campaign and battle choices remain visible in one compact menu.",
+      "remaining": "Layout sample. Enemy identity and actual scenario rules need the frozen data and implemented battle engine; no button here launches gameplay.",
+      "sources": []
+    },
+    {
+      "id": "story",
+      "title": "Story & age milestones",
+      "group": "campaign",
+      "view": {
+        "reference": "25-story.jpg"
+      },
+      "description": "An age chapter uses art for atmosphere and clear space for narrative choices.",
+      "remaining": "Existing appearance reference. Use the specified seven chapters plus “The Valley We Keep”; generated story text and rewards are not authoritative.",
+      "sources": []
+    },
+    {
+      "id": "quests",
+      "title": "Quests",
+      "group": "campaign",
+      "view": {
+        "layout": "quests"
+      },
+      "description": "Goals, progress and the once-only claim action have a clear reading order.",
+      "remaining": "New screen-only layout avoids the device frame in the original quest mock. These are illustrative campaign goals, not adopted quest definitions.",
+      "sources": []
+    },
+    {
+      "id": "tutorial",
+      "title": "Tutorial",
+      "group": "campaign",
+      "view": {
+        "layout": "tutorial"
+      },
+      "description": "Guidance stays anchored to the relevant town action and leaves the world visible.",
+      "remaining": "New screen-only layout avoids the device frame in the old tutorial mock. “Build a Lumber Camp” uses the documented sparse-start step; highlight registration needs assembly.",
+      "sources": [
+        "lumber"
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Settings",
+      "group": "campaign",
+      "view": {
+        "layout": "settings"
+      },
+      "description": "Independent Music/SFX and Reduced Motion controls, with local help and saves.",
+      "remaining": "New layout excludes cloud/account and haptics controls. These switches are visual samples; actual setting persistence remains executor work.",
+      "sources": []
+    },
+    {
+      "id": "saves",
+      "title": "Load & local saves",
+      "group": "campaign",
+      "view": {
+        "layout": "saves"
+      },
+      "description": "Campaign identity, age and save status are clear before loading or replacing anything.",
+      "remaining": "Layout sample uses an illustrative campaign card and no invented progress numbers. Real save metadata must come from validated local storage.",
+      "sources": []
+    },
+    {
+      "id": "recovery",
+      "title": "Damaged-save recovery",
+      "group": "campaign",
+      "view": {
+        "reference": "29-save-recovery.jpg"
+      },
+      "description": "Recovery offers clear choices and preserves the damaged save until the player decides.",
+      "remaining": "Existing appearance reference. No cloud/account workflow is adopted; actual backup validation/import/export remain required.",
+      "sources": []
+    },
+    {
+      "id": "help",
+      "title": "Help & controls",
+      "group": "campaign",
+      "view": {
+        "layout": "help"
+      },
+      "description": "Short instructions for town actions, travel, tactical turns and defense.",
+      "remaining": "Layout sample. Documentation must follow the final implemented controls and keyboard/touch behavior.",
+      "sources": []
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy & credits",
+      "group": "campaign",
+      "view": {
+        "layout": "privacy"
+      },
+      "description": "Plain local/offline information and clear provenance/credits.",
+      "remaining": "Layout sample. Credit details must be filled with real source/license records before release.",
+      "sources": []
+    },
+    {
+      "id": "rotate",
+      "title": "Portrait orientation message",
+      "group": "campaign",
+      "view": {
+        "layout": "rotate"
+      },
+      "description": "A clear rotate-to-landscape message keeps the saved campaign intact.",
+      "remaining": "The whole game is landscape. This preview does not introduce a separate portrait game layout.",
+      "sources": []
+    },
+    {
+      "id": "materials",
+      "title": "Material & icon direction",
+      "group": "hero",
+      "view": {
+        "reference": "30-icon-material-board.jpg"
+      },
+      "description": "Compare stone, brass and natural resource materials as a shared visual language.",
+      "remaining": "Existing style study only. Duplicate motifs do not form the production icon atlas; use the verified nine skills, eight spells and four resources.",
+      "sources": [
+        "food",
+        "wood",
+        "rock",
+        "gold",
+        "offense"
+      ]
+    }
+  ],
+  "assetReferences": [
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/03-kingdom-stone.jpg",
+      "sha256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/04-kingdom-bronze.jpg",
+      "sha256": "ea1b8faca981cfc4cfae6b03801093f6a9c02143bf8029bf2e4cfe0cd564f414"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/05-kingdom-iron.jpg",
+      "sha256": "e646336f428e9fde63c2b657a10d7375b177a5689944c7a44e8a80aae8821694"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/06-kingdom-medieval.jpg",
+      "sha256": "5dd5adb7585e97be03048f1fac97535b67d40387387f5f314a17da92e1db0809"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/07-kingdom-gunpowder.jpg",
+      "sha256": "f5a8eba1e3cee149ffcb36bb2481a71b0db0172a4eb521fc3ce7aab19e9192b3"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/08-kingdom-industrial.jpg",
+      "sha256": "845714405780e04ff9fb887296dbcfd7a30ce3a9d402be3c15c53369426e8f3e"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/09-kingdom-modern.jpg",
+      "sha256": "3f22f3fe01890d388eeebc999c74019113f270b1cdd8802d9dd73ffaf7c1bf15"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/10-kingdom-future.jpg",
+      "sha256": "94fd03c0ea803d4538c696989c65c1f22700d57c7ae78b71ee0dd3ca32e54443"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/11-adventure-overview.jpg",
+      "sha256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/12-adventure-crossing.jpg",
+      "sha256": "9ef148954dbafa22c3ca497efe0af03c83b5ea1e9f52452aa56ba6162b305f13"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/13-adventure-foot.jpg",
+      "sha256": "40e2e30f2fe640796451f2cabcd063e9d1a779b98607c3ce787fd69985b2c295"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/14-tactical-deployment.jpg",
+      "sha256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/15-tactical-action.jpg",
+      "sha256": "94d29bdaf82ea21a77e01b7414c912aabd8402e866ff4d29c8a32d429cd032de"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/16-battle-result.jpg",
+      "sha256": "30bb2f1526d64d659cb53810011e1ab7d70ba04eab45b127c92a602c4c29f791"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/17-defense-preparation.jpg",
+      "sha256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/18-defense-wave.jpg",
+      "sha256": "ac6a416633f666fcc531d5291b9d02ec74332d26f2340d1b08c32c5fbe6cc7d5"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/19-hero-equipment.jpg",
+      "sha256": "6a3a4e08e823a00a9069960af331af6d95b9ebb6629ecc31b5a0e7ac17939f2e"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/22-forge.jpg",
+      "sha256": "f5253c7524352e1f57aff00d7623ada1d3858216cdc04296f9dae4bc3e9ba560"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/23-inventory.jpg",
+      "sha256": "083b299ebfb716625babc2a6648102dd28d8de0198b1b6a2cf47df440ef40d7e"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/24-army.jpg",
+      "sha256": "9728db38e960a2117e7b52b1fb5795cb3a7e9080a12b9f3f65bd0b1e0cc0105f"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/25-story.jpg",
+      "sha256": "2f00b9c71582d1649cb60690f305f41437bebe73a4d79912149e800e97705ac6"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/29-save-recovery.jpg",
+      "sha256": "8a54fedd84d91e2f144940eae298c178e078b205aec6ac1ead703af8f49135d1"
+    },
+    {
+      "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/30-icon-material-board.jpg",
+      "sha256": "9e927748289178edc5d2ce132ad4a6a053051dc976df1d7d2dfee990cc40b1d3"
+    }
+  ],
+  "counts": {
+    "samples": 43,
+    "appearanceReferences": 23,
+    "layoutSamples": 20
+  },
+  "note": "Existing originals unchanged. Layout samples are review documentation, not game execution or production asset/composite acceptance."
+}

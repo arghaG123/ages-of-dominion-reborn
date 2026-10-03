@@ -1,0 +1,3283 @@
+{
+  "version": 1,
+  "at": "2026-10-03T08:19:02.533791+00:00",
+  "automated": [
+    {
+      "id": "inventory",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Exact unique IDs compared to frozen tables/extensions; pixel semantics manual"
+    },
+    {
+      "id": "fixture-reject-duplicate-identities",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Same inventory validator rejects duplicate class with count8"
+    },
+    {
+      "id": "kingdom18sites",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Separate upperHall +9upper/8lowerpads; Walls separate"
+    },
+    {
+      "id": "road-footprint-clearance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Rendered16px road strip cannot intrude into build pads"
+    },
+    {
+      "id": "kingdom-source-bounds",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "All world boundary corners have24px source margin"
+    },
+    {
+      "id": "kingdom-guide-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Exact immutable registration source"
+    },
+    {
+      "id": "kingdom-invertible",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Projection supports exact inverse picking"
+    },
+    {
+      "id": "kingdom-footprints",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Positive, nonoverlapping site footprints insideworld"
+    },
+    {
+      "id": "kingdom-fit-825x375",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "kingdom-fit-933x424",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "kingdom-fit-1180x820",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "kingdom-fit-1280x720",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "adventure-source-bounds",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "All world boundary corners have24px source margin"
+    },
+    {
+      "id": "adventure-guide-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Exact immutable registration source"
+    },
+    {
+      "id": "adventure-invertible",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Projection supports exact inverse picking"
+    },
+    {
+      "id": "adventure-footprints",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Positive, nonoverlapping site footprints insideworld"
+    },
+    {
+      "id": "adventure-fit-825x375",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "adventure-fit-933x424",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "adventure-fit-1180x820",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "adventure-fit-1280x720",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "tactical-source-bounds",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "All world boundary corners have24px source margin"
+    },
+    {
+      "id": "tactical-guide-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Exact immutable registration source"
+    },
+    {
+      "id": "tactical-invertible",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Projection supports exact inverse picking"
+    },
+    {
+      "id": "tactical-footprints",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Positive, nonoverlapping site footprints insideworld"
+    },
+    {
+      "id": "tactical-fit-825x375",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "tactical-fit-933x424",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "tactical-fit-1180x820",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "tactical-fit-1280x720",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "defense-source-bounds",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "All world boundary corners have24px source margin"
+    },
+    {
+      "id": "defense-guide-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Exact immutable registration source"
+    },
+    {
+      "id": "defense-invertible",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Projection supports exact inverse picking"
+    },
+    {
+      "id": "defense-footprints",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Positive, nonoverlapping site footprints insideworld"
+    },
+    {
+      "id": "defense-fit-825x375",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "defense-fit-933x424",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "defense-fit-1180x820",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "defense-fit-1280x720",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "One sharedcamera fit; phone48px picking remains rendered check"
+    },
+    {
+      "id": "adventure-corridors",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "All sixsite approaches,fourpickups,twoguards reached through legal stone crossing"
+    },
+    {
+      "id": "tactical-deployment",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Sixstack slots pluscommander0,9 distinct unblocked/legal zones"
+    },
+    {
+      "id": "defense-lane",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Fixed9x15 contiguouslane insideworld, unique and no towerpad collision"
+    },
+    {
+      "id": "fixture-reject-clipped-map",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Negative fixture projects ground outside source"
+    },
+    {
+      "id": "fixture-reject-pad-road",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Negative fixture road strip crosses P03"
+    },
+    {
+      "id": "fixture-reject-illegal-deployment",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Same deployment validator rejects previousdocument illegalexample"
+    },
+    {
+      "id": "fixture-reject-pad-on-lane",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Same lane validator rejects illegal towerpad collision"
+    },
+    {
+      "id": "budget-committed",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "USDreservations include rejected generations; invoiceunknown"
+    },
+    {
+      "id": "fixture-reject-overbudget",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Real paid validator rejects overspend without network"
+    },
+    {
+      "id": "batch1-useful30",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Unique useful output positions, no paid filler"
+    },
+    {
+      "id": "batch1-pricebound",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Token ceiling charged conservatively atimage rate, plus overhead margin"
+    },
+    {
+      "id": "kingdom-terrain-stone-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "kingdom-terrain-bronze-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "kingdom-terrain-iron-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "kingdom-terrain-medieval-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "kingdom-terrain-gunpowder-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "kingdom-terrain-industrial-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "kingdom-terrain-modern-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "kingdom-terrain-future-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-stone-provenance",
+      "type": "AUTOMATED",
+      "status": "FAIL",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-stone-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "townhall-bronze-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-bronze-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "townhall-iron-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-iron-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "townhall-medieval-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-medieval-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "townhall-gunpowder-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-gunpowder-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "townhall-industrial-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-industrial-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "townhall-modern-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-modern-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "townhall-future-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "townhall-future-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "adventure-terrain-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "tactical-terrain-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "defense-terrain-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "adventure-site-town-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "adventure-site-town-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "adventure-site-ruin-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "adventure-site-ruin-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "adventure-site-mill-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "adventure-site-mill-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "adventure-site-mine-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "adventure-site-mine-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "adventure-site-dwelling-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "adventure-site-dwelling-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "adventure-site-shrine-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "adventure-site-shrine-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "resource-food-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "resource-wood-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "resource-stone-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "resource-gold-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "knight-mounted-master-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "knight-mounted-master-camera-axes",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Object base shares mode camera axes"
+    },
+    {
+      "id": "batch2-useful30",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Unique useful output positions, no paid filler"
+    },
+    {
+      "id": "batch2-pricebound",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Token ceiling charged conservatively atimage rate, plus overhead margin"
+    },
+    {
+      "id": "skill-offense-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "skill-archery-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "skill-armorer-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "skill-wisdom-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "skill-leadership-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "skill-luck-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "skill-tactics-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "skill-logistics-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "skill-firstaid-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "spell-arrow-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "spell-bless-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "spell-haste-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "spell-cure-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "spell-slow-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "spell-bolt-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "spell-fireball-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "spell-resurrect-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "gear-stone-helm-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "gear-stone-weapon-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "gear-stone-offhand-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "gear-stone-armor-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "gear-stone-boots-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "gear-stone-accessory-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "portrait-ancient-ranger-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "portrait-ancient-warlock-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "portrait-ancient-mage-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "portrait-ancient-paladin-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "portrait-ancient-barbarian-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "portrait-ancient-necromancer-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "portrait-ancient-healer-provenance",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Prompt and guide binding"
+    },
+    {
+      "id": "exact-ability-semantics",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Nine and eight unique named prompts; generated glyph semantics manual"
+    },
+    {
+      "id": "fixture-reject-duplicate-semantics",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Shared validator rejects duplicate abilityID"
+    },
+    {
+      "id": "tactical-terrain-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-gunpowder-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "resource-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-bronze-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "defense-terrain-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-iron-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-industrial-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-site-dwelling-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-site-ruin-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-site-mill-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-site-town-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "resource-gold-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-bronze-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-industrial-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-gunpowder-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-medieval-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "resource-food-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-terrain-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "knight-mounted-master-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-modern-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "resource-wood-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-medieval-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-future-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-modern-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-future-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-iron-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-site-mine-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-site-shrine-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "spell-fireball-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "gear-stone-helm-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "spell-slow-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-tactics-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "portrait-ancient-paladin-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "spell-haste-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "gear-stone-armor-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "portrait-ancient-healer-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-luck-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "portrait-ancient-necromancer-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "portrait-ancient-warlock-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-wisdom-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "gear-stone-offhand-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "portrait-ancient-mage-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-offense-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-logistics-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "gear-stone-boots-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "spell-arrow-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "spell-cure-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-archery-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "portrait-ancient-barbarian-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "gear-stone-accessory-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "portrait-ancient-ranger-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-firstaid-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-armorer-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-leadership-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "gear-stone-weapon-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "spell-bolt-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "spell-bless-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "spell-resurrect-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "tactical-terrain-ruins-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "defense-terrain-waste-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "defense-terrain-snow-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "defense-terrain-desert-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "skill-offense-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-terrain-snow-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "defense-terrain-ruins-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "tactical-terrain-plains-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-terrain-desert-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "defense-terrain-hills-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "townhall-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-terrain-hills-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-terrain-swamp-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "defense-terrain-swamp-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "gear-stone-weapon-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "defense-terrain-plains-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "tactical-terrain-hills-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "tactical-terrain-swamp-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-terrain-plains-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "tactical-terrain-waste-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-medieval-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "quarry-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "tactical-terrain-desert-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-terrain-waste-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "kingdom-terrain-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "mine-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "farm-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "adventure-terrain-ruins-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "tactical-terrain-snow-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "lumber-stone-decode-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Decodedoriginal and exact SHA256; no approval inferred"
+    },
+    {
+      "id": "review-hash-fresh",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Verifier rows match current source bytes or they are rejected"
+    },
+    {
+      "id": "review-gates-separate",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Source-content acceptance does not set runtime or owner approval"
+    },
+    {
+      "id": "review-stale-fixture",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "A mismatched source hash cannot inherit a PASS review"
+    },
+    {
+      "id": "candidate-townhall-batch03",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Hall selection is the reviewed batch 03 candidate, not the batch 01 path"
+    },
+    {
+      "id": "candidate-offense-batch03",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Offense selection is the reviewed batch 03 plaque"
+    },
+    {
+      "id": "candidate-resources-batch01",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "The four resources stay on their reviewed batch 01 sources"
+    },
+    {
+      "id": "delivery-ledger-present",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "First delivery derivatives record source and output hashes"
+    },
+    {
+      "id": "production-03-20261003:skill-offense-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-01-20261003:resource-food-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-01-20261003:resource-wood-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-01-20261003:resource-stone-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-01-20261003:resource-gold-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-03-20261003:townhall-stone-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-03-20261003:farm-stone-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-03-20261003:lumber-stone-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-03-20261003:quarry-stone-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-03-20261003:mine-stone-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    },
+    {
+      "id": "production-01-20261003:kingdom-terrain-stone-delivery-hash",
+      "type": "AUTOMATED",
+      "status": "PASS",
+      "details": "Derivative stays bound to the reviewed source hash"
+    }
+  ],
+  "manual": [
+    {
+      "id": "era-authenticity",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Eachoutput against era matrix; Stone no medieval structures, Future transformed wholekit"
+    },
+    {
+      "id": "age-landmark-camera",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Eightterrains share exact terrace/river/crossing/perimeter/padmap registration; inspect actual pixels"
+    },
+    {
+      "id": "hero-unit-identity",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Face/gear/role/facing master comparison"
+    },
+    {
+      "id": "content-count-semantics",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Exact visible9skills8spells6gear4resources, no duplicates/bakedlabels"
+    },
+    {
+      "id": "pivot-shadow-scale",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Measured source pivots,groundfootprints,contactshadow and camera in composed scene"
+    },
+    {
+      "id": "alpha-matte",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Edgehalo/internal holes/translucent shadow preserve object; magenta JPEG cannotpass"
+    },
+    {
+      "id": "composite-reference",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Stone sparse/Medieval grown and3mode scoped landscape paired referencecaptures"
+    },
+    {
+      "id": "hud-touch-contrast",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "18px4resource28rail; noneTactical/Defense;48pxhitbounds safeinsets and contrast measured"
+    },
+    {
+      "id": "animation-gait",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Articulated foot/hoof contact and attachment clip-extremes"
+    },
+    {
+      "id": "physical-android",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Real isolatedAPK zeropermissions/network and60fpsdenseSiege"
+    },
+    {
+      "id": "whole-campaign",
+      "type": "MANUAL",
+      "status": "UNVERIFIED",
+      "requiredEvidence": "Natural fulljourney and all8ages5Waroptions withoutfixture grants"
+    }
+  ],
+  "assets": [
+    {
+      "id": "tactical-terrain",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "13b7c602053e026039c5f04fe692a9073d17cd96da12af3bfdec2da668224646",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "9aec2f273a388c3061d9c1237be4590d678c34c7962c366c7944db38c6228879",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-stone",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "FAIL",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "FAIL",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "resource-stone",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "2c819abba15fa22311e039e2ad661a04399791a53ac51aa5f12c9e4dbfef6d5e",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "PASS",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "49f13640f0d3f1b44769606ae541e8f67bd34d861dc0052e6bd69af7342230c1",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "4399132dcd0cce9e1563e2e3525f0cc61b5b6a4368c268dd2ca3125d02aaae2a",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-iron",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "4570853585d11013533f68d47c50f70c331023af43f0e10ad4dff8fcadbeb3bb",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-industrial",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "243cd0e8413b10d83567a2849356aeb2a107304a5dddf14fbb937fe5f8fe51fb",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-dwelling",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "fedad712e384412e5ddcc071ab5a051ced916e718fc96b4ec87fadf6adb5ba8b",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-ruin",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "78cf4aca7c73e9fbb3dcf5bf1e0ca3e3a2c8d4bc8d252d3a5aa3261bdc4c5dd4",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-mill",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "c746480b3dc3d2b643031f9e9ef241fd8ea0ab8516ada5adb339231c75bc9a0e",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-town",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "039dbd00a93d5353af77047c6f4dc0cb6ef06a67b63d749a2376066f9de187f8",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "resource-gold",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "e8cb7967df838fd84168e87dff6ac98c66c1bdfaab0dfbac84f81d978468f168",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-bronze",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "d6dc28f97dcf6835da13879639697c68c70ab0dcb3204a22608fb40be1b0f857",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "85440ec67f04e90b144f1f6ecc281fc1b898b584c38deec0b8e512e7f2d512d6",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-gunpowder",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "941fea03f24ef7387cdc52d8b120bf3821e54bd5758955dee1badc3dd1b7946d",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-medieval",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "d62b513ffca26bb026f554d7da8cd9c4459d68d88070ef6d00b9443af19307c7",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "resource-food",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "d3287f62b9850e4dbab0f3a132c1abacabfe89932eb9ed9bc76d1496bdb0716f",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "FAIL",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "d7b85885045bdedca6f0d203a56f1a57786074afb8591f6a72cefbf75bd7faab",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "knight-mounted-master",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "df9f9165a9e2fbc5c4cccb6ae463d06778e6edc28f193fc44374337767c4d808",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-modern",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "a35479785aecf268668716c3e5b1ef8866743b0f380d926e0437ff149a6cde73",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "resource-wood",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "a91c3a395af420fdbc53ecb9b330cc11633bb61b5b46316163ea2331b3bb82d2",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "FAIL",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "3eea9e8d20e1f4648f95eec2ae735079b36287a976a6b4f25ae94be4f48b7453",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "df5e35eeca4df63ec2fd636dfe4d7522b6a33f805ff7c4e84aee321423f6fd8d",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "c53704f6a8cb8e6586d0fe0c26b5e9af172f9d3d8cba6489affe2c1fae5cc926",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-future",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "1830813744011e31d6f9296da753ec35abd5a93297244f5437739fe2cb9665ed",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "a05358dba5c543bdde5d17d0ad65aa59b24e8afc6705d95cadfd002436df8fb9",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-mine",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "f321655205afe6be44b7de49c3a8506ea16f6300ae0b62b7852f30da3f21a51f",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-shrine",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "b60f5383909662005bdf1a19c71bdf3b35753e4fdfee257d66d5d00becff4a55",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-stone",
+      "batch": "production-01-20261003",
+      "sourceSHA256": "a23084c32422834a9f3adf48e45af3085d812fd3db36306d6a5c96d38dcb287f",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "spell-fireball",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "bf7ad6469653625ae35bacdceee67cc6d9815bf731b1e826b43e743a8f04f568",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-helm",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "14833fc1979dfa91eb1625b75f123c0d6fc79304bd8c8b191353e32be9285c97",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "spell-slow",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "6cdfb254b547fabed1bcb54d1df3821247dfe211ab1519a6a864761da4590d26",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-tactics",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "4f3fd208ae73e210fc2fcdc0ced90078a045eea4e0f27b49bc6dad4ec2811b0a",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-paladin",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "40c00ba2422ee6eafd09e7c1f73365cd86638bfbcf0ca8dcdc28caf18e0d8796",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "spell-haste",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "55d1748a181f94010e7489842c9c274f8d8f61e98b4725bcf807dd9d05af9bae",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-armor",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "b1c668e5e861a89f5850938afdedafc54fa5f62d0e7cde579034b085b49d7ddd",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-healer",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "4ed721d7feeedb2840df981d524f953246c903906dabc4ffc6f6b46a55d49296",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-luck",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "53a5b44864e5796ea7f78c00f9ba2fe7f2621df3af2d4bf8cf6de9333eb88497",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-necromancer",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "b46f606ec18725d59c4ad644eb3a6ae552c7bc50917091ca23f2d586e6787b2a",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-warlock",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "83b7e730a71f70c5a9ba25eca563a43e69e0fca6664df8c3c3023d204cd6376f",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-wisdom",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "df567b5f207132082955a3f2aae4511b9efec5b9e035c07d37419495539806a8",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-offhand",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "8967f5f39f192f98d180c463172043fc886e4da87ab507d6f03014b029082df4",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-mage",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "45ab95913e183017dd8cfbdb2cfe1fc50ab68758e9898331a784e157f7632364",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-offense",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "f1f60256db16b0dd3e5651493b6ff690d36fb38f264ce273ee7f3e9111370416",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-logistics",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "07bbacb9b8a06054c1dfea6c8342be0041817eb779a044dc10236057923bd31c",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-boots",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "4c61060d91f212070e049abc150cea17dab612d962b29f4ee5d9a0bc54227310",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "spell-arrow",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "4d431faa44b8e777732ab24a47beff271f40fee4d0d1615c0e0709c021e7bf1c",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "spell-cure",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "eca945b64860396cfbdea4d5cec6a7f49de391307ec7b966638f2917194651e9",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-archery",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "1ad354eb5e3e0b18f190303d35ee6b3ce94fc7996b75777f62668748d7aacd3e",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-barbarian",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "ecab8c068f92933a8aba7cf78dd55bb2c26ad6209a3813da4eb7fead42345803",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-accessory",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "aa8ea80901f18fb9c43801bac3f3f5963cbc00ff605b83b6d9f3e6a885423ece",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-ranger",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "5905c40cb0bd55565d700f37841fb394dd48ea20bb179b0f8bc90d753794c269",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-firstaid",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "ebc54607578b2df6f2d8ce08467f5c413a0dcb1366224ccadb17961df8fad67c",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-armorer",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "44bd10b2c8aea796b146ac4782e79599d5bf00d28719465e4ab7b97243760622",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-leadership",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "f06cbf0f266e51611c6b512889b6af822264ba96f34729ad088af12ad72b4b2b",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-weapon",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "9b9bdee27035c0b42c14796ed8f46b96e4b12617568f8a51e15be7049ca73f86",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "spell-bolt",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "720c0f2a56e7aae907b27c79c1070f6f2de7a9e4d6b21c1244fa3d84403effa2",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "spell-bless",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "558e5ec6e4c4363e679cace5bd3232acbe53c33800862ededb0ac39cce1182b9",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "spell-resurrect",
+      "batch": "production-02-20261003",
+      "sourceSHA256": "2f8fca2a0184ad725e50bde0b9d378b20fef8b7302896cff38aa2e0f31555746",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "tactical-terrain-ruins",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "fd7e61df00ea74f661dcae72be993ede354577628e3034dc9e7e10f9dd7f2630",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain-waste",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "369fc0142573387fd8341126501c53741ad13b4e207e35fa70081d63af862104",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain-snow",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "b9baf2f8d31a329326f954de42badd025e3626658e0814dcb5a435c254ef28fe",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain-desert",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "ee719f87cd37f2a19e29041fc387fc394f5326d0e9043acb21e06310107ca4d3",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "skill-offense",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "594fc35135244184a2c685ff6ac243dfe4b5ff9c846e8e0a92ea60b816cf11cf",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "PASS",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain-snow",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "7a9615b285ef6dff89628fa874e467c6e21e8f591c8e90755a2cdd984c73ff46",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain-ruins",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "77c66e4ae0e19442811f43b0556bc30623ddb21faae954935e6d177c10962887",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "tactical-terrain-plains",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "e5dc2c794ef9fc921df75a5969d3e1fc08ede8987379cd49c4cbe8747bc70ce8",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain-desert",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "face19a6f2f5cf492c0a037246d95195a20df1f9a50759cac402dd99bf19b427",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain-hills",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "85683199e550e019adfa557e6344fc11ec690cb075d99a2c25a8df70ac4d92bc",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-stone",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "2809db2bc0045cfeae0ae73b675b0236b03f0f0f369009c90430af62d22c1b5e",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "FAIL",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "FAIL",
+        "registration": "FAIL",
+        "composite": "FAIL",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain-hills",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "d7341f4c346f63f54b36605428491d2eb9e6c6e57da8b72c94a22d3744c10028",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain-swamp",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "7b63336ba39b633efa60d8f90e2f731c18f59a2755a72b025b661b68e9a8493e",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain-swamp",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "e6f9acb065d03e88a3d7c78f82671d4cd4c9054be99c064ef9b0867a753514cf",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-weapon",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "599d2b0437f78cdf5207fbe38e395f35f6ba55d4dbf7676e958c2b555d02abcd",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain-plains",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "74ae033202abdd569275cde5c4db117f0c4aa9d1d51b995e8a3529aef5f39c95",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "tactical-terrain-hills",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "fe1d2f26a4dcb0cd07970e441ff4946ddd21ccbcaa75bca3574ec45407168365",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "tactical-terrain-swamp",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "f7690dad04255e3085a0830cde7d6fad4a9e7f460c06416e543595a5cbb5d7b1",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "PASS",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain-plains",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "0f0b91561a84029bd333924fd7560e59fbc6c4704079c54a1b2673348f24f2aa",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "tactical-terrain-waste",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "c7300c3824e935913f5c44fdc5e2143064b0bfb59601b913850dc13212dd180a",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "7c6122a97b842a45d8fb6ce7477df48e07d24046f3c8ce6878647cf2a1daa152",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "quarry-stone",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "da5b9d5ccb9c3422d3058dc2a7424da4e74a4732ed72207da7217ec283d6487b",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "FAIL",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "PASS",
+        "registration": "FAIL",
+        "composite": "FAIL",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "tactical-terrain-desert",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "ad6b64e774530faebd4bda061e8966e99934a7ed35b52d7aca86d587d876a21c",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain-waste",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "097c0dca278e541d9845378ce4275b4b5cda0ff4cb94eb25c4008252d578e7a8",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-stone",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "5fcdb893fd7f2567f435742368cfa5fa093cbbbbe2b49a17f9f850d306b7de70",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "mine-stone",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "ff1daba56ba7b3e1f40cdb85bcd9ace519260670017572e1123e74f24aa53731",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "FAIL",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "PASS",
+        "registration": "FAIL",
+        "composite": "FAIL",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "farm-stone",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "a8c004398448e549d9b4e737801e16c5186965e5f35f22d7dd46c61efa3ae0e3",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "FAIL",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "UNVERIFIED",
+        "registration": "FAIL",
+        "composite": "FAIL",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain-ruins",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "64a0e78027abe94cd8f7c9c529d32500d60bf82f2509681b46fac42c227a6107",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "67a47456a41e35dcad4bd37dbd2b852ad9c790da99c2ded92ddac11593fa19a1",
+      "technical": "PASS",
+      "alpha": "PASS",
+      "content": "FAIL",
+      "composite": "UNVERIFIED",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "FAIL",
+        "matte": "UNVERIFIED",
+        "registration": "UNVERIFIED",
+        "composite": "UNVERIFIED",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    },
+    {
+      "id": "lumber-stone",
+      "batch": "production-03-20261003",
+      "sourceSHA256": "63fc579f757d8930a10252db38622ccafab35e93679554e4afcbebd535a0fd38",
+      "technical": "PASS",
+      "alpha": "FAIL_REQUIRED_PROCESSING",
+      "content": "PASS",
+      "composite": "FAIL",
+      "runtimeApproved": false,
+      "gates": {
+        "technical": "PASS",
+        "sourceContent": "PASS",
+        "matte": "PASS",
+        "registration": "FAIL",
+        "composite": "FAIL",
+        "runtime": "UNVERIFIED",
+        "ownerAcceptance": "UNVERIFIED"
+      },
+      "ownerAcceptance": "UNVERIFIED"
+    }
+  ],
+  "automatedStatus": "FAIL",
+  "visualStatus": "UNVERIFIED",
+  "productApproved": false
+}

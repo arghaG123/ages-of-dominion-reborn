@@ -1,0 +1,140 @@
+{
+  "status": "PROPOSAL_NOT_ACCEPTED",
+  "activeContractEdited": false,
+  "hall": {
+    "source": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+    "sourceSHA256": "f359a8b72100be8ad78eaf61eede19bc8b2db3bd0a1d071050a51edce22cc37c",
+    "opaqueBounds": [
+      0,
+      21,
+      1023,
+      999
+    ],
+    "silhouetteTip": {
+      "y": 999,
+      "confidence": "low",
+      "kind": "visible lower silhouette, includes dirt and plinth, not a foundation corner"
+    },
+    "roofExtremity": {
+      "y": 21,
+      "confidence": "low",
+      "kind": "highest opaque pixel, a silhouette bound, not a foundation corner"
+    },
+    "roofPercentile": {
+      "y": 67.0,
+      "confidence": "low",
+      "kind": "0.3 percentile of opaque rows, not a foundation corner"
+    },
+    "wallContact": {
+      "centroid": [
+        541.81,
+        968.31
+      ],
+      "width": 555.0,
+      "count": 278,
+      "left": 11.0,
+      "right": 1014.0,
+      "below": 969.0,
+      "confidence": "medium",
+      "kind": "Lowest non-thatch silhouette band. Roof tips are not corners."
+    },
+    "entrance": {
+      "x": 512.5,
+      "confidence": "low",
+      "kind": "inferred from the span midpoint, not a surveyed door quad"
+    },
+    "contactPointCount": 278,
+    "footprintScale": 0.3288,
+    "frameLimitedScale": 0.1312,
+    "scaleResidual": 0.399,
+    "roofSourceYAtFootprintScale": -185.22552799999994,
+    "percentileRoofSourceYAtFootprintScale": -170.10072799999995,
+    "opaquePixelsOutsideFrameAtFootprintScale": 385665,
+    "siteCenter": [
+      578.75,
+      126.25
+    ],
+    "magentaSamples": {
+      "roofEave": {
+        "x": 889,
+        "y": 316,
+        "centerRGBA": [
+          213,
+          170,
+          123,
+          255
+        ],
+        "magentaIn5x5": 0,
+        "confidence": "visible pixel sample"
+      },
+      "rightRim": {
+        "x": 1006,
+        "y": 486,
+        "centerRGBA": [
+          148,
+          80,
+          95,
+          255
+        ],
+        "magentaIn5x5": 1,
+        "confidence": "visible pixel sample"
+      }
+    },
+    "magentaSampleCount": 104,
+    "activeMatrixUnchanged": [
+      [
+        0.1312,
+        0.0,
+        507.66565
+      ],
+      [
+        0.0,
+        0.1312,
+        -0.79026
+      ]
+    ],
+    "activeContractUnchanged": true,
+    "contractSHA256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+  },
+  "placementEvidence": {
+    "stone-frame-before-current-scale.png": {
+      "file": "qa/recovery-executor-20261003/stone-frame-before-current-scale.png",
+      "sha256": "1c537c32ea792469fbd420689a063ee1d9a57cf85f9604cc0a774b1b2066fc15",
+      "opaquePixelsOutsideFrame": 0
+    },
+    "stone-frame-after-footprint-scale.png": {
+      "file": "qa/recovery-executor-20261003/stone-frame-after-footprint-scale.png",
+      "sha256": "48672d709269a7b2c4ac0e54f450283702fb4d99d722497a1a131c935c3ca29f",
+      "opaquePixelsOutsideFrame": 385665
+    }
+  },
+  "finding": "The footprint scale that matches the 555px non-thatch contact band puts the highest opaque roof pixel near source y=-185. The 768px frame cannot hold that vertical envelope. The active camera, contract and Hall matrix stay unchanged.",
+  "counterfactual": "qa/planner-verifier-v3-20261003/framing-counterfactual.png is diagnostic. A common +193px shift is not an accepted framing.",
+  "coordinatedChangeNotApplied": "A later accepted change would extend the shared source upward, or replace the terrain layer, and keep one camera, 18 sites, one Hall and 17 empty plots. Shrinking or warping the Hall is not the proposal.",
+  "terrainRoles": [
+    {
+      "role": "static",
+      "subject": "age-correct outskirts and lower raft",
+      "action": "retain",
+      "confidence": "medium"
+    },
+    {
+      "role": "guide",
+      "subject": "painted plot marks inside legal sites",
+      "action": "separate from terrain before acceptance",
+      "confidence": "high"
+    },
+    {
+      "role": "route",
+      "subject": "roads, crossings and bridge approaches",
+      "action": "keep the registered legal network",
+      "confidence": "high"
+    },
+    {
+      "role": "mutable",
+      "subject": "Hall and the 17 empty day-one plots",
+      "action": "one Hall, walls level 0, no baked workers",
+      "confidence": "high"
+    }
+  ]
+}

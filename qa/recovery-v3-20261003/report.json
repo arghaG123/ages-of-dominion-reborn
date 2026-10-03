@@ -1,0 +1,106 @@
+{
+  "hall": {
+    "file": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+    "sha256": "f359a8b72100be8ad78eaf61eede19bc8b2db3bd0a1d071050a51edce22cc37c",
+    "processing": {
+      "source": "v1",
+      "knockedPixels": 14203,
+      "protectedInteriorPixels": 658329,
+      "protectedInteriorLost": 0,
+      "opaqueV1": 732070,
+      "opaqueV3": 717867,
+      "method": "Pink fringe is flooded from transparency through blue-lifted pixels only. Roof and wall samples more than 12px inside, with green at least blue, stay opaque. v2 was not the source."
+    },
+    "registration": {
+      "centroid": [
+        541.81,
+        968.31
+      ],
+      "width": 555.0,
+      "roof": 67.0,
+      "left": 11.0,
+      "right": 1014.0,
+      "below": 969.0,
+      "contactCount": 278,
+      "method": "Lowest non-thatch silhouette band. Roof tips are not corners.",
+      "scale": 0.1312,
+      "footprintScale": 0.3288,
+      "scaleResidual": 0.399,
+      "limitedByFrame": true,
+      "destination": [
+        578.75,
+        126.25
+      ],
+      "matrix": [
+        [
+          0.1312,
+          0.0,
+          507.66565
+        ],
+        [
+          0.0,
+          0.1312,
+          -0.79026
+        ]
+      ],
+      "placedOpaqueBounds": [
+        507.67,
+        1.96,
+        641.88,
+        130.28
+      ],
+      "opaquePixelsOutsideSource": 0,
+      "contactOnFootprint": 1.0,
+      "siteId": "townhall",
+      "revision": "e47241a547f09c7f6c6d5139c04a2ae50c67f3fea91642e2f5c430cbae4dcf79"
+    }
+  },
+  "gold": {
+    "file": "assets/delivery/stone-starter-20261003/derivatives/v3/resource-gold.png",
+    "sha256": "fd1d293143ab7d08312fc6a435bfc8d1c437792616b5f56edf97f050584b27c9",
+    "processing": {
+      "source": "v1",
+      "faceMedianRGB": [
+        244.0,
+        214.0,
+        142.0
+      ],
+      "recoloredPixels": 247802,
+      "fringeKnocked": 0,
+      "remainingRedSideFraction": 0.0294,
+      "opaqueV1": 425024,
+      "opaqueV3": 425024,
+      "method": "Coin-face chroma replaces side pixels whose green is below 0.62 of red. Luminance stays so the ridges remain. Alpha changes only on a 1.5px magenta rim."
+    }
+  },
+  "terrain": {
+    "file": "assets/production/production-01-20261003/images/01-kingdom-terrain-stone.png",
+    "sha256": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1",
+    "processing": {
+      "editedPixels": 0,
+      "padPixels": 0,
+      "raftPixels": 0,
+      "status": "FAIL",
+      "method": "Median restamps, seamless clones and nearest-ground extrapolation were inspected. They left flat polygons or directional smears, so none is the v3 terrain. Original outskirts, roads, plots and the lower raft remain. Plot and raft cleanup stays open."
+    }
+  },
+  "hallScene": {
+    "file": "assets/delivery/stone-starter-20261003/composites/stone-kingdom-hall-only-day1-v3.png",
+    "sha256": "66e20d9d00ea651f383d9a09d3585b15580702adb4505793b1b10c5ceab3854f"
+  },
+  "producerProof": {
+    "file": "assets/delivery/stone-starter-20261003/composites/stone-kingdom-producer-placement-proof-v3.png",
+    "sha256": "9720106fe7cbb01cd93009a56916100d575a976ae9aac2d2b3fe5a6d535d2838"
+  },
+  "registrationStatus": "FAIL",
+  "registrationReason": "Contact 100.00%, scale residual 0.399, outside pixels 0, bounds [507.67, 1.96, 641.88, 130.28]. Uniform scale was clamped to the frame instead of warping the roof into a parallelogram.",
+  "occupancyPixels": 12477,
+  "preservedUi": {
+    "resource-food": "af2ef872598b99d5457793551c8297c3d136ab6e1113edb19da73fd3f7a635ef",
+    "resource-wood": "98124471d8d7c8055a73d1c62dce1e5ed4c0fb329d6fa5a77a1e9eb5bcebede8",
+    "resource-stone": "fe3eb2bf114243f5053c9ce5d8834e85646e4e710a7aad40ec51b9f426e540b3",
+    "skill-offense": "cb71c50e6c1f5bdd208e0ab45c3cfc2acecc70372210bbe0ac1d18ec54a91922"
+  },
+  "cameraHash": "51e6f55d60de4e45e6ee0aca84546cd27717f7906d2498a45e0e666d69409864",
+  "contractHash": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+}

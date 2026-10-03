@@ -1,0 +1,62 @@
+{
+  "scope": "planner artifact verification only; no game/build/device/provider test",
+  "checks": {
+    "protectedInputsUnchanged": true,
+    "priorPlanningBytesPreserved": true,
+    "all240OverviewRowsPresent": true,
+    "eachBatchExactly30": true,
+    "all240TechnicalPass": true,
+    "all240RawRequestPayloadAssociations": true,
+    "delivery55RasterInventory": true,
+    "current11SourceOutputBindings": true,
+    "fourScopedArtworkPassOnly": true,
+    "noRuntimeOwnerPromotion": true,
+    "sceneHashBinding": true,
+    "twoPromptsExist": true,
+    "restoreDraftNoBackupClaim": true
+  },
+  "protectedFileCount": 741,
+  "changedProtectedFiles": [],
+  "planningHistoryChanges": [],
+  "currentSizes": {
+    "assets/production": {
+      "files": 321,
+      "bytes": 1331547948
+    },
+    "assets/delivery": {
+      "files": 57,
+      "bytes": 50394581
+    },
+    "qa/full-asset-verifier-20261003": {
+      "files": 58,
+      "bytes": 30707537
+    }
+  },
+  "ordinaryGitOver100MiBRawFiles": [
+    {
+      "file": "assets/production/production-01-20261003/provider-output/predictions.jsonl",
+      "bytes": 135190042
+    },
+    {
+      "file": "assets/production/production-03-20261003/provider-output/predictions.jsonl",
+      "bytes": 156522195
+    },
+    {
+      "file": "assets/production/production-04-20261003/provider-output/predictions.jsonl",
+      "bytes": 128985617
+    },
+    {
+      "file": "assets/production/production-05-20261003/provider-output/predictions.jsonl",
+      "bytes": 123243239
+    },
+    {
+      "file": "assets/production/production-06-20261003/provider-output/predictions.jsonl",
+      "bytes": 115681129
+    },
+    {
+      "file": "assets/production/production-08-20261003/provider-output/predictions.jsonl",
+      "bytes": 112235228
+    }
+  ],
+  "gitattributesExists": false
+}

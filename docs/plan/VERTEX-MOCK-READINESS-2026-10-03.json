@@ -1,0 +1,59 @@
+{
+  "checked_at_utc": "2026-10-03T01:39:05.405758+00:00",
+  "project": "project-1aeea929-1dae-45bb-bf5",
+  "credential_refresh_succeeded": true,
+  "metadata_checks": [
+    {
+      "region": "global",
+      "code": 403,
+      "status": "PERMISSION_DENIED",
+      "reason": "BILLING_DISABLED"
+    },
+    {
+      "region": "us-central1",
+      "code": 403,
+      "status": "PERMISSION_DENIED",
+      "reason": "BILLING_DISABLED"
+    }
+  ],
+  "global_operation_state": "JOB_STATE_SUCCEEDED",
+  "new_jobs_submitted": 1,
+  "new_images_generated": 30,
+  "raw_art_lock_files_found": 0,
+  "source_call_ledger_present": true,
+  "source_job_records_inspected": 15,
+  "unreconciled_source_records": [
+    "job_1790349644987_o93kn.json (no state/resource name)",
+    "job_1790349901770_mqmkt.json (JOB_STATE_PENDING)",
+    "job_1790595433592_ktc4l.json (no state/resource name)"
+  ],
+  "pending_resource_name": "projects/254292809150/locations/global/batchPredictionJobs/7221595807206604800",
+  "draft_manifest_sha256": "e75cfe91c4c2eda92b10f4d3fef0f4997399d91671cd5683ec73fdbc61128641",
+  "not_a_submission_lock": true,
+  "next_action": "Owner section review; no second batch scheduled. Preserve original outputs and recorded fidelity failures.",
+  "owner_supplied_project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "requested_account_available": true,
+  "requested_account_token_refresh_succeeded": true,
+  "supplied_project_checks": [
+    {
+      "region": "global",
+      "credential": "existing_cli",
+      "code": 403,
+      "status": "PERMISSION_DENIED",
+      "reason": "IAM_PERMISSION_DENIED"
+    },
+    {
+      "region": "us-central1",
+      "credential": "existing_cli",
+      "code": 403,
+      "status": "PERMISSION_DENIED",
+      "reason": "IAM_PERMISSION_DENIED"
+    }
+  ],
+  "active_scope": "project-eaa4c1cc-8f19-4d24-9e6 (explicit owner exception)",
+  "active_operation": "projects/186933974004/locations/global/batchPredictionJobs/410583068017950720",
+  "active_batch": "landscape-mocks-20261003-efcd7a7e",
+  "new_images_collected": 30,
+  "workflow_state": "COLLECTED_REVIEW_READY",
+  "owner_status": "PENDING"
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "rule": "Historical guide bytes are addressed by the hash recorded in the manifest. The shared guide path is not rewritten.",
+  "records": [
+    {
+      "sha256": "805f8f633ee3ad7b5d321b6fc9f97f2582116a3d0d4bb367e413d28cb93825fa",
+      "snapshot": "docs/plan/image-production/historical-snapshots/805f8f633ee3ad7b5d321b6fc9f97f2582116a3d0d4bb367e413d28cb93825fa.png",
+      "recoveredFrom": "docs/plan/image-production/guides/townhall-bronze.png",
+      "sharedPath": "docs/plan/image-production/guides/townhall-stone.png",
+      "sharedPathSHA256": "4efcbc5afe1d092318aa7e71e08457ed3577fc5dab177f61399a31f412da72c3",
+      "note": "Batch 01 recorded the first hash for guides/townhall-stone.png. That shared file now matches the batch 03 hash and was not overwritten. The same historical bytes are still present in the other age hall guides. This snapshot is an immutable copy of those bytes."
+    }
+  ]
+}

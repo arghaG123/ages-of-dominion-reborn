@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "date": "2026-10-03",
+  "baselineUsefulOutputs": 480,
+  "totalExecutedAttempts": 240,
+  "distinctRequestedIDs": 235,
+  "duplicateRequestedAttempts": 5,
+  "unrequestedBaselineIDs": 245,
+  "requestedByCategory": {
+    "terrain": 32,
+    "buildings": 80,
+    "sites": 6,
+    "resources": 4,
+    "hero-paintings": 8,
+    "skills-spells": 17,
+    "gear": 6,
+    "town-sheets": 24,
+    "troops": 24,
+    "towers": 32,
+    "attackers": 2
+  },
+  "unrequestedByCategory": {
+    "attackers": 38,
+    "creatures": 8,
+    "hero-paintings": 24,
+    "gear": 122,
+    "artifacts": 10,
+    "sites": 6,
+    "supporting": 16,
+    "mounts": 3,
+    "rig-sheets": 8,
+    "effects": 10
+  },
+  "classifiedRequestedAttempts": {
+    "fulfilledOrViableSourceCandidates": 198,
+    "wrongCompleteIdentityReusableFragments": {
+      "count": 6,
+      "ids": [
+        "troop-bronze-heavy",
+        "troop-iron-heavy",
+        "troop-medieval-heavy",
+        "troop-gunpowder-heavy",
+        "troop-industrial-heavy",
+        "troop-modern-heavy",
+        "troop-future-heavy"
+      ],
+      "note": "Prompted as infantry in Batch 07; preserved as crew and visual reference fragments. Roster requires Charioteer, War Elephant, Siege Knight, Cannon Crew, Steam Walker, Battle Tank, Hover Tank."
+    },
+    "sourceCandidatesNeedingLocalRepair": {
+      "count": 30,
+      "examples": [
+        "townhall-stone (local v2 mask distance defect; v3 rebuild needed, not repurchase)",
+        "res-gold (localized red fringe correction needed)",
+        "workshop-stone (yard/base boundary clipping)",
+        "tower-iron-splash (catapult/mortar prompt review to prevent gunpowder look)"
+      ]
+    },
+    "completeSceneTopologyDefectsUsableMaterials": {
+      "count": 6,
+      "examples": [
+        "terrain-tactical-* (complete topologies non-compliant; material textures usable)",
+        "skill-ancient-warlock (village scene with no isolated character to extract)"
+      ]
+    }
+  },
+  "batch09TargetGaps": {
+    "category": "attackers",
+    "unrequestedAvailable": 38,
+    "selectedForBatch09": 30,
+    "remainingForBatch10": 8,
+    "selection": [
+      "attacker-stone-archer",
+      "attacker-stone-sapper",
+      "attacker-stone-shaman",
+      "attacker-bronze-brute",
+      "attacker-bronze-runner",
+      "attacker-bronze-archer",
+      "attacker-bronze-sapper",
+      "attacker-bronze-shaman",
+      "attacker-iron-brute",
+      "attacker-iron-runner",
+      "attacker-iron-archer",
+      "attacker-iron-sapper",
+      "attacker-iron-shaman",
+      "attacker-medieval-brute",
+      "attacker-medieval-runner",
+      "attacker-medieval-archer",
+      "attacker-medieval-sapper",
+      "attacker-medieval-shaman",
+      "attacker-gunpowder-brute",
+      "attacker-gunpowder-runner",
+      "attacker-gunpowder-archer",
+      "attacker-gunpowder-sapper",
+      "attacker-gunpowder-shaman",
+      "attacker-industrial-brute",
+      "attacker-industrial-runner",
+      "attacker-industrial-archer",
+      "attacker-industrial-sapper",
+      "attacker-industrial-shaman",
+      "attacker-modern-brute",
+      "attacker-modern-runner"
+    ]
+  },
+  "nextBatchDeferral": {
+    "batch": "production-09-20261003",
+    "status": "DEFERRED_PENDING_OWNER_AUTHORIZATION",
+    "reason": "Technical preparation and affordability verified ($71 USD projected vs $80 USD hard cap), but owner authorization for batch 09+ has not yet been granted. Executor will not submit paid calls without explicit owner approval."
+  }
+}

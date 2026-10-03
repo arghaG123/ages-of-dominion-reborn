@@ -1,0 +1,4846 @@
+{
+  "date": "2026-10-03",
+  "status": "OWNER_SELECTED_RESOLUTION_SCOPE_PLANNER_ALLOCATION_NO_PROVIDER_EXECUTION",
+  "providerActionsPerformed": false,
+  "batchManifestEdited": false,
+  "assumptions": [
+    "One image per identity; sheets count as one image, not one per crop",
+    "Heroes include32 paintings,8 class part sheets,3 mounts; six rival portraits are also2K",
+    "Equipment:128 gear and10 artifacts stay1K by latest owner decision",
+    "Army24 remains2K; attacker/enemy40 and neutral creatures8 stay1K by latest owner decision",
+    "No retry allowance, pilot duplicates or previous mocks added",
+    "Current owner budget and active-work constraints remain; count is not provider readiness"
+  ],
+  "scenarios": {
+    "TERRAIN_BACKGROUNDS_ONLY": {
+      "counts": {
+        "1K": 375,
+        "2K": 73,
+        "4K": 32
+      },
+      "highResolutionIndividualRequests": 105,
+      "totalBaselineIdentities": 480,
+      "items": [
+        {
+          "id": "kingdom-terrain-stone",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-bronze",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-iron",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-medieval",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-gunpowder",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-industrial",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-modern",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-future",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "townhall-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "townhall-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "townhall-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "townhall-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "townhall-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "townhall-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "townhall-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-terrain",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-town",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-ruin",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-mill",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-mine",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-dwelling",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-shrine",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "resource-food",
+          "category": "resources",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "resource-wood",
+          "category": "resources",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "resource-stone",
+          "category": "resources",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "resource-gold",
+          "category": "resources",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "knight-mounted-master",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "skill-offense",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-archery",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-armorer",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-wisdom",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-leadership",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-luck",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-tactics",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-logistics",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-firstaid",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-arrow",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-bless",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-haste",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-cure",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-slow",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-bolt",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-fireball",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-resurrect",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-necromancer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-healer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "adventure-terrain-plains",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-hills",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-swamp",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-desert",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-snow",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-waste",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-ruins",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-plains",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-hills",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-swamp",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-desert",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-snow",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-waste",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-ruins",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-plains",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-hills",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-swamp",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-desert",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-snow",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-waste",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-ruins",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "lumber-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "quarry-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "mine-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "barracks-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "workshop-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hall-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "armory-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "walls-stone",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "farm-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "lumber-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "quarry-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "mine-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "barracks-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "workshop-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hall-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "armory-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "walls-bronze",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "farm-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "lumber-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "quarry-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "mine-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "barracks-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "workshop-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hall-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "armory-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "walls-iron",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "farm-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "lumber-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "quarry-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "mine-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "barracks-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "workshop-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hall-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "armory-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "walls-medieval",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "farm-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "lumber-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "quarry-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "mine-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "barracks-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "workshop-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hall-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "armory-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "walls-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "farm-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "lumber-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "quarry-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "mine-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "barracks-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "workshop-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hall-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "armory-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "walls-industrial",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "farm-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "lumber-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "quarry-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "mine-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "barracks-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "workshop-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hall-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "armory-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "walls-modern",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "farm-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "lumber-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "quarry-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "mine-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "barracks-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "workshop-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hall-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "armory-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "walls-future",
+          "category": "buildings",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "world-props-stone",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "construction-stone",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "civilian-transport-stone",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "world-props-bronze",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "construction-bronze",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "civilian-transport-bronze",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "world-props-iron",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "construction-iron",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "civilian-transport-iron",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "world-props-medieval",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "construction-medieval",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "civilian-transport-medieval",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "world-props-gunpowder",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "construction-gunpowder",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "civilian-transport-gunpowder",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "world-props-industrial",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "construction-industrial",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "civilian-transport-industrial",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "world-props-modern",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "construction-modern",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "civilian-transport-modern",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "world-props-future",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "construction-future",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "civilian-transport-future",
+          "category": "town-sheets",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "troop-stone-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-stone-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-stone-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-bronze-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-bronze-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-bronze-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-iron-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-iron-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-iron-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-medieval-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-medieval-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-medieval-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-gunpowder-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-gunpowder-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-gunpowder-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-industrial-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-industrial-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-industrial-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-modern-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-modern-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-modern-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-future-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-future-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-future-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "tower-stone-arrow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-stone-splash",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-stone-slow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-stone-support",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-bronze-arrow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-bronze-splash",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-bronze-slow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-bronze-support",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-iron-arrow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-iron-splash",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-iron-slow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-iron-support",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-medieval-arrow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-medieval-splash",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-medieval-slow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-medieval-support",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-gunpowder-arrow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-gunpowder-splash",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-gunpowder-slow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-gunpowder-support",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-industrial-arrow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-industrial-splash",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-industrial-slow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-industrial-support",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-modern-arrow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-modern-splash",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-modern-slow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-modern-support",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-future-arrow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-future-splash",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-future-slow",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "tower-future-support",
+          "category": "towers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-wolf",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-bandit",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-bear",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-harpy",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-golem",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-griffin",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-wyvern",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-drone",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "portrait-medieval-knight",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-ranger",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-warlock",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-mage",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-paladin",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-barbarian",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-necromancer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-healer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-knight",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-ranger",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-warlock",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-mage",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-paladin",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-barbarian",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-necromancer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-healer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-knight",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-ranger",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-warlock",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-mage",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-paladin",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-barbarian",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-necromancer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-healer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "gear-stone-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-wolfamulet",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-bloodstone",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-aegis",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-codex",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-orb",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-clover",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-lens",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-vitality",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-swiftboots",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-banner",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-treasure",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-rest-camp",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-region-exit",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-rival-camp",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-human-encounter",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-guard-post",
+          "category": "sites",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "title-background",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-stone",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-bronze",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-iron",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-medieval",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-gunpowder",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-industrial",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-modern",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-future",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "rival-identity-1",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-2",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-3",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-4",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-5",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-6",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "ui-materials",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hero-mount-horse",
+          "category": "mounts",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "hero-mount-motor-transport",
+          "category": "mounts",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "hero-mount-future-transport",
+          "category": "mounts",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-knight",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-ranger",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-warlock",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-mage",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-paladin",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-barbarian",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-necromancer",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-healer",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "effect-material-arrow",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-bless",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-haste",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-cure",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-slow",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-bolt",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-fireball",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-resurrect",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-physical-projectiles",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-impact-hit-death",
+          "category": "effects",
+          "plannedResolution": "1K"
+        }
+      ]
+    },
+    "ALL_WORLD_ARTWORK": {
+      "counts": {
+        "1K": 227,
+        "2K": 73,
+        "4K": 180
+      },
+      "highResolutionIndividualRequests": 253,
+      "totalBaselineIdentities": 480,
+      "items": [
+        {
+          "id": "kingdom-terrain-stone",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-bronze",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-iron",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-medieval",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-gunpowder",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-industrial",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-modern",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "kingdom-terrain-future",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "townhall-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-town",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-ruin",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-mill",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-mine",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-dwelling",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-shrine",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "resource-food",
+          "category": "resources",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "resource-wood",
+          "category": "resources",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "resource-stone",
+          "category": "resources",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "resource-gold",
+          "category": "resources",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "knight-mounted-master",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "skill-offense",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-archery",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-armorer",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-wisdom",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-leadership",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-luck",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-tactics",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-logistics",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "skill-firstaid",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-arrow",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-bless",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-haste",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-cure",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-slow",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-bolt",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-fireball",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "spell-resurrect",
+          "category": "skills-spells",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-necromancer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-ancient-healer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "adventure-terrain-plains",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-hills",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-swamp",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-desert",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-snow",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-waste",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-terrain-ruins",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-plains",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-hills",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-swamp",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-desert",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-snow",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-waste",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tactical-terrain-ruins",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-plains",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-hills",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-swamp",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-desert",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-snow",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-waste",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "defense-terrain-ruins",
+          "category": "terrain",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "lumber-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "quarry-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "mine-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "barracks-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "workshop-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "hall-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "armory-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "walls-stone",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "lumber-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "quarry-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "mine-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "barracks-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "workshop-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "hall-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "armory-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "walls-bronze",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "lumber-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "quarry-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "mine-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "barracks-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "workshop-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "hall-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "armory-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "walls-iron",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "lumber-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "quarry-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "mine-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "barracks-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "workshop-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "hall-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "armory-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "walls-medieval",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "lumber-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "quarry-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "mine-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "barracks-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "workshop-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "hall-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "armory-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "walls-gunpowder",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "lumber-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "quarry-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "mine-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "barracks-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "workshop-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "hall-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "armory-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "walls-industrial",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "lumber-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "quarry-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "mine-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "barracks-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "workshop-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "hall-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "armory-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "walls-modern",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "farm-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "lumber-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "quarry-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "mine-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "barracks-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "workshop-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "hall-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "armory-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "walls-future",
+          "category": "buildings",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "world-props-stone",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "construction-stone",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "civilian-transport-stone",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "world-props-bronze",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "construction-bronze",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "civilian-transport-bronze",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "world-props-iron",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "construction-iron",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "civilian-transport-iron",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "world-props-medieval",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "construction-medieval",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "civilian-transport-medieval",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "world-props-gunpowder",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "construction-gunpowder",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "civilian-transport-gunpowder",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "world-props-industrial",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "construction-industrial",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "civilian-transport-industrial",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "world-props-modern",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "construction-modern",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "civilian-transport-modern",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "world-props-future",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "construction-future",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "civilian-transport-future",
+          "category": "town-sheets",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "troop-stone-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-stone-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-stone-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-bronze-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-bronze-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-bronze-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-iron-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-iron-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-iron-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-medieval-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-medieval-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-medieval-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-gunpowder-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-gunpowder-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-gunpowder-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-industrial-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-industrial-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-industrial-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-modern-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-modern-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-modern-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-future-melee",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-future-ranged",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "troop-future-heavy",
+          "category": "troops",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "tower-stone-arrow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-stone-splash",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-stone-slow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-stone-support",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-bronze-arrow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-bronze-splash",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-bronze-slow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-bronze-support",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-iron-arrow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-iron-splash",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-iron-slow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-iron-support",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-medieval-arrow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-medieval-splash",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-medieval-slow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-medieval-support",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-gunpowder-arrow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-gunpowder-splash",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-gunpowder-slow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-gunpowder-support",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-industrial-arrow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-industrial-splash",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-industrial-slow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-industrial-support",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-modern-arrow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-modern-splash",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-modern-slow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-modern-support",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-future-arrow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-future-splash",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-future-slow",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "tower-future-support",
+          "category": "towers",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "attacker-stone-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-stone-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-bronze-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-iron-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-medieval-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-gunpowder-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-industrial-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-modern-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-brute",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-runner",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-archer",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-sapper",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "attacker-future-shaman",
+          "category": "attackers",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-wolf",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-bandit",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-bear",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-harpy",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-golem",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-griffin",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-wyvern",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "creature-drone",
+          "category": "creatures",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "portrait-medieval-knight",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-ranger",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-warlock",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-mage",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-paladin",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-barbarian",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-necromancer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-medieval-healer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-knight",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-ranger",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-warlock",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-mage",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-paladin",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-barbarian",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-necromancer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-powder-healer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-knight",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-ranger",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-warlock",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-mage",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-paladin",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-barbarian",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-necromancer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "portrait-mech-healer",
+          "category": "hero-paintings",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "gear-stone-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-stone-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-bronze-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-iron-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-medieval-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-gunpowder-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-industrial-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-modern-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-helm",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-helm-hood",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-helm-circlet",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-weapon",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-weapon-ranger",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-weapon-caster",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-weapon-barbarian",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-offhand",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-offhand-codex",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-offhand-focus",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-armor",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-armor-field",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-armor-robe",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-boots",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-boots-soft",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "gear-future-accessory",
+          "category": "gear",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-wolfamulet",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-bloodstone",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-aegis",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-codex",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-orb",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-clover",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-lens",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-vitality",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-swiftboots",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "artifact-banner",
+          "category": "artifacts",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "adventure-site-treasure",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-rest-camp",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-region-exit",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-rival-camp",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-human-encounter",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "adventure-site-guard-post",
+          "category": "sites",
+          "plannedResolution": "4K"
+        },
+        {
+          "id": "title-background",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-stone",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-bronze",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-iron",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-medieval",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-gunpowder",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-industrial",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-modern",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "story-future",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "rival-identity-1",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-2",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-3",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-4",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-5",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rival-identity-6",
+          "category": "supporting",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "ui-materials",
+          "category": "supporting",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "hero-mount-horse",
+          "category": "mounts",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "hero-mount-motor-transport",
+          "category": "mounts",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "hero-mount-future-transport",
+          "category": "mounts",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-knight",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-ranger",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-warlock",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-mage",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-paladin",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-barbarian",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-necromancer",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "rig-source-parts-healer",
+          "category": "rig-sheets",
+          "plannedResolution": "2K"
+        },
+        {
+          "id": "effect-material-arrow",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-bless",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-haste",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-cure",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-slow",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-bolt",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-fireball",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-resurrect",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-physical-projectiles",
+          "category": "effects",
+          "plannedResolution": "1K"
+        },
+        {
+          "id": "effect-material-impact-hit-death",
+          "category": "effects",
+          "plannedResolution": "1K"
+        }
+      ]
+    }
+  },
+  "selectedScenario": "TERRAIN_BACKGROUNDS_ONLY",
+  "ownerScopeDecision": "Terrain/backgrounds only: 32 at 4K. Keep 128 equipment,10 artifacts,40 enemy attackers and8 neutral creatures at1K for now. Heroes/mounts/rig/rival49 and army24 remain2K.",
+  "selectedCounts": {
+    "1K": 375,
+    "2K": 73,
+    "4K": 32
+  },
+  "highResolutionIndividualRequests": 105
+}

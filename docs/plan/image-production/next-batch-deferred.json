@@ -1,0 +1,30 @@
+{
+  "deferredAt": "2026-10-03T16:33:35+05:30",
+  "batch": "production-09-20261003",
+  "decision": "DEFERRED_PENDING_OWNER_AUTHORIZATION",
+  "priorJob": {
+    "id": "production-08-20261003",
+    "provider_job_name": "projects/186933974004/locations/global/batchPredictionJobs/6249288878671265792",
+    "liveState": "JOB_STATE_SUCCEEDED",
+    "successfulCount": "30",
+    "collectedLocally": true
+  },
+  "reason": "Batch 09 manifest and 30 spatial guides are fully prepared from demonstrated inventory gaps (30 unrequested siege attackers), and affordability is verified ($71 USD projected with hold vs $80 USD hard cap; $9 headroom). However, the planner report and existing authorizations do not authorize batch 09+. Executor maintains the zero-unauthorized-submission policy and will not submit a paid batch without explicit owner approval.",
+  "evidence": [
+    "docs/plan/image-production/batch-09-manifest-draft.json",
+    "docs/plan/image-production/batch-09-readiness-draft.json",
+    "docs/plan/image-production/IDENTITY-GAP-LEDGER-20261003.json"
+  ],
+  "budget": {
+    "proposedHoldUSD": 6,
+    "productionHoldsUSD": 48,
+    "historicalMockHoldUSD": 2,
+    "safetyReserveUSD": 15,
+    "totalProtectedUSD": 65,
+    "hardCapUSD": 80,
+    "targetUSD": 60,
+    "projectedTotalWithBatch09USD": 71,
+    "billedTotal": null
+  },
+  "next": "Present reconciled job, collection, lock, and budget status to the owner along with the 30-request draft manifest and identity gap ledger to request explicit authorization for Batch 09."
+}

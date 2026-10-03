@@ -1,0 +1,764 @@
+{
+  "at": "2026-10-03T12:26:46.685139+00:00",
+  "scope": "Planner documents and isolated QA only; no provider calls/builds/device tests",
+  "initialSnapshotFiles": 473,
+  "protectedSourceDeliveryTestsDistFiles": 91,
+  "protectedChanges": [],
+  "protectedAddedFiles": [],
+  "protectedRemovedFiles": [],
+  "otherPreexistingFileChanges": [
+    {
+      "file": "assets/production/production-10-20261003/ledger.json",
+      "expectedSHA256": "f48aa5df20a1bec4ac2bff61d63dada40d3b183897be91053885418e10228f63",
+      "actualSHA256": "b11e8bcc33a1b482b14b3ce769bbf52f8bbb048913a4ab6c65c2fd138dfb7815",
+      "unchanged": false
+    },
+    {
+      "file": "assets/production/production-10-20261003/provider-job.json",
+      "expectedSHA256": "658f2b896a234d262f4ea98217cc606a54bab72707599ef420eefca67be782e5",
+      "actualSHA256": "6cc3ec17f13c459a8bb942c3f16acbbc8a7d040b173252456b9eef67fe15be93",
+      "unchanged": false
+    },
+    {
+      "file": "scripts/vertex-production.py",
+      "expectedSHA256": "10a1e71aedcf91cb1b47275e7b5ec4abae4319e410cde26538fcc864616d8372",
+      "actualSHA256": "03607ed3cb542d504dabf9a2eae3854f05cab0ce925d686ae7a27d3b5ebf123f",
+      "unchanged": false
+    }
+  ],
+  "historicalSuffixChecks": [
+    {
+      "file": "CURRENT-STATUS.md",
+      "originalHistoricalSHA256": "1be0b906d7ff4b17ccea0e7a61564033433c9142142e857e0167edcdba7ca9f9",
+      "currentHistoricalSHA256": "1be0b906d7ff4b17ccea0e7a61564033433c9142142e857e0167edcdba7ca9f9",
+      "preserved": true
+    },
+    {
+      "file": "START-HERE.md",
+      "originalHistoricalSHA256": "1cd45dfda316fe4a61f4d5161be24b1771dbc576d242a1060d0a1fbadce89695",
+      "currentHistoricalSHA256": "1cd45dfda316fe4a61f4d5161be24b1771dbc576d242a1060d0a1fbadce89695",
+      "preserved": true
+    },
+    {
+      "file": "RESUME-HERE.md",
+      "originalHistoricalSHA256": "219092dcbd79cc142b7f2930a8c767c1aec32a0a03f7bba64c7a087022304b3a",
+      "currentHistoricalSHA256": "219092dcbd79cc142b7f2930a8c767c1aec32a0a03f7bba64c7a087022304b3a",
+      "preserved": true
+    },
+    {
+      "file": "DECISIONS.md",
+      "originalHistoricalSHA256": "26d67c2b15c1cd0cca923bfd1af2b0f9ca60d60d6e46fbfe2615eed60e1c817a",
+      "currentHistoricalSHA256": "26d67c2b15c1cd0cca923bfd1af2b0f9ca60d60d6e46fbfe2615eed60e1c817a",
+      "preserved": true
+    },
+    {
+      "file": "docs/SESSION-HANDOFF.md",
+      "originalHistoricalSHA256": "64c5ba4bda5fd3e49aafcae13db7c18702c7179c2b6b082a9350d7af649f84b9",
+      "currentHistoricalSHA256": "64c5ba4bda5fd3e49aafcae13db7c18702c7179c2b6b082a9350d7af649f84b9",
+      "preserved": true
+    },
+    {
+      "file": "docs/BUILD-PROGRESS.md",
+      "originalHistoricalSHA256": "90aea11e7123a5e11ce856e1845b5315591ae5eb159f4c66e552d7adc247257d",
+      "currentHistoricalSHA256": "90aea11e7123a5e11ce856e1845b5315591ae5eb159f4c66e552d7adc247257d",
+      "preserved": true
+    },
+    {
+      "file": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "originalHistoricalSHA256": "e288c56f102b44990bff21844b85700ca81ec4758b795bf53b4f11b169777236",
+      "currentHistoricalSHA256": "e288c56f102b44990bff21844b85700ca81ec4758b795bf53b4f11b169777236",
+      "preserved": true
+    },
+    {
+      "file": "docs/plan/README.md",
+      "originalHistoricalSHA256": "b664903f161126caf545179ad07d84b605279fb8bc931ba0a7d4ad8f17c3562b",
+      "currentHistoricalSHA256": "b664903f161126caf545179ad07d84b605279fb8bc931ba0a7d4ad8f17c3562b",
+      "preserved": true
+    },
+    {
+      "file": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "originalHistoricalSHA256": "d528d4dcd0bbef52d68a1590a6fd00ddf98d598cce0a9a0f0862d96fb47cf2cf",
+      "currentHistoricalSHA256": "d528d4dcd0bbef52d68a1590a6fd00ddf98d598cce0a9a0f0862d96fb47cf2cf",
+      "preserved": true
+    },
+    {
+      "file": "docs\\plan\\CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "originalHistoricalSHA256": "310862774ede4ac022f0a572d39efaadf226e56544d19f7ec3518eab9e834748",
+      "currentHistoricalSHA256": "310862774ede4ac022f0a572d39efaadf226e56544d19f7ec3518eab9e834748",
+      "preserved": true
+    }
+  ],
+  "localLinkChecks": [
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/incremental-collection-refresh.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/final-report-checks.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/independent-pixel-checks.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/hall-comparison.png",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/hall-v3-native-backgrounds.png",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/hall-pink-native-crops.png",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/gold-comparison.png",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/actual-uncropped-ui-boxes.png",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/framing-counterfactual.png",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/gate-checks.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/adversarial-gate-probes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/saved-benchmark-scope.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/source-probes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "target": "BATCH-GAP-OWNER-HANDOFF-V3-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "target": "../../qa/planner-verifier-v3-20261003/formula-source-provenance.json",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/GENERATED-ASSET-RECOVERY-REVIEW-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "CURRENT-STATUS.md",
+      "target": "docs/plan/FULL-ASSET-PURCHASE-PLAN.md",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "START-HERE.md",
+      "target": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "RESUME-HERE.md",
+      "target": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "DECISIONS.md",
+      "target": "docs/plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/GENERATED-ASSET-RECOVERY-REVIEW-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/SESSION-HANDOFF.md",
+      "target": "plan/FULL-ASSET-PURCHASE-PLAN.md",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/GENERATED-ASSET-RECOVERY-REVIEW-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/BUILD-PROGRESS.md",
+      "target": "plan/FULL-ASSET-PURCHASE-PLAN.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/GENERATED-ASSET-RECOVERY-REVIEW-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/FULL-ASSET-PURCHASE-PLAN.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/FULL-IMPLEMENTATION-SPEC.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/IMPLEMENTATION-CONTRACT.json",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/GAME-DATA-REFERENCE.json",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "plan/DATA-ADOPTION-LEDGER.json",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "../scripts/benchmark.py",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "../qa/benchmark/report.json",
+      "exists": true
+    },
+    {
+      "document": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "target": "../assets/mocks/INDEX.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "FULL-IMPLEMENTATION-SPEC.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "LANDSCAPE-ORIGINAL-MOCK-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "MAP-SPACE-BLUEPRINT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/README.md",
+      "target": "../../design-preview/review-map-space.html",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "BATCHES-09-13-EXECUTION-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "FIVE-BATCH-AUTHORIZATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "ALL-BATCHES-ASSET-AUDIT-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "GIT-ASSET-STORAGE-PLAN-2026-10-03.md",
+      "exists": true
+    },
+    {
+      "document": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "target": "FULL-ASSET-PURCHASE-PLAN.md",
+      "exists": true
+    }
+  ],
+  "planningHistoryRows": 11,
+  "correctedRowsRemainUnimplemented": true,
+  "finalCollectionSnapshotFile": "incremental-collection-refresh.json",
+  "consumerRows": 300,
+  "collectionOnlyUnverified": 210,
+  "documentSHA256": {
+    "docs/plan/RECOVERY-V3-PLANNER-AUDIT-2026-10-03.md": "a7d6420e3fbfdaac7e2cc08330f0f305fa70d53855896a2e13b7b182a8df41ab",
+    "docs/plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md": "8e2806545d48b5d8887929902afbb4cc87f2a2dffd70dc78434511bb7526b711",
+    "docs/plan/CODING-RECOVERY-AI-V3-NEXT-PROMPT-2026-10-03.txt": "e42434f7691df6dbafb62ba243a4aad74cbf4bbe5b4d683089925aaa0c1a6de9",
+    "docs/plan/BATCH-GAP-OWNER-HANDOFF-V3-2026-10-03.txt": "3fb0d10e264a4b9c4e963cf43d58ba22539eba3a4d223e514e2682c98fe11268",
+    "CURRENT-STATUS.md": "86b9ec171635a8a64457571dd2832acac781f6fda6c2b362eaf556fec33339a6",
+    "START-HERE.md": "1cfb1ebed723b4ff3ea1136a9e5edbc6cf1f973ecf0d59f550387980a9096eb6",
+    "RESUME-HERE.md": "eafe618b0f684a99f8381de7da45acc4d346a7cc8d25dc328ca06016198f6b94",
+    "DECISIONS.md": "be8510d0d16c6f47ff5f5d2e11d90d6fd3753d9b280cddc8dd8f693402ddd6a8",
+    "docs/SESSION-HANDOFF.md": "34f9c5f2de6419728a00854d670e6a2c4756eb2cc37536d7eefe2859e03d5537",
+    "docs/BUILD-PROGRESS.md": "3d9307ac5704a893edb67229f27ea2789a47a7760202e3597463602a8ad94bc9",
+    "docs/PLANNER-VERIFIER-HANDOFF.md": "39f3ead1f94039833394975456a18fc7b8a75aa460e9d62804a876bce52a3dbb",
+    "docs/plan/README.md": "249ce7f40e83a540419b081e1e306b214d18d4837ef64175c0d4fae57c0d2e9c",
+    "docs/plan/FULL-IMPLEMENTATION-SPEC.md": "bff866b82add94eee08d0e633076fde8a314080824dea254fb27ef89dd7c164d",
+    "docs\\plan\\CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt": "5462ac9e570df243c05b6390640df848ad88c8a73732c6176474a99f6e83f4f0"
+  }
+}

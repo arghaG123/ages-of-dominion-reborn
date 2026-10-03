@@ -1,0 +1,18 @@
+{
+  "displayName": "landscape-mocks-20261003-efcd7a7e",
+  "model": "publishers/google/models/gemini-3.1-flash-lite-image",
+  "inputConfig": {
+    "instancesFormat": "jsonl",
+    "gcsSource": {
+      "uris": [
+        "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/design-mocks/landscape-mocks-20261003-efcd7a7e/input.jsonl"
+      ]
+    }
+  },
+  "outputConfig": {
+    "predictionsFormat": "jsonl",
+    "gcsDestination": {
+      "outputUriPrefix": "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/design-mocks/landscape-mocks-20261003-efcd7a7e/output/"
+    }
+  }
+}

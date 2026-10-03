@@ -1,0 +1,107 @@
+{
+  "at": "2026-10-03T10:17:25.636843+00:00",
+  "scope": "read-only evaluate() and safety fixtures; benchmark report inspected, benchmark main NOT run",
+  "reviewRows": 90,
+  "reviewSourceFresh": 90,
+  "reviewSourceStale": 0,
+  "selectedRows": 85,
+  "selectedFresh": 85,
+  "outputStale": [
+    {
+      "batch": "production-03-20261003",
+      "id": "skill-offense",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "resource-food",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "resource-wood",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "resource-stone",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "resource-gold",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "townhall-stone",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "farm-stone",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "lumber-stone",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "quarry-stone",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "mine-stone",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "kingdom-terrain-stone",
+      "reason": "visual note is not bound to the current derivative hash"
+    },
+    {
+      "reason": "scene review is not bound to the current composite, constituents, registration and camera"
+    }
+  ],
+  "scene": {
+    "status": "REJECTED_STALE_HASH",
+    "bound": false
+  },
+  "fixtures": {
+    "missingDerivativePassRejected": true,
+    "staleVisualNotApplied": true,
+    "changedOutputDoesNotKeepOldVisual": true,
+    "registryMissingPathRejected": true,
+    "wrongBatchRejected": true,
+    "staleSceneRejected": true
+  },
+  "savedBenchmark": {
+    "at": "2026-10-03T09:20:07.569931+00:00",
+    "checks": 354,
+    "statuses": {
+      "PASS": 354
+    },
+    "assets": 210,
+    "batches": {
+      "production-01-20261003": 30,
+      "production-02-20261003": 30,
+      "production-03-20261003": 30,
+      "production-04-20261003": 30,
+      "production-05-20261003": 30,
+      "production-06-20261003": 30,
+      "production-07-20261003": 30
+    },
+    "sourceGateCounts": {
+      "PASS": 53,
+      "FAIL": 37,
+      "REJECTED_STALE_HASH": 120
+    },
+    "manual": {
+      "UNVERIFIED": 11
+    },
+    "productApproved": false
+  }
+}

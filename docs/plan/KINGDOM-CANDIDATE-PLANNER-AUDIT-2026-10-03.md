@@ -1,0 +1,66 @@
+# Independent candidate and current-status audit — 3 October 2026
+
+**Closing local refresh, approximately19:50 IST:** batch15 has since collected at19:43:22 IST. Batches01–15 contain450 originals/445 IDs, all450 hashes match. Batch16 is saved PENDING/PROVIDER_ACTIVE, submitted19:43:03 IST; no live query. Current16-batch retained holds+mock/reserve sum113USD. The earlier420/15-pending/107USD snapshot below remains dated audit history. Producer47.856USD reconciliation still covers01–13 only; adding14–16 holds gives65.856USD conditional exposure, not an independently approved bill. Executor must rediscover current records. Candidate, guide, game and package findings are unchanged.
+
+Local snapshot at approximately 19:45 IST. Planner/verifier only. New files are scoped QA diagnostics, browser captures and planning documents. No game/recovery implementation, provider query, submission/collection, paid regeneration, production/budget/lock edit, build, device test, executor message or delegation occurred.
+
+The executor completed the bounded candidate-preview task, with useful framing and picking improvements. Neither that task nor the supplied report establishes a completed game. **Recommend revising the candidate before adopting its physical registration or guide.** Its frame-fit and site-count results are useful; physical grounding, mature placement and finished terrain remain open. Owner acceptance remains NOT_OWNER_ACCEPTED.
+
+## Verified results and limits
+
+| Area | Verdict | Evidence and practical meaning |
+|---|---|---|
+| Hall, active contract and guide identities | PASS | Hall v3 `f359a8b72100be8ad78eaf61eede19bc8b2db3bd0a1d071050a51edce22cc37c`; both active contract copies `43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd`; recovery guide `609d3195018ccf448f339f79e45fe90b9e5adfb2859674e40383144d2106f848` match current bytes. Live Hall scale is 0.1312. Candidate was not adopted. |
+| Candidate envelope and transforms | PASS, bounded | Camera [60,-10,25,35,170,165], uniform Hall transform x=.34u+402, y=.34v+32.86. Actual alpha>16 bounds [0,21,1024,1000) map to inclusive source [402,40]..[749.82,372.52]. Roof/base apron remain in frame. No nonuniform warp or rejected +193 translation. |
+| Candidate/preview/guide metadata agreement | PASS | Preview data exactly equals candidate JSON; guide camera/Hall/points/sites/roads/bridges and source frame agree. This does not prove the physical base or resulting painting agrees. |
+| Plot/road exclusion | PASS, bounded | 18 sites, 17 empty pads, nine upper/eight lower, disjoint world rectangles inside bounds; independently rasterized 16px road strips do not intersect plot polygons. Existing sampled Hall-envelope exclusion passes. |
+| Picking and resize | PASS, bounded | Fresh browser diagnostic picked all 18 centres at all four viewports, blocked open-panel click-through, rejected letterbox clicks and picked Proposed P01 after phone-to-desktop resize in Compare. No page errors. This is review-page behavior, not runtime candidate adoption. |
+| Domain and movement corrections | PASS, bounded | Fresh `node --test tests/kingdom-layout-candidate.test.mjs tests/domain.test.mjs`: 8/8 pass. Illegal-save fixtures, persisted remaining movement, End Day and unresolved-guard blocking are preserved. 35 tests exist in source; full 35-pass claim was not independently rerun. |
+| Saved package closure | PASS, bounded | All 23 asset paths in saved closure match dist hashes; all 16 source/data files match their dist counterparts. No fresh build or standalone browser/device acceptance implied. |
+| Production originals | PASS, technical only | Current 01–14 collection reports contain 420 originals / 415 distinct IDs. All 420 file hashes match reports. No full new gallery/matte/rig review. |
+| Physical registration | UNVERIFIED | Two plinth points and cobbles do not establish a full contact polygon, doorway threshold or hidden corners. See below. |
+| Safe-area metadata / mature fit | FAIL as sufficient evidence | Actual preview dimensions differ from metadata; 14 rectangle pairs overlap; full-footprint panel clearance is not established. |
+| Current terrain/composite | FAIL | Existing terrain contains painted plot borders and huts/logs inside required areas; Hall dirt remains a pasted apron. Hatching identifies a problem rather than repairing it. |
+| Full gameplay, textured rigs, native/device, owner acceptance | UNVERIFIED / incomplete | Tactical is disabled, Defense lacks simulation and War buttons are messages. No new native evidence. |
+
+Evidence: `qa/planner-layout-audit-20261003/artifact-checks.json`, `browser-checks.json`, `scope-checks.json`, `core-probes.json` and four scoped screenshots with panel open and closed. Executor captures and survey plates were also inspected at native and intended display size.
+
+## Physical-base and entrance uncertainty
+
+The proposed townhall rectangle [3.757,3.324,3.8,1.9] projects to [(478.52,243.77),(706.52,205.77),(754.02,272.27),(526.02,310.27)]. Its front centre (640.02,291.27) agrees with the chosen entrance cobble (640,291.26), because the builder explicitly constructs the footprint around that point. This verifies arithmetic, not independently measured physical registration.
+
+The front plinth mark (400,820) transforms to (538,311.66), world (3.92064,5.31047), outside the chosen front edge y=5.224 by .08647 world units (about 3px perpendicular source displacement). The right cobble is outside too. Manual uncertainty may explain a small residual: this alone is not proof the building is invalid. It does show why a threshold/contact survey with tolerance and visible/inferred edges is still needed. There is no measured complete foundation polygon, rear corner or doorway midpoint; do not invent hidden four-corner precision. Roof points are vertical silhouettes, not ground contacts.
+
+The source road begins (644.6,297.4), approximately 7.67px from the cobble. Its 16px corridor may connect, but exact threshold-to-apron continuity remains unmeasured. A physical contact polygon/pivot can be used for this irregular base; no mandatory invented parallelogram.
+
+The native annotated plate puts a black legend over the roof tip; the highest point is identified in metadata but obscured in that plate. Preserve it and create a new evidence plate with the legend outside the measured subject. Hall v3 remains a valuable repair: no large new interior hole was seen. A pink patch near (1006,486) is visible in the 348px plate, with dirt-edge contamination/ground island still present. Do not globally relax alpha thresholds or repaint the Hall just to avoid registration work.
+
+## Preview, guide and mature layout
+
+Actual preview stage heights are 283/332/728/628px for 825×375,933×424,1180×820,1280×720; metadata assumes 263/312/708/608 by copying the game's 112px chrome budget. The preview actually uses 92px. At phones, actual fit scales are .36849/.43229 rather than .3424/.4062; panel left edges are source x1134.42/1193.45 rather than 1168.4/1225.8. At desktop actual panel x1118.47 differs from 1132.6. Tablet source fit happens to agree, although stage height does not. Keep runtime-intended and measured-preview geometry explicit instead of claiming they are identical.
+
+Tablet P11 extends 19.34 source pixels beyond the panel's left edge (about16.59 CSS px); its centre stays selectable. Centre-picking does not prove the whole pad is unobscured. Phone plot footprints are much smaller than 48px; the review page lacks the runtime's keyboard plot controls/48px targets. Use a contextual accessible target list or deliberate focus behavior without overlapping hit regions.
+
+There are 14 pairwise mature rectangle overlaps, including P01/P02, P08/P12, P13/P16 and P15/P17. Rectangles are arbitrary 78–144px heights and contain no real building silhouettes, occlusion/access evaluation or progression. Some visual overlap may be acceptable with correct depth sorting, but the fixture supplies no evidence for that judgment. Upgrade it using actual available structure bounds, front doors, selection anchors, depth, routes and annotated acceptable versus blocking occlusion. Do not claim nonoverlap from a screenshot or the five candidate tests: they contain no mature-fixture assertion.
+
+The guide is a spatial input diagram. Its 1376×768 ratio is about1.792, a landscape frame close to16:9; record any provider resampling. Its projected river is an idealized strip, the perimeter only has sides/ridge, and the missing rectangle marks one terrain defect, not complete terrain coverage. Its sparse left/two-column right layout is more rectilinear than the rounded, inhabited approved direction. Preserve natural dressing outside reserved sites/routes; the owner did not require a barren valley.
+
+## Newer batch evidence changes the supplied report
+
+Production14 is already locally collected; production15 has a saved PROVIDER_ACTIVE / JOB_STATE_PENDING lock, submitted at19:33:20 IST. This is saved local state, not a live provider query. 16–17 manifests exist; absence of their submitted directories at this snapshot is not a live job census. Batch executor retains authorized14–17 ownership; no18/supplemental/retry purchase is inferred.
+
+**The Kingdom v4 scene already exists:** `assets/production/production-14-20261003/images/30-kingdom-stone-day1-composition-v4.png`, SHA `5dfdc20e8724acf48781ceae15d00a35899c855a26408a8e7656f84165f23c76`. It improves Stone identity, intact full roof, cohesive lighting/natural ground and removal of HUD/grid/finished walls. Preserve it as a composition reference/recovery candidate. It does not match the common geometry: guide crossing is around source(1150,300), while the painting uses two foreground log spans around y580–680 and a much wider lower river. Individual required17 clearings and exact site/route correspondence are not verified. Hall architecture also differs from the v3 hide-wrapped subject. Spatial fidelity FAIL; scoped complete artwork/owner/runtime acceptance remains UNVERIFIED.
+
+Submitted batch14 used a **different** guide SHA `468ee7a897eb934d965a26a44c8644bce1c1524468802d7531c354720cd0f014`, visibly still labelled NOT_OWNER_ACCEPTED. Its legend was moved over the upper roof contour and perimeter lines removed. The immutable input contains only this guide and the style reference; preserved Hall v3 was mentioned in text but was not a third image input. This is a readiness/provenance gap, not evidence of owner approval. Do not amend submitted records or replace the recovery guide to make hashes appear equal. No record examined establishes owner acceptance before submission.
+
+`KINGDOM-SCENE-CORRECTION-STATUS` is stale on unsubmitted14/no-generated-scene/zero-active claims. Its quoted old instructions do not override the latest14–17 authorization. Its statement that .3288 shrank the Hall to force a fit reverses the evidence: that heuristic is larger than .1312 and clips. Its style SHA629dff... is wrong; current style SHA2f709b... matches the original landscape mock manifest and prior storage record, so this is a documentation error rather than demonstrated mock loss.
+
+## Accounting and remaining gameplay
+
+Saved benchmark at18:49:56 IST covers390 sources, 537 automated PASS /1 FAIL (`budget-committed`). It is stale relative to420 originals. Current retained6USD holds for15 batches plus mock2/reserve15 sum107USD. The producer reconciliationTrail47.856USD covers01–13 only; adding14/15 holds gives59.856USD conditional exposure under its schema, not a verified total or invoice. Future16/17 and evidence/invoice uncertainty remain. Preserve the FAIL/UNVERIFIED distinction and let the producer substantiate accounting; never rewrite its ledger from this chat or suppress the consumer cap.
+
+Improved campaign validation still accepts the diagnostic malformed active battle with invalid HP/speed/positions and an unknown queue ID. Independently, the scalar battle engine accepts melee from(0,9) to(6,0) with valid scalar stats. These are concrete gaps in a positioned engine, not regression claims against the preserved movement fix. Defend/movement/board legality and several spells are absent; Tactical resolve is disabled, Defense has no fixed-step lane/firing/interception and all five War choices only display messages. Rig.js contains articulated coordinate samples, but no finished textured attachments. Continue useful implementation of the documented legal Tactical/encounter/settlement path independently of the guide decision. Positive morale remains PENDING_OWNER_DECISION.
+
+## Owner decision and next action
+
+Review `design-preview/kingdom-layout-candidate.html` Current/Proposed/Compare and the newly collected scene. **Do not adopt v1 as a physically validated runtime contract or treat v4 guide as owner-accepted.** Recommended next action is revise the measured spatial candidate and reuse-audit the already collected painting, with no automatic repurchase. The later concrete owner decision is whether to adopt that corrected version's spatial arrangement. That decision does not approve the final painting, runtime, native build or spending. Meanwhile documented Tactical work can continue. Give the coding/recovery AI the accompanying `CODING-RECOVERY-POST-CANDIDATE-PROMPT-2026-10-03.txt`.

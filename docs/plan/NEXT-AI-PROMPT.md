@@ -1,0 +1,52 @@
+> **LATEST OWNER CORRECTION — planner/verifier only, 3 October 2026:** This chat creates the specification, execution instructions, acceptance criteria and reports. Another AI must execute image batches, game code, builds, collection and regeneration. Do not resume execution or delegate it from this chat. This supersedes previous implementation/production execution authorization interpreted for this chat. Approved landscape appearance direction, full scope and budget constraints persist. Read the current report at `docs/PLANNER-VERIFIER-HANDOFF.md`; older execution status below is historical.
+
+> **CURRENT OWNER AUTHORITY — 3 October 2026:** generated landscape mock direction approved despite synchronization defects; fresh implementation and useful Vertex `gemini-3.1-flash-image` batches authorized. Whole game LANDSCAPE. Hard US$80/aim$60, useful30 per batch, one active/unknown in supplied project; once terminal submit next prepared useful batch BEFORE fetching previous. Old no-code/portrait/Flash-Lite/collect-before-next instructions below are HISTORICAL. Canonical complete spec: [FULL-IMPLEMENTATION-SPEC.md](FULL-IMPLEMENTATION-SPEC.md). Technical/asset/composite/game/native acceptance remain separate.
+
+> **Latest authority — 3 October 2026:** whole-game LANDSCAPE confirmed; original Vertex design mocks authorized, reuse optional for this scope. Read [the new plan](LANDSCAPE-ORIGINAL-MOCK-PLAN-2026-10-03.md). Older portrait/reuse/no-generation instructions are historical. Exactly30/single-active/unknown-job restrictions and feedback-before-coding persist. Thirty briefs are drafted; zero generated. Supplied project access awaits local account sign-in; remote operations remain UNKNOWN.
+
+# Next AI prompt — begin with design review
+
+Current canonical project: `C:/dev/ages-of-dominion-reborn`. It has independent local Git on `codex/rebuild`, documentation and references. It contains no implemented game. Read root AGENTS, START-HERE, CURRENT-STATUS, DECISIONS, docs/SESSION-HANDOFF and BUILD-PROGRESS, then all documents in docs/plan/README.md. Reuse known setup from INSTALLED-ENVIRONMENT.md; do not ask the owner to repeat recorded settings/apps/tools.
+
+The owner explicitly REJECTED version1. Read `docs/DESIGN-FEEDBACK.md`; revise version2 before requesting another review. Preserve before screenshots. Every section requires a real visual check, including all 30 views and portrait/tall/landscape. An HTML load or navigation pass is not acceptance. Do not start game code from the rejected layout.
+
+## Current authorized work
+
+1. Review all nineteen supplied visual references and the reviewed raw/processed art inventories. The old game and `C:/dev/aod-art-src` are read-only sources; preserve user files and saves.
+2. Inspect or complete the root `design-preview/` gallery. Show proposed previews for title, Stone day-one/mature Kingdom, eight age treatments, Adventure, Tactical, Defence, Hero/six gear slots, Forge/Inventory, Army, story/rival/quests/tutorial and Settings/local saves/recovery. Existing reference-image panels are comparison evidence, not proof the proposed design is implemented.
+3. Compare camera, world footprint, citadel, walls, river/roads, realistic materials, lighting, edge controls and compact resource HUD. Explain provisional reused components and missing dynamic/animation assets. Do not claim exact fidelity or approval from a screenshot filename, decorative JPEG or test count.
+4. Obtain the owner's feedback on each section and revise. Record preview version, changes and acceptance. Do not start game source, dependency installation, native builds, APK installation or paid image jobs before the explicit post-review coding instruction.
+5. Update CURRENT-STATUS, DECISIONS, SESSION-HANDOFF and BUILD-PROGRESS for the next session. A documentation or visual audit does not substitute for owner feedback.
+
+## Future implementation, after the feedback/coding gate
+
+- Independently author fresh data, state, commands, rules, saves, scenes, UI and platform code in this project. Do not restore the archived unused draft, copy old executable gameplay/core/client modules, symlink runtime to the old repo, or package its old bundle. Matching generated media and safe installation settings may be copied with a hash ledger.
+- Deliver a state-aware reference-matched Kingdom first, with the upper Town Hall/citadel, independent walls/buildings/scaffolds, real selection/build/upgrade/production and ten building types over every owner-approved reference-mapped plot. A static panorama with hotspots cannot pass the final game gate.
+- Link Kingdom economy/army/hero/equipment to continuous Heroes-inspired Adventure, separate terrain-rich turn-based Tactical warfare and winding-lane Defence. One authoritative campaign owns resources, casualties, rewards and story; settlement is idempotent. Keep navigation16×10, Tactical7 columns ×10 rows/commander(0,9), Defence hidden9×15 and fixed1/60 simulation.
+- Complete all eight ages, eight classes, six functioning gear slots, four quality tiers, ten artifacts, three troop roles, eight neutral creature identities with dwelling recruitment and four flyers, four strategic tower families, five attacker roles, nine skills/eight spells, tutorial, story/quests/rival, settings/audio and recoverable local saves. First implementation slices do not remove full product scope.
+- Include campaign Siege, Tactical Duel, Endless, isolated no-consequence Skirmish and local shared-seed Challenge with explicit consequence rules. Extra camera/PvP/gacha/enhancement sample ideas remain documented expansion tracks without dead controls.
+- Use GAME-DATA-REFERENCE.json as frozen reference and document deliberate changes. Author new rules rather than import old modules. Sparse New Game starts TownHall1, reference-mapped empty pads and separate unbuilt perimeter; 17 pads are independently counted, while type/multiplicity/balance mapping requires owner feedback; retained supplies are not painted structures. All six gear positions use real compatible items and comparison/stat effects.
+- Runtime is fully local/offline with zero ANY declared/granted device permissions, including INTERNET/VIBRATE. Use installed compatible tool settings, independently authored dependencies/native shell and isolated preview ID. The current build goal is a playable local-test APK; Cloud/account/Play Store/publication/release branding are excluded. Preserve the permanent application ID metadata and the old installed game.
+- Fresh applicable tests, build checks, actual browser journeys, visual comparisons at424×933/360×800/820×1180 and physical-device evidence are required. Old test passes cannot certify new work. Keep code implementation, automated verification, visual review and owner acceptance separate.
+
+## Image production policy for the later authorized phase
+
+Inventory before buying. Use exactly30 useful output positions per submitted Vertex batch, numbered01–30. Only one batch may be submitting/queued/running/cancelling/unknown globally across every session, provider and model. Persist a durable lock and ledger with operation ID and requested items; reconcile interrupted/unknown status before any new submission. Never fallback or regenerate while active. Collect and review terminal outputs first, then close the lock and prepare the next full30 batch. Failed/rejected outputs join useful backlog in that next full batch. If fewer than30 useful items/variants remain, defer and ask a focused question rather than purchase filler. Known authorization does not require repeated blanket approval; genuinely missing credentials/budget/new scope does require resolution. No generator code or image job is part of the current plan/preview phase.
+
+
+## Latest scoped revision — 3 October 2026
+
+Review `design-preview/review-reference-direction.html` for Resources, Adventure and Tactical. The AVIF was browser-decoded and visually inspected. Phone resources now show grain/provisions, logs, rock and coins at32px height above names/amounts. Existing aerial forest/river/road and ruins/stone-bridge art replaces the empty-grass studies; settlements/sites/guards/treasure and six count/health-bearing formations are added as static scale studies. Precise reuse and remaining gaps: `docs/plan/REFERENCE-DIRECTION-2026-10-03.md`.
+
+Nine scoped literal captures at375x825/424x933/820x462 and shell checks at375/768/1280 passed asset/JS, resource/count bounds and48px scene button checks; final selected pixels were reviewed. Resource text contrast is approximately9.0:1/7.1:1. The375px gallery shell contains a341px scene. This is neither a full30-view audit nor physical-device/visual acceptance.
+
+Still missing: clean transparent resource objects, larger fortified/biome-rich Adventure region with stone bridge, matching aerial site/actor camera, class-correct mounted Gawain and directional gait, high-detail Tactical terrain registered to legal7x10 cells. Some provisional cells/poses overlap painted obstacles. Current previews improve density but still fall short of the new target. Every section remains pending/revision-needed. Old game/raw art preserved read-only; no game source, installs/builds/APKs, image jobs or billing changes. Single-agent work only.
+
+
+
+## Latest owner correction — 3 October 2026
+
+Owner REJECTED the latest assembly as still far from the beautiful real-game-looking mocks. Resource icons were too big; no resources are wanted in battles. Phones may rotate to provide Adventure/Tactical more space. Latest comparison: `design-preview/review-mock-comparison.html`; all26 supplied files: `design-preview/all-owner-mocks.html`; detailed updated contract: `docs/plan/ROTATION-AND-MOCK-COMPARISON-2026-10-03.md`.
+
+Actual corrections:18px symbols in28px corner rail; no resource HUD in Tactical/Defense; auto portrait/landscape resize and edge-to-edge static review via `index.html?stage=1#adventure` / `#tactical`; smaller contextual controls; sharper unchanged raw Tactical ruins source. Seven scoped captures pass technical checks. These do not establish game-like finish: Adventure source/detail and both modes' camera, grounding, scale, facing and authored composition remain visual failures. Prior resource32px/rail72px and portrait-restriction claims are superseded. Owner acceptance/coding gate remains unresolved. No image job, game source, dependencies or APK work; single-agent only; old game/raw art preserved.
+

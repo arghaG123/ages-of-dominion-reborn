@@ -1,0 +1,32 @@
+{
+  "name": "projects/186933974004/locations/global/batchPredictionJobs/410583068017950720",
+  "displayName": "landscape-mocks-20261003-efcd7a7e",
+  "model": "publishers/google/models/gemini-3.1-flash-lite-image",
+  "inputConfig": {
+    "instancesFormat": "jsonl",
+    "gcsSource": {
+      "uris": [
+        "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/design-mocks/landscape-mocks-20261003-efcd7a7e/input.jsonl"
+      ]
+    }
+  },
+  "outputConfig": {
+    "predictionsFormat": "jsonl",
+    "gcsDestination": {
+      "outputUriPrefix": "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/design-mocks/landscape-mocks-20261003-efcd7a7e/output/"
+    }
+  },
+  "outputInfo": {
+    "gcsOutputDirectory": "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/design-mocks/landscape-mocks-20261003-efcd7a7e/output/prediction-model-2026-10-03T01:46:38.146328Z"
+  },
+  "state": "JOB_STATE_SUCCEEDED",
+  "completionStats": {
+    "successfulCount": "30"
+  },
+  "createTime": "2026-10-03T01:46:38.891223Z",
+  "startTime": "2026-10-03T01:48:18.343089Z",
+  "endTime": "2026-10-03T01:50:52.786093Z",
+  "updateTime": "2026-10-03T01:50:52.786093Z",
+  "encryptionSpec": {},
+  "modelVersionId": "1"
+}

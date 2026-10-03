@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-03T13:20:42.894Z",
+  "batch": "production-14-20261003",
+  "status": "DRAFT_NOT_SUBMITTED_HELD_PENDING_GUIDE_AND_OWNER_AUTHORIZATION",
+  "requests": 30,
+  "locationsScanned": 48,
+  "activeOrUnknownJobs": 0,
+  "committedReservationUSD": 47.856,
+  "newReservationUSD": 6,
+  "safetyReserveUSD": 15,
+  "hardCapUSD": 80,
+  "targetUSD": 60,
+  "totalProjectedCommittedUSD": 53.856,
+  "affordableUnderTarget": true,
+  "affordableUnderHardCap": true,
+  "headroomRemainingUSD": 26.144,
+  "readyTechnicalPrerequisites": false,
+  "readyForSubmission": false,
+  "submissionBlockers": [
+    {
+      "code": "CORRECTED_SPATIAL_GUIDE_NOT_AVAILABLE",
+      "detail": "An accepted, versioned spatial guide that integrates all 18 sites, 17 empty plots, river-right approach, and full vertical envelope without clipping or shrinking is not yet available on disk. Current proposal stone-framing-proposal.json remains PROPOSAL_NOT_ACCEPTED. Per owner directive (\"If the corrected guide is unavailable, keep this request pending\"), this request is held pending."
+    },
+    {
+      "code": "OWNER_AUTHORIZATION_REQUIRED_FOR_BATCH_14",
+      "detail": "The owner explicitly instructed: \"Never modify a submitted batch or start an additional batch14 under this instruction.\" Previous authorization covered batches 09-13 (150 requests) only."
+    }
+  ],
+  "backlogIntegrity": {
+    "displacedItem": "gear-industrial-boots",
+    "status": "COLLECTED_IN_BATCH_13_PRESERVED_IN_INVENTORY",
+    "collectedLocation": "assets/production/production-13-20261003/images/30-gear-industrial-boots.png"
+  },
+  "costBound": {
+    "imageAndAnyOutputUpperUSD": 3.6864,
+    "inputUpperUSD": 0.09,
+    "batchReservationIncludesUSD": 6,
+    "actualInvoice": null
+  }
+}

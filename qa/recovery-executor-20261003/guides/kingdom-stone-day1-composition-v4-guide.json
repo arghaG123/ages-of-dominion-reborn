@@ -1,0 +1,500 @@
+{
+  "requestId": "kingdom-stone-day1-composition-v4",
+  "status": "READY_FOR_REVIEW",
+  "ownerAcceptance": "NOT_OWNER_ACCEPTED",
+  "guide": {
+    "file": "qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v4-guide.png",
+    "sha256": "609d3195018ccf448f339f79e45fe90b9e5adfb2859674e40383144d2106f848",
+    "size": [
+      1376,
+      768
+    ],
+    "aspect": "1376x768 shared kingdom source frame (same size as kingdom.png; 16:9-class landscape, ratio 1.792)",
+    "status": "READY_FOR_REVIEW",
+    "ownerAcceptance": "NOT_OWNER_ACCEPTED",
+    "labelsAllowed": true,
+    "labelsMustNotAppearInFinalArt": true
+  },
+  "camera": [
+    60.0,
+    -10.0,
+    25.0,
+    35.0,
+    170.0,
+    165.0
+  ],
+  "sourceSize": [
+    1376,
+    768
+  ],
+  "hall": {
+    "file": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+    "sha256": "f359a8b72100be8ad78eaf61eede19bc8b2db3bd0a1d071050a51edce22cc37c",
+    "width": 1024,
+    "height": 1024,
+    "matrix": [
+      [
+        0.34,
+        0.0,
+        402.0
+      ],
+      [
+        0.0,
+        0.34,
+        32.86
+      ]
+    ],
+    "uniform": true,
+    "anchorImage": [
+      700,
+      760
+    ],
+    "anchorKind": "entrance cobble, medium confidence",
+    "spriteSourceRect": [
+      402.0,
+      40.0,
+      749.82,
+      372.52
+    ]
+  },
+  "surveyPoints": [
+    {
+      "id": "roof-tip",
+      "image": [
+        448,
+        21
+      ],
+      "confidence": "high",
+      "kind": "highest opaque ridge stick, part of the roof silhouette",
+      "source": [
+        554.32,
+        40.0
+      ]
+    },
+    {
+      "id": "roof-ridge-stick",
+      "image": [
+        399,
+        25
+      ],
+      "confidence": "high",
+      "kind": "adjacent ridge stick on the main roof",
+      "source": [
+        537.66,
+        41.36
+      ]
+    },
+    {
+      "id": "plinth-front-stone",
+      "image": [
+        400,
+        820
+      ],
+      "confidence": "medium-high",
+      "kind": "crosshair sits on the lower course of the front stone plinth",
+      "source": [
+        538.0,
+        311.66
+      ]
+    },
+    {
+      "id": "plinth-left-of-door",
+      "image": [
+        540,
+        770
+      ],
+      "confidence": "medium-high",
+      "kind": "stone plinth immediately left of the left door post, not the post base",
+      "source": [
+        585.6,
+        294.66
+      ]
+    },
+    {
+      "id": "entrance-cobble",
+      "image": [
+        700,
+        760
+      ],
+      "confidence": "medium",
+      "kind": "cobble in the entrance approach, in front of the curtained opening; not a surveyed door-frame midpoint",
+      "source": [
+        640.0,
+        291.26
+      ]
+    },
+    {
+      "id": "entrance-right-cobble",
+      "image": [
+        800,
+        755
+      ],
+      "confidence": "medium",
+      "kind": "cobble beside the right curtain, outside the opening",
+      "source": [
+        674.0,
+        289.56
+      ]
+    },
+    {
+      "id": "dirt-not-foundation",
+      "image": [
+        160,
+        800
+      ],
+      "confidence": "high",
+      "kind": "bare dirt in front of the plinth; a negative example, not a foundation corner",
+      "source": [
+        456.4,
+        304.86
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "id": "townhall",
+      "rect": [
+        3.757,
+        3.324,
+        3.8,
+        1.9
+      ],
+      "role": "civic-hall"
+    },
+    {
+      "id": "P01",
+      "region": "upper",
+      "rect": [
+        0.3,
+        2.3,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P02",
+      "region": "upper",
+      "rect": [
+        0.3,
+        3.7,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P03",
+      "region": "upper",
+      "rect": [
+        0.3,
+        6.45,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P04",
+      "region": "lower",
+      "rect": [
+        0.3,
+        8.55,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P05",
+      "region": "upper",
+      "rect": [
+        8.7,
+        2.45,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P06",
+      "region": "upper",
+      "rect": [
+        8.7,
+        4.3,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P07",
+      "region": "upper",
+      "rect": [
+        8.7,
+        6.15,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P08",
+      "region": "lower",
+      "rect": [
+        8.7,
+        8.55,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P09",
+      "region": "upper",
+      "rect": [
+        10.3,
+        2.45,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P10",
+      "region": "upper",
+      "rect": [
+        10.3,
+        4.4,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P11",
+      "region": "upper",
+      "rect": [
+        10.3,
+        6.3,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P12",
+      "region": "lower",
+      "rect": [
+        8.35,
+        9.8,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P13",
+      "region": "lower",
+      "rect": [
+        2.05,
+        8.55,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P14",
+      "region": "lower",
+      "rect": [
+        3.65,
+        8.55,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P15",
+      "region": "lower",
+      "rect": [
+        6.75,
+        8.55,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P16",
+      "region": "lower",
+      "rect": [
+        2.05,
+        9.8,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    },
+    {
+      "id": "P17",
+      "region": "lower",
+      "rect": [
+        6.2,
+        9.8,
+        1.4,
+        1.2
+      ],
+      "day1": "empty"
+    }
+  ],
+  "roads": [
+    [
+      [
+        5.66,
+        5.4
+      ],
+      [
+        5.66,
+        10.45
+      ]
+    ],
+    [
+      [
+        2.05,
+        8.05
+      ],
+      [
+        11.4,
+        8.05
+      ]
+    ],
+    [
+      [
+        2.05,
+        2.9
+      ],
+      [
+        2.05,
+        8.05
+      ]
+    ],
+    [
+      [
+        8.2,
+        2.6
+      ],
+      [
+        8.2,
+        8.05
+      ]
+    ],
+    [
+      [
+        11.4,
+        8.05
+      ],
+      [
+        12.5,
+        7.6
+      ],
+      [
+        13.15,
+        7.6
+      ]
+    ]
+  ],
+  "bridges": [
+    {
+      "id": "right-crossing",
+      "rect": [
+        12.15,
+        7.2,
+        1.55,
+        0.85
+      ],
+      "cells": [
+        [
+          13,
+          7
+        ]
+      ],
+      "approaches": [
+        [
+          12,
+          7
+        ]
+      ]
+    }
+  ],
+  "blockedRiverColumn": 13,
+  "missingTerrain": {
+    "id": "civic-terrace-and-entrance-apron",
+    "sourceRect": [
+      416,
+      284,
+      742,
+      373
+    ],
+    "existing": "incompatible",
+    "finding": "Pixels exist here but they are painted guide plots, log piles and crossing dirt. They are not a clear raised terrace or entrance apron. Do not blur, clone or flat-fill them."
+  },
+  "viewportSafe": [
+    {
+      "viewport": [
+        825,
+        375
+      ],
+      "frame": [
+        825,
+        263
+      ],
+      "scale": 0.3424,
+      "panelLeftSourceX": 1168.4
+    },
+    {
+      "viewport": [
+        933,
+        424
+      ],
+      "frame": [
+        933,
+        312
+      ],
+      "scale": 0.4062,
+      "panelLeftSourceX": 1225.8
+    },
+    {
+      "viewport": [
+        1180,
+        820
+      ],
+      "frame": [
+        1180,
+        708
+      ],
+      "scale": 0.8576,
+      "panelLeftSourceX": 1040.2
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "frame": [
+        1280,
+        608
+      ],
+      "scale": 0.7917,
+      "panelLeftSourceX": 1132.6
+    }
+  ],
+  "safeFrame": [
+    24,
+    24,
+    1352,
+    744
+  ],
+  "note": "Input guide only. The batch AI copies an accepted guide into its own records later. This file is not a batch submission."
+}

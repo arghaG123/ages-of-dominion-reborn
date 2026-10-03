@@ -1,0 +1,26 @@
+"""Prepend current planner handoff pointers while preserving prior document bytes."""
+from pathlib import Path
+import hashlib,json
+ROOT=Path(__file__).resolve().parents[2];OUT=Path(__file__).resolve().parent
+audit='ALL-BATCHES-ASSET-AUDIT-2026-10-03.md'
+policy='ASSET-ACCEPTANCE-CLARIFICATION-2026-10-03.md'
+code='CODING-RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt'
+batch='BATCH-GENERATION-AI-NEXT-PROMPT-2026-10-03.txt'
+storage='GIT-ASSET-STORAGE-PLAN-2026-10-03.md'
+updates={}
+for rel,base in [('CURRENT-STATUS.md','docs/plan/'),('START-HERE.md','docs/plan/'),('RESUME-HERE.md','docs/plan/'),('DECISIONS.md','docs/plan/'),('docs/PLANNER-VERIFIER-HANDOFF.md','plan/'),('docs/SESSION-HANDOFF.md','plan/'),('docs/BUILD-PROGRESS.md','plan/'),('docs/plan/README.md',''),('docs/plan/FULL-IMPLEMENTATION-SPEC.md','')]:
+    updates[rel]=(f'> **CURRENT ALL-BATCH VERIFICATION — 3 October 2026:** Local batches01–08 contain240 originals; all240 source/prompt/raw-payload associations PASS,235 distinct requested inventory IDs. All production originals and55 delivery/evidence rasters received overview inspection; targeted native/intended-size/scene evidence is scoped, not a full fine-matte/rig/registration PASS. Eleven current v2 asset versions exist; Food/Wood/Stone18px and Offense36/64px receive four bounded UI artwork passes. Hall v2 has severe mask damage, Gold colour fails, current scene/physical registration fail; six new heavy-role identity mismatches and an Iron gunpowder-tower mismatch remain open. Runtime/owner acceptance stays UNVERIFIED. Saved benchmark covers210 sources through07, not240; the source-review ledger still covers90. Read [the complete current audit]({base+audit}) and [corrected gate applicability/registration policy]({base+policy}) before using historical status below. Preserve current contract geometry unless a versioned proposal is reviewed. Whole-game landscape/full eight-age scope persists; this chat remains planner/verifier only.\r\n\r\n'
+    f'> **Separate executor instructions and storage:** Give the owner-selected AIs [coding/recovery]({base+code}) and [batch reconciliation/draft preparation]({base+batch}) respectively; no automatic batch09+ purchase, collection repeat, delegation or messaging. Provider files/locks/budget/guides belong to the batch AI; recovery/game consumers belong to the coding AI. Eight batch holds48USD + mock2USD + reserve15USD protect65USD; invoices remain unknown. [Git/asset storage proposal]({base+storage}) requires approved destinations, verified durable copies and restore evidence before ignoring/uploading assets. Existing partial game foundations are preserved and not accepted completion. This planner changed only new QA diagnostics/reports and planning pointers; no production/game/provider/build/device/storage execution. Previous text below is retained as dated history wherever it conflicts with these current facts.\r\n\r\n')
+for rel in ['docs/plan/GENERATED-ASSET-RECOVERY-REVIEW-2026-10-03.md','docs/plan/RECOVERY-DELIVERY-INDEPENDENT-AUDIT-2026-10-03.md']:
+    updates[rel]=(f'> **HISTORICAL SCOPED REVIEW:** Preserve this earlier90-source/v1 review and rejection evidence. Current eight-batch/v2 coverage and applicable criteria are in [{audit}]({audit}) and [{policy}]({policy}); do not apply all-purpose/world gates to bounded UI use, treat missing review as stale bytes, or reject every static outskirts prop. Current Hall/Gold/scene defects remain real; four current UI uses have bounded artwork PASS. Runtime and owner acceptance remain separate.\r\n\r\n')
+updates['docs/plan/RECOVERY-AI-NEXT-PROMPT-2026-10-03.txt']=(f'HISTORICAL PROMPT — DO NOT EXECUTE THIS OLDER VERSION. Superseded by docs/plan/{code} and docs/plan/{batch}. Read docs/plan/{audit} and {policy}. The historical native-fringe/world-quadrilateral/all-hut-removal instructions below are narrowed/corrected; do not discard completed bounded UI artwork. Original text preserved for history.\r\n\r\n')
+updates['docs/plan/FULL-ASSET-PURCHASE-PLAN.md']=(f'> **CURRENT ACCOUNTING CORRECTION — 3 October 2026:** This480-output/16-batch inventory is a proposal, not evidence of fulfilled roles or permission to buy09+. Current01–08 have240 attempts/235 distinct requested inventory IDs;245 baseline IDs have no request yet. Six heavy-role prompts contradict the frozen identities; correct drafts before spending. Current holds protect65USD including mock/reserve, invoices unknown; reconcile affordability without releasing holds from estimates. See [{audit}]({audit}) and [{batch}]({batch}). Preserve this historical planning arithmetic below; do not treat its60-request snapshot as current.\r\n\r\n')
+records=[]
+for rel,prefix in updates.items():
+    p=ROOT/rel;old=p.read_bytes();head=prefix.encode('utf-8')
+    if old.startswith(head):raise ValueError('Already updated '+rel)
+    p.write_bytes(head+old)
+    now=p.read_bytes()
+    records.append({'file':rel,'priorBytes':len(old),'priorSHA256':hashlib.sha256(old).hexdigest(),'prefixBytes':len(head),'priorBytesPreserved':now[len(head):]==old,'currentSHA256':hashlib.sha256(now).hexdigest()})
+(OUT/'planning-history-preservation.json').write_text(json.dumps(records,indent=2)+'\n',encoding='utf-8')
+print(json.dumps({'updated':len(records),'allPriorBytesPreserved':all(x['priorBytesPreserved'] for x in records)}))

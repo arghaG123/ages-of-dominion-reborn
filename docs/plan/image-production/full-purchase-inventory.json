@@ -1,0 +1,4532 @@
+{
+  "version": 1,
+  "date": "2026-10-03",
+  "role": "PLANNER_VERIFIER_ONLY",
+  "status": "PROPOSED_COMPLETE_PURCHASE_INVENTORY_NOT_EXECUTION_AUTHORIZATION",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "1K",
+  "outputPerRequest": 1,
+  "baselineUsefulOutputs": 480,
+  "baselineBatches": 16,
+  "alreadyRequested": 60,
+  "additionalBaselineRequests": 420,
+  "conditionalReplacementAllowance": 60,
+  "maximumRequests": 540,
+  "maximumBatches": 18,
+  "counts": {
+    "terrain": 32,
+    "buildings": 80,
+    "sites": 12,
+    "resources": 4,
+    "hero-paintings": 32,
+    "skills-spells": 17,
+    "gear": 128,
+    "town-sheets": 24,
+    "troops": 24,
+    "towers": 32,
+    "attackers": 40,
+    "creatures": 8,
+    "artifacts": 10,
+    "supporting": 16,
+    "mounts": 3,
+    "rig-sheets": 8,
+    "effects": 10
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "count": 30,
+      "status": "COLLECTED_TECHNICAL_PASS_VISUAL_UNVERIFIED",
+      "categories": {
+        "terrain": 11,
+        "buildings": 8,
+        "sites": 6,
+        "resources": 4,
+        "hero-paintings": 1
+      }
+    },
+    {
+      "batch": 2,
+      "count": 30,
+      "status": "COLLECTED_TECHNICAL_PASS_VISUAL_UNVERIFIED",
+      "categories": {
+        "skills-spells": 17,
+        "gear": 6,
+        "hero-paintings": 7
+      }
+    },
+    {
+      "batch": 3,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "terrain": 21,
+        "buildings": 9
+      }
+    },
+    {
+      "batch": 4,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "buildings": 30
+      }
+    },
+    {
+      "batch": 5,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "buildings": 30
+      }
+    },
+    {
+      "batch": 6,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "buildings": 3,
+        "town-sheets": 24,
+        "troops": 3
+      }
+    },
+    {
+      "batch": 7,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "troops": 21,
+        "towers": 9
+      }
+    },
+    {
+      "batch": 8,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "towers": 23,
+        "attackers": 7
+      }
+    },
+    {
+      "batch": 9,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "attackers": 30
+      }
+    },
+    {
+      "batch": 10,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "attackers": 3,
+        "creatures": 8,
+        "hero-paintings": 19
+      }
+    },
+    {
+      "batch": 11,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "hero-paintings": 5,
+        "gear": 25
+      }
+    },
+    {
+      "batch": 12,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "gear": 30
+      }
+    },
+    {
+      "batch": 13,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "gear": 30
+      }
+    },
+    {
+      "batch": 14,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "gear": 30
+      }
+    },
+    {
+      "batch": 15,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "gear": 7,
+        "artifacts": 10,
+        "sites": 6,
+        "supporting": 7
+      }
+    },
+    {
+      "batch": 16,
+      "count": 30,
+      "status": "PLANNED_NOT_SUBMITTED",
+      "categories": {
+        "supporting": 9,
+        "mounts": 3,
+        "rig-sheets": 8,
+        "effects": 10
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "kingdom-terrain-stone",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 1,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 2,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 3,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 4,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 5,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 6,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 7,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 8,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-stone",
+      "kind": "building",
+      "batch": 1,
+      "position": 9,
+      "category": "buildings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-bronze",
+      "kind": "building",
+      "batch": 1,
+      "position": 10,
+      "category": "buildings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-iron",
+      "kind": "building",
+      "batch": 1,
+      "position": 11,
+      "category": "buildings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-medieval",
+      "kind": "building",
+      "batch": 1,
+      "position": 12,
+      "category": "buildings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-gunpowder",
+      "kind": "building",
+      "batch": 1,
+      "position": 13,
+      "category": "buildings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-industrial",
+      "kind": "building",
+      "batch": 1,
+      "position": 14,
+      "category": "buildings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-modern",
+      "kind": "building",
+      "batch": 1,
+      "position": 15,
+      "category": "buildings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "townhall-future",
+      "kind": "building",
+      "batch": 1,
+      "position": 16,
+      "category": "buildings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 17,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "tactical-terrain",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 18,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "defense-terrain",
+      "kind": "terrain",
+      "batch": 1,
+      "position": 19,
+      "category": "terrain",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-town",
+      "kind": "site",
+      "batch": 1,
+      "position": 20,
+      "category": "sites",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-ruin",
+      "kind": "site",
+      "batch": 1,
+      "position": 21,
+      "category": "sites",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-mill",
+      "kind": "site",
+      "batch": 1,
+      "position": 22,
+      "category": "sites",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-mine",
+      "kind": "site",
+      "batch": 1,
+      "position": 23,
+      "category": "sites",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-dwelling",
+      "kind": "site",
+      "batch": 1,
+      "position": 24,
+      "category": "sites",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-site-shrine",
+      "kind": "site",
+      "batch": 1,
+      "position": 25,
+      "category": "sites",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "resource-food",
+      "kind": "resource",
+      "batch": 1,
+      "position": 26,
+      "category": "resources",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "resource-wood",
+      "kind": "resource",
+      "batch": 1,
+      "position": 27,
+      "category": "resources",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "resource-stone",
+      "kind": "resource",
+      "batch": 1,
+      "position": 28,
+      "category": "resources",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "resource-gold",
+      "kind": "resource",
+      "batch": 1,
+      "position": 29,
+      "category": "resources",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "knight-mounted-master",
+      "kind": "actor",
+      "batch": 1,
+      "position": 30,
+      "category": "hero-paintings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-offense",
+      "kind": "skill",
+      "batch": 2,
+      "position": 1,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-archery",
+      "kind": "skill",
+      "batch": 2,
+      "position": 2,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-armorer",
+      "kind": "skill",
+      "batch": 2,
+      "position": 3,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-wisdom",
+      "kind": "skill",
+      "batch": 2,
+      "position": 4,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-leadership",
+      "kind": "skill",
+      "batch": 2,
+      "position": 5,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-luck",
+      "kind": "skill",
+      "batch": 2,
+      "position": 6,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-tactics",
+      "kind": "skill",
+      "batch": 2,
+      "position": 7,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-logistics",
+      "kind": "skill",
+      "batch": 2,
+      "position": 8,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "skill-firstaid",
+      "kind": "skill",
+      "batch": 2,
+      "position": 9,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "spell-arrow",
+      "kind": "spell",
+      "batch": 2,
+      "position": 10,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "spell-bless",
+      "kind": "spell",
+      "batch": 2,
+      "position": 11,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "spell-haste",
+      "kind": "spell",
+      "batch": 2,
+      "position": 12,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "spell-cure",
+      "kind": "spell",
+      "batch": 2,
+      "position": 13,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "spell-slow",
+      "kind": "spell",
+      "batch": 2,
+      "position": 14,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "spell-bolt",
+      "kind": "spell",
+      "batch": 2,
+      "position": 15,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "spell-fireball",
+      "kind": "spell",
+      "batch": 2,
+      "position": 16,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "spell-resurrect",
+      "kind": "spell",
+      "batch": 2,
+      "position": 17,
+      "category": "skills-spells",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-helm",
+      "kind": "gear",
+      "batch": 2,
+      "position": 18,
+      "category": "gear",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-weapon",
+      "kind": "gear",
+      "batch": 2,
+      "position": 19,
+      "category": "gear",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-offhand",
+      "kind": "gear",
+      "batch": 2,
+      "position": 20,
+      "category": "gear",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-armor",
+      "kind": "gear",
+      "batch": 2,
+      "position": 21,
+      "category": "gear",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-boots",
+      "kind": "gear",
+      "batch": 2,
+      "position": 22,
+      "category": "gear",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "gear-stone-accessory",
+      "kind": "gear",
+      "batch": 2,
+      "position": 23,
+      "category": "gear",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-ranger",
+      "kind": "portrait",
+      "batch": 2,
+      "position": 24,
+      "category": "hero-paintings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-warlock",
+      "kind": "portrait",
+      "batch": 2,
+      "position": 25,
+      "category": "hero-paintings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-mage",
+      "kind": "portrait",
+      "batch": 2,
+      "position": 26,
+      "category": "hero-paintings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-paladin",
+      "kind": "portrait",
+      "batch": 2,
+      "position": 27,
+      "category": "hero-paintings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-barbarian",
+      "kind": "portrait",
+      "batch": 2,
+      "position": 28,
+      "category": "hero-paintings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-necromancer",
+      "kind": "portrait",
+      "batch": 2,
+      "position": 29,
+      "category": "hero-paintings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "portrait-ancient-healer",
+      "kind": "portrait",
+      "batch": 2,
+      "position": 30,
+      "category": "hero-paintings",
+      "origin": "EXISTING_REQUEST",
+      "approval": "UNVERIFIED"
+    },
+    {
+      "id": "adventure-terrain-plains",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 1
+    },
+    {
+      "id": "adventure-terrain-hills",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 2
+    },
+    {
+      "id": "adventure-terrain-swamp",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 3
+    },
+    {
+      "id": "adventure-terrain-desert",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 4
+    },
+    {
+      "id": "adventure-terrain-snow",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 5
+    },
+    {
+      "id": "adventure-terrain-waste",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 6
+    },
+    {
+      "id": "adventure-terrain-ruins",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 7
+    },
+    {
+      "id": "tactical-terrain-plains",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 8
+    },
+    {
+      "id": "tactical-terrain-hills",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 9
+    },
+    {
+      "id": "tactical-terrain-swamp",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 10
+    },
+    {
+      "id": "tactical-terrain-desert",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 11
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 12
+    },
+    {
+      "id": "tactical-terrain-waste",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 13
+    },
+    {
+      "id": "tactical-terrain-ruins",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 14
+    },
+    {
+      "id": "defense-terrain-plains",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 15
+    },
+    {
+      "id": "defense-terrain-hills",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 16
+    },
+    {
+      "id": "defense-terrain-swamp",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 17
+    },
+    {
+      "id": "defense-terrain-desert",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 18
+    },
+    {
+      "id": "defense-terrain-snow",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 19
+    },
+    {
+      "id": "defense-terrain-waste",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 20
+    },
+    {
+      "id": "defense-terrain-ruins",
+      "category": "terrain",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 21
+    },
+    {
+      "id": "farm-stone",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 22
+    },
+    {
+      "id": "lumber-stone",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 23
+    },
+    {
+      "id": "quarry-stone",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 24
+    },
+    {
+      "id": "mine-stone",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 25
+    },
+    {
+      "id": "barracks-stone",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 26
+    },
+    {
+      "id": "workshop-stone",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 27
+    },
+    {
+      "id": "hall-stone",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 28
+    },
+    {
+      "id": "armory-stone",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 29
+    },
+    {
+      "id": "walls-stone",
+      "category": "buildings",
+      "form": "modular-sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 3,
+      "position": 30
+    },
+    {
+      "id": "farm-bronze",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 1
+    },
+    {
+      "id": "lumber-bronze",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 2
+    },
+    {
+      "id": "quarry-bronze",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 3
+    },
+    {
+      "id": "mine-bronze",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 4
+    },
+    {
+      "id": "barracks-bronze",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 5
+    },
+    {
+      "id": "workshop-bronze",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 6
+    },
+    {
+      "id": "hall-bronze",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 7
+    },
+    {
+      "id": "armory-bronze",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 8
+    },
+    {
+      "id": "walls-bronze",
+      "category": "buildings",
+      "form": "modular-sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 9
+    },
+    {
+      "id": "farm-iron",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 10
+    },
+    {
+      "id": "lumber-iron",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 11
+    },
+    {
+      "id": "quarry-iron",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 12
+    },
+    {
+      "id": "mine-iron",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 13
+    },
+    {
+      "id": "barracks-iron",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 14
+    },
+    {
+      "id": "workshop-iron",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 15
+    },
+    {
+      "id": "hall-iron",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 16
+    },
+    {
+      "id": "armory-iron",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 17
+    },
+    {
+      "id": "walls-iron",
+      "category": "buildings",
+      "form": "modular-sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 18
+    },
+    {
+      "id": "farm-medieval",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 19
+    },
+    {
+      "id": "lumber-medieval",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 20
+    },
+    {
+      "id": "quarry-medieval",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 21
+    },
+    {
+      "id": "mine-medieval",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 22
+    },
+    {
+      "id": "barracks-medieval",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 23
+    },
+    {
+      "id": "workshop-medieval",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 24
+    },
+    {
+      "id": "hall-medieval",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 25
+    },
+    {
+      "id": "armory-medieval",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 26
+    },
+    {
+      "id": "walls-medieval",
+      "category": "buildings",
+      "form": "modular-sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 27
+    },
+    {
+      "id": "farm-gunpowder",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 28
+    },
+    {
+      "id": "lumber-gunpowder",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 29
+    },
+    {
+      "id": "quarry-gunpowder",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 4,
+      "position": 30
+    },
+    {
+      "id": "mine-gunpowder",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 1
+    },
+    {
+      "id": "barracks-gunpowder",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 2
+    },
+    {
+      "id": "workshop-gunpowder",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 3
+    },
+    {
+      "id": "hall-gunpowder",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 4
+    },
+    {
+      "id": "armory-gunpowder",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 5
+    },
+    {
+      "id": "walls-gunpowder",
+      "category": "buildings",
+      "form": "modular-sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 6
+    },
+    {
+      "id": "farm-industrial",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 7
+    },
+    {
+      "id": "lumber-industrial",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 8
+    },
+    {
+      "id": "quarry-industrial",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 9
+    },
+    {
+      "id": "mine-industrial",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 10
+    },
+    {
+      "id": "barracks-industrial",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 11
+    },
+    {
+      "id": "workshop-industrial",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 12
+    },
+    {
+      "id": "hall-industrial",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 13
+    },
+    {
+      "id": "armory-industrial",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 14
+    },
+    {
+      "id": "walls-industrial",
+      "category": "buildings",
+      "form": "modular-sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 15
+    },
+    {
+      "id": "farm-modern",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 16
+    },
+    {
+      "id": "lumber-modern",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 17
+    },
+    {
+      "id": "quarry-modern",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 18
+    },
+    {
+      "id": "mine-modern",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 19
+    },
+    {
+      "id": "barracks-modern",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 20
+    },
+    {
+      "id": "workshop-modern",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 21
+    },
+    {
+      "id": "hall-modern",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 22
+    },
+    {
+      "id": "armory-modern",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 23
+    },
+    {
+      "id": "walls-modern",
+      "category": "buildings",
+      "form": "modular-sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 24
+    },
+    {
+      "id": "farm-future",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 25
+    },
+    {
+      "id": "lumber-future",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 26
+    },
+    {
+      "id": "quarry-future",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 27
+    },
+    {
+      "id": "mine-future",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 28
+    },
+    {
+      "id": "barracks-future",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 29
+    },
+    {
+      "id": "workshop-future",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 5,
+      "position": 30
+    },
+    {
+      "id": "hall-future",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 1
+    },
+    {
+      "id": "armory-future",
+      "category": "buildings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 2
+    },
+    {
+      "id": "walls-future",
+      "category": "buildings",
+      "form": "modular-sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 3
+    },
+    {
+      "id": "world-props-stone",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 4
+    },
+    {
+      "id": "construction-stone",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 5
+    },
+    {
+      "id": "civilian-transport-stone",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 6
+    },
+    {
+      "id": "world-props-bronze",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 7
+    },
+    {
+      "id": "construction-bronze",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 8
+    },
+    {
+      "id": "civilian-transport-bronze",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 9
+    },
+    {
+      "id": "world-props-iron",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 10
+    },
+    {
+      "id": "construction-iron",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 11
+    },
+    {
+      "id": "civilian-transport-iron",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 12
+    },
+    {
+      "id": "world-props-medieval",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 13
+    },
+    {
+      "id": "construction-medieval",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 14
+    },
+    {
+      "id": "civilian-transport-medieval",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 15
+    },
+    {
+      "id": "world-props-gunpowder",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 16
+    },
+    {
+      "id": "construction-gunpowder",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 17
+    },
+    {
+      "id": "civilian-transport-gunpowder",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 18
+    },
+    {
+      "id": "world-props-industrial",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 19
+    },
+    {
+      "id": "construction-industrial",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 20
+    },
+    {
+      "id": "civilian-transport-industrial",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 21
+    },
+    {
+      "id": "world-props-modern",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 22
+    },
+    {
+      "id": "construction-modern",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 23
+    },
+    {
+      "id": "civilian-transport-modern",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 24
+    },
+    {
+      "id": "world-props-future",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 25
+    },
+    {
+      "id": "construction-future",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 26
+    },
+    {
+      "id": "civilian-transport-future",
+      "category": "town-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 27
+    },
+    {
+      "id": "troop-stone-melee",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 28
+    },
+    {
+      "id": "troop-stone-ranged",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 29
+    },
+    {
+      "id": "troop-stone-heavy",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 6,
+      "position": 30
+    },
+    {
+      "id": "troop-bronze-melee",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 1
+    },
+    {
+      "id": "troop-bronze-ranged",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 2
+    },
+    {
+      "id": "troop-bronze-heavy",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 3
+    },
+    {
+      "id": "troop-iron-melee",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 4
+    },
+    {
+      "id": "troop-iron-ranged",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 5
+    },
+    {
+      "id": "troop-iron-heavy",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 6
+    },
+    {
+      "id": "troop-medieval-melee",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 7
+    },
+    {
+      "id": "troop-medieval-ranged",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 8
+    },
+    {
+      "id": "troop-medieval-heavy",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 9
+    },
+    {
+      "id": "troop-gunpowder-melee",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 10
+    },
+    {
+      "id": "troop-gunpowder-ranged",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 11
+    },
+    {
+      "id": "troop-gunpowder-heavy",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 12
+    },
+    {
+      "id": "troop-industrial-melee",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 13
+    },
+    {
+      "id": "troop-industrial-ranged",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 14
+    },
+    {
+      "id": "troop-industrial-heavy",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 15
+    },
+    {
+      "id": "troop-modern-melee",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 16
+    },
+    {
+      "id": "troop-modern-ranged",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 17
+    },
+    {
+      "id": "troop-modern-heavy",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 18
+    },
+    {
+      "id": "troop-future-melee",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 19
+    },
+    {
+      "id": "troop-future-ranged",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 20
+    },
+    {
+      "id": "troop-future-heavy",
+      "category": "troops",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 21
+    },
+    {
+      "id": "tower-stone-arrow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 22
+    },
+    {
+      "id": "tower-stone-splash",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 23
+    },
+    {
+      "id": "tower-stone-slow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 24
+    },
+    {
+      "id": "tower-stone-support",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 25
+    },
+    {
+      "id": "tower-bronze-arrow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 26
+    },
+    {
+      "id": "tower-bronze-splash",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 27
+    },
+    {
+      "id": "tower-bronze-slow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 28
+    },
+    {
+      "id": "tower-bronze-support",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 29
+    },
+    {
+      "id": "tower-iron-arrow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 7,
+      "position": 30
+    },
+    {
+      "id": "tower-iron-splash",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 1
+    },
+    {
+      "id": "tower-iron-slow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 2
+    },
+    {
+      "id": "tower-iron-support",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 3
+    },
+    {
+      "id": "tower-medieval-arrow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 4
+    },
+    {
+      "id": "tower-medieval-splash",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 5
+    },
+    {
+      "id": "tower-medieval-slow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 6
+    },
+    {
+      "id": "tower-medieval-support",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 7
+    },
+    {
+      "id": "tower-gunpowder-arrow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 8
+    },
+    {
+      "id": "tower-gunpowder-splash",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 9
+    },
+    {
+      "id": "tower-gunpowder-slow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 10
+    },
+    {
+      "id": "tower-gunpowder-support",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 11
+    },
+    {
+      "id": "tower-industrial-arrow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 12
+    },
+    {
+      "id": "tower-industrial-splash",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 13
+    },
+    {
+      "id": "tower-industrial-slow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 14
+    },
+    {
+      "id": "tower-industrial-support",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 15
+    },
+    {
+      "id": "tower-modern-arrow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 16
+    },
+    {
+      "id": "tower-modern-splash",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 17
+    },
+    {
+      "id": "tower-modern-slow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 18
+    },
+    {
+      "id": "tower-modern-support",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 19
+    },
+    {
+      "id": "tower-future-arrow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 20
+    },
+    {
+      "id": "tower-future-splash",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 21
+    },
+    {
+      "id": "tower-future-slow",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 22
+    },
+    {
+      "id": "tower-future-support",
+      "category": "towers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 23
+    },
+    {
+      "id": "attacker-stone-brute",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 24
+    },
+    {
+      "id": "attacker-stone-runner",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 25
+    },
+    {
+      "id": "attacker-stone-archer",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 26
+    },
+    {
+      "id": "attacker-stone-sapper",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 27
+    },
+    {
+      "id": "attacker-stone-shaman",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 28
+    },
+    {
+      "id": "attacker-bronze-brute",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 29
+    },
+    {
+      "id": "attacker-bronze-runner",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 8,
+      "position": 30
+    },
+    {
+      "id": "attacker-bronze-archer",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 1
+    },
+    {
+      "id": "attacker-bronze-sapper",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 2
+    },
+    {
+      "id": "attacker-bronze-shaman",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 3
+    },
+    {
+      "id": "attacker-iron-brute",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 4
+    },
+    {
+      "id": "attacker-iron-runner",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 5
+    },
+    {
+      "id": "attacker-iron-archer",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 6
+    },
+    {
+      "id": "attacker-iron-sapper",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 7
+    },
+    {
+      "id": "attacker-iron-shaman",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 8
+    },
+    {
+      "id": "attacker-medieval-brute",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 9
+    },
+    {
+      "id": "attacker-medieval-runner",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 10
+    },
+    {
+      "id": "attacker-medieval-archer",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 11
+    },
+    {
+      "id": "attacker-medieval-sapper",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 12
+    },
+    {
+      "id": "attacker-medieval-shaman",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 13
+    },
+    {
+      "id": "attacker-gunpowder-brute",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 14
+    },
+    {
+      "id": "attacker-gunpowder-runner",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 15
+    },
+    {
+      "id": "attacker-gunpowder-archer",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 16
+    },
+    {
+      "id": "attacker-gunpowder-sapper",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 17
+    },
+    {
+      "id": "attacker-gunpowder-shaman",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 18
+    },
+    {
+      "id": "attacker-industrial-brute",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 19
+    },
+    {
+      "id": "attacker-industrial-runner",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 20
+    },
+    {
+      "id": "attacker-industrial-archer",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 21
+    },
+    {
+      "id": "attacker-industrial-sapper",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 22
+    },
+    {
+      "id": "attacker-industrial-shaman",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 23
+    },
+    {
+      "id": "attacker-modern-brute",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 24
+    },
+    {
+      "id": "attacker-modern-runner",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 25
+    },
+    {
+      "id": "attacker-modern-archer",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 26
+    },
+    {
+      "id": "attacker-modern-sapper",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 27
+    },
+    {
+      "id": "attacker-modern-shaman",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 28
+    },
+    {
+      "id": "attacker-future-brute",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 29
+    },
+    {
+      "id": "attacker-future-runner",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 9,
+      "position": 30
+    },
+    {
+      "id": "attacker-future-archer",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 1
+    },
+    {
+      "id": "attacker-future-sapper",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 2
+    },
+    {
+      "id": "attacker-future-shaman",
+      "category": "attackers",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 3
+    },
+    {
+      "id": "creature-wolf",
+      "category": "creatures",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 4
+    },
+    {
+      "id": "creature-bandit",
+      "category": "creatures",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 5
+    },
+    {
+      "id": "creature-bear",
+      "category": "creatures",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 6
+    },
+    {
+      "id": "creature-harpy",
+      "category": "creatures",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 7
+    },
+    {
+      "id": "creature-golem",
+      "category": "creatures",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 8
+    },
+    {
+      "id": "creature-griffin",
+      "category": "creatures",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 9
+    },
+    {
+      "id": "creature-wyvern",
+      "category": "creatures",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 10
+    },
+    {
+      "id": "creature-drone",
+      "category": "creatures",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 11
+    },
+    {
+      "id": "portrait-medieval-knight",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 12
+    },
+    {
+      "id": "portrait-medieval-ranger",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 13
+    },
+    {
+      "id": "portrait-medieval-warlock",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 14
+    },
+    {
+      "id": "portrait-medieval-mage",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 15
+    },
+    {
+      "id": "portrait-medieval-paladin",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 16
+    },
+    {
+      "id": "portrait-medieval-barbarian",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 17
+    },
+    {
+      "id": "portrait-medieval-necromancer",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 18
+    },
+    {
+      "id": "portrait-medieval-healer",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 19
+    },
+    {
+      "id": "portrait-powder-knight",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 20
+    },
+    {
+      "id": "portrait-powder-ranger",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 21
+    },
+    {
+      "id": "portrait-powder-warlock",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 22
+    },
+    {
+      "id": "portrait-powder-mage",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 23
+    },
+    {
+      "id": "portrait-powder-paladin",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 24
+    },
+    {
+      "id": "portrait-powder-barbarian",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 25
+    },
+    {
+      "id": "portrait-powder-necromancer",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 26
+    },
+    {
+      "id": "portrait-powder-healer",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 27
+    },
+    {
+      "id": "portrait-mech-knight",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 28
+    },
+    {
+      "id": "portrait-mech-ranger",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 29
+    },
+    {
+      "id": "portrait-mech-warlock",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 10,
+      "position": 30
+    },
+    {
+      "id": "portrait-mech-mage",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 1
+    },
+    {
+      "id": "portrait-mech-paladin",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 2
+    },
+    {
+      "id": "portrait-mech-barbarian",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 3
+    },
+    {
+      "id": "portrait-mech-necromancer",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 4
+    },
+    {
+      "id": "portrait-mech-healer",
+      "category": "hero-paintings",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 5
+    },
+    {
+      "id": "gear-stone-helm-hood",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 6
+    },
+    {
+      "id": "gear-stone-helm-circlet",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 7
+    },
+    {
+      "id": "gear-stone-weapon-ranger",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 8
+    },
+    {
+      "id": "gear-stone-weapon-caster",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 9
+    },
+    {
+      "id": "gear-stone-weapon-barbarian",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 10
+    },
+    {
+      "id": "gear-stone-offhand-codex",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 11
+    },
+    {
+      "id": "gear-stone-offhand-focus",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 12
+    },
+    {
+      "id": "gear-stone-armor-field",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 13
+    },
+    {
+      "id": "gear-stone-armor-robe",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 14
+    },
+    {
+      "id": "gear-stone-boots-soft",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 15
+    },
+    {
+      "id": "gear-bronze-helm",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 16
+    },
+    {
+      "id": "gear-bronze-helm-hood",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 17
+    },
+    {
+      "id": "gear-bronze-helm-circlet",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 18
+    },
+    {
+      "id": "gear-bronze-weapon",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 19
+    },
+    {
+      "id": "gear-bronze-weapon-ranger",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 20
+    },
+    {
+      "id": "gear-bronze-weapon-caster",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 21
+    },
+    {
+      "id": "gear-bronze-weapon-barbarian",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 22
+    },
+    {
+      "id": "gear-bronze-offhand",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 23
+    },
+    {
+      "id": "gear-bronze-offhand-codex",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 24
+    },
+    {
+      "id": "gear-bronze-offhand-focus",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 25
+    },
+    {
+      "id": "gear-bronze-armor",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 26
+    },
+    {
+      "id": "gear-bronze-armor-field",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 27
+    },
+    {
+      "id": "gear-bronze-armor-robe",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 28
+    },
+    {
+      "id": "gear-bronze-boots",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 29
+    },
+    {
+      "id": "gear-bronze-boots-soft",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 11,
+      "position": 30
+    },
+    {
+      "id": "gear-bronze-accessory",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 1
+    },
+    {
+      "id": "gear-iron-helm",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 2
+    },
+    {
+      "id": "gear-iron-helm-hood",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 3
+    },
+    {
+      "id": "gear-iron-helm-circlet",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 4
+    },
+    {
+      "id": "gear-iron-weapon",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 5
+    },
+    {
+      "id": "gear-iron-weapon-ranger",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 6
+    },
+    {
+      "id": "gear-iron-weapon-caster",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 7
+    },
+    {
+      "id": "gear-iron-weapon-barbarian",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 8
+    },
+    {
+      "id": "gear-iron-offhand",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 9
+    },
+    {
+      "id": "gear-iron-offhand-codex",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 10
+    },
+    {
+      "id": "gear-iron-offhand-focus",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 11
+    },
+    {
+      "id": "gear-iron-armor",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 12
+    },
+    {
+      "id": "gear-iron-armor-field",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 13
+    },
+    {
+      "id": "gear-iron-armor-robe",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 14
+    },
+    {
+      "id": "gear-iron-boots",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 15
+    },
+    {
+      "id": "gear-iron-boots-soft",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 16
+    },
+    {
+      "id": "gear-iron-accessory",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 17
+    },
+    {
+      "id": "gear-medieval-helm",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 18
+    },
+    {
+      "id": "gear-medieval-helm-hood",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 19
+    },
+    {
+      "id": "gear-medieval-helm-circlet",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 20
+    },
+    {
+      "id": "gear-medieval-weapon",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 21
+    },
+    {
+      "id": "gear-medieval-weapon-ranger",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 22
+    },
+    {
+      "id": "gear-medieval-weapon-caster",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 23
+    },
+    {
+      "id": "gear-medieval-weapon-barbarian",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 24
+    },
+    {
+      "id": "gear-medieval-offhand",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 25
+    },
+    {
+      "id": "gear-medieval-offhand-codex",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 26
+    },
+    {
+      "id": "gear-medieval-offhand-focus",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 27
+    },
+    {
+      "id": "gear-medieval-armor",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 28
+    },
+    {
+      "id": "gear-medieval-armor-field",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 29
+    },
+    {
+      "id": "gear-medieval-armor-robe",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 12,
+      "position": 30
+    },
+    {
+      "id": "gear-medieval-boots",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 1
+    },
+    {
+      "id": "gear-medieval-boots-soft",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 2
+    },
+    {
+      "id": "gear-medieval-accessory",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 3
+    },
+    {
+      "id": "gear-gunpowder-helm",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 4
+    },
+    {
+      "id": "gear-gunpowder-helm-hood",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 5
+    },
+    {
+      "id": "gear-gunpowder-helm-circlet",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 6
+    },
+    {
+      "id": "gear-gunpowder-weapon",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 7
+    },
+    {
+      "id": "gear-gunpowder-weapon-ranger",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 8
+    },
+    {
+      "id": "gear-gunpowder-weapon-caster",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 9
+    },
+    {
+      "id": "gear-gunpowder-weapon-barbarian",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 10
+    },
+    {
+      "id": "gear-gunpowder-offhand",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 11
+    },
+    {
+      "id": "gear-gunpowder-offhand-codex",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 12
+    },
+    {
+      "id": "gear-gunpowder-offhand-focus",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 13
+    },
+    {
+      "id": "gear-gunpowder-armor",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 14
+    },
+    {
+      "id": "gear-gunpowder-armor-field",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 15
+    },
+    {
+      "id": "gear-gunpowder-armor-robe",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 16
+    },
+    {
+      "id": "gear-gunpowder-boots",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 17
+    },
+    {
+      "id": "gear-gunpowder-boots-soft",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 18
+    },
+    {
+      "id": "gear-gunpowder-accessory",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 19
+    },
+    {
+      "id": "gear-industrial-helm",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 20
+    },
+    {
+      "id": "gear-industrial-helm-hood",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 21
+    },
+    {
+      "id": "gear-industrial-helm-circlet",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 22
+    },
+    {
+      "id": "gear-industrial-weapon",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 23
+    },
+    {
+      "id": "gear-industrial-weapon-ranger",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 24
+    },
+    {
+      "id": "gear-industrial-weapon-caster",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 25
+    },
+    {
+      "id": "gear-industrial-weapon-barbarian",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 26
+    },
+    {
+      "id": "gear-industrial-offhand",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 27
+    },
+    {
+      "id": "gear-industrial-offhand-codex",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 28
+    },
+    {
+      "id": "gear-industrial-offhand-focus",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 29
+    },
+    {
+      "id": "gear-industrial-armor",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 13,
+      "position": 30
+    },
+    {
+      "id": "gear-industrial-armor-field",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 1
+    },
+    {
+      "id": "gear-industrial-armor-robe",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 2
+    },
+    {
+      "id": "gear-industrial-boots",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 3
+    },
+    {
+      "id": "gear-industrial-boots-soft",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 4
+    },
+    {
+      "id": "gear-industrial-accessory",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 5
+    },
+    {
+      "id": "gear-modern-helm",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 6
+    },
+    {
+      "id": "gear-modern-helm-hood",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 7
+    },
+    {
+      "id": "gear-modern-helm-circlet",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 8
+    },
+    {
+      "id": "gear-modern-weapon",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 9
+    },
+    {
+      "id": "gear-modern-weapon-ranger",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 10
+    },
+    {
+      "id": "gear-modern-weapon-caster",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 11
+    },
+    {
+      "id": "gear-modern-weapon-barbarian",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 12
+    },
+    {
+      "id": "gear-modern-offhand",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 13
+    },
+    {
+      "id": "gear-modern-offhand-codex",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 14
+    },
+    {
+      "id": "gear-modern-offhand-focus",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 15
+    },
+    {
+      "id": "gear-modern-armor",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 16
+    },
+    {
+      "id": "gear-modern-armor-field",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 17
+    },
+    {
+      "id": "gear-modern-armor-robe",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 18
+    },
+    {
+      "id": "gear-modern-boots",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 19
+    },
+    {
+      "id": "gear-modern-boots-soft",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 20
+    },
+    {
+      "id": "gear-modern-accessory",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 21
+    },
+    {
+      "id": "gear-future-helm",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 22
+    },
+    {
+      "id": "gear-future-helm-hood",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 23
+    },
+    {
+      "id": "gear-future-helm-circlet",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 24
+    },
+    {
+      "id": "gear-future-weapon",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 25
+    },
+    {
+      "id": "gear-future-weapon-ranger",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 26
+    },
+    {
+      "id": "gear-future-weapon-caster",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 27
+    },
+    {
+      "id": "gear-future-weapon-barbarian",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 28
+    },
+    {
+      "id": "gear-future-offhand",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 29
+    },
+    {
+      "id": "gear-future-offhand-codex",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 14,
+      "position": 30
+    },
+    {
+      "id": "gear-future-offhand-focus",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 1
+    },
+    {
+      "id": "gear-future-armor",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 2
+    },
+    {
+      "id": "gear-future-armor-field",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 3
+    },
+    {
+      "id": "gear-future-armor-robe",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 4
+    },
+    {
+      "id": "gear-future-boots",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 5
+    },
+    {
+      "id": "gear-future-boots-soft",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 6
+    },
+    {
+      "id": "gear-future-accessory",
+      "category": "gear",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 7
+    },
+    {
+      "id": "artifact-wolfamulet",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 8
+    },
+    {
+      "id": "artifact-bloodstone",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 9
+    },
+    {
+      "id": "artifact-aegis",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 10
+    },
+    {
+      "id": "artifact-codex",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 11
+    },
+    {
+      "id": "artifact-orb",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 12
+    },
+    {
+      "id": "artifact-clover",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 13
+    },
+    {
+      "id": "artifact-lens",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 14
+    },
+    {
+      "id": "artifact-vitality",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 15
+    },
+    {
+      "id": "artifact-swiftboots",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 16
+    },
+    {
+      "id": "artifact-banner",
+      "category": "artifacts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 17
+    },
+    {
+      "id": "adventure-site-treasure",
+      "category": "sites",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 18
+    },
+    {
+      "id": "adventure-site-rest-camp",
+      "category": "sites",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 19
+    },
+    {
+      "id": "adventure-site-region-exit",
+      "category": "sites",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 20
+    },
+    {
+      "id": "adventure-site-rival-camp",
+      "category": "sites",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 21
+    },
+    {
+      "id": "adventure-site-human-encounter",
+      "category": "sites",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 22
+    },
+    {
+      "id": "adventure-site-guard-post",
+      "category": "sites",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 23
+    },
+    {
+      "id": "title-background",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 24
+    },
+    {
+      "id": "story-stone",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 25
+    },
+    {
+      "id": "story-bronze",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 26
+    },
+    {
+      "id": "story-iron",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 27
+    },
+    {
+      "id": "story-medieval",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 28
+    },
+    {
+      "id": "story-gunpowder",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 29
+    },
+    {
+      "id": "story-industrial",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 15,
+      "position": 30
+    },
+    {
+      "id": "story-modern",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 1
+    },
+    {
+      "id": "story-future",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 2
+    },
+    {
+      "id": "rival-identity-1",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 3
+    },
+    {
+      "id": "rival-identity-2",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 4
+    },
+    {
+      "id": "rival-identity-3",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 5
+    },
+    {
+      "id": "rival-identity-4",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 6
+    },
+    {
+      "id": "rival-identity-5",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 7
+    },
+    {
+      "id": "rival-identity-6",
+      "category": "supporting",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 8
+    },
+    {
+      "id": "ui-materials",
+      "category": "supporting",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 9
+    },
+    {
+      "id": "hero-mount-horse",
+      "category": "mounts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 10
+    },
+    {
+      "id": "hero-mount-motor-transport",
+      "category": "mounts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 11
+    },
+    {
+      "id": "hero-mount-future-transport",
+      "category": "mounts",
+      "form": "single",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 12
+    },
+    {
+      "id": "rig-source-parts-knight",
+      "category": "rig-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 13
+    },
+    {
+      "id": "rig-source-parts-ranger",
+      "category": "rig-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 14
+    },
+    {
+      "id": "rig-source-parts-warlock",
+      "category": "rig-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 15
+    },
+    {
+      "id": "rig-source-parts-mage",
+      "category": "rig-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 16
+    },
+    {
+      "id": "rig-source-parts-paladin",
+      "category": "rig-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 17
+    },
+    {
+      "id": "rig-source-parts-barbarian",
+      "category": "rig-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 18
+    },
+    {
+      "id": "rig-source-parts-necromancer",
+      "category": "rig-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 19
+    },
+    {
+      "id": "rig-source-parts-healer",
+      "category": "rig-sheets",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 20
+    },
+    {
+      "id": "effect-material-arrow",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 21
+    },
+    {
+      "id": "effect-material-bless",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 22
+    },
+    {
+      "id": "effect-material-haste",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 23
+    },
+    {
+      "id": "effect-material-cure",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 24
+    },
+    {
+      "id": "effect-material-slow",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 25
+    },
+    {
+      "id": "effect-material-bolt",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 26
+    },
+    {
+      "id": "effect-material-fireball",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 27
+    },
+    {
+      "id": "effect-material-resurrect",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 28
+    },
+    {
+      "id": "effect-material-physical-projectiles",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 29
+    },
+    {
+      "id": "effect-material-impact-hit-death",
+      "category": "effects",
+      "form": "sheet",
+      "origin": "PLANNED_ONLY",
+      "approval": "UNVERIFIED",
+      "batch": 16,
+      "position": 30
+    }
+  ],
+  "correctionPolicy": "At most two paid replacement attempts per failed identity and at most 60 globally. No filler: replacement batches require 30 documented real failed requirements; fewer are deferred or combined with remaining baseline needs. Existing requests must never be blindly repurchased. More gaps or failed sheet/reuse assumptions require inventory revision.",
+  "billing": {
+    "ratesPerMillionUSD": {
+      "input": 0.25,
+      "textAndReasoning": 1.5,
+      "image": 30
+    },
+    "tokensPer1KImage": 1120,
+    "outputOnlyBaselineUSD": 16.128,
+    "outputOnlyMaxWithReplacementsUSD": 18.144,
+    "expectedAllInUSD": [
+      20,
+      30
+    ],
+    "planningAllowanceUSD": 40,
+    "targetCeilingUSD": 60,
+    "hardCapUSD": 80,
+    "invoiceKnown": false
+  },
+  "notes": [
+    "First three non-Kingdom terrain requests are conservatively assigned the forest baseline; executor must inspect actual content and correct the biome association before purchase.",
+    "32 hero paintings include the existing mounted Knight master and seven ancient full-body requests; reuse remains conditional on visual acceptance.",
+    "Original 787 catalog is not a purchase list; previous 30 landscape mocks and 26 owner references are not production outputs.",
+    "This is a counting/allocation inventory, not a provider-ready manifest. No prompts, submissions, code, builds, cleanup, delegation or monitoring were performed."
+  ]
+}

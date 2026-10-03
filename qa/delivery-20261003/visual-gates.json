@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-03",
+  "reviewer": "executor inspection of black, white and neutral-green derivatives, the Stone composite, and the 1280x720 UI sample",
+  "rule": "A visual FAIL or UNVERIFIED may replace an automated PASS or UNVERIFIED. An automated FAIL stays FAIL. This file does not set runtime approval or owner acceptance.",
+  "scene": {
+    "composite": "FAIL",
+    "file": "assets/delivery/stone-starter-20261003/stone-kingdom-composite.png",
+    "sha256": "2be484d16d7d3af6c28ef779931f859c50d68c0f25260f9a7bc6e92b022e70b2",
+    "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/03-kingdom-stone.jpg",
+    "reason": "Hall width-fit overlaps the lumber camp and keeps a magenta dirt apron. Plot borders, baked huts, people, logs and the log crossing remain. Producers sit near P01, P04, P10 and P14 but their close-up ground islands are not the contract parallelograms. This is a placement study, not appearance fidelity."
+  },
+  "assets": [
+    {
+      "batch": "production-03-20261003",
+      "id": "skill-offense",
+      "sourceSHA256": "594fc35135244184a2c685ff6ac243dfe4b5ff9c846e8e0a92ea60b816cf11cf",
+      "gates": { "matte": "PASS", "composite": "UNVERIFIED" },
+      "notes": "Crossed swords on a square plaque are clear on black, white and neutral green. The UI sample shows the plaque with the label Recovered plaque. Owner acceptance is pending."
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "resource-food",
+      "sourceSHA256": "d3287f62b9850e4dbab0f3a132c1abacabfe89932eb9ed9bc76d1496bdb0716f",
+      "gates": { "matte": "FAIL", "composite": "UNVERIFIED" },
+      "notes": "Cheese holes and rope gaps stay transparent (8210 interior gap pixels). Magenta fringe remains on the wheat awns against black and green."
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "resource-wood",
+      "sourceSHA256": "a91c3a395af420fdbc53ecb9b330cc11633bb61b5b46316163ea2331b3bb82d2",
+      "gates": { "matte": "FAIL", "composite": "UNVERIFIED" },
+      "notes": "The large rose shadow is gone and the rope gaps remain. A dark reddish contact remnant is still visible under the stack on all three inspection grounds."
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "resource-stone",
+      "sourceSHA256": "2c819abba15fa22311e039e2ad661a04399791a53ac51aa5f12c9e4dbfef6d5e",
+      "gates": { "matte": "PASS", "composite": "UNVERIFIED" },
+      "notes": "Rock pile is isolated on black, white and neutral green. Crevices between stones stay. No magenta halo seen."
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "resource-gold",
+      "sourceSHA256": "e8cb7967df838fd84168e87dff6ac98c66c1bdfaab0dfbac84f81d978468f168",
+      "gates": { "matte": "UNVERIFIED", "composite": "UNVERIFIED" },
+      "notes": "Pink on the coin faces is reflected metal and was kept. A thin purple line remains under the bottom coin, so the matte is not a clean pass."
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "townhall-stone",
+      "sourceSHA256": "2809db2bc0045cfeae0ae73b675b0236b03f0f0f369009c90430af62d22c1b5e",
+      "gates": { "matte": "FAIL", "registration": "FAIL", "composite": "FAIL" },
+      "notes": "Dirt apron and magenta rim reach the canvas edge. Ground band aspect is about 2.03 against a 3 by 1.5 footprint, but the fourth corner is 246 px off, so placement uses uniform width fit. The sprite overlaps the lumber camp."
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "farm-stone",
+      "sourceSHA256": "a8c004398448e549d9b4e737801e16c5186965e5f35f22d7dd46c61efa3ae0e3",
+      "gates": { "matte": "UNVERIFIED", "registration": "FAIL", "composite": "FAIL" },
+      "notes": "Backdrop is largely clear on the three inspection grounds. Shed openings were not confirmed free of residual color, so matte stays unverified. Fourth-corner error 144 px. The diorama plinth is not the contract pad."
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "lumber-stone",
+      "sourceSHA256": "63fc579f757d8930a10252db38622ccafab35e93679554e4afcbebd535a0fd38",
+      "gates": { "matte": "PASS", "registration": "FAIL", "composite": "FAIL" },
+      "notes": "Backdrop is clear. The dirt island is part of the source sprite. Fourth-corner error 155 px. The hall overlaps this camp in the composite."
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "quarry-stone",
+      "sourceSHA256": "da5b9d5ccb9c3422d3058dc2a7424da4e74a4732ed72207da7217ec283d6487b",
+      "gates": { "matte": "PASS", "registration": "FAIL", "composite": "FAIL" },
+      "notes": "Backdrop is clear. The excavated ground island is source content. Fourth-corner error 179 px and scale ratio 1.32, so the camera quad was not used."
+    },
+    {
+      "batch": "production-03-20261003",
+      "id": "mine-stone",
+      "sourceSHA256": "ff1daba56ba7b3e1f40cdb85bcd9ace519260670017572e1123e74f24aa53731",
+      "gates": { "matte": "PASS", "registration": "FAIL", "composite": "FAIL" },
+      "notes": "Backdrop is clear. The octagonal pit is source content and its ground aspect does not match 1.4 by 1.2 (scale ratio 1.88, fourth-corner error 105 px)."
+    },
+    {
+      "batch": "production-01-20261003",
+      "id": "kingdom-terrain-stone",
+      "sourceSHA256": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1",
+      "gates": { "composite": "FAIL" },
+      "notes": "48309 site pixels were inpainted. Plot borders, baked structures, people, scattered logs and the river crossing remain. Outskirts outside the 18 footprints were not the cleanup target. Source-content stays the verifier FAIL."
+    }
+  ]
+}

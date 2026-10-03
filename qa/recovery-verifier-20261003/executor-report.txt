@@ -1,0 +1,65 @@
+The first delivery set is recovered from the collected artwork and scored with the gates kept separate. It is not runtime-approved and not owner-accepted.
+
+What was delivered
+
+Originals were re-hashed and left unchanged. Derivatives, inspections, and records are under assets/delivery/stone-starter-20261003/. The Stone composite is stone-kingdom-composite.png (2be484d16d7d3af6c28ef779931f859c50d68c0f25260f9a7bc6e92b022e70b2). The Hall is on the townhall site and the producers are on P01, P04, P10, and P14, using measured ground width because the camera quad does not close. The reference comparison is comparison/stone-reference-and-composite.jpg.
+
+The gallery now has 43 samples. The feedback key aod-section-feedback-20261003-v1 is unchanged, and no owner decision was supplied.
+
+• Recovered placement: design-preview/feedback-20261003/index.html (design-preview/feedback-20261003/index.html) (section kingdom-stone-recovered)
+• Resources and Offense: same page, section ui-resources-offense
+• Review server: http://127.0.0.1:4186/design-preview/feedback-20261003/
+
+Gates
+
+Joined on batch, asset id, and source SHA256. A visual fail can override an automated pass. An automated fail stays a fail. Runtime and owner acceptance were not promoted.
+
+┌───────────────────────┬───────┬───────────┬────────────────┬────────────┬──────────────┬────────────┬────────────┬────────────┐
+│ Asset                 │ Batch │ Technical │ Source content │ Matte      │ Registration │ Composite  │ Runtime    │ Owner      │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ skill-offense         │ 03    │ PASS      │ PASS           │ PASS       │ UNVERIFIED   │ UNVERIFIED │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ resource-food         │ 01    │ PASS      │ PASS           │ FAIL       │ UNVERIFIED   │ UNVERIFIED │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ resource-wood         │ 01    │ PASS      │ PASS           │ FAIL       │ UNVERIFIED   │ UNVERIFIED │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ resource-stone        │ 01    │ PASS      │ PASS           │ PASS       │ UNVERIFIED   │ UNVERIFIED │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ resource-gold         │ 01    │ PASS      │ PASS           │ UNVERIFIED │ UNVERIFIED   │ UNVERIFIED │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ townhall-stone        │ 03    │ PASS      │ PASS           │ FAIL       │ FAIL         │ FAIL       │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ farm-stone            │ 03    │ PASS      │ PASS           │ UNVERIFIED │ FAIL         │ FAIL       │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ lumber-stone          │ 03    │ PASS      │ PASS           │ PASS       │ FAIL         │ FAIL       │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ quarry-stone          │ 03    │ PASS      │ PASS           │ PASS       │ FAIL         │ FAIL       │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ mine-stone            │ 03    │ PASS      │ PASS           │ PASS       │ FAIL         │ FAIL       │ UNVERIFIED │ UNVERIFIED │
+├───────────────────────┼───────┼───────────┼────────────────┼────────────┼──────────────┼────────────┼────────────┼────────────┤
+│ kingdom-terrain-stone │ 01    │ PASS      │ FAIL           │ UNVERIFIED │ UNVERIFIED   │ FAIL       │ UNVERIFIED │ UNVERIFIED │
+└───────────────────────┴───────┴───────────┴────────────────┴────────────┴──────────────┴────────────┴────────────┴────────────┘
+
+Food keeps 8210 interior gap pixels, and the wheat tips still have a magenta fringe. Wood has lost the large rose shadow and still has a dark contact remnant. Gold keeps its metal-pink reflection and still has a thin purple line under the bottom coin. The Hall apron and magenta rim reach the canvas edge. All five buildings use uniform-width-fit because the fourth corner misses by 105–246 px. The Hall overlaps the lumber camp. Terrain inpainting changed 48309 pixels; plot borders, baked huts, people, logs, and the river crossing remain.
+
+The UI rasters at 825×375, 933×424, 1180×820, and 1280×720 show Food 250, Wood 250, Stone 160, Gold 150, and the Offense plaque, with the footer "Reference start amounts. Owner acceptance is pending." Those amounts are the historical reference, not a new rule. Quarry and mine are shown in the placement study even though their historical start level is 0.
+
+The live kingdom view uses the reviewed terrain file and still draws contract plot polygons. It does not draw the unregistered building sprites.
+
+Checks
+
+• python scripts/recover_first_delivery.py completed. Automated matte was pass for the four resources, Offense, and the four producers, and fail for the Hall. All five registrations failed. Composite prefix 2be484d16d7d. Terrain edits 48309.
+• python scripts/review_gates.py: 90 fresh rows, 0 stale, 85 selected candidates fresh, runtimeApproved 0, ownerAccepted 0, stale-hash fixture rejected.
+• node --test tests/*.test.mjs: 21 pass, 0 fail.
+• node design-preview/feedback-20261003/check.cjs: PASS, 43 samples, both new sections exported, contract-size captures loaded. That pass does not prove visual fidelity.
+• python scripts/benchmark.py: exit 1. 234 automated checks, one failure: townhall-stone-provenance. The batch 01 guide hash is 805f8f63…. The file now on disk is 4efcbc5a…, which matches the batch 03 manifest. Prompt hash and camera axes for that item still match. The recovery script does not write guides. The benchmark report keeps visualStatus UNVERIFIED and productApproved false.
+
+Files
+
+Code and review records: scripts/recover_first_delivery.py, scripts/review_gates.py, scripts/benchmark.py, src/client/main.js, src/client/game.css, src/data/reviewed-source-selection.json, qa/delivery-20261003/visual-gates.json, design-preview/feedback-20261003/index.html, check.cjs, README.md, preview-manifest.json, CURRENT-STATUS.md, docs/SESSION-HANDOFF.md, docs/BUILD-PROGRESS.md.
+
+Generated evidence: assets/delivery/stone-starter-20261003/ (derivatives, inspection/, before-after/, terrain, composite, debug overlay, four UI rasters, processing-record.json, gate-ledger.json) and qa/section-preview-20261003/contract-*.png. Collection reports, provider output, locks, and budget reservations were not rewritten. Batch 04 was not queried or replaced.
+
+Still open
+
+Reproject the five buildings so the ground quad closes without shearing the roof. Remove the Hall apron, Food wheat fringe, Wood contact remnant, and Gold base line without a global chroma key. Replace the baked Stone terrain content rather than another local inpaint. Resolve the shared townhall-stone.png guide so batch 01 and batch 03 each keep the bytes they recorded. Keep the full eight-age, three-mode plan. Do not submit a replacement batch while batch 04 (projects/186933974004/locations/global/batchPredictionJobs/6905547786872160256) is active.

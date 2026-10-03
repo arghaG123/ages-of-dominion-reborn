@@ -1,0 +1,47 @@
+:root{color-scheme:dark;font-family:system-ui;color:#f1e9d9;background:#10171b;--surface:#263239;--accent:#c9a35b}
+*{box-sizing:border-box}
+body{margin:0}
+#app{height:100dvh;width:100%;max-width:100%;min-width:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto;overflow:hidden;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+header,footer{display:flex;gap:8px;align-items:center;min-width:0;padding:4px 8px;background:var(--surface)}
+h1{font-size:20px;margin:0;white-space:nowrap}
+h2{font-size:16px;margin:0 0 8px}
+#status{font-size:12px}
+#resources{margin-left:auto;display:flex;gap:8px;min-width:0;min-height:28px;align-items:center;overflow-x:auto;font-size:12px}
+#resources span{white-space:nowrap}
+#resources i{font-style:normal;font-size:18px}
+#resources img{object-fit:contain;vertical-align:middle}
+button{min-height:48px;min-width:48px;border:1px solid var(--accent);color:#f1e9d9;background:#152128;border-radius:8px;padding:8px;font:inherit;cursor:pointer}
+button:hover{background:#304048}
+button:active{transform:scale(.98)}
+button:disabled{opacity:.5;cursor:not-allowed}
+button:focus-visible{outline:3px solid #70b9c5;outline-offset:2px}
+button[aria-current="true"]{background:#3d3424}
+#stage{position:relative;overflow:hidden;background:#151e22}
+#frame{position:absolute;inset:0}
+#terrain,#world{position:absolute;inset:0;width:100%;height:100%}
+#terrain{object-fit:contain;object-position:center}
+#world{display:block}
+#context{position:absolute;top:8px;right:8px;z-index:3}
+#panel{display:none;position:absolute;top:56px;right:8px;bottom:8px;overflow:auto;width:min(280px,34vw);z-index:2;background:#10171bf2;border:1px solid #8c7447;border-radius:8px;padding:8px}
+#panel.open{display:block}
+#choices{display:grid;gap:8px}
+#choices button{text-align:left;font-size:12px}
+#message{font-size:12px;line-height:1.5;color:#f1dba5}
+#nav{display:flex;gap:8px;overflow:auto}
+.plot{cursor:pointer}
+.plot:focus-visible{outline:3px solid #70b9c5}
+.plot polygon{stroke:#d5b573;stroke-width:2}
+.plot.selected polygon{stroke:#70b9c5;stroke-width:4}
+.plot text{fill:#fff8e8;font-size:16px;text-anchor:middle;pointer-events:none}
+.plot .building{fill:#77655299}
+.plot .empty{fill:#40544a66}
+.plot .scaffold{fill:#645341cc;stroke-dasharray:8 4}
+.fog{fill:#10171bcc;stroke:none}
+.water{fill:#3d6d8866;stroke:none}
+.site{fill:#40544a88;stroke:#d5b573;stroke-width:2}
+.guard{fill:#c83e38;stroke:#f1e9d9}
+.pickup{fill:#c9a35b;stroke:none}
+.anchor{fill:#f1e9d9;stroke:none}
+#rotate{display:none;padding:24px;font-size:20px}
+@media(orientation:portrait){#app{display:none}#rotate{display:block}}
+@media(max-height:450px){h1{font-size:16px}header{padding:4px 8px}#panel{width:min(240px,40vw)}}

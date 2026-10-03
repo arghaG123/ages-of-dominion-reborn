@@ -1,0 +1,51 @@
+{
+  "invalidStateAccepted": {
+    "negativeArmyCount": true,
+    "unknownArmyRole": true,
+    "unknownTowerFamily": true,
+    "invalidDay": true,
+    "unknownPlotID": true,
+    "outOfBoundsJourney": true,
+    "overCapacityMana": true,
+    "equipmentWrongSlot": true,
+    "arbitraryBattlePayload": true
+  },
+  "journey": {
+    "beforeReturn": 1,
+    "afterReenter": 5,
+    "path": {
+      "cell": [
+        8,
+        4
+      ],
+      "path": [
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "cost": 4
+    },
+    "pendingEncounterAllowsMove": true,
+    "pendingEncounterAfter": {
+      "id": "guard-open",
+      "cell": [
+        12,
+        4
+      ],
+      "status": "UNRESOLVED_COMBAT_BLOCKED"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "results": {
+    "dwellingCapacity": {
+      "actual": 3,
+      "allowed": 2,
+      "paidGold": 35,
+      "validation": true
+    },
+    "advertisedMelee": {
+      "targets": [
+        "e"
+      ],
+      "approach": [
+        3,
+        3
+      ],
+      "clientPayloadResult": "Not adjacent",
+      "withApproachResult": true
+    },
+    "malformedBattle": {
+      "negativeMana": true,
+      "emptyQueue": true,
+      "invalidDamage": true,
+      "invalidMaxCount": true,
+      "over32bitRng": true,
+      "falseVictory": true
+    },
+    "flyerWaterSave": true
+  },
+  "provenance": {
+    "campaign.js": "2026-10-03T14:47:06.968Z",
+    "battle.js": "2026-10-03T14:44:23.336Z",
+    "save.js": "2026-10-03T05:22:52.891Z",
+    "navigation.js": "2026-10-03T05:02:44.688Z"
+  }
+}

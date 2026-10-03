@@ -1,0 +1,1944 @@
+{
+  "status": "READY_FOR_REVIEW",
+  "ownerAcceptance": "NOT_OWNER_ACCEPTED",
+  "runtimeApproved": false,
+  "activeContractEdited": false,
+  "activeSceneEdited": false,
+  "activeContractSHA256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd",
+  "liveHallScale": 0.1312,
+  "id": "kingdom-layout-candidate-v2",
+  "supersedes": "kingdom-layout-candidate-v1",
+  "requestId": "kingdom-stone-day1-composition-v4",
+  "camera": [
+    60.0,
+    -10.0,
+    25.0,
+    35.0,
+    170.0,
+    165.0
+  ],
+  "sourceSize": [
+    1376,
+    768
+  ],
+  "scaleRule": "Uniform 0.34 is retained from v1 so the roof stays at source y=40 and the dirt apron ends at source y=372.52. That framing is not physical registration. The contact polygon is the visible stone foot, not a rectangle constructed around the entrance cobble.",
+  "rejectedTranslationApplied": false,
+  "hall": {
+    "file": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+    "sha256": "f359a8b72100be8ad78eaf61eede19bc8b2db3bd0a1d071050a51edce22cc37c",
+    "width": 1024,
+    "height": 1024,
+    "matrix": [
+      [
+        0.34,
+        0.0,
+        402.0
+      ],
+      [
+        0.0,
+        0.34,
+        32.86
+      ]
+    ],
+    "uniform": true,
+    "anchorImage": [
+      700,
+      760
+    ],
+    "anchorKind": "entrance cobble, medium confidence",
+    "spriteSourceRect": [
+      402.0,
+      40.0,
+      749.82,
+      372.52
+    ]
+  },
+  "contact": {
+    "method": "visible-stone-foot",
+    "builtAroundCobble": false,
+    "confidence": "medium",
+    "tolerancePx": 20,
+    "toleranceReason": "The band contains the front-plinth residual and the right-corner course jitter. Rear corners stay unmarked.",
+    "imageSamples": [
+      [
+        112,
+        695
+      ],
+      [
+        124,
+        696
+      ],
+      [
+        136,
+        699
+      ],
+      [
+        144,
+        700
+      ],
+      [
+        152,
+        706
+      ],
+      [
+        168,
+        718
+      ],
+      [
+        176,
+        727
+      ],
+      [
+        188,
+        726
+      ],
+      [
+        204,
+        746
+      ],
+      [
+        212,
+        736
+      ],
+      [
+        220,
+        740
+      ],
+      [
+        232,
+        756
+      ],
+      [
+        256,
+        762
+      ],
+      [
+        264,
+        766
+      ],
+      [
+        280,
+        771
+      ],
+      [
+        288,
+        794
+      ],
+      [
+        296,
+        774
+      ],
+      [
+        304,
+        776
+      ],
+      [
+        316,
+        789
+      ],
+      [
+        328,
+        776
+      ],
+      [
+        336,
+        814
+      ],
+      [
+        344,
+        794
+      ],
+      [
+        364,
+        797
+      ],
+      [
+        384,
+        787
+      ],
+      [
+        404,
+        801
+      ],
+      [
+        420,
+        810
+      ],
+      [
+        428,
+        790
+      ],
+      [
+        444,
+        795
+      ],
+      [
+        452,
+        809
+      ],
+      [
+        476,
+        821
+      ],
+      [
+        504,
+        806
+      ],
+      [
+        520,
+        792
+      ],
+      [
+        544,
+        793
+      ],
+      [
+        560,
+        798
+      ],
+      [
+        576,
+        814
+      ],
+      [
+        584,
+        815
+      ],
+      [
+        596,
+        820
+      ],
+      [
+        612,
+        818
+      ],
+      [
+        636,
+        843
+      ],
+      [
+        644,
+        851
+      ],
+      [
+        652,
+        818
+      ],
+      [
+        660,
+        858
+      ],
+      [
+        668,
+        847
+      ],
+      [
+        680,
+        812
+      ],
+      [
+        688,
+        812
+      ],
+      [
+        704,
+        833
+      ],
+      [
+        712,
+        832
+      ],
+      [
+        720,
+        807
+      ],
+      [
+        732,
+        805
+      ],
+      [
+        740,
+        800
+      ],
+      [
+        748,
+        867
+      ],
+      [
+        756,
+        835
+      ],
+      [
+        764,
+        792
+      ],
+      [
+        772,
+        794
+      ],
+      [
+        780,
+        827
+      ],
+      [
+        796,
+        779
+      ],
+      [
+        804,
+        803
+      ],
+      [
+        812,
+        815
+      ],
+      [
+        824,
+        841
+      ],
+      [
+        832,
+        807
+      ],
+      [
+        840,
+        843
+      ],
+      [
+        848,
+        763
+      ],
+      [
+        860,
+        742
+      ],
+      [
+        868,
+        739
+      ],
+      [
+        876,
+        723
+      ],
+      [
+        884,
+        732
+      ],
+      [
+        896,
+        743
+      ],
+      [
+        904,
+        744
+      ],
+      [
+        912,
+        719
+      ],
+      [
+        920,
+        684
+      ],
+      [
+        928,
+        709
+      ],
+      [
+        936,
+        692
+      ],
+      [
+        944,
+        692
+      ],
+      [
+        952,
+        677
+      ],
+      [
+        960,
+        674
+      ],
+      [
+        972,
+        662
+      ],
+      [
+        1004,
+        662
+      ]
+    ],
+    "sourceSamples": [
+      [
+        440.08,
+        269.16
+      ],
+      [
+        444.16,
+        269.5
+      ],
+      [
+        448.24,
+        270.52
+      ],
+      [
+        450.96,
+        270.86
+      ],
+      [
+        453.68,
+        272.9
+      ],
+      [
+        459.12,
+        276.98
+      ],
+      [
+        461.84,
+        280.04
+      ],
+      [
+        465.92,
+        279.7
+      ],
+      [
+        471.36,
+        286.5
+      ],
+      [
+        474.08,
+        283.1
+      ],
+      [
+        476.8,
+        284.46
+      ],
+      [
+        480.88,
+        289.9
+      ],
+      [
+        489.04,
+        291.94
+      ],
+      [
+        491.76,
+        293.3
+      ],
+      [
+        497.2,
+        295.0
+      ],
+      [
+        499.92,
+        302.82
+      ],
+      [
+        502.64,
+        296.02
+      ],
+      [
+        505.36,
+        296.7
+      ],
+      [
+        509.44,
+        301.12
+      ],
+      [
+        513.52,
+        296.7
+      ],
+      [
+        516.24,
+        309.62
+      ],
+      [
+        518.96,
+        302.82
+      ],
+      [
+        525.76,
+        303.84
+      ],
+      [
+        532.56,
+        300.44
+      ],
+      [
+        539.36,
+        305.2
+      ],
+      [
+        544.8,
+        308.26
+      ],
+      [
+        547.52,
+        301.46
+      ],
+      [
+        552.96,
+        303.16
+      ],
+      [
+        555.68,
+        307.92
+      ],
+      [
+        563.84,
+        312.0
+      ],
+      [
+        573.36,
+        306.9
+      ],
+      [
+        578.8,
+        302.14
+      ],
+      [
+        586.96,
+        302.48
+      ],
+      [
+        592.4,
+        304.18
+      ],
+      [
+        597.84,
+        309.62
+      ],
+      [
+        600.56,
+        309.96
+      ],
+      [
+        604.64,
+        311.66
+      ],
+      [
+        610.08,
+        310.98
+      ],
+      [
+        618.24,
+        319.48
+      ],
+      [
+        620.96,
+        322.2
+      ],
+      [
+        623.68,
+        310.98
+      ],
+      [
+        626.4,
+        324.58
+      ],
+      [
+        629.12,
+        320.84
+      ],
+      [
+        633.2,
+        308.94
+      ],
+      [
+        635.92,
+        308.94
+      ],
+      [
+        641.36,
+        316.08
+      ],
+      [
+        644.08,
+        315.74
+      ],
+      [
+        646.8,
+        307.24
+      ],
+      [
+        650.88,
+        306.56
+      ],
+      [
+        653.6,
+        304.86
+      ],
+      [
+        656.32,
+        327.64
+      ],
+      [
+        659.04,
+        316.76
+      ],
+      [
+        661.76,
+        302.14
+      ],
+      [
+        664.48,
+        302.82
+      ],
+      [
+        667.2,
+        314.04
+      ],
+      [
+        672.64,
+        297.72
+      ],
+      [
+        675.36,
+        305.88
+      ],
+      [
+        678.08,
+        309.96
+      ],
+      [
+        682.16,
+        318.8
+      ],
+      [
+        684.88,
+        307.24
+      ],
+      [
+        687.6,
+        319.48
+      ],
+      [
+        690.32,
+        292.28
+      ],
+      [
+        694.4,
+        285.14
+      ],
+      [
+        697.12,
+        284.12
+      ],
+      [
+        699.84,
+        278.68
+      ],
+      [
+        702.56,
+        281.74
+      ],
+      [
+        706.64,
+        285.48
+      ],
+      [
+        709.36,
+        285.82
+      ],
+      [
+        712.08,
+        277.32
+      ],
+      [
+        714.8,
+        265.42
+      ],
+      [
+        717.52,
+        273.92
+      ],
+      [
+        720.24,
+        268.14
+      ],
+      [
+        722.96,
+        268.14
+      ],
+      [
+        725.68,
+        263.04
+      ],
+      [
+        728.4,
+        262.02
+      ],
+      [
+        732.48,
+        257.94
+      ],
+      [
+        743.36,
+        257.94
+      ]
+    ],
+    "worldSamples": [
+      [
+        2.9144,
+        3.8087
+      ],
+      [
+        2.9715,
+        3.8347
+      ],
+      [
+        3.0214,
+        3.8781
+      ],
+      [
+        3.0583,
+        3.8984
+      ],
+      [
+        3.0771,
+        3.962
+      ],
+      [
+        3.1148,
+        4.0894
+      ],
+      [
+        3.1227,
+        4.1791
+      ],
+      [
+        3.1871,
+        4.1877
+      ],
+      [
+        3.1958,
+        4.3845
+      ],
+      [
+        3.2725,
+        4.3093
+      ],
+      [
+        3.2985,
+        4.3556
+      ],
+      [
+        3.3014,
+        4.5118
+      ],
+      [
+        3.4012,
+        4.5986
+      ],
+      [
+        3.4273,
+        4.6449
+      ],
+      [
+        3.4902,
+        4.7115
+      ],
+      [
+        3.4475,
+        4.9227
+      ],
+      [
+        3.5604,
+        4.7607
+      ],
+      [
+        3.5937,
+        4.7896
+      ],
+      [
+        3.6074,
+        4.9198
+      ],
+      [
+        3.7152,
+        4.8243
+      ],
+      [
+        3.6183,
+        5.1658
+      ],
+      [
+        3.7311,
+        5.0037
+      ],
+      [
+        3.8215,
+        5.0587
+      ],
+      [
+        3.959,
+        5.0009
+      ],
+      [
+        4.0096,
+        5.1513
+      ],
+      [
+        4.0581,
+        5.2526
+      ],
+      [
+        4.1709,
+        5.0906
+      ],
+      [
+        4.2339,
+        5.1571
+      ],
+      [
+        4.2237,
+        5.2902
+      ],
+      [
+        4.3019,
+        5.4291
+      ],
+      [
+        4.4979,
+        5.3394
+      ],
+      [
+        4.6296,
+        5.241
+      ],
+      [
+        4.7475,
+        5.2844
+      ],
+      [
+        4.8104,
+        5.351
+      ],
+      [
+        4.8336,
+        5.513
+      ],
+      [
+        4.8705,
+        5.5333
+      ],
+      [
+        4.9131,
+        5.594
+      ],
+      [
+        5.0014,
+        5.5998
+      ],
+      [
+        5.0325,
+        5.8516
+      ],
+      [
+        5.0441,
+        5.9326
+      ],
+      [
+        5.204,
+        5.6577
+      ],
+      [
+        5.0998,
+        6.0165
+      ],
+      [
+        5.1801,
+        5.9326
+      ],
+      [
+        5.3674,
+        5.6461
+      ],
+      [
+        5.408,
+        5.6577
+      ],
+      [
+        5.413,
+        5.8631
+      ],
+      [
+        5.4571,
+        5.866
+      ],
+      [
+        5.5881,
+        5.6606
+      ],
+      [
+        5.6561,
+        5.6606
+      ],
+      [
+        5.7147,
+        5.6288
+      ],
+      [
+        5.5129,
+        6.222
+      ],
+      [
+        5.6691,
+        5.9557
+      ],
+      [
+        5.8651,
+        5.594
+      ],
+      [
+        5.8984,
+        5.623
+      ],
+      [
+        5.8196,
+        5.921
+      ],
+      [
+        6.0742,
+        5.5275
+      ],
+      [
+        6.0279,
+        5.7474
+      ],
+      [
+        6.025,
+        5.8631
+      ],
+      [
+        5.9917,
+        6.1062
+      ],
+      [
+        6.1552,
+        5.8226
+      ],
+      [
+        6.0655,
+        6.1467
+      ],
+      [
+        6.3954,
+        5.4638
+      ],
+      [
+        6.5321,
+        5.2989
+      ],
+      [
+        6.5835,
+        5.2844
+      ],
+      [
+        6.6819,
+        5.1571
+      ],
+      [
+        6.6898,
+        5.2468
+      ],
+      [
+        6.7108,
+        5.3597
+      ],
+      [
+        6.7477,
+        5.3799
+      ],
+      [
+        6.8786,
+        5.1745
+      ],
+      [
+        7.0457,
+        4.8822
+      ],
+      [
+        6.9958,
+        5.1108
+      ],
+      [
+        7.0978,
+        4.9748
+      ],
+      [
+        7.1383,
+        4.9864
+      ],
+      [
+        7.2331,
+        4.8677
+      ],
+      [
+        7.2845,
+        4.8533
+      ],
+      [
+        7.3886,
+        4.7665
+      ],
+      [
+        7.5507,
+        4.8128
+      ]
+    ],
+    "gaps": [
+      {
+        "from": [
+          976,
+          658
+        ],
+        "to": [
+          1004,
+          662
+        ],
+        "confidence": "occluded",
+        "kind": "break in the visible front wall; hidden threshold or corner, not an invented point"
+      }
+    ],
+    "hidden": "The rear wall foot and the two far corners are hidden by the building. They are not given invented coordinates.",
+    "aabb": [
+      2.914,
+      3.809,
+      4.636,
+      2.413
+    ],
+    "aabbUsedAsSite": true,
+    "plinthImage": [
+      400,
+      820
+    ],
+    "plinthDistanceToContactPx": 6.3,
+    "cobbleImage": [
+      700,
+      760
+    ],
+    "cobbleRole": "entrance approach, not a doorway midpoint",
+    "cobbleDistanceToContactPx": 17.37,
+    "doorPosts": "The curtain opening has no measured threshold midpoint. Post bases remain partly hidden by the plinth and cobbles.",
+    "pinkOpaque": 135,
+    "pinkTouchingTransparency": 0,
+    "pinkNear1006x486": 82,
+    "matteRepair": "none. The pink near image (1006, 486) sits in the dirt apron and is surrounded by opaque ground. Clearing it would invent apron pixels. Hall v3 interior was not repainted."
+  },
+  "geometry": {
+    "cols": 14,
+    "rows": 11,
+    "sites": [
+      {
+        "id": "townhall",
+        "rect": [
+          2.914,
+          3.809,
+          4.636,
+          2.413
+        ],
+        "role": "civic-hall"
+      },
+      {
+        "id": "P01",
+        "region": "upper",
+        "rect": [
+          0.3,
+          2.3,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P02",
+        "region": "upper",
+        "rect": [
+          0.3,
+          3.7,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P03",
+        "region": "upper",
+        "rect": [
+          0.3,
+          6.45,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P04",
+        "region": "lower",
+        "rect": [
+          0.3,
+          8.55,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P05",
+        "region": "upper",
+        "rect": [
+          8.7,
+          2.45,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P06",
+        "region": "upper",
+        "rect": [
+          8.7,
+          4.3,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P07",
+        "region": "upper",
+        "rect": [
+          8.7,
+          6.15,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P08",
+        "region": "lower",
+        "rect": [
+          8.7,
+          8.55,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P09",
+        "region": "upper",
+        "rect": [
+          10.3,
+          2.45,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P10",
+        "region": "upper",
+        "rect": [
+          10.3,
+          4.4,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P11",
+        "region": "upper",
+        "rect": [
+          10.3,
+          6.3,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P12",
+        "region": "lower",
+        "rect": [
+          8.35,
+          9.8,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P13",
+        "region": "lower",
+        "rect": [
+          2.05,
+          8.55,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P14",
+        "region": "lower",
+        "rect": [
+          3.65,
+          8.55,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P15",
+        "region": "lower",
+        "rect": [
+          6.75,
+          8.55,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P16",
+        "region": "lower",
+        "rect": [
+          2.05,
+          9.8,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      },
+      {
+        "id": "P17",
+        "region": "lower",
+        "rect": [
+          6.2,
+          9.8,
+          1.4,
+          1.2
+        ],
+        "day1": "empty"
+      }
+    ],
+    "roads": [
+      [
+        [
+          5.66,
+          5.4
+        ],
+        [
+          5.66,
+          10.45
+        ]
+      ],
+      [
+        [
+          2.05,
+          8.05
+        ],
+        [
+          11.4,
+          8.05
+        ]
+      ],
+      [
+        [
+          2.05,
+          2.9
+        ],
+        [
+          2.05,
+          8.05
+        ]
+      ],
+      [
+        [
+          8.2,
+          2.6
+        ],
+        [
+          8.2,
+          8.05
+        ]
+      ],
+      [
+        [
+          11.4,
+          8.05
+        ],
+        [
+          12.5,
+          7.6
+        ],
+        [
+          13.15,
+          7.6
+        ]
+      ]
+    ],
+    "blocked": [
+      [
+        13,
+        0
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        13,
+        10
+      ]
+    ],
+    "bridges": [
+      {
+        "id": "right-crossing",
+        "rect": [
+          12.15,
+          7.2,
+          1.55,
+          0.85
+        ],
+        "cells": [
+          [
+            13,
+            7
+          ]
+        ],
+        "approaches": [
+          [
+            12,
+            7
+          ]
+        ]
+      }
+    ],
+    "anchors": {
+      "gate": [
+        5.66,
+        10.45
+      ],
+      "entrance": [
+        5.66,
+        5.4
+      ]
+    },
+    "perimeter": "unbuilt",
+    "wallsLevel": 0
+  },
+  "mature": {
+    "art": "NO_ISOLATED_STONE_SPRITE",
+    "structures": [
+      {
+        "id": "P09",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          921.25,
+          182.75
+        ],
+        "body": [
+          849.25,
+          74.63,
+          114.0,
+          108.12
+        ],
+        "depth": 182.75
+      },
+      {
+        "id": "P05",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          825.25,
+          198.75
+        ],
+        "body": [
+          753.25,
+          90.63,
+          114.0,
+          108.12
+        ],
+        "depth": 198.75
+      },
+      {
+        "id": "P10",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          970.0,
+          251.0
+        ],
+        "body": [
+          898.0,
+          142.88,
+          114.0,
+          108.12
+        ],
+        "depth": 251.0
+      },
+      {
+        "id": "P06",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          871.5,
+          263.5
+        ],
+        "body": [
+          799.5,
+          155.38,
+          114.0,
+          108.12
+        ],
+        "depth": 263.5
+      },
+      {
+        "id": "P01",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          317.5,
+          277.5
+        ],
+        "body": [
+          245.5,
+          169.38,
+          114.0,
+          108.12
+        ],
+        "depth": 277.5
+      },
+      {
+        "id": "P11",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          1017.5,
+          317.5
+        ],
+        "body": [
+          945.5,
+          209.38,
+          114.0,
+          108.12
+        ],
+        "depth": 317.5
+      },
+      {
+        "id": "P02",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          352.5,
+          326.5
+        ],
+        "body": [
+          280.5,
+          218.38,
+          114.0,
+          108.12
+        ],
+        "depth": 326.5
+      },
+      {
+        "id": "P07",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          917.75,
+          328.25
+        ],
+        "body": [
+          845.75,
+          220.13,
+          114.0,
+          108.12
+        ],
+        "depth": 328.25
+      },
+      {
+        "id": "P08",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          977.75,
+          412.25
+        ],
+        "body": [
+          905.75,
+          304.13,
+          114.0,
+          108.12
+        ],
+        "depth": 412.25
+      },
+      {
+        "id": "P03",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          421.25,
+          422.75
+        ],
+        "body": [
+          349.25,
+          314.63,
+          114.0,
+          108.12
+        ],
+        "depth": 422.75
+      },
+      {
+        "id": "P15",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          860.75,
+          431.75
+        ],
+        "body": [
+          788.75,
+          323.63,
+          114.0,
+          108.12
+        ],
+        "depth": 431.75
+      },
+      {
+        "id": "P12",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          988.0,
+          459.5
+        ],
+        "body": [
+          916.0,
+          351.38,
+          114.0,
+          108.12
+        ],
+        "depth": 459.5
+      },
+      {
+        "id": "P14",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          674.75,
+          462.75
+        ],
+        "body": [
+          602.75,
+          354.63,
+          114.0,
+          108.12
+        ],
+        "depth": 462.75
+      },
+      {
+        "id": "P13",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          578.75,
+          478.75
+        ],
+        "body": [
+          506.75,
+          370.63,
+          114.0,
+          108.12
+        ],
+        "depth": 478.75
+      },
+      {
+        "id": "P17",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          859.0,
+          481.0
+        ],
+        "body": [
+          787.0,
+          372.88,
+          114.0,
+          108.12
+        ],
+        "depth": 481.0
+      },
+      {
+        "id": "P04",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          473.75,
+          496.25
+        ],
+        "body": [
+          401.75,
+          388.13,
+          114.0,
+          108.12
+        ],
+        "depth": 496.25
+      },
+      {
+        "id": "P16",
+        "art": "NO_ISOLATED_STONE_SPRITE",
+        "silhouette": "uniform scale of the measured Hall v3 contact-to-roof height; not an arbitrary fixture box",
+        "door": [
+          610.0,
+          522.5
+        ],
+        "body": [
+          538.0,
+          414.38,
+          114.0,
+          108.12
+        ],
+        "depth": 522.5
+      }
+    ],
+    "relations": [
+      {
+        "near": "P05",
+        "far": "P09",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P10",
+        "far": "P09",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P06",
+        "far": "P09",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P06",
+        "far": "P05",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P06",
+        "far": "P10",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P11",
+        "far": "P10",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P02",
+        "far": "P01",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P07",
+        "far": "P10",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P07",
+        "far": "P06",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P07",
+        "far": "P11",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P08",
+        "far": "P11",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P08",
+        "far": "P07",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P03",
+        "far": "P02",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P15",
+        "far": "P07",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P12",
+        "far": "P08",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P13",
+        "far": "P14",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P17",
+        "far": "P15",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P04",
+        "far": "P03",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      },
+      {
+        "near": "P04",
+        "far": "P13",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P16",
+        "far": "P14",
+        "class": "acceptable",
+        "reason": "Source envelopes overlap, and the far door stays outside the nearer body."
+      },
+      {
+        "near": "P16",
+        "far": "P13",
+        "class": "blocking",
+        "reason": "The nearer body covers the far door."
+      }
+    ],
+    "blocking": 12,
+    "acceptable": 9,
+    "note": "Rectangles alone are not treated as proof. Door coverage is blocking. Envelope overlap that leaves the door clear is acceptable and still depends on a later real sprite."
+  },
+  "viewport": {
+    "reviewChromePx": 92,
+    "runtimeChromeBudgetPx": 112,
+    "identical": false,
+    "review": [
+      {
+        "viewport": [
+          825,
+          375
+        ],
+        "chromePx": 92,
+        "stageHeight": 283,
+        "scale": 0.36849,
+        "offsetX": 158.98,
+        "panelLeftCss": 577,
+        "panelLeftSourceX": 1134.42,
+        "occludedSites": []
+      },
+      {
+        "viewport": [
+          933,
+          424
+        ],
+        "chromePx": 92,
+        "stageHeight": 332,
+        "scale": 0.43229,
+        "offsetX": 169.08,
+        "panelLeftCss": 685,
+        "panelLeftSourceX": 1193.45,
+        "occludedSites": []
+      },
+      {
+        "viewport": [
+          1180,
+          820
+        ],
+        "chromePx": 92,
+        "stageHeight": 728,
+        "scale": 0.85756,
+        "offsetX": 0.0,
+        "panelLeftCss": 892,
+        "panelLeftSourceX": 1040.16,
+        "occludedSites": [
+          {
+            "id": "P11",
+            "centreClear": true,
+            "footprintCrossesPanel": true
+          }
+        ]
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "chromePx": 92,
+        "stageHeight": 628,
+        "scale": 0.81771,
+        "offsetX": 77.42,
+        "panelLeftCss": 992,
+        "panelLeftSourceX": 1118.47,
+        "occludedSites": []
+      }
+    ],
+    "runtimeBudget": [
+      {
+        "viewport": [
+          825,
+          375
+        ],
+        "chromePx": 112,
+        "stageHeight": 263,
+        "scale": 0.34245,
+        "offsetX": 176.9,
+        "panelLeftCss": 577,
+        "panelLeftSourceX": 1168.37
+      },
+      {
+        "viewport": [
+          933,
+          424
+        ],
+        "chromePx": 112,
+        "stageHeight": 312,
+        "scale": 0.40625,
+        "offsetX": 187.0,
+        "panelLeftCss": 685,
+        "panelLeftSourceX": 1225.85
+      },
+      {
+        "viewport": [
+          1180,
+          820
+        ],
+        "chromePx": 112,
+        "stageHeight": 708,
+        "scale": 0.85756,
+        "offsetX": 0.0,
+        "panelLeftCss": 892,
+        "panelLeftSourceX": 1040.16
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "chromePx": 112,
+        "stageHeight": 608,
+        "scale": 0.79167,
+        "offsetX": 95.33,
+        "panelLeftCss": 992,
+        "panelLeftSourceX": 1132.63
+      }
+    ],
+    "accessibleSelection": "A site list in the layers panel is the 48px target. Map polygons are not given a second overlapping hit box."
+  },
+  "missingTerrain": {
+    "id": "civic-terrace-and-entrance-apron",
+    "sourceRect": [
+      416,
+      284,
+      742,
+      373
+    ],
+    "existing": "incompatible",
+    "finding": "Pixels exist here but they are painted guide plots, log piles and crossing dirt. They are not a clear raised terrace or entrance apron. Do not blur, clone or flat-fill them."
+  },
+  "painting": {
+    "file": "assets/production/production-14-20261003/images/30-kingdom-stone-day1-composition-v4.png",
+    "sha256": "5dfdc20e8724acf48781ceae15d00a35899c855a26408a8e7656f84165f23c76",
+    "size": [
+      1376,
+      768
+    ],
+    "submittedGuide": "docs/plan/image-production/guides/kingdom-stone-day1-composition-v4.png",
+    "submittedGuideSHA256": "468ee7a897eb934d965a26a44c8644bce1c1524468802d7531c354720cd0f014",
+    "submittedGuideSize": [
+      1376,
+      768
+    ],
+    "recoveryGuideSHA256": "609d3195018ccf448f339f79e45fe90b9e5adfb2859674e40383144d2106f848",
+    "guidesMatch": false,
+    "ownerAcceptance": "NOT_OWNER_ACCEPTED",
+    "resampledByProvider": false,
+    "blueRowSpan": null,
+    "spatialFidelity": "FAIL",
+    "usableSiteCount": "UNVERIFIED",
+    "visibleClearings": "About twelve bare dirt pads are visible around the painted hall. The review legend covers the lower left, so this is not a count of seventeen usable sites.",
+    "finding": "Preserved as a composition reference. The file is 1376x768 and its hash matches the collected batch 14 output. The painted hall is a different timber building, not Hall v3. The river is a wide right-hand channel with two foreground log spans, not the candidate's single upper-right crossing. Spatial fidelity FAIL. It was not adopted, repurchased, or turned into playable terrain."
+  },
+  "guide": {
+    "file": "qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v5-guide.png",
+    "status": "READY_FOR_REVIEW",
+    "ownerAcceptance": "NOT_OWNER_ACCEPTED",
+    "submittedGuideUnchanged": true,
+    "legend": "outside the roof and the contact samples",
+    "sha256": "673492a6a1c6780eb77d9b0b24f7eefe30a98dc119c7fbee9e3edef088b8c1ff"
+  },
+  "decision": "Adopt the kingdom-layout-candidate-v2 spatial arrangement, or revise it. Adopting it does not accept the batch 14 painting, this guide, the runtime scene, a native build, or any spend.",
+  "deliveryPlan": {
+    "recoverableReference": "Batch 14 lighting, stone material, full roof and natural ground can guide a later separated painting.",
+    "unavailable": "Seventeen clear sites, the guide crossing, and the Hall v3 subject are not in the collected painting. Hidden pixels were not invented.",
+    "localProcessing": "Overlay and measurement only. No inpaint, blur, flat fill, or new matte.",
+    "repurchase": "not requested"
+  }
+}

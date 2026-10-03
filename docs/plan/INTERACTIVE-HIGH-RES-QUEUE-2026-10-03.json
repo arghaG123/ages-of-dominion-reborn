@@ -1,0 +1,2420 @@
+{
+  "date": "2026-10-03",
+  "role": "PLANNER_VERIFIER",
+  "providerCallsPerformed": false,
+  "scope": "32 individual 4K first; later proposed 2K groups require owner scheduling",
+  "model": "gemini-3.1-flash-image",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "counts": {
+    "4K": 32,
+    "2K": 73,
+    "1K": 375
+  },
+  "items": [
+    {
+      "group": "4K-FIRST-32",
+      "order": 1,
+      "id": "kingdom-terrain-stone",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "kingdom-terrain-stone"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "kingdom-terrain-stone",
+          "file": "assets/production/production-01-20261003/images/01-kingdom-terrain-stone.png",
+          "sha256": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1",
+          "promptSHA256": "b0e812d6629f85e2aa8765add163819ce85c530dbc03705d7e582f004672dbc3"
+        },
+        {
+          "batch": "production-03-20261003",
+          "id": "kingdom-terrain-stone",
+          "file": "assets/production/production-03-20261003/images/01-kingdom-terrain-stone.png",
+          "sha256": "5fcdb893fd7f2567f435742368cfa5fa093cbbbbe2b49a17f9f850d306b7de70",
+          "promptSHA256": "99455638bf426a7e4a3848cd90c4080cea57ce4d722b7fb52188adb03c0cb2cf"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 2,
+      "id": "kingdom-terrain-bronze",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "kingdom-terrain-bronze"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "kingdom-terrain-bronze",
+          "file": "assets/production/production-01-20261003/images/02-kingdom-terrain-bronze.png",
+          "sha256": "49f13640f0d3f1b44769606ae541e8f67bd34d861dc0052e6bd69af7342230c1",
+          "promptSHA256": "4d72ea514415743374b778629a13da4a4a1297749c5f3da78072aad0b9a14e9f"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 3,
+      "id": "kingdom-terrain-iron",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "kingdom-terrain-iron"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "kingdom-terrain-iron",
+          "file": "assets/production/production-01-20261003/images/03-kingdom-terrain-iron.png",
+          "sha256": "a05358dba5c543bdde5d17d0ad65aa59b24e8afc6705d95cadfd002436df8fb9",
+          "promptSHA256": "d1f0cbb3bc432a7901fc3a15059d11cc4a93e104c95bdb222bcf7c99f167df8f"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 4,
+      "id": "kingdom-terrain-medieval",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "kingdom-terrain-medieval"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "kingdom-terrain-medieval",
+          "file": "assets/production/production-01-20261003/images/04-kingdom-terrain-medieval.png",
+          "sha256": "3eea9e8d20e1f4648f95eec2ae735079b36287a976a6b4f25ae94be4f48b7453",
+          "promptSHA256": "03867c7ee0c0e4de64d575f8c4634b1023c0a905fe7759f14ff44a56daa43f82"
+        },
+        {
+          "batch": "production-03-20261003",
+          "id": "kingdom-terrain-medieval",
+          "file": "assets/production/production-03-20261003/images/02-kingdom-terrain-medieval.png",
+          "sha256": "7c6122a97b842a45d8fb6ce7477df48e07d24046f3c8ce6878647cf2a1daa152",
+          "promptSHA256": "152d5a59f062724fc765d233684d03c68e706fbee0e5bb64473c19dd6bdccca6"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 5,
+      "id": "kingdom-terrain-gunpowder",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "kingdom-terrain-gunpowder"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "kingdom-terrain-gunpowder",
+          "file": "assets/production/production-01-20261003/images/05-kingdom-terrain-gunpowder.png",
+          "sha256": "9aec2f273a388c3061d9c1237be4590d678c34c7962c366c7944db38c6228879",
+          "promptSHA256": "d3978281ce00f32166c4914f9f7207edfd79a65d093c05ebfe4884cf36a90911"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 6,
+      "id": "kingdom-terrain-industrial",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "kingdom-terrain-industrial"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "kingdom-terrain-industrial",
+          "file": "assets/production/production-01-20261003/images/06-kingdom-terrain-industrial.png",
+          "sha256": "85440ec67f04e90b144f1f6ecc281fc1b898b584c38deec0b8e512e7f2d512d6",
+          "promptSHA256": "f8c115facffd79659e1e170c75e03ed9ee87731e4a1227a1264c552faab98ccf"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 7,
+      "id": "kingdom-terrain-modern",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "kingdom-terrain-modern"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "kingdom-terrain-modern",
+          "file": "assets/production/production-01-20261003/images/07-kingdom-terrain-modern.png",
+          "sha256": "c53704f6a8cb8e6586d0fe0c26b5e9af172f9d3d8cba6489affe2c1fae5cc926",
+          "promptSHA256": "4b42f875b8bf809a8212aca6e8a0810ef8d80f54b11e2fca6c2eb77918a64623"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 8,
+      "id": "kingdom-terrain-future",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "kingdom-terrain-future"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "kingdom-terrain-future",
+          "file": "assets/production/production-01-20261003/images/08-kingdom-terrain-future.png",
+          "sha256": "df5e35eeca4df63ec2fd636dfe4d7522b6a33f805ff7c4e84aee321423f6fd8d",
+          "promptSHA256": "8003f48f37557be8b9fca50ccf4fc54ba4f90706ac856dfd5681f44e2f6b9508"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 9,
+      "id": "adventure-terrain",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "adventure-terrain"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "adventure-terrain",
+          "file": "assets/production/production-01-20261003/images/17-adventure-terrain.png",
+          "sha256": "d7b85885045bdedca6f0d203a56f1a57786074afb8591f6a72cefbf75bd7faab",
+          "promptSHA256": "2be154989ba3ae1314e6429978e2702a6f377779dc4d896234f8a10f3458c9de"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 10,
+      "id": "adventure-terrain-plains",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "adventure-terrain-plains"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "adventure-terrain-plains",
+          "file": "assets/production/production-03-20261003/images/06-adventure-terrain-plains.png",
+          "sha256": "0f0b91561a84029bd333924fd7560e59fbc6c4704079c54a1b2673348f24f2aa",
+          "promptSHA256": "46a62701e61935e3e7f6d5ab07e132f7804f0b9a5bf07453a8af4051c63d5f6b"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 11,
+      "id": "adventure-terrain-hills",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "adventure-terrain-hills"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "adventure-terrain-hills",
+          "file": "assets/production/production-03-20261003/images/07-adventure-terrain-hills.png",
+          "sha256": "d7341f4c346f63f54b36605428491d2eb9e6c6e57da8b72c94a22d3744c10028",
+          "promptSHA256": "071d1abc3f18fce38c3a5a2f2f6f892a99f25726c3df1b091b423c82126a712b"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 12,
+      "id": "adventure-terrain-swamp",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "adventure-terrain-swamp"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "adventure-terrain-swamp",
+          "file": "assets/production/production-03-20261003/images/08-adventure-terrain-swamp.png",
+          "sha256": "7b63336ba39b633efa60d8f90e2f731c18f59a2755a72b025b661b68e9a8493e",
+          "promptSHA256": "ac683439c310a9409b234e47dde84f871954e7c044cdd656669ed978147f0669"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 13,
+      "id": "adventure-terrain-desert",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "adventure-terrain-desert"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "adventure-terrain-desert",
+          "file": "assets/production/production-03-20261003/images/09-adventure-terrain-desert.png",
+          "sha256": "face19a6f2f5cf492c0a037246d95195a20df1f9a50759cac402dd99bf19b427",
+          "promptSHA256": "51e8489edeefe20396d6ec0edfe61d5c94ba44990a3b86ddd4b62bafde4648a8"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 14,
+      "id": "adventure-terrain-snow",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "adventure-terrain-snow"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "adventure-terrain-snow",
+          "file": "assets/production/production-03-20261003/images/10-adventure-terrain-snow.png",
+          "sha256": "7a9615b285ef6dff89628fa874e467c6e21e8f591c8e90755a2cdd984c73ff46",
+          "promptSHA256": "2cdb03f343e54cddc1f778343c7a53ef1c9faf8a443dc8a52fafcda0cc51c8d1"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 15,
+      "id": "adventure-terrain-waste",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "adventure-terrain-waste"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "adventure-terrain-waste",
+          "file": "assets/production/production-03-20261003/images/11-adventure-terrain-waste.png",
+          "sha256": "097c0dca278e541d9845378ce4275b4b5cda0ff4cb94eb25c4008252d578e7a8",
+          "promptSHA256": "c9a016e3bc11e957228c766e9d0fd26dfc3fa32be9f07342aa8ba479e18dc766"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 16,
+      "id": "adventure-terrain-ruins",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "adventure-terrain-ruins"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "adventure-terrain-ruins",
+          "file": "assets/production/production-03-20261003/images/12-adventure-terrain-ruins.png",
+          "sha256": "64a0e78027abe94cd8f7c9c529d32500d60bf82f2509681b46fac42c227a6107",
+          "promptSHA256": "ecaa6543da875dc7a592e9128feab6e466c72e5fd265d640d47354a8dd1f43c6"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 17,
+      "id": "tactical-terrain",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "tactical-terrain"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "tactical-terrain",
+          "file": "assets/production/production-01-20261003/images/18-tactical-terrain.png",
+          "sha256": "13b7c602053e026039c5f04fe692a9073d17cd96da12af3bfdec2da668224646",
+          "promptSHA256": "f17ec38af46a70ffe45b0877599da488d3b3dd266431e2b1fef379b8c086229e"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 18,
+      "id": "tactical-terrain-plains",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "tactical-terrain-plains"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "tactical-terrain-plains",
+          "file": "assets/production/production-03-20261003/images/13-tactical-terrain-plains.png",
+          "sha256": "e5dc2c794ef9fc921df75a5969d3e1fc08ede8987379cd49c4cbe8747bc70ce8",
+          "promptSHA256": "2cdd513a5997e3f97110b78018fa17f01340526f91f074d4fde8965afee77607"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 19,
+      "id": "tactical-terrain-hills",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "tactical-terrain-hills"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "tactical-terrain-hills",
+          "file": "assets/production/production-03-20261003/images/14-tactical-terrain-hills.png",
+          "sha256": "fe1d2f26a4dcb0cd07970e441ff4946ddd21ccbcaa75bca3574ec45407168365",
+          "promptSHA256": "44b2bf23cb4e70aa78ae0148493f8ec7a6a12f375306cea4629a762effd942c0"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 20,
+      "id": "tactical-terrain-swamp",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "tactical-terrain-swamp"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "tactical-terrain-swamp",
+          "file": "assets/production/production-03-20261003/images/15-tactical-terrain-swamp.png",
+          "sha256": "f7690dad04255e3085a0830cde7d6fad4a9e7f460c06416e543595a5cbb5d7b1",
+          "promptSHA256": "47ed5fa731d3757a692c11cacec5439d31ba064b7ad721b0a795c15be7105e93"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 21,
+      "id": "tactical-terrain-desert",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "tactical-terrain-desert"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "tactical-terrain-desert",
+          "file": "assets/production/production-03-20261003/images/16-tactical-terrain-desert.png",
+          "sha256": "ad6b64e774530faebd4bda061e8966e99934a7ed35b52d7aca86d587d876a21c",
+          "promptSHA256": "45bda798be4154dd0d94ea4d0f7f2867813ec8fbdfbc4a907eb576d7ae5b603d"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 22,
+      "id": "tactical-terrain-snow",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "tactical-terrain-snow"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "tactical-terrain-snow",
+          "file": "assets/production/production-03-20261003/images/17-tactical-terrain-snow.png",
+          "sha256": "67a47456a41e35dcad4bd37dbd2b852ad9c790da99c2ded92ddac11593fa19a1",
+          "promptSHA256": "0d7a6556c2deba6db88b1b239ad2f7baf927646e7643f8c9492db1b19d1f555c"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 23,
+      "id": "tactical-terrain-waste",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "tactical-terrain-waste"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "tactical-terrain-waste",
+          "file": "assets/production/production-03-20261003/images/18-tactical-terrain-waste.png",
+          "sha256": "c7300c3824e935913f5c44fdc5e2143064b0bfb59601b913850dc13212dd180a",
+          "promptSHA256": "e9315b77823c8ee16ec9b848e20af85ad4efd4a1ba2a0d51bdeaab7754cfdc90"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 24,
+      "id": "tactical-terrain-ruins",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "tactical-terrain-ruins"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "tactical-terrain-ruins",
+          "file": "assets/production/production-03-20261003/images/19-tactical-terrain-ruins.png",
+          "sha256": "fd7e61df00ea74f661dcae72be993ede354577628e3034dc9e7e10f9dd7f2630",
+          "promptSHA256": "d6ccbc79527f3288ea299fd4dfed267c84d2dd1630550aa5f4473852e2a19bcf"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 25,
+      "id": "defense-terrain",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "defense-terrain"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "defense-terrain",
+          "file": "assets/production/production-01-20261003/images/19-defense-terrain.png",
+          "sha256": "4399132dcd0cce9e1563e2e3525f0cc61b5b6a4368c268dd2ca3125d02aaae2a",
+          "promptSHA256": "3c83ad741e22e794eaefa511ce7856dae0d8f29c1ea504323c206673481175d9"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 26,
+      "id": "defense-terrain-plains",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "defense-terrain-plains"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "defense-terrain-plains",
+          "file": "assets/production/production-03-20261003/images/20-defense-terrain-plains.png",
+          "sha256": "74ae033202abdd569275cde5c4db117f0c4aa9d1d51b995e8a3529aef5f39c95",
+          "promptSHA256": "d4e2f847264647d7ed6fec3810ac22dcb012f67b9309daa707f17c07f47b3068"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 27,
+      "id": "defense-terrain-hills",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "defense-terrain-hills"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "defense-terrain-hills",
+          "file": "assets/production/production-03-20261003/images/21-defense-terrain-hills.png",
+          "sha256": "85683199e550e019adfa557e6344fc11ec690cb075d99a2c25a8df70ac4d92bc",
+          "promptSHA256": "ce1b8fd4fba009ee15a8fb94e7ef519ab5b7c8980b79325b2aebdc26e07b29ce"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 28,
+      "id": "defense-terrain-swamp",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "defense-terrain-swamp"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "defense-terrain-swamp",
+          "file": "assets/production/production-03-20261003/images/22-defense-terrain-swamp.png",
+          "sha256": "e6f9acb065d03e88a3d7c78f82671d4cd4c9054be99c064ef9b0867a753514cf",
+          "promptSHA256": "aca1ff7eb6cbf06f274e030817b255bd5990579748937009fbdcd614d60e2e85"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 29,
+      "id": "defense-terrain-desert",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "defense-terrain-desert"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "defense-terrain-desert",
+          "file": "assets/production/production-03-20261003/images/23-defense-terrain-desert.png",
+          "sha256": "ee719f87cd37f2a19e29041fc387fc394f5326d0e9043acb21e06310107ca4d3",
+          "promptSHA256": "25d551a774d5f6b47049a81ab08e91c80cc978196090022925caea6153d52b8f"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 30,
+      "id": "defense-terrain-snow",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "defense-terrain-snow"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "defense-terrain-snow",
+          "file": "assets/production/production-03-20261003/images/24-defense-terrain-snow.png",
+          "sha256": "b9baf2f8d31a329326f954de42badd025e3626658e0814dcb5a435c254ef28fe",
+          "promptSHA256": "910d57bfec00be2fb6470b564fa16788071732c6892b3088cd4ce01592eb5d99"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 31,
+      "id": "defense-terrain-waste",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "defense-terrain-waste"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "defense-terrain-waste",
+          "file": "assets/production/production-03-20261003/images/25-defense-terrain-waste.png",
+          "sha256": "369fc0142573387fd8341126501c53741ad13b4e207e35fa70081d63af862104",
+          "promptSHA256": "6a91a5c3336bcdf2fed15a55c4cff5991fc17496e1b82c1294cb8b5a56ef608a"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "4K-FIRST-32",
+      "order": 32,
+      "id": "defense-terrain-ruins",
+      "imageSize": "4K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "defense-terrain-ruins"
+      ],
+      "sources": [
+        {
+          "batch": "production-03-20261003",
+          "id": "defense-terrain-ruins",
+          "file": "assets/production/production-03-20261003/images/26-defense-terrain-ruins.png",
+          "sha256": "77c66e4ae0e19442811f43b0556bc30623ddb21faae954935e6d177c10962887",
+          "promptSHA256": "952026b3a8f9bf0dd85e3b4ab640fd20a47edee529e0f4c884dfa2c6ed9c7cc7"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 1,
+      "id": "knight-mounted-master",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "knight-mounted-master"
+      ],
+      "sources": [
+        {
+          "batch": "production-01-20261003",
+          "id": "knight-mounted-master",
+          "file": "assets/production/production-01-20261003/images/30-knight-mounted-master.png",
+          "sha256": "df9f9165a9e2fbc5c4cccb6ae463d06778e6edc28f193fc44374337767c4d808",
+          "promptSHA256": "3e42974946324ae053920d147c8e898def4e63e2b0c045f525384755ba6eedd0"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 2,
+      "id": "portrait-ancient-ranger",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-ancient-ranger"
+      ],
+      "sources": [
+        {
+          "batch": "production-02-20261003",
+          "id": "portrait-ancient-ranger",
+          "file": "assets/production/production-02-20261003/images/24-portrait-ancient-ranger.png",
+          "sha256": "5905c40cb0bd55565d700f37841fb394dd48ea20bb179b0f8bc90d753794c269",
+          "promptSHA256": "07d35961d646e485f57d712708fbfab8266764edb52e46c33fa74649e5eb665d"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 3,
+      "id": "portrait-ancient-warlock",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-ancient-warlock"
+      ],
+      "sources": [
+        {
+          "batch": "production-02-20261003",
+          "id": "portrait-ancient-warlock",
+          "file": "assets/production/production-02-20261003/images/25-portrait-ancient-warlock.png",
+          "sha256": "83b7e730a71f70c5a9ba25eca563a43e69e0fca6664df8c3c3023d204cd6376f",
+          "promptSHA256": "783f5e48165fc84ba010a1186330b2b391a9190847c0f19c596ad9cda0883b59"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 4,
+      "id": "portrait-ancient-mage",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-ancient-mage"
+      ],
+      "sources": [
+        {
+          "batch": "production-02-20261003",
+          "id": "portrait-ancient-mage",
+          "file": "assets/production/production-02-20261003/images/26-portrait-ancient-mage.png",
+          "sha256": "45ab95913e183017dd8cfbdb2cfe1fc50ab68758e9898331a784e157f7632364",
+          "promptSHA256": "6b9eb72ad6c8cbe4faf824772b4942a68af4f8e49935c0c373ef1b0f6cbeb2f4"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 5,
+      "id": "portrait-ancient-paladin",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-ancient-paladin"
+      ],
+      "sources": [
+        {
+          "batch": "production-02-20261003",
+          "id": "portrait-ancient-paladin",
+          "file": "assets/production/production-02-20261003/images/27-portrait-ancient-paladin.png",
+          "sha256": "40c00ba2422ee6eafd09e7c1f73365cd86638bfbcf0ca8dcdc28caf18e0d8796",
+          "promptSHA256": "920d72208c86ed88c2407c4b337aff72bb73fa19c7e553456e1cbf6d3b401737"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 6,
+      "id": "portrait-ancient-barbarian",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-ancient-barbarian"
+      ],
+      "sources": [
+        {
+          "batch": "production-02-20261003",
+          "id": "portrait-ancient-barbarian",
+          "file": "assets/production/production-02-20261003/images/28-portrait-ancient-barbarian.png",
+          "sha256": "ecab8c068f92933a8aba7cf78dd55bb2c26ad6209a3813da4eb7fead42345803",
+          "promptSHA256": "df3497438259be84e1d3d59983e7b6d647c3aee7b4b2574f96ceff7df5864f68"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 7,
+      "id": "portrait-ancient-necromancer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-ancient-necromancer"
+      ],
+      "sources": [
+        {
+          "batch": "production-02-20261003",
+          "id": "portrait-ancient-necromancer",
+          "file": "assets/production/production-02-20261003/images/29-portrait-ancient-necromancer.png",
+          "sha256": "b46f606ec18725d59c4ad644eb3a6ae552c7bc50917091ca23f2d586e6787b2a",
+          "promptSHA256": "18fd37515b40e8bab1164be01a16c7787f4bfdaf039c489c88b45c205430ffb7"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 8,
+      "id": "portrait-ancient-healer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-ancient-healer"
+      ],
+      "sources": [
+        {
+          "batch": "production-02-20261003",
+          "id": "portrait-ancient-healer",
+          "file": "assets/production/production-02-20261003/images/30-portrait-ancient-healer.png",
+          "sha256": "4ed721d7feeedb2840df981d524f953246c903906dabc4ffc6f6b46a55d49296",
+          "promptSHA256": "fadb8bb7137f8215948ab66bb342f8ee81354158255a54ac055793a217cb49b4"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 9,
+      "id": "portrait-medieval-knight",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-medieval-knight"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-medieval-knight",
+          "file": "assets/production/production-10-20261003/images/17-portrait-medieval-knight.png",
+          "sha256": "4c95bd27510a79d59f7993919e7b7294b2e2bb90d67056ddf68f14599a0af6ce",
+          "promptSHA256": "71c963d477c21c66bcd473006eeaa771ca246691fd3b88769edf6d351c8d14a5"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 10,
+      "id": "portrait-medieval-ranger",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-medieval-ranger"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-medieval-ranger",
+          "file": "assets/production/production-10-20261003/images/18-portrait-medieval-ranger.png",
+          "sha256": "01f1b286a3744576cac143777f13edf99e6bb672a587d1f67b2a14d3d00a5e45",
+          "promptSHA256": "90a36f8065a58acfc4a4a4afa0c66b8212f62171e495a64df6b526ede190b78f"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 11,
+      "id": "portrait-medieval-warlock",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-medieval-warlock"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-medieval-warlock",
+          "file": "assets/production/production-10-20261003/images/19-portrait-medieval-warlock.png",
+          "sha256": "e8a62326dfc8665df39b3ab3823358d274516184f21b62dbd98fec7b98666199",
+          "promptSHA256": "5de4da09258da2f066f9585cca8e6a191c418e1db7db22ecb434f817d60d3874"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 12,
+      "id": "portrait-medieval-mage",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-medieval-mage"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-medieval-mage",
+          "file": "assets/production/production-10-20261003/images/20-portrait-medieval-mage.png",
+          "sha256": "d96302912e5dc9321ef464199b3346a727b9f3fdf6f893ec2f642954e9615647",
+          "promptSHA256": "7d0ad2a5688631f9cb022198478e85bc429db9b53734dc17c5471012b30af974"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 13,
+      "id": "portrait-medieval-paladin",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-medieval-paladin"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-medieval-paladin",
+          "file": "assets/production/production-10-20261003/images/21-portrait-medieval-paladin.png",
+          "sha256": "0284f72d444f8824c0b9b95353e184196667a81b3e54c445dc93f4e265d4f6a8",
+          "promptSHA256": "ca98d3a4128b91ba3f09b50d9a99edff606569d5b11d4064a95ee599fa66503a"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 14,
+      "id": "portrait-medieval-barbarian",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-medieval-barbarian"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-medieval-barbarian",
+          "file": "assets/production/production-10-20261003/images/22-portrait-medieval-barbarian.png",
+          "sha256": "6654f0d0032e164cf0ec3bc179525c1bada9dc6e2b736eacfb897db2f22b9663",
+          "promptSHA256": "6f7a137f3d83ed5f23b42eea7fd23a47bfe3713bcc01c674b8a00f3de68ecdae"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 15,
+      "id": "portrait-medieval-necromancer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-medieval-necromancer"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-medieval-necromancer",
+          "file": "assets/production/production-10-20261003/images/23-portrait-medieval-necromancer.png",
+          "sha256": "01b5daf884785a6e7c3286d85898a5ec51748f100314e493132e0383635ee9e2",
+          "promptSHA256": "837e04629670f45215269930d1135657ad05812a50b11026a210bb8de6172efc"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 16,
+      "id": "portrait-medieval-healer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-medieval-healer"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-medieval-healer",
+          "file": "assets/production/production-10-20261003/images/24-portrait-medieval-healer.png",
+          "sha256": "7da07f8abd5c6b2f72d4f0c938c5457ae5971459542f94827431fb94554c5528",
+          "promptSHA256": "0730f7cf5b1e37bbe8aca9c68f4629af3a44b278a184d0724c95e7e6e2b9a025"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 17,
+      "id": "portrait-powder-knight",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-powder-knight"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-powder-knight",
+          "file": "assets/production/production-10-20261003/images/25-portrait-powder-knight.png",
+          "sha256": "6414415d6dbbbd9ab3a02e94820c954a94980345e6624a80bb931e242b362235",
+          "promptSHA256": "4e7aced115d49670de6974c9cf5aca7d261e4cb98e1cd26a696379d36bb4c8cd"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 18,
+      "id": "portrait-powder-ranger",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-powder-ranger"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-powder-ranger",
+          "file": "assets/production/production-10-20261003/images/26-portrait-powder-ranger.png",
+          "sha256": "2faf62ad30b5773a63e974257a57d4ec9e217ca6edc72483b8a62b2d3231ed9f",
+          "promptSHA256": "adc810fac539a1d3f86294abedb0d5ddc20d9aaca1a5291fa35bc1d690c79dd1"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 19,
+      "id": "portrait-powder-warlock",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-powder-warlock"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-powder-warlock",
+          "file": "assets/production/production-10-20261003/images/27-portrait-powder-warlock.png",
+          "sha256": "c1d8efdbe21ae978b7ef7aae45135ff9d186f05c93e6b168af0364e638aaaa47",
+          "promptSHA256": "5068cd1873cf29847809138abce2257340aa79d86ce29e8e2c79dbd525a51d1b"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 20,
+      "id": "portrait-powder-mage",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-powder-mage"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-powder-mage",
+          "file": "assets/production/production-10-20261003/images/28-portrait-powder-mage.png",
+          "sha256": "c6bc9bd1e2a9e72f9a06e230e3a87126d68b5844596b6a9e209d895e01e38220",
+          "promptSHA256": "5438e311159409cb2abba5e2c79864ff505ffc81e107bd984872825a4e2921d2"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 21,
+      "id": "portrait-powder-paladin",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-powder-paladin"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-powder-paladin",
+          "file": "assets/production/production-10-20261003/images/29-portrait-powder-paladin.png",
+          "sha256": "44185e212c9dfac21fdae19b2363f69248e52ad62062529422815b7b9561685c",
+          "promptSHA256": "d5965ea3377b4d9be04cbae66468f4fd206b4db0c54ad81c0a92de4f857527f0"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 22,
+      "id": "portrait-powder-barbarian",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-powder-barbarian"
+      ],
+      "sources": [
+        {
+          "batch": "production-10-20261003",
+          "id": "portrait-powder-barbarian",
+          "file": "assets/production/production-10-20261003/images/30-portrait-powder-barbarian.png",
+          "sha256": "79c0e810541ca0d08d351f7cd903dad467227fef6bbbd83bd26260878937d3a5",
+          "promptSHA256": "aef04859eda966dd031db5934b359fd53ffb0d2e553ffa2c2e5fc5eaa68a7ed1"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 23,
+      "id": "portrait-powder-necromancer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-powder-necromancer"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-powder-necromancer",
+          "file": "assets/production/production-11-20261003/images/01-portrait-powder-necromancer.png",
+          "sha256": "b952558ac3bf105090a67ca22ff22fde6858d219f5c81fbed03bfe460aea7c44",
+          "promptSHA256": "bc111cb94d4dbe476fca862fa6fef524881b08129ffe0cd1dd9529d84fbdd185"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 24,
+      "id": "portrait-powder-healer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-powder-healer"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-powder-healer",
+          "file": "assets/production/production-11-20261003/images/02-portrait-powder-healer.png",
+          "sha256": "ebb7b46e1da5e015dd53c60b14c1579f9ecfe2faafc6f09f1f03ff5cf5a4b663",
+          "promptSHA256": "7da13f8a71abc3cace616c034adb042dce3285091584000117167fc7347d409a"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 25,
+      "id": "portrait-mech-knight",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-mech-knight"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-mech-knight",
+          "file": "assets/production/production-11-20261003/images/03-portrait-mech-knight.png",
+          "sha256": "081396f9051aa11c83cfd7d0a2d278a7090f69bd139b38155bd7dd4682b519bd",
+          "promptSHA256": "ec2571d1240f1f364bcffa41fb7c32bb546ebf39aeaca1051e1388bac3a9e0ff"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 26,
+      "id": "portrait-mech-ranger",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-mech-ranger"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-mech-ranger",
+          "file": "assets/production/production-11-20261003/images/04-portrait-mech-ranger.png",
+          "sha256": "3334a664f47ee972a12d237c1d8f35b24b7809aaec8ecbf7c03b0b43a9d9806d",
+          "promptSHA256": "c4a99636ce408dfe313aef8df455b75278ca093c3a11e85961f63fc32ec05470"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 27,
+      "id": "portrait-mech-warlock",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-mech-warlock"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-mech-warlock",
+          "file": "assets/production/production-11-20261003/images/05-portrait-mech-warlock.png",
+          "sha256": "65a4e6d3e7b514d08d9400fced45bfff0d9275f18891f179fb5773e7ea3faa07",
+          "promptSHA256": "28ed893bbe7d8f4985d4bdf56e15a0954d71a42571c36400d46ceaf9c55040e3"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 28,
+      "id": "portrait-mech-mage",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-mech-mage"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-mech-mage",
+          "file": "assets/production/production-11-20261003/images/06-portrait-mech-mage.png",
+          "sha256": "124aea6b3be7495251d10c938de9c3bf74c942f9aa1bd638fbb8b9cb4667976b",
+          "promptSHA256": "53f1e5abaabd8f43ca39436954904dead4982f5e3ffe8ee3f43174ac4eede3c4"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 29,
+      "id": "portrait-mech-paladin",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-mech-paladin"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-mech-paladin",
+          "file": "assets/production/production-11-20261003/images/07-portrait-mech-paladin.png",
+          "sha256": "9b456b58ccc5dbcd006dfd72561d2be3a0618178f49e73cb8249c0907f6ea850",
+          "promptSHA256": "b4bee3561e64c720f81db9ae688a9fcf399b2247485d7feecedd3183f5de7568"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 30,
+      "id": "portrait-mech-barbarian",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-mech-barbarian"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-mech-barbarian",
+          "file": "assets/production/production-11-20261003/images/08-portrait-mech-barbarian.png",
+          "sha256": "bb6100f437c506b333ada14048fd7a41a5e6600c5f698ac33d3885124d52212e",
+          "promptSHA256": "636168ff5e388f6ed6f07cfe56dfb152e5a3964265e4a732bcf5735709dfeed5"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 31,
+      "id": "portrait-mech-necromancer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-mech-necromancer"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-mech-necromancer",
+          "file": "assets/production/production-11-20261003/images/09-portrait-mech-necromancer.png",
+          "sha256": "cdc6436a0a67402a935e4acf580012e9b880d59f0d4e9b22527cbb27ac7f8157",
+          "promptSHA256": "3e7578ef662bd02b5c8946eaa66c69a5d076fceec678b87723b3741a9a5fb700"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-A-HERO-32",
+      "order": 32,
+      "id": "portrait-mech-healer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "portrait-mech-healer"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "portrait-mech-healer",
+          "file": "assets/production/production-11-20261003/images/10-portrait-mech-healer.png",
+          "sha256": "27ab7e65e4ed73773d9dcbba5848aaea30bfb7e07e48c64d193e4e53e6f97790",
+          "promptSHA256": "5ee1123ea9d15efaea813e3a70d15ea732411c9577cc711668f1ac8cb5b463cb"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 1,
+      "id": "hero-mount-horse",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "hero-mount-horse",
+        "mount-horse"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "mount-horse",
+          "file": "assets/production/production-11-20261003/images/27-mount-horse.png",
+          "sha256": "36464fc5127efc3aa7b29b8fe6f24689a3996048f7b8774850f5e01f7b86b0fd",
+          "promptSHA256": "03058eb30e54867feae9d9706d055051bbd3bf73e3e9662bf04f40f7c74bc405"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 2,
+      "id": "hero-mount-motor-transport",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "hero-mount-motor-transport",
+        "mount-motor"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "mount-motor",
+          "file": "assets/production/production-11-20261003/images/28-mount-motor.png",
+          "sha256": "969dc423926956d28dfcc3f658ccdd0faa9f63dbad1a991d13ad1cb9a181f2f8",
+          "promptSHA256": "c4ae5614f2a4b06b42c6e0438f196ee420ccdfb9be1aca643a0a3194be400655"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 3,
+      "id": "hero-mount-future-transport",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "hero-mount-future-transport",
+        "mount-future"
+      ],
+      "sources": [
+        {
+          "batch": "production-11-20261003",
+          "id": "mount-future",
+          "file": "assets/production/production-11-20261003/images/29-mount-future.png",
+          "sha256": "ed946074f1f623dfcaa1d0241f551cac70cdff44905572805d7303e5d13bbaef",
+          "promptSHA256": "b93b331e89becab55c1002228caaff86f8f7c75b9832c047a1f40a8356ad2f22"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 4,
+      "id": "rig-source-parts-knight",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rig-source-parts-knight",
+        "rig-knight"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "rig-knight",
+          "file": "assets/production/production-12-20261003/images/16-rig-knight.png",
+          "sha256": "794717ea953c03390e83446454ebb32be4157ccab654a3a318221f44897b1f01",
+          "promptSHA256": "8d11deaf23a19e40b1adfd397712f80ae1ee58c5d0d85e280e24b2f0809c12ba"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 5,
+      "id": "rig-source-parts-ranger",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rig-source-parts-ranger",
+        "rig-ranger"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "rig-ranger",
+          "file": "assets/production/production-12-20261003/images/17-rig-ranger.png",
+          "sha256": "14a786ad2155c8f11a4d7f8dc4d3ad3769ca1bd1cbefc94d4ba2ecaaf3125f3d",
+          "promptSHA256": "4444ed2ffdb15df50097db7bf7f5c7669ca873fdf089cc24835beb94875e0ebe"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 6,
+      "id": "rig-source-parts-warlock",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rig-source-parts-warlock",
+        "rig-warlock"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "rig-warlock",
+          "file": "assets/production/production-12-20261003/images/18-rig-warlock.png",
+          "sha256": "fb7992f4f5015124b7a06a8f6ed77b3b618cecb1aaa72f022c4ab3705014cce2",
+          "promptSHA256": "e1d5547f1e793b4ebbb5bd0d1f7759451c20e5adc9c6175ccd46aea4ee23e4e2"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 7,
+      "id": "rig-source-parts-mage",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rig-source-parts-mage",
+        "rig-mage"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "rig-mage",
+          "file": "assets/production/production-12-20261003/images/19-rig-mage.png",
+          "sha256": "7490d6bc9a479ab09a4cda41f6926222a5abd5d6ba83b8595350976b78204afe",
+          "promptSHA256": "40297bd1eed882c85cecf925995e9bcc87ff91a90fe4b52d992f8ae9883b07ae"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 8,
+      "id": "rig-source-parts-paladin",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rig-source-parts-paladin",
+        "rig-paladin"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "rig-paladin",
+          "file": "assets/production/production-12-20261003/images/20-rig-paladin.png",
+          "sha256": "c88a8e7837827919efba456c07e1ecc97aa2bc955f541f3cf6d9826bd8b1655b",
+          "promptSHA256": "f9738d058b44aa69c0e51bee5bc0e51d1d91037053ad29d14f37bc041764edc1"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 9,
+      "id": "rig-source-parts-barbarian",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rig-source-parts-barbarian",
+        "rig-barbarian"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "rig-barbarian",
+          "file": "assets/production/production-12-20261003/images/21-rig-barbarian.png",
+          "sha256": "557129d6e0d23b9dacb7cf3b22a9adda1c1ed16a6cfefd1c3878cb94ee975b20",
+          "promptSHA256": "ba34c1f0cefa0acfe24555f79b39ae9881806baa5c3ab6f813d3dc4d4e5b8db6"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 10,
+      "id": "rig-source-parts-necromancer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rig-source-parts-necromancer",
+        "rig-necromancer"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "rig-necromancer",
+          "file": "assets/production/production-12-20261003/images/22-rig-necromancer.png",
+          "sha256": "5cff34847a2d1bc8c98ad413391f9758e9219c0263fac78617ada8758ecd719f",
+          "promptSHA256": "25172467b7fa4dccc5d4a3421878a096c9cab80a217c799dd2adee0cbd85b1b2"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 11,
+      "id": "rig-source-parts-healer",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rig-source-parts-healer",
+        "rig-healer"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "rig-healer",
+          "file": "assets/production/production-12-20261003/images/23-rig-healer.png",
+          "sha256": "0b47ee41e6fa9285fc774311daa1c00e35c4964e01c9a7ecac928a58ef05013f",
+          "promptSHA256": "90b76f98a828eb3d78e440194ca9649a1b4b288e9505e7d6223e8f813910a84a"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 12,
+      "id": "rival-identity-1",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rival-identity-1",
+        "supporting-rival-aldric"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "supporting-rival-aldric",
+          "file": "assets/production/production-12-20261003/images/09-supporting-rival-aldric.png",
+          "sha256": "e10d53ba1ff0f3d579e10a3c35e05e5b0d1dfd1a5d648cc0ef598e3d0a91fd65",
+          "promptSHA256": "af9cf31b42618b682e92d122bdb1e7d3195d258527d7163e17a04de4c48e7f2d"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 13,
+      "id": "rival-identity-2",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rival-identity-2",
+        "supporting-rival-corvus"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "supporting-rival-corvus",
+          "file": "assets/production/production-12-20261003/images/11-supporting-rival-corvus.png",
+          "sha256": "caaf32d33c2af8680a6dc37f409bbf8adc6f15c560ab860de2a1d7d71dfd7864",
+          "promptSHA256": "e869a11d7c051e1254efa5ddd9a0838ea53a81043f26b0e9ecfc0d852acabf50"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 14,
+      "id": "rival-identity-3",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rival-identity-3",
+        "supporting-rival-kane"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "supporting-rival-kane",
+          "file": "assets/production/production-12-20261003/images/14-supporting-rival-kane.png",
+          "sha256": "d95b67650aa557117525a6874a9df0b3118fac04b1b9437af9a6bb8de27f7d54",
+          "promptSHA256": "0931032cd64b1882541d0fa3c5232ebfac806d3d7ff22c9c2653d16b02d15950"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 15,
+      "id": "rival-identity-4",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rival-identity-4",
+        "supporting-rival-morgana"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "supporting-rival-morgana",
+          "file": "assets/production/production-12-20261003/images/13-supporting-rival-morgana.png",
+          "sha256": "7bbb773febf9eb92d8464b237bb6cc9eba8ceb71c402c4dfd2c6941fedffc2cb",
+          "promptSHA256": "f621dc6f1036736c281378e8010f62e3f0ef8a66fc6153564d48562225de9e4a"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 16,
+      "id": "rival-identity-5",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rival-identity-5",
+        "supporting-rival-theron"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "supporting-rival-theron",
+          "file": "assets/production/production-12-20261003/images/12-supporting-rival-theron.png",
+          "sha256": "785686cadcdfeca76f7653a5917194830d657827a6dda9948b9defcce51f0d40",
+          "promptSHA256": "2d1f7fe0e8c8308fe87f17e1d0ba178e5e7f50e205cd3de65d07c42b394301e5"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+      "order": 17,
+      "id": "rival-identity-6",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "rival-identity-6",
+        "supporting-rival-valeria"
+      ],
+      "sources": [
+        {
+          "batch": "production-12-20261003",
+          "id": "supporting-rival-valeria",
+          "file": "assets/production/production-12-20261003/images/10-supporting-rival-valeria.png",
+          "sha256": "f2215aab5730e3bf13e39e1f2ef0480300f3459d997fc7898700c7aa26be8191",
+          "promptSHA256": "726216ceecc09bad933c598a73b261501ef2bc45386a7b792d41a56620e3ad14"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 1,
+      "id": "troop-stone-melee",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-stone-melee"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-stone-melee",
+          "file": "assets/production/production-07-20261003/images/03-troop-stone-melee.png",
+          "sha256": "c374fb4d5c0ce1f7c6347751d77ea325b61477931d5c2bae5aeb4deb294db032",
+          "promptSHA256": "70e0c222f4a835917c18adef17aa3d8117fc48f4d297b9de240a7f4ef7426934"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 2,
+      "id": "troop-stone-ranged",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-stone-ranged"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-stone-ranged",
+          "file": "assets/production/production-07-20261003/images/04-troop-stone-ranged.png",
+          "sha256": "2fb642c52923c7d718c6dc12a22f4cead1849a44c9942cb59d1994f2b64f66c4",
+          "promptSHA256": "7e0c62f6a1ace1fd573ea5d89986d246d66c6e67ff730c6d7e99fcc589074d90"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 3,
+      "id": "troop-stone-heavy",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-stone-heavy"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-stone-heavy",
+          "file": "assets/production/production-07-20261003/images/05-troop-stone-heavy.png",
+          "sha256": "97cace9a0053023b56699db46a12eea109f9b45648a7ab3bc890b3d4595f39a0",
+          "promptSHA256": "0044d6df21836a2e855089f49d3794b2dbb4eb2441583de69110fa7aa9d6cffe"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 4,
+      "id": "troop-bronze-melee",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-bronze-melee"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-bronze-melee",
+          "file": "assets/production/production-07-20261003/images/06-troop-bronze-melee.png",
+          "sha256": "d342bc57556035ee48eb33698e3aa71d241acc965406cc85840491cdd36e8fc9",
+          "promptSHA256": "db9c3f8100b588e63f4c1ede0904d35c9decedd97056bc97914150e070c74aa3"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 5,
+      "id": "troop-bronze-ranged",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-bronze-ranged"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-bronze-ranged",
+          "file": "assets/production/production-07-20261003/images/07-troop-bronze-ranged.png",
+          "sha256": "03b2271120763b3c4697140f6c10799d82d240661eeff62abb4a48a27eba93df",
+          "promptSHA256": "2900d45632ee4c821757832a71c0080795d9f7b218ba30f0c01d844c76a50843"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 6,
+      "id": "troop-bronze-heavy",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-bronze-heavy",
+        "attacker-bronze-heavy"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-bronze-heavy",
+          "file": "assets/production/production-07-20261003/images/08-troop-bronze-heavy.png",
+          "sha256": "107f35364f9b29104b182368ec512e42fed7f18eb4d4ce7b16de89b73e99809c",
+          "promptSHA256": "3d7e54d16eca22a61ef90a1b965d164f53a48cfd12f2645eb29b59f696c6231f"
+        },
+        {
+          "batch": "production-17-20261003",
+          "id": "attacker-bronze-heavy",
+          "file": "assets/production/production-17-20261003/images/07-attacker-bronze-heavy.png",
+          "sha256": "dac7c0b1a7caa27f7e10f8fed3c8fa6a7bbc859735b188fd3bde3a55eef2426d",
+          "promptSHA256": "e930df3b400ecb604877e96c65acd9a91916fa0f9dd4d12f6329b133e0c097dd"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 7,
+      "id": "troop-iron-melee",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-iron-melee"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-iron-melee",
+          "file": "assets/production/production-07-20261003/images/09-troop-iron-melee.png",
+          "sha256": "a88d1e71b656688de7ef045de7b65f78e0926e5c48b01f522fe00ec268bb30a4",
+          "promptSHA256": "3c16d27ca571ac88eda29374c6bdbb3f995d4a388e5663459fd42b009d35270c"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 8,
+      "id": "troop-iron-ranged",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-iron-ranged"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-iron-ranged",
+          "file": "assets/production/production-07-20261003/images/10-troop-iron-ranged.png",
+          "sha256": "51f53a648a73e47b66b31583b6d4aa3f9c932038fc51b91172e9da4a1256b641",
+          "promptSHA256": "6020f040bbb496b34488ca1c12d797e0fe64800f4bc4d4e6a5ad1aadd969a889"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 9,
+      "id": "troop-iron-heavy",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-iron-heavy",
+        "attacker-iron-heavy"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-iron-heavy",
+          "file": "assets/production/production-07-20261003/images/11-troop-iron-heavy.png",
+          "sha256": "923cbcd530a0630ad5e096d60a09dfee1e5877626ca8d4aec80bb2b6018d2bfe",
+          "promptSHA256": "6be4f12948115915a084457802ff40bb357c0eadd0d6e91852f0858eba282192"
+        },
+        {
+          "batch": "production-17-20261003",
+          "id": "attacker-iron-heavy",
+          "file": "assets/production/production-17-20261003/images/08-attacker-iron-heavy.png",
+          "sha256": "ad54635f0b937a72a48990bb0b362f49dd5d20da383d85c1ddf42160fe21167b",
+          "promptSHA256": "94d4767bb5ab1f3c8813138632a25137e52ef386119f51255d14486e4d327dac"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 10,
+      "id": "troop-medieval-melee",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-medieval-melee"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-medieval-melee",
+          "file": "assets/production/production-07-20261003/images/12-troop-medieval-melee.png",
+          "sha256": "a745679143d3e27957e879c5f293b184c7f6fc295f2b54b883bd146e1d5cf08d",
+          "promptSHA256": "7dd0ae57e347af71a928f09dbd7a54f9b284b43f659e36f59ee87e20aa2fd6ba"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 11,
+      "id": "troop-medieval-ranged",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-medieval-ranged"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-medieval-ranged",
+          "file": "assets/production/production-07-20261003/images/13-troop-medieval-ranged.png",
+          "sha256": "3e15e24331588271a7e17377a0d304a1fc286a1c3fe0af23a208755a245ec827",
+          "promptSHA256": "d4cd0dda8f42396491a80566896131c958172a0a06a640cbf4be2e5ca38682a9"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 12,
+      "id": "troop-medieval-heavy",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-medieval-heavy"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-medieval-heavy",
+          "file": "assets/production/production-07-20261003/images/14-troop-medieval-heavy.png",
+          "sha256": "35d876e74dc8e1e67b9cbd473cd76be0d70d06868149581780d4243703f76d13",
+          "promptSHA256": "46c72fb9b2d12bbc99776369758e5ad31f1e5698359d7024dac26b2f34c96bd6"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 13,
+      "id": "troop-gunpowder-melee",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-gunpowder-melee"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-gunpowder-melee",
+          "file": "assets/production/production-07-20261003/images/15-troop-gunpowder-melee.png",
+          "sha256": "f29c2fe5af8689a1312bec03f13ca0d59158aea15f73dc8fe162041ca6df7732",
+          "promptSHA256": "739b82ddfe6b6c191e2234bea6d9882d5db0dfdeecef77cd18ca051816a28d20"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 14,
+      "id": "troop-gunpowder-ranged",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-gunpowder-ranged"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-gunpowder-ranged",
+          "file": "assets/production/production-07-20261003/images/16-troop-gunpowder-ranged.png",
+          "sha256": "53b16acd4364c93513fd6a0605096b4036009e02f6597619498a2a488dcb99e7",
+          "promptSHA256": "38fc0dd5363e149cf2d0343ec1f1b192facf746ed6648e4f7b34f6e662310b7e"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 15,
+      "id": "troop-gunpowder-heavy",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-gunpowder-heavy",
+        "attacker-gunpowder-heavy"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-gunpowder-heavy",
+          "file": "assets/production/production-07-20261003/images/17-troop-gunpowder-heavy.png",
+          "sha256": "741a70c6a50ef5b8aaa6afe04409128e4c3d09dbfbd2d6d90ecb396894f55d19",
+          "promptSHA256": "18831edebfd8a2fafb6e247fa3febaf77b1d9a82e3b0d20cc0ceb77320690a65"
+        },
+        {
+          "batch": "production-17-20261003",
+          "id": "attacker-gunpowder-heavy",
+          "file": "assets/production/production-17-20261003/images/09-attacker-gunpowder-heavy.png",
+          "sha256": "a1a7a7d076ea91ecae8d6d343173299a86344a8eb2f20417293f76566ea08bb1",
+          "promptSHA256": "29b71b963e87c1314ffcb63fea854806546a1d1cd9b827c636e599828a1e6025"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 16,
+      "id": "troop-industrial-melee",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-industrial-melee"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-industrial-melee",
+          "file": "assets/production/production-07-20261003/images/18-troop-industrial-melee.png",
+          "sha256": "fca4b6615894979b9a00a41824adecdf24d233360ab6182040ca4585bc0f390b",
+          "promptSHA256": "cac243205352344b14fc551dc727e015bb5572d19787d62b0ece96aa3f8e5fb5"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 17,
+      "id": "troop-industrial-ranged",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-industrial-ranged"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-industrial-ranged",
+          "file": "assets/production/production-07-20261003/images/19-troop-industrial-ranged.png",
+          "sha256": "e26e2693524df9d2daf41abc0faebbc49b36e921ade68ef20bdc798024363358",
+          "promptSHA256": "f268528985004b65aed38f8200f9d52ec986e3c5c96604a0e8139545fb25ef1f"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 18,
+      "id": "troop-industrial-heavy",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-industrial-heavy",
+        "attacker-industrial-heavy"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-industrial-heavy",
+          "file": "assets/production/production-07-20261003/images/20-troop-industrial-heavy.png",
+          "sha256": "c47ad942abd00358dc60d6e980ff82a1692d63a47cc275d7bea54a14f2a0a102",
+          "promptSHA256": "c59a52af4b8b00fab742503344badb3e2e3c8f7a0fdacafadbfad5b8a20a9e3a"
+        },
+        {
+          "batch": "production-17-20261003",
+          "id": "attacker-industrial-heavy",
+          "file": "assets/production/production-17-20261003/images/10-attacker-industrial-heavy.png",
+          "sha256": "9dcfa437f8fba8ff6cc8c81757de82c82983668d1c7b2d476e15e481c52e09af",
+          "promptSHA256": "722321b309943abdc8a92dfd01a02bf0112a13edba7162c98b872dab75d59750"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 19,
+      "id": "troop-modern-melee",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-modern-melee"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-modern-melee",
+          "file": "assets/production/production-07-20261003/images/21-troop-modern-melee.png",
+          "sha256": "fca4c32b380fb424a18d785aaba20115e4a6f226ba199438eb942ece7b70411c",
+          "promptSHA256": "149ab6b6f4b42386f0d3b30fd0ba49b99d5abb1eca967c0764f62b02f7a00600"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 20,
+      "id": "troop-modern-ranged",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-modern-ranged"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-modern-ranged",
+          "file": "assets/production/production-07-20261003/images/22-troop-modern-ranged.png",
+          "sha256": "9f03516d79c0c834b8eb62c76fa88daa828a4804358d7b35d66c7e2f97775661",
+          "promptSHA256": "f6c1d169eee300bb848b8e5bfb73f1f5b0a905843390d1dee9bf2dbcc520ca2d"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 21,
+      "id": "troop-modern-heavy",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-modern-heavy",
+        "attacker-modern-heavy"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-modern-heavy",
+          "file": "assets/production/production-07-20261003/images/23-troop-modern-heavy.png",
+          "sha256": "ad4fd5e8c8bcfb82945f3351df575aa8eb9bedfbe16e8aef0bc0460d96130a40",
+          "promptSHA256": "9957f17432dcc458b2824f77a1dff01648b03aeddb93112ded7466e4ac1da356"
+        },
+        {
+          "batch": "production-17-20261003",
+          "id": "attacker-modern-heavy",
+          "file": "assets/production/production-17-20261003/images/11-attacker-modern-heavy.png",
+          "sha256": "b98e6a64d89ffbe2dc63497bc65697c929a88dea0e0eef1c00ac28557d82cd2f",
+          "promptSHA256": "82b45932ada34e7f847f53ed72e4a5a586061c8564ba09754500df43b1a6a2eb"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 22,
+      "id": "troop-future-melee",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-future-melee"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-future-melee",
+          "file": "assets/production/production-07-20261003/images/24-troop-future-melee.png",
+          "sha256": "28c6b0f03a33de5fe317fbfad32478c293df4768acf1473133405bb84aca44e9",
+          "promptSHA256": "71352fe63210fd57b72801272ef81ad849a3a7884041c8a56878c13c5cfd6b2d"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 23,
+      "id": "troop-future-ranged",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-future-ranged"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-future-ranged",
+          "file": "assets/production/production-07-20261003/images/25-troop-future-ranged.png",
+          "sha256": "22d7f84d86c47157368fd6c9fb0cd6e21d11c76892ba297094d59c7aa680f2d4",
+          "promptSHA256": "6e9f9e88786decb9ff03ce2b2151ec8074723057c59af089c864f6d3a9e6f55c"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    },
+    {
+      "group": "2K-LATER-C-ARMY-24",
+      "order": 24,
+      "id": "troop-future-heavy",
+      "imageSize": "2K",
+      "status": "PLANNED_NEEDS_EXECUTOR_READINESS",
+      "candidateSourceIds": [
+        "troop-future-heavy",
+        "attacker-future-heavy"
+      ],
+      "sources": [
+        {
+          "batch": "production-07-20261003",
+          "id": "troop-future-heavy",
+          "file": "assets/production/production-07-20261003/images/26-troop-future-heavy.png",
+          "sha256": "c2ec850173f90169c2d369178a66b67814a48bfa1bf53199bd87cf4c7f318f12",
+          "promptSHA256": "385ca164d6ddf0b6b963c4a46119b9020c8d8438aca8c36430fc55f032d4cc82"
+        },
+        {
+          "batch": "production-17-20261003",
+          "id": "attacker-future-heavy",
+          "file": "assets/production/production-17-20261003/images/12-attacker-future-heavy.png",
+          "sha256": "d18cdce70db61b46e979cc6a2ba73133c6eb3b801d116aeaf563cef9a9f2b3aa",
+          "promptSHA256": "1eee812d0b3d425a278344934d4036a402bd1ad62209ee0a91316827c49a60cb"
+        }
+      ],
+      "preferredSource": null,
+      "guide": null,
+      "guideAcceptance": "UNVERIFIED"
+    }
+  ],
+  "aliasEvidence": "qa/whole-implementation-audit-20261003/alias-candidates.json",
+  "budget": {
+    "targetUSD": 60,
+    "hardCapUSD": 80,
+    "reserveUSD": 15,
+    "savedProtectedExposureUSD": 57.225,
+    "billedTotal": null,
+    "expectedImageOutput4KUSD": 4.8384,
+    "expectedImageOutput2KUSD": 7.3584,
+    "inputAndTextAndStorageAndTaxAdditional": true,
+    "capProposal4KOutputTokens": 4096,
+    "capProposal2KOutputTokens": 2048,
+    "inputTokenCapPerRequest": 4000,
+    "conditional105CeilingWith15PercentBufferUSD": 76.826244,
+    "warning": "Conditional ceiling is not a bill or increased budget. Executor validates caps, all liabilities and current pricing before calls."
+  }
+}

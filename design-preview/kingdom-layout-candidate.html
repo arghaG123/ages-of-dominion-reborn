@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stone Kingdom layout candidate</title>
+<link rel="stylesheet" href="kingdom-layout-candidate.css">
+</head>
+<body>
+<div id="rotate">Rotate to landscape to review the candidate.</div>
+<main id="app">
+  <header>
+    <h1>Kingdom candidate</h1>
+    <span id="status">READY_FOR_REVIEW · NOT_OWNER_ACCEPTED</span>
+    <div id="resources" aria-hidden="true"><span>food</span><span>wood</span><span>stone</span><span>gold</span></div>
+  </header>
+  <section id="stage">
+    <div id="frames"></div>
+    <button id="context" type="button" aria-expanded="false" aria-controls="panel">Layers</button>
+    <aside id="panel">
+      <h2>Layers</h2>
+      <label><input type="checkbox" data-layer="terrain" checked> Terrain</label>
+      <label><input type="checkbox" data-layer="hall" checked> Hall</label>
+      <label><input type="checkbox" data-layer="sites" checked> Sites</label>
+      <label><input type="checkbox" data-layer="roads" checked> Roads</label>
+      <label><input type="checkbox" data-layer="missing" checked> Missing terrace</label>
+      <label><input type="checkbox" data-layer="fixture"> Mature access</label>
+      <label><input type="checkbox" data-layer="contact" checked> Measured contact</label>
+      <label><input type="checkbox" data-layer="safe" checked> Safe frame</label>
+      <p id="fixture-note">Mature envelopes use the Hall's measured height. A covered door is blocking. This is not campaign progression.</p>
+      <h2>Sites</h2>
+      <div id="sites"></div>
+      <p id="pick">Click a site.</p>
+    </aside>
+  </section>
+  <footer>
+    <nav id="nav" aria-label="Candidate views">
+      <button type="button" data-view="current">Current</button>
+      <button type="button" data-view="proposed" aria-current="true">Proposed</button>
+      <button type="button" data-view="compare">Compare</button>
+      <button type="button" data-view="collected">Collected</button>
+    </nav>
+  </footer>
+</main>
+<script src="kingdom-layout-candidate-data.js"></script>
+<script src="kingdom-layout-candidate.js"></script>
+</body>
+</html>

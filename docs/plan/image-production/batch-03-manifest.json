@@ -1,0 +1,771 @@
+{
+  "id": "production-03-20261003",
+  "model": "gemini-3.1-flash-image",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "region": "global",
+  "count": 30,
+  "status": "PREPARED_NOT_SUBMITTED",
+  "items": [
+    {
+      "position": 1,
+      "id": "kingdom-terrain-stone",
+      "kind": "terrain",
+      "mode": "kingdom",
+      "age": "stone",
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Bare Stone Age kingdom terrain. Outskirts may use timber, hide, thatch, flint, and dirt only. No medieval church, towers, or steel. Nine upper and eight lower empty pads plus the empty town-hall terrace. Right river, one lower crossing, road spine and gate opening preserved.",
+      "styleReference": "03-kingdom-stone.jpg",
+      "guide": "docs/plan/image-production/guides/kingdom.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 2,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+      "promptSHA256": "99455638bf426a7e4a3848cd90c4080cea57ce4d722b7fb52188adb03c0cb2cf",
+      "guideSHA256": "a29195ac287fe6c612d0f424c20d1de2b93bbdc730265004bd0f2761bc10a3a9"
+    },
+    {
+      "position": 2,
+      "id": "kingdom-terrain-medieval",
+      "kind": "terrain",
+      "mode": "kingdom",
+      "age": "medieval",
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Bare Medieval kingdom terrain. Outskirts may use coursed stone, timber, slate, and terracotta. The central pads and town-hall terrace stay empty. Right river, one lower crossing only.",
+      "styleReference": "06-kingdom-medieval.jpg",
+      "guide": "docs/plan/image-production/guides/kingdom.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 2,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "5dd5adb7585e97be03048f1fac97535b67d40387387f5f314a17da92e1db0809",
+      "promptSHA256": "152d5a59f062724fc765d233684d03c68e706fbee0e5bb64473c19dd6bdccca6",
+      "guideSHA256": "a29195ac287fe6c612d0f424c20d1de2b93bbdc730265004bd0f2761bc10a3a9"
+    },
+    {
+      "position": 3,
+      "id": "townhall-stone",
+      "kind": "building",
+      "mode": "kingdom",
+      "age": "stone",
+      "aspect": "1:1",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. REVISION. The previous hall was a cartoon and cannot be repeated. ONE photoreal Stone Age civic hall: timber, hide, thatch, and flint. High aerial three-quarter camera. South entrance. One object only. No cartoon outline. The green polygon is only the base footprint and the red dot is pivot 512,790. Replace the green with the object base. Remove every guide mark. Keep the object top above y80. Flat pure magenta #FF00FF backdrop, no floor and no shadow on the backdrop.",
+      "styleReference": "03-kingdom-stone.jpg",
+      "guide": "docs/plan/image-production/guides/townhall-stone.png",
+      "requiredAlpha": true,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 2,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "registration": {
+        "sourceSize": [
+          1024,
+          1024
+        ],
+        "sourcePivot": [
+          512,
+          790
+        ],
+        "footprintWorld": [
+          3,
+          1.5
+        ],
+        "groundPolygonSource": [
+          [
+            409.2916666666667,
+            779.375
+          ],
+          [
+            579.2916666666667,
+            751.0416666666666
+          ],
+          [
+            614.7083333333334,
+            800.625
+          ],
+          [
+            444.70833333333337,
+            828.9583333333334
+          ]
+        ],
+        "pivotTolerancePx": 12,
+        "status": "PROPOSED_REQUIRES_PIXEL_REVIEW"
+      },
+      "styleReferenceSHA256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+      "promptSHA256": "ae9ef9909313f638c0797e263f8f0afb1bf2335abda815f9ad86e399866f2198",
+      "guideSHA256": "4efcbc5afe1d092318aa7e71e08457ed3577fc5dab177f61399a31f412da72c3"
+    },
+    {
+      "position": 4,
+      "id": "skill-offense",
+      "kind": "skill",
+      "mode": null,
+      "age": null,
+      "aspect": "1:1",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. REVISION. The previous plaque was rotated into a diamond. ONE axis-aligned square plaque, edges parallel to the image, crossed melee blades only. Thin material rim. Flat pure magenta #FF00FF. No ground and no cast shadow. Follow the guide shape and then remove every guide mark.",
+      "styleReference": "30-icon-material-board.jpg",
+      "guide": "docs/plan/image-production/guides/skill-offense.png",
+      "requiredAlpha": true,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 2,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "9e927748289178edc5d2ce132ad4a6a053051dc976df1d7d2dfee990cc40b1d3",
+      "promptSHA256": "e595c044e7602c9a0d8c7e06f9a09db77612cc2bc94854d1f0bac1ef55e6e9f5",
+      "guideSHA256": "fb8f13c638dd42d93327caf9a39f8f25af74c212e430689f20362902514d0a24"
+    },
+    {
+      "position": 5,
+      "id": "gear-stone-weapon",
+      "kind": "gear",
+      "mode": null,
+      "age": null,
+      "aspect": "1:1",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. REVISION. The previous image drew two crossed clubs. Draw ONE flint club only: one stone head and one wooden handle. Stone Age hide binding. No second weapon. Flat pure magenta #FF00FF. No floor. Follow the guide shape and then remove every guide mark.",
+      "styleReference": "22-forge.jpg",
+      "guide": "docs/plan/image-production/guides/gear-stone-weapon.png",
+      "requiredAlpha": true,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 2,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "f5253c7524352e1f57aff00d7623ada1d3858216cdc04296f9dae4bc3e9ba560",
+      "promptSHA256": "221bdeaec7747e5d08dabeaac967cc343d7dd64d52baec2d43d19e7a6914d22d",
+      "guideSHA256": "2cd8c8991f45f62b867a2e50f93ac133cb19d26e50d2f3f31a53a7ba78fde90a"
+    },
+    {
+      "position": 6,
+      "id": "adventure-terrain-plains",
+      "kind": "terrain",
+      "mode": "adventure",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Adventure valley. Keep the six clearings, four pickup pads, two guard pads, western stone crossing, and connected roads empty. Biome is plains: open grass valley, soft fields outside the pads. Same registered camera as the guide.",
+      "styleReference": "11-adventure-overview.jpg",
+      "guide": "docs/plan/image-production/guides/adventure.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "promptSHA256": "46a62701e61935e3e7f6d5ab07e132f7804f0b9a5bf07453a8af4051c63d5f6b",
+      "guideSHA256": "58dc25923ef1519a6f3cd4f119cdc3dec40f872b8ead293de62a53005deb8f95"
+    },
+    {
+      "position": 7,
+      "id": "adventure-terrain-hills",
+      "kind": "terrain",
+      "mode": "adventure",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Adventure valley. Keep the six clearings, four pickup pads, two guard pads, western stone crossing, and connected roads empty. Biome is hills: rocky highland grass, ridges outside the pads. Same registered camera as the guide.",
+      "styleReference": "11-adventure-overview.jpg",
+      "guide": "docs/plan/image-production/guides/adventure.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "promptSHA256": "071d1abc3f18fce38c3a5a2f2f6f892a99f25726c3df1b091b423c82126a712b",
+      "guideSHA256": "58dc25923ef1519a6f3cd4f119cdc3dec40f872b8ead293de62a53005deb8f95"
+    },
+    {
+      "position": 8,
+      "id": "adventure-terrain-swamp",
+      "kind": "terrain",
+      "mode": "adventure",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Adventure valley. Keep the six clearings, four pickup pads, two guard pads, western stone crossing, and connected roads empty. Biome is swamp: wet reeds and dark pools only outside the pads. Same registered camera as the guide.",
+      "styleReference": "11-adventure-overview.jpg",
+      "guide": "docs/plan/image-production/guides/adventure.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "promptSHA256": "ac683439c310a9409b234e47dde84f871954e7c044cdd656669ed978147f0669",
+      "guideSHA256": "58dc25923ef1519a6f3cd4f119cdc3dec40f872b8ead293de62a53005deb8f95"
+    },
+    {
+      "position": 9,
+      "id": "adventure-terrain-desert",
+      "kind": "terrain",
+      "mode": "adventure",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Adventure valley. Keep the six clearings, four pickup pads, two guard pads, western stone crossing, and connected roads empty. Biome is desert: sand and dry scrub, no oasis buildings. Same registered camera as the guide.",
+      "styleReference": "11-adventure-overview.jpg",
+      "guide": "docs/plan/image-production/guides/adventure.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "promptSHA256": "51e8489edeefe20396d6ec0edfe61d5c94ba44990a3b86ddd4b62bafde4648a8",
+      "guideSHA256": "58dc25923ef1519a6f3cd4f119cdc3dec40f872b8ead293de62a53005deb8f95"
+    },
+    {
+      "position": 10,
+      "id": "adventure-terrain-snow",
+      "kind": "terrain",
+      "mode": "adventure",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Adventure valley. Keep the six clearings, four pickup pads, two guard pads, western stone crossing, and connected roads empty. Biome is snow: snow field and evergreens outside the pads. Same registered camera as the guide.",
+      "styleReference": "11-adventure-overview.jpg",
+      "guide": "docs/plan/image-production/guides/adventure.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "promptSHA256": "2cdb03f343e54cddc1f778343c7a53ef1c9faf8a443dc8a52fafcda0cc51c8d1",
+      "guideSHA256": "58dc25923ef1519a6f3cd4f119cdc3dec40f872b8ead293de62a53005deb8f95"
+    },
+    {
+      "position": 11,
+      "id": "adventure-terrain-waste",
+      "kind": "terrain",
+      "mode": "adventure",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Adventure valley. Keep the six clearings, four pickup pads, two guard pads, western stone crossing, and connected roads empty. Biome is waste: ash and broken ground, no modern debris on pads. Same registered camera as the guide.",
+      "styleReference": "11-adventure-overview.jpg",
+      "guide": "docs/plan/image-production/guides/adventure.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "promptSHA256": "c9a016e3bc11e957228c766e9d0fd26dfc3fa32be9f07342aa8ba479e18dc766",
+      "guideSHA256": "58dc25923ef1519a6f3cd4f119cdc3dec40f872b8ead293de62a53005deb8f95"
+    },
+    {
+      "position": 12,
+      "id": "adventure-terrain-ruins",
+      "kind": "terrain",
+      "mode": "adventure",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Adventure valley. Keep the six clearings, four pickup pads, two guard pads, western stone crossing, and connected roads empty. Biome is ruins: fallen masonry only outside the pads, pads themselves bare. Same registered camera as the guide.",
+      "styleReference": "11-adventure-overview.jpg",
+      "guide": "docs/plan/image-production/guides/adventure.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "promptSHA256": "ecaa6543da875dc7a592e9128feab6e466c72e5fd265d640d47354a8dd1f43c6",
+      "guideSHA256": "58dc25923ef1519a6f3cd4f119cdc3dec40f872b8ead293de62a53005deb8f95"
+    },
+    {
+      "position": 13,
+      "id": "tactical-terrain-plains",
+      "kind": "terrain",
+      "mode": "tactical",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Tactical arena. Two stone decks stay on lanes 3 and 7. Banks, approaches, and deployment ground stay empty. No soldiers. Biome is plains: open grass valley, soft fields outside the pads. Same registered camera as the guide.",
+      "styleReference": "14-tactical-deployment.jpg",
+      "guide": "docs/plan/image-production/guides/tactical.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+      "promptSHA256": "2cdd513a5997e3f97110b78018fa17f01340526f91f074d4fde8965afee77607",
+      "guideSHA256": "481951b447a8a5b79596703873e35ab5e2425f17807e6d6f2d06e46c9aee0210"
+    },
+    {
+      "position": 14,
+      "id": "tactical-terrain-hills",
+      "kind": "terrain",
+      "mode": "tactical",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Tactical arena. Two stone decks stay on lanes 3 and 7. Banks, approaches, and deployment ground stay empty. No soldiers. Biome is hills: rocky highland grass, ridges outside the pads. Same registered camera as the guide.",
+      "styleReference": "14-tactical-deployment.jpg",
+      "guide": "docs/plan/image-production/guides/tactical.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+      "promptSHA256": "44b2bf23cb4e70aa78ae0148493f8ec7a6a12f375306cea4629a762effd942c0",
+      "guideSHA256": "481951b447a8a5b79596703873e35ab5e2425f17807e6d6f2d06e46c9aee0210"
+    },
+    {
+      "position": 15,
+      "id": "tactical-terrain-swamp",
+      "kind": "terrain",
+      "mode": "tactical",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Tactical arena. Two stone decks stay on lanes 3 and 7. Banks, approaches, and deployment ground stay empty. No soldiers. Biome is swamp: wet reeds and dark pools only outside the pads. Same registered camera as the guide.",
+      "styleReference": "14-tactical-deployment.jpg",
+      "guide": "docs/plan/image-production/guides/tactical.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+      "promptSHA256": "47ed5fa731d3757a692c11cacec5439d31ba064b7ad721b0a795c15be7105e93",
+      "guideSHA256": "481951b447a8a5b79596703873e35ab5e2425f17807e6d6f2d06e46c9aee0210"
+    },
+    {
+      "position": 16,
+      "id": "tactical-terrain-desert",
+      "kind": "terrain",
+      "mode": "tactical",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Tactical arena. Two stone decks stay on lanes 3 and 7. Banks, approaches, and deployment ground stay empty. No soldiers. Biome is desert: sand and dry scrub, no oasis buildings. Same registered camera as the guide.",
+      "styleReference": "14-tactical-deployment.jpg",
+      "guide": "docs/plan/image-production/guides/tactical.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+      "promptSHA256": "45bda798be4154dd0d94ea4d0f7f2867813ec8fbdfbc4a907eb576d7ae5b603d",
+      "guideSHA256": "481951b447a8a5b79596703873e35ab5e2425f17807e6d6f2d06e46c9aee0210"
+    },
+    {
+      "position": 17,
+      "id": "tactical-terrain-snow",
+      "kind": "terrain",
+      "mode": "tactical",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Tactical arena. Two stone decks stay on lanes 3 and 7. Banks, approaches, and deployment ground stay empty. No soldiers. Biome is snow: snow field and evergreens outside the pads. Same registered camera as the guide.",
+      "styleReference": "14-tactical-deployment.jpg",
+      "guide": "docs/plan/image-production/guides/tactical.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+      "promptSHA256": "0d7a6556c2deba6db88b1b239ad2f7baf927646e7643f8c9492db1b19d1f555c",
+      "guideSHA256": "481951b447a8a5b79596703873e35ab5e2425f17807e6d6f2d06e46c9aee0210"
+    },
+    {
+      "position": 18,
+      "id": "tactical-terrain-waste",
+      "kind": "terrain",
+      "mode": "tactical",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Tactical arena. Two stone decks stay on lanes 3 and 7. Banks, approaches, and deployment ground stay empty. No soldiers. Biome is waste: ash and broken ground, no modern debris on pads. Same registered camera as the guide.",
+      "styleReference": "14-tactical-deployment.jpg",
+      "guide": "docs/plan/image-production/guides/tactical.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+      "promptSHA256": "e9315b77823c8ee16ec9b848e20af85ad4efd4a1ba2a0d51bdeaab7754cfdc90",
+      "guideSHA256": "481951b447a8a5b79596703873e35ab5e2425f17807e6d6f2d06e46c9aee0210"
+    },
+    {
+      "position": 19,
+      "id": "tactical-terrain-ruins",
+      "kind": "terrain",
+      "mode": "tactical",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Tactical arena. Two stone decks stay on lanes 3 and 7. Banks, approaches, and deployment ground stay empty. No soldiers. Biome is ruins: fallen masonry only outside the pads, pads themselves bare. Same registered camera as the guide.",
+      "styleReference": "14-tactical-deployment.jpg",
+      "guide": "docs/plan/image-production/guides/tactical.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+      "promptSHA256": "d6ccbc79527f3288ea299fd4dfed267c84d2dd1630550aa5f4473852e2a19bcf",
+      "guideSHA256": "481951b447a8a5b79596703873e35ab5e2425f17807e6d6f2d06e46c9aee0210"
+    },
+    {
+      "position": 20,
+      "id": "defense-terrain-plains",
+      "kind": "terrain",
+      "mode": "defense",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Defense valley. The winding lane and eight tower pads stay empty. No towers, army, or attackers. Biome is plains: open grass valley, soft fields outside the pads. Same registered camera as the guide.",
+      "styleReference": "17-defense-preparation.jpg",
+      "guide": "docs/plan/image-production/guides/defense.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+      "promptSHA256": "d4e2f847264647d7ed6fec3810ac22dcb012f67b9309daa707f17c07f47b3068",
+      "guideSHA256": "df1c105407fa48e240137a83eaa0a5dcb5b35ca50f827309f07320fcab9368d7"
+    },
+    {
+      "position": 21,
+      "id": "defense-terrain-hills",
+      "kind": "terrain",
+      "mode": "defense",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Defense valley. The winding lane and eight tower pads stay empty. No towers, army, or attackers. Biome is hills: rocky highland grass, ridges outside the pads. Same registered camera as the guide.",
+      "styleReference": "17-defense-preparation.jpg",
+      "guide": "docs/plan/image-production/guides/defense.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+      "promptSHA256": "ce1b8fd4fba009ee15a8fb94e7ef519ab5b7c8980b79325b2aebdc26e07b29ce",
+      "guideSHA256": "df1c105407fa48e240137a83eaa0a5dcb5b35ca50f827309f07320fcab9368d7"
+    },
+    {
+      "position": 22,
+      "id": "defense-terrain-swamp",
+      "kind": "terrain",
+      "mode": "defense",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Defense valley. The winding lane and eight tower pads stay empty. No towers, army, or attackers. Biome is swamp: wet reeds and dark pools only outside the pads. Same registered camera as the guide.",
+      "styleReference": "17-defense-preparation.jpg",
+      "guide": "docs/plan/image-production/guides/defense.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+      "promptSHA256": "aca1ff7eb6cbf06f274e030817b255bd5990579748937009fbdcd614d60e2e85",
+      "guideSHA256": "df1c105407fa48e240137a83eaa0a5dcb5b35ca50f827309f07320fcab9368d7"
+    },
+    {
+      "position": 23,
+      "id": "defense-terrain-desert",
+      "kind": "terrain",
+      "mode": "defense",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Defense valley. The winding lane and eight tower pads stay empty. No towers, army, or attackers. Biome is desert: sand and dry scrub, no oasis buildings. Same registered camera as the guide.",
+      "styleReference": "17-defense-preparation.jpg",
+      "guide": "docs/plan/image-production/guides/defense.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+      "promptSHA256": "25d551a774d5f6b47049a81ab08e91c80cc978196090022925caea6153d52b8f",
+      "guideSHA256": "df1c105407fa48e240137a83eaa0a5dcb5b35ca50f827309f07320fcab9368d7"
+    },
+    {
+      "position": 24,
+      "id": "defense-terrain-snow",
+      "kind": "terrain",
+      "mode": "defense",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Defense valley. The winding lane and eight tower pads stay empty. No towers, army, or attackers. Biome is snow: snow field and evergreens outside the pads. Same registered camera as the guide.",
+      "styleReference": "17-defense-preparation.jpg",
+      "guide": "docs/plan/image-production/guides/defense.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+      "promptSHA256": "910d57bfec00be2fb6470b564fa16788071732c6892b3088cd4ce01592eb5d99",
+      "guideSHA256": "df1c105407fa48e240137a83eaa0a5dcb5b35ca50f827309f07320fcab9368d7"
+    },
+    {
+      "position": 25,
+      "id": "defense-terrain-waste",
+      "kind": "terrain",
+      "mode": "defense",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Defense valley. The winding lane and eight tower pads stay empty. No towers, army, or attackers. Biome is waste: ash and broken ground, no modern debris on pads. Same registered camera as the guide.",
+      "styleReference": "17-defense-preparation.jpg",
+      "guide": "docs/plan/image-production/guides/defense.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+      "promptSHA256": "6a91a5c3336bcdf2fed15a55c4cff5991fc17496e1b82c1294cb8b5a56ef608a",
+      "guideSHA256": "df1c105407fa48e240137a83eaa0a5dcb5b35ca50f827309f07320fcab9368d7"
+    },
+    {
+      "position": 26,
+      "id": "defense-terrain-ruins",
+      "kind": "terrain",
+      "mode": "defense",
+      "age": null,
+      "aspect": "16:9",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. The previous purchase failed and must not be repeated. Inside every reserved pad there must be ZERO huts, houses, people, animals, logs, crates, stakes, fences, white outlines, or foundation lines. Pads are bare grass or earth only. Exactly one river crossing. No second bridge. No baked actors. Defense valley. The winding lane and eight tower pads stay empty. No towers, army, or attackers. Biome is ruins: fallen masonry only outside the pads, pads themselves bare. Same registered camera as the guide.",
+      "styleReference": "17-defense-preparation.jpg",
+      "guide": "docs/plan/image-production/guides/defense.png",
+      "requiredAlpha": false,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "styleReferenceSHA256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+      "promptSHA256": "952026b3a8f9bf0dd85e3b4ab640fd20a47edee529e0f4c884dfa2c6ed9c7cc7",
+      "guideSHA256": "df1c105407fa48e240137a83eaa0a5dcb5b35ca50f827309f07320fcab9368d7"
+    },
+    {
+      "position": 27,
+      "id": "farm-stone",
+      "kind": "building",
+      "mode": "kingdom",
+      "age": "stone",
+      "aspect": "1:1",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. ONE photoreal isolated Stone Age object, not a cartoon. ONE Stone Age farm plot object: timber and thatch, no animals or people. Aerial three-quarter view matching kingdom terrain. The green polygon is only the base footprint and the red dot is pivot 512,790. Replace the green with the object base. Remove every guide mark. Keep the object top above y80. Flat pure magenta #FF00FF backdrop, no floor and no shadow on the backdrop.",
+      "styleReference": "03-kingdom-stone.jpg",
+      "guide": "docs/plan/image-production/guides/farm-stone.png",
+      "requiredAlpha": true,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "registration": {
+        "sourceSize": [
+          1024,
+          1024
+        ],
+        "sourcePivot": [
+          512,
+          790
+        ],
+        "footprintWorld": [
+          1.4,
+          1.2
+        ],
+        "groundPolygonSource": [
+          [
+            396.6428571428571,
+            761.6666666666666
+          ],
+          [
+            566.6428571428571,
+            733.3333333333333
+          ],
+          [
+            627.3571428571428,
+            818.3333333333333
+          ],
+          [
+            457.35714285714283,
+            846.6666666666666
+          ]
+        ],
+        "pivotTolerancePx": 12,
+        "status": "PROPOSED_REQUIRES_PIXEL_REVIEW"
+      },
+      "styleReferenceSHA256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+      "promptSHA256": "a9c26b8f7f30a4c144e5fc7d3a3b562a83eca5127b6da58fc9e70df91e2f5802",
+      "guideSHA256": "77dd3e26074d8c868597b158e78dfeb9a28f46903319f7b9a5d5646942ada992"
+    },
+    {
+      "position": 28,
+      "id": "lumber-stone",
+      "kind": "building",
+      "mode": "kingdom",
+      "age": "stone",
+      "aspect": "1:1",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. ONE photoreal isolated Stone Age object, not a cartoon. ONE Stone Age lumber camp object: timber yard and axe rack, no people. Aerial three-quarter view matching kingdom terrain. The green polygon is only the base footprint and the red dot is pivot 512,790. Replace the green with the object base. Remove every guide mark. Keep the object top above y80. Flat pure magenta #FF00FF backdrop, no floor and no shadow on the backdrop.",
+      "styleReference": "03-kingdom-stone.jpg",
+      "guide": "docs/plan/image-production/guides/lumber-stone.png",
+      "requiredAlpha": true,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "registration": {
+        "sourceSize": [
+          1024,
+          1024
+        ],
+        "sourcePivot": [
+          512,
+          790
+        ],
+        "footprintWorld": [
+          1.4,
+          1.2
+        ],
+        "groundPolygonSource": [
+          [
+            396.6428571428571,
+            761.6666666666666
+          ],
+          [
+            566.6428571428571,
+            733.3333333333333
+          ],
+          [
+            627.3571428571428,
+            818.3333333333333
+          ],
+          [
+            457.35714285714283,
+            846.6666666666666
+          ]
+        ],
+        "pivotTolerancePx": 12,
+        "status": "PROPOSED_REQUIRES_PIXEL_REVIEW"
+      },
+      "styleReferenceSHA256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+      "promptSHA256": "6a39d2779f91ce212e43ac551ca5d6cfda0d5c018cb154af426dbb693d5fa23c",
+      "guideSHA256": "77dd3e26074d8c868597b158e78dfeb9a28f46903319f7b9a5d5646942ada992"
+    },
+    {
+      "position": 29,
+      "id": "quarry-stone",
+      "kind": "building",
+      "mode": "kingdom",
+      "age": "stone",
+      "aspect": "1:1",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. ONE photoreal isolated Stone Age object, not a cartoon. ONE Stone Age quarry works object: flint face and timber crane, no people. Aerial three-quarter view matching kingdom terrain. The green polygon is only the base footprint and the red dot is pivot 512,790. Replace the green with the object base. Remove every guide mark. Keep the object top above y80. Flat pure magenta #FF00FF backdrop, no floor and no shadow on the backdrop.",
+      "styleReference": "03-kingdom-stone.jpg",
+      "guide": "docs/plan/image-production/guides/quarry-stone.png",
+      "requiredAlpha": true,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "registration": {
+        "sourceSize": [
+          1024,
+          1024
+        ],
+        "sourcePivot": [
+          512,
+          790
+        ],
+        "footprintWorld": [
+          1.4,
+          1.2
+        ],
+        "groundPolygonSource": [
+          [
+            396.6428571428571,
+            761.6666666666666
+          ],
+          [
+            566.6428571428571,
+            733.3333333333333
+          ],
+          [
+            627.3571428571428,
+            818.3333333333333
+          ],
+          [
+            457.35714285714283,
+            846.6666666666666
+          ]
+        ],
+        "pivotTolerancePx": 12,
+        "status": "PROPOSED_REQUIRES_PIXEL_REVIEW"
+      },
+      "styleReferenceSHA256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+      "promptSHA256": "edb8dfe341a48184f68e46bab74ec09c2032a3a6c73c1a550e74a36acb015c2a",
+      "guideSHA256": "77dd3e26074d8c868597b158e78dfeb9a28f46903319f7b9a5d5646942ada992"
+    },
+    {
+      "position": 30,
+      "id": "mine-stone",
+      "kind": "building",
+      "mode": "kingdom",
+      "age": "stone",
+      "aspect": "1:1",
+      "prompt": "ONE production image for Ages of Dominion. Semi-realistic dense inhabited rendered strategy-game materials, warm upper-left daylight, short soft contact shadows, coherent camera, high aerial three-quarter elevation55 yaw15. NO text, HUD, buttons, labels, numbers, device frame, watermark, or invented names. The first image is an exact spatial guide. The second image is material finish only; do not copy its buildings or UI. A guide mark is a specification, not art to reproduce. Never shift the camera, river, or landmarks. ONE photoreal isolated Stone Age object, not a cartoon. ONE Stone Age gold working object: shallow timber pit, no coins as text and no people. Aerial three-quarter view matching kingdom terrain. The green polygon is only the base footprint and the red dot is pivot 512,790. Replace the green with the object base. Remove every guide mark. Keep the object top above y80. Flat pure magenta #FF00FF backdrop, no floor and no shadow on the backdrop.",
+      "styleReference": "03-kingdom-stone.jpg",
+      "guide": "docs/plan/image-production/guides/mine-stone.png",
+      "requiredAlpha": true,
+      "reviewStatus": "UNVERIFIED",
+      "attempt": 1,
+      "requestedOutputs": 1,
+      "reviewCriteria": "Era, identity, camera, empty pads or single object, no baked actors or HUD, measured pivot where isolated.",
+      "registration": {
+        "sourceSize": [
+          1024,
+          1024
+        ],
+        "sourcePivot": [
+          512,
+          790
+        ],
+        "footprintWorld": [
+          1.4,
+          1.2
+        ],
+        "groundPolygonSource": [
+          [
+            396.6428571428571,
+            761.6666666666666
+          ],
+          [
+            566.6428571428571,
+            733.3333333333333
+          ],
+          [
+            627.3571428571428,
+            818.3333333333333
+          ],
+          [
+            457.35714285714283,
+            846.6666666666666
+          ]
+        ],
+        "pivotTolerancePx": 12,
+        "status": "PROPOSED_REQUIRES_PIXEL_REVIEW"
+      },
+      "styleReferenceSHA256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+      "promptSHA256": "9d972f66d36c5c3e62a07d9c9bf2e588931a903a91649a40b5091ce1e5c149fd",
+      "guideSHA256": "77dd3e26074d8c868597b158e78dfeb9a28f46903319f7b9a5d5646942ada992"
+    }
+  ],
+  "maxOutputTokens": 4096,
+  "inputTokenUpperBoundPerRequest": 12000,
+  "reservedUSD": 6,
+  "replacements": [
+    "kingdom-terrain-stone",
+    "kingdom-terrain-medieval",
+    "townhall-stone",
+    "skill-offense",
+    "gear-stone-weapon"
+  ],
+  "carriedToNextBuildingBatch": [
+    "barracks-stone",
+    "workshop-stone",
+    "hall-stone",
+    "armory-stone",
+    "walls-stone"
+  ],
+  "cause": "Batch 01 terrains baked structures into pads. Stone hall was cartoon. Offense plaque was rotated. Stone weapon showed two clubs. Prompts now forbid those results. Biome terrains use the corrected empty-pad rule.",
+  "pricingSources": [
+    "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+  ]
+}

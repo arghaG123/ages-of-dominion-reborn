@@ -1,0 +1,14 @@
+{
+  "name": "ages-of-dominion-reborn",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "benchmark": "python scripts/benchmark.py",
+    "benchmark:render": "node scripts/benchmark-render.mjs"
+  },
+  "engines": { "node": ">=24" }
+}

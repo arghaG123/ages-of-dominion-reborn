@@ -1,0 +1,605 @@
+{
+  "batch_id": "landscape-mocks-20261003-efcd7a7e",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-lite-image",
+  "region": "global",
+  "state": "JOB_STATE_SUCCEEDED",
+  "created_at_utc": "2026-10-03T01:46:33.154595+00:00",
+  "request_count": 30,
+  "requested_image_outputs": 30,
+  "request_sha256": "46f374732911f56f2a4eb18ea435b27f52c252172af3829d3ad6cb384667e5b5",
+  "manifest_sha256": "25d36babcbd59d7105275ae33feb11a766c143e94595f3424465212d4221d053",
+  "operation_id": "projects/186933974004/locations/global/batchPredictionJobs/410583068017950720",
+  "input_uri": "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/design-mocks/landscape-mocks-20261003-efcd7a7e/input.jsonl",
+  "output_prefix": "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/design-mocks/landscape-mocks-20261003-efcd7a7e/output/",
+  "cloud_lock_object": "design-mocks/active-batch.lock.json",
+  "owner_scope_exception": "Explicitly approved project scope; old project untouched/unknown",
+  "items": [
+    {
+      "position": 1,
+      "id": "home",
+      "title": "Home / entry",
+      "prompt_sha256": "4b0f0f63fcdb4bc38608ae2df0f898a2ce83daf20fe00affe76bda71f7b96322",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "home",
+          "position": 1,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\01-home.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "86c6d29014b007880ddc2360e3004b63ca22db4f52d2846b07850a77b047d159",
+          "bytes": 266013
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "id": "kingdom-day1",
+      "title": "Stone Day 1",
+      "prompt_sha256": "0bf5bd387210135fe3da549cd6fe4e74481284fbfb5649a0d1f996f0a2f5d8e9",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-day1",
+          "position": 2,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\02-kingdom-day1.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "2f709bf6173af1c8d38405ae8a4b25844b4856da11924cea43d807fe45e4e1f6",
+          "bytes": 327417
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "id": "kingdom-stone",
+      "title": "Stone mature Kingdom",
+      "prompt_sha256": "bb397c989d3eb9424a2471abc242b113513d50471dac818fc11e7844a790fac1",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-stone",
+          "position": 3,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\03-kingdom-stone.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+          "bytes": 362778
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "id": "kingdom-bronze",
+      "title": "Bronze mature Kingdom",
+      "prompt_sha256": "b6c1145f8946d2784b9aa9f91a45f9549a8cb26e300412695055aacf3481407c",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-bronze",
+          "position": 4,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\04-kingdom-bronze.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "ea1b8faca981cfc4cfae6b03801093f6a9c02143bf8029bf2e4cfe0cd564f414",
+          "bytes": 387654
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "id": "kingdom-iron",
+      "title": "Iron mature Kingdom",
+      "prompt_sha256": "2fe7c288fecfb513df4aa4c6857237a95f0b7b2304880803c680f880a6dce6a7",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-iron",
+          "position": 5,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\05-kingdom-iron.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "e646336f428e9fde63c2b657a10d7375b177a5689944c7a44e8a80aae8821694",
+          "bytes": 373842
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "id": "kingdom-medieval",
+      "title": "Medieval mature Kingdom",
+      "prompt_sha256": "3bd73b629fffc9bfb1857aa6e9cb3a30cbcf763b77386dd0230428c0cd48448a",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-medieval",
+          "position": 6,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\06-kingdom-medieval.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "5dd5adb7585e97be03048f1fac97535b67d40387387f5f314a17da92e1db0809",
+          "bytes": 344833
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "id": "kingdom-gunpowder",
+      "title": "Gunpowder mature Kingdom",
+      "prompt_sha256": "9ce00299099939d08b3abc64435811de4d712edbf17c18578625b9bbbb8bbca7",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-gunpowder",
+          "position": 7,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\07-kingdom-gunpowder.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "f5a8eba1e3cee149ffcb36bb2481a71b0db0172a4eb521fc3ce7aab19e9192b3",
+          "bytes": 340135
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "id": "kingdom-industrial",
+      "title": "Industrial mature Kingdom",
+      "prompt_sha256": "23761558416c44a3411bc5c4d640dd8f63d0594929f190257a4d7195180f8d00",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-industrial",
+          "position": 8,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\08-kingdom-industrial.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "845714405780e04ff9fb887296dbcfd7a30ce3a9d402be3c15c53369426e8f3e",
+          "bytes": 390620
+        }
+      ]
+    },
+    {
+      "position": 9,
+      "id": "kingdom-modern",
+      "title": "Modern mature Kingdom",
+      "prompt_sha256": "2bdf347c0447c3ad705f62346c26dfdeaa0e8986ff98ca85cfc3bd7e7bf216d5",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-modern",
+          "position": 9,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\09-kingdom-modern.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "3f22f3fe01890d388eeebc999c74019113f270b1cdd8802d9dd73ffaf7c1bf15",
+          "bytes": 408088
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "id": "kingdom-future",
+      "title": "Future mature Kingdom",
+      "prompt_sha256": "e82327995d961c72ac24eb516876ff620f5cb28b1d0daa9085f5468e28325bc7",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "kingdom-future",
+          "position": 10,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\10-kingdom-future.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "94fd03c0ea803d4538c696989c65c1f22700d57c7ae78b71ee0dd3ca32e54443",
+          "bytes": 377306
+        }
+      ]
+    },
+    {
+      "position": 11,
+      "id": "adventure-overview",
+      "title": "Adventure overview",
+      "prompt_sha256": "9ef01e06984748116c6023271bb6f7672c7fe6330ecd1f8a90bfe24dfd6ca09d",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "adventure-overview",
+          "position": 11,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\11-adventure-overview.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+          "bytes": 355428
+        }
+      ]
+    },
+    {
+      "position": 12,
+      "id": "adventure-crossing",
+      "title": "Adventure crossing focus",
+      "prompt_sha256": "55a88b8bd44bb55d2b55e679bceea7597e9672be441be2262f62160b990987cf",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "adventure-crossing",
+          "position": 12,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\12-adventure-crossing.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "9ef148954dbafa22c3ca497efe0af03c83b5ea1e9f52452aa56ba6162b305f13",
+          "bytes": 363119
+        }
+      ]
+    },
+    {
+      "position": 13,
+      "id": "adventure-foot",
+      "title": "Adventure on-foot site inspection",
+      "prompt_sha256": "ab2778c97d91ca9cfc303f8725ecda571481ad76a797dd69b126840eee88bf6f",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "adventure-foot",
+          "position": 13,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\13-adventure-foot.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "40e2e30f2fe640796451f2cabcd063e9d1a779b98607c3ce787fd69985b2c295",
+          "bytes": 338582
+        }
+      ]
+    },
+    {
+      "position": 14,
+      "id": "tactical-deployment",
+      "title": "Tactical deployment",
+      "prompt_sha256": "312f5702c2cc3747571177a52b91740a314623d9237bb8d76b53f092adeb63fa",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "tactical-deployment",
+          "position": 14,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\14-tactical-deployment.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+          "bytes": 318278
+        }
+      ]
+    },
+    {
+      "position": 15,
+      "id": "tactical-action",
+      "title": "Tactical selected action",
+      "prompt_sha256": "2165da086ac716e3017d0c7505aea884a1f5d821ef34725055c51da992245ff2",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "tactical-action",
+          "position": 15,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\15-tactical-action.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "94d29bdaf82ea21a77e01b7414c912aabd8402e866ff4d29c8a32d429cd032de",
+          "bytes": 341129
+        }
+      ]
+    },
+    {
+      "position": 16,
+      "id": "battle-result",
+      "title": "Shared battle result",
+      "prompt_sha256": "c389453093284598858f85fb004fc3ef63b22ab617562227734bad7825b8ef98",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "battle-result",
+          "position": 16,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\16-battle-result.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "30bb2f1526d64d659cb53810011e1ab7d70ba04eab45b127c92a602c4c29f791",
+          "bytes": 260256
+        }
+      ]
+    },
+    {
+      "position": 17,
+      "id": "defense-preparation",
+      "title": "Defense preparation",
+      "prompt_sha256": "0926ff18ad0e900e08b86b3ea92cdc7a00367959f04103efdef7574d26c62b85",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "defense-preparation",
+          "position": 17,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\17-defense-preparation.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+          "bytes": 337125
+        }
+      ]
+    },
+    {
+      "position": 18,
+      "id": "defense-wave",
+      "title": "Defense live wave",
+      "prompt_sha256": "767460f7815b586297875bd43adbeae6eceb9330fd6e00526e3672141166dc40",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "defense-wave",
+          "position": 18,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\18-defense-wave.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "ac6a416633f666fcc531d5291b9d02ec74332d26f2340d1b08c32c5fbe6cc7d5",
+          "bytes": 335883
+        }
+      ]
+    },
+    {
+      "position": 19,
+      "id": "hero-equipment",
+      "title": "Hero and six equipment slots",
+      "prompt_sha256": "ef0735bbe5276baff9a475266c743a2a8ca069b7bed1e82f4be2f0ed01320031",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "hero-equipment",
+          "position": 19,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\19-hero-equipment.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "6a3a4e08e823a00a9069960af331af6d95b9ebb6629ecc31b5a0e7ac17939f2e",
+          "bytes": 244670
+        }
+      ]
+    },
+    {
+      "position": 20,
+      "id": "skills",
+      "title": "Nine skills",
+      "prompt_sha256": "f293370ef01cc5977c2e3af89e16fb7cb0d787699d79636a5bbeec0e1bd27a18",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "skills",
+          "position": 20,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\20-skills.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "997fb3d80fb5ea5f15d4ad972cb8af4bc093c268e937102ae075c8b38fc9bc0c",
+          "bytes": 287862
+        }
+      ]
+    },
+    {
+      "position": 21,
+      "id": "spells",
+      "title": "Eight spells",
+      "prompt_sha256": "6e51db15a7ddd6b6649ec89b0ef228b40878578fd16a8cf17d9ca69461707e47",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "spells",
+          "position": 21,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\21-spells.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "b5289f2c8eae4be22e1b7b58201e73779bc151d326e66f6832656099c3b00a77",
+          "bytes": 312161
+        }
+      ]
+    },
+    {
+      "position": 22,
+      "id": "forge",
+      "title": "Equipment forge",
+      "prompt_sha256": "7cffecfd52c18dd0971b5236fc9163d66b419ff3e61a6bf6e598b97a527b32ed",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "forge",
+          "position": 22,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\22-forge.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "f5253c7524352e1f57aff00d7623ada1d3858216cdc04296f9dae4bc3e9ba560",
+          "bytes": 165912
+        }
+      ]
+    },
+    {
+      "position": 23,
+      "id": "inventory",
+      "title": "Inventory and compare",
+      "prompt_sha256": "09509fae7c6ea7a6c8ec1eb9350c5559888a6b32e987baf4fdcec84ce5685c4d",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "inventory",
+          "position": 23,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\23-inventory.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "083b299ebfb716625babc2a6648102dd28d8de0198b1b6a2cf47df440ef40d7e",
+          "bytes": 179720
+        }
+      ]
+    },
+    {
+      "position": 24,
+      "id": "army",
+      "title": "Army and creature roster",
+      "prompt_sha256": "ad0b5b2b083a3887142aac122d7d6add8518d06c9d4c33b4d813d08f60084371",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "army",
+          "position": 24,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\24-army.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "9728db38e960a2117e7b52b1fb5795cb3a7e9080a12b9f3f65bd0b1e0cc0105f",
+          "bytes": 308685
+        }
+      ]
+    },
+    {
+      "position": 25,
+      "id": "story",
+      "title": "Story / rival encounter",
+      "prompt_sha256": "a8f2bafe578fc371d0ea6c65736407ceced7bede2e72d5140e13b46f60fb13bc",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "story",
+          "position": 25,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\25-story.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "2f00b9c71582d1649cb60690f305f41437bebe73a4d79912149e800e97705ac6",
+          "bytes": 312592
+        }
+      ]
+    },
+    {
+      "position": 26,
+      "id": "quests",
+      "title": "Quests and milestones",
+      "prompt_sha256": "65002a0ff237f058c7250867025f65196167b00148195f26c533e012e95946bd",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "quests",
+          "position": 26,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\26-quests.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "c0ffa993cb4b6bcac60a9047065d58483897e25cb63f9e9a1a95c560a78bb833",
+          "bytes": 306513
+        }
+      ]
+    },
+    {
+      "position": 27,
+      "id": "tutorial",
+      "title": "Day 1 tutorial",
+      "prompt_sha256": "8095a8ed69c9abbeec97bffa8585b46b707f22957906d8718a988ad8474adc5e",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "tutorial",
+          "position": 27,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\27-tutorial.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "2fe0a3334873b14a6577c2a625deed78f139e852a0d94ce873abc9d1121d591f",
+          "bytes": 250576
+        }
+      ]
+    },
+    {
+      "position": 28,
+      "id": "settings",
+      "title": "Settings / local controls",
+      "prompt_sha256": "fc70d6ef2a9c971c451239aa26ca25cce18a3e8582d87053a2577b5bdac7dd51",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "settings",
+          "position": 28,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\28-settings.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "10454cf23925a875cdae13d4c321a25632a9aa8de7cea7a8368913a087fef641",
+          "bytes": 293126
+        }
+      ]
+    },
+    {
+      "position": 29,
+      "id": "save-recovery",
+      "title": "Local save / recovery",
+      "prompt_sha256": "a19ebb87e481d463a6118b7796ef47a5f332948d465cb32b5091b729c3da22ff",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "save-recovery",
+          "position": 29,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\29-save-recovery.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "8a54fedd84d91e2f144940eae298c178e078b205aec6ac1ead703af8f49135d1",
+          "bytes": 270329
+        }
+      ]
+    },
+    {
+      "position": 30,
+      "id": "icon-material-board",
+      "title": "Modern realistic icon direction",
+      "prompt_sha256": "7f0f9a625a57a6cf6524c1e41411be0d1f43e6c7be669bd6ebbb04bd60943f19",
+      "status": "COLLECTED",
+      "outputs": [
+        {
+          "id": "icon-material-board",
+          "position": 30,
+          "file": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\images\\30-icon-material-board.jpg",
+          "mime": "image/jpeg",
+          "width": 1376,
+          "height": 768,
+          "sha256": "9e927748289178edc5d2ce132ad4a6a053051dc976df1d7d2dfee990cc40b1d3",
+          "bytes": 225392
+        }
+      ]
+    }
+  ],
+  "new_job_post_attempts": 1,
+  "last_updated_utc": "2026-10-03T02:44:33.351569+00:00",
+  "cloud_lock_generation": "1790995478481914",
+  "submission_time_utc": "2026-10-03T01:46:36.280170+00:00",
+  "last_checked_utc": "2026-10-03T02:40:38.197737+00:00",
+  "completion_stats": {
+    "successfulCount": "30"
+  },
+  "collection_report": "C:\\dev\\ages-of-dominion-reborn\\design-preview\\generated\\landscape-mocks-20261003-efcd7a7e\\collection-report.json",
+  "actual_image_outputs": 30,
+  "collected_at_utc": "2026-10-03T02:41:53.302561+00:00",
+  "validation_errors": [],
+  "workflow_state": "ARCHIVED_TERMINAL",
+  "owner_status": "DIRECTION_APPROVED_WITH_SYNC_CORRECTIONS_2026_10_03",
+  "visual_review_scope": "ALL30_OVERVIEW_REVIEWED; FULL_IMAGE_REVIEW_01_02_10_19_30; REVISION_NEEDED",
+  "assetApproval": "UNVERIFIED"
+}

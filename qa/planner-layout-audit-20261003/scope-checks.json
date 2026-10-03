@@ -1,0 +1,200 @@
+{
+  "asset-manifest.json": {
+    "type": "dict",
+    "keys": [
+      "auditedAt",
+      "method",
+      "assets",
+      "draftArchive"
+    ],
+    "arrayCounts": {
+      "assets": 31
+    }
+  },
+  "reviewed-art-ledger.json": {
+    "type": "dict",
+    "keys": [
+      "reviewedAt",
+      "method",
+      "rawReviewedCount",
+      "files",
+      "processedReviewedCount",
+      "processedFiles"
+    ],
+    "arrayCounts": {
+      "files": 31,
+      "processedFiles": 55
+    }
+  },
+  "raw-inventory.json": {
+    "type": "dict",
+    "keys": [
+      "root",
+      "count",
+      "bytes",
+      "note",
+      "files"
+    ],
+    "arrayCounts": {
+      "files": 854
+    }
+  },
+  "public-art-inventory.json": {
+    "type": "dict",
+    "keys": [
+      "root",
+      "count",
+      "bytes",
+      "files"
+    ],
+    "arrayCounts": {
+      "files": 961
+    }
+  },
+  "GAME-DATA-REFERENCE.json": {
+    "type": "dict",
+    "keys": [
+      "format",
+      "version",
+      "preparedDate",
+      "purpose",
+      "adoptionRule",
+      "parityEvidence",
+      "originalTableCount",
+      "originalTables",
+      "productExtensions",
+      "startingStateReference",
+      "offlineCapReference",
+      "sourceFiles",
+      "functionHandling"
+    ],
+    "arrayCounts": {
+      "sourceFiles": 17
+    }
+  },
+  "references/visual-targets/index.json": {
+    "type": "dict",
+    "keys": [
+      "role",
+      "files"
+    ],
+    "arrayCounts": {
+      "files": 19
+    }
+  },
+  "benchmarkKeys": [
+    "version",
+    "at",
+    "automated",
+    "manual",
+    "assets",
+    "automatedStatus",
+    "visualStatus",
+    "productApproved"
+  ],
+  "benchmarkCheckStatusCounts": {
+    "PASS": 537,
+    "FAIL": 1,
+    "UNVERIFIED": 0
+  },
+  "benchmarkFailureRows": [
+    {
+      "id": "budget-committed",
+      "type": "AUTOMATED",
+      "status": "FAIL",
+      "details": "USDreservations include rejected generations; invoiceunknown"
+    }
+  ],
+  "benchmarkAt": "2026-10-03T13:19:56.465040+00:00",
+  "savedBenchmarkAssets": 390,
+  "submittedKingdomInput": {
+    "request": {
+      "contents": [
+        {
+          "role": "user",
+          "parts": [
+            {
+              "text": "Create ONE landscape 16:9/1K, high-detail Stone Age Day1 Kingdom composition reference for Ages of Dominion. Follow the corrected spatial guide for layout, the approved landscape Day1 mock for material finish/composition only, and preserved Hall v3 for Stone architecture. Show exactly one completed, dominant timber/hide/thatch/flint Town Hall on the upper civic terrace, naturally grounded, with intact proportions, full roof/base in frame and a clear entrance. Show 17 empty natural buildable clearings linked by soil paths, and an unbuilt perimeter: no completed walls/towers/gate. Keep sites and road/crossing approaches clear of mutable buildings/actors/material stacks. Follow river-right geography, age-appropriate crossing, hills/rocks/forest margins and the proposed common aerial three-quarter camera. Warm upper-left daylight; coherent contact shadows and natural continuous ground. No medieval church/spires, mature city, tiny floating Hall, pasted ground island, stretched roof, missing terrain strips, guide rectangles/labels/grid, HUD/text/buttons/watermark."
+            },
+            {
+              "fileData": {
+                "mimeType": "image/png",
+                "fileUri": "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/production/production-14-20261003/reference/468ee7a897eb934d965a26a44c8644bce1c1524468802d7531c354720cd0f014.png"
+              }
+            },
+            {
+              "fileData": {
+                "mimeType": "image/jpeg",
+                "fileUri": "gs://project-eaa4c1cc-8f19-4d24-9e6-aod-batch/production/production-14-20261003/reference/2f709bf6173af1c8d38405ae8a4b25844b4856da11924cea43d807fe45e4e1f6.jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "generationConfig": {
+        "responseModalities": [
+          "IMAGE"
+        ],
+        "candidateCount": 1,
+        "maxOutputTokens": 4096,
+        "imageConfig": {
+          "aspectRatio": "16:9"
+        }
+      }
+    }
+  },
+  "testsDeclared": 35,
+  "distSourceMatches": {
+    "src/client/audio.js": true,
+    "src/client/game.css": true,
+    "src/client/main.js": true,
+    "src/client/projection.js": true,
+    "src/client/rig.js": true,
+    "src/core/battle.js": true,
+    "src/core/campaign.js": true,
+    "src/core/mechanics.js": true,
+    "src/core/navigation.js": true,
+    "src/core/rng.js": true,
+    "src/core/rules.js": true,
+    "src/core/save.js": true,
+    "src/data/implementation-contract.json": true,
+    "src/data/reference-data.json": true,
+    "src/data/reviewed-source-selection.json": true,
+    "src/data/stone-scene.json": true
+  },
+  "partialSitePanelCoverage": [
+    {
+      "viewport": [
+        825,
+        375
+      ],
+      "sites": []
+    },
+    {
+      "viewport": [
+        933,
+        424
+      ],
+      "sites": []
+    },
+    {
+      "viewport": [
+        1180,
+        820
+      ],
+      "sites": [
+        {
+          "id": "P11",
+          "sourcePixelsBeyondPanelLeft": 19.34
+        }
+      ]
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "sites": []
+    }
+  ]
+}
