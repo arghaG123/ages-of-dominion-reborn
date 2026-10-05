@@ -1,0 +1,40 @@
+{
+  "id": "healer-head-profile-bun",
+  "version": "v9-local-20261005",
+  "method": "top-left-quadrant distance from sampled paper RGB 144.5,178,105; threshold 36",
+  "correction": "Dropped components with solidity under 0.08, including the magenta frame. Filled enclosed holes of 40px or fewer.",
+  "filledPinholePixels": 28,
+  "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+  "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+  "sourceROI": [
+    316,
+    474,
+    627,
+    951
+  ],
+  "boxConvention": "half-open [x0,y0,x1,y1)",
+  "sourceToCrop": {
+    "kind": "translation",
+    "origin": [
+      316,
+      474
+    ],
+    "scale": 1,
+    "rotation": 0
+  },
+  "output": "assets/derivatives/rigs/v9/healer/healer-head-profile-bun.png",
+  "sha256": "1ad22e750b7ba6b13791d2de6f328fc56d3370bab2b3a093cd57459e076e07c6",
+  "dimensionsWH": [
+    311,
+    477
+  ],
+  "view": "PROFILE_IMAGE_LEFT",
+  "anatomy": "head_with_neck",
+  "side": "UNKNOWN",
+  "neckPivotCropXY": [
+    87.0,
+    476
+  ],
+  "inventedPaint": false,
+  "rgbEdited": false
+}

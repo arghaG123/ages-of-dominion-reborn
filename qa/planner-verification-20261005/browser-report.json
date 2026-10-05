@@ -1,0 +1,408 @@
+{
+  "evidenceType": "fresh isolated browser; Skirmish ordinary controls; Forge fixture explicitly injected into this isolated context",
+  "errors": [],
+  "checks": [
+    {
+      "id": "tactical-map-move",
+      "cell": "0,3",
+      "handlersAfterAnimation": 0,
+      "stacksUnchanged": true,
+      "beforeRevision": 8,
+      "afterRevision": 8,
+      "beforeStacks": [
+        {
+          "id": "sk-p",
+          "side": "p",
+          "x": 1,
+          "y": 8,
+          "count": 6,
+          "maxCount": 6,
+          "atk": 4,
+          "def": 3,
+          "dmin": 2,
+          "dmax": 3,
+          "uhp": 10,
+          "top": 10,
+          "spd": 5,
+          "rng": 0,
+          "shots": 0,
+          "fly": 0,
+          "kind": "role",
+          "type": "melee",
+          "age": 0,
+          "acted": false,
+          "waited": false,
+          "retaliated": false,
+          "defending": false,
+          "dead": false,
+          "hasteCounter": 0,
+          "slowCounter": 0,
+          "blessCounter": 0,
+          "dealt": 0
+        },
+        {
+          "id": "sk-e",
+          "side": "e",
+          "x": 5,
+          "y": 1,
+          "count": 4,
+          "maxCount": 4,
+          "atk": 4,
+          "def": 3,
+          "dmin": 2,
+          "dmax": 3,
+          "uhp": 10,
+          "top": 10,
+          "spd": 5,
+          "rng": 0,
+          "shots": 0,
+          "fly": 0,
+          "kind": "creature",
+          "type": "wolf",
+          "age": 0,
+          "acted": false,
+          "waited": false,
+          "retaliated": false,
+          "defending": false,
+          "dead": false,
+          "hasteCounter": 0,
+          "slowCounter": 0,
+          "blessCounter": 0,
+          "dealt": 0
+        }
+      ],
+      "afterStacks": [
+        {
+          "id": "sk-p",
+          "side": "p",
+          "x": 1,
+          "y": 8,
+          "count": 6,
+          "maxCount": 6,
+          "atk": 4,
+          "def": 3,
+          "dmin": 2,
+          "dmax": 3,
+          "uhp": 10,
+          "top": 10,
+          "spd": 5,
+          "rng": 0,
+          "shots": 0,
+          "fly": 0,
+          "kind": "role",
+          "type": "melee",
+          "age": 0,
+          "acted": false,
+          "waited": false,
+          "retaliated": false,
+          "defending": false,
+          "dead": false,
+          "hasteCounter": 0,
+          "slowCounter": 0,
+          "blessCounter": 0,
+          "dealt": 0
+        },
+        {
+          "id": "sk-e",
+          "side": "e",
+          "x": 5,
+          "y": 1,
+          "count": 4,
+          "maxCount": 4,
+          "atk": 4,
+          "def": 3,
+          "dmin": 2,
+          "dmax": 3,
+          "uhp": 10,
+          "top": 10,
+          "spd": 5,
+          "rng": 0,
+          "shots": 0,
+          "fly": 0,
+          "kind": "creature",
+          "type": "wolf",
+          "age": 0,
+          "acted": false,
+          "waited": false,
+          "retaliated": false,
+          "defending": false,
+          "dead": false,
+          "hasteCounter": 0,
+          "slowCounter": 0,
+          "blessCounter": 0,
+          "dealt": 0
+        }
+      ]
+    },
+    {
+      "id": "tactical-panel-move",
+      "beforeRevision": 8,
+      "afterRevision": 11
+    },
+    {
+      "id": "retreat-first-click",
+      "dialogs": 0,
+      "state": {
+        "id": "skirmish-1-5",
+        "kind": "tactical",
+        "status": "RESOLVED",
+        "practice": "skirmish",
+        "positioned": true,
+        "rngState": 1412407756,
+        "round": 2,
+        "stacks": [
+          {
+            "id": "sk-p",
+            "side": "p",
+            "x": 2,
+            "y": 8,
+            "count": 5,
+            "maxCount": 6,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 9,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "role",
+            "type": "melee",
+            "age": 0,
+            "acted": false,
+            "waited": false,
+            "retaliated": true,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 11,
+            "bless": false
+          },
+          {
+            "id": "sk-e",
+            "side": "e",
+            "x": 3,
+            "y": 7,
+            "count": 3,
+            "maxCount": 4,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 9,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "creature",
+            "type": "wolf",
+            "age": 0,
+            "acted": true,
+            "waited": false,
+            "retaliated": false,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 11,
+            "bless": false
+          }
+        ],
+        "queue": [
+          "sk-e",
+          "sk-p"
+        ],
+        "log": [
+          {
+            "type": "move",
+            "id": "sk-p",
+            "to": [
+              2,
+              8
+            ]
+          },
+          {
+            "type": "move",
+            "id": "sk-e",
+            "to": [
+              4,
+              6
+            ]
+          },
+          {
+            "type": "strike",
+            "attackerId": "sk-e",
+            "defenderId": "sk-p",
+            "damage": 11,
+            "killed": 1,
+            "ranged": false,
+            "preview": {
+              "hit": {
+                "dmin": 8,
+                "dmax": 13,
+                "slainMin": 0,
+                "slainMax": 1
+              },
+              "retalMin": {
+                "dmin": 11,
+                "dmax": 16,
+                "slainMin": 1,
+                "slainMax": 1
+              },
+              "retalMax": {
+                "dmin": 13,
+                "dmax": 19,
+                "slainMin": 1,
+                "slainMax": 1
+              }
+            }
+          },
+          {
+            "type": "retaliate",
+            "attackerId": "sk-p",
+            "defenderId": "sk-e",
+            "damage": 11,
+            "killed": 1
+          },
+          {
+            "type": "retreat"
+          }
+        ],
+        "castThisRound": false,
+        "wisdom": 0,
+        "mana": 0,
+        "hero": null,
+        "encounterId": null,
+        "origin": null,
+        "adventureCell": null,
+        "difficulty": 0,
+        "unfielded": [],
+        "outcome": {
+          "winner": "retreat",
+          "practice": "skirmish",
+          "reward": false
+        },
+        "pendingSettlement": true,
+        "settled": false
+      },
+      "message": "skirmish battle, round 2. 2 stacks remain. Last action retreat. The result is waiting. Apply it once. ",
+      "buttons": [
+        "Apply the battle result",
+        "Apply the battle result",
+        "Skip tutorial"
+      ]
+    },
+    {
+      "id": "forge-compare-confirm",
+      "message": "Selected Weapon. Worn empty (no item). Armory level 1 unlocks quality 0 at 80 wood, 60 stone, 70 gold. Bag holds 1. There is no Enhance, Reforge or Socket action. Comparing Flint Club · Crude (atk +1, atk 3 to 4) with worn Weapon (no item). Confirm equip applies that change.",
+      "messageBox": {
+        "x": 586,
+        "y": 253.375,
+        "width": 222,
+        "height": 126,
+        "top": 253.375,
+        "right": 808,
+        "bottom": 379.375,
+        "left": 586
+      },
+      "panelBox": {
+        "x": 577,
+        "y": 78.375,
+        "width": 240,
+        "height": 144.625,
+        "top": 78.375,
+        "right": 817,
+        "bottom": 223,
+        "left": 577
+      },
+      "statsAfter": {
+        "atk": 4,
+        "def": 3,
+        "pow": 1,
+        "kno": 1,
+        "move": 0,
+        "morale": 0,
+        "luck": 0
+      },
+      "equipBeforeConfirm": null,
+      "equipAfter": {
+        "id": "item-audit-forge",
+        "kind": "gear",
+        "slot": "weapon",
+        "age": 0,
+        "quality": 0
+      },
+      "equipReload": {
+        "id": "item-audit-forge",
+        "kind": "gear",
+        "slot": "weapon",
+        "age": 0,
+        "quality": 0
+      }
+    }
+  ],
+  "tacticalDOM": "- main:\n  - heading \"Ages of Dominion\" [level=1]\n  - status: Stone Age · day 1\n  - button \"All actions\" [expanded]\n  - button \"Save\"\n  - img \"Campaign scene\": Clubman ×6 Dire Wolf ×4\n  - button \"Move\" [pressed]\n  - button \"Melee\" [disabled]\n  - button \"Shoot\" [disabled]\n  - button \"Spell\" [disabled]\n  - button \"Defend\"\n  - button \"Wait\"\n  - button \"Auto\"\n  - button \"Retreat\"\n  - complementary:\n    - heading \"Battle round 1\" [level=2]\n    - button \"Move to column 3, row 9\"\n    - button \"Move to column 1, row 9\"\n    - button \"Move to column 2, row 10\"\n    - button \"Move to column 2, row 8\"\n    - button \"Move to column 3, row 10\"\n    - button \"Move to column 3, row 8\"\n    - button \"Move to column 1, row 8\"\n    - button \"Move to column 2, row 7\"\n    - button \"Move to column 3, row 7\"\n    - button \"Move to column 1, row 7\"\n    - button \"Move to column 4, row 8\"\n    - button \"Move to column 2, row 6\"\n    - button \"Move to column 3, row 6\"\n    - button \"Move to column 5, row 8\"\n    - button \"Move to column 2, row 5\"\n    - button \"Move to column 3, row 5\"\n    - button \"Move to column 6, row 8\"\n    - button \"Move to column 5, row 9\"\n    - button \"Move to column 5, row 7\"\n    - button \"Move to column 6, row 9\"\n    - button \"Move to column 6, row 7\"\n    - button \"Move to column 1, row 5\"\n    - button \"Move to column 2, row 4\"\n    - button \"Move to column 3, row 4\"\n    - button \"Move to column 1, row 4\"\n    - button \"Move to column 7, row 8\"\n    - button \"Move to column 7, row 7\"\n    - button \"Move to column 5, row 10\"\n    - button \"Move to column 5, row 6\"\n    - button \"Move to column 6, row 6\"\n    - button \"Skip tutorial\"\n    - alert: skirmish battle, round 1. 2 stacks remain. No action yet. Clubman ×6 can step onto a highlighted cell. Choose the cell here or on the map. 30 open cells\n  - navigation \"Screens\":\n    - button \"Kingdom\"\n    - button \"Adventure\"\n    - button \"Hero\"\n    - button \"Tactical\"\n    - button \"War\"\n    - button \"More\"",
+  "tacticalLabelMetrics": [
+    {
+      "text": "Clubman ×6",
+      "fontSize": "14px",
+      "screenScale": 0.3424479067325592,
+      "box": {
+        "x": 250.4401092529297,
+        "y": 203.9375,
+        "width": 26.275527954101562,
+        "height": 6.506500244140625,
+        "top": 203.9375,
+        "right": 276.71563720703125,
+        "bottom": 210.44400024414062,
+        "left": 250.4401092529297
+      }
+    },
+    {
+      "text": "Dire Wolf ×4",
+      "fontSize": "14px",
+      "screenScale": 0.3424479067325592,
+      "box": {
+        "x": 290.7767333984375,
+        "y": 77.23176574707031,
+        "width": 27.104217529296875,
+        "height": 6.5065155029296875,
+        "top": 77.23176574707031,
+        "right": 317.8809509277344,
+        "bottom": 83.73828125,
+        "left": 290.7767333984375
+      }
+    }
+  ],
+  "fixture": {
+    "kind": "INJECTED_ARMORY_FIXTURE",
+    "stats": {
+      "atk": 3,
+      "def": 3,
+      "pow": 1,
+      "kno": 1,
+      "move": 0,
+      "morale": 0,
+      "luck": 0
+    },
+    "inventory": [
+      {
+        "id": "item-audit-forge",
+        "kind": "gear",
+        "slot": "weapon",
+        "age": 0,
+        "quality": 0
+      }
+    ],
+    "encoded": "{\"schema\":1,\"payload\":\"{\\\"schema\\\":1,\\\"id\\\":\\\"campaign-123456789\\\",\\\"revision\\\":1,\\\"seed\\\":123456789,\\\"rngState\\\":123456789,\\\"age\\\":0,\\\"day\\\":1,\\\"resources\\\":{\\\"food\\\":250,\\\"wood\\\":170,\\\"stone\\\":100,\\\"gold\\\":80},\\\"plots\\\":[{\\\"id\\\":\\\"townhall\\\",\\\"type\\\":\\\"townhall\\\",\\\"level\\\":1},{\\\"id\\\":\\\"P01\\\",\\\"type\\\":\\\"armory\\\",\\\"level\\\":1},{\\\"id\\\":\\\"P02\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P03\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P04\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P05\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P06\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P07\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P08\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P09\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P10\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P11\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P12\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P13\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P14\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P15\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P16\\\",\\\"type\\\":null,\\\"level\\\":0},{\\\"id\\\":\\\"P17\\\",\\\"type\\\":null,\\\"level\\\":0}],\\\"walls\\\":{\\\"level\\\":0},\\\"buildJobs\\\":[],\\\"clock\\\":1791200293265,\\\"hero\\\":{\\\"id\\\":\\\"hero-1\\\",\\\"class\\\":\\\"knight\\\",\\\"level\\\":1,\\\"xp\\\":0,\\\"points\\\":0,\\\"growth\\\":{\\\"atk\\\":0,\\\"def\\\":0,\\\"pow\\\":0,\\\"kno\\\":0},\\\"bonus\\\":{\\\"atk\\\":0,\\\"def\\\":0,\\\"pow\\\":0,\\\"kno\\\":0},\\\"offers\\\":[],\\\"mana\\\":10,\\\"skills\\\":{\\\"offense\\\":0,\\\"archery\\\":0,\\\"armorer\\\":0,\\\"wisdom\\\":0,\\\"leadership\\\":0,\\\"luck\\\":0,\\\"tactics\\\":0,\\\"logistics\\\":0,\\\"firstaid\\\":0},\\\"equip\\\":{\\\"helm\\\":null,\\\"weapon\\\":null,\\\"offhand\\\":null,\\\"armor\\\":null,\\\"boots\\\":null,\\\"accessory\\\":null}},\\\"army\\\":[{\\\"id\\\":\\\"army-1\\\",\\\"kind\\\":\\\"role\\\",\\\"type\\\":\\\"melee\\\",\\\"age\\\":0,\\\"count\\\":12,\\\"rank\\\":0,\\\"xp\\\":0},{\\\"id\\\":\\\"army-2\\\",\\\"kind\\\":\\\"role\\\",\\\"type\\\":\\\"ranged\\\",\\\"age\\\":0,\\\"count\\\":8,\\\"rank\\\":0,\\\"xp\\\":0}],\\\"towers\\\":[{\\\"id\\\":\\\"tower-1\\\",\\\"fam\\\":\\\"arrow\\\",\\\"tier\\\":0,\\\"rank\\\":0,\\\"xp\\\":0},{\\\"id\\\":\\\"tower-2\\\",\\\"fam\\\":\\\"slow\\\",\\\"tier\\\":0,\\\"rank\\\":0,\\\"xp\\\":0}],\\\"inventory\\\":[{\\\"id\\\":\\\"item-audit-forge\\\",\\\"kind\\\":\\\"gear\\\",\\\"slot\\\":\\\"weapon\\\",\\\"age\\\":0,\\\"quality\\\":0}],\\\"story\\\":{\\\"rival\\\":null,\\\"flags\\\":{},\\\"chapter\\\":0,\\\"choices\\\":[],\\\"futureSeen\\\":false,\\\"milestones\\\":{}},\\\"quests\\\":{\\\"q1\\\":{\\\"claimed\\\":false},\\\"q2\\\":{\\\"claimed\\\":false},\\\"q3\\\":{\\\"claimed\\\":false},\\\"q4\\\":{\\\"claimed\\\":false},\\\"q5\\\":{\\\"claimed\\\":false},\\\"q6\\\":{\\\"claimed\\\":false}},\\\"tutorial\\\":{\\\"step\\\":0,\\\"skipped\\\":false},\\\"settings\\\":{\\\"music\\\":0.6,\\\"sfx\\\":0.8,\\\"reducedMotion\\\":false},\\\"weather\\\":\\\"clear\\\",\\\"adventure\\\":null,\\\"battle\\\":null,\\\"defense\\\":null,\\\"dwelling\\\":null,\\\"settledTransactions\\\":{\\\"audit-forge\\\":\\\"{\\\\\\\"type\\\\\\\":\\\\\\\"FORGE\\\\\\\",\\\\\\\"payload\\\\\\\":{\\\\\\\"slot\\\\\\\":\\\\\\\"weapon\\\\\\\",\\\\\\\"quality\\\\\\\":0}}\\\"}}\",\"checksum\":\"ed214bc2\"}",
+    "saveKey": "aod-reborn-v1",
+    "viewKey": "aod-reborn-v1-view"
+  },
+  "serverLog": "Reborn local preview: http://127.0.0.1:4209\n"
+}

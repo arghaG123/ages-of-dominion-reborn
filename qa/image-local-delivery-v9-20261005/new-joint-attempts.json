@@ -1,0 +1,84 @@
+[
+  {
+    "id": "healer-head-to-torso",
+    "status": "FAIL",
+    "reason": "ROUNDED_NECK_STUMP_COVERS_COLLAR",
+    "attempts": 1,
+    "exhausted": true,
+    "ratio": 1.169,
+    "poses": [
+      {
+        "angle": -25,
+        "overlapParent128Child16": 11481,
+        "continuousRunPx": 172,
+        "jointRoiParentAlphaGt128": 43742,
+        "jointRoiChildAlphaGt16": 79946
+      },
+      {
+        "angle": 0,
+        "overlapParent128Child16": 9972,
+        "continuousRunPx": 193,
+        "jointRoiParentAlphaGt128": 43742,
+        "jointRoiChildAlphaGt16": 78694
+      },
+      {
+        "angle": 25,
+        "overlapParent128Child16": 11483,
+        "continuousRunPx": 173,
+        "jointRoiParentAlphaGt128": 43742,
+        "jointRoiChildAlphaGt16": 77693
+      }
+    ],
+    "parent": "assets/derivatives/rigs/v9/healer/healer-head-front-neck.png",
+    "child": "assets/derivatives/rigs/v6/healer/torso.png",
+    "note": "One scale-1 cuff alignment. The overlap is a rounded neck stump on the collar, not a socket. No second search.",
+    "visual": "qa/image-local-delivery-v9-20261005/diagnostics/healer-head-to-torso-0-white.png"
+  },
+  {
+    "id": "healer-torso-to-skirt",
+    "status": "PARTIAL",
+    "reason": "NEUTRAL_SILHOUETTE_INSPECTED_ARC_UNVERIFIED",
+    "attempts": 1,
+    "exhausted": false,
+    "ratio": 0.818,
+    "poses": [
+      {
+        "angle": -25,
+        "overlapParent128Child16": 11087,
+        "continuousRunPx": 196,
+        "jointRoiParentAlphaGt128": 91672,
+        "jointRoiChildAlphaGt16": 100594
+      },
+      {
+        "angle": 0,
+        "overlapParent128Child16": 10255,
+        "continuousRunPx": 207,
+        "jointRoiParentAlphaGt128": 91672,
+        "jointRoiChildAlphaGt16": 90676
+      },
+      {
+        "angle": 25,
+        "overlapParent128Child16": 11113,
+        "continuousRunPx": 192,
+        "jointRoiParentAlphaGt128": 91672,
+        "jointRoiChildAlphaGt16": 101876
+      }
+    ],
+    "parent": "assets/derivatives/rigs/v6/healer/torso.png",
+    "child": "assets/derivatives/rigs/v6/healer/skirt.png",
+    "note": "Neutral waist contact was inspected. The -25 and +25 frames were not accepted.",
+    "visual": "qa/image-local-delivery-v9-20261005/diagnostics/healer-torso-skirt-0-white.png"
+  },
+  {
+    "id": "healer-skirt-to-leg",
+    "status": "FAIL",
+    "reason": "FAIL_IMPLAUSIBLE_SCALE",
+    "attempts": 1,
+    "exhausted": true,
+    "ratio": 6.25,
+    "uniformScale": 1,
+    "parent": "assets/derivatives/rigs/v6/healer/skirt.png",
+    "child": "assets/derivatives/rigs/v6/healer/leg_upper.png",
+    "note": "One baseline at scale 1. No search."
+  }
+]

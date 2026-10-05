@@ -24,7 +24,24 @@
       <img id="terrain" alt="">
       <svg id="world" viewBox="0 0 1376 768" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Campaign scene"></svg>
     </div>
+    <div id="labels" aria-hidden="true"></div>
+    <div id="gate" hidden>
+      <div id="gate-copy">
+        <p id="gate-kicker">Stone valley</p>
+        <h2 id="gate-title">Ages of Dominion</h2>
+        <p id="gate-line"></p>
+      </div>
+      <div id="gate-actions" aria-label="Campaign gate"></div>
+    </div>
     <div id="dock" aria-label="Primary actions"></div>
+    <div id="retreat" role="dialog" aria-modal="true" aria-labelledby="retreat-title" hidden>
+      <h2 id="retreat-title">Retreat</h2>
+      <p id="retreat-body"></p>
+      <div>
+        <button type="button" id="retreat-cancel" data-choice="retreat-cancel">Cancel</button>
+        <button type="button" id="retreat-confirm" data-choice="retreat-confirm">Confirm retreat</button>
+      </div>
+    </div>
     <aside id="panel">
       <h2 id="selected">Kingdom</h2>
       <div id="choices"></div>

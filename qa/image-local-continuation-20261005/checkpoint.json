@@ -1,0 +1,120 @@
+{
+  "updated": "2026-10-05",
+  "providerCalls": 0,
+  "codeAIHandoffReady": false,
+  "python": "3.13.7",
+  "inputHashesChanged": [],
+  "items": [
+    {
+      "id": "keep-set",
+      "state": "reused",
+      "attempts": 0,
+      "next": "none"
+    },
+    {
+      "id": "troop-industrial-melee",
+      "state": "partial",
+      "attempts": 1,
+      "next": "stop",
+      "reason": "No restorable dark coat pixels in v5. Native-matte and 130px claim withdrawn."
+    },
+    {
+      "id": "troop-modern-heavy",
+      "state": "partial",
+      "attempts": 0,
+      "next": "stop"
+    },
+    {
+      "id": "troop-modern-ranged",
+      "state": "partial",
+      "attempts": 0,
+      "next": "stop"
+    },
+    {
+      "id": "healer-boot",
+      "state": "complete",
+      "attempts": 1,
+      "next": "none",
+      "output": "assets/derivatives/rigs/v7/healer/boot.png"
+    },
+    {
+      "id": "healer-leg-greave",
+      "state": "complete",
+      "attempts": 1,
+      "next": "none",
+      "angles": [
+        -25,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "healer-greave-boot",
+      "state": "complete",
+      "attempts": 1,
+      "next": "none",
+      "angles": [
+        -25,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "paladin-knee-greave",
+      "state": "complete",
+      "attempts": 1,
+      "next": "none",
+      "angles": [
+        -25,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "paladin-head",
+      "state": "failed",
+      "attempts": 1,
+      "next": "stop",
+      "reason": "Neighbor rim came in with the upward component. Derivative deleted."
+    },
+    {
+      "id": "paladin-thigh-knee",
+      "state": "failed",
+      "attempts": 1,
+      "next": "stop"
+    },
+    {
+      "id": "paladin-greave-boot",
+      "state": "failed",
+      "attempts": 1,
+      "next": "stop"
+    },
+    {
+      "id": "knight-thigh-greave",
+      "state": "failed",
+      "attempts": 13,
+      "next": "stop"
+    },
+    {
+      "id": "class-sheets",
+      "state": "partial",
+      "attempts": 1,
+      "next": "stop",
+      "reason": "Separable crops named. Labels and multi-part groups withheld. No neutral body."
+    },
+    {
+      "id": "terrain",
+      "state": "partial",
+      "attempts": 1,
+      "next": "stop",
+      "reason": "32 plates surveyed. Stone legal road and bridge do not match painted geography. Nothing promoted."
+    },
+    {
+      "id": "three-role-draft",
+      "state": "blocked",
+      "attempts": 0,
+      "next": "owner authorization",
+      "status": "DRAFT_NOT_SUBMITTED"
+    }
+  ]
+}

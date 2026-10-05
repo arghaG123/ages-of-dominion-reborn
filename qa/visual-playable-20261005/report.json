@@ -1,0 +1,179 @@
+{
+  "liveUrl": "http://127.0.0.1:4317",
+  "port": 4317,
+  "log": "Reborn local preview: http://127.0.0.1:4317",
+  "errors": [],
+  "shots": [
+    {
+      "name": "home-1280x720",
+      "file": "qa/visual-playable-20261005/shots/home-1280x720.png",
+      "sha256": "2438a51791d5cb732ce685000dc2f8ce55c24094eb63cd99621d48c4e7348b3b",
+      "bytes": 1055744
+    },
+    {
+      "name": "home-825x375",
+      "file": "qa/visual-playable-20261005/shots/home-825x375.png",
+      "sha256": "8c09de96aee496cd91077ce5d2f7a7060b41b0c00823e1bddf8027d5bf649e10",
+      "bytes": 332261
+    },
+    {
+      "name": "home-933x424",
+      "file": "qa/visual-playable-20261005/shots/home-933x424.png",
+      "sha256": "5b5fc71551e375d00ddac8740c68f933208488c65f2b9c89c8cc727b7bbf6d88",
+      "bytes": 452497
+    },
+    {
+      "name": "home-1180x820",
+      "file": "qa/visual-playable-20261005/shots/home-1180x820.png",
+      "sha256": "41c74a32f4764d5235bf35c61433b2f2d953a594f93f93d6e24fa2ec9a24f8f6",
+      "bytes": 1191360
+    },
+    {
+      "name": "hero-class-1280x720",
+      "file": "qa/visual-playable-20261005/shots/hero-class-1280x720.png",
+      "sha256": "92496fad3054c2ee91d49ab422b30c6f2a40e60c2d2db10715fb2537003e194c",
+      "bytes": 558561
+    },
+    {
+      "name": "kingdom-stone-1280x720",
+      "file": "qa/visual-playable-20261005/shots/kingdom-stone-1280x720.png",
+      "sha256": "8cf620bbfaf40f6ca4968bb73b7a4fbd1a4a0363ad27e977b809ca066d782773",
+      "bytes": 1250479
+    },
+    {
+      "name": "adventure-1280x720",
+      "file": "qa/visual-playable-20261005/shots/adventure-1280x720.png",
+      "sha256": "4d077922159c01ab91e6540426134ee2a810dcc66fc40a7f884688a9350551eb",
+      "bytes": 1267638
+    },
+    {
+      "name": "army-1280x720",
+      "file": "qa/visual-playable-20261005/shots/army-1280x720.png",
+      "sha256": "5e0a1548ae3cb82f41ae7da07ff4c65621f82a1cc0cee28edb590daea549899b",
+      "bytes": 117926
+    },
+    {
+      "name": "forge-1280x720",
+      "file": "qa/visual-playable-20261005/shots/forge-1280x720.png",
+      "sha256": "18382dccb97530f7ecf110b721eb4d40e0019b62088c640f02002a12ca516d4d",
+      "bytes": 47403
+    },
+    {
+      "name": "story-1280x720",
+      "file": "qa/visual-playable-20261005/shots/story-1280x720.png",
+      "sha256": "c3c237e19542d1bd22786815afb5f37e6c16b274fe1477fb47495e2cd1a7182b",
+      "bytes": 31051
+    },
+    {
+      "name": "market-1280x720",
+      "file": "qa/visual-playable-20261005/shots/market-1280x720.png",
+      "sha256": "9f4e206ef6dfef07de524ea32520b4bcc6ad45d113c13c16517699c9f367eeb7",
+      "bytes": 32148
+    },
+    {
+      "name": "settings-1280x720",
+      "file": "qa/visual-playable-20261005/shots/settings-1280x720.png",
+      "sha256": "30871c3e930e03c6ab4156e47e5b4a81f65830ac7fc37c407ea1e4c25bf7fe49",
+      "bytes": 33484
+    },
+    {
+      "name": "defense-1280x720",
+      "file": "qa/visual-playable-20261005/shots/defense-1280x720.png",
+      "sha256": "f918b886c26cdd328ad24da986f5dbac850efb9f780ac1cb7a8029f25fbbe579",
+      "bytes": 1250281
+    },
+    {
+      "name": "war-1280x720",
+      "file": "qa/visual-playable-20261005/shots/war-1280x720.png",
+      "sha256": "a352d47c8992656c2f92cd0e179f699f7a7e7575000765cc3c9ea5566a8136c1",
+      "bytes": 33773
+    },
+    {
+      "name": "tactical-1280x720",
+      "file": "qa/visual-playable-20261005/shots/tactical-1280x720.png",
+      "sha256": "02c43e0b812a4ef28b1099babde6a540a9df505ece7efe9c24cf6a73a73ee6d9",
+      "bytes": 1092221
+    },
+    {
+      "name": "retreat-1280x720",
+      "file": "qa/visual-playable-20261005/shots/retreat-1280x720.png",
+      "sha256": "14898680b8e16b40e94ca4257a763e9a7ea228f147a56eab1c970a179bb0b7f0",
+      "bytes": 984334
+    },
+    {
+      "name": "portrait-500x900",
+      "file": "qa/visual-playable-20261005/shots/portrait-500x900.png",
+      "sha256": "393aa321787538fc33049fd083cbc83d516441c2d2d6d2323bc245f73fed0e32",
+      "bytes": 10281
+    }
+  ],
+  "checks": [
+    {
+      "id": "home-title",
+      "pass": true
+    },
+    {
+      "id": "home-no-schematic",
+      "pass": true
+    },
+    {
+      "id": "home-actions",
+      "pass": true
+    },
+    {
+      "id": "class-cards",
+      "pass": true
+    },
+    {
+      "id": "hero-no-schematic",
+      "pass": true
+    },
+    {
+      "id": "kingdom-pads",
+      "pass": true
+    },
+    {
+      "id": "adventure-painted",
+      "pass": true
+    },
+    {
+      "id": "army-still",
+      "pass": true
+    },
+    {
+      "id": "forge-slots",
+      "pass": true
+    },
+    {
+      "id": "defense-painted",
+      "pass": true
+    },
+    {
+      "id": "tactical-painted",
+      "pass": true
+    },
+    {
+      "id": "retreat-inert",
+      "pass": true,
+      "dockInert": true,
+      "worldInert": true,
+      "focus": "retreat-cancel"
+    },
+    {
+      "id": "retreat-tab",
+      "pass": true
+    },
+    {
+      "id": "retreat-shift-tab",
+      "pass": true
+    },
+    {
+      "id": "retreat-escape",
+      "pass": true
+    },
+    {
+      "id": "portrait-rotate",
+      "pass": true
+    }
+  ]
+}

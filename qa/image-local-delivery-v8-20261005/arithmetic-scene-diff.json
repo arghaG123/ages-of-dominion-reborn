@@ -1,0 +1,363 @@
+{
+  "summary": {
+    "scenes": 32,
+    "changedScenes": 8,
+    "candidatePixelsChanged": 13360,
+    "stage": "legal-grid candidate mask before connected-component filtering",
+    "not": "river, bank, or runtime accuracy"
+  },
+  "rows": [
+    {
+      "id": "adventure-terrain",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 136257,
+      "widenedPixels": 136257,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "adventure-terrain-plains",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 2601,
+      "widenedPixels": 2599,
+      "pixelsChanged": 2,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "adventure-terrain-hills",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 6523,
+      "widenedPixels": 6523,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "adventure-terrain-swamp",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 103,
+      "widenedPixels": 103,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "adventure-terrain-desert",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 10,
+      "widenedPixels": 10,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "adventure-terrain-snow",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 438243,
+      "widenedPixels": 431031,
+      "pixelsChanged": 7212,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "adventure-terrain-waste",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 40954,
+      "widenedPixels": 40951,
+      "pixelsChanged": 3,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "adventure-terrain-ruins",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 25109,
+      "widenedPixels": 25109,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "tactical-terrain-plains",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 4314,
+      "widenedPixels": 4305,
+      "pixelsChanged": 9,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "tactical-terrain-hills",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 39403,
+      "widenedPixels": 39403,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "tactical-terrain-swamp",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 14473,
+      "widenedPixels": 14472,
+      "pixelsChanged": 1,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "tactical-terrain-desert",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 0,
+      "widenedPixels": 0,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "tactical-terrain-waste",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 11844,
+      "widenedPixels": 11844,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "tactical-terrain-ruins",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 1,
+      "widenedPixels": 1,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "defense-terrain",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 31773,
+      "widenedPixels": 31773,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "defense-terrain-plains",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 21584,
+      "widenedPixels": 21584,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "defense-terrain-hills",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 179,
+      "widenedPixels": 179,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "defense-terrain-swamp",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 0,
+      "widenedPixels": 0,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "defense-terrain-desert",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 0,
+      "widenedPixels": 0,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "defense-terrain-snow",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 233652,
+      "widenedPixels": 233636,
+      "pixelsChanged": 16,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "defense-terrain-waste",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 2243,
+      "widenedPixels": 2243,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "defense-terrain-ruins",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 64,
+      "widenedPixels": 64,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "tactical-terrain",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 30949,
+      "widenedPixels": 30949,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 338983,
+      "widenedPixels": 333124,
+      "pixelsChanged": 5859,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "kingdom-terrain-stone",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 1250,
+      "widenedPixels": 1250,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 72,
+      "widenedPixels": 72,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 52106,
+      "widenedPixels": 52106,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 35983,
+      "widenedPixels": 35983,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 27940,
+      "widenedPixels": 27940,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 15639,
+      "widenedPixels": 15639,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 23588,
+      "widenedPixels": 23588,
+      "pixelsChanged": 0,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "grid": [
+        1376,
+        768
+      ],
+      "uint8Pixels": 103399,
+      "widenedPixels": 103141,
+      "pixelsChanged": 258,
+      "meaning": "Candidate color only, before component filtering. Not bank truth."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "healer-head-crown",
+  "version": "v9-local-20261005",
+  "method": "top-left-quadrant distance from sampled paper RGB 144.5,178,105; threshold 36",
+  "correction": "Dropped components with solidity under 0.08, including the magenta frame. Filled enclosed holes of 40px or fewer.",
+  "filledPinholePixels": 28,
+  "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+  "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+  "sourceROI": [
+    708,
+    641,
+    969,
+    975
+  ],
+  "boxConvention": "half-open [x0,y0,x1,y1)",
+  "sourceToCrop": {
+    "kind": "translation",
+    "origin": [
+      708,
+      641
+    ],
+    "scale": 1,
+    "rotation": 0
+  },
+  "output": "assets/derivatives/rigs/v9/healer/healer-head-crown.png",
+  "sha256": "6faf627fe34bd1f70698382a938c74d6bd7ee2d3798f6d724fb6eda77f29b471",
+  "dimensionsWH": [
+    261,
+    334
+  ],
+  "view": "CROWN",
+  "anatomy": "head_top",
+  "side": "UNKNOWN",
+  "neckPivotCropXY": [
+    132.0,
+    333
+  ],
+  "inventedPaint": false,
+  "rgbEdited": false
+}

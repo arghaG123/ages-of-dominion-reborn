@@ -1,0 +1,57 @@
+{
+  "updated": "2026-10-05",
+  "providerCalls": 0,
+  "codeAIHandoffReady": false,
+  "librariesMeasuredThisRun": {
+    "python": "3.13.7",
+    "Pillow": "12.3.0",
+    "NumPy": "2.5.3",
+    "OpenCV": "5.0.0",
+    "SciPy": "1.18.1"
+  },
+  "inputHashesChanged": [],
+  "preserve": {
+    "before": {
+      "healerBoot": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "v8Interface": "b0728909317b092ba6900d55524a077ff5989afd08bfb3631564230b15517cf1",
+      "draft": "d9564c16c84cb68e230ddbe39d919a1036fa498377643b19085ecac4371864e0",
+      "contract": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+    },
+    "after": {
+      "healerBoot": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "v8Interface": "b0728909317b092ba6900d55524a077ff5989afd08bfb3631564230b15517cf1",
+      "draft": "d9564c16c84cb68e230ddbe39d919a1036fa498377643b19085ecac4371864e0",
+      "contract": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+    }
+  },
+  "counts": {
+    "ready": 19,
+    "partialChains": 8,
+    "partialScenes": 32,
+    "failedJointAttemptsNew": 2,
+    "failedPreserved": 4,
+    "blocked": 1
+  },
+  "jointMismatches": [],
+  "arithmetic": {
+    "scenes": 32,
+    "changedScenes": 8,
+    "candidatePixelsChanged": 13360,
+    "stage": "1376x768 BOX resize, before component filtering",
+    "not": "river, bank, or runtime accuracy",
+    "synthetic": {
+      "case": "uint8 R+18 overflow",
+      "pixelRgb": [
+        240,
+        240,
+        250
+      ],
+      "uint8Candidate": true,
+      "widenedCandidate": false,
+      "passed": true,
+      "controlBothTrue": true,
+      "note": "Mask arithmetic only. Not a river or a bank."
+    }
+  },
+  "nextExecutableAction": "Manual trace of kingdom-terrain-bronze roads, banks, and bridge from its legal preview. Do not repeat the Stone coordinates and do not rerun exhausted Knight or Paladin placements."
+}

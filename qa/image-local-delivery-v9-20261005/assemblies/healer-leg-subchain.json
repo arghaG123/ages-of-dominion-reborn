@@ -1,0 +1,38 @@
+{
+  "id": "healer-leg-subchain",
+  "status": "PARTIAL",
+  "fullBody": "FAIL",
+  "side": "UNKNOWN",
+  "measuredLinks": [
+    "upper-leg to greave",
+    "greave to boot"
+  ],
+  "missingLinks": [
+    "head to torso",
+    "torso to skirt",
+    "skirt to upper leg"
+  ],
+  "angles": [
+    -25,
+    0,
+    25
+  ],
+  "neutral": "qa/image-local-delivery-v9-20261005/assemblies/healer-leg-subchain-0.png",
+  "clip": "qa/image-local-delivery-v9-20261005/assemblies/healer-leg-subchain-arc.gif",
+  "drawOrder": [
+    "boot",
+    "greave",
+    "upper leg"
+  ],
+  "rotation": "Child rotates about the shared cuff pivot. Positive degrees are clockwise in image space, matching the v7 warp (x' = c*x - s*y).",
+  "uniformScale": 1,
+  "canvasHeightWidth": [
+    1621,
+    1162
+  ],
+  "kneePivotCanvasXY": [
+    581,
+    301
+  ],
+  "note": "Valid subchain only. Boot follows the greave with no extra ankle bend in this clip."
+}

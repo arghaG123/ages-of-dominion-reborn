@@ -1,0 +1,3766 @@
+{
+  "version": "9.0-local-delivery-20261005",
+  "supersedes": "docs/plan/IMAGE-DELIVERY-INTERFACE-V8-2026-10-05.json",
+  "codeAIHandoffReady": false,
+  "reason": "Healer head cards and the leg subchain are individually usable. Full bodies, 31 scene traces, and several screens are still open.",
+  "noNewPaidScope": true,
+  "providerCalls": 0,
+  "librariesMeasuredThisRun": {
+    "python": "3.13.7",
+    "Pillow": "12.3.0",
+    "NumPy": "2.5.3",
+    "OpenCV": "5.0.0",
+    "SciPy": "1.18.1"
+  },
+  "boxConvention": "half-open [x0, y0, x1, y1)",
+  "affineFormula": "x'=a*x+c*y+e; y'=b*x+d*y+f",
+  "canvasConvention": "canvasHeightWidth is [height, width], the order stored in v8. canvasWidthHeight is [width, height]. Pivots are [x, y].",
+  "rotationSign": "Positive degrees clockwise in image space: x' = cos*x - sin*y, y' = sin*x + cos*y, about the shared pivot.",
+  "activeKingdomAffine": [
+    60,
+    -10,
+    25,
+    35,
+    170,
+    165
+  ],
+  "activeHallScale": 0.1312,
+  "geometryEdited": false,
+  "codeConsumersEdited": false,
+  "gitMutated": false,
+  "liveUrl": null,
+  "codePreviewCommand": "node scripts/serve.mjs",
+  "codePreviewDefaultUrl": "http://127.0.0.1:4173",
+  "imageServerStarted": false,
+  "readySubset": [
+    {
+      "id": "troop-bronze-melee",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v4/troop-bronze-melee.png",
+      "sha256": "d9c6c3c6f773eaa4ffbd892a3b04e8af083ae1f84426d42c0332bce6da0ef593",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        200,
+        162,
+        1658,
+        1949
+      ],
+      "visibleAlpha128": [
+        200,
+        162,
+        1658,
+        1949
+      ],
+      "contacts": [
+        {
+          "x": 728,
+          "y": 1734,
+          "uncertaintyPx": 4
+        },
+        {
+          "x": 1419,
+          "y": 1948,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-melee-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-melee-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-melee-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "troop-bronze-ranged",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v4/troop-bronze-ranged.png",
+      "sha256": "37dd82bc78e87c77e483ab4544141eb26590cc1e98b02328ea40f0164da221aa",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        628,
+        79,
+        1769,
+        1771
+      ],
+      "visibleAlpha128": [
+        628,
+        79,
+        1769,
+        1771
+      ],
+      "contacts": [
+        {
+          "x": 846,
+          "y": 1770,
+          "uncertaintyPx": 4
+        },
+        {
+          "x": 1215,
+          "y": 1665,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-ranged-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-ranged-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-ranged-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "troop-iron-ranged",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v4/troop-iron-ranged.png",
+      "sha256": "5adcd8ffd5ce1c349abda1c913ca1a7c44281571fcaa5bfb38348ae6241d7780",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        622,
+        206,
+        1738,
+        1914
+      ],
+      "visibleAlpha128": [
+        622,
+        206,
+        1738,
+        1914
+      ],
+      "contacts": [
+        {
+          "x": 868,
+          "y": 1796,
+          "uncertaintyPx": 4
+        },
+        {
+          "x": 1298,
+          "y": 1913,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-ranged-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-ranged-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-ranged-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "troop-iron-heavy",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v4/troop-iron-heavy.png",
+      "sha256": "620b7997f747333eeafe75c76edda53642566b4ec05b2990f3c5a2d5c269c96e",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        233,
+        82,
+        1824,
+        1854
+      ],
+      "visibleAlpha128": [
+        233,
+        82,
+        1824,
+        1854
+      ],
+      "contacts": [
+        {
+          "x": 603,
+          "y": 1747,
+          "uncertaintyPx": 4
+        },
+        {
+          "x": 803,
+          "y": 1853,
+          "uncertaintyPx": 4
+        },
+        {
+          "x": 1491,
+          "y": 1807,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-heavy-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-heavy-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-heavy-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "troop-gunpowder-melee",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v4/troop-gunpowder-melee.png",
+      "sha256": "307adeb670a6f81f25b4e0b1118e645da712d5b752429cd2a726cb89498c00d4",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        0,
+        65,
+        1418,
+        1942
+      ],
+      "visibleAlpha128": [
+        0,
+        65,
+        1418,
+        1942
+      ],
+      "contacts": [
+        {
+          "x": 841,
+          "y": 1941,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-melee-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-melee-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-melee-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "troop-gunpowder-ranged",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v4/troop-gunpowder-ranged.png",
+      "sha256": "d4ee6bebee78ef0bb3f6659e55b099f5ad0307831bfe931bd164ce542dcdd403",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        732,
+        153,
+        1871,
+        1672
+      ],
+      "visibleAlpha128": [
+        732,
+        153,
+        1871,
+        1672
+      ],
+      "contacts": [
+        {
+          "x": 779,
+          "y": 1639,
+          "uncertaintyPx": 4
+        },
+        {
+          "x": 1240,
+          "y": 1671,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-ranged-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-ranged-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-ranged-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "troop-modern-melee",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v4/troop-modern-melee.png",
+      "sha256": "de22ca26babb42396a2741c9f54a5ac3e9f4da36c49732a01c4679bc4567d779",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        594,
+        146,
+        1589,
+        1770
+      ],
+      "visibleAlpha128": [
+        594,
+        146,
+        1589,
+        1770
+      ],
+      "contacts": [
+        {
+          "x": 594,
+          "y": 1769,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-modern-melee-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-modern-melee-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-modern-melee-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "troop-future-melee",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v4/troop-future-melee.png",
+      "sha256": "fe23ac2e32c9cba7294873a33435dbb3c3e529f560c6424f9fa1553453c3f445",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        0,
+        177,
+        1616,
+        1887
+      ],
+      "visibleAlpha128": [
+        0,
+        177,
+        1616,
+        1887
+      ],
+      "contacts": [
+        {
+          "x": 882,
+          "y": 1886,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-future-melee-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-future-melee-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-future-melee-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "troop-stone-heavy",
+      "status": "READY",
+      "use": "static plate to 130px",
+      "path": "assets/derivatives/actors/v5/troop-stone-heavy.png",
+      "sha256": "dde192c590f148b9883b29e69f0dbba3c4fa2a78257aeace17d352c173359a37",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "visibleAlpha16": [
+        225,
+        58,
+        1574,
+        1974
+      ],
+      "visibleAlpha128": [
+        225,
+        58,
+        1574,
+        1974
+      ],
+      "contacts": [
+        {
+          "x": 778,
+          "y": 1807,
+          "uncertaintyPx": 4
+        },
+        {
+          "x": 1249,
+          "y": 1973,
+          "uncertaintyPx": 4
+        },
+        {
+          "x": 1545,
+          "y": 1726,
+          "uncertaintyPx": 4
+        }
+      ],
+      "semantic": "retained static troop",
+      "side": "UNKNOWN",
+      "rig": "NOT_A_RIG",
+      "recreated": false,
+      "diagnostics": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-stone-heavy-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-stone-heavy-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-stone-heavy-130.png"
+      ],
+      "limit": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "ranger-sleeve-to-open-hand",
+      "status": "READY",
+      "use": "articulation only at -25, 0 and +25 degrees",
+      "semantic": "sleeve_to_vambrace",
+      "side": "UNKNOWN",
+      "parent": "assets/derivatives/rigs/v5/ranger/sleeve_upper_arm.png",
+      "parentSha256": "706fd37daa44129c8fa337287a819b8bf0552cd7bb9b48cd9e7c1c21f27cd3c0",
+      "child": "assets/derivatives/rigs/v5/ranger/vambrace_hand_open.png",
+      "childSha256": "3eff8ad7b18d5dfd49bb52b874a0c934d69ad51d24c431a0508ebb94ceb2526b",
+      "placement": {
+        "insertionOfCuff": 0.3,
+        "transverseOfCuff": 0.05,
+        "uniformScale": 1
+      },
+      "poses": [
+        {
+          "angle": -25,
+          "overlapParent128Child16": 7814,
+          "continuousRunPx": 117,
+          "jointRoiParentAlphaGt128": 19794,
+          "jointRoiChildAlphaGt16": 14954
+        },
+        {
+          "angle": 0,
+          "overlapParent128Child16": 8071,
+          "continuousRunPx": 113,
+          "jointRoiParentAlphaGt128": 19794,
+          "jointRoiChildAlphaGt16": 14049
+        },
+        {
+          "angle": 25,
+          "overlapParent128Child16": 7874,
+          "continuousRunPx": 109,
+          "jointRoiParentAlphaGt128": 19794,
+          "jointRoiChildAlphaGt16": 15040
+        }
+      ],
+      "vambraceInteriorHoles16": 547,
+      "priorEvidence": "qa/image-local-solution-20261004/joints/ranger_sleeve_vambrace_0.png",
+      "limit": "Recorded placement remeasured once. The 12-placement search was not rerun. Not a whole rig or an arbitrary angle.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "PASS",
+          "reason": "Recorded placement remeasured once. The 12-placement search was not rerun. Not a whole rig or an arbitrary angle."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      },
+      "coordinateFrames": {
+        "boxConvention": "half-open",
+        "sharedPivotCanvas": [
+          380,
+          569
+        ],
+        "childPivotCanvas": [
+          385.6,
+          535.4
+        ],
+        "canvas": [
+          1139,
+          760
+        ],
+        "uniformScale": 1,
+        "rotationDegreesTested": [
+          -25,
+          0,
+          25
+        ],
+        "cuffParent": {
+          "y": 271,
+          "width": 109,
+          "cx": 54,
+          "x0": 0,
+          "x1": 108
+        },
+        "cuffChild": {
+          "y": 35,
+          "width": 112,
+          "cx": 63,
+          "x0": 8,
+          "x1": 119
+        },
+        "insertionOfCuff": 0.3,
+        "transverseOfCuff": 0.05,
+        "parent": "assets/derivatives/rigs/v5/ranger/sleeve_upper_arm.png",
+        "child": "assets/derivatives/rigs/v5/ranger/vambrace_hand_open.png",
+        "drawOrder": "parent over child where parent alpha > 16",
+        "side": "UNKNOWN",
+        "note": "Recomputed from the saved cuff profile and the v7 warp formula. No new angle search.",
+        "canvasHeightWidth": [
+          1139,
+          760
+        ],
+        "canvasWidthHeight": [
+          760,
+          1139
+        ],
+        "sharedPivotCanvasXY": [
+          380,
+          569
+        ],
+        "childPivotCanvasXY": [
+          385.6,
+          535.4
+        ],
+        "orderNote": "v8 canvas arrays are [height, width]. XY pivots are [x, y]."
+      },
+      "remeasureMismatches": []
+    },
+    {
+      "id": "healer-boot",
+      "status": "READY",
+      "semantic": "boot",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v7/healer/boot.png",
+      "sha256": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "dimensions": [
+        135,
+        131
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        135,
+        131
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        135,
+        131
+      ],
+      "source": "assets/derivatives/rigs/v6/healer/boot.png",
+      "sourceSha256": "6766d8e70129ed023a41e555add178fb9767f769d927784675362bdcbf9220d6",
+      "mask": "qa/image-local-continuation-20261005/masks/healer-boot-removed-neighbor.png",
+      "recipe": "qa/image-local-continuation-20261005/recipes/healer-boot.json",
+      "removedNeighborPixels": 1860,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Disconnected neighboring armor was removed. The largest boot component was not edited. Not a leg rig by itself.",
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Disconnected neighboring armor was removed. The largest boot component was not edited. Not a leg rig by itself."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-leg-greave",
+      "status": "READY",
+      "measuredStatus": "PASS_STATIC_AND_LIMITED_ARC",
+      "semantic": "upper_leg_to_greave",
+      "side": "UNKNOWN",
+      "parent": "assets/derivatives/rigs/v6/healer/leg_upper.png",
+      "parentSha256": "38cc38387d0935fef0671800dd7aabb3af9906f6be3e07995220a0c3ffc59266",
+      "child": "assets/derivatives/rigs/v6/healer/greave.png",
+      "childSha256": "890f868998712a3d66895e6633fad79af72289deeff1c06b847f77319135ba0f",
+      "angles": [
+        -25,
+        0,
+        25
+      ],
+      "insertionOfCuff": 0,
+      "transverseOfCuff": 0,
+      "uniformScale": 1,
+      "ratio": null,
+      "poses": [
+        {
+          "angle": -25,
+          "jointRoiParentAlphaGt128": 21194,
+          "jointRoiChildAlphaGt128": 19889,
+          "jointRoiChildAlphaGt16": 20108,
+          "overlapBothGt128": 5272,
+          "overlapParent128Child16": 5344,
+          "continuousRunPx": 121,
+          "touchingRows": {
+            "50": 6,
+            "64": 7,
+            "130": 13
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/healer_leg_greave_-25.png",
+          "sha256": "9333aec724421b41d4588a353a9df2378d0a7c43a0ccca74a5bccd87fda0cb6b"
+        },
+        {
+          "angle": 0,
+          "jointRoiParentAlphaGt128": 21194,
+          "jointRoiChildAlphaGt128": 18180,
+          "jointRoiChildAlphaGt16": 18180,
+          "overlapBothGt128": 5183,
+          "overlapParent128Child16": 5183,
+          "continuousRunPx": 121,
+          "touchingRows": {
+            "50": 6,
+            "64": 7,
+            "130": 12
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/healer_leg_greave_0.png",
+          "sha256": "37d1f8c8afabcd8ead0b593fa1574bb3836bb5904c8c8a93fc7426c5b34512d7"
+        },
+        {
+          "angle": 25,
+          "jointRoiParentAlphaGt128": 21194,
+          "jointRoiChildAlphaGt128": 19363,
+          "jointRoiChildAlphaGt16": 19573,
+          "overlapBothGt128": 5182,
+          "overlapParent128Child16": 5260,
+          "continuousRunPx": 103,
+          "touchingRows": {
+            "50": 6,
+            "64": 8,
+            "130": 14
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/healer_leg_greave_25.png",
+          "sha256": "a2b169cdeb17baeff014bb9cd6209f89a93f2fda9ba7ae07f78fa6ddbc77c4c7"
+        }
+      ],
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "fullBody": false,
+      "limit": "These three angles only. Not a whole rig. Side UNKNOWN.",
+      "coordinateFrames": {
+        "boxConvention": "half-open",
+        "sharedPivotCanvas": [
+          428,
+          660
+        ],
+        "canvas": [
+          1320,
+          857
+        ],
+        "uniformScale": 1,
+        "rotationDegreesTested": [
+          -25,
+          0,
+          25
+        ],
+        "cuffParent": {
+          "y": 409,
+          "width": 127,
+          "cx": 93,
+          "x0": 30,
+          "x1": 156
+        },
+        "cuffChild": {
+          "y": 23,
+          "width": 121,
+          "cx": 61,
+          "x0": 1,
+          "x1": 121
+        },
+        "insertionOfCuff": 0,
+        "transverseOfCuff": 0,
+        "parent": "assets/derivatives/rigs/v6/healer/leg_upper.png",
+        "child": "assets/derivatives/rigs/v6/healer/greave.png",
+        "drawOrder": "parent over child where parent alpha > 16",
+        "side": "UNKNOWN",
+        "canvasHeightWidth": [
+          1320,
+          857
+        ],
+        "canvasWidthHeight": [
+          857,
+          1320
+        ],
+        "sharedPivotCanvasXY": [
+          428,
+          660
+        ],
+        "childPivotCanvasXY": [
+          428,
+          660
+        ],
+        "orderNote": "v8 canvas arrays are [height, width]. XY pivots are [x, y]."
+      },
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "PASS",
+          "reason": "These three angles only. Not a whole rig. Side UNKNOWN."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      },
+      "remeasureMismatches": []
+    },
+    {
+      "id": "healer-greave-boot",
+      "status": "READY",
+      "measuredStatus": "PASS_STATIC_AND_LIMITED_ARC",
+      "semantic": "greave_to_boot",
+      "side": "UNKNOWN",
+      "parent": "assets/derivatives/rigs/v6/healer/greave.png",
+      "parentSha256": "890f868998712a3d66895e6633fad79af72289deeff1c06b847f77319135ba0f",
+      "child": "assets/derivatives/rigs/v7/healer/boot.png",
+      "childSha256": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "angles": [
+        -25,
+        0,
+        25
+      ],
+      "insertionOfCuff": 0,
+      "transverseOfCuff": 0,
+      "uniformScale": 1,
+      "ratio": null,
+      "poses": [
+        {
+          "angle": -25,
+          "jointRoiParentAlphaGt128": 8804,
+          "jointRoiChildAlphaGt128": 11916,
+          "jointRoiChildAlphaGt16": 12109,
+          "overlapBothGt128": 2742,
+          "overlapParent128Child16": 2812,
+          "continuousRunPx": 87,
+          "touchingRows": {
+            "50": 9,
+            "64": 11,
+            "130": 19
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/healer_greave_boot_-25.png",
+          "sha256": "5184f9cbb6b11860d8eae45b589286b5ed1a12befbe0c1e0600267973d6bb791"
+        },
+        {
+          "angle": 0,
+          "jointRoiParentAlphaGt128": 8804,
+          "jointRoiChildAlphaGt128": 12474,
+          "jointRoiChildAlphaGt16": 12474,
+          "overlapBothGt128": 2591,
+          "overlapParent128Child16": 2591,
+          "continuousRunPx": 81,
+          "touchingRows": {
+            "50": 9,
+            "64": 10,
+            "130": 20
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/healer_greave_boot_0.png",
+          "sha256": "bfb3656f06c23a2f19551d48f49e2410b51ab2c4f9608d4cce29f5a053f511c5"
+        },
+        {
+          "angle": 25,
+          "jointRoiParentAlphaGt128": 8804,
+          "jointRoiChildAlphaGt128": 12473,
+          "jointRoiChildAlphaGt16": 12705,
+          "overlapBothGt128": 2634,
+          "overlapParent128Child16": 2707,
+          "continuousRunPx": 84,
+          "touchingRows": {
+            "50": 10,
+            "64": 12,
+            "130": 21
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/healer_greave_boot_25.png",
+          "sha256": "c3f6b6e12e6415b58f2c1fcc5280045f141a5907308124b19ae1cde0badfab12"
+        }
+      ],
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "fullBody": false,
+      "limit": "These three angles only. Not a whole rig. Side UNKNOWN.",
+      "coordinateFrames": {
+        "boxConvention": "half-open",
+        "sharedPivotCanvas": [
+          346,
+          448
+        ],
+        "canvas": [
+          896,
+          692
+        ],
+        "uniformScale": 1,
+        "rotationDegreesTested": [
+          -25,
+          0,
+          25
+        ],
+        "cuffParent": {
+          "y": 328,
+          "width": 98,
+          "cx": 57,
+          "x0": 9,
+          "x1": 106
+        },
+        "cuffChild": {
+          "y": 38,
+          "width": 88,
+          "cx": 88,
+          "x0": 45,
+          "x1": 132
+        },
+        "insertionOfCuff": 0,
+        "transverseOfCuff": 0,
+        "parent": "assets/derivatives/rigs/v6/healer/greave.png",
+        "child": "assets/derivatives/rigs/v7/healer/boot.png",
+        "drawOrder": "parent over child where parent alpha > 16",
+        "side": "UNKNOWN",
+        "canvasHeightWidth": [
+          896,
+          692
+        ],
+        "canvasWidthHeight": [
+          692,
+          896
+        ],
+        "sharedPivotCanvasXY": [
+          346,
+          448
+        ],
+        "childPivotCanvasXY": [
+          346,
+          448
+        ],
+        "orderNote": "v8 canvas arrays are [height, width]. XY pivots are [x, y]."
+      },
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "PASS",
+          "reason": "These three angles only. Not a whole rig. Side UNKNOWN."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      },
+      "remeasureMismatches": []
+    },
+    {
+      "id": "paladin-knee-greave",
+      "status": "READY",
+      "measuredStatus": "PASS_STATIC_AND_LIMITED_ARC",
+      "semantic": "knee_cop_to_greave",
+      "side": "UNKNOWN",
+      "parent": "assets/derivatives/rigs/v6/paladin/knee_cop.png",
+      "parentSha256": "a8a532487729a5d55ac5fac3a3ce09dfde75b40f823cb02e5deba361501c606c",
+      "child": "assets/derivatives/rigs/v6/paladin/greave.png",
+      "childSha256": "01a685ae549a6a972dedea9c3c3cd1d2299a39be35057d24ac24e08147b66b34",
+      "angles": [
+        -25,
+        0,
+        25
+      ],
+      "insertionOfCuff": 0,
+      "transverseOfCuff": 0,
+      "uniformScale": 1,
+      "ratio": null,
+      "poses": [
+        {
+          "angle": -25,
+          "jointRoiParentAlphaGt128": 26707,
+          "jointRoiChildAlphaGt128": 28557,
+          "jointRoiChildAlphaGt16": 28809,
+          "overlapBothGt128": 7240,
+          "overlapParent128Child16": 7313,
+          "continuousRunPx": 126,
+          "touchingRows": {
+            "50": 9,
+            "64": 11,
+            "130": 21
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/paladin_knee_greave_-25.png",
+          "sha256": "108fd9349e7b41ecb7286d26b9f486e17de515fbbdd539f9a521bd176378ac4c"
+        },
+        {
+          "angle": 0,
+          "jointRoiParentAlphaGt128": 26707,
+          "jointRoiChildAlphaGt128": 27382,
+          "jointRoiChildAlphaGt16": 27382,
+          "overlapBothGt128": 7359,
+          "overlapParent128Child16": 7359,
+          "continuousRunPx": 134,
+          "touchingRows": {
+            "50": 8,
+            "64": 10,
+            "130": 19
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/paladin_knee_greave_0.png",
+          "sha256": "30a709648af71d1c2a358f98d9c4c92b20ac3bb00a3d7976a8ee5bbef3156d8c"
+        },
+        {
+          "angle": 25,
+          "jointRoiParentAlphaGt128": 26707,
+          "jointRoiChildAlphaGt128": 29879,
+          "jointRoiChildAlphaGt16": 30138,
+          "overlapBothGt128": 7879,
+          "overlapParent128Child16": 7968,
+          "continuousRunPx": 122,
+          "touchingRows": {
+            "50": 10,
+            "64": 13,
+            "130": 25
+          },
+          "evidence": "qa/image-local-continuation-20261005/joints/paladin_knee_greave_25.png",
+          "sha256": "8a6b4666c4642377f6e6a855bb3ce3fda40674397ffb7f475fa9e81d90e4d6da"
+        }
+      ],
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "fullBody": false,
+      "limit": "These three angles only. Not a whole rig. Side UNKNOWN.",
+      "coordinateFrames": {
+        "boxConvention": "half-open",
+        "sharedPivotCanvas": [
+          392,
+          547
+        ],
+        "canvas": [
+          1094,
+          785
+        ],
+        "uniformScale": 1,
+        "rotationDegreesTested": [
+          -25,
+          0,
+          25
+        ],
+        "cuffParent": {
+          "y": 261,
+          "width": 119,
+          "cx": 116,
+          "x0": 57,
+          "x1": 175
+        },
+        "cuffChild": {
+          "y": 39,
+          "width": 153,
+          "cx": 87,
+          "x0": 11,
+          "x1": 163
+        },
+        "insertionOfCuff": 0,
+        "transverseOfCuff": 0,
+        "parent": "assets/derivatives/rigs/v6/paladin/knee_cop.png",
+        "child": "assets/derivatives/rigs/v6/paladin/greave.png",
+        "drawOrder": "parent over child where parent alpha > 16",
+        "side": "UNKNOWN",
+        "canvasHeightWidth": [
+          1094,
+          785
+        ],
+        "canvasWidthHeight": [
+          785,
+          1094
+        ],
+        "sharedPivotCanvasXY": [
+          392,
+          547
+        ],
+        "childPivotCanvasXY": [
+          392,
+          547
+        ],
+        "orderNote": "v8 canvas arrays are [height, width]. XY pivots are [x, y]."
+      },
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "v9 rehashed and decoded the v8 path. v8 itself was not rewritten."
+        },
+        "articulation": {
+          "gate": "PASS",
+          "reason": "These three angles only. Not a whole rig. Side UNKNOWN."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is not a whole rig."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      },
+      "remeasureMismatches": []
+    },
+    {
+      "id": "healer-head-front-neck",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head_with_neck",
+      "view": "FRONT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-front-neck.png",
+      "sha256": "92ae24378c70885f29ca99a1cdfe12416389b988adaa7102760db63590e5741d",
+      "dimensions": [
+        263,
+        483
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        263,
+        483
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        263,
+        483
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        35,
+        476,
+        298,
+        959
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-front-neck.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-front-neck.json",
+      "neckPivotCropXY": [
+        132.0,
+        482
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-front-bust",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head",
+      "view": "FRONT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-front-bust.png",
+      "sha256": "e426695a7a1a28c075e91ecce69b274569af71d36ddf10ca7984b5412e952cba",
+      "dimensions": [
+        247,
+        385
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        247,
+        385
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        247,
+        385
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        43,
+        30,
+        290,
+        415
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-front-bust.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-front-bust.json",
+      "neckPivotCropXY": [
+        121.0,
+        384
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-three-quarter",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head",
+      "view": "THREE_QUARTER_IMAGE_RIGHT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-three-quarter.png",
+      "sha256": "c6dc9cef385e9abf25f88d36b869a0e7ba73c52ddf389c3cfd3c4f83eda7b32e",
+      "dimensions": [
+        273,
+        381
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        273,
+        381
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        273,
+        381
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        353,
+        33,
+        626,
+        414
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-three-quarter.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-three-quarter.json",
+      "neckPivotCropXY": [
+        161.0,
+        380
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-profile-braid",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head_and_attached_braid",
+      "view": "PROFILE_IMAGE_RIGHT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-profile-braid.png",
+      "sha256": "2bea8cac2b923e798ea95118fddf4fcc26e65bc0032d4c84acfb3ae4066cf690",
+      "dimensions": [
+        295,
+        630
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        295,
+        630
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        295,
+        630
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        683,
+        27,
+        978,
+        657
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-profile-braid.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-profile-braid.json",
+      "neckPivotCropXY": [
+        26.0,
+        629
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-profile-bun",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head_with_neck",
+      "view": "PROFILE_IMAGE_LEFT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-profile-bun.png",
+      "sha256": "1ad22e750b7ba6b13791d2de6f328fc56d3370bab2b3a093cd57459e076e07c6",
+      "dimensions": [
+        311,
+        477
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        311,
+        477
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        311,
+        477
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        316,
+        474,
+        627,
+        951
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-profile-bun.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-profile-bun.json",
+      "neckPivotCropXY": [
+        87.0,
+        476
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    }
+  ],
+  "classChains": [
+    {
+      "id": "healer-neutral-chain",
+      "class": "healer",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/healer-chain-v9.png",
+      "neutralPose": "SUBCHAIN_ONLY",
+      "measured": [
+        "upper-leg to greave",
+        "greave to boot"
+      ],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "paladin-neutral-chain",
+      "class": "paladin",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/paladin-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "ranger-neutral-chain",
+      "class": "ranger",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/ranger-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "knight-neutral-chain",
+      "class": "knight",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/knight-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "mage-neutral-chain",
+      "class": "mage",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/mage-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "warlock-neutral-chain",
+      "class": "warlock",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/warlock-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "necromancer-neutral-chain",
+      "class": "necromancer",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/necromancer-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "barbarian-neutral-chain",
+      "class": "barbarian",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/barbarian-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    }
+  ],
+  "healerLegSubchain": {
+    "id": "healer-leg-subchain",
+    "status": "PARTIAL",
+    "fullBody": "FAIL",
+    "side": "UNKNOWN",
+    "measuredLinks": [
+      "upper-leg to greave",
+      "greave to boot"
+    ],
+    "missingLinks": [
+      "head to torso",
+      "torso to skirt",
+      "skirt to upper leg"
+    ],
+    "angles": [
+      -25,
+      0,
+      25
+    ],
+    "neutral": "qa/image-local-delivery-v9-20261005/assemblies/healer-leg-subchain-0.png",
+    "clip": "qa/image-local-delivery-v9-20261005/assemblies/healer-leg-subchain-arc.gif",
+    "drawOrder": [
+      "boot",
+      "greave",
+      "upper leg"
+    ],
+    "rotation": "Child rotates about the shared cuff pivot. Positive degrees are clockwise in image space, matching the v7 warp (x' = c*x - s*y).",
+    "uniformScale": 1,
+    "canvasHeightWidth": [
+      1621,
+      1162
+    ],
+    "kneePivotCanvasXY": [
+      581,
+      301
+    ],
+    "note": "Valid subchain only. Boot follows the greave with no extra ankle bend in this clip."
+  },
+  "newJointAttempts": [
+    {
+      "id": "healer-head-to-torso",
+      "status": "FAIL",
+      "reason": "ROUNDED_NECK_STUMP_COVERS_COLLAR",
+      "attempts": 1,
+      "exhausted": true,
+      "ratio": 1.169,
+      "poses": [
+        {
+          "angle": -25,
+          "overlapParent128Child16": 11481,
+          "continuousRunPx": 172,
+          "jointRoiParentAlphaGt128": 43742,
+          "jointRoiChildAlphaGt16": 79946
+        },
+        {
+          "angle": 0,
+          "overlapParent128Child16": 9972,
+          "continuousRunPx": 193,
+          "jointRoiParentAlphaGt128": 43742,
+          "jointRoiChildAlphaGt16": 78694
+        },
+        {
+          "angle": 25,
+          "overlapParent128Child16": 11483,
+          "continuousRunPx": 173,
+          "jointRoiParentAlphaGt128": 43742,
+          "jointRoiChildAlphaGt16": 77693
+        }
+      ],
+      "parent": "assets/derivatives/rigs/v9/healer/healer-head-front-neck.png",
+      "child": "assets/derivatives/rigs/v6/healer/torso.png",
+      "note": "One scale-1 cuff alignment. The overlap is a rounded neck stump on the collar, not a socket. No second search.",
+      "visual": "qa/image-local-delivery-v9-20261005/diagnostics/healer-head-to-torso-0-white.png"
+    },
+    {
+      "id": "healer-torso-to-skirt",
+      "status": "PARTIAL",
+      "reason": "NEUTRAL_SILHOUETTE_INSPECTED_ARC_UNVERIFIED",
+      "attempts": 1,
+      "exhausted": false,
+      "ratio": 0.818,
+      "poses": [
+        {
+          "angle": -25,
+          "overlapParent128Child16": 11087,
+          "continuousRunPx": 196,
+          "jointRoiParentAlphaGt128": 91672,
+          "jointRoiChildAlphaGt16": 100594
+        },
+        {
+          "angle": 0,
+          "overlapParent128Child16": 10255,
+          "continuousRunPx": 207,
+          "jointRoiParentAlphaGt128": 91672,
+          "jointRoiChildAlphaGt16": 90676
+        },
+        {
+          "angle": 25,
+          "overlapParent128Child16": 11113,
+          "continuousRunPx": 192,
+          "jointRoiParentAlphaGt128": 91672,
+          "jointRoiChildAlphaGt16": 101876
+        }
+      ],
+      "parent": "assets/derivatives/rigs/v6/healer/torso.png",
+      "child": "assets/derivatives/rigs/v6/healer/skirt.png",
+      "note": "Neutral waist contact was inspected. The -25 and +25 frames were not accepted.",
+      "visual": "qa/image-local-delivery-v9-20261005/diagnostics/healer-torso-skirt-0-white.png"
+    },
+    {
+      "id": "healer-skirt-to-leg",
+      "status": "FAIL",
+      "reason": "FAIL_IMPLAUSIBLE_SCALE",
+      "attempts": 1,
+      "exhausted": true,
+      "ratio": 6.25,
+      "uniformScale": 1,
+      "parent": "assets/derivatives/rigs/v6/healer/skirt.png",
+      "child": "assets/derivatives/rigs/v6/healer/leg_upper.png",
+      "note": "One baseline at scale 1. No search."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "adventure-terrain",
+      "role": "scene-plate",
+      "mode": "adventure",
+      "age": null,
+      "biome": "default",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain/output.png",
+        "sha256": "bac89323d80cc953db73af945bbd4277a9001c040eee567fef6328d7b196c0df",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-painted-and-legal.png"
+    },
+    {
+      "id": "adventure-terrain-plains",
+      "role": "scene-plate",
+      "mode": "adventure",
+      "age": null,
+      "biome": "plains",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-plains/output.png",
+        "sha256": "05afa074262f1f3c567f92d8000998441fe704eda20ae2a11ad12c54e2951858",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-plains-painted-and-legal.png"
+    },
+    {
+      "id": "adventure-terrain-hills",
+      "role": "scene-plate",
+      "mode": "adventure",
+      "age": null,
+      "biome": "hills",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-hills/output.png",
+        "sha256": "79e65680d4953559bcfc0d9d0695ab40c07f21c8f08d0b92dd8402028aa3319d",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-hills-painted-and-legal.png"
+    },
+    {
+      "id": "adventure-terrain-swamp",
+      "role": "scene-plate",
+      "mode": "adventure",
+      "age": null,
+      "biome": "swamp",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-swamp/output.png",
+        "sha256": "f612975cfe39ee6cf422d1d82b56bff886498d2a4e06f1d8bf3e0087600c5005",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-swamp-painted-and-legal.png"
+    },
+    {
+      "id": "adventure-terrain-desert",
+      "role": "scene-plate",
+      "mode": "adventure",
+      "age": null,
+      "biome": "desert",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-desert/output.png",
+        "sha256": "501e57f1631d04a04ed54297cbeeb3b62ba37372b699bbf5eee0254a40c37953",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-desert-painted-and-legal.png"
+    },
+    {
+      "id": "adventure-terrain-snow",
+      "role": "scene-plate",
+      "mode": "adventure",
+      "age": null,
+      "biome": "snow",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-snow/output.png",
+        "sha256": "86f64b17582726831524c6ae48a90efd2451e254f478a5a49d5f7e8bd39fd7c2",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-snow-painted-and-legal.png"
+    },
+    {
+      "id": "adventure-terrain-waste",
+      "role": "scene-plate",
+      "mode": "adventure",
+      "age": null,
+      "biome": "waste",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-waste/output.png",
+        "sha256": "8ede49b9c7c679c600d04ff605164801b7bfa0166fbcc94c93ac7923d751d5d5",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-waste-painted-and-legal.png"
+    },
+    {
+      "id": "adventure-terrain-ruins",
+      "role": "scene-plate",
+      "mode": "adventure",
+      "age": null,
+      "biome": "ruins",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-ruins/output.png",
+        "sha256": "3a4315fd7a0e52e83c2047847bfc6c1a899121937b8facf363f82fc7bfba41e3",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-ruins-painted-and-legal.png"
+    },
+    {
+      "id": "tactical-terrain-plains",
+      "role": "scene-plate",
+      "mode": "tactical",
+      "age": null,
+      "biome": "plains",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-plains/output.png",
+        "sha256": "5916792b12a1d9cdec26cd96477b5aeeba57feae8afae3a91e87124635273ef6",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-plains-painted-and-legal.png"
+    },
+    {
+      "id": "tactical-terrain-hills",
+      "role": "scene-plate",
+      "mode": "tactical",
+      "age": null,
+      "biome": "hills",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-hills/output.png",
+        "sha256": "30c3aa2f29f8281d6b9736c8d65a0cde637ff1d56cd00af9edc3d0145bf8cdcb",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-hills-painted-and-legal.png"
+    },
+    {
+      "id": "tactical-terrain-swamp",
+      "role": "scene-plate",
+      "mode": "tactical",
+      "age": null,
+      "biome": "swamp",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-swamp/output.png",
+        "sha256": "95c293612f625fa0e896442673148a9ed20b3fdca43a521e8edb5c2149e84c51",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-swamp-painted-and-legal.png"
+    },
+    {
+      "id": "tactical-terrain-desert",
+      "role": "scene-plate",
+      "mode": "tactical",
+      "age": null,
+      "biome": "desert",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-desert/output.png",
+        "sha256": "5f5206c89caa2e29958f5b344d26d3f2342f07c73e42b3caedc503557abda83c",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-desert-painted-and-legal.png"
+    },
+    {
+      "id": "tactical-terrain-waste",
+      "role": "scene-plate",
+      "mode": "tactical",
+      "age": null,
+      "biome": "waste",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/tactical-terrain-waste/output.png",
+        "sha256": "8159cb4d9126752f8327ee1a77ef595b67c9fdf94833f06536feb493d779d9c8",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-waste-painted-and-legal.png"
+    },
+    {
+      "id": "tactical-terrain-ruins",
+      "role": "scene-plate",
+      "mode": "tactical",
+      "age": null,
+      "biome": "ruins",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/tactical-terrain-ruins/output.png",
+        "sha256": "c96446ba9f8cdb2e9c5c081653246fab5fac419dc4afae2005e48e9119989cf5",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-ruins-painted-and-legal.png"
+    },
+    {
+      "id": "defense-terrain",
+      "role": "scene-plate",
+      "mode": "defense",
+      "age": null,
+      "biome": "default",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/defense-terrain/output.png",
+        "sha256": "01c19c36e58c6e542dc8506da2f367cdc45a47345d8947723e97d9650866aeb2",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-painted-and-legal.png"
+    },
+    {
+      "id": "defense-terrain-plains",
+      "role": "scene-plate",
+      "mode": "defense",
+      "age": null,
+      "biome": "plains",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/defense-terrain-plains/output.png",
+        "sha256": "7941ee34e62b2053c4c4d309e8a42bba795c39605627f2a3911e1fb8c84678da",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-plains-painted-and-legal.png"
+    },
+    {
+      "id": "defense-terrain-hills",
+      "role": "scene-plate",
+      "mode": "defense",
+      "age": null,
+      "biome": "hills",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-03-20261004-012700/packs/defense-terrain-hills/output.png",
+        "sha256": "a5b979e6f3fc483ac79d0fb9e6c165e8f710e7d8d498fe9f92c3e10730d47ec9",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-hills-painted-and-legal.png"
+    },
+    {
+      "id": "defense-terrain-swamp",
+      "role": "scene-plate",
+      "mode": "defense",
+      "age": null,
+      "biome": "swamp",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-swamp/output.png",
+        "sha256": "380a0cc2343985d0fa0e6491932374eb078b2d4842d60f5a77f96202ef2e88ff",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-swamp-painted-and-legal.png"
+    },
+    {
+      "id": "defense-terrain-desert",
+      "role": "scene-plate",
+      "mode": "defense",
+      "age": null,
+      "biome": "desert",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-desert/output.png",
+        "sha256": "7da55fccca84bc13acb282ce7bd30bbdf3504eb2614024cc2a8b7bd932ab1ce9",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-desert-painted-and-legal.png"
+    },
+    {
+      "id": "defense-terrain-snow",
+      "role": "scene-plate",
+      "mode": "defense",
+      "age": null,
+      "biome": "snow",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-snow/output.png",
+        "sha256": "514ad172d646a9d17103a55b32f093634ac2e7307c0269fe977f8ea1dcde448e",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-snow-painted-and-legal.png"
+    },
+    {
+      "id": "defense-terrain-waste",
+      "role": "scene-plate",
+      "mode": "defense",
+      "age": null,
+      "biome": "waste",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-waste/output.png",
+        "sha256": "c165d958c68f052d10aab4318d005b4963f9efd59c9ea4b3f708111249632967",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-waste-painted-and-legal.png"
+    },
+    {
+      "id": "defense-terrain-ruins",
+      "role": "scene-plate",
+      "mode": "defense",
+      "age": null,
+      "biome": "ruins",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-ruins/output.png",
+        "sha256": "71ecaf6c98b90bd95f08a87dfeed3ec257e4968949b6af3e7bbcb34fbee0c981",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-ruins-painted-and-legal.png"
+    },
+    {
+      "id": "tactical-terrain",
+      "role": "scene-plate",
+      "mode": "tactical",
+      "age": null,
+      "biome": "default",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain/output.png",
+        "sha256": "6eadf55f2df8727bcc0415b0f5bc2a8f8c5c766e8ce18f7839923401e0c39e5e",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-painted-and-legal.png"
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "role": "scene-plate",
+      "mode": "tactical",
+      "age": null,
+      "biome": "snow",
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain-snow/output.png",
+        "sha256": "c1b39f72f6ded4bb12de468aff09a9c6d071ace467482c4cdff77e86015d8840",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": null,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "NOT_YET_TRACED",
+      "paintedRiverState": "NOT_YET_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "nextExecutableAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-snow-painted-and-legal.png"
+    },
+    {
+      "id": "kingdom-terrain-stone",
+      "role": "scene-plate",
+      "mode": "kingdom",
+      "age": "stone",
+      "biome": null,
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-stone/output.png",
+        "sha256": "a32475f5756d16f510887cd145495a7bfaefe043473d257428ecd3f8b9520ae4",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": 0.1312,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [
+        {
+          "polylineNative": [
+            [
+              0,
+              1600
+            ],
+            [
+              720,
+              1680
+            ],
+            [
+              1440,
+              1600
+            ]
+          ],
+          "kind": "west-entry",
+          "uncertaintyLegalPx": 32,
+          "method": "manual-grid-v9"
+        },
+        {
+          "polylineNative": [
+            [
+              2080,
+              400
+            ],
+            [
+              2000,
+              1120
+            ],
+            [
+              2120,
+              1840
+            ],
+            [
+              2240,
+              2560
+            ]
+          ],
+          "kind": "camp-spokes",
+          "uncertaintyLegalPx": 40,
+          "method": "manual-grid-v9"
+        },
+        {
+          "polylineNative": [
+            [
+              2560,
+              1280
+            ],
+            [
+              3440,
+              1380
+            ],
+            [
+              4160,
+              1432
+            ],
+            [
+              4608,
+              1464
+            ]
+          ],
+          "kind": "ring-to-bridge",
+          "uncertaintyLegalPx": 24,
+          "method": "manual-grid-v9"
+        },
+        {
+          "polylineNative": [
+            [
+              640,
+              2560
+            ],
+            [
+              1680,
+              2640
+            ],
+            [
+              3040,
+              2520
+            ],
+            [
+              3920,
+              2240
+            ]
+          ],
+          "kind": "south-arc",
+          "uncertaintyLegalPx": 40,
+          "method": "manual-grid-v9"
+        }
+      ],
+      "paintedRiverPolygons": [
+        {
+          "polylineNative": [
+            [
+              4480,
+              80
+            ],
+            [
+              4560,
+              720
+            ],
+            [
+              4640,
+              1360
+            ],
+            [
+              4800,
+              2080
+            ],
+            [
+              4880,
+              2880
+            ]
+          ],
+          "uncertaintyLegalPx": 40,
+          "method": "manual-grid-v9",
+          "note": "Axis of the visible channel. The widened blue mask's largest component was a 1512px patch, not this channel."
+        }
+      ],
+      "paintedBankPolylines": [
+        {
+          "side": "near-bank",
+          "observedBankSide": "west",
+          "polylineNative": [
+            [
+              4160,
+              0
+            ],
+            [
+              4240,
+              640
+            ],
+            [
+              4400,
+              1280
+            ],
+            [
+              4560,
+              1920
+            ],
+            [
+              4640,
+              2800
+            ]
+          ],
+          "uncertaintyLegalPx": 40
+        },
+        {
+          "side": "far-bank",
+          "observedBankSide": "east",
+          "polylineNative": [
+            [
+              4960,
+              0
+            ],
+            [
+              5120,
+              640
+            ],
+            [
+              5360,
+              1200
+            ],
+            [
+              5472,
+              1920
+            ],
+            [
+              5280,
+              2880
+            ]
+          ],
+          "uncertaintyLegalPx": 40
+        }
+      ],
+      "paintedBridgeDeck": {
+        "polygonNative": [
+          [
+            4352,
+            1388
+          ],
+          [
+            4608,
+            1420
+          ],
+          [
+            4896,
+            1460
+          ],
+          [
+            5120,
+            1500
+          ],
+          [
+            5376,
+            1572
+          ],
+          [
+            5376,
+            1660
+          ],
+          [
+            5120,
+            1588
+          ],
+          [
+            4896,
+            1548
+          ],
+          [
+            4608,
+            1508
+          ],
+          [
+            4352,
+            1476
+          ]
+        ],
+        "uncertaintyLegalPx": 16,
+        "method": "manual-grid plus a brown-between-water centerline that was seen on the wooden deck from legal x 1152 to 1280"
+      },
+      "approachPolygons": [
+        {
+          "kind": "near-approach",
+          "polylineNative": [
+            [
+              4000,
+              1440
+            ],
+            [
+              4352,
+              1432
+            ]
+          ],
+          "uncertaintyLegalPx": 24
+        },
+        {
+          "kind": "far-approach",
+          "polylineNative": [
+            [
+              5376,
+              1616
+            ],
+            [
+              5472,
+              1632
+            ]
+          ],
+          "uncertaintyLegalPx": 24
+        }
+      ],
+      "walkablePolygons": [],
+      "blockedPolygons": [
+        {
+          "kind": "rock-ring",
+          "polygonNative": [
+            [
+              1520,
+              960
+            ],
+            [
+              2080,
+              760
+            ],
+            [
+              2720,
+              920
+            ],
+            [
+              2840,
+              1280
+            ],
+            [
+              2400,
+              1600
+            ],
+            [
+              1800,
+              1560
+            ],
+            [
+              1480,
+              1280
+            ]
+          ],
+          "uncertaintyLegalPx": 40
+        }
+      ],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "MANUAL_PARTIAL",
+      "paintedRiverState": "MANUAL_PARTIAL",
+      "walkableState": "NOT_YET_TRACED",
+      "residualVsV8ManualTracksLegalPx": 22.21,
+      "proposal": {
+        "id": "proposal-v9-kingdom-terrain-stone-manual-grid",
+        "status": "PROPOSED",
+        "activatesCamera": false,
+        "affineUnchanged": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "hallScaleUnchanged": 0.1312
+      },
+      "nextExecutableAction": "Tighten bank and road traces below corridor width, then compare every legal site polygon to the trace.",
+      "overlay": "qa/image-local-delivery-v9-20261005/terrain/kingdom-terrain-stone-status.png",
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-stone-painted-and-legal.png"
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "role": "scene-plate",
+      "mode": "kingdom",
+      "age": "bronze",
+      "biome": null,
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-bronze/output.png",
+        "sha256": "0312c0dc67638cf75e090f27d89a6d0a0afa3b180da666288d4123f2ff59bf71",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": 0.1312,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "VISIBLY_PRESENT_NOT_TRACED",
+      "paintedRiverState": "VISIBLY_PRESENT_NOT_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "bakedMutableContent": "Village plots and structures are painted into the plate. Hidden ground under them is unavailable.",
+      "evidence": "qa/image-local-delivery-v9-20261005/inspect/kingdom-ages-contact.jpg",
+      "nextExecutableAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-bronze-painted-and-legal.png"
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "role": "scene-plate",
+      "mode": "kingdom",
+      "age": "iron",
+      "biome": null,
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-iron/output.png",
+        "sha256": "b007e856c9af75ce6fa44656af8fbf6b530487aa0bcb46f04fab3aa36c92d709",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": 0.1312,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "VISIBLY_PRESENT_NOT_TRACED",
+      "paintedRiverState": "VISIBLY_PRESENT_NOT_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "bakedMutableContent": "Village plots and structures are painted into the plate. Hidden ground under them is unavailable.",
+      "evidence": "qa/image-local-delivery-v9-20261005/inspect/kingdom-ages-contact.jpg",
+      "nextExecutableAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-iron-painted-and-legal.png"
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "role": "scene-plate",
+      "mode": "kingdom",
+      "age": "medieval",
+      "biome": null,
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-medieval/output.png",
+        "sha256": "56cf0629ff12a0f251d15a9a86a1995b15c3b781668ef809f2ffcbe7a81f719d",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": 0.1312,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "VISIBLY_PRESENT_NOT_TRACED",
+      "paintedRiverState": "VISIBLY_PRESENT_NOT_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "bakedMutableContent": "Village plots and structures are painted into the plate. Hidden ground under them is unavailable.",
+      "evidence": "qa/image-local-delivery-v9-20261005/inspect/kingdom-ages-contact.jpg",
+      "nextExecutableAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-medieval-painted-and-legal.png"
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "role": "scene-plate",
+      "mode": "kingdom",
+      "age": "gunpowder",
+      "biome": null,
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-gunpowder/output.png",
+        "sha256": "b4564a2a28440069aec1febaf663e5eb56166ddcd0f81cc072dfe2caf827d390",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": 0.1312,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "VISIBLY_PRESENT_NOT_TRACED",
+      "paintedRiverState": "VISIBLY_PRESENT_NOT_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "bakedMutableContent": "Village plots and structures are painted into the plate. Hidden ground under them is unavailable.",
+      "evidence": "qa/image-local-delivery-v9-20261005/inspect/kingdom-ages-contact.jpg",
+      "nextExecutableAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-gunpowder-painted-and-legal.png"
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "role": "scene-plate",
+      "mode": "kingdom",
+      "age": "industrial",
+      "biome": null,
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-industrial/output.png",
+        "sha256": "b8d44f3d7be8161b49e48a4853af399d87c52457c76ce202cc7cc1d4a31274c1",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": 0.1312,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "VISIBLY_PRESENT_NOT_TRACED",
+      "paintedRiverState": "VISIBLY_PRESENT_NOT_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "bakedMutableContent": "Village plots and structures are painted into the plate. Hidden ground under them is unavailable.",
+      "evidence": "qa/image-local-delivery-v9-20261005/inspect/kingdom-ages-contact.jpg",
+      "nextExecutableAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-industrial-painted-and-legal.png"
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "role": "scene-plate",
+      "mode": "kingdom",
+      "age": "modern",
+      "biome": null,
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-modern/output.png",
+        "sha256": "606d04fc98640fa6644b8dec4f420987cd9455b70f44a795802d69f09afaa29c",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": 0.1312,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "VISIBLY_PRESENT_NOT_TRACED",
+      "paintedRiverState": "VISIBLY_PRESENT_NOT_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "bakedMutableContent": "Village plots and structures are painted into the plate. Hidden ground under them is unavailable.",
+      "evidence": "qa/image-local-delivery-v9-20261005/inspect/kingdom-ages-contact.jpg",
+      "nextExecutableAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-modern-painted-and-legal.png"
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "role": "scene-plate",
+      "mode": "kingdom",
+      "age": "future",
+      "biome": null,
+      "status": "PARTIAL",
+      "promoted": false,
+      "source": {
+        "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-future/output.png",
+        "sha256": "ea3dd0083f27dcbf8e641b1aad8c0d2450e7944e378c41d5da2e4fc936a33153",
+        "dimensions": [
+          5504,
+          3072
+        ]
+      },
+      "legalAffineActive": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "legalAffineFrozen": true,
+      "hallScaleActive": 0.1312,
+      "hallScaleFrozen": true,
+      "proposedCamera": null,
+      "geometryEdited": false,
+      "nativeDecode": "NOT_BARE_TERRAIN_PASS",
+      "paintedRoadPolylines": [],
+      "paintedRiverPolygons": [],
+      "paintedBankPolylines": [],
+      "paintedBridgeDeck": null,
+      "approachPolygons": [],
+      "walkablePolygons": [],
+      "blockedPolygons": [],
+      "runtimeAcceptance": "UNVERIFIED",
+      "ownerAcceptance": "UNVERIFIED",
+      "paintedRoadState": "VISIBLY_PRESENT_NOT_TRACED",
+      "paintedRiverState": "VISIBLY_PRESENT_NOT_TRACED",
+      "walkableState": "NOT_YET_TRACED",
+      "bakedMutableContent": "Village plots and structures are painted into the plate. Hidden ground under them is unavailable.",
+      "evidence": "qa/image-local-delivery-v9-20261005/inspect/kingdom-ages-contact.jpg",
+      "nextExecutableAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "overlay": null,
+      "v8OverlayHistorical": "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-future-painted-and-legal.png"
+    }
+  ],
+  "jointRemeasureMismatches": [],
+  "arithmetic": {
+    "scenes": 32,
+    "changedScenes": 8,
+    "candidatePixelsChanged": 13360,
+    "stage": "1376x768 BOX resize, before component filtering",
+    "not": "river, bank, or runtime accuracy",
+    "synthetic": {
+      "case": "uint8 R+18 overflow",
+      "pixelRgb": [
+        240,
+        240,
+        250
+      ],
+      "uint8Candidate": true,
+      "widenedCandidate": false,
+      "passed": true,
+      "controlBothTrue": true,
+      "note": "Mask arithmetic only. Not a river or a bank."
+    }
+  },
+  "replacementDraft": {
+    "path": "docs/plan/REPLACEMENT-DRAFT-THREE-ROLES-V6-CLARIFICATION-2026-10-04.json",
+    "sha256": "d9564c16c84cb68e230ddbe39d919a1036fa498377643b19085ecac4371864e0",
+    "status": "DRAFT_NOT_SUBMITTED",
+    "gate": "OWNER_BUDGET_AUTHORIZATION_REQUIRED",
+    "roles": [
+      "Clubman",
+      "Slinger",
+      "Sharpshooter"
+    ],
+    "addedRoles": [],
+    "submitted": false
+  },
+  "paladinHead": {
+    "status": "FAIL",
+    "bytesPresent": false,
+    "reproducibility": "FAILED_BYTES_UNAVAILABLE",
+    "republished": false,
+    "recipe": "qa/image-local-continuation-20261005/recipes/paladin-head_three_quarter.json"
+  },
+  "sizeLimitsRetained": [
+    {
+      "id": "horse",
+      "maxReadyPx": 64,
+      "reason": "Single pose, hooves not separated."
+    },
+    {
+      "id": "motor-transport",
+      "maxReadyPx": 64,
+      "reason": "Ground remnant. Not a rider rig."
+    },
+    {
+      "id": "future-transport",
+      "maxReadyPx": 64,
+      "reason": "Ground remnant. Not a rider rig."
+    },
+    {
+      "id": "troop-gunpowder-heavy",
+      "maxReadyPx": 64,
+      "reason": "Not independently cleared at 130px by this pass."
+    },
+    {
+      "id": "troop-future-ranged",
+      "maxReadyPx": 64,
+      "reason": "Not independently cleared at 130px by this pass."
+    },
+    {
+      "id": "troop-future-heavy",
+      "maxReadyPx": 64,
+      "reason": "Not independently cleared at 130px by this pass."
+    },
+    {
+      "note": "Code currently draws several of these near 130px. Code owns that consumer repair."
+    }
+  ],
+  "binding": {
+    "checked": 23,
+    "failed": [],
+    "scope": "v9 readySubset paths, healer boot, draft, contract, v8 interface bytes. Not a full historical-original audit."
+  },
+  "inputPreservation": {
+    "before": {
+      "healerBoot": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "v8Interface": "b0728909317b092ba6900d55524a077ff5989afd08bfb3631564230b15517cf1",
+      "draft": "d9564c16c84cb68e230ddbe39d919a1036fa498377643b19085ecac4371864e0",
+      "contract": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+    },
+    "after": {
+      "healerBoot": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "v8Interface": "b0728909317b092ba6900d55524a077ff5989afd08bfb3631564230b15517cf1",
+      "draft": "d9564c16c84cb68e230ddbe39d919a1036fa498377643b19085ecac4371864e0",
+      "contract": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+    },
+    "unchanged": true
+  },
+  "viewportEvidence": [
+    {
+      "viewport": [
+        825,
+        375
+      ],
+      "stage": [
+        537,
+        263
+      ],
+      "panelWidth": 280,
+      "camera": {
+        "scale": 0.39026162790697677,
+        "mode": "cover",
+        "window": [
+          0.0,
+          0,
+          1376.0,
+          673.9068901303538
+        ]
+      },
+      "chrome": "CSS-derived 56px header and footer, 48px dock, panel min(280,34vw). Not a runtime screenshot.",
+      "path": "qa/image-local-delivery-v9-20261005/terrain/kingdom-stone-focus-825x375.jpg",
+      "state": "DEVELOPED_HALL_FOCUS"
+    },
+    {
+      "viewport": [
+        933,
+        424
+      ],
+      "stage": [
+        645,
+        312
+      ],
+      "panelWidth": 280,
+      "camera": {
+        "scale": 0.46875,
+        "mode": "cover",
+        "window": [
+          0.0,
+          0,
+          1376.0,
+          665.6
+        ]
+      },
+      "chrome": "CSS-derived 56px header and footer, 48px dock, panel min(280,34vw). Not a runtime screenshot.",
+      "path": "qa/image-local-delivery-v9-20261005/terrain/kingdom-stone-focus-933x424.jpg",
+      "state": "DEVELOPED_HALL_FOCUS"
+    },
+    {
+      "viewport": [
+        1180,
+        820
+      ],
+      "stage": [
+        892,
+        708
+      ],
+      "panelWidth": 280,
+      "camera": {
+        "scale": 0.921875,
+        "mode": "cover",
+        "window": [
+          233.2033898305084,
+          0.0,
+          967.5932203389831,
+          768.0
+        ]
+      },
+      "chrome": "CSS-derived 56px header and footer, 48px dock, panel min(280,34vw). Not a runtime screenshot.",
+      "path": "qa/image-local-delivery-v9-20261005/terrain/kingdom-stone-focus-1180x820.jpg",
+      "state": "DEVELOPED_HALL_FOCUS"
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "stage": [
+        992,
+        608
+      ],
+      "panelWidth": 280,
+      "camera": {
+        "scale": 0.7916666666666666,
+        "mode": "cover",
+        "window": [
+          90.47368421052619,
+          0.0,
+          1253.0526315789475,
+          768.0
+        ]
+      },
+      "chrome": "CSS-derived 56px header and footer, 48px dock, panel min(280,34vw). Not a runtime screenshot.",
+      "path": "qa/image-local-delivery-v9-20261005/terrain/kingdom-stone-focus-1280x720.jpg",
+      "state": "DEVELOPED_HALL_FOCUS"
+    }
+  ],
+  "reviewGallery": "qa/image-local-delivery-v9-20261005/review/index.html"
+}

@@ -14,6 +14,7 @@ const actorAtlas = JSON.parse(await fs.readFile(path.join(root, 'src/data/actor-
 const plateCatalog = JSON.parse(await fs.readFile(path.join(root, 'src/data/plate-catalog.json'), 'utf8'));
 const ageBuildings = JSON.parse(await fs.readFile(path.join(root, 'src/data/age-buildings.json'), 'utf8'));
 const portraitCards = JSON.parse(await fs.readFile(path.join(root, 'src/data/portrait-cards.json'), 'utf8'));
+const modeScenes = JSON.parse(await fs.readFile(path.join(root, 'src/data/mode-scenes.json'), 'utf8'));
 const files = new Set();
 const visit = (value) => {
   if (!value || typeof value !== 'object') return;
@@ -28,6 +29,9 @@ visit(actorAtlas);
 visit(plateCatalog);
 visit(ageBuildings);
 visit(portraitCards);
+for (const mode of ['adventure', 'tactical', 'defense']) {
+  for (const file of modeScenes[mode] || []) files.add(file);
+}
 const closure = [];
 for (const relative of files) {
   const source = path.join(root, relative);

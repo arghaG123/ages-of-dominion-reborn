@@ -1,0 +1,40 @@
+{
+  "id": "healer-head-profile-braid",
+  "version": "v9-local-20261005",
+  "method": "top-left-quadrant distance from sampled paper RGB 144.5,178,105; threshold 36",
+  "correction": "Dropped components with solidity under 0.08, including the magenta frame. Filled enclosed holes of 40px or fewer.",
+  "filledPinholePixels": 28,
+  "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+  "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+  "sourceROI": [
+    683,
+    27,
+    978,
+    657
+  ],
+  "boxConvention": "half-open [x0,y0,x1,y1)",
+  "sourceToCrop": {
+    "kind": "translation",
+    "origin": [
+      683,
+      27
+    ],
+    "scale": 1,
+    "rotation": 0
+  },
+  "output": "assets/derivatives/rigs/v9/healer/healer-head-profile-braid.png",
+  "sha256": "2bea8cac2b923e798ea95118fddf4fcc26e65bc0032d4c84acfb3ae4066cf690",
+  "dimensionsWH": [
+    295,
+    630
+  ],
+  "view": "PROFILE_IMAGE_RIGHT",
+  "anatomy": "head_and_attached_braid",
+  "side": "UNKNOWN",
+  "neckPivotCropXY": [
+    26.0,
+    629
+  ],
+  "inventedPaint": false,
+  "rgbEdited": false
+}

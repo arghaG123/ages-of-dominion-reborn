@@ -1,0 +1,49 @@
+{
+  "status": "INCOMPLETE",
+  "wholeBuildStatus": "INCOMPLETE",
+  "date": "2026-10-05",
+  "role": "code-executor",
+  "liveUrl": "http://127.0.0.1:4317",
+  "launch": "C:/Users/TechnoExponent/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe scripts/serve.mjs --port 4317",
+  "gallery": "qa/visual-playable-20261005/gallery.html",
+  "tests": { "total": 100, "pass": 98, "fail": 2, "exitCode": 1, "log": "qa/visual-playable-20261005/node24-tests.log", "failures": "two missing kingdom guide PNGs, ENOENT" },
+  "browser": { "report": "qa/visual-playable-20261005/report.json", "checksPassed": 16, "errors": [] },
+  "geometryFreeze": { "affine": [60, -10, 25, 35, 170, 165], "hallScale": 0.1312 },
+  "delivered": [
+    "Home gate with Continue, New, Load and Settings over the Stone valley painting",
+    "Eight class portraits without a schematic figure",
+    "Kingdom pad outlines and stakes on the existing terrain",
+    "Adventure, Tactical and Defense paintings for all eight ages",
+    "Still Army plates and Forge slot cards",
+    "Retreat focus trap and inert background"
+  ],
+  "blockers": [
+    "32 scene rows remain PARTIAL. Painted grounds are baked-unaccepted and registration is UNVERIFIED.",
+    "Legal road and lane overlays do not certify the painted paths.",
+    "Stone melee and ranged plates still carry slabs. Articulated gait is not available.",
+    "Two exact Kingdom guide PNGs are missing, so the suite stays exit 1.",
+    "Natural prepared siege win was not rerun in this pass.",
+    "Device install and owner acceptance remain open."
+  ],
+  "polishQueue": [
+    { "id": "forge-summary-copy", "reason": "Bench footer still repeats the empty-slot sentence", "priority": 3 },
+    { "id": "kingdom-letterbox", "reason": "Focused camera leaves a dark band around the valley", "priority": 2 },
+    { "id": "slot-glyph-finish", "reason": "Slot marks are simple strokes, not item paintings", "priority": 3 }
+  ],
+  "nextAction": "Keep building age-specific building and gear presentation on this shell. Do not change the affine. Do not claim registration.",
+  "apk": {
+    "path": "android/app/build/outputs/apk/release/app-release-unsigned.apk",
+    "sha256": "3cc5bccdddcad1f1119b57025e480968e52581d6b10b55938125c8bd34964714",
+    "bytes": 410291618,
+    "wwwFiles": 300,
+    "distAssets": 265,
+    "previewId": "com.agesofdominion.game.reborn.preview",
+    "minSdk": 24,
+    "targetSdk": 36,
+    "installed": false,
+    "agpWarning": "AGP 8.7.3 was tested only through compileSdk 35",
+    "priorPreserved": "qa/code-ready-20261004/preserved-apk/92f47e7e-app-release-unsigned.apk"
+  },
+  "device": "STOPPED",
+  "ownerAcceptance": "UNVERIFIED"
+}
