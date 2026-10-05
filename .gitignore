@@ -10,4 +10,27 @@ key.properties
 google-services.json
 .env
 .env.*
-assets/production/
+# Images are restored from the verified asset archive before building.
+/assets/
+# Python caches are reproducible and never belong in a commit.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+# Raw provider payloads and new bulky QA captures stay local.
+design-preview/generated/**/provider-output/
+qa/**/*.png
+qa/**/*.jpg
+qa/**/*.jpeg
+qa/**/*.webp
+qa/**/*.mp4
+qa/**/*.zip
+qa/**/*.apk
+qa/**/*.gif
+qa/**/*.bmp
+qa/**/*.ico
+qa/**/*.avif
+qa/**/*.webm
+qa/**/*.pdf
+qa/**/*.wav
+qa/**/*.mp3
