@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-04T02:29:02.008Z",
+  "damagedReplacement": {
+    "validBackup": true,
+    "damagedRetained": true,
+    "liveValid": true
+  },
+  "quota": {
+    "failed": true,
+    "backupUnchanged": true,
+    "damagedLiveUnchanged": true
+  },
+  "restore": {
+    "valid": true,
+    "backupUnchanged": true,
+    "damagedRetained": true
+  },
+  "malformed": [
+    {
+      "id": "chapter-choice-mismatch",
+      "directAccepted": false,
+      "decodeAccepted": true,
+      "decodedChapter": 0,
+      "decodedFirstQuest": false,
+      "error": null,
+      "status": "FAIL"
+    },
+    {
+      "id": "invalid-claimed-type",
+      "directAccepted": false,
+      "decodeAccepted": true,
+      "decodedChapter": 1,
+      "decodedFirstQuest": false,
+      "error": null,
+      "status": "FAIL"
+    },
+    {
+      "id": "invalid-chapter-type",
+      "directAccepted": false,
+      "decodeAccepted": true,
+      "decodedChapter": 0,
+      "decodedFirstQuest": false,
+      "error": null,
+      "status": "FAIL"
+    }
+  ],
+  "chapters": {
+    "age": 0,
+    "chapter": 7,
+    "resources": {
+      "food": 1170,
+      "wood": 1450,
+      "stone": 3160,
+      "gold": 8850
+    },
+    "scope": "Seven age-themed chapters can all be claimed at Stone; age/progression eligibility requires explicit binding rather than inferred approval."
+  },
+  "falseFlag": {
+    "ready": true,
+    "scope": "A false cleared flag is counted as a win; semantic save validation is open."
+  },
+  "legacyAccepted": true,
+  "scope": "Memory fixtures; no natural gameplay, file storage, native or owner acceptance."
+}

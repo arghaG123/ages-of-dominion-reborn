@@ -1,0 +1,1059 @@
+{
+  "accounting": {
+    "allRows": 24,
+    "allRowsSumUSD": "53.7012",
+    "productionBatchRows": 17,
+    "productionBatchSumUSD": "40.24",
+    "unifiedBatchSum": 40.24,
+    "baseSumUSD": "62.8496",
+    "mainHeadlineFields": {
+      "billedTotal": null,
+      "reconciliationTrail": {
+        "reconciledAt": "2026-10-04T06:30:00.000000+00:00",
+        "policy": "EVIDENCE_BOUNDED_STANDARD_RATE_CEILING_WITH_OVERHEAD",
+        "tariffSource": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "standardTariff": {
+          "inputPer1M": 0.5,
+          "imageOutputPer1M": 60.0,
+          "textThinkingPer1M": 3.0
+        },
+        "measuredCompletedUsageTokens": {
+          "inputTokens": 1074631,
+          "outputTokens": 697701,
+          "totalTokens": 1772332
+        },
+        "tokenStandardCostUSD": 42.383,
+        "overheadAndStorageBufferUSD": 5.247,
+        "reconciledBatches01To17TotalUSD": 40.225,
+        "historicalMockReservationUSD": 2.0,
+        "safetyReserveUSD": 15.0,
+        "reconciledInteractive4KRun01CostUSD": 1.8293,
+        "reconciledInteractive4KRun01BufferUSD": 2.1037,
+        "reconciledInteractive4KRun02CostUSD": 0.6098,
+        "reconciledInteractive4KRun02BufferUSD": 0.7013,
+        "reconciledInteractive4KRun03CostUSD": 0.1524,
+        "reconciledInteractive4KRun03BufferUSD": 0.1753,
+        "reconciledInteractive4KRun04CostUSD": 0.7622,
+        "reconciledInteractive4KRun04BufferUSD": 0.8765,
+        "reconciledInteractive4KTacticalRetryCostUSD": 0.3049,
+        "reconciledInteractive4KTacticalRetryBufferUSD": 0.3506,
+        "reconciledInteractive4KKingdomCostUSD": 1.2193,
+        "reconciledInteractive4KKingdomBufferUSD": 1.4022,
+        "reconciledInteractive2KLater73RawUsageUSD": 7.4039,
+        "reconciledInteractive2KLater73JournalCostUSD": 7.5644,
+        "reconciledInteractive2KLater73AmbiguousLiabilitiesUSD": 0.2872,
+        "reconciledInteractive2KLater73TotalExposureUSD": 7.8516,
+        "totalCommittedProtectedUSD": 70.7012,
+        "hardCapUSD": 80.0,
+        "marginUnderHardCapUSD": 9.2988,
+        "targetUSD": 60.0,
+        "marginUnderTargetUSD": -10.7012,
+        "invoiceStatus": "BILLED_TOTAL_REMAINS_UNKNOWN_HOLDS_RECONCILED"
+      }
+    },
+    "uniqueSuccesses": 73,
+    "journalUniqueSuccessSumUSD": "7.420787",
+    "journalHeadline": {
+      "totalSelected": 73,
+      "generated": 73,
+      "reused": 157,
+      "consumedFailed": 0,
+      "blocked": 0,
+      "unfunded": 0,
+      "unknown": 8,
+      "totalCostUSD": 7.564399000000001,
+      "promptTokens": 89149,
+      "candidateTokens": 122937,
+      "uniqueCompleted": 73,
+      "uniqueTotal": 73
+    },
+    "unknownLiabilities": [
+      {
+        "itemId": "portrait-powder-barbarian",
+        "attempt": 1,
+        "status": "UNKNOWN_CRASH_DURING_DISPATCH",
+        "recordedAt": "2026-10-04T04:32:29.047344+00:00",
+        "bodySHA256": "4803017d3eea6a33c74f71fc629c0cec48d251072d5306223aa66f62dcdec00a",
+        "liabilityUSD": 0.143612,
+        "cloudGeneration": "1791087926598788",
+        "reason": "Process PID 29872 terminated during dispatch; execution/billing unverified"
+      },
+      {
+        "itemId": "rig-source-parts-ranger",
+        "attempt": 1,
+        "status": "UNKNOWN",
+        "recordedAt": "2026-10-04T05:58:05Z",
+        "bodySHA256": "7a3b3f3a6673eb17829d33dc15e713f75c6bc2c8b011a3f13219f435ffc65dfb",
+        "liabilityUSD": 0.143612,
+        "reason": "The read operation timed out; execution/billing unverified"
+      }
+    ],
+    "rawResponseFiles": 73,
+    "rawUsageTotals": {
+      "promptTokenCount": 89149,
+      "candidatesTokenCount": 122937,
+      "thoughtsTokenCount": 0,
+      "totalTokenCount": 212086
+    }
+  },
+  "productionCollectionKeys": [
+    "batch",
+    "collectedAt",
+    "requests",
+    "outputs",
+    "errors",
+    "technicalStatus",
+    "visualStatus",
+    "runtimeApproved",
+    "usage"
+  ],
+  "productionOriginals": {
+    "count": 510,
+    "uniqueIDs": 504,
+    "mismatches": []
+  },
+  "native4k": [
+    {
+      "id": "kingdom-terrain-stone",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-stone/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-bronze/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-iron/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-medieval/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-gunpowder/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-industrial/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-modern/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-future/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "adventure-terrain",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "adventure-terrain-plains",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-plains/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "adventure-terrain-hills",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-hills/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "adventure-terrain-swamp",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-swamp/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "adventure-terrain-desert",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-desert/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "adventure-terrain-snow",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-snow/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "adventure-terrain-waste",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-waste/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "adventure-terrain-ruins",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-ruins/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "tactical-terrain",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "tactical-terrain-plains",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-plains/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "tactical-terrain-hills",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-hills/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "tactical-terrain-swamp",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-swamp/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "tactical-terrain-desert",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-desert/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain-snow/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "tactical-terrain-waste",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/tactical-terrain-waste/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "tactical-terrain-ruins",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/tactical-terrain-ruins/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "defense-terrain",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/defense-terrain/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "defense-terrain-plains",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/defense-terrain-plains/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "defense-terrain-hills",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-03-20261004-012700/packs/defense-terrain-hills/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "defense-terrain-swamp",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-swamp/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "defense-terrain-desert",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-desert/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "defense-terrain-snow",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-snow/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "defense-terrain-waste",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-waste/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    },
+    {
+      "id": "defense-terrain-ruins",
+      "path": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-ruins/output.png",
+      "hashMatch": true,
+      "dimensions": [
+        5504,
+        3072
+      ]
+    }
+  ],
+  "geometry": {
+    "active": {
+      "cols": 14,
+      "rows": 11,
+      "sourceSize": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sites": [
+        {
+          "id": "townhall",
+          "rect": [
+            5,
+            0,
+            3,
+            1.5
+          ]
+        },
+        {
+          "id": "P01",
+          "region": "upper",
+          "rect": [
+            2,
+            2,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P02",
+          "region": "upper",
+          "rect": [
+            4,
+            2,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P03",
+          "region": "upper",
+          "rect": [
+            6,
+            2,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P04",
+          "region": "upper",
+          "rect": [
+            8,
+            2,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P05",
+          "region": "upper",
+          "rect": [
+            10,
+            2,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P06",
+          "region": "upper",
+          "rect": [
+            2,
+            4,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P07",
+          "region": "upper",
+          "rect": [
+            4,
+            4,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P08",
+          "region": "upper",
+          "rect": [
+            8,
+            4,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P09",
+          "region": "upper",
+          "rect": [
+            10,
+            4,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P10",
+          "region": "lower",
+          "rect": [
+            1,
+            6,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P11",
+          "region": "lower",
+          "rect": [
+            3,
+            6,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P12",
+          "region": "lower",
+          "rect": [
+            9,
+            6,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P13",
+          "region": "lower",
+          "rect": [
+            11,
+            6,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P14",
+          "region": "lower",
+          "rect": [
+            2,
+            8,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P15",
+          "region": "lower",
+          "rect": [
+            4,
+            8,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P16",
+          "region": "lower",
+          "rect": [
+            8,
+            8,
+            1.4,
+            1.2
+          ]
+        },
+        {
+          "id": "P17",
+          "region": "lower",
+          "rect": [
+            10,
+            8,
+            1.4,
+            1.2
+          ]
+        }
+      ],
+      "blocked": [
+        [
+          13,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          13,
+          10
+        ]
+      ],
+      "bridges": [
+        {
+          "id": "right-crossing",
+          "rect": [
+            12.5,
+            7,
+            1.5,
+            0.8
+          ],
+          "cells": [
+            [
+              13,
+              7
+            ]
+          ],
+          "approaches": [
+            [
+              12,
+              7
+            ]
+          ]
+        }
+      ],
+      "roads": [
+        [
+          [
+            6.5,
+            1.5
+          ],
+          [
+            7.7,
+            1.6
+          ],
+          [
+            7.7,
+            4
+          ],
+          [
+            7.7,
+            6
+          ],
+          [
+            7.7,
+            8
+          ],
+          [
+            7.7,
+            10
+          ]
+        ]
+      ],
+      "anchors": {
+        "gate": [
+          7.7,
+          10
+        ],
+        "ridge": [
+          6.5,
+          0
+        ]
+      },
+      "guide": "docs/plan/image-production/guides/kingdom.png",
+      "guide_sha256": "a29195ac287fe6c612d0f424c20d1de2b93bbdc730265004bd0f2761bc10a3a9"
+    },
+    "candidate": {
+      "cols": 14,
+      "rows": 11,
+      "sites": [
+        {
+          "id": "townhall",
+          "rect": [
+            2.914,
+            3.809,
+            4.636,
+            2.413
+          ],
+          "role": "civic-hall"
+        },
+        {
+          "id": "P01",
+          "region": "upper",
+          "rect": [
+            0.3,
+            2.3,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P02",
+          "region": "upper",
+          "rect": [
+            0.3,
+            3.7,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P03",
+          "region": "upper",
+          "rect": [
+            0.3,
+            6.45,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P04",
+          "region": "lower",
+          "rect": [
+            0.3,
+            8.55,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P05",
+          "region": "upper",
+          "rect": [
+            8.7,
+            2.45,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P06",
+          "region": "upper",
+          "rect": [
+            8.7,
+            4.3,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P07",
+          "region": "upper",
+          "rect": [
+            8.7,
+            6.15,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P08",
+          "region": "lower",
+          "rect": [
+            8.7,
+            8.55,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P09",
+          "region": "upper",
+          "rect": [
+            10.3,
+            2.45,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P10",
+          "region": "upper",
+          "rect": [
+            10.3,
+            4.4,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P11",
+          "region": "upper",
+          "rect": [
+            10.3,
+            6.3,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P12",
+          "region": "lower",
+          "rect": [
+            8.35,
+            9.8,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P13",
+          "region": "lower",
+          "rect": [
+            2.05,
+            8.55,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P14",
+          "region": "lower",
+          "rect": [
+            3.65,
+            8.55,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P15",
+          "region": "lower",
+          "rect": [
+            6.75,
+            8.55,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P16",
+          "region": "lower",
+          "rect": [
+            2.05,
+            9.8,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        },
+        {
+          "id": "P17",
+          "region": "lower",
+          "rect": [
+            6.2,
+            9.8,
+            1.4,
+            1.2
+          ],
+          "day1": "empty"
+        }
+      ],
+      "roads": [
+        [
+          [
+            5.66,
+            5.4
+          ],
+          [
+            5.66,
+            10.45
+          ]
+        ],
+        [
+          [
+            2.05,
+            8.05
+          ],
+          [
+            11.4,
+            8.05
+          ]
+        ],
+        [
+          [
+            2.05,
+            2.9
+          ],
+          [
+            2.05,
+            8.05
+          ]
+        ],
+        [
+          [
+            8.2,
+            2.6
+          ],
+          [
+            8.2,
+            8.05
+          ]
+        ],
+        [
+          [
+            11.4,
+            8.05
+          ],
+          [
+            12.5,
+            7.6
+          ],
+          [
+            13.15,
+            7.6
+          ]
+        ]
+      ],
+      "blocked": [
+        [
+          13,
+          0
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          13,
+          10
+        ]
+      ],
+      "bridges": [
+        {
+          "id": "right-crossing",
+          "rect": [
+            12.15,
+            7.2,
+            1.55,
+            0.85
+          ],
+          "cells": [
+            [
+              13,
+              7
+            ]
+          ],
+          "approaches": [
+            [
+              12,
+              7
+            ]
+          ]
+        }
+      ],
+      "anchors": {
+        "gate": [
+          5.66,
+          10.45
+        ],
+        "entrance": [
+          5.66,
+          5.4
+        ]
+      },
+      "perimeter": "unbuilt",
+      "wallsLevel": 0
+    }
+  },
+  "apk": {
+    "sha256": "fbe989b58240bcd7981b993efb6ed4accb894fbf4ae42c73731a2e92efe830db",
+    "bytes": 296623132,
+    "files": 260,
+    "mismatches": []
+  }
+}

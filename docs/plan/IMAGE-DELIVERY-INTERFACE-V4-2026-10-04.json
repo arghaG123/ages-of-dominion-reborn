@@ -1,0 +1,4835 @@
+{
+  "version": "4.0-image-interface-20261004",
+  "codeAIHandoffReady": false,
+  "usableWorldSpriteCount": null,
+  "supersededForMatteDecisionsBy": "docs/plan/IMAGE-DELIVERY-INTERFACE-V5-2026-10-04.json",
+  "reason": "No blanket usable count. Matte keep, repair, and the three-role draft are in the v5 interface. This file remains the v4 path ledger.",
+  "roleRowCount": 75,
+  "v3RoleRowCount": 75,
+  "idAliases": [
+    {
+      "advertisedPath": "assets/derivatives/substitutions/v3/troop-iron-melee-legionary-1k.png",
+      "exists": false,
+      "actualPath": "assets/derivatives/substitutions/v3/troop-iron-melee.png",
+      "v4Path": "assets/derivatives/substitutions/v3/troop-iron-melee.png",
+      "ids": [
+        "substitution-troop-iron-melee",
+        "troop-iron-melee"
+      ],
+      "actualExists": true,
+      "sha256": "623f44b114bb683925b9ac4e98f8e6faf56bfe8d68eb10d63b1acb566c768c16"
+    },
+    {
+      "advertisedPath": "assets/derivatives/substitutions/v3/troop-industrial-heavy-steamwalker-1k.png",
+      "exists": false,
+      "actualPath": "assets/derivatives/substitutions/v3/troop-industrial-heavy.png",
+      "ids": [
+        "substitution-troop-industrial-heavy",
+        "troop-industrial-heavy"
+      ],
+      "actualExists": true,
+      "sha256": "5ca06b27ee90de583b6f717cc54f7abc9d5ada0344c99b61d69ce23f5399094b"
+    },
+    {
+      "v2RowCount": 76,
+      "v3DistinctRoles": 75,
+      "note": "The extra v2 row was a duplicate mountedKnight, not a missing paid identity."
+    }
+  ],
+  "boundedReviewSamples": [
+    {
+      "id": "troop-stone-melee",
+      "status": "BOUNDED_REVIEW_SAMPLE_RESIDUAL_EDGE_DIRT",
+      "use": "Code may review this sample. It is not a clean accepted world sprite."
+    },
+    {
+      "id": "hero-mount-horse",
+      "status": "BOUNDED_REVIEW_SAMPLE_RESIDUAL_HAIRLINE",
+      "use": "Hooves are present. A grey hairline can remain. Not an accepted mount."
+    }
+  ],
+  "additions": [
+    {
+      "id": "hero-knight-ancient-card",
+      "kind": "opaque_card_not_world_actor",
+      "classEraAcceptance": "UNVERIFIED_ANCIENT_THEMED_PERSON",
+      "ownerAcceptance": "UNVERIFIED",
+      "runtimeAcceptance": "NOT_APPLICABLE_OPAQUE_CARD",
+      "notMedievalMountedKnight": true,
+      "source": {
+        "path": "C:/dev/aod-art-src/hero-knight-ancient/attempt-1.png",
+        "sha256": "eb03424f0a599894dfa5bdcc9124a84221c2959787c3c8fdc18d24636180acf8",
+        "dimensions": [
+          1536,
+          2752
+        ],
+        "mode": "RGB",
+        "readOnly": true
+      },
+      "crop": {
+        "box": [
+          420,
+          220,
+          1120,
+          1180
+        ],
+        "dimensions": [
+          700,
+          960
+        ],
+        "mode": "RGB",
+        "sha256": "ca583aa73a76772f82dd8918f9aa46159a44a58257b50dfc61f7f7b905ac1962",
+        "path": "assets/derivatives/portraits/v4/hero-knight-ancient-card.png",
+        "transform": "exact crop, no resize, no alpha"
+      },
+      "headAndFace": "included in this bust crop"
+    }
+  ],
+  "missingReferencedFiles": [],
+  "rows": [
+    {
+      "id": "portrait-ancient-ranger",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-ancient-ranger.png",
+        "sha256": "f3a32f6682bab256222a4f86bf902e5ee4bd7eac3a743b1443eefdae3917ac62",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-ancient-ranger.png",
+        "sha256": "0b99fee70ff75d5aeff08c4987d76f85018d3d7a964cfd5476cd4297ee10600f",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          287,
+          27,
+          1687,
+          1427
+        ],
+        "headTopNative": 87,
+        "headCenterNative": 987,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-ancient-warlock",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-ancient-warlock.png",
+        "sha256": "83e229628bf527f9226c6a1f1763e307bc4025f54c224bbb79a431ed885e7fa7",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-ancient-warlock.png",
+        "sha256": "94cdb819928db0e5cd1b9c81498ece3468fd378757b77d4122536f65975fec7b",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          226,
+          35,
+          1626,
+          1435
+        ],
+        "headTopNative": 95,
+        "headCenterNative": 926,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-ancient-mage",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-ancient-mage.png",
+        "sha256": "9d1128696562c314c977f8d6e62bcf333ca8afcaa15528d5e5902dddcd355554",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-ancient-mage.png",
+        "sha256": "a416d86e78779c7bbcc4de57412b666be5c75f6ff146f188dc94522591f12ff7",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          297,
+          36,
+          1697,
+          1436
+        ],
+        "headTopNative": 96,
+        "headCenterNative": 997,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-ancient-paladin",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-ancient-paladin.png",
+        "sha256": "45f8ba7cb73d88e3ceef7e653e8612f62838ad5aa37b00030aeb211762fff7a9",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-ancient-paladin.png",
+        "sha256": "b5e984c60bb560b38cd7890dde9818ef6e7aff1fc770d1334da7b4cde83f57f6",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          383,
+          96,
+          1783,
+          1496
+        ],
+        "headTopNative": 156,
+        "headCenterNative": 1083,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-ancient-barbarian",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-ancient-barbarian.png",
+        "sha256": "97ebbc00401e02cb1b25151687c9e21ecec03fee4e39639d4d62ac4923979ecf",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-ancient-barbarian.png",
+        "sha256": "711b1a60584d7d8a2ae4267dc7bb4d02cbc2233aa18f91eda1a7c24fb26d2422",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          103,
+          34,
+          1503,
+          1434
+        ],
+        "headTopNative": 94,
+        "headCenterNative": 803,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-ancient-necromancer",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-ancient-necromancer.png",
+        "sha256": "0f8873c011a861ad9f4588ded83bda0e4fdfc9a782cbd990ffb095f2139dc385",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-ancient-necromancer.png",
+        "sha256": "e216add67533eb851e114e5459a54f16bddfb75d6c15992ca43b8b0b8d2fe973",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          354,
+          2,
+          1754,
+          1402
+        ],
+        "headTopNative": 62,
+        "headCenterNative": 1054,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-ancient-healer",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-ancient-healer.png",
+        "sha256": "1078e29f0db578e35231b7ff4f0e9f95b40d3ac3d3b1a0ad0bf867e6933b9969",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-ancient-healer.png",
+        "sha256": "74e280b4d051aa50ee483b2aa42de2956b069a7326faba34b275df2c7cfdfc55",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          183,
+          29,
+          1583,
+          1429
+        ],
+        "headTopNative": 89,
+        "headCenterNative": 883,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-medieval-knight",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-medieval-knight.png",
+        "sha256": "768f7e63bfe5ef7163054a3ea515513456f3ec7fb8fffe786d05590f901a3347",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-medieval-knight.png",
+        "sha256": "01a0f05babba1128380d621de1fe7740b179391ac1f2bc664543e82b04d61535",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          305,
+          64,
+          1705,
+          1464
+        ],
+        "headTopNative": 124,
+        "headCenterNative": 1005,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-medieval-ranger",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-medieval-ranger.png",
+        "sha256": "4ec19340bd6e6511209857477550c4c89225ff1f3cacac8ad631609c8217c007",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-medieval-ranger.png",
+        "sha256": "0b654bbdddc8ceb80a77dd3ef597513149ce62e9c40c624a07fd05050d68f4d3",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          327,
+          51,
+          1727,
+          1451
+        ],
+        "headTopNative": 111,
+        "headCenterNative": 1027,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-medieval-warlock",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-medieval-warlock.png",
+        "sha256": "5fa91c78cc8427a13587ef35005b89977d4e76b44bb82a2fb4ce8ba0767d38f7",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-medieval-warlock.png",
+        "sha256": "a8ca2c33e5eb0892cdba9f6608344e9f7301f63eceb0da62cc018fa247f5dfab",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          375,
+          51,
+          1775,
+          1451
+        ],
+        "headTopNative": 111,
+        "headCenterNative": 1075,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-medieval-mage",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-medieval-mage.png",
+        "sha256": "987b64773a4baf080597feb71efc5f07851bcc7817676ca3edcbd0acc207e0cb",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-medieval-mage.png",
+        "sha256": "516422ac0d459229971f4489721dd6371b65e7154e62c883fb3c689795b31359",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          338,
+          76,
+          1738,
+          1476
+        ],
+        "headTopNative": 136,
+        "headCenterNative": 1038,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-medieval-paladin",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-medieval-paladin.png",
+        "sha256": "a3999fc72888dfbf334fe03b1175a23b60d285768f3b39a78298d9fd5b9329d2",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-medieval-paladin.png",
+        "sha256": "b1e502ae40d78c785d49c288911de38ff7a29cbb39f4b54c6bf6e06ebc23e7c6",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          61,
+          0,
+          1461,
+          1400
+        ],
+        "headTopNative": 37,
+        "headCenterNative": 761,
+        "headroomNative": 37,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-medieval-barbarian",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-medieval-barbarian.png",
+        "sha256": "1d6c824ea6cca0efcc458f4e5e9c22d176499814c0035d698286a34050d15d04",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-medieval-barbarian.png",
+        "sha256": "3d13d97b7ff65ceaf017639bf9bf99d159432b6357bc9a299d42072dc4ad71ae",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          360,
+          53,
+          1760,
+          1453
+        ],
+        "headTopNative": 113,
+        "headCenterNative": 1060,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-medieval-necromancer",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-medieval-necromancer.png",
+        "sha256": "718e654380cd3bbbf0b5b9c863a148d72c1072c7af2b8b2328bb83dca43de711",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-medieval-necromancer.png",
+        "sha256": "3742b1d09e8508da8e1ebfad13ad2cfc466cad1dd817bec550ef46da2b52bb37",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          435,
+          89,
+          1835,
+          1489
+        ],
+        "headTopNative": 149,
+        "headCenterNative": 1135,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-medieval-healer",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-medieval-healer.png",
+        "sha256": "e2276f5ec1b0c889e9f9be215dd7eb1a93f55611a9750ca09da7c46a5ce9d4db",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-medieval-healer.png",
+        "sha256": "1ef94cb7a8505fb2258ea9ede68260163a69d70969307d013d734d55d7bc79a9",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          319,
+          64,
+          1719,
+          1464
+        ],
+        "headTopNative": 124,
+        "headCenterNative": 1019,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-powder-knight",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-powder-knight.png",
+        "sha256": "0f1777412533e7e12496126e80f5a7b1eff02d9c0e8f73b188b95e229384a901",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-powder-knight.png",
+        "sha256": "e663d35ce534d4d622e34d146fe6cb2da6d0788df3113289ef308fe98b6f3226",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          281,
+          69,
+          1681,
+          1469
+        ],
+        "headTopNative": 129,
+        "headCenterNative": 981,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-powder-ranger",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-powder-ranger.png",
+        "sha256": "782bc50d7e59a42ec7e0ab2cde2bfc82b0876aaa2696d29043c2723d2adb82bf",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-powder-ranger.png",
+        "sha256": "6c820747ef7f8486b0819a613958f8b4b205ecaaf206a3b3eb69855d34f0ff29",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          381,
+          32,
+          1781,
+          1432
+        ],
+        "headTopNative": 92,
+        "headCenterNative": 1081,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-powder-warlock",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-powder-warlock.png",
+        "sha256": "71609b01a5acd56d89820498c0dcd2b5b12a0777ef67314f0d2f747838d34900",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-powder-warlock.png",
+        "sha256": "c58a5edb39dc8072edf89f0dd9b747f129f9f2fa0ef8079a0da6563421c2eb02",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          329,
+          50,
+          1729,
+          1450
+        ],
+        "headTopNative": 110,
+        "headCenterNative": 1029,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-powder-mage",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-powder-mage.png",
+        "sha256": "aee42d09ff856878ad82396749074ff5c5c6a69200db5d900b6590b064b66205",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-powder-mage.png",
+        "sha256": "f4aaafa73efb036e0389066a6035d2eb23738fd0c9a1863d98e8e1e6c1177349",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          368,
+          83,
+          1768,
+          1483
+        ],
+        "headTopNative": 143,
+        "headCenterNative": 1068,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-powder-paladin",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-powder-paladin.png",
+        "sha256": "e2b97a2b320fdbe396fc0764d968655d299094b8fb338c2d40910d679b3540d3",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-powder-paladin.png",
+        "sha256": "9cad40946df1f85bf306e7b1251e12e5dc85221aafdac28cc7ad61813565f1a1",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          324,
+          31,
+          1724,
+          1431
+        ],
+        "headTopNative": 91,
+        "headCenterNative": 1024,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-powder-barbarian",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-powder-barbarian.png",
+        "sha256": "a112dcb5829d2e7e359b8fcae2c093a0e758f6dcfcc99176c6f7340a9158bf25",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-powder-barbarian.png",
+        "sha256": "5216587f4db7016fe101bfefe34e09db44d8cc71de956e2f0c01b43b3e217bdf",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          223,
+          0,
+          1623,
+          1400
+        ],
+        "headTopNative": 52,
+        "headCenterNative": 923,
+        "headroomNative": 52,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-powder-necromancer",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-powder-necromancer.png",
+        "sha256": "3e3f6e5b1ecaedca4d3a4345a8f1094227ef6e83c734d81effaaebf6fc93d7b2",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-powder-necromancer.png",
+        "sha256": "a26e4a6850228b526a220013377c34a34f324aaf13f89298691e9fb0a11ced4a",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          648,
+          111,
+          2048,
+          1511
+        ],
+        "headTopNative": 171,
+        "headCenterNative": 1416,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-powder-healer",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-powder-healer.png",
+        "sha256": "d5993f5b03a462644ced75cfb45b48aad2a8c3ea46d894bbbe8dc845ada563f3",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-powder-healer.png",
+        "sha256": "a8674f1c7ecfc6e49003e0115b492258a69810670ddaf7fa48b5d075f88201e8",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          323,
+          97,
+          1723,
+          1497
+        ],
+        "headTopNative": 157,
+        "headCenterNative": 1023,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-mech-knight",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-mech-knight.png",
+        "sha256": "196412b892a0cabd24a4893d5b0043114e6d936bb7068d69015b00cdef4e4a2f",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-mech-knight.png",
+        "sha256": "5cae4a2bb85b06d693ed8772248e2fb39a1a86809d0085fb672ef35981eb602c",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          317,
+          5,
+          1717,
+          1405
+        ],
+        "headTopNative": 65,
+        "headCenterNative": 1017,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-mech-ranger",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-mech-ranger.png",
+        "sha256": "967a25538e94f755ae056751fa63642126c73ad8465410a5244cc67bb5db794c",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-mech-ranger.png",
+        "sha256": "afcc2e16677a05f9a2b223c4f86a4be27f013b6b8a341769d76bdae94c99903b",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          270,
+          9,
+          1670,
+          1409
+        ],
+        "headTopNative": 69,
+        "headCenterNative": 970,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-mech-warlock",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-mech-warlock.png",
+        "sha256": "941f57a79e2817a943fd1c8b5fe84dfc7792ad38d9a6c6c540da37c29fd343c9",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-mech-warlock.png",
+        "sha256": "65c779ae3e2baf6945cd38b28be5fb7167362fb3a2b88487ee9827719684a3a7",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          376,
+          16,
+          1776,
+          1416
+        ],
+        "headTopNative": 76,
+        "headCenterNative": 1076,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-mech-mage",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-mech-mage.png",
+        "sha256": "58060a38aadcf53613fd05b4bdd4f72c28a67e55917029667765700f5ad3b5d4",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-mech-mage.png",
+        "sha256": "83f390b9062744141836d4a00b57949434c221118fdbb97a033e84c321135878",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          307,
+          60,
+          1707,
+          1460
+        ],
+        "headTopNative": 120,
+        "headCenterNative": 1007,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-mech-paladin",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-mech-paladin.png",
+        "sha256": "41a8c510fa8c5a5fd8ac7386ce800a57edb809bea6f438eb37e69ce680afc6f0",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-mech-paladin.png",
+        "sha256": "c1ce86ec9c32d1bef9f94c3a69039dda6abaf23bccb6c8c976ebc0354368dd8c",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          446,
+          0,
+          1846,
+          1400
+        ],
+        "headTopNative": 53,
+        "headCenterNative": 1146,
+        "headroomNative": 53,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-mech-barbarian",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-mech-barbarian.png",
+        "sha256": "09eb1b653d189415a50a7903e30c4d0cb6ed2c60c08a0a818f4f4d36ebbf8b77",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-mech-barbarian.png",
+        "sha256": "4c71b817e781d2946e60a827ff8df7d29c710741296ac86981878a8c1fffbb85",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          462,
+          26,
+          1862,
+          1426
+        ],
+        "headTopNative": 86,
+        "headCenterNative": 1162,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-mech-necromancer",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-mech-necromancer.png",
+        "sha256": "f6189720291b817eece9b4450cef76a65bcc5fb1026efe858208ab39277a3652",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-mech-necromancer.png",
+        "sha256": "d9fdbd2f3dcb0279aa39533267f92fa216de9593977b395a63a9a3ad24ed9840",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          538,
+          69,
+          1938,
+          1469
+        ],
+        "headTopNative": 129,
+        "headCenterNative": 1238,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "portrait-mech-healer",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/portrait-mech-healer.png",
+        "sha256": "db1900ee39e8cc0e1ff6d56ad902be8e3b373b07bc9ee462a60fa142ff29d500",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/portrait-mech-healer.png",
+        "sha256": "09db3b311069e3ad7d76034bbaf91e7d78ef2cff902dec62bcd0d75c37c56700",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          404,
+          36,
+          1804,
+          1436
+        ],
+        "headTopNative": 96,
+        "headCenterNative": 1104,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "rival-identity-1",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rival-identity-1.png",
+        "sha256": "4deac0ae4b94d9bfd21aa2647a7ce9628a2f5de475b912007b90e18263242807",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/rival-bran-the-relentless.png",
+        "sha256": "79c792de603de31d3e9b1b13797deea20cfc8d199a490642a7f259db6480c20b",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          361,
+          0,
+          1761,
+          1400
+        ],
+        "headTopNative": 52,
+        "headCenterNative": 1061,
+        "headroomNative": 52,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "rival-identity-2",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rival-identity-2.png",
+        "sha256": "53454f9b790fb0e6325d115a847648730e0cd55f8f9b97ccd57f08c987493ac1",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/rival-malakor-the-flayed.png",
+        "sha256": "4d81a3ed01bafa46ace74fb1fcf0436c4ef23a4eda90b844f7326273feb82b8e",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          111,
+          176,
+          1511,
+          1576
+        ],
+        "headTopNative": 236,
+        "headCenterNative": 811,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "rival-identity-3",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rival-identity-3.png",
+        "sha256": "9ac7dd5f4261cf01788b7e6e9bec1d08fdab99829544f952beabd5a9983fbe25",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/rival-thalric-ash-bane.png",
+        "sha256": "2acd8d1e51219df9faac8dfd412b3a6a73f47b74d51de9ca22473d81afcc243c",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          372,
+          27,
+          1772,
+          1427
+        ],
+        "headTopNative": 87,
+        "headCenterNative": 1072,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "rival-identity-4",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rival-identity-4.png",
+        "sha256": "3b50bd014bc81fadb004d295772cf55ed10f3bf03d623881a61b0b504bb4c655",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/rival-soren-the-unforgiving.png",
+        "sha256": "1b9a25e97e35473ced1cc697e33a109d73c42fbedaca214dcb446a5622d9948a",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          236,
+          45,
+          1636,
+          1445
+        ],
+        "headTopNative": 105,
+        "headCenterNative": 936,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "rival-identity-5",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rival-identity-5.png",
+        "sha256": "7e26105acec408fb505a0561bd3e4ec9b50c7ebdad168244c098d721664fbac2",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/rival-varek-iron-eye.png",
+        "sha256": "2be004a9cc21025b4a12d590808e1a9e35b8cac9e6bda719e53e4d33442b0a78",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          313,
+          45,
+          1713,
+          1445
+        ],
+        "headTopNative": 105,
+        "headCenterNative": 1013,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "rival-identity-6",
+      "category": "portrait_card",
+      "v3ContentMatte": "PASS_BOUNDED_CARD_FRAMING",
+      "v4ContentStatus": "PASS_BOUNDED_CARD_FRAMING",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rival-identity-6.png",
+        "sha256": "7b10a411ebf3a84972165c2a8dd1ec12bc1613ab3a117d4a31ba882bd5bc41e0",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/portraits/v2/rival-karn-blood-tide.png",
+        "sha256": "7180fccd4ce8c416c7dd3a8f47ec204edb93e3433ee1fc58302c380606fcd6c6",
+        "dimensions": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v2-preserved-calibrated-landmarks",
+        "sourceCropBox": [
+          415,
+          5,
+          1815,
+          1405
+        ],
+        "headTopNative": 65,
+        "headCenterNative": 1115,
+        "headroomNative": 60,
+        "intendedUse": "card_bust_portrait",
+        "travelUse": "UNSUITABLE_CARD_BUST_ONLY"
+      }
+    },
+    {
+      "id": "substitution-troop-iron-melee",
+      "category": "authentic_1k_substitution",
+      "v3ContentMatte": "AUTHENTIC_SUBSTITUTION_DELIVERED",
+      "v4ContentStatus": "AUTHENTIC_SUBSTITUTION_DELIVERED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/production/production-07-20261003/images/09-troop-iron-melee.png",
+        "sha256": "a88d1e71b656688de7ef045de7b65f78e0926e5c48b01f522fe00ec268bb30a4",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "provenance": "production-07-20261003/images/09-troop-iron-melee.png (1024x1024)",
+        "pathNote": "dimensions removed from the path string; see dimensions assets/production prefix added"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/substitutions/v3/troop-iron-melee.png",
+        "sha256": "623f44b114bb683925b9ac4e98f8e6faf56bfe8d68eb10d63b1acb566c768c16",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-despilled-clean-matte",
+        "tightBBox": [
+          318,
+          64,
+          700,
+          928
+        ],
+        "groundContactPivotLocal": [
+          442,
+          928
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      }
+    },
+    {
+      "id": "substitution-troop-industrial-heavy",
+      "category": "authentic_1k_substitution",
+      "v3ContentMatte": "AUTHENTIC_SUBSTITUTION_DELIVERED",
+      "v4ContentStatus": "AUTHENTIC_SUBSTITUTION_DELIVERED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/production/production-17-20261003/images/10-attacker-industrial-heavy.png",
+        "sha256": "9dcfa437f8fba8ff6cc8c81757de82c82983668d1c7b2d476e15e481c52e09af",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGB",
+        "provenance": "production-17-20261003/images/10-attacker-industrial-heavy.png (1024x1024)",
+        "pathNote": "dimensions removed from the path string; see dimensions assets/production prefix added"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/substitutions/v3/troop-industrial-heavy.png",
+        "sha256": "5ca06b27ee90de583b6f717cc54f7abc9d5ada0344c99b61d69ce23f5399094b",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-despilled-clean-matte",
+        "tightBBox": [
+          85,
+          0,
+          817,
+          968
+        ],
+        "groundContactPivotLocal": [
+          461,
+          968
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      }
+    },
+    {
+      "id": "troop-stone-melee",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "BOUNDED_REVIEW_SAMPLE_RESIDUAL_EDGE_DIRT",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-stone-melee.png",
+        "sha256": "629979bca666ff35bc4cf196d99598109a820bb75b3c456169d937bfa26b1b0f",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-stone-melee.png",
+        "sha256": "8b6be34867842c44fe62f616b86e49bed7cca4e0bc75ad651dabaf073325cbf3",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          597,
+          202,
+          1764,
+          1660
+        ],
+        "groundContactPivotLocal": [
+          994,
+          1660
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-stone-melee.png",
+        "sha256": "84b5a053f26e6a0dc3b57086ca8f008f7f06377806d173031425cbc26b51017c",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "method": "reviewed boot/hoof polygons below the floor split; backdrop keyed; no blur",
+          "keepPolygons": [
+            [
+              [
+                845,
+                1210
+              ],
+              [
+                990,
+                1210
+              ],
+              [
+                1005,
+                1420
+              ],
+              [
+                978,
+                1605
+              ],
+              [
+                935,
+                1692
+              ],
+              [
+                860,
+                1684
+              ],
+              [
+                835,
+                1560
+              ],
+              [
+                838,
+                1380
+              ]
+            ],
+            [
+              [
+                1070,
+                1210
+              ],
+              [
+                1255,
+                1210
+              ],
+              [
+                1272,
+                1460
+              ],
+              [
+                1255,
+                1585
+              ],
+              [
+                1175,
+                1636
+              ],
+              [
+                1100,
+                1605
+              ],
+              [
+                1068,
+                1460
+              ],
+              [
+                1065,
+                1300
+              ]
+            ]
+          ],
+          "blur": false,
+          "paintedFootMeasured": false,
+          "contactNote": "Polygon follows the visible boot silhouette. The pivot is the lowest retained pixel in each polygon and is not an independent anatomical measurement."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          735,
+          206,
+          1761,
+          1692
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-stone-melee_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-stone-melee_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-stone-melee_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              847,
+              1622,
+              970,
+              1692
+            ],
+            "lowestY": 1692,
+            "centerX": 905,
+            "areaPx": 6708,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1140,
+              1622,
+              1197,
+              1636
+            ],
+            "lowestY": 1636,
+            "centerX": 1171,
+            "areaPx": 449,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 5,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "BOUNDED_REVIEW_SAMPLE_RESIDUAL_EDGE_DIRT"
+    },
+    {
+      "id": "troop-stone-ranged",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "RESIDUAL_FLOOR_NOT_A_CLEAN_SAMPLE",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-stone-ranged.png",
+        "sha256": "fbad903b1168a20bb5dc075c3680d9ec0cb1a5cd84d6757465137a88473d8748",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-stone-ranged.png",
+        "sha256": "16283e6c4bfdf8080bb18cabb7470c5c8e7ea17469bd711d20301c7f91736279",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          640,
+          107,
+          1532,
+          1660
+        ],
+        "groundContactPivotLocal": [
+          999,
+          1660
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-stone-ranged.png",
+        "sha256": "65269960c69c23aca3aa2331a4817a9ba79bedef33581f2ac7a4b5afbbcc88f0",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1228,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          419,
+          110,
+          1698,
+          2007
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-stone-ranged_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-stone-ranged_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-stone-ranged_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              652,
+              1937,
+              1455,
+              2007
+            ],
+            "lowestY": 2007,
+            "centerX": 1005,
+            "areaPx": 31088,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "RESIDUAL_FLOOR_NOT_A_CLEAN_SAMPLE"
+    },
+    {
+      "id": "troop-stone-heavy",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "PASS_CLEAN_SINGLE_ACTOR",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-stone-heavy.png",
+        "sha256": "dd75ab45858989e183a7b9a4b59c4db0e4ad3b4f23f412568b279c423580ca0a",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-stone-heavy.png",
+        "sha256": "20da7ce690c2e249d31984e1d43f40afdf364eed352ccc1f6c7548d41facd3e7",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          224,
+          57,
+          1574,
+          1974
+        ],
+        "groundContactPivotLocal": [
+          1261,
+          1974
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-stone-heavy.png",
+        "sha256": "1c136fbf1b6703c236499775ec85ecdc7670449db1ae8badd23d3399f2f634da",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          225,
+          58,
+          1573,
+          1973
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-stone-heavy_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-stone-heavy_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-stone-heavy_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1205,
+              1903,
+              1335,
+              1973
+            ],
+            "lowestY": 1973,
+            "centerX": 1255,
+            "areaPx": 5668,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED"
+    },
+    {
+      "id": "troop-bronze-melee",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-bronze-melee.png",
+        "sha256": "117532a07fbec5f3c731fbeac9c8091e30fdb85b42565bd838135c4a7680bd43",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-bronze-melee.png",
+        "sha256": "3c34564b6651b9d4ffb9252a5bdd566edbc6ed79c5ff04e43dda58dcfef78a77",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          199,
+          161,
+          1659,
+          1950
+        ],
+        "groundContactPivotLocal": [
+          1421,
+          1950
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-bronze-melee.png",
+        "sha256": "d0b8123ee53ead43c02b94d9355b23ec064586f3a288d535f2f6eef4de4e9c7b",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1474,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          200,
+          162,
+          1658,
+          1949
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-bronze-melee_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-bronze-melee_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-bronze-melee_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1295,
+              1879,
+              1462,
+              1949
+            ],
+            "lowestY": 1949,
+            "centerX": 1388,
+            "areaPx": 4443,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-bronze-ranged",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-bronze-ranged.png",
+        "sha256": "c679721fbe1edbe602c1031eb49adb039505f567b0264755c1eb3d13ad165b7e",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-bronze-ranged.png",
+        "sha256": "a46e6bb195da1bce14f6ce847ad44b110d794a4f49d4febdbe2e87c3b74ea872",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          414,
+          275,
+          1408,
+          1969
+        ],
+        "groundContactPivotLocal": [
+          1357,
+          1969
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-bronze-ranged.png",
+        "sha256": "6c81b483f8584350b94e855fd4c9bda69bee20d81be68491714cf7919fc88dd9",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1126,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          0,
+          1768,
+          2016
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-bronze-ranged_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-bronze-ranged_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-bronze-ranged_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              130,
+              1946,
+              150,
+              1964
+            ],
+            "lowestY": 1964,
+            "centerX": 140,
+            "areaPx": 134,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 6,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              87,
+              1946,
+              383,
+              2016
+            ],
+            "lowestY": 2016,
+            "centerX": 237,
+            "areaPx": 12055,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-bronze-heavy",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "PASS_CLEAN_SINGLE_ACTOR",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-bronze-heavy.png",
+        "sha256": "516f33f65dd6557ee1ae03654d43651eb3857cd88dad4ae584ba51d8ea529c02",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-bronze-heavy.png",
+        "sha256": "cb3d60cd3270340c83531fd0738fb7a86e2a61f7028448fb43ec74d34eec7d09",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          84,
+          199,
+          2008,
+          1680
+        ],
+        "groundContactPivotLocal": [
+          1058,
+          1680
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-bronze-heavy.png",
+        "sha256": "253f5aa8636e36311c0acfe09d4006b2d0b070fadc549f402e9216e2b136655f",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          159,
+          200,
+          2007,
+          1886
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-bronze-heavy_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-bronze-heavy_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-bronze-heavy_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1148,
+              1816,
+              1536,
+              1886
+            ],
+            "lowestY": 1886,
+            "centerX": 1343,
+            "areaPx": 4429,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1304,
+              1816,
+              1452,
+              1845
+            ],
+            "lowestY": 1845,
+            "centerX": 1384,
+            "areaPx": 500,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 10,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED"
+    },
+    {
+      "id": "troop-iron-melee",
+      "category": "army_actor",
+      "v3ContentMatte": "ROLE_FAIL_STENCIL_SUBSTITUTION_AVAILABLE",
+      "v4ContentStatus": "ROLE_FAIL_STENCIL_SUBSTITUTION_AVAILABLE",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-iron-melee.png",
+        "sha256": "065a151c7b2ae7d31e30e60a103450752a1a0fe2c19224237b32d7aa558502fd",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-iron-melee.png",
+        "sha256": "63a0ac4533a886e16b2eadf539acdf1da4a9cd687ba12d7e0e0f2520386ffa93",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          633,
+          124,
+          1404,
+          1859
+        ],
+        "groundContactPivotLocal": [
+          883,
+          1859
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-iron-melee.png",
+        "sha256": "f70133c2146b185cf78a34d2f52a64fe7044a0af04ad87da4fc4b0499869a915",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          635,
+          131,
+          1369,
+          1499
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-iron-melee_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-iron-melee_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-iron-melee_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              818,
+              1429,
+              904,
+              1432
+            ],
+            "lowestY": 1432,
+            "centerX": 862,
+            "areaPx": 341,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 4,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              920,
+              1429,
+              947,
+              1432
+            ],
+            "lowestY": 1432,
+            "centerX": 934,
+            "areaPx": 104,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 4,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1054,
+              1429,
+              1188,
+              1432
+            ],
+            "lowestY": 1432,
+            "centerX": 1122,
+            "areaPx": 533,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 4,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1215,
+              1429,
+              1340,
+              1499
+            ],
+            "lowestY": 1499,
+            "centerX": 1239,
+            "areaPx": 883,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "ROLE_FAIL_MEDIEVAL_STENCIL_NOT_SELECTED_ROLE",
+      "selectedRole": "FAIL"
+    },
+    {
+      "id": "troop-iron-ranged",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-iron-ranged.png",
+        "sha256": "f0af299d817ca5f0d6364b0120d526998478e59ecf2559f5b50b1928d27b21be",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-iron-ranged.png",
+        "sha256": "34bd83e1abe83ed5899f0c5a67127a4ba3f4779c0fd8610317d6bfd7324a0418",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          0,
+          205,
+          1738,
+          1680
+        ],
+        "groundContactPivotLocal": [
+          776,
+          1680
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-iron-ranged.png",
+        "sha256": "7a517039f644afc9710de811fe37a3fc8a7dc54563b39d707d7588e660eab12d",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1433,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          620,
+          206,
+          1737,
+          1433
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-iron-ranged_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-iron-ranged_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-iron-ranged_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              795,
+              1363,
+              972,
+              1432
+            ],
+            "lowestY": 1432,
+            "centerX": 881,
+            "areaPx": 10904,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1048,
+              1363,
+              1195,
+              1432
+            ],
+            "lowestY": 1432,
+            "centerX": 1123,
+            "areaPx": 9589,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1259,
+              1363,
+              1564,
+              1433
+            ],
+            "lowestY": 1433,
+            "centerX": 1411,
+            "areaPx": 21193,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-iron-heavy",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-iron-heavy.png",
+        "sha256": "8490ae4aff2c049cb421b1d0d460cdd1cad92dfc153801f9277268c039ee0e3b",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-iron-heavy.png",
+        "sha256": "4f3df65c28263d7e31549fbe88d5f7035e4277f9970d3bab108980e714d950d7",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          0,
+          80,
+          1824,
+          1795
+        ],
+        "groundContactPivotLocal": [
+          869,
+          1795
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-iron-heavy.png",
+        "sha256": "10ef7557f2321f7ec9046f2b19dc99eea920feec181b202a50acd0f96a765011",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1474,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          82,
+          1823,
+          1856
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-iron-heavy_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-iron-heavy_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-iron-heavy_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              0,
+              1786,
+              23,
+              1793
+            ],
+            "lowestY": 1793,
+            "centerX": 8,
+            "areaPx": 121,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 4,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              25,
+              1786,
+              1153,
+              1856
+            ],
+            "lowestY": 1856,
+            "centerX": 662,
+            "areaPx": 33281,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1231,
+              1786,
+              1603,
+              1808
+            ],
+            "lowestY": 1808,
+            "centerX": 1462,
+            "areaPx": 5028,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 7,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-medieval-melee",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "PASS_CLEAN_SINGLE_ACTOR",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-medieval-melee.png",
+        "sha256": "163931e8a5e8e1464e58177aa7c93feb5490cdff801562ade45c232aeae9fca5",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-medieval-melee.png",
+        "sha256": "2e4760e6b5062c4570a4950ef9c9bb7441a7aa53599ef7b332e697e43e107182",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          0,
+          43,
+          2035,
+          1700
+        ],
+        "groundContactPivotLocal": [
+          791,
+          1700
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-medieval-melee.png",
+        "sha256": "a6e7c7d18004588c560db5a0a78294fa2810389358f25b19caf48ef34ff3579a",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          210,
+          1500,
+          1759
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-medieval-melee_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-medieval-melee_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-medieval-melee_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              0,
+              1689,
+              292,
+              1724
+            ],
+            "lowestY": 1724,
+            "centerX": 109,
+            "areaPx": 4840,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 12,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              603,
+              1689,
+              919,
+              1759
+            ],
+            "lowestY": 1759,
+            "centerX": 779,
+            "areaPx": 14832,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED"
+    },
+    {
+      "id": "troop-medieval-ranged",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "PASS_CLEAN_SINGLE_ACTOR",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-medieval-ranged.png",
+        "sha256": "c6b083d2f99f9d98f650fc69462bfa66d6c16b28dfb4f223bc05e53b5ceb93f9",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-medieval-ranged.png",
+        "sha256": "14b095d9c007d2b9ca4869d149812474c330cf2cf3492ac3b7ad8dc789730c27",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          700,
+          787,
+          1207,
+          1542
+        ],
+        "groundContactPivotLocal": [
+          768,
+          1542
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-medieval-ranged.png",
+        "sha256": "e503d60c4cb4ebc45c3bb6ac7e1feb63d089135b6051f1518c472e9f1b874d44",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          783,
+          35,
+          1170,
+          763
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-medieval-ranged_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-medieval-ranged_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-medieval-ranged_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              881,
+              693,
+              955,
+              763
+            ],
+            "lowestY": 763,
+            "centerX": 922,
+            "areaPx": 3802,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1060,
+              693,
+              1116,
+              756
+            ],
+            "lowestY": 756,
+            "centerX": 1086,
+            "areaPx": 2759,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 21,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED"
+    },
+    {
+      "id": "troop-medieval-heavy",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "PASS_CLEAN_SINGLE_ACTOR",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-medieval-heavy.png",
+        "sha256": "701aa123b49018ce03dc660bde8e84044f425ae34c5b05b0c883f6d5091c96c2",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-medieval-heavy.png",
+        "sha256": "ff9fa2feb364b400d12f1be1d1f3d88880a4d982b7c514d25aaec813e3195a1f",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          77,
+          258,
+          2009,
+          1755
+        ],
+        "groundContactPivotLocal": [
+          902,
+          1755
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-medieval-heavy.png",
+        "sha256": "476219960b19f72eb01e51df30bf2a955fdde937b19c0c3f1e4cff72623845e0",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          104,
+          259,
+          2008,
+          1905
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-medieval-heavy_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-medieval-heavy_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-medieval-heavy_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              184,
+              1835,
+              1856,
+              1905
+            ],
+            "lowestY": 1905,
+            "centerX": 1004,
+            "areaPx": 66273,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1460,
+              1835,
+              1482,
+              1838
+            ],
+            "lowestY": 1838,
+            "centerX": 1472,
+            "areaPx": 46,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 4,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED"
+    },
+    {
+      "id": "troop-gunpowder-melee",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-gunpowder-melee.png",
+        "sha256": "2d24e05d68bb4284ac61f333c55130a2eb983e7af872d10acca9e00b81902ece",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-gunpowder-melee.png",
+        "sha256": "3199b1dadfa5d747eedf3e5d5ac86bf8c41d5928a9c6b95e1937e76709cd8f8a",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          0,
+          64,
+          1432,
+          1735
+        ],
+        "groundContactPivotLocal": [
+          531,
+          1735
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-gunpowder-melee.png",
+        "sha256": "4272f51a6ef22543337ce9a23ec5fabd59d26ed1bac6ab59f2b04db35a968a7a",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1515,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          65,
+          1417,
+          1941
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-gunpowder-melee_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-gunpowder-melee_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-gunpowder-melee_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              361,
+              1871,
+              997,
+              1941
+            ],
+            "lowestY": 1941,
+            "centerX": 753,
+            "areaPx": 18855,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-gunpowder-ranged",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-gunpowder-ranged.png",
+        "sha256": "04cb2017858823f25f8196b5c15eaf4e996d9e59397269c67ac0d60b71cc1b0c",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-gunpowder-ranged.png",
+        "sha256": "91fb50365939d8511ec96d0602f9af11fda17fbc70ccd69595c90d5095bd09b1",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          0,
+          152,
+          1872,
+          1665
+        ],
+        "groundContactPivotLocal": [
+          1212,
+          1665
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-gunpowder-ranged.png",
+        "sha256": "bc8bba3cc0decd77995e86cdabb6f7c8cffa6e9f00f18ae9a5cafbb709b4a263",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1474,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          730,
+          153,
+          1871,
+          1432
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-gunpowder-ranged_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-gunpowder-ranged_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-gunpowder-ranged_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              781,
+              1362,
+              899,
+              1432
+            ],
+            "lowestY": 1432,
+            "centerX": 837,
+            "areaPx": 7068,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1076,
+              1362,
+              1199,
+              1432
+            ],
+            "lowestY": 1432,
+            "centerX": 1139,
+            "areaPx": 8239,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-gunpowder-heavy",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-gunpowder-heavy.png",
+        "sha256": "f361f5ee481818d7cf7b99d5d7f5ad82a10b55d32ae379d197a416f56a752dfe",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-gunpowder-heavy.png",
+        "sha256": "488e11f4a00eb9a7434e676444be5b4e018b300c191b4fe42517efe948526fb1",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          371,
+          225,
+          1750,
+          1850
+        ],
+        "groundContactPivotLocal": [
+          1107,
+          1850
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-gunpowder-heavy.png",
+        "sha256": "593f0418fbf14daa49abf07812913ecbcab0d0d3a3321497a6793569448af0f3",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1187,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          382,
+          226,
+          1954,
+          1424
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-gunpowder-heavy_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-gunpowder-heavy_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-gunpowder-heavy_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              998,
+              1354,
+              1512,
+              1424
+            ],
+            "lowestY": 1424,
+            "centerX": 1249,
+            "areaPx": 19578,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-industrial-melee",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "PASS_CLEAN_SINGLE_ACTOR",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-industrial-melee.png",
+        "sha256": "5fc88477e51c3bd080408231360f77f099a0952f830cd6246ce7b421605d55c6",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-industrial-melee.png",
+        "sha256": "7843ad4481c6b3e65a2d8fe6c236fd916f45fb146133ec7fbd4cff5e350a23c7",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          614,
+          151,
+          1897,
+          1775
+        ],
+        "groundContactPivotLocal": [
+          1128,
+          1775
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-industrial-melee.png",
+        "sha256": "e108a8ac4bb4e04177afc411a88298966ccc9a62e2b5734114e70b30116083d5",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          155,
+          1892,
+          1964
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-industrial-melee_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-industrial-melee_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-industrial-melee_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              0,
+              1894,
+              917,
+              1964
+            ],
+            "lowestY": 1964,
+            "centerX": 544,
+            "areaPx": 33595,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1170,
+              1894,
+              1352,
+              1903
+            ],
+            "lowestY": 1903,
+            "centerX": 1276,
+            "areaPx": 1190,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 4,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED"
+    },
+    {
+      "id": "troop-industrial-ranged",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "FAIL_PRONE_CAPTION_SHEET_NOT_ISOLATED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-industrial-ranged.png",
+        "sha256": "4d4c2a234fbc000593a52e65b80214367e1c211dd1eef12fee1a078064093a09",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-industrial-ranged.png",
+        "sha256": "a84508f4b90e02dd9a6524db9c65700422853a261b90dfbc00b7105835ee7a80",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          497,
+          254,
+          1528,
+          1871
+        ],
+        "groundContactPivotLocal": [
+          1012,
+          1871
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-industrial-ranged.png",
+        "sha256": "503e3708394aa3dada1071063fe85c607d75f1656c3a1ddcce712f8c56f8253a",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1024,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          574,
+          2047,
+          2047
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-industrial-ranged_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-industrial-ranged_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-industrial-ranged_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              0,
+              1977,
+              2047,
+              2047
+            ],
+            "lowestY": 2047,
+            "centerX": 1023,
+            "areaPx": 143861,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "FAIL_PRONE_CAPTION_SHEET_NOT_ISOLATED"
+    },
+    {
+      "id": "troop-industrial-heavy",
+      "category": "army_actor",
+      "v3ContentMatte": "ROLE_FAIL_GUNNER_SUBSTITUTION_AVAILABLE",
+      "v4ContentStatus": "ROLE_FAIL_GUNNER_SUBSTITUTION_AVAILABLE",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-industrial-heavy.png",
+        "sha256": "5c9704b200143afa039c910f1f439a532db4790a6b23435d998e70e2fc060a7a",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-industrial-heavy.png",
+        "sha256": "31fb871c330a01eeea95c6d27f03f02dcbcc555534d36db573dc76fb71fa2008",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          526,
+          129,
+          1848,
+          1928
+        ],
+        "groundContactPivotLocal": [
+          1344,
+          1928
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-industrial-heavy.png",
+        "sha256": "476bda712a014816f4a00af2b48222abc173be6c305d96fa8d798e0a66ce63d9",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          529,
+          133,
+          1846,
+          1925
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-industrial-heavy_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-industrial-heavy_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-industrial-heavy_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              569,
+              1855,
+              696,
+              1880
+            ],
+            "lowestY": 1880,
+            "centerX": 632,
+            "areaPx": 2293,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 8,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1165,
+              1855,
+              1419,
+              1925
+            ],
+            "lowestY": 1925,
+            "centerX": 1311,
+            "areaPx": 10166,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "ROLE_FAIL_INDUSTRIAL_GUNNER_NOT_SELECTED_ROLE",
+      "selectedRole": "FAIL"
+    },
+    {
+      "id": "troop-modern-melee",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-modern-melee.png",
+        "sha256": "e825b2e3b0749fdf4e82891c288ecd02710186ee668e5a976c516cb2067e400f",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-modern-melee.png",
+        "sha256": "3ce951046021cbb37bf62b41327bc93007dc47cb0f5689c03def8dce468a11a4",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          593,
+          145,
+          1588,
+          1915
+        ],
+        "groundContactPivotLocal": [
+          1005,
+          1915
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-modern-melee.png",
+        "sha256": "f65c4ba47bebb4a3968d4818861f5bdbed159a2badf830c05a4348598e0d9c6f",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1269,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          594,
+          146,
+          1588,
+          2009
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-modern-melee_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-modern-melee_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-modern-melee_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              670,
+              1939,
+              739,
+              1979
+            ],
+            "lowestY": 1979,
+            "centerX": 695,
+            "areaPx": 1706,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 13,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              594,
+              1939,
+              1467,
+              2009
+            ],
+            "lowestY": 2009,
+            "centerX": 1055,
+            "areaPx": 14433,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-modern-ranged",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-modern-ranged.png",
+        "sha256": "e89d132617bbef3d6a53badd429169bcfccdc267e220f14d6a427f03509e9815",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-modern-ranged.png",
+        "sha256": "a5bf2692fb8d5f02bd580c19d48d6d5d8769e393755e935ff5c17e734f56d718",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          548,
+          136,
+          1498,
+          1798
+        ],
+        "groundContactPivotLocal": [
+          1399,
+          1798
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-modern-ranged.png",
+        "sha256": "bd96e591a5016a824960dcf4b0ddd1f6d8e1a844975ed5ee80b8d76381c33fee",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1269,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          45,
+          1941,
+          1531
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-modern-ranged_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-modern-ranged_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-modern-ranged_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1025,
+              1461,
+              1188,
+              1531
+            ],
+            "lowestY": 1531,
+            "centerX": 1130,
+            "areaPx": 4392,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1830,
+              1461,
+              1929,
+              1489
+            ],
+            "lowestY": 1489,
+            "centerX": 1885,
+            "areaPx": 1777,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 9,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-modern-heavy",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "PASS_CLEAN_SINGLE_ACTOR",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-modern-heavy.png",
+        "sha256": "62561760350d361e036ed4abe87463a20dc59f34e44f1ce2462b9ed511754423",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-modern-heavy.png",
+        "sha256": "f6eec1a0e739ca7aad4888039c00e66bcbf5ce3a4e25acbddf285d0bf04afd51",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          0,
+          74,
+          1977,
+          1658
+        ],
+        "groundContactPivotLocal": [
+          585,
+          1658
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-modern-heavy.png",
+        "sha256": "bc5379ca7e4e1b782d31c7309c347376e5dd80d121701cdea2bd519b42f975ad",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1310,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          76,
+          1976,
+          1432
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-modern-heavy_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-modern-heavy_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-modern-heavy_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              0,
+              1362,
+              1840,
+              1432
+            ],
+            "lowestY": 1432,
+            "centerX": 889,
+            "areaPx": 123206,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED"
+    },
+    {
+      "id": "troop-future-melee",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-future-melee.png",
+        "sha256": "bf1e5c692fec229c5479c683a3d1276052daee19f8ab74b2e5396071bfa72f65",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-future-melee.png",
+        "sha256": "f2c015af7fcb03cf96bdc280a7ae42f2fcc8b08ca12a7e57aa09b7d98cabccfd",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          0,
+          168,
+          2047,
+          1675
+        ],
+        "groundContactPivotLocal": [
+          652,
+          1675
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-future-melee.png",
+        "sha256": "a0b07563fbd2d6527c453204b04104b07731d1e061d238d4f9fe4c03ed181fb2",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1392,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          170,
+          1740,
+          2047
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-future-melee_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-future-melee_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-future-melee_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              218,
+              1977,
+              392,
+              2044
+            ],
+            "lowestY": 2044,
+            "centerX": 309,
+            "areaPx": 406,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 22,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              544,
+              1977,
+              630,
+              2029
+            ],
+            "lowestY": 2029,
+            "centerX": 585,
+            "areaPx": 143,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 17,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1010,
+              1977,
+              1167,
+              2047
+            ],
+            "lowestY": 2047,
+            "centerX": 1092,
+            "areaPx": 252,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-future-ranged",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-future-ranged.png",
+        "sha256": "bf2139aca7808a53e5578375db38f69f4b80cbf59a7dc02ee9011b5159efb502",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-future-ranged.png",
+        "sha256": "0c17ff98c46c8fd3445ddcaa4cf31b149bdf1a7730c7708475bb404396fe5888",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          622,
+          208,
+          1652,
+          1968
+        ],
+        "groundContactPivotLocal": [
+          1161,
+          1968
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-future-ranged.png",
+        "sha256": "ab90582a92cf3780ac111f132bf0b4149b24dc1df2d69855883e9bcfe224a3d8",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1269,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          68,
+          2047,
+          1838
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-future-ranged_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-future-ranged_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-future-ranged_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              571,
+              1768,
+              841,
+              1838
+            ],
+            "lowestY": 1838,
+            "centerX": 720,
+            "areaPx": 13171,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "troop-future-heavy",
+      "category": "army_actor",
+      "v3ContentMatte": "PASS_CLEAN_SINGLE_ACTOR",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/troop-future-heavy.png",
+        "sha256": "e2c0542ad948ea4e29c18dbb2ff0d9c633e7083c321c427bb0cb2cfc75d1211a",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/actors/v3/troop-future-heavy.png",
+        "sha256": "a28b46bc8a319d06b8c9af18ac9baf521e4e0fb179f8175421debd35fa83f59b",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-isolated-pose-despilled-clean-matte",
+        "tightBBox": [
+          77,
+          255,
+          2047,
+          1815
+        ],
+        "groundContactPivotLocal": [
+          1510,
+          1815
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "battle_army_actor",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/actors/v4/troop-future-heavy.png",
+        "sha256": "d1b1d9c8afaa9406f4335c20e8b4cb6d40a8bae54c8274de4d34312bb7ec8fd7",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1433,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          78,
+          258,
+          2047,
+          1918
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-future-heavy_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/troop-future-heavy_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/troop-future-heavy_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              923,
+              1848,
+              1033,
+              1856
+            ],
+            "lowestY": 1856,
+            "centerX": 981,
+            "areaPx": 487,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 4,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          },
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1341,
+              1848,
+              1984,
+              1918
+            ],
+            "lowestY": 1918,
+            "centerX": 1670,
+            "areaPx": 28930,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "hero-mount-horse",
+      "category": "hero_mount",
+      "v3ContentMatte": "PASS_CLEAN_MOUNT_DELIVERY",
+      "v4ContentStatus": "BOUNDED_REVIEW_SAMPLE_RESIDUAL_HAIRLINE",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/hero-mount-horse.png",
+        "sha256": "00b2cb4f9c9a2f2e4f8c003c9e6b52dafb2c419aa0011c230393fab7a433ec57",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/mounts/v3/hero-mount-horse.png",
+        "sha256": "b6c2c599dd43aec9679af9336c5ed9a53b6b28c6b5df3513f793a9f3b22cc780",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-clean-matte-landmarks",
+        "tightBBox": [
+          263,
+          223,
+          1899,
+          1750
+        ],
+        "groundContactPivotLocal": [
+          1514,
+          1750
+        ],
+        "saddleAttachmentPivotLocal": [
+          1000,
+          439
+        ],
+        "intendedUse": "adventure_hero_mount",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/mounts/v4/hero-mount-horse.png",
+        "sha256": "cf20f1a339268daf13b32e2acb5bfe7b232928e3e88a11fa0ccde42d6b980bf0",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1638,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          266,
+          225,
+          1898,
+          1861
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/hero-mount-horse_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/hero-mount-horse_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/hero-mount-horse_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              1159,
+              1791,
+              1304,
+              1861
+            ],
+            "lowestY": 1861,
+            "centerX": 1236,
+            "areaPx": 8208,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "BOUNDED_REVIEW_SAMPLE_RESIDUAL_HAIRLINE"
+    },
+    {
+      "id": "hero-mount-motor-transport",
+      "category": "hero_mount",
+      "v3ContentMatte": "PASS_CLEAN_MOUNT_DELIVERY",
+      "v4ContentStatus": "RESIDUAL_FLOOR_WHEELS_PRESENT",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/hero-mount-motor-transport.png",
+        "sha256": "c2320a5de41679072e4aeb6d0c2279cc3704656a2aacc410a00198a063d5dd08",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/mounts/v3/hero-mount-motor-transport.png",
+        "sha256": "f4756fe78cdddb16c85b49675ef8dce0756771b1f60bc8405f15776f8c1c94e8",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-clean-matte-landmarks",
+        "tightBBox": [
+          297,
+          198,
+          1988,
+          1650
+        ],
+        "groundContactPivotLocal": [
+          719,
+          1650
+        ],
+        "saddleAttachmentPivotLocal": [
+          980,
+          720
+        ],
+        "intendedUse": "adventure_hero_mount",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/mounts/v4/hero-mount-motor-transport.png",
+        "sha256": "edf07058bb4fa0a0c5ce3d8bb6b2758c7319a945ddbe7dd1a43158a024b52aaa",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1269,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          200,
+          1987,
+          1863
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/hero-mount-motor-transport_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/hero-mount-motor-transport_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/hero-mount-motor-transport_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              0,
+              1793,
+              845,
+              1863
+            ],
+            "lowestY": 1863,
+            "centerX": 354,
+            "areaPx": 45088,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "RESIDUAL_FLOOR_WHEELS_PRESENT"
+    },
+    {
+      "id": "hero-mount-future-transport",
+      "category": "hero_mount",
+      "v3ContentMatte": "PASS_CLEAN_MOUNT_DELIVERY",
+      "v4ContentStatus": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/hero-mount-future-transport.png",
+        "sha256": "a825d0858e883a24e5cf2a7d4376be43099baf0a8d76fe5fa74431e7be02467c",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/mounts/v3/hero-mount-future-transport.png",
+        "sha256": "9a7b846026a78c283222cdb6a9e90dad782b8c754d534892d0e62dbf3b129849",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipeVersion": "v3-clean-matte-landmarks",
+        "tightBBox": [
+          0,
+          267,
+          1962,
+          1650
+        ],
+        "groundContactPivotLocal": [
+          685,
+          1650
+        ],
+        "saddleAttachmentPivotLocal": [
+          1040,
+          680
+        ],
+        "intendedUse": "adventure_hero_mount",
+        "despillApplied": true
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/mounts/v4/hero-mount-future-transport.png",
+        "sha256": "b8f2d318918292fd6ce7cd6222ab590b0ccf0c7246106e1cc136be16fc030db8",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGBA",
+        "recipe": {
+          "floorSplitY": 1187,
+          "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+          "blur": false,
+          "paintedFootMeasured": false,
+          "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+        }
+      },
+      "v4Evidence": {
+        "tightBBox": [
+          0,
+          268,
+          1948,
+          1681
+        ],
+        "detailEvidence": "qa/image-v4-repair-20261004/actors/hero-mount-future-transport_detail_white_black_green.png",
+        "consumerEvidence": {
+          "64": "qa/image-v4-repair-20261004/actors/hero-mount-future-transport_consumer64.png",
+          "50": "qa/image-v4-repair-20261004/actors/hero-mount-future-transport_consumer50.png"
+        }
+      },
+      "v4Landmarks": {
+        "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+        "contacts": [
+          {
+            "kind": "lowest_retained_component",
+            "sourceFrame": [
+              90,
+              1611,
+              959,
+              1681
+            ],
+            "lowestY": 1681,
+            "centerX": 562,
+            "areaPx": 38909,
+            "isMeasuredAnatomicalFoot": false,
+            "uncertaintyPx": 23,
+            "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+          }
+        ],
+        "pivotIsNotAFoot": true
+      },
+      "v4Disposition": "AUTOMATIC_KEY_NOT_VISUALLY_ACCEPTED"
+    },
+    {
+      "id": "knight-mounted-master",
+      "category": "hero_mount",
+      "v3ContentMatte": "ROLE_FAIL_STONE_ERA_MEDIEVAL_SCENIC",
+      "v4ContentStatus": "ROLE_FAIL_STONE_ERA_MEDIEVAL_SCENIC",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/knight-mounted-master.png",
+        "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "path": "assets/derivatives/mounts/v3/knight-mounted-master.png",
+        "sha256": "37f878697a28f621d119f7a52b73e5dae327eb487295cc58fa6faf05828d1141",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "recipeVersion": "v1-scenic-source-preserved",
+        "tightBBox": [
+          0,
+          0,
+          2048,
+          2048
+        ],
+        "groundContactPivotLocal": [
+          1024,
+          2048
+        ],
+        "saddleAttachmentPivotLocal": null,
+        "intendedUse": "adventure_hero_mount",
+        "despillApplied": false
+      },
+      "v4Derivative": {
+        "path": "assets/derivatives/mounts/v4/knight-mounted-master.png",
+        "sha256": "37f878697a28f621d119f7a52b73e5dae327eb487295cc58fa6faf05828d1141",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "recipe": {
+          "method": "byte-preserving RGB copy of the native scenic painting",
+          "blur": false
+        }
+      },
+      "v4Evidence": null,
+      "v4Landmarks": null,
+      "v4Disposition": "ROLE_FAIL_MEDIEVAL_MOUNTED_KNIGHT_NOT_STONE_TRAVEL",
+      "selectedRole": "FAIL"
+    },
+    {
+      "id": "rig-source-parts-knight",
+      "category": "skeletal_rig",
+      "v3ContentMatte": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "v4ContentStatus": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rig-source-parts-knight.png",
+        "sha256": "6533e35255cb1def5f6d095d166ab5e89d1ad27c6d942c5d4f6a0d4ccbd9584c",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "manifestPath": "assets/derivatives/rigs/v3/parts_manifest_v3.json",
+        "partsDirectory": "assets/derivatives/rigs/v3/knight",
+        "partsCount": 12,
+        "recipeVersion": "v3-semantic-discrete-anatomy",
+        "intendedUse": "skeletal_animation_mesh"
+      }
+    },
+    {
+      "id": "rig-source-parts-ranger",
+      "category": "skeletal_rig",
+      "v3ContentMatte": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "v4ContentStatus": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rig-source-parts-ranger.png",
+        "sha256": "61ae71558e1ce5b744f957cc6c72ef30bb0d5efc3ab2a914f727bf79d66423f4",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "manifestPath": "assets/derivatives/rigs/v3/parts_manifest_v3.json",
+        "partsDirectory": "assets/derivatives/rigs/v3/ranger",
+        "partsCount": 13,
+        "recipeVersion": "v3-semantic-discrete-anatomy",
+        "intendedUse": "skeletal_animation_mesh"
+      }
+    },
+    {
+      "id": "rig-source-parts-warlock",
+      "category": "skeletal_rig",
+      "v3ContentMatte": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "v4ContentStatus": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rig-source-parts-warlock.png",
+        "sha256": "36f7fd57356b3499e5badc8b3ea126645ab0ed0463c9cf0c72c0e55339cda916",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "manifestPath": "assets/derivatives/rigs/v3/parts_manifest_v3.json",
+        "partsDirectory": "assets/derivatives/rigs/v3/warlock",
+        "partsCount": 6,
+        "recipeVersion": "v3-semantic-discrete-anatomy",
+        "intendedUse": "skeletal_animation_mesh"
+      }
+    },
+    {
+      "id": "rig-source-parts-mage",
+      "category": "skeletal_rig",
+      "v3ContentMatte": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "v4ContentStatus": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rig-source-parts-mage.png",
+        "sha256": "1220df812b5485dc408316cede4042952ca5ed169de62b8f2bfe7d0a1cfdc896",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "manifestPath": "assets/derivatives/rigs/v3/parts_manifest_v3.json",
+        "partsDirectory": "assets/derivatives/rigs/v3/mage",
+        "partsCount": 10,
+        "recipeVersion": "v3-semantic-discrete-anatomy",
+        "intendedUse": "skeletal_animation_mesh"
+      }
+    },
+    {
+      "id": "rig-source-parts-necromancer",
+      "category": "skeletal_rig",
+      "v3ContentMatte": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "v4ContentStatus": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rig-source-parts-necromancer.png",
+        "sha256": "5adc013f680913cb7d8bb7b3df02667a04af56caf1303d009d6b15059c28ed49",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "manifestPath": "assets/derivatives/rigs/v3/parts_manifest_v3.json",
+        "partsDirectory": "assets/derivatives/rigs/v3/necromancer",
+        "partsCount": 9,
+        "recipeVersion": "v3-semantic-discrete-anatomy",
+        "intendedUse": "skeletal_animation_mesh"
+      }
+    },
+    {
+      "id": "rig-source-parts-barbarian",
+      "category": "skeletal_rig",
+      "v3ContentMatte": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "v4ContentStatus": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rig-source-parts-barbarian.png",
+        "sha256": "d470afa75c99d6a8910d84c1a1778daeab277ae3409cf901770f2488606aacc0",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "manifestPath": "assets/derivatives/rigs/v3/parts_manifest_v3.json",
+        "partsDirectory": "assets/derivatives/rigs/v3/barbarian",
+        "partsCount": 11,
+        "recipeVersion": "v3-semantic-discrete-anatomy",
+        "intendedUse": "skeletal_animation_mesh"
+      }
+    },
+    {
+      "id": "rig-source-parts-paladin",
+      "category": "skeletal_rig",
+      "v3ContentMatte": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "v4ContentStatus": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rig-source-parts-paladin.png",
+        "sha256": "a6bafe602378104b1e6de8a77b900342590457a2019ed11d43fbf0a1899e7e55",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "manifestPath": "assets/derivatives/rigs/v3/parts_manifest_v3.json",
+        "partsDirectory": "assets/derivatives/rigs/v3/paladin",
+        "partsCount": 14,
+        "recipeVersion": "v3-semantic-discrete-anatomy",
+        "intendedUse": "skeletal_animation_mesh"
+      }
+    },
+    {
+      "id": "rig-source-parts-healer",
+      "category": "skeletal_rig",
+      "v3ContentMatte": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "v4ContentStatus": "PASS_SEMANTIC_ANATOMY_DISCRETE_PARTS",
+      "technical": "PASS_FILE_EXISTS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "source": {
+        "path": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+        "sha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "mode": "RGB",
+        "provenance": "gemini-3.1-flash-image (native 2K)"
+      },
+      "v3Derivative": {
+        "manifestPath": "assets/derivatives/rigs/v3/parts_manifest_v3.json",
+        "partsDirectory": "assets/derivatives/rigs/v3/healer",
+        "partsCount": 10,
+        "recipeVersion": "v3-semantic-discrete-anatomy",
+        "intendedUse": "skeletal_animation_mesh"
+      }
+    }
+  ],
+  "gates": {
+    "owner": "UNVERIFIED",
+    "runtime": "UNVERIFIED",
+    "newPaidScope": false
+  }
+}

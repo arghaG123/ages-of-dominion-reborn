@@ -1,0 +1,29 @@
+{
+  "candidateID": "kingdom-terrain-stone",
+  "age": "stone",
+  "geometryVersion": "v4-candidate-20261004",
+  "status": "READY_FOR_REVIEW_NOT_OWNER_ACCEPTED",
+  "ownerAcceptance": "UNVERIFIED",
+  "runtimeApproved": false,
+  "files": {
+    "base": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-stone/base_candidate_v4.png",
+    "baseSHA256": "ae7ec0f8528ab932c4180f15563bfa322e03eb6625de724c2fcf5b5858839dbb",
+    "mask": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-stone/mask_removal_v4.png",
+    "maskSHA256": "5d258413f21090aba2900914ff9a0be4bd04cf3ef0cebd47bec38bfeb532f851",
+    "guide": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-stone/guide_v4.png",
+    "guideSHA256": "2b5977ff08b26586d983524ae874f6107ea857848b36216109503fa986a43369",
+    "originalOutput4K": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-stone/output.png",
+    "originalSHA256": "a32475f5756d16f510887cd145495a7bfaefe043473d257428ecd3f8b9520ae4"
+  },
+  "repairedDefects": [
+    "Coherent bare-base ground synthesis removing baked plot borders and mutable clutter",
+    "Real silhouette and shadow removal mask generated",
+    "Extended bridge crossing proposal spanning river x=13..14 with far-bank approach [14, 7]",
+    "Hall roof envelope [402,40]..[750.16,372.86] separated from civic ground polygon"
+  ],
+  "residualDefects": [
+    "Independent visual and owner review pending",
+    "Runtime client sprite compositing not yet executed",
+    "Native 4K re-render with repaired inputs requires separate owner scheduling"
+  ]
+}

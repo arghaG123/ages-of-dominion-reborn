@@ -1,0 +1,258 @@
+{
+  "version": "anatomy-binding-v1",
+  "classId": "ranger",
+  "status": "PARTIAL_PAINTED_REVIEW",
+  "ownerAcceptance": "UNVERIFIED",
+  "displayScale": 0.2,
+  "socketOverlapPx": 46,
+  "parts": {
+    "torso": {
+      "id": "torso",
+      "role": "torso",
+      "file": "assets/derivatives/rigs/v3/ranger/torso_tunic.png",
+      "sha256": "2f58b4d41b903ccbf065b99268a4eaa3b051c46505eadf6dbd982e3c94be09eb",
+      "width": 753,
+      "height": 863,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "scale": 1,
+      "publishedName": "torso_tunic"
+    },
+    "head": {
+      "id": "head",
+      "role": "head",
+      "file": "assets/derivatives/rigs/v3/ranger/head_cowl.png",
+      "sha256": "835d5e2e2683e99efe3e49c64433cf9116e38dcdb1cec02b3ba9c2d7032d76c2",
+      "width": 285,
+      "height": 404,
+      "pivot": [
+        0.5,
+        0.98
+      ],
+      "scale": 0.72,
+      "publishedName": "head_cowl"
+    },
+    "quiver": {
+      "id": "quiver",
+      "role": "quiver",
+      "file": "assets/derivatives/rigs/v3/ranger/arm_upper_left.png",
+      "sha256": "be286c6b69b57c7cdf8da3fcd5e8637612eea3332aee111f60df334dc793d755",
+      "width": 258,
+      "height": 537,
+      "pivot": [
+        0.45,
+        0.08
+      ],
+      "scale": 0.48,
+      "publishedName": "arm_upper_left"
+    },
+    "bow": {
+      "id": "bow",
+      "role": "bow",
+      "file": "assets/derivatives/rigs/v3/ranger/weapon_longbow.png",
+      "sha256": "9e9eeeea9cb745815b31594f1778979de3249da9df693c18fee35466b0bbe36f",
+      "width": 185,
+      "height": 946,
+      "pivot": [
+        0.62,
+        0.46
+      ],
+      "scale": 0.4,
+      "publishedName": "weapon_longbow"
+    },
+    "thighL": {
+      "id": "thighL",
+      "role": "thigh",
+      "file": "assets/derivatives/rigs/v3/ranger/thigh_left.png",
+      "sha256": "313bf95cb6462d73fca90c0afe37dbfa91a608bd2595aaefb14d9e3346dca485",
+      "width": 169,
+      "height": 312,
+      "pivot": [
+        0.5,
+        0.06
+      ],
+      "scale": 0.82,
+      "publishedName": "thigh_left"
+    },
+    "shinL": {
+      "id": "shinL",
+      "role": "shin",
+      "file": "assets/derivatives/rigs/v3/ranger/shin_left.png",
+      "sha256": "32617e2865eee065471d7c608ae9d93acd6901d4498cfd124d1a2415a5249cfc",
+      "width": 135,
+      "height": 393,
+      "pivot": [
+        0.5,
+        0.05
+      ],
+      "scale": 0.72,
+      "publishedName": "shin_left"
+    },
+    "bootL": {
+      "id": "bootL",
+      "role": "boot",
+      "file": "assets/derivatives/rigs/v3/ranger/boot_foot_left.png",
+      "sha256": "0156f673d9bff3d805dc0c9e47c4efabac952585c4156281c6da35470f20a345",
+      "width": 184,
+      "height": 336,
+      "pivot": [
+        0.5,
+        0.04
+      ],
+      "scale": 0.78,
+      "publishedName": "boot_foot_left"
+    },
+    "thighR": {
+      "id": "thighR",
+      "role": "thigh",
+      "file": "assets/derivatives/rigs/v3/ranger/thigh_right.png",
+      "sha256": "1bc67bb5584af64ba987a2125eb0be0339adda1c3880875ed9e6c745500bab27",
+      "width": 169,
+      "height": 312,
+      "pivot": [
+        0.5,
+        0.06
+      ],
+      "scale": 0.82,
+      "publishedName": "thigh_right"
+    },
+    "shinR": {
+      "id": "shinR",
+      "role": "shin",
+      "file": "assets/derivatives/rigs/v3/ranger/shin_right.png",
+      "sha256": "01f3ade30de6ae324e782b093a611ab0598f8fdbad83f80a9b9fe8149c596235",
+      "width": 135,
+      "height": 393,
+      "pivot": [
+        0.5,
+        0.05
+      ],
+      "scale": 0.72,
+      "publishedName": "shin_right"
+    },
+    "bootR": {
+      "id": "bootR",
+      "role": "boot",
+      "file": "assets/derivatives/rigs/v3/ranger/boot_foot_right.png",
+      "sha256": "6433e457ea1d97e127897291604dd5abd0099ddb391414d909298f2c9725416a",
+      "width": 186,
+      "height": 336,
+      "pivot": [
+        0.5,
+        0.04
+      ],
+      "scale": 0.78,
+      "publishedName": "boot_foot_right"
+    }
+  },
+  "head": {
+    "part": "head",
+    "attach": [
+      0.5,
+      0.1
+    ]
+  },
+  "accessories": [
+    {
+      "part": "quiver",
+      "attach": [
+        0.1,
+        0.62
+      ],
+      "behind": true,
+      "renamedFrom": "arm_upper_left"
+    },
+    {
+      "part": "bow",
+      "attach": [
+        0.78,
+        0.38
+      ],
+      "angleKey": "bow",
+      "missing": "hand",
+      "renamedFrom": "weapon_longbow"
+    }
+  ],
+  "hips": {
+    "left": [
+      -0.18,
+      0
+    ],
+    "right": [
+      0.14,
+      0
+    ]
+  },
+  "legs": {
+    "left": [
+      "thighL",
+      "shinL",
+      "bootL"
+    ],
+    "right": [
+      "thighR",
+      "shinR",
+      "bootR"
+    ]
+  },
+  "missing": [
+    "upperArmLeft",
+    "upperArmRight",
+    "handLeft",
+    "handRight"
+  ],
+  "withheld": [
+    {
+      "file": "assets/derivatives/rigs/v3/ranger/forearm_hand_left.png",
+      "publishedName": "forearm_hand_left",
+      "reviewedAs": "greave",
+      "reason": "Painted knee and shin plate, not a hand."
+    },
+    {
+      "file": "assets/derivatives/rigs/v3/ranger/forearm_hand_right.png",
+      "publishedName": "forearm_hand_right",
+      "reviewedAs": "withheld-until-separate-pixel-pass",
+      "reason": "Same canvas family as the left file, which is a greave. Not bound as a hand."
+    },
+    {
+      "file": "assets/derivatives/rigs/v3/ranger/quiver_cloak.png",
+      "publishedName": "quiver_cloak",
+      "reviewedAs": "duplicate-head",
+      "reason": "Second hooded head, not a cloak or quiver."
+    },
+    {
+      "file": "assets/derivatives/mounts/v3/hero-mount-horse.png",
+      "publishedName": "hero-mount-horse",
+      "reviewedAs": "floor-band",
+      "reason": "Lowest opaque rows stay a flat band. Not a world mount."
+    }
+  ],
+  "mount": {
+    "status": "WITHHELD",
+    "file": "assets/derivatives/mounts/v3/hero-mount-horse.png",
+    "reason": "v3 lowest opaque rows form a flat band. That file is not a world mount. The v4 image is a separate single-pose review.",
+    "reviewFile": "assets/derivatives/mounts/v4/hero-mount-horse.png"
+  },
+  "testedAngles": {
+    "head": 24,
+    "thigh": 48,
+    "shin": 36,
+    "bow": 70
+  },
+  "overlap": {
+    "head-torso-0": 12549,
+    "head-torso-24": 13909,
+    "head-torso-minus24": 12753,
+    "shin-thigh-0": 3560,
+    "shin-thigh-48": 3476,
+    "shin-thigh-minus48": 3130,
+    "boot-shin-0": 2841,
+    "boot-shin-36": 2842,
+    "bow-torso-0": 3370,
+    "bow-torso-70": 4568
+  },
+  "overlapPass": true,
+  "overlapFailures": []
+}

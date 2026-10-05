@@ -1,0 +1,108 @@
+{
+  "at": "2026-10-04T03:57:48.661Z",
+  "migration": [
+    {
+      "id": "chapter-null",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid story",
+      "status": "PASS"
+    },
+    {
+      "id": "choices-null",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid story",
+      "status": "PASS"
+    },
+    {
+      "id": "futureSeen-null",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid story",
+      "status": "PASS"
+    },
+    {
+      "id": "milestones-null",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid milestone",
+      "status": "PASS"
+    },
+    {
+      "id": "quests-null",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid quests",
+      "status": "PASS"
+    },
+    {
+      "id": "q1-null",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid quests",
+      "status": "PASS"
+    },
+    {
+      "id": "flags-null",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Cannot convert undefined or null to object",
+      "status": "PASS"
+    },
+    {
+      "id": "chapter-string",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid story",
+      "status": "PASS"
+    },
+    {
+      "id": "quest-claimed-string",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid quests",
+      "status": "PASS"
+    },
+    {
+      "id": "chapter-choice-mismatch",
+      "directAccepted": false,
+      "decodeAccepted": false,
+      "error": "Invalid story",
+      "status": "PASS"
+    }
+  ],
+  "replacement": [
+    {
+      "mode": "corrupt-live-write",
+      "error": "Live save verification failed",
+      "returned": false,
+      "liveBytesUnchanged": false,
+      "backupBytesUnchanged": false,
+      "loadedStatus": "DAMAGED",
+      "recoveryBackupRival": "Varek Iron-Eye",
+      "scope": "Failure injection, not an observed ordinary browser-storage failure",
+      "status": "PASS"
+    },
+    {
+      "mode": "staged-cleanup-throws",
+      "error": null,
+      "returned": true,
+      "liveBytesUnchanged": false,
+      "backupBytesUnchanged": false,
+      "loadedStatus": "VALID",
+      "loadedRival": null,
+      "loadedClass": "mage",
+      "scope": "Failure injection, not an observed ordinary browser-storage failure",
+      "status": "PASS"
+    }
+  ],
+  "story": {
+    "chapter": 7,
+    "age": 6,
+    "earlyRejected": true,
+    "futureGrantNone": true,
+    "duplicateRejected": true
+  },
+  "scope": "Synthetic memory fixtures; no game changes, natural eight-age completion, native/device or owner acceptance."
+}

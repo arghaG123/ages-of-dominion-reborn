@@ -1,0 +1,51 @@
+{
+  "version": "v6-healer-semantic-20261004",
+  "historicalFilesChanged": false,
+  "note": "Filenames and v4 ledger roles are not anatomy. Green quadrant connectivity was background fill.",
+  "corrections": [
+    {
+      "historicalPath": "assets/derivatives/rigs/v4/healer/arm_upper_left.png",
+      "historicalSha256": "78d9868ae1d2f86818da6ab909e8a8e522fa461e155b960c8eb7e9312ee499d6",
+      "historicalSourceBBox": [1601, 429, 2007, 723],
+      "historicalLedgerRole": "ARM_UPPER",
+      "correctedSemantic": "WAIST_BELT_ARMOR",
+      "reason": "Source box sits in the waist-armor band. The straight arms are below y=1060."
+    },
+    {
+      "historicalPath": "assets/derivatives/rigs/v4/healer/boot_leg_left.png",
+      "historicalSha256": "e1bb094f6ca0d72d3656dd868eb02607f79a091848f027385d1cb6080c1d088a",
+      "historicalSourceBBox": [1325, 1082, 1514, 1522],
+      "historicalLedgerRole": "FOOT",
+      "correctedSemantic": "UPPER_LEG_ARMOR",
+      "reason": "Source box is the upper-leg row, not the boot row near y=1840."
+    },
+    {
+      "historicalPath": "assets/derivatives/rigs/v4/healer/boot_leg_right.png",
+      "historicalSha256": "bb044285df1a28fb9696f036801bffc589ebd401c24514f3778dc52f30d7b9fd",
+      "historicalSourceBBox": [1108, 1082, 1294, 1523],
+      "historicalLedgerRole": "FOOT",
+      "correctedSemantic": "UPPER_LEG_ARMOR",
+      "reason": "Same upper-leg band as boot_leg_left. It is the sibling thigh piece, not a foot."
+    }
+  ],
+  "newUsefulRegions": [
+    "assets/derivatives/rigs/v6/healer/arm_long_straight_a.png",
+    "assets/derivatives/rigs/v6/healer/arm_long_straight_b.png",
+    "assets/derivatives/rigs/v6/healer/arm_sleeve_forearm_hand.png",
+    "assets/derivatives/rigs/v6/healer/staff_arms_group.png",
+    "assets/derivatives/rigs/v6/healer/torso.png",
+    "assets/derivatives/rigs/v6/healer/skirt.png",
+    "assets/derivatives/rigs/v6/healer/leg_upper.png",
+    "assets/derivatives/rigs/v6/healer/greave.png",
+    "assets/derivatives/rigs/v6/healer/boot.png"
+  ],
+  "side": "UNKNOWN",
+  "joints": "NOT_TESTED",
+  "combined": ["staff_arms_group", "arm_sleeve_forearm_hand", "arm_long_straight_a", "arm_long_straight_b"],
+  "acceptance": {
+    "nativeMatte": "PARTIAL_LOCAL_ROI",
+    "rig": "INCOMPLETE",
+    "runtime": "UNVERIFIED",
+    "owner": "UNVERIFIED"
+  }
+}

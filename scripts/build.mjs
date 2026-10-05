@@ -10,6 +10,10 @@ await fs.cp(path.join(root, 'index.html'), path.join(dist, 'index.html'));
 await fs.cp(path.join(root, 'src'), path.join(dist, 'src'), { recursive: true });
 const selection = JSON.parse(await fs.readFile(path.join(root, 'src/data/reviewed-source-selection.json'), 'utf8'));
 const scene = JSON.parse(await fs.readFile(path.join(root, 'src/data/stone-scene.json'), 'utf8'));
+const actorAtlas = JSON.parse(await fs.readFile(path.join(root, 'src/data/actor-atlas.json'), 'utf8'));
+const plateCatalog = JSON.parse(await fs.readFile(path.join(root, 'src/data/plate-catalog.json'), 'utf8'));
+const ageBuildings = JSON.parse(await fs.readFile(path.join(root, 'src/data/age-buildings.json'), 'utf8'));
+const portraitCards = JSON.parse(await fs.readFile(path.join(root, 'src/data/portrait-cards.json'), 'utf8'));
 const files = new Set();
 const visit = (value) => {
   if (!value || typeof value !== 'object') return;
@@ -20,6 +24,10 @@ const visit = (value) => {
 };
 visit(selection);
 visit(scene);
+visit(actorAtlas);
+visit(plateCatalog);
+visit(ageBuildings);
+visit(portraitCards);
 const closure = [];
 for (const relative of files) {
   const source = path.join(root, relative);

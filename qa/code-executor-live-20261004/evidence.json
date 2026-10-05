@@ -1,0 +1,43 @@
+{
+  "when": "2026-10-04",
+  "tests": "node --test tests/*.test.mjs",
+  "testsResult": "78 PASS, 0 FAIL",
+  "browser": {
+    "url": "http://127.0.0.1:4173/",
+    "heroWalk": "data-arm changed from 22 to about 20.9 across 400ms on the live Mage walk clip",
+    "skills": 9,
+    "spells": 8,
+    "forgeSlots": ["Helmet", "Weapon", "Shield", "Chest", "Greaves", "Ring"],
+    "forgeWithoutArmory": "Armory required",
+    "travel": "Preview east cost 1, confirm moved 8,8 moves 5 to 9,8 moves 4 once; one hoof lifted while moving and standing hooves stayed planted",
+    "challengeCopy": true,
+    "magentaFilter": "removed after a trial key washed out grey cloth",
+    "deviceFps": "not measured"
+  },
+  "dist": { "assetsReportedByBuild": 224, "filesMatchedToApk": 250, "mismatches": 0 },
+  "priorRelease": {
+    "path": "qa/code-executor-live-20261004/prior-app-release-unsigned.apk",
+    "sha256": "27d2791ac2778510706b0d9488b5621924183ce04ceedc2899e939787fda3bf4",
+    "bytes": 293226155
+  },
+  "currentRelease": {
+    "path": "android/app/build/outputs/apk/release/app-release-unsigned.apk",
+    "sha256": "789c85d777dfe6ff93aa46f1ff1739cd3411e8fd123c9ade5c919e147c46e465",
+    "bytes": 293232886,
+    "package": "com.agesofdominion.game.reborn.preview",
+    "minSdk": 24,
+    "targetSdk": 36,
+    "compileSdk": 36,
+    "permissions": "aapt dump permissions printed none",
+    "dex": ["appassets.androidplatform.net", "rebornBackground"],
+    "internetInDexOrManifestBytes": false
+  },
+  "debugApk": {
+    "path": "android/app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "6eec617b3513f3b0bd687cd5acf21e78ed77526ba1ce36946420e666ad4f3e0a",
+    "bytes": 38971323,
+    "note": "not rebuilt; stale relative to this release"
+  },
+  "gitHead": "cff552880ae15c892b736ac7847f6753787ca58f",
+  "commit": false
+}

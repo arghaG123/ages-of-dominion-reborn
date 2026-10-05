@@ -1,0 +1,152 @@
+
+FILE docs\plan\DATA-ADOPTION-LEDGER.json
+      "decision": "Full spec equations; producer aggregate per instance, unique facilities",
+      "verification": "fresh equation boundary fixtures before feature completion"
+      "verification": "fresh equation boundary fixtures before feature completion"
+      "verification": "fresh equation boundary fixtures before feature completion"
+      "verification": "fresh equation boundary fixtures before feature completion"
+      "decision": "gear+artifact bonuses; leadershipmorale/luck/logistics per level; mana10*K; daily moves5+bonusMove",
+      "verification": "fresh equation boundary fixtures before feature completion"
+      "verification": "fresh equation boundary fixtures before feature completion"
+      "status": "DOCUMENTED_FORMULA_IMPLEMENTATION_PENDING",
+      "decision": "Source read today; independently transcribe explicit equations before implementing combat",
+      "verification": "fresh equation boundary fixtures before feature completion",
+      "requiredEvidence": "Explicit full unitDef/towerDef derived equations with age/rank/clamp fixtures before combat implementation",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_EQUATION_TRANSCRIPTION",
+            "decision": "Source read today; independently transcribe explicit equations before implementing combat",
+            "verification": "fresh equation boundary fixtures before feature completion",
+            "requiredEvidence": "Explicit full unitDef/towerDef derived equations with age/rank/clamp fixtures before combat implementation"
+      "decision": "arrow10+10P,cure10+10P,bolt10+25P,fireball10+20P,resurrect50P; target/buffrules pending",
+      "verification": "fresh equation boundary fixtures before feature completion"
+      "status": "DOCUMENTED_DAMAGE_FORMULA_ENGINE_PENDING",
+      "requiredEvidence": "seeded range/weather/offense/armorer/morale/luck,retaliation and HP/casualty fixtures",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "requiredEvidence": "seeded range/weather/offense/armorer/morale/luck,retaliation and HP/casualty fixtures",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+      "status": "DOCUMENTED_PARTIAL_TURNS_MORALE_DECISION_PENDING",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+      "status": "DOCUMENTED_WAVE_ROLE_FORMULAS_ENGINE_CONTRACT_PENDING",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+      "status": "DOCUMENTED_FORMULA_IMPLEMENTATION_PENDING",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+      "status": "DOCUMENTED_CORE_DAY_FORMULA_RESPAWN_INTEGRATION_PENDING",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+      "status": "DOCUMENTED_FORMULA_IMPLEMENTATION_PENDING",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+      "status": "DOCUMENTED_PROBABILITIES_SIX_SLOT_POOL_PENDING",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+      "status": "DOCUMENTED_FORMULA_IMPLEMENTATION_PENDING",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+      "status": "DOCUMENTED_PARTIAL_SOURCE_SETTLEMENT_CONTRACT_PENDING",
+          "reason": "Independent planner source-equation correction",
+            "status": "BLOCKED_SIMULATION_PENDING_SOURCE_SPEC",
+            "reason": "Not implemented; verify precise current caller/path if historical reference is stale, independently author equation and tests"
+    "moraleDecision": "PENDING_OWNER_CHOICE_EXTRA_TURN_VS_COSMETIC"
+
+FILE docs\plan\IMPLEMENTATION-CONTRACT.json
+  "slots": [
+
+FILE docs\plan\MASTER-PLAN.md
+# Ages of Dominion — fresh-build production blueprint
+The owner's latest numbered instructions require preview feedback on each section before another AI begins game coding. Read root START-HERE/CURRENT-STATUS/DECISIONS and `INSTALLED-ENVIRONMENT.md` first. Existing settings/tools are recorded; do not ask the owner to repeat them. The new folder and independent local Git now exist for documentation only. All implementation stages below remain future work after the feedback gate. Root DECISIONS supersedes earlier generation suggestions: exactly 30 useful images per batch, one active batch across sessions/providers, no fallback or regeneration while active. Cloud/account/Play Store/store publishing and release branding are excluded from the offline local-test APK scope.
+## 1. The decision and the owner's objective
+This session stopped implementation when the owner clarified that another AI should build from the plan. The unused starter draft was preserved at `C:/dev/ages-of-dominion-reborn-unused-draft-2026-10-02`. It is **not adopted implementation**, has not completed its UI, installation or verification, and must not be used as the starting source. The fresh project folder now contains documentation, reference media and design previews only. No implementation stage below is complete.
+### Authority and reading order
+When two package documents conflict, resolve the conflict before implementation and update both. Do not silently choose a convenient interpretation. Mechanics and counts below are the fresh product baseline; `VISUAL-DESIGN.md` supplies composition specifics and `ART-REUSE.md` supplies per-file reuse status.
+## 2. Scope and current status
+| Defence | Winding lane, towers, army/hero deployment, roles, waves, upgrades, abilities, settlement | Planned |
+## 3. Product constants and complete content inventory
+### Ages and the meaning of progression
+| Recruitable unit roles | Three: melee, ranged, heavy; each has eight age names |
+| Siege attacker roles | Five: brute, runner, archer/skirmisher, sapper, shaman/support role with age-correct presentation |
+| Hero equipment | Six functional slots: weapon, armor, helm, boots, offhand, accessory; all support item production/loot/equip/compare |
+### Unit and tower naming baseline
+Use `GAME-DATA-REFERENCE.json` as the frozen numeric/content baseline, with source hashes and origins, not imported executable modules. It records the existing twenty tables and extension values; account for all eight ages because old `core/data` contains seven and `core/dataext` supplies Future. Author new data modules and rules independently. Before simulation work, produce an adoption ledger covering every stat, cost, modifier, unlock, formula and starting amount. Unless a deliberate change is listed below or in that ledger, preserve the reference value. Where a formula is not represented in the frozen tables, read the cited old rule as a specification, document the equation and independently implement it; do not substitute guessed constants. New comparison tests verify intentionally adopted values against the frozen export without modifying the oracle. The old parity script does not certify fresh data.
+### Adoption decisions and explicit extensions
+| Recruitment/capacity | A recruitment purchase supplies five units. Army roster capacity is `2 + Barracks level`; tower roster capacity is `2 + Workshop level`. Preserve reinforce/add-stack behavior; validate the selected destination before spending. | Old economy/recruitment rules; fresh boundary tests for a full roster and cancelled choice. |
+| Siege ownership/currency | Each owned tower, army stack and hero may deploy once. Deployment itself is free; new persistent tower purchase spends the shared campaign's age-scaled table cost and observes Workshop roster capacity. Retrofit spends wood `120 × (oldTier + 1)`, stone `100 × (oldTier + 1)`, gold `80 × (oldTier + 1)` and sets tier to campaign age. There is no adopted temporary purse or guessed kill/wave income. | Old `src/siege/index.js:224` roster, `:355` placement; `client/shell/armyActions.js:86` purchase and `:95` retrofit. Fresh rules additionally reject no-op/invalid retrofit before spending. |
+| Equipment | Preserve the four existing gear lines' formulas. Add offhand and accessory as real craft/loot lines, with age-correct Shield/Ring display and class-compatible alternatives. These two extensions require explicit stats, costs and balancing before Stage D is complete. | Six-slot mapping below; never use unconfigured artifact text as the implementation. |
+| Full-gear quest | Change the legacy full-set threshold4 to six occupied compatible slots. | Frozen quest `q5`; test all six slots, no duplicate-equipped item ID. |
+## 4. Architecture for a genuinely fresh implementation
+### Intended new source responsibilities
+| `src/core/save/` | Envelope, checksum, validation, staged/verified writes, backup/import, autosave queue | State and injected storage interface |
+### Fresh save contract
+- Validate every persisted field: finite/ranged numeric values, known entity/role/terrain IDs, coordinate bounds, unique units, legal initiative IDs, phase/result enums, equipment compatibility, construction levels/timestamps and completed reward IDs. Checksums catch accidental corruption; they do not replace schema validation.
+- Write a staged envelope, read it back and validate it, preserve a valid previous save as backup, write the live slot and verify it. Serialize autosave writes so a slow earlier write cannot overwrite a newer snapshot.
+## 5. Screen and interaction specifications
+### 5.1 Title and hero choice
+### 5.2 Kingdom: the principal visual gate
+Required state-aware layers, back to front: distant sky/mountains; terrain/river/outcrop; roads/plaza/fields; stage-dependent decorative settlement; rear walls; active plots/buildings/citadel/scaffolds; correctly depth-sorted people/props; front walls/gates; particles/ambient; restrained weather; live HUD. Every layer shares one projection, scale and light direction. Do not bake the functional citadel, upgradeable walls or active buildings into a permanent background.
+### 5.3 Adventure: decide on a real travelling landscape
+Use an articulated horse+rider gait on actual world paths, with appropriate facing, grounded feet and distance-scaled travel speed. Translating/bobbing one static hero JPEG is a placeholder and cannot close the riding requirement. Persist the committed destination/path/cost and pending interaction before animation. Reload/surface loss finishes or resumes that same commitment consistently, without rerolling encounters, double charging movement or granting loot twice.
+### 5.4 Tactical warfare: Heroes VII-inspired, separate battlefield
+Eight hero spells use the actual mana cost/Power scaling and legal target rules. Mana, morale(−3..+3), luck, temporary buffs, terrain/weather and initiative effects must be observable, not decorative bars. Land units remain on ground; scenery silhouettes never become accidental cells in sky/treetops. Weather overlays use restrained alpha/source-over and leave actors/previews readable. Ground/backdrop art maintains aspect and a continuous horizon; no tall stretching of a short strip.
+### 5.5 Tower/kingdom defence: winding lane and actual defenders
+Top-center HUD: wave/current total or Endless, gate HP/lives, remaining enemies, pause, speed 1×/2×. Bottom cards and hero abilities must not cover the lane or gate. A wave preview shows brute/runner/archer/sapper/shaman composition, special threats and next-wave action. Distinguishable silhouettes, cloth accents and gait speeds reinforce each role. Sappers visibly mark/approach targeted towers; enemies cannot fire before entering the active visible battlefield. Range scales are shared so shooters can actually counter each other. Melee defenders intercept attackers rather than standing idle while shot; flying/mounted/engine roles need movement appropriate to their type when included in content.
+All eight neutral creature types must be recruitable through eligible dwellings, represented in Army/Codex, and usable by combat under their actual traits. Preserve four flyer identities; flight paths may cross ground obstacles where legal but must end on legal unoccupied positions, respect attack/range/target rules and have visible takeoff/travel/landing or airborne treatment. Ground-only attacks cannot damage an unreachable airborne target by a hidden shortcut. Flying actors cannot ignore every tower or leave the active battlefield while attacking. These existing roles must be tested before full-product closeout; new exotic bosses do not substitute for them.
+### 5.6 Supporting surfaces
+| Army | Large current-age unit art; three role families, numeric ATK/DEF/HP/DMG/SPD/range, quantity, real cost, capacity and rank; recruit, reinforce, split/merge only where rules support them. No fake Cavalry fourth tab. Food upkeep is shown only after a defined implemented upkeep rule, not an invented value. |
+| Hero | Dominant class/era portrait, six anchored slots, A/D/P/K, mana, level/XP, morale/luck, real Upgrade and Skill Tree actions. Equipment swaps update displayed and combat stats. Slot placement follows the mock: upper/middle/lower left = helm/weapon/offhand; upper/middle/lower right = armor/boots/accessory. |
+| Inventory | Equipped slots plus carried items, four quality frames and artifact distinction; all six slots support production/loot/equip/unequip and compare numeric delta to equipped item with validated compatibility. The old four craftable slots are a historical limitation, not the fresh game's final scope. Add explicitly described age-correct offhand/accessory recipes and art alongside the original four gear lines; compatible special artifacts use the two secondary slots. Empty state and full capacity are designed. |
+| Settings | Separate Music and SFX gain/mute, reduced motion, haptics availability under zero-permission policy, graphics/performance options only if real, local saves/backups, How to Play, credits, offline privacy statement. No Cloud Save. |
+### 5.7 Full-product War options and consequence boundaries
+These existing product options remain required fresh implementation scope: campaign Siege/kingdom Defence, Tactical Duel, Endless Siege, no-consequence Skirmish and local shared-seed Challenge. Implement them in the new War entry, with real selection/setup/results and truthful availability. Campaign Siege and Duel use the same campaign entities and apply their documented casualties/rewards once. Endless tracks actual survived waves and persistent best/objective progress under its adopted settlement rules. Skirmish explicitly uses an isolated practice snapshot: no campaign casualties, treasury changes or progression rewards. Local Challenge exchanges a validated seed/scenario file or code and reports reproducible results without servers, accounts or runtime networking; it is distinct from the later full PvP expansion. Every mode declares its consequence contract before Start, saves active sessions appropriately, and has independent replay/reload/settlement tests. Stage G/H implements the common engines; Stage I completes all five War entry options before production closeout. First-slice proof is not permission to omit them.
+## 6. Visual and animation production rules
+### Six-slot mapping, compatibility and item creation
+Static world layers may contain immutable geography and state-specific decoration. Active plots, growing citadel, wall/gate upgrades, workers and combatants remain separate. Density may use baked decorative layers for specific development stages to control draw cost, but the day-one layer must not bake a completed metropolis. Compose all locations from one projection/world coordinate system; scaling/stretching independent images until they roughly fit is insufficient.
+## 7. Ordered implementation stages for the next AI
+| Stage / intended files | Exact work | Dependency / completion evidence |
+| Review — root/design-preview and feedback record | Show every section preview beside supplied references, identify reused/reference/provisional layers and proposed control behavior, collect owner feedback and revise. Include all ages and complete supporting surfaces. | Owner section feedback and explicit instruction before coding; resemblance remains pending until real review. No game source, dependencies, APK or paid jobs in this stage. |
+| D — `core/commands`, kingdom/army/hero/forge | Implement all ten building types over the approved per-instance plot map, aggregate production, unique-facility capacity, three recruits, class stats, six gear slots, basic skills/spells/forge/market, age gate and persistent state. | Costs displayed equal deducted costs; duplicate taps safe; all marked pads work; per-instance adoption/balance rules explicit; equipment/unlocks/capacity verified; no dead controls. |
+| E — `core/rules/navigation`, adventure scene | Author one coherent walkable valley, costs/fog/sites, deterministic routes, preview/commit input, articulated mount, encounter/reward transactions and interruption recovery. | Journey at each viewport: route and bridge align, drag spends 0, legal movement spends exact cost, repeat site gives 0, reload preserves location/pending encounter. |
+| K — native/quality | Apply reviewed installation config; build/sync and debug APK in isolated preview ID; merged permission audit; physical phone/gesture/inset/performance and recovery checks. | Build is separate from installed device acceptance; tests/logs/manifest/APK hash and actual device evidence retained; old installed game preserved. |
+| L — offline local-build closeout | Resolve remaining recorded gaps, balance longevity/return loop, optimize measured memory/size, final documentation and local-test APK package. | No required feature merely labeled future; all requirements traceable to evidence or explicitly pending owner decision. Cloud/account/Play Store/publishing/release branding are outside scope. |
+Stages are gates, not invented schedules. Stone prototype functionality and Medieval calibration are different fixtures with different purposes. Do not fan out to all ages or regenerate the entire library before Stage C passes. No trained style model, owner approval, rig quality or full completion may be claimed without actual artifacts and recorded review.
+## 8. Required verification matrix
+### Executable acceptance scenarios
+| Given | When | Then / retained evidence |
+## 9. Expansion decisions without discarding user ideas
+## 10. Execution prompt for the next AI
+## New reference direction / new-chat handoff — 2 October 2026
+## Latest scoped revision — 3 October 2026
+Still missing: clean transparent resource objects, larger fortified/biome-rich Adventure region with stone bridge, matching aerial site/actor camera, class-correct mounted Gawain and directional gait, high-detail Tactical terrain registered to legal7x10 cells. Some provisional cells/poses overlap painted obstacles. Current previews improve density but still fall short of the new target. Every section remains pending/revision-needed. Old game/raw art preserved read-only; no game source, installs/builds/APKs, image jobs or billing changes. Single-agent work only.
+## Latest owner correction — 3 October 2026
+Actual corrections:18px symbols in28px corner rail; no resource HUD in Tactical/Defense; auto portrait/landscape resize and edge-to-edge static review via `index.html?stage=1#adventure` / `#tactical`; smaller contextual controls; sharper unchanged raw Tactical ruins source. Seven scoped captures pass technical checks. These do not establish game-like finish: Adventure source/detail and both modes' camera, grounding, scale, facing and authored composition remain visual failures. Prior resource32px/rail72px and portrait-restriction claims are superseded. Owner acceptance/coding gate remains unresolved. No image job, game source, dependencies or APK work; single-agent only; old game/raw art preserved.
+
+FILE docs\plan\SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md
+# Source-equation and delivery addendum — 3 October 2026
+This is a planning correction to FULL-IMPLEMENTATION-SPEC and DATA-ADOPTION-LEDGER, not an engine implementation. It transcribes mathematical behavior from read-only original sources into fresh requirements. Never copy/import old executable modules. Source SHA256/line counts are frozen in [formula-source-provenance.json](../../qa/planner-verifier-v3-20261003/formula-source-provenance.json); check them before relying on a changed source. Canonical intentional changes (landscape,18 sites, per-instance producers, six slots, no accelerated End Day income, isolated Skirmish, one settlement) take precedence over original caller defects.
+## Unit and tower derivation — documented, not missing
+For a role at age a, s=1+.55a: attack=baseAttack+2a; defense=baseDefense+2a; HP=round(baseHP*s); min/max damage=round(baseDamage*s); speed=baseSpeed+(a>3 ?1:0). Range/shots/block retain the role table; role fly=0. Name/age illustration resolve to the exact eight-age identity, never a generic infantry file.
+## Tactical damage and casualties — core equations documented
+## Turn, spell and retreat source behavior — do not copy its defects
+`src/battle/index.js:2151–2164,2503–2518`: cancel before Begin exits without battle outcome; active confirmed Retreat invokes loss settlement, preserving current casualties/mana, granting no victory reward and leaving the guard unresolved. No extra flat retreat casualty percentage is defined or authorized. Tactical victory baseline reward explicit scenario else150Gold, XP round(110*(difficulty||1)), loot difficulty; ranks add round(dealtDamage*.05)+(win?20:6), once on campaign stack IDs. Settlement uses pending outcome and unique encounter/outcome ID. Source Auto's headless simplification lacks the full legal board/turn/spell behavior; fresh Auto must use the common legal engine required by the canonical spec.
+**Genuine unresolved decision:** frozen Leadership description promises an extra turn; original prototype and current board only flash/log inspiration at positive morale*.042. No extra action follows. Owner choice has been requested: an unchainable extra turn at that existing probability, or explicitly cosmetic inspiration. Keep this mechanic pending until the owner selects; other documented combat work continues. Negative morale turn-skip or chain probabilities have no supported equation. Morale/luck gauges remain clamped-3..3 and weather adjustment applies.
+## End Day, XP, loot and encounters — recoverable omissions
+**Hero XP:** original `reference/ages-of-dominion.html:547–557` gives credit=round(rewardXP*(1+.15*completedHeroHallLevel)). Later `client/shell/fightContext.js:49–65` dropped the multiplier; canonical spec and frozen building description already require it, so use the original definition. Add credit to accumulated residual XP; while XP>=level*140 subtract that threshold, increase level, choose one primary from the class growth distribution in frozen declaration order, increase it1, add1 spendable point, refill mana, and add one pending skill offer when the new level is divisible by3. Persist base primaries, points, pending offers and RNG; class starting stats cannot overwrite accrued growth. Spending Knowledge also refills mana. Skill offer uses up to two distinct skills below level3, from saved seeded choices; maxed/all-maxed cases terminate, cancellation/reload never rerolls. Eight classes use frozen extension growth values.
+Expected XP fixtures: level1 XP139 plus1→level2 XP0; level1 XP0 plus420→level3 XP0, two primary gains/two points/one pending offer. Reward100 with Hall2 credits130. Rank XP is cumulative against[0,60,180,420,900], rank0..4, with no threshold subtraction; it is not hero residual XP.
+## Defense equations and remaining implementation work
+Correct sources: `src/siege/index.js:32–55,109–145,407–434,461–596,713–796`, `src/siege/roles.js`. Their numeric definitions exist; a missing source decision is not the reason all waves are blocked. Full movement/firing/session logic still requires independent transcription and tests; this section is not a complete defense engine specification.
+Role multipliers: brute HP1.25/speed.85/damage1.2; runner.6/1.6/.7; archer.75/.9/.9; sapper.9/.95/2.2; shaman.8/.9/1.1. Player ranged lane range=frozen ranged6*.45=2.7; enemy archer2.16/sapper1.62/shaman2.484, attack delays1.3/1.6/2.0. Source role tables list weights but genWaves uses explicit counts; do not invent weighted generation. Apply terrain+weather modifiers additively by field, then multiply HP/damage/speed by1+respective modifier. Spawn times=index*gap, default nonranged delay1.4. Boss HP×7,damage×2.4,speed×.65 at mixLength*gap+1.2. Preserve visible-entry no-targeting until inside active bounds; don't copy offscreen spawn/attack defects.
+The source fixed step=1/60, frame catchup<=.25s, cap32 steps. Fresh pause/background freezes combat;2x scales simulation consistently. Support sums nearby living aura fractions; splash secondary damage=.6 primary within splash radius; slow fraction from tower (fallback.4), duration1.4s. On core contact subtract enemyDamage*3+20 once. Defender melee engagement default2.6, walk speed default.64, contact1.05, unit stack multiplier=max(1,ceil(currentHP/unitHP)*.4+.6). Melee block factor=max(.1,1-.06block); ranged adjacent penalty.5 and ammo decrement. Full targeting/visibility/range/tower placement/hero ability/effect/casualty rules must be transcribed from the hashed remaining source sections into an independently authored simulation contract before declaring StageG complete.
+## Delivery and architecture corrections
+| Terrain | Registered topology/material layers, static/mutable polygon map, paths/crossings/exclusions, no baked active roles/UI/guide marks |

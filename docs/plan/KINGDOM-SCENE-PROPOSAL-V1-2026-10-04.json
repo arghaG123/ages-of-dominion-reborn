@@ -1,0 +1,745 @@
+{
+  "version": "kingdom-scene-proposal-v1",
+  "status": "PROPOSAL_NOT_ACCEPTED",
+  "contractUnchanged": true,
+  "activeAffine": [
+    60,
+    -10,
+    25,
+    35,
+    170,
+    165
+  ],
+  "hallScale": 0.1312,
+  "hallFile": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+  "terrainFile": "assets/production/production-01-20261003/images/01-kingdom-terrain-stone.png",
+  "terrainSHA256": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1",
+  "terrainPixels": [
+    1376,
+    768
+  ],
+  "referencePixels": [
+    1376,
+    768
+  ],
+  "displayNote": "The live view fills this terrain into the 1376x768 frame. This proposal does not replace that file, stretch a repaired scene, or relabel thresholds as clearance.",
+  "river": "The active contract has no separate river polygon. Blocked cells beside the named bridge are listed as contract blocked cells.",
+  "bridge": {
+    "id": "right-crossing",
+    "worldRect": [
+      12.5,
+      7,
+      1.5,
+      0.8
+    ],
+    "referenceCenter": [
+      1150.0,
+      291.5
+    ]
+  },
+  "blockedCellCount": 11,
+  "blockedSample": [
+    [
+      13,
+      0
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      13,
+      6
+    ],
+    [
+      13,
+      7
+    ]
+  ],
+  "roadWorldLengths": [
+    9.604
+  ],
+  "nearestSiteGaps": [
+    {
+      "a": "townhall",
+      "b": "P02",
+      "worldGap": 0.5
+    },
+    {
+      "a": "townhall",
+      "b": "P03",
+      "worldGap": 0.5
+    },
+    {
+      "a": "townhall",
+      "b": "P04",
+      "worldGap": 0.5
+    },
+    {
+      "a": "P01",
+      "b": "P02",
+      "worldGap": 0.6
+    },
+    {
+      "a": "P02",
+      "b": "P03",
+      "worldGap": 0.6
+    },
+    {
+      "a": "P03",
+      "b": "P04",
+      "worldGap": 0.6
+    },
+    {
+      "a": "P04",
+      "b": "P05",
+      "worldGap": 0.6
+    },
+    {
+      "a": "P06",
+      "b": "P07",
+      "worldGap": 0.6
+    },
+    {
+      "a": "P08",
+      "b": "P09",
+      "worldGap": 0.6
+    },
+    {
+      "a": "P10",
+      "b": "P11",
+      "worldGap": 0.6
+    },
+    {
+      "a": "P12",
+      "b": "P13",
+      "worldGap": 0.6
+    },
+    {
+      "a": "P14",
+      "b": "P15",
+      "worldGap": 0.6
+    }
+  ],
+  "sites": [
+    {
+      "id": "townhall",
+      "worldRect": [
+        5,
+        0,
+        3,
+        1.5
+      ],
+      "referenceCorners": [
+        [
+          470,
+          115
+        ],
+        [
+          650,
+          85
+        ],
+        [
+          687.5,
+          137.5
+        ],
+        [
+          507.5,
+          167.5
+        ]
+      ],
+      "referenceBounds": [
+        470,
+        85,
+        687.5,
+        167.5
+      ]
+    },
+    {
+      "id": "P01",
+      "worldRect": [
+        2,
+        2,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          340,
+          215
+        ],
+        [
+          424.0,
+          201.0
+        ],
+        [
+          454.0,
+          243.0
+        ],
+        [
+          370.0,
+          257.0
+        ]
+      ],
+      "referenceBounds": [
+        340,
+        201.0,
+        454.0,
+        257.0
+      ]
+    },
+    {
+      "id": "P02",
+      "worldRect": [
+        4,
+        2,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          460,
+          195
+        ],
+        [
+          544.0,
+          181.0
+        ],
+        [
+          574.0,
+          223.0
+        ],
+        [
+          490.0,
+          237.0
+        ]
+      ],
+      "referenceBounds": [
+        460,
+        181.0,
+        574.0,
+        237.0
+      ]
+    },
+    {
+      "id": "P03",
+      "worldRect": [
+        6,
+        2,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          580,
+          175
+        ],
+        [
+          664.0,
+          161.0
+        ],
+        [
+          694.0,
+          203.0
+        ],
+        [
+          610.0,
+          217.0
+        ]
+      ],
+      "referenceBounds": [
+        580,
+        161.0,
+        694.0,
+        217.0
+      ]
+    },
+    {
+      "id": "P04",
+      "worldRect": [
+        8,
+        2,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          700,
+          155
+        ],
+        [
+          784.0,
+          141.0
+        ],
+        [
+          814.0,
+          183.0
+        ],
+        [
+          730.0,
+          197.0
+        ]
+      ],
+      "referenceBounds": [
+        700,
+        141.0,
+        814.0,
+        197.0
+      ]
+    },
+    {
+      "id": "P05",
+      "worldRect": [
+        10,
+        2,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          820,
+          135
+        ],
+        [
+          904.0,
+          121.0
+        ],
+        [
+          934.0,
+          163.0
+        ],
+        [
+          850.0,
+          177.0
+        ]
+      ],
+      "referenceBounds": [
+        820,
+        121.0,
+        934.0,
+        177.0
+      ]
+    },
+    {
+      "id": "P06",
+      "worldRect": [
+        2,
+        4,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          390,
+          285
+        ],
+        [
+          474.0,
+          271.0
+        ],
+        [
+          504.0,
+          313.0
+        ],
+        [
+          420.0,
+          327.0
+        ]
+      ],
+      "referenceBounds": [
+        390,
+        271.0,
+        504.0,
+        327.0
+      ]
+    },
+    {
+      "id": "P07",
+      "worldRect": [
+        4,
+        4,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          510,
+          265
+        ],
+        [
+          594.0,
+          251.0
+        ],
+        [
+          624.0,
+          293.0
+        ],
+        [
+          540.0,
+          307.0
+        ]
+      ],
+      "referenceBounds": [
+        510,
+        251.0,
+        624.0,
+        307.0
+      ]
+    },
+    {
+      "id": "P08",
+      "worldRect": [
+        8,
+        4,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          750,
+          225
+        ],
+        [
+          834.0,
+          211.0
+        ],
+        [
+          864.0,
+          253.0
+        ],
+        [
+          780.0,
+          267.0
+        ]
+      ],
+      "referenceBounds": [
+        750,
+        211.0,
+        864.0,
+        267.0
+      ]
+    },
+    {
+      "id": "P09",
+      "worldRect": [
+        10,
+        4,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          870,
+          205
+        ],
+        [
+          954.0,
+          191.0
+        ],
+        [
+          984.0,
+          233.0
+        ],
+        [
+          900.0,
+          247.0
+        ]
+      ],
+      "referenceBounds": [
+        870,
+        191.0,
+        984.0,
+        247.0
+      ]
+    },
+    {
+      "id": "P10",
+      "worldRect": [
+        1,
+        6,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          380,
+          365
+        ],
+        [
+          464.0,
+          351.0
+        ],
+        [
+          494.0,
+          393.0
+        ],
+        [
+          410.0,
+          407.0
+        ]
+      ],
+      "referenceBounds": [
+        380,
+        351.0,
+        494.0,
+        407.0
+      ]
+    },
+    {
+      "id": "P11",
+      "worldRect": [
+        3,
+        6,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          500,
+          345
+        ],
+        [
+          584.0,
+          331.0
+        ],
+        [
+          614.0,
+          373.0
+        ],
+        [
+          530.0,
+          387.0
+        ]
+      ],
+      "referenceBounds": [
+        500,
+        331.0,
+        614.0,
+        387.0
+      ]
+    },
+    {
+      "id": "P12",
+      "worldRect": [
+        9,
+        6,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          860,
+          285
+        ],
+        [
+          944.0,
+          271.0
+        ],
+        [
+          974.0,
+          313.0
+        ],
+        [
+          890.0,
+          327.0
+        ]
+      ],
+      "referenceBounds": [
+        860,
+        271.0,
+        974.0,
+        327.0
+      ]
+    },
+    {
+      "id": "P13",
+      "worldRect": [
+        11,
+        6,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          980,
+          265
+        ],
+        [
+          1064.0,
+          251.0
+        ],
+        [
+          1094.0,
+          293.0
+        ],
+        [
+          1010.0,
+          307.0
+        ]
+      ],
+      "referenceBounds": [
+        980,
+        251.0,
+        1094.0,
+        307.0
+      ]
+    },
+    {
+      "id": "P14",
+      "worldRect": [
+        2,
+        8,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          490,
+          425
+        ],
+        [
+          574.0,
+          411.0
+        ],
+        [
+          604.0,
+          453.0
+        ],
+        [
+          520.0,
+          467.0
+        ]
+      ],
+      "referenceBounds": [
+        490,
+        411.0,
+        604.0,
+        467.0
+      ]
+    },
+    {
+      "id": "P15",
+      "worldRect": [
+        4,
+        8,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          610,
+          405
+        ],
+        [
+          694.0,
+          391.0
+        ],
+        [
+          724.0,
+          433.0
+        ],
+        [
+          640.0,
+          447.0
+        ]
+      ],
+      "referenceBounds": [
+        610,
+        391.0,
+        724.0,
+        447.0
+      ]
+    },
+    {
+      "id": "P16",
+      "worldRect": [
+        8,
+        8,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          850,
+          365
+        ],
+        [
+          934.0,
+          351.0
+        ],
+        [
+          964.0,
+          393.0
+        ],
+        [
+          880.0,
+          407.0
+        ]
+      ],
+      "referenceBounds": [
+        850,
+        351.0,
+        964.0,
+        407.0
+      ]
+    },
+    {
+      "id": "P17",
+      "worldRect": [
+        10,
+        8,
+        1.4,
+        1.2
+      ],
+      "referenceCorners": [
+        [
+          970,
+          345
+        ],
+        [
+          1054.0,
+          331.0
+        ],
+        [
+          1084.0,
+          373.0
+        ],
+        [
+          1000.0,
+          387.0
+        ]
+      ],
+      "referenceBounds": [
+        970,
+        331.0,
+        1084.0,
+        387.0
+      ]
+    }
+  ],
+  "limits": [
+    "Baked terrain still contains developed structures. It stays data-terrain-status baked-unaccepted.",
+    "No obstacle, water, or road mask was painted from pixels, so clearance against scene content is not claimed.",
+    "Site gaps below are distances between contract rectangles, not walkable clearance on the painting.",
+    "Hall registration remains unaccepted. Hall scale stays 0.1312.",
+    "Day 1 logic stays Hall level 1, 17 empty sites, and walls-presentation-v1."
+  ],
+  "beforeImage": "qa/code-ready-20261004/kingdom-proposal-before.png",
+  "afterImage": "qa/code-ready-20261004/kingdom-proposal-after.png"
+}

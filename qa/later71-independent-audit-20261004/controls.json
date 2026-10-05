@@ -1,0 +1,57 @@
+{
+  "scope": "Only fresh QA files; cloud disabled; no transport or live mutex/ledger changes",
+  "probes": [
+    {
+      "probe": "simultaneous-check-before-replace",
+      "contenders": [
+        {
+          "owner": "image-ai-continuity-runner-4bfa3dbd-pid3004",
+          "error": "[WinError 5] Access is denied: 'C:\\\\dev\\\\ages-of-dominion-reborn\\\\qa\\\\later71-independent-audit-20261004\\\\race-mutex.json.4bfa3dbd.tmp' -> 'C:\\\\dev\\\\ages-of-dominion-reborn\\\\qa\\\\later71-independent-audit-20261004\\\\race-mutex.json'"
+        },
+        {
+          "owner": "image-ai-continuity-runner-f8569bca-pid3004",
+          "acquired": true
+        }
+      ],
+      "exclusive": true
+    },
+    {
+      "probe": "dead-PID-with-unresolved-UNKNOWN",
+      "acquired": false,
+      "blocked": true
+    },
+    {
+      "probe": "unresolved-item-does-not-enforce-run-exclusion",
+      "executeResult": {
+        "status": "UNKNOWN_RETAINED_LIABILITY",
+        "itemId": "offline-id",
+        "costUSD": 0.143612,
+        "unresolved": true
+      },
+      "normalReleaseSucceeded": false,
+      "safe": true
+    }
+  ],
+  "accounting": {
+    "ratesUSDPerMillion": {
+      "input": 0.5,
+      "image": 60,
+      "textThinking": 3
+    },
+    "usageTokens": {
+      "input": 86695,
+      "thinking": 0,
+      "IMAGE": 119280,
+      "TEXT": 297
+    },
+    "rawModalityEstimatedCostUSD": 7.2010385,
+    "sumJournalUniqueSuccessfulUSD": 7.217961,
+    "journalTotalUSD": 7.564399000000001,
+    "retainedUnknownLiabilities": 0.287224,
+    "priorExposureProvisional": 62.8496,
+    "arithmeticExposureBeforeUncoveredLiabilitiesUSD": 70.3378625,
+    "invoices": "UNKNOWN",
+    "releaseOfFundsAuthorized": false,
+    "rateSource": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+  }
+}

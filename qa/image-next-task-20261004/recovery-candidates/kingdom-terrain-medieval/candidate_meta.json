@@ -1,0 +1,29 @@
+{
+  "candidateID": "kingdom-terrain-medieval",
+  "age": "medieval",
+  "geometryVersion": "v4-candidate-20261004",
+  "status": "READY_FOR_REVIEW_NOT_OWNER_ACCEPTED",
+  "ownerAcceptance": "UNVERIFIED",
+  "runtimeApproved": false,
+  "files": {
+    "base": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-medieval/base_candidate_v4.png",
+    "baseSHA256": "2091a6cf4958de1c48ec1b2d58fceba5e8072f24f9c5fd0231767a5c2502758f",
+    "mask": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-medieval/mask_removal_v4.png",
+    "maskSHA256": "4e4e31b19a699edc8b0da3efeb36840a6e8695b187c2ef08877ce8caf1b0e858",
+    "guide": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-medieval/guide_v4.png",
+    "guideSHA256": "2b5977ff08b26586d983524ae874f6107ea857848b36216109503fa986a43369",
+    "originalOutput4K": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-medieval/output.png",
+    "originalSHA256": "56cf0629ff12a0f251d15a9a86a1995b15c3b781668ef809f2ffcbe7a81f719d"
+  },
+  "repairedDefects": [
+    "Coherent bare-base ground synthesis removing baked plot borders and mutable clutter",
+    "Real silhouette and shadow removal mask generated",
+    "Extended bridge crossing proposal spanning river x=13..14 with far-bank approach [14, 7]",
+    "Hall roof envelope [402,40]..[750.16,372.86] separated from civic ground polygon"
+  ],
+  "residualDefects": [
+    "Independent visual and owner review pending",
+    "Runtime client sprite compositing not yet executed",
+    "Native 4K re-render with repaired inputs requires separate owner scheduling"
+  ]
+}

@@ -1,0 +1,7 @@
+[WARN] Mutex NOT released: ambiguous outcome UNKNOWN or unresolved items (['test-unknown-liability']) must retain lock and liability.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE FAIL CLOSED] Missing bodySHA256 in write-ahead for item 'test-id'. Failing closed.
+  -> [REUSE FAIL CLOSED] Request body SHA256 mismatch for item 'test-id'. Failing closed.
+  -> [REUSE FAIL CLOSED] Prompt mismatch for item 'test-id'. Failing closed.
+  -> [REUSE FAIL CLOSED] Unsupported MIME 'image/jpeg' for item 'test-id'. Failing closed.
+Saved test script and reports. All passed: True

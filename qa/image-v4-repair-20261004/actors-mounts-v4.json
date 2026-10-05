@@ -1,0 +1,2309 @@
+[
+  {
+    "id": "troop-stone-melee",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-stone-melee.png",
+      "sha256": "629979bca666ff35bc4cf196d99598109a820bb75b3c456169d937bfa26b1b0f",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-stone-melee.png",
+      "sha256": "84b5a053f26e6a0dc3b57086ca8f008f7f06377806d173031425cbc26b51017c",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "method": "reviewed boot/hoof polygons below the floor split; backdrop keyed; no blur",
+        "keepPolygons": [
+          [
+            [
+              845,
+              1210
+            ],
+            [
+              990,
+              1210
+            ],
+            [
+              1005,
+              1420
+            ],
+            [
+              978,
+              1605
+            ],
+            [
+              935,
+              1692
+            ],
+            [
+              860,
+              1684
+            ],
+            [
+              835,
+              1560
+            ],
+            [
+              838,
+              1380
+            ]
+          ],
+          [
+            [
+              1070,
+              1210
+            ],
+            [
+              1255,
+              1210
+            ],
+            [
+              1272,
+              1460
+            ],
+            [
+              1255,
+              1585
+            ],
+            [
+              1175,
+              1636
+            ],
+            [
+              1100,
+              1605
+            ],
+            [
+              1068,
+              1460
+            ],
+            [
+              1065,
+              1300
+            ]
+          ]
+        ],
+        "blur": false,
+        "paintedFootMeasured": false,
+        "contactNote": "Polygon follows the visible boot silhouette. The pivot is the lowest retained pixel in each polygon and is not an independent anatomical measurement."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            847,
+            1622,
+            970,
+            1692
+          ],
+          "lowestY": 1692,
+          "centerX": 905,
+          "areaPx": 6708,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1140,
+            1622,
+            1197,
+            1636
+          ],
+          "lowestY": 1636,
+          "centerX": 1171,
+          "areaPx": 449,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 5,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        735,
+        206,
+        1761,
+        1692
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-stone-melee_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-stone-melee_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-stone-melee_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-stone-melee.png"
+  },
+  {
+    "id": "troop-stone-ranged",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-stone-ranged.png",
+      "sha256": "fbad903b1168a20bb5dc075c3680d9ec0cb1a5cd84d6757465137a88473d8748",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-stone-ranged.png",
+      "sha256": "65269960c69c23aca3aa2331a4817a9ba79bedef33581f2ac7a4b5afbbcc88f0",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1228,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            652,
+            1937,
+            1455,
+            2007
+          ],
+          "lowestY": 2007,
+          "centerX": 1005,
+          "areaPx": 31088,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        419,
+        110,
+        1698,
+        2007
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-stone-ranged_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-stone-ranged_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-stone-ranged_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-stone-ranged.png"
+  },
+  {
+    "id": "troop-stone-heavy",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-stone-heavy.png",
+      "sha256": "dd75ab45858989e183a7b9a4b59c4db0e4ad3b4f23f412568b279c423580ca0a",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-stone-heavy.png",
+      "sha256": "1c136fbf1b6703c236499775ec85ecdc7670449db1ae8badd23d3399f2f634da",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1205,
+            1903,
+            1335,
+            1973
+          ],
+          "lowestY": 1973,
+          "centerX": 1255,
+          "areaPx": 5668,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        225,
+        58,
+        1573,
+        1973
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-stone-heavy_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-stone-heavy_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-stone-heavy_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-stone-heavy.png"
+  },
+  {
+    "id": "troop-bronze-melee",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-bronze-melee.png",
+      "sha256": "117532a07fbec5f3c731fbeac9c8091e30fdb85b42565bd838135c4a7680bd43",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-bronze-melee.png",
+      "sha256": "d0b8123ee53ead43c02b94d9355b23ec064586f3a288d535f2f6eef4de4e9c7b",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1474,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1295,
+            1879,
+            1462,
+            1949
+          ],
+          "lowestY": 1949,
+          "centerX": 1388,
+          "areaPx": 4443,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        200,
+        162,
+        1658,
+        1949
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-bronze-melee_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-bronze-melee_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-bronze-melee_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-bronze-melee.png"
+  },
+  {
+    "id": "troop-bronze-ranged",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-bronze-ranged.png",
+      "sha256": "c679721fbe1edbe602c1031eb49adb039505f567b0264755c1eb3d13ad165b7e",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-bronze-ranged.png",
+      "sha256": "6c81b483f8584350b94e855fd4c9bda69bee20d81be68491714cf7919fc88dd9",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1126,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            130,
+            1946,
+            150,
+            1964
+          ],
+          "lowestY": 1964,
+          "centerX": 140,
+          "areaPx": 134,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 6,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            87,
+            1946,
+            383,
+            2016
+          ],
+          "lowestY": 2016,
+          "centerX": 237,
+          "areaPx": 12055,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        0,
+        1768,
+        2016
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-bronze-ranged_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-bronze-ranged_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-bronze-ranged_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-bronze-ranged.png"
+  },
+  {
+    "id": "troop-bronze-heavy",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-bronze-heavy.png",
+      "sha256": "516f33f65dd6557ee1ae03654d43651eb3857cd88dad4ae584ba51d8ea529c02",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-bronze-heavy.png",
+      "sha256": "253f5aa8636e36311c0acfe09d4006b2d0b070fadc549f402e9216e2b136655f",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1148,
+            1816,
+            1536,
+            1886
+          ],
+          "lowestY": 1886,
+          "centerX": 1343,
+          "areaPx": 4429,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1304,
+            1816,
+            1452,
+            1845
+          ],
+          "lowestY": 1845,
+          "centerX": 1384,
+          "areaPx": 500,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 10,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        159,
+        200,
+        2007,
+        1886
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-bronze-heavy_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-bronze-heavy_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-bronze-heavy_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-bronze-heavy.png"
+  },
+  {
+    "id": "troop-iron-melee",
+    "kind": "actor",
+    "contentStatus": "FAIL_SELECTED_ROLE",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "ROLE_FAIL_MEDIEVAL_STENCIL_NOT_SELECTED_ROLE",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-iron-melee.png",
+      "sha256": "065a151c7b2ae7d31e30e60a103450752a1a0fe2c19224237b32d7aa558502fd",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-iron-melee.png",
+      "sha256": "f70133c2146b185cf78a34d2f52a64fe7044a0af04ad87da4fc4b0499869a915",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            818,
+            1429,
+            904,
+            1432
+          ],
+          "lowestY": 1432,
+          "centerX": 862,
+          "areaPx": 341,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 4,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            920,
+            1429,
+            947,
+            1432
+          ],
+          "lowestY": 1432,
+          "centerX": 934,
+          "areaPx": 104,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 4,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1054,
+            1429,
+            1188,
+            1432
+          ],
+          "lowestY": 1432,
+          "centerX": 1122,
+          "areaPx": 533,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 4,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1215,
+            1429,
+            1340,
+            1499
+          ],
+          "lowestY": 1499,
+          "centerX": 1239,
+          "areaPx": 883,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        635,
+        131,
+        1369,
+        1499
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-iron-melee_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-iron-melee_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-iron-melee_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-iron-melee.png"
+  },
+  {
+    "id": "troop-iron-ranged",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-iron-ranged.png",
+      "sha256": "f0af299d817ca5f0d6364b0120d526998478e59ecf2559f5b50b1928d27b21be",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-iron-ranged.png",
+      "sha256": "7a517039f644afc9710de811fe37a3fc8a7dc54563b39d707d7588e660eab12d",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1433,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            795,
+            1363,
+            972,
+            1432
+          ],
+          "lowestY": 1432,
+          "centerX": 881,
+          "areaPx": 10904,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1048,
+            1363,
+            1195,
+            1432
+          ],
+          "lowestY": 1432,
+          "centerX": 1123,
+          "areaPx": 9589,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1259,
+            1363,
+            1564,
+            1433
+          ],
+          "lowestY": 1433,
+          "centerX": 1411,
+          "areaPx": 21193,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        620,
+        206,
+        1737,
+        1433
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-iron-ranged_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-iron-ranged_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-iron-ranged_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-iron-ranged.png"
+  },
+  {
+    "id": "troop-iron-heavy",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-iron-heavy.png",
+      "sha256": "8490ae4aff2c049cb421b1d0d460cdd1cad92dfc153801f9277268c039ee0e3b",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-iron-heavy.png",
+      "sha256": "10ef7557f2321f7ec9046f2b19dc99eea920feec181b202a50acd0f96a765011",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1474,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            0,
+            1786,
+            23,
+            1793
+          ],
+          "lowestY": 1793,
+          "centerX": 8,
+          "areaPx": 121,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 4,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            25,
+            1786,
+            1153,
+            1856
+          ],
+          "lowestY": 1856,
+          "centerX": 662,
+          "areaPx": 33281,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1231,
+            1786,
+            1603,
+            1808
+          ],
+          "lowestY": 1808,
+          "centerX": 1462,
+          "areaPx": 5028,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 7,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        82,
+        1823,
+        1856
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-iron-heavy_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-iron-heavy_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-iron-heavy_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-iron-heavy.png"
+  },
+  {
+    "id": "troop-medieval-melee",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-medieval-melee.png",
+      "sha256": "163931e8a5e8e1464e58177aa7c93feb5490cdff801562ade45c232aeae9fca5",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-medieval-melee.png",
+      "sha256": "a6e7c7d18004588c560db5a0a78294fa2810389358f25b19caf48ef34ff3579a",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            0,
+            1689,
+            292,
+            1724
+          ],
+          "lowestY": 1724,
+          "centerX": 109,
+          "areaPx": 4840,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 12,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            603,
+            1689,
+            919,
+            1759
+          ],
+          "lowestY": 1759,
+          "centerX": 779,
+          "areaPx": 14832,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        210,
+        1500,
+        1759
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-medieval-melee_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-medieval-melee_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-medieval-melee_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-medieval-melee.png"
+  },
+  {
+    "id": "troop-medieval-ranged",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-medieval-ranged.png",
+      "sha256": "c6b083d2f99f9d98f650fc69462bfa66d6c16b28dfb4f223bc05e53b5ceb93f9",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-medieval-ranged.png",
+      "sha256": "e503d60c4cb4ebc45c3bb6ac7e1feb63d089135b6051f1518c472e9f1b874d44",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            881,
+            693,
+            955,
+            763
+          ],
+          "lowestY": 763,
+          "centerX": 922,
+          "areaPx": 3802,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1060,
+            693,
+            1116,
+            756
+          ],
+          "lowestY": 756,
+          "centerX": 1086,
+          "areaPx": 2759,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 21,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        783,
+        35,
+        1170,
+        763
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-medieval-ranged_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-medieval-ranged_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-medieval-ranged_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-medieval-ranged.png"
+  },
+  {
+    "id": "troop-medieval-heavy",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-medieval-heavy.png",
+      "sha256": "701aa123b49018ce03dc660bde8e84044f425ae34c5b05b0c883f6d5091c96c2",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-medieval-heavy.png",
+      "sha256": "476219960b19f72eb01e51df30bf2a955fdde937b19c0c3f1e4cff72623845e0",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            184,
+            1835,
+            1856,
+            1905
+          ],
+          "lowestY": 1905,
+          "centerX": 1004,
+          "areaPx": 66273,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1460,
+            1835,
+            1482,
+            1838
+          ],
+          "lowestY": 1838,
+          "centerX": 1472,
+          "areaPx": 46,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 4,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        104,
+        259,
+        2008,
+        1905
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-medieval-heavy_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-medieval-heavy_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-medieval-heavy_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-medieval-heavy.png"
+  },
+  {
+    "id": "troop-gunpowder-melee",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-gunpowder-melee.png",
+      "sha256": "2d24e05d68bb4284ac61f333c55130a2eb983e7af872d10acca9e00b81902ece",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-gunpowder-melee.png",
+      "sha256": "4272f51a6ef22543337ce9a23ec5fabd59d26ed1bac6ab59f2b04db35a968a7a",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1515,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            361,
+            1871,
+            997,
+            1941
+          ],
+          "lowestY": 1941,
+          "centerX": 753,
+          "areaPx": 18855,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        65,
+        1417,
+        1941
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-gunpowder-melee_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-gunpowder-melee_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-gunpowder-melee_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-gunpowder-melee.png"
+  },
+  {
+    "id": "troop-gunpowder-ranged",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-gunpowder-ranged.png",
+      "sha256": "04cb2017858823f25f8196b5c15eaf4e996d9e59397269c67ac0d60b71cc1b0c",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-gunpowder-ranged.png",
+      "sha256": "bc8bba3cc0decd77995e86cdabb6f7c8cffa6e9f00f18ae9a5cafbb709b4a263",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1474,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            781,
+            1362,
+            899,
+            1432
+          ],
+          "lowestY": 1432,
+          "centerX": 837,
+          "areaPx": 7068,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1076,
+            1362,
+            1199,
+            1432
+          ],
+          "lowestY": 1432,
+          "centerX": 1139,
+          "areaPx": 8239,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        730,
+        153,
+        1871,
+        1432
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-gunpowder-ranged_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-gunpowder-ranged_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-gunpowder-ranged_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-gunpowder-ranged.png"
+  },
+  {
+    "id": "troop-gunpowder-heavy",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-gunpowder-heavy.png",
+      "sha256": "f361f5ee481818d7cf7b99d5d7f5ad82a10b55d32ae379d197a416f56a752dfe",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-gunpowder-heavy.png",
+      "sha256": "593f0418fbf14daa49abf07812913ecbcab0d0d3a3321497a6793569448af0f3",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1187,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            998,
+            1354,
+            1512,
+            1424
+          ],
+          "lowestY": 1424,
+          "centerX": 1249,
+          "areaPx": 19578,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        382,
+        226,
+        1954,
+        1424
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-gunpowder-heavy_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-gunpowder-heavy_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-gunpowder-heavy_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-gunpowder-heavy.png"
+  },
+  {
+    "id": "troop-industrial-melee",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-industrial-melee.png",
+      "sha256": "5fc88477e51c3bd080408231360f77f099a0952f830cd6246ce7b421605d55c6",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-industrial-melee.png",
+      "sha256": "e108a8ac4bb4e04177afc411a88298966ccc9a62e2b5734114e70b30116083d5",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            0,
+            1894,
+            917,
+            1964
+          ],
+          "lowestY": 1964,
+          "centerX": 544,
+          "areaPx": 33595,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1170,
+            1894,
+            1352,
+            1903
+          ],
+          "lowestY": 1903,
+          "centerX": 1276,
+          "areaPx": 1190,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 4,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        155,
+        1892,
+        1964
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-industrial-melee_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-industrial-melee_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-industrial-melee_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-industrial-melee.png"
+  },
+  {
+    "id": "troop-industrial-ranged",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-industrial-ranged.png",
+      "sha256": "4d4c2a234fbc000593a52e65b80214367e1c211dd1eef12fee1a078064093a09",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-industrial-ranged.png",
+      "sha256": "503e3708394aa3dada1071063fe85c607d75f1656c3a1ddcce712f8c56f8253a",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1024,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            0,
+            1977,
+            2047,
+            2047
+          ],
+          "lowestY": 2047,
+          "centerX": 1023,
+          "areaPx": 143861,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        574,
+        2047,
+        2047
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-industrial-ranged_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-industrial-ranged_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-industrial-ranged_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-industrial-ranged.png"
+  },
+  {
+    "id": "troop-industrial-heavy",
+    "kind": "actor",
+    "contentStatus": "FAIL_SELECTED_ROLE",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "ROLE_FAIL_INDUSTRIAL_GUNNER_NOT_SELECTED_ROLE",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-industrial-heavy.png",
+      "sha256": "5c9704b200143afa039c910f1f439a532db4790a6b23435d998e70e2fc060a7a",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-industrial-heavy.png",
+      "sha256": "476bda712a014816f4a00af2b48222abc173be6c305d96fa8d798e0a66ce63d9",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            569,
+            1855,
+            696,
+            1880
+          ],
+          "lowestY": 1880,
+          "centerX": 632,
+          "areaPx": 2293,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 8,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1165,
+            1855,
+            1419,
+            1925
+          ],
+          "lowestY": 1925,
+          "centerX": 1311,
+          "areaPx": 10166,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        529,
+        133,
+        1846,
+        1925
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-industrial-heavy_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-industrial-heavy_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-industrial-heavy_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-industrial-heavy.png"
+  },
+  {
+    "id": "troop-modern-melee",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-modern-melee.png",
+      "sha256": "e825b2e3b0749fdf4e82891c288ecd02710186ee668e5a976c516cb2067e400f",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-modern-melee.png",
+      "sha256": "f65c4ba47bebb4a3968d4818861f5bdbed159a2badf830c05a4348598e0d9c6f",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1269,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            670,
+            1939,
+            739,
+            1979
+          ],
+          "lowestY": 1979,
+          "centerX": 695,
+          "areaPx": 1706,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 13,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            594,
+            1939,
+            1467,
+            2009
+          ],
+          "lowestY": 2009,
+          "centerX": 1055,
+          "areaPx": 14433,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        594,
+        146,
+        1588,
+        2009
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-modern-melee_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-modern-melee_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-modern-melee_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-modern-melee.png"
+  },
+  {
+    "id": "troop-modern-ranged",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-modern-ranged.png",
+      "sha256": "e89d132617bbef3d6a53badd429169bcfccdc267e220f14d6a427f03509e9815",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-modern-ranged.png",
+      "sha256": "bd96e591a5016a824960dcf4b0ddd1f6d8e1a844975ed5ee80b8d76381c33fee",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1269,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1025,
+            1461,
+            1188,
+            1531
+          ],
+          "lowestY": 1531,
+          "centerX": 1130,
+          "areaPx": 4392,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1830,
+            1461,
+            1929,
+            1489
+          ],
+          "lowestY": 1489,
+          "centerX": 1885,
+          "areaPx": 1777,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 9,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        45,
+        1941,
+        1531
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-modern-ranged_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-modern-ranged_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-modern-ranged_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-modern-ranged.png"
+  },
+  {
+    "id": "troop-modern-heavy",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-modern-heavy.png",
+      "sha256": "62561760350d361e036ed4abe87463a20dc59f34e44f1ce2462b9ed511754423",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-modern-heavy.png",
+      "sha256": "bc5379ca7e4e1b782d31c7309c347376e5dd80d121701cdea2bd519b42f975ad",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1310,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            0,
+            1362,
+            1840,
+            1432
+          ],
+          "lowestY": 1432,
+          "centerX": 889,
+          "areaPx": 123206,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        76,
+        1976,
+        1432
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-modern-heavy_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-modern-heavy_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-modern-heavy_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-modern-heavy.png"
+  },
+  {
+    "id": "troop-future-melee",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-future-melee.png",
+      "sha256": "bf1e5c692fec229c5479c683a3d1276052daee19f8ab74b2e5396071bfa72f65",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-future-melee.png",
+      "sha256": "a0b07563fbd2d6527c453204b04104b07731d1e061d238d4f9fe4c03ed181fb2",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1392,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            218,
+            1977,
+            392,
+            2044
+          ],
+          "lowestY": 2044,
+          "centerX": 309,
+          "areaPx": 406,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 22,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            544,
+            1977,
+            630,
+            2029
+          ],
+          "lowestY": 2029,
+          "centerX": 585,
+          "areaPx": 143,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 17,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1010,
+            1977,
+            1167,
+            2047
+          ],
+          "lowestY": 2047,
+          "centerX": 1092,
+          "areaPx": 252,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        170,
+        1740,
+        2047
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-future-melee_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-future-melee_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-future-melee_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-future-melee.png"
+  },
+  {
+    "id": "troop-future-ranged",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-future-ranged.png",
+      "sha256": "bf2139aca7808a53e5578375db38f69f4b80cbf59a7dc02ee9011b5159efb502",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-future-ranged.png",
+      "sha256": "ab90582a92cf3780ac111f132bf0b4149b24dc1df2d69855883e9bcfe224a3d8",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1269,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            571,
+            1768,
+            841,
+            1838
+          ],
+          "lowestY": 1838,
+          "centerX": 720,
+          "areaPx": 13171,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        68,
+        2047,
+        1838
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-future-ranged_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-future-ranged_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-future-ranged_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-future-ranged.png"
+  },
+  {
+    "id": "troop-future-heavy",
+    "kind": "actor",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/troop-future-heavy.png",
+      "sha256": "e2c0542ad948ea4e29c18dbb2ff0d9c633e7083c321c427bb0cb2cfc75d1211a",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/actors/v4/troop-future-heavy.png",
+      "sha256": "d1b1d9c8afaa9406f4335c20e8b4cb6d40a8bae54c8274de4d34312bb7ec8fd7",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1433,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            923,
+            1848,
+            1033,
+            1856
+          ],
+          "lowestY": 1856,
+          "centerX": 981,
+          "areaPx": 487,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 4,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        },
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1341,
+            1848,
+            1984,
+            1918
+          ],
+          "lowestY": 1918,
+          "centerX": 1670,
+          "areaPx": 28930,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        78,
+        258,
+        2047,
+        1918
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/troop-future-heavy_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/troop-future-heavy_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/troop-future-heavy_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/actors/v3/troop-future-heavy.png"
+  },
+  {
+    "id": "hero-mount-horse",
+    "kind": "mount",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/hero-mount-horse.png",
+      "sha256": "00b2cb4f9c9a2f2e4f8c003c9e6b52dafb2c419aa0011c230393fab7a433ec57",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/mounts/v4/hero-mount-horse.png",
+      "sha256": "cf20f1a339268daf13b32e2acb5bfe7b232928e3e88a11fa0ccde42d6b980bf0",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1638,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            1159,
+            1791,
+            1304,
+            1861
+          ],
+          "lowestY": 1861,
+          "centerX": 1236,
+          "areaPx": 8208,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        266,
+        225,
+        1898,
+        1861
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/hero-mount-horse_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/hero-mount-horse_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/hero-mount-horse_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/mounts/v3/hero-mount-horse.png"
+  },
+  {
+    "id": "hero-mount-motor-transport",
+    "kind": "mount",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/hero-mount-motor-transport.png",
+      "sha256": "c2320a5de41679072e4aeb6d0c2279cc3704656a2aacc410a00198a063d5dd08",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/mounts/v4/hero-mount-motor-transport.png",
+      "sha256": "edf07058bb4fa0a0c5ce3d8bb6b2758c7319a945ddbe7dd1a43158a024b52aaa",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1269,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            0,
+            1793,
+            845,
+            1863
+          ],
+          "lowestY": 1863,
+          "centerX": 354,
+          "areaPx": 45088,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        200,
+        1987,
+        1863
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/hero-mount-motor-transport_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/hero-mount-motor-transport_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/hero-mount-motor-transport_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/mounts/v3/hero-mount-motor-transport.png"
+  },
+  {
+    "id": "hero-mount-future-transport",
+    "kind": "mount",
+    "contentStatus": "CANDIDATE_SUBJECT_ISOLATED_NOT_BLANKET_CLEAN",
+    "matteStatus": "RGBA_HARD_MASK_NO_BLUR",
+    "contactStatus": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+    "dispositionStatus": "LOCAL_MATTE_CANDIDATE_PIXEL_REVIEW_REQUIRED",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/hero-mount-future-transport.png",
+      "sha256": "a825d0858e883a24e5cf2a7d4376be43099baf0a8d76fe5fa74431e7be02467c",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/mounts/v4/hero-mount-future-transport.png",
+      "sha256": "b8f2d318918292fd6ce7cd6222ab590b0ccf0c7246106e1cc136be16fc030db8",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGBA",
+      "recipe": {
+        "floorSplitY": 1187,
+        "method": "backdrop key; neutral grey plane removed; light earth removed only below the split; no blur and no rectangular limb cut",
+        "blur": false,
+        "paintedFootMeasured": false,
+        "residualRisk": "Earth-colored clothing below the split can be touched. Reviewed polygons override this path."
+      }
+    },
+    "landmarks": {
+      "status": "ANNOTATED_LOWEST_RETAINED_COMPONENTS",
+      "contacts": [
+        {
+          "kind": "lowest_retained_component",
+          "sourceFrame": [
+            90,
+            1611,
+            959,
+            1681
+          ],
+          "lowestY": 1681,
+          "centerX": 562,
+          "areaPx": 38909,
+          "isMeasuredAnatomicalFoot": false,
+          "uncertaintyPx": 23,
+          "note": "Lowest retained component in the bottom band. Not a painted-foot measurement unless the component is a boot, hoof, or wheel."
+        }
+      ],
+      "pivotIsNotAFoot": true
+    },
+    "evidence": {
+      "tightBBox": [
+        0,
+        268,
+        1948,
+        1681
+      ],
+      "detailEvidence": "qa/image-v4-repair-20261004/actors/hero-mount-future-transport_detail_white_black_green.png",
+      "consumerEvidence": {
+        "64": "qa/image-v4-repair-20261004/actors/hero-mount-future-transport_consumer64.png",
+        "50": "qa/image-v4-repair-20261004/actors/hero-mount-future-transport_consumer50.png"
+      }
+    },
+    "preservedV3": "assets/derivatives/mounts/v3/hero-mount-future-transport.png"
+  },
+  {
+    "id": "knight-mounted-master",
+    "kind": "mount",
+    "contentStatus": "FAIL_SELECTED_ROLE",
+    "matteStatus": "RGB_PRESERVED_NO_WORLD_ALPHA",
+    "contactStatus": "NOT_A_MEASURED_CONTACT",
+    "dispositionStatus": "ROLE_FAIL_MEDIEVAL_MOUNTED_KNIGHT_NOT_STONE_TRAVEL",
+    "ownerAcceptance": "UNVERIFIED",
+    "runtimeAcceptance": "UNVERIFIED",
+    "source": {
+      "path": "assets/high-res/final-native2k/knight-mounted-master.png",
+      "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB"
+    },
+    "derivative": {
+      "path": "assets/derivatives/mounts/v4/knight-mounted-master.png",
+      "sha256": "37f878697a28f621d119f7a52b73e5dae327eb487295cc58fa6faf05828d1141",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "mode": "RGB",
+      "recipe": {
+        "method": "byte-preserving RGB copy of the native scenic painting",
+        "blur": false
+      }
+    },
+    "notes": "Medieval mounted knight stays rejected for the Stone travel role. Not relabeled."
+  }
+]

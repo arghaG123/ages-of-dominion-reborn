@@ -1,0 +1,296 @@
+Snapshot date: 2026-10-04
+Repository root at capture: C:\dev\ages-of-dominion-reborn
+Branch: main
+HEAD: cff552880ae15c892b736ac7847f6753787ca58f
+Remote origin: https://github.com/arghaG123/ages-of-dominion-reborn.git
+Tracked paths: 1140
+Non-ignored untracked paths: 3759
+Working tree status below; M means modified and ?? means untracked. Preserve the entire ZIP even when a path is absent from the Git allowlist.
+
+## main...origin/main
+ M CURRENT-STATUS.md
+ M DECISIONS.md
+ M START-HERE.md
+ M android/app/build.gradle
+ M android/app/src/main/java/com/agesofdominion/game/MainActivity.java
+ M docs/BUILD-PROGRESS.md
+ M docs/PLANNER-VERIFIER-HANDOFF.md
+ M docs/SESSION-HANDOFF.md
+ M docs/plan/FULL-IMPLEMENTATION-SPEC.md
+ M docs/plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md
+ M docs/plan/INSTALLATION-TRANSFER.md
+ M docs/plan/MASTER-PLAN.md
+ M docs/plan/README.md
+ M docs/plan/REQUIREMENTS-TRACEABILITY.md
+ M docs/plan/VISUAL-DESIGN.md
+ M docs/plan/image-production/active-batch.lock.json
+ M docs/plan/image-production/budget-ledger.json
+ M index.html
+ M package.json
+ M qa/recovery-executor-20261003/dist-closure.json
+ M scripts/build.mjs
+ M scripts/serve.mjs
+ M src/client/audio.js
+ M src/client/game.css
+ M src/client/main.js
+ M src/client/projection.js
+ M src/core/battle.js
+ M src/core/campaign.js
+ M src/core/defense.js
+ M src/core/save.js
+ M src/data/reviewed-source-selection.json
+ M tests/repairs-20261003.test.mjs
+ M tests/war-defense.test.mjs
+?? assets/consumers/
+?? assets/delivery/stone-starter-20261003/derivatives/v2/barracks-stone.png
+?? assets/delivery/stone-starter-20261003/derivatives/v2/creature-wolf.png
+?? assets/delivery/stone-starter-20261003/derivatives/v2/live/
+?? assets/delivery/stone-starter-20261003/derivatives/v2/rig-knight.png
+?? assets/derivatives/
+?? assets/high-res/
+?? docs/migration/
+?? docs/plan/ACCOUNTING-CONSISTENCY-V3-2026-10-04.json
+?? docs/plan/ACCOUNTING-CONSISTENCY-V4-2026-10-04.json
+?? docs/plan/ACTORS-MOUNTS-V3-RESULTS.json
+?? docs/plan/AGE-PROGRESSION-MATRIX-2026-10-04.md
+?? docs/plan/BOTH-AI-INDEPENDENT-VERIFICATION-2026-10-04.md
+?? docs/plan/BOTH-AI-V3-INDEPENDENT-VERIFICATION-2026-10-04.md
+?? docs/plan/CODE-AI-AFTER-IMAGE-V2-REVERIFICATION-2026-10-04.txt
+?? docs/plan/CODE-AI-AFTER-V3-AUDIT-2026-10-04.txt
+?? docs/plan/CODE-AI-FINISH-ALL-READY-WORK-PROMPT-2026-10-03.txt
+?? docs/plan/CODE-AI-NEXT-AFTER-WHOLE-PLAN-AUDIT-2026-10-04.txt
+?? docs/plan/CODE-AI-PERSISTENCE-DIAGNOSIS-2026-10-03.md
+?? docs/plan/CODE-AI-RESUME-2026-10-04.md
+?? docs/plan/CODE-AI-VISUAL-REPAIR-PROMPT-2026-10-04.txt
+?? docs/plan/CODE-ART-COMPLETE-REMAINING-WORK-PROMPT-2026-10-04.txt
+?? docs/plan/CODE-ART-FINISH-ALL-READY-PROMPT-2026-10-04.txt
+?? docs/plan/CODE-ART-FINISH-READY-WORK-AUDIT-2026-10-04.md
+?? docs/plan/CODE-ART-FOLLOWUP-VERIFICATION-2026-10-04.md
+?? docs/plan/CODE-ART-IMPLEMENTATION-NEXT-TASK-2026-10-04.txt
+?? docs/plan/CODE-ART-INDEPENDENT-VERIFICATION-2026-10-04.md
+?? docs/plan/CODE-ART-NEXT-EXECUTION-PROMPT-2026-10-04.txt
+?? docs/plan/CODE-ART-REPAIR-COMPLETION-VERIFICATION-2026-10-04.md
+?? docs/plan/CODE-READY-WORK-MATRIX-2026-10-04.md
+?? docs/plan/FIRST-32-4K-CONTINUATION-REPORT-2026-10-04.md
+?? docs/plan/FIRST-32-4K-CONTINUATION-REPORT-RUN3-2026-10-04.md
+?? docs/plan/FIRST-32-4K-CONTINUATION-REPORT-RUN4-2026-10-04.md
+?? docs/plan/FIRST-32-4K-EXECUTION-COMPLETION-REPORT-2026-10-03.md
+?? docs/plan/FIRST-32-4K-KINGDOM-COMPLETION-REPORT-2026-10-04.md
+?? docs/plan/FIRST-32-4K-TACTICAL-RETRY-REPORT-2026-10-04.md
+?? docs/plan/IMAGE-AI-AFTER-V2-REVERIFICATION-2026-10-04.txt
+?? docs/plan/IMAGE-AI-AFTER-V3-AUDIT-2026-10-04.txt
+?? docs/plan/IMAGE-AI-CONTINUE-REMAINING-4K-PROMPT-2026-10-04.txt
+?? docs/plan/IMAGE-AI-DELIVER73-AND-REPAIR-CONTROLS-PROMPT-2026-10-04.txt
+?? docs/plan/IMAGE-AI-DELIVERY-AND-REPAIR-REPORT-2026-10-04.md
+?? docs/plan/IMAGE-AI-EXECUTION-AND-RECOVERY-REPORT-2026-10-04.md
+?? docs/plan/IMAGE-AI-NEXT-LOCAL-DELIVERY-2026-10-04.txt
+?? docs/plan/IMAGE-AI-START-LATER73-GENERATION-PROMPT-2026-10-04.txt
+?? docs/plan/IMAGE-AI-V4-REMAINING-FIX-NEW-CHAT-2026-10-04.txt
+?? docs/plan/IMAGE-AI-VALIDATE-PREPARE-AND-CLEANUP-PROMPT-2026-10-04.txt
+?? docs/plan/IMAGE-AI-VISUAL-REPAIR-PROMPT-2026-10-04.txt
+?? docs/plan/IMAGE-DELIVERY-INTERFACE-V4-2026-10-04.json
+?? docs/plan/IMAGE-DELIVERY-MANIFEST-2026-10-04.json
+?? docs/plan/IMAGE-DELIVERY-MANIFEST-V3-2026-10-04.json
+?? docs/plan/IMAGE-FIRST32-INDEPENDENT-VERIFICATION-2026-10-04.md
+?? docs/plan/IMAGE-GENERATION-START-INDEPENDENT-AUDIT-2026-10-04.md
+?? docs/plan/IMAGE-LATER73-EXECUTION-COMPLETION-REPORT-2026-10-04.md
+?? docs/plan/IMAGE-LATER73-EXECUTION-MANIFEST-2026-10-04.json
+?? docs/plan/IMAGE-LATER73-INDEPENDENT-CLOSING-AUDIT-2026-10-04.md
+?? docs/plan/IMAGE-LATER73-LOCAL-PREPARATION-MANIFEST-2026-10-04.json
+?? docs/plan/IMAGE-ONLY-PRODUCTION-AND-CLEANUP-2026-10-04.md
+?? docs/plan/IMAGE-ROLE-DISPOSITIONS-V3-2026-10-04.json
+?? docs/plan/IMAGE-V2-INDEPENDENT-REVERIFICATION-2026-10-04.md
+?? docs/plan/IMAGE-V4-LOCAL-REPAIR-HANDOFF-2026-10-04.md
+?? docs/plan/KINGDOM-8-LOCAL-PREP-GENERATION-PROMPT-2026-10-04.txt
+?? docs/plan/KINGDOM-IMAGE-PROGRESS-VERIFICATION-2026-10-04.md
+?? docs/plan/KINGDOM-REPAIR-CONSTRAINTS-2026-10-04.json
+?? docs/plan/KINGDOM-REPAIR-CONSTRAINTS-2026-10-04.md
+?? docs/plan/KINGDOM-SCENE-PROPOSAL-V1-2026-10-04.json
+?? docs/plan/KINGDOM-TERRAIN-SURVEY-V3-2026-10-04.json
+?? docs/plan/NPM-COMMAND-DIAGNOSIS-2026-10-04.md
+?? docs/plan/REQUIREMENTS-MATRIX-2026-10-04.md
+?? docs/plan/REQUIREMENTS-MATRIX-CANONICAL-2026-10-04.md
+?? docs/plan/VISUAL-REPAIR-NEXT-PHASE-2026-10-04.md
+?? docs/plan/WHOLE-PLAN-INDEPENDENT-AUDIT-2026-10-04.md
+?? docs/plan/image-production/UNIFIED-ACCOUNTING-RECONCILIATION-2026-10-04.json
+?? docs/plan/image-production/archive/interactive-4k-first32-20261003.lock.json
+?? docs/plan/image-production/archive/interactive-4k-first32-continuation-20261004.lock.json
+?? docs/plan/image-production/archive/production-17-20261003.lock.json
+?? docs/plan/image-production/cleanup-summary.json
+?? docs/plan/image-production/final-native4k-manifest.json
+?? docs/plan/image-production/interactive-2k-later73-journal.json
+?? docs/plan/image-production/later73-code-ai-handoff.json
+?? docs/plan/image-production/native4k-first32-delivery-manifest.json
+?? docs/plan/image-production/pacing_state.json
+?? docs/plan/image-production/promotion-and-cleanup-journal.json
+?? docs/plan/image-production/reconciled-accounting-ledger.json
+?? docs/plan/image-production/submission.mutex.json
+?? package-lock.json
+?? qa/all-32-native4k-completion-report.json
+?? qa/both-ai-plan-audit-20261004/
+?? qa/both-ai-v3-independent-20261004/
+?? qa/candidate-inspection-20261004/
+?? qa/code-art-assembly-20261004/
+?? qa/code-art-consumers-20261004/
+?? qa/code-art-finish-audit-20261004/
+?? qa/code-art-followup-20261004/
+?? qa/code-art-next-verification-20261004/
+?? qa/code-art-verification-20261004/
+?? qa/code-executor-live-20261004/
+?? qa/code-persistence-audit-20261003/
+?? qa/code-ready-20261004/
+?? qa/image-generation-start-audit-20261004/
+?? qa/image-next-task-20261004/
+?? qa/image-v2-independent-20261004/
+?? qa/image-v3-isolated-controls-20261004/
+?? qa/image-v3-repair-20261004/
+?? qa/image-v4-isolated-controls-20261004/
+?? qa/image-v4-preview/
+?? qa/image-v4-repair-20261004/
+?? qa/kingdom-image-progress-20261004/
+?? qa/kingdom-run6-verification.json
+?? qa/later71-independent-audit-20261004/
+?? qa/offline-controls-repair-20261004/
+?? qa/test-runner-safeguards-20261004/
+?? qa/test-runner-sandbox-20261004/
+?? qa/test_kingdom_v3_guide.png
+?? qa/test_reconstruct_stone_base.png
+?? qa/visual-integration-20261004/
+?? qa/visual-repair-20261004/
+?? scripts/__pycache__/assemble_live_art.cpython-313.pyc
+?? scripts/__pycache__/image_v4_actors.cpython-313.pyc
+?? scripts/__pycache__/interactive_4k_runner.cpython-313.pyc
+?? scripts/__pycache__/interactive_runner_continuity.cpython-313.pyc
+?? scripts/__pycache__/measure_all_mounts.cpython-313.pyc
+?? scripts/__pycache__/recover_first_delivery.cpython-313.pyc
+?? scripts/__pycache__/test_clean_substitutions.cpython-313.pyc
+?? scripts/__pycache__/verify_layout_geometry.cpython-313.pyc
+?? scripts/age-progression-matrix.mjs
+?? scripts/analyze_actors_poses_and_landmarks.py
+?? scripts/analyze_backgrounds.py
+?? scripts/analyze_complex_actors.py
+?? scripts/analyze_knight_p01.py
+?? scripts/assemble_live_art.py
+?? scripts/audit_all_32_phase.py
+?? scripts/audit_kingdom_run6.py
+?? scripts/build-apk.mjs
+?? scripts/build_delivery_manifest_v3.py
+?? scripts/capture-followup-20261004.mjs
+?? scripts/capture-manual-20261004.mjs
+?? scripts/capture-visual-20261004.mjs
+?? scripts/check_contracts.py
+?? scripts/check_manifest_mapping.py
+?? scripts/check_rival_prompts.py
+?? scripts/code_ready_measurements.py
+?? scripts/compare_rivals.py
+?? scripts/dev-port.mjs
+?? scripts/execute_later73_generation.py
+?? scripts/extract_real_rig_anatomy.py
+?? scripts/finalize_run2_inspection.py
+?? scripts/generate_corrected_portrait_crops.py
+?? scripts/image_v4_actors.py
+?? scripts/image_v4_interface.py
+?? scripts/image_v4_rigs.py
+?? scripts/image_v4_terrain_clearance.py
+?? scripts/inspect_4k_keys.py
+?? scripts/inspect_4k_manifest.py
+?? scripts/inspect_actors_and_mounts.py
+?? scripts/inspect_all_73_candidates.py
+?? scripts/inspect_all_rigs.py
+?? scripts/inspect_components.py
+?? scripts/inspect_composite_troops.py
+?? scripts/inspect_horse_floor.py
+?? scripts/inspect_knight_bot_nonmag.py
+?? scripts/inspect_knight_bottom.py
+?? scripts/inspect_knight_mid.py
+?? scripts/inspect_knight_p1_p2.py
+?? scripts/inspect_knight_subblocks.py
+?? scripts/inspect_manifest.py
+?? scripts/inspect_mounts_floors.py
+?? scripts/inspect_old_rival_features.py
+?? scripts/inspect_parts_content.py
+?? scripts/inspect_rig_parts.py
+?? scripts/inspect_rig_sheets_anatomy.py
+?? scripts/inspect_rival_details.py
+?? scripts/inspect_warlock.py
+?? scripts/inspect_warlock_faces.py
+?? scripts/inspect_warlock_parts.py
+?? scripts/interactive_4k_continuation_run3.py
+?? scripts/interactive_4k_continuation_run4.py
+?? scripts/interactive_4k_continuation_run6.py
+?? scripts/interactive_4k_continuation_runner.py
+?? scripts/interactive_4k_runner.py
+?? scripts/interactive_4k_tactical_retry.py
+?? scripts/interactive_runner_continuity.py
+?? scripts/measure_all_mounts.py
+?? scripts/measure_horse_landmarks.py
+?? scripts/measure_kingdom_constraints.py
+?? scripts/measure_parts.py
+?? scripts/print_32_4k.py
+?? scripts/print_site_rects.py
+?? scripts/process_all_derivatives.py
+?? scripts/process_cleaned_actors_and_mounts.py
+?? scripts/process_cleaned_actors_and_mounts_v3.py
+?? scripts/process_code_art_consumers_20261004.py
+?? scripts/process_rig_anatomy_v3.py
+?? scripts/publish_corrected_delivery_manifest.py
+?? scripts/reconcile_accounting_ledger.py
+?? scripts/reconcile_and_verify_run1.py
+?? scripts/reconcile_unique_attempts_accounting.py
+?? scripts/redo_bounded_kingdom_measurement.py
+?? scripts/repair_73_request_packs.py
+?? scripts/rig_helpers.py
+?? scripts/save_all_blocks.py
+?? scripts/save_knight_crops.py
+?? scripts/scan_knight_blocks.py
+?? scripts/survey_kingdom_terrain_v3.py
+?? scripts/task1_measure_and_manifest.py
+?? scripts/task1_prepare_kingdom_recovery.py
+?? scripts/task2_prepare_73_packs.py
+?? scripts/task4_production_and_cleanup.py
+?? scripts/test_bare_base_reconstruct.py
+?? scripts/test_clean_substitutions.py
+?? scripts/test_gcloud_auth.py
+?? scripts/test_grey_extraction.py
+?? scripts/test_inspect_knight.py
+?? scripts/test_load_components.py
+?? scripts/test_magenta_despill.py
+?? scripts/test_magenta_extraction.py
+?? scripts/test_paths.py
+?? scripts/test_portrait_centering.py
+?? scripts/test_portrait_crops.py
+?? scripts/test_portrait_landmarks_calibration.py
+?? scripts/test_render_guide.py
+?? scripts/test_rig_framework.py
+?? scripts/test_runner_continuity_offline.py
+?? scripts/thumb_warlock.py
+?? scripts/update_handoff_banners.py
+?? scripts/verify_all_38_portrait_crops.py
+?? scripts/verify_existing_24.py
+?? scripts/verify_layout_geometry.py
+?? src/client/actor.js
+?? src/client/anatomy.js
+?? src/client/choices.js
+?? src/client/motion.js
+?? src/client/portraits.js
+?? src/client/presentation.js
+?? src/core/challenge.js
+?? src/data/actor-atlas.json
+?? src/data/age-buildings.json
+?? src/data/anatomy-binding-v1.json
+?? src/data/building-pad-fit-v1.json
+?? src/data/mount-review-v1.json
+?? src/data/plate-catalog.json
+?? src/data/portrait-cards.json
+?? tests/__pycache__/
+?? tests/art-consumers-20261004.test.mjs
+?? tests/audio-background.test.mjs
+?? tests/code-ready-20261004.test.mjs
+?? tests/connected-journey-20261004.test.mjs
+?? tests/live-actors-20261004.test.mjs
+?? tests/live-motion-20261004.test.mjs
+?? tests/portrait-cards-20261004.test.mjs
+?? tests/save-boundaries-20261004.test.mjs
+?? tests/story-support.test.mjs
+?? tests/test_runner_safeguards_offline.py
+?? tests/visual-placement-20261004.test.mjs

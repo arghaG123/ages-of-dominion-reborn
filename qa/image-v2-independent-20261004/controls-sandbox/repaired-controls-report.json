@@ -1,0 +1,74 @@
+{
+  "scope": "OFFLINE NEW SANDBOX (qa/offline-controls-repair-20261004). All network/credentials disabled.",
+  "allPassed": true,
+  "rows": [
+    {
+      "probe": "delayed contender after first verification",
+      "contenders": [
+        {
+          "contender": 0,
+          "acquired": true,
+          "error": null
+        },
+        {
+          "contender": 1,
+          "acquired": false,
+          "error": "Mutex acquisition collision: exclusive token delayed-race-mutex.json.excl is already held."
+        }
+      ],
+      "exclusive": true,
+      "pass": true
+    },
+    {
+      "probe": "dead PID UNKNOWN",
+      "blocked": true,
+      "pass": true
+    },
+    {
+      "probe": "UNKNOWN release denied",
+      "result": {
+        "status": "UNKNOWN_RETAINED_LIABILITY",
+        "itemId": "offline-unknown",
+        "costUSD": 0.143612,
+        "unresolved": true
+      },
+      "blocked": true,
+      "pass": true
+    },
+    {
+      "probe": "reuse response/body/output binding",
+      "result": {
+        "status": "FAILED_MISSING_PROMPT",
+        "itemId": "offline-corrupt-reuse",
+        "error": "Prompt missing or invalid"
+      },
+      "rejectsUnboundOutput": true,
+      "pass": true
+    },
+    {
+      "probe": "subattempt append-only collision",
+      "priorBytesPreserved": true,
+      "pass": true
+    },
+    {
+      "probe": "run-wide preflight halts before next dispatch on UNKNOWN",
+      "halted": true,
+      "pass": true
+    },
+    {
+      "probe": "cloud state classification covers all active/unknown states",
+      "allBlocked": true,
+      "pass": true
+    },
+    {
+      "probe": "malformed pacing fails closed",
+      "blocked": true,
+      "pass": true
+    },
+    {
+      "probe": "malformed write-ahead fails closed",
+      "blocked": true,
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "contents": [
+    {
+      "parts": [
+        {
+          "text": "Generate native 2K image."
+        }
+      ],
+      "role": "user"
+    }
+  ],
+  "generationConfig": {
+    "candidateCount": 1,
+    "imageConfig": {
+      "aspectRatio": "1:1",
+      "imageSize": "2K"
+    },
+    "maxOutputTokens": 2048,
+    "responseModalities": [
+      "IMAGE"
+    ]
+  }
+}

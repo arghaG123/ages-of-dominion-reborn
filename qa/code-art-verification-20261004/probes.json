@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-04T01:32:26.591Z",
+  "rows": [
+    {
+      "id": "negative-time",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    },
+    {
+      "id": "invalid-queue",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    },
+    {
+      "id": "negative-tower-damage",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    },
+    {
+      "id": "empty-active-queue",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    },
+    {
+      "id": "false-resolved-victory",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    }
+  ],
+  "endless": {
+    "extensions": [
+      {
+        "waves": 6,
+        "extensions": 1,
+        "status": "ACTIVE",
+        "hero": true
+      },
+      {
+        "waves": 9,
+        "extensions": 2,
+        "status": "ACTIVE",
+        "hero": true
+      },
+      {
+        "waves": 12,
+        "extensions": 3,
+        "status": "ACTIVE",
+        "hero": true
+      },
+      {
+        "waves": 15,
+        "extensions": 4,
+        "status": "ACTIVE",
+        "hero": true
+      }
+    ],
+    "status": "PASS",
+    "scope": "Synthetic clears; no balance or natural campaign claim"
+  },
+  "backup": {
+    "id": "valid-backup-after-damaged-live-replacement",
+    "beforeBackupValid": true,
+    "afterBackupValid": false,
+    "afterBackup": "broken-save",
+    "status": "FAIL",
+    "scope": "Memory fixture, damaged live replaced through exported save; real UI paths must also preserve backup"
+  }
+}

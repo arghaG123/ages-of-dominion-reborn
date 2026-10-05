@@ -1,0 +1,70 @@
+{
+  "version": "portrait-cards-v1",
+  "status": "CARD_REVIEW_NOT_WORLD_CUTOUT",
+  "note": "RGB bust cards. Not travel cutouts. The ancient knight file is a pending review crop. The mounted medieval master is rejected for Stone.",
+  "pending": {
+    "knight": {
+      "file": "assets/consumers/code-20261004/portrait-ancient-knight-pending.png",
+      "sha256": "ceb56f2c77c577bee849562cf34091d965adf3dae018382dcf60f6b2a992c7a3",
+      "width": 700,
+      "height": 700,
+      "era": "ancient",
+      "status": "PENDING_CARD_REVIEW",
+      "sourceSHA256": "eb03424f0a599894dfa5bdcc9124a84221c2959787c3c8fdc18d24636180acf8"
+    }
+  },
+  "rejected": {
+    "knight-mounted-master": "assets/derivatives/portraits/knight-mounted-master.png is a medieval mounted reference and is not a Stone actor",
+    "rig-knight-part-01": "assets/derivatives/rigs/rig-source-parts-knight_part_01.png still contains many greaves on one slice"
+  },
+  "cards": {
+    "ranger": {
+      "file": "assets/derivatives/portraits/portrait-ancient-ranger.png",
+      "sha256": "0b99fee70ff75d5aeff08c4987d76f85018d3d7a964cfd5476cd4297ee10600f",
+      "era": "ancient",
+      "minAge": 0
+    },
+    "warlock": {
+      "file": "assets/derivatives/portraits/portrait-ancient-warlock.png",
+      "sha256": "94cdb819928db0e5cd1b9c81498ece3468fd378757b77d4122536f65975fec7b",
+      "era": "ancient",
+      "minAge": 0
+    },
+    "mage": {
+      "file": "assets/derivatives/portraits/portrait-ancient-mage.png",
+      "sha256": "a416d86e78779c7bbcc4de57412b666be5c75f6ff146f188dc94522591f12ff7",
+      "era": "ancient",
+      "minAge": 0
+    },
+    "paladin": {
+      "file": "assets/derivatives/portraits/portrait-ancient-paladin.png",
+      "sha256": "b5e984c60bb560b38cd7890dde9818ef6e7aff1fc770d1334da7b4cde83f57f6",
+      "era": "ancient",
+      "minAge": 0
+    },
+    "barbarian": {
+      "file": "assets/derivatives/portraits/portrait-ancient-barbarian.png",
+      "sha256": "711b1a60584d7d8a2ae4267dc7bb4d02cbc2233aa18f91eda1a7c24fb26d2422",
+      "era": "ancient",
+      "minAge": 0
+    },
+    "necromancer": {
+      "file": "assets/derivatives/portraits/portrait-ancient-necromancer.png",
+      "sha256": "e216add67533eb851e114e5459a54f16bddfb75d6c15992ca43b8b0b8d2fe973",
+      "era": "ancient",
+      "minAge": 0
+    },
+    "healer": {
+      "file": "assets/derivatives/portraits/portrait-ancient-healer.png",
+      "sha256": "74e280b4d051aa50ee483b2aa42de2956b069a7326faba34b275df2c7cfdfc55",
+      "era": "ancient",
+      "minAge": 0
+    },
+    "knight": {
+      "file": "assets/derivatives/portraits/portrait-medieval-knight.png",
+      "sha256": "01a0f05babba1128380d621de1fe7740b179391ac1f2bc664543e82b04d61535",
+      "era": "medieval",
+      "minAge": 3
+    }
+  }
+}

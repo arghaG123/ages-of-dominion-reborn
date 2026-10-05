@@ -1,0 +1,58 @@
+{
+  "snapshotUTC": "2026-10-04T02:10:01.625613+00:00",
+  "distinctSuccessfulIDs": 24,
+  "successfulFiles": 24,
+  "allJournalHashesMatch": true,
+  "nativeDimensions": [
+    [
+      5504,
+      3072
+    ]
+  ],
+  "successesByMode": {
+    "kingdom": 0,
+    "adventure": 8,
+    "tactical": 8,
+    "defense": 8
+  },
+  "kingdomPaidAttemptEntries": [],
+  "savedBudgetReconciliation": {
+    "reconciledAt": "2026-10-03T15:24:37.193239+00:00",
+    "policy": "EVIDENCE_BOUNDED_STANDARD_RATE_CEILING_WITH_OVERHEAD",
+    "tariffSource": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "standardTariff": {
+      "inputPer1M": 0.5,
+      "imageOutputPer1M": 60.0
+    },
+    "measuredCompletedUsageTokens": {
+      "inputTokens": 985482,
+      "outputTokens": 574764,
+      "totalTokens": 1560246
+    },
+    "tokenStandardCostUSD": 34.979,
+    "overheadAndStorageBufferUSD": 5.247,
+    "reconciledBatches01To17TotalUSD": 40.225,
+    "historicalMockReservationUSD": 2.0,
+    "safetyReserveUSD": 15.0,
+    "reconciledInteractive4KRun01CostUSD": 1.8293,
+    "reconciledInteractive4KRun01BufferUSD": 2.1037,
+    "reconciledInteractive4KRun02CostUSD": 0.6098,
+    "reconciledInteractive4KRun02BufferUSD": 0.7013,
+    "totalCommittedProtectedUSD": 61.4324,
+    "hardCapUSD": 80.0,
+    "marginUnderHardCapUSD": 18.5676,
+    "targetUSD": 60.0,
+    "marginUnderTargetUSD": -1.4324,
+    "invoiceStatus": "BILLED_TOTAL_REMAINS_UNKNOWN_HOLDS_RECONCILED",
+    "reconciledInteractive4KRun03CostUSD": 0.1524,
+    "reconciledInteractive4KRun03BufferUSD": 0.1753,
+    "reconciledInteractive4KRun04CostUSD": 0.7622,
+    "reconciledInteractive4KRun04BufferUSD": 0.8765,
+    "reconciledInteractive4KTacticalRetryCostUSD": 0.3049,
+    "reconciledInteractive4KTacticalRetryBufferUSD": 0.3506
+  },
+  "savedMutexExists": false,
+  "documentsRead": 50,
+  "providerQueried": false,
+  "productionMutated": false
+}

@@ -1,0 +1,29 @@
+{
+  "candidateID": "kingdom-terrain-iron",
+  "age": "iron",
+  "geometryVersion": "v4-candidate-20261004",
+  "status": "READY_FOR_REVIEW_NOT_OWNER_ACCEPTED",
+  "ownerAcceptance": "UNVERIFIED",
+  "runtimeApproved": false,
+  "files": {
+    "base": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-iron/base_candidate_v4.png",
+    "baseSHA256": "4c5d992ed1ce2b99ad068ee6b5719de38108a308b8ec5089a6d88a23f5499cee",
+    "mask": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-iron/mask_removal_v4.png",
+    "maskSHA256": "2b68ad484eb5e927073eea67b1cb4d4fa895c43adc28fc2f32f7081054aa85c3",
+    "guide": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-iron/guide_v4.png",
+    "guideSHA256": "2b5977ff08b26586d983524ae874f6107ea857848b36216109503fa986a43369",
+    "originalOutput4K": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-iron/output.png",
+    "originalSHA256": "b007e856c9af75ce6fa44656af8fbf6b530487aa0bcb46f04fab3aa36c92d709"
+  },
+  "repairedDefects": [
+    "Coherent bare-base ground synthesis removing baked plot borders and mutable clutter",
+    "Real silhouette and shadow removal mask generated",
+    "Extended bridge crossing proposal spanning river x=13..14 with far-bank approach [14, 7]",
+    "Hall roof envelope [402,40]..[750.16,372.86] separated from civic ground polygon"
+  ],
+  "residualDefects": [
+    "Independent visual and owner review pending",
+    "Runtime client sprite compositing not yet executed",
+    "Native 4K re-render with repaired inputs requires separate owner scheduling"
+  ]
+}

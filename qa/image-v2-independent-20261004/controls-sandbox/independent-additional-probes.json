@@ -1,0 +1,58 @@
+[
+  {
+    "probe": "missing-body-hash",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false
+  },
+  {
+    "probe": "invented-body-hash",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false
+  },
+  {
+    "probe": "changed-prompt",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false
+  },
+  {
+    "probe": "wrong-mime",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false
+  }
+]

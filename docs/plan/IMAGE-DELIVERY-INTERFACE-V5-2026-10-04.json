@@ -1,0 +1,102 @@
+{
+  "version": "5.0-matte-decision-20261004",
+  "codeAIHandoffReady": false,
+  "usableWorldSpriteCount": null,
+  "reason": "Partial subset only. Native matte, role, small-static suitability, rig contact, runtime, and owner acceptance are separate. A suitable row does not make the delivery ready.",
+  "noNewPaidScope": true,
+  "providerCalls": 0,
+  "accounting": {
+    "protectedExposureUSD": 70.7012,
+    "unknownLiabilitiesUSD": 0.287224,
+    "invoices": "UNKNOWN",
+    "note": "Offline facts retained. No provider operation was run to refresh them. Apparent headroom is not spend authority."
+  },
+  "hashLedger": "qa/image-matte-decision-20261004/hashes.json",
+  "preserved": {
+    "native2k": "assets/high-res/final-native2k",
+    "actorsV4": "assets/derivatives/actors/v4",
+    "mountsV4": "assets/derivatives/mounts/v4",
+    "rigsV4": "assets/derivatives/rigs/v4",
+    "substitutionsV3": "assets/derivatives/substitutions/v3"
+  },
+  "substitutionsPreserved": [
+    {
+      "id": "troop-iron-melee",
+      "role": "AUTHENTIC_LEGIONARY_SUBSTITUTION",
+      "path": "assets/derivatives/substitutions/v3/troop-iron-melee.png",
+      "sha256": "623f44b114bb683925b9ac4e98f8e6faf56bfe8d68eb10d63b1acb566c768c16",
+      "dimensions": [1024, 1024],
+      "selectedSourceStatus": "ROLE_FAIL_STENCIL",
+      "inPrimaryReplacementDraft": false
+    },
+    {
+      "id": "troop-industrial-heavy",
+      "role": "AUTHENTIC_STEAM_WALKER_SUBSTITUTION",
+      "path": "assets/derivatives/substitutions/v3/troop-industrial-heavy.png",
+      "sha256": "5ca06b27ee90de583b6f717cc54f7abc9d5ada0344c99b61d69ce23f5399094b",
+      "dimensions": [1024, 1024],
+      "selectedSourceStatus": "ROLE_FAIL_GUNNER",
+      "inPrimaryReplacementDraft": false
+    }
+  ],
+  "decisions": [
+    {"id": "troop-bronze-melee", "decision": "KEEP", "scale": "inherited v4 review", "nativeMatte": "reviewed previously", "smallStatic": "suitable within that review", "output": "assets/derivatives/actors/v4/troop-bronze-melee.png"},
+    {"id": "troop-bronze-ranged", "decision": "KEEP", "scale": "inherited v4 review", "nativeMatte": "reviewed previously", "smallStatic": "suitable within that review", "output": "assets/derivatives/actors/v4/troop-bronze-ranged.png"},
+    {"id": "troop-iron-ranged", "decision": "KEEP", "scale": "inherited v4 review", "nativeMatte": "reviewed previously", "smallStatic": "suitable within that review", "output": "assets/derivatives/actors/v4/troop-iron-ranged.png"},
+    {"id": "troop-iron-heavy", "decision": "KEEP", "scale": "inherited v4 review", "nativeMatte": "reviewed previously", "smallStatic": "suitable within that review", "output": "assets/derivatives/actors/v4/troop-iron-heavy.png"},
+    {"id": "troop-gunpowder-melee", "decision": "KEEP", "scale": "inherited v4 review", "nativeMatte": "reviewed previously", "smallStatic": "suitable within that review", "output": "assets/derivatives/actors/v4/troop-gunpowder-melee.png"},
+    {"id": "troop-gunpowder-ranged", "decision": "KEEP", "scale": "inherited v4 review", "nativeMatte": "reviewed previously", "smallStatic": "suitable within that review", "output": "assets/derivatives/actors/v4/troop-gunpowder-ranged.png"},
+    {"id": "troop-modern-melee", "decision": "KEEP", "scale": "inherited v4 review", "nativeMatte": "reviewed previously", "smallStatic": "suitable within that review", "output": "assets/derivatives/actors/v4/troop-modern-melee.png"},
+    {"id": "troop-future-melee", "decision": "KEEP", "scale": "inherited v4 review", "nativeMatte": "reviewed previously", "smallStatic": "suitable within that review", "output": "assets/derivatives/actors/v4/troop-future-melee.png"},
+    {"id": "troop-gunpowder-heavy", "decision": "KEEP_AT_AUDITED_SIZE", "nativeMatte": "NATIVE_BLUE_CONTACT_MARK_BESIDE_WHEEL", "smallStatic": "minor shadow at 64px", "preserve": "cannon, carriage, both wheels", "output": "assets/derivatives/actors/v4/troop-gunpowder-heavy.png"},
+    {"id": "troop-future-ranged", "decision": "KEEP_AT_AUDITED_SIZE", "nativeMatte": "NATIVE_PALE_GROUND_AT_BOOTS", "smallStatic": "minor contact patch at 64px", "preserve": "boot edges", "output": "assets/derivatives/actors/v4/troop-future-ranged.png"},
+    {"id": "hero-mount-horse", "decision": "KEEP_AT_AUDITED_SIZE", "nativeMatte": "NATIVE_THIN_POLYGON_EDGE", "smallStatic": "hairline does not dominate at 64px", "preserve": "hooves", "animation": "one pose, hooves not separated", "output": "assets/derivatives/mounts/v4/hero-mount-horse.png"},
+    {"id": "hero-mount-motor-transport", "decision": "KEEP_AT_AUDITED_SIZE", "nativeMatte": "NATIVE_GREY_GROUND_FRINGE", "smallStatic": "small fringe at 64px", "preserve": "wheels", "output": "assets/derivatives/mounts/v4/hero-mount-motor-transport.png"},
+    {"id": "hero-mount-future-transport", "decision": "KEEP_AT_AUDITED_SIZE", "nativeMatte": "NATIVE_PALE_UNDERBODY", "smallStatic": "vehicle and thrusters read at 64px", "preserve": "thruster glow", "output": "assets/derivatives/mounts/v4/hero-mount-future-transport.png"},
+    {"id": "troop-future-heavy", "decision": "KEEP_AT_AUDITED_SIZE", "nativeMatte": "NATIVE_UNDERHULL_SHADOW", "smallStatic": "hover shadow and glow at 64px", "preserve": "thruster glow", "output": "assets/derivatives/actors/v4/troop-future-heavy.png"},
+    {"id": "troop-modern-ranged", "decision": "KEEP_AS_SNOW_SCENE_ILLUSTRATION", "generalSprite": "FAIL", "reason": "Under-body grey sheet luminance is about 94-113 with chroma under 16, matching uniform grey. A bright mound at source box about [835,1197,391,192] is separable and does not touch the rifle at 1px, but removing it leaves the sheet. Not shipped.", "preserve": "prone body, hands, rifle, bipod, bipod-foot snow caps", "output": "assets/derivatives/actors/v4/troop-modern-ranged.png"},
+    {"id": "troop-stone-melee", "decision": "REGENERATE_CANDIDATE", "nativeMatte": "LARGE_DIRT_SLAB", "smallStatic": "slab still reads at 64px", "anatomy": "boots kept; further cuts previously damaged soles", "output": "assets/derivatives/actors/v4/troop-stone-melee.png", "sha256": "2a0f7b820f680bcf10ce2f4264a9017b4c4f6da335f6ae98b716cc7ff00176fb"},
+    {"id": "troop-stone-ranged", "decision": "REGENERATE_CANDIDATE", "nativeMatte": "WOOD_AND_GRAVEL_PLATFORM", "smallStatic": "platform still reads at 64px", "anatomy": "boots kept; wood key previously punched leather", "output": "assets/derivatives/actors/v4/troop-stone-ranged.png", "sha256": "412d5c5a1be8fc55c5bb5362c4edcb7f57fe6c438dc5238365097e9d5eb8de25"},
+    {"id": "troop-industrial-ranged", "decision": "REGENERATE_CANDIDATE", "nativeMatte": "PRONE_SANDBAG_ATTACHED_PINK", "smallStatic": "wrong pose at 64px", "detachedFragmentsRemoved": 0, "reason": "Opaque content is one connected component. Pink smear is attached. No caption island was removed.", "output": "assets/derivatives/actors/v4/troop-industrial-ranged.png", "sha256": "77ff7c1b3473e00b03b02f80c2740cc274023d2bb869dfafdfc7935677cfe6eb"},
+    {"id": "troop-stone-heavy", "decision": "LOCAL_REPAIR", "nativeMatte": "BOOT_HOLES_RESTORED_FROM_SOURCE", "smallStatic": "figure reads at 50px and 64px on white, black, and neutral green", "output": "assets/derivatives/actors/v5/troop-stone-heavy.png", "sha256": "dde192c590f148b9883b29e69f0dbba3c4fa2a78257aeace17d352c173359a37", "evidence": ["qa/image-matte-decision-20261004/actors/troop-stone-heavy-v5-50.png", "qa/image-matte-decision-20261004/actors/troop-stone-heavy-v5-64.png", "qa/image-matte-decision-20261004/inspect/troop-stone-heavy-v5feet.png"]},
+    {"id": "troop-medieval-melee", "decision": "LOCAL_REPAIR", "nativeMatte": "BOOT_HOLES_RESTORED_CAST_SHADOW_REMAINS", "smallStatic": "cast shadow still visible at 64px; boots intact", "output": "assets/derivatives/actors/v5/troop-medieval-melee.png", "sha256": "f4bbdd5a521b0c27bd4377ce4384d889bef729b495a8f7ab1dd6a085a295f369"},
+    {"id": "troop-industrial-melee", "decision": "LOCAL_REPAIR", "nativeMatte": "BOOT_HOLES_RESTORED_CAST_SHADOW_REMAINS", "smallStatic": "cast shadow still visible at 64px; boots intact", "output": "assets/derivatives/actors/v5/troop-industrial-melee.png", "sha256": "5ea9154a0247415cd5260448219bd6c95120ddd208294a55e81dd34edf04f5c2"},
+    {"id": "troop-medieval-ranged", "decision": "KEEP_AT_AUDITED_SIZE", "nativeMatte": "figure sits high in the 2048 frame", "smallStatic": "rear-view archer with bow and feet readable at 64px", "output": "assets/derivatives/actors/v4/troop-medieval-ranged.png"},
+    {"id": "troop-bronze-heavy", "decision": "REGENERATE_CANDIDATE", "inPrimaryReplacementDraft": false, "reason": "Two horses, two soldiers, chariot, and a dirt patch under hooves and wheel. Not one troop. Hooves and wheel were not cut.", "output": "assets/derivatives/actors/v4/troop-bronze-heavy.png"},
+    {"id": "troop-medieval-heavy", "decision": "KEEP_AT_AUDITED_SIZE", "nativeMatte": "WHITE_OVAL_AND_BANNER_LETTERS", "smallStatic": "thin white curve under the hooves at 64px", "preserve": "horse hooves", "output": "assets/derivatives/actors/v4/troop-medieval-heavy.png"},
+    {"id": "troop-modern-heavy", "decision": "KEEP_V4_REPAIR_REJECTED", "nativeMatte": "MAGENTA_HALO_AND_GROUND_UNDER_TRACKS", "attempt": "Magenta key removed 47098 pixels and punched a helmet highlight. v5 file deleted.", "smallStatic": "halo visible at 64px on the kept v4", "preserve": "tracks", "output": "assets/derivatives/actors/v4/troop-modern-heavy.png"},
+    {"id": "troop-iron-melee", "decision": "ROLE_FAIL_USE_LEGIONARY_SUBSTITUTION", "inPrimaryReplacementDraft": false, "output": "assets/derivatives/substitutions/v3/troop-iron-melee.png"},
+    {"id": "troop-industrial-heavy", "decision": "ROLE_FAIL_USE_STEAM_WALKER_SUBSTITUTION", "inPrimaryReplacementDraft": false, "output": "assets/derivatives/substitutions/v3/troop-industrial-heavy.png"},
+    {"id": "knight-mounted-master", "decision": "KEEP_WITH_ROLE_REJECTION", "reason": "Medieval mounted reference. Ancient opaque card remains a separate card.", "output": "assets/derivatives/mounts/v4/knight-mounted-master.png"}
+  ],
+  "rigRecovery": {
+    "ledger": "qa/image-matte-decision-20261004/hashes.json",
+    "ranger": {
+      "newParts": "assets/derivatives/rigs/v5/ranger",
+      "recovered": ["sleeve_upper_arm", "pauldron_upper_arm", "vambrace_hand_open", "vambrace_hand_gauntlet", "hand_open", "fist_lower", "fist_mid", "hand_gripping_arrow"],
+      "combinedPreserved": ["bow_quiver_arrow_assembly", "hand_gripping_arrow"],
+      "assemblies": [
+        {"parent": "sleeve_upper_arm", "child": "vambrace_hand_open", "anglesDeg": [-25, 0, 25], "overlapPx": [1, 1, 1], "status": "FAIL_NO_PAINTED_OVERLAP", "evidence": "qa/image-matte-decision-20261004/rigs/ranger_sleeve_upper_arm_vambrace_hand_open_0_green.png"},
+        {"parent": "pauldron_upper_arm", "child": "vambrace_hand_gauntlet", "anglesDeg": [-25, 0, 25], "overlapPx": [4, 0, 0], "status": "FAIL_NO_PAINTED_OVERLAP"}
+      ],
+      "note": "Virtual abutment leaves a gap. That is not a painted socket."
+    },
+    "knight": {
+      "namedCopies": "assets/derivatives/rigs/v5/knight",
+      "source": "existing v4 painted components, copied, v4 kept",
+      "pilotOverlap": "FAIL_NO_PAINTED_OVERLAP remains on the v4 thigh/greave pair",
+      "combinedPreserved": ["polearm_hands_assembly"]
+    },
+    "paladin": {
+      "newParts": ["gauntlet", "pauldron_lower_left", "pauldron_right", "sword_gauntlet_assembly"],
+      "sword_gauntlet_assembly": "COMBINED forearm, gauntlet, and sword"
+    },
+    "healer": {
+      "newParts": [],
+      "reason": "Uncropped remainder is joined by the green quadrant fill. No new discrete limb was separated. Existing v4 crops stay."
+    }
+  },
+  "runtimeAcceptance": "UNVERIFIED",
+  "ownerAcceptance": "UNVERIFIED",
+  "replacementDraft": "docs/plan/REPLACEMENT-DRAFT-THREE-ROLES-2026-10-04.json"
+}

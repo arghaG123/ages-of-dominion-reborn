@@ -1,0 +1,42 @@
+{
+  "id": "healer-torso",
+  "semantic": "torso",
+  "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+  "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+  "searchBox": [
+    1060,
+    20,
+    1570,
+    390
+  ],
+  "crop": [
+    1080,
+    44,
+    1570,
+    385
+  ],
+  "derivative": "assets/derivatives/rigs/v6/healer/torso.png",
+  "sha256": "4499fa26e35cddd1526cb8ff8fdff4805e0592806a93baf51fd2fa41d0bfaa56",
+  "dimensions": [
+    490,
+    341
+  ],
+  "mode": "RGBA",
+  "method": "v6-healer-green-flood-grabcut",
+  "parameters": {
+    "backgroundDistanceLt": 28,
+    "foregroundDistanceGt": 42,
+    "greenReference": [
+      144,
+      178,
+      104
+    ],
+    "grabCutIterations": 5,
+    "grabcut": true,
+    "iterations": 5,
+    "definiteForegroundLost": 0
+  },
+  "side": "UNKNOWN",
+  "definiteForegroundPixels": 104476,
+  "opaquePixels": 104568
+}

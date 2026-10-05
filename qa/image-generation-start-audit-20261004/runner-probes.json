@@ -1,0 +1,60 @@
+[
+  {
+    "probe": "same_owner_second_instance",
+    "observed": {
+      "firstHasLock": true,
+      "secondHasLock": true
+    }
+  },
+  {
+    "probe": "empty_sites_invalid_camera_short_bridge",
+    "observed": {
+      "pass": true,
+      "sitesMeasured": 0,
+      "pairwiseOverlaps": 0
+    }
+  },
+  {
+    "probe": "persisted_body_byte_hash",
+    "observed": {
+      "returned": "e304636e77211fddcda085652fd981472d7bbcef094108870e617fad690192c5",
+      "actual": "ecef495083451359bfef0a800cb9852a5fac4dc5840449a08a5319987f9284ba",
+      "match": false
+    }
+  },
+  {
+    "probe": "immediate_429_retry",
+    "observed": {
+      "first": "QUOTA_STOP_HTTP_429",
+      "second": "SUCCEEDED",
+      "firstBackoff": 60
+    }
+  },
+  {
+    "probe": "new_instance_pacing",
+    "observed": {
+      "nextAllowedPostAt": 0
+    }
+  },
+  {
+    "probe": "unknown_state_persisted",
+    "observed": {
+      "owner": "same-owner",
+      "pid": 14292,
+      "acquiredAt": "2026-10-04T03:45:20.078542+00:00",
+      "active": true,
+      "lastState": "ACQUIRED"
+    }
+  },
+  {
+    "probe": "default_release_after_unknown",
+    "observed": {
+      "owner": "same-owner",
+      "pid": 14292,
+      "acquiredAt": "2026-10-04T03:45:20.078542+00:00",
+      "active": false,
+      "lastState": "RELEASED",
+      "releasedAt": "2026-10-04T03:45:20.104915+00:00"
+    }
+  }
+]

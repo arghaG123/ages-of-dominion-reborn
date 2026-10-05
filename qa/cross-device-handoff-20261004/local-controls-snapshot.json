@@ -1,0 +1,608 @@
+[
+  {
+    "path": "docs/plan/image-production/budget-ledger.json",
+    "sha256": "2f876d65349145d5607545f4370d31bc302a0b64650db24a29376c2361a61a71",
+    "data": {
+      "version": 1,
+      "currency": "USD",
+      "hardCap": 80,
+      "target": 60,
+      "safetyReserve": 15,
+      "historicalMock": {
+        "outputOnlyEstimate": 0.504,
+        "conservativeReservation": 2,
+        "billedTotal": null
+      },
+      "batches": [
+        {
+          "id": "production-01-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T03:50:34.915778+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7379059066443661312",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded. reservedUSD stays. billedTotal is still unknown and is not zero.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-02-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T04:02:17.629751+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/2260718089937092608",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded. reservedUSD stays. billedTotal is still unknown and is not zero.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-03-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T05:18:06.595515+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/3389643852779356160",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and outputs were collected. reservedUSD stays. billedTotal is still unknown and is not zero. Visual review is not a pass.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-04-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T06:42:31.398185+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/6905547786872160256",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-05-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T08:24:23.263085+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/3746131910783401984",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-06-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T08:33:47.871817+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/6618865523092357120",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-07-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T08:41:14.176508+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/1624373536338477056",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-08-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T09:13:46.262477+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/6249288878671265792",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-09-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T11:27:51.949507+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7989419961254674432",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.39,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-10-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T11:35:12.844797+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/6595555876583505920",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.45,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-11-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T12:10:12.183402+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7177646128421142528",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.36,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-12-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T12:26:14.943362+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/1629211387500691456",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.36,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-13-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T13:01:40.436506+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/2619440355568779264",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.35,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-14-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T13:49:53.421235+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/9013425926528040960",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.34,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-15-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T14:03:14.612627+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7110655083964006400",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.34,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-16-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T14:12:56.363873+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7070967112247803904",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.35,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-17-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T14:49:40.440780+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/5827973615093547008",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.34,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "interactive-4k-first32-20261003",
+          "reservedUSD": 9.12,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T17:27:38Z",
+          "usageEstimateUSD": 1.8293,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K individual calls: 12 succeeded, 8 deferred. Invoices remain unknown.",
+          "reconciledExposureUSD": 2.1037,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_CALLS"
+        },
+        {
+          "id": "interactive-4k-first32-continuation-20261004",
+          "reservedUSD": 2.85,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T01:02:43Z",
+          "usageEstimateUSD": 0.6098,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Continuation: 4 succeeded, 1 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 0.7013,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_CONTINUATION"
+        },
+        {
+          "id": "interactive-4k-first32-continuation-run3-20261004",
+          "reservedUSD": 1.71,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T01:27:04Z",
+          "usageEstimateUSD": 0.1524,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Run 3: 1 succeeded, 1 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 0.1753,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_RUN3"
+        },
+        {
+          "id": "interactive-4k-first32-continuation-run4-20261004",
+          "reservedUSD": 1.45,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T01:39:49Z",
+          "usageEstimateUSD": 0.7622,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Run 4: 5 succeeded, 0 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 0.8765,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_RUN4"
+        },
+        {
+          "id": "interactive-4k-tactical-retry-20261004",
+          "reservedUSD": 0.6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T01:59:00Z",
+          "usageEstimateUSD": 0.3049,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Tactical Retry: 2 succeeded, 0 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 0.3506,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_TACTICAL_RETRY"
+        },
+        {
+          "id": "interactive-4k-kingdom-20261004",
+          "reservedUSD": 2.28,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T02:33:25Z",
+          "usageEstimateUSD": 1.2193,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Kingdom Run 06: 8 succeeded, 0 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 1.4022,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_KINGDOM"
+        },
+        {
+          "id": "interactive-2k-later73-20261004",
+          "reservedUSD": 10.483676,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T04:00:00Z",
+          "usageEstimateUSD": 7.403866,
+          "journalCostUSD": 7.564399,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 2K Later 73 Generation completed: 73 unique successes ($7.4039 raw usage / $7.4208 journal tariff), plus $0.2872 retained ambiguous holds (powder-barbarian crash + ranger timeout).",
+          "reconciledExposureUSD": 7.8516,
+          "reconciledBatchExposureUSD": 7.8516,
+          "reconciliationStatus": "RECONCILED_TERMINAL_COLLECTED_HOLDS_RETAINED"
+        }
+      ],
+      "billedTotal": null,
+      "billingStatus": "HOLDS_RETAINED_INVOICE_UNKNOWN",
+      "reconciliationTrail": {
+        "reconciledAt": "2026-10-04T06:30:00.000000+00:00",
+        "policy": "EVIDENCE_BOUNDED_STANDARD_RATE_CEILING_WITH_OVERHEAD",
+        "tariffSource": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "standardTariff": {
+          "inputPer1M": 0.5,
+          "imageOutputPer1M": 60.0,
+          "textThinkingPer1M": 3.0
+        },
+        "measuredCompletedUsageTokens": {
+          "inputTokens": 1074631,
+          "outputTokens": 697701,
+          "totalTokens": 1772332
+        },
+        "tokenStandardCostUSD": 42.383,
+        "overheadAndStorageBufferUSD": 5.247,
+        "reconciledBatches01To17TotalUSD": 40.24,
+        "historicalMockReservationUSD": 2.0,
+        "safetyReserveUSD": 15.0,
+        "reconciledInteractive4KRun01CostUSD": 1.8293,
+        "reconciledInteractive4KRun01BufferUSD": 2.1037,
+        "reconciledInteractive4KRun02CostUSD": 0.6098,
+        "reconciledInteractive4KRun02BufferUSD": 0.7013,
+        "reconciledInteractive4KRun03CostUSD": 0.1524,
+        "reconciledInteractive4KRun03BufferUSD": 0.1753,
+        "reconciledInteractive4KRun04CostUSD": 0.7622,
+        "reconciledInteractive4KRun04BufferUSD": 0.8765,
+        "reconciledInteractive4KTacticalRetryCostUSD": 0.3049,
+        "reconciledInteractive4KTacticalRetryBufferUSD": 0.3506,
+        "reconciledInteractive4KKingdomCostUSD": 1.2193,
+        "reconciledInteractive4KKingdomBufferUSD": 1.4022,
+        "reconciledInteractive2KLater73RawUsageUSD": 7.4039,
+        "reconciledInteractive2KLater73JournalCostUSD": 7.5644,
+        "reconciledInteractive2KLater73AmbiguousLiabilitiesUSD": 0.2872,
+        "reconciledInteractive2KLater73TotalExposureUSD": 7.8516,
+        "totalCommittedProtectedUSD": 70.7012,
+        "hardCapUSD": 80.0,
+        "marginUnderHardCapUSD": 9.2988,
+        "targetUSD": 60.0,
+        "marginUnderTargetUSD": -10.7012,
+        "invoiceStatus": "BILLED_TOTAL_REMAINS_UNKNOWN_HOLDS_RECONCILED"
+      }
+    }
+  },
+  {
+    "path": "docs/plan/image-production/UNIFIED-ACCOUNTING-RECONCILIATION-2026-10-04.json",
+    "sha256": "e41c2dc29836af12e2837cfc9e2c6e9513c88fa890af4e561e7ab4bd45531765",
+    "data": {
+      "version": "2.0-unique-attempt-reconciled-20261004",
+      "currency": "USD",
+      "policy": "EVIDENCE_BOUNDED_STANDARD_RATE_CEILING_WITH_OVERHEAD",
+      "status": "RECONCILED_LOCAL_EVIDENCE_UNIQUE_ATTEMPTS",
+      "invoicesStatus": "UNKNOWN",
+      "ratesUSDPerMillion": {
+        "inputPer1M": 0.5,
+        "imagePer1M": 60.0,
+        "textThinkingPer1M": 3.0,
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+      },
+      "scopeConstraints": {
+        "hardCapUSD": 80.0,
+        "targetAimUSD": 60.0,
+        "safetyReserveUSD": 15.0,
+        "headroomUnderHardCapUSD": 9.2988,
+        "invoicesStatus": "UNKNOWN",
+        "invoiceUnknownIsNotZero": true,
+        "releaseOfFundsAuthorized": false,
+        "newGenerationCallsAuthorized": false
+      },
+      "discrepancyAudit": {
+        "statedBaseUSD": 62.8496,
+        "previousComponentsSumUSD": 62.8346,
+        "differenceUSD": 0.015,
+        "rootCause": "In UNIFIED-ACCOUNTING-RECONCILIATION-2026-10-04.json line 25 and budget-ledger.json line 47, 'reconciledBatches01To17TotalUSD' was mistyped as 40.225 USD instead of the actual batches 01-17 sum of 40.240 USD. The difference 40.240 - 40.225 = 0.0150 USD explains the entire discrepancy. With the true sum of 40.240 USD + 5.6096 USD (4K buffers) + 2.0000 USD (mock) + 15.0000 USD (reserve), the base components sum exactly equals stated base 62.8496 USD."
+      },
+      "journalAudit": {
+        "journalRecordedTotalUSD": 7.564399,
+        "journalComponents": {
+          "uniqueSuccessesSumUSD": 7.420787,
+          "powderBarbarianHoldUSD": 0.143612,
+          "sumUSD": 7.564399
+        },
+        "doubleCountDetail": "interactive-2k-later73-journal.json totalCostUSD of 7.564399 USD already contains the 0.143612 USD hold for portrait-powder-barbarian (attempt 1 crash). When the previous report added journal 7.564399 USD plus additional ambiguous holds of 0.287224 USD (both barbarian and ranger), the barbarian hold was added twice."
+      },
+      "uniqueAttemptReconciliation": {
+        "categoryA_SuccessEstimate73USD": 7.4038655,
+        "categoryB_ConfirmedFailuresUSD": 0.0,
+        "categoryC_RetainedUnknownLiabilitiesUSD": 0.287224,
+        "categoryD_Batches01To17TotalUSD": 40.24,
+        "categoryE_Buffers4KTotalUSD": 5.6096,
+        "categoryF_HistoricalMockReservationUSD": 2.0,
+        "categoryG_SafetyReserveProtectedUSD": 15.0,
+        "conservativeCeilingBufferUSD": 0.1605105,
+        "totalCommittedProtectedExposureUSD": 70.7012
+      },
+      "baseBreakdown": {
+        "batches01To17ActualUSD": 40.24,
+        "historicalMockReservationUSD": 2.0,
+        "safetyReserveUSD": 15.0,
+        "buffers4K": {
+          "reconciledInteractive4KRun01BufferUSD": 2.1037,
+          "reconciledInteractive4KRun02BufferUSD": 0.7013,
+          "reconciledInteractive4KRun03BufferUSD": 0.1753,
+          "reconciledInteractive4KRun04BufferUSD": 0.8765,
+          "reconciledInteractive4KTacticalRetryBufferUSD": 0.3506,
+          "reconciledInteractive4KKingdomBufferUSD": 1.4022
+        },
+        "totalBaseUSD": 62.8496
+      },
+      "later73Tokens": {
+        "inputTokens": 89149,
+        "imageTokens": 122640,
+        "textTokens": 297,
+        "thinkingTokens": 0,
+        "totalTokens": 212086
+      },
+      "later73UnknownLiabilities": [
+        {
+          "itemId": "portrait-powder-barbarian",
+          "attempt": 1,
+          "status": "UNKNOWN_CRASH_DURING_DISPATCH",
+          "recordedAt": "2026-10-04T04:32:29.047344+00:00",
+          "bodySHA256": "4803017d3eea6a33c74f71fc629c0cec48d251072d5306223aa66f62dcdec00a",
+          "liabilityUSD": 0.143612,
+          "cloudGeneration": "1791087926598788",
+          "reason": "Process PID 29872 terminated during dispatch; execution/billing unverified"
+        },
+        {
+          "itemId": "rig-source-parts-ranger",
+          "attempt": 1,
+          "status": "UNKNOWN",
+          "recordedAt": "2026-10-04T05:58:05Z",
+          "bodySHA256": "7a3b3f3a6673eb17829d33dc15e713f75c6bc2c8b011a3f13219f435ffc65dfb",
+          "liabilityUSD": 0.143612,
+          "reason": "The read operation timed out; execution/billing unverified"
+        }
+      ],
+      "accountingRulesEnforced": [
+        "Zero fund release authorized; apparent headroom remains protected and unspent",
+        "Provider invoices and billing transactions remain UNKNOWN",
+        "Later retry success does NOT prove whether earlier crash/timeout was billed; full liability retained",
+        "Aim $60 / Hard $80 / Protected $15 reserve persist untouched",
+        "NO paid calls, repurchase, fallback, supplemental/filler/retry/regeneration authorized"
+      ]
+    }
+  },
+  {
+    "path": "docs/plan/image-production/reconciled-accounting-ledger.json",
+    "sha256": "f893d035a4a2a488f0c90b1c0859ef219afebcd0096c14d3f6ea545e4994ccd7",
+    "data": {
+      "version": "2.1-reconciled-completed-20261004",
+      "status": "RECONCILED_LATER73_COMPLETED",
+      "invoices": "UNKNOWN",
+      "ratesStatus": "OFFICIAL_STANDARD_RATES_20261004",
+      "tariffDetails": {
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "inputTokenPer1M_USD": 0.5,
+        "outputTextThinkingPer1M_USD": 3.0,
+        "imageOutputPer1M_USD": 60.0,
+        "native2KImageTokens": 1680,
+        "inputImageTokens": 1120
+      },
+      "caps": {
+        "aimUSD": 60.0,
+        "hardUSD": 80.0,
+        "protectedReserveUSD": 15.0
+      },
+      "componentsUSD": {
+        "historicalBatches01to17Reconciled": 40.24,
+        "historicalMock": 2.0,
+        "run1SuccessfulImages": 1.8293,
+        "run1NoImageTextTariff": 0.001503,
+        "run2SuccessfulImages": 0.6098,
+        "run3SuccessfulImages": 0.1524,
+        "run4SuccessfulImages": 0.7622,
+        "run5TacticalRetry": 0.3049,
+        "run6KingdomTerrains": 1.2193,
+        "priorBufferAndOverhead": 0.7302,
+        "protectedReserve": 15.0,
+        "later73ActualSpendUSD": 7.5644,
+        "retainedUnresolvedLiabilitiesUSD": 0.2872
+      },
+      "retainedProvisionalPriorExposureUSD": 62.8496,
+      "totalReconciledExposureUSD": 70.7012,
+      "headroomUnderHardCapUSD": 9.2988,
+      "queueOutcome": {
+        "itemsCount": 73,
+        "completed": 73,
+        "reused": 157,
+        "promotedToFinalNative2k": 73,
+        "actualSpendUSD": 7.5644,
+        "averageCostPerImageUSD": 0.1036
+      },
+      "rulesEnforced": [
+        "Aim $60 / Hard $80 / Protected $15 reserve persist untouched",
+        "Zero batch 18+ or filler generations",
+        "Invoices remain UNKNOWN",
+        "Sequential individual generation with 20s gap and 60s+ 429 retry",
+        "100% of 73 promoted to assets/high-res/final-native2k/"
+      ]
+    }
+  },
+  {
+    "path": "docs/plan/image-production/submission.mutex.json",
+    "sha256": "16f18be54ee3be74596e195646de4346514a61ff1f46eea8b2ad846187b9ed04",
+    "data": {
+      "owner": "image-executor-later73-4cc837c5-pid26088",
+      "pid": 26088,
+      "acquiredAt": "2026-10-04T05:57:16.088371+00:00",
+      "active": false,
+      "lastState": "COMPLETED_CYCLE",
+      "releasedAt": "2026-10-04T05:59:06.198768+00:00"
+    }
+  },
+  {
+    "path": "docs/plan/image-production/active-batch.lock.json",
+    "sha256": "6fc42cb5e377380d5bdc6eee325220eebec273d2f18c40c68527b3729c8c3c4f",
+    "data": {
+      "batch_id": "interactive-2k-later73-20261004",
+      "model": "gemini-3.1-flash-image",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "account": "arghawork3@gmail.com",
+      "state": "JOB_STATE_SUCCEEDED",
+      "workflow_state": "TERMINAL_COLLECTED",
+      "createdAt": "2026-10-04T04:00:00Z",
+      "requestedOutputs": 73,
+      "succeededOutputs": 73,
+      "failedOutputs": 0,
+      "reusedOutputs": 157,
+      "rawUsageEstimateUSD": 7.403866,
+      "journalCostUSD": 7.564399,
+      "retainedAmbiguousLiabilitiesUSD": 0.287224,
+      "reconciledBatchExposureUSD": 7.8516,
+      "collectedAt": "2026-10-04T05:59:06Z",
+      "owner_status": "INTERACTIVE_2K_LATER73_COLLECTED_CANDIDATES",
+      "assetApproval": "CANDIDATE_DERIVATIVE_INSPECTION_IN_PROGRESS",
+      "priorBatch": {
+        "batch_id": "interactive-4k-kingdom-20261004",
+        "state": "JOB_STATE_SUCCEEDED",
+        "workflow_state": "TERMINAL_COLLECTED"
+      }
+    }
+  },
+  {
+    "path": "docs/plan/image-production/pacing_state.json",
+    "sha256": "03830e0a31ba4f21aa54857c177b9850806d05587547984e676119fb44f8278f",
+    "data": {
+      "lastCompletedAtTs": 1791093546.1895263,
+      "lastCompletedAt": "2026-10-04T05:59:06.189526+00:00",
+      "nextAllowedPOSTAtTs": 1791093566.1895263,
+      "nextAllowedPOSTAt": "2026-10-04T05:59:26.189526+00:00",
+      "nextEligibleRetryAtTs": 1791092461.9837418,
+      "nextEligibleRetryAt": "2026-10-04T05:41:01.983742+00:00",
+      "updatedAt": "2026-10-04T05:59:06.189709+00:00",
+      "owner": "image-executor-later73-4cc837c5-pid26088"
+    }
+  }
+]

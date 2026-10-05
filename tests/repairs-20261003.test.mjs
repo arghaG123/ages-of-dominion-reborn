@@ -4,8 +4,9 @@ import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
 import { command, newCampaign, validate } from '../src/core/campaign.js';
 import { legalTargets, meleeCommand, startBattle, strike, validateBattle } from '../src/core/battle.js';
-import { decode, encode, load, save, SAVE_KEY } from '../src/core/save.js';
-import { camera } from '../src/client/projection.js';
+import { checksum, decode, encode, load, replaceCampaign, restoreBackup, save, SAVE_KEY } from '../src/core/save.js';
+import scene from '../src/data/stone-scene.json' with { type: 'json' };
+import { camera, inverse, kingdomFocusBounds, project, TARGET_PX, targetSourceSize } from '../src/client/projection.js';
 
 const fresh = () => newCampaign(contract, data, 1000);
 const act = (state, id, type, payload, now = 1000) => command(state, { id, type, payload }, now, data);
@@ -105,27 +106,193 @@ test('advertised melee sends the legal approach and still rejects a remote hit',
 });
 
 test('a damaged live save can be replaced without dropping the preserved bytes or the backup', () => {
-  const memory = { values: new Map(), getItem(k) { return this.values.has(k) ? this.values.get(k) : null; }, setItem(k, v) { this.values.set(k, v); }, removeItem(k) { this.values.delete(k); } };
+  const memory = {
+    values: new Map(), failAt: null,
+    getItem(k) { return this.values.has(k) ? this.values.get(k) : null; },
+    setItem(k, v) { if (k === this.failAt) throw new Error('Quota exceeded'); this.values.set(k, v); },
+    removeItem(k) { this.values.delete(k); },
+  };
   const first = fresh();
   save(memory, first, data);
   const second = act(first, 'rival', 'CHOOSE_RIVAL', { name: 'Varek Iron-Eye' });
   save(memory, second, data);
+  const backup = memory.getItem(SAVE_KEY + '-backup');
   memory.setItem(SAVE_KEY, 'broken-save');
   const loaded = load(memory, data);
   assert.equal(loaded.status, 'DAMAGED');
   assert.deepEqual(loaded.backup, first);
+  memory.failAt = SAVE_KEY;
   const next = newCampaign(contract, data, 5000, 99);
+  assert.throws(() => save(memory, next, data), /Quota/);
+  assert.equal(memory.getItem(SAVE_KEY), 'broken-save');
+  assert.equal(memory.getItem(SAVE_KEY + '-backup'), backup);
+  assert.equal(memory.getItem(SAVE_KEY + '-damaged'), 'broken-save');
+  memory.failAt = null;
   save(memory, next, data);
   assert.equal(memory.getItem(SAVE_KEY + '-damaged'), 'broken-save');
-  assert.deepEqual(load(memory, data).state.id, next.id);
+  assert.equal(memory.getItem(SAVE_KEY + '-backup'), backup);
+  assert.deepEqual(decode(backup, data), first);
+  assert.equal(load(memory, data).state.id, next.id);
   assert.equal(load(memory, data).state.clock, 5000);
+  assert.throws(() => restoreBackup(memory, data), /Live save is valid/);
+  assert.equal(load(memory, data).state.id, next.id);
+  memory.setItem(SAVE_KEY, 'broken-again');
+  const restored = restoreBackup(memory, data);
+  assert.deepEqual(restored, first);
+  assert.equal(load(memory, data).state.revision, first.revision);
+  assert.equal(memory.getItem(SAVE_KEY + '-damaged'), 'broken-save');
 });
 
-test('short landscape stages keep one camera and at least 80 percent of the stage width', () => {
-  for (const [width, height] of [[825, 263], [933, 312], [1180, 708], [1280, 608]]) {
-    const fit = camera([1376, 768], width, height);
-    const shown = Math.min(width, 1376 * fit.scale);
-    assert.ok(shown / width >= 0.8, `${width}x${height} shows ${shown}`);
+test('a quota failure while replacing a valid campaign keeps the latest live recoverable', () => {
+  const memory = {
+    values: new Map(), failAt: null,
+    getItem(k) { return this.values.has(k) ? this.values.get(k) : null; },
+    setItem(k, v) { if (k === this.failAt) throw new Error('Quota exceeded'); this.values.set(k, v); },
+    removeItem(k) { this.values.delete(k); },
+  };
+  const first = fresh();
+  save(memory, first, data);
+  const second = act(first, 'rival', 'CHOOSE_RIVAL', { name: 'Varek Iron-Eye' });
+  save(memory, second, data);
+  const liveBefore = memory.getItem(SAVE_KEY);
+  memory.failAt = SAVE_KEY;
+  const third = act(second, 'rival2', 'STORY_CHOICE', { index: 0 }, second.clock);
+  assert.throws(() => save(memory, third, data), /Quota/);
+  assert.deepEqual(load(memory, data).state.story.rival, 'Varek Iron-Eye');
+  // Promotion already copied the latest valid live into backup; do not roll that back to older bookkeeping.
+  assert.equal(memory.getItem(SAVE_KEY + '-backup'), liveBefore);
+  assert.equal(decode(memory.getItem(SAVE_KEY + '-backup'), data).story.rival, 'Varek Iron-Eye');
+  // Verified staged bytes of the failed write remain until a later durable commit clears them.
+  assert.equal(decode(memory.getItem(SAVE_KEY + '-staged'), data).story.chapter, 1);
+});
+
+test('a save from before story fields still loads', () => {
+  const memory = {
+    values: new Map(),
+    getItem(k) { return this.values.has(k) ? this.values.get(k) : null; },
+    setItem(k, v) { this.values.set(k, v); },
+    removeItem(k) { this.values.delete(k); },
+  };
+  const legacy = fresh();
+  delete legacy.story.chapter;
+  delete legacy.story.choices;
+  delete legacy.story.futureSeen;
+  delete legacy.story.milestones;
+  delete legacy.quests;
+  const payload = JSON.stringify(legacy);
+  memory.setItem(SAVE_KEY, JSON.stringify({ schema: 1, payload, checksum: checksum(payload) }));
+  const loaded = load(memory, data);
+  assert.equal(loaded.status, 'VALID');
+  assert.equal(loaded.state.story.chapter, 0);
+  assert.equal(loaded.state.quests.q5.claimed, false);
+  assert.equal(loaded.state.story.rival, null);
+});
+
+function memoryStore() {
+  return {
+    values: new Map(), failAt: null, corruptStaged: false,
+    getItem(k) {
+      if (this.corruptStaged && k === SAVE_KEY + '-staged') return 'corrupt-staged';
+      return this.values.has(k) ? this.values.get(k) : null;
+    },
+    setItem(k, v) { if (k === this.failAt) throw new Error('Quota exceeded'); this.values.set(k, v); },
+    removeItem(k) { this.values.delete(k); },
+  };
+}
+function wrap(state) {
+  const payload = JSON.stringify(state);
+  return JSON.stringify({ schema: 1, payload, checksum: checksum(payload) });
+}
+
+test('intentional replacement keeps a lower revision and autosave still refuses it', () => {
+  const memory = memoryStore();
+  const first = fresh();
+  save(memory, first, data);
+  const live = act(first, 'rival', 'CHOOSE_RIVAL', { name: 'Varek Iron-Eye' });
+  save(memory, live, data);
+  const liveBefore = memory.getItem(SAVE_KEY);
+  const older = fresh();
+  older.hero.class = 'mage';
+  assert.throws(() => save(memory, older, data), /stale/);
+  assert.equal(load(memory, data).state.story.rival, 'Varek Iron-Eye');
+  memory.failAt = SAVE_KEY;
+  assert.throws(() => replaceCampaign(memory, older, data), /Quota/);
+  assert.equal(memory.getItem(SAVE_KEY + '-backup'), liveBefore);
+  assert.equal(decode(memory.getItem(SAVE_KEY + '-backup'), data).story.rival, 'Varek Iron-Eye');
+  assert.equal(decode(memory.getItem(SAVE_KEY + '-staged'), data).hero.class, 'mage');
+  assert.equal(load(memory, data).state.story.rival, 'Varek Iron-Eye');
+  memory.failAt = null;
+  memory.corruptStaged = true;
+  assert.throws(() => replaceCampaign(memory, older, data), /Staged save verification failed/);
+  assert.equal(load(memory, data).state.story.rival, 'Varek Iron-Eye');
+  memory.corruptStaged = false;
+  const stored = replaceCampaign(memory, older, data);
+  assert.ok(stored.revision > live.revision);
+  assert.equal(load(memory, data).state.hero.class, 'mage');
+  assert.equal(load(memory, data).state.story.rival, null);
+  assert.equal(load(memory, data).state.revision, stored.revision);
+  assert.equal(decode(memory.getItem(SAVE_KEY + '-backup'), data).story.rival, 'Varek Iron-Eye');
+  assert.throws(() => save(memory, live, data), /stale/);
+  assert.throws(() => save(memory, older, data), /stale/);
+  assert.throws(() => decode(JSON.stringify({ schema: 2, payload: '{}', checksum: '00000000' }), data), /Unsupported save envelope/);
+  assert.equal(load(memory, data).state.hero.class, 'mage');
+});
+
+test('malformed present story fields stay damaged and keep their bytes', () => {
+  const samples = [];
+  const mismatch = fresh();
+  mismatch.story.chapter = 1;
+  mismatch.story.choices = [];
+  samples.push(mismatch);
+  const claimed = fresh();
+  claimed.story.chapter = 1;
+  claimed.story.choices = [data.STORY[0].ch[0].flag];
+  claimed.quests.q1.claimed = 'yes';
+  samples.push(claimed);
+  const chapter = fresh();
+  chapter.story.chapter = 1.5;
+  samples.push(chapter);
+  for (const sample of samples) {
+    assert.throws(() => validate(sample, data));
+    const raw = wrap(sample);
+    const memory = memoryStore();
+    memory.setItem(SAVE_KEY, raw);
+    const loaded = load(memory, data);
+    assert.equal(loaded.status, 'DAMAGED');
+    assert.equal(loaded.state, null);
+    assert.equal(memory.getItem(SAVE_KEY), raw);
+    assert.throws(() => decode(raw, data));
+  }
+});
+
+test('all 18 kingdom targets stay inside short stages, safe area and an open panel', () => {
+  const geo = contract.geometry.kingdom;
+  const focus = kingdomFocusBounds(geo, scene.hall);
+  const closed = [[825, 263], [933, 312], [1180, 708], [1280, 608]];
+  const open = [[577, 263], [685, 312], [892, 708], [992, 608]];
+  const safe = [[777, 215], [885, 264], [1132, 660], [1232, 560]];
+  const sparse = focus;
+  const mature = kingdomFocusBounds(geo, scene.hall);
+  assert.deepEqual(sparse, mature);
+  for (const [width, height] of [...closed, ...open, ...safe]) {
+    const fit = camera([1376, 768], width, height, focus, 24);
+    assert.equal(fit.offset.length, 2);
     assert.ok(fit.scale > 0);
+    const place = point => [point[0] * fit.scale + fit.offset[0], point[1] * fit.scale + fit.offset[1]];
+    for (const site of geo.sites) {
+      const [x, y, w, h] = site.rect;
+      const source = project(geo.worldToSource, [x + w / 2, y + h / 2]);
+      const centre = place(source);
+      assert.ok(centre[0] >= 24 && centre[1] >= 24 && centre[0] <= width - 24 && centre[1] <= height - 24, `${site.id} at ${centre} on ${width}x${height}`);
+      const size = targetSourceSize(fit.scale);
+      assert.ok(Math.abs(size * fit.scale - TARGET_PX) < 1e-6);
+      const half = TARGET_PX / 2;
+      assert.ok(centre[0] - half >= -1e-6 && centre[1] - half >= -1e-6 && centre[0] + half <= width + 1e-6 && centre[1] + half <= height + 1e-6, site.id);
+      for (const edge of [[centre[0] - half + 0.5, centre[1]], [centre[0] + half - 0.5, centre[1]], [centre[0], centre[1] - half + 0.5], [centre[0], centre[1] + half - 0.5]]) {
+        const back = [(edge[0] - fit.offset[0]) / fit.scale, (edge[1] - fit.offset[1]) / fit.scale];
+        assert.ok(Math.abs(back[0] - source[0]) <= size / 2 && Math.abs(back[1] - source[1]) <= size / 2, site.id);
+        inverse(geo.worldToSource, back);
+      }
+    }
   }
 });

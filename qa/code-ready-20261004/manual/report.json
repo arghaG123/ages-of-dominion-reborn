@@ -1,0 +1,351 @@
+{
+  "started": "2026-10-04T11:34:47.683Z",
+  "base": "http://127.0.0.1:4181",
+  "acceleration": "none — construction uses the live clock",
+  "fixtures": [
+    "endless was paused from the Defense controls. Full wave clearance was not waited out. The campaign was then reloaded from slot 1.",
+    "siege was paused from the Defense controls. Full wave clearance was not waited out. The campaign was then reloaded from slot 1."
+  ],
+  "steps": [
+    {
+      "name": "01-knight-pending.png",
+      "message": "Choose a class, then enter the valley.",
+      "selected": "Knight",
+      "image": {
+        "file": "01-knight-pending.png",
+        "sha256": "69bf1e5f8ccbf3a70ae69d9a70bdd6cc3aa490f275c5f25bed7b87685551a9d7",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "02-ranger-walk.png",
+      "message": "Attack 2, Defense 2, Power 2, Knowledge 2. Mana 20/20. Daily moves 5. Points 0. Helmet: empty; Weapon: empty; Shield: empty; Chest: empty; Greaves: empty; Ring: empty. A skill offer waits until you choose or decline it.",
+      "selected": "Ranger",
+      "image": {
+        "file": "02-ranger-walk.png",
+        "sha256": "7cdae87e83b677eb32ea859087c34eee49ab9eea2f8efc70a3a577ad1cc66c99",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "03-kingdom-day1.png",
+      "message": "Stone Age. Hall level 1. 17 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Build a Lumber Camp.",
+      "selected": "P01 · empty plot",
+      "image": {
+        "file": "03-kingdom-day1.png",
+        "sha256": "6c5bf802f3bcbed3d626805bfb4650554cc70d194275d7bddd04cfa4cbc6b7ec",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "build-lumber.png",
+      "message": "Stone Age. Hall level 1. 16 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Build a Farm.",
+      "selected": "Lumber Camp · level 1",
+      "image": {
+        "file": "build-lumber.png",
+        "sha256": "24c4b23c29dc6df406e38987e841b72f66434e5bbcb214ebc01766ae27889f75",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "build-farm.png",
+      "message": "Stone Age. Hall level 1. 15 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Build a Quarry.",
+      "selected": "Farm · level 1",
+      "image": {
+        "file": "build-farm.png",
+        "sha256": "dac8728332f94a0530c2bb171d10c57ed0f8d3f60c4fc0c395b3008e60bc73bf",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "build-quarry.png",
+      "message": "Stone Age. Hall level 1. 14 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Build a Barracks.",
+      "selected": "Quarry · level 1",
+      "image": {
+        "file": "build-quarry.png",
+        "sha256": "b0fb8f053ba379a21e9e3510601ad2cc155a9be9604024bb05bf6aa899eb7576",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "build-barracks.png",
+      "message": "Stone Age. Hall level 1. 13 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Recruit a stack.",
+      "selected": "Barracks · level 1",
+      "image": {
+        "file": "build-barracks.png",
+        "sha256": "bc9cb7bbc40ea00fd5d44f1d22b44c9cb8a4166a3fc42ea5ec6b9a1eeb9a66fc",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "04-recruited.png",
+      "message": "Army 2/3. Capacity is 2 plus Barracks level. Recruitment pays five of the current age. Plate review does not change the age.",
+      "selected": "Army",
+      "image": {
+        "file": "04-recruited.png",
+        "sha256": "d716bd1034f66e99d4b1c5539e2b7421d91dccb91dc9a9875a8f09f9826cbff2",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "05-iron-plate-review.png",
+      "message": "Army 2/3. Capacity is 2 plus Barracks level. Recruitment pays five of the current age. Plate review does not change the age.",
+      "selected": "Army",
+      "image": {
+        "file": "05-iron-plate-review.png",
+        "sha256": "8db88d612f347b10976cee9ea8b726efbda7a067805f6d68b8d9aa8724d0e416",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "06-industrial-walker-review.png",
+      "message": "Army 2/3. Capacity is 2 plus Barracks level. Recruitment pays five of the current age. Plate review does not change the age.",
+      "selected": "Army",
+      "image": {
+        "file": "06-industrial-walker-review.png",
+        "sha256": "126f3197f72374074da4f8fe947f28dce6e201c625275f9d571c0f36628d45b3",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "double-confirm",
+      "message": "Confirm stayed disabled after the first spend."
+    },
+    {
+      "name": "07-travel-double-confirm.png",
+      "message": "An unresolved guard is waiting. Movement stays spent until that guard is cleared. Next: Fight the guard.",
+      "selected": "Travel 10,5 · moves 0",
+      "image": {
+        "file": "07-travel-double-confirm.png",
+        "sha256": "b0bcaeef82e68a98c6c8db1dd035e0ffb145cce107bae86ccd030a17f4f5332b",
+        "width": 1280,
+        "height": 720
+      },
+      "beforeMoves": "Travel 8,8 · moves 5"
+    },
+    {
+      "name": "08-after-manual-tactical.png",
+      "message": "Choose a move, a spell, or wait. Gate strength elsewhere is 400.",
+      "selected": "Tactical",
+      "image": {
+        "file": "08-after-manual-tactical.png",
+        "sha256": "9b4d89f7beedc0895a2dddbb529cbee93ec5b91aeb9afc7c88b6e1de00eda52b",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "loot",
+      "message": "The battle roll added no item. Nothing was granted."
+    },
+    {
+      "name": "10-after-end-day.png",
+      "message": "Road steps cost 1. Water and site footprints are blocked. Next: Hold the lane.",
+      "selected": "Travel 10,5 · moves 5",
+      "image": {
+        "file": "10-after-end-day.png",
+        "sha256": "5c718ac87ea15ea7dac38d23eb4b14ad9a5fec1ccfa2d996ba21c14bb1b728b9",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "11-forge-without-armory.png",
+      "message": "Armory required Bag holds 1.",
+      "selected": "Forge",
+      "image": {
+        "file": "11-forge-without-armory.png",
+        "sha256": "a8d5d6d06e59a4ce9fb326265e043533c0b0f52eb8d4fffe968d4a47b4880c14",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "12-market-stone.png",
+      "message": "The market opens in the Bronze Age.",
+      "selected": "Market",
+      "image": {
+        "file": "12-market-stone.png",
+        "sha256": "d5fcc0b4e4d35bb94036f1cfdb78abc4b80e2bcbaad244dc397c731e2a6057c5",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "13-story.png",
+      "message": "Chapter I — The First Fire. Your people huddle in a cave mouth while something wet and heavy moves in the dark outside. You have flint, forty spears, and a name people will follow.\n\nThe fire is small. It will not last both the night and the strangers at the treeline. Choices, the rival and claims stay in the save. Offers stay with this save.",
+      "selected": "Choose a rival",
+      "image": {
+        "file": "13-story.png",
+        "sha256": "d8a6bd718ced333040ce076cef064b9646dcae82fd7a65b0c87eb2b3f35ac77d",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "14-settings.png",
+      "message": "Music 0.6, sound 0.8. Local music is a generated motif on its own bus; the click is only the sound bus. Haptics are unavailable. No account or network setting is present.",
+      "selected": "Settings",
+      "image": {
+        "file": "14-settings.png",
+        "sha256": "eeb0da8857eab9f2a9d9094c5b9a29c43a94c12a36bde07cbcc2aba2a65faff2",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "15-help.png",
+      "message": "Help: use Kingdom to build, Adventure to travel, Tactical and Defense for battles, and Story for the seven chapters, quests and age records. The Future conclusion is The Valley We Keep and grants nothing by itself. Credits: Ages of Dominion Reborn is an offline local campaign. Privacy: there is no account, no network request and no device permission. Saves, slots and exports stay on this device.",
+      "selected": "Help, credits and privacy",
+      "image": {
+        "file": "15-help.png",
+        "sha256": "72426ab399ca0fe859c9a1a68b9310fc3dd211b85cfbae5e20e7c17e19446b05",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "16-reloaded-slot.png",
+      "message": "Slot 1 loaded.",
+      "selected": "Lumber Camp · level 1",
+      "image": {
+        "file": "16-reloaded-slot.png",
+        "sha256": "e5b7bcdac496e8fbec1e90aa408071e0949e349b040eed5658567bacdb647ea1",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "17-war-skirmish.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.01. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "Battle round 1",
+      "image": {
+        "file": "17-war-skirmish.png",
+        "sha256": "53aa33d80839db7d0bc3eb567a4e3c99ae1f8aebf3d57b9b73da888916ebc3df",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "17-war-duel.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.01. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "Battle round 1",
+      "image": {
+        "file": "17-war-duel.png",
+        "sha256": "fc775195594caf2ccf9704ce6fce338e23880ff8700932d8fda8e64a9a470ba2",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "17-war-challenge.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.01. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "Battle round 1",
+      "image": {
+        "file": "17-war-challenge.png",
+        "sha256": "aa0a59c5de907ff8a00e602a33ffb9e2b6af1722765615b8d362ab4e49163fb8",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "17-war-endless.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.01. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "endless core 400",
+      "image": {
+        "file": "17-war-endless.png",
+        "sha256": "d71fcca5249cb20d5f92e930ac5396c527e84faf53a0c1b4b05c108c9e7eee52",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "17-war-siege.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.01. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "siege core 400",
+      "image": {
+        "file": "17-war-siege.png",
+        "sha256": "94b53a95dcd54c074f621b2b4c277abe5f5be081db55bfd3dd57e07412d5eee3",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "825x375",
+      "closed": {
+        "file": "825x375-panel-closed.png",
+        "sha256": "47cac1197fbb8cc7680ee3cf042f8007460a88c90298b1960b55707ff37d6f0b",
+        "width": 825,
+        "height": 375
+      },
+      "opened": {
+        "file": "825x375-panel-open.png",
+        "sha256": "9f239fa0d925786793fb1d2d3ea7eec47abd015b7d0cfe0ec2b8b6e2bc20729f",
+        "width": 825,
+        "height": 375
+      },
+      "short": 0
+    },
+    {
+      "name": "933x424",
+      "closed": {
+        "file": "933x424-panel-closed.png",
+        "sha256": "5e2f2abb036e2f319b1c8eb83f715b0b984f2217c10f35b17352a5b19f853e51",
+        "width": 933,
+        "height": 424
+      },
+      "opened": {
+        "file": "933x424-panel-open.png",
+        "sha256": "203da4099434c84b564bbb0744daf46b2f0e103f0e65c5a9a3f695d3fc24f0e5",
+        "width": 933,
+        "height": 424
+      },
+      "short": 0
+    },
+    {
+      "name": "1180x820",
+      "closed": {
+        "file": "1180x820-panel-closed.png",
+        "sha256": "7df9ef5bfe93daa2bf2fc545c0d777a3c6cb22f449ef799c811a32499629553d",
+        "width": 1180,
+        "height": 820
+      },
+      "opened": {
+        "file": "1180x820-panel-open.png",
+        "sha256": "477808ad304fca4a46e95c9182c6df8e72561531f23c40f05c9cbb4adebb7272",
+        "width": 1180,
+        "height": 820
+      },
+      "short": 0
+    },
+    {
+      "name": "1280x720",
+      "closed": {
+        "file": "1280x720-panel-closed.png",
+        "sha256": "34160e2f7d8a30cffc9b266b4df29ceed9cd07c098f2d8c91631847139cec2b9",
+        "width": 1280,
+        "height": 720
+      },
+      "opened": {
+        "file": "1280x720-panel-open.png",
+        "sha256": "2cafcd0d8a3a149dc5fdbd02d55330481c0879f15509bb44169cbef79889038d",
+        "width": 1280,
+        "height": 720
+      },
+      "short": 0
+    }
+  ],
+  "failures": [],
+  "checkerNote": "The first checker looked for the building name in the status sentence. The selected plot names showed Lumber Camp, Farm, Quarry and Barracks at level 1, and empty sites fell from 17 to 13. Those four rows are successes. Recruit reinforced the existing Stone melee stack to 17. The Forge later reported one bag item; the equip control was not on the tactical screen, so that equip click was not made. Endless and Siege were paused rather than played through.",
+  "finished": "2026-10-04T11:35:20.060Z"
+}

@@ -1,0 +1,108 @@
+{
+  "status": "DRAFT_NOT_SUBMITTED",
+  "authorization": "OWNER_BUDGET_AUTHORIZATION_REQUIRED",
+  "providerCalls": 0,
+  "uploads": 0,
+  "minimumUsefulScope": "Exactly these three native 2K individual requests. Not a 30-request batch, not batch 18, not a rig repurchase, and not Iron melee or Industrial heavy.",
+  "estimate": {
+    "basis": "Recorded later-73 gemini-3.1-flash-image native 2K rate: 1680 image tokens at $60 per 1M = $0.1008 image output; average successful generation in that run $0.1036.",
+    "threeCallsUSD": 0.3108,
+    "verification": "UNVERIFIED_PLANNING_ESTIMATE",
+    "spendAuthority": false,
+    "protectedExposureUSD": 70.7012,
+    "unknownLiabilitiesUSD": 0.287224,
+    "invoices": "UNKNOWN"
+  },
+  "excludedButPreserved": [
+    {
+      "id": "troop-iron-melee",
+      "keep": "assets/derivatives/substitutions/v3/troop-iron-melee.png",
+      "sha256": "623f44b114bb683925b9ac4e98f8e6faf56bfe8d68eb10d63b1acb566c768c16",
+      "reason": "Authentic Legionary substitution remains the static review plate."
+    },
+    {
+      "id": "troop-industrial-heavy",
+      "keep": "assets/derivatives/substitutions/v3/troop-industrial-heavy.png",
+      "sha256": "5ca06b27ee90de583b6f717cc54f7abc9d5ada0344c99b61d69ce23f5399094b",
+      "reason": "Authentic Steam-Walker substitution remains the static review plate."
+    }
+  ],
+  "requests": [
+    {
+      "id": "troop-stone-melee",
+      "existingSource": {
+        "path": "assets/high-res/final-native2k/troop-stone-melee.png",
+        "sha256": "629979bca666ff35bc4cf196d99598109a820bb75b3c456169d937bfa26b1b0f",
+        "dimensions": [2048, 2048]
+      },
+      "preserveUntilReplacement": {
+        "path": "assets/derivatives/actors/v4/troop-stone-melee.png",
+        "sha256": "2a0f7b820f680bcf10ce2f4264a9017b4c4f6da335f6ae98b716cc7ff00176fb"
+      },
+      "consumer": "One army unit drawn at about 50px and 64px on the long side.",
+      "camera": "Three-quarter front, eye-level standing figure, full body inside the frame, both boots clear of the frame edge, weapon readable.",
+      "requestText": "One Stone Age melee fighter, a single adult standing figure, three-quarter front view. Full body in frame, including both boots and the top of the head. Hold one Stone Age melee weapon in the hands. Fur, leather, hide, and rough stone or bone kit. Neutral standing pose on nothing. No ground, no rocks, no dirt slab, no wooden platform, no plinth, no caption, no border, no second person, no animal, and no text. Isolate the figure for a transparent background.",
+      "identity": "Stone melee, not bronze, iron, or medieval plate.",
+      "matte": "Delivered alpha must be checked after return. A model request does not prove transparency. No floor larger than a restrained contact shadow at 64px.",
+      "anatomy": "Both legs connected. Both boot silhouettes and soles intact. Hands contacting the weapon. No clipped head, weapon tip, or foot.",
+      "acceptance": [
+        "Decoded native output",
+        "Alpha inspected on white, black, and neutral green (110,132,104)",
+        "Same composites at 50px and 64px",
+        "Both boots and the weapon still present",
+        "No diorama, platform, caption, or neighbor"
+      ]
+    },
+    {
+      "id": "troop-stone-ranged",
+      "existingSource": {
+        "path": "assets/high-res/final-native2k/troop-stone-ranged.png",
+        "sha256": "fbad903b1168a20bb5dc075c3680d9ec0cb1a5cd84d6757465137a88473d8748",
+        "dimensions": [2048, 2048]
+      },
+      "preserveUntilReplacement": {
+        "path": "assets/derivatives/actors/v4/troop-stone-ranged.png",
+        "sha256": "412d5c5a1be8fc55c5bb5362c4edcb7f57fe6c438dc5238365097e9d5eb8de25"
+      },
+      "consumer": "One army unit drawn at about 50px and 64px on the long side.",
+      "camera": "Three-quarter front, eye-level standing figure, full body inside the frame, both boots clear of the frame edge, ranged weapon readable.",
+      "requestText": "One Stone Age ranged fighter, a single adult standing figure, three-quarter front view. Full body in frame, including both boots and the top of the head. Hold one Stone Age ranged weapon, a bow or thrown spear, with both hands in contact with it. Fur, leather, hide, and rough stone or bone kit. Neutral standing pose on nothing. No wood platform, no gravel, no dirt, no plinth, no caption, no border, no second pose, no second person, and no text. Isolate the figure for a transparent background.",
+      "identity": "Stone ranged, distinct from the Stone melee club fighter.",
+      "matte": "Delivered alpha must be checked after return. No wood, gravel, or floor patch that still reads as a base at 64px.",
+      "anatomy": "Both legs connected. Both boot silhouettes and soles intact. Hands contacting the weapon. No clipped bow tip, head, or foot.",
+      "acceptance": [
+        "Decoded native output",
+        "Alpha inspected on white, black, and neutral green (110,132,104)",
+        "Same composites at 50px and 64px",
+        "Both boots and the ranged weapon still present",
+        "No platform, caption, or second pose"
+      ]
+    },
+    {
+      "id": "troop-industrial-ranged",
+      "existingSource": {
+        "path": "assets/high-res/final-native2k/troop-industrial-ranged.png",
+        "sha256": "4d4c2a234fbc000593a52e65b80214367e1c211dd1eef12fee1a078064093a09",
+        "dimensions": [2048, 2048]
+      },
+      "preserveUntilReplacement": {
+        "path": "assets/derivatives/actors/v4/troop-industrial-ranged.png",
+        "sha256": "77ff7c1b3473e00b03b02f80c2740cc274023d2bb869dfafdfc7935677cfe6eb",
+        "whyLocalFailed": "The painted soldier is prone on a sandbag. One connected component. Masking cannot make him stand."
+      },
+      "consumer": "One army unit drawn at about 50px and 64px on the long side.",
+      "camera": "Three-quarter front, eye-level standing figure, full body inside the frame, both boots clear of the frame edge, rifle held naturally.",
+      "requestText": "One standing Industrial-era rifleman, a single adult, three-quarter front view. Full body in frame, including both boots and the head. Early industrial uniform: long coat, leather belts, period rifle held in both hands, feet planted. One pose only. No sandbag, no prone body, no caption sheet, no pink or magenta fringe, no second soldier, no modern optic, no future armor, and no text. Isolate the figure for a transparent background.",
+      "identity": "Industrial rifleman, distinct from modern camouflage and future armor.",
+      "matte": "Delivered alpha must be checked after return. No sandbag, caption, or magenta rim.",
+      "anatomy": "Standing. Both feet visible and attached. Both hands contacting the rifle. No clipped muzzle, head, or boot.",
+      "acceptance": [
+        "Decoded native output",
+        "Alpha inspected on white, black, and neutral green (110,132,104)",
+        "Same composites at 50px and 64px",
+        "Standing silhouette, rifle contact, both feet",
+        "No sandbag, caption, or pink smear"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-04T01:04:09.401Z",
+  "rows": [
+    {
+      "id": "negative-time",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    },
+    {
+      "id": "invalid-queue",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    },
+    {
+      "id": "negative-tower-damage",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    },
+    {
+      "id": "empty-active-queue",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    },
+    {
+      "id": "false-resolved-victory",
+      "directAccepted": false,
+      "campaignAccepted": false,
+      "status": "PASS"
+    }
+  ],
+  "endless": {
+    "firstExtension": {
+      "waves": 6,
+      "extensions": 1,
+      "status": "ACTIVE"
+    },
+    "secondClear": {
+      "waves": 9,
+      "extensions": 2,
+      "status": "ACTIVE"
+    },
+    "status": "PASS",
+    "scope": "Isolated clear fixture; no campaign writes or balance claim"
+  }
+}

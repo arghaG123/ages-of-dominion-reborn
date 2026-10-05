@@ -1,0 +1,57 @@
+{
+  "alternates": [
+    {
+      "file": "assets/production/production-03-20261003/images/01-kingdom-terrain-stone.png",
+      "sha256": "5fcdb893fd7f2567f435742368cfa5fa093cbbbbe2b49a17f9f850d306b7de70",
+      "dimensions": [
+        1376,
+        768
+      ]
+    },
+    {
+      "file": "assets/production/production-03-20261003/images/02-kingdom-terrain-medieval.png",
+      "sha256": "7c6122a97b842a45d8fb6ce7477df48e07d24046f3c8ce6878647cf2a1daa152",
+      "dimensions": [
+        1376,
+        768
+      ]
+    },
+    {
+      "file": "assets/production/production-14-20261003/images/30-kingdom-stone-day1-composition-v4.png",
+      "sha256": "5dfdc20e8724acf48781ceae15d00a35899c855a26408a8e7656f84165f23c76",
+      "dimensions": [
+        1376,
+        768
+      ]
+    },
+    {
+      "file": "qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v5-guide.png",
+      "sha256": "673492a6a1c6780eb77d9b0b24f7eefe30a98dc119c7fbee9e3edef088b8c1ff",
+      "dimensions": [
+        1376,
+        768
+      ]
+    }
+  ],
+  "run5ProseHashChecks": [
+    {
+      "id": "tactical-terrain",
+      "actualSHA256": "6eadf55f2df8727bcc0415b0f5bc2a8f8c5c766e8ce18f7839923401e0c39e5e",
+      "actualHashAppearsInReport": false,
+      "journalMatches": true
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "actualSHA256": "c1b39f72f6ded4bb12de468aff09a9c6d071ace467482c4cdff77e86015d8840",
+      "actualHashAppearsInReport": false,
+      "journalMatches": true
+    }
+  ],
+  "run5Authority": "Producer report quotes First try 2 tactical terrins; not direct authorization evidence in this planner chat",
+  "requestMetaFields": [
+    "prompt",
+    "guide_sha256",
+    "base_sha256",
+    "generationConfig"
+  ]
+}

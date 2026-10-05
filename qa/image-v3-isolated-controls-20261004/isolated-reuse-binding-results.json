@@ -1,0 +1,56 @@
+[
+  {
+    "probe": "valid-baseline",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": true
+  },
+  {
+    "probe": "missing-body-hash",
+    "result": {
+      "status": "FAILED_REUSE_MISSING_BODY_HASH",
+      "itemId": "test-id",
+      "error": "Missing bodySHA256 in write-ahead record",
+      "costUSD": 0.0
+    },
+    "pass": true
+  },
+  {
+    "probe": "invented-body-hash",
+    "result": {
+      "status": "FAILED_REUSE_BODY_HASH_MISMATCH",
+      "itemId": "test-id",
+      "error": "Body SHA256 mismatch: recorded aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa vs wire 12529868e77980acfffd99da976444d79cc74043f8abf4d44b73c1e20127f414",
+      "costUSD": 0.0
+    },
+    "pass": true
+  },
+  {
+    "probe": "changed-prompt",
+    "result": {
+      "status": "FAILED_REUSE_PROMPT_MISMATCH",
+      "itemId": "test-id",
+      "error": "Prompt mismatch: requested 'different prompt' vs saved 'original prompt'",
+      "costUSD": 0.0
+    },
+    "pass": true
+  },
+  {
+    "probe": "wrong-mime",
+    "result": {
+      "status": "FAILED_REUSE_UNSUPPORTED_MIME",
+      "itemId": "test-id",
+      "error": "Invalid MIME 'image/jpeg', expected 'image/png'",
+      "costUSD": 0.0
+    },
+    "pass": true
+  }
+]

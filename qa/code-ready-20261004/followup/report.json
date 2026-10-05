@@ -1,0 +1,29 @@
+{
+  "started": "2026-10-04T11:43:45.305Z",
+  "base": "http://127.0.0.1:4182",
+  "failures": [],
+  "steps": [
+    {
+      "name": "iron-captions",
+      "sha256": "3c754c18930bb9c43b9b9632ab5248808e3612b687517ef14c542428c2d4456d",
+      "reviews": [
+        "2-melee",
+        "2-ranged",
+        "2-heavy"
+      ]
+    },
+    {
+      "name": "mounted-review",
+      "sha256": "79b0fbf952e0048968f45dbc137af78a2a81936c4b55b42087416fe4558e6ba7",
+      "mount": [
+        {
+          "status": "BOUNDED_REVIEW_SAMPLE_RESIDUAL_HAIRLINE",
+          "gait": "single-pose",
+          "hooves": "not-separated"
+        }
+      ],
+      "rider": 1
+    }
+  ],
+  "finished": "2026-10-04T11:43:47.507Z"
+}

@@ -1,0 +1,78 @@
+{
+  "version": "6.0-local-solution-20261004",
+  "codeAIHandoffReady": false,
+  "reason": "Required gaps remain: Knight thigh/greave seam, Medieval melee cast shadow, Modern heavy ground slab, Stone Clubman, Stone Slinger, Industrial standing sharpshooter, Healer/Paladin joints, and the other four class sheets where labels are attached. Independent rows in readySubset can be consumed.",
+  "noNewPaidScope": true,
+  "providerCalls": 0,
+  "accounting": {
+    "protectedExposureUSD": 70.7012,
+    "unknownLiabilitiesUSD": 0.287224,
+    "invoices": "UNKNOWN"
+  },
+  "script": "scripts/image_v6_local_solution.py",
+  "checkpoint": "qa/image-local-solution-20261004/checkpoint.json",
+  "hashList": "qa/image-local-solution-20261004/v6-hashes.json",
+  "recipes": "qa/image-local-solution-20261004/recipes",
+  "preserved": {
+    "v4": "unchanged",
+    "v5": "unchanged",
+    "natives": "unchanged"
+  },
+  "sizeContract": {
+    "troopStaticPlateHeightPx": 130,
+    "transportCapPx": 64,
+    "reportBoth": "canvas size and visible alpha-subject extent",
+    "doNotExtend64AcceptanceTo130": ["hero-mount-motor-transport", "hero-mount-future-transport", "hero-mount-horse", "troop-future-heavy", "troop-gunpowder-heavy", "troop-future-ranged"]
+  },
+  "readySubset": [
+    {"id": "troop-bronze-melee", "use": "static plate to 130px", "path": "assets/derivatives/actors/v4/troop-bronze-melee.png", "nativeMatte": "PRIOR_REVIEW", "rig": "NOT_A_RIG"},
+    {"id": "troop-bronze-ranged", "use": "static plate to 130px", "path": "assets/derivatives/actors/v4/troop-bronze-ranged.png", "nativeMatte": "PRIOR_REVIEW", "rig": "NOT_A_RIG"},
+    {"id": "troop-iron-ranged", "use": "static plate to 130px", "path": "assets/derivatives/actors/v4/troop-iron-ranged.png", "nativeMatte": "PRIOR_REVIEW", "rig": "NOT_A_RIG"},
+    {"id": "troop-iron-heavy", "use": "static plate to 130px", "path": "assets/derivatives/actors/v4/troop-iron-heavy.png", "nativeMatte": "PRIOR_REVIEW", "rig": "NOT_A_RIG"},
+    {"id": "troop-gunpowder-melee", "use": "static plate to 130px", "path": "assets/derivatives/actors/v4/troop-gunpowder-melee.png", "nativeMatte": "PRIOR_REVIEW", "rig": "NOT_A_RIG"},
+    {"id": "troop-gunpowder-ranged", "use": "static plate to 130px", "path": "assets/derivatives/actors/v4/troop-gunpowder-ranged.png", "nativeMatte": "PRIOR_REVIEW", "rig": "NOT_A_RIG"},
+    {"id": "troop-modern-melee", "use": "static plate to 130px", "path": "assets/derivatives/actors/v4/troop-modern-melee.png", "nativeMatte": "PRIOR_REVIEW", "rig": "NOT_A_RIG"},
+    {"id": "troop-future-melee", "use": "static plate to 130px", "path": "assets/derivatives/actors/v4/troop-future-melee.png", "nativeMatte": "PRIOR_REVIEW", "rig": "NOT_A_RIG"},
+    {"id": "troop-stone-heavy", "use": "static plate to 130px", "path": "assets/derivatives/actors/v5/troop-stone-heavy.png", "sha256": "dde192c590f148b9883b29e69f0dbba3c4fa2a78257aeace17d352c173359a37", "nativeMatte": "BOOTS_RESTORED", "rig": "NOT_A_RIG"},
+    {"id": "troop-industrial-melee", "use": "static plate at 64px and 130px", "path": "assets/derivatives/actors/v6/troop-industrial-melee.png", "sha256": "3a17f25a9df60d18b24df30afa1911ecaa4eb5ce51e146986b0878e1f5717579", "nativeMatte": "CAST_SHADOW_REMOVED", "optionalShadow": "assets/derivatives/actors/v6/troop-industrial-melee-shadow-optional.png", "rig": "NOT_A_RIG", "boots": "KEPT"},
+    {"id": "ranger-sleeve-to-open-hand", "use": "articulation only at -25, 0 and +25 degrees", "parent": "assets/derivatives/rigs/v5/ranger/sleeve_upper_arm.png", "child": "assets/derivatives/rigs/v5/ranger/vambrace_hand_open.png", "parentCrop": [76, 1094, 230, 1397], "childCrop": [61, 1404, 211, 1784], "placement": {"insertionOfCuff": 0.3, "transverseOfCuff": 0.05, "uniformScale": 1}, "status": "PASS_STATIC_AND_LIMITED_ARC", "sourceHole": "v5 vambrace contains 547 interior transparent pixels. Not filled.", "evidence": "qa/image-local-solution-20261004/joints/ranger_sleeve_vambrace_0.png"}
+  ],
+  "partial": [
+    {"id": "troop-modern-heavy", "path": "assets/derivatives/actors/v6/troop-modern-heavy.png", "sha256": "a18fb4c77449dc0a82e617c4400e120060e767df8426e15ea19374d8b94e0241", "halo": "CLEARED_ON_GREY", "groundSlab": "REMAINS", "helmet": "PROTECTED", "nativeMatte": "PARTIAL", "smallStatic": "GROUND_STILL_READS_AT_64", "v4Retained": "assets/derivatives/actors/v4/troop-modern-heavy.png"},
+    {"id": "troop-modern-ranged", "path": "assets/derivatives/actors/v6/troop-modern-ranged-snow-mound-trimmed.png", "sha256": "5cf5d9dd233bb7b27b27eb326cdc8fdc01d5077e0311d7b33f486b88b74cca19", "generalSprite": "FAIL", "role": "SNOW_SCENE_ILLUSTRATION", "mound": [836, 1210, 1211, 1389], "underBodySheet": "KEPT", "bipodFootCaps": "KEPT"},
+    {"id": "troop-bronze-heavy", "path": "assets/derivatives/actors/v4/troop-bronze-heavy.png", "role": "CHARIOTEER", "silhouette": "TWO_HORSES_TWO_CREW_ONE_VEHICLE", "nativeMatte": "DIRT_PATCH_REMAINS", "inReplacementDraft": false, "canvas": [2048, 2048], "visibleSubject": [159, 200, 2008, 1887]},
+    {"id": "healer", "parts": "assets/derivatives/rigs/v6/healer", "mappings": "qa/image-local-solution-20261004/healer-semantic-mappings-v6.json", "nativeMatte": "PARTIAL_LOCAL_ROI", "rig": "INCOMPLETE_JOINTS_NOT_RUN", "side": "UNKNOWN"},
+    {"id": "paladin", "parts": "assets/derivatives/rigs/v6/paladin", "nativeMatte": "PARTIAL", "rig": "INCOMPLETE_JOINTS_NOT_RUN", "side": "UNKNOWN", "mirror": false, "combined": ["cuirass_fauld_combined", "sword_hand_assembly", "forearm_gauntlet"]}
+  ],
+  "incomplete": [
+    {"id": "troop-medieval-melee", "retained": "assets/derivatives/actors/v5/troop-medieval-melee.png", "status": "FAIL_CAST_SHADOW_AFTER_TWO_ATTEMPTS", "doNotUseV6": "assets/derivatives/actors/v6/troop-medieval-melee.png"},
+    {"id": "knight-thigh-greave", "status": "FAIL_HAIRLINE_GAP", "attempts": "12 placements plus one 0.45 cuff correction", "evidence": "qa/image-local-solution-20261004/joints/knight_thigh_greave_correction_0.png"},
+    {"id": "troop-stone-melee", "status": "BLOCKED_NO_CLEAN_SOURCE", "role": "Clubman"},
+    {"id": "troop-stone-ranged", "status": "BLOCKED_NO_CLEAN_SOURCE", "role": "Slinger"},
+    {"id": "troop-industrial-ranged", "status": "REPLACEMENT_REQUIRED_PRONE", "role": "Sharpshooter"},
+    {"id": "mage", "status": "INCOMPLETE_SHEET_LABELS_ATTACHED"},
+    {"id": "warlock", "status": "INCOMPLETE_UNNAMED_COMPONENTS"},
+    {"id": "necromancer", "status": "INCOMPLETE_UNNAMED_COMPONENTS"},
+    {"id": "barbarian", "status": "INCOMPLETE_UNNAMED_COMPONENTS"}
+  ],
+  "auditedSmallStaticRetain": [
+    "troop-gunpowder-heavy",
+    "troop-future-ranged",
+    "hero-mount-horse",
+    "hero-mount-motor-transport",
+    "hero-mount-future-transport",
+    "troop-future-heavy"
+  ],
+  "horse": {"animation": "ONE_POSE_STATIC", "hoofRig": false, "rider": "NO_SEAT_MEASURED"},
+  "terrain": {
+    "survey": "qa/image-v4-repair-20261004/terrain/clearance-v4.json",
+    "activeAffine": [60, -10, 25, 35, 170, 165],
+    "hallScale": 0.1312,
+    "roadsAndRivers": "UNLABELED",
+    "promoted": false
+  },
+  "replacementDraft": "docs/plan/REPLACEMENT-DRAFT-THREE-ROLES-V6-CLARIFICATION-2026-10-04.json",
+  "runtimeAcceptance": "UNVERIFIED",
+  "ownerAcceptance": "UNVERIFIED",
+  "device": "STOPPED"
+}

@@ -1,0 +1,61 @@
+{
+  "healerTorsoFragment": {
+    "droppedPixels": 4056,
+    "sha256": "a4f1688a4d224cf09c75316acad4507a670bb62d5c7e26b697831f31d1e88f12",
+    "dimensions": [
+      480,
+      341
+    ]
+  },
+  "knightCorrection": {
+    "pair": "knight_thigh_greave",
+    "correction": "insertion 0.45 of measured cuff after the 12-placement search still left a visible gap",
+    "spanPx": 110,
+    "overlapPx": 1247,
+    "evidence": "qa/image-local-solution-20261004/joints/knight_thigh_greave_correction_0.png",
+    "sha256": "95d854c735408bcf8e2d6ae2868a8ea3a03983ceb197aa686923ebdd485fd466",
+    "cuffParent": {
+      "y": 289,
+      "width": 134,
+      "cx": 80,
+      "x0": 14,
+      "x1": 147
+    },
+    "cuffChild": {
+      "y": 37,
+      "width": 116,
+      "cx": 60,
+      "x0": 3,
+      "x1": 118
+    }
+  },
+  "troop-medieval-melee": {
+    "shadowPixels": 0,
+    "bootPixelsLost": 0,
+    "bootPixels": 109660,
+    "qa": "qa/image-local-solution-20261004/actors/troop-medieval-melee-candidate-b.png"
+  },
+  "troop-industrial-melee": {
+    "shadowPixels": 102246,
+    "bootPixelsLost": 0,
+    "bootPixels": 93146,
+    "qa": "qa/image-local-solution-20261004/actors/troop-industrial-melee-candidate-b.png",
+    "shipped": "assets/derivatives/actors/v6/troop-industrial-melee.png",
+    "sha256": "3a17f25a9df60d18b24df30afa1911ecaa4eb5ce51e146986b0878e1f5717579"
+  },
+  "modernHeavyB": {
+    "pinkCleared": 48314,
+    "coreLost": 0
+  },
+  "mound": {
+    "pixels": 26933,
+    "crop": [
+      836,
+      1210,
+      1211,
+      1389
+    ]
+  },
+  "moundPath": "assets/derivatives/actors/v6/troop-modern-ranged-snow-mound-trimmed.png",
+  "moundSha": "5cf5d9dd233bb7b27b27eb326cdc8fdc01d5077e0311d7b33f486b88b74cca19"
+}

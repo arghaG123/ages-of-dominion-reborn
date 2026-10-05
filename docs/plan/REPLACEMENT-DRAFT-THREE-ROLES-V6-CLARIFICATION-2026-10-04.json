@@ -1,0 +1,80 @@
+{
+  "status": "DRAFT_NOT_SUBMITTED",
+  "authorization": "OWNER_BUDGET_AUTHORIZATION_REQUIRED",
+  "providerCalls": 0,
+  "uploads": 0,
+  "supersedesRequestTextOnly": "docs/plan/REPLACEMENT-DRAFT-THREE-ROLES-2026-10-04.json",
+  "historyPreserved": true,
+  "primaryIds": ["troop-stone-melee", "troop-stone-ranged", "troop-industrial-ranged"],
+  "estimate": {
+    "threeCallsUSD": 0.3108,
+    "verification": "UNVERIFIED_PLANNING_ESTIMATE",
+    "spendAuthority": false,
+    "notACurrentPrice": true,
+    "notAnApprovedCeiling": true
+  },
+  "sourceSurvey": {
+    "limit": "Three provenance-known candidates per role from reviewed ledgers.",
+    "stoneMelee": {
+      "canonicalRole": "Clubman",
+      "candidates": [
+        "assets/high-res/final-native2k/troop-stone-melee.png",
+        "assets/derivatives/actors/v4/troop-stone-melee.png",
+        "assets/derivatives/actors/v3/troop-stone-melee.png"
+      ],
+      "result": "Same painted figure with the dirt slab. No separate standing clean source. Color keys stay rejected. Draft retained."
+    },
+    "stoneRanged": {
+      "canonicalRole": "Slinger",
+      "candidates": [
+        "assets/high-res/final-native2k/troop-stone-ranged.png",
+        "assets/derivatives/actors/v4/troop-stone-ranged.png",
+        "assets/derivatives/actors/v3/troop-stone-ranged.png"
+      ],
+      "result": "Same painted figure with the wood/gravel platform. No separate standing Slinger source."
+    },
+    "industrialRanged": {
+      "canonicalRole": "Sharpshooter",
+      "requiredPose": "standing rifleman",
+      "candidates": [
+        "assets/high-res/final-native2k/troop-industrial-ranged.png",
+        "assets/derivatives/actors/v4/troop-industrial-ranged.png",
+        "assets/derivatives/actors/v3/troop-industrial-ranged.png"
+      ],
+      "result": "All three are the prone sandbag sheet. Masking cannot create standing legs. REPLACEMENT_REQUIRED."
+    }
+  },
+  "requests": [
+    {
+      "id": "troop-stone-melee",
+      "canonicalRole": "Clubman",
+      "weapon": "One stone-age club in the hands",
+      "silhouette": "One standing adult. No crew.",
+      "camera": "Match the elevated game consumer. Generic eye-level framing is not proof of compatibility.",
+      "guideAcceptance": "PENDING",
+      "replacedPhrase": null
+    },
+    {
+      "id": "troop-stone-ranged",
+      "canonicalRole": "Slinger",
+      "weapon": "One period sling with a visible natural hand grip. Not a bow. Not a thrown spear.",
+      "replacedPhrase": "bow or thrown spear",
+      "silhouette": "One standing adult Slinger.",
+      "camera": "Match the elevated game consumer. Generic eye-level framing is not proof of compatibility.",
+      "guideAcceptance": "PENDING"
+    },
+    {
+      "id": "troop-industrial-ranged",
+      "canonicalRole": "Sharpshooter",
+      "weapon": "One rifle consistent with a standing sharpshooter",
+      "pose": "Standing. The prone source cannot supply this pose.",
+      "silhouette": "One standing adult.",
+      "camera": "Match the elevated game consumer.",
+      "guideAcceptance": "PENDING"
+    }
+  ],
+  "notInThisDraft": {
+    "troop-bronze-heavy": "Canonical role is Charioteer. Horses, crew, and vehicle are one logical unit. Dirt under hooves and wheel remains a matte limit. No extra paid role."
+  },
+  "deliveryRule": "A model request does not prove transparent output. Require a complete intact silhouette, no diorama, caption, or neighbour, and measured alpha after return."
+}

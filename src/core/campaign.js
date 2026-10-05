@@ -3,8 +3,8 @@ import contract from '../data/implementation-contract.json' with { type: 'json' 
 import { adventureMap, routeCost } from './navigation.js';
 import { addRankXp, dwellingCost, dwellingPool, dwellingTerms, endDay, grantHeroXp, makePack, rankForXp, rollLoot } from './mechanics.js';
 import { GEAR_SLOTS, RIVALS, SKILL_IDS, agePrice, dailyMoves, forgeOffer, gateHp, heroStats, manaMax, marketQuote, recruitCost, towerPurchaseCost, validItem } from './rules.js';
-import { castSpell, createChallengeBattle, createDuelBattle, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, playOut, retreat, strike, validateBattle, wait as battleWait } from './battle.js';
-import { advanceDefense, createDefense, deployHero, earlyCall, validateDefense } from './defense.js';
+import { activeStackId, autoStep, castSpell, createChallengeBattle, createDuelBattle, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, playOut, retreat, strike, validateBattle, wait as battleWait } from './battle.js';
+import { advanceDefense, createDefense, deployArmy, deployHero, earlyCall, validateDefense } from './defense.js';
 export const SCHEMA = 1;
 export { gateHp, heroStats, manaMax, dailyMoves };
 const producers = { farm: ['food', .55], lumber: ['wood', .45], quarry: ['stone', .35], mine: ['gold', .25] };
@@ -22,7 +22,9 @@ export function newCampaign(contract, data, now, seed = 123456789) {
     hero: { id: 'hero-1', class: 'knight', level: 1, xp: 0, points: 0, growth: { atk: 0, def: 0, pow: 0, kno: 0 }, bonus: { atk: 0, def: 0, pow: 0, kno: 0 }, offers: [], mana: 10, skills: Object.fromEntries(SKILL_IDS.map(k => [k, 0])), equip: Object.fromEntries(contract.slots.map(k => [k, null])) },
     army: [{ id: 'army-1', kind: 'role', type: 'melee', age: 0, count: 12, rank: 0, xp: 0 }, { id: 'army-2', kind: 'role', type: 'ranged', age: 0, count: 8, rank: 0, xp: 0 }],
     towers: [{ id: 'tower-1', fam: 'arrow', tier: 0, rank: 0, xp: 0 }, { id: 'tower-2', fam: 'slow', tier: 0, rank: 0, xp: 0 }],
-    inventory: [], story: { flags: {} }, quests: {}, tutorial: { step: 0, skipped: false },
+    inventory: [], story: { rival: null, flags: {}, chapter: 0, choices: [], futureSeen: false, milestones: {} },
+    quests: Object.fromEntries(data.QUEST_TEMPLATES.map(quest => [quest.id, { claimed: false }])),
+    tutorial: { step: 0, skipped: false },
     settings: { music: .6, sfx: .8, reducedMotion: false }, weather: 'clear', adventure: null, battle: null, defense: null, dwelling: null,
     settledTransactions: {}
   };
@@ -98,13 +100,44 @@ export function validate(s, data) {
     if (!dwellingPool(data, s.age).includes(offer.type)) throw new Error('Invalid dwelling tier');
   }
   if (!s.settings || typeof s.settings.reducedMotion !== 'boolean' || !Number.isFinite(s.settings.music) || !Number.isFinite(s.settings.sfx) || s.settings.music < 0 || s.settings.music > 1 || s.settings.sfx < 0 || s.settings.sfx > 1) throw new Error('Invalid settings');
-  if (!s.story || typeof s.story.flags !== 'object' || !s.tutorial || !Number.isInteger(s.tutorial.step) || s.tutorial.step < 0 || typeof s.tutorial.skipped !== 'boolean') throw new Error('Invalid campaign progress');
+  if (!s.story || typeof s.story.flags !== 'object' || Array.isArray(s.story.flags) || !s.tutorial || !Number.isInteger(s.tutorial.step) || s.tutorial.step < 0 || typeof s.tutorial.skipped !== 'boolean') throw new Error('Invalid campaign progress');
+  for (const [key, value] of Object.entries(s.story.flags)) {
+    if (key.startsWith('cleared:') && value !== true) throw new Error('Invalid battle record');
+  }
+  if (!Number.isInteger(s.story.chapter) || s.story.chapter < 0 || s.story.chapter > data.STORY.length || !Array.isArray(s.story.choices) || s.story.choices.length !== s.story.chapter || typeof s.story.futureSeen !== 'boolean') throw new Error('Invalid story');
+  for (let index = 0; index < s.story.chapter; index++) {
+    if (!data.STORY[index].ch.some(choice => choice.flag === s.story.choices[index])) throw new Error('Invalid story choice');
+  }
+  if (s.story.futureSeen && (s.story.chapter < data.STORY.length || s.age < 7)) throw new Error('Invalid future conclusion');
+  if (!s.story.milestones || typeof s.story.milestones !== 'object') throw new Error('Invalid milestone');
+  for (const [age, claimed] of Object.entries(s.story.milestones)) {
+    const index = Number(age);
+    if (!Number.isInteger(index) || index < 0 || index > 7 || claimed !== true || String(index) !== age) throw new Error('Invalid milestone');
+  }
+  const questIds = data.QUEST_TEMPLATES.map(quest => quest.id);
+  if (!s.quests || Object.keys(s.quests).length !== questIds.length || questIds.some(id => typeof s.quests[id]?.claimed !== 'boolean')) throw new Error('Invalid quests');
   if (s.story?.rival != null && !RIVALS.includes(s.story.rival)) throw new Error('Invalid rival');
   validateBattle(s.battle);
   validateDefense(s.defense);
+  if (s.defense) {
+    const owned = new Map(s.towers.map(tower => [tower.id, tower.fam]));
+    if (s.defense.towers.length !== owned.size || s.defense.towers.some(tower => owned.get(tower.id) !== tower.fam)) throw new Error('Defense towers are not the owned set');
+  }
   const ids = [hero.id, ...s.army.map(a => a.id), ...s.towers.map(t => t.id), ...s.inventory.map(i => i.id), ...equipped.map(i => i.id), ...s.buildJobs.map(j => j.id)];
   if (ids.some(id => typeof id !== 'string' || !id) || new Set(ids).size !== ids.length) throw new Error('Invalid campaign entity identity');
   return true;
+}
+function passEnemyTurns(battle) {
+  let next = battle;
+  let guard = 0;
+  while (next?.status === 'ACTIVE' && guard < 64) {
+    const id = activeStackId(next);
+    const stack = next.stacks.find(item => item.id === id);
+    if (!stack || stack.side !== 'e') break;
+    next = autoStep(next);
+    guard += 1;
+  }
+  return next;
 }
 function levelOf(s, type) {
   if (type === 'walls') return s.walls.level;
@@ -122,6 +155,36 @@ function pay(s, payment) {
   for (const [k, n] of Object.entries(payment)) s.resources[k] -= n;
 }
 function gain(s, payment) { for (const [k, n] of Object.entries(payment)) s.resources[k] += n; }
+function missing(owner, key) {
+  // Legacy migration fills only genuinely absent properties. Present null/wrong-type stays for validation.
+  return owner == null || !Object.prototype.hasOwnProperty.call(owner, key);
+}
+export function adoptProgress(state, data) {
+  // Fill recognized missing legacy fields only. A present malformed value stays for validation and must not reset history.
+  if (missing(state, 'story')) state.story = { flags: {} };
+  if (!state.story || typeof state.story !== 'object' || Array.isArray(state.story)) return state;
+  if (missing(state.story, 'flags')) state.story.flags = {};
+  if (missing(state.story, 'chapter')) state.story.chapter = 0;
+  if (missing(state.story, 'choices')) state.story.choices = [];
+  if (missing(state.story, 'futureSeen')) state.story.futureSeen = false;
+  if (missing(state.story, 'milestones')) state.story.milestones = {};
+  if (missing(state, 'quests')) state.quests = Object.fromEntries(data.QUEST_TEMPLATES.map(quest => [quest.id, { claimed: false }]));
+  else if (state.quests && typeof state.quests === 'object' && !Array.isArray(state.quests)) {
+    for (const quest of data.QUEST_TEMPLATES) if (missing(state.quests, quest.id)) state.quests[quest.id] = { claimed: false };
+  }
+  return state;
+}
+export function stackTitle(stack, data) {
+  if (stack.kind === 'creature') {
+    const creature = data.CREATURES[stack.type];
+    if (!creature) throw new Error('Invalid creature');
+    return `${creature.n}${creature.fly ? ' flyer' : ''} ×${stack.count} rank ${stack.rank}`;
+  }
+  const role = data.ROLES[stack.type];
+  const name = role?.names?.[stack.age];
+  if (!name) throw new Error('Invalid army role');
+  return `${name} ×${stack.count} rank ${stack.rank}`;
+}
 function tutorial(s, input) {
   if (s.tutorial.skipped || input.type === 'TUTORIAL_SKIP' || input.type === 'TUTORIAL_REVIEW') return;
   const building = input.payload?.building;
@@ -132,6 +195,28 @@ function tutorial(s, input) {
   else if (step === 3 && input.type === 'BUILD' && building === 'barracks') s.tutorial.step = 4;
   else if (step === 4 && input.type === 'RECRUIT') s.tutorial.step = 5;
   else if (step === 5 && input.type === 'ENTER_ADVENTURE') s.tutorial.step = 6;
+  else if (step === 6 && (input.type === 'BEGIN_ENCOUNTER' || input.type === 'START_DUEL' || input.type === 'START_SKIRMISH')) s.tutorial.step = 7;
+  else if (step === 7 && (input.type === 'START_SIEGE' || input.type === 'START_ENDLESS' || input.type === 'DEFENSE')) s.tutorial.step = 8;
+}
+export function futureConclusion(s, data) {
+  const rival = s.story.rival ?? 'no named rival';
+  const kept = Boolean(s.story.flags.green || s.story.flags.generous || s.story.flags.council || s.story.flags.cautious);
+  const taken = Boolean(s.story.flags.ruthless || s.story.flags.conqueror || s.story.flags.crown || s.story.flags.industry);
+  const stance = kept ? 'Stewardship kept the fields and the old ground.' : taken ? 'The saved banner held the valley and its new tools.' : 'The valley remains, marked by the choices that were saved.';
+  const logs = (s.story.choices || []).map((flag, index) => data?.STORY?.[index]?.ch?.find(choice => choice.flag === flag)?.log).filter(Boolean);
+  const echo = logs.length ? logs.join(' ') : 'No chapter record was saved.';
+  return `The Valley We Keep. ${stance} ${rival} is still part of that record. ${echo} Reading this conclusion grants nothing.`;
+}
+export function questReady(s, data, id) {
+  const template = data.QUEST_TEMPLATES.find(quest => quest.id === id);
+  if (!template || s.quests[id]?.claimed) return false;
+  if (template.need === 'wins') return Object.entries(s.story.flags).filter(([key, value]) => key.startsWith('cleared:') && value === true).length >= template.v;
+  if (template.need === 'age') return s.age >= template.v;
+  if (template.need === 'creature') return s.army.some(stack => stack.kind === 'creature');
+  if (template.need === 'rank') return s.army.some(stack => stack.rank >= template.v);
+  if (template.need === 'gear') return GEAR_SLOTS.every(slot => s.hero.equip[slot]);
+  if (template.need === 'best') return Math.max(0, ...Object.entries(s.story.flags).filter(([key]) => key.startsWith('endless:')).map(([, value]) => value)) >= template.v;
+  return false;
 }
 export function cost(data, type, level) {
   const building = data.BUILDINGS[type];
@@ -241,6 +326,14 @@ function applyBattleResult(s, data) {
 function settleDefense(s, data) {
   const session = s.defense;
   if (!session || session.status !== 'RESOLVED' || !session.pendingSettlement) throw new Error('No pending defense result');
+  if (session.armyDeployed && session.army) {
+    const stack = s.army.find(item => item.id === session.army.stackId);
+    if (stack && session.army.maxHp > 0) {
+      const ratio = Math.max(0, session.army.hp) / session.army.maxHp;
+      stack.count = Math.max(0, Math.floor(stack.count * ratio + 1e-9));
+      if (stack.count === 0) s.army = s.army.filter(item => item.id !== stack.id);
+    }
+  }
   if (session.practice === 'endless') {
     s.story.flags[`endless:${session.id}`] = session.clearedWaves;
     s.defense = null;
@@ -272,7 +365,7 @@ export function command(state, input, now, data) {
   const battlePending = s.battle && (s.battle.status === 'ACTIVE' || s.battle.pendingSettlement);
   const defensePending = s.defense && (s.defense.status === 'ACTIVE' || s.defense.pendingSettlement);
   if (battlePending && input.type !== 'BATTLE' && input.type !== 'SETTLE_BATTLE') throw new Error('Battle result is pending');
-  if (defensePending && !['DEFENSE', 'SETTLE_DEFENSE', 'EARLY_CALL', 'DEPLOY_DEFENSE'].includes(input.type)) throw new Error('Defense result is pending');
+  if (defensePending && !['DEFENSE', 'SETTLE_DEFENSE', 'EARLY_CALL', 'DEPLOY_DEFENSE', 'DEPLOY_ARMY'].includes(input.type)) throw new Error('Defense result is pending');
   if (input.type === 'BUILD') {
     const { plotId, building } = payload;
     const p = plotId === 'walls' ? s.walls : s.plots.find(p => p.id === plotId);
@@ -347,6 +440,33 @@ export function command(state, input, now, data) {
     if (s.story.rival) throw new Error('Rival is already chosen');
     if (!RIVALS.includes(payload.name)) throw new Error('Invalid rival');
     s.story.rival = payload.name;
+  } else if (input.type === 'STORY_CHOICE') {
+    // Chapter N opens at age N and pays once. Later ages do not replay an earlier reward.
+    const chapter = data.STORY[s.story.chapter];
+    if (!chapter || s.age < s.story.chapter) throw new Error('Chapter is not open in this age');
+    const choice = chapter?.ch?.[payload.index];
+    if (!choice) throw new Error('Invalid choice');
+    gain(s, choice.fx || {});
+    s.story.flags[choice.flag] = true;
+    s.story.choices.push(choice.flag);
+    s.story.chapter += 1;
+  } else if (input.type === 'ACK_FUTURE') {
+    if (s.age < 7 || s.story.chapter < data.STORY.length) throw new Error('Future conclusion is not open');
+    if (s.story.futureSeen) throw new Error('Future conclusion already kept');
+    s.story.futureSeen = true;
+  } else if (input.type === 'CLAIM_QUEST') {
+    const template = data.QUEST_TEMPLATES.find(quest => quest.id === payload.id);
+    if (!template) throw new Error('Invalid quest');
+    if (s.quests[template.id].claimed) throw new Error('Quest already claimed');
+    if (!questReady(s, data, template.id)) throw new Error('Quest is not complete');
+    gain(s, template.rw || {});
+    s.quests[template.id].claimed = true;
+  } else if (input.type === 'CLAIM_MILESTONE') {
+    const age = payload.age;
+    if (!Number.isInteger(age) || age < 0 || age > 7) throw new Error('Invalid milestone');
+    if (s.age < age) throw new Error('Milestone is not reached');
+    if (s.story.milestones[age]) throw new Error('Milestone already claimed');
+    s.story.milestones[age] = true;
   } else if (input.type === 'ENTER_ADVENTURE') {
     if (s.battle) throw new Error('Journey already open');
     if (s.adventure) {
@@ -396,7 +516,11 @@ export function command(state, input, now, data) {
   } else if (input.type === 'BATTLE') {
     if (!s.battle || s.battle.status !== 'ACTIVE') throw new Error('No active battle');
     const action = payload.action;
-    if (action === 'move') s.battle = battleMove(s.battle, payload.stackId, payload.to);
+    if (action === 'opponent') {
+      const id = activeStackId(s.battle);
+      const stack = s.battle.stacks.find(item => item.id === id);
+      if (!stack || stack.side === 'p') throw new Error('Player turn');
+    } else if (action === 'move') s.battle = battleMove(s.battle, payload.stackId, payload.to);
     else if (action === 'strike') s.battle = strike(s.battle, payload.stackId, payload.targetId, { forceMelee: payload.forceMelee === true, approach: payload.approach });
     else if (action === 'defend') s.battle = defend(s.battle, payload.stackId);
     else if (action === 'wait') s.battle = battleWait(s.battle, payload.stackId);
@@ -408,7 +532,8 @@ export function command(state, input, now, data) {
     else if (action === 'retreat') {
       if (payload.confirm !== true) throw new Error('Retreat must be confirmed');
       s.battle = retreat(s.battle);
-    } else throw new Error('Unsupported battle command');
+    }     else throw new Error('Unsupported battle command');
+    if (action !== 'retreat' && action !== 'auto') s.battle = passEnemyTurns(s.battle);
   } else if (input.type === 'SETTLE_BATTLE') applyBattleResult(s, data);
   else if (input.type === 'START_SKIRMISH') {
     if (s.battle || s.defense) throw new Error('Battle already open');
@@ -419,7 +544,10 @@ export function command(state, input, now, data) {
     s.battle = createDuelBattle(s, data);
   } else if (input.type === 'START_CHALLENGE') {
     if (s.battle || s.defense) throw new Error('Battle already open');
-    s.battle = createChallengeBattle(payload.seed, payload.code);
+    if (payload.schema != null && payload.schema !== 1) throw new Error('Unsupported challenge schema.');
+    if (payload.scenarioId != null && payload.scenarioId !== 'duel-v1') throw new Error('Unsupported challenge scenario.');
+    const label = payload.label ?? payload.code;
+    s.battle = createChallengeBattle(payload.seed, label);
   } else if (input.type === 'START_SIEGE') {
     if (s.battle || s.defense) throw new Error('Battle already open');
     s.defense = createDefense(s, data, { practice: 'siege', waves: 5 });
@@ -433,6 +561,13 @@ export function command(state, input, now, data) {
     if (!s.defense || s.defense.status !== 'ACTIVE') throw new Error('No active defense');
     const gold = s.resources.gold;
     s.defense = deployHero(s.defense, heroStats(s, data).atk);
+    if (s.resources.gold !== gold) throw new Error('Deployment fee');
+  } else if (input.type === 'DEPLOY_ARMY') {
+    if (!s.defense || s.defense.status !== 'ACTIVE') throw new Error('No active defense');
+    const stack = s.army.find(item => item.id === payload.stackId);
+    if (!stack) throw new Error('Unknown army stack');
+    const gold = s.resources.gold;
+    s.defense = deployArmy(s.defense, stack);
     if (s.resources.gold !== gold) throw new Error('Deployment fee');
   } else if (input.type === 'EARLY_CALL') {
     if (!s.defense) throw new Error('No active defense');

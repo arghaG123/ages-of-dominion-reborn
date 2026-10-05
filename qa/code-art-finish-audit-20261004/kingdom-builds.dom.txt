@@ -1,0 +1,59 @@
+- main:
+  - heading "Ages of Dominion" [level=1]
+  - status: Stone Age · day 1
+  - generic "Campaign resources":
+    - generic: food 319
+    - generic: wood 71
+    - generic: stone 53
+    - generic: gold 165
+  - button "Save"
+  - img "stone kingdom terrain, not yet accepted"
+  - img "Campaign scene":
+    - generic "Stone Hall placed on the shared camera. Registration is not accepted."
+    - 'button "townhall: townhall level 1"'
+    - 'button "P01: lumber level 1"':
+      - generic "Lumber Camp via pad-fit-v1; PROPOSAL_NOT_ACCEPTED"
+    - 'button "P02: farm level 1"':
+      - generic "Farm via pad-fit-v1; PROPOSAL_NOT_ACCEPTED"
+    - 'button "P03: quarry level 1"':
+      - generic "Quarry via pad-fit-v1; PROPOSAL_NOT_ACCEPTED"
+    - 'button "P04: mine level 1"':
+      - generic "Gold Mine via pad-fit-v1; PROPOSAL_NOT_ACCEPTED"
+    - 'button "P05: mine level 1"':
+      - generic "Gold Mine via pad-fit-v1; PROPOSAL_NOT_ACCEPTED"
+    - 'button "P06: empty plot level 0"'
+    - 'button "P07: empty plot level 0"'
+    - 'button "P08: empty plot level 0"'
+    - 'button "P09: empty plot level 0"'
+    - 'button "P10: empty plot level 0"'
+    - 'button "P11: empty plot level 0"'
+    - 'button "P12: empty plot level 0"'
+    - 'button "P13: empty plot level 0"'
+    - 'button "P14: empty plot level 0"'
+    - 'button "P15: empty plot level 0"'
+    - 'button "P16: empty plot level 0"'
+    - 'button "P17: empty plot level 0"'
+  - button "Actions" [expanded]
+  - complementary:
+    - heading "Gold Mine · level 1" [level=2]
+    - button "Upgrade Gold Mine — 112 wood, 80 stone"
+    - button "Upgrade Town Hall"
+    - button "Build Walls"
+    - button "Advance age"
+    - button "End day"
+    - button "Skip tutorial"
+    - alert: "Walls are level 0. Day 1, weather clear. Completed plots use pad-fit-v1 building plates where selected; Hall registration stays unaccepted and the contract is unchanged. Next: Build a Barracks."
+  - navigation "Screens":
+    - button "Home"
+    - button "Kingdom"
+    - button "Adventure"
+    - button "Hero"
+    - button "Army"
+    - button "Forge"
+    - button "Market"
+    - button "Tactical"
+    - button "Defense"
+    - button "Story"
+    - button "War"
+    - button "Settings"
+    - button "Help"

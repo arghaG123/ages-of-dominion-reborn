@@ -1,0 +1,798 @@
+{
+  "version": "live-plates-v1",
+  "status": "SOURCE_BOUND_NOT_OWNER_ACCEPTED",
+  "rejected": {
+    "troop-industrial-heavy": "1K plate is a rifleman with a machine gun, not a steam walker",
+    "troop-stone-melee-v4": "v4 stone melee keeps a rocky slab. It is not a general sprite. The live plate stays provisional.",
+    "troop-stone-ranged-v4": "v4 stone ranged keeps a wooden platform. It is not a general sprite. The live plate stays provisional.",
+    "troop-industrial-ranged-v4": "v4 industrial ranged is a prone rifle scene. It is not the standing role. The live plate stays provisional.",
+    "knight-mounted-master": "Scenic medieval mounted painting. It is not the ancient knight."
+  },
+  "creatures": {
+    "wolf": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/creature-wolf.png",
+      "source": "assets/production/production-10-20261003/images/09-creature-wolf.png",
+      "sourceSHA256": "c6d630ddfd1a24f5d0f4acbe6cbcd5b49a85d87ad724ab1320ffd85c2d34e07e",
+      "width": 906,
+      "height": 881
+    },
+    "bandit": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/creature-bandit.png",
+      "source": "assets/production/production-10-20261003/images/10-creature-bandit.png",
+      "sourceSHA256": "21798240b3cb309fd89bd7bbfd148440db3da7bf8b106b55f3466063824ca3d9",
+      "width": 352,
+      "height": 821
+    },
+    "bear": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/creature-bear.png",
+      "source": "assets/production/production-10-20261003/images/11-creature-bear.png",
+      "sourceSHA256": "25d852c9f26b47c253122eed9f7d27d9ec03edd0649d1e908692caa4751815b3",
+      "width": 860,
+      "height": 913
+    },
+    "harpy": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/creature-harpy.png",
+      "source": "assets/production/production-10-20261003/images/12-creature-harpy.png",
+      "sourceSHA256": "a385e1db32a9ff2cddc5b445660a6306eafd5eb4005af7f488e2a2852988156e",
+      "width": 1024,
+      "height": 827
+    },
+    "golem": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/creature-golem.png",
+      "source": "assets/production/production-10-20261003/images/13-creature-golem.png",
+      "sourceSHA256": "d0b24c6e48cd3ee088a230438aeae0e51dad53bde4d3f47c67703c59b9197dd7",
+      "width": 776,
+      "height": 849
+    },
+    "griffin": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/creature-griffin.png",
+      "source": "assets/production/production-10-20261003/images/14-creature-griffin.png",
+      "sourceSHA256": "ff34f3efbe7e548d5dcdaa9e8dcdbad81a96237873a90ce4c69a9840ab140754",
+      "width": 837,
+      "height": 804
+    },
+    "wyvern": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/creature-wyvern.png",
+      "source": "assets/production/production-10-20261003/images/15-creature-wyvern.png",
+      "sourceSHA256": "e59279976454ea5dac2059d4f8abe0ea38e27eb531e82743157bbe152e3f7440",
+      "width": 958,
+      "height": 773
+    },
+    "drone": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/creature-drone.png",
+      "source": "assets/production/production-10-20261003/images/16-creature-drone.png",
+      "sourceSHA256": "a4cb97b60f652338680e0905885a037d9be3bbd776d48821b566b2d5314d1cab",
+      "width": 836,
+      "height": 702
+    }
+  },
+  "troops": {
+    "0-melee": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-stone-melee.png",
+      "source": "assets/production/production-07-20261003/images/03-troop-stone-melee.png",
+      "sourceSHA256": "c374fb4d5c0ce1f7c6347751d77ea325b61477931d5c2bae5aeb4deb294db032",
+      "width": 753,
+      "height": 921,
+      "provisional": "Live plate kept so the army still draws. v4 stone melee is a slab and is not this consumer."
+    },
+    "0-ranged": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-stone-ranged.png",
+      "source": "assets/production/production-07-20261003/images/04-troop-stone-ranged.png",
+      "sourceSHA256": "2fb642c52923c7d718c6dc12a22f4cead1849a44c9942cb59d1994f2b64f66c4",
+      "width": 628,
+      "height": 938,
+      "provisional": "Live plate kept so the army still draws. v4 stone ranged is a platform and is not this consumer."
+    },
+    "0-heavy": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-stone-heavy.png",
+      "source": "assets/production/production-07-20261003/images/05-troop-stone-heavy.png",
+      "sourceSHA256": "97cace9a0053023b56699db46a12eea109f9b45648a7ab3bc890b3d4595f39a0",
+      "width": 612,
+      "height": 974
+    },
+    "1-melee": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-bronze-melee.png",
+      "source": "assets/production/production-07-20261003/images/06-troop-bronze-melee.png",
+      "sourceSHA256": "d342bc57556035ee48eb33698e3aa71d241acc965406cc85840491cdd36e8fc9",
+      "width": 382,
+      "height": 737
+    },
+    "1-ranged": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-bronze-ranged.png",
+      "source": "assets/production/production-07-20261003/images/07-troop-bronze-ranged.png",
+      "sourceSHA256": "03b2271120763b3c4697140f6c10799d82d240661eeff62abb4a48a27eba93df",
+      "width": 871,
+      "height": 752
+    },
+    "1-heavy": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-bronze-heavy.png",
+      "source": "assets/production/production-07-20261003/images/08-troop-bronze-heavy.png",
+      "sourceSHA256": "107f35364f9b29104b182368ec512e42fed7f18eb4d4ce7b16de89b73e99809c",
+      "width": 520,
+      "height": 941
+    },
+    "2-melee": {
+      "file": "assets/derivatives/substitutions/v3/troop-iron-melee.png",
+      "source": "assets/production/production-07-20261003/images/09-troop-iron-melee.png",
+      "sourceSHA256": "a88d1e71b656688de7ef045de7b65f78e0926e5c48b01f522fe00ec268bb30a4",
+      "sha256": "623f44b114bb683925b9ac4e98f8e6faf56bfe8d68eb10d63b1acb566c768c16",
+      "width": 1024,
+      "height": 1024,
+      "pose": "single",
+      "roleReview": "Iron melee only. Border is clear and the lowest opaque rows taper. Not a rig and not a Stone unit."
+    },
+    "2-ranged": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-iron-ranged.png",
+      "source": "assets/production/production-07-20261003/images/10-troop-iron-ranged.png",
+      "sourceSHA256": "51f53a648a73e47b66b31583b6d4aa3f9c932038fc51b91172e9da4a1256b641",
+      "width": 535,
+      "height": 812
+    },
+    "2-heavy": {
+      "file": "assets/derivatives/actors/v4/troop-iron-heavy.png",
+      "source": "assets/high-res/final-native2k/troop-iron-heavy.png",
+      "sha256": "620b7997f747333eeafe75c76edda53642566b4ec05b2990f3c5a2d5c269c96e",
+      "width": 2048,
+      "height": 2048,
+      "pose": "single",
+      "staticMaxHeight": 130,
+      "roleReview": "Iron Age war elephant with howdah, tusk caps and crew. Checked at 130px on white, black and green. Feet and trunk stay. No floor slab. Owner acceptance unverified. The older live spearman plate is withheld."
+    },
+    "3-melee": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-melee.png",
+      "source": "assets/production/production-07-20261003/images/12-troop-medieval-melee.png",
+      "sourceSHA256": "a745679143d3e27957e879c5f293b184c7f6fc295f2b54b883bd146e1d5cf08d",
+      "width": 482,
+      "height": 788
+    },
+    "3-ranged": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-ranged.png",
+      "source": "assets/production/production-07-20261003/images/13-troop-medieval-ranged.png",
+      "sourceSHA256": "3e15e24331588271a7e17377a0d304a1fc286a1c3fe0af23a208755a245ec827",
+      "width": 425,
+      "height": 764
+    },
+    "3-heavy": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-heavy.png",
+      "source": "assets/production/production-07-20261003/images/14-troop-medieval-heavy.png",
+      "sourceSHA256": "35d876e74dc8e1e67b9cbd473cd76be0d70d06868149581780d4243703f76d13",
+      "width": 722,
+      "height": 770
+    },
+    "4-melee": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-gunpowder-melee.png",
+      "source": "assets/production/production-07-20261003/images/15-troop-gunpowder-melee.png",
+      "sourceSHA256": "f29c2fe5af8689a1312bec03f13ca0d59158aea15f73dc8fe162041ca6df7732",
+      "width": 638,
+      "height": 895
+    },
+    "4-ranged": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-gunpowder-ranged.png",
+      "source": "assets/production/production-07-20261003/images/16-troop-gunpowder-ranged.png",
+      "sourceSHA256": "53b16acd4364c93513fd6a0605096b4036009e02f6597619498a2a488dcb99e7",
+      "width": 583,
+      "height": 727
+    },
+    "4-heavy": {
+      "file": "assets/derivatives/actors/v4/troop-gunpowder-heavy.png",
+      "source": "assets/high-res/final-native2k/troop-gunpowder-heavy.png",
+      "sha256": "e6ba3b3dfe33190f044e561d3354c5f9f69fcb1f0cb01c21c0c4ad70d2339ae6",
+      "width": 2048,
+      "height": 2048,
+      "pose": "single",
+      "staticMaxHeight": 130,
+      "roleReview": "Gunpowder cannon and crew. Checked at 130px. Wheels and barrel stay. A small blue contact mark remains. Not an animation."
+    },
+    "5-melee": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-industrial-melee.png",
+      "source": "assets/production/production-07-20261003/images/18-troop-industrial-melee.png",
+      "sourceSHA256": "fca4b6615894979b9a00a41824adecdf24d233360ab6182040ca4585bc0f390b",
+      "width": 708,
+      "height": 922
+    },
+    "5-ranged": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-industrial-ranged.png",
+      "source": "assets/production/production-07-20261003/images/19-troop-industrial-ranged.png",
+      "sourceSHA256": "e26e2693524df9d2daf41abc0faebbc49b36e921ade68ef20bdc798024363358",
+      "width": 549,
+      "height": 717,
+      "provisional": "Live plate kept so the role still draws. v4 industrial ranged is a prone scene and is not this consumer."
+    },
+    "5-heavy": {
+      "file": "assets/derivatives/substitutions/v3/troop-industrial-heavy.png",
+      "source": "assets/production/production-17-20261003/images/10-attacker-industrial-heavy.png",
+      "sourceSHA256": "9dcfa437f8fba8ff6cc8c81757de82c82983668d1c7b2d476e15e481c52e09af",
+      "sha256": "5ca06b27ee90de583b6f717cc54f7abc9d5ada0344c99b61d69ce23f5399094b",
+      "width": 1024,
+      "height": 1024,
+      "pose": "single",
+      "roleReview": "Industrial heavy steam walker. Smoke touches the top edge. Lowest rows taper. Not the rejected rifleman."
+    },
+    "6-melee": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-modern-melee.png",
+      "source": "assets/production/production-07-20261003/images/21-troop-modern-melee.png",
+      "sourceSHA256": "fca4c32b380fb424a18d785aaba20115e4a6f226ba199438eb942ece7b70411c",
+      "width": 511,
+      "height": 864
+    },
+    "6-ranged": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-modern-ranged.png",
+      "source": "assets/production/production-07-20261003/images/22-troop-modern-ranged.png",
+      "sourceSHA256": "9f03516d79c0c834b8eb62c76fa88daa828a4804358d7b35d66c7e2f97775661",
+      "width": 438,
+      "height": 854
+    },
+    "6-heavy": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-modern-heavy.png",
+      "source": "assets/production/production-07-20261003/images/23-troop-modern-heavy.png",
+      "sourceSHA256": "ad4fd5e8c8bcfb82945f3351df575aa8eb9bedfbe16e8aef0bc0460d96130a40",
+      "width": 582,
+      "height": 908
+    },
+    "7-melee": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-future-melee.png",
+      "source": "assets/production/production-07-20261003/images/24-troop-future-melee.png",
+      "sourceSHA256": "28c6b0f03a33de5fe317fbfad32478c293df4768acf1473133405bb84aca44e9",
+      "width": 538,
+      "height": 874
+    },
+    "7-ranged": {
+      "file": "assets/derivatives/actors/v4/troop-future-ranged.png",
+      "source": "assets/high-res/final-native2k/troop-future-ranged.png",
+      "sha256": "de1da1420b1f16658c35f98a73c9c1cab65c0b9d14f5a79f4ac0275b22184c19",
+      "width": 2048,
+      "height": 2048,
+      "pose": "single",
+      "staticMaxHeight": 130,
+      "roleReview": "One standing future soldier. Checked at 130px. A pale contact disc stays under the boots. Not an animation."
+    },
+    "7-heavy": {
+      "file": "assets/derivatives/actors/v4/troop-future-heavy.png",
+      "source": "assets/high-res/final-native2k/troop-future-heavy.png",
+      "sha256": "d31a6547f375fa89e37b51744203a115c235e93420f326b0d0c0cdfecd31804a",
+      "width": 2048,
+      "height": 2048,
+      "pose": "single",
+      "staticMaxHeight": 130,
+      "roleReview": "Future hover hull with thruster glow. Checked at 130px. The shadow reads as lift, not a floor slab. The native canvas clips the right edge. Not an animation."
+    }
+  },
+  "attackers": {
+    "0-brute": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-stone-brute.png",
+      "source": "assets/production/production-08-20261003/images/29-attacker-stone-brute.png",
+      "sourceSHA256": "b9ba13ac8fb43e8d47fd0f8701198adce3e89506f3c58c0cc31b2306769e8d30",
+      "width": 730,
+      "height": 823
+    },
+    "0-runner": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-stone-runner.png",
+      "source": "assets/production/production-08-20261003/images/30-attacker-stone-runner.png",
+      "sourceSHA256": "2a583b6a232fd11b5a621d8a65ad2744652204efbad0453181b92d5f0528beb6",
+      "width": 594,
+      "height": 888
+    },
+    "0-archer": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-stone-archer.png",
+      "source": "assets/production/production-09-20261003/images/01-attacker-stone-archer.png",
+      "sourceSHA256": "70029d1334e71a688bd99df4419e3d2ff0c9c9efb4058ed2868cc0064a31afbe",
+      "width": 537,
+      "height": 814
+    },
+    "0-sapper": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-stone-sapper.png",
+      "source": "assets/production/production-09-20261003/images/02-attacker-stone-sapper.png",
+      "sourceSHA256": "0068911b2cb8c569e4b6b0794b62cba2b62113b665b88c136cd1b8a8dbb99e68",
+      "width": 683,
+      "height": 895
+    },
+    "0-shaman": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-stone-shaman.png",
+      "source": "assets/production/production-09-20261003/images/03-attacker-stone-shaman.png",
+      "sourceSHA256": "c461d432b0b0f03c9d7a9e1fdefb8138cc9b5fc193c939622673b41712c70834",
+      "width": 782,
+      "height": 842
+    },
+    "1-brute": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-bronze-brute.png",
+      "source": "assets/production/production-09-20261003/images/04-attacker-bronze-brute.png",
+      "sourceSHA256": "658d0604bdb36923bbeb7763ee36ce24474d20f68a0b028fd269673d1a26834c",
+      "width": 813,
+      "height": 939
+    },
+    "1-runner": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-bronze-runner.png",
+      "source": "assets/production/production-09-20261003/images/05-attacker-bronze-runner.png",
+      "sourceSHA256": "3a0025afe4b314a64fb57caafc3272c45d30e7c424f89e104c4327665d481839",
+      "width": 1024,
+      "height": 1024
+    },
+    "1-archer": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-bronze-archer.png",
+      "source": "assets/production/production-09-20261003/images/06-attacker-bronze-archer.png",
+      "sourceSHA256": "471dc9f5682ac0d280ee3a88087a8e641eb72c251661d3e89c69ae38ccd3817c",
+      "width": 602,
+      "height": 928
+    },
+    "1-sapper": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-bronze-sapper.png",
+      "source": "assets/production/production-09-20261003/images/07-attacker-bronze-sapper.png",
+      "sourceSHA256": "58d4ad9df83215d3e61ec85efed12490a4537ce11beb000443e6bfee233f042d",
+      "width": 927,
+      "height": 852
+    },
+    "1-shaman": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-bronze-shaman.png",
+      "source": "assets/production/production-09-20261003/images/08-attacker-bronze-shaman.png",
+      "sourceSHA256": "f526e776db70aee362ecf36f9181fbdf401e8e3ab79195b531577a19782fdaa7",
+      "width": 615,
+      "height": 951
+    },
+    "2-brute": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-iron-brute.png",
+      "source": "assets/production/production-09-20261003/images/09-attacker-iron-brute.png",
+      "sourceSHA256": "b505ac92fe0e53cacf0f756446b854bdc52ea861cf93a7d7a374323d743abd8b",
+      "width": 678,
+      "height": 864
+    },
+    "2-runner": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-iron-runner.png",
+      "source": "assets/production/production-09-20261003/images/10-attacker-iron-runner.png",
+      "sourceSHA256": "e260201188e173f55b44a1907687ffe389ebf0ed3928dd02094bbae6657f3110",
+      "width": 632,
+      "height": 910
+    },
+    "2-archer": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-iron-archer.png",
+      "source": "assets/production/production-09-20261003/images/11-attacker-iron-archer.png",
+      "sourceSHA256": "9fe7250b1caf6b054af86f808c20dacc7ac05c58a9358e6c924e984924113234",
+      "width": 689,
+      "height": 804
+    },
+    "2-sapper": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-iron-sapper.png",
+      "source": "assets/production/production-09-20261003/images/12-attacker-iron-sapper.png",
+      "sourceSHA256": "0a4946424dc56bddd161bd01d1ffa81513f12ca8689ba2d462705ce6686856c8",
+      "width": 732,
+      "height": 834
+    },
+    "2-shaman": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-iron-shaman.png",
+      "source": "assets/production/production-09-20261003/images/13-attacker-iron-shaman.png",
+      "sourceSHA256": "f5bead4a289e101825a2796ba73efca1ec3778bb50f3b3e4e995c78d4fc64280",
+      "width": 432,
+      "height": 699
+    },
+    "3-brute": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-medieval-brute.png",
+      "source": "assets/production/production-09-20261003/images/14-attacker-medieval-brute.png",
+      "sourceSHA256": "56ce30b5887463e52563da7c3a4668598646e4bab7b6f788f71f111b0045c26a",
+      "width": 725,
+      "height": 957
+    },
+    "3-runner": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-medieval-runner.png",
+      "source": "assets/production/production-09-20261003/images/15-attacker-medieval-runner.png",
+      "sourceSHA256": "cdee1f0cf18369d90a984d7c9cb90774aa1872e4d83525bd3b911c6969a0befb",
+      "width": 662,
+      "height": 829
+    },
+    "3-archer": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-medieval-archer.png",
+      "source": "assets/production/production-09-20261003/images/16-attacker-medieval-archer.png",
+      "sourceSHA256": "9cbd8517af86839ed83371f680a930da311ed5bd71fa4301cd1674b4d5a52d83",
+      "width": 1024,
+      "height": 1024
+    },
+    "3-sapper": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-medieval-sapper.png",
+      "source": "assets/production/production-09-20261003/images/17-attacker-medieval-sapper.png",
+      "sourceSHA256": "2fe6ce3fe4811355b50998bc4351e6e6f990c38b260bb8e5bbfb46a334251992",
+      "width": 605,
+      "height": 937
+    },
+    "3-shaman": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-medieval-shaman.png",
+      "source": "assets/production/production-09-20261003/images/18-attacker-medieval-shaman.png",
+      "sourceSHA256": "bfe40c2c79d748e727e4bc4c28a7fa687b8d1d77f174ef69bf4cbeeff88471f7",
+      "width": 456,
+      "height": 786
+    },
+    "4-brute": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-gunpowder-brute.png",
+      "source": "assets/production/production-09-20261003/images/19-attacker-gunpowder-brute.png",
+      "sourceSHA256": "61b77c0c01e25c9a20a62b71ea6c37ad74be19d961862cee54e3fc7c6875ba17",
+      "width": 591,
+      "height": 886
+    },
+    "4-runner": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-gunpowder-runner.png",
+      "source": "assets/production/production-09-20261003/images/20-attacker-gunpowder-runner.png",
+      "sourceSHA256": "62d0bead33d4d32fe5eb671f0b450c433ad1a70d78d5122a10714350ad705103",
+      "width": 484,
+      "height": 750
+    },
+    "4-archer": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-gunpowder-archer.png",
+      "source": "assets/production/production-09-20261003/images/21-attacker-gunpowder-archer.png",
+      "sourceSHA256": "0dfdd4dd0597f85e20af95cf2ee29f95d1fb1e7839e4ab63a5930d0ad76bd421",
+      "width": 650,
+      "height": 762
+    },
+    "4-sapper": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-gunpowder-sapper.png",
+      "source": "assets/production/production-09-20261003/images/22-attacker-gunpowder-sapper.png",
+      "sourceSHA256": "ef64ace72e286d1144e75e543c3629704a9b10baf65ec13f7ab6a230b6e6b9a6",
+      "width": 807,
+      "height": 970
+    },
+    "4-shaman": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-gunpowder-shaman.png",
+      "source": "assets/production/production-09-20261003/images/23-attacker-gunpowder-shaman.png",
+      "sourceSHA256": "7ff3088812801078c5c490eb61a959cdad783576aacd822aa9abaee40158135d",
+      "width": 887,
+      "height": 872
+    },
+    "5-brute": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-industrial-brute.png",
+      "source": "assets/production/production-09-20261003/images/24-attacker-industrial-brute.png",
+      "sourceSHA256": "f0d437e1c7bcc7dacafe4e09e884f060edde808b0c135e07451876c414c2a365",
+      "width": 755,
+      "height": 938
+    },
+    "5-runner": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-industrial-runner.png",
+      "source": "assets/production/production-09-20261003/images/25-attacker-industrial-runner.png",
+      "sourceSHA256": "bebcd775b73e285d711dec50a3a533047ba39f784e0fde0c9d755fdd49c5f7e2",
+      "width": 547,
+      "height": 878
+    },
+    "5-archer": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-industrial-archer.png",
+      "source": "assets/production/production-09-20261003/images/26-attacker-industrial-archer.png",
+      "sourceSHA256": "ec0acad716d23318a1b0cae7dbb81f4dca7ca044d81bd76668f7012822dab161",
+      "width": 868,
+      "height": 838
+    },
+    "5-sapper": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-industrial-sapper.png",
+      "source": "assets/production/production-09-20261003/images/27-attacker-industrial-sapper.png",
+      "sourceSHA256": "649de3a242a4288df44e96f1eac2311eb81c1a17a735a040ce7956ddff04456d",
+      "width": 461,
+      "height": 892
+    },
+    "5-shaman": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-industrial-shaman.png",
+      "source": "assets/production/production-09-20261003/images/28-attacker-industrial-shaman.png",
+      "sourceSHA256": "72f118b6de817c8fc4731dba00d93a8102e0be7d17449068f7886bb65a72c9d7",
+      "width": 826,
+      "height": 808
+    },
+    "6-brute": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-modern-brute.png",
+      "source": "assets/production/production-09-20261003/images/29-attacker-modern-brute.png",
+      "sourceSHA256": "cb6eb64bf7ba30e261340e8a4d8fc52f0f169d4a7b172416135bf7ec660210ae",
+      "width": 584,
+      "height": 889
+    },
+    "6-runner": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-modern-runner.png",
+      "source": "assets/production/production-09-20261003/images/30-attacker-modern-runner.png",
+      "sourceSHA256": "ae435705c832e380487602206f12879c86f758a82d877fcc52dc8ab8a550449c",
+      "width": 475,
+      "height": 801
+    },
+    "6-archer": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-modern-archer.png",
+      "source": "assets/production/production-10-20261003/images/01-attacker-modern-archer.png",
+      "sourceSHA256": "c2d09f5ea982134b6ed5ac80aac6ba64b3f3cca673a4279b8abdf4ab32c32f6d",
+      "width": 916,
+      "height": 507
+    },
+    "6-sapper": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-modern-sapper.png",
+      "source": "assets/production/production-10-20261003/images/02-attacker-modern-sapper.png",
+      "sourceSHA256": "ca9481cd9e25fe4c1f9ee2511d73bfaaeffb778bd051364f23925efd94947264",
+      "width": 380,
+      "height": 883
+    },
+    "6-shaman": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-modern-shaman.png",
+      "source": "assets/production/production-10-20261003/images/03-attacker-modern-shaman.png",
+      "sourceSHA256": "cb90bffbd2aa8779978ad61f8cb73cff30b91bbbefc66600cff22919d0cc688b",
+      "width": 470,
+      "height": 832
+    },
+    "7-brute": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-future-brute.png",
+      "source": "assets/production/production-10-20261003/images/04-attacker-future-brute.png",
+      "sourceSHA256": "06e1e61349904f512676a0dd1f002a0768c3950f2a45fda062d270a21f860a38",
+      "width": 761,
+      "height": 980
+    },
+    "7-runner": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-future-runner.png",
+      "source": "assets/production/production-10-20261003/images/05-attacker-future-runner.png",
+      "sourceSHA256": "78ddf26d78b603d15697dbd552c0fbe040895f1b8500d3659e8452926c167ba6",
+      "width": 614,
+      "height": 893
+    },
+    "7-archer": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-future-archer.png",
+      "source": "assets/production/production-10-20261003/images/06-attacker-future-archer.png",
+      "sourceSHA256": "8105a950c3f5f0541c08bd41a97858b3dab36b63066c0bfd0f7003c8589fb907",
+      "width": 944,
+      "height": 836
+    },
+    "7-sapper": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-future-sapper.png",
+      "source": "assets/production/production-10-20261003/images/07-attacker-future-sapper.png",
+      "sourceSHA256": "c3173fbdc4702a8d824af6c57598a0e06b4482e7211ce0750b25bd29f68924ac",
+      "width": 592,
+      "height": 841
+    },
+    "7-shaman": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/attacker-future-shaman.png",
+      "source": "assets/production/production-10-20261003/images/08-attacker-future-shaman.png",
+      "sourceSHA256": "4da902797f2058056cad51c7f105397794febbeba669dd884d97e74871a8eb0a",
+      "width": 894,
+      "height": 954
+    }
+  },
+  "towers": {
+    "0-arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-stone-arrow.png",
+      "source": "assets/production/production-07-20261003/images/27-tower-stone-arrow.png",
+      "sourceSHA256": "6e962fa61bab5456de2837dcd1b43f30dc08ff58b9749f8b5e55548c3a8ecd89",
+      "width": 584,
+      "height": 899
+    },
+    "0-splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-stone-splash.png",
+      "source": "assets/production/production-07-20261003/images/28-tower-stone-splash.png",
+      "sourceSHA256": "5f4f5e774dfeca1f85ff8f68fa15c8330a32344d9125fb131b543151733bfcef",
+      "width": 533,
+      "height": 767
+    },
+    "0-slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-stone-slow.png",
+      "source": "assets/production/production-07-20261003/images/29-tower-stone-slow.png",
+      "sourceSHA256": "92abac6b003f878f4558fd4688fa49b86c765dc1435fdb8046fc674dbe6f7add",
+      "width": 826,
+      "height": 989
+    },
+    "0-support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-stone-support.png",
+      "source": "assets/production/production-07-20261003/images/30-tower-stone-support.png",
+      "sourceSHA256": "385a5a91bd140367af160113ac731aa26011a632532fd7112089025c0047a80e",
+      "width": 915,
+      "height": 917
+    },
+    "1-arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-bronze-arrow.png",
+      "source": "assets/production/production-08-20261003/images/01-tower-bronze-arrow.png",
+      "sourceSHA256": "86326adcfc2c7f580093d00f4c3371c161fea9ed59e9f90d6e542d4413d5a1a1",
+      "width": 465,
+      "height": 841
+    },
+    "1-splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-bronze-splash.png",
+      "source": "assets/production/production-08-20261003/images/02-tower-bronze-splash.png",
+      "sourceSHA256": "16d3f7e0bcac0ed5aae19673e50d694e01d37502acf60c3e5e939b9a6c1c71ef",
+      "width": 886,
+      "height": 929
+    },
+    "1-slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-bronze-slow.png",
+      "source": "assets/production/production-08-20261003/images/03-tower-bronze-slow.png",
+      "sourceSHA256": "f69b6d6f8610c95a4f44d4028369bc380ea8649821893f655fe7f5458e7fe57f",
+      "width": 800,
+      "height": 981
+    },
+    "1-support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-bronze-support.png",
+      "source": "assets/production/production-08-20261003/images/04-tower-bronze-support.png",
+      "sourceSHA256": "2dd6ef065863d158e98edbfef341c0e25f22edb1f25c9f14fab7f1404ebeb5cb",
+      "width": 994,
+      "height": 974
+    },
+    "2-arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-iron-arrow.png",
+      "source": "assets/production/production-08-20261003/images/05-tower-iron-arrow.png",
+      "sourceSHA256": "a8a8dcf7a0c857ecfdb2ce652a703c96cd595c0208dd3fe8c7b3e169ff79b56e",
+      "width": 600,
+      "height": 863
+    },
+    "2-splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-iron-splash.png",
+      "source": "assets/production/production-17-20261003/images/13-tower-iron-splash.png",
+      "sourceSHA256": "dfb74c741ad6ccac53921662440fa2922b786bf1cd00afc8dbc72985c88652c4",
+      "width": 938,
+      "height": 926
+    },
+    "2-slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-iron-slow.png",
+      "source": "assets/production/production-08-20261003/images/07-tower-iron-slow.png",
+      "sourceSHA256": "2198fc653717fe755c5883eaa01c7a032444e712b3e30a7e50f23775b21d34d9",
+      "width": 559,
+      "height": 956
+    },
+    "2-support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-iron-support.png",
+      "source": "assets/production/production-08-20261003/images/08-tower-iron-support.png",
+      "sourceSHA256": "6ad484d3a520ebb84297831797d3482c29fd42464b2caf13a574723729934caf",
+      "width": 764,
+      "height": 1005
+    },
+    "3-arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-medieval-arrow.png",
+      "source": "assets/production/production-08-20261003/images/09-tower-medieval-arrow.png",
+      "sourceSHA256": "c42d12ff551729e5c199868522f6e7e5cd664a38451258e27760dea5961e9bb9",
+      "width": 704,
+      "height": 1005
+    },
+    "3-splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-medieval-splash.png",
+      "source": "assets/production/production-08-20261003/images/10-tower-medieval-splash.png",
+      "sourceSHA256": "19efbe9223af16b58d9848e16f1ebb9e005f17e12dd66284e5a4775f5d2d6616",
+      "width": 786,
+      "height": 994
+    },
+    "3-slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-medieval-slow.png",
+      "source": "assets/production/production-08-20261003/images/11-tower-medieval-slow.png",
+      "sourceSHA256": "a7d592a871dcd398a674353d35a5180670f95b1d207602601752453014eccf06",
+      "width": 586,
+      "height": 917
+    },
+    "3-support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-medieval-support.png",
+      "source": "assets/production/production-08-20261003/images/12-tower-medieval-support.png",
+      "sourceSHA256": "b779f8714868ba468efed372a52b949f1321f94bac52cf90851a5fb6e8f28e6d",
+      "width": 998,
+      "height": 939
+    },
+    "4-arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-gunpowder-arrow.png",
+      "source": "assets/production/production-08-20261003/images/13-tower-gunpowder-arrow.png",
+      "sourceSHA256": "4e3e59fe56141eb34e02e99740ce9ec30560ace0d5bc62ae2603ab9b59d09cb9",
+      "width": 510,
+      "height": 923
+    },
+    "4-splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-gunpowder-splash.png",
+      "source": "assets/production/production-08-20261003/images/14-tower-gunpowder-splash.png",
+      "sourceSHA256": "c3f13a5d1791016e1b894e021c8edec1a678bfe7583927b46d5aa0f868a82d00",
+      "width": 938,
+      "height": 944
+    },
+    "4-slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-gunpowder-slow.png",
+      "source": "assets/production/production-08-20261003/images/15-tower-gunpowder-slow.png",
+      "sourceSHA256": "2fb9e33b1e519b28c7d389ba38f23af754ebb86f7c29482b45d3b21f0eddb934",
+      "width": 643,
+      "height": 955
+    },
+    "4-support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-gunpowder-support.png",
+      "source": "assets/production/production-08-20261003/images/16-tower-gunpowder-support.png",
+      "sourceSHA256": "ee1aef2fff493e52c3ca564461fd54eb0a7568ccf423d17311d620d7473b0827",
+      "width": 611,
+      "height": 903
+    },
+    "5-arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-industrial-arrow.png",
+      "source": "assets/production/production-08-20261003/images/17-tower-industrial-arrow.png",
+      "sourceSHA256": "bd33e9044d0a80b497d6c158775632de53e2ecb0f810882817e83d4fbf5ddca3",
+      "width": 530,
+      "height": 811
+    },
+    "5-splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-industrial-splash.png",
+      "source": "assets/production/production-08-20261003/images/18-tower-industrial-splash.png",
+      "sourceSHA256": "04a84eb416fe4ae5a1936e550b0d0a7622506a2136467d972b2791d5104abc6a",
+      "width": 910,
+      "height": 955
+    },
+    "5-slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-industrial-slow.png",
+      "source": "assets/production/production-08-20261003/images/19-tower-industrial-slow.png",
+      "sourceSHA256": "b02604efc15e081d605b7d9fb392866c5841c887d1a2f393ac63cdce4f4ff3e4",
+      "width": 768,
+      "height": 994
+    },
+    "5-support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-industrial-support.png",
+      "source": "assets/production/production-08-20261003/images/20-tower-industrial-support.png",
+      "sourceSHA256": "8e688fb72335ec9cc483e7cef6ec15aa2c7470886d0387df34ee1a4caad4b050",
+      "width": 476,
+      "height": 873
+    },
+    "6-arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-modern-arrow.png",
+      "source": "assets/production/production-08-20261003/images/21-tower-modern-arrow.png",
+      "sourceSHA256": "85a457679a6d05db90064c50c99798aabe6107f73f38f9fc24657aa6415c01d9",
+      "width": 840,
+      "height": 954
+    },
+    "6-splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-modern-splash.png",
+      "source": "assets/production/production-08-20261003/images/22-tower-modern-splash.png",
+      "sourceSHA256": "1f94d0091f9736384cf89cd67af300e8ac778a0ab1e6be0e60402b7ca910bde9",
+      "width": 643,
+      "height": 909
+    },
+    "6-slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-modern-slow.png",
+      "source": "assets/production/production-08-20261003/images/23-tower-modern-slow.png",
+      "sourceSHA256": "acb9676b77ac854ce5f9560fe25b9c7666b55c8495efdee2d3606547fe7f9651",
+      "width": 883,
+      "height": 968
+    },
+    "6-support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-modern-support.png",
+      "source": "assets/production/production-08-20261003/images/24-tower-modern-support.png",
+      "sourceSHA256": "6e77252535eb6ce31f46926034bee0ae19e87eada6aca3060c493f34108ef154",
+      "width": 840,
+      "height": 997
+    },
+    "7-arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-future-arrow.png",
+      "source": "assets/production/production-08-20261003/images/25-tower-future-arrow.png",
+      "sourceSHA256": "3e14d6fd018ceee9edcc445dc89b4e35dd17a2ab25d3d6bad6797d63453d63ec",
+      "width": 440,
+      "height": 861
+    },
+    "7-splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-future-splash.png",
+      "source": "assets/production/production-08-20261003/images/26-tower-future-splash.png",
+      "sourceSHA256": "bc4b07869134e81edfb137bf55149e3dd1f27d2e1f6cf0538480726b1cc87047",
+      "width": 825,
+      "height": 810
+    },
+    "7-slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-future-slow.png",
+      "source": "assets/production/production-08-20261003/images/27-tower-future-slow.png",
+      "sourceSHA256": "a6f50b9534609379ce5029e27997b7daa0704ba7044e9826f421219053550ba7",
+      "width": 846,
+      "height": 845
+    },
+    "7-support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/tower-future-support.png",
+      "source": "assets/production/production-08-20261003/images/28-tower-future-support.png",
+      "sourceSHA256": "1dd553eef8e9e49be0ff44e18aa9f2e95f2e7814d6eff7f65860c47f77aa8547",
+      "width": 770,
+      "height": 937
+    }
+  },
+  "projectiles": {
+    "arrow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/effect-arrow.png",
+      "source": "assets/production/production-12-20261003/images/24-effect-arrow.png",
+      "sourceSHA256": "0ead193ef6204be78f8004f1f3b2e8197fe5106f2e761b29d0bedba7eac78e34",
+      "width": 947,
+      "height": 944
+    },
+    "splash": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/effect-spell-fireball.png",
+      "source": "assets/production/production-17-20261003/images/21-effect-spell-fireball.png",
+      "sourceSHA256": "18fbf3966e4c7595bef47e3984b25a76ecd0167a90b80598ed8499ece8d499cc",
+      "width": 1024,
+      "height": 1024
+    },
+    "slow": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/effect-spell-slow.png",
+      "source": "assets/production/production-17-20261003/images/22-effect-spell-slow.png",
+      "sourceSHA256": "1b6510373966489c1bc6aecf79f5a34ed9b1633e26fdccba35ed9539f2605a32",
+      "width": 1024,
+      "height": 1024
+    },
+    "support": {
+      "file": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/effect-bless.png",
+      "source": "assets/production/production-12-20261003/images/26-effect-bless.png",
+      "sourceSHA256": "3a86f724599926b8a6aadbf121920b15bf338d3b77a1b81362362989e41ce94f",
+      "width": 1014,
+      "height": 1008
+    }
+  }
+}

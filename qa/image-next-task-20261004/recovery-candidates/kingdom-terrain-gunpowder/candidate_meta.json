@@ -1,0 +1,29 @@
+{
+  "candidateID": "kingdom-terrain-gunpowder",
+  "age": "gunpowder",
+  "geometryVersion": "v4-candidate-20261004",
+  "status": "READY_FOR_REVIEW_NOT_OWNER_ACCEPTED",
+  "ownerAcceptance": "UNVERIFIED",
+  "runtimeApproved": false,
+  "files": {
+    "base": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-gunpowder/base_candidate_v4.png",
+    "baseSHA256": "b4daa64e435948c2ec01bab4016f004c99370080a4b3341e2c468991f0f644c4",
+    "mask": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-gunpowder/mask_removal_v4.png",
+    "maskSHA256": "358ed4b40ae57125e5f27d44233e6a5bb4436a63157bb9eb9c3b98febade1edd",
+    "guide": "qa/image-next-task-20261004/recovery-candidates/kingdom-terrain-gunpowder/guide_v4.png",
+    "guideSHA256": "2b5977ff08b26586d983524ae874f6107ea857848b36216109503fa986a43369",
+    "originalOutput4K": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-gunpowder/output.png",
+    "originalSHA256": "b4564a2a28440069aec1febaf663e5eb56166ddcd0f81cc072dfe2caf827d390"
+  },
+  "repairedDefects": [
+    "Coherent bare-base ground synthesis removing baked plot borders and mutable clutter",
+    "Real silhouette and shadow removal mask generated",
+    "Extended bridge crossing proposal spanning river x=13..14 with far-bank approach [14, 7]",
+    "Hall roof envelope [402,40]..[750.16,372.86] separated from civic ground polygon"
+  ],
+  "residualDefects": [
+    "Independent visual and owner review pending",
+    "Runtime client sprite compositing not yet executed",
+    "Native 4K re-render with repaired inputs requires separate owner scheduling"
+  ]
+}

@@ -1,3 +1,5 @@
+> **Owner rejects current playable-game delivery — 4 October 2026:** Owner reports the browser runtime is not playable and still looks like the preview. [Readiness report](plan/PLAYABLE-GAME-READINESS-OWNER-REJECTION-2026-10-04.md) confirms schematic Adventure/Tactical/Defense and unaccepted Kingdom composition in current source/saved pixels; 0/4 main experiences demonstrates the promised finished standard. Core rules/assets are preparation, not game completion. [Corrected Code priority](plan/CODE-AI-PLAYABLE-DESIGN-FIRST-2026-10-04.txt): deliver one coherent visually faithful Stone-age UI play loop, then complete full scope. Image local work continues independently; no new paid authority. Device STOPPED. Concurrent records/history below preserved.
+
 # Design feedback and revision record
 
 ## Version1 — rejected, 2 October 2026

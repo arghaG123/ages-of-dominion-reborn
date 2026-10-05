@@ -1,0 +1,82 @@
+{
+  "scope": "OFFLINE NEW SANDBOX (qa/image-v3-isolated-controls-20261004). Network/credentials forbidden.",
+  "totalProbes": 14,
+  "passingProbes": 14,
+  "failingProbes": 0,
+  "allPassed": true,
+  "rows": [
+    {
+      "probe": "delayed contender after first verification",
+      "pass": true,
+      "detail": [
+        {
+          "contender": 0,
+          "acquired": true,
+          "error": null
+        },
+        {
+          "contender": 1,
+          "acquired": false,
+          "error": "Mutex acquisition collision: exclusive token delayed-race-mutex.json.excl already held by an active contender."
+        }
+      ]
+    },
+    {
+      "probe": "dead PID UNKNOWN blocked",
+      "pass": true
+    },
+    {
+      "probe": "UNKNOWN release denied",
+      "pass": true
+    },
+    {
+      "probe": "subattempt append-only collision preserved",
+      "pass": true
+    },
+    {
+      "probe": "preflight halt on UNKNOWN item",
+      "pass": true
+    },
+    {
+      "probe": "cloud active/unknown states blocked",
+      "pass": true
+    },
+    {
+      "probe": "malformed pacing fails closed",
+      "pass": true
+    },
+    {
+      "probe": "malformed write-ahead fails closed",
+      "pass": true
+    },
+    {
+      "probe": "normal release succeeds",
+      "pass": true
+    },
+    {
+      "probe": "reuse-binding-valid-baseline",
+      "pass": true,
+      "status": "REUSED_EXISTING_SUCCESS"
+    },
+    {
+      "probe": "reuse-binding-missing-body-hash",
+      "pass": true,
+      "status": "FAILED_REUSE_MISSING_BODY_HASH"
+    },
+    {
+      "probe": "reuse-binding-invented-body-hash",
+      "pass": true,
+      "status": "FAILED_REUSE_BODY_HASH_MISMATCH"
+    },
+    {
+      "probe": "reuse-binding-changed-prompt",
+      "pass": true,
+      "status": "FAILED_REUSE_PROMPT_MISMATCH"
+    },
+    {
+      "probe": "reuse-binding-wrong-mime",
+      "pass": true,
+      "status": "FAILED_REUSE_UNSUPPORTED_MIME"
+    }
+  ]
+}

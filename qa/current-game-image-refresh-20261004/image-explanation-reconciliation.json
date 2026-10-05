@@ -1,0 +1,63 @@
+{
+  "timeUTC": "2026-10-04T16:31:43.481930+00:00",
+  "evidenceBindings": [
+    {
+      "path": "qa/image-matte-decision-20261004/rigs/healer-uncovered.png",
+      "bytes": 84469,
+      "sha256": "27b9fb13d1ce16bad1d355730d737d23c04c88d1ec99933ccf544bdc7628b295"
+    },
+    {
+      "path": "qa/image-matte-decision-20261004/inspect/healer-source-900.png",
+      "bytes": 1125786,
+      "sha256": "077483c85f026799924bc71be1afb764496f19a84f733f5b9800ae35b96cdea0"
+    },
+    {
+      "path": "assets/derivatives/rigs/v4/healer/arm_upper_left.png",
+      "bytes": 228146,
+      "sha256": "78d9868ae1d2f86818da6ab909e8a8e522fa461e155b960c8eb7e9312ee499d6"
+    },
+    {
+      "path": "assets/derivatives/rigs/v4/healer/boot_leg_left.png",
+      "bytes": 135642,
+      "sha256": "e1bb094f6ca0d72d3656dd868eb02607f79a091848f027385d1cb6080c1d088a"
+    },
+    {
+      "path": "qa/image-v4-repair-20261004/rigs-v4.json",
+      "bytes": 98440,
+      "sha256": "21fc2bb433f5e4521e223894623656e865e21cb81599708d31ae741d22f0a263"
+    },
+    {
+      "path": "src/data/reference-data.json",
+      "bytes": 29462,
+      "sha256": "44f1a5081a3364a0fdbf28c8639172a4bfe69fd5ab6820df10156d5eb275744c"
+    },
+    {
+      "path": "docs/plan/REPLACEMENT-DRAFT-THREE-ROLES-2026-10-04.json",
+      "bytes": 7139,
+      "sha256": "aada5eb8a207d461223a97a4e35fac4642c19e7cd8bbe18d6948c67b44afd1cc"
+    }
+  ],
+  "handoffPreservation": [
+    {
+      "path": "CURRENT-STATUS.md",
+      "oldContentPreserved": true,
+      "oldSha256": "354bd4da6e42b7cc2ee3c0a6087e4822cb1a801ba70bcc84e4926c39f1f3a3b4"
+    },
+    {
+      "path": "docs/SESSION-HANDOFF.md",
+      "oldContentPreserved": true,
+      "oldSha256": "936e450a4b5e55b7101b6ed2cefaf5587c36b675f4052e06b269f1a682c19a8b"
+    },
+    {
+      "path": "docs/BUILD-PROGRESS.md",
+      "oldContentPreserved": true,
+      "oldSha256": "c652f0c1c36981eedc81f18b1eced304d94d653ddadfeace9e00ef44f882e4a5"
+    }
+  ],
+  "paintedSourceLimits": "Accepted where required pixels/pose are absent; no replacement authorization.",
+  "healer": "Uncovered painted arms/lower legs/boots exist; two v4 semantic names contradicted by viewed pixels. Clean extraction/joints not yet accepted.",
+  "jointMethod": "Prior crop-edge failure not universal impossibility; bounded measured padded test proposed, not executed.",
+  "productionMutations": false,
+  "executorDispatch": false,
+  "paidAuthorization": false
+}

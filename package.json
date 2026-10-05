@@ -7,8 +7,14 @@
     "dev": "node scripts/serve.mjs",
     "test": "node --test tests/*.test.mjs",
     "build": "node scripts/build.mjs",
+    "build:apk": "node scripts/build-apk.mjs",
     "benchmark": "python scripts/benchmark.py",
     "benchmark:render": "node scripts/benchmark-render.mjs"
   },
-  "engines": { "node": ">=24" }
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "vite": "^8.3.2"
+  }
 }

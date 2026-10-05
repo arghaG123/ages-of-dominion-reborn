@@ -1,0 +1,86 @@
+{
+  "matrix": [
+    60,
+    -10,
+    25,
+    35,
+    170,
+    165
+  ],
+  "activeTownhallPolygon": [
+    [
+      470,
+      115
+    ],
+    [
+      650,
+      85
+    ],
+    [
+      687.5,
+      137.5
+    ],
+    [
+      507.5,
+      167.5
+    ]
+  ],
+  "activeRoadStart": [
+    597.5,
+    152.5
+  ],
+  "activeP11Polygon": [
+    [
+      500,
+      345
+    ],
+    [
+      584.0,
+      331.0
+    ],
+    [
+      614.0,
+      373.0
+    ],
+    [
+      530.0,
+      387.0
+    ]
+  ],
+  "hallSize": [
+    1024,
+    1024
+  ],
+  "hallAlphaGT16BBox": [
+    0,
+    21,
+    1024,
+    1000
+  ],
+  "activeHallFullRasterBounds": [
+    [
+      507.66565,
+      -0.79026
+    ],
+    [
+      642.01445,
+      133.55854000000002
+    ]
+  ],
+  "activeHallAlphaBounds": [
+    [
+      507.66565,
+      1.9649400000000004
+    ],
+    [
+      642.01445,
+      130.40974000000003
+    ]
+  ],
+  "fullRasterWidthActive": 134.3488,
+  "fullRasterWidthProposal": 348.16,
+  "proposalCentreDistance": 7.672001042752799,
+  "blockerConstantsHardcodedIn": "scripts/interactive_4k_continuation_runner.py:541-582",
+  "maskConsumer": "request payload contains prompt, guide and base only; masks not attached by existing continuation runner",
+  "baseConsumer": "prepare_base_image uses BoxBlur(10) only within site bounding rectangles; no object silhouette removal"
+}

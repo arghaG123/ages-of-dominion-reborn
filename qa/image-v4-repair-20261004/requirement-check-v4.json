@@ -1,0 +1,44 @@
+{
+  "source": "assets/high-res/final-native2k. Those files were not modified.",
+  "requirement": "One subject, floor backdrop and captions removed, feet hooves or wheels not cut.",
+  "checkedOn": "2026-10-04",
+  "setClean": false,
+  "meets": [
+    "troop-bronze-melee",
+    "troop-bronze-ranged",
+    "troop-iron-ranged",
+    "troop-iron-heavy",
+    "troop-gunpowder-melee",
+    "troop-gunpowder-ranged",
+    "troop-gunpowder-heavy",
+    "troop-modern-melee",
+    "troop-future-melee",
+    "troop-future-ranged",
+    "hero-mount-horse"
+  ],
+  "meetsNotes": {
+    "troop-bronze-ranged": "Title plaque removed. One archer remains, boots included.",
+    "troop-gunpowder-melee": "Figure is intact. The light floor band is gone. A small contact shadow remains.",
+    "troop-gunpowder-heavy": "Cool cobble plane below y=900 is gone. Cannon, carriage, and wheels stay. A small blue shadow remains beside the cart wheel.",
+    "troop-modern-melee": "The detached rifle icon is removed.",
+    "troop-future-melee": "The grid floor is gone. Boots remain. A small contact shadow remains.",
+    "troop-future-ranged": "Standing soldier kept. Neighbor rectangle at x>=1248, y 652-778 is gone (0 opaque pixels there). Helmet top is y=176, not cropped. A ground shadow remains under the boots.",
+    "hero-mount-horse": "Hooves remain. Filled grey plane is gone. A thin outline remains."
+  },
+  "improvedNotClean": {
+    "troop-modern-ranged": "One prone sniper remains. Snow under the body remains. A looser snow key was not shipped because it did not clear the snow without touching the body.",
+    "troop-industrial-ranged": "Loose rifle dropped. Painted content is still prone, with the rifle in his hands, a sandbag, and a pink smear under the body. It is not a standing actor.",
+    "hero-mount-motor-transport": "Wheels remain. Smooth ground below y=1550 was reduced. Grey ground on the left and a thin line remain.",
+    "hero-mount-future-transport": "Pads and wheels remain. Some light ground was reduced. A pale ground sheet is still under the craft.",
+    "troop-future-heavy": "Blue thrusters stay. The dark shadow under the hull remains. It was not removed."
+  },
+  "doesNotMeet": {
+    "troop-stone-melee": "Boots and legs stay connected. Dirt around the boots matches the leather (luminance about 121 versus 122). A tighter polygon still kept that dirt, and a tighter cut started to shorten a sole. Residual dirt remains.",
+    "troop-stone-ranged": "Boots stay. A low-chroma wood key below the shin line punched holes in the boot leather, so it was not shipped. The wooden platform and gravel remain."
+  },
+  "cannotBecomeTheSelectedRole": [
+    "troop-iron-melee",
+    "troop-industrial-heavy",
+    "knight-mounted-master"
+  ]
+}

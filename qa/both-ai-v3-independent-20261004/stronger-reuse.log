@@ -1,0 +1,59 @@
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+  -> [REUSE] Item 'test-id' validated and verified (SHA: ea5e901a8b0685dc...). Reusing existing output.
+{
+  "pass": 3,
+  "fail": 8,
+  "rows": [
+    {
+      "probe": "valid",
+      "pass": true
+    },
+    {
+      "probe": "missing-request-file",
+      "pass": false
+    },
+    {
+      "probe": "missing-response-hash",
+      "pass": false
+    },
+    {
+      "probe": "malformed-body-valid-hash",
+      "pass": true
+    },
+    {
+      "probe": "missing-prompt-in-body",
+      "pass": false
+    },
+    {
+      "probe": "wrong-config-image-size",
+      "pass": false
+    },
+    {
+      "probe": "wrong-model",
+      "pass": false
+    },
+    {
+      "probe": "wrong-endpoint",
+      "pass": false
+    },
+    {
+      "probe": "changed-source-image",
+      "pass": false
+    },
+    {
+      "probe": "wrong-output-dimensions",
+      "pass": true
+    },
+    {
+      "probe": "missing-output-hash",
+      "pass": false
+    }
+  ]
+}

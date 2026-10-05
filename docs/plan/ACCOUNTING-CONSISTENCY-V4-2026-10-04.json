@@ -1,0 +1,69 @@
+{
+  "version": "4.0-accounting-retained-20261004",
+  "currency": "USD",
+  "policy": "EVIDENCE_BOUNDED_STANDARD_RATE_CEILING_WITH_OVERHEAD",
+  "accountingStatus": "RECONCILED_LOCAL_CONSISTENCY_PASS",
+  "invoicesStatus": "UNKNOWN_NO_RELEASE_OR_SPEND_AUTHORITY",
+  "ratesUSDPerMillion": {
+    "inputPer1M": 0.5,
+    "imagePer1M": 60.0,
+    "textThinkingPer1M": 3.0,
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+  },
+  "constraints": {
+    "hardBudgetCapUSD": 80.0,
+    "targetSpendingAimUSD": 60.0,
+    "safetyReserveUSD": 15.0,
+    "mockReservationUSD": 2.0,
+    "headroomUnderHardCapUSD": 9.2988,
+    "headroomIsSpendingAuthorization": false,
+    "releaseOfFundsAuthorized": false,
+    "newGenerationCallsAuthorized": false
+  },
+  "batches01To17ActualSummary": {
+    "batchCount": 17,
+    "actualSumUSD": 40.24,
+    "note": "Sum of all 17 completed batches (batch-01 to batch-17) exactly equals 40.2400 USD. Stale nested entry 40.225 USD in budget-ledger.json reconciliationTrail line 363 corrected to 40.240 USD."
+  },
+  "baseComponentsBreakdownUSD": {
+    "batches01To17Actual": 40.24,
+    "interactive4KRun01Buffer": 2.1037,
+    "interactive4KRun02Buffer": 0.7013,
+    "interactive4KRun03Buffer": 0.1753,
+    "interactive4KRun04Buffer": 0.8765,
+    "interactive4KTacticalRetryBuffer": 0.3506,
+    "interactive4KKingdomBuffer": 1.4022,
+    "historicalMockReservation": 2.0,
+    "safetyReserve": 15.0,
+    "sumBaseComponents": 62.8496
+  },
+  "later73UniqueAttemptReconciliationUSD": {
+    "rawTokensEstimate73UniqueAttempts": 7.4038655,
+    "journalUniqueSuccessesSum": 7.420787,
+    "barbarianAttempt1Hold": 0.143612,
+    "journalStatedSum": 7.564399,
+    "doubleCountExplanation": "interactive-2k-later73-journal.json totalCostUSD of 7.564399 USD already contains the 0.143612 USD hold for portrait-powder-barbarian (attempt 1 crash). Both original UNKNOWN attempts remain 0.287224 USD combined.",
+    "originalUnknownLiabilities": {
+      "portrait-powder-barbarian-attempt-1": 0.143612,
+      "portrait-gunpowder-ranger-attempt-1": 0.143612,
+      "totalRetainedUnknownLiabilitiesUSD": 0.287224
+    },
+    "ceilingBufferUSD": 0.1605105,
+    "protectedLater73ExposureUSD": 7.8516
+  },
+  "totalProjectCommittedExposureUSD": {
+    "baseSumUSD": 62.8496,
+    "protectedLater73ExposureUSD": 7.8516,
+    "totalProtectedExposureUSD": 70.7012,
+    "hardCapUSD": 80.0,
+    "arithmeticMarginUSD": 9.2988
+  },
+  "auditObservations": {
+    "staleNestedFieldRepaired": true,
+    "historicalValuesPreserved": true,
+    "noInvoiceReleaseInferred": true,
+    "remoteLiabilitiesRetained": true,
+    "v4Recheck": "RETAINED_NO_NEW_PROVED_INCONSISTENCY"
+  },
+  "v4Note": "No new local inconsistency was proved. Nested 40.24 stays corrected. Margin 9.2988 is not spend authority. Invoices remain UNKNOWN. Original UNKNOWN liabilities 0.287224 remain. No provider query."
+}

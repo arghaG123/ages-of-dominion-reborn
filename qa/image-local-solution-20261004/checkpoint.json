@@ -1,0 +1,25 @@
+{
+  "brief": "docs/plan/IMAGE-AI-CONSOLIDATED-LOCAL-SOLUTION-2026-10-04.txt",
+  "updated": "2026-10-04",
+  "providerCalls": 0,
+  "codeAIHandoffReady": false,
+  "items": [
+    {"id": "keep-set", "state": "complete", "attempts": 0, "next": "none", "evidence": "qa/image-local-solution-20261004/run-report.json extents"},
+    {"id": "troop-stone-heavy", "state": "reused", "attempts": 0, "next": "none", "retained": "assets/derivatives/actors/v5/troop-stone-heavy.png"},
+    {"id": "troop-medieval-melee-shadow", "state": "failed", "attempts": 2, "next": "stop", "reason": "Candidate A removed 4157 pale pixels and left the long cast shadow. Candidate B found no additional pale component without entering boot leather.", "retained": "assets/derivatives/actors/v5/troop-medieval-melee.png"},
+    {"id": "troop-industrial-melee-shadow", "state": "complete", "attempts": 2, "next": "none", "output": "assets/derivatives/actors/v6/troop-industrial-melee.png", "shadow": "assets/derivatives/actors/v6/troop-industrial-melee-shadow-optional.png"},
+    {"id": "troop-modern-heavy", "state": "partial", "attempts": 2, "next": "stop", "reason": "Candidate B cleared the magenta helmet halo and kept helmet pixels. The grey ground slab under the tracks remains. Tracks were not separated from that slab.", "output": "assets/derivatives/actors/v6/troop-modern-heavy.png"},
+    {"id": "troop-modern-ranged-mound", "state": "complete", "attempts": 2, "next": "none", "reason": "Bright mound [836,1210,1211,1389] removed. Grey under-body sheet and bipod-foot caps kept. Still a snow-scene illustration.", "output": "assets/derivatives/actors/v6/troop-modern-ranged-snow-mound-trimmed.png"},
+    {"id": "troop-stone-melee", "state": "blocked", "attempts": 1, "next": "owner budget only", "reason": "Three ledger sources are the same dirt-slab painting."},
+    {"id": "troop-stone-ranged", "state": "blocked", "attempts": 1, "next": "owner budget only", "reason": "Three ledger sources are the same platform painting. Canonical weapon is a sling."},
+    {"id": "troop-industrial-ranged", "state": "blocked", "attempts": 1, "next": "owner budget only", "reason": "Prone source. No standing candidate in the three ledger copies."},
+    {"id": "troop-bronze-heavy", "state": "reused", "attempts": 0, "next": "none", "reason": "Charioteer unit retained. Dirt patch remains. Not added to the three-role draft."},
+    {"id": "ranger-sleeve-vambrace", "state": "complete", "attempts": 12, "next": "none", "status": "PASS_STATIC_AND_LIMITED_ARC", "angles": [-25, 0, 25], "evidence": "qa/image-local-solution-20261004/joints/ranger_sleeve_vambrace_0.png"},
+    {"id": "knight-thigh-greave", "state": "failed", "attempts": 13, "next": "stop", "status": "FAIL_HAIRLINE_GAP", "reason": "Twelve placements plus one 0.45-cuff correction still leave a visible seam between thigh plate and greave.", "evidence": "qa/image-local-solution-20261004/joints/knight_thigh_greave_correction_0.png"},
+    {"id": "healer-regions", "state": "complete", "attempts": 2, "next": "joint test not started", "reason": "Missing arms, greave, boot, torso, and skirt extracted. Sides UNKNOWN. Joints not demonstrated."},
+    {"id": "paladin-coherent-set", "state": "complete", "attempts": 1, "next": "joint test not started", "reason": "One set extracted. Sides UNKNOWN. No mirror. Joints not demonstrated."},
+    {"id": "mage-warlock-necromancer-barbarian", "state": "blocked", "attempts": 1, "next": "Do not promote qa/image-local-solution-20261004/components. Mage torso component includes painted TORSO/PELVIS labels joined by leader lines.", "evidence": "qa/image-local-solution-20261004/components/mage/01_1221_92.png"},
+    {"id": "terrain", "state": "reused", "attempts": 0, "next": "none", "reason": "v4 clearance survey retained. Roads and rivers stay unlabeled. No scene promoted."},
+    {"id": "three-role-draft", "state": "blocked", "attempts": 0, "next": "owner authorization", "path": "docs/plan/REPLACEMENT-DRAFT-THREE-ROLES-V6-CLARIFICATION-2026-10-04.json"}
+  ]
+}

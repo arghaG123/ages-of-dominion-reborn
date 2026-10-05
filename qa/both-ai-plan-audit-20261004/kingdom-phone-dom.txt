@@ -1,0 +1,61 @@
+- main:
+  - heading "Ages of Dominion" [level=1]
+  - status: Stone Age · day 1
+  - generic "Campaign resources":
+    - generic: food 250
+    - generic: wood 250
+    - generic: stone 160
+    - generic: gold 150
+  - button "Save"
+  - img "stone kingdom terrain, not yet accepted"
+  - img "Campaign scene":
+    - generic "Stone Hall placed on the shared camera. Registration is not accepted."
+    - 'button "townhall: townhall level 1"'
+    - 'button "P01: empty plot level 0"'
+    - 'button "P02: empty plot level 0"'
+    - 'button "P03: empty plot level 0"'
+    - 'button "P04: empty plot level 0"'
+    - 'button "P05: empty plot level 0"'
+    - 'button "P06: empty plot level 0"'
+    - 'button "P07: empty plot level 0"'
+    - 'button "P08: empty plot level 0"'
+    - 'button "P09: empty plot level 0"'
+    - 'button "P10: empty plot level 0"'
+    - 'button "P11: empty plot level 0"'
+    - 'button "P12: empty plot level 0"'
+    - 'button "P13: empty plot level 0"'
+    - 'button "P14: empty plot level 0"'
+    - 'button "P15: empty plot level 0"'
+    - 'button "P16: empty plot level 0"'
+    - 'button "P17: empty plot level 0"'
+  - button "Actions" [expanded]
+  - complementary:
+    - heading "P01 · empty plot" [level=2]
+    - button "Build Farm — 35 wood"
+    - button "Build Lumber Camp — 25 wood, 15 stone"
+    - button "Build Quarry — 45 wood, 15 stone"
+    - button "Build Gold Mine — 70 wood, 50 stone"
+    - button "Build Barracks — 90 wood, 45 stone"
+    - button "Build Siege Workshop — 70 wood, 95 stone"
+    - button "Build Hero Hall — 110 wood, 70 stone, 60 gold"
+    - button "Build Armory — 120 wood, 120 stone, 80 gold"
+    - button "Upgrade Town Hall"
+    - button "Build Walls"
+    - button "Advance age"
+    - button "End day"
+    - button "Skip tutorial"
+    - alert: "Walls are level 0. Day 1, weather clear. Completed plots use measured opaque feet (MEASURED_NOT_OWNER_ACCEPTED). Stone Hall registration stays on its existing matrix. The contract is unchanged. Next: Build a Lumber Camp."
+  - navigation "Screens":
+    - button "Home"
+    - button "Kingdom" [active]
+    - button "Adventure"
+    - button "Hero"
+    - button "Army"
+    - button "Forge"
+    - button "Market"
+    - button "Tactical"
+    - button "Defense"
+    - button "Story"
+    - button "War"
+    - button "Settings"
+    - button "Help"

@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "totalNativeCandidates": 73,
+    "uniqueSourcePortraits": 38,
+    "portraitDerivativeFiles": 44,
+    "armyActorsDelivered": 24,
+    "mountsDelivered": 4,
+    "authenticSubstitutionsDelivered": 2,
+    "rigSheetsAnalyzed": 8,
+    "cleanUsableRowsCount": 70,
+    "failedUnrecoverableRowsCount": 6,
+    "codeAIHandoffReady": true
+  },
+  "accounting": {
+    "totalExposureUSD": 70.7012,
+    "batches01To17ReconciledUSD": 40.24,
+    "terrain4KBuffersUSD": 5.6096,
+    "originalMockUSD": 2.0,
+    "protectedOwnerReserveUSD": 15.0,
+    "baseExpenditureUSD": 62.8496,
+    "later73SuccessEstimateUSD": 7.4038655,
+    "retainedUnknownLiabilityUSD": 0.287224,
+    "conservativeCeilingBufferUSD": 0.1605105,
+    "conservativeHeadroomUnder80USD": 9.2988,
+    "reconciliationNotes": "In UNIFIED-ACCOUNTING-RECONCILIATION-2026-10-04.json line 25 and budget-ledger.json line 47, 'reconciledBatches01To17TotalUSD' was mistyped as 40.225 USD instead of the actual batches 01-17 sum of 40.240 USD. The difference 40.240 - 40.225 = 0.0150 USD explains the entire discrepancy. With the true sum of 40.240 USD + 5.6096 USD (4K buffers) + 2.0000 USD (mock) + 15.0000 USD (reserve), the base components sum exactly equals stated base 62.8496 USD."
+  },
+  "safeguards": {
+    "testReportPath": "qa/offline-controls-repair-20261004/repaired-controls-report.json",
+    "passingProbesCount": 9,
+    "failingProbesCount": 0,
+    "cloudClassification": "ACTIVE_OR_UNKNOWN_CLOUD_STATES covered; all active and unknown states blocked from dispatch",
+    "exclusiveMutexStatus": "Exclusive token with OS O_EXCL check enforced; delayed contender fails closed"
+  },
+  "kingdom": {
+    "reportPath": "qa/offline-controls-repair-20261004/kingdom-bounded-measurement-report.json",
+    "affineMatrix": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "activeContractTownHallProjected": [
+      578.75,
+      126.25
+    ],
+    "candidateV2TownHallProjected": [
+      609.31,
+      288.22
+    ],
+    "activeContractBridgeProjected": [
+      1150.0,
+      291.5
+    ],
+    "candidateV2BridgeProjected": [
+      1136.12,
+      302.62
+    ],
+    "uint8OverflowFixed": true,
+    "terrainStatus": "RECOVERABILITY_SURVEYED_HONEST_FAILURES_RECORDED_NO_NEW_PURCHASE"
+  },
+  "cleanRowsCount": 70,
+  "failedRowsCount": 6
+}

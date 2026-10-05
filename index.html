@@ -7,12 +7,16 @@
 <link rel="stylesheet" href="src/client/game.css">
 </head>
 <body>
+<input id="import-file" type="file" accept="application/json,.json" hidden aria-label="Import campaign file">
+<input id="challenge-file" type="file" accept="application/json,.json" hidden aria-label="Import challenge file">
 <div id="rotate">Rotate to landscape to play. Your campaign stays saved.</div>
 <main id="app">
   <header>
     <h1>Ages of Dominion</h1>
     <span id="status" role="status"></span>
     <div id="resources" aria-label="Campaign resources"></div>
+    <p id="resume" role="status" hidden></p>
+    <button id="context" type="button" aria-expanded="false" aria-controls="panel">All actions</button>
     <button id="save" type="button">Save</button>
   </header>
   <section id="stage">
@@ -20,7 +24,7 @@
       <img id="terrain" alt="">
       <svg id="world" viewBox="0 0 1376 768" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Campaign scene"></svg>
     </div>
-    <button id="context" type="button" aria-expanded="false" aria-controls="panel">Actions</button>
+    <div id="dock" aria-label="Primary actions"></div>
     <aside id="panel">
       <h2 id="selected">Kingdom</h2>
       <div id="choices"></div>

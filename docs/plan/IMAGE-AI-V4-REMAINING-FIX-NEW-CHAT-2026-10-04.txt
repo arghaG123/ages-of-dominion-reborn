@@ -1,0 +1,85 @@
+You are the Image AI executor in a NEW chat. Continue only the remaining local matte repairs. Read this file completely before editing. Workspace: C:/dev/ages-of-dominion-reborn. Date of this brief: 4 October 2026.
+
+NO_NEW_PAID_SCOPE. Do not query or call any provider, project, account, job, or bucket. Do not regenerate, retry, repurchase, start batch 18+, add filler, spend reserve, or expand the budget. Do not edit game or native code, run builds, query devices, use Git, mutate storage, message another executor, or delegate. Old game C:/dev/ages-of-dominion and raw art C:/dev/aod-art-src stay read-only. Do not overwrite v3 files. Do not set LOCAL_REPAIR_COMPLETE or codeAIHandoffReady.
+
+Accounting stays: base 62.8496 + later73 protected 7.8516 = 70.7012 USD. Nested batches 40.2400. Both original UNKNOWN liabilities 0.143612 + 0.143612 = 0.287224. Headroom 9.2988 is not spend authority. Invoices UNKNOWN.
+
+WHAT THIS CHAT MUST DO
+Fix only the rows that still fail or are not confirmed clean, from the existing native pictures, then inspect every output you change. Publish into the existing v4 paths. Update qa/image-v4-repair-20261004/requirement-check-v4.json to match the pixels you actually look at. Prepend a short Image banner on CURRENT-STATUS.md, docs/SESSION-HANDOFF.md, and docs/BUILD-PROGRESS.md. Do not overwrite the Code banners.
+
+SOURCES
+Native sheets: assets/high-res/final-native2k/{id}.png, usually 2048x2048 RGB. Do not modify those files.
+Processor: scripts/image_v4_actors.py. Call process_one(id, "actor") or process_one(id, "mount") only for the ids you change. Do not reprocess the rows that already meet the requirement.
+Outputs: assets/derivatives/actors/v4/{id}.png and assets/derivatives/mounts/v4/{id}.png. QA composites: qa/image-v4-repair-20261004/actors/.
+Check file: qa/image-v4-repair-20261004/requirement-check-v4.json.
+
+ALREADY MEETS — DO NOT REPROCESS
+troop-bronze-melee
+troop-bronze-ranged (title plaque cleared with subject[:425, :860], then largest component; one archer, boots kept)
+troop-iron-ranged (pavise is equipment, not a floor panel)
+troop-iron-heavy
+troop-gunpowder-melee (white trousers must stay; it was removed from the second plane pass)
+troop-gunpowder-ranged
+troop-modern-melee (subject[1770:] clears the inset rifle icon)
+troop-future-melee (grid mask std<8, chroma<24, lum 90–190, y>1550; grid is gone; small contact shadow remains)
+
+WRONG ROLE — DO NOT RELABEL OR REPAINT
+troop-iron-melee is a stencil, not the selected role.
+troop-industrial-heavy is a gunner, not the selected role.
+knight-mounted-master is the medieval scenic painting, not an ancient knight.
+Authentic 1K substitutions stay at assets/derivatives/substitutions/v3/troop-iron-melee.png and troop-industrial-heavy.png.
+The prone industrial sheet cannot become a standing soldier. Missing unpainted anatomy cannot be invented.
+
+STILL TO FIX
+1. troop-stone-melee. Legs and boots are connected in the current matte (tight bbox about [735, 206, 1761, 1700]). Dirt from the diorama is still around the boots. Tan boot leather is about luminance 121. Nearby dirt is about luminance 122. A luminance cut at 120 sliced the boots. A luminance cut at 155 removes only the brightest dirt. Column color walks shredded the shafts. Polygons that start too low sever the shins and leave floating boots. The last side cut (x<860 or x>1230 below y=1520, plus a gap at x 1000–1090) fragmented the right boot and was removed. Keep the legs connected. Remove only dirt that is outside the boot shafts. Inspect qa detail crops after the write. If the dirt cannot be separated without cutting leather, leave the connected-boot matte and record the residual dirt. Do not ship a fragmented boot.
+
+2. troop-stone-ranged. Boots are intact. Wood planks and gravel remain. Wood is low-chroma grey, luminance about 75. Dark boots are about luminance 17 and 58. A whole-image grey key will eat the figure. Remove low-chroma wood only below the shin line. Do not cut the boots. Inspect the full body after the write.
+
+3. troop-gunpowder-heavy. The cannon is still standing on cobbles. Cobbles are not neutral grey (a bottom sample was about rgb [39, 68, 100]). They sit inside the subject, so a lower-band plane pass misses them. Cut the cobble plane around the wheels or carriage without cutting the cannon. Inspect after the write.
+
+4. troop-future-ranged. Current keep window is x 780–1360, then the largest component. The standing soldier is the subject. Do not return to the 31px erode / largest-core / 81px dilate method; that ate the head and left a floating gun. Confirm the neighbor sliver is gone and that the helmet top is not cropped. A small ground shadow may remain. Inspect the new full-body image.
+
+5. troop-industrial-ranged. The large pink caption rectangle is mostly gone. A small pink smear, the prone soldier, a sandbag, and a loose rifle remain. Drop detached pink and a rifle that is not in his hands if it is a separate component. Do not invent a standing pose. Record that the painted content is prone.
+
+6. Confirm, do not assume, these reduced rows by reading the actual full-body or foot crop after any change:
+   hero-mount-horse: hooves intact, filled grey plane gone, a thin outline may remain.
+   hero-mount-motor-transport: wheels intact; leftover ground was reduced and is not confirmed gone. Second plane pass used chroma 20 and luminance 100.
+   hero-mount-future-transport: same, second pass chroma 18 and luminance 100.
+   troop-future-heavy: plane count hit 0 on one pass, but a dark shadow and blue thruster glow remain under the hull. Keep the blue thrusters. Remove only the backdrop, not the glow.
+
+7. troop-modern-ranged keeps one foreground sniper by clearing subject[:640], then the largest component. Snow under the body remains. Remove snow only if it does not eat the body.
+
+METHODS THAT FAILED — DO NOT REPEAT
+Hard horizontal y-cutoffs and gaussian alpha blur.
+GrabCut at 512 then nearest upscale. It kept stone dirt, horse floor, motor ground, and extra soldiers.
+Color flood from the bottom. It leaked into the plinth or the whole image.
+Limb-column color walks. Tan leather matched dirt and the boots became strips.
+Earth drop with luminance above 120 on stone melee. It cut the boots.
+Gunpowder melee second plane pass at chroma 18 and luminance 160. It punched holes in the white trousers. That id must stay out of plane_pass.
+Future ranged morphological erosion. It destroyed the soldier.
+Widening or narrowing stone polygons until the shin disconnects or the dirt rectangle is the thing you kept.
+Trusting a contact-sheet description when a pixel count disagrees. Read the specific full-body or detail image, and count opaque pixels on the row you care about.
+
+CURRENT CODE FACTS IN scripts/image_v4_actors.py
+Gunpowder melee is not in plane_pass.
+Future ranged uses the x window [780, 1360], then largest_label.
+Stone earth drop is luminance minimum 155 below y 1500, after the polygons.
+Future melee grid clear uses std<8, chroma<24, luminance 90–190, y>1550.
+Modern melee cuts y>=1770. Modern ranged cuts y<640. Bronze ranged clears [:425, :860].
+split_shadow does not write a shadow PNG. If you remove a soft contact shadow from the subject, save it as its own layer. Do not blur, smear, clone, or warp.
+drop_smooth_plane and largest_label can disconnect or eat grey armor if thresholds go lower. Future melee lower body chroma is about 29, so chroma at or under 16 is the safe side of those boots.
+Magenta-family key: (r > g+28) and (b > g+28) and abs(r-b)<60.
+Connected components merge floor with feet when they touch. Keeping the largest component drops detached icons, not connected extras.
+
+ALREADY DONE — DO NOT REDO
+Delivery interface docs/plan/IMAGE-DELIVERY-INTERFACE-V4-2026-10-04.json: 75 rows, literal production paths, aliases for the fake legionary-1k and steamwalker-1k names, codeAIHandoffReady false. The REVIEWED dict in scripts/image_v4_interface.py is stale. Refresh it only after the new pixel check, from the check file.
+Offline reuse: scripts/interactive_runner_continuity.py fail-closed identity checks. Sandbox qa/image-v4-isolated-controls-20261004/run_controls.py, 27/27. Do not import the live runner against the real ROOT.
+Accounting docs/plan/ACCOUNTING-CONSISTENCY-V4-2026-10-04.json retained. No new inconsistency was proved.
+Ancient opaque card assets/derivatives/portraits/v4/hero-knight-ancient-card.png, crop (420,220,1120,1180) from C:/dev/aod-art-src/hero-knight-ancient/attempt-1.png, source hash eb03424f0a599894dfa5bdcc9124a84221c2959787c3c8fdc18d24636180acf8. It is a card, not an alpha world actor, and it is not the medieval mounted knight.
+Terrain clearance qa/image-v4-repair-20261004/terrain/clearance-v4.json. Do not rerun it. Active matrix [60,-10,25,35,170,165], contract hash prefix 43553411. bakedTownhall is false. Scenes stay NOT_PROMOTED.
+Knight rig pilot: rotation overlap FAIL_NO_PAINTED_OVERLAP. Other classes are relabeled v3 crops, not re-isolated. This chat does not restart the 85-part rig pass.
+
+HOW TO VERIFY
+After each process_one, crop the alpha bbox, scale it so the whole figure fits a small JPEG, and read that image. Also read the foot detail composite when the failure is at the feet. A thumbnail description that claims a cut must be checked with a row scan of alpha. Count opaque pixels before calling a plane gone.
+
+When a row still cannot meet the requirement, say so for that id only. Do not call the set clean.

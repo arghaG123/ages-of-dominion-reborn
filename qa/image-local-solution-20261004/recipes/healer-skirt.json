@@ -1,0 +1,42 @@
+{
+  "id": "healer-skirt",
+  "semantic": "skirt",
+  "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+  "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+  "searchBox": [
+    1090,
+    390,
+    1570,
+    1005
+  ],
+  "crop": [
+    1117,
+    401,
+    1546,
+    994
+  ],
+  "derivative": "assets/derivatives/rigs/v6/healer/skirt.png",
+  "sha256": "6c31adcb2092b370cd902edd5962bf134c780e6d609a7b2a02df02ea14dee9ed",
+  "dimensions": [
+    429,
+    593
+  ],
+  "mode": "RGBA",
+  "method": "v6-healer-green-flood-grabcut",
+  "parameters": {
+    "backgroundDistanceLt": 28,
+    "foregroundDistanceGt": 42,
+    "greenReference": [
+      144,
+      178,
+      104
+    ],
+    "grabCutIterations": 5,
+    "grabcut": true,
+    "iterations": 5,
+    "definiteForegroundLost": 0
+  },
+  "side": "UNKNOWN",
+  "definiteForegroundPixels": 187091,
+  "opaquePixels": 187224
+}

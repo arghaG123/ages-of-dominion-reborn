@@ -1,0 +1,121 @@
+{
+  "inspectedUTC": "2026-10-04T17:52:07.266083+00:00",
+  "role": "PLANNER_VERIFIER_LOCAL_READ_ONLY",
+  "protectedFiles": 5624,
+  "imageV6Files": 25,
+  "imageV6HashesPass": true,
+  "captureFiles": 22,
+  "captureHashesPass": true,
+  "apk": {
+    "path": "android/app/build/outputs/apk/release/app-release-unsigned.apk",
+    "bytes": 319425603,
+    "sha256": "02f85e52c5c1aab755e42374bfd2c166f7ba0d5e23519314830de0e00b5694bd",
+    "zipBadEntry": null,
+    "packagedManifestSHA256": "a6bf0464b7481aa646cb6ea9f6e1b392c662e16fd3784f31e36ed1023e0810a7",
+    "nativeRuntime": "UNVERIFIED_DEVICE_STOPPED"
+  },
+  "apkWebFiles": 266,
+  "apkCurrentRootMismatches": [
+    "index.html",
+    "src/client/game.css",
+    "src/client/main.js",
+    "src/core/defense.js"
+  ],
+  "apkDistMismatches": [],
+  "apkWWWMismatches": [],
+  "transferMismatches": {
+    "TRANSFER-INCLUDE-2026-10-04.csv": [
+      {
+        "path": "qa/code-playable-20261004/11-defense-running.png",
+        "status": "CHANGED",
+        "current": {
+          "path": "qa/code-playable-20261004/11-defense-running.png",
+          "bytes": 80657,
+          "sha256": "933d5a5af23f7523af410769a55da0133ef87d52bb097cdb7c90842af48fb2ce"
+        }
+      },
+      {
+        "path": "qa/code-playable-20261004/13-reloaded.png",
+        "status": "CHANGED",
+        "current": {
+          "path": "qa/code-playable-20261004/13-reloaded.png",
+          "bytes": 412758,
+          "sha256": "8b3fb2053097c7ddc151210df3b5011fe426b2c96e0d785e1b6f9599a750986e"
+        }
+      },
+      {
+        "path": "qa/code-playable-20261004/report.json",
+        "status": "CHANGED",
+        "current": {
+          "path": "qa/code-playable-20261004/report.json",
+          "bytes": 11547,
+          "sha256": "f4e30bbdc816af61127383736a1acfdc724860cc276181fe94a3d9d153f0eee6"
+        }
+      }
+    ],
+    "GIT-ALLOWLIST-2026-10-04.csv": [
+      {
+        "path": "docs/migration/NON-GIT-TRANSFER-SIZES-2026-10-04.json",
+        "status": "CHANGED",
+        "current": {
+          "path": "docs/migration/NON-GIT-TRANSFER-SIZES-2026-10-04.json",
+          "bytes": 278,
+          "sha256": "4d3735ffef9eec6c6c06701821ee1b6e781bd719d0ce1c9eb2f2b81848b37004"
+        }
+      },
+      {
+        "path": "docs/migration/README.md",
+        "status": "CHANGED",
+        "current": {
+          "path": "docs/migration/README.md",
+          "bytes": 3422,
+          "sha256": "3fc7b6f0b3f661dd2212fb76ab2e9e6cf598eeea6223c9b4952cbc828b528943"
+        }
+      },
+      {
+        "path": "docs/migration/UPLOAD-FOLDER-PLAN-2026-10-04.md",
+        "status": "CHANGED",
+        "current": {
+          "path": "docs/migration/UPLOAD-FOLDER-PLAN-2026-10-04.md",
+          "bytes": 9567,
+          "sha256": "ec97fcca62f193bb514b0115f14ac06f0a6fd4ad9fb9815648735690d00cb6ed"
+        }
+      }
+    ],
+    "NON-GIT-TRANSFER-2026-10-04.csv": [
+      {
+        "path": "qa/code-playable-20261004/11-defense-running.png",
+        "status": "CHANGED",
+        "current": {
+          "path": "qa/code-playable-20261004/11-defense-running.png",
+          "bytes": 80657,
+          "sha256": "933d5a5af23f7523af410769a55da0133ef87d52bb097cdb7c90842af48fb2ce"
+        }
+      },
+      {
+        "path": "qa/code-playable-20261004/13-reloaded.png",
+        "status": "CHANGED",
+        "current": {
+          "path": "qa/code-playable-20261004/13-reloaded.png",
+          "bytes": 412758,
+          "sha256": "8b3fb2053097c7ddc151210df3b5011fe426b2c96e0d785e1b6f9599a750986e"
+        }
+      },
+      {
+        "path": "qa/code-playable-20261004/report.json",
+        "status": "CHANGED",
+        "current": {
+          "path": "qa/code-playable-20261004/report.json",
+          "bytes": 11547,
+          "sha256": "f4e30bbdc816af61127383736a1acfdc724860cc276181fe94a3d9d153f0eee6"
+        }
+      }
+    ]
+  },
+  "tests": "NOT_RUN",
+  "builds": "NOT_RUN",
+  "provider": "NOT_QUERIED",
+  "device": "STOPPED",
+  "gitMutation": false,
+  "storageMutation": false
+}

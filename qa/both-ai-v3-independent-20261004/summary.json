@@ -1,0 +1,360 @@
+{
+  "actorRowsWithDerivatives": 30,
+  "rigParts": 85,
+  "rigClasses": 8,
+  "terrainRows": 9,
+  "checks": 273,
+  "bindingFailures": [],
+  "rigJointOutOfBounds": [],
+  "rigTransparentJoints": [
+    {
+      "class": "knight",
+      "part": "pauldron_shoulder_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "knight",
+      "part": "pauldron_shoulder_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "knight",
+      "part": "thigh_upper_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "knight",
+      "part": "greave_shin_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "ranger",
+      "part": "weapon_longbow",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "ranger",
+      "part": "arm_upper_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "ranger",
+      "part": "forearm_hand_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "ranger",
+      "part": "forearm_hand_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "ranger",
+      "part": "thigh_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "ranger",
+      "part": "thigh_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "warlock",
+      "part": "weapon_staff_sleeve",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "mage",
+      "part": "arm_sleeve_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "mage",
+      "part": "hand_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "mage",
+      "part": "hand_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "mage",
+      "part": "boot_foot_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "necromancer",
+      "part": "accessory_alchemical_bag",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "necromancer",
+      "part": "arm_sleeve_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "necromancer",
+      "part": "robes_lower",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "necromancer",
+      "part": "leg_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "necromancer",
+      "part": "leg_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "barbarian",
+      "part": "arm_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "barbarian",
+      "part": "arm_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "barbarian",
+      "part": "thigh_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "barbarian",
+      "part": "thigh_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "barbarian",
+      "part": "shin_lower_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "paladin",
+      "part": "vambrace_lower_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "paladin",
+      "part": "thigh_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "paladin",
+      "part": "thigh_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "healer",
+      "part": "head_prayer_variant",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "healer",
+      "part": "arm_upper_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "healer",
+      "part": "arm_upper_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 255,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "healer",
+      "part": "skirt_robes_lower",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    },
+    {
+      "class": "healer",
+      "part": "weapon_holy_staff",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "healer",
+      "part": "boot_leg_left",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 255
+    },
+    {
+      "class": "healer",
+      "part": "boot_leg_right",
+      "jointSourceMinusCropMatchesLocal": true,
+      "localJointInBounds": true,
+      "localJointAlpha": 0,
+      "parentAttachmentInParentCrop": true,
+      "parentJointAlpha": 0
+    }
+  ],
+  "rigOverlapValues": {
+    "14": 50,
+    "13": 7,
+    "12": 3,
+    "10": 4,
+    "9": 20,
+    "11": 1
+  },
+  "rigUncertaintyValues": {
+    "3.0": 75,
+    "2.0": 8,
+    "4.0": 2
+  },
+  "missingAdvertisedPaths": [
+    {
+      "field": "summary-advertised-substitution",
+      "path": "assets/derivatives/substitutions/v3/troop-iron-melee-legionary-1k.png",
+      "exists": false
+    },
+    {
+      "field": "summary-advertised-substitution",
+      "path": "assets/derivatives/substitutions/v3/troop-industrial-heavy-steamwalker-1k.png",
+      "exists": false
+    }
+  ],
+  "packageClosure": {
+    "apkSHA256": "90d0687844321ef1e0964da884e4e3906b0e7d5d465a94a1c5598da9db46ce75",
+    "apkBytes": 296625603,
+    "mismatches": [],
+    "missing": [],
+    "extra": [],
+    "packagedFiles": 261
+  },
+  "savedCaptureCount": 34
+}

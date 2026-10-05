@@ -541,6 +541,7 @@ function fieldStacks(state, data, sources, cells, side) {
       fly: stats.fly,
       kind: source.kind,
       type: source.type,
+      age: source.age,
     });
   });
   return { fielded, unfielded };
@@ -594,24 +595,31 @@ export function createDuelBattle(state, data) {
 
 export function createChallengeBattle(seed, code) {
   if (!Number.isInteger(seed) || seed < 0 || seed > 0xffffffff || typeof code !== 'string' || !code || code.length > 64) throw new Error('Invalid challenge');
-  const stack = (id, side, x, y, count) => ({
+  const stack = (id, side, x, y, count, identity) => ({
     id, side, x, y, count, maxCount: count, atk: 4, def: 3, dmin: 2, dmax: 3, uhp: 10, top: 10, spd: 5, rng: 0, shots: 0, fly: 0,
+    kind: identity.kind, type: identity.type, age: 0,
   });
-  return startBattle({
+  const battle = startBattle({
     id: `challenge-${code}`,
     positioned: true,
     practice: 'challenge',
     rngState: seed >>> 0,
     mana: 0,
     wisdom: 0,
-    stacks: [stack('ch-p', 'p', 1, 8, 6), stack('ch-e', 'e', 5, 1, 4)],
+    stacks: [
+      stack('ch-p', 'p', 1, 8, 6, { kind: 'role', type: 'melee' }),
+      stack('ch-e', 'e', 5, 1, 4, { kind: 'creature', type: 'wolf' }),
+    ],
     difficulty: 1,
   });
+  battle.challenge = { schema: 1, scenarioId: 'duel-v1', seed: seed >>> 0, label: code };
+  return battle;
 }
 
 export function createSkirmishBattle(state) {
-  const stack = (id, side, x, y, count) => ({
+  const stack = (id, side, x, y, count, identity) => ({
     id, side, x, y, count, maxCount: count, atk: 4, def: 3, dmin: 2, dmax: 3, uhp: 10, top: 10, spd: 5, rng: 0, shots: 0, fly: 0,
+    kind: identity.kind, type: identity.type, age: state.age,
   });
   return startBattle({
     id: `skirmish-${state.day}-${state.revision}`,
@@ -620,7 +628,10 @@ export function createSkirmishBattle(state) {
     rngState: state.rngState,
     mana: 0,
     wisdom: 0,
-    stacks: [stack('sk-p', 'p', 1, 8, 6), stack('sk-e', 'e', 5, 1, 4)],
+    stacks: [
+      stack('sk-p', 'p', 1, 8, 6, { kind: 'role', type: 'melee' }),
+      stack('sk-e', 'e', 5, 1, 4, { kind: 'creature', type: 'wolf' }),
+    ],
     difficulty: 0,
   });
 }

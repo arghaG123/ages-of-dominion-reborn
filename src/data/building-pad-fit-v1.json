@@ -1,0 +1,34 @@
+{
+  "version": "pad-fit-v1",
+  "status": "PROPOSAL_NOT_ACCEPTED",
+  "note": "Local feet-on-pad assembly for completed Stone plots. Does not change Hall registration or contract geometry. Owner/runtime acceptance remain separate.",
+  "method": "Project pad bottom-centre as feet. Draw width = projected pad width * widthFactor. Preserve source aspect. Do not warp art to conceal mismatch.",
+  "widthFactor": 1.08,
+  "buildings": {
+    "lumber": {
+      "selectionKey": "lumber-stone",
+      "width": 1024,
+      "height": 1024
+    },
+    "farm": {
+      "selectionKey": "farm-stone",
+      "width": 1024,
+      "height": 1024
+    },
+    "quarry": {
+      "selectionKey": "quarry-stone",
+      "width": 1024,
+      "height": 1024
+    },
+    "mine": {
+      "selectionKey": "mine-stone",
+      "width": 1024,
+      "height": 1024
+    },
+    "barracks": {
+      "selectionKey": "barracks-stone",
+      "width": 1024,
+      "height": 1024
+    }
+  }
+}

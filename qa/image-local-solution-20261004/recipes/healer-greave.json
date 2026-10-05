@@ -1,0 +1,42 @@
+{
+  "id": "healer-greave",
+  "semantic": "greave",
+  "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+  "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+  "searchBox": [
+    1060,
+    1530,
+    1305,
+    1885
+  ],
+  "crop": [
+    1112,
+    1537,
+    1252,
+    1885
+  ],
+  "derivative": "assets/derivatives/rigs/v6/healer/greave.png",
+  "sha256": "890f868998712a3d66895e6633fad79af72289deeff1c06b847f77319135ba0f",
+  "dimensions": [
+    140,
+    348
+  ],
+  "mode": "RGBA",
+  "method": "v6-healer-green-flood-grabcut",
+  "parameters": {
+    "backgroundDistanceLt": 28,
+    "foregroundDistanceGt": 42,
+    "greenReference": [
+      144,
+      178,
+      104
+    ],
+    "grabCutIterations": 5,
+    "grabcut": true,
+    "iterations": 5,
+    "definiteForegroundLost": 0
+  },
+  "side": "UNKNOWN",
+  "definiteForegroundPixels": 35788,
+  "opaquePixels": 35811
+}

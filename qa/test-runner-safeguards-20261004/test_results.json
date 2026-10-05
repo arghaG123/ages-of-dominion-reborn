@@ -1,0 +1,53 @@
+[
+  {
+    "test": "Real Concurrent Acquisition Barrier",
+    "status": "PASS",
+    "details": [
+      {
+        "owner": "image-ai-continuity-runner-8367635c-pid29396",
+        "error": "Mutex acquisition collision: exclusive token t1_race_mutex.json.excl already held by an active contender.",
+        "acquired": false
+      },
+      {
+        "owner": "image-ai-continuity-runner-f0c36f4e-pid29396",
+        "acquired": true
+      }
+    ]
+  },
+  {
+    "test": "Dead-PID UNKNOWN Fail-Closed",
+    "status": "PASS"
+  },
+  {
+    "test": "Crash Resume Liability Retention",
+    "status": "PASS"
+  },
+  {
+    "test": "Queue Continuation Release Denial",
+    "status": "PASS"
+  },
+  {
+    "test": "Exact Wire Byte Equality & Hash Binding",
+    "status": "PASS"
+  },
+  {
+    "test": "History Corruption Fail-Closed",
+    "status": "PASS"
+  },
+  {
+    "test": "Success Reuse Full Decode Verification",
+    "status": "PASS"
+  },
+  {
+    "test": "Persisted Restart Deadlines",
+    "status": "PASS"
+  },
+  {
+    "test": "Both Retry-After Forms",
+    "status": "PASS"
+  },
+  {
+    "test": "Role-Specific Pack Validations",
+    "status": "PASS"
+  }
+]

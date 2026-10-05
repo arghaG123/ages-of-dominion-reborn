@@ -1,0 +1,754 @@
+{
+  "at": "2026-10-04T01:52:45.255284+00:00",
+  "head": "cff552880ae15c892b736ac7847f6753787ca58f",
+  "branch": "main",
+  "remoteConfigured": "https://github.com/arghaG123/ages-of-dominion-reborn.git",
+  "remoteLive": "Fresh Git main read recorded separately in checks.json; Vertex provider not queried",
+  "dirty": "M CURRENT-STATUS.md\n M DECISIONS.md\n M START-HERE.md\n M android/app/src/main/java/com/agesofdominion/game/MainActivity.java\n M docs/BUILD-PROGRESS.md\n M docs/PLANNER-VERIFIER-HANDOFF.md\n M docs/SESSION-HANDOFF.md\n M docs/plan/GIT-ASSET-STORAGE-PLAN-2026-10-03.md\n M docs/plan/README.md\n M docs/plan/image-production/active-batch.lock.json\n M docs/plan/image-production/budget-ledger.json\n M src/client/audio.js\n M src/client/game.css\n M src/client/main.js\n M src/client/projection.js\n M src/core/campaign.js\n M src/core/defense.js\n M tests/repairs-20261003.test.mjs\n M tests/war-defense.test.mjs\n?? assets/high-res/\n?? docs/plan/CODE-AI-FINISH-ALL-READY-WORK-PROMPT-2026-10-03.txt\n?? docs/plan/CODE-AI-PERSISTENCE-DIAGNOSIS-2026-10-03.md\n?? docs/plan/CODE-AI-RESUME-2026-10-04.md\n?? docs/plan/CODE-ART-COMPLETE-REMAINING-WORK-PROMPT-2026-10-04.txt\n?? docs/plan/CODE-ART-INDEPENDENT-VERIFICATION-2026-10-04.md\n?? docs/plan/FIRST-32-4K-CONTINUATION-REPORT-2026-10-04.md\n?? docs/plan/FIRST-32-4K-CONTINUATION-REPORT-RUN3-2026-10-04.md\n?? docs/plan/FIRST-32-4K-CONTINUATION-REPORT-RUN4-2026-10-04.md\n?? docs/plan/FIRST-32-4K-EXECUTION-COMPLETION-REPORT-2026-10-03.md\n?? docs/plan/IMAGE-AI-CONTINUE-REMAINING-4K-PROMPT-2026-10-04.txt\n?? docs/plan/REQUIREMENTS-MATRIX-2026-10-04.md\n?? docs/plan/image-production/archive/interactive-4k-first32-20261003.lock.json\n?? docs/plan/image-production/archive/interactive-4k-first32-continuation-20261004.lock.json\n?? docs/plan/image-production/archive/production-17-20261003.lock.json\n?? qa/code-art-verification-20261004/\n?? qa/code-persistence-audit-20261003/\n?? scripts/__pycache__/interactive_4k_runner.cpython-313.pyc\n?? scripts/finalize_run2_inspection.py\n?? scripts/interactive_4k_continuation_run3.py\n?? scripts/interactive_4k_continuation_run4.py\n?? scripts/interactive_4k_continuation_runner.py\n?? scripts/interactive_4k_runner.py\n?? scripts/reconcile_and_verify_run1.py",
+  "sources": [
+    {
+      "file": "android/app/src/main/AndroidManifest.xml",
+      "sha256": "8a176a6e0379fc886717095bc065f9efd67d15e3806f671acc83ae1a13acf844"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v2/farm-stone.png",
+      "sha256": "36e2d6a9f5a736d0f915be44d9dbaeaa899b6bd98bdacf254ad42a91a0fe8256"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v2/lumber-stone.png",
+      "sha256": "ae03fc9f4a7a8ad185ec6184c863fed0e7acb2b52a887e89110e05d6dc6c0518"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v2/mine-stone.png",
+      "sha256": "20284121d60d6c8582f59a23381a64b61988ef93aeab76cda153543841553091"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v2/quarry-stone.png",
+      "sha256": "05bc40ed58d16ba1c4080c0ea1867e328a9d6b3279a84e542e45b53233acd4ec"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v2/resource-food.png",
+      "sha256": "af2ef872598b99d5457793551c8297c3d136ab6e1113edb19da73fd3f7a635ef"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v2/resource-stone.png",
+      "sha256": "fe3eb2bf114243f5053c9ce5d8834e85646e4e710a7aad40ec51b9f426e540b3"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v2/resource-wood.png",
+      "sha256": "98124471d8d7c8055a73d1c62dce1e5ed4c0fb329d6fa5a77a1e9eb5bcebede8"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v2/skill-offense.png",
+      "sha256": "cb71c50e6c1f5bdd208e0ab45c3cfc2acecc70372210bbe0ac1d18ec54a91922"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v3/resource-gold.png",
+      "sha256": "fd1d293143ab7d08312fc6a435bfc8d1c437792616b5f56edf97f050584b27c9"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+      "sha256": "f359a8b72100be8ad78eaf61eede19bc8b2db3bd0a1d071050a51edce22cc37c"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-food.png",
+      "sha256": "ed179605ff6f8cc49c646db30f2c7c0ffa48386b7f29f7ed094ec1907feaea57"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-gold.png",
+      "sha256": "8020977b795d23c2647bb7d0442976dc1345cf68f650116536d152ee22ca8d9e"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-stone.png",
+      "sha256": "0bb29408e63951addf2d05d61e9a67ff1ba764a75be4945994e79ce5f5222f6f"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-wood.png",
+      "sha256": "a12c5fa391a0714425dc6999fc106431669ff2a174fe7cdc5c3c2006989ae4cc"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/delivery/stone-starter-20261003/derivatives/v4-ui/skill-offense.png",
+      "sha256": "1a9a57f5c9a6c27d62c37368c63368c8df741facd558a7c5a464fc6a554ffb05"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/production/production-01-20261003/images/01-kingdom-terrain-stone.png",
+      "sha256": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/production/production-01-20261003/images/02-kingdom-terrain-bronze.png",
+      "sha256": "49f13640f0d3f1b44769606ae541e8f67bd34d861dc0052e6bd69af7342230c1"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/production/production-01-20261003/images/03-kingdom-terrain-iron.png",
+      "sha256": "a05358dba5c543bdde5d17d0ad65aa59b24e8afc6705d95cadfd002436df8fb9"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/production/production-01-20261003/images/04-kingdom-terrain-medieval.png",
+      "sha256": "3eea9e8d20e1f4648f95eec2ae735079b36287a976a6b4f25ae94be4f48b7453"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/production/production-01-20261003/images/05-kingdom-terrain-gunpowder.png",
+      "sha256": "9aec2f273a388c3061d9c1237be4590d678c34c7962c366c7944db38c6228879"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/production/production-01-20261003/images/06-kingdom-terrain-industrial.png",
+      "sha256": "85440ec67f04e90b144f1f6ecc281fc1b898b584c38deec0b8e512e7f2d512d6"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/production/production-01-20261003/images/07-kingdom-terrain-modern.png",
+      "sha256": "c53704f6a8cb8e6586d0fe0c26b5e9af172f9d3d8cba6489affe2c1fae5cc926"
+    },
+    {
+      "file": "android/app/src/main/assets/www/assets/production/production-01-20261003/images/08-kingdom-terrain-future.png",
+      "sha256": "df5e35eeca4df63ec2fd636dfe4d7522b6a33f805ff7c4e84aee321423f6fd8d"
+    },
+    {
+      "file": "android/app/src/main/assets/www/index.html",
+      "sha256": "c15ed84158f55b7d75868ecd60c28f69ff80cb734856f1f2e5972cd84c8634ab"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/client/audio.js",
+      "sha256": "733c023604b64567c6aa5c8fbd3a4634aeab13b00569646c5eb50f33da78ada7"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/client/game.css",
+      "sha256": "04f6a666526461e1aa80e1b426fc4f24278607a3202e1a3989cb280319e3e7e4"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/client/main.js",
+      "sha256": "0d0a01a5c266309efff1fe8718cd27bac04bb77fa4267bbe31bc3d1d4dc7911e"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/client/projection.js",
+      "sha256": "ef86dfbec6dd308ad85ac778426b1b6c4793d4578f9581140321a92cf5573eda"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/client/rig.js",
+      "sha256": "c4b2b26e0eb0c21e3bdefb7ccca523c02569fdd674482b6eb5b5b34e140734c3"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/core/battle.js",
+      "sha256": "7138b8ca045e7c7385e7c90693045b4ace598e0896a8031b963f13c47c15cff6"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/core/campaign.js",
+      "sha256": "dce8890195b75b5a02130a33f00193902ffcf5ac77cca5e66990d8dd35c49637"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/core/defense.js",
+      "sha256": "7aa3340ce3211c0c38e100c843f13e89cf9e0c103632b2102cce71eb11c88c7f"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/core/mechanics.js",
+      "sha256": "ef696c896370be92d84bb9d9d8cf3f6a10257f930dbdb49c878b70a478933161"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/core/navigation.js",
+      "sha256": "350b5b1d93feb5ad3764b6385cd467cbdf038b8f6551054e76dfc26131c8b194"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/core/rng.js",
+      "sha256": "d60f92defd278a5a980000f19162183adc64bb375eed5c31fe7319efb9d780de"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/core/rules.js",
+      "sha256": "99d74b6623c698b4b380548c464f8758bc7129da738e9889c359df158c4d720d"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/core/save.js",
+      "sha256": "4d29ebd361e173f15f029be39c2f4672966a5ed835547052d04a0a0791a2a95c"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/data/implementation-contract.json",
+      "sha256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/data/reference-data.json",
+      "sha256": "44f1a5081a3364a0fdbf28c8639172a4bfe69fd5ab6820df10156d5eb275744c"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/data/reviewed-source-selection.json",
+      "sha256": "690e4b1e1c0ee6279e67b011a26ac9dff309df088108c92a24ae8357670ba18c"
+    },
+    {
+      "file": "android/app/src/main/assets/www/src/data/stone-scene.json",
+      "sha256": "32e4306459fe280f418f60ca2e4cb1bb5341f0aff7bc6a4d343dce9438e33922"
+    },
+    {
+      "file": "android/app/src/main/java/com/agesofdominion/game/MainActivity.java",
+      "sha256": "3ddd438608d23242e5af4e6f15b2eff74ad4be67ea64d832f4770850ca21cd5f"
+    },
+    {
+      "file": "src/client/audio.js",
+      "sha256": "3f7fb65b00b768ab62622fd1f224a3c02a582b015831f24f6eba76a8e9d93345"
+    },
+    {
+      "file": "src/client/game.css",
+      "sha256": "d0a79192f44908b5c7adef3172763f7a0fb0076248ace95dae02ba8875f7c5a4"
+    },
+    {
+      "file": "src/client/main.js",
+      "sha256": "b98046024d783bffe2696f7a38de418d7f5a9cee250f505c227d55e13ddae45c"
+    },
+    {
+      "file": "src/client/projection.js",
+      "sha256": "d477925020e0c28b4117bee35200215ae13341a920a1a8fcf0b9a42d0e599f02"
+    },
+    {
+      "file": "src/client/rig.js",
+      "sha256": "c4b2b26e0eb0c21e3bdefb7ccca523c02569fdd674482b6eb5b5b34e140734c3"
+    },
+    {
+      "file": "src/core/battle.js",
+      "sha256": "7138b8ca045e7c7385e7c90693045b4ace598e0896a8031b963f13c47c15cff6"
+    },
+    {
+      "file": "src/core/campaign.js",
+      "sha256": "3024dc901cb3a1812e3a4af2e4e92bf624ba602e23c328a5a997f8f652b3af68"
+    },
+    {
+      "file": "src/core/defense.js",
+      "sha256": "844bb6a12bef5784fb207ba255bfc7803d0892387326c7b8ccd921e2eec410a4"
+    },
+    {
+      "file": "src/core/mechanics.js",
+      "sha256": "ef696c896370be92d84bb9d9d8cf3f6a10257f930dbdb49c878b70a478933161"
+    },
+    {
+      "file": "src/core/navigation.js",
+      "sha256": "350b5b1d93feb5ad3764b6385cd467cbdf038b8f6551054e76dfc26131c8b194"
+    },
+    {
+      "file": "src/core/rng.js",
+      "sha256": "d60f92defd278a5a980000f19162183adc64bb375eed5c31fe7319efb9d780de"
+    },
+    {
+      "file": "src/core/rules.js",
+      "sha256": "99d74b6623c698b4b380548c464f8758bc7129da738e9889c359df158c4d720d"
+    },
+    {
+      "file": "src/core/save.js",
+      "sha256": "4d29ebd361e173f15f029be39c2f4672966a5ed835547052d04a0a0791a2a95c"
+    },
+    {
+      "file": "src/data/implementation-contract.json",
+      "sha256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+    },
+    {
+      "file": "src/data/reference-data.json",
+      "sha256": "44f1a5081a3364a0fdbf28c8639172a4bfe69fd5ab6820df10156d5eb275744c"
+    },
+    {
+      "file": "src/data/reviewed-source-selection.json",
+      "sha256": "690e4b1e1c0ee6279e67b011a26ac9dff309df088108c92a24ae8357670ba18c"
+    },
+    {
+      "file": "src/data/stone-scene.json",
+      "sha256": "32e4306459fe280f418f60ca2e4cb1bb5341f0aff7bc6a4d343dce9438e33922"
+    },
+    {
+      "file": "tests/domain.test.mjs",
+      "sha256": "c2e706405260fb2c2ede92678c29719c7fee305346bb667fc8ce36bc24a6b82d"
+    },
+    {
+      "file": "tests/encounter.test.mjs",
+      "sha256": "1bc36861691cb49cb4214617369b7662ff9c7a54eea1109752750b9e86a4c5b7"
+    },
+    {
+      "file": "tests/foundation.test.mjs",
+      "sha256": "50f5e2a7a78486bdad5ec7803fa88f2d5f23eaa4d3c93ff37d3624ee692b40cf"
+    },
+    {
+      "file": "tests/kingdom-layout-candidate-v2.test.mjs",
+      "sha256": "fda93502cb3cf682c985a9d583369d7f6b34e7889897b74bf5454036d622c746"
+    },
+    {
+      "file": "tests/kingdom-layout-candidate.test.mjs",
+      "sha256": "4459bb3f2ce16b85d0e77c0963d1e6ddf1dd6fb20ed7b18d2b2ea11ec36fa55a"
+    },
+    {
+      "file": "tests/mechanics.test.mjs",
+      "sha256": "bcd4b93fc28717d1b917823bfae8e61806575775aea6c43cc3aa713d3fc4ee32"
+    },
+    {
+      "file": "tests/repairs-20261003.test.mjs",
+      "sha256": "67831642c959a53a6ceb2e965ca00650f598a89cf4a6f01128e10414c2d2d1a6"
+    },
+    {
+      "file": "tests/scene-placement.test.mjs",
+      "sha256": "141ccdf4f6989b973615ff9d447b3bc6abbf314724b81d21beaa72578e62b45d"
+    },
+    {
+      "file": "tests/systems.test.mjs",
+      "sha256": "97dee23d6abfa797cd5fc502e290e0285331696d0e5bd82af144e2a3b3b04373"
+    },
+    {
+      "file": "tests/war-defense.test.mjs",
+      "sha256": "0a20634c1c3dd47864177a19159255a79bf70ae9018b764c0067f2195831f92e"
+    }
+  ],
+  "originals": {
+    "count": 510,
+    "ids": 504,
+    "mismatches": []
+  },
+  "highres": {
+    "count": 22,
+    "outputs": [
+      {
+        "id": "adventure-terrain",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain/output.png",
+        "sha256": "bac89323d80cc953db73af945bbd4277a9001c040eee567fef6328d7b196c0df",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "adventure-terrain-plains",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-plains/output.png",
+        "sha256": "05afa074262f1f3c567f92d8000998441fe704eda20ae2a11ad12c54e2951858",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "adventure-terrain-hills",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-hills/output.png",
+        "sha256": "79e65680d4953559bcfc0d9d0695ab40c07f21c8f08d0b92dd8402028aa3319d",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "adventure-terrain-swamp",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-swamp/output.png",
+        "sha256": "f612975cfe39ee6cf422d1d82b56bff886498d2a4e06f1d8bf3e0087600c5005",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "adventure-terrain-desert",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-desert/output.png",
+        "sha256": "501e57f1631d04a04ed54297cbeeb3b62ba37372b699bbf5eee0254a40c37953",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "adventure-terrain-snow",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-snow/output.png",
+        "sha256": "86f64b17582726831524c6ae48a90efd2451e254f478a5a49d5f7e8bd39fd7c2",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "adventure-terrain-waste",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-waste/output.png",
+        "sha256": "8ede49b9c7c679c600d04ff605164801b7bfa0166fbcc94c93ac7923d751d5d5",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "adventure-terrain-ruins",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-ruins/output.png",
+        "sha256": "3a4315fd7a0e52e83c2047847bfc6c1a899121937b8facf363f82fc7bfba41e3",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "tactical-terrain-plains",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-plains/output.png",
+        "sha256": "5916792b12a1d9cdec26cd96477b5aeeba57feae8afae3a91e87124635273ef6",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "tactical-terrain-hills",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-hills/output.png",
+        "sha256": "30c3aa2f29f8281d6b9736c8d65a0cde637ff1d56cd00af9edc3d0145bf8cdcb",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "tactical-terrain-swamp",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-swamp/output.png",
+        "sha256": "95c293612f625fa0e896442673148a9ed20b3fdca43a521e8edb5c2149e84c51",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "tactical-terrain-desert",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-desert/output.png",
+        "sha256": "5f5206c89caa2e29958f5b344d26d3f2342f07c73e42b3caedc503557abda83c",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "tactical-terrain-waste",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/tactical-terrain-waste/output.png",
+        "sha256": "8159cb4d9126752f8327ee1a77ef595b67c9fdf94833f06536feb493d779d9c8",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "tactical-terrain-ruins",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/tactical-terrain-ruins/output.png",
+        "sha256": "c96446ba9f8cdb2e9c5c081653246fab5fac419dc4afae2005e48e9119989cf5",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "defense-terrain",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/defense-terrain/output.png",
+        "sha256": "01c19c36e58c6e542dc8506da2f367cdc45a47345d8947723e97d9650866aeb2",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "defense-terrain-plains",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/defense-terrain-plains/output.png",
+        "sha256": "7941ee34e62b2053c4c4d309e8a42bba795c39605627f2a3911e1fb8c84678da",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "defense-terrain-hills",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-03-20261004-012700/packs/defense-terrain-hills/output.png",
+        "sha256": "a5b979e6f3fc483ac79d0fb9e6c165e8f710e7d8d498fe9f92c3e10730d47ec9",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "defense-terrain-swamp",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-swamp/output.png",
+        "sha256": "380a0cc2343985d0fa0e6491932374eb078b2d4842d60f5a77f96202ef2e88ff",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "defense-terrain-desert",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-desert/output.png",
+        "sha256": "7da55fccca84bc13acb282ce7bd30bbdf3504eb2614024cc2a8b7bd932ab1ce9",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "defense-terrain-snow",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-snow/output.png",
+        "sha256": "514ad172d646a9d17103a55b32f093634ac2e7307c0269fe977f8ea1dcde448e",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "defense-terrain-waste",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-waste/output.png",
+        "sha256": "c165d958c68f052d10aab4318d005b4963f9efd59c9ea4b3f708111249632967",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      {
+        "id": "defense-terrain-ruins",
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-ruins/output.png",
+        "sha256": "71ecaf6c98b90bd95f08a87dfeed3ec257e4968949b6af3e7bbcb34fbee0c981",
+        "matchesJournal": true,
+        "dimensions": [
+          5504,
+          3072
+        ],
+        "technical": "PASS",
+        "spatial": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      }
+    ],
+    "journals": [
+      {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/journal.json",
+        "sha256": "3e2af048a9655c1bdef8ef712cd0bd2b970d1d229d9f6d4454a745e3369c7fae",
+        "summary": {
+          "total": 32,
+          "attempted": 13,
+          "succeeded": 12,
+          "deferred": 8,
+          "failed": 1,
+          "totalPromptTokens": 29775,
+          "totalCandidateTokens": 30240,
+          "totalCostUSD": 1.8292875
+        }
+      },
+      {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/journal.json",
+        "sha256": "830ef27307f907d06d4431708b43dbd2e393bacf69afb4cb7ebbfb4dd8c47fe2",
+        "summary": {
+          "total": 32,
+          "reusedSucceededFromRun1": 12,
+          "continuationSucceeded": 4,
+          "totalNative4KSucceeded": 16,
+          "failedConsumedFromRun1": 1,
+          "excludedQuotaFromRun1": 1,
+          "continuationQuotaStopped": 1,
+          "unattemptedQuotaPaused": 5,
+          "deferredKingdom": 8,
+          "run01ActualCostUSD": 1.829288,
+          "run02ActualCostUSD": 0.609767,
+          "cumulativeInteractive4KCostUSD": 2.439055,
+          "cumulativeReconciledWithBufferUSD": 2.804913
+        }
+      },
+      {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-03-20261004-012700/journal.json",
+        "sha256": "21ba98aa80fdc5613e2ff7595527fccfbc2e514c7194ee0ff693d7989887baea",
+        "summary": {
+          "total": 32,
+          "reusedSucceededFromRun1": 12,
+          "reusedSucceededFromRun2": 4,
+          "totalPriorSucceeded": 16,
+          "failedConsumedFromRun1": 1,
+          "excludedQuotaFromRun1": 1,
+          "deferredKingdom": 8,
+          "run3Attempted": 2,
+          "run3Succeeded": 1,
+          "run3Failed": 1,
+          "run3PromptTokens": 2481,
+          "run3CandidateTokens": 2520,
+          "run3CostUSD": 0.1524405,
+          "unattemptedQuotaPaused": 4,
+          "quotaStopped": 1
+        }
+      },
+      {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/journal.json",
+        "sha256": "99449e1e055a7bf58a83edbe34cefffb2e7cf1b15c79297d294c24b8ce68c064",
+        "summary": {
+          "total": 32,
+          "reusedSucceededFromRun1": 12,
+          "reusedSucceededFromRun2": 4,
+          "reusedSucceededFromRun3": 1,
+          "totalPriorSucceeded": 17,
+          "failedConsumedFromRun1": 1,
+          "excludedQuotaFromRun1": 1,
+          "deferredKingdom": 8,
+          "run4Attempted": 5,
+          "run4Succeeded": 5,
+          "run4Failed": 0,
+          "run4PromptTokens": 12423,
+          "run4CandidateTokens": 12600,
+          "run4CostUSD": 0.7622115
+        }
+      }
+    ],
+    "providerLive": "NOT_QUERIED"
+  },
+  "apk": {
+    "bytes": 38971323,
+    "sha256": "6eec617b3513f3b0bd687cd5acf21e78ed77526ba1ce36946420e666ad4f3e0a",
+    "packagedFiles": 41,
+    "rootMismatches": [
+      "assets/www/src/client/audio.js",
+      "assets/www/src/client/game.css",
+      "assets/www/src/client/main.js",
+      "assets/www/src/client/projection.js",
+      "assets/www/src/core/campaign.js",
+      "assets/www/src/core/defense.js"
+    ],
+    "nativeRuntime": "UNVERIFIED",
+    "device": "STOPPED_UNAUTHORIZED"
+  },
+  "preservation": {
+    "assetsFiles": 1186,
+    "assetsBytes": 4621872706,
+    "trackedAssets": [
+      "assets/delivery/stone-starter-20261003/before-after/farm-stone.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/lumber-stone.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/mine-stone.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/quarry-stone.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/resource-food.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/resource-gold.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/resource-stone.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/resource-wood.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/skill-offense.jpg",
+      "assets/delivery/stone-starter-20261003/before-after/townhall-stone.jpg",
+      "assets/delivery/stone-starter-20261003/comparison/stone-reference-and-composite.jpg",
+      "assets/delivery/stone-starter-20261003/composites/stone-kingdom-hall-only-day1-v3.png",
+      "assets/delivery/stone-starter-20261003/composites/stone-kingdom-hall-only-day1.png",
+      "assets/delivery/stone-starter-20261003/composites/stone-kingdom-producer-placement-proof-v3.png",
+      "assets/delivery/stone-starter-20261003/composites/stone-kingdom-producer-placement-proof.png",
+      "assets/delivery/stone-starter-20261003/derivatives/farm-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/lumber-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/mine-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/quarry-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/resource-food.png",
+      "assets/delivery/stone-starter-20261003/derivatives/resource-gold.png",
+      "assets/delivery/stone-starter-20261003/derivatives/resource-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/resource-wood.png",
+      "assets/delivery/stone-starter-20261003/derivatives/skill-offense.png",
+      "assets/delivery/stone-starter-20261003/derivatives/townhall-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/farm-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/lumber-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/mine-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/quarry-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/resource-food.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/resource-gold.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/resource-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/resource-wood.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/skill-offense.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v2/townhall-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v3/resource-gold.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-food.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-gold.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-stone.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v4-ui/resource-wood.png",
+      "assets/delivery/stone-starter-20261003/derivatives/v4-ui/skill-offense.png",
+      "assets/delivery/stone-starter-20261003/gate-ledger.json",
+      "assets/delivery/stone-starter-20261003/inspection/farm-stone-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/lumber-stone-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/mine-stone-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/quarry-stone-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/resource-food-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/resource-gold-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/resource-stone-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/resource-wood-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/skill-offense-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/inspection/townhall-stone-black-white-green.jpg",
+      "assets/delivery/stone-starter-20261003/processing-record.json",
+      "assets/delivery/stone-starter-20261003/stone-kingdom-composite.png",
+      "assets/delivery/stone-starter-20261003/stone-kingdom-placement-debug.png",
+      "assets/delivery/stone-starter-20261003/terrain/kingdom-terrain-stone-repaired-v2.png",
+      "assets/delivery/stone-starter-20261003/terrain/kingdom-terrain-stone-repaired.png",
+      "assets/delivery/stone-starter-20261003/ui/ui-resources-offense-1180x820.png",
+      "assets/delivery/stone-starter-20261003/ui/ui-resources-offense-1280x720.png",
+      "assets/delivery/stone-starter-20261003/ui/ui-resources-offense-825x375.png",
+      "assets/delivery/stone-starter-20261003/ui/ui-resources-offense-933x424.png",
+      "assets/delivery/stone-starter-20261003/ui/v2/ui-resources-offense-1180x820.png",
+      "assets/delivery/stone-starter-20261003/ui/v2/ui-resources-offense-1280x720.png",
+      "assets/delivery/stone-starter-20261003/ui/v2/ui-resources-offense-825x375.png",
+      "assets/delivery/stone-starter-20261003/ui/v2/ui-resources-offense-933x424.png",
+      "assets/mocks/INDEX.md"
+    ],
+    "savedDestination": null,
+    "savedVerifiedRows": 0,
+    "unrecordedCopies": "UNKNOWN"
+  }
+}

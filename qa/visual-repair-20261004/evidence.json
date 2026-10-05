@@ -1,0 +1,46 @@
+{
+  "when": "2026-10-04",
+  "tests": "node --test tests/*.test.mjs",
+  "testsResult": "79 PASS, 0 FAIL",
+  "defects": {
+    "asset": [
+      "Stone kingdom painting still bakes huts and pads. It stays a failed development layer. Live pads are the cyan outlines.",
+      "v2 stone melee and horse cutouts still include floor planes. They were not promoted to world sprites.",
+      "Knight rig part 01 is a sheet of many greaves, not one torso. It was not bound as a skeleton.",
+      "No ancient knight card. Medieval knight card opens at age 3. knight-mounted-master stays rejected for Stone."
+    ],
+    "layout": "Active geometry unchanged. Hall plus 17 empty sites remain pickable. Phone screenshots show the scene in the top band because the capture canvas is taller than the stage.",
+    "skeleton": "Misnamed rig slices were not assembled. Hero cards use clipAngles so the card transform carries the live clip.",
+    "ui": "Skills, spells, Forge slots, route confirm and challenge codes were preserved."
+  },
+  "screenshots": [
+    "before-kingdom-1280.png",
+    "after-kingdom-1280.png",
+    "after-kingdom-825.png",
+    "after-kingdom-933.png",
+    "after-kingdom-1180.png",
+    "after-hero-mage-1280.png"
+  ],
+  "browser": {
+    "mageCard": "data-presentation portrait-card, data-card-era ancient",
+    "sites": "townhall level 1 and P01-P17 empty level 0"
+  },
+  "distAssets": 232,
+  "packagedFiles": 260,
+  "mismatches": 0,
+  "priorRelease": {
+    "path": "qa/visual-repair-20261004/prior-app-release-unsigned.apk",
+    "sha256": "789c85d777dfe6ff93aa46f1ff1739cd3411e8fd123c9ade5c919e147c46e465"
+  },
+  "currentRelease": {
+    "path": "android/app/build/outputs/apk/release/app-release-unsigned.apk",
+    "sha256": "fbe989b58240bcd7981b993efb6ed4accb894fbf4ae42c73731a2e92efe830db",
+    "bytes": 296623132,
+    "package": "com.agesofdominion.game.reborn.preview",
+    "minSdk": 24,
+    "targetSdk": 36,
+    "permissions": "none listed"
+  },
+  "commit": false,
+  "device": "STOPPED"
+}

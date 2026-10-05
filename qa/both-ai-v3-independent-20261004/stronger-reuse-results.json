@@ -1,0 +1,159 @@
+[
+  {
+    "probe": "valid",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": true,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "missing-request-file",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "missing-response-hash",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "malformed-body-valid-hash",
+    "result": {
+      "status": "FAILED_REUSE_CORRUPT_REQUEST_BODY",
+      "itemId": "test-id",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "costUSD": 0.0
+    },
+    "pass": true,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "missing-prompt-in-body",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "wrong-config-image-size",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "wrong-model",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "wrong-endpoint",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "changed-source-image",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "wrong-output-dimensions",
+    "result": {
+      "status": "FAILED_REUSE_DIMENSION_MISMATCH",
+      "itemId": "test-id",
+      "error": "Image dimensions [2048, 2048] do not match expected [1024, 1024]",
+      "costUSD": 0.0
+    },
+    "pass": true,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  },
+  {
+    "probe": "missing-output-hash",
+    "result": {
+      "status": "REUSED_EXISTING_SUCCESS",
+      "itemId": "test-id",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "ea5e901a8b0685dc490583a7fc2fe57a168e7ef2f40ba72f117484ebbd5ce526",
+      "costUSD": 0.0
+    },
+    "pass": false,
+    "limitation": "Source/config/endpoint fields expose missing request identity validation; this is an offline synthetic contract probe."
+  }
+]

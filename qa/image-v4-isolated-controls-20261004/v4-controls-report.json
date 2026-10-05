@@ -1,0 +1,135 @@
+{
+  "sandbox": "qa/image-v4-isolated-controls-20261004",
+  "rootRedirectedBeforeImport": "qa/image-v4-isolated-controls-20261004/root",
+  "networkForbidden": true,
+  "passing": 27,
+  "failing": 0,
+  "rows": [
+    {
+      "probe": "delayed contender after first verification",
+      "pass": true
+    },
+    {
+      "probe": "dead PID UNKNOWN blocked",
+      "pass": true
+    },
+    {
+      "probe": "UNKNOWN release denied",
+      "pass": true
+    },
+    {
+      "probe": "subattempt append-only collision preserved",
+      "pass": true
+    },
+    {
+      "probe": "preflight halt on UNKNOWN item",
+      "pass": true
+    },
+    {
+      "probe": "cloud active/unknown states blocked",
+      "pass": true
+    },
+    {
+      "probe": "malformed pacing fails closed",
+      "pass": true
+    },
+    {
+      "probe": "malformed write-ahead fails closed",
+      "pass": true
+    },
+    {
+      "probe": "normal release succeeds",
+      "pass": true
+    },
+    {
+      "probe": "reuse-binding-valid-baseline",
+      "pass": true,
+      "status": "REUSED_EXISTING_SUCCESS"
+    },
+    {
+      "probe": "reuse-binding-missing-body-hash",
+      "pass": true,
+      "status": "FAILED_REUSE_MISSING_BODY_HASH"
+    },
+    {
+      "probe": "reuse-binding-invented-body-hash",
+      "pass": true,
+      "status": "FAILED_REUSE_BODY_HASH_MISMATCH"
+    },
+    {
+      "probe": "reuse-binding-changed-prompt",
+      "pass": true,
+      "status": "FAILED_REUSE_PROMPT_MISMATCH"
+    },
+    {
+      "probe": "reuse-binding-wrong-mime",
+      "pass": true,
+      "status": "FAILED_REUSE_UNSUPPORTED_MIME"
+    },
+    {
+      "probe": "valid",
+      "pass": true,
+      "status": "REUSED_EXISTING_SUCCESS"
+    },
+    {
+      "probe": "missing-request-file",
+      "pass": true,
+      "status": "FAILED_REUSE_MISSING_REQUEST_BODY"
+    },
+    {
+      "probe": "missing-response-hash",
+      "pass": true,
+      "status": "FAILED_REUSE_MISSING_RESPONSE_HASH"
+    },
+    {
+      "probe": "malformed-body-valid-hash",
+      "pass": true,
+      "status": "FAILED_REUSE_CORRUPT_REQUEST_BODY"
+    },
+    {
+      "probe": "missing-prompt-in-body",
+      "pass": true,
+      "status": "FAILED_REUSE_PROMPT_ABSENT"
+    },
+    {
+      "probe": "wrong-config-image-size",
+      "pass": true,
+      "status": "FAILED_REUSE_CONFIG_MISMATCH"
+    },
+    {
+      "probe": "wrong-model",
+      "pass": true,
+      "status": "FAILED_REUSE_MODEL_MISMATCH"
+    },
+    {
+      "probe": "wrong-endpoint",
+      "pass": true,
+      "status": "FAILED_REUSE_ENDPOINT_MISMATCH"
+    },
+    {
+      "probe": "changed-source-image",
+      "pass": true,
+      "status": "FAILED_REUSE_SOURCE_MISMATCH"
+    },
+    {
+      "probe": "wrong-output-dimensions",
+      "pass": true,
+      "status": "FAILED_REUSE_DIMENSION_MISMATCH"
+    },
+    {
+      "probe": "missing-output-hash",
+      "pass": true,
+      "status": "FAILED_REUSE_MISSING_OUTPUT_HASH"
+    },
+    {
+      "probe": "swapped-source-order",
+      "pass": true,
+      "status": "FAILED_REUSE_PART_ORDER_MISMATCH"
+    },
+    {
+      "probe": "wrong-aspect",
+      "pass": true,
+      "status": "FAILED_REUSE_CONFIG_MISMATCH"
+    }
+  ]
+}

@@ -1,0 +1,686 @@
+{
+  "seed": 123456789,
+  "ageFixtureSeed": 20261004,
+  "acceleration": {
+    "construction": "none — live build clock",
+    "siege": "in-game Speed 2x only",
+    "endless": "in-game Speed 2x only",
+    "ages": "FIXTURE — Town Hall level 8 and 500000 of each resource injected before import. Age clicks are the live Advance age control.",
+    "forge": "FIXTURE — Armory built and 5000 of each resource injected. Equip, unequip, swap and reload use the Forge controls."
+  },
+  "steps": [
+    {
+      "name": "01-knight-pending.png",
+      "message": "Choose a class, then enter the valley.",
+      "selected": "Knight",
+      "status": "Saved locally",
+      "image": {
+        "file": "01-knight-pending.png",
+        "sha256": "86e5f65e8d79bb953e3528424e3935191b7ec02189166c95cab042c6099b559c",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "hero-825x375",
+      "opened": {
+        "file": "825x375-hero-panel-open.png",
+        "sha256": "034b50a6ea3eb8844bf3bfa5ff9969ff723521b01d9ef8f23be5625f36d37636",
+        "width": 825,
+        "height": 375
+      },
+      "closed": {
+        "file": "825x375-hero-panel-closed.png",
+        "sha256": "1bc539a2e9129d89b36e428d3b99ec128efa1e64f1345649c72fde47a32a95de",
+        "width": 825,
+        "height": 375
+      },
+      "short": 0
+    },
+    {
+      "name": "hero-933x424",
+      "opened": {
+        "file": "933x424-hero-panel-open.png",
+        "sha256": "39b4b6b4d28f2b84138e3198de0706580f09b3523097db84e510661f1d468a28",
+        "width": 933,
+        "height": 424
+      },
+      "closed": {
+        "file": "933x424-hero-panel-closed.png",
+        "sha256": "6bc0bb5be766a3f702950ec22c70b0056129e91e5c7413e6ea38d95ee8949db6",
+        "width": 933,
+        "height": 424
+      },
+      "short": 0
+    },
+    {
+      "name": "hero-1180x820",
+      "opened": {
+        "file": "1180x820-hero-panel-open.png",
+        "sha256": "4c43d91d708a8b3a415c9a6e38af7f6347b24d56396ef5a3777e75e61aeed456",
+        "width": 1180,
+        "height": 820
+      },
+      "closed": {
+        "file": "1180x820-hero-panel-closed.png",
+        "sha256": "11eaf9674addc898f961e19f06f0813e1783534432f7a9561f81b942aabc22fc",
+        "width": 1180,
+        "height": 820
+      },
+      "short": 0
+    },
+    {
+      "name": "hero-1280x720",
+      "opened": {
+        "file": "1280x720-hero-panel-open.png",
+        "sha256": "436389b42f381f9a097156052145f0d5a12ebfc6ea7e745b3c5a1e43ccdfb41d",
+        "width": 1280,
+        "height": 720
+      },
+      "closed": {
+        "file": "1280x720-hero-panel-closed.png",
+        "sha256": "27c355794f77e4031f12d41957efb400c47266982d1bdd965fa16e67cc2303db",
+        "width": 1280,
+        "height": 720
+      },
+      "short": 0
+    },
+    {
+      "name": "02-ranger-walk.png",
+      "message": "Attack 2, Defense 2, Power 2, Knowledge 2. Mana 20/20. Daily moves 5. Points 0. Helmet: empty; Weapon: empty; Shield: empty; Chest: empty; Greaves: empty; Ring: empty. A skill offer waits until you choose or decline it.",
+      "selected": "Ranger",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "02-ranger-walk.png",
+        "sha256": "44cf5617265fe7b592bff516f334c854830c2666a520ca3101856d5f64faf4fb",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "03-kingdom-day1.png",
+      "message": "Stone Age. Hall level 1. 17 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Build a Lumber Camp.",
+      "selected": "P01 · empty plot",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "03-kingdom-day1.png",
+        "sha256": "6c5bf802f3bcbed3d626805bfb4650554cc70d194275d7bddd04cfa4cbc6b7ec",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "build-lumber.png",
+      "message": "Stone Age. Hall level 1. 16 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Build a Farm.",
+      "selected": "Lumber Camp · level 1",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "build-lumber.png",
+        "sha256": "24c4b23c29dc6df406e38987e841b72f66434e5bbcb214ebc01766ae27889f75",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "build-farm.png",
+      "message": "Stone Age. Hall level 1. 15 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Build a Quarry.",
+      "selected": "Farm · level 1",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "build-farm.png",
+        "sha256": "ce90b4b9818f8c85d820115ca6a6f8e6edc76d0fb584191d95d1abb45421faa2",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "build-quarry.png",
+      "message": "Stone Age. Hall level 1. 14 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Build a Barracks.",
+      "selected": "Quarry · level 1",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "build-quarry.png",
+        "sha256": "b0fb8f053ba379a21e9e3510601ad2cc155a9be9604024bb05bf6aa899eb7576",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "build-barracks.png",
+      "message": "Stone Age. Hall level 1. 13 sites are empty. Walls are unbuilt. Day 1, clear.  Next: Recruit a stack.",
+      "selected": "Barracks · level 1",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "build-barracks.png",
+        "sha256": "bc9cb7bbc40ea00fd5d44f1d22b44c9cb8a4166a3fc42ea5ec6b9a1eeb9a66fc",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "04-recruited.png",
+      "message": "Army 2/3. Capacity is 2 plus Barracks level. Recruitment pays five of the current age. Plate review does not change the age.",
+      "selected": "Army",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "04-recruited.png",
+        "sha256": "2568d9a925654f17096a2cf6e5813ff1f77696d0cda03e91b91525bb5f840c80",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "05-iron-plate-review.png",
+      "message": "Army 2/3. Capacity is 2 plus Barracks level. Recruitment pays five of the current age. Plate review does not change the age.",
+      "selected": "Army",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "05-iron-plate-review.png",
+        "sha256": "17f2d945ebf79af1bcfef5a17398b51324ba8969ae6ff9be9658619f64879163",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "06-gunpowder-plate-review.png",
+      "message": "Army 2/3. Capacity is 2 plus Barracks level. Recruitment pays five of the current age. Plate review does not change the age.",
+      "selected": "Army",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "06-gunpowder-plate-review.png",
+        "sha256": "802b6967755f0eaea46ae984c28bd300625fe275713df1f61d970811a182fa34",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "07-future-plate-review.png",
+      "message": "Army 2/3. Capacity is 2 plus Barracks level. Recruitment pays five of the current age. Plate review does not change the age.",
+      "selected": "Army",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "07-future-plate-review.png",
+        "sha256": "64a8c9d7ce5f4243bb84ec0e02f53da692661684ebb1fd28c2c3f2a68c8829b1",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "08-mounted-travel.png",
+      "message": "An unresolved guard is waiting. Movement stays spent until that guard is cleared. Next: Fight the guard.",
+      "selected": "Travel 10,5 · moves 0",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "08-mounted-travel.png",
+        "sha256": "5de8b69212ade6d685c052fa24b95ec66c818e198cc355364a5484eda06d9140",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "mount-attributes",
+      "gait": "single-pose",
+      "hooves": "not-separated",
+      "moving": "bob-only",
+      "rider": "painted-partial",
+      "mountMark": "review-horse-v4"
+    },
+    {
+      "name": "09-after-tactical.png",
+      "message": "Choose a move, a spell, or wait. Gate strength elsewhere is 400.",
+      "selected": "Tactical",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "09-after-tactical.png",
+        "sha256": "d355a1599319a24c6eb32d5d91d546a497e2663ead87495caabfbdfeadfdbada",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "natural-loot",
+      "message": "The battle roll added no bag item. The six-slot fixture covers equip."
+    },
+    {
+      "name": "13-siege-paused.png",
+      "message": "Wave 0/5. 0 bosses, 0 shots. Next runner, brute, brute, archer, brute, archer. Hold the lane. Pause stops the attack.",
+      "selected": "siege core 400",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "13-siege-paused.png",
+        "sha256": "a33a9ce9c420ae4104e288016a6223db58d0dbc896012dc78c326e3a4552568b",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "14-siege-resumed.png",
+      "message": "Wave 0/5. 0 bosses, 0 shots. Next runner, brute, brute, archer, brute, archer. Hold the lane. Pause stops the attack.",
+      "selected": "siege core 400",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "14-siege-resumed.png",
+        "sha256": "f0b1a5b070d9b32642f361f9e53a1908266b923850c824020a2848a10f1c232d",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "15-siege-settled.png",
+      "message": "Hold the lane. Pause stops the attack.",
+      "selected": "Defense",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "15-siege-settled.png",
+        "sha256": "edeb471ac60490d2d5034e0748f6e64c76e76f505fc45f12c402a3aeb00b6c5c",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "siege-result",
+      "paused": "Wave 0/5. 0 bosses, 0 shots. Next runner, brute, brute, archer, brute, archer. Hold the lane. Pause stops the attack.",
+      "settled": true,
+      "age": 0,
+      "defense": null,
+      "flags": {
+        "cleared:guard-10,5": true,
+        "battle:battle-guard-10,5-r128": "p",
+        "siege:siege-1-157": "e"
+      }
+    },
+    {
+      "name": "16-siege-reload.png",
+      "message": "Slot 1 loaded.",
+      "selected": "Lumber Camp · level 1",
+      "status": "Saved locally",
+      "image": {
+        "file": "16-siege-reload.png",
+        "sha256": "9af9842ad01a24dcf9276fd83c66deed4838c19db435ac11f6493706d164a864",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "17-endless-running.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "endless core 400",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "17-endless-running.png",
+        "sha256": "ebcda1a6d5f097f6350f11ae6f58183ac7016553d5ae5aec7985bf5daf39fbd0",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "18-endless-paused.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "endless core 400",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "18-endless-paused.png",
+        "sha256": "775fef2284c94c483ada55d5fe8322b59494bc8025006b62c9e3297aa47128ba",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "19-endless-settled.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "Defense",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "19-endless-settled.png",
+        "sha256": "92807938786cb9fc1689c41d57578965b1b34ff20709d4f90b1217a983a8ea88",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "endless-result",
+      "settled": true,
+      "flag": [
+        "endless:endless-1-355",
+        0
+      ],
+      "defense": null
+    },
+    {
+      "name": "20-forge-fixture-imported.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "P01 · empty plot",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "20-forge-fixture-imported.png",
+        "sha256": "b37400e694a166c812c9b996d42304893cf44823b6ce8bf5a220682ca9402361",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "21-six-slots-worn.png",
+      "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "Knight",
+      "status": "Stone Age · day 1",
+      "image": {
+        "file": "21-six-slots-worn.png",
+        "sha256": "24a4593e7ed2bfe21f98f09896e6a88e3b71089b4efeb81a4a3453fc4191124c",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "22-forge-reload.png",
+      "message": "Slot 2 loaded.",
+      "selected": "P01 · empty plot",
+      "status": "Saved locally",
+      "image": {
+        "file": "22-forge-reload.png",
+        "sha256": "27acc69ff7faf99f789e1711bdec72b1f267d7ef7c7822c8677dd57c848e521c",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "forge-stats",
+      "attacks": [
+        {
+          "slot": "helm",
+          "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again."
+        },
+        {
+          "slot": "weapon",
+          "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again."
+        },
+        {
+          "slot": "offhand",
+          "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again."
+        },
+        {
+          "slot": "armor",
+          "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again."
+        },
+        {
+          "slot": "boots",
+          "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again."
+        },
+        {
+          "slot": "accessory",
+          "message": "Away time credited 0m 0s. Gained food +0.02, wood +0.02, stone +0.02. No construction finished. Dismissing this report does not credit the clock again."
+        }
+      ],
+      "worn": {
+        "helm": {
+          "id": "item-867099ab-d23a-41d2-8bd9-f7dc31ecc5ea",
+          "kind": "gear",
+          "slot": "helm",
+          "age": 0,
+          "quality": 0
+        },
+        "weapon": null,
+        "offhand": {
+          "id": "item-ae03b8bc-33ef-49e1-811f-350656ce9485",
+          "kind": "gear",
+          "slot": "offhand",
+          "age": 0,
+          "quality": 0
+        },
+        "armor": {
+          "id": "item-fad0eeb4-f9d1-4388-afd7-f42b1008ce57",
+          "kind": "gear",
+          "slot": "armor",
+          "age": 0,
+          "quality": 0
+        },
+        "boots": {
+          "id": "item-3403be2c-522b-4b17-a21a-46442b4e5828",
+          "kind": "gear",
+          "slot": "boots",
+          "age": 0,
+          "quality": 0
+        },
+        "accessory": {
+          "id": "item-cd57b024-b4fa-4837-8af5-f7cfdea3bd67",
+          "kind": "gear",
+          "slot": "accessory",
+          "age": 0,
+          "quality": 0
+        }
+      },
+      "bag": [
+        "weapon",
+        "weapon"
+      ]
+    },
+    {
+      "name": "23-future-army.png",
+      "message": "Away time credited 0m 0s. No production was credited. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "Army",
+      "status": "Future Age · day 1",
+      "image": {
+        "file": "23-future-army.png",
+        "sha256": "8fe37838420d7e32ceb7a82098ca6fdc6e9c8952c2dae29ff522bcd6778fbe4f",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "24-future-mount.png",
+      "message": "Away time credited 0m 0s. No production was credited. No construction finished. Dismissing this report does not credit the clock again.",
+      "selected": "Travel 8,8 · moves 5",
+      "status": "Future Age · day 1",
+      "image": {
+        "file": "24-future-mount.png",
+        "sha256": "01d87ad78591b55ce3482f7c11662404af704932553b3e2c1387faecd3dbdf43",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "future-825x375",
+      "opened": {
+        "file": "825x375-future-panel-open.png",
+        "sha256": "ad351697ed66200fb7a977dae60d42d1beb5841d6d8b00084663f01165cfa01f",
+        "width": 825,
+        "height": 375
+      },
+      "short": 0
+    },
+    {
+      "name": "future-933x424",
+      "opened": {
+        "file": "933x424-future-panel-open.png",
+        "sha256": "035da5ab43508b4a9313465cf2cd28272226adeaa909807d7f4e566a91964bce",
+        "width": 933,
+        "height": 424
+      },
+      "short": 0
+    },
+    {
+      "name": "future-1180x820",
+      "opened": {
+        "file": "1180x820-future-panel-open.png",
+        "sha256": "0c946a572526b79df8518e729acf40996fd3fd884db1c1e6b208c70631d82e2d",
+        "width": 1180,
+        "height": 820
+      },
+      "short": 0
+    },
+    {
+      "name": "future-1280x720",
+      "opened": {
+        "file": "1280x720-future-panel-open.png",
+        "sha256": "22dd92d0ed064b3e3a362e432e908b76a6843000eae1535d93cdd4f46960f9a2",
+        "width": 1280,
+        "height": 720
+      },
+      "short": 0
+    },
+    {
+      "name": "age-checkpoints",
+      "ages": [
+        {
+          "before": "Stone Age · day 1",
+          "age": 1,
+          "resources": {
+            "food": 499355,
+            "wood": 499398,
+            "stone": 499527,
+            "gold": 499613
+          },
+          "hall": 8,
+          "image": "age-1.png"
+        },
+        {
+          "before": "Bronze Age · day 1",
+          "age": 2,
+          "resources": {
+            "food": 497968,
+            "wood": 498104,
+            "stone": 498510,
+            "gold": 498781
+          },
+          "hall": 8,
+          "image": "age-2.png"
+        },
+        {
+          "before": "Iron Age · day 1",
+          "age": 3,
+          "resources": {
+            "food": 494986,
+            "wood": 495321,
+            "stone": 496324,
+            "gold": 496992
+          },
+          "hall": 8,
+          "image": "age-3.png"
+        },
+        {
+          "before": "Medieval Age · day 1",
+          "age": 4,
+          "resources": {
+            "food": 488576,
+            "wood": 489338,
+            "stone": 491623,
+            "gold": 493146
+          },
+          "hall": 8,
+          "image": "age-4.png"
+        },
+        {
+          "before": "Gunpowder Age · day 1",
+          "age": 5,
+          "resources": {
+            "food": 474794,
+            "wood": 476475,
+            "stone": 481516,
+            "gold": 484877
+          },
+          "hall": 8,
+          "image": "age-5.png"
+        },
+        {
+          "before": "Industrial Age · day 1",
+          "age": 6,
+          "resources": {
+            "food": 445163,
+            "wood": 448819,
+            "stone": 459786,
+            "gold": 467098
+          },
+          "hall": 8,
+          "image": "age-6.png"
+        },
+        {
+          "before": "Modern Age · day 1",
+          "age": 7,
+          "resources": {
+            "food": 381456,
+            "wood": 389359,
+            "stone": 413067,
+            "gold": 428874
+          },
+          "hall": 8,
+          "image": "age-7.png"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "frames": [
+    {
+      "name": "ranger-walk-0",
+      "image": {
+        "file": "ranger-walk-0.png",
+        "sha256": "a4b4de5fe24f6faa47414443b25bba692199643d65ee3866ca0ec598c7b868c1",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "ranger-walk-1",
+      "image": {
+        "file": "ranger-walk-1.png",
+        "sha256": "669c50788f3e1152bbe650dc9f4b13f07b85cc911377c9de567d6ec9b705d593",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "ranger-walk-2",
+      "image": {
+        "file": "ranger-walk-2.png",
+        "sha256": "1587243b0071b47b21a5224f176d71f259df7a70c26181ee9a0a536e6e2e6701",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "ranger-walk-3",
+      "image": {
+        "file": "ranger-walk-3.png",
+        "sha256": "126a07499d2d3e7cf5e5f14a2ecba5454adcc43a4915afd05d961dbe5c5260d6",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "mount-0",
+      "image": {
+        "file": "mount-0.png",
+        "sha256": "f650fee90b5fc1240c95606cdbbf145f0b9b5d5a14db0b554324fad01906791b",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "mount-1",
+      "image": {
+        "file": "mount-1.png",
+        "sha256": "289a3653265a92c75b04e730bedb0fe0d6848759094392b863357e2053db5b3e",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "mount-2",
+      "image": {
+        "file": "mount-2.png",
+        "sha256": "ca80c98da2afd529d4bd879b1b437c25aca11ecbe1e87953d5717d4274de7544",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "mount-3",
+      "image": {
+        "file": "mount-3.png",
+        "sha256": "6491ca121f42d26137ecd1b09db841b0054f7264ed62fb8040f5b6850dc6b52b",
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ],
+  "finished": "2026-10-04T15:19:16.585Z"
+}

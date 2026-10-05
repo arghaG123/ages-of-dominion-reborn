@@ -1,0 +1,25 @@
+{
+  "status": "PROPOSAL_ONLY",
+  "head": "cff552880ae15c892b736ac7847f6753787ca58f",
+  "externalArchive": null,
+  "secondDurableDestination": null,
+  "verifiedRestoreRows": 0,
+  "doNot": ["commit", "push", "untrack assets", "gitignore assets", "delete tracked art"],
+  "codeOnlyStagingWhenGateOpens": [
+    "src/client/main.js",
+    "src/client/actor.js",
+    "src/client/motion.js",
+    "src/client/choices.js",
+    "src/client/game.css",
+    "src/core/challenge.js",
+    "src/core/battle.js",
+    "src/core/campaign.js",
+    "tests/live-motion-20261004.test.mjs",
+    "index.html"
+  ],
+  "generatedPackageInputs": [
+    "dist/",
+    "android/app/src/main/assets/www/"
+  ],
+  "note": "Listing is a recovery proposal. It is not a commit and it does not move assets."
+}

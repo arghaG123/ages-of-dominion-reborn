@@ -1,0 +1,55 @@
+- main:
+  - heading "Ages of Dominion" [level=1]
+  - status: Stone Age · day 1
+  - generic "Campaign resources":
+    - generic: food 250
+    - generic: wood 160
+    - generic: stone 115
+    - generic: gold 150
+  - button "Save"
+  - img "stone kingdom terrain, not yet accepted"
+  - img "Campaign scene":
+    - generic "Stone Hall placed on the shared camera. Registration is not accepted."
+    - 'button "townhall: townhall level 1"'
+    - 'button "P01: barracks level 0"':
+      - generic: Barracks
+    - 'button "P02: empty plot level 0"'
+    - 'button "P03: empty plot level 0"'
+    - 'button "P04: empty plot level 0"'
+    - 'button "P05: empty plot level 0"'
+    - 'button "P06: empty plot level 0"'
+    - 'button "P07: empty plot level 0"'
+    - 'button "P08: empty plot level 0"'
+    - 'button "P09: empty plot level 0"'
+    - 'button "P10: empty plot level 0"'
+    - 'button "P11: empty plot level 0"'
+    - 'button "P12: empty plot level 0"'
+    - 'button "P13: empty plot level 0"'
+    - 'button "P14: empty plot level 0"'
+    - 'button "P15: empty plot level 0"'
+    - 'button "P16: empty plot level 0"'
+    - 'button "P17: empty plot level 0"'
+  - button "Actions" [expanded]
+  - complementary:
+    - heading "Barracks · level 0" [level=2]
+    - button "Upgrade Barracks — 90 wood, 45 stone" [disabled]
+    - button "Upgrade Town Hall"
+    - button "Build Walls"
+    - button "Advance age"
+    - button "End day"
+    - button "Skip tutorial"
+    - alert: "Walls are level 0. Day 1, weather clear. Completed plots use measured opaque feet (MEASURED_NOT_OWNER_ACCEPTED). Stone Hall registration stays on its existing matrix. The contract is unchanged. Next: Build a Lumber Camp."
+  - navigation "Screens":
+    - button "Home"
+    - button "Kingdom"
+    - button "Adventure"
+    - button "Hero"
+    - button "Army"
+    - button "Forge"
+    - button "Market"
+    - button "Tactical"
+    - button "Defense"
+    - button "Story"
+    - button "War"
+    - button "Settings"
+    - button "Help"

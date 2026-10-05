@@ -1,0 +1,98 @@
+{
+  "version": "2.0-unique-attempt-reconciled-20261004",
+  "currency": "USD",
+  "policy": "EVIDENCE_BOUNDED_STANDARD_RATE_CEILING_WITH_OVERHEAD",
+  "status": "RECONCILED_LOCAL_EVIDENCE_UNIQUE_ATTEMPTS",
+  "invoicesStatus": "UNKNOWN",
+  "ratesUSDPerMillion": {
+    "inputPer1M": 0.5,
+    "imagePer1M": 60.0,
+    "textThinkingPer1M": 3.0,
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+  },
+  "scopeConstraints": {
+    "hardCapUSD": 80.0,
+    "targetAimUSD": 60.0,
+    "safetyReserveUSD": 15.0,
+    "headroomUnderHardCapUSD": 9.2988,
+    "invoicesStatus": "UNKNOWN",
+    "invoiceUnknownIsNotZero": true,
+    "releaseOfFundsAuthorized": false,
+    "newGenerationCallsAuthorized": false
+  },
+  "discrepancyAudit": {
+    "statedBaseUSD": 62.8496,
+    "previousComponentsSumUSD": 62.8346,
+    "differenceUSD": 0.015,
+    "rootCause": "In UNIFIED-ACCOUNTING-RECONCILIATION-2026-10-04.json line 25 and budget-ledger.json line 47, 'reconciledBatches01To17TotalUSD' was mistyped as 40.225 USD instead of the actual batches 01-17 sum of 40.240 USD. The difference 40.240 - 40.225 = 0.0150 USD explains the entire discrepancy. With the true sum of 40.240 USD + 5.6096 USD (4K buffers) + 2.0000 USD (mock) + 15.0000 USD (reserve), the base components sum exactly equals stated base 62.8496 USD."
+  },
+  "journalAudit": {
+    "journalRecordedTotalUSD": 7.564399,
+    "journalComponents": {
+      "uniqueSuccessesSumUSD": 7.420787,
+      "powderBarbarianHoldUSD": 0.143612,
+      "sumUSD": 7.564399
+    },
+    "doubleCountDetail": "interactive-2k-later73-journal.json totalCostUSD of 7.564399 USD already contains the 0.143612 USD hold for portrait-powder-barbarian (attempt 1 crash). When the previous report added journal 7.564399 USD plus additional ambiguous holds of 0.287224 USD (both barbarian and ranger), the barbarian hold was added twice."
+  },
+  "uniqueAttemptReconciliation": {
+    "categoryA_SuccessEstimate73USD": 7.4038655,
+    "categoryB_ConfirmedFailuresUSD": 0.0,
+    "categoryC_RetainedUnknownLiabilitiesUSD": 0.287224,
+    "categoryD_Batches01To17TotalUSD": 40.24,
+    "categoryE_Buffers4KTotalUSD": 5.6096,
+    "categoryF_HistoricalMockReservationUSD": 2.0,
+    "categoryG_SafetyReserveProtectedUSD": 15.0,
+    "conservativeCeilingBufferUSD": 0.1605105,
+    "totalCommittedProtectedExposureUSD": 70.7012
+  },
+  "baseBreakdown": {
+    "batches01To17ActualUSD": 40.24,
+    "historicalMockReservationUSD": 2.0,
+    "safetyReserveUSD": 15.0,
+    "buffers4K": {
+      "reconciledInteractive4KRun01BufferUSD": 2.1037,
+      "reconciledInteractive4KRun02BufferUSD": 0.7013,
+      "reconciledInteractive4KRun03BufferUSD": 0.1753,
+      "reconciledInteractive4KRun04BufferUSD": 0.8765,
+      "reconciledInteractive4KTacticalRetryBufferUSD": 0.3506,
+      "reconciledInteractive4KKingdomBufferUSD": 1.4022
+    },
+    "totalBaseUSD": 62.8496
+  },
+  "later73Tokens": {
+    "inputTokens": 89149,
+    "imageTokens": 122640,
+    "textTokens": 297,
+    "thinkingTokens": 0,
+    "totalTokens": 212086
+  },
+  "later73UnknownLiabilities": [
+    {
+      "itemId": "portrait-powder-barbarian",
+      "attempt": 1,
+      "status": "UNKNOWN_CRASH_DURING_DISPATCH",
+      "recordedAt": "2026-10-04T04:32:29.047344+00:00",
+      "bodySHA256": "4803017d3eea6a33c74f71fc629c0cec48d251072d5306223aa66f62dcdec00a",
+      "liabilityUSD": 0.143612,
+      "cloudGeneration": "1791087926598788",
+      "reason": "Process PID 29872 terminated during dispatch; execution/billing unverified"
+    },
+    {
+      "itemId": "rig-source-parts-ranger",
+      "attempt": 1,
+      "status": "UNKNOWN",
+      "recordedAt": "2026-10-04T05:58:05Z",
+      "bodySHA256": "7a3b3f3a6673eb17829d33dc15e713f75c6bc2c8b011a3f13219f435ffc65dfb",
+      "liabilityUSD": 0.143612,
+      "reason": "The read operation timed out; execution/billing unverified"
+    }
+  ],
+  "accountingRulesEnforced": [
+    "Zero fund release authorized; apparent headroom remains protected and unspent",
+    "Provider invoices and billing transactions remain UNKNOWN",
+    "Later retry success does NOT prove whether earlier crash/timeout was billed; full liability retained",
+    "Aim $60 / Hard $80 / Protected $15 reserve persist untouched",
+    "NO paid calls, repurchase, fallback, supplemental/filler/retry/regeneration authorized"
+  ]
+}

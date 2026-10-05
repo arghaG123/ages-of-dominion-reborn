@@ -1,0 +1,51 @@
+{
+  "scope": "NEW QA paths only; all HTTP/token subprocesses forbidden; cloud disabled",
+  "rows": [
+    {
+      "probe": "delayed contender after first verification",
+      "contenders": [
+        {
+          "contender": 0,
+          "acquired": true
+        },
+        {
+          "contender": 1,
+          "acquired": true
+        }
+      ],
+      "exclusive": false
+    },
+    {
+      "probe": "dead PID UNKNOWN",
+      "blocked": true
+    },
+    {
+      "probe": "UNKNOWN release denied",
+      "result": {
+        "status": "UNKNOWN_RETAINED_LIABILITY",
+        "itemId": "offline-unknown",
+        "costUSD": 0.143612,
+        "unresolved": true
+      },
+      "blocked": true
+    },
+    {
+      "probe": "reuse response/body/output binding",
+      "result": {
+        "status": "REUSED_EXISTING_SUCCESS",
+        "itemId": "offline-corrupt-reuse",
+        "dimensions": [
+          2048,
+          2048
+        ],
+        "sha256": "56891a2aac3412918891d0e9067cfc7cc39e9ead6cf5f5619d2e25a52063052b",
+        "costUSD": 0.0
+      },
+      "rejectsUnboundOutput": false
+    },
+    {
+      "probe": "subattempt append-only collision",
+      "priorBytesPreserved": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Regenerable/local-only exclusions from the project ZIP (recreate from source and verify):
+
+- `.git/` (transport history separately as a Git bundle or clone; dirty/untracked files are in the ZIP manifest)
+- `node_modules/`
+- `dist/`
+- `android/.gradle/`, `android/**/build/`, `android/app/src/main/assets/` (generated package inputs)
+- Python `__pycache__/` directories and `*.pyc`
+- `android/local.properties`
+- `key.properties`, `*.jks`, `*.keystore`, `google-services.json`, `.env`, `.env.*`
+- OS/editor temporary files if found (`Thumbs.db`, `.DS_Store`, editor swap files)
+
+Do not exclude `assets/`, `qa/`, `design-preview/`, `docs/`, `docs/plan/image-production/`, runner scripts, source manifests, raw/provider responses, rejection history or current lock/ledger/pacing state. These contain provenance, technical state or current continuity. The source tree is 7.9 GB assets + 1.7 GB QA + 123 MB design previews before compression; transfer capacity must be confirmed. The exclusion policy is not permission to delete local copies or alter Git tracking.

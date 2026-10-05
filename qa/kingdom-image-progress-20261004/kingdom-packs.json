@@ -1,0 +1,1488 @@
+[
+  {
+    "id": "kingdom-terrain-stone",
+    "pack": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-stone",
+    "source": "assets/production/production-01-20261003/images/01-kingdom-terrain-stone.png",
+    "sourceSHA": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1",
+    "sourceHashMatchesValidation": true,
+    "files": {
+      "base.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-stone/base.png",
+        "sha256": "f3ca3384753ab99900270a5a9e6cda191ce1c95ae7eb9a5690e6c747056b72d8",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "geometry.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-stone/geometry.json",
+        "sha256": "eb96bb6585694bf27db13835445377a3f0baa7bd00cf1154c9c4797a75ba65c7"
+      },
+      "guide.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-stone/guide.png",
+        "sha256": "ec2d43ccebb33719adebf2fc18db9943df858a56ec49ef4f27d5dc07e2c0f1c1",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_change.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-stone/mask_change.png",
+        "sha256": "84fbc5f5c35a8745ce1412580c689db25b5f29bd595151a17979e9a839f8c92c",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_keep.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-stone/mask_keep.png",
+        "sha256": "0ec6d7eeccb9633a97a20e44e5690cfb4c3658c1140a91f06aed22e4f91ab083",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "validation.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-stone/validation.json",
+        "sha256": "2019f127f0cdf59f8c1b3972187c803d88815b6a67409c060d7e21a44deeb594"
+      }
+    },
+    "geometryMatchesActiveContract": true,
+    "savedDisposition": "DEFERRED_PHYSICAL_REGISTRATION_BLOCKER",
+    "savedPhysicalBlockers": {
+      "hallScaleDisparity": {
+        "activeContractScale": 0.1312,
+        "framingVisualScale": 0.34,
+        "contractTownhallRectWorld": [
+          5,
+          0,
+          3,
+          1.5
+        ],
+        "contractTownhallProjectedSource": [
+          [
+            470,
+            115
+          ],
+          [
+            650,
+            85
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "hallV3SpriteDimensions": [
+          1024,
+          1024
+        ],
+        "hallV3SpriteSourceRect": [
+          402.0,
+          40.0,
+          749.82,
+          372.52
+        ],
+        "defectDescription": "Active contract scale 0.1312 causes severe shrinking of Town Hall compared to 1024px sprite framing (0.34) and surrounding civic structures."
+      },
+      "thresholdDiscontinuity": {
+        "entranceCobbleSource": [
+          640.0,
+          291.26
+        ],
+        "roadStartSource": [
+          644.6,
+          297.4
+        ],
+        "discontinuityPixels": 7.67,
+        "defectDescription": "7.67px spatial gap between Hall entrance threshold cobble and spine road corridor origin."
+      },
+      "maturePadOverlaps": {
+        "pairwiseRectangleOverlaps": 14,
+        "blockingDoorCoverages": 12,
+        "blockingPairs": [
+          {
+            "nearer": "P10",
+            "farther": "P09",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P06",
+            "farther": "P05",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P11",
+            "farther": "P10",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P02",
+            "farther": "P01",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P07",
+            "farther": "P06",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P11",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P07",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P03",
+            "farther": "P02",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P12",
+            "farther": "P08",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P17",
+            "farther": "P15",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P04",
+            "farther": "P03",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P16",
+            "farther": "P13",
+            "defect": "Nearer building body covers farther door"
+          }
+        ]
+      },
+      "viewportCollisions": {
+        "tabletP11": "P11 extends 19.34 source pixels beyond the panel left edge on tablet viewport (1180x820)."
+      }
+    },
+    "candidateSources": [
+      {
+        "batch": "production-01-20261003",
+        "id": "kingdom-terrain-stone",
+        "file": "assets/production/production-01-20261003/images/01-kingdom-terrain-stone.png",
+        "sha256": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1",
+        "promptSHA256": "b0e812d6629f85e2aa8765add163819ce85c530dbc03705d7e582f004672dbc3"
+      },
+      {
+        "batch": "production-03-20261003",
+        "id": "kingdom-terrain-stone",
+        "file": "assets/production/production-03-20261003/images/01-kingdom-terrain-stone.png",
+        "sha256": "5fcdb893fd7f2567f435742368cfa5fa093cbbbbe2b49a17f9f850d306b7de70",
+        "promptSHA256": "99455638bf426a7e4a3848cd90c4080cea57ce4d722b7fb52188adb03c0cb2cf"
+      }
+    ],
+    "masksComplementary": true,
+    "changeMaskWhitePixels": 89178
+  },
+  {
+    "id": "kingdom-terrain-bronze",
+    "pack": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-bronze",
+    "source": "assets/production/production-01-20261003/images/02-kingdom-terrain-bronze.png",
+    "sourceSHA": "49f13640f0d3f1b44769606ae541e8f67bd34d861dc0052e6bd69af7342230c1",
+    "sourceHashMatchesValidation": true,
+    "files": {
+      "base.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-bronze/base.png",
+        "sha256": "8fe4bc1500dabe6d573a78b738741f5082ed91e0b6d3275361ad6241789f69e9",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "geometry.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-bronze/geometry.json",
+        "sha256": "eb96bb6585694bf27db13835445377a3f0baa7bd00cf1154c9c4797a75ba65c7"
+      },
+      "guide.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-bronze/guide.png",
+        "sha256": "ec2d43ccebb33719adebf2fc18db9943df858a56ec49ef4f27d5dc07e2c0f1c1",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_change.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-bronze/mask_change.png",
+        "sha256": "84fbc5f5c35a8745ce1412580c689db25b5f29bd595151a17979e9a839f8c92c",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_keep.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-bronze/mask_keep.png",
+        "sha256": "0ec6d7eeccb9633a97a20e44e5690cfb4c3658c1140a91f06aed22e4f91ab083",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "validation.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-bronze/validation.json",
+        "sha256": "17bd970390a88f97cc6ea99be504ed6269c11b66b8ea2d7cb94869d89316a19a"
+      }
+    },
+    "geometryMatchesActiveContract": true,
+    "savedDisposition": "DEFERRED_PHYSICAL_REGISTRATION_BLOCKER",
+    "savedPhysicalBlockers": {
+      "hallScaleDisparity": {
+        "activeContractScale": 0.1312,
+        "framingVisualScale": 0.34,
+        "contractTownhallRectWorld": [
+          5,
+          0,
+          3,
+          1.5
+        ],
+        "contractTownhallProjectedSource": [
+          [
+            470,
+            115
+          ],
+          [
+            650,
+            85
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "hallV3SpriteDimensions": [
+          1024,
+          1024
+        ],
+        "hallV3SpriteSourceRect": [
+          402.0,
+          40.0,
+          749.82,
+          372.52
+        ],
+        "defectDescription": "Active contract scale 0.1312 causes severe shrinking of Town Hall compared to 1024px sprite framing (0.34) and surrounding civic structures."
+      },
+      "thresholdDiscontinuity": {
+        "entranceCobbleSource": [
+          640.0,
+          291.26
+        ],
+        "roadStartSource": [
+          644.6,
+          297.4
+        ],
+        "discontinuityPixels": 7.67,
+        "defectDescription": "7.67px spatial gap between Hall entrance threshold cobble and spine road corridor origin."
+      },
+      "maturePadOverlaps": {
+        "pairwiseRectangleOverlaps": 14,
+        "blockingDoorCoverages": 12,
+        "blockingPairs": [
+          {
+            "nearer": "P10",
+            "farther": "P09",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P06",
+            "farther": "P05",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P11",
+            "farther": "P10",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P02",
+            "farther": "P01",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P07",
+            "farther": "P06",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P11",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P07",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P03",
+            "farther": "P02",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P12",
+            "farther": "P08",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P17",
+            "farther": "P15",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P04",
+            "farther": "P03",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P16",
+            "farther": "P13",
+            "defect": "Nearer building body covers farther door"
+          }
+        ]
+      },
+      "viewportCollisions": {
+        "tabletP11": "P11 extends 19.34 source pixels beyond the panel left edge on tablet viewport (1180x820)."
+      }
+    },
+    "candidateSources": [
+      {
+        "batch": "production-01-20261003",
+        "id": "kingdom-terrain-bronze",
+        "file": "assets/production/production-01-20261003/images/02-kingdom-terrain-bronze.png",
+        "sha256": "49f13640f0d3f1b44769606ae541e8f67bd34d861dc0052e6bd69af7342230c1",
+        "promptSHA256": "4d72ea514415743374b778629a13da4a4a1297749c5f3da78072aad0b9a14e9f"
+      }
+    ],
+    "masksComplementary": true,
+    "changeMaskWhitePixels": 89178
+  },
+  {
+    "id": "kingdom-terrain-iron",
+    "pack": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-iron",
+    "source": "assets/production/production-01-20261003/images/03-kingdom-terrain-iron.png",
+    "sourceSHA": "a05358dba5c543bdde5d17d0ad65aa59b24e8afc6705d95cadfd002436df8fb9",
+    "sourceHashMatchesValidation": true,
+    "files": {
+      "base.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-iron/base.png",
+        "sha256": "34d5afded320fb5c495c2952f235010ac03b60512879c30a2ca56c2b4e4f215a",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "geometry.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-iron/geometry.json",
+        "sha256": "eb96bb6585694bf27db13835445377a3f0baa7bd00cf1154c9c4797a75ba65c7"
+      },
+      "guide.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-iron/guide.png",
+        "sha256": "ec2d43ccebb33719adebf2fc18db9943df858a56ec49ef4f27d5dc07e2c0f1c1",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_change.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-iron/mask_change.png",
+        "sha256": "84fbc5f5c35a8745ce1412580c689db25b5f29bd595151a17979e9a839f8c92c",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_keep.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-iron/mask_keep.png",
+        "sha256": "0ec6d7eeccb9633a97a20e44e5690cfb4c3658c1140a91f06aed22e4f91ab083",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "validation.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-iron/validation.json",
+        "sha256": "2c10dab1e2f638a7ea92eb879790ab4f5b0493979b27ab2024bedc38cc7839cb"
+      }
+    },
+    "geometryMatchesActiveContract": true,
+    "savedDisposition": "DEFERRED_PHYSICAL_REGISTRATION_BLOCKER",
+    "savedPhysicalBlockers": {
+      "hallScaleDisparity": {
+        "activeContractScale": 0.1312,
+        "framingVisualScale": 0.34,
+        "contractTownhallRectWorld": [
+          5,
+          0,
+          3,
+          1.5
+        ],
+        "contractTownhallProjectedSource": [
+          [
+            470,
+            115
+          ],
+          [
+            650,
+            85
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "hallV3SpriteDimensions": [
+          1024,
+          1024
+        ],
+        "hallV3SpriteSourceRect": [
+          402.0,
+          40.0,
+          749.82,
+          372.52
+        ],
+        "defectDescription": "Active contract scale 0.1312 causes severe shrinking of Town Hall compared to 1024px sprite framing (0.34) and surrounding civic structures."
+      },
+      "thresholdDiscontinuity": {
+        "entranceCobbleSource": [
+          640.0,
+          291.26
+        ],
+        "roadStartSource": [
+          644.6,
+          297.4
+        ],
+        "discontinuityPixels": 7.67,
+        "defectDescription": "7.67px spatial gap between Hall entrance threshold cobble and spine road corridor origin."
+      },
+      "maturePadOverlaps": {
+        "pairwiseRectangleOverlaps": 14,
+        "blockingDoorCoverages": 12,
+        "blockingPairs": [
+          {
+            "nearer": "P10",
+            "farther": "P09",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P06",
+            "farther": "P05",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P11",
+            "farther": "P10",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P02",
+            "farther": "P01",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P07",
+            "farther": "P06",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P11",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P07",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P03",
+            "farther": "P02",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P12",
+            "farther": "P08",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P17",
+            "farther": "P15",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P04",
+            "farther": "P03",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P16",
+            "farther": "P13",
+            "defect": "Nearer building body covers farther door"
+          }
+        ]
+      },
+      "viewportCollisions": {
+        "tabletP11": "P11 extends 19.34 source pixels beyond the panel left edge on tablet viewport (1180x820)."
+      }
+    },
+    "candidateSources": [
+      {
+        "batch": "production-01-20261003",
+        "id": "kingdom-terrain-iron",
+        "file": "assets/production/production-01-20261003/images/03-kingdom-terrain-iron.png",
+        "sha256": "a05358dba5c543bdde5d17d0ad65aa59b24e8afc6705d95cadfd002436df8fb9",
+        "promptSHA256": "d1f0cbb3bc432a7901fc3a15059d11cc4a93e104c95bdb222bcf7c99f167df8f"
+      }
+    ],
+    "masksComplementary": true,
+    "changeMaskWhitePixels": 89178
+  },
+  {
+    "id": "kingdom-terrain-medieval",
+    "pack": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-medieval",
+    "source": "assets/production/production-01-20261003/images/04-kingdom-terrain-medieval.png",
+    "sourceSHA": "3eea9e8d20e1f4648f95eec2ae735079b36287a976a6b4f25ae94be4f48b7453",
+    "sourceHashMatchesValidation": true,
+    "files": {
+      "base.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-medieval/base.png",
+        "sha256": "dc5e752b0ab53d78de69c09541eeb2cf30cc42c8179f8fe2476851983ba050f0",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "geometry.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-medieval/geometry.json",
+        "sha256": "eb96bb6585694bf27db13835445377a3f0baa7bd00cf1154c9c4797a75ba65c7"
+      },
+      "guide.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-medieval/guide.png",
+        "sha256": "ec2d43ccebb33719adebf2fc18db9943df858a56ec49ef4f27d5dc07e2c0f1c1",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_change.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-medieval/mask_change.png",
+        "sha256": "84fbc5f5c35a8745ce1412580c689db25b5f29bd595151a17979e9a839f8c92c",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_keep.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-medieval/mask_keep.png",
+        "sha256": "0ec6d7eeccb9633a97a20e44e5690cfb4c3658c1140a91f06aed22e4f91ab083",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "validation.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-medieval/validation.json",
+        "sha256": "6f539b9eee141aebd4e6ec5b608c3e0522feee25b757244c083189d4c4021292"
+      }
+    },
+    "geometryMatchesActiveContract": true,
+    "savedDisposition": "DEFERRED_PHYSICAL_REGISTRATION_BLOCKER",
+    "savedPhysicalBlockers": {
+      "hallScaleDisparity": {
+        "activeContractScale": 0.1312,
+        "framingVisualScale": 0.34,
+        "contractTownhallRectWorld": [
+          5,
+          0,
+          3,
+          1.5
+        ],
+        "contractTownhallProjectedSource": [
+          [
+            470,
+            115
+          ],
+          [
+            650,
+            85
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "hallV3SpriteDimensions": [
+          1024,
+          1024
+        ],
+        "hallV3SpriteSourceRect": [
+          402.0,
+          40.0,
+          749.82,
+          372.52
+        ],
+        "defectDescription": "Active contract scale 0.1312 causes severe shrinking of Town Hall compared to 1024px sprite framing (0.34) and surrounding civic structures."
+      },
+      "thresholdDiscontinuity": {
+        "entranceCobbleSource": [
+          640.0,
+          291.26
+        ],
+        "roadStartSource": [
+          644.6,
+          297.4
+        ],
+        "discontinuityPixels": 7.67,
+        "defectDescription": "7.67px spatial gap between Hall entrance threshold cobble and spine road corridor origin."
+      },
+      "maturePadOverlaps": {
+        "pairwiseRectangleOverlaps": 14,
+        "blockingDoorCoverages": 12,
+        "blockingPairs": [
+          {
+            "nearer": "P10",
+            "farther": "P09",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P06",
+            "farther": "P05",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P11",
+            "farther": "P10",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P02",
+            "farther": "P01",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P07",
+            "farther": "P06",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P11",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P07",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P03",
+            "farther": "P02",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P12",
+            "farther": "P08",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P17",
+            "farther": "P15",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P04",
+            "farther": "P03",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P16",
+            "farther": "P13",
+            "defect": "Nearer building body covers farther door"
+          }
+        ]
+      },
+      "viewportCollisions": {
+        "tabletP11": "P11 extends 19.34 source pixels beyond the panel left edge on tablet viewport (1180x820)."
+      }
+    },
+    "candidateSources": [
+      {
+        "batch": "production-01-20261003",
+        "id": "kingdom-terrain-medieval",
+        "file": "assets/production/production-01-20261003/images/04-kingdom-terrain-medieval.png",
+        "sha256": "3eea9e8d20e1f4648f95eec2ae735079b36287a976a6b4f25ae94be4f48b7453",
+        "promptSHA256": "03867c7ee0c0e4de64d575f8c4634b1023c0a905fe7759f14ff44a56daa43f82"
+      },
+      {
+        "batch": "production-03-20261003",
+        "id": "kingdom-terrain-medieval",
+        "file": "assets/production/production-03-20261003/images/02-kingdom-terrain-medieval.png",
+        "sha256": "7c6122a97b842a45d8fb6ce7477df48e07d24046f3c8ce6878647cf2a1daa152",
+        "promptSHA256": "152d5a59f062724fc765d233684d03c68e706fbee0e5bb64473c19dd6bdccca6"
+      }
+    ],
+    "masksComplementary": true,
+    "changeMaskWhitePixels": 89178
+  },
+  {
+    "id": "kingdom-terrain-gunpowder",
+    "pack": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-gunpowder",
+    "source": "assets/production/production-01-20261003/images/05-kingdom-terrain-gunpowder.png",
+    "sourceSHA": "9aec2f273a388c3061d9c1237be4590d678c34c7962c366c7944db38c6228879",
+    "sourceHashMatchesValidation": true,
+    "files": {
+      "base.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-gunpowder/base.png",
+        "sha256": "8db8eaead6ff402978acdac5824020704345e785461bc90424d0c25352566239",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "geometry.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-gunpowder/geometry.json",
+        "sha256": "eb96bb6585694bf27db13835445377a3f0baa7bd00cf1154c9c4797a75ba65c7"
+      },
+      "guide.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-gunpowder/guide.png",
+        "sha256": "ec2d43ccebb33719adebf2fc18db9943df858a56ec49ef4f27d5dc07e2c0f1c1",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_change.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-gunpowder/mask_change.png",
+        "sha256": "84fbc5f5c35a8745ce1412580c689db25b5f29bd595151a17979e9a839f8c92c",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_keep.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-gunpowder/mask_keep.png",
+        "sha256": "0ec6d7eeccb9633a97a20e44e5690cfb4c3658c1140a91f06aed22e4f91ab083",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "validation.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-gunpowder/validation.json",
+        "sha256": "db4737111e351061f127771231aa87d222f94708c3859be4351f6ab946765b9e"
+      }
+    },
+    "geometryMatchesActiveContract": true,
+    "savedDisposition": "DEFERRED_PHYSICAL_REGISTRATION_BLOCKER",
+    "savedPhysicalBlockers": {
+      "hallScaleDisparity": {
+        "activeContractScale": 0.1312,
+        "framingVisualScale": 0.34,
+        "contractTownhallRectWorld": [
+          5,
+          0,
+          3,
+          1.5
+        ],
+        "contractTownhallProjectedSource": [
+          [
+            470,
+            115
+          ],
+          [
+            650,
+            85
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "hallV3SpriteDimensions": [
+          1024,
+          1024
+        ],
+        "hallV3SpriteSourceRect": [
+          402.0,
+          40.0,
+          749.82,
+          372.52
+        ],
+        "defectDescription": "Active contract scale 0.1312 causes severe shrinking of Town Hall compared to 1024px sprite framing (0.34) and surrounding civic structures."
+      },
+      "thresholdDiscontinuity": {
+        "entranceCobbleSource": [
+          640.0,
+          291.26
+        ],
+        "roadStartSource": [
+          644.6,
+          297.4
+        ],
+        "discontinuityPixels": 7.67,
+        "defectDescription": "7.67px spatial gap between Hall entrance threshold cobble and spine road corridor origin."
+      },
+      "maturePadOverlaps": {
+        "pairwiseRectangleOverlaps": 14,
+        "blockingDoorCoverages": 12,
+        "blockingPairs": [
+          {
+            "nearer": "P10",
+            "farther": "P09",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P06",
+            "farther": "P05",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P11",
+            "farther": "P10",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P02",
+            "farther": "P01",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P07",
+            "farther": "P06",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P11",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P07",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P03",
+            "farther": "P02",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P12",
+            "farther": "P08",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P17",
+            "farther": "P15",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P04",
+            "farther": "P03",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P16",
+            "farther": "P13",
+            "defect": "Nearer building body covers farther door"
+          }
+        ]
+      },
+      "viewportCollisions": {
+        "tabletP11": "P11 extends 19.34 source pixels beyond the panel left edge on tablet viewport (1180x820)."
+      }
+    },
+    "candidateSources": [
+      {
+        "batch": "production-01-20261003",
+        "id": "kingdom-terrain-gunpowder",
+        "file": "assets/production/production-01-20261003/images/05-kingdom-terrain-gunpowder.png",
+        "sha256": "9aec2f273a388c3061d9c1237be4590d678c34c7962c366c7944db38c6228879",
+        "promptSHA256": "d3978281ce00f32166c4914f9f7207edfd79a65d093c05ebfe4884cf36a90911"
+      }
+    ],
+    "masksComplementary": true,
+    "changeMaskWhitePixels": 89178
+  },
+  {
+    "id": "kingdom-terrain-industrial",
+    "pack": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-industrial",
+    "source": "assets/production/production-01-20261003/images/06-kingdom-terrain-industrial.png",
+    "sourceSHA": "85440ec67f04e90b144f1f6ecc281fc1b898b584c38deec0b8e512e7f2d512d6",
+    "sourceHashMatchesValidation": true,
+    "files": {
+      "base.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-industrial/base.png",
+        "sha256": "6f7125003a4695976a31ac75b93809eb09f69134a14042fe95aba0bea971a6fe",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "geometry.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-industrial/geometry.json",
+        "sha256": "eb96bb6585694bf27db13835445377a3f0baa7bd00cf1154c9c4797a75ba65c7"
+      },
+      "guide.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-industrial/guide.png",
+        "sha256": "ec2d43ccebb33719adebf2fc18db9943df858a56ec49ef4f27d5dc07e2c0f1c1",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_change.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-industrial/mask_change.png",
+        "sha256": "84fbc5f5c35a8745ce1412580c689db25b5f29bd595151a17979e9a839f8c92c",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_keep.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-industrial/mask_keep.png",
+        "sha256": "0ec6d7eeccb9633a97a20e44e5690cfb4c3658c1140a91f06aed22e4f91ab083",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "validation.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-industrial/validation.json",
+        "sha256": "e5ea6021e5abe7218dab66e38fcb4f924fa7ffc027c6214b8280e6519c8c9446"
+      }
+    },
+    "geometryMatchesActiveContract": true,
+    "savedDisposition": "DEFERRED_PHYSICAL_REGISTRATION_BLOCKER",
+    "savedPhysicalBlockers": {
+      "hallScaleDisparity": {
+        "activeContractScale": 0.1312,
+        "framingVisualScale": 0.34,
+        "contractTownhallRectWorld": [
+          5,
+          0,
+          3,
+          1.5
+        ],
+        "contractTownhallProjectedSource": [
+          [
+            470,
+            115
+          ],
+          [
+            650,
+            85
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "hallV3SpriteDimensions": [
+          1024,
+          1024
+        ],
+        "hallV3SpriteSourceRect": [
+          402.0,
+          40.0,
+          749.82,
+          372.52
+        ],
+        "defectDescription": "Active contract scale 0.1312 causes severe shrinking of Town Hall compared to 1024px sprite framing (0.34) and surrounding civic structures."
+      },
+      "thresholdDiscontinuity": {
+        "entranceCobbleSource": [
+          640.0,
+          291.26
+        ],
+        "roadStartSource": [
+          644.6,
+          297.4
+        ],
+        "discontinuityPixels": 7.67,
+        "defectDescription": "7.67px spatial gap between Hall entrance threshold cobble and spine road corridor origin."
+      },
+      "maturePadOverlaps": {
+        "pairwiseRectangleOverlaps": 14,
+        "blockingDoorCoverages": 12,
+        "blockingPairs": [
+          {
+            "nearer": "P10",
+            "farther": "P09",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P06",
+            "farther": "P05",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P11",
+            "farther": "P10",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P02",
+            "farther": "P01",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P07",
+            "farther": "P06",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P11",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P07",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P03",
+            "farther": "P02",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P12",
+            "farther": "P08",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P17",
+            "farther": "P15",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P04",
+            "farther": "P03",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P16",
+            "farther": "P13",
+            "defect": "Nearer building body covers farther door"
+          }
+        ]
+      },
+      "viewportCollisions": {
+        "tabletP11": "P11 extends 19.34 source pixels beyond the panel left edge on tablet viewport (1180x820)."
+      }
+    },
+    "candidateSources": [
+      {
+        "batch": "production-01-20261003",
+        "id": "kingdom-terrain-industrial",
+        "file": "assets/production/production-01-20261003/images/06-kingdom-terrain-industrial.png",
+        "sha256": "85440ec67f04e90b144f1f6ecc281fc1b898b584c38deec0b8e512e7f2d512d6",
+        "promptSHA256": "f8c115facffd79659e1e170c75e03ed9ee87731e4a1227a1264c552faab98ccf"
+      }
+    ],
+    "masksComplementary": true,
+    "changeMaskWhitePixels": 89178
+  },
+  {
+    "id": "kingdom-terrain-modern",
+    "pack": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-modern",
+    "source": "assets/production/production-01-20261003/images/07-kingdom-terrain-modern.png",
+    "sourceSHA": "c53704f6a8cb8e6586d0fe0c26b5e9af172f9d3d8cba6489affe2c1fae5cc926",
+    "sourceHashMatchesValidation": true,
+    "files": {
+      "base.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-modern/base.png",
+        "sha256": "080482f6dacbf231c7e1dc7b191e120d9522a8eac4b43dd1f0e6530a615f5103",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "geometry.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-modern/geometry.json",
+        "sha256": "eb96bb6585694bf27db13835445377a3f0baa7bd00cf1154c9c4797a75ba65c7"
+      },
+      "guide.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-modern/guide.png",
+        "sha256": "ec2d43ccebb33719adebf2fc18db9943df858a56ec49ef4f27d5dc07e2c0f1c1",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_change.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-modern/mask_change.png",
+        "sha256": "84fbc5f5c35a8745ce1412580c689db25b5f29bd595151a17979e9a839f8c92c",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_keep.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-modern/mask_keep.png",
+        "sha256": "0ec6d7eeccb9633a97a20e44e5690cfb4c3658c1140a91f06aed22e4f91ab083",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "validation.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-modern/validation.json",
+        "sha256": "3b7f0b8a4a8855fb552392add181d0b0bcbd2aa4251b2960109b82cd161e31cb"
+      }
+    },
+    "geometryMatchesActiveContract": true,
+    "savedDisposition": "DEFERRED_PHYSICAL_REGISTRATION_BLOCKER",
+    "savedPhysicalBlockers": {
+      "hallScaleDisparity": {
+        "activeContractScale": 0.1312,
+        "framingVisualScale": 0.34,
+        "contractTownhallRectWorld": [
+          5,
+          0,
+          3,
+          1.5
+        ],
+        "contractTownhallProjectedSource": [
+          [
+            470,
+            115
+          ],
+          [
+            650,
+            85
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "hallV3SpriteDimensions": [
+          1024,
+          1024
+        ],
+        "hallV3SpriteSourceRect": [
+          402.0,
+          40.0,
+          749.82,
+          372.52
+        ],
+        "defectDescription": "Active contract scale 0.1312 causes severe shrinking of Town Hall compared to 1024px sprite framing (0.34) and surrounding civic structures."
+      },
+      "thresholdDiscontinuity": {
+        "entranceCobbleSource": [
+          640.0,
+          291.26
+        ],
+        "roadStartSource": [
+          644.6,
+          297.4
+        ],
+        "discontinuityPixels": 7.67,
+        "defectDescription": "7.67px spatial gap between Hall entrance threshold cobble and spine road corridor origin."
+      },
+      "maturePadOverlaps": {
+        "pairwiseRectangleOverlaps": 14,
+        "blockingDoorCoverages": 12,
+        "blockingPairs": [
+          {
+            "nearer": "P10",
+            "farther": "P09",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P06",
+            "farther": "P05",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P11",
+            "farther": "P10",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P02",
+            "farther": "P01",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P07",
+            "farther": "P06",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P11",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P07",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P03",
+            "farther": "P02",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P12",
+            "farther": "P08",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P17",
+            "farther": "P15",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P04",
+            "farther": "P03",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P16",
+            "farther": "P13",
+            "defect": "Nearer building body covers farther door"
+          }
+        ]
+      },
+      "viewportCollisions": {
+        "tabletP11": "P11 extends 19.34 source pixels beyond the panel left edge on tablet viewport (1180x820)."
+      }
+    },
+    "candidateSources": [
+      {
+        "batch": "production-01-20261003",
+        "id": "kingdom-terrain-modern",
+        "file": "assets/production/production-01-20261003/images/07-kingdom-terrain-modern.png",
+        "sha256": "c53704f6a8cb8e6586d0fe0c26b5e9af172f9d3d8cba6489affe2c1fae5cc926",
+        "promptSHA256": "4b42f875b8bf809a8212aca6e8a0810ef8d80f54b11e2fca6c2eb77918a64623"
+      }
+    ],
+    "masksComplementary": true,
+    "changeMaskWhitePixels": 89178
+  },
+  {
+    "id": "kingdom-terrain-future",
+    "pack": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-future",
+    "source": "assets/production/production-01-20261003/images/08-kingdom-terrain-future.png",
+    "sourceSHA": "df5e35eeca4df63ec2fd636dfe4d7522b6a33f805ff7c4e84aee321423f6fd8d",
+    "sourceHashMatchesValidation": true,
+    "files": {
+      "base.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-future/base.png",
+        "sha256": "b69a16f1e1921c0ab341db51feb9e121090e5096025aca7a80d99656f8e72db6",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "geometry.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-future/geometry.json",
+        "sha256": "eb96bb6585694bf27db13835445377a3f0baa7bd00cf1154c9c4797a75ba65c7"
+      },
+      "guide.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-future/guide.png",
+        "sha256": "ec2d43ccebb33719adebf2fc18db9943df858a56ec49ef4f27d5dc07e2c0f1c1",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_change.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-future/mask_change.png",
+        "sha256": "84fbc5f5c35a8745ce1412580c689db25b5f29bd595151a17979e9a839f8c92c",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "mask_keep.png": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-future/mask_keep.png",
+        "sha256": "0ec6d7eeccb9633a97a20e44e5690cfb4c3658c1140a91f06aed22e4f91ab083",
+        "dimensions": [
+          1376,
+          768
+        ]
+      },
+      "validation.json": {
+        "file": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/kingdom-terrain-future/validation.json",
+        "sha256": "4ecb4b069cc1d6ce6189f67e43c7992a1a8ed30014aecbe8a37bb1b2ea7a76eb"
+      }
+    },
+    "geometryMatchesActiveContract": true,
+    "savedDisposition": "DEFERRED_PHYSICAL_REGISTRATION_BLOCKER",
+    "savedPhysicalBlockers": {
+      "hallScaleDisparity": {
+        "activeContractScale": 0.1312,
+        "framingVisualScale": 0.34,
+        "contractTownhallRectWorld": [
+          5,
+          0,
+          3,
+          1.5
+        ],
+        "contractTownhallProjectedSource": [
+          [
+            470,
+            115
+          ],
+          [
+            650,
+            85
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "hallV3SpriteDimensions": [
+          1024,
+          1024
+        ],
+        "hallV3SpriteSourceRect": [
+          402.0,
+          40.0,
+          749.82,
+          372.52
+        ],
+        "defectDescription": "Active contract scale 0.1312 causes severe shrinking of Town Hall compared to 1024px sprite framing (0.34) and surrounding civic structures."
+      },
+      "thresholdDiscontinuity": {
+        "entranceCobbleSource": [
+          640.0,
+          291.26
+        ],
+        "roadStartSource": [
+          644.6,
+          297.4
+        ],
+        "discontinuityPixels": 7.67,
+        "defectDescription": "7.67px spatial gap between Hall entrance threshold cobble and spine road corridor origin."
+      },
+      "maturePadOverlaps": {
+        "pairwiseRectangleOverlaps": 14,
+        "blockingDoorCoverages": 12,
+        "blockingPairs": [
+          {
+            "nearer": "P10",
+            "farther": "P09",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P06",
+            "farther": "P05",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P11",
+            "farther": "P10",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P02",
+            "farther": "P01",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P07",
+            "farther": "P06",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P11",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P08",
+            "farther": "P07",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P03",
+            "farther": "P02",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P12",
+            "farther": "P08",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P17",
+            "farther": "P15",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P04",
+            "farther": "P03",
+            "defect": "Nearer building body covers farther door"
+          },
+          {
+            "nearer": "P16",
+            "farther": "P13",
+            "defect": "Nearer building body covers farther door"
+          }
+        ]
+      },
+      "viewportCollisions": {
+        "tabletP11": "P11 extends 19.34 source pixels beyond the panel left edge on tablet viewport (1180x820)."
+      }
+    },
+    "candidateSources": [
+      {
+        "batch": "production-01-20261003",
+        "id": "kingdom-terrain-future",
+        "file": "assets/production/production-01-20261003/images/08-kingdom-terrain-future.png",
+        "sha256": "df5e35eeca4df63ec2fd636dfe4d7522b6a33f805ff7c4e84aee321423f6fd8d",
+        "promptSHA256": "8003f48f37557be8b9fca50ccf4fc54ba4f90706ac856dfd5681f44e2f6b9508"
+      }
+    ],
+    "masksComplementary": true,
+    "changeMaskWhitePixels": 89178
+  }
+]

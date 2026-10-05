@@ -1,0 +1,308 @@
+{
+  "at": "2026-10-04T04:02:47.081Z",
+  "scope": "Core command journey, accelerated construction only. Actual legal paths/fog/guards/Auto/settle/reload. No resource, combat-stat, position or clear-flag fixtures. Browser/manual tactical/eight-age/owner/device scope separate.",
+  "rows": [
+    {
+      "label": "entered-fog",
+      "revision": 10,
+      "visited": [
+        "8,8"
+      ],
+      "resolved": []
+    },
+    {
+      "label": "natural-guard-12,4",
+      "revision": 19,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4"
+      ],
+      "resolved": [],
+      "encounter": "guard-12,4"
+    },
+    {
+      "label": "tactical-before-auto",
+      "revision": 20,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4"
+      ],
+      "resolved": [],
+      "encounter": "guard-12,4"
+    },
+    {
+      "label": "combat-12,4",
+      "status": "RESOLVED",
+      "outcome": {
+        "winner": "p",
+        "practice": "campaign",
+        "reward": true
+      },
+      "startingGold": 100
+    },
+    {
+      "label": "pending-result",
+      "revision": 21,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4"
+      ],
+      "resolved": [],
+      "encounter": "guard-12,4"
+    },
+    {
+      "label": "settled-12,4",
+      "gold": 250,
+      "goldDelta": 150,
+      "sameIdempotent": true,
+      "newIdRejected": true,
+      "army": [
+        {
+          "type": "melee",
+          "count": 13
+        },
+        {
+          "type": "ranged",
+          "count": 1
+        }
+      ],
+      "guardResolved": true,
+      "pending": null
+    },
+    {
+      "label": "settled-reload",
+      "revision": 22,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4"
+      ],
+      "resolved": [
+        "12,4"
+      ]
+    },
+    {
+      "label": "natural-guard-10,5",
+      "revision": 26,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4",
+        "12,5",
+        "11,5",
+        "10,5"
+      ],
+      "resolved": [
+        "12,4"
+      ],
+      "encounter": "guard-10,5"
+    },
+    {
+      "label": "tactical-before-auto",
+      "revision": 27,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4",
+        "12,5",
+        "11,5",
+        "10,5"
+      ],
+      "resolved": [
+        "12,4"
+      ],
+      "encounter": "guard-10,5"
+    },
+    {
+      "label": "combat-10,5",
+      "status": "RESOLVED",
+      "outcome": {
+        "winner": "p",
+        "practice": "campaign",
+        "reward": true
+      },
+      "startingGold": 250
+    },
+    {
+      "label": "pending-result",
+      "revision": 28,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4",
+        "12,5",
+        "11,5",
+        "10,5"
+      ],
+      "resolved": [
+        "12,4"
+      ],
+      "encounter": "guard-10,5"
+    },
+    {
+      "label": "settled-10,5",
+      "gold": 400,
+      "goldDelta": 150,
+      "sameIdempotent": true,
+      "newIdRejected": true,
+      "army": [
+        {
+          "type": "melee",
+          "count": 9
+        }
+      ],
+      "guardResolved": true,
+      "pending": null
+    },
+    {
+      "label": "settled-reload",
+      "revision": 29,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4",
+        "12,5",
+        "11,5",
+        "10,5"
+      ],
+      "resolved": [
+        "12,4",
+        "10,5"
+      ]
+    },
+    {
+      "label": "returned-town",
+      "revision": 33,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4",
+        "12,5",
+        "11,5",
+        "10,5"
+      ],
+      "resolved": [
+        "12,4",
+        "10,5"
+      ]
+    },
+    {
+      "label": "home-return",
+      "atTown": true,
+      "position": [
+        8,
+        4
+      ],
+      "inventory": [
+        {
+          "id": "loot-21-0-weapon",
+          "kind": "gear",
+          "slot": "weapon",
+          "age": 0,
+          "quality": 1
+        },
+        {
+          "id": "loot-28-0-armor",
+          "kind": "gear",
+          "slot": "armor",
+          "age": 0,
+          "quality": 1
+        }
+      ]
+    }
+  ],
+  "final": {
+    "resources": {
+      "food": 28.30000000000001,
+      "wood": 59.04999999999999,
+      "stone": 86.05,
+      "gold": 400
+    },
+    "adventure": {
+      "x": 8,
+      "y": 4,
+      "moves": 1,
+      "visited": [
+        "8,8",
+        "8,7",
+        "8,6",
+        "8,5",
+        "8,4",
+        "9,4",
+        "10,4",
+        "11,4",
+        "12,4",
+        "12,5",
+        "11,5",
+        "10,5"
+      ],
+      "resolvedGuards": [
+        "12,4",
+        "10,5"
+      ],
+      "pendingEncounter": null,
+      "atTown": true
+    },
+    "tutorial": {
+      "step": 7,
+      "skipped": false
+    }
+  }
+}
