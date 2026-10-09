@@ -1,0 +1,1903 @@
+{
+  "phase": "FINAL_REVIEW_PRE_COMMIT",
+  "status": "PASS",
+  "reviewedPathsExcludingThisReport": 315,
+  "selfBlobExcludedToAvoidRecursiveHash": true,
+  "exactBytePreservedImageRecords": 248,
+  "totalReviewedBytes": 9660603,
+  "credentialMatches": [],
+  "bulkAssetRawPaths": [],
+  "whitespaceCheck": "PASS with CR-at-EOL recognized as intentional byte preservation",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 429,
+      "gitBlob": "660af64190e3a725325c48d3425460592697398d",
+      "sha256": "6881d71dfe1a051ad332be1659137a7243a256dc5ebf52c60cd96e704509880f"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 2172,
+      "gitBlob": "733cab77c80b4e056a77b6a4d4620c50d7c98a2e",
+      "sha256": "5c2f38f930a13121062e5d63888bb85f209e3259db04501d355d8a63ba9701f0"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 16620,
+      "gitBlob": "e334582ed97337e7846f4c617f4f7cc1fc2ffca6",
+      "sha256": "f4a7ce10c7a4f0f682601ba32a50677877cda3d4fe5f70775525729eeab1024e"
+    },
+    {
+      "path": "CURRENT-STATUS.md",
+      "bytes": 134931,
+      "gitBlob": "1161528badd370af23da4a541fe0fae332153dd2",
+      "sha256": "e6613fcc65f912fee0271991f47ed3dd804b066768e387102ce635812e73729f"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 33699,
+      "gitBlob": "f845d6d2d5252ca1fb458f267adc529066c5e5f0",
+      "sha256": "b4298c35f204572213880d5d20f1ef5e46df27a9f4e9cf4963f68837d2a59ceb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5261,
+      "gitBlob": "b6e09c357db51e36b89729a76c166ebe6d39b40e",
+      "sha256": "ca7985be845ebd18a20ef98ab1feb1bb1747fd6541ca403d0f9ddc9f2f4cc15b"
+    },
+    {
+      "path": "RESUME-HERE.md",
+      "bytes": 35852,
+      "gitBlob": "72b2b0c2e7865d62e03b2da2911ebd1d8ed19345",
+      "sha256": "5c1d10de5fea4fe09295a11be7e9a3420aa75f55df180b8b9e0672fecf171e7c"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 38443,
+      "gitBlob": "2129ced78ea495c5c799b2402eddf005c43f538c",
+      "sha256": "37ced1600debd47726273f20603fc06036307aca9970e81ec9ef796d8edd291a"
+    },
+    {
+      "path": "docs/BUILD-PROGRESS.md",
+      "bytes": 115889,
+      "gitBlob": "ef128a8faa66e35dee1e7afd6c2e20713c9b1e7e",
+      "sha256": "64f8dc5847e2781e073f60460e4e53511196bafe16a4367811eb25d4a2a08ef8"
+    },
+    {
+      "path": "docs/PLANNER-VERIFIER-HANDOFF.md",
+      "bytes": 60218,
+      "gitBlob": "cf39834479365edffa7551aa50a7d5f14523c208",
+      "sha256": "8bd642fa6e42e4e7b0be4e1ebffa51c251a1030b161abef408aff30654aa41ad"
+    },
+    {
+      "path": "docs/SESSION-HANDOFF.md",
+      "bytes": 128427,
+      "gitBlob": "c9ecbb5eb16afeeb455c7f8c27d7fa5f2d6b66fb",
+      "sha256": "c37b18cbed9461ed1139b9c8654eb5d185a32fe876fe3c072afcdbc3400ca05e"
+    },
+    {
+      "path": "docs/migration/device-handoff-20261009/README.md",
+      "bytes": 5160,
+      "gitBlob": "2e87b75e76545d38990b1a5d2a6d909cfedc693e",
+      "sha256": "7005f5568b06ef248dc9b3b2f9116c20110350caa819caf4a6210f6ca6e5a423"
+    },
+    {
+      "path": "docs/migration/device-handoff-20261009/transfer-manifest.json",
+      "bytes": 1403926,
+      "gitBlob": "09c5d6308b44682d08d40899276584afd8ad6d2d",
+      "sha256": "1597d6a03453439c1e7dfcb1cad9e74949e13dcdc5e9c5c9d18bee0f50624726"
+    },
+    {
+      "path": "docs/migration/device-handoff-20261009/transfer.py",
+      "bytes": 9426,
+      "gitBlob": "db53fb7412a397b7d5e5b3354e53f93ea06671f1",
+      "sha256": "ec06cc4501ec2d06fa2e4806a01f672c1879fbf395c063bb23093ccd2999e83b"
+    },
+    {
+      "path": "docs/plan/IMAGE-UNIFIED-RESERVE-INTERFACE-2026-10-09.json",
+      "bytes": 157809,
+      "gitBlob": "9c5bbe3b36c969768baa2bcf7c575084f0a72727",
+      "sha256": "5499dcfd8d5660be9b21ce48500015e18a8cf7df245e3d0d1d39562cb7a7612e"
+    },
+    {
+      "path": "docs/plan/NEXT-DEVICE-COMPLETE-CONTINUATION-PROMPT-2026-10-09.txt",
+      "bytes": 29834,
+      "gitBlob": "c2220e9c9fa56b87f5c007cfc96e4301bb02722e",
+      "sha256": "126236f2687590b4f6c389205f7a188b7713f9635dee24d90489c64b325daa44"
+    },
+    {
+      "path": "docs/plan/PROJECT-DEVICE-HANDOFF-AUDIT-2026-10-09.md",
+      "bytes": 16386,
+      "gitBlob": "ab2710830a18fac17c070e0c1134fc35adec77e6",
+      "sha256": "5768a3f606d38006b00c6e19031bc19aac1f589838a63c6fad280d53ce9af95b"
+    },
+    {
+      "path": "docs/plan/README.md",
+      "bytes": 53215,
+      "gitBlob": "21fff5bd1856e1f95de926e3c58fa63bb512326a",
+      "sha256": "672332725caaad9ce9be9a5759f1693e62e949bf3d94c339d2329e0448185878"
+    },
+    {
+      "path": "docs/plan/image-production/budget-ledger.json",
+      "bytes": 25327,
+      "gitBlob": "7275a6f03ebdf2f068cc7a76cb81a45d9343199c",
+      "sha256": "906c566ce5ef0b0e7d03bc30f974a42840b811b4dcc8b7165abddb838ad1e891"
+    },
+    {
+      "path": "docs/plan/image-production/submission.mutex.json",
+      "bytes": 381,
+      "gitBlob": "cb64886c6103452262df8df66c581ebb7be358c9",
+      "sha256": "fedd5128742fb87978a37546061428ea87a3c4e7f8846d4f54168b56bdd16e9e"
+    },
+    {
+      "path": "docs/storage-cleanup/preview-retirement-20261009/cleanup-result.json",
+      "bytes": 1664,
+      "gitBlob": "a2bf34ad8ae5e58498dd85b5d057c721daa6604f",
+      "sha256": "de736032ed12e64d3e40b29c7f5a473099a516e4710aee28f4caa787cf2b40b5"
+    },
+    {
+      "path": "docs/storage-cleanup/preview-retirement-20261009/comparison-preview-restore-manifest.json",
+      "bytes": 60155,
+      "gitBlob": "2180d22dd25fe92d38835079bfc84f214a5c5871",
+      "sha256": "4df0fb0f818bae1f5623ae5f951748157c6fb331bf6a4a385d73f48ab0a8211d"
+    },
+    {
+      "path": "docs/storage-cleanup/preview-retirement-20261009/preview-cleanup-result.json",
+      "bytes": 37470,
+      "gitBlob": "2825e36c13bb307abf38e49924d29ff465a1c893",
+      "sha256": "891f61d8044e12bc7134d207fa454114b1b3bc46e8c8dfd1689c9801a749988b"
+    },
+    {
+      "path": "docs/storage-cleanup/preview-retirement-20261009/restore-comparison-previews.py",
+      "bytes": 5862,
+      "gitBlob": "cbac23da55eb0255bbe2a9e38b71f35965a30f6c",
+      "sha256": "a3e8aef6ae89248a9dccd7965b1200631685aa930338e91e14a0cdc8970b3c3b"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/checkpoint.json",
+      "bytes": 6483,
+      "gitBlob": "73113876088cc5a08cffba8732f29687717d379e",
+      "sha256": "860021aec6480b96e94e1b768d774aae9c23dbdebc25db69aadda86d94d139c7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/cost-plan.json",
+      "bytes": 1140,
+      "gitBlob": "6fe3fcfb739462dffdd5d3521eb53bae7d56a0bc",
+      "sha256": "f4698e8aaaa2238e015382fb641dbcee0e2b30b5b29fa57367710065a6c5f439"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/coverage.json",
+      "bytes": 378,
+      "gitBlob": "bd8e241331f47bef2918be28c6e9e95801254e35",
+      "sha256": "1fd32ea11d4a28ea9d382895339ab1f0df25c6028eec47517b7607c9ab5eb9e6"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/bodies.json",
+      "bytes": 18943,
+      "gitBlob": "5121e7670db940d658cd25f477da8593c46d5418",
+      "sha256": "02022823af4ebd53bb8f195b0dd90c0f866191dd9f9794abbfcee2ac9ab6f787"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/local-summary.json",
+      "bytes": 8461,
+      "gitBlob": "34736a94add1d373d53e0be1d2174a3bedc252a9",
+      "sha256": "d8d5fe9d82e254af96063bdafff4a629ea6bfe3e378295e31a9c216da8b146d5"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/paladin-head.json",
+      "bytes": 890,
+      "gitBlob": "1273d0c4252a50b32bf12542c384c4b8337b6950",
+      "sha256": "672da6aa73f546721a6a8350cd53b57bcc599407cbcb71bb303b1b1a20294a54"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass10.json",
+      "bytes": 187,
+      "gitBlob": "6153b9be2ed4d27830553d9599108e34e0357edd",
+      "sha256": "8150bf5752da80bb345b841bef0980d13044acdb53202802d785f829bb93bea2"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass11.json",
+      "bytes": 4143,
+      "gitBlob": "580cef797479c634ee83a172e9968ac494899f2c",
+      "sha256": "3f2cd68fce0c7b883ad43fff1fb8fe2b4e5a35768b40085320526a94b4d25dca"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass2.json",
+      "bytes": 27206,
+      "gitBlob": "8860ea559aaa7107eecfa082140c651fbb3aadee",
+      "sha256": "4f0d46c92610ee802b422abe41ad157f84ba9e820924f7dea92680d3b24656ea"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass3.json",
+      "bytes": 18972,
+      "gitBlob": "4a5489a8a02976338679f77690c3bf55b6df53ef",
+      "sha256": "ce3a26eb20d4a8edbed490c558dee9828311f957ac129b2bdeacaf806528e2bb"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass5.json",
+      "bytes": 5215,
+      "gitBlob": "74194fc96b51b6f71e49d697db5ecb62cb086033",
+      "sha256": "068024c4f63d276ca0136332bcc560c7768caada4b12590b7fcad95f80905d3b"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass6.json",
+      "bytes": 5122,
+      "gitBlob": "3b082f8ceda23c53fd1257d13e7993f91642ad0f",
+      "sha256": "41183e00df237721ee0a89f992902a61fdc1f60f868cb7dba93a783739255af4"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass7.json",
+      "bytes": 4453,
+      "gitBlob": "7c1cce9a44e5df9beb708a04a9f783a8d358e3c2",
+      "sha256": "c4d102878e018fe6e539a8c18d68a9c4bbc2396446e7bcde07837aecff488637"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass8.json",
+      "bytes": 263,
+      "gitBlob": "a208aa4d9d702b8d03fed5249af734bf56acc8a4",
+      "sha256": "e79ac9d15acb5ebc110994934fe9e4b1e11e47c8b9ad3eed197ab5afcefa9832"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/pass9.json",
+      "bytes": 187,
+      "gitBlob": "a06d2e6119544a55d68a9dca013cd6a17542903e",
+      "sha256": "9c2ce2d8c77b6e4396285d5f6482bbc191bfe672962c963d273f7cf50aa99420"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/plates.json",
+      "bytes": 252034,
+      "gitBlob": "0a6a85c60dc6ef1e5825dfb9659e3fbf3bf3610f",
+      "sha256": "83d1f18182645d5aa15ae0e7bac167cab739b987318ab162fa240e175f8bb0d0"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/protected.json",
+      "bytes": 2752,
+      "gitBlob": "b5e0c88298a3f2a64f072c0dc73cb16e46809d7a",
+      "sha256": "ec75871bc20df841e1f1151360de7aa96760776008a18926721979258dd58b49"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/diagnostics/scenes.json",
+      "bytes": 87912,
+      "gitBlob": "0613fa186750a784d6be7899125b7fab5dc4ea58",
+      "sha256": "e31fbfa1e20481044d3d34c087d4a6d4911b12ee45e6e12a675a8f191cc0d491"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/handoff.md",
+      "bytes": 3427,
+      "gitBlob": "4f58c2b0a1c70c03913ee1c040b52b1c3a309c89",
+      "sha256": "2d1556e85204aa291c2f52f512bb23cfcfbb6607a752f2f7b196245a92fcbbb0"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/coordinator.py",
+      "bytes": 29032,
+      "gitBlob": "e6eeb101e0268add3fd2aa02ec23a0824871cd3a",
+      "sha256": "a0f857ccbb88122053cfde89050be573cb37515d7dec8c9baff49c547d2b9e4a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/crop_spots.py",
+      "bytes": 903,
+      "gitBlob": "5cde1468fb92710750b6e0724b9a4b76e10eec90",
+      "sha256": "f8c49d0606a529d0242e433af45322d32ad7f442216c5ceb97c78a9c29100544"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/dump_residuals.py",
+      "bytes": 3604,
+      "gitBlob": "5fca83e981ff45f15e92b31039ebe7de5dd87d96",
+      "sha256": "60330e7321211f98c1af4b63a30cd03d9340ab9cfbfc5f5f3e7a76b801e3e14a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/prepare_healer.py",
+      "bytes": 14556,
+      "gitBlob": "db89e299d0645fd34ec9651917e596cde4300a71",
+      "sha256": "a8604e21818f3a5eba09a4af482dd1e5fff9e483ff8d135e03718fca5064a2d8"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/probe_lines.py",
+      "bytes": 2815,
+      "gitBlob": "4ceac967040711a766cbc3f491ccd8cdcef922b4",
+      "sha256": "583b13f4e1c698649fac1e850a4ea3ac0a13d414bde2d2af8788fccf3dd6688a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/probe_pass6.py",
+      "bytes": 3215,
+      "gitBlob": "81bed79267dafd28ceb1f5201458801ecacf9747",
+      "sha256": "96c38e024ffe71af4378288e280532921e748c93b3d2fc293515f29593121f38"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/probe_row.py",
+      "bytes": 1251,
+      "gitBlob": "5c720d6e40df5d72932acd43fc102209b54155fe",
+      "sha256": "e836fe1d142ee26d829f88d11ea8907188d901575e4eb95cca8f3fa7b859f284"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/process_local.py",
+      "bytes": 41750,
+      "gitBlob": "392ef3b8dbf1e8cbbe69149ef1a8d6e1a875e549",
+      "sha256": "2a31708af18f099233009f0115b2d7bf4d2fe58e7469e85b7f23691a28328982"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/publish_delivery.py",
+      "bytes": 24237,
+      "gitBlob": "9066a6de55a5a09d48da1fc83fa3a7aa3ee79cb3",
+      "sha256": "dfe94c72dd7335c03732e03d166e60e16d6f2b879d04f2d366980018b2ab5fc7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass10.py",
+      "bytes": 2586,
+      "gitBlob": "c0800f37d8a4184629499b5f4616850d1d34a8d9",
+      "sha256": "34c93d0bcb6d30453bba37d4397066b5878b2355b40083255a43f8cf8a519d00"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass11.py",
+      "bytes": 9536,
+      "gitBlob": "a0318cd99bfd3f43921c3b4f14a754af5717a016",
+      "sha256": "ec329aabc9917415a34ed353ea297767326798b5efcaebec4e1b6dd27fd68ad3"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass2.py",
+      "bytes": 8112,
+      "gitBlob": "da5d1d8c7417f2ce11d7bc9671798572313dfd34",
+      "sha256": "838a2d56a8a79183ef1321dd75b8e049922dacb310b9fb437e9d1a68761fac5e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass3.py",
+      "bytes": 5279,
+      "gitBlob": "ce4bcd3bdb1dc3eabf569795610db69eb6ba859c",
+      "sha256": "54116924f3c17c69c2174a8e7f6a335b8ece8eb9532a89519b12c173600fe309"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass5.py",
+      "bytes": 4967,
+      "gitBlob": "f48913eddcfb2b020af4a0ada72883f417f2ac31",
+      "sha256": "498febeb7db7f05c8704568def4eb0a8189bf32e7be4ecc44e7aef6b77266a30"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass6.py",
+      "bytes": 8094,
+      "gitBlob": "1fb427ced8200683be1f3a2057bf307439bd40ef",
+      "sha256": "41a790bfd391c7d9e5ee88e85b77363aefd132a026f86b0574ac4e9b859c2b38"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass7.py",
+      "bytes": 5139,
+      "gitBlob": "cb4ffd53b54939f3481f10fa0355c7580a239b38",
+      "sha256": "48c18c323da0c522941ca3a895bd76ed8bd9de4979303eda865bb201d4d9e96a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass8.py",
+      "bytes": 5170,
+      "gitBlob": "bba33ddf33f483f8ea7b7718cd8592138b15482f",
+      "sha256": "738c0a435d3a9b8dbeb12afdbdf3cde5be0041d1e0b9efbbebf9d46375cffffe"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/repair_pass9.py",
+      "bytes": 4315,
+      "gitBlob": "5d18a188f3f913ce38d381262e2f4e56eae942a8",
+      "sha256": "eb1fef0d6f61041f2690ac80698fbc411cb934b9bc55478d97816f86cd2395dc"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/helpers/test_coordinator_offline.py",
+      "bytes": 6457,
+      "gitBlob": "2f2b60175b628f6484913a804fc918c46a84ab25",
+      "sha256": "06e06f25f5c411837814add48ee171414b33ecb9ca7bf3911c858e476d1ff041"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/input_snapshot.json",
+      "bytes": 4185,
+      "gitBlob": "f0d149493bda0a0ca8da036c7f1e20340871eb97",
+      "sha256": "7c4d6bff439183c64cb69cc93b7a6f79ae224914fee3f29748c3e9ebbac3703c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/queue.json",
+      "bytes": 5406,
+      "gitBlob": "301a9fb7962cc8002302fb1e5c91daac07c4c099",
+      "sha256": "e81dba5b18c4e7f5ca20352ab8fb78ac711a5b278f9c64097aecb58522a2f40e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/adventure-site-dwelling.json",
+      "bytes": 409,
+      "gitBlob": "b4a79d207fd57f69c426ca4a6a6dcb23cac367e5",
+      "sha256": "749b09064d9821ac2adab65e1cddfac0895eb56a7e4391f53f2f74f6a0e3b319"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/adventure-site-mill.json",
+      "bytes": 399,
+      "gitBlob": "3412bf07caeeed78fff7b7dba5b91fff7b9ebc56",
+      "sha256": "14ee10e434b8410d3b8f0b0535a64b05afc6dde171f7842efdb6e5f08a3863fb"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/adventure-site-mine.json",
+      "bytes": 399,
+      "gitBlob": "e3819918226aad7e7a09ffdeae37b18087d4787c",
+      "sha256": "a20ad44f169168623e176fac98daea2bb9ae52b62958922ee119db4fc9142e45"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/adventure-site-ruin.json",
+      "bytes": 400,
+      "gitBlob": "c3fdeecd305493aa76c52b9785ae4600585b77ba",
+      "sha256": "164cab4afb2d3626b1a7f9b21f119563a9341098bcc1ca862194876bab3f1408"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/adventure-site-shrine.json",
+      "bytes": 405,
+      "gitBlob": "4753483a443005790343c12ecebbb1e253a49bf4",
+      "sha256": "89de6a4f7460fdcd692afd2879384f799a0494a0dbeb7f2de7b6eb0822e60603"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/adventure-site-town.json",
+      "bytes": 402,
+      "gitBlob": "0c3d113a27f6fa04a08765975b8940b61f6e5d80",
+      "sha256": "c82d3f4c2a077a1fdbd08348b18f23605a3790899dde6aef420eb12f9a33525c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/armory-bronze.json",
+      "bytes": 387,
+      "gitBlob": "1feed1993b9fb627df7cd36f652ec652c65fc80b",
+      "sha256": "c8e0f43de20abfbdce883a07d264cce8ab334f7149aed2a937d4fc6db801cbfb"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/armory-future.json",
+      "bytes": 387,
+      "gitBlob": "b98976604377b23baeb7e19c126a8ff1b8cc0f44",
+      "sha256": "1baee72cccabc79716f42e536779bf3418a9ae58b451362c26d5730e2ae231c7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/armory-gunpowder.json",
+      "bytes": 396,
+      "gitBlob": "79641646b49a2934689652dfb2a7e5085d52aa3f",
+      "sha256": "19eaab4abe675bfa340d6911010fcf285e4bc20e2bc91b1086f829cd6770f339"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/armory-industrial.json",
+      "bytes": 395,
+      "gitBlob": "2f12f93fd24600cded442d3c45f656fa0f7d460b",
+      "sha256": "1d34449fc0822db417afa1356a18977505bd27b507e6308e92c5bd06c2420d70"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/armory-iron.json",
+      "bytes": 383,
+      "gitBlob": "615e0430f8ee23a532e988bdd382cd3d09b91926",
+      "sha256": "d8f0e94855b9fbe1400a7bef4ddb20453d73abaf0902cb2a3e0598e4215b0953"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/armory-medieval.json",
+      "bytes": 393,
+      "gitBlob": "9431960b103347f250bc10c51da890aa91a8c35a",
+      "sha256": "62a930767c5791db8b5d55d7cbbc82df9603bea1c790ff21adfc61e0c239ced1"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/armory-modern.json",
+      "bytes": 390,
+      "gitBlob": "82b36e24c414b1c1041ed0cfdd71d219dc302801",
+      "sha256": "924a231bed0c96236e8a8da2191eb0119d3d098e0775068c1a14acfb23dd7114"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/armory-stone.json",
+      "bytes": 385,
+      "gitBlob": "6c7c9d979ed07b96daf5c96866c002241ed3d641",
+      "sha256": "68dc50f6f9f2bb5217149177acf47f30caee655ba040db3432d5e5a5fab05ec7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/artifact-banner.json",
+      "bytes": 356,
+      "gitBlob": "75dd605adf481e2b7e387bcb1bd54d3cca0c080a",
+      "sha256": "9a7dd2a36ae19e186892c1e25bfc653596d5298a3544267dab3fd5eb3655120d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/artifact-bloodstone.json",
+      "bytes": 364,
+      "gitBlob": "863ef037cccd0eef5ed62c0b6824f507fbe6da0b",
+      "sha256": "be33c505600757345cde057b8135036626c26492a62321e9978d3f8982f9c2f5"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/artifact-clover.json",
+      "bytes": 356,
+      "gitBlob": "c2c0f7c9135e90fe81e14bd959a8a2b71438aab0",
+      "sha256": "07b5cee4b7a2f77fe1725bc9e884c8054fbba2f7b304de277384773a941a53ec"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/artifact-codex.json",
+      "bytes": 362,
+      "gitBlob": "c55472d2c5a124dff6236dfe07567afc9ff6fcd0",
+      "sha256": "430bc261c353ca1ffdad7fc76df76067d51125d23b3536a3489b109ce0b7a380"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/artifact-lens.json",
+      "bytes": 352,
+      "gitBlob": "83caafe8e521b7e1f132e5cf78c98e444e3bdbdc",
+      "sha256": "ef64a6736dd14e74a999fba303d1fe0145a87001e0625d36559af33816b03392"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/artifact-orb.json",
+      "bytes": 359,
+      "gitBlob": "d3fab91f2c519666bd516ec96d82af9a1a49d9ea",
+      "sha256": "48fbb131b807d9e0e1c050c90ad403b0403d1d267ad910222e41af772e9fb93d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/artifact-swiftboots.json",
+      "bytes": 364,
+      "gitBlob": "d3df8e4996529c63f3045d9d42eafa5503be707b",
+      "sha256": "99be4892b49c3632d055866cceced6944aab95a2e29dad834e7798553badbab1"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/artifact-wolfamulet.json",
+      "bytes": 372,
+      "gitBlob": "4eefde85b54df288be984b6671c35dbd8c89a813",
+      "sha256": "38687bfd68b8581a2dba70b994f5d892206271bb87f9e31bab8b851275dda0c0"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/barracks-bronze.json",
+      "bytes": 391,
+      "gitBlob": "938bd678e0989a68d8bdd96fcbc17bc60ab04a74",
+      "sha256": "588ea6c5e37b25d1e748a35fc83d7868d53d1669189d22178a312c5c8fbbacb1"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/barracks-future.json",
+      "bytes": 393,
+      "gitBlob": "bb4da837a2d1dd47995a3cba5ff381b94abaeef8",
+      "sha256": "838aaf34e32ad95cae45c9b346e307c057b21ea3c43b58ddcd7147bf4f94672d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/barracks-gunpowder.json",
+      "bytes": 399,
+      "gitBlob": "2c06356f5363ea33bb68c771cba543dffe111d67",
+      "sha256": "2284dedaedf1a7e43a55870a431fd8de961ff0118332377715cebae5d71b37b7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/barracks-industrial.json",
+      "bytes": 398,
+      "gitBlob": "28de80827fe6f1468edf5d54882c683ae0bbd570",
+      "sha256": "a261aa6a82d6dcd5a0a27c75cc15f3cdb174bde1c5bf25cbcb09f14565359768"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/barracks-iron.json",
+      "bytes": 387,
+      "gitBlob": "49f50ab19d95d36dbbcb0985962e21831123d927",
+      "sha256": "c8f5571f02fe9860541f40d3880c20def67cdc7d5f9e740e11264fb9a560d2de"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/barracks-medieval.json",
+      "bytes": 399,
+      "gitBlob": "26063910e04e2c7cca751a76e74e4862c7dceae8",
+      "sha256": "8b9e89b9ce25ec7615bc09b3ea200afae9b3846d8f6ccf882b8b62a5704e2b5c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/barracks-modern.json",
+      "bytes": 394,
+      "gitBlob": "2a1bba715f4c195b816c5d38d5620c23ea26f611",
+      "sha256": "e5d6b0eae3bc1e4323194cba0a78f49dbf5e8c95dc8fc6cc16b59028d2964b56"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/barracks-stone.json",
+      "bytes": 391,
+      "gitBlob": "2bb472cc5c07ee960c12736c240fc8c968d1783d",
+      "sha256": "81fe45e02f08368616d8ce89770991b58db6551273367088665396d1040e0d82"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/farm-bronze.json",
+      "bytes": 381,
+      "gitBlob": "43a4e5194bc0055e6f1af2c75470caaafe2bfe7b",
+      "sha256": "61f63d3445a5668992fbea7b568ba77737de94dd6762c85d07340ca5a2793f53"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/farm-future.json",
+      "bytes": 381,
+      "gitBlob": "6612f15a4ce3b8321e80c145066bc93132fd287a",
+      "sha256": "876c39b16e0d40a76dbef5d059a21f618ab9330f772bfe3772ae6f98512ea1b1"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/farm-gunpowder.json",
+      "bytes": 391,
+      "gitBlob": "f3d03f74a35452f109e1fc54af99a0d074416ac2",
+      "sha256": "04c1dfc703b6c87189ab36acd1765ed68d61cf90656a07ef3fe377cbf98cdf80"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/farm-industrial.json",
+      "bytes": 390,
+      "gitBlob": "e0c0253089252b6032c713035cffcd89f3929395",
+      "sha256": "89d8dfdfc6f540a154603e56648c2037bc89d748fa30dcf1f22a3b281ccd427c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/farm-iron.json",
+      "bytes": 377,
+      "gitBlob": "d399c8c0c271cab42dd5b8970871ec9425ba5a35",
+      "sha256": "eb0d96a4504481715eeb5566aaeab9842b55e80efecaf12c74d3db65bc276eb8"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/farm-medieval.json",
+      "bytes": 384,
+      "gitBlob": "e736568e9add7ac9e2186f151485749dfcb18cc5",
+      "sha256": "d683b2736f36af8a67c3b997fec5940841ee2333aaa08d12a0c99050851494ce"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/farm-modern.json",
+      "bytes": 384,
+      "gitBlob": "c15c71a0c20461bf46330940ae887cd7e2df3999",
+      "sha256": "c12101576e5c403ba190c50108a8952dec29d99b67d40d0ad51f8771aeec9d2f"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/farm-stone.json",
+      "bytes": 383,
+      "gitBlob": "28d090363d01596928909f375467357b3ac45c4d",
+      "sha256": "aa55c77f4779b6b76e8a625a97eab9db2e2fdcde534befd833395fc8aa6e7884"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-bronze-accessory.json",
+      "bytes": 368,
+      "gitBlob": "4e9dcd4ad677357311c7ae9c2e28b9fcbd63d5fc",
+      "sha256": "1b512c1aabc6326d7f48fb4c04ad3cb4e3c186c78e7024c96852f0c7a5e27704"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-bronze-armor.json",
+      "bytes": 360,
+      "gitBlob": "5522fdf2eb77e85a6068677b501f0698ce27fd3e",
+      "sha256": "29b203174c3e9103bcbafb784451b062e4f6752b1d986f273edb0a0e64dd2af1"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-bronze-boots.json",
+      "bytes": 368,
+      "gitBlob": "2ab2bff64b9b32b7c8013d79ba3c7c96f6f03b55",
+      "sha256": "ca4b4e701dad1a53c1c7534efb4efe8287b43b6cc67eb4b612de308561f9687b"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-bronze-helm.json",
+      "bytes": 366,
+      "gitBlob": "8470933ee8dbec10203667f412974475f5f3a90b",
+      "sha256": "6479dd7a1cfcb25d0c2739a5e50879f9e4a5349042d5ec8c8dff1e604eb24179"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-bronze-weapon.json",
+      "bytes": 370,
+      "gitBlob": "6075e1aa62914fbf9db2e0fb006a352c85241a36",
+      "sha256": "289a66e3d4de5486b6bff946848fd7097ca7f880e201a7a8ad07af4ebaba3931"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-future-accessory.json",
+      "bytes": 376,
+      "gitBlob": "2ef18ca83d0c6ac2061f8cd145274905983bbaad",
+      "sha256": "327622f426ab2bb22394563a3227f7320d4f3c932cc401788094d3918e449e4b"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-future-armor.json",
+      "bytes": 368,
+      "gitBlob": "a1d30942dae9cf5ad0ab9b0b27327716576ecead",
+      "sha256": "32bade668c79401324928ddc19364655f6421d1581475e2bcaecb240a81d1ba7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-future-boots.json",
+      "bytes": 360,
+      "gitBlob": "4a4e61745ff9ba78bce4154c0f78649b9273ee9b",
+      "sha256": "2fce42785536d2319fad0f881e73d81f0690f293ad1b89b5701b623b91a063a8"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-future-helm.json",
+      "bytes": 358,
+      "gitBlob": "8649f72412409a0523661a1d10272e405d1b29ea",
+      "sha256": "41abb3aaeb481fed612ed0f7a57a101fa046aef7e14b07914324a3dc76d2b642"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-future-offhand.json",
+      "bytes": 364,
+      "gitBlob": "f38402f81ac81004daabed557ebf2d536eebcfba",
+      "sha256": "5b5e024a3b0530272abe42849588bd36806ef528570a711c42f7638b063efe27"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-gunpowder-accessory.json",
+      "bytes": 374,
+      "gitBlob": "15f217f63101b570d8919d34a8e51f73882f097b",
+      "sha256": "6d54163c3cb8534815ca066aead5dcf2a8035152f6f798b627703caa70755fcd"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-gunpowder-armor.json",
+      "bytes": 374,
+      "gitBlob": "f7bdabad6334841396e4dc9deb2693be2552ed7a",
+      "sha256": "44f909c201df5beba9f3600fa5c6dddd458e0968ff1796d2da37bc4f8633196a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-gunpowder-boots.json",
+      "bytes": 374,
+      "gitBlob": "f94381fa32974df5733ea089babb4653333a2c65",
+      "sha256": "f43e89e760be64f912e551445aac04c322dd14c20ef8222fed51b5eb98f37105"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-gunpowder-offhand.json",
+      "bytes": 378,
+      "gitBlob": "dbc67fa36d628767e83fed6a5f19fdffe2a41cdc",
+      "sha256": "1de5240e28ba738da15139d04f0ae253da156c43ea19168468b158c1f68adbec"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-gunpowder-weapon.json",
+      "bytes": 376,
+      "gitBlob": "4f8ce5c8c3d6204325eb0998f3c7bb25441364d1",
+      "sha256": "c984902cbba6868cc996e329de340bc38a79f88ea37394570e40ba228ce1a691"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-industrial-accessory.json",
+      "bytes": 376,
+      "gitBlob": "f408331b34700e81d72cfa1a50cfcac2e7f0269e",
+      "sha256": "b27698e673d1fa7cd3dfcff0a98d3619b0348714b159e57d2fa475dc81362453"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-industrial-armor.json",
+      "bytes": 368,
+      "gitBlob": "b672edf6cfc92652f9c2b6f106c9b025b0e256d0",
+      "sha256": "8793ad58cb1496cece2cf67f739cdd36765bc0cd1fe698aab8737aea39ae03ce"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-industrial-boots.json",
+      "bytes": 376,
+      "gitBlob": "ab3a9d88938e6a29dca4a6f6c97b2ffe117538e9",
+      "sha256": "17c5ed9100ba5fbd817030abe3facd5ae248e114027f562f72ff47b9f684ddb4"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-industrial-helm.json",
+      "bytes": 374,
+      "gitBlob": "1721a801e8864af703c2fbb59dcce33232c6d0d0",
+      "sha256": "102a6d07fd0d6b9f8e054d35106a92449c8ae05e310fdc572f34e347c5ebd5f6"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-industrial-offhand.json",
+      "bytes": 372,
+      "gitBlob": "cfb45aff684f3ab0fd7ac550075ae7957c4e06a2",
+      "sha256": "fa36f202f18ffedec4463f3d66f7d6db857974fd108f0d64ae462594d849ce12"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-industrial-weapon.json",
+      "bytes": 370,
+      "gitBlob": "236abb3c390bc22149f267a569c7c014a23cd596",
+      "sha256": "e86b29e07c58c537176e0cb4c90d834a15031dce96bff01273bfed2a21e1ccb7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-iron-accessory.json",
+      "bytes": 373,
+      "gitBlob": "493aa7addab4f94ccccbb71cd8c3ff5d9b57ab74",
+      "sha256": "9c293d06f8a262df08ab461d6ab815662834b72b61e626e2b753344976b9987e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-iron-armor.json",
+      "bytes": 364,
+      "gitBlob": "e55b278ec31828950d17241aa8161778c9413c76",
+      "sha256": "793ba20e3eb96599ac5c136f2aaee2cdcd7c37f49e317ecfa123e4f480c2fd5d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-iron-boots.json",
+      "bytes": 364,
+      "gitBlob": "ac556b02c8b9653cf1d61d08dd6aade02215a304",
+      "sha256": "f6b4b11376d75a349e2517b086284fa690769c270a63ce78d5019a634b626571"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-iron-helm.json",
+      "bytes": 354,
+      "gitBlob": "92726c328dc3204a7c7cbc56bcea74be2eb3ecee",
+      "sha256": "f33bd78bc5e4ebedb949a683dcb8de22389870def7f3f851f3ede8e18dde1dc8"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-iron-offhand.json",
+      "bytes": 368,
+      "gitBlob": "11c213d846ff07293bc2c0cc070e050b3a1c3621",
+      "sha256": "1c2e81cf436da857c9de58854b5d197186270e1658405ef52587f325d232aada"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-iron-weapon.json",
+      "bytes": 366,
+      "gitBlob": "3ccfd43e094c340cddd8bb78ec643c03714f85ff",
+      "sha256": "224cedefb81985b9744e86f9477c68fed9d3d04672e02886adbe805001725e87"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-medieval-accessory.json",
+      "bytes": 382,
+      "gitBlob": "4f6adb068bedf0650df2cfc00a87cf6ade0364f9",
+      "sha256": "3d4c6e4d499c5009ecff1c06f1c9b6b5a4598c5fedb0c613f2371abd003f0b77"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-medieval-armor.json",
+      "bytes": 364,
+      "gitBlob": "b34b54579fe26c03b9e6ae6234a90533cf8e1dc3",
+      "sha256": "69effb4d1b85602b00e4fe52e61d4eea3ee0afd05d7f3acf57042051404025fb"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-medieval-boots.json",
+      "bytes": 372,
+      "gitBlob": "1b0cccbdd1e1f3b1d76a4bc43b56f5987a8c9832",
+      "sha256": "fb0cc0e1d3e218c22d19c5a8bc08416c19cfb3c2778ac1b9e9200d0ce2c80270"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-medieval-helm.json",
+      "bytes": 362,
+      "gitBlob": "acb3cd400bca06778341dacbe2e8e622469b738f",
+      "sha256": "304a0fa5729c38b01b0aed28ff3f80ff59ff7be7ae1037c194f3e0f755b5c753"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-medieval-offhand.json",
+      "bytes": 377,
+      "gitBlob": "e7ee35bf30c12466a0e9cfa2d315d6ad927fdcd8",
+      "sha256": "6cda3a7d18419133185d75f0239d439f59a5e8e81daa269ccbb1f7370588ce4d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-modern-accessory.json",
+      "bytes": 377,
+      "gitBlob": "742de30dd4730a0cb13da5f7a129185a3a36aeb0",
+      "sha256": "335291f6b5ed74a80c20377f026bb6b4d209f4a5fe7b6f5da83869518aea47c0"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-modern-armor.json",
+      "bytes": 368,
+      "gitBlob": "cc831b4b9bb36466294c9fc73a39c0cd20b9d22e",
+      "sha256": "deb2fd25da6b0fa153c417cfba8979a9c2df81da2781b79f022c77d39adab4be"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-modern-boots.json",
+      "bytes": 368,
+      "gitBlob": "c03301fd37fab6cd249a75c0452a1206fb6a918b",
+      "sha256": "a145ddd41911eeb3b4301f303ca74109e2c8209a0e263553ccd6fe81b127e61f"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-modern-helm.json",
+      "bytes": 366,
+      "gitBlob": "a04193fb5d70d2ff23af0e25eae67f4ca9b5e784",
+      "sha256": "82c3205fb5f668767383b0c4981cd324acb5fc54a5fba3eed82a86adc703c51a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-modern-offhand.json",
+      "bytes": 364,
+      "gitBlob": "60246b0336411554c80cf2ea9eef7ef5bfa5fd0d",
+      "sha256": "9290dc984ba1aaa7fff7bdd90a754dc1ffeec4e6fb5240e9802e3e9bae7ddd43"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-modern-weapon.json",
+      "bytes": 363,
+      "gitBlob": "87f690bcba76a9e13aaac07f74f3c01baa2cd49a",
+      "sha256": "a293e43535b0d75b093cda6d1884d614c61f5111a1aaf1b4bae2c354e4980fdf"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-stone-accessory.json",
+      "bytes": 383,
+      "gitBlob": "3144da95a2e0e65c9973263948279c0edf4fb57e",
+      "sha256": "3f9b7a8ae8410916ae695c0e812b9eb7f64b23a499513fa8826d45a1a15635a4"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-stone-armor.json",
+      "bytes": 366,
+      "gitBlob": "6fd70250f12b28a9a9f2d8162f527f08f9b3836a",
+      "sha256": "944f011a6c4f5444d64bf9bfaf947486e1dca4a736e8c1d698774e4fcda61c4c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-stone-boots.json",
+      "bytes": 375,
+      "gitBlob": "bf19bd3ba25d9f6eeb6ebba2dbdb97cc743feed6",
+      "sha256": "c50d97a67e8082fcbf36975617a24de317bd18bbcd755a09f5c368fb5c3cbf33"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-stone-helm.json",
+      "bytes": 371,
+      "gitBlob": "1fe0a4d6505ef77b4909fdf2bb2ea7b655662ead",
+      "sha256": "8f2a89a453b1fce193126a6a242d529a88824e8de374520b5f74120cb30540c2"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-stone-offhand.json",
+      "bytes": 370,
+      "gitBlob": "532fcae2bd4542fa684ded38fdd4b105a62858c8",
+      "sha256": "48ae2252908afbab1f7f53baecba5d75527661c547cdb4d7ea5a753d6db6c36c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/gear-stone-weapon.json",
+      "bytes": 369,
+      "gitBlob": "0c94906a44dbd69c9668f4cfdb0efa776a25bbdf",
+      "sha256": "4ab8ac10fb1e7dcc26e6e0358dd895d95b64b9ade4c1dfcb08475021380a1020"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/hall-bronze.json",
+      "bytes": 384,
+      "gitBlob": "95043ca82454554f27e54b60c713e188f53e15d4",
+      "sha256": "c359fa5060f35bfddf36f0e5e0fae941bc43b65030ae1b662e68d7d0aee3bb6d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/hall-future.json",
+      "bytes": 381,
+      "gitBlob": "2b45752588408a552973b21594aaf6024e39696f",
+      "sha256": "4d26f7f084967e3b1500e29c57d21c807ef54c9e56b0a9c22a938636da7d52ee"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/hall-gunpowder.json",
+      "bytes": 391,
+      "gitBlob": "6f42fe5414cadec3aeeb7358fc1091ac1693a62e",
+      "sha256": "ab7873005eb146d66be0db808ce4241c0523ed669ef00c7399196415617c3082"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/hall-industrial.json",
+      "bytes": 393,
+      "gitBlob": "dcdec0c983bd000d01b813995470b45f2471e4e6",
+      "sha256": "07e81f667ba05d6ed0d7c394bd8fba25478883caeece3d1af652b3e485252993"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/hall-iron.json",
+      "bytes": 381,
+      "gitBlob": "eff4783aa91dd8a8c65cd272bb144eec81a69854",
+      "sha256": "63f8a81660085f2fa1b750c8f1047862c9aa5cdd8e9afc917cda29f2f3774b54"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/hall-medieval.json",
+      "bytes": 387,
+      "gitBlob": "2978e7ac5a6d8a0c1e82168144f9d79c7234de4c",
+      "sha256": "901c3533e1d2575224a00bb42b329f48f0ccd5f9b40489681e4663ed9fc58e8e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/hall-modern.json",
+      "bytes": 386,
+      "gitBlob": "f8fed49810ec9e6aa3d8eb7a764f1dbd6b80aefc",
+      "sha256": "5e2739bc0d73f7089d0614aa2491ce8d55b18bb963972402f831408160b7752b"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/hall-stone.json",
+      "bytes": 383,
+      "gitBlob": "2b483a2ddeb7b8faf681d932a214795e73bd4c75",
+      "sha256": "daf1065c2a338c11958c55fc0b90c4d7c3f4fb980e664db55acbde3554a4ab43"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/lumber-bronze.json",
+      "bytes": 388,
+      "gitBlob": "54acb4487299a672b8134891247452b0387365ec",
+      "sha256": "e1a90f79333568dc28b7b3ceaf223013a10d303b80fe65c1b59b18837ebbada4"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/lumber-future.json",
+      "bytes": 391,
+      "gitBlob": "cf5aa33d1cabb579b03af8e18793f202c52d39ac",
+      "sha256": "a14c34f10b56ab29b37ce1c2852d1e71bcb93e402615f4623d3c16c4cdc27e17"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/lumber-gunpowder.json",
+      "bytes": 393,
+      "gitBlob": "e20ebc5422d2a1968de3e0f2b016d44bde8316f5",
+      "sha256": "5adbc9a6626fcddba6db3a00ec4f56cdecfc2d9d3fb81bf311fd16f0477fd3e6"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/lumber-industrial.json",
+      "bytes": 391,
+      "gitBlob": "de67c097f48319935011d2d776c057441c651239",
+      "sha256": "8393df9f47b69681a865fa39559e984539a78c7b1851e3466b16b336913c668a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/lumber-iron.json",
+      "bytes": 383,
+      "gitBlob": "29c6808ef45d97fec7ef499400ec7eba8ec1f98e",
+      "sha256": "2422fe2768820842e1cc7509634c88043ef421fe636d3b92825a827034ff2e8d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/lumber-medieval.json",
+      "bytes": 392,
+      "gitBlob": "ce97e8ce13e0fc448f25d004eed5b228410a6547",
+      "sha256": "c6508932e910fe194e7f95d732e302bb21fd4d09bde48c93656f3f60a3066580"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/lumber-modern.json",
+      "bytes": 387,
+      "gitBlob": "755445658b323765559ff3843e2d948f7f382219",
+      "sha256": "0301f92f8cb88089c7b9f875c87a2c950afa318c7930602a04ecb63351428143"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/lumber-stone.json",
+      "bytes": 387,
+      "gitBlob": "9f43c88209f44bf6883df910bd2a7b63705e82f5",
+      "sha256": "94e86ca1c3c620d6e1e8f8a95657a73e6319f63a9955d64615a410a688d79e59"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/mine-bronze.json",
+      "bytes": 385,
+      "gitBlob": "9bbf77ca9dbdebc8c20256b4dd1cd92db57ea080",
+      "sha256": "568d5bbd9e6e1ae96e2f19cc25c6f96c671961dae204000ca9c1a742390f99e2"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/mine-future.json",
+      "bytes": 383,
+      "gitBlob": "e97fb7bd50225c4d3f1a557c031bf5794a71a5ac",
+      "sha256": "ba04bc1dbde9922ce317fc2ae0a042c82f6f4f00a256d510b6f0a8fee8a84d1d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/mine-gunpowder.json",
+      "bytes": 392,
+      "gitBlob": "378de081fede146d071ef0d63c66f5f981112e6e",
+      "sha256": "4253ff891b740c0fc04634799f70d2e2c1f4ac94c2f7a6201607ad5c06d036da"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/mine-industrial.json",
+      "bytes": 391,
+      "gitBlob": "14f20bb58e83de1cba5d7c3f4678566cbfb61f80",
+      "sha256": "cbb488001927a8b7e916d508e949b7d5a8f6a1a2614ce9d5a8210211f62e7514"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/mine-iron.json",
+      "bytes": 379,
+      "gitBlob": "26962d854d9bc6f22693f772de2745f38b84b6ae",
+      "sha256": "35f473a20531deecf4ac6b76878292f3b01c1be1a8b53083b7afe7db7e98a5d2"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/mine-medieval.json",
+      "bytes": 387,
+      "gitBlob": "e56ff0bbe71d5052fb14492603fc23669682fb23",
+      "sha256": "dcabc9a8b44797738148ec78acd5d8a436fbacf6343e2f2edb058e0084c16456"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/mine-modern.json",
+      "bytes": 383,
+      "gitBlob": "0766f91576327113f03d1fa7fd226a1cc689761b",
+      "sha256": "4f0710777d99b6f69530a25bfa5c9ed4ae3c000a8b0fd6c146e3b49c1b51a054"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/mine-stone.json",
+      "bytes": 383,
+      "gitBlob": "a91a2e83e130907bf307aa36a99aa138ce828a92",
+      "sha256": "4f685983ee6c4f68a18cf785534af4d30ce4682b94aceddd46dd59db5cd94c5a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/quarry-bronze.json",
+      "bytes": 387,
+      "gitBlob": "3099c626eb164bafa0f2ef9e4f2b65d21cd1f1e1",
+      "sha256": "a5b4772dd686d570577050cb754fdf9cd13305432e29cdf2cc50ffd5c6cab566"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/quarry-future.json",
+      "bytes": 387,
+      "gitBlob": "2f7e39dd3b443f0286867d95d8d441065626bbbb",
+      "sha256": "c037af2f66fe86692f9f6eb02c0dc90e67cc54bdcbedf4b8debfd68a2edbfc60"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/quarry-gunpowder.json",
+      "bytes": 393,
+      "gitBlob": "7b5a4a2d8115ef351f4925bec9285adc50132b9d",
+      "sha256": "c8ce954cba7c470d32b44375dfa04739e8a784b9f310bb4f1608995b54a050d4"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/quarry-industrial.json",
+      "bytes": 396,
+      "gitBlob": "4af3d9cf210fbbc82c328c1f5a111b635aeac6f6",
+      "sha256": "14d430b4f28caa91d9e521d11c17f11423cc63620f556130c121e019c2af9c28"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/quarry-iron.json",
+      "bytes": 385,
+      "gitBlob": "ccfbefb61a94ff20a34b1051b765393a84dd2721",
+      "sha256": "c40d2d3f898947dd97bbd8007170eef2df818e527e5ff2ce24aa99d7c20cf71d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/quarry-medieval.json",
+      "bytes": 393,
+      "gitBlob": "a08dc8e7eaa809d05eed5d833e484248a959878a",
+      "sha256": "1cd5ae225fb280caf55d38bed61f2ef30e6760288db77cea5b758a5f02423ae2"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/quarry-modern.json",
+      "bytes": 387,
+      "gitBlob": "e82dcdb12676924ea04ef74d98c557952d2a641c",
+      "sha256": "a05b8523e112bf211a51c1d41c531431264165776ed8ffceabf57becb870480a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/quarry-stone.json",
+      "bytes": 385,
+      "gitBlob": "08770074edf26d4b9181573327040fd7c656d271",
+      "sha256": "5e1ed5439697344dba4d63d4c270ac9b8c08eccae49d63d5c4903c99fd913fc0"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/resource-food.json",
+      "bytes": 391,
+      "gitBlob": "22816b1d55daed4699bf251feec59f42a1da7c75",
+      "sha256": "68937c7b4da3660db036c9e68386bd5ddc2c7efdbb5efcd2a986bae24255e38e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/resource-gold.json",
+      "bytes": 391,
+      "gitBlob": "e7369ff8ccaef29abad0b8f267324f42b07433bc",
+      "sha256": "b0736f105ade4b325d641df29988438150b5a4f7d6f41155c3277f14aa6a9d30"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/resource-stone.json",
+      "bytes": 393,
+      "gitBlob": "7573858b16d3ec8b4084c530b3bacdb48d37d1dd",
+      "sha256": "b719abbf52d299bb847283b4a1b7248674336b4a4e012c76fbbee990842e6d82"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/resource-wood.json",
+      "bytes": 391,
+      "gitBlob": "a72d83bf4f4c1764910489ef37266991d3b9c794",
+      "sha256": "184dc1646cc3928eb3e1f069bfec0200a16e2efb6d775327320ad7f260d48cb3"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/site-exit.json",
+      "bytes": 381,
+      "gitBlob": "3677492a1b4e007b45e8f628a9bb0c0044bda2da",
+      "sha256": "bde5eb64288402f86d771a7bbcfb6a2f9fd029fee9f102c78efb9a10cbe7b090"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/site-guard.json",
+      "bytes": 382,
+      "gitBlob": "a62b38e3ef0fc03bf2d0ddd3ebb40c295581ba13",
+      "sha256": "d6d577ead89ba28aa1c56eee0a9e0568d5da245421692c6da56b2ad3e8c03a37"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/site-human.json",
+      "bytes": 383,
+      "gitBlob": "87e42e2c08ecabba5b6545320dc99ae2ad3447ba",
+      "sha256": "11fd45a87c3228390caef242813e907c3a2b82243ff82ff1f3823e0c6f4170c4"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/site-rest.json",
+      "bytes": 379,
+      "gitBlob": "4c319b6e36e89c3e4d1d6a24d6af816fa22814b4",
+      "sha256": "a5565b7743e119136a23bd879303e3ebd01372969c2a6e64ce439d0484fd4c96"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/site-rival.json",
+      "bytes": 383,
+      "gitBlob": "a9f29409752c417670aea7496baf623e2a77cd79",
+      "sha256": "ec7984e5e608c280b54db6425b9af688a033bcb6410fb8f3da63714d2d7bb2dc"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/site-treasure.json",
+      "bytes": 389,
+      "gitBlob": "03449eec110e3ae8bb4a63d2fe7e18e17f8d263c",
+      "sha256": "81a60bf20a16c010e9b953afd9681253d1c598b74d8360b414c5a454747ea046"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-archery.json",
+      "bytes": 374,
+      "gitBlob": "9b158cc29a90b3d3eb1429d5477ba406aa352405",
+      "sha256": "cb727d6262bad1fb84b700fa1128c13be3c6b0cd1c1a0e58938b6666a2c86a9f"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-armorer.json",
+      "bytes": 374,
+      "gitBlob": "abfea9644c5e29cdbd57d740ec6d242d41464e86",
+      "sha256": "241af2dbe593cda88bdea60fd44ebc2289b21a422bd363880fb372e1e6337a2d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-firstaid.json",
+      "bytes": 376,
+      "gitBlob": "b6e1537c7d0c0167c4af0c6a2cbcdbaf6896f06c",
+      "sha256": "12adf8c453f75acdbd75cef6fc1b3d223aa3478f6f5dcb08354491e82faea27d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-leadership.json",
+      "bytes": 380,
+      "gitBlob": "b9a1ee7c05b86185cb8dd5805582f201e354f190",
+      "sha256": "78c268128841d7764017c7015e3625c99bf6c2ab2f1dd2d0e04745b39640b39c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-logistics.json",
+      "bytes": 378,
+      "gitBlob": "d3049a242d694c6fcf99d1f7893e5cd2abb9ba21",
+      "sha256": "4002692faad0c5b3e1b18684c1e829d69b1713b092424211b1ecd4bdd79f6f9b"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-luck.json",
+      "bytes": 368,
+      "gitBlob": "b02a36316fcbe3ecca3698c0b53f6c8ff5a4e2ca",
+      "sha256": "dafb8151ca0341c68417b9be3150740fee0b28e316d790e3bf580743e852869a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-offense.json",
+      "bytes": 374,
+      "gitBlob": "f9efd68a04fd7c907708f00dff3ae0408318c070",
+      "sha256": "b75631eb1138b6421815520ff5e8ffa71f979b468eca47a69fe1abd15233a977"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-tactics.json",
+      "bytes": 374,
+      "gitBlob": "dc13e9917c4a00b448cc9f8772a110bdb75676ec",
+      "sha256": "0442e262ca5ecef58326b4d5b2c443150c247026f14c874e90f01f73450bb03e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/skill-wisdom.json",
+      "bytes": 372,
+      "gitBlob": "e63a2ce8a7f8ae06f034476bd46730774b6fec8e",
+      "sha256": "82fb62ac158d4e400938de4d49d8055d3b19786a9de59e6e0e51d4e1fe63dd7e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/spell-arrow.json",
+      "bytes": 370,
+      "gitBlob": "fc725f9ea242ab60e3b50e02a76551fbaa9cb17b",
+      "sha256": "9ad1dcb6607cf2fe95c50a4ad4e8596e1818d9cdbc87c3c74a5b98b907d8c4ac"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/spell-bless.json",
+      "bytes": 370,
+      "gitBlob": "4a8c193525c5eee6a45925075e65fe0fffb58c48",
+      "sha256": "0bd9c744f568163931eade80c3ce50de3e2f658d104b4d7289419cb902679eeb"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/spell-bolt.json",
+      "bytes": 368,
+      "gitBlob": "a3961f4a6771ce7cb7f945020e2c4debae72c4cd",
+      "sha256": "6877d130438d463fb75f1e0103424e9dbadb47515b2d1f4e7a2c9f6201730743"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/spell-cure.json",
+      "bytes": 368,
+      "gitBlob": "4218c354485b8349fd06649393a8072da7d77656",
+      "sha256": "b77b3ffc5d141d59056ddd069fd3385d6c4ba5869e5757ad82e2289d1a1f7199"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/spell-fireball.json",
+      "bytes": 376,
+      "gitBlob": "c959020018d9b5315850135fa3c77ea660e179d2",
+      "sha256": "3db23fab1b79e86c2881d971c07d72c5a9c06e945e04e1af02ec3d92899ca78f"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/spell-haste.json",
+      "bytes": 370,
+      "gitBlob": "dd3bd84bf4e6e769a6c11e3f03ba789b6456b6fd",
+      "sha256": "b09d8fd5724986f8fab64d150bf806ff9c71ae75164829718212894cd2a5476d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/spell-resurrect.json",
+      "bytes": 378,
+      "gitBlob": "d173f76bdb38daab5a47d50d167e5db0f41080ff",
+      "sha256": "ee4c24db823a0ab713eb33c7a0700bb4e8b4f1a929f971c6eebc3bcde9f33873"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/spell-slow.json",
+      "bytes": 368,
+      "gitBlob": "6de4dbe30c33da6cd79a0bf0a9f3eabeafa607b7",
+      "sha256": "cb808e1be4657a337798d7c39119220992184fff90f5d92020484cd43dd31e19"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-bronze-arrow.json",
+      "bytes": 401,
+      "gitBlob": "b07e2be78261314fa6cb1a0d3141235e1898fce9",
+      "sha256": "e051de96256511b9c5c8dd40d3e7c491c2f35d4534736bd18623ad75732d26cb"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-bronze-slow.json",
+      "bytes": 397,
+      "gitBlob": "a6e637199935da2da0ab14e0f5b4b8e6cc961756",
+      "sha256": "07ab5dc01fb0cae336d43abcbd65593782a81bc98c6eaef5f2cc2be6450ac9a5"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-bronze-splash.json",
+      "bytes": 399,
+      "gitBlob": "eb3e589959f7fd3a5ea9223de3df17a2866ca6c4",
+      "sha256": "8f305e1129df9b1e951183a67f7ecbe384f2562a452aaeebe653b0b5a7ba71b9"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-bronze-support.json",
+      "bytes": 403,
+      "gitBlob": "3feafb1b204c3592a11b53882688137477b7fd0d",
+      "sha256": "154eb8a5fbb59773e2390ad36e4d4ad0478232d760af940893e5f94771ed921c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-future-arrow.json",
+      "bytes": 399,
+      "gitBlob": "078baac120b36e4bda6c1015ce6bc0d49216114b",
+      "sha256": "ba5eb5fb74f96e2abbea17f7a0a4ae696b8b7b2f008ca015a5e3687bbbb25fcc"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-future-slow.json",
+      "bytes": 398,
+      "gitBlob": "f4a7228426c9383ac85ded06884ba8d08de1d5f0",
+      "sha256": "6b6781b3f13f25e3bfcebb95e207ac1e9f3bd770e751d7f2d7fe5aed020d866e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-future-splash.json",
+      "bytes": 403,
+      "gitBlob": "dfc9678e181be6c414095a057d2aab5a2b0a06a8",
+      "sha256": "3df9f9dd2410b43cc6473fa3b5503f9336fd8f2835a47598ee5e1fb229ca818c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-future-support.json",
+      "bytes": 403,
+      "gitBlob": "a97e669c19d780d37537215e1f83db8bdd980dfb",
+      "sha256": "b58bd172e17c22f8f038016d6496b1e3dbc80058e32520bc70ed5a2646415ba2"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-gunpowder-arrow.json",
+      "bytes": 405,
+      "gitBlob": "f92243863d709eef82ffb864ba56c8f18a289784",
+      "sha256": "2a3b55762f8af500b11442df097eec5a6a4bb2a71e65dc77f3ee9fd7b07b8e95"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-gunpowder-slow.json",
+      "bytes": 403,
+      "gitBlob": "00a3650dec4cd622ac01f018ad154d271a6b5e50",
+      "sha256": "2bfac4a253d0cbf75df4e0d5b727dcf85d8d8e0ea9380250efdf51923d470c6b"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-gunpowder-splash.json",
+      "bytes": 405,
+      "gitBlob": "4d3a327c0c8c7d6f5a9591afc8f908902b3de0f2",
+      "sha256": "782e7f59a7f0f5ec649bc0acbee8143a1a92a1ff5574c6917f55426f486110f7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-gunpowder-support.json",
+      "bytes": 409,
+      "gitBlob": "0b4ac5ca12e778835baccc17b6619340e1909294",
+      "sha256": "a21b547c54c7e2954c1295d4cc772167b72ae9758364c47fca9e0fc24a31f9dc"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-industrial-arrow.json",
+      "bytes": 407,
+      "gitBlob": "a2f17de86cfdcf56bffabdc55df903272d208619",
+      "sha256": "65dfdc351afe2fa4bcc65238f057fbb952d5c1ee76d4b1aae5d96e70cd91d272"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-industrial-slow.json",
+      "bytes": 406,
+      "gitBlob": "f21a25acf0236b1e0fc62ad951773d32572e3b64",
+      "sha256": "86f2a75baa51641ac48653fe05863af5b982ca4ebd12c5bbb2edfc84f30f52d3"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-industrial-splash.json",
+      "bytes": 407,
+      "gitBlob": "c2914dd8cdd39be29147a669be7f9177f2a9e316",
+      "sha256": "cee8a03609b5912b042fde964eaf9755a9e1b2acfd9da0c82ada168e46d0e445"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-industrial-support.json",
+      "bytes": 411,
+      "gitBlob": "916f140458da5f1f59a85735d2eb5ab8aeb82464",
+      "sha256": "30307de9a932677e2102a9b59a25be9fb304cbf6e6f140faf1c1511e0cff39d0"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-iron-arrow.json",
+      "bytes": 395,
+      "gitBlob": "bb6862fba5590dbe7a566bc5d38d39575ae19e6c",
+      "sha256": "be9d92ba8fcf536ebc237cc308483484c66a7deb40fac5fa9bcda5cc70fa7ae2"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-iron-slow.json",
+      "bytes": 393,
+      "gitBlob": "ef644b7de8310c32af8cf95aaeae5da48f309aac",
+      "sha256": "ee61b3fb8577e2c83d59654a3907ebc1ade9d5d6a10dcdac3d7d32db63ffbec3"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-iron-splash.json",
+      "bytes": 395,
+      "gitBlob": "1ad832b24b947e51668b4ccb6e37951f83cfb759",
+      "sha256": "cd0933a6931c540650044f43f52e61f57cc1b7f632848eeba684a947a99e2a61"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-iron-support.json",
+      "bytes": 398,
+      "gitBlob": "6d201903f71a3dc3971b38702aa19c29d63eb403",
+      "sha256": "f997ae2b9ef9c68a648b3be271991ee594abac53da96bae19d500430b7c7e2bb"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-medieval-arrow.json",
+      "bytes": 404,
+      "gitBlob": "a3deff2e31d69d0f07ccfe284347624c2bea88bc",
+      "sha256": "e941fdf537ac921d81d637dc72623572b7b93ccd261690438178806631fa4cb8"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-medieval-slow.json",
+      "bytes": 401,
+      "gitBlob": "ef56c91776125a895e6e148d5e5eb18d6a355fed",
+      "sha256": "8ab0708d83e2fc5cc59bf11bfa16cc80111a7c196ac5820bd64f536d79d80d9a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-medieval-splash.json",
+      "bytes": 406,
+      "gitBlob": "e5b714560c759a2af77f4fd672d4ffac8b934c63",
+      "sha256": "2135813746372201a1116104c7da00e5338fffa46ebe4ec27456629a68595c75"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-medieval-support.json",
+      "bytes": 405,
+      "gitBlob": "35a2857ecc4618914bf9d6b31ac517e4773a5c96",
+      "sha256": "07745da319faaa0a5a14d982df077872adf7b480775d9b5c34986ef1a1d8b7d0"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-modern-arrow.json",
+      "bytes": 399,
+      "gitBlob": "2682c68ae22a68d77c4d6fcfafdb54459f3ae84a",
+      "sha256": "28c6dba61dc06e55b8a2711d61e50973e26af05d1ee857b9ad435856522ad575"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-modern-slow.json",
+      "bytes": 395,
+      "gitBlob": "424cf32b37110e3bf96b2acc7e194cff69f49358",
+      "sha256": "9a687b1f82009d67057f0a07ba3fee4384585a4b7e8abc52bd7de7f17724b1fa"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-modern-splash.json",
+      "bytes": 401,
+      "gitBlob": "6ffe4043a34672648b384616767b81dc031e6e46",
+      "sha256": "08a78fb6bb3be8cc6580251c8237edcfd20faf191ea4ad5cc7734a5ae2f9149f"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-modern-support.json",
+      "bytes": 404,
+      "gitBlob": "0b97b2fd8c2051f84d69a31949b873af27819779",
+      "sha256": "003f6ce545fe6c8c5ccb03988bf65ac5e6abefe5ea761805543202845ca35790"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-stone-arrow.json",
+      "bytes": 397,
+      "gitBlob": "e574cbbd691bdc3b1f8521d48d6ac40162ddb09d",
+      "sha256": "dbd71629d9a6524198a717582dcaf17c31075a9aefaf07492bf595dc7900dbfe"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-stone-slow.json",
+      "bytes": 395,
+      "gitBlob": "27e251f7b94270fc383d11b5762e4cca9d63b0d2",
+      "sha256": "ba23187daa30e3d72cb1bbdf4e32d9a459b40b91b0476073e4e1b8f8021fa645"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-stone-splash.json",
+      "bytes": 401,
+      "gitBlob": "a51daed7186520f5b9dc7851158f22767f265ba6",
+      "sha256": "9d060a8c14abdeb365a1195b98c20040c02ccd8042ed93fe2de4fb275b416297"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/tower-stone-support.json",
+      "bytes": 401,
+      "gitBlob": "ddbde66788ec3c2fb8c81eca544416d913a7c826",
+      "sha256": "5460c1b10eef6e431dae910ec60b5423561e59defe2e4b0f113da9e918e95312"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/townhall-bronze.json",
+      "bytes": 391,
+      "gitBlob": "4f9a6fa1d7b7fe96a995a39f62f4fe609faf4b12",
+      "sha256": "3d0b8b75dfb8d80a73f74b27bb74524959c9103bda9af22c3e3b23c8789516a6"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/townhall-future.json",
+      "bytes": 391,
+      "gitBlob": "edd0e497e170894c16924e5e19159033b8867e10",
+      "sha256": "32b7f7ae84d4f40f54e8f76ff210bc13b00ae5e1c33a8b4dfe579e7cd5186824"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/townhall-gunpowder.json",
+      "bytes": 399,
+      "gitBlob": "b2883ebefb0c8fd78c770df83f6fa5ae9eaef9c0",
+      "sha256": "75f1d7f7479b75d6dc97f314954a54d0cc2f1251c2c4eafabb7dbeb6e11d6743"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/townhall-industrial.json",
+      "bytes": 399,
+      "gitBlob": "8fd0f283cc5906119d2bd71977d1ecaed18d4a33",
+      "sha256": "53da9786cc2017c55c31aeb6543b99b904ec88ae292c74d7cf6b8a5385d1b87e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/townhall-iron.json",
+      "bytes": 387,
+      "gitBlob": "8edb7aa51538ce22536ad704f4b3e52ae4e5ecf6",
+      "sha256": "70b2cda64c4b6bf22a4fb19ea9720125208e486be85c2d24ab831f8969ce8c7c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/townhall-medieval.json",
+      "bytes": 397,
+      "gitBlob": "68dcc42333e74b673a1f66cbca02349c8d10ff80",
+      "sha256": "7b8acbe9f3b1f98252c607193d112c504bd44c6e5819ed73ffc212e32fe3f091"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/townhall-modern.json",
+      "bytes": 393,
+      "gitBlob": "0ad0b66e856a6db27a08ef0045211163a4b32df0",
+      "sha256": "f1c2a52d249dc7e4f61471f7f73e6e96163e5287c10ca1c502d5cb9ef196ecbb"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/townhall-stone.json",
+      "bytes": 388,
+      "gitBlob": "405d51a83c7ebcfc8bf562d581faa4bb448888ef",
+      "sha256": "86935f1d9de48186a53871606e417e37a6daa2f172dcac45ce489ebc2a4a8ecf"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/walls-bronze.json",
+      "bytes": 388,
+      "gitBlob": "49a30c2b7e2940c343a033544e9a7e88807436ca",
+      "sha256": "222c99ba2d87c503ba180679ad4b973effb247ea2184b7a3206ec7dc592e7ad3"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/walls-future.json",
+      "bytes": 387,
+      "gitBlob": "c9c769ffcaeedb30c51fcbed5d99ca9ac96a0f6c",
+      "sha256": "36cb7c521bc94c7969201917a7685861c74bd4b4a694e1c3d6b6eda4f533993b"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/walls-gunpowder.json",
+      "bytes": 393,
+      "gitBlob": "5a44c1e884e58be61147e4d3c06c91fffad91ca0",
+      "sha256": "9b990c362638e25faa70ebb7ae5ed6180582b124851597727c526105fadd2ca8"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/walls-industrial.json",
+      "bytes": 393,
+      "gitBlob": "b5c77218ca71594223b06afc4b5dd067c2fa0fe9",
+      "sha256": "8bf031c71c7c10b1e81bcc3fcf5fde9b258cc4ecd5b4e3e0117db4a1da6f9584"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/walls-iron.json",
+      "bytes": 382,
+      "gitBlob": "24cfb0bdb298b0beeafcb03f9dac8e6c2d30b54e",
+      "sha256": "cc33ea0a58aeb5359f9d4b79aa2ac322e662e116b8b70976b1214b2b8f1465fa"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/walls-medieval.json",
+      "bytes": 392,
+      "gitBlob": "fe552e204a3f51e5f5ba38ee2529f69176330554",
+      "sha256": "807b3590f70b1bac9c7de17c17fd40fee895c65b27ed6f70c2ada81ddbcf9235"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/walls-modern.json",
+      "bytes": 385,
+      "gitBlob": "db8f114ec5e9ccbfff615615198044ab359bba39",
+      "sha256": "f6681147fbee43a9bb477c3910daa57d39fdfc3fd5418760e658ecd1d6551084"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/walls-stone.json",
+      "bytes": 384,
+      "gitBlob": "c9234bede938e604f6bb724d9cd6832b34364c68",
+      "sha256": "174680a5c157cf99b9199b3065fa4edb0b6fa8a2b7b0793195f93adbf958d7bc"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/workshop-bronze.json",
+      "bytes": 392,
+      "gitBlob": "e5d81e781a4da4a41fa54464dfb84c0f9aa643d5",
+      "sha256": "5437456f6fd75281d5a0cd60dc7686d009411c7aa71b52157167dd18d79fac37"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/workshop-future.json",
+      "bytes": 393,
+      "gitBlob": "d3d4f7fc75685cb1ee1a00785b91d079e039655c",
+      "sha256": "eb6a3df3c77154176f73ab249d46df39f20dd3f1fb2568235c41f0badcc1940c"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/workshop-gunpowder.json",
+      "bytes": 399,
+      "gitBlob": "e1d7f9b18ff4ad2c1c8ca578fb8f3ddef7122d79",
+      "sha256": "9d01b625c4a806efccfc4b2dabdcd55308f5b0a71c69c963222bcf839a8cf79e"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/workshop-industrial.json",
+      "bytes": 400,
+      "gitBlob": "5095adc447bdfe87770723c451e3983b860af483",
+      "sha256": "670e5cf2ae8b10ea3d88cc13dd471fcd9dd6db3fcdea4215f15755e1391b6661"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/workshop-iron.json",
+      "bytes": 386,
+      "gitBlob": "37f5bfa26822b340b62c9d490bed2e9b5c6b9007",
+      "sha256": "fa5de83f2e3cfa8affda2fb188e60f65aed45f22014bce6a50fecec03825d80d"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/workshop-medieval.json",
+      "bytes": 395,
+      "gitBlob": "094625c8fa23fd3db44dd6e43e2934cc258a8827",
+      "sha256": "0e6f6d4bb0ed1d6a3937f4f36415d923415dd4eedb5180773328c852086ffe68"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/workshop-modern.json",
+      "bytes": 389,
+      "gitBlob": "8d5283bee7ce384c2768057704456abbe1a499bb",
+      "sha256": "0f2a18e99f71512c4f339c8afec664f5fba6c69ec8ffbf6c145c3eb00a89957a"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/recipes/workshop-stone.json",
+      "bytes": 388,
+      "gitBlob": "d890b6544ca48611c68f96c20a32227fef0950fc",
+      "sha256": "f52ed9aab285943725c6033f26c88502a2a32bd50fa950ed390b42c540bafd54"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/review/gallery.html",
+      "bytes": 1214,
+      "gitBlob": "a0f6a4612296e34271aed8c1e6a66c72d08bd05f",
+      "sha256": "a91ae653600855b523e96152545a45d9764f9f5bafc859cd899c9387e8708184"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/scenes.json",
+      "bytes": 87912,
+      "gitBlob": "0613fa186750a784d6be7899125b7fab5dc4ea58",
+      "sha256": "e31fbfa1e20481044d3d34c087d4a6d4911b12ee45e6e12a675a8f191cc0d491"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/active-batch.lock.json.df6cf288f06392f3",
+      "bytes": 260,
+      "gitBlob": "1b2e7ed4e6739f9b3cdab4763584755423ee59de",
+      "sha256": "df6cf288f06392f34b5c179e050442d199a45572b497ff4d721fb17b5beec3f7"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/budget-ledger.json.448df9e21317ef9e",
+      "bytes": 23595,
+      "gitBlob": "0f651e04333034f67c5c86f3abf8f2ec7c99770b",
+      "sha256": "448df9e21317ef9e162446c3a1774bfb77eff625cd824de356db10963df3fad5"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/pacing_state.json.d2e70b0ec870abec",
+      "bytes": 245,
+      "gitBlob": "ea8c8289a1e8232c39723c4fa2ed669a9e890ff8",
+      "sha256": "d2e70b0ec870abec7487f339252952c9777c4da65ff40c5597c583b8fc43f741"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/reconciled-accounting-ledger.json.69dc34ddbcf7c83a",
+      "bytes": 1729,
+      "gitBlob": "444b47e90033ea126f085a5de38b90906b4db892",
+      "sha256": "69dc34ddbcf7c83a3e4cb6501a50533fc580145ec25a9d4f78a5d4262b7761ff"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/submission.mutex.json.e9b8519c1fd52b36",
+      "bytes": 313,
+      "gitBlob": "660eda4667a628dd719b149446cfb9aab482a9cc",
+      "sha256": "e9b8519c1fd52b362cf09846e40d70d8a29a0a7867dcf1cd57433e9ab89f6917"
+    },
+    {
+      "path": "qa/image-unified-reserve-20261009/vertex-coordinator/healer-class-standing-body/decode-report.json",
+      "bytes": 2712,
+      "gitBlob": "577f144a844d2d19e1e85802765efcc51937f2f0",
+      "sha256": "0bbd38d353178a468f065bd915c61bef221b53f4ec7ca9c48aa35933b44f1a38"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/audit.py",
+      "bytes": 7051,
+      "gitBlob": "d1aa09f0c8cf7cda0784922a474d34c5dcf2aa39",
+      "sha256": "feb9eacd7068e2361da344d6ea3ad3c13b857e8ba188599f1aaea5242e82acaf"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/body-pixel-checks.json",
+      "bytes": 2979,
+      "gitBlob": "c75d3732fc7d70b533a2f60c6af856f5c8b98e53",
+      "sha256": "b0478055b9cdcf9c4daffd8d1cd2e65f41266aa033b2afe5f8feb799b318db7a"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/browser-audit.mjs",
+      "bytes": 7624,
+      "gitBlob": "fbf84b1d5c0aaa6224b8bf2c7cec93f06b3db572",
+      "sha256": "a8893acdd9ec52ddc34d9c545d98d241cd973ab1d6c6370c369ee3d92cc02675"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/browser-report.json",
+      "bytes": 15649,
+      "gitBlob": "a7cb62b754ddf46055ab8c74537abcb6446c68ad",
+      "sha256": "2e00020d841940043d0bf0639eb6dece24dc2424160d672cd7d2784e4e38dae6"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/cleanup-allowlist.json",
+      "bytes": 1607,
+      "gitBlob": "737938b36d6e6fc12f91e1b8c4e6de992396a820",
+      "sha256": "0b9e053dfa60b098f8ff76d02b9ef2591f6ab541a28dd2826e01bd6358886497"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/cleanup-old-qa.ps1",
+      "bytes": 4177,
+      "gitBlob": "f9c9c2b3405cf7321466d0b48257bf8d28a1ec19",
+      "sha256": "3f8a203c1a6e3f44189fb6e3a186d30fd138969b3eecd3cd2c9ac87fc8c8b5c8"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/cleanup-result.json",
+      "bytes": 2330,
+      "gitBlob": "82cdf05392b447c6d85d1ea581100b17299c1d45",
+      "sha256": "f4de02ce7ef28dfec65c9fc9586e3869687587fea1beea308f1a0456d2b0de28"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/consumer-checks.json",
+      "bytes": 34526,
+      "gitBlob": "2196c431c3ad97394b7ba06cac7442654ebc4110",
+      "sha256": "7cffe4e52b3d10c5dcdc4480c2bb04e9d524bcce97d817a0949c103c61190e9e"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/coordinator-offline-tests.txt",
+      "bytes": 524,
+      "gitBlob": "ba266c343d50369813b5a9f7c617fce7b935bcbe",
+      "sha256": "291d1ab3112b753c66fe0388e141f45304bf631078c76e5cd94889110428f462"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/crop-transform-checks.json",
+      "bytes": 43633,
+      "gitBlob": "e0d2bb50739a76313d88e1b9ca71489562c083c8",
+      "sha256": "cc8e7da5fe865f2e0d5ac427634096f7dad70e0675007691cea99d063c1349ee"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/dist-closure.json",
+      "bytes": 65768,
+      "gitBlob": "c8c28a05e1479929371b83a1eb4bf8d5aa336500",
+      "sha256": "841a97e627f02a7289d81d183ff1fa5902cfe0b0f23d4049bd98f86014da2c0c"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/existing-archive-inventory.json",
+      "bytes": 986735,
+      "gitBlob": "ef88c5d7f60baafcf54d19e890fd4dc0925c4784",
+      "sha256": "bbf1866a828c1dcb3bfb200b5fe7e864c8df5af057fd26cc05b7c69489d2d41e"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/final-verification.json",
+      "bytes": 5471,
+      "gitBlob": "93b9f73c95593747bb3c70933d2e563b31213323",
+      "sha256": "f44154b3c508a09010bff6f488b0e6b59c5b3c4cfeaf005f47f17cf7ffc07576"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/finalize.py",
+      "bytes": 6195,
+      "gitBlob": "e2ac21315bbb26c85999837ca30b070e2f247fc9",
+      "sha256": "4a740507d77ae578e86f22ec3d3d88a8e2bfe54b913469c4df2bd23f3f1f532d"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/finish-evidence.py",
+      "bytes": 2829,
+      "gitBlob": "b964be1dd602709e05ae900cdbaf992e566eb7c8",
+      "sha256": "3b8c5a913bd5602478c3414ba0205be8d2f4dc8e013191bafa38fe46efb31aca"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/git-before.json",
+      "bytes": 237491,
+      "gitBlob": "a38002ec20a42367eb9ea94a083df9307810d36e",
+      "sha256": "da2109069189ca75e087844c2736fc401f3a40e11a6ec8ab61d42411cb0b362f"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/healer-wire-check.json",
+      "bytes": 983,
+      "gitBlob": "7cd54c6e9518c9f49573c0b74e605df9bd8b5f80",
+      "sha256": "e2d0080da9d700cc750a080cb4fde0ab4ba45b82e27e5798257954990a6f0382"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/interface-checks.json",
+      "bytes": 631919,
+      "gitBlob": "35c7006ed0a262ed04ea29d52e49678f94ec94ce",
+      "sha256": "68d2cf524aba045ae9c0457306009e6920651c02ca4cda1e9c7dec0823845b02"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/inventory.json",
+      "bytes": 1909943,
+      "gitBlob": "156c2d0af822ae1713ffab69e2a40c9340c26191",
+      "sha256": "5219963b2360543a92b495bb701eaed22ce3b96dc33fb7233efca4d1f28e53d5"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/isolated-build.mjs",
+      "bytes": 4348,
+      "gitBlob": "680d49c644d98d1ea4ff4f673ccb45c915ef94ba",
+      "sha256": "1c165ed863bdbab43cb13adad11ab4563f6a93d013de8387261fe2f5847f4b81"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/journey-report.json",
+      "bytes": 75942,
+      "gitBlob": "a52787145c32481028cc9e4975ec7c1d6adda225",
+      "sha256": "32b72def2ac629b2aab31d27abf5c091614326e15fa9495183bb3beaab1ca174"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/modal-targeted-report.json",
+      "bytes": 1211,
+      "gitBlob": "5541830657115b25686ad34e1a91ecd89fc5cd76",
+      "sha256": "a7f27995aaa98f4d574b9eebde594ed946ee9dd458f3ae37c262657d70955918"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/modal-targeted.mjs",
+      "bytes": 2904,
+      "gitBlob": "3f65a28ed8f3724d028184e5b523970b3c95f1ae",
+      "sha256": "dc0dacd22739cf8ecd760923d95232a9ed47ffeb4b37831ad13e9c38d65f6942"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/natural-journey.mjs",
+      "bytes": 14296,
+      "gitBlob": "f9ad7e0ffd158996385177320efe11cdbc167990",
+      "sha256": "98e9c6fbb1e65a4fa669a6b73311c204311a0917058f915318ce6082a605d5af"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/node-tests.txt",
+      "bytes": 11550,
+      "gitBlob": "ad0f60033931800dc2ee091cf739902337714bc8",
+      "sha256": "fa162ec984126f90a010d4452500a2f98f8cc565f50ce908e65389821939b3a1"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/package-checks.json",
+      "bytes": 461,
+      "gitBlob": "acb48312f1e08719afda238124cbe1569d6426a1",
+      "sha256": "3db4ce2058029f7efc6113da309ed33f6b9e9d1a10969f75953ab1e7aa432702"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/plate-pixel-checks.json",
+      "bytes": 14852,
+      "gitBlob": "f0b5bdd9625007872dbfbdddf59db27ce4ec13c1",
+      "sha256": "93db98525309408fd4412c84214c62a7882f5aa24a61c000b7806155457ca1bf"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/pointer-update.json",
+      "bytes": 2786,
+      "gitBlob": "db377a7d140835e6a6eba4d73a43b80616d57f67",
+      "sha256": "0b50ba705a822170a87dddb80dfa475e9b4e27ca9b9a058d20df1dc377d5097d"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/prepare-probes.py",
+      "bytes": 1841,
+      "gitBlob": "f45f9893cd7c9dd3ee55e67c29dcfbee42b01ca7",
+      "sha256": "626ca726871613a3ef7bb1129dfa72a8c8c7c24ebbefd8c4b6073486cccf3db5"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/preview-recovery-portability.json",
+      "bytes": 320,
+      "gitBlob": "ecf4246ba1dc9be8eaf63567066885d39bb0032b",
+      "sha256": "9333400e820ee20d2935438698846e594a6163b9084f94f381e4dbcfe35048ba"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/protected-before.json",
+      "bytes": 1825844,
+      "gitBlob": "ef943bc3b98e2210e48bb99d252321d448209291",
+      "sha256": "512e6b0864dde546d1581d7d46373c2215a7159f9631249c68758c733f04699b"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/raw-native-checks.json",
+      "bytes": 11740,
+      "gitBlob": "c57dc9d26218651411bc2b91ba74f19257ee1a4c",
+      "sha256": "0abbac3a3971dea9aba097980ecbefc69baef3e7c535d87796a3caaa4a2f6b84"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/reading.json",
+      "bytes": 293900,
+      "gitBlob": "8aabaf4c352304c785736c3ba14bb0df375533c4",
+      "sha256": "bfcfb900cf86b3ccef2baae999712c7581e7b200571e1db831f208d766b4ba79"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/sandbox-browser-block.json",
+      "bytes": 590,
+      "gitBlob": "858ee988f25a044ec85da946c2dc6328d4bf3879",
+      "sha256": "79b40d8fc0c1a90ffd4a0c3c2ac819bbdcab8453b408ea304438b5380919f779"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/sandbox-coordinator-partial.txt",
+      "bytes": 369,
+      "gitBlob": "98f27ef7bad285acef63b4bd415d8868325e77c8",
+      "sha256": "8c8b74eecc0db554dfc2dfc139f7a49d0602bd8a0e9f48b5209d6cf1c2693116"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/sandbox-modal-block.json",
+      "bytes": 454,
+      "gitBlob": "baf15de5955965af78027cd4a6897c0bb9b7e6ae",
+      "sha256": "4e1674b26f84c27a117713d833f55f7847fa9d4118b5b86551619a88381dd04b"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/scene-source-resolution.json",
+      "bytes": 6782,
+      "gitBlob": "a7f916b96466b14f70fe66b2a72421423c8c03ec",
+      "sha256": "ff86d887be1d519162580718d3d2f1a4889458d71e40da3ad5c8a3ef191b3de4"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/scope.json",
+      "bytes": 7625,
+      "gitBlob": "2463b1334844bf6f6a499fa32d42aaaacf66b5e3",
+      "sha256": "2d3274eeb8c0710ec2b110883eefc497fdb8a9453af9055160ea3356092dcd12"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/security-check.json",
+      "bytes": 85611,
+      "gitBlob": "76b4a294b6f16fda1547c0e64da82f97545cc3f7",
+      "sha256": "220667bfa5c975cf9cce3927628305faf7fc364d50a18af1d1a71b67898219cd"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/storage-final.json",
+      "bytes": 3020,
+      "gitBlob": "6b9331b4cceda5c9f5aa80a8d563ffe99ab2e7d1",
+      "sha256": "d178385077d399c9d6c65595a8d7c85ece855a209b81b1ec0d2352b9f64bb07b"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/storage-measure.py",
+      "bytes": 2163,
+      "gitBlob": "f66010055e7dc3d6789b961ca2bc5b9d29cd9234",
+      "sha256": "f88202777275bc85f495712034f242a356ff7f519fc67dd3615515604701606f"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/test-result.json",
+      "bytes": 41,
+      "gitBlob": "8c4f0237fbdd9d3c17c88f5f83c2bc63ca18004d",
+      "sha256": "36ad889e916066ec4cbe6cfae8ad530da5e04df1a7f1c7825d0d9c910a380391"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/update-pointers.py",
+      "bytes": 3079,
+      "gitBlob": "4eb0da9553e23bb77dc00651949465bfba2256e7",
+      "sha256": "88f94258fd1e536ba32101757ee9134b81c9f3fd88285b9b7902d5030d3f0353"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/verify-delivery.py",
+      "bytes": 5426,
+      "gitBlob": "4cdada5385936406470dce4ed550e33ec25fa553",
+      "sha256": "e830f46d5237cbf29e1a904087ccfa25b6aa9fd60cdb71e6cf0f0069a51eb732"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/viewport-report.json",
+      "bytes": 101574,
+      "gitBlob": "0b0d36ec3b8782b3b373fce21afbdc11836379a5",
+      "sha256": "07fcbcd6a4465b7cd06f02fd92bf4f9898d451a0dadf27efb2f0be994b16a785"
+    },
+    {
+      "path": "qa/planner-device-handoff-20261009/viewports.mjs",
+      "bytes": 3401,
+      "gitBlob": "ccc531e4941cfdbc1245c7dc6da46feb325eb218",
+      "sha256": "a7e7c812b0dd67ce750330cf5bc7ced8c5b45c65aec71d49123839372d61bfb5"
+    }
+  ]
+}

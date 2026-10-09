@@ -78,3 +78,11 @@ service_account*.json
 # Keep receipts, hashes, write-ahead records, and budget evidence in Git.
 /qa/image-vertex-repair-*/**/vertex-coordinator/attempts/**/request_body.json
 /qa/image-vertex-repair-*/**/vertex-coordinator/attempts/**/response.json
+
+# Portable device-transfer payloads stay local; their manifests belong in Git.
+/assets.zip
+/output/device-transfer-20261009/
+/qa/planner-device-handoff-20261009/static-package/
+/qa/planner-device-handoff-20261009/restore-safety-fixture/
+/qa/image-unified-reserve-*/**/vertex-coordinator/**/request_body.json
+/qa/image-unified-reserve-*/**/vertex-coordinator/**/response.json

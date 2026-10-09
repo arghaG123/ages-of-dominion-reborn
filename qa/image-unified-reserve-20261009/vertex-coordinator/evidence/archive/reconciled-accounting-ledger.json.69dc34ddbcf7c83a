@@ -1,0 +1,52 @@
+{
+  "version": "2.1-reconciled-completed-20261004",
+  "status": "RECONCILED_LATER73_COMPLETED",
+  "invoices": "UNKNOWN",
+  "ratesStatus": "OFFICIAL_STANDARD_RATES_20261004",
+  "tariffDetails": {
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "inputTokenPer1M_USD": 0.5,
+    "outputTextThinkingPer1M_USD": 3.0,
+    "imageOutputPer1M_USD": 60.0,
+    "native2KImageTokens": 1680,
+    "inputImageTokens": 1120
+  },
+  "caps": {
+    "aimUSD": 60.0,
+    "hardUSD": 80.0,
+    "protectedReserveUSD": 15.0
+  },
+  "componentsUSD": {
+    "historicalBatches01to17Reconciled": 40.24,
+    "historicalMock": 2.0,
+    "run1SuccessfulImages": 1.8293,
+    "run1NoImageTextTariff": 0.001503,
+    "run2SuccessfulImages": 0.6098,
+    "run3SuccessfulImages": 0.1524,
+    "run4SuccessfulImages": 0.7622,
+    "run5TacticalRetry": 0.3049,
+    "run6KingdomTerrains": 1.2193,
+    "priorBufferAndOverhead": 0.7302,
+    "protectedReserve": 15.0,
+    "later73ActualSpendUSD": 7.5644,
+    "retainedUnresolvedLiabilitiesUSD": 0.2872
+  },
+  "retainedProvisionalPriorExposureUSD": 62.8496,
+  "totalReconciledExposureUSD": 70.7012,
+  "headroomUnderHardCapUSD": 9.2988,
+  "queueOutcome": {
+    "itemsCount": 73,
+    "completed": 73,
+    "reused": 157,
+    "promotedToFinalNative2k": 73,
+    "actualSpendUSD": 7.5644,
+    "averageCostPerImageUSD": 0.1036
+  },
+  "rulesEnforced": [
+    "Aim $60 / Hard $80 / Protected $15 reserve persist untouched",
+    "Zero batch 18+ or filler generations",
+    "Invoices remain UNKNOWN",
+    "Sequential individual generation with 20s gap and 60s+ 429 retry",
+    "100% of 73 promoted to assets/high-res/final-native2k/"
+  ]
+}

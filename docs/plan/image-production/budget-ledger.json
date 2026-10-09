@@ -555,5 +555,28 @@
     ],
     "addedRetainedUSD": 8.7171,
     "currentCommittedProtectedUSD": 79.8327
+  },
+  "ownerReserveRelease20261009": {
+    "id": "OWNER_RESERVE_RELEASE_20261009",
+    "recordedAt": "2026-10-09T11:00:55.472668+00:00",
+    "ownerQuote": "use $15 reserve and instruct remain work and solution to do for one AI with a prompt.",
+    "authorityDocument": "docs/plan/OWNER-RESERVE-RELEASE-SINGLE-IMAGE-AI-2026-10-09.md",
+    "releasedReserveUSD": 15.0,
+    "effectiveProtectedReserveUSD": 0.0,
+    "priorProtectedExposureUSD": 79.8327,
+    "priorLiabilityExcludingReserveUSD": 64.8327,
+    "remainingHeadroomUSD": 15.1673,
+    "hardCapUSD": 80.0,
+    "historicalSafetyReservePreservedUSD": 15.0,
+    "historicalCurrentCommittedProtectedUSD": 79.8327,
+    "invoiceStatus": "UNKNOWN",
+    "note": "Effective reserve is 0 for this authorized task. Do not subtract 15 from a balance that already excludes it. Historical safetyReserve and 79.8327 exposure stay in place."
+  },
+  "effectivePolicy20261009": {
+    "effectiveProtectedReserveUSD": 0.0,
+    "priorLiabilityExcludingReserveUSD": 64.8327,
+    "hardCapUSD": 80.0,
+    "remainingHeadroomAtReleaseUSD": 15.1673,
+    "consumers": "image-unified-reserve-20261009 coordinator guard_post"
   }
 }

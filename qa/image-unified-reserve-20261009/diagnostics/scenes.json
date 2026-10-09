@@ -1,0 +1,4429 @@
+[
+  {
+    "id": "kingdom-terrain-stone",
+    "mode": "KINGDOM",
+    "age": 0,
+    "legalAffine": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "PASS"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "source": {
+      "path": "assets/production/production-03-20261003/images/01-kingdom-terrain-stone.png",
+      "sha256": "5fcdb893fd7f2567f435742368cfa5fa093cbbbbe2b49a17f9f850d306b7de70",
+      "bytes": 2020388,
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      }
+    },
+    "sourceToLegal": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0,
+      0
+    ],
+    "legalRoadSampleCount": 76,
+    "legalRoadPathLikeFraction": 0.8684,
+    "pads": [
+      {
+        "id": "townhall",
+        "quad": [
+          [
+            470.0,
+            115.0
+          ],
+          [
+            650.0,
+            85.0
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "pixels": 10552,
+        "ochreFraction": 0.7818
+      },
+      {
+        "id": "P01",
+        "quad": [
+          [
+            340.0,
+            215.0
+          ],
+          [
+            424.0,
+            201.0
+          ],
+          [
+            454.0,
+            243.0
+          ],
+          [
+            370.0,
+            257.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7208
+      },
+      {
+        "id": "P02",
+        "quad": [
+          [
+            460.0,
+            195.0
+          ],
+          [
+            544.0,
+            181.0
+          ],
+          [
+            574.0,
+            223.0
+          ],
+          [
+            490.0,
+            237.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7034
+      },
+      {
+        "id": "P03",
+        "quad": [
+          [
+            580.0,
+            175.0
+          ],
+          [
+            664.0,
+            161.0
+          ],
+          [
+            694.0,
+            203.0
+          ],
+          [
+            610.0,
+            217.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7753
+      },
+      {
+        "id": "P04",
+        "quad": [
+          [
+            700.0,
+            155.0
+          ],
+          [
+            784.0,
+            141.0
+          ],
+          [
+            814.0,
+            183.0
+          ],
+          [
+            730.0,
+            197.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7091
+      },
+      {
+        "id": "P05",
+        "quad": [
+          [
+            820.0,
+            135.0
+          ],
+          [
+            904.0,
+            121.0
+          ],
+          [
+            934.0,
+            163.0
+          ],
+          [
+            850.0,
+            177.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6976
+      },
+      {
+        "id": "P06",
+        "quad": [
+          [
+            390.0,
+            285.0
+          ],
+          [
+            474.0,
+            271.0
+          ],
+          [
+            504.0,
+            313.0
+          ],
+          [
+            420.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7665
+      },
+      {
+        "id": "P07",
+        "quad": [
+          [
+            510.0,
+            265.0
+          ],
+          [
+            594.0,
+            251.0
+          ],
+          [
+            624.0,
+            293.0
+          ],
+          [
+            540.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8202
+      },
+      {
+        "id": "P08",
+        "quad": [
+          [
+            750.0,
+            225.0
+          ],
+          [
+            834.0,
+            211.0
+          ],
+          [
+            864.0,
+            253.0
+          ],
+          [
+            780.0,
+            267.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7436
+      },
+      {
+        "id": "P09",
+        "quad": [
+          [
+            870.0,
+            205.0
+          ],
+          [
+            954.0,
+            191.0
+          ],
+          [
+            984.0,
+            233.0
+          ],
+          [
+            900.0,
+            247.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7378
+      },
+      {
+        "id": "P10",
+        "quad": [
+          [
+            380.0,
+            365.0
+          ],
+          [
+            464.0,
+            351.0
+          ],
+          [
+            494.0,
+            393.0
+          ],
+          [
+            410.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7029
+      },
+      {
+        "id": "P11",
+        "quad": [
+          [
+            500.0,
+            345.0
+          ],
+          [
+            584.0,
+            331.0
+          ],
+          [
+            614.0,
+            373.0
+          ],
+          [
+            530.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6504
+      },
+      {
+        "id": "P12",
+        "quad": [
+          [
+            860.0,
+            285.0
+          ],
+          [
+            944.0,
+            271.0
+          ],
+          [
+            974.0,
+            313.0
+          ],
+          [
+            890.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7738
+      },
+      {
+        "id": "P13",
+        "quad": [
+          [
+            980.0,
+            265.0
+          ],
+          [
+            1064.0,
+            251.0
+          ],
+          [
+            1094.0,
+            293.0
+          ],
+          [
+            1010.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7536
+      },
+      {
+        "id": "P14",
+        "quad": [
+          [
+            490.0,
+            425.0
+          ],
+          [
+            574.0,
+            411.0
+          ],
+          [
+            604.0,
+            453.0
+          ],
+          [
+            520.0,
+            467.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6689
+      },
+      {
+        "id": "P15",
+        "quad": [
+          [
+            610.0,
+            405.0
+          ],
+          [
+            694.0,
+            391.0
+          ],
+          [
+            724.0,
+            433.0
+          ],
+          [
+            640.0,
+            447.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6459
+      },
+      {
+        "id": "P16",
+        "quad": [
+          [
+            850.0,
+            365.0
+          ],
+          [
+            934.0,
+            351.0
+          ],
+          [
+            964.0,
+            393.0
+          ],
+          [
+            880.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.592
+      },
+      {
+        "id": "P17",
+        "quad": [
+          [
+            970.0,
+            345.0
+          ],
+          [
+            1054.0,
+            331.0
+          ],
+          [
+            1084.0,
+            373.0
+          ],
+          [
+            1000.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7695
+      }
+    ],
+    "paintedRoads": [],
+    "banks": [],
+    "decks": [],
+    "approaches": [],
+    "walkable": [],
+    "obstacles": [],
+    "clearance": {
+      "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+      "padPixels": 78637,
+      "ochrePadPixels": 57237
+    },
+    "geometrySHA256": "a3f0b461d33f2b6ecd715d812060f16ce1920144cc00f99307d71b261e16911e",
+    "prototype": {
+      "id": "kingdom-terrain-stone",
+      "changedPixels": 57237,
+      "unresolvedOchre": 0,
+      "outsidePadsIdentical": true,
+      "output": "assets/derivatives/image-unified-reserve-20261009/environment/terrain-prototypes/kingdom-terrain-stone.png",
+      "guide": "qa/image-unified-reserve-20261009/geography/kingdom-terrain-stone-legal-pads.png",
+      "spatial": "FAIL",
+      "reason": "Local pad ochre fill does not place legal roads, banks, bridge or approaches. It is not a scene pass and it authorizes no paid kingdom retry.",
+      "method": "source-bound TELEA fill inside legal pads only; new pixels are synthesized, not recovered hidden source"
+    }
+  },
+  {
+    "id": "kingdom-terrain-bronze",
+    "mode": "KINGDOM",
+    "age": 1,
+    "legalAffine": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "PASS"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "source": {
+      "path": "assets/production/production-01-20261003/images/02-kingdom-terrain-bronze.png",
+      "sha256": "49f13640f0d3f1b44769606ae541e8f67bd34d861dc0052e6bd69af7342230c1",
+      "bytes": 2109981,
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      }
+    },
+    "sourceToLegal": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0,
+      0
+    ],
+    "legalRoadSampleCount": 76,
+    "legalRoadPathLikeFraction": 0.8289,
+    "pads": [
+      {
+        "id": "townhall",
+        "quad": [
+          [
+            470.0,
+            115.0
+          ],
+          [
+            650.0,
+            85.0
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "pixels": 10552,
+        "ochreFraction": 0.0747
+      },
+      {
+        "id": "P01",
+        "quad": [
+          [
+            340.0,
+            215.0
+          ],
+          [
+            424.0,
+            201.0
+          ],
+          [
+            454.0,
+            243.0
+          ],
+          [
+            370.0,
+            257.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8467
+      },
+      {
+        "id": "P02",
+        "quad": [
+          [
+            460.0,
+            195.0
+          ],
+          [
+            544.0,
+            181.0
+          ],
+          [
+            574.0,
+            223.0
+          ],
+          [
+            490.0,
+            237.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9056
+      },
+      {
+        "id": "P03",
+        "quad": [
+          [
+            580.0,
+            175.0
+          ],
+          [
+            664.0,
+            161.0
+          ],
+          [
+            694.0,
+            203.0
+          ],
+          [
+            610.0,
+            217.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9019
+      },
+      {
+        "id": "P04",
+        "quad": [
+          [
+            700.0,
+            155.0
+          ],
+          [
+            784.0,
+            141.0
+          ],
+          [
+            814.0,
+            183.0
+          ],
+          [
+            730.0,
+            197.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9206
+      },
+      {
+        "id": "P05",
+        "quad": [
+          [
+            820.0,
+            135.0
+          ],
+          [
+            904.0,
+            121.0
+          ],
+          [
+            934.0,
+            163.0
+          ],
+          [
+            850.0,
+            177.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7281
+      },
+      {
+        "id": "P06",
+        "quad": [
+          [
+            390.0,
+            285.0
+          ],
+          [
+            474.0,
+            271.0
+          ],
+          [
+            504.0,
+            313.0
+          ],
+          [
+            420.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8881
+      },
+      {
+        "id": "P07",
+        "quad": [
+          [
+            510.0,
+            265.0
+          ],
+          [
+            594.0,
+            251.0
+          ],
+          [
+            624.0,
+            293.0
+          ],
+          [
+            540.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0829
+      },
+      {
+        "id": "P08",
+        "quad": [
+          [
+            750.0,
+            225.0
+          ],
+          [
+            834.0,
+            211.0
+          ],
+          [
+            864.0,
+            253.0
+          ],
+          [
+            780.0,
+            267.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8829
+      },
+      {
+        "id": "P09",
+        "quad": [
+          [
+            870.0,
+            205.0
+          ],
+          [
+            954.0,
+            191.0
+          ],
+          [
+            984.0,
+            233.0
+          ],
+          [
+            900.0,
+            247.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.219
+      },
+      {
+        "id": "P10",
+        "quad": [
+          [
+            380.0,
+            365.0
+          ],
+          [
+            464.0,
+            351.0
+          ],
+          [
+            494.0,
+            393.0
+          ],
+          [
+            410.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8759
+      },
+      {
+        "id": "P11",
+        "quad": [
+          [
+            500.0,
+            345.0
+          ],
+          [
+            584.0,
+            331.0
+          ],
+          [
+            614.0,
+            373.0
+          ],
+          [
+            530.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0624
+      },
+      {
+        "id": "P12",
+        "quad": [
+          [
+            860.0,
+            285.0
+          ],
+          [
+            944.0,
+            271.0
+          ],
+          [
+            974.0,
+            313.0
+          ],
+          [
+            890.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0667
+      },
+      {
+        "id": "P13",
+        "quad": [
+          [
+            980.0,
+            265.0
+          ],
+          [
+            1064.0,
+            251.0
+          ],
+          [
+            1094.0,
+            293.0
+          ],
+          [
+            1010.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7733
+      },
+      {
+        "id": "P14",
+        "quad": [
+          [
+            490.0,
+            425.0
+          ],
+          [
+            574.0,
+            411.0
+          ],
+          [
+            604.0,
+            453.0
+          ],
+          [
+            520.0,
+            467.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8986
+      },
+      {
+        "id": "P15",
+        "quad": [
+          [
+            610.0,
+            405.0
+          ],
+          [
+            694.0,
+            391.0
+          ],
+          [
+            724.0,
+            433.0
+          ],
+          [
+            640.0,
+            447.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8984
+      },
+      {
+        "id": "P16",
+        "quad": [
+          [
+            850.0,
+            365.0
+          ],
+          [
+            934.0,
+            351.0
+          ],
+          [
+            964.0,
+            393.0
+          ],
+          [
+            880.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0929
+      },
+      {
+        "id": "P17",
+        "quad": [
+          [
+            970.0,
+            345.0
+          ],
+          [
+            1054.0,
+            331.0
+          ],
+          [
+            1084.0,
+            373.0
+          ],
+          [
+            1000.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0799
+      }
+    ],
+    "paintedRoads": [],
+    "banks": [],
+    "decks": [],
+    "approaches": [],
+    "walkable": [],
+    "obstacles": [],
+    "clearance": {
+      "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+      "padPixels": 78637,
+      "ochrePadPixels": 41334
+    },
+    "geometrySHA256": "c8dea1eb5511050e58ccafeb60656a40ccdc7cf754104aad80d1880f455dcd21"
+  },
+  {
+    "id": "kingdom-terrain-iron",
+    "mode": "KINGDOM",
+    "age": 2,
+    "legalAffine": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "PASS"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "source": {
+      "path": "assets/production/production-01-20261003/images/03-kingdom-terrain-iron.png",
+      "sha256": "a05358dba5c543bdde5d17d0ad65aa59b24e8afc6705d95cadfd002436df8fb9",
+      "bytes": 2293053,
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      }
+    },
+    "sourceToLegal": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0,
+      0
+    ],
+    "legalRoadSampleCount": 76,
+    "legalRoadPathLikeFraction": 0.6711,
+    "pads": [
+      {
+        "id": "townhall",
+        "quad": [
+          [
+            470.0,
+            115.0
+          ],
+          [
+            650.0,
+            85.0
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "pixels": 10552,
+        "ochreFraction": 0.0854
+      },
+      {
+        "id": "P01",
+        "quad": [
+          [
+            340.0,
+            215.0
+          ],
+          [
+            424.0,
+            201.0
+          ],
+          [
+            454.0,
+            243.0
+          ],
+          [
+            370.0,
+            257.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5531
+      },
+      {
+        "id": "P02",
+        "quad": [
+          [
+            460.0,
+            195.0
+          ],
+          [
+            544.0,
+            181.0
+          ],
+          [
+            574.0,
+            223.0
+          ],
+          [
+            490.0,
+            237.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.4954
+      },
+      {
+        "id": "P03",
+        "quad": [
+          [
+            580.0,
+            175.0
+          ],
+          [
+            664.0,
+            161.0
+          ],
+          [
+            694.0,
+            203.0
+          ],
+          [
+            610.0,
+            217.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5341
+      },
+      {
+        "id": "P04",
+        "quad": [
+          [
+            700.0,
+            155.0
+          ],
+          [
+            784.0,
+            141.0
+          ],
+          [
+            814.0,
+            183.0
+          ],
+          [
+            730.0,
+            197.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.4816
+      },
+      {
+        "id": "P05",
+        "quad": [
+          [
+            820.0,
+            135.0
+          ],
+          [
+            904.0,
+            121.0
+          ],
+          [
+            934.0,
+            163.0
+          ],
+          [
+            850.0,
+            177.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.4702
+      },
+      {
+        "id": "P06",
+        "quad": [
+          [
+            390.0,
+            285.0
+          ],
+          [
+            474.0,
+            271.0
+          ],
+          [
+            504.0,
+            313.0
+          ],
+          [
+            420.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5358
+      },
+      {
+        "id": "P07",
+        "quad": [
+          [
+            510.0,
+            265.0
+          ],
+          [
+            594.0,
+            251.0
+          ],
+          [
+            624.0,
+            293.0
+          ],
+          [
+            540.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5728
+      },
+      {
+        "id": "P08",
+        "quad": [
+          [
+            750.0,
+            225.0
+          ],
+          [
+            834.0,
+            211.0
+          ],
+          [
+            864.0,
+            253.0
+          ],
+          [
+            780.0,
+            267.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5296
+      },
+      {
+        "id": "P09",
+        "quad": [
+          [
+            870.0,
+            205.0
+          ],
+          [
+            954.0,
+            191.0
+          ],
+          [
+            984.0,
+            233.0
+          ],
+          [
+            900.0,
+            247.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.4597
+      },
+      {
+        "id": "P10",
+        "quad": [
+          [
+            380.0,
+            365.0
+          ],
+          [
+            464.0,
+            351.0
+          ],
+          [
+            494.0,
+            393.0
+          ],
+          [
+            410.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5938
+      },
+      {
+        "id": "P11",
+        "quad": [
+          [
+            500.0,
+            345.0
+          ],
+          [
+            584.0,
+            331.0
+          ],
+          [
+            614.0,
+            373.0
+          ],
+          [
+            530.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5775
+      },
+      {
+        "id": "P12",
+        "quad": [
+          [
+            860.0,
+            285.0
+          ],
+          [
+            944.0,
+            271.0
+          ],
+          [
+            974.0,
+            313.0
+          ],
+          [
+            890.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5935
+      },
+      {
+        "id": "P13",
+        "quad": [
+          [
+            980.0,
+            265.0
+          ],
+          [
+            1064.0,
+            251.0
+          ],
+          [
+            1094.0,
+            293.0
+          ],
+          [
+            1010.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5401
+      },
+      {
+        "id": "P14",
+        "quad": [
+          [
+            490.0,
+            425.0
+          ],
+          [
+            574.0,
+            411.0
+          ],
+          [
+            604.0,
+            453.0
+          ],
+          [
+            520.0,
+            467.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5903
+      },
+      {
+        "id": "P15",
+        "quad": [
+          [
+            610.0,
+            405.0
+          ],
+          [
+            694.0,
+            391.0
+          ],
+          [
+            724.0,
+            433.0
+          ],
+          [
+            640.0,
+            447.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6155
+      },
+      {
+        "id": "P16",
+        "quad": [
+          [
+            850.0,
+            365.0
+          ],
+          [
+            934.0,
+            351.0
+          ],
+          [
+            964.0,
+            393.0
+          ],
+          [
+            880.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5878
+      },
+      {
+        "id": "P17",
+        "quad": [
+          [
+            970.0,
+            345.0
+          ],
+          [
+            1054.0,
+            331.0
+          ],
+          [
+            1084.0,
+            373.0
+          ],
+          [
+            1000.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5348
+      }
+    ],
+    "paintedRoads": [],
+    "banks": [],
+    "decks": [],
+    "approaches": [],
+    "walkable": [],
+    "obstacles": [],
+    "clearance": {
+      "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+      "padPixels": 78637,
+      "ochrePadPixels": 38009
+    },
+    "geometrySHA256": "2436c5571ed80572d230f0e266d5059d78b9a71becde77a2010f75cc3d7a1fbf"
+  },
+  {
+    "id": "kingdom-terrain-medieval",
+    "mode": "KINGDOM",
+    "age": 3,
+    "legalAffine": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "PASS"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "source": {
+      "path": "assets/production/production-03-20261003/images/02-kingdom-terrain-medieval.png",
+      "sha256": "7c6122a97b842a45d8fb6ce7477df48e07d24046f3c8ce6878647cf2a1daa152",
+      "bytes": 2042115,
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      }
+    },
+    "sourceToLegal": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0,
+      0
+    ],
+    "legalRoadSampleCount": 76,
+    "legalRoadPathLikeFraction": 0.4605,
+    "pads": [
+      {
+        "id": "townhall",
+        "quad": [
+          [
+            470.0,
+            115.0
+          ],
+          [
+            650.0,
+            85.0
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "pixels": 10552,
+        "ochreFraction": 0.1982
+      },
+      {
+        "id": "P01",
+        "quad": [
+          [
+            340.0,
+            215.0
+          ],
+          [
+            424.0,
+            201.0
+          ],
+          [
+            454.0,
+            243.0
+          ],
+          [
+            370.0,
+            257.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6482
+      },
+      {
+        "id": "P02",
+        "quad": [
+          [
+            460.0,
+            195.0
+          ],
+          [
+            544.0,
+            181.0
+          ],
+          [
+            574.0,
+            223.0
+          ],
+          [
+            490.0,
+            237.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.2999
+      },
+      {
+        "id": "P03",
+        "quad": [
+          [
+            580.0,
+            175.0
+          ],
+          [
+            664.0,
+            161.0
+          ],
+          [
+            694.0,
+            203.0
+          ],
+          [
+            610.0,
+            217.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8732
+      },
+      {
+        "id": "P04",
+        "quad": [
+          [
+            700.0,
+            155.0
+          ],
+          [
+            784.0,
+            141.0
+          ],
+          [
+            814.0,
+            183.0
+          ],
+          [
+            730.0,
+            197.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6592
+      },
+      {
+        "id": "P05",
+        "quad": [
+          [
+            820.0,
+            135.0
+          ],
+          [
+            904.0,
+            121.0
+          ],
+          [
+            934.0,
+            163.0
+          ],
+          [
+            850.0,
+            177.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.1124
+      },
+      {
+        "id": "P06",
+        "quad": [
+          [
+            390.0,
+            285.0
+          ],
+          [
+            474.0,
+            271.0
+          ],
+          [
+            504.0,
+            313.0
+          ],
+          [
+            420.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.1678
+      },
+      {
+        "id": "P07",
+        "quad": [
+          [
+            510.0,
+            265.0
+          ],
+          [
+            594.0,
+            251.0
+          ],
+          [
+            624.0,
+            293.0
+          ],
+          [
+            540.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.1893
+      },
+      {
+        "id": "P08",
+        "quad": [
+          [
+            750.0,
+            225.0
+          ],
+          [
+            834.0,
+            211.0
+          ],
+          [
+            864.0,
+            253.0
+          ],
+          [
+            780.0,
+            267.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.4027
+      },
+      {
+        "id": "P09",
+        "quad": [
+          [
+            870.0,
+            205.0
+          ],
+          [
+            954.0,
+            191.0
+          ],
+          [
+            984.0,
+            233.0
+          ],
+          [
+            900.0,
+            247.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.1988
+      },
+      {
+        "id": "P10",
+        "quad": [
+          [
+            380.0,
+            365.0
+          ],
+          [
+            464.0,
+            351.0
+          ],
+          [
+            494.0,
+            393.0
+          ],
+          [
+            410.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.3084
+      },
+      {
+        "id": "P11",
+        "quad": [
+          [
+            500.0,
+            345.0
+          ],
+          [
+            584.0,
+            331.0
+          ],
+          [
+            614.0,
+            373.0
+          ],
+          [
+            530.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.2057
+      },
+      {
+        "id": "P12",
+        "quad": [
+          [
+            860.0,
+            285.0
+          ],
+          [
+            944.0,
+            271.0
+          ],
+          [
+            974.0,
+            313.0
+          ],
+          [
+            890.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.3086
+      },
+      {
+        "id": "P13",
+        "quad": [
+          [
+            980.0,
+            265.0
+          ],
+          [
+            1064.0,
+            251.0
+          ],
+          [
+            1094.0,
+            293.0
+          ],
+          [
+            1010.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.1476
+      },
+      {
+        "id": "P14",
+        "quad": [
+          [
+            490.0,
+            425.0
+          ],
+          [
+            574.0,
+            411.0
+          ],
+          [
+            604.0,
+            453.0
+          ],
+          [
+            520.0,
+            467.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.1823
+      },
+      {
+        "id": "P15",
+        "quad": [
+          [
+            610.0,
+            405.0
+          ],
+          [
+            694.0,
+            391.0
+          ],
+          [
+            724.0,
+            433.0
+          ],
+          [
+            640.0,
+            447.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.1638
+      },
+      {
+        "id": "P16",
+        "quad": [
+          [
+            850.0,
+            365.0
+          ],
+          [
+            934.0,
+            351.0
+          ],
+          [
+            964.0,
+            393.0
+          ],
+          [
+            880.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.2637
+      },
+      {
+        "id": "P17",
+        "quad": [
+          [
+            970.0,
+            345.0
+          ],
+          [
+            1054.0,
+            331.0
+          ],
+          [
+            1084.0,
+            373.0
+          ],
+          [
+            1000.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.2589
+      }
+    ],
+    "paintedRoads": [],
+    "banks": [],
+    "decks": [],
+    "approaches": [],
+    "walkable": [],
+    "obstacles": [],
+    "clearance": {
+      "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+      "padPixels": 78637,
+      "ochrePadPixels": 23679
+    },
+    "geometrySHA256": "b801f17178f607ceec8bc4198859bcf946dc9fc03444d9b5341e040e23e905c9"
+  },
+  {
+    "id": "kingdom-terrain-gunpowder",
+    "mode": "KINGDOM",
+    "age": 4,
+    "legalAffine": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "PASS"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "source": {
+      "path": "assets/production/production-01-20261003/images/05-kingdom-terrain-gunpowder.png",
+      "sha256": "9aec2f273a388c3061d9c1237be4590d678c34c7962c366c7944db38c6228879",
+      "bytes": 2180694,
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      }
+    },
+    "sourceToLegal": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0,
+      0
+    ],
+    "legalRoadSampleCount": 76,
+    "legalRoadPathLikeFraction": 0.6842,
+    "pads": [
+      {
+        "id": "townhall",
+        "quad": [
+          [
+            470.0,
+            115.0
+          ],
+          [
+            650.0,
+            85.0
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "pixels": 10552,
+        "ochreFraction": 0.9955
+      },
+      {
+        "id": "P01",
+        "quad": [
+          [
+            340.0,
+            215.0
+          ],
+          [
+            424.0,
+            201.0
+          ],
+          [
+            454.0,
+            243.0
+          ],
+          [
+            370.0,
+            257.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7603
+      },
+      {
+        "id": "P02",
+        "quad": [
+          [
+            460.0,
+            195.0
+          ],
+          [
+            544.0,
+            181.0
+          ],
+          [
+            574.0,
+            223.0
+          ],
+          [
+            490.0,
+            237.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8157
+      },
+      {
+        "id": "P03",
+        "quad": [
+          [
+            580.0,
+            175.0
+          ],
+          [
+            664.0,
+            161.0
+          ],
+          [
+            694.0,
+            203.0
+          ],
+          [
+            610.0,
+            217.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6614
+      },
+      {
+        "id": "P04",
+        "quad": [
+          [
+            700.0,
+            155.0
+          ],
+          [
+            784.0,
+            141.0
+          ],
+          [
+            814.0,
+            183.0
+          ],
+          [
+            730.0,
+            197.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7346
+      },
+      {
+        "id": "P05",
+        "quad": [
+          [
+            820.0,
+            135.0
+          ],
+          [
+            904.0,
+            121.0
+          ],
+          [
+            934.0,
+            163.0
+          ],
+          [
+            850.0,
+            177.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7526
+      },
+      {
+        "id": "P06",
+        "quad": [
+          [
+            390.0,
+            285.0
+          ],
+          [
+            474.0,
+            271.0
+          ],
+          [
+            504.0,
+            313.0
+          ],
+          [
+            420.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7129
+      },
+      {
+        "id": "P07",
+        "quad": [
+          [
+            510.0,
+            265.0
+          ],
+          [
+            594.0,
+            251.0
+          ],
+          [
+            624.0,
+            293.0
+          ],
+          [
+            540.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6906
+      },
+      {
+        "id": "P08",
+        "quad": [
+          [
+            750.0,
+            225.0
+          ],
+          [
+            834.0,
+            211.0
+          ],
+          [
+            864.0,
+            253.0
+          ],
+          [
+            780.0,
+            267.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7558
+      },
+      {
+        "id": "P09",
+        "quad": [
+          [
+            870.0,
+            205.0
+          ],
+          [
+            954.0,
+            191.0
+          ],
+          [
+            984.0,
+            233.0
+          ],
+          [
+            900.0,
+            247.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7688
+      },
+      {
+        "id": "P10",
+        "quad": [
+          [
+            380.0,
+            365.0
+          ],
+          [
+            464.0,
+            351.0
+          ],
+          [
+            494.0,
+            393.0
+          ],
+          [
+            410.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7361
+      },
+      {
+        "id": "P11",
+        "quad": [
+          [
+            500.0,
+            345.0
+          ],
+          [
+            584.0,
+            331.0
+          ],
+          [
+            614.0,
+            373.0
+          ],
+          [
+            530.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7675
+      },
+      {
+        "id": "P12",
+        "quad": [
+          [
+            860.0,
+            285.0
+          ],
+          [
+            944.0,
+            271.0
+          ],
+          [
+            974.0,
+            313.0
+          ],
+          [
+            890.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7411
+      },
+      {
+        "id": "P13",
+        "quad": [
+          [
+            980.0,
+            265.0
+          ],
+          [
+            1064.0,
+            251.0
+          ],
+          [
+            1094.0,
+            293.0
+          ],
+          [
+            1010.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7236
+      },
+      {
+        "id": "P14",
+        "quad": [
+          [
+            490.0,
+            425.0
+          ],
+          [
+            574.0,
+            411.0
+          ],
+          [
+            604.0,
+            453.0
+          ],
+          [
+            520.0,
+            467.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.776
+      },
+      {
+        "id": "P15",
+        "quad": [
+          [
+            610.0,
+            405.0
+          ],
+          [
+            694.0,
+            391.0
+          ],
+          [
+            724.0,
+            433.0
+          ],
+          [
+            640.0,
+            447.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7166
+      },
+      {
+        "id": "P16",
+        "quad": [
+          [
+            850.0,
+            365.0
+          ],
+          [
+            934.0,
+            351.0
+          ],
+          [
+            964.0,
+            393.0
+          ],
+          [
+            880.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.7833
+      },
+      {
+        "id": "P17",
+        "quad": [
+          [
+            970.0,
+            345.0
+          ],
+          [
+            1054.0,
+            331.0
+          ],
+          [
+            1084.0,
+            373.0
+          ],
+          [
+            1000.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.796
+      }
+    ],
+    "paintedRoads": [],
+    "banks": [],
+    "decks": [],
+    "approaches": [],
+    "walkable": [],
+    "obstacles": [],
+    "clearance": {
+      "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+      "padPixels": 78637,
+      "ochrePadPixels": 61340
+    },
+    "geometrySHA256": "eabd7cd524a953ea8b313c4e0673a9285ed332049ae7e16d99757a90df6b1fa7"
+  },
+  {
+    "id": "kingdom-terrain-industrial",
+    "mode": "KINGDOM",
+    "age": 5,
+    "legalAffine": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "PASS"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "source": {
+      "path": "assets/production/production-01-20261003/images/06-kingdom-terrain-industrial.png",
+      "sha256": "85440ec67f04e90b144f1f6ecc281fc1b898b584c38deec0b8e512e7f2d512d6",
+      "bytes": 2240590,
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      }
+    },
+    "sourceToLegal": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0,
+      0
+    ],
+    "legalRoadSampleCount": 76,
+    "legalRoadPathLikeFraction": 0.4342,
+    "pads": [
+      {
+        "id": "townhall",
+        "quad": [
+          [
+            470.0,
+            115.0
+          ],
+          [
+            650.0,
+            85.0
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "pixels": 10552,
+        "ochreFraction": 0.4366
+      },
+      {
+        "id": "P01",
+        "quad": [
+          [
+            340.0,
+            215.0
+          ],
+          [
+            424.0,
+            201.0
+          ],
+          [
+            454.0,
+            243.0
+          ],
+          [
+            370.0,
+            257.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.8996
+      },
+      {
+        "id": "P02",
+        "quad": [
+          [
+            460.0,
+            195.0
+          ],
+          [
+            544.0,
+            181.0
+          ],
+          [
+            574.0,
+            223.0
+          ],
+          [
+            490.0,
+            237.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9358
+      },
+      {
+        "id": "P03",
+        "quad": [
+          [
+            580.0,
+            175.0
+          ],
+          [
+            664.0,
+            161.0
+          ],
+          [
+            694.0,
+            203.0
+          ],
+          [
+            610.0,
+            217.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.962
+      },
+      {
+        "id": "P04",
+        "quad": [
+          [
+            700.0,
+            155.0
+          ],
+          [
+            784.0,
+            141.0
+          ],
+          [
+            814.0,
+            183.0
+          ],
+          [
+            730.0,
+            197.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9376
+      },
+      {
+        "id": "P05",
+        "quad": [
+          [
+            820.0,
+            135.0
+          ],
+          [
+            904.0,
+            121.0
+          ],
+          [
+            934.0,
+            163.0
+          ],
+          [
+            850.0,
+            177.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9538
+      },
+      {
+        "id": "P06",
+        "quad": [
+          [
+            390.0,
+            285.0
+          ],
+          [
+            474.0,
+            271.0
+          ],
+          [
+            504.0,
+            313.0
+          ],
+          [
+            420.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.965
+      },
+      {
+        "id": "P07",
+        "quad": [
+          [
+            510.0,
+            265.0
+          ],
+          [
+            594.0,
+            251.0
+          ],
+          [
+            624.0,
+            293.0
+          ],
+          [
+            540.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9755
+      },
+      {
+        "id": "P08",
+        "quad": [
+          [
+            750.0,
+            225.0
+          ],
+          [
+            834.0,
+            211.0
+          ],
+          [
+            864.0,
+            253.0
+          ],
+          [
+            780.0,
+            267.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9725
+      },
+      {
+        "id": "P09",
+        "quad": [
+          [
+            870.0,
+            205.0
+          ],
+          [
+            954.0,
+            191.0
+          ],
+          [
+            984.0,
+            233.0
+          ],
+          [
+            900.0,
+            247.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9773
+      },
+      {
+        "id": "P10",
+        "quad": [
+          [
+            380.0,
+            365.0
+          ],
+          [
+            464.0,
+            351.0
+          ],
+          [
+            494.0,
+            393.0
+          ],
+          [
+            410.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9581
+      },
+      {
+        "id": "P11",
+        "quad": [
+          [
+            500.0,
+            345.0
+          ],
+          [
+            584.0,
+            331.0
+          ],
+          [
+            614.0,
+            373.0
+          ],
+          [
+            530.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9693
+      },
+      {
+        "id": "P12",
+        "quad": [
+          [
+            860.0,
+            285.0
+          ],
+          [
+            944.0,
+            271.0
+          ],
+          [
+            974.0,
+            313.0
+          ],
+          [
+            890.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9558
+      },
+      {
+        "id": "P13",
+        "quad": [
+          [
+            980.0,
+            265.0
+          ],
+          [
+            1064.0,
+            251.0
+          ],
+          [
+            1094.0,
+            293.0
+          ],
+          [
+            1010.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9443
+      },
+      {
+        "id": "P14",
+        "quad": [
+          [
+            490.0,
+            425.0
+          ],
+          [
+            574.0,
+            411.0
+          ],
+          [
+            604.0,
+            453.0
+          ],
+          [
+            520.0,
+            467.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9556
+      },
+      {
+        "id": "P15",
+        "quad": [
+          [
+            610.0,
+            405.0
+          ],
+          [
+            694.0,
+            391.0
+          ],
+          [
+            724.0,
+            433.0
+          ],
+          [
+            640.0,
+            447.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9396
+      },
+      {
+        "id": "P16",
+        "quad": [
+          [
+            850.0,
+            365.0
+          ],
+          [
+            934.0,
+            351.0
+          ],
+          [
+            964.0,
+            393.0
+          ],
+          [
+            880.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9775
+      },
+      {
+        "id": "P17",
+        "quad": [
+          [
+            970.0,
+            345.0
+          ],
+          [
+            1054.0,
+            331.0
+          ],
+          [
+            1084.0,
+            373.0
+          ],
+          [
+            1000.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.9338
+      }
+    ],
+    "paintedRoads": [],
+    "banks": [],
+    "decks": [],
+    "approaches": [],
+    "walkable": [],
+    "obstacles": [],
+    "clearance": {
+      "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+      "padPixels": 78637,
+      "ochrePadPixels": 69541
+    },
+    "geometrySHA256": "6b6ef04233cabbc70f8ecc2f5967eb974a706cd2de3132fae91afd8380a8a87a"
+  },
+  {
+    "id": "kingdom-terrain-modern",
+    "mode": "KINGDOM",
+    "age": 6,
+    "legalAffine": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "PASS"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "source": {
+      "path": "assets/production/production-01-20261003/images/07-kingdom-terrain-modern.png",
+      "sha256": "c53704f6a8cb8e6586d0fe0c26b5e9af172f9d3d8cba6489affe2c1fae5cc926",
+      "bytes": 2337763,
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      }
+    },
+    "sourceToLegal": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0,
+      0
+    ],
+    "legalRoadSampleCount": 76,
+    "legalRoadPathLikeFraction": 0.0263,
+    "pads": [
+      {
+        "id": "townhall",
+        "quad": [
+          [
+            470.0,
+            115.0
+          ],
+          [
+            650.0,
+            85.0
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "pixels": 10552,
+        "ochreFraction": 0.0027
+      },
+      {
+        "id": "P01",
+        "quad": [
+          [
+            340.0,
+            215.0
+          ],
+          [
+            424.0,
+            201.0
+          ],
+          [
+            454.0,
+            243.0
+          ],
+          [
+            370.0,
+            257.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0117
+      },
+      {
+        "id": "P02",
+        "quad": [
+          [
+            460.0,
+            195.0
+          ],
+          [
+            544.0,
+            181.0
+          ],
+          [
+            574.0,
+            223.0
+          ],
+          [
+            490.0,
+            237.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0065
+      },
+      {
+        "id": "P03",
+        "quad": [
+          [
+            580.0,
+            175.0
+          ],
+          [
+            664.0,
+            161.0
+          ],
+          [
+            694.0,
+            203.0
+          ],
+          [
+            610.0,
+            217.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0057
+      },
+      {
+        "id": "P04",
+        "quad": [
+          [
+            700.0,
+            155.0
+          ],
+          [
+            784.0,
+            141.0
+          ],
+          [
+            814.0,
+            183.0
+          ],
+          [
+            730.0,
+            197.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0062
+      },
+      {
+        "id": "P05",
+        "quad": [
+          [
+            820.0,
+            135.0
+          ],
+          [
+            904.0,
+            121.0
+          ],
+          [
+            934.0,
+            163.0
+          ],
+          [
+            850.0,
+            177.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0225
+      },
+      {
+        "id": "P06",
+        "quad": [
+          [
+            390.0,
+            285.0
+          ],
+          [
+            474.0,
+            271.0
+          ],
+          [
+            504.0,
+            313.0
+          ],
+          [
+            420.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0017
+      },
+      {
+        "id": "P07",
+        "quad": [
+          [
+            510.0,
+            265.0
+          ],
+          [
+            594.0,
+            251.0
+          ],
+          [
+            624.0,
+            293.0
+          ],
+          [
+            540.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0057
+      },
+      {
+        "id": "P08",
+        "quad": [
+          [
+            750.0,
+            225.0
+          ],
+          [
+            834.0,
+            211.0
+          ],
+          [
+            864.0,
+            253.0
+          ],
+          [
+            780.0,
+            267.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0012
+      },
+      {
+        "id": "P09",
+        "quad": [
+          [
+            870.0,
+            205.0
+          ],
+          [
+            954.0,
+            191.0
+          ],
+          [
+            984.0,
+            233.0
+          ],
+          [
+            900.0,
+            247.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0057
+      },
+      {
+        "id": "P10",
+        "quad": [
+          [
+            380.0,
+            365.0
+          ],
+          [
+            464.0,
+            351.0
+          ],
+          [
+            494.0,
+            393.0
+          ],
+          [
+            410.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0025
+      },
+      {
+        "id": "P11",
+        "quad": [
+          [
+            500.0,
+            345.0
+          ],
+          [
+            584.0,
+            331.0
+          ],
+          [
+            614.0,
+            373.0
+          ],
+          [
+            530.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0035
+      },
+      {
+        "id": "P12",
+        "quad": [
+          [
+            860.0,
+            285.0
+          ],
+          [
+            944.0,
+            271.0
+          ],
+          [
+            974.0,
+            313.0
+          ],
+          [
+            890.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0025
+      },
+      {
+        "id": "P13",
+        "quad": [
+          [
+            980.0,
+            265.0
+          ],
+          [
+            1064.0,
+            251.0
+          ],
+          [
+            1094.0,
+            293.0
+          ],
+          [
+            1010.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0065
+      },
+      {
+        "id": "P14",
+        "quad": [
+          [
+            490.0,
+            425.0
+          ],
+          [
+            574.0,
+            411.0
+          ],
+          [
+            604.0,
+            453.0
+          ],
+          [
+            520.0,
+            467.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0022
+      },
+      {
+        "id": "P15",
+        "quad": [
+          [
+            610.0,
+            405.0
+          ],
+          [
+            694.0,
+            391.0
+          ],
+          [
+            724.0,
+            433.0
+          ],
+          [
+            640.0,
+            447.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0045
+      },
+      {
+        "id": "P16",
+        "quad": [
+          [
+            850.0,
+            365.0
+          ],
+          [
+            934.0,
+            351.0
+          ],
+          [
+            964.0,
+            393.0
+          ],
+          [
+            880.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.0025
+      },
+      {
+        "id": "P17",
+        "quad": [
+          [
+            970.0,
+            345.0
+          ],
+          [
+            1054.0,
+            331.0
+          ],
+          [
+            1084.0,
+            373.0
+          ],
+          [
+            1000.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.004
+      }
+    ],
+    "paintedRoads": [],
+    "banks": [],
+    "decks": [],
+    "approaches": [],
+    "walkable": [],
+    "obstacles": [],
+    "clearance": {
+      "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+      "padPixels": 78637,
+      "ochrePadPixels": 411
+    },
+    "geometrySHA256": "e06e9ef69261a40aa06077b4e50becc43047e6eec9c06464b70ce2c683774ae2"
+  },
+  {
+    "id": "kingdom-terrain-future",
+    "mode": "KINGDOM",
+    "age": 7,
+    "legalAffine": [
+      60.0,
+      -10.0,
+      25.0,
+      35.0,
+      170.0,
+      165.0
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "PASS"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "source": {
+      "path": "assets/production/production-01-20261003/images/08-kingdom-terrain-future.png",
+      "sha256": "df5e35eeca4df63ec2fd636dfe4d7522b6a33f805ff7c4e84aee321423f6fd8d",
+      "bytes": 2158708,
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      }
+    },
+    "sourceToLegal": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0,
+      0
+    ],
+    "legalRoadSampleCount": 76,
+    "legalRoadPathLikeFraction": 0.2763,
+    "pads": [
+      {
+        "id": "townhall",
+        "quad": [
+          [
+            470.0,
+            115.0
+          ],
+          [
+            650.0,
+            85.0
+          ],
+          [
+            687.5,
+            137.5
+          ],
+          [
+            507.5,
+            167.5
+          ]
+        ],
+        "pixels": 10552,
+        "ochreFraction": 0.7488
+      },
+      {
+        "id": "P01",
+        "quad": [
+          [
+            340.0,
+            215.0
+          ],
+          [
+            424.0,
+            201.0
+          ],
+          [
+            454.0,
+            243.0
+          ],
+          [
+            370.0,
+            257.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6537
+      },
+      {
+        "id": "P02",
+        "quad": [
+          [
+            460.0,
+            195.0
+          ],
+          [
+            544.0,
+            181.0
+          ],
+          [
+            574.0,
+            223.0
+          ],
+          [
+            490.0,
+            237.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.64
+      },
+      {
+        "id": "P03",
+        "quad": [
+          [
+            580.0,
+            175.0
+          ],
+          [
+            664.0,
+            161.0
+          ],
+          [
+            694.0,
+            203.0
+          ],
+          [
+            610.0,
+            217.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.63
+      },
+      {
+        "id": "P04",
+        "quad": [
+          [
+            700.0,
+            155.0
+          ],
+          [
+            784.0,
+            141.0
+          ],
+          [
+            814.0,
+            183.0
+          ],
+          [
+            730.0,
+            197.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6162
+      },
+      {
+        "id": "P05",
+        "quad": [
+          [
+            820.0,
+            135.0
+          ],
+          [
+            904.0,
+            121.0
+          ],
+          [
+            934.0,
+            163.0
+          ],
+          [
+            850.0,
+            177.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5591
+      },
+      {
+        "id": "P06",
+        "quad": [
+          [
+            390.0,
+            285.0
+          ],
+          [
+            474.0,
+            271.0
+          ],
+          [
+            504.0,
+            313.0
+          ],
+          [
+            420.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6722
+      },
+      {
+        "id": "P07",
+        "quad": [
+          [
+            510.0,
+            265.0
+          ],
+          [
+            594.0,
+            251.0
+          ],
+          [
+            624.0,
+            293.0
+          ],
+          [
+            540.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6602
+      },
+      {
+        "id": "P08",
+        "quad": [
+          [
+            750.0,
+            225.0
+          ],
+          [
+            834.0,
+            211.0
+          ],
+          [
+            864.0,
+            253.0
+          ],
+          [
+            780.0,
+            267.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5888
+      },
+      {
+        "id": "P09",
+        "quad": [
+          [
+            870.0,
+            205.0
+          ],
+          [
+            954.0,
+            191.0
+          ],
+          [
+            984.0,
+            233.0
+          ],
+          [
+            900.0,
+            247.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.582
+      },
+      {
+        "id": "P10",
+        "quad": [
+          [
+            380.0,
+            365.0
+          ],
+          [
+            464.0,
+            351.0
+          ],
+          [
+            494.0,
+            393.0
+          ],
+          [
+            410.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6986
+      },
+      {
+        "id": "P11",
+        "quad": [
+          [
+            500.0,
+            345.0
+          ],
+          [
+            584.0,
+            331.0
+          ],
+          [
+            614.0,
+            373.0
+          ],
+          [
+            530.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6866
+      },
+      {
+        "id": "P12",
+        "quad": [
+          [
+            860.0,
+            285.0
+          ],
+          [
+            944.0,
+            271.0
+          ],
+          [
+            974.0,
+            313.0
+          ],
+          [
+            890.0,
+            327.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5283
+      },
+      {
+        "id": "P13",
+        "quad": [
+          [
+            980.0,
+            265.0
+          ],
+          [
+            1064.0,
+            251.0
+          ],
+          [
+            1094.0,
+            293.0
+          ],
+          [
+            1010.0,
+            307.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.4869
+      },
+      {
+        "id": "P14",
+        "quad": [
+          [
+            490.0,
+            425.0
+          ],
+          [
+            574.0,
+            411.0
+          ],
+          [
+            604.0,
+            453.0
+          ],
+          [
+            520.0,
+            467.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6959
+      },
+      {
+        "id": "P15",
+        "quad": [
+          [
+            610.0,
+            405.0
+          ],
+          [
+            694.0,
+            391.0
+          ],
+          [
+            724.0,
+            433.0
+          ],
+          [
+            640.0,
+            447.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.6707
+      },
+      {
+        "id": "P16",
+        "quad": [
+          [
+            850.0,
+            365.0
+          ],
+          [
+            934.0,
+            351.0
+          ],
+          [
+            964.0,
+            393.0
+          ],
+          [
+            880.0,
+            407.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.4587
+      },
+      {
+        "id": "P17",
+        "quad": [
+          [
+            970.0,
+            345.0
+          ],
+          [
+            1054.0,
+            331.0
+          ],
+          [
+            1084.0,
+            373.0
+          ],
+          [
+            1000.0,
+            387.0
+          ]
+        ],
+        "pixels": 4005,
+        "ochreFraction": 0.5021
+      }
+    ],
+    "paintedRoads": [],
+    "banks": [],
+    "decks": [],
+    "approaches": [],
+    "walkable": [],
+    "obstacles": [],
+    "clearance": {
+      "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+      "padPixels": 78637,
+      "ochrePadPixels": 49272
+    },
+    "geometrySHA256": "7bf9b53de4420c523f51089d21cc6d5936f3e0dddb71cdbf04d076f5e8d5d692"
+  },
+  {
+    "id": "adventure-terrain-stone",
+    "mode": "ADVENTURE",
+    "age": 0,
+    "legalAffine": [
+      53,
+      -8,
+      23,
+      37,
+      180,
+      160
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "adventure-terrain-bronze",
+    "mode": "ADVENTURE",
+    "age": 1,
+    "legalAffine": [
+      53,
+      -8,
+      23,
+      37,
+      180,
+      160
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "adventure-terrain-iron",
+    "mode": "ADVENTURE",
+    "age": 2,
+    "legalAffine": [
+      53,
+      -8,
+      23,
+      37,
+      180,
+      160
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "adventure-terrain-medieval",
+    "mode": "ADVENTURE",
+    "age": 3,
+    "legalAffine": [
+      53,
+      -8,
+      23,
+      37,
+      180,
+      160
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "adventure-terrain-gunpowder",
+    "mode": "ADVENTURE",
+    "age": 4,
+    "legalAffine": [
+      53,
+      -8,
+      23,
+      37,
+      180,
+      160
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "adventure-terrain-industrial",
+    "mode": "ADVENTURE",
+    "age": 5,
+    "legalAffine": [
+      53,
+      -8,
+      23,
+      37,
+      180,
+      160
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "adventure-terrain-modern",
+    "mode": "ADVENTURE",
+    "age": 6,
+    "legalAffine": [
+      53,
+      -8,
+      23,
+      37,
+      180,
+      160
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "adventure-terrain-future",
+    "mode": "ADVENTURE",
+    "age": 7,
+    "legalAffine": [
+      53,
+      -8,
+      23,
+      37,
+      180,
+      160
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "tactical-terrain-stone",
+    "mode": "TACTICAL",
+    "age": 0,
+    "legalAffine": [
+      77,
+      -12,
+      27,
+      46,
+      270,
+      110
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "tactical-terrain-bronze",
+    "mode": "TACTICAL",
+    "age": 1,
+    "legalAffine": [
+      77,
+      -12,
+      27,
+      46,
+      270,
+      110
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "tactical-terrain-iron",
+    "mode": "TACTICAL",
+    "age": 2,
+    "legalAffine": [
+      77,
+      -12,
+      27,
+      46,
+      270,
+      110
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "tactical-terrain-medieval",
+    "mode": "TACTICAL",
+    "age": 3,
+    "legalAffine": [
+      77,
+      -12,
+      27,
+      46,
+      270,
+      110
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "tactical-terrain-gunpowder",
+    "mode": "TACTICAL",
+    "age": 4,
+    "legalAffine": [
+      77,
+      -12,
+      27,
+      46,
+      270,
+      110
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "tactical-terrain-industrial",
+    "mode": "TACTICAL",
+    "age": 5,
+    "legalAffine": [
+      77,
+      -12,
+      27,
+      46,
+      270,
+      110
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "tactical-terrain-modern",
+    "mode": "TACTICAL",
+    "age": 6,
+    "legalAffine": [
+      77,
+      -12,
+      27,
+      46,
+      270,
+      110
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "tactical-terrain-future",
+    "mode": "TACTICAL",
+    "age": 7,
+    "legalAffine": [
+      77,
+      -12,
+      27,
+      46,
+      270,
+      110
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "defense-terrain-stone",
+    "mode": "DEFENSE",
+    "age": 0,
+    "legalAffine": [
+      60,
+      -8,
+      20,
+      35,
+      270,
+      100
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "defense-terrain-bronze",
+    "mode": "DEFENSE",
+    "age": 1,
+    "legalAffine": [
+      60,
+      -8,
+      20,
+      35,
+      270,
+      100
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "defense-terrain-iron",
+    "mode": "DEFENSE",
+    "age": 2,
+    "legalAffine": [
+      60,
+      -8,
+      20,
+      35,
+      270,
+      100
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "defense-terrain-medieval",
+    "mode": "DEFENSE",
+    "age": 3,
+    "legalAffine": [
+      60,
+      -8,
+      20,
+      35,
+      270,
+      100
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "defense-terrain-gunpowder",
+    "mode": "DEFENSE",
+    "age": 4,
+    "legalAffine": [
+      60,
+      -8,
+      20,
+      35,
+      270,
+      100
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "defense-terrain-industrial",
+    "mode": "DEFENSE",
+    "age": 5,
+    "legalAffine": [
+      60,
+      -8,
+      20,
+      35,
+      270,
+      100
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "defense-terrain-modern",
+    "mode": "DEFENSE",
+    "age": 6,
+    "legalAffine": [
+      60,
+      -8,
+      20,
+      35,
+      270,
+      100
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  },
+  {
+    "id": "defense-terrain-future",
+    "mode": "DEFENSE",
+    "age": 7,
+    "legalAffine": [
+      60,
+      -8,
+      20,
+      35,
+      270,
+      100
+    ],
+    "featureApplicability": {},
+    "gates": {
+      "spatial": "FAIL",
+      "binding": "FAIL"
+    },
+    "limitations": [
+      "Automatic Sobel and luminance road floods stay withdrawn.",
+      "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+      "Free-layout full-scene regeneration was not repeated."
+    ],
+    "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+    "blockedBy": [
+      "source image missing"
+    ]
+  }
+]

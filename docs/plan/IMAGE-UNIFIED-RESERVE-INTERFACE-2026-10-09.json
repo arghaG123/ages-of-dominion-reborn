@@ -1,0 +1,6473 @@
+{
+  "schema": 3,
+  "producer": "IMAGE_UNIFIED",
+  "version": "image-unified-reserve-20261009",
+  "authority": "use $15 reserve and instruct remain work and solution to do for one AI with a prompt.",
+  "inputSnapshot": {
+    "path": "qa/image-unified-reserve-20261009/input_snapshot.json",
+    "sha256": "7c4d6bff439183c64cb69cc93b7a6f79ae224914fee3f29748c3e9ebbac3703c",
+    "bytes": 4185,
+    "dimensions": null
+  },
+  "rows": [
+    {
+      "id": "class-knight-standing-body",
+      "producer": "ACTORS",
+      "role": "class-standing-body",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-knight-standing-body.png",
+          "sha256": "4ff6581d4b16fd6733383276b69a06b603a09018743e33f993c814660da05b45",
+          "bytes": null,
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "roi": null,
+          "frame": "NATIVE"
+        }
+      ],
+      "output": {
+        "path": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-knight-standing-body.png",
+        "sha256": "ca23b40528428d2df348e1b170c3aa5d1a84233b01859ad3decf9ce371f160e7",
+        "bytes": 3839993,
+        "dimensions": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      "reusedFrom": null,
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "UNKNOWN",
+      "frame": "STANDING",
+      "groundContact": [
+        [
+          817,
+          1972
+        ],
+        [
+          854,
+          1972
+        ]
+      ],
+      "footprint": [
+        [
+          783,
+          1972
+        ],
+        [
+          1376,
+          1972
+        ]
+      ],
+      "entrance": null,
+      "heightEnvelope": [
+        597,
+        87,
+        1407,
+        1973
+      ],
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PARTIAL",
+        "matte": "PASS",
+        "spatial": "PARTIAL",
+        "articulation": "FAIL",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/bodies-on-dark.jpg"
+      ],
+      "limitations": [
+        "Historical wire contained text only; guide image was omitted. Pixels were still inspected.",
+        "Native white was removed by a border-connected near-white matte. Gray metal was protected by the chroma stop.",
+        "Static standing body only. This is not a gait, turnaround, or full rig.",
+        "Anatomical side is UNKNOWN."
+      ],
+      "blockedBy": [
+        "full gait and registered guide landmarks"
+      ],
+      "nextAction": "Use as a static standing plate only. Do not claim a rig."
+    },
+    {
+      "id": "class-ranger-standing-body",
+      "producer": "ACTORS",
+      "role": "class-standing-body",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-ranger-standing-body.png",
+          "sha256": "ef533515d6ed7aac80071098e70ce9fb304cc7634937147d7edfa1826dc405f2",
+          "bytes": null,
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "roi": null,
+          "frame": "NATIVE"
+        }
+      ],
+      "output": {
+        "path": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-ranger-standing-body.png",
+        "sha256": "68cb20f4ac3478061dc2169c09224b78872de083dbff164c7e921da74bcccbf3",
+        "bytes": 5844447,
+        "dimensions": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      "reusedFrom": null,
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "UNKNOWN",
+      "frame": "STANDING",
+      "groundContact": [
+        [
+          558,
+          2008
+        ]
+      ],
+      "footprint": [
+        [
+          25,
+          2008
+        ],
+        [
+          1897,
+          2008
+        ]
+      ],
+      "entrance": null,
+      "heightEnvelope": [
+        25,
+        204,
+        2048,
+        2009
+      ],
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PARTIAL",
+        "matte": "PASS",
+        "spatial": "PARTIAL",
+        "articulation": "FAIL",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/bodies-on-dark.jpg"
+      ],
+      "limitations": [
+        "Historical wire contained text only; guide image was omitted. Pixels were still inspected.",
+        "Native white was removed by a border-connected near-white matte. Gray metal was protected by the chroma stop.",
+        "Static standing body only. This is not a gait, turnaround, or full rig.",
+        "Anatomical side is UNKNOWN."
+      ],
+      "blockedBy": [
+        "full gait and registered guide landmarks"
+      ],
+      "nextAction": "Use as a static standing plate only. Do not claim a rig."
+    },
+    {
+      "id": "class-warlock-standing-body",
+      "producer": "ACTORS",
+      "role": "class-standing-body",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-warlock-standing-body.png",
+          "sha256": "375134c7bf0fee3df35718862ea974436987ec82e9f4949fbeca8caee642d41f",
+          "bytes": null,
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "roi": null,
+          "frame": "NATIVE"
+        }
+      ],
+      "output": {
+        "path": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-warlock-standing-body.png",
+        "sha256": "b355de402ba31ef36455d67bf61d4fff00e45ec9af6c03c7f4eb4f35be5728bf",
+        "bytes": 6104916,
+        "dimensions": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      "reusedFrom": null,
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "UNKNOWN",
+      "frame": "STANDING",
+      "groundContact": [
+        [
+          718,
+          2047
+        ],
+        [
+          2047,
+          2047
+        ]
+      ],
+      "footprint": [
+        [
+          0,
+          2047
+        ],
+        [
+          2047,
+          2047
+        ]
+      ],
+      "entrance": null,
+      "heightEnvelope": [
+        0,
+        0,
+        2048,
+        2048
+      ],
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PARTIAL",
+        "matte": "PARTIAL",
+        "spatial": "PARTIAL",
+        "articulation": "FAIL",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/bodies-on-dark.jpg"
+      ],
+      "limitations": [
+        "Historical wire contained text only; guide image was omitted. Pixels were still inspected.",
+        "Native white was removed by a border-connected near-white matte. Gray metal was protected by the chroma stop.",
+        "Static standing body only. This is not a gait, turnaround, or full rig.",
+        "Anatomical side is UNKNOWN."
+      ],
+      "blockedBy": [
+        "full gait and registered guide landmarks"
+      ],
+      "nextAction": "Use as a static standing plate only. Do not claim a rig."
+    },
+    {
+      "id": "class-mage-standing-body",
+      "producer": "ACTORS",
+      "role": "class-standing-body",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-mage-standing-body.png",
+          "sha256": "f3307618794d6a98ccf79595963520c91370bcddd4f5352c429906cb64194eb7",
+          "bytes": null,
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "roi": null,
+          "frame": "NATIVE"
+        }
+      ],
+      "output": {
+        "path": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-mage-standing-body.png",
+        "sha256": "59968c3dcb0ecca27bfb3c75a56bfb9406918d31dc21ec616f26f7ca9eb53e00",
+        "bytes": 3504582,
+        "dimensions": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      "reusedFrom": null,
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "UNKNOWN",
+      "frame": "STANDING",
+      "groundContact": [
+        [
+          1198,
+          1980
+        ],
+        [
+          1233,
+          1980
+        ]
+      ],
+      "footprint": [
+        [
+          747,
+          1980
+        ],
+        [
+          1290,
+          1980
+        ]
+      ],
+      "entrance": null,
+      "heightEnvelope": [
+        461,
+        103,
+        1389,
+        1981
+      ],
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PARTIAL",
+        "matte": "PASS",
+        "spatial": "PARTIAL",
+        "articulation": "FAIL",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/bodies-on-dark.jpg"
+      ],
+      "limitations": [
+        "Historical wire contained text only; guide image was omitted. Pixels were still inspected.",
+        "Native white was removed by a border-connected near-white matte. Gray metal was protected by the chroma stop.",
+        "Static standing body only. This is not a gait, turnaround, or full rig.",
+        "Anatomical side is UNKNOWN."
+      ],
+      "blockedBy": [
+        "full gait and registered guide landmarks"
+      ],
+      "nextAction": "Use as a static standing plate only. Do not claim a rig."
+    },
+    {
+      "id": "class-paladin-standing-body",
+      "producer": "ACTORS",
+      "role": "class-standing-body",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-paladin-standing-body.png",
+          "sha256": "f03dc822be71126fdbfeece55b0156dd090d1efb0d57a43948675e278edaaf0b",
+          "bytes": null,
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "roi": null,
+          "frame": "NATIVE"
+        }
+      ],
+      "output": {
+        "path": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-paladin-standing-body.png",
+        "sha256": "707405aca69a80c47ae64c8221b040d180a7ff43bbd2e5a80534789b993279cd",
+        "bytes": 4110017,
+        "dimensions": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      "reusedFrom": null,
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "UNKNOWN",
+      "frame": "STANDING",
+      "groundContact": [
+        [
+          1312,
+          1982
+        ],
+        [
+          1336,
+          1982
+        ]
+      ],
+      "footprint": [
+        [
+          515,
+          1982
+        ],
+        [
+          1511,
+          1982
+        ]
+      ],
+      "entrance": null,
+      "heightEnvelope": [
+        390,
+        81,
+        1596,
+        1983
+      ],
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PARTIAL",
+        "matte": "PASS",
+        "spatial": "PARTIAL",
+        "articulation": "FAIL",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/bodies-on-dark.jpg"
+      ],
+      "limitations": [
+        "Historical wire contained text only; guide image was omitted. Pixels were still inspected.",
+        "Native white was removed by a border-connected near-white matte. Gray metal was protected by the chroma stop.",
+        "Static standing body only. This is not a gait, turnaround, or full rig.",
+        "Anatomical side is UNKNOWN."
+      ],
+      "blockedBy": [
+        "full gait and registered guide landmarks"
+      ],
+      "nextAction": "Use as a static standing plate only. Do not claim a rig."
+    },
+    {
+      "id": "class-barbarian-standing-body",
+      "producer": "ACTORS",
+      "role": "class-standing-body",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-barbarian-standing-body.png",
+          "sha256": "e06ddc9422b27a39c22103d2790ca71a26dd77bccff85b5c2e37d08b94d4e60c",
+          "bytes": null,
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "roi": null,
+          "frame": "NATIVE"
+        }
+      ],
+      "output": {
+        "path": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-barbarian-standing-body.png",
+        "sha256": "daf4ffcd0781c8a154ea487930077698ac236ac11cbb148140ceb671503f3bc7",
+        "bytes": 3958665,
+        "dimensions": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      "reusedFrom": null,
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "UNKNOWN",
+      "frame": "STANDING",
+      "groundContact": [
+        [
+          1317,
+          2010
+        ],
+        [
+          1364,
+          2010
+        ]
+      ],
+      "footprint": [
+        [
+          670,
+          2010
+        ],
+        [
+          1440,
+          2010
+        ]
+      ],
+      "entrance": null,
+      "heightEnvelope": [
+        340,
+        54,
+        1608,
+        2011
+      ],
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PARTIAL",
+        "matte": "PASS",
+        "spatial": "PARTIAL",
+        "articulation": "FAIL",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/bodies-on-dark.jpg"
+      ],
+      "limitations": [
+        "Historical wire contained text only; guide image was omitted. Pixels were still inspected.",
+        "Native white was removed by a border-connected near-white matte. Gray metal was protected by the chroma stop.",
+        "Static standing body only. This is not a gait, turnaround, or full rig.",
+        "Anatomical side is UNKNOWN."
+      ],
+      "blockedBy": [
+        "full gait and registered guide landmarks"
+      ],
+      "nextAction": "Use as a static standing plate only. Do not claim a rig."
+    },
+    {
+      "id": "class-necromancer-standing-body",
+      "producer": "ACTORS",
+      "role": "class-standing-body",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-necromancer-standing-body.png",
+          "sha256": "74aead791db83e0e6713efb0620f6967b7d81a4d3013b525a60e613361460f54",
+          "bytes": null,
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "roi": null,
+          "frame": "NATIVE"
+        }
+      ],
+      "output": {
+        "path": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-necromancer-standing-body.png",
+        "sha256": "260e3ea76b9e5f558f0bc900e780b6871e9dde86e50e9d82a7c419b2529cb042",
+        "bytes": 4687376,
+        "dimensions": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      "reusedFrom": null,
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "UNKNOWN",
+      "frame": "STANDING",
+      "groundContact": [
+        [
+          770,
+          2012
+        ],
+        [
+          795,
+          2012
+        ]
+      ],
+      "footprint": [
+        [
+          710,
+          2012
+        ],
+        [
+          1431,
+          2012
+        ]
+      ],
+      "entrance": null,
+      "heightEnvelope": [
+        607,
+        59,
+        1634,
+        2013
+      ],
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PARTIAL",
+        "matte": "PASS",
+        "spatial": "PARTIAL",
+        "articulation": "FAIL",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/bodies-on-dark.jpg"
+      ],
+      "limitations": [
+        "Historical wire contained text only; guide image was omitted. Pixels were still inspected.",
+        "Native white was removed by a border-connected near-white matte. Gray metal was protected by the chroma stop.",
+        "Static standing body only. This is not a gait, turnaround, or full rig.",
+        "Anatomical side is UNKNOWN."
+      ],
+      "blockedBy": [
+        "full gait and registered guide landmarks"
+      ],
+      "nextAction": "Use as a static standing plate only. Do not claim a rig."
+    },
+    {
+      "id": "paladin-head-raster",
+      "producer": "ACTORS",
+      "role": "class-head-card",
+      "status": "PARTIAL",
+      "sources": [],
+      "output": {
+        "path": "assets/derivatives/image-unified-reserve-20261009/actors/heads/paladin-head-raster.png",
+        "sha256": "6cd574e9a8e557bcc88dc12a81dbe3e786f18545248280e4339c1d112136a0bb",
+        "bytes": 334845,
+        "dimensions": {
+          "width": 662,
+          "height": 380
+        }
+      },
+      "reusedFrom": null,
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -715,
+        -81
+      ],
+      "intendedUse": "STATIC_CARD",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "UNKNOWN",
+      "frame": "HEAD_BUST",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PARTIAL",
+        "matte": "PASS",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/head-on-black.jpg"
+      ],
+      "limitations": [
+        "Head band cut from the collected paladin standing body. No second purchase.",
+        "Includes whatever helmet and plume occupy the top fifth of the opaque body. Not a separate authored portrait."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "troop-stone-melee",
+      "producer": "ACTORS",
+      "role": "protected-crop",
+      "status": "READY",
+      "sources": [],
+      "output": null,
+      "reusedFrom": {
+        "path": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+        "sha256": "c61f0e3dec06a344744f3f4d21a6cf7dabdb4df61730c42eac535c7988f2104a",
+        "bytes": null,
+        "dimensions": {
+          "width": 1369,
+          "height": 1852
+        }
+      },
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -477,
+        -112
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "STATIC",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PASS",
+        "matte": "PASS",
+        "spatial": "PASS",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Bytes were rehashed and not rewritten."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "troop-industrial-ranged",
+      "producer": "ACTORS",
+      "role": "protected-crop",
+      "status": "READY",
+      "sources": [],
+      "output": null,
+      "reusedFrom": {
+        "path": "assets/runtime-code-20261007/troops/troop-industrial-ranged.png",
+        "sha256": "5df473c9336451f51f2babf21ed88b7c5dc8bd5bc901615b8851a07c5183823f",
+        "bytes": null,
+        "dimensions": {
+          "width": 1247,
+          "height": 1851
+        }
+      },
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -526,
+        -103
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 64,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "NOT_APPLICABLE",
+      "frame": "STATIC",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PASS",
+        "matte": "PASS",
+        "spatial": "PASS",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Bytes were rehashed and not rewritten."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "troop-industrial-heavy",
+      "producer": "ACTORS",
+      "role": "protected-crop",
+      "status": "READY",
+      "sources": [],
+      "output": null,
+      "reusedFrom": {
+        "path": "assets/runtime-code-20261007/troops/troop-industrial-heavy.png",
+        "sha256": "9455bf02f32921c7fa0bf3d2bce4f561e9c311a37e36ad99bd3dbafa7fcbc758",
+        "bytes": null,
+        "dimensions": {
+          "width": 1640,
+          "height": 1921
+        }
+      },
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -233,
+        -64
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 64,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "NOT_APPLICABLE",
+      "frame": "STATIC",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PASS",
+        "matte": "PASS",
+        "spatial": "PASS",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Bytes were rehashed and not rewritten."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "troop-stone-ranged",
+      "producer": "ACTORS",
+      "role": "protected-crop",
+      "status": "READY",
+      "sources": [],
+      "output": null,
+      "reusedFrom": {
+        "path": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+        "sha256": "53233e6284322f73650529bcfe08f8141e37897cca0a57b0b3454a547dd97ba3",
+        "bytes": null,
+        "dimensions": null
+      },
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -363,
+        -79
+      ],
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "STATIC",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PASS",
+        "matte": "PASS",
+        "spatial": "PASS",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Bytes were rehashed and not rewritten."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "healer-boot",
+      "producer": "ACTORS",
+      "role": "rig-part",
+      "status": "READY",
+      "sources": [],
+      "output": null,
+      "reusedFrom": {
+        "path": "assets/derivatives/rigs/v7/healer/boot.png",
+        "sha256": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+        "bytes": null,
+        "dimensions": {
+          "width": 135,
+          "height": 131
+        }
+      },
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": 130,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "STATIC",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "PASS",
+        "semantics": "PASS",
+        "matte": "PASS",
+        "spatial": "PASS",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Bytes were rehashed and not rewritten."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "attacker-bronze-runner",
+      "producer": "ACTORS",
+      "role": "blocker",
+      "status": "FAIL",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "UNKNOWN",
+      "frame": "UNRESOLVED",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "FAIL",
+        "semantics": "PARTIAL",
+        "matte": "FAIL",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/attacker-bronze-runner-pass3.jpg",
+        "qa/image-unified-reserve-20261009/review/attacker-bronze-runner-on-black.jpg",
+        "qa/image-unified-reserve-20261009/review/attacker-bronze-runner-pass4.jpg"
+      ],
+      "limitations": [
+        "Full town illustration with a HUD bar. Local isolation cannot produce a clean runner. No paid request was sent because a validated person mask does not exist."
+      ],
+      "blockedBy": [
+        "Full town illustration with a HUD bar. Local isolation cannot produce a clean runner. No paid request was sent because a validated person mask does not exist."
+      ],
+      "nextAction": "Full town illustration with a HUD bar. Local isolation cannot produce a clean runner. No paid request was sent because a validated person mask does not exist."
+    },
+    {
+      "id": "attacker-medieval-archer",
+      "producer": "ACTORS",
+      "role": "blocker",
+      "status": "FAIL",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "UNKNOWN",
+      "frame": "UNRESOLVED",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "FAIL",
+        "semantics": "PARTIAL",
+        "matte": "FAIL",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/attacker-medieval-archer-pass3.jpg",
+        "qa/image-unified-reserve-20261009/review/attacker-medieval-archer-on-black.jpg",
+        "qa/image-unified-reserve-20261009/review/attacker-medieval-archer-pass4.jpg"
+      ],
+      "limitations": [
+        "Olive field remains and the silhouette has missing interior regions. A constrained edit of this damaged plate was not purchased."
+      ],
+      "blockedBy": [
+        "Olive field remains and the silhouette has missing interior regions. A constrained edit of this damaged plate was not purchased."
+      ],
+      "nextAction": "Olive field remains and the silhouette has missing interior regions. A constrained edit of this damaged plate was not purchased."
+    },
+    {
+      "id": "creature-drone",
+      "producer": "ACTORS",
+      "role": "blocker",
+      "status": "FAIL",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "UNKNOWN",
+      "frame": "UNRESOLVED",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "FAIL",
+        "semantics": "PARTIAL",
+        "matte": "FAIL",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/creature-drone-pass3.jpg",
+        "qa/image-unified-reserve-20261009/review/creature-drone-on-black.jpg",
+        "qa/image-unified-reserve-20261009/review/creature-drone-pass4.jpg"
+      ],
+      "limitations": [
+        "Three drone poses plus a purple floor slab remain. Lights on the airframes were kept. Sheet timing was not invented."
+      ],
+      "blockedBy": [
+        "Three drone poses plus a purple floor slab remain. Lights on the airframes were kept. Sheet timing was not invented."
+      ],
+      "nextAction": "Three drone poses plus a purple floor slab remain. Lights on the airframes were kept. Sheet timing was not invented."
+    },
+    {
+      "id": "creature-wolf",
+      "producer": "ACTORS",
+      "role": "blocker",
+      "status": "FAIL",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "UNKNOWN",
+      "frame": "UNRESOLVED",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "FAIL",
+        "semantics": "PARTIAL",
+        "matte": "FAIL",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/creature-wolf-pass3.jpg",
+        "qa/image-unified-reserve-20261009/review/creature-wolf-on-black.jpg",
+        "qa/image-unified-reserve-20261009/review/creature-wolf-pass4.jpg"
+      ],
+      "limitations": [
+        "Magenta paw pads, a ground rectangle, and a small green/red marker remain. They touch the paws, so the isolated-component rule kept them."
+      ],
+      "blockedBy": [
+        "Magenta paw pads, a ground rectangle, and a small green/red marker remain. They touch the paws, so the isolated-component rule kept them."
+      ],
+      "nextAction": "Magenta paw pads, a ground rectangle, and a small green/red marker remain. They touch the paws, so the isolated-component rule kept them."
+    },
+    {
+      "id": "attacker-stone-brute",
+      "producer": "ACTORS",
+      "role": "blocker",
+      "status": "FAIL",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "UNKNOWN",
+      "frame": "UNRESOLVED",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "FAIL",
+        "semantics": "PARTIAL",
+        "matte": "FAIL",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/attacker-stone-brute-pass3.jpg",
+        "qa/image-unified-reserve-20261009/review/attacker-stone-brute-on-black.jpg",
+        "qa/image-unified-reserve-20261009/review/attacker-stone-brute-pass4.jpg"
+      ],
+      "limitations": [
+        "A thin magenta rim remains on the club and a rectangular ground outline remains. The club itself was kept."
+      ],
+      "blockedBy": [
+        "A thin magenta rim remains on the club and a rectangular ground outline remains. The club itself was kept."
+      ],
+      "nextAction": "A thin magenta rim remains on the club and a rectangular ground outline remains. The club itself was kept."
+    },
+    {
+      "id": "class-healer-standing-body",
+      "producer": "ACTORS",
+      "role": "blocker",
+      "status": "BLOCKED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "UNKNOWN",
+      "frame": "UNRESOLVED",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "FAIL",
+        "semantics": "PARTIAL",
+        "matte": "FAIL",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/class-healer-standing-body-pass3.jpg",
+        "qa/image-unified-reserve-20261009/review/class-healer-standing-body-on-black.jpg",
+        "qa/image-unified-reserve-20261009/review/class-healer-standing-body-pass4.jpg"
+      ],
+      "limitations": [
+        "No native was collected. Existing head cards and the protected boot were not assembled into a new paid wire in this pass."
+      ],
+      "blockedBy": [
+        "No native was collected. Existing head cards and the protected boot were not assembled into a new paid wire in this pass."
+      ],
+      "nextAction": "No native was collected. Existing head cards and the protected boot were not assembled into a new paid wire in this pass."
+    },
+    {
+      "id": "workshop-iron",
+      "producer": "ENVIRONMENT",
+      "role": "blocker",
+      "status": "FAIL",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "UNKNOWN",
+      "frame": "UNRESOLVED",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "FAIL",
+        "semantics": "PARTIAL",
+        "matte": "FAIL",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/workshop-iron-pass3.jpg",
+        "qa/image-unified-reserve-20261009/review/workshop-iron-on-black.jpg",
+        "qa/image-unified-reserve-20261009/review/workshop-iron-pass4.jpg"
+      ],
+      "limitations": [
+        "The outer pale-green yard was removed and the building, forge, coal, and walls remain. An inner lawn and a hole in that yard remain."
+      ],
+      "blockedBy": [
+        "The outer pale-green yard was removed and the building, forge, coal, and walls remain. An inner lawn and a hole in that yard remain."
+      ],
+      "nextAction": "The outer pale-green yard was removed and the building, forge, coal, and walls remain. An inner lawn and a hole in that yard remain."
+    },
+    {
+      "id": "hall-industrial",
+      "producer": "ENVIRONMENT",
+      "role": "blocker",
+      "status": "FAIL",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "SPRITE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "CONSERVATIVE_BOTH",
+      "side": "UNKNOWN",
+      "frame": "UNRESOLVED",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "FAIL",
+        "semantics": "PARTIAL",
+        "matte": "FAIL",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [
+        "qa/image-unified-reserve-20261009/review/hall-industrial-pass3.jpg",
+        "qa/image-unified-reserve-20261009/review/hall-industrial-on-black.jpg",
+        "qa/image-unified-reserve-20261009/review/hall-industrial-pass4.jpg"
+      ],
+      "limitations": [
+        "A small green wedge at the lower edge remains."
+      ],
+      "blockedBy": [
+        "A small green wedge at the lower edge remains."
+      ],
+      "nextAction": "A small green wedge at the lower edge remains."
+    },
+    {
+      "id": "home-chrome",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "class-select-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "hero-hall-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "forge-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "inventory-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "market-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "story-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "quest-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "tutorial-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "battle-result-layout",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "settings",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "help",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "credits",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "privacy",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "music-sfx-controls",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    },
+    {
+      "id": "save-import-export",
+      "producer": "ENVIRONMENT",
+      "role": "supporting-screen",
+      "status": "NO_NEW_IMAGE_NEEDED",
+      "sources": [],
+      "output": null,
+      "reusedFrom": null,
+      "sourceToOutput": null,
+      "intendedUse": "CODE_NATIVE",
+      "maxDisplayCssPx": null,
+      "limitBasis": "HEIGHT",
+      "side": "NOT_APPLICABLE",
+      "frame": "UI",
+      "groundContact": null,
+      "footprint": null,
+      "entrance": null,
+      "heightEnvelope": null,
+      "transforms": {},
+      "gates": {
+        "binding": "NOT_APPLICABLE",
+        "semantics": "NOT_APPLICABLE",
+        "matte": "NOT_APPLICABLE",
+        "spatial": "NOT_APPLICABLE",
+        "articulation": "NOT_APPLICABLE",
+        "runtime": "UNVERIFIED",
+        "owner": "UNVERIFIED"
+      },
+      "recipePath": null,
+      "evidencePaths": [],
+      "limitations": [
+        "Layout, type, audio, and interaction stay with Code. The 30 landscape JPEGs are references, not screens."
+      ],
+      "blockedBy": [],
+      "nextAction": null
+    }
+  ],
+  "scenes": [
+    {
+      "id": "kingdom-terrain-stone",
+      "mode": "KINGDOM",
+      "age": 0,
+      "legalAffine": [
+        60.0,
+        -10.0,
+        25.0,
+        35.0,
+        170.0,
+        165.0
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "PASS"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "source": {
+        "path": "assets/production/production-03-20261003/images/01-kingdom-terrain-stone.png",
+        "sha256": "5fcdb893fd7f2567f435742368cfa5fa093cbbbbe2b49a17f9f850d306b7de70",
+        "bytes": 2020388,
+        "dimensions": {
+          "width": 1376,
+          "height": 768
+        }
+      },
+      "sourceToLegal": [
+        1.0,
+        0,
+        0,
+        1.0,
+        0,
+        0
+      ],
+      "legalRoadSampleCount": 76,
+      "legalRoadPathLikeFraction": 0.8684,
+      "pads": [
+        {
+          "id": "townhall",
+          "quad": [
+            [
+              470.0,
+              115.0
+            ],
+            [
+              650.0,
+              85.0
+            ],
+            [
+              687.5,
+              137.5
+            ],
+            [
+              507.5,
+              167.5
+            ]
+          ],
+          "pixels": 10552,
+          "ochreFraction": 0.7818
+        },
+        {
+          "id": "P01",
+          "quad": [
+            [
+              340.0,
+              215.0
+            ],
+            [
+              424.0,
+              201.0
+            ],
+            [
+              454.0,
+              243.0
+            ],
+            [
+              370.0,
+              257.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7208
+        },
+        {
+          "id": "P02",
+          "quad": [
+            [
+              460.0,
+              195.0
+            ],
+            [
+              544.0,
+              181.0
+            ],
+            [
+              574.0,
+              223.0
+            ],
+            [
+              490.0,
+              237.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7034
+        },
+        {
+          "id": "P03",
+          "quad": [
+            [
+              580.0,
+              175.0
+            ],
+            [
+              664.0,
+              161.0
+            ],
+            [
+              694.0,
+              203.0
+            ],
+            [
+              610.0,
+              217.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7753
+        },
+        {
+          "id": "P04",
+          "quad": [
+            [
+              700.0,
+              155.0
+            ],
+            [
+              784.0,
+              141.0
+            ],
+            [
+              814.0,
+              183.0
+            ],
+            [
+              730.0,
+              197.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7091
+        },
+        {
+          "id": "P05",
+          "quad": [
+            [
+              820.0,
+              135.0
+            ],
+            [
+              904.0,
+              121.0
+            ],
+            [
+              934.0,
+              163.0
+            ],
+            [
+              850.0,
+              177.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6976
+        },
+        {
+          "id": "P06",
+          "quad": [
+            [
+              390.0,
+              285.0
+            ],
+            [
+              474.0,
+              271.0
+            ],
+            [
+              504.0,
+              313.0
+            ],
+            [
+              420.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7665
+        },
+        {
+          "id": "P07",
+          "quad": [
+            [
+              510.0,
+              265.0
+            ],
+            [
+              594.0,
+              251.0
+            ],
+            [
+              624.0,
+              293.0
+            ],
+            [
+              540.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8202
+        },
+        {
+          "id": "P08",
+          "quad": [
+            [
+              750.0,
+              225.0
+            ],
+            [
+              834.0,
+              211.0
+            ],
+            [
+              864.0,
+              253.0
+            ],
+            [
+              780.0,
+              267.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7436
+        },
+        {
+          "id": "P09",
+          "quad": [
+            [
+              870.0,
+              205.0
+            ],
+            [
+              954.0,
+              191.0
+            ],
+            [
+              984.0,
+              233.0
+            ],
+            [
+              900.0,
+              247.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7378
+        },
+        {
+          "id": "P10",
+          "quad": [
+            [
+              380.0,
+              365.0
+            ],
+            [
+              464.0,
+              351.0
+            ],
+            [
+              494.0,
+              393.0
+            ],
+            [
+              410.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7029
+        },
+        {
+          "id": "P11",
+          "quad": [
+            [
+              500.0,
+              345.0
+            ],
+            [
+              584.0,
+              331.0
+            ],
+            [
+              614.0,
+              373.0
+            ],
+            [
+              530.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6504
+        },
+        {
+          "id": "P12",
+          "quad": [
+            [
+              860.0,
+              285.0
+            ],
+            [
+              944.0,
+              271.0
+            ],
+            [
+              974.0,
+              313.0
+            ],
+            [
+              890.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7738
+        },
+        {
+          "id": "P13",
+          "quad": [
+            [
+              980.0,
+              265.0
+            ],
+            [
+              1064.0,
+              251.0
+            ],
+            [
+              1094.0,
+              293.0
+            ],
+            [
+              1010.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7536
+        },
+        {
+          "id": "P14",
+          "quad": [
+            [
+              490.0,
+              425.0
+            ],
+            [
+              574.0,
+              411.0
+            ],
+            [
+              604.0,
+              453.0
+            ],
+            [
+              520.0,
+              467.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6689
+        },
+        {
+          "id": "P15",
+          "quad": [
+            [
+              610.0,
+              405.0
+            ],
+            [
+              694.0,
+              391.0
+            ],
+            [
+              724.0,
+              433.0
+            ],
+            [
+              640.0,
+              447.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6459
+        },
+        {
+          "id": "P16",
+          "quad": [
+            [
+              850.0,
+              365.0
+            ],
+            [
+              934.0,
+              351.0
+            ],
+            [
+              964.0,
+              393.0
+            ],
+            [
+              880.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.592
+        },
+        {
+          "id": "P17",
+          "quad": [
+            [
+              970.0,
+              345.0
+            ],
+            [
+              1054.0,
+              331.0
+            ],
+            [
+              1084.0,
+              373.0
+            ],
+            [
+              1000.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7695
+        }
+      ],
+      "paintedRoads": [],
+      "banks": [],
+      "decks": [],
+      "approaches": [],
+      "walkable": [],
+      "obstacles": [],
+      "clearance": {
+        "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+        "padPixels": 78637,
+        "ochrePadPixels": 57237
+      },
+      "geometrySHA256": "a3f0b461d33f2b6ecd715d812060f16ce1920144cc00f99307d71b261e16911e",
+      "prototype": {
+        "id": "kingdom-terrain-stone",
+        "changedPixels": 57237,
+        "unresolvedOchre": 0,
+        "outsidePadsIdentical": true,
+        "output": "assets/derivatives/image-unified-reserve-20261009/environment/terrain-prototypes/kingdom-terrain-stone.png",
+        "guide": "qa/image-unified-reserve-20261009/geography/kingdom-terrain-stone-legal-pads.png",
+        "spatial": "FAIL",
+        "reason": "Local pad ochre fill does not place legal roads, banks, bridge or approaches. It is not a scene pass and it authorizes no paid kingdom retry.",
+        "method": "source-bound TELEA fill inside legal pads only; new pixels are synthesized, not recovered hidden source"
+      }
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "mode": "KINGDOM",
+      "age": 1,
+      "legalAffine": [
+        60.0,
+        -10.0,
+        25.0,
+        35.0,
+        170.0,
+        165.0
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "PASS"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "source": {
+        "path": "assets/production/production-01-20261003/images/02-kingdom-terrain-bronze.png",
+        "sha256": "49f13640f0d3f1b44769606ae541e8f67bd34d861dc0052e6bd69af7342230c1",
+        "bytes": 2109981,
+        "dimensions": {
+          "width": 1376,
+          "height": 768
+        }
+      },
+      "sourceToLegal": [
+        1.0,
+        0,
+        0,
+        1.0,
+        0,
+        0
+      ],
+      "legalRoadSampleCount": 76,
+      "legalRoadPathLikeFraction": 0.8289,
+      "pads": [
+        {
+          "id": "townhall",
+          "quad": [
+            [
+              470.0,
+              115.0
+            ],
+            [
+              650.0,
+              85.0
+            ],
+            [
+              687.5,
+              137.5
+            ],
+            [
+              507.5,
+              167.5
+            ]
+          ],
+          "pixels": 10552,
+          "ochreFraction": 0.0747
+        },
+        {
+          "id": "P01",
+          "quad": [
+            [
+              340.0,
+              215.0
+            ],
+            [
+              424.0,
+              201.0
+            ],
+            [
+              454.0,
+              243.0
+            ],
+            [
+              370.0,
+              257.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8467
+        },
+        {
+          "id": "P02",
+          "quad": [
+            [
+              460.0,
+              195.0
+            ],
+            [
+              544.0,
+              181.0
+            ],
+            [
+              574.0,
+              223.0
+            ],
+            [
+              490.0,
+              237.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9056
+        },
+        {
+          "id": "P03",
+          "quad": [
+            [
+              580.0,
+              175.0
+            ],
+            [
+              664.0,
+              161.0
+            ],
+            [
+              694.0,
+              203.0
+            ],
+            [
+              610.0,
+              217.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9019
+        },
+        {
+          "id": "P04",
+          "quad": [
+            [
+              700.0,
+              155.0
+            ],
+            [
+              784.0,
+              141.0
+            ],
+            [
+              814.0,
+              183.0
+            ],
+            [
+              730.0,
+              197.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9206
+        },
+        {
+          "id": "P05",
+          "quad": [
+            [
+              820.0,
+              135.0
+            ],
+            [
+              904.0,
+              121.0
+            ],
+            [
+              934.0,
+              163.0
+            ],
+            [
+              850.0,
+              177.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7281
+        },
+        {
+          "id": "P06",
+          "quad": [
+            [
+              390.0,
+              285.0
+            ],
+            [
+              474.0,
+              271.0
+            ],
+            [
+              504.0,
+              313.0
+            ],
+            [
+              420.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8881
+        },
+        {
+          "id": "P07",
+          "quad": [
+            [
+              510.0,
+              265.0
+            ],
+            [
+              594.0,
+              251.0
+            ],
+            [
+              624.0,
+              293.0
+            ],
+            [
+              540.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0829
+        },
+        {
+          "id": "P08",
+          "quad": [
+            [
+              750.0,
+              225.0
+            ],
+            [
+              834.0,
+              211.0
+            ],
+            [
+              864.0,
+              253.0
+            ],
+            [
+              780.0,
+              267.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8829
+        },
+        {
+          "id": "P09",
+          "quad": [
+            [
+              870.0,
+              205.0
+            ],
+            [
+              954.0,
+              191.0
+            ],
+            [
+              984.0,
+              233.0
+            ],
+            [
+              900.0,
+              247.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.219
+        },
+        {
+          "id": "P10",
+          "quad": [
+            [
+              380.0,
+              365.0
+            ],
+            [
+              464.0,
+              351.0
+            ],
+            [
+              494.0,
+              393.0
+            ],
+            [
+              410.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8759
+        },
+        {
+          "id": "P11",
+          "quad": [
+            [
+              500.0,
+              345.0
+            ],
+            [
+              584.0,
+              331.0
+            ],
+            [
+              614.0,
+              373.0
+            ],
+            [
+              530.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0624
+        },
+        {
+          "id": "P12",
+          "quad": [
+            [
+              860.0,
+              285.0
+            ],
+            [
+              944.0,
+              271.0
+            ],
+            [
+              974.0,
+              313.0
+            ],
+            [
+              890.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0667
+        },
+        {
+          "id": "P13",
+          "quad": [
+            [
+              980.0,
+              265.0
+            ],
+            [
+              1064.0,
+              251.0
+            ],
+            [
+              1094.0,
+              293.0
+            ],
+            [
+              1010.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7733
+        },
+        {
+          "id": "P14",
+          "quad": [
+            [
+              490.0,
+              425.0
+            ],
+            [
+              574.0,
+              411.0
+            ],
+            [
+              604.0,
+              453.0
+            ],
+            [
+              520.0,
+              467.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8986
+        },
+        {
+          "id": "P15",
+          "quad": [
+            [
+              610.0,
+              405.0
+            ],
+            [
+              694.0,
+              391.0
+            ],
+            [
+              724.0,
+              433.0
+            ],
+            [
+              640.0,
+              447.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8984
+        },
+        {
+          "id": "P16",
+          "quad": [
+            [
+              850.0,
+              365.0
+            ],
+            [
+              934.0,
+              351.0
+            ],
+            [
+              964.0,
+              393.0
+            ],
+            [
+              880.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0929
+        },
+        {
+          "id": "P17",
+          "quad": [
+            [
+              970.0,
+              345.0
+            ],
+            [
+              1054.0,
+              331.0
+            ],
+            [
+              1084.0,
+              373.0
+            ],
+            [
+              1000.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0799
+        }
+      ],
+      "paintedRoads": [],
+      "banks": [],
+      "decks": [],
+      "approaches": [],
+      "walkable": [],
+      "obstacles": [],
+      "clearance": {
+        "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+        "padPixels": 78637,
+        "ochrePadPixels": 41334
+      },
+      "geometrySHA256": "c8dea1eb5511050e58ccafeb60656a40ccdc7cf754104aad80d1880f455dcd21"
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "mode": "KINGDOM",
+      "age": 2,
+      "legalAffine": [
+        60.0,
+        -10.0,
+        25.0,
+        35.0,
+        170.0,
+        165.0
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "PASS"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "source": {
+        "path": "assets/production/production-01-20261003/images/03-kingdom-terrain-iron.png",
+        "sha256": "a05358dba5c543bdde5d17d0ad65aa59b24e8afc6705d95cadfd002436df8fb9",
+        "bytes": 2293053,
+        "dimensions": {
+          "width": 1376,
+          "height": 768
+        }
+      },
+      "sourceToLegal": [
+        1.0,
+        0,
+        0,
+        1.0,
+        0,
+        0
+      ],
+      "legalRoadSampleCount": 76,
+      "legalRoadPathLikeFraction": 0.6711,
+      "pads": [
+        {
+          "id": "townhall",
+          "quad": [
+            [
+              470.0,
+              115.0
+            ],
+            [
+              650.0,
+              85.0
+            ],
+            [
+              687.5,
+              137.5
+            ],
+            [
+              507.5,
+              167.5
+            ]
+          ],
+          "pixels": 10552,
+          "ochreFraction": 0.0854
+        },
+        {
+          "id": "P01",
+          "quad": [
+            [
+              340.0,
+              215.0
+            ],
+            [
+              424.0,
+              201.0
+            ],
+            [
+              454.0,
+              243.0
+            ],
+            [
+              370.0,
+              257.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5531
+        },
+        {
+          "id": "P02",
+          "quad": [
+            [
+              460.0,
+              195.0
+            ],
+            [
+              544.0,
+              181.0
+            ],
+            [
+              574.0,
+              223.0
+            ],
+            [
+              490.0,
+              237.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.4954
+        },
+        {
+          "id": "P03",
+          "quad": [
+            [
+              580.0,
+              175.0
+            ],
+            [
+              664.0,
+              161.0
+            ],
+            [
+              694.0,
+              203.0
+            ],
+            [
+              610.0,
+              217.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5341
+        },
+        {
+          "id": "P04",
+          "quad": [
+            [
+              700.0,
+              155.0
+            ],
+            [
+              784.0,
+              141.0
+            ],
+            [
+              814.0,
+              183.0
+            ],
+            [
+              730.0,
+              197.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.4816
+        },
+        {
+          "id": "P05",
+          "quad": [
+            [
+              820.0,
+              135.0
+            ],
+            [
+              904.0,
+              121.0
+            ],
+            [
+              934.0,
+              163.0
+            ],
+            [
+              850.0,
+              177.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.4702
+        },
+        {
+          "id": "P06",
+          "quad": [
+            [
+              390.0,
+              285.0
+            ],
+            [
+              474.0,
+              271.0
+            ],
+            [
+              504.0,
+              313.0
+            ],
+            [
+              420.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5358
+        },
+        {
+          "id": "P07",
+          "quad": [
+            [
+              510.0,
+              265.0
+            ],
+            [
+              594.0,
+              251.0
+            ],
+            [
+              624.0,
+              293.0
+            ],
+            [
+              540.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5728
+        },
+        {
+          "id": "P08",
+          "quad": [
+            [
+              750.0,
+              225.0
+            ],
+            [
+              834.0,
+              211.0
+            ],
+            [
+              864.0,
+              253.0
+            ],
+            [
+              780.0,
+              267.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5296
+        },
+        {
+          "id": "P09",
+          "quad": [
+            [
+              870.0,
+              205.0
+            ],
+            [
+              954.0,
+              191.0
+            ],
+            [
+              984.0,
+              233.0
+            ],
+            [
+              900.0,
+              247.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.4597
+        },
+        {
+          "id": "P10",
+          "quad": [
+            [
+              380.0,
+              365.0
+            ],
+            [
+              464.0,
+              351.0
+            ],
+            [
+              494.0,
+              393.0
+            ],
+            [
+              410.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5938
+        },
+        {
+          "id": "P11",
+          "quad": [
+            [
+              500.0,
+              345.0
+            ],
+            [
+              584.0,
+              331.0
+            ],
+            [
+              614.0,
+              373.0
+            ],
+            [
+              530.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5775
+        },
+        {
+          "id": "P12",
+          "quad": [
+            [
+              860.0,
+              285.0
+            ],
+            [
+              944.0,
+              271.0
+            ],
+            [
+              974.0,
+              313.0
+            ],
+            [
+              890.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5935
+        },
+        {
+          "id": "P13",
+          "quad": [
+            [
+              980.0,
+              265.0
+            ],
+            [
+              1064.0,
+              251.0
+            ],
+            [
+              1094.0,
+              293.0
+            ],
+            [
+              1010.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5401
+        },
+        {
+          "id": "P14",
+          "quad": [
+            [
+              490.0,
+              425.0
+            ],
+            [
+              574.0,
+              411.0
+            ],
+            [
+              604.0,
+              453.0
+            ],
+            [
+              520.0,
+              467.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5903
+        },
+        {
+          "id": "P15",
+          "quad": [
+            [
+              610.0,
+              405.0
+            ],
+            [
+              694.0,
+              391.0
+            ],
+            [
+              724.0,
+              433.0
+            ],
+            [
+              640.0,
+              447.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6155
+        },
+        {
+          "id": "P16",
+          "quad": [
+            [
+              850.0,
+              365.0
+            ],
+            [
+              934.0,
+              351.0
+            ],
+            [
+              964.0,
+              393.0
+            ],
+            [
+              880.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5878
+        },
+        {
+          "id": "P17",
+          "quad": [
+            [
+              970.0,
+              345.0
+            ],
+            [
+              1054.0,
+              331.0
+            ],
+            [
+              1084.0,
+              373.0
+            ],
+            [
+              1000.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5348
+        }
+      ],
+      "paintedRoads": [],
+      "banks": [],
+      "decks": [],
+      "approaches": [],
+      "walkable": [],
+      "obstacles": [],
+      "clearance": {
+        "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+        "padPixels": 78637,
+        "ochrePadPixels": 38009
+      },
+      "geometrySHA256": "2436c5571ed80572d230f0e266d5059d78b9a71becde77a2010f75cc3d7a1fbf"
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "mode": "KINGDOM",
+      "age": 3,
+      "legalAffine": [
+        60.0,
+        -10.0,
+        25.0,
+        35.0,
+        170.0,
+        165.0
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "PASS"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "source": {
+        "path": "assets/production/production-03-20261003/images/02-kingdom-terrain-medieval.png",
+        "sha256": "7c6122a97b842a45d8fb6ce7477df48e07d24046f3c8ce6878647cf2a1daa152",
+        "bytes": 2042115,
+        "dimensions": {
+          "width": 1376,
+          "height": 768
+        }
+      },
+      "sourceToLegal": [
+        1.0,
+        0,
+        0,
+        1.0,
+        0,
+        0
+      ],
+      "legalRoadSampleCount": 76,
+      "legalRoadPathLikeFraction": 0.4605,
+      "pads": [
+        {
+          "id": "townhall",
+          "quad": [
+            [
+              470.0,
+              115.0
+            ],
+            [
+              650.0,
+              85.0
+            ],
+            [
+              687.5,
+              137.5
+            ],
+            [
+              507.5,
+              167.5
+            ]
+          ],
+          "pixels": 10552,
+          "ochreFraction": 0.1982
+        },
+        {
+          "id": "P01",
+          "quad": [
+            [
+              340.0,
+              215.0
+            ],
+            [
+              424.0,
+              201.0
+            ],
+            [
+              454.0,
+              243.0
+            ],
+            [
+              370.0,
+              257.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6482
+        },
+        {
+          "id": "P02",
+          "quad": [
+            [
+              460.0,
+              195.0
+            ],
+            [
+              544.0,
+              181.0
+            ],
+            [
+              574.0,
+              223.0
+            ],
+            [
+              490.0,
+              237.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.2999
+        },
+        {
+          "id": "P03",
+          "quad": [
+            [
+              580.0,
+              175.0
+            ],
+            [
+              664.0,
+              161.0
+            ],
+            [
+              694.0,
+              203.0
+            ],
+            [
+              610.0,
+              217.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8732
+        },
+        {
+          "id": "P04",
+          "quad": [
+            [
+              700.0,
+              155.0
+            ],
+            [
+              784.0,
+              141.0
+            ],
+            [
+              814.0,
+              183.0
+            ],
+            [
+              730.0,
+              197.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6592
+        },
+        {
+          "id": "P05",
+          "quad": [
+            [
+              820.0,
+              135.0
+            ],
+            [
+              904.0,
+              121.0
+            ],
+            [
+              934.0,
+              163.0
+            ],
+            [
+              850.0,
+              177.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.1124
+        },
+        {
+          "id": "P06",
+          "quad": [
+            [
+              390.0,
+              285.0
+            ],
+            [
+              474.0,
+              271.0
+            ],
+            [
+              504.0,
+              313.0
+            ],
+            [
+              420.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.1678
+        },
+        {
+          "id": "P07",
+          "quad": [
+            [
+              510.0,
+              265.0
+            ],
+            [
+              594.0,
+              251.0
+            ],
+            [
+              624.0,
+              293.0
+            ],
+            [
+              540.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.1893
+        },
+        {
+          "id": "P08",
+          "quad": [
+            [
+              750.0,
+              225.0
+            ],
+            [
+              834.0,
+              211.0
+            ],
+            [
+              864.0,
+              253.0
+            ],
+            [
+              780.0,
+              267.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.4027
+        },
+        {
+          "id": "P09",
+          "quad": [
+            [
+              870.0,
+              205.0
+            ],
+            [
+              954.0,
+              191.0
+            ],
+            [
+              984.0,
+              233.0
+            ],
+            [
+              900.0,
+              247.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.1988
+        },
+        {
+          "id": "P10",
+          "quad": [
+            [
+              380.0,
+              365.0
+            ],
+            [
+              464.0,
+              351.0
+            ],
+            [
+              494.0,
+              393.0
+            ],
+            [
+              410.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.3084
+        },
+        {
+          "id": "P11",
+          "quad": [
+            [
+              500.0,
+              345.0
+            ],
+            [
+              584.0,
+              331.0
+            ],
+            [
+              614.0,
+              373.0
+            ],
+            [
+              530.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.2057
+        },
+        {
+          "id": "P12",
+          "quad": [
+            [
+              860.0,
+              285.0
+            ],
+            [
+              944.0,
+              271.0
+            ],
+            [
+              974.0,
+              313.0
+            ],
+            [
+              890.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.3086
+        },
+        {
+          "id": "P13",
+          "quad": [
+            [
+              980.0,
+              265.0
+            ],
+            [
+              1064.0,
+              251.0
+            ],
+            [
+              1094.0,
+              293.0
+            ],
+            [
+              1010.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.1476
+        },
+        {
+          "id": "P14",
+          "quad": [
+            [
+              490.0,
+              425.0
+            ],
+            [
+              574.0,
+              411.0
+            ],
+            [
+              604.0,
+              453.0
+            ],
+            [
+              520.0,
+              467.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.1823
+        },
+        {
+          "id": "P15",
+          "quad": [
+            [
+              610.0,
+              405.0
+            ],
+            [
+              694.0,
+              391.0
+            ],
+            [
+              724.0,
+              433.0
+            ],
+            [
+              640.0,
+              447.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.1638
+        },
+        {
+          "id": "P16",
+          "quad": [
+            [
+              850.0,
+              365.0
+            ],
+            [
+              934.0,
+              351.0
+            ],
+            [
+              964.0,
+              393.0
+            ],
+            [
+              880.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.2637
+        },
+        {
+          "id": "P17",
+          "quad": [
+            [
+              970.0,
+              345.0
+            ],
+            [
+              1054.0,
+              331.0
+            ],
+            [
+              1084.0,
+              373.0
+            ],
+            [
+              1000.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.2589
+        }
+      ],
+      "paintedRoads": [],
+      "banks": [],
+      "decks": [],
+      "approaches": [],
+      "walkable": [],
+      "obstacles": [],
+      "clearance": {
+        "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+        "padPixels": 78637,
+        "ochrePadPixels": 23679
+      },
+      "geometrySHA256": "b801f17178f607ceec8bc4198859bcf946dc9fc03444d9b5341e040e23e905c9"
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "mode": "KINGDOM",
+      "age": 4,
+      "legalAffine": [
+        60.0,
+        -10.0,
+        25.0,
+        35.0,
+        170.0,
+        165.0
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "PASS"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "source": {
+        "path": "assets/production/production-01-20261003/images/05-kingdom-terrain-gunpowder.png",
+        "sha256": "9aec2f273a388c3061d9c1237be4590d678c34c7962c366c7944db38c6228879",
+        "bytes": 2180694,
+        "dimensions": {
+          "width": 1376,
+          "height": 768
+        }
+      },
+      "sourceToLegal": [
+        1.0,
+        0,
+        0,
+        1.0,
+        0,
+        0
+      ],
+      "legalRoadSampleCount": 76,
+      "legalRoadPathLikeFraction": 0.6842,
+      "pads": [
+        {
+          "id": "townhall",
+          "quad": [
+            [
+              470.0,
+              115.0
+            ],
+            [
+              650.0,
+              85.0
+            ],
+            [
+              687.5,
+              137.5
+            ],
+            [
+              507.5,
+              167.5
+            ]
+          ],
+          "pixels": 10552,
+          "ochreFraction": 0.9955
+        },
+        {
+          "id": "P01",
+          "quad": [
+            [
+              340.0,
+              215.0
+            ],
+            [
+              424.0,
+              201.0
+            ],
+            [
+              454.0,
+              243.0
+            ],
+            [
+              370.0,
+              257.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7603
+        },
+        {
+          "id": "P02",
+          "quad": [
+            [
+              460.0,
+              195.0
+            ],
+            [
+              544.0,
+              181.0
+            ],
+            [
+              574.0,
+              223.0
+            ],
+            [
+              490.0,
+              237.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8157
+        },
+        {
+          "id": "P03",
+          "quad": [
+            [
+              580.0,
+              175.0
+            ],
+            [
+              664.0,
+              161.0
+            ],
+            [
+              694.0,
+              203.0
+            ],
+            [
+              610.0,
+              217.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6614
+        },
+        {
+          "id": "P04",
+          "quad": [
+            [
+              700.0,
+              155.0
+            ],
+            [
+              784.0,
+              141.0
+            ],
+            [
+              814.0,
+              183.0
+            ],
+            [
+              730.0,
+              197.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7346
+        },
+        {
+          "id": "P05",
+          "quad": [
+            [
+              820.0,
+              135.0
+            ],
+            [
+              904.0,
+              121.0
+            ],
+            [
+              934.0,
+              163.0
+            ],
+            [
+              850.0,
+              177.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7526
+        },
+        {
+          "id": "P06",
+          "quad": [
+            [
+              390.0,
+              285.0
+            ],
+            [
+              474.0,
+              271.0
+            ],
+            [
+              504.0,
+              313.0
+            ],
+            [
+              420.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7129
+        },
+        {
+          "id": "P07",
+          "quad": [
+            [
+              510.0,
+              265.0
+            ],
+            [
+              594.0,
+              251.0
+            ],
+            [
+              624.0,
+              293.0
+            ],
+            [
+              540.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6906
+        },
+        {
+          "id": "P08",
+          "quad": [
+            [
+              750.0,
+              225.0
+            ],
+            [
+              834.0,
+              211.0
+            ],
+            [
+              864.0,
+              253.0
+            ],
+            [
+              780.0,
+              267.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7558
+        },
+        {
+          "id": "P09",
+          "quad": [
+            [
+              870.0,
+              205.0
+            ],
+            [
+              954.0,
+              191.0
+            ],
+            [
+              984.0,
+              233.0
+            ],
+            [
+              900.0,
+              247.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7688
+        },
+        {
+          "id": "P10",
+          "quad": [
+            [
+              380.0,
+              365.0
+            ],
+            [
+              464.0,
+              351.0
+            ],
+            [
+              494.0,
+              393.0
+            ],
+            [
+              410.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7361
+        },
+        {
+          "id": "P11",
+          "quad": [
+            [
+              500.0,
+              345.0
+            ],
+            [
+              584.0,
+              331.0
+            ],
+            [
+              614.0,
+              373.0
+            ],
+            [
+              530.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7675
+        },
+        {
+          "id": "P12",
+          "quad": [
+            [
+              860.0,
+              285.0
+            ],
+            [
+              944.0,
+              271.0
+            ],
+            [
+              974.0,
+              313.0
+            ],
+            [
+              890.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7411
+        },
+        {
+          "id": "P13",
+          "quad": [
+            [
+              980.0,
+              265.0
+            ],
+            [
+              1064.0,
+              251.0
+            ],
+            [
+              1094.0,
+              293.0
+            ],
+            [
+              1010.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7236
+        },
+        {
+          "id": "P14",
+          "quad": [
+            [
+              490.0,
+              425.0
+            ],
+            [
+              574.0,
+              411.0
+            ],
+            [
+              604.0,
+              453.0
+            ],
+            [
+              520.0,
+              467.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.776
+        },
+        {
+          "id": "P15",
+          "quad": [
+            [
+              610.0,
+              405.0
+            ],
+            [
+              694.0,
+              391.0
+            ],
+            [
+              724.0,
+              433.0
+            ],
+            [
+              640.0,
+              447.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7166
+        },
+        {
+          "id": "P16",
+          "quad": [
+            [
+              850.0,
+              365.0
+            ],
+            [
+              934.0,
+              351.0
+            ],
+            [
+              964.0,
+              393.0
+            ],
+            [
+              880.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.7833
+        },
+        {
+          "id": "P17",
+          "quad": [
+            [
+              970.0,
+              345.0
+            ],
+            [
+              1054.0,
+              331.0
+            ],
+            [
+              1084.0,
+              373.0
+            ],
+            [
+              1000.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.796
+        }
+      ],
+      "paintedRoads": [],
+      "banks": [],
+      "decks": [],
+      "approaches": [],
+      "walkable": [],
+      "obstacles": [],
+      "clearance": {
+        "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+        "padPixels": 78637,
+        "ochrePadPixels": 61340
+      },
+      "geometrySHA256": "eabd7cd524a953ea8b313c4e0673a9285ed332049ae7e16d99757a90df6b1fa7"
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "mode": "KINGDOM",
+      "age": 5,
+      "legalAffine": [
+        60.0,
+        -10.0,
+        25.0,
+        35.0,
+        170.0,
+        165.0
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "PASS"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "source": {
+        "path": "assets/production/production-01-20261003/images/06-kingdom-terrain-industrial.png",
+        "sha256": "85440ec67f04e90b144f1f6ecc281fc1b898b584c38deec0b8e512e7f2d512d6",
+        "bytes": 2240590,
+        "dimensions": {
+          "width": 1376,
+          "height": 768
+        }
+      },
+      "sourceToLegal": [
+        1.0,
+        0,
+        0,
+        1.0,
+        0,
+        0
+      ],
+      "legalRoadSampleCount": 76,
+      "legalRoadPathLikeFraction": 0.4342,
+      "pads": [
+        {
+          "id": "townhall",
+          "quad": [
+            [
+              470.0,
+              115.0
+            ],
+            [
+              650.0,
+              85.0
+            ],
+            [
+              687.5,
+              137.5
+            ],
+            [
+              507.5,
+              167.5
+            ]
+          ],
+          "pixels": 10552,
+          "ochreFraction": 0.4366
+        },
+        {
+          "id": "P01",
+          "quad": [
+            [
+              340.0,
+              215.0
+            ],
+            [
+              424.0,
+              201.0
+            ],
+            [
+              454.0,
+              243.0
+            ],
+            [
+              370.0,
+              257.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.8996
+        },
+        {
+          "id": "P02",
+          "quad": [
+            [
+              460.0,
+              195.0
+            ],
+            [
+              544.0,
+              181.0
+            ],
+            [
+              574.0,
+              223.0
+            ],
+            [
+              490.0,
+              237.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9358
+        },
+        {
+          "id": "P03",
+          "quad": [
+            [
+              580.0,
+              175.0
+            ],
+            [
+              664.0,
+              161.0
+            ],
+            [
+              694.0,
+              203.0
+            ],
+            [
+              610.0,
+              217.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.962
+        },
+        {
+          "id": "P04",
+          "quad": [
+            [
+              700.0,
+              155.0
+            ],
+            [
+              784.0,
+              141.0
+            ],
+            [
+              814.0,
+              183.0
+            ],
+            [
+              730.0,
+              197.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9376
+        },
+        {
+          "id": "P05",
+          "quad": [
+            [
+              820.0,
+              135.0
+            ],
+            [
+              904.0,
+              121.0
+            ],
+            [
+              934.0,
+              163.0
+            ],
+            [
+              850.0,
+              177.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9538
+        },
+        {
+          "id": "P06",
+          "quad": [
+            [
+              390.0,
+              285.0
+            ],
+            [
+              474.0,
+              271.0
+            ],
+            [
+              504.0,
+              313.0
+            ],
+            [
+              420.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.965
+        },
+        {
+          "id": "P07",
+          "quad": [
+            [
+              510.0,
+              265.0
+            ],
+            [
+              594.0,
+              251.0
+            ],
+            [
+              624.0,
+              293.0
+            ],
+            [
+              540.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9755
+        },
+        {
+          "id": "P08",
+          "quad": [
+            [
+              750.0,
+              225.0
+            ],
+            [
+              834.0,
+              211.0
+            ],
+            [
+              864.0,
+              253.0
+            ],
+            [
+              780.0,
+              267.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9725
+        },
+        {
+          "id": "P09",
+          "quad": [
+            [
+              870.0,
+              205.0
+            ],
+            [
+              954.0,
+              191.0
+            ],
+            [
+              984.0,
+              233.0
+            ],
+            [
+              900.0,
+              247.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9773
+        },
+        {
+          "id": "P10",
+          "quad": [
+            [
+              380.0,
+              365.0
+            ],
+            [
+              464.0,
+              351.0
+            ],
+            [
+              494.0,
+              393.0
+            ],
+            [
+              410.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9581
+        },
+        {
+          "id": "P11",
+          "quad": [
+            [
+              500.0,
+              345.0
+            ],
+            [
+              584.0,
+              331.0
+            ],
+            [
+              614.0,
+              373.0
+            ],
+            [
+              530.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9693
+        },
+        {
+          "id": "P12",
+          "quad": [
+            [
+              860.0,
+              285.0
+            ],
+            [
+              944.0,
+              271.0
+            ],
+            [
+              974.0,
+              313.0
+            ],
+            [
+              890.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9558
+        },
+        {
+          "id": "P13",
+          "quad": [
+            [
+              980.0,
+              265.0
+            ],
+            [
+              1064.0,
+              251.0
+            ],
+            [
+              1094.0,
+              293.0
+            ],
+            [
+              1010.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9443
+        },
+        {
+          "id": "P14",
+          "quad": [
+            [
+              490.0,
+              425.0
+            ],
+            [
+              574.0,
+              411.0
+            ],
+            [
+              604.0,
+              453.0
+            ],
+            [
+              520.0,
+              467.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9556
+        },
+        {
+          "id": "P15",
+          "quad": [
+            [
+              610.0,
+              405.0
+            ],
+            [
+              694.0,
+              391.0
+            ],
+            [
+              724.0,
+              433.0
+            ],
+            [
+              640.0,
+              447.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9396
+        },
+        {
+          "id": "P16",
+          "quad": [
+            [
+              850.0,
+              365.0
+            ],
+            [
+              934.0,
+              351.0
+            ],
+            [
+              964.0,
+              393.0
+            ],
+            [
+              880.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9775
+        },
+        {
+          "id": "P17",
+          "quad": [
+            [
+              970.0,
+              345.0
+            ],
+            [
+              1054.0,
+              331.0
+            ],
+            [
+              1084.0,
+              373.0
+            ],
+            [
+              1000.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.9338
+        }
+      ],
+      "paintedRoads": [],
+      "banks": [],
+      "decks": [],
+      "approaches": [],
+      "walkable": [],
+      "obstacles": [],
+      "clearance": {
+        "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+        "padPixels": 78637,
+        "ochrePadPixels": 69541
+      },
+      "geometrySHA256": "6b6ef04233cabbc70f8ecc2f5967eb974a706cd2de3132fae91afd8380a8a87a"
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "mode": "KINGDOM",
+      "age": 6,
+      "legalAffine": [
+        60.0,
+        -10.0,
+        25.0,
+        35.0,
+        170.0,
+        165.0
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "PASS"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "source": {
+        "path": "assets/production/production-01-20261003/images/07-kingdom-terrain-modern.png",
+        "sha256": "c53704f6a8cb8e6586d0fe0c26b5e9af172f9d3d8cba6489affe2c1fae5cc926",
+        "bytes": 2337763,
+        "dimensions": {
+          "width": 1376,
+          "height": 768
+        }
+      },
+      "sourceToLegal": [
+        1.0,
+        0,
+        0,
+        1.0,
+        0,
+        0
+      ],
+      "legalRoadSampleCount": 76,
+      "legalRoadPathLikeFraction": 0.0263,
+      "pads": [
+        {
+          "id": "townhall",
+          "quad": [
+            [
+              470.0,
+              115.0
+            ],
+            [
+              650.0,
+              85.0
+            ],
+            [
+              687.5,
+              137.5
+            ],
+            [
+              507.5,
+              167.5
+            ]
+          ],
+          "pixels": 10552,
+          "ochreFraction": 0.0027
+        },
+        {
+          "id": "P01",
+          "quad": [
+            [
+              340.0,
+              215.0
+            ],
+            [
+              424.0,
+              201.0
+            ],
+            [
+              454.0,
+              243.0
+            ],
+            [
+              370.0,
+              257.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0117
+        },
+        {
+          "id": "P02",
+          "quad": [
+            [
+              460.0,
+              195.0
+            ],
+            [
+              544.0,
+              181.0
+            ],
+            [
+              574.0,
+              223.0
+            ],
+            [
+              490.0,
+              237.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0065
+        },
+        {
+          "id": "P03",
+          "quad": [
+            [
+              580.0,
+              175.0
+            ],
+            [
+              664.0,
+              161.0
+            ],
+            [
+              694.0,
+              203.0
+            ],
+            [
+              610.0,
+              217.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0057
+        },
+        {
+          "id": "P04",
+          "quad": [
+            [
+              700.0,
+              155.0
+            ],
+            [
+              784.0,
+              141.0
+            ],
+            [
+              814.0,
+              183.0
+            ],
+            [
+              730.0,
+              197.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0062
+        },
+        {
+          "id": "P05",
+          "quad": [
+            [
+              820.0,
+              135.0
+            ],
+            [
+              904.0,
+              121.0
+            ],
+            [
+              934.0,
+              163.0
+            ],
+            [
+              850.0,
+              177.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0225
+        },
+        {
+          "id": "P06",
+          "quad": [
+            [
+              390.0,
+              285.0
+            ],
+            [
+              474.0,
+              271.0
+            ],
+            [
+              504.0,
+              313.0
+            ],
+            [
+              420.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0017
+        },
+        {
+          "id": "P07",
+          "quad": [
+            [
+              510.0,
+              265.0
+            ],
+            [
+              594.0,
+              251.0
+            ],
+            [
+              624.0,
+              293.0
+            ],
+            [
+              540.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0057
+        },
+        {
+          "id": "P08",
+          "quad": [
+            [
+              750.0,
+              225.0
+            ],
+            [
+              834.0,
+              211.0
+            ],
+            [
+              864.0,
+              253.0
+            ],
+            [
+              780.0,
+              267.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0012
+        },
+        {
+          "id": "P09",
+          "quad": [
+            [
+              870.0,
+              205.0
+            ],
+            [
+              954.0,
+              191.0
+            ],
+            [
+              984.0,
+              233.0
+            ],
+            [
+              900.0,
+              247.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0057
+        },
+        {
+          "id": "P10",
+          "quad": [
+            [
+              380.0,
+              365.0
+            ],
+            [
+              464.0,
+              351.0
+            ],
+            [
+              494.0,
+              393.0
+            ],
+            [
+              410.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0025
+        },
+        {
+          "id": "P11",
+          "quad": [
+            [
+              500.0,
+              345.0
+            ],
+            [
+              584.0,
+              331.0
+            ],
+            [
+              614.0,
+              373.0
+            ],
+            [
+              530.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0035
+        },
+        {
+          "id": "P12",
+          "quad": [
+            [
+              860.0,
+              285.0
+            ],
+            [
+              944.0,
+              271.0
+            ],
+            [
+              974.0,
+              313.0
+            ],
+            [
+              890.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0025
+        },
+        {
+          "id": "P13",
+          "quad": [
+            [
+              980.0,
+              265.0
+            ],
+            [
+              1064.0,
+              251.0
+            ],
+            [
+              1094.0,
+              293.0
+            ],
+            [
+              1010.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0065
+        },
+        {
+          "id": "P14",
+          "quad": [
+            [
+              490.0,
+              425.0
+            ],
+            [
+              574.0,
+              411.0
+            ],
+            [
+              604.0,
+              453.0
+            ],
+            [
+              520.0,
+              467.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0022
+        },
+        {
+          "id": "P15",
+          "quad": [
+            [
+              610.0,
+              405.0
+            ],
+            [
+              694.0,
+              391.0
+            ],
+            [
+              724.0,
+              433.0
+            ],
+            [
+              640.0,
+              447.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0045
+        },
+        {
+          "id": "P16",
+          "quad": [
+            [
+              850.0,
+              365.0
+            ],
+            [
+              934.0,
+              351.0
+            ],
+            [
+              964.0,
+              393.0
+            ],
+            [
+              880.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.0025
+        },
+        {
+          "id": "P17",
+          "quad": [
+            [
+              970.0,
+              345.0
+            ],
+            [
+              1054.0,
+              331.0
+            ],
+            [
+              1084.0,
+              373.0
+            ],
+            [
+              1000.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.004
+        }
+      ],
+      "paintedRoads": [],
+      "banks": [],
+      "decks": [],
+      "approaches": [],
+      "walkable": [],
+      "obstacles": [],
+      "clearance": {
+        "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+        "padPixels": 78637,
+        "ochrePadPixels": 411
+      },
+      "geometrySHA256": "e06e9ef69261a40aa06077b4e50becc43047e6eec9c06464b70ce2c683774ae2"
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "mode": "KINGDOM",
+      "age": 7,
+      "legalAffine": [
+        60.0,
+        -10.0,
+        25.0,
+        35.0,
+        170.0,
+        165.0
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "PASS"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "source": {
+        "path": "assets/production/production-01-20261003/images/08-kingdom-terrain-future.png",
+        "sha256": "df5e35eeca4df63ec2fd636dfe4d7522b6a33f805ff7c4e84aee321423f6fd8d",
+        "bytes": 2158708,
+        "dimensions": {
+          "width": 1376,
+          "height": 768
+        }
+      },
+      "sourceToLegal": [
+        1.0,
+        0,
+        0,
+        1.0,
+        0,
+        0
+      ],
+      "legalRoadSampleCount": 76,
+      "legalRoadPathLikeFraction": 0.2763,
+      "pads": [
+        {
+          "id": "townhall",
+          "quad": [
+            [
+              470.0,
+              115.0
+            ],
+            [
+              650.0,
+              85.0
+            ],
+            [
+              687.5,
+              137.5
+            ],
+            [
+              507.5,
+              167.5
+            ]
+          ],
+          "pixels": 10552,
+          "ochreFraction": 0.7488
+        },
+        {
+          "id": "P01",
+          "quad": [
+            [
+              340.0,
+              215.0
+            ],
+            [
+              424.0,
+              201.0
+            ],
+            [
+              454.0,
+              243.0
+            ],
+            [
+              370.0,
+              257.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6537
+        },
+        {
+          "id": "P02",
+          "quad": [
+            [
+              460.0,
+              195.0
+            ],
+            [
+              544.0,
+              181.0
+            ],
+            [
+              574.0,
+              223.0
+            ],
+            [
+              490.0,
+              237.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.64
+        },
+        {
+          "id": "P03",
+          "quad": [
+            [
+              580.0,
+              175.0
+            ],
+            [
+              664.0,
+              161.0
+            ],
+            [
+              694.0,
+              203.0
+            ],
+            [
+              610.0,
+              217.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.63
+        },
+        {
+          "id": "P04",
+          "quad": [
+            [
+              700.0,
+              155.0
+            ],
+            [
+              784.0,
+              141.0
+            ],
+            [
+              814.0,
+              183.0
+            ],
+            [
+              730.0,
+              197.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6162
+        },
+        {
+          "id": "P05",
+          "quad": [
+            [
+              820.0,
+              135.0
+            ],
+            [
+              904.0,
+              121.0
+            ],
+            [
+              934.0,
+              163.0
+            ],
+            [
+              850.0,
+              177.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5591
+        },
+        {
+          "id": "P06",
+          "quad": [
+            [
+              390.0,
+              285.0
+            ],
+            [
+              474.0,
+              271.0
+            ],
+            [
+              504.0,
+              313.0
+            ],
+            [
+              420.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6722
+        },
+        {
+          "id": "P07",
+          "quad": [
+            [
+              510.0,
+              265.0
+            ],
+            [
+              594.0,
+              251.0
+            ],
+            [
+              624.0,
+              293.0
+            ],
+            [
+              540.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6602
+        },
+        {
+          "id": "P08",
+          "quad": [
+            [
+              750.0,
+              225.0
+            ],
+            [
+              834.0,
+              211.0
+            ],
+            [
+              864.0,
+              253.0
+            ],
+            [
+              780.0,
+              267.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5888
+        },
+        {
+          "id": "P09",
+          "quad": [
+            [
+              870.0,
+              205.0
+            ],
+            [
+              954.0,
+              191.0
+            ],
+            [
+              984.0,
+              233.0
+            ],
+            [
+              900.0,
+              247.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.582
+        },
+        {
+          "id": "P10",
+          "quad": [
+            [
+              380.0,
+              365.0
+            ],
+            [
+              464.0,
+              351.0
+            ],
+            [
+              494.0,
+              393.0
+            ],
+            [
+              410.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6986
+        },
+        {
+          "id": "P11",
+          "quad": [
+            [
+              500.0,
+              345.0
+            ],
+            [
+              584.0,
+              331.0
+            ],
+            [
+              614.0,
+              373.0
+            ],
+            [
+              530.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6866
+        },
+        {
+          "id": "P12",
+          "quad": [
+            [
+              860.0,
+              285.0
+            ],
+            [
+              944.0,
+              271.0
+            ],
+            [
+              974.0,
+              313.0
+            ],
+            [
+              890.0,
+              327.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5283
+        },
+        {
+          "id": "P13",
+          "quad": [
+            [
+              980.0,
+              265.0
+            ],
+            [
+              1064.0,
+              251.0
+            ],
+            [
+              1094.0,
+              293.0
+            ],
+            [
+              1010.0,
+              307.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.4869
+        },
+        {
+          "id": "P14",
+          "quad": [
+            [
+              490.0,
+              425.0
+            ],
+            [
+              574.0,
+              411.0
+            ],
+            [
+              604.0,
+              453.0
+            ],
+            [
+              520.0,
+              467.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6959
+        },
+        {
+          "id": "P15",
+          "quad": [
+            [
+              610.0,
+              405.0
+            ],
+            [
+              694.0,
+              391.0
+            ],
+            [
+              724.0,
+              433.0
+            ],
+            [
+              640.0,
+              447.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.6707
+        },
+        {
+          "id": "P16",
+          "quad": [
+            [
+              850.0,
+              365.0
+            ],
+            [
+              934.0,
+              351.0
+            ],
+            [
+              964.0,
+              393.0
+            ],
+            [
+              880.0,
+              407.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.4587
+        },
+        {
+          "id": "P17",
+          "quad": [
+            [
+              970.0,
+              345.0
+            ],
+            [
+              1054.0,
+              331.0
+            ],
+            [
+              1084.0,
+              373.0
+            ],
+            [
+              1000.0,
+              387.0
+            ]
+          ],
+          "pixels": 4005,
+          "ochreFraction": 0.5021
+        }
+      ],
+      "paintedRoads": [],
+      "banks": [],
+      "decks": [],
+      "approaches": [],
+      "walkable": [],
+      "obstacles": [],
+      "clearance": {
+        "method": "legal pad raster versus ochre heuristic; not a painted clearance pass",
+        "padPixels": 78637,
+        "ochrePadPixels": 49272
+      },
+      "geometrySHA256": "7bf9b53de4420c523f51089d21cc6d5936f3e0dddb71cdbf04d076f5e8d5d692"
+    },
+    {
+      "id": "adventure-terrain-stone",
+      "mode": "ADVENTURE",
+      "age": 0,
+      "legalAffine": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "adventure-terrain-bronze",
+      "mode": "ADVENTURE",
+      "age": 1,
+      "legalAffine": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "adventure-terrain-iron",
+      "mode": "ADVENTURE",
+      "age": 2,
+      "legalAffine": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "adventure-terrain-medieval",
+      "mode": "ADVENTURE",
+      "age": 3,
+      "legalAffine": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "adventure-terrain-gunpowder",
+      "mode": "ADVENTURE",
+      "age": 4,
+      "legalAffine": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "adventure-terrain-industrial",
+      "mode": "ADVENTURE",
+      "age": 5,
+      "legalAffine": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "adventure-terrain-modern",
+      "mode": "ADVENTURE",
+      "age": 6,
+      "legalAffine": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "adventure-terrain-future",
+      "mode": "ADVENTURE",
+      "age": 7,
+      "legalAffine": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "tactical-terrain-stone",
+      "mode": "TACTICAL",
+      "age": 0,
+      "legalAffine": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "tactical-terrain-bronze",
+      "mode": "TACTICAL",
+      "age": 1,
+      "legalAffine": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "tactical-terrain-iron",
+      "mode": "TACTICAL",
+      "age": 2,
+      "legalAffine": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "tactical-terrain-medieval",
+      "mode": "TACTICAL",
+      "age": 3,
+      "legalAffine": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "tactical-terrain-gunpowder",
+      "mode": "TACTICAL",
+      "age": 4,
+      "legalAffine": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "tactical-terrain-industrial",
+      "mode": "TACTICAL",
+      "age": 5,
+      "legalAffine": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "tactical-terrain-modern",
+      "mode": "TACTICAL",
+      "age": 6,
+      "legalAffine": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "tactical-terrain-future",
+      "mode": "TACTICAL",
+      "age": 7,
+      "legalAffine": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "defense-terrain-stone",
+      "mode": "DEFENSE",
+      "age": 0,
+      "legalAffine": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "defense-terrain-bronze",
+      "mode": "DEFENSE",
+      "age": 1,
+      "legalAffine": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "defense-terrain-iron",
+      "mode": "DEFENSE",
+      "age": 2,
+      "legalAffine": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "defense-terrain-medieval",
+      "mode": "DEFENSE",
+      "age": 3,
+      "legalAffine": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "defense-terrain-gunpowder",
+      "mode": "DEFENSE",
+      "age": 4,
+      "legalAffine": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "defense-terrain-industrial",
+      "mode": "DEFENSE",
+      "age": 5,
+      "legalAffine": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "defense-terrain-modern",
+      "mode": "DEFENSE",
+      "age": 6,
+      "legalAffine": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    },
+    {
+      "id": "defense-terrain-future",
+      "mode": "DEFENSE",
+      "age": 7,
+      "legalAffine": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "featureApplicability": {},
+      "gates": {
+        "spatial": "FAIL",
+        "binding": "FAIL"
+      },
+      "limitations": [
+        "Automatic Sobel and luminance road floods stay withdrawn.",
+        "Paint sampled on the legal road polyline is a coverage measurement, not a promoted painted-road trace.",
+        "Free-layout full-scene regeneration was not repeated."
+      ],
+      "nextAction": "Manual source-bound trace of painted roads, banks, decks and approaches before any paid edit.",
+      "blockedBy": [
+        "source image missing"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "newDerivativePngs": 123,
+      "bodyCandidatesAccepted": 7,
+      "readyReuse": [
+        "troop-stone-melee",
+        "troop-industrial-ranged",
+        "troop-industrial-heavy",
+        "troop-stone-ranged",
+        "healer-boot"
+      ],
+      "sceneRows": 32,
+      "sceneSpatialPass": 0,
+      "kingdomAffine": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "hallScale": 0.1312
+    }
+  ],
+  "readySubset": [
+    "troop-stone-melee",
+    "troop-industrial-ranged",
+    "troop-industrial-heavy",
+    "troop-stone-ranged",
+    "healer-boot"
+  ],
+  "noNewImageNeeded": [
+    "home-chrome",
+    "class-select-layout",
+    "hero-hall-layout",
+    "forge-layout",
+    "inventory-layout",
+    "market-layout",
+    "story-layout",
+    "quest-layout",
+    "tutorial-layout",
+    "battle-result-layout",
+    "settings",
+    "help",
+    "credits",
+    "privacy",
+    "music-sfx-controls",
+    "save-import-export"
+  ],
+  "generationReceipts": [],
+  "pendingPackIds": [
+    "class-healer-standing-body"
+  ],
+  "retainedUnknownIds": [],
+  "budgetSnapshot": {
+    "hardCapUSD": 80,
+    "historicalProtectedUSD": 79.8327,
+    "effectivePriorLiabilityUSD": 64.8327,
+    "effectiveReserveUSD": 0,
+    "newHoldsThisRunUSD": 0,
+    "invoicedUSD": null,
+    "remainingCapacityUSD": 15.1673,
+    "pricing": {
+      "source": "Vertex AI Gemini 3.1 Flash Image standard tier, image output $60/1M, 1680 tokens at 2K",
+      "twoKFourImageWorstCaseUSD": 0.5267
+    },
+    "notPurchased": [
+      {
+        "id": "class-healer-standing-body",
+        "boundUSD": 0.5267,
+        "reason": "Unattempted. Needs a wire that actually contains the head-card and boot images. Not sent."
+      },
+      {
+        "id": "attacker-bronze-runner",
+        "boundUSD": 0.4594,
+        "reason": "HUD scene. No validated mask, so no request."
+      },
+      {
+        "id": "attacker-medieval-archer",
+        "boundUSD": 0.4594,
+        "reason": "Damaged silhouette. No validated mask, so no request."
+      },
+      {
+        "id": "kingdom-terrain-eight-ages",
+        "boundUSD": null,
+        "reason": "Stone local prototype does not satisfy legal roads. The free-layout method was not repeated and no kingdom image was purchased."
+      }
+    ]
+  },
+  "wholeDeliveryReady": false,
+  "reviewGallery": "qa/image-unified-reserve-20261009/review/gallery.html",
+  "checkpoint": "qa/image-unified-reserve-20261009/checkpoint.json",
+  "codeDependencies": [
+    {
+      "id": "gear-stone-helm",
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -82,
+        -208
+      ],
+      "groundContact": "NOT_APPLICABLE"
+    },
+    {
+      "id": "troop-stone-melee",
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -477,
+        -112
+      ],
+      "reuse": "assets/runtime-code-20261007/troops/troop-stone-melee.png"
+    },
+    {
+      "id": "troop-industrial-ranged",
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -526,
+        -103
+      ]
+    },
+    {
+      "id": "troop-industrial-heavy",
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -233,
+        -64
+      ]
+    },
+    {
+      "id": "troop-stone-ranged",
+      "sourceToOutput": [
+        1,
+        0,
+        0,
+        1,
+        -363,
+        -79
+      ],
+      "reuse": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png"
+    },
+    {
+      "id": "css-caps",
+      "note": "Bronze heavy, gunpowder heavy, future ranged, future heavy, mounts, gear, artifacts, and effects stay at a 64 CSS longest-side cap. Ordinary static ceiling is 130. Do not shrink the raster in Image."
+    },
+    {
+      "id": "kingdom-camera",
+      "affine": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "hallScale": 0.1312
+    },
+    {
+      "id": "drone",
+      "note": "Not one sprite. Three poses are visible. Timing is blocked."
+    }
+  ]
+}

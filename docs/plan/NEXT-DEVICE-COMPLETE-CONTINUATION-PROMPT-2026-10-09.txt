@@ -1,0 +1,203 @@
+Language/framework/version: JavaScript ES modules, HTML/CSS/SVG; Node >=24 (24.19.0 verified 9 October 2026), custom scripts/serve.mjs and scripts/build.mjs, NOT Vite. Python 3.13.7; Pillow12.3.0/NumPy2.5.3/OpenCV5.0.0/SciPy1.18.1 verified 9 October; verify the new computer. Android source records Java21/Gradle8.11.1/AGP8.7.3/min24/compile-target36. Task: next-device local verification, Image completion and Code continuation. Execute authorized work, do not return another plan. Physical device STOPPED.
+
+1. Task Summary
+
+Continue the complete Ages of Dominion Reborn game on another development computer from the verified repository and separately restored art/QA payloads. Recheck the current state, complete all independent ready local work, repair the Image delivery's stale contracts and false missing-source blockers, complete source-supported artwork/rigs/registered scenes within the existing Image authority, integrate only applicable verified rows, and finish Code usability, connected progression, every screen and package verification. Keep whole-game INCOMPLETE until its separate technical, visual, natural gameplay, storage, owner and device gates actually pass. One selected Image executor owns Environment+Actors/Equipment+sole paid coordinator; Code ownership is a separate action phase in this document. Do not spawn/message agents or make provider calls merely to start the task. Owner's 9 October request authorized fresh verification, portable handoff, genuinely unneeded old-QA cleanup and commit/push; the previous chat completed verification/handoff, not product repairs. Existing full implementation and selected Image repair authority remain scoped to their execution roles.
+
+2. Environment
+
+Repository: https://github.com/arghaG123/ages-of-dominion-reborn.git ; intended branch main. Source computer's actual remotes origin/upstream: git@github-game:arghaG123/ages-of-dominion-reborn.git. The github-game alias belongs to its local SSH configuration, which is NOT transferred. Use normal HTTPS or your own authorized SSH credentials on the new computer without silently changing repository destination. Verified pre-audit local and remote commit: 73fdfc3ad4568a2f668dbbcc0aa65acf567f8b07. The publication revision is the commit that introduces docs/plan/PROJECT-DEVICE-HANDOFF-AUDIT-2026-10-09.md; resolve it with `git log -1 --format=%H -- docs/plan/PROJECT-DEVICE-HANDOFF-AUDIT-2026-10-09.md`, or pin the exact published SHA in the owner's final handoff. Do not assume a later main contains this same snapshot.
+
+Original root C:/dev/ages-of-dominion-reborn is historical; all new handoff paths below are repository-relative. The old game C:/dev/ages-of-dominion and raw-art C:/dev/aod-art-src are read-only reference origins, not fresh source foundations. Their absolute paths in historical inventories may be absent. No old gameplay/core/client code or archived starter copying.
+
+Source machine verified Node path: C:/Users/TechnoExponent/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe. Python path: C:/Python313/python.exe. Bundled Playwright was imported from the Codex runtime dependencies with installed Chrome; those paths must be re-resolved on the new machine. They are not project dependencies. Node core can build/serve/test this project without Vite or a dependency install. package.json lists Vite8.3.2 as an unused dev dependency; do not migrate scripts to it. If a particular future task needs dependencies, inspect package-lock and use the installed/frozen tool first.
+
+PowerShell launch after copying payloads to a directory such as D:/Reborn-transfer (choose an existing owner-controlled destination):
+
+    git clone --branch main https://github.com/arghaG123/ages-of-dominion-reborn.git C:/dev/ages-of-dominion-reborn
+    Set-Location C:/dev/ages-of-dominion-reborn
+    git rev-parse HEAD
+    node --version
+    python --version
+    python -c "import PIL,numpy,cv2,scipy; print(PIL.__version__,numpy.__version__,cv2.__version__,scipy.__version__)"
+    python docs/migration/device-handoff-20261009/transfer.py restore --payload-dir D:/Reborn-transfer
+    python docs/migration/device-handoff-20261009/transfer.py verify --payload-dir D:/Reborn-transfer
+    $testFiles = Get-ChildItem tests/*.test.mjs | ForEach-Object FullName
+    node --test $testFiles
+    node scripts/build.mjs
+    node scripts/serve.mjs --port 4501
+
+The server binds 127.0.0.1 and prints its selected port; root index.html is the playable implementation. An occupied port is an error, not permission to kill another listener. On POSIX use `node --test tests/*.test.mjs`. Build recreates dist and overwrites its QA closure report; archive existing relevant evidence before invoking it. `node scripts/build-apk.mjs` additionally preserves existing APK copies, synchronizes generated Android www, invokes the Gradle wrapper, and writes reports. Do not run it before local Android SDK/JDK setup is verified. Set machine-local SDK configuration using the local template/instructions; android/local.properties, signing keys and cloud credentials remain excluded. The permanent identity is com.agesofdominion.game; the existing preview applicationId is com.agesofdominion.game.reborn.preview. Zero declared/granted device permissions, including INTERNET/VIBRATE. Cloud/account features, release publishing and Play Store are outside this offline scope.
+
+Read AGENTS.md, START-HERE.md, CURRENT-STATUS.md, DECISIONS.md, docs/SESSION-HANDOFF.md, docs/BUILD-PROGRESS.md, docs/plan/README.md and its documented reading order. Then read today's PROJECT-DEVICE-HANDOFF-AUDIT, FULL-IMPLEMENTATION-SPEC, MASTER-PLAN, REQUIREMENTS-TRACEABILITY, GAME-DATA-REFERENCE, VISUAL-DESIGN, DESIGN-FEEDBACK and current interfaces. Latest dated direct owner authority supersedes older portrait/no-code/no-remote/no-reserve banners; retain historical evidence. Do not carry the planner chat's product-execution restriction into an owner-authorized development executor, nor infer that this handoff approves new spending/providers or device use.
+
+3. Inputs & Outputs
+
+Typed Image contract (existing interfaces are JSON; publish a new revision preserving old bytes):
+
+    type Gate = 'PASS'|'FAIL'|'PARTIAL'|'BLOCKED'|'UNVERIFIED'|'NOT_APPLICABLE';
+    type Status = 'READY'|'PARTIAL'|'FAIL'|'BLOCKED'|'NO_NEW_IMAGE_NEEDED';
+    type Vec2 = [number,number];
+    type Affine = [number,number,number,number,number,number]; // x'=a*x+c*y+e; y'=b*x+d*y+f
+    type Roi = [number,number,number,number]; // half-open [x0,y0,x1,y1]
+    type FileRef = {path:string, sha256:string, bytes:number, dimensions:{width:number,height:number}|null};
+    type ImageRow = {id:string, producer:'ENVIRONMENT'|'ACTORS', status:Status,
+      sources:FileRef[], output:FileRef|null, sourceToOutput:Affine|null,
+      coordinateFrame:string, sourceRoi:Roi|null, groundContact:Vec2[]|null,
+      footprint:Vec2[]|null, entrance:Vec2|null, heightEnvelope:Roi|null,
+      maxDisplayCssPx:number|null, limitBasis:'HEIGHT'|'LONGEST_SIDE'|'CONSERVATIVE_BOTH'|null,
+      side:string, frame:string, gates:Record<string,Gate>, recipePath:string|null,
+      evidencePaths:string[], limitations:string[], blockedBy:string[]};
+    type Checkpoint = {status:'INCOMPLETE'|'COMPLETE', localProcessingComplete:boolean,
+      imageWorkComplete:boolean, completedIds:string[], partialIds:string[], failedIds:string[],
+      blockedIds:string[], paidCompletedIds:string[], paidPendingIds:string[], retainedUnknownIds:string[],
+      sourceHashes:Record<string,string>, evidencePaths:string[], nextExecutableActions:Record<string,unknown>};
+
+READY requires actual hashes/bytes/decode and applicable semantic/matte/geometry/rig/atlas gates. UI/icon grounding may be NOT_APPLICABLE; do not invent ground points. Missing transform is not identity. Unknown side/timing stays unknown/null. No-output rows are metadata/dispositions, not image counts. Body candidate is not a gait. Actual visible alpha bounds govern display size, not transparent padding.
+
+Current Code inputs: src/client/{main,game.css,consumer-adapter,visible-size,tactical-ui,rig,actor,motion,anatomy,presentation}; src/core/{campaign,battle,defense,save,navigation,rules,mechanics,challenge}; src/data/{implementation-contract,reference-data,consumer-catalog-20261007,plate-overrides-20261007,gear-icons-20261007,age-buildings,actor-atlas,mode-scenes,stone-scene}. JS filenames use .js and data .json. Frozen reference tables come from GAME-DATA-REFERENCE. Existing tests/*.test.mjs are the acceptance foundation, not permission to weaken assertions.
+
+Newest Image inputs: docs/plan/IMAGE-UNIFIED-RESERVE-INTERFACE-2026-10-09.json ; qa/image-unified-reserve-20261009/{checkpoint.json,handoff.md,scenes.json,diagnostics,recipes,helpers,review,vertex-coordinator}; assets/derivatives/image-unified-reserve-20261009/{environment,actors}. Preserve legacy docs/plan/{ENVIRONMENT-ART,ACTORS-EQUIPMENT}-VERTEX-REPAIR-INTERFACE-2026-10-09.json ; assets/derivatives/image-vertex-repair-20261009 ; qa/image-vertex-repair-20261009/environment/vertex-coordinator/{attempts,receipts,evidence,reservations.json,scheduler-state.json} and Actor preparation/history. Earlier namespaces are referenced by current Code; do not delete them because their date is old.
+
+Current acceptance baseline: 107 tests/105 pass/2 missing guides; 353 Code consumer rows/68 eligible PASS/272 BLOCKED/13 PARTIAL with hash references matching; no new unified binding in src and Slinger unbound. Fresh isolated web package333assets/373files matches retained APK509502836bytes/SHA2565007d6d70eab65d05fabd6ac4fc6fd5c71c551712785ecbdc4e8653661981220/CRC PASS. Natural starter build/recruit/guard/equipment/siege LOSS+one settlement/reload bounded PASS. Programmatic nav:kingdom while Retreat is open FAIL. Army caption minimum9.593CSSpx across32fixtures/fourviewports FAIL; phone plate/chrome composition FAIL. All five War earned round-trips, prepared Siege win, earned8ages/full6slots/Forge and complete primary visual/owner/device acceptance remain UNVERIFIED. Do not present a loss fixture or accelerated age as a win/progression proof.
+
+Current Image baseline:123PNGs (copies/partial outputs, not123acceptedassets); seven paid body natives processed into standing plates. Unified37rows include5READYreuse/8PARTIAL/7FAIL/1BLOCKED/16layoutdispositions. Ranger/Warlock/Mage output hash+size fields are stale.46of55plate diagnostic output hashes are stale after later local passes. Current Ranger white floor/patch and Warlock detached specks remain; wolf/brute fragments remain.197crop translations pass arithmetic, including32previouswrongactoraffines. All32newscene gates FAIL;24Adventure/Tactical/Defense “source missing” flags are a discovery failure, because all24biome source paths in src/data/mode-scenes.json exist.19raw-to-native associations PASS for12rejectedKingdom+7Actorbodies. Historical18Actorpack guide omission persists. Healer prepared wire has4realinlinePNGs, SHA25636cc6350e43c79a3ae3e21f0016932b475e530f96dd8e3bcfb80b4fe866dc087, saved400invalidfilter/noPOST. Drone3frames durationMsnull. Whole Image/runtime/owner still incomplete.
+
+Protected reuse (never regenerate or overwrite to simplify a handoff):
+
+    assets/runtime-code-20261007/troops/troop-stone-melee.png
+    1369x1852 SHA256 c61f0e3dec06a344744f3f4d21a6cf7dabdb4df61730c42eac535c7988f2104a ; affine [1,0,0,1,-477,-112]
+    assets/runtime-code-20261007/troops/troop-industrial-ranged.png
+    1247x1851 SHA256 5df473c9336451f51f2babf21ed88b7c5dc8bd5bc901615b8851a07c5183823f ; affine [1,0,0,1,-526,-103]
+    assets/runtime-code-20261007/troops/troop-industrial-heavy.png
+    1640x1921 SHA256 9455bf02f32921c7fa0bf3d2bce4f561e9c311a37e36ad99bd3dbafa7fcbc758 ; affine [1,0,0,1,-233,-64]
+    assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png
+    1093x1930 SHA256 53233e6284322f73650529bcfe08f8141e37897cca0a57b0b3454a547dd97ba3 ; native ROI[363,79,1456,2009], affine [1,0,0,1,-363,-79]
+    assets/derivatives/rigs/v7/healer/boot.png
+    135x131 SHA256 4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21
+
+Gear-stone-helm ROI[82,208,944,782], crop affine[1,0,0,1,-82,-208], grounding NOT_APPLICABLE. Preserve failed6links/13Knight attempts and missing original knight_thigh_greave_correction_0.png as truthful failure history, not fabricated success.
+
+Full scope output remains eight ages Stone/Bronze/Iron/Medieval/Gunpowder/Industrial/Modern/Future; classes Knight/Ranger/Warlock/Mage/Paladin/Barbarian/Necromancer/Healer; Kingdom17pads plus separateHall,10buildingtypes,Walls, frozenaffine[60,-10,25,35,170,165], Hallscale0.1312; Adventure16x10; Tactical7x10commander(0,9); Defense9x15fixed1/60/4towerfamilies/5attackerroles;4resources;6slotshelm/weapon/offhand/armor/boots/accessory;4qualities1/1.8/2.8/4;10artifacts;24troops/8creatures;9skills/8spells;7chapters/Future/rival/6quests/8milestones/tutorial. Supporting output includes Forge/Inventory/Market/music/SFX/settings/help/credits/privacy/saveimport-export/slots/backup/recovery, all result/empty/disabled/selected/error/qualitystates. Five War flows: Siege/Duel/Endless/isolatedSkirmish/localsharedseedChallenge. Campaign spends/settlement idempotent; practice cannot change campaign XP/mana/resources/items/rewards/casualties/story. Positive morale effect remains a separate owner decision; no invented extra turn.
+
+Whole LANDSCAPE:825x375/933x424/1180x820/1280x720 plus portrait state preservation;48CSSpx meaningful actions/readablecopy. Conservative64CSSlongest-visible-side caps for Bronzeheavy/Gunpowderheavy/Futureranged/Futureheavy/mounts/gear/artifacts/effects; ordinary static ceiling130 according applicable existing contract. Full body height/footprint/entrance/swept arcs/terrainbanks/decks/approaches must physically fit; no compensating scale/camera/geometry lie.30primary landscape mocks live at design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/ ; exact names/index in the existing single Image prompt.26olderverticalreferences are secondary. Mock JPEGs are references, not gameplay or owner acceptance.
+
+Portable transfer contract: docs/migration/device-handoff-20261009/transfer-manifest.json contains {schema:number,baseCommit:string,payloads:{name,sourcePath,sha256,bytes,verifiedEntries}[],files:{path,sha256,bytes,archive}[],status:string,newDeviceRestore:string,missingHistoricalInputs:object}. Git excludes whole assets, QA rasters/raw wires, credentials/browser saves, build copies and local ZIPs. Copy existing assets.zip plus output/device-transfer-20261009/*.zip into ONE transfer directory; manifest restore rehydrates relative paths and rejects unlike existing files. Local archive entry readback passed; new-device transfer remains UNVERIFIED. Do not copy Chrome profiles or login credentials.
+
+Explicit missing external inputs:124retiredrawresponses/4364439366bytes in docs/asset-provenance/raw-response-archive-index.json; neither recordedE:final6ZIP nor C:loosebackup exists on source computer now. Obtain an existing previous-device backup for exact historical strict reuse/provenance; compact metadata and current images survive. Two missing exact guides:
+
+    qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v4-guide.png
+    52050bytes SHA256609d3195018ccf448f339f79e45fe90b9e5adfb2859674e40383144d2106f848
+    qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v5-guide.png
+    33988bytes SHA256673492a6a1c6780eb77d9b0b24f7eefe30a98dc119c7fbee9e3edef088b8c1ff
+
+Missing external data blocks only the exact evidence/reuse action. Independent local work continues. No new provider purchase recreates historical response/signature bytes.
+
+Financial contract: owner released protected15 once for ONEImageAI; hard80USD unchanged/aim60, not95. Current ledger history79.8327=71.1156+8.7171 includes15once; effectivepriorliability64.8327/effectivereserve0/capacity15.1673 BEFORElaterliabilities. Newunifiedholds0/paidoutputs0saved; invoiceUNKNOWN, notzero.0.2872unknownholds/0.4144earlierestimatealreadycounted. Datedreleaseoverride alreadyexists; no second subtraction/override. Healerlatestdecodedbound0.5266 conflicts with old0.5267records; recompute actual correctedwire bounds. Retain unknown/outstanding liabilities, taxes/overhead and exact per-POST reservations. Live provider readiness and billing unverified by audit.
+
+4. Step-by-Step Instructions
+
+1. Verify the checkout's repository identity and publication revision.
+2. Record current dirty files and active writers in a new exclusive QA namespace.
+3. Verify the new computer's Node/Python/tool versions.
+4. Verify each copied payload ZIP against transfer-manifest.json.
+5. Restore absent payload files with the fail-closed transfer tool.
+6. Verify all restored per-file hashes.
+7. Record missing historical raw backups and guide files as exact external dependencies.
+8. Read the current authority documents in the specified reading order.
+9. Snapshot protected source/native/candidate/consumer/control/history bytes.
+10. Run the current Node suite without altering assertions.
+11. Publish a source-to-runtime ownership/status crosswalk for every full-scope requirement.
+12. Resolve the24falsemissing scene rows from actual existing biome/native catalogs.
+13. Verify each newest Image output's actual hash/bytes/decode.
+14. Publish a new consistent Image interface/diagnostics/checkpoint revision.
+15. Reuse the five protected usable results byte-for-byte.
+16. Repair source-supported residual matte defects in a new derivative revision.
+17. Verify each repaired object on dark/light and actual terrain backgrounds.
+18. Publish truthful source-native-to-output crop/contact/footprint metadata.
+19. Complete source-supported class/kit/socket/side assemblies.
+20. Verify rig joint overlap and full swept bounds at clip extremes.
+21. Publish only source-supported atlas frames and timing.
+22. Trace actual painted terrain roads/banks/decks/approaches in source coordinates.
+23. Construct a registered local terrain prototype under frozen legal geometry.
+24. Measure every relevant pad/door/physical-height/wall/road/bridge clearance.
+25. Record any genuinely missing/unusable required art by canonical ID.
+26. Reconcile current paid attempts/unknown liabilities using retained local records.
+27. Refresh provider model/pricing/control documentation without an inference call.
+28. Verify live authorized-project global/regional jobs with the documented fully paginated unfiltered readiness query, only as the selected Image executor.
+29. Verify the shared local/cloud lock state without inferring terminal status from PID or age.
+30. Revalidate the prepared healer wire's four real inline source images.
+31. Recalculate the actual request's conservative affordability bound.
+32. Reserve one prepared affordable required request durably through the sole coordinator.
+33. Submit that exact prepared wire once after all readiness/ownership gates pass.
+34. Record the response/operation/usage/receipt or retained UNKNOWN state durably.
+35. Process any collected candidate using its source-bound recipe.
+36. Evaluate the candidate against applicable pixel/semantic/geometry/rig gates.
+37. Continue other independent ready IDs when one ID fails.
+38. Publish the full Image inventory's exact final per-ID residual actions.
+39. Repair the Code Retreat dispatch guard across redraw and navigation paths.
+40. Verify Retreat ordinary and programmatic input semantics in an isolated browser.
+41. Repair phone Army/chrome/caption layout without violating visible-size caps.
+42. Verify eight-age layouts at all four landscape sizes.
+43. Bind only newly verified applicable Image rows into existing Code contracts.
+44. Verify every new live binding's source hash/affine/visible bounds in runtime.
+45. Complete all remaining ready Code flows in the canonical scope crosswalk.
+46. Verify earned equipment in all six slots and visible Forge deltas.
+47. Verify a naturally prepared Siege victory through settlement and reload.
+48. Verify all five War round-trips and practice isolation through save/reload.
+49. Verify earned progression through all eight ages.
+50. Compare each required screen/state with its primary landscape reference.
+51. Run targeted tests appropriate to each actual changed subsystem.
+52. Build the standalone local web package after restored-source closure passes.
+53. Verify current static package closure/offline/zero-permission configuration.
+54. Build the preview APK only after its separate local tool prerequisites pass.
+55. Record owner visual/play acceptance separately from technical evidence.
+56. Keep device QA STOPPED until the owner explicitly resumes it.
+57. Update dated status/handoff/progress/pointers with precise residual blockers.
+58. Review the intended Git diff for credentials, bulky raw data and unrelated changes.
+59. Commit only reviewed stable authorized work on the intended branch.
+60. Push normally to the verified owner remote.
+61. Verify remote SHA against local publication HEAD.
+
+Code steps39–42 and other independent local steps may precede blocked Image/provider steps; this order is an ownership checklist, not a global gating excuse. Missing guides, unknown provider readiness, budget shortfall or owner/device acceptance must not stop unrelated local progress.
+
+5. Edge Cases & Failure Modes
+
+Transparent-first OUTPUT is required for isolated objects; Gemini currently does not generate native transparent backgrounds (Google official guidance: https://ai.google.dev/gemini-api/docs/generate-content/image-generation#stylized-illustrations--stickers , checked9October). Within currentVertexauthority generate a clean isolated subject on a removable backdrop, not grass/paintedfloor/gradient/fakecheckerboard; finish source-preserving RGBA locally. Apply terrain/contactshadows separately. Never remove white armor, hair, weapons, foliage or violetspells with a blanketkey. A provider supporting directalpha is a separate owner/provider decision; no implicit fallback or paid transparency experiment. Existing good art must not be regenerated simply for alpha convenience.
+
+Checkpoint newer than interface: preserve both originals and publish a verified revision; don't hand-edit history to manufacture PASS. Three body and46platehash warnings are known staleness, not proof of corruption or acceptance. Source-naming failure must be repaired before declaring24existingterraininputs missing. Count nativecopies/metadata/no-outputdispositions separately from acceptedrasters. RGBidentity preserves painted detail but cannot prove all visible pixels belong to the subject. Gallery staleness means inspect actual current PNGs.
+
+Body/transforms: no invented anatomical side/opposites/mirrored unknown parts; no standing-body-as-gait promotion. Crop translation must map each actual source ROI and dimensions. Grounding/footprint/socket claims require actual supported source evidence. Preserve all originalCodecrops and Healerboot. Drone unknown timing staysnull; no rhythmic guess. 64/130 caps apply to visible alpha, not nominalimageheight. Do not quietly scale a whole map/camera to hide failed building fit.
+
+Scenes: Sobel/luminance/ochre samples and legal polylinecolourcoverage are not painted-road traces. Frozengeometry must survive; manualregisteredsourcepolygons/localconstrainededit before any paid scene attempt. Keep all12previousfailedKingdomcandidates rejected. Eightgreenbase history:armory-stone/barracks-stone/farm-bronze/workshop-iron/townhall-industrial/mine-industrial/hall-industrial/adventure-site-town. Preserve foliage/shadows; no globalgreenkey/floatinggradient25. Fullphysicalheight, Hall/Wall/facility doors, banks/decks/approaches and actor arcs remain explicit checks.
+
+Provider: selected project project-eaa4c1cc-8f19-4d24-9e6, recorded account arghawork3@gmail.com, model gemini-3.1-flash-image. Never change global CLI/IAM/billing or use oldbilling-disabledproject. The owner-specific oldjobexception does not declare those jobs terminal. Latest healerHTTP400 invalidfilter is notauthfailure; correct documentedreadinessquery, not repeatedpermissionrequest. Pagination/oneactive-or-unknown acrosssessions/localmutex+cloudCAS/writeahead/reservation/receipt remain mandatory. Cloudgenerationvalues are controlhistory, notlogincredentials. Ambiguous POST keepsUNKNOWN; no new body/duplicate liability/unboundedretry. Definite429 follows latest documented pacing60sec/durable classifiedresume; successfulimages30sec pacing. No retry whileactiveunknown. ExhaustedcanonicalID:atmostONE materiallydifferent renewedcandidate afterchangedpreparation; failurestops paidworkonthatID. UnattemptedID:onecandidate+atmostoneevidence-directedcorrection withinfunds. This is an explicit bounded execution interpretation, not a quoted owner attempt count. No18+batch/filler or arbitrary additional scope. Freshaffordabilityguard everyPOST; exactshortfall goes toownerwhilelocalworkcontinues.
+
+Game: HTMLinert alone does not guard programmatic navigation. Test repeatframes/redraw/resize/reducedmotion and once-onlysettlement. Ordinaryguardwin/siegeLOSS is notpreparedsiegewin. Fixtures must be visibly labelled. Practicecannotmutatecampaign. Saveimports validate domains/backups atomically; never transfer ownerbrowserdatabases/saves just to replay. Positive morale remains unresolved ownerchoice; independentflows continue. InitialsandboxlocalhostSSHfailures require permittedhostexecution, not mutation ofowner4173/4387servers.
+
+Portability: missingpayload stops the dependentbuild/consumer action; no placeholder art. Fail on unlike existingrestorefiles; inspect rather thanoverwrite. Read current raw-response archiveindex before treating a retiredfile aslostgeneration. The124olderexactrawbytes aren't in this transfer; obtain a previousverifiedbackup, do notclaimtheirrestoration. Exactguidesmustmatchlistedhashes. Existing30primaryreferencesandcurrentnativeresponsebytesareinlocalpayload/Git asdocumented. Credential/login/signingmaterial staysoutsideGit andpayload. Bytecodecleanup reclaimedonly20684byteshere; prior2.625GBcleanup is anotherauthorizedrun and mustn'tbedoublecounted. Do notdeleteoldQA merely forage; preservecurrent/incomingreferences/restorationmetadata.
+
+6. Acceptance Criteria
+
+- [ ] PASS: repository destination/main/publicationSHA verified on the new computer.
+- [ ] PASS: all transferred per-file bytes/hashes match the manifest; new-device restoration has its own evidence.
+- [ ] PASS or exact BLOCKED: historicalrawbackup and v4/v5guides recovered with originalhashes; dependentonlyblockers documented otherwise.
+- [ ] PASS: suite failures are classified honestly, and no test/guide assertion was weakened.
+- [ ] PASS: newest Image interface/checkpoint/diagnostics/recipes/gallery agree with actual outputbytes and complete canonical inventory.
+- [ ] PASS: all applicable matte/semantics/contacts/crops/grounding/source-native/visible-size gates pass without erasing subjectpixels.
+- [ ] PASS: all eight classkits and required actors have supported rigs/sides/sockets/clip-extremes/atlases; standingplates never substitute for this gate.
+- [ ] PASS: all32scene rows use actual found sources and pass requiredgeometry/clearance/composition; no legalcontract changes hidden.
+- [ ] PASS: solecoordinator controls oneactiveunknown state durably; no duplicate reserve release/unknownhold loss/canonicalattempt bypass/hard80 breach.
+- [ ] PASS: Retreat guards ordinary and programmatic inputs while modalopen, cancels correctly and confirms once.
+- [ ] PASS: all required eight-age/viewports have readablecopy/48pxactions and actualalpha limits; upperplates/chrome do notclip.
+- [ ] PASS: Code livebindings match verifiedImage contracts and preserve goodCodecrops/Slinger/Healerboot hashes.
+- [ ] PASS: naturally preparedSiegeWINsettlementreload, sixearnedequipmentslots/Forge, fiveWarflows, practiceisolation, earned8agecampaign and savebackuprecovery are evidenced.
+- [ ] PASS: everyrequiredscreen/state is compared with the30primarylandscapereferences; owneracceptance remains independently recorded.
+- [ ] PASS: currentstandaloneweb/previewAPKassetclosure/offline/zeropermissions checked after finalchanges; staticpackage/device gates separated.
+- [ ] PASS or explicitly STOPPED: physicaldevice/premiumperformance/owneracceptance status truthful; no COMPLETE while required gates remain unresolved.
+- [ ] PASS: current/referencedQA/originalnative/candidate/control/provenance/history hashes survive; onlyexactauthorizedunneededQA retired.
+- [ ] PASS: reviewedcredentials-free/bulk-safeGitdiff committed and normalpush remoteSHAverified; excludedassets and transferstatus stated explicitly.
+
+7. Do NOT
+
+Do not stop at a plan or call wholegamecomplete from tests/filecounts/PNGnames/staticAPK/fixtures. Do not narrow fullscope to the easiest five reuse IDs. Do not silentlyguessmissinginputs, sidestepgates, inventduration/sides, drawlookalikeguides, fabricateprovenance, editledgers/receipts/generatedstatus just toshowPASS or replayanexhaustedmethod. Do notregenerate accepted/protectedart, warp geometry/shrinkfullactors tohidefit, or removelegitimatewhite/purple/greenpixels globally. Do notauto-switchproviders/useanotheraccount/project/changebilling/IAM/globalCLI, spendbeyondhard80, double-subtractreserve or submitwhileactiveunknown. Do notretaincredentials/tokens/usersaves in docs/Git/ZIPs. Do notdeleteqa/assetswholesale, moveoriginals, cleanup .git or addbase64rawJSON/bulkyarchives toGit. Do notreset/stash/clean/rebase/force-push/history-rewrite or eraseconcurrentchanges. Do nottouchowner4173/4387profiles, installAPK/operatephysicaldevice, publishrelease or messagedelegateagents without explicitauthority. Do nothide exactexternalblockers; keep INCOMPLETE with executable remaining localactions.

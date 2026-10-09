@@ -1,0 +1,88 @@
+{
+  "sources": {
+    "bust": {
+      "path": "assets/derivatives/image-residual-executor-20261007/actors/rigs/healer-head-front-bust.png",
+      "sha256": "e426695a7a1a28c075e91ecce69b274569af71d36ddf10ca7984b5412e952cba",
+      "size": [
+        247,
+        385
+      ]
+    },
+    "secondHead": {
+      "path": "assets/derivatives/image-residual-executor-20261007/actors/rigs/healer-head-front-neck.png",
+      "sha256": "92ae24378c70885f29ca99a1cdfe12416389b988adaa7102760db63590e5741d",
+      "size": [
+        263,
+        483
+      ]
+    },
+    "boot": {
+      "path": "assets/derivatives/rigs/v7/healer/boot.png",
+      "sha256": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "size": [
+        135,
+        131
+      ]
+    }
+  },
+  "guide": "qa/image-unified-reserve-20261009/vertex-coordinator/healer-class-standing-body/guide-from-real-pixels.png",
+  "decoded": {
+    "inlineImageCount": 4,
+    "textParts": 1,
+    "decoded": [
+      {
+        "index": 0,
+        "mimeType": "image/png",
+        "sha256": "e426695a7a1a28c075e91ecce69b274569af71d36ddf10ca7984b5412e952cba",
+        "matchesSource": true,
+        "size": [
+          247,
+          385
+        ]
+      },
+      {
+        "index": 1,
+        "mimeType": "image/png",
+        "sha256": "92ae24378c70885f29ca99a1cdfe12416389b988adaa7102760db63590e5741d",
+        "matchesSource": true,
+        "size": [
+          263,
+          483
+        ]
+      },
+      {
+        "index": 2,
+        "mimeType": "image/png",
+        "sha256": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+        "matchesSource": true,
+        "size": [
+          135,
+          131
+        ]
+      },
+      {
+        "index": 3,
+        "mimeType": "image/png",
+        "sha256": "c29894531bcdcf76d8258b7169c076cf78d5f7e428742bf1a287e6300b398d80",
+        "matchesSource": true,
+        "size": [
+          560,
+          760
+        ]
+      }
+    ],
+    "textOnly": false
+  },
+  "wireSHA256": "36cc6350e43c79a3ae3e21f0016932b475e530f96dd8e3bcfb80b4fe866dc087",
+  "boundUSD": 0.5266,
+  "guard": {
+    "totalUSD": 65.3593,
+    "headroomBeforeUSD": 15.1673,
+    "authorized": true
+  },
+  "posted": false,
+  "recordedAt": "2026-10-09T12:35:08.594424+00:00",
+  "dispatch": "STOPPED_JOB_LIST_HTTP_400",
+  "note": "The single batchPredictionJobs list used an invalid filter and returned HTTP 400. That was not an auth failure. No second list and no image POST were made.",
+  "error": "HTTP 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"Provided filter is not valid.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n"
+}

@@ -1,2 +1,8 @@
 # Preserve exact compact-record bytes used by the provenance SHA256 index.
 docs/asset-provenance/raw-response-metadata/** -text
+
+# Hash-bound Image snapshots/control archives must survive cross-OS checkout exactly.
+qa/image-unified-reserve-20261009/** -text
+docs/plan/IMAGE-UNIFIED-RESERVE-INTERFACE-2026-10-09.json -text
+docs/plan/image-production/budget-ledger.json -text
+docs/plan/image-production/submission.mutex.json -text

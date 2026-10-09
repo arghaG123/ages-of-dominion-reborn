@@ -1,0 +1,140 @@
+{
+  "status": "PASS_SCOPED_HANDOFF_CHECKS_PRODUCT_INCOMPLETE",
+  "sevenSections": [
+    "1. Task Summary",
+    "2. Environment",
+    "3. Inputs & Outputs",
+    "4. Step-by-Step Instructions",
+    "5. Edge Cases & Failure Modes",
+    "6. Acceptance Criteria",
+    "7. Do NOT"
+  ],
+  "atomicSteps": 61,
+  "links": [
+    {
+      "source": "docs/plan/PROJECT-DEVICE-HANDOFF-AUDIT-2026-10-09.md",
+      "target": "NEXT-DEVICE-COMPLETE-CONTINUATION-PROMPT-2026-10-09.txt",
+      "exists": true
+    },
+    {
+      "source": "docs/plan/PROJECT-DEVICE-HANDOFF-AUDIT-2026-10-09.md",
+      "target": "../migration/device-handoff-20261009/README.md",
+      "exists": true
+    },
+    {
+      "source": "docs/plan/PROJECT-DEVICE-HANDOFF-AUDIT-2026-10-09.md",
+      "target": "../../qa/planner-device-handoff-20261009/",
+      "exists": true
+    },
+    {
+      "source": "docs/migration/device-handoff-20261009/README.md",
+      "target": "../../plan/PROJECT-DEVICE-HANDOFF-AUDIT-2026-10-09.md",
+      "exists": true
+    },
+    {
+      "source": "docs/migration/device-handoff-20261009/README.md",
+      "target": "../../plan/NEXT-DEVICE-COMPLETE-CONTINUATION-PROMPT-2026-10-09.txt",
+      "exists": true
+    },
+    {
+      "source": "docs/migration/device-handoff-20261009/README.md",
+      "target": "transfer-manifest.json",
+      "exists": true
+    }
+  ],
+  "protectedSnapshotFiles": 9632,
+  "unchangedProtectedFiles": 9628,
+  "changedProtectedFiles": [
+    "docs/BUILD-PROGRESS.md",
+    "docs/PLANNER-VERIFIER-HANDOFF.md",
+    "docs/SESSION-HANDOFF.md",
+    "docs/plan/README.md"
+  ],
+  "missingProtectedFiles": [],
+  "sourceArtControlNoMutationsByAudit": true,
+  "rawNativeAssociations": 19,
+  "transferPayloads": [
+    {
+      "name": "assets.zip",
+      "sourcePath": "assets.zip",
+      "sha256": "c55bc939e68cf7bb7d82f2fc4d87c248ac7a7a67b62dd8b3ab3a544df6ea8692",
+      "bytes": 5101034547,
+      "verifiedEntries": 3647
+    },
+    {
+      "name": "qa-and-lineage.zip",
+      "sourcePath": "output/device-transfer-20261009/qa-and-lineage.zip",
+      "sha256": "50d3c70b483cf6688f0883cbc447ec55f6f67548116b814f15542cc28d13d308",
+      "bytes": 1527831417,
+      "verifiedEntries": 2019
+    },
+    {
+      "name": "final-audit-captures.zip",
+      "sourcePath": "output/device-transfer-20261009/final-audit-captures.zip",
+      "sha256": "c243567654f58303ead5b8880c243b524e83e68b2bb989b0c1ea119b082e50f5",
+      "bytes": 268825,
+      "verifiedEntries": 4
+    }
+  ],
+  "transferEntries": 5670,
+  "localArchiveReadback": "PASS",
+  "restoreSafetyFixture": "PASS: extraction/hash, traversal/absolute rejection, unlike overwrite refusal",
+  "newDeviceRestore": "UNVERIFIED",
+  "missingHistoricalRawFiles": 124,
+  "missingGuides": 2,
+  "securityPathsChecked": 959,
+  "credentialPatternMatches": [],
+  "jsonPythonParseErrors": [],
+  "noUserSaveCredentialBundlePaths": true,
+  "producerRecordsPreservedWithStaleClaimsReported": true,
+  "cleanup": {
+    "Scope": "OLD QA bytecode only",
+    "Targets": [
+      {
+        "Relative": "qa/environment-art-20261006/__pycache__",
+        "Resolved": "C:\\dev\\ages-of-dominion-reborn\\qa\\environment-art-20261006\\__pycache__",
+        "Reason": "Obsolete CPython bytecode; retained Python source recreates cache, no asset/provenance/visual evidence",
+        "Files": [
+          {
+            "Path": "C:\\dev\\ages-of-dominion-reborn\\qa\\environment-art-20261006\\__pycache__\\matte_utils.cpython-313.pyc",
+            "Bytes": 6035,
+            "Sha256": "e32c56ec0cdc262351724e27482d85a80c3b8d79eb9cd561e5a1508dc6afabb9",
+            "Hardlinks": 1
+          }
+        ],
+        "Bytes": 6035.0
+      },
+      {
+        "Relative": "qa/image-residual-executor-20261007/environment/helpers/__pycache__",
+        "Resolved": "C:\\dev\\ages-of-dominion-reborn\\qa\\image-residual-executor-20261007\\environment\\helpers\\__pycache__",
+        "Reason": "Obsolete CPython bytecode; retained Python source recreates cache, no asset/provenance/visual evidence",
+        "Files": [
+          {
+            "Path": "C:\\dev\\ages-of-dominion-reborn\\qa\\image-residual-executor-20261007\\environment\\helpers\\__pycache__\\generate_residual_delivery.cpython-313.pyc",
+            "Bytes": 8649,
+            "Sha256": "f901fec144ec55bd83e7a6a41b22a46397aa695289b7f8965fd7523890ed0991",
+            "Hardlinks": 1
+          },
+          {
+            "Path": "C:\\dev\\ages-of-dominion-reborn\\qa\\image-residual-executor-20261007\\environment\\helpers\\__pycache__\\geometry_utils.cpython-313.pyc",
+            "Bytes": 6000,
+            "Sha256": "e5c38c7fdc9cd74d9367da5296fc93eb60cc0f1202480078d4703dfa820546f0",
+            "Hardlinks": 1
+          }
+        ],
+        "Bytes": 14649.0
+      }
+    ],
+    "ReclaimedLogicalBytes": 20684.0,
+    "RemovedFiles": 3.0,
+    "RemainingTargets": [],
+    "NewTrackedDeletions": [],
+    "DriveFreeBefore": 31095357440,
+    "DriveFreeAfter": 31095382016,
+    "DriveDeltaIsNotIsolated": true,
+    "Preserved": "All source, raw responses, receipts, current QA, historical guides, candidates, original art, browser profiles, APK and financial/control/history",
+    "IncomingReferences": "Only historical inventory/cache exclusion mentions; no source/runtime/test/producer dependency on CPython bytecode",
+    "AllocatedReclaimedBytes": "Not independently measured; logical bytes only"
+  },
+  "gitPublication": "PENDING_NORMAL_COMMIT_AND_PUSH; see final terminal evidence and published Git revision"
+}
