@@ -1,0 +1,63 @@
+{
+  "id": "barracks-stone",
+  "magentaPixels": 0,
+  "opaqueFraction": 0.6461,
+  "slabRemoved": false,
+  "repairNote": null,
+  "outputContacts": [
+    [
+      121.0,
+      588.0
+    ],
+    [
+      384.0,
+      639.0
+    ],
+    [
+      648.0,
+      588.0
+    ]
+  ],
+  "contactHits": [
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    }
+  ],
+  "entranceHit": {
+    "inside": true,
+    "alpha": 255
+  },
+  "outOfFrame": [],
+  "namedGreenConcern": true,
+  "runtimeBinding": {
+    "id": "barracks-stone",
+    "age": "stone",
+    "kind": "barracks",
+    "actualRuntimePath": "assets/delivery/stone-starter-20261003/derivatives/v2/live/buildings/barracks-stone.png",
+    "actualRuntimeSha256": "2a69acfe9f31583a37fbde49c865d9c8310aea0eb8a36c4ac9288fec102374bc",
+    "actualRuntimeDimensions": [
+      959,
+      772
+    ],
+    "magentaCandidateVisiblePixels": 1447,
+    "residualOutput": {
+      "path": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/barracks-stone.png",
+      "sha256": "0228756e3cb905d5bba8055df702858bf1f0783f7586fe6597da2896f814a949",
+      "dimensions": {
+        "width": 943,
+        "height": 754
+      }
+    },
+    "sameAsResidual": false,
+    "note": "Color candidates diagnostic; runtime screenshots confirm obvious TownHall magenta patches in Iron/Medieval/Modern."
+  }
+}

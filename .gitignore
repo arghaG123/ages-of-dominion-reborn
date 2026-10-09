@@ -34,3 +34,47 @@ qa/**/*.webm
 qa/**/*.pdf
 qa/**/*.wav
 qa/**/*.mp3
+
+# Local browser sessions contain caches, databases, and account state.
+chrome-profile/
+chromium-profile/
+playwright-profile/
+test-results/
+playwright-report/
+# Generated browser captures; structured QA reports remain versionable.
+/output/playwright/
+
+# Local tooling, temporary writes, and operating-system metadata.
+.venv/
+venv/
+.cache/
+coverage/
+*.tmp
+*.tmp.*
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+# Process-local acquisition token, not the durable production ledger/locks.
+/docs/plan/image-production/submission.mutex.json.excl
+
+# Local cloud credentials and signing material.
+.aws/
+.gcloud/
+.ssh/
+application_default_credentials.json
+credentials.json
+service-account*.json
+service_account*.json
+*.p12
+*.pfx
+# Keep sample environment configuration eligible for version control.
+!.env.example
+!.env.sample
+!.env.template
+# Raw Vertex payloads embed bulky image data; back up separately with assets.
+# Keep receipts, hashes, write-ahead records, and budget evidence in Git.
+/qa/image-vertex-repair-*/**/vertex-coordinator/attempts/**/request_body.json
+/qa/image-vertex-repair-*/**/vertex-coordinator/attempts/**/response.json

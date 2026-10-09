@@ -1,0 +1,109 @@
+{
+  "recipeId": "healer-leg-subchain-recipe",
+  "description": "Multi-source 3-part leg subchain with measured motion arc",
+  "neutralDimensions": [
+    203,
+    858
+  ],
+  "angles": [
+    -25,
+    0,
+    25
+  ],
+  "transforms": {
+    "assemblyType": "multi-source-subchain",
+    "commonScale": 1.0,
+    "declaredSide": "UNKNOWN",
+    "canvas": [
+      900,
+      900
+    ],
+    "pivot": [
+      450.0,
+      380.0
+    ],
+    "drawOrder": [
+      "boot",
+      "greave",
+      "upper leg"
+    ],
+    "checkedMotionArc": [
+      -25,
+      0,
+      25
+    ],
+    "parts": [
+      {
+        "name": "upper leg",
+        "sourcePath": "assets/derivatives/rigs/v6/healer/leg_upper.png",
+        "sourceSha256": "38cc38387d0935fef0671800dd7aabb3af9906f6be3e07995220a0c3ffc59266",
+        "roi": null,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "socket": {
+          "name": "knee-distal",
+          "profile": {
+            "y": 441,
+            "width": 8,
+            "cx": 104.5,
+            "x0": 101,
+            "x1": 108
+          }
+        }
+      },
+      {
+        "name": "greave",
+        "sourcePath": "assets/derivatives/rigs/v6/healer/greave.png",
+        "sourceSha256": "890f868998712a3d66895e6633fad79af72289deeff1c06b847f77319135ba0f",
+        "roi": null,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "socket": {
+          "name": "knee-proximal",
+          "coords": [
+            42.5,
+            0
+          ],
+          "distal": [
+            47.0,
+            347
+          ]
+        }
+      },
+      {
+        "name": "boot",
+        "sourcePath": "assets/derivatives/rigs/v7/healer/boot.png",
+        "sourceSha256": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+        "roi": null,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "socket": {
+          "name": "ankle-collar",
+          "coords": [
+            83.0,
+            0
+          ]
+        }
+      }
+    ],
+    "clip": "assets/derivatives/image-residual-executor-20261007/actors/assemblies/healer-leg-subchain-arc.gif"
+  }
+}

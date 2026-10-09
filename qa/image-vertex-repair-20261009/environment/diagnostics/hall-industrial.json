@@ -1,0 +1,63 @@
+{
+  "id": "hall-industrial",
+  "magentaPixels": 0,
+  "opaqueFraction": 0.6234,
+  "slabRemoved": false,
+  "repairNote": null,
+  "outputContacts": [
+    [
+      310.0,
+      460.0
+    ],
+    [
+      470.0,
+      504.0
+    ],
+    [
+      630.0,
+      460.0
+    ]
+  ],
+  "contactHits": [
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    }
+  ],
+  "entranceHit": {
+    "inside": true,
+    "alpha": 255
+  },
+  "outOfFrame": [],
+  "namedGreenConcern": true,
+  "runtimeBinding": {
+    "id": "hall-industrial",
+    "age": "industrial",
+    "kind": "hall",
+    "actualRuntimePath": "assets/delivery/stone-starter-20261003/derivatives/v2/live/buildings/hall-industrial.png",
+    "actualRuntimeSha256": "e767e7044d2fc6682e0418d59072aa0a8ac9d95a9cba6c108e06a4ffd8ff27c0",
+    "actualRuntimeDimensions": [
+      945,
+      695
+    ],
+    "magentaCandidateVisiblePixels": 1487,
+    "residualOutput": {
+      "path": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/hall-industrial.png",
+      "sha256": "d753d62427d316aad3cefd3c261e8886a22f681ab19fdc9b22f0e0439ea6c3fd",
+      "dimensions": {
+        "width": 927,
+        "height": 678
+      }
+    },
+    "sameAsResidual": false,
+    "note": "Color candidates diagnostic; runtime screenshots confirm obvious TownHall magenta patches in Iron/Medieval/Modern."
+  }
+}

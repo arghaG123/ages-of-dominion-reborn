@@ -1,0 +1,130 @@
+{
+  "recordedAt": "2026-10-09T07:11:25.120001+00:00",
+  "versions": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "pillow": "12.3.0",
+    "numpy": "2.5.3",
+    "opencv": "5.0.0",
+    "scipy": "1.18.1",
+    "node": "v24.19.0 verified in this session before the script"
+  },
+  "expectedResidualInterfaceSHA256": "7958b648f74da0b070b1f44829f11c767b62b5e922af20b892cba62e8312c3d2",
+  "residualInterfaceHashMatchesPrompt": true,
+  "files": [
+    {
+      "path": "docs/plan/ENVIRONMENT-ART-RESIDUAL-INTERFACE-2026-10-07.json",
+      "sha256": "7958b648f74da0b070b1f44829f11c767b62b5e922af20b892cba62e8312c3d2",
+      "bytes": 419301,
+      "missing": false
+    },
+    {
+      "path": "qa/image-residual-executor-20261007/environment/checkpoint.json",
+      "sha256": "b7a7507102eda90fb8411cd73ac381d0bba376dbf9cbce6e1fb1f60c3e2ff5ec",
+      "bytes": 39252,
+      "missing": false
+    },
+    {
+      "path": "qa/image-residual-executor-20261007/environment/scenes.json",
+      "sha256": "1f13e5becb3c6a12698b75c95f594fcf3d3e2be32d1529d6ee4b8539f571abb3",
+      "bytes": 254068,
+      "missing": false
+    },
+    {
+      "path": "qa/image-residual-executor-20261007/environment/input_snapshot.json",
+      "sha256": "a77c289b5aa453a8c98897d59a05c64a78307c7b6b28466b194ecbcfe5258d61",
+      "bytes": 46650,
+      "missing": false
+    },
+    {
+      "path": "qa/code-whole-build-20261007/checkpoint.json",
+      "sha256": "9276eba379d3a22049a57339eb9279821ef020cd88bf1d623acd81c98b0ad4cc",
+      "bytes": 2932,
+      "missing": false
+    },
+    {
+      "path": "qa/code-whole-build-20261007/requirements.json",
+      "sha256": "8150066558375ed42cc69f5b51adfa32db707ef0d88c2c7b29fed8fdecebbb79",
+      "bytes": 4458,
+      "missing": false
+    },
+    {
+      "path": "qa/code-whole-build-20261007/geometry-proposal-v20261007.json",
+      "sha256": "34f36d48273195017d6ffc140bcb9fe64c001630bec42e0699a89b33427b3150",
+      "bytes": 1294,
+      "missing": false
+    },
+    {
+      "path": "qa/planner-post-code-20261007/per-id-status.json",
+      "sha256": "b37e0eb7cae1347886cfae0f201315f355f81afe97de3cbd68d9c05d504d2acc",
+      "bytes": 1465620,
+      "missing": false
+    },
+    {
+      "path": "qa/planner-post-code-20261007/actual-building-bindings.json",
+      "sha256": "f7c2ad5488c2f5c8ffdce8b8b5b97ee095aa5310816f2f02f5d73e6a78d88adb",
+      "bytes": 74312,
+      "missing": false
+    },
+    {
+      "path": "docs/plan/image-production/budget-ledger.json",
+      "sha256": "0955c1a0cdf8f7928ece96c3863e0cd9eaf93e01b16c11e732de1cea7b2345b6",
+      "bytes": 18187,
+      "missing": false
+    },
+    {
+      "path": "docs/plan/image-production/reconciled-accounting-ledger.json",
+      "sha256": "69dc34ddbcf7c83a3e4cb6501a50533fc580145ec25a9d4f78a5d4262b7761ff",
+      "bytes": 1729,
+      "missing": false
+    },
+    {
+      "path": "docs/plan/image-production/submission.mutex.json",
+      "sha256": "5a3cd261dc6ff49c0cddb7fdc9d0acfc9911677170220dbe22c1cb592c662570",
+      "bytes": 155,
+      "missing": false
+    },
+    {
+      "path": "docs/plan/image-production/active-batch.lock.json",
+      "sha256": "2c8a3bfff5c12ca66c3a66bd5fd3b12fc525475a38b7af085b5f4283447fc6df",
+      "bytes": 886,
+      "missing": false
+    },
+    {
+      "path": "docs/plan/image-production/pacing_state.json",
+      "sha256": "03830e0a31ba4f21aa54857c177b9850806d05587547984e676119fb44f8278f",
+      "bytes": 429,
+      "missing": false
+    },
+    {
+      "path": "src/data/implementation-contract.json",
+      "sha256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd",
+      "bytes": 23160,
+      "missing": false
+    },
+    {
+      "path": "src/data/age-buildings.json",
+      "sha256": "9442702c1c1c10705bb226327c6c0aa3715dca84a95f5d362ecff908dc50dfb0",
+      "bytes": 37232,
+      "missing": false
+    },
+    {
+      "path": "src/data/mode-scenes.json",
+      "sha256": "58bb7fdb7a4971da586a179d61f91dd24c6c3f962ffa3252d6738120b2bd2edc",
+      "bytes": 2467,
+      "missing": false
+    },
+    {
+      "path": "src/data/stone-scene.json",
+      "sha256": "32e4306459fe280f418f60ca2e4cb1bb5341f0aff7bc6a4d343dce9438e33922",
+      "bytes": 835,
+      "missing": false
+    },
+    {
+      "path": "docs/plan/IMAGE-REGENERATION-AUTHORITY-AND-BLOCKER-RECOVERY-2026-10-09.md",
+      "sha256": "f30cbde531e06221ccf0c5c67c415fd6e65dc2ae3a76b25987a3a98834774f16",
+      "bytes": 11682,
+      "missing": false
+    }
+  ],
+  "note": "Originals, residual outputs, Code crops, and shared controls were hashed and not modified by this snapshot."
+}

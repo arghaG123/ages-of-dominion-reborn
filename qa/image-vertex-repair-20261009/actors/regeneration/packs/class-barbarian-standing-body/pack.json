@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "class-barbarian-standing-body",
+  "owner": "ACTORS",
+  "canonicalId": "class-barbarian-standing-body",
+  "version": "2026-10-09.1",
+  "state": "READY",
+  "defect": "A single adult Barbarian in hide and fur, standing, axe lowered, both feet visible, full body inside the frame.",
+  "reason": "Existing source has no compatible full subject, or a bounded local matte split or left the required subject unusable.",
+  "priorSourceHashes": [],
+  "referenceRefs": [
+    {
+      "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-barbarian-standing-body/guide.png",
+      "sha256": "5a10b42706402b554f5c36ca17a29de069a3d723bd9a95d6a61a575e14e2c09c",
+      "bytes": 14266,
+      "dimensions": {
+        "width": 768,
+        "height": 1024
+      }
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-barbarian-standing-body/guide.png",
+    "sha256": "5a10b42706402b554f5c36ca17a29de069a3d723bd9a95d6a61a575e14e2c09c",
+    "bytes": 14266,
+    "dimensions": {
+      "width": 768,
+      "height": 1024
+    }
+  },
+  "landmarks": {
+    "view": "front",
+    "normalized": {
+      "head": [
+        0.5,
+        0.18
+      ],
+      "shoulders": [
+        0.5,
+        0.27
+      ],
+      "hips": [
+        0.5,
+        0.51
+      ],
+      "footL": [
+        0.38,
+        0.88
+      ],
+      "footR": [
+        0.62,
+        0.88
+      ]
+    },
+    "note": "Normalized to the guide image. Not measured on a real body."
+  },
+  "legalGeometrySHA256": null,
+  "requestedResolution": "2K",
+  "aspectRatio": "1:1",
+  "expectedNativeDimensions": {
+    "width": 2048,
+    "height": 2048
+  },
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-barbarian-standing-body/prompt.txt",
+  "promptSHA256": "404fd0440f7f32717e2b3243bf39146bb85bb6d3630c9d1cfacbf2ee7fe571bd",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-barbarian-standing-body/wire_body.json",
+  "wireBodySHA256": "4d1adfe03a75dede09bd25c5a260217fc2e71cf9257973a0f7e882bfd1c74058",
+  "inputTransforms": [
+    {
+      "order": [
+        "prompt text",
+        "guide.png"
+      ],
+      "note": "Coordinator attaches guide.png as an image part. Do not invent a mask API field. candidateCount stays 1."
+    }
+  ],
+  "semanticCriteria": [
+    "A single adult Barbarian in hide and fur, standing, axe lowered, both feet visible, full body inside the frame.",
+    "one subject",
+    "no text",
+    "no checker",
+    "no HUD"
+  ],
+  "geometryCriteria": [
+    {
+      "fullSubjectInsideFrame": true,
+      "nativeDecoded": "2048x2048",
+      "noUpscaleClaim": true
+    }
+  ],
+  "maxCandidateCalls": 1,
+  "estimatedUpperBoundUSD": 0.4,
+  "upperBoundBasis": "Reservation ceiling for one 2K attempt covering about 0.101 output plus inputs, text, reasoning, and one unexpected extra image. Not an invoice.",
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-barbarian-standing-body/guide.png",
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-barbarian-standing-body/prompt.txt"
+  ],
+  "blockedBy": [],
+  "priority": 6,
+  "maskApplicability": "No source mask: the request asks for a new complete subject, not an inpaint of a defective plate."
+}

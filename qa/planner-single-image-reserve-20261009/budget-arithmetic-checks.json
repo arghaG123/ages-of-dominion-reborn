@@ -1,0 +1,53 @@
+{
+  "scope": "Independent planner arithmetic checks; executor must test its actual guard/transport OFFLINE",
+  "cases": [
+    {
+      "name": "release_once",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "exact_cap",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "over_cap",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "name": "missing_authority",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "name": "double_release",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "name": "do_not_add_reserve_to_cap",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "name": "legacy_unreleased_guard",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "name": "later_liability_reduces_capacity",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "env-adventure-terrain-plains-v1",
+  "owner": "ENVIRONMENT",
+  "canonicalId": "adventure-terrain-plains",
+  "version": "v1",
+  "state": "READY",
+  "defect": "4 painted-road corridor conflicts against frozen pads",
+  "reason": "Local blur or warp cannot rebuild hidden or wrongly painted ground. A new guided source is required.",
+  "priorSourceHashes": [
+    "05afa074262f1f3c567f92d8000998441fe704eda20ae2a11ad12c54e2951858"
+  ],
+  "referenceRefs": [
+    {
+      "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/11-adventure-overview.jpg",
+      "sha256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "bytes": 355428
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/environment/geography/guides/adventure-terrain-plains-legal-guide.png",
+    "sha256": "913a5bd16aa91e13cb81a7492683c74e30ad8a4405741c9c338086c05fc77298",
+    "bytes": 9101,
+    "dimensions": {
+      "width": 1376,
+      "height": 768
+    }
+  },
+  "landmarks": {
+    "pads": [
+      "town",
+      "ruin",
+      "mill",
+      "mine",
+      "dwelling",
+      "shrine"
+    ],
+    "roads": [
+      "main-trail",
+      "crossing-branch",
+      "ruin-spur"
+    ]
+  },
+  "legalGeometrySHA256": "bc90bdb6aa9f726892866fb7dcbfff169acbeea8b6a5509f0e1f26e7a67e0f4d",
+  "requestedResolution": "4K",
+  "aspectRatio": "16:9",
+  "expectedNativeDimensions": null,
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/environment/regeneration/prompts/adventure-terrain-plains.txt",
+  "promptSHA256": "1c22ea2cf05e1669423d7dea20e95b9dce5485334ecc7095d2b875509d6a560f",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/environment/regeneration/wire/adventure-terrain-plains.json",
+  "wireBodySHA256": "933eb4a0123619ac8d89446c6452c2c331a4cbc7c921573f5962e725b99e4852",
+  "inputTransforms": [
+    {
+      "from": [
+        1376,
+        768
+      ],
+      "to": [
+        1024,
+        572
+      ],
+      "scale": 0.744186,
+      "method": "LANCZOS request-reference copy. The generated output is not this resize."
+    }
+  ],
+  "semanticCriteria": [
+    "Age materials match the prompt and the approved landscape direction.",
+    "No text, HUD, people, or device frame.",
+    "Reserved rectangles stay empty ground."
+  ],
+  "geometryCriteria": [
+    "Output is native 4K 16:9, decoded from the response, not upscaled afterward.",
+    "Guide rectangles remain the empty-pad targets. Frozen affine and Hall scale are not edited.",
+    "Road paint must clear pad quads by more than 8 legal px plus trace uncertainty after the same measurement."
+  ],
+  "maskApplicability": "No inpainting mask is sent. The guide image is a labeled spatial input. The API mask field is not used.",
+  "maxCandidateCalls": 2,
+  "estimatedUpperBoundUSD": 0.4931,
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/environment/geography/adventure-terrain-plains-clearance.json"
+  ],
+  "blockedBy": [],
+  "priority": 3
+}

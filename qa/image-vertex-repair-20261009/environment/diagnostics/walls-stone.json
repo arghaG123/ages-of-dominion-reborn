@@ -1,0 +1,63 @@
+{
+  "id": "walls-stone",
+  "magentaPixels": 0,
+  "opaqueFraction": 0.6292,
+  "slabRemoved": false,
+  "repairNote": null,
+  "outputContacts": [
+    [
+      247.0,
+      715.0
+    ],
+    [
+      546.0,
+      768.0
+    ],
+    [
+      846.0,
+      715.0
+    ]
+  ],
+  "contactHits": [
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    }
+  ],
+  "entranceHit": {
+    "inside": true,
+    "alpha": 255
+  },
+  "outOfFrame": [],
+  "namedGreenConcern": false,
+  "runtimeBinding": {
+    "id": "walls-stone",
+    "age": "stone",
+    "kind": "walls",
+    "actualRuntimePath": "assets/delivery/stone-starter-20261003/derivatives/v2/live/buildings/walls-stone.png",
+    "actualRuntimeSha256": "2e7548ca07d33af727c297e8e4ba99994fef726e8e87dbfbd6bc9ccca7513816",
+    "actualRuntimeDimensions": [
+      1010,
+      847
+    ],
+    "magentaCandidateVisiblePixels": 2119,
+    "residualOutput": {
+      "path": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/walls-stone.png",
+      "sha256": "c04c6805c9fd9648d0cb5f19795660502b004f885d66f454520fc38fccaea3e0",
+      "dimensions": {
+        "width": 992,
+        "height": 831
+      }
+    },
+    "sameAsResidual": false,
+    "note": "Color candidates diagnostic; runtime screenshots confirm obvious TownHall magenta patches in Iron/Medieval/Modern."
+  }
+}

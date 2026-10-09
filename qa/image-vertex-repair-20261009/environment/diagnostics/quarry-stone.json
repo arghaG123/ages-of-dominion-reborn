@@ -1,0 +1,63 @@
+{
+  "id": "quarry-stone",
+  "magentaPixels": 0,
+  "opaqueFraction": 0.5585,
+  "slabRemoved": false,
+  "repairNote": null,
+  "outputContacts": [
+    [
+      300.0,
+      807.0
+    ],
+    [
+      463.0,
+      865.0
+    ],
+    [
+      627.0,
+      807.0
+    ]
+  ],
+  "contactHits": [
+    {
+      "inside": true,
+      "alpha": 0
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    }
+  ],
+  "entranceHit": {
+    "inside": true,
+    "alpha": 255
+  },
+  "outOfFrame": [],
+  "namedGreenConcern": false,
+  "runtimeBinding": {
+    "id": "quarry-stone",
+    "age": "stone",
+    "kind": "quarry",
+    "actualRuntimePath": "assets/delivery/stone-starter-20261003/derivatives/v2/live/buildings/quarry-stone.png",
+    "actualRuntimeSha256": "bd0f7073cc46ebe795737818ad57ebeebd361711dc9230f7fe9bce9fe8d2fc65",
+    "actualRuntimeDimensions": [
+      946,
+      927
+    ],
+    "magentaCandidateVisiblePixels": 2333,
+    "residualOutput": {
+      "path": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/quarry-stone.png",
+      "sha256": "7fff6f08d4d87bcb37a53caa6be53950dc9b170f0bf1b2bb4c3c392158d36270",
+      "dimensions": {
+        "width": 929,
+        "height": 910
+      }
+    },
+    "sameAsResidual": false,
+    "note": "Color candidates diagnostic; runtime screenshots confirm obvious TownHall magenta patches in Iron/Medieval/Modern."
+  }
+}

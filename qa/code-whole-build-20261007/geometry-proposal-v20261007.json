@@ -1,0 +1,18 @@
+{
+  "id": "geometry-camera-proposal-v20261007",
+  "status": "PROPOSED",
+  "active": false,
+  "authority": "Activation requires a recorded owner decision. This file does not change the legal frame.",
+  "activeWorldToSource": [60, -10, 25, 35, 170, 165],
+  "activeHallScale": 0.1312,
+  "conflicts": [
+    "Stone canonical road avoids P07, and the west connector still intersects P01, P06 and P10.",
+    "P03 misses the 16px corridor-plus-uncertainty requirement by 0.016px.",
+    "The ring-to-bridge path conflicts with P16 and P17.",
+    "The same class of painted-road conflict is recorded for every Kingdom age.",
+    "Defense source pictures contain water and bridges. A legal rule that does not traverse them does not make the painted geography absent.",
+    "No complete building-height, entrance, Wall, walkable and obstacle proof was supplied with the residual scenes."
+  ],
+  "proposal": "Keep the frozen affine and Hall scale for all legal behavior. A later shared projection would need one source-pixel contact table per age, the same matrix for painting and picking, and a measured clearance for every pad, Hall, Wall and painted bridge. That table is not activated here.",
+  "codeAction": "Kingdom, Adventure, Tactical and Defense continue to project through the active contract."
+}

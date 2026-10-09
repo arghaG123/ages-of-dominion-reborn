@@ -4,17 +4,19 @@ import selection from '../data/reviewed-source-selection.json' with { type: 'jso
 import scene from '../data/stone-scene.json' with { type: 'json' };
 import modeScenes from '../data/mode-scenes.json' with { type: 'json' };
 import ageBuildings from '../data/age-buildings.json' with { type: 'json' };
+import gearIcons from '../data/gear-icons-20261007.json' with { type: 'json' };
 import { newCampaign, command, advanceReported, formatResume, cost, heroStats, manaMax, dailyMoves, gateHp, futureConclusion, questReady, stackTitle } from '../core/campaign.js';
 import { activeStackId, legalTargets, meleeCommand } from '../core/battle.js';
 import { save, load, SAVE_KEY, rememberView, rememberedView, encode, decode, restoreBackup, storeSlot, loadSlot, replaceCampaign } from '../core/save.js';
 import { camera, inverse, project, kingdomFocusBounds, targetSourceSize } from './projection.js';
 import { defenseMarkers } from '../core/defense.js';
-import { attackerPlate, drawActor, drawMount, drawPlate, drawReviewMount, drawStaticMount, plateForStack, projectilePlate, staticMountForAge, towerPlate, troopPlate } from './actor.js';
+import { attackerPlate, drawActor, drawMount, drawPlate, drawReviewMount, drawStaticMount, plateForStack, projectilePlate, setWorldCssScale, staticMountForAge, towerPlate, troopPlate } from './actor.js';
 import { drawBoundActor } from './anatomy.js';
 import { pendingPortrait, portraitCard } from './portraits.js';
 import { heroFocus, heroStage, KINGDOM_PAD_PRESENTATION, wallPresentation } from './presentation.js';
 import { armedChoice, parseChallenge } from './choices.js';
-import { acceptMapActivation, defaultIntent, intentSentence, keepIntent, modeRows, moveLabel, retreatNotice, spellLabel, stackCaption, strikeLabel } from './tactical-ui.js';
+import { acceptMapActivation, defaultIntent, intentSentence, keepIntent, modeRows, moveLabel, retreatFocusTarget, retreatNotice, spellLabel, stackCaption, strikeLabel } from './tactical-ui.js';
+import { visibleBox } from './visible-size.js';
 import { createFrameClock, travelProgress, travelSample } from './motion.js';
 import { applySettings, arm, blip, nextSuspended, suspendAudio, resumeAudio } from './audio.js';
 import { SKILL_IDS, GEAR_SLOTS, RIVALS, forgeOffer, gearBonus, recruitCost, spellEffect, towerPurchaseCost } from '../core/rules.js';
@@ -48,6 +50,7 @@ let forgePreview = null;
 let tacticalIntent = null;
 let tacticalBattleId = null;
 let retreatArmed = false;
+let retreatRestorePending = false;
 let retreatSettling = false;
 let mapArm = null;
 let swallowMapClick = false;
@@ -155,14 +158,11 @@ function confirmRetreat() {
 function paintRetreat() {
   const layer = $('retreat');
   const open = Boolean(retreatArmed && view === 'tactical' && state?.battle?.status === 'ACTIVE');
+  const field = $('stage-field');
+  if (field) field.inert = open;
   for (const id of ['context', 'save']) $(id).inert = open;
   document.querySelector('header').inert = open;
   document.querySelector('footer').inert = open;
-  $('panel').inert = open;
-  $('dock').inert = open;
-  $('world').inert = open;
-  $('gate').inert = open;
-  $('terrain').inert = open;
   layer.inert = !open;
   if (!open) { layer.hidden = true; return; }
   const notice = retreatNotice(state.battle.practice);
@@ -229,6 +229,7 @@ function clearWorld() {
   delete world.dataset.registration;
   delete world.dataset.chamber;
   delete world.dataset.screen;
+  delete world.dataset.supportLayout;
   $('terrain').hidden = true;
 }
 function choiceHeading(text) {
@@ -251,7 +252,90 @@ function modeGround(mode) {
   if (file) showTerrain(file, `${data.AGES[age].n} ${biome} ${mode} ground`, modeScenes.status);
   return file;
 }
-function paintChamber(title, subtitle) {
+function supportText(x, y, text, size, fill, extra = {}) {
+  const node = element('text', { x, y, fill, 'font-size': size, 'font-family': 'Palatino, Georgia, serif', ...extra });
+  node.textContent = text;
+  return node;
+}
+function paintSupportBoard(kind) {
+  const world = $('world');
+  world.setAttribute('data-support-layout', kind);
+  if (kind === 'market') {
+    const goods = [['Food', 'food'], ['Wood', 'wood'], ['Stone', 'stone'], ['Gold', 'gold']];
+    goods.forEach(([label, key], index) => {
+      const x = 140 + index * 280;
+      world.append(element('rect', { x, y: 230, width: 240, height: 280, rx: 12, fill: '#152128', stroke: '#c9a35b', 'data-market-good': key }));
+      world.append(supportText(x + 24, 290, label, 28, '#f4ecdf'));
+      const amount = state ? String(Math.floor(state.resources[key])) : '0';
+      world.append(supportText(x + 24, 350, amount, 36, '#e6d3a1'));
+      const note = key === 'gold' ? 'Price, not a batch' : state && state.age < 1 ? 'Opens in Bronze' : 'Batch of 100';
+      world.append(supportText(x + 24, 420, note, 16, '#f1e9d9'));
+    });
+    return;
+  }
+  if (kind === 'story') {
+    const chapters = data.STORY.length;
+    for (let index = 0; index < chapters; index += 1) {
+      const open = state && state.age >= index;
+      const chosen = state?.story?.choices?.[index];
+      const x = 140 + (index % 4) * 280;
+      const y = 220 + Math.floor(index / 4) * 160;
+      world.append(element('rect', {
+        x, y, width: 250, height: 120, rx: 10,
+        fill: open ? '#3d3424' : '#152128', stroke: chosen ? '#70b9c5' : '#8c7447',
+        'data-chapter': String(index), 'data-open': open ? '1' : '0',
+      }));
+      world.append(supportText(x + 16, y + 42, data.STORY[index].t, 18, '#f4ecdf'));
+      world.append(supportText(x + 16, y + 78, open ? (chosen ? 'Choice saved' : 'Open') : 'Opens in ' + data.AGES[index].n, 14, '#e6d3a1'));
+    }
+    const futureOpen = Boolean(state && state.age >= 7 && state.story.chapter >= data.STORY.length);
+    world.append(supportText(140, 620, futureOpen ? 'The Valley We Keep is open and grants nothing.' : 'The Valley We Keep opens in the Future age.', 18, '#f1e9d9', { 'data-future': futureOpen ? 'open' : 'closed' }));
+    return;
+  }
+  if (kind === 'war') {
+    const modes = [
+      ['Siege', 'Campaign reward, settled once'],
+      ['Tactical Duel', 'Campaign reward, settled once'],
+      ['Endless', 'Ongoing. No invented wave purse'],
+      ['Skirmish', 'Practice. Campaign unchanged'],
+      ['Challenge', 'Shared seed. Campaign unchanged'],
+    ];
+    modes.forEach(([title, detail], index) => {
+      const x = 120 + index * 230;
+      world.append(element('rect', { x, y: 240, width: 210, height: 280, rx: 12, fill: '#152128', stroke: '#c9a35b', 'data-war-mode': title }));
+      world.append(supportText(x + 16, 300, title, 20, '#f4ecdf'));
+      world.append(supportText(x + 16, 360, detail, 14, '#e6d3a1'));
+    });
+    return;
+  }
+  if (kind === 'settings') {
+    const music = state?.settings?.music ?? 0;
+    const sfx = state?.settings?.sfx ?? 0;
+    const reduced = Boolean(state?.settings?.reducedMotion);
+    for (const [label, value, y] of [['Music', music, 280], ['Sound', sfx, 400]]) {
+      world.append(supportText(160, y, label, 22, '#f4ecdf'));
+      world.append(element('rect', { x: 360, y: y - 28, width: 640, height: 36, rx: 8, fill: '#152128', stroke: '#8c7447' }));
+      world.append(element('rect', { x: 360, y: y - 28, width: Math.max(8, 640 * value), height: 36, rx: 8, fill: '#c9a35b', 'data-level': label.toLowerCase() }));
+    }
+    world.append(supportText(160, 540, reduced ? 'Reduced motion is on' : 'Reduced motion is off', 22, '#e6d3a1', { 'data-reduced-motion': reduced ? 'on' : 'off' }));
+    world.append(supportText(160, 600, 'Local tones only. No account and no network permission.', 16, '#f1e9d9'));
+    return;
+  }
+  if (kind === 'help') {
+    const columns = [
+      ['Help', 'Build, recruit, travel, fight, equip, and return. The tutorial can be skipped and reviewed.'],
+      ['Credits', 'Ages of Dominion Reborn. Offline local campaign.'],
+      ['Privacy', 'No account, no network request, and no device permission.'],
+    ];
+    columns.forEach(([title, body], index) => {
+      const x = 140 + index * 380;
+      world.append(element('rect', { x, y: 230, width: 340, height: 320, rx: 12, fill: '#152128', stroke: '#c9a35b', 'data-help-column': title.toLowerCase() }));
+      world.append(supportText(x + 20, 290, title, 28, '#f4ecdf'));
+      world.append(supportText(x + 20, 360, body, 16, '#f1e9d9'));
+    });
+  }
+}
+function paintChamber(title, subtitle, kind = '') {
   const world = $('world');
   world.setAttribute('data-chamber', view);
   world.append(element('rect', { width: 1376, height: 768, fill: '#1a1814' }));
@@ -265,9 +349,29 @@ function paintChamber(title, subtitle) {
     line.textContent = subtitle;
     world.append(line);
   }
+  if (kind) paintSupportBoard(kind);
+}
+function gearIconFor(slot) {
+  const age = state?.age ?? 0;
+  return (gearIcons.icons || []).find(icon => icon.slot === slot && icon.age === age)
+    || (gearIcons.icons || []).find(icon => icon.slot === slot && icon.age == null)
+    || null;
 }
 function slotGlyph(slot, x, y) {
+  const icon = gearIconFor(slot);
   const group = element('g', { transform: `translate(${x} ${y})`, 'data-slot-icon': slot, fill: 'none', stroke: '#e6d3a1', 'stroke-width': 3, 'stroke-linecap': 'round' });
+  if (icon?.file) {
+    const fitted = visibleBox({ width: icon.width || 64, height: icon.height || 64, maxVisibleCssPx: 64 }, 36, frameFit.fit.scale || 1);
+    group.append(element('image', {
+      href: icon.file,
+      x: -fitted.width / 2,
+      y: -fitted.height / 2,
+      width: fitted.width,
+      height: fitted.height,
+      'data-gear-icon': icon.id,
+    }));
+    return group;
+  }
   const path = {
     helm: 'M-16,10 Q-18,-8 0,-18 Q18,-8 16,10 Z M-8,10 H8',
     weapon: 'M-4,-20 L6,8 M-10,2 H2 M2,8 L10,16',
@@ -338,8 +442,14 @@ function kingdom() {
       const right = project(matrix, [x + w, y + h]);
       const feet = project(matrix, [x + w / 2, y + h]);
       const padWidth = Math.hypot(right[0] - left[0], right[1] - left[1]) || 1;
-      const drawW = padWidth * 1.08;
-      const drawH = drawW * (measured.height / measured.width);
+      const requestedH = (padWidth * 1.08) * (measured.height / measured.width);
+      const fitted = visibleBox({
+        width: measured.width,
+        height: measured.height,
+        maxVisibleCssPx: measured.maxVisibleCssPx || 180,
+      }, requestedH, scale);
+      const drawW = fitted.width;
+      const drawH = fitted.height;
       const footX = measured.foot[0] * drawW;
       const footY = measured.foot[1] * drawH;
       group.append(element('image', {
@@ -429,6 +539,7 @@ function measureFrame() {
     ? kingdomFocusBounds(contract.geometry.kingdom, scene.hall)
     : view === 'hero' ? heroFocus() : null;
   frameFit = { width, height, inset, rect, fit: camera([1376, 768], width, height, focus, view === 'kingdom' ? 24 : focus ? 12 : 0) };
+  setWorldCssScale(frameFit.fit.scale);
 }
 function fitScene() {
   const fit = frameFit.fit;
@@ -875,7 +986,7 @@ function forge() {
 
 function market() {
   clearWorld();
-  paintChamber('Market', state.age < 1 ? 'The market opens in the Bronze Age.' : 'Batches of 100. Gold is the price.');
+  paintChamber('Market', state.age < 1 ? 'The market opens in the Bronze Age.' : 'Batches of 100. Gold is the price.', 'market');
   $('selected').textContent = 'Market';
   for (const resource of ['food', 'wood', 'stone']) {
     $('choices').append(button('Buy 100 ' + resource + ' for 120 gold', () => act('MARKET', { side: 'buy', resource })));
@@ -951,9 +1062,13 @@ function tactical() {
   if (battle && battle.id !== tacticalBattleId) {
     tacticalBattleId = battle.id;
     tacticalIntent = null;
+    if (retreatArmed) retreatRestorePending = true;
     retreatArmed = false;
   }
-  if (!battle || battle.status !== 'ACTIVE') retreatArmed = false;
+  if ((!battle || battle.status !== 'ACTIVE') && retreatArmed) {
+    retreatRestorePending = true;
+    retreatArmed = false;
+  }
   if (actor?.side === 'p') tacticalIntent = keepIntent(tacticalIntent, legal, offers.length, Boolean(actor.waited));
   const ground = modeGround('tactical');
   world.setAttribute('data-board', ground ? 'tactical-painted-v1' : 'tactical-provisional-v1');
@@ -1149,7 +1264,7 @@ function defense() {
 
 function story() {
   clearWorld();
-  paintChamber('Story', state.story.rival ? `Rival ${state.story.rival}` : 'Choose a rival');
+  paintChamber('Story', state.story.rival ? `Rival ${state.story.rival}` : 'Choose a rival', 'story');
   $('selected').textContent = state.story.rival ?? 'Choose a rival';
   if (!state.story.rival) {
     choiceHeading('Rival');
@@ -1186,7 +1301,7 @@ function draftDescriptor() {
 }
 function war() {
   clearWorld();
-  paintChamber('War', 'Siege, duel, endless, skirmish and a local challenge.');
+  paintChamber('War', 'Siege, duel, endless, skirmish and a local challenge.', 'war');
   $('selected').textContent = 'War';
   choiceHeading('Campaign and practice');
   $('choices').append(button('Skirmish', () => { act('START_SKIRMISH', {}); if (state.battle) { view = 'tactical'; render(); } }));
@@ -1244,7 +1359,7 @@ function war() {
 
 function settings() {
   clearWorld();
-  paintChamber('Settings', 'Local music, sound and reduced motion. No account and no network.');
+  paintChamber('Settings', 'Local music, sound and reduced motion. No account and no network.', 'settings');
   $('selected').textContent = 'Settings';
   if (!state) { say('Start or import a campaign before changing settings.'); return; }
   $('choices').append(button(state.settings.reducedMotion ? 'Reduced motion on' : 'Reduced motion off', () => act('SETTINGS', { ...state.settings, reducedMotion: !state.settings.reducedMotion })));
@@ -1337,7 +1452,7 @@ function home() {
 
 function help() {
   clearWorld();
-  paintChamber('Help', 'Credits and privacy stay on this device.');
+  paintChamber('Help', 'Credits and privacy stay on this device.', 'help');
   $('selected').textContent = 'Help, credits and privacy';
   say('Help: use Kingdom to build, Adventure to travel, Tactical and Defense for battles, and Story for the seven chapters, quests and age records. The Future conclusion is The Valley We Keep and grants nothing by itself. Credits: Ages of Dominion Reborn is an offline local campaign. Privacy: there is no account, no network request and no device permission. Saves, slots and exports stay on this device.');
 }
@@ -1420,10 +1535,17 @@ function render() {
     if (top < panel.scrollTop) panel.scrollTop = top;
     else if (bottom > panel.scrollTop + panel.clientHeight) panel.scrollTop = Math.max(0, bottom - panel.clientHeight);
   }
-  if (retreatArmed) {
+  const retreatOpen = Boolean(retreatArmed && view === 'tactical' && state?.battle?.status === 'ACTIVE');
+  const focusTarget = retreatFocusTarget({
+    open: retreatOpen,
+    restoreTrigger: retreatRestorePending && !retreatOpen,
+    activeChoice: focusId,
+  });
+  if (!retreatOpen) retreatRestorePending = false;
+  if (focusTarget === 'retreat-cancel') {
     if (document.activeElement !== $('retreat-cancel') && document.activeElement !== $('retreat-confirm')) $('retreat-cancel').focus();
-  } else if (focusId && focusId !== 'retreat-cancel' && focusId !== 'retreat-confirm') {
-    const escaped = CSS.escape(focusId);
+  } else if (focusTarget) {
+    const escaped = CSS.escape(focusTarget);
     (panel.querySelector(`[data-choice="${escaped}"]`) || $('dock').querySelector(`[data-choice="${escaped}"]`))?.focus();
   }
   const resume = $('resume');
@@ -1532,13 +1654,14 @@ $('world').addEventListener('click', event => {
   event.preventDefault();
   event.stopPropagation();
 }, true);
-$('retreat-cancel').addEventListener('click', () => { retreatArmed = false; render(); });
+$('retreat-cancel').addEventListener('click', () => { retreatArmed = false; retreatRestorePending = true; render(); });
 $('retreat-confirm').addEventListener('click', () => confirmRetreat());
 document.addEventListener('keydown', event => {
   if (!retreatArmed) return;
   if (event.key === 'Escape') {
     event.preventDefault();
     retreatArmed = false;
+    retreatRestorePending = true;
     render();
     return;
   }

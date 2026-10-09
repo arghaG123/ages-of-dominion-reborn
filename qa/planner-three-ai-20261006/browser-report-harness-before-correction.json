@@ -1,0 +1,266 @@
+{
+  "evidenceType": "planner rerun of reviewed executor probes plus independent held-pointer, modal-focus and portrait probes; Forge remains injected fixture",
+  "errors": [
+    "retreat-modal-background-inert {\"panelFocus\":{\"choice\":\"move:0,3\",\"inside\":false},\"panelActionsBefore\":8,\"panelActionsAfter\":9}",
+    "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#retreat-cancel')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" id=\"retreat-cancel\" data-choice=\"retreat-cancel\">Cancel</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\dev\\ages-of-dominion-reborn\\qa\\planner-three-ai-20261006\\browser-recheck.mjs:165:41"
+  ],
+  "checks": [
+    {
+      "id": "kingdom-player-text",
+      "pass": true,
+      "kingdomMessage": "Stone Age. Hall level 1. 17 of 17 sites are empty. Walls are a separate site and are still unbuilt. Select a site to build or upgrade. A scaffold is still under construction. Day 1, clear.  Next: Build a Lumber Camp."
+    },
+    {
+      "id": "tactical-label-screen-space",
+      "pass": true,
+      "labels": [
+        {
+          "text": "Clubman ×6 · 6 · 60/60 hp · move",
+          "fontSize": "14px",
+          "width": 217.859375,
+          "height": 21.5
+        },
+        {
+          "text": "Dire Wolf ×4 · 4 · 40/40 hp",
+          "fontSize": "14px",
+          "width": 175.296875,
+          "height": 21.499996185302734
+        }
+      ]
+    },
+    {
+      "id": "held-pointer-across-redraw",
+      "pass": true,
+      "heldBefore": 0,
+      "heldAfter": 1
+    },
+    {
+      "id": "map-handlers-not-bound-to-replaced-nodes",
+      "pass": true,
+      "sample": 70
+    },
+    {
+      "id": "map-one-move-after-frames",
+      "pass": true,
+      "cell": "0,3",
+      "moves": [
+        {
+          "type": "BATTLE",
+          "action": "move",
+          "to": [
+            0,
+            3
+          ],
+          "targetId": null
+        }
+      ],
+      "revision": [
+        24,
+        27
+      ]
+    },
+    {
+      "id": "map-ignores-closed-cell",
+      "pass": true,
+      "closed": "0,0",
+      "beforeInvalid": 7,
+      "afterInvalid": 7
+    },
+    {
+      "id": "keyboard-move",
+      "pass": true,
+      "beforeKey": 2,
+      "afterKey": 3
+    },
+    {
+      "id": "retreat-open-spends-nothing",
+      "pass": true,
+      "retreatBefore": {
+        "gold": 150,
+        "mana": 20,
+        "rng": 123456789,
+        "actions": 9,
+        "status": "ACTIVE",
+        "log": 9,
+        "stacks": [
+          {
+            "id": "sk-p",
+            "side": "p",
+            "x": 0,
+            "y": 4,
+            "count": 4,
+            "maxCount": 6,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 6,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "role",
+            "type": "melee",
+            "age": 0,
+            "acted": false,
+            "waited": false,
+            "retaliated": true,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 37,
+            "bless": false
+          },
+          {
+            "id": "sk-e",
+            "side": "e",
+            "x": 1,
+            "y": 3,
+            "count": 1,
+            "maxCount": 4,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 3,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "creature",
+            "type": "wolf",
+            "age": 0,
+            "acted": true,
+            "waited": false,
+            "retaliated": false,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 24,
+            "bless": false
+          }
+        ]
+      },
+      "opened": {
+        "gold": 150,
+        "mana": 20,
+        "rng": 123456789,
+        "actions": 8,
+        "status": "ACTIVE",
+        "log": 8,
+        "stacks": [
+          {
+            "id": "sk-p",
+            "side": "p",
+            "x": 0,
+            "y": 4,
+            "count": 4,
+            "maxCount": 6,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 6,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "role",
+            "type": "melee",
+            "age": 0,
+            "acted": false,
+            "waited": false,
+            "retaliated": true,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 37,
+            "bless": false
+          },
+          {
+            "id": "sk-e",
+            "side": "e",
+            "x": 1,
+            "y": 3,
+            "count": 1,
+            "maxCount": 4,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 3,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "creature",
+            "type": "wolf",
+            "age": 0,
+            "acted": true,
+            "waited": false,
+            "retaliated": false,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 24,
+            "bless": false
+          }
+        ]
+      },
+      "body": "This practice battle ends with no victory reward. It does not change campaign resources, items, casualties, experience, mana, or story. Cancel spends no turn."
+    },
+    {
+      "id": "retreat-escape-no-spend",
+      "pass": true,
+      "escape": {
+        "hidden": true,
+        "actions": 8,
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "id": "retreat-modal-background-inert",
+      "pass": false,
+      "panelFocus": {
+        "choice": "move:0,3",
+        "inside": false
+      },
+      "panelActionsBefore": 8,
+      "panelActionsAfter": 9
+    }
+  ],
+  "modalFocusProbe": {
+    "id": "retreat-confirm",
+    "text": "Confirm retreat",
+    "inside": true
+  },
+  "modalBackgroundProbe": {
+    "backgroundFocus": {
+      "choice": "retreat-cancel",
+      "inside": true
+    },
+    "modalActionsBefore": 8,
+    "modalActionsAfter": 8
+  },
+  "modalPanelProbe": {
+    "panelFocus": {
+      "choice": "move:0,3",
+      "inside": false
+    },
+    "panelActionsBefore": 8,
+    "panelActionsAfter": 9
+  },
+  "serverLog": "Reborn local preview: http://127.0.0.1:4361\n"
+}

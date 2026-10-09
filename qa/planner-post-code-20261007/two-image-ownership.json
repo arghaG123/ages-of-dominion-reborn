@@ -1,0 +1,209 @@
+{
+  "status": "INCOMPLETE",
+  "environment": {
+    "assets": "assets/derivatives/image-after-code-20261007/environment/",
+    "qa": "qa/image-after-code-20261007/environment/",
+    "interface": "docs/plan/ENVIRONMENT-ART-AFTER-CODE-INTERFACE-2026-10-07.json"
+  },
+  "actors": {
+    "assets": "assets/derivatives/image-after-code-20261007/actors/",
+    "qa": "qa/image-after-code-20261007/actors/",
+    "interface": "docs/plan/ACTORS-EQUIPMENT-AFTER-CODE-INTERFACE-2026-10-07.json"
+  },
+  "overlap": "NONE: AI1stationarytower/staticworldeffects;AI2people/gear/projectile/impacteffects. Sharedinputsreadonly; no sharedhelpers/catalog/pointers. Each uses existing counterpartinputs or declaredmissinglayer.",
+  "coverage": [
+    {
+      "id": "01-home",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "02-kingdom-day1",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "03-kingdom-stone",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "04-kingdom-bronze",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "05-kingdom-iron",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "06-kingdom-medieval",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "07-kingdom-gunpowder",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "08-kingdom-industrial",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "09-kingdom-modern",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "10-kingdom-future",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "11-adventure-overview",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "12-adventure-crossing",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "13-adventure-foot",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "14-tactical-deployment",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "15-tactical-action",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "16-battle-result",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "17-defense-preparation",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "18-defense-wave",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "19-hero-equipment",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "20-skills",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "21-spells",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "22-forge",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "23-inventory",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "24-army",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "25-story",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "26-quests",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "27-tutorial",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "28-settings",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "29-save-recovery",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    },
+    {
+      "id": "30-icon-material-board",
+      "environment": "Clean scenery/material/state-layer coverage; explicit no-new-image-needed ifCode-nativeUI adequate.",
+      "actors": "Subject/item/effect coverage where present; explicitNOT_APPLICABLE otherwise.",
+      "code": "Live stateful layout/controls/mechanics/integration and actualreferencecomparison."
+    }
+  ],
+  "codeAfterBoth": [
+    "Validate typed rows/transforms and integrate passingdeclareduses into exactcatalogs",
+    "Connect artifact/effect/material/mount/assembly adapters where currentcatalogonly declares eligibility",
+    "Complete all8age/all30reference/livestate screen compositions and readable-safearea layouts",
+    "Guard allmodal eventpaths including programmaticnav/toolbar",
+    "Resolve inactivegeometry/camera proposals only with recorded authority",
+    "Demonstrate ordinary build/recruit/travel/fight/loot/equip/return/Siegewin/once-settle/reload and6slots/5Warflowroundtrips; earned8age separate",
+    "Preserve sourcedmechanics/save/idempotency/practiceisolation; moralescopedpending",
+    "Reverify tests/exactguidegaps; rebuild web/APKclosure only after actualintegration changes"
+  ],
+  "paid": "NO_NEW_PAID_CALLS",
+  "device": "STOPPED",
+  "executorDispatch": false
+}

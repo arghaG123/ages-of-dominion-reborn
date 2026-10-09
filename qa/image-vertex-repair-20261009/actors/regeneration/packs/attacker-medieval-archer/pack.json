@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "attacker-medieval-archer",
+  "owner": "ACTORS",
+  "canonicalId": "attacker-medieval-archer",
+  "version": "2026-10-09.1",
+  "state": "READY",
+  "defect": "A single medieval archer drawing a bow, full body, intact gambeson and limbs. Not a pose sheet and not a figure with holes cut through the torso.",
+  "reason": "Existing source has no compatible full subject, or a bounded local matte split or left the required subject unusable.",
+  "priorSourceHashes": [],
+  "referenceRefs": [
+    {
+      "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-medieval-archer/guide.png",
+      "sha256": "1d24f09ba0e7b9a478a09d1b49fda3bb15cc140edca2dd1b6e1ae382b8f1a1df",
+      "bytes": 14052,
+      "dimensions": {
+        "width": 768,
+        "height": 1024
+      }
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-medieval-archer/guide.png",
+    "sha256": "1d24f09ba0e7b9a478a09d1b49fda3bb15cc140edca2dd1b6e1ae382b8f1a1df",
+    "bytes": 14052,
+    "dimensions": {
+      "width": 768,
+      "height": 1024
+    }
+  },
+  "landmarks": {
+    "view": "front",
+    "normalized": {
+      "head": [
+        0.5,
+        0.18
+      ],
+      "shoulders": [
+        0.5,
+        0.27
+      ],
+      "hips": [
+        0.5,
+        0.51
+      ],
+      "footL": [
+        0.38,
+        0.88
+      ],
+      "footR": [
+        0.62,
+        0.88
+      ]
+    },
+    "note": "Normalized to the guide image. Not measured on a real body."
+  },
+  "legalGeometrySHA256": null,
+  "requestedResolution": "2K",
+  "aspectRatio": "1:1",
+  "expectedNativeDimensions": {
+    "width": 2048,
+    "height": 2048
+  },
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-medieval-archer/prompt.txt",
+  "promptSHA256": "f0689fdd30d574560b8bf8b516736dd970142d2ae6a73e9e4eb825594eb4deb0",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-medieval-archer/wire_body.json",
+  "wireBodySHA256": "8dd9d03176d7ab4d4455906a8b92d6d984dbe13cbd7184e281bdd73e08cc10f6",
+  "inputTransforms": [
+    {
+      "order": [
+        "prompt text",
+        "guide.png"
+      ],
+      "note": "Coordinator attaches guide.png as an image part. Do not invent a mask API field. candidateCount stays 1."
+    }
+  ],
+  "semanticCriteria": [
+    "A single medieval archer drawing a bow, full body, intact gambeson and limbs. Not a pose sheet and not a figure with holes cut through the torso.",
+    "one subject",
+    "no text",
+    "no checker",
+    "no HUD"
+  ],
+  "geometryCriteria": [
+    {
+      "fullSubjectInsideFrame": true,
+      "nativeDecoded": "2048x2048",
+      "noUpscaleClaim": true
+    }
+  ],
+  "maxCandidateCalls": 1,
+  "estimatedUpperBoundUSD": 0.4,
+  "upperBoundBasis": "Reservation ceiling for one 2K attempt covering about 0.101 output plus inputs, text, reasoning, and one unexpected extra image. Not an invoice.",
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-medieval-archer/guide.png",
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-medieval-archer/prompt.txt"
+  ],
+  "blockedBy": [],
+  "priority": 11,
+  "maskApplicability": "No source mask: the request asks for a new complete subject, not an inpaint of a defective plate."
+}

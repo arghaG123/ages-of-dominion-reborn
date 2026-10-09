@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "date": "2026-10-07",
+  "status": "INCOMPLETE",
+  "interfaceHashes": {
+    "docs/plan/ENVIRONMENT-ART-RESIDUAL-INTERFACE-2026-10-07.json": {
+      "sha256": "7958b648f74da0b070b1f44829f11c767b62b5e922af20b892cba62e8312c3d2",
+      "bytes": 419301
+    },
+    "docs/plan/ACTORS-EQUIPMENT-RESIDUAL-INTERFACE-2026-10-07.json": {
+      "sha256": "3e594d2a5d70f421ad99d6de962557cafdb7b0d41ca1b878d5f0818cad0044d9",
+      "bytes": 293437
+    }
+  },
+  "decisions": "qa/planner-final-images-20261007/per-id-status.json",
+  "frozenAffine": [
+    60,
+    -10,
+    25,
+    35,
+    170,
+    165
+  ],
+  "frozenHallScale": 0.1312,
+  "geometryActivation": "PROPOSED_ONLY",
+  "paidAuthority": "UNVERIFIED_SEPARATE_OWNER_AUTHORIZATION; NO_NEW_PAID_CALLS_FOR_CODE",
+  "producerCounts": {
+    "environment": {
+      "rows": 145,
+      "statuses": {
+        "READY": 145
+      },
+      "phantomReady": [],
+      "unlistedReady": []
+    },
+    "actors": {
+      "rows": 167,
+      "statuses": {
+        "READY": 148,
+        "PARTIAL": 13,
+        "FAIL": 6
+      },
+      "phantomReady": [],
+      "unlistedReady": []
+    }
+  },
+  "consumerBindings": {
+    "src/data/plate-catalog.json": "actor.js/drawPlate and all role lookups",
+    "src/data/age-buildings.json": "main.js/kingdom",
+    "src/data/reviewed-source-selection.json": "main.js/kingdom background selection",
+    "src/data/stone-scene.json": "main.js/kingdom Hall placement",
+    "src/data/mode-scenes.json": "main.js/paintModeGround/adventure/tactical/defense",
+    "src/data/actor-atlas.json": "actor.js/rig.js",
+    "src/data/anatomy-binding-v1.json": "anatomy.js",
+    "src/data/static-mounts-v1.json": "actor.js static mounts",
+    "src/data/portrait-cards.json": "portraits.js",
+    "scripts/build.mjs": "complete new consumer catalog/texture asset closure"
+  },
+  "codeTextureNamespace": "assets/runtime-code-20261007/",
+  "rowsReadyForGeneralRuntime": "NONE_BLANKET_APPROVED; use per-row bounded decisions and fresh consumer verification",
+  "capPolicy": "maxDisplayCssPx after uniform camera/DOM scale and visible alpha extent; conservative lower established height/longest limit while ambiguous",
+  "newFourRejectedOutputs": [
+    "troop-industrial-heavy",
+    "troop-industrial-ranged",
+    "troop-stone-melee",
+    "troop-stone-ranged"
+  ],
+  "originalPreservationMismatches": [
+    {
+      "id": "troop-stone-melee",
+      "type": "source",
+      "path": "C:\\dev\\ages-of-dominion-reborn\\assets\\high-res\\final-native2k\\troop-stone-melee.png",
+      "exists": true,
+      "sha256": "9d6d0afb631ca748a31de2f8f33c77f8236a138954fe2d9cf79d607c7911b488",
+      "hashMatch": false,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionMatch": null,
+      "mode": "RGB",
+      "alphaBBox": [
+        0,
+        0,
+        2048,
+        2048
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "id": "troop-stone-ranged",
+      "type": "source",
+      "path": "C:\\dev\\ages-of-dominion-reborn\\assets\\high-res\\final-native2k\\troop-stone-ranged.png",
+      "exists": true,
+      "sha256": "937949e300d24d0b53d5f735cbf03f2a985800b3ef9c110a373b76f100e583f5",
+      "hashMatch": false,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionMatch": null,
+      "mode": "RGB",
+      "alphaBBox": [
+        0,
+        0,
+        2048,
+        2048
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "id": "troop-industrial-ranged",
+      "type": "source",
+      "path": "C:\\dev\\ages-of-dominion-reborn\\assets\\high-res\\final-native2k\\troop-industrial-ranged.png",
+      "exists": true,
+      "sha256": "6e72795f5e73feda122521d85c6ae23a10350ed839e07a852a6d24460600a37c",
+      "hashMatch": false,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionMatch": null,
+      "mode": "RGB",
+      "alphaBBox": [
+        0,
+        0,
+        2048,
+        2048
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "id": "troop-industrial-heavy",
+      "type": "source",
+      "path": "C:\\dev\\ages-of-dominion-reborn\\assets\\high-res\\final-native2k\\troop-industrial-heavy.png",
+      "exists": true,
+      "sha256": "4662db518ad44d0dd24507bbd36d064b4cbc825aea455843e724750f3d4ec5e2",
+      "hashMatch": false,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionMatch": null,
+      "mode": "RGB",
+      "alphaBBox": [
+        0,
+        0,
+        2048,
+        2048
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    }
+  ],
+  "device": "STOPPED",
+  "owner": "UNVERIFIED"
+}

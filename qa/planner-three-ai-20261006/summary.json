@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-06",
+  "wholeProduct": "INCOMPLETE",
+  "sourceSnapshot": {
+    "HEAD": "c266e220fa024dfb95fbf534f180c40ed52585e3",
+    "beforeExistingFiles": 198,
+    "changedExistingFiles": []
+  },
+  "suite": {
+    "total": 100,
+    "pass": 98,
+    "fail": 2,
+    "cause": "exact historical guides missing; runner nonzero; shell wrapper completed after reading log"
+  },
+  "browser": {
+    "checks": 20,
+    "pass": 20,
+    "errors": [],
+    "additionalObservation": {
+      "id": "retreat-cancel-restore-trigger-focus",
+      "gate": "FAIL",
+      "observed": {
+        "id": ""
+      },
+      "scope": "Cancel safely dismisses; active element ID empty and no trigger choice. Legacy20 modal/input checks still PASS."
+    }
+  },
+  "journey": {
+    "steps": 17,
+    "errors": [],
+    "defenseTerminal": {
+      "status": "RESOLVED",
+      "winner": "e",
+      "cleared": 1,
+      "pending": true,
+      "hero": true,
+      "army": true,
+      "core": -9.424999999999997
+    },
+    "scope": "natural build/recruit/guard win/earned orb equip/return/Defense defeat settle/reload; prepared win and all6slots remain open"
+  },
+  "package": {
+    "exists": true,
+    "bytes": 410291618,
+    "sha256": "3cc5bccdddcad1f1119b57025e480968e52581d6b10b55938125c8bd34964714",
+    "zipCRCFailure": null,
+    "apkWebEntries": 300,
+    "files": 300,
+    "mismatches": []
+  },
+  "image": {
+    "readyRows": 19,
+    "associations": 167,
+    "failures": [],
+    "readyRasterChecks": 15,
+    "jointMetrics": 12,
+    "scenes": 32,
+    "promoted": 0
+  },
+  "ageFixtureShots": 32,
+  "consumerSizes": [
+    {
+      "age": 4,
+      "path": "assets/derivatives/actors/v4/troop-gunpowder-heavy.png",
+      "imageLegalHeight": 130.0,
+      "imageCssHeight": 102.578125,
+      "visibleAlpha16CssHeight": 57.54993438720703,
+      "deliveryLimitPx": 64,
+      "exceedsVisible64": false,
+      "stateKind": "FIXTURE",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "age": 7,
+      "path": "assets/derivatives/actors/v4/troop-future-ranged.png",
+      "imageLegalHeight": 130.0,
+      "imageCssHeight": 102.578125,
+      "visibleAlpha16CssHeight": 84.04594421386719,
+      "deliveryLimitPx": 64,
+      "exceedsVisible64": true,
+      "stateKind": "FIXTURE",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "age": 7,
+      "path": "assets/derivatives/actors/v4/troop-future-heavy.png",
+      "imageLegalHeight": 130.0,
+      "imageCssHeight": 102.578125,
+      "visibleAlpha16CssHeight": 79.98889923095703,
+      "deliveryLimitPx": 64,
+      "exceedsVisible64": true,
+      "stateKind": "FIXTURE",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "age": 7,
+      "path": "assets/derivatives/actors/v4/troop-future-ranged.png",
+      "imageLegalHeight": 130.0,
+      "imageCssHeight": 102.578125,
+      "visibleAlpha16CssHeight": 84.04594421386719,
+      "deliveryLimitPx": 64,
+      "exceedsVisible64": true,
+      "stateKind": "FIXTURE",
+      "viewport": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "authority": "planner QA/docs only; no production/code/build/provider/device/Git/storage change or messaging/delegation"
+}

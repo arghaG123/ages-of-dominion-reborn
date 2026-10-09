@@ -1,0 +1,53 @@
+{
+  "id": "receipt-env-kingdom-terrain-future-v1-a1",
+  "canonicalId": "kingdom-terrain-future",
+  "owner": "ENVIRONMENT",
+  "attemptId": "env-kingdom-terrain-future-v1-a1",
+  "requestPackSHA256": "a609e3350b2679eaaa7ce318fccc13413258bb72e3fb75d7afa93ed5a416fd73",
+  "wireBodySHA256": "085fb7be028dd8353074c2a6b6ad3936d9a7638abcf6f88eff326b0601b1fa9d",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "4K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-future-v1-a1/response.json",
+  "rawResponseSHA256": "b69af8b1012f2d10731c14f35178b797f744cdc87217bbf054a6ce93417afcfb",
+  "images": [
+    {
+      "path": "assets/derivatives/image-vertex-repair-20261009/environment/native/kingdom-terrain-future-candidate-a.png",
+      "sha256": "91742b1510298a0fa0afa59997d2809b1b231db03f1155cf1865db71f06033d4",
+      "bytes": 26374406,
+      "dimensions": {
+        "width": 5504,
+        "height": 3072
+      }
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 2434,
+    "candidatesTokenCount": 2520,
+    "totalTokenCount": 4954,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2240
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 194
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2520
+      }
+    ]
+  },
+  "reservedUSD": 0.4931,
+  "actualOrRetainedExposureUSD": 0.4931,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "Review candidate pixels before any correction call."
+}

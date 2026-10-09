@@ -1,0 +1,49 @@
+{
+  "probedAt": "2026-10-09T07:45:29.342363+00:00",
+  "account": "arghawork3@gmail.com",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": {
+    "http": 404,
+    "name": null
+  },
+  "token": "acquired-not-recorded",
+  "jobs": {
+    "global": {
+      "count": 20,
+      "states": {
+        "JOB_STATE_SUCCEEDED": 19,
+        "JOB_STATE_FAILED": 1
+      },
+      "active": [],
+      "hasNextPage": false
+    },
+    "us-central1": {
+      "count": 0,
+      "states": {},
+      "active": [],
+      "hasNextPage": false
+    }
+  },
+  "cloudLockMeta": {
+    "http": 200,
+    "generation": "1791531276659584"
+  },
+  "cloudLock": {
+    "http": 200,
+    "state": "QUOTA_STOP_HTTP_429",
+    "workflow": "PAID_RUN_STOPPED_DEFINITE_429",
+    "owner": "environment-vertex-correction-pid22916"
+  },
+  "blocked": [],
+  "pricingChecked": {
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing?hl=en",
+    "checkedOn": "2026-10-09",
+    "imageOutput4KApproximateUSD": 0.15,
+    "imageOutput2KApproximateUSD": 0.101,
+    "inputImageTokens": 1120,
+    "output4KTokens": 2520,
+    "imageOutputPer1M": 60.0,
+    "inputPer1MGlobal": 0.5,
+    "note": "Non-200 responses are documented as unbilled. Unknown transport outcomes stay retained."
+  }
+}

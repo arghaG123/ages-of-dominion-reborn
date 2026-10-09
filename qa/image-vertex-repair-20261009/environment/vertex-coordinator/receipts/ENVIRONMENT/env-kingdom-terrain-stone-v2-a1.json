@@ -1,0 +1,57 @@
+{
+  "id": "receipt-env-kingdom-terrain-stone-v2-a1",
+  "canonicalId": "kingdom-terrain-stone",
+  "owner": "ENVIRONMENT",
+  "attemptId": "env-kingdom-terrain-stone-v2-a1",
+  "requestPackSHA256": "2928643340e50bf6226c3155962d023fe757b4c21f6c3a93e6d2d5d223341efb",
+  "wireBodySHA256": "e9db6f13ce4cad371a45b5152d19cac1128cdb4d875342678fc8173450a2f370",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "4K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-stone-v2-a1/response.json",
+  "rawResponseSHA256": "33123be203b1b8fba9a5502bc42a5ebfc9f1441b50ade08416d4cd3179d5d628",
+  "images": [
+    {
+      "path": "assets/derivatives/image-vertex-repair-20261009/environment/native/kingdom-terrain-stone-candidate-a.png",
+      "sha256": "af235957521acdbe3701568fc45c7b25f597ecd72b5fbf1dd27d2131d581455b",
+      "bytes": 26460844,
+      "dimensions": {
+        "width": 5504,
+        "height": 3072
+      }
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 2425,
+    "candidatesTokenCount": 2638,
+    "totalTokenCount": 5063,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2240
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 185
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 118
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2520
+      }
+    ]
+  },
+  "reservedUSD": 0.4931,
+  "actualOrRetainedExposureUSD": 0.4931,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "Review candidate pixels before any correction call."
+}

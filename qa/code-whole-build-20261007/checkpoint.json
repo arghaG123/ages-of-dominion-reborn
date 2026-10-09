@@ -1,0 +1,50 @@
+{
+  "status": "INCOMPLETE",
+  "date": "2026-10-07",
+  "liveUrl": "http://127.0.0.1:4387",
+  "launchCommand": "C:\\Users\\TechnoExponent\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe scripts/serve.mjs --port 4387",
+  "localCodeWorkComplete": false,
+  "localCompletionReason": "Feasible integration is in the running game, and primary art, geometry, body, guide, device and owner gates remain open.",
+  "tests": "107 tests, 105 pass, 2 fail. Both failures are ENOENT for the missing v4 and v5 kingdom guide PNGs. Assertions were not weakened.",
+  "web": "dist has 333 local assets and no network references.",
+  "apk": {
+    "path": "android/app/build/outputs/apk/release/app-release-unsigned.apk",
+    "bytes": 509502836,
+    "sha256": "5007d6d70eab65d05fabd6ac4fc6fd5c71c551712785ecbdc4e8653661981220",
+    "crc32": 3771401993,
+    "applicationId": "com.agesofdominion.game.reborn.preview",
+    "minSdk": 24,
+    "targetSdk": 36,
+    "compileSdk": 36,
+    "usesPermission": [],
+    "installed": false
+  },
+  "consumer": {
+    "catalog": "src/data/consumer-catalog-20261007.json",
+    "runtimePass": 68,
+    "boundTroops": ["troop-stone-melee", "troop-industrial-ranged", "troop-industrial-heavy"],
+    "blockedTroop": "troop-stone-ranged",
+    "gearIcons": 46,
+    "magentaGearHeld": ["gear-stone-helm", "gear-stone-boots"]
+  },
+  "retreat": "HTML #stage-field is inert while Retreat is open. Escape and Cancel return focus to the Retreat trigger.",
+  "geometry": "qa/code-whole-build-20261007/geometry-proposal-v20261007.json is PROPOSED and inactive. Affine [60,-10,25,35,170,165] and Hall scale 0.1312 are unchanged.",
+  "gallery": "qa/code-whole-build-20261007/gallery.html",
+  "journey": "qa/code-whole-build-20261007/journey-report.json",
+  "authorityLimits": [
+    "NO_NEW_PAID_CALLS. No provider, account, bucket, lock or budget call.",
+    "Device QA stayed stopped.",
+    "Positive morale still has no extra turn.",
+    "Owner visual acceptance is unverified.",
+    "Four native source hashes were already different from the 6 October interface. This task did not rewrite those hashes or treat the disk records as a verified charge.",
+    "Slinger checker extraction failed and was not bound.",
+    "The two kingdom guide PNGs are still missing."
+  ],
+  "nextExecutableActions": {
+    "slinger": "Keep the previous stone ranged plate until a checker-aware crop preserves the figure and removes only the painted backdrop.",
+    "green-bases": "Repair only the held building rows whose native pixels separate the slab from the structure.",
+    "scenes": "Do not activate the 32 scene proposals until a measured per-age clearance table exists.",
+    "journeys": "Play a fresh-save siege through one settlement and reload, and keep that separate from the node fixture coverage.",
+    "guides": "Restore the exact v4 and v5 guide bytes from an owner archive. Do not draw substitutes."
+  }
+}

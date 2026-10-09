@@ -1,0 +1,51 @@
+{
+  "id": "receipt-actors-class-warlock-standing-body-v1-a1",
+  "canonicalId": "class-warlock-standing-body",
+  "owner": "ACTORS",
+  "attemptId": "actors-class-warlock-standing-body-v1-a1",
+  "requestPackSHA256": "ef9fe202d916a1071ef2ecf4b623ef499862e3be21065d94859377db2bf09eda",
+  "wireBodySHA256": "e06d80d01f12c0e91b0dbab282023d69903b50a9eb2af1195cffd36f2bc81318",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "2K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-warlock-standing-body-v1-a1/response.json",
+  "rawResponseSHA256": "963aa4202e6e8331a7b02a7a9aa2c34dfd3cffa2c4d5445b0c42946583dec0d6",
+  "images": [
+    {
+      "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-warlock-standing-body.png",
+      "sha256": "375134c7bf0fee3df35718862ea974436987ec82e9f4949fbeca8caee642d41f",
+      "bytes": 5601854,
+      "dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "format": "PNG"
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 112,
+    "candidatesTokenCount": 1680,
+    "totalTokenCount": 1792,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 112
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1680
+      }
+    ]
+  },
+  "reservedUSD": 0.4,
+  "actualOrRetainedExposureUSD": 0.4,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "AI2 reviews this candidate. Coordinator did not write AI2 directories or mark the sprite READY.",
+  "review": "UNREVIEWED_BY_OWNER"
+}

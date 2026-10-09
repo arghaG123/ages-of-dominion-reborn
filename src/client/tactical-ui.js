@@ -58,6 +58,13 @@ export function intentSentence(intent, stackTitle) {
   return 'Choose Move, Melee, Shoot, Spell, Defend, Wait, Auto or Retreat.';
 }
 
+export function retreatFocusTarget({ open, restoreTrigger, activeChoice, triggerChoice = 'retreat' }) {
+  if (open) return 'retreat-cancel';
+  if (restoreTrigger) return triggerChoice;
+  if (activeChoice && activeChoice !== 'retreat-cancel' && activeChoice !== 'retreat-confirm') return activeChoice;
+  return '';
+}
+
 export function retreatNotice(practice) {
   const campaign = practice === 'campaign';
   return {

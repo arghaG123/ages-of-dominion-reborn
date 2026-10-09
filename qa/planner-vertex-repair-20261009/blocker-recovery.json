@@ -1,0 +1,87 @@
+{
+  "authorityDate": "2026-10-09",
+  "cases": [
+    {
+      "blocker": "Damaged matte, retained magenta/green slab, checker or sheet",
+      "recovery": "Inspect actual source/subject. Reuse a clean newer candidate or perform bounded local correction. Queue Vertex only when source defects/unsupported local recovery justify it. Preserve before/after pixels.",
+      "stopScope": "Affected asset; continue other ready work."
+    },
+    {
+      "blocker": "Missing full body, compatible part, pose or hidden ground",
+      "recovery": "Prepare explicit reference/camera/anatomy/part/geometry guide; request a new complete usable source or missing compatible donor via Vertex. Newly generated material is a new source identity, not recovered original anatomy.",
+      "stopScope": "Affected generation pack until ready; continue independent rows."
+    },
+    {
+      "blocker": "Generated body still cropped, wrong identity, baked UI/checker, wrong pose/side or invalid parts",
+      "recovery": "Reject candidate asFAIL, retain raw/output hashes and defect evidence, attempt at most one evidence-directed correction within budget. Full bodies still require joint/gait proof.",
+      "stopScope": "AffectedID after bounded attempts; no endless retries."
+    },
+    {
+      "blocker": "Roads/buildings/bridge conflicts",
+      "recovery": "Generate corrected ground aligned to frozen legal pads/roads/Hall/Wall/bridge anchors and the approved appearance. Measure full physical corridors/entrances/height/uncertainty afterward.",
+      "stopScope": "Affected scene; no legal-geometry mutation."
+    },
+    {
+      "blocker": "Geometry or art direction genuinely unspecified",
+      "recovery": "Publish exact alternatives/measurement and request the missing authority only for that property. Do not invent approved geometry or stop unrelated queues.",
+      "stopScope": "Affected scene/property."
+    },
+    {
+      "blocker": "Clean art exists but old runtime still displays defects",
+      "recovery": "Image validates/reuses clean successor and supplies exact binding/geometry handoff. Code later connects it.",
+      "stopScope": "Code integration gate; no unnecessary regeneration."
+    },
+    {
+      "blocker": "Request pack lacks base/mask/guide",
+      "recovery": "Owning Image AI prepares these locally from current exact source hashes and canonical contracts. Null historical queue fields and blanket owner guide acceptance are not global prerequisites.",
+      "stopScope": "That request only."
+    },
+    {
+      "blocker": "Unsupported request field/inline input size/SDK version",
+      "recovery": "Validate wire body against current official API; adapt owned helper offline; shrink only request-reference copies with documented transforms. Never upscale output and claim native resolution.",
+      "stopScope": "That pack; no paid probe or silent provider switch."
+    },
+    {
+      "blocker": "401/403/billing/API access failure",
+      "recovery": "Confirm intended account/project metadata; refresh existing credentials privately. Record exact denied permission/billing need. Do not change global login/IAM/billing/project settings or keep paid retrying.",
+      "stopScope": "All paid requests needing that access; local processing continues."
+    },
+    {
+      "blocker": "Active/unknown remote job, lock contention or malformed mutex",
+      "recovery": "Reconcile the same operation/attempt and ownership using local/remote evidence; wait for verified terminal state. No age-based clearance, force unlock or duplicate POST.",
+      "stopScope": "All paid submissions across both queues; local work continues."
+    },
+    {
+      "blocker": "Timeout/disconnect/5xx/crash after possible dispatch",
+      "recovery": "PersistUNKNOWN plus full liability/request hash; recover that exact operation/receipt. Do not automatically resend or clear its lock.",
+      "stopScope": "All paid submissions until reconciled; local work continues."
+    },
+    {
+      "blocker": "Definite429/quota limit",
+      "recovery": "Stop the paid run, persistRetry-After/backoff (at least60s), and resume the same pending ID/body only after definite rejection and documented backoff/accounting reconciliation. No hidden automatic retries or another-project fallback.",
+      "stopScope": "Paid run; local work continues."
+    },
+    {
+      "blocker": "Insufficient headroom or inconsistent ledgers",
+      "recovery": "Reconcile unique attempts/holds without inventing invoices or releasing unknown amounts. Keep reserve/cap; prioritize affordable useful dependencies. Give owner exact shortfall if cap change is required.",
+      "stopScope": "Unaffordable paid requests; local/affordable work continues."
+    },
+    {
+      "blocker": "Disk/full write/hash/decode/wrong resolution",
+      "recovery": "Verify sufficient room before dispatch; atomic save raw bytes/new candidate; verify checksum/decode/native size. Preserve receipt/liability if dispatch already occurred; fix path/storage issue and recover same returned bytes. No cleanup of protected files.",
+      "stopScope": "Affected response; no duplicate purchase."
+    },
+    {
+      "blocker": "Duplicate request or concurrent writer/restart",
+      "recovery": "Immutable content-addressed pack, one provider coordinator, shared mutex/CAS, durable per-ID receipts and rehash-before-reuse. Actor producer consumes only complete published receipts.",
+      "stopScope": "Colliding request; preserve other work."
+    },
+    {
+      "blocker": "Missing exact historical guides / owner/device/morale/runtime gate",
+      "recovery": "Keep exact guides as transfer gaps; use newly named current geometry guides for new generation. Finish Image scope; leave Code/owner/device gates explicitly separate.",
+      "stopScope": "Their exact gates only."
+    }
+  ],
+  "finiteListCannotGuaranteeNoNewFailure": true,
+  "generationExecutedByPlanner": false
+}

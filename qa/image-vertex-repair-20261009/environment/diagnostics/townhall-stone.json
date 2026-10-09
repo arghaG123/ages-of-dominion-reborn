@@ -1,0 +1,63 @@
+{
+  "id": "townhall-stone",
+  "magentaPixels": 0,
+  "opaqueFraction": 0.7342,
+  "slabRemoved": false,
+  "repairNote": null,
+  "outputContacts": [
+    [
+      282.0,
+      895.0
+    ],
+    [
+      598.0,
+      963.0
+    ],
+    [
+      915.0,
+      895.0
+    ]
+  ],
+  "contactHits": [
+    {
+      "inside": true,
+      "alpha": 0
+    },
+    {
+      "inside": true,
+      "alpha": 0
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    }
+  ],
+  "entranceHit": {
+    "inside": true,
+    "alpha": 0
+  },
+  "outOfFrame": [],
+  "namedGreenConcern": false,
+  "runtimeBinding": {
+    "id": "townhall-stone",
+    "age": "stone",
+    "kind": "townhall",
+    "actualRuntimePath": "assets/delivery/stone-starter-20261003/derivatives/v2/live/buildings/townhall-stone.png",
+    "actualRuntimeSha256": "3c53419d73154d45168e24c396d25a617337b98cbbf452c13d1984e02db8f264",
+    "actualRuntimeDimensions": [
+      1024,
+      1008
+    ],
+    "magentaCandidateVisiblePixels": 9534,
+    "residualOutput": {
+      "path": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/townhall-stone.png",
+      "sha256": "6f2117c50dd4d9e429ccb508d7d9811f5e9c0457a96893b735130857344c511c",
+      "dimensions": {
+        "width": 1024,
+        "height": 980
+      }
+    },
+    "sameAsResidual": false,
+    "note": "Color candidates diagnostic; runtime screenshots confirm obvious TownHall magenta patches in Iron/Medieval/Modern."
+  }
+}

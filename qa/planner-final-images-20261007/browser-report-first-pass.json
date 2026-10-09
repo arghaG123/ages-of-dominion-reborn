@@ -1,0 +1,206 @@
+{
+  "type": "FRESH_ISOLATED_BROWSER",
+  "origin": "http://127.0.0.1:4217",
+  "errors": [
+    "page.evaluate: Error: Army capacity\n    at validate (http://127.0.0.1:4217/src/core/campaign.js:83:89)\n    at encode (http://127.0.0.1:4217/src/core/save.js:17:39)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:558)\n    at async <anonymous>:337:30\n    at C:\\dev\\ages-of-dominion-reborn\\qa\\planner-final-images-20261007\\browser-audit.mjs:41:12"
+  ],
+  "checks": [
+    {
+      "id": "natural-day1-sparse",
+      "pass": true
+    },
+    {
+      "id": "tactical-labels",
+      "pass": false,
+      "detail": [
+        {
+          "text": "Clubman ×6 · 6 · 60/60 hp · move",
+          "size": null
+        },
+        {
+          "text": "Dire Wolf ×4 · 4 · 40/40 hp",
+          "size": null
+        }
+      ]
+    },
+    {
+      "id": "retreat-opens-without-action",
+      "pass": true,
+      "detail": {
+        "before": 2
+      }
+    },
+    {
+      "id": "retreat-inert",
+      "pass": false,
+      "detail": [
+        {
+          "id": "stage",
+          "inert": false
+        },
+        {
+          "id": "panel",
+          "inert": true
+        },
+        {
+          "id": "nav",
+          "inert": false
+        },
+        {
+          "id": "dock",
+          "inert": true
+        }
+      ]
+    },
+    {
+      "id": "retreat-tab-contained",
+      "pass": true
+    },
+    {
+      "id": "retreat-cancel-focus-return",
+      "pass": false,
+      "detail": {
+        "id": "",
+        "hidden": true,
+        "actions": 2
+      }
+    },
+    {
+      "id": "retreat-cancel-no-action",
+      "pass": true,
+      "detail": {
+        "id": "",
+        "hidden": true,
+        "actions": 2
+      }
+    },
+    {
+      "id": "retreat-escape-focus-return",
+      "pass": false
+    },
+    {
+      "id": "retreat-confirm-once",
+      "pass": true
+    },
+    {
+      "id": "portrait-state-preserved",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "id": "home-1280",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "class-selection",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "kingdom-day1",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "adventure",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "hero",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "army",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "forge",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "market",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "story",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "settings",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "help",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "war",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "tactical",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "portrait-rotate",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 375,
+        "height": 825
+      }
+    }
+  ],
+  "journey": "Natural new campaign/class selection/Skirmish; age layouts below are FIXTURE, no earned campaign claim",
+  "serverLog": "Reborn local preview: http://127.0.0.1:4217\n"
+}

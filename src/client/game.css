@@ -19,6 +19,7 @@ button:focus-visible{outline:3px solid #70b9c5;outline-offset:2px}
 button[aria-current="true"]{background:#3d3424}
 button[data-anchor="tutorial"]{outline:3px solid #70b9c5;outline-offset:2px}
 #stage{position:relative;overflow:hidden;background:#12181b}
+#stage-field{position:absolute;inset:0}
 #frame{position:absolute;left:0;top:0;width:1376px;height:768px;transform-origin:0 0}
 #terrain,#world{position:absolute;left:0;top:0;width:100%;height:100%}
 #terrain{object-fit:fill;object-position:center}

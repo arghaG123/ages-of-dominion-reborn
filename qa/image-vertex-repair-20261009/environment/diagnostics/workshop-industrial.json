@@ -1,0 +1,63 @@
+{
+  "id": "workshop-industrial",
+  "magentaPixels": 0,
+  "opaqueFraction": 0.5423,
+  "slabRemoved": false,
+  "repairNote": null,
+  "outputContacts": [
+    [
+      203.0,
+      737.0
+    ],
+    [
+      449.0,
+      793.0
+    ],
+    [
+      696.0,
+      737.0
+    ]
+  ],
+  "contactHits": [
+    {
+      "inside": true,
+      "alpha": 0
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    }
+  ],
+  "entranceHit": {
+    "inside": true,
+    "alpha": 255
+  },
+  "outOfFrame": [],
+  "namedGreenConcern": false,
+  "runtimeBinding": {
+    "id": "workshop-industrial",
+    "age": "industrial",
+    "kind": "workshop",
+    "actualRuntimePath": "assets/delivery/stone-starter-20261003/derivatives/v2/live/buildings/workshop-industrial.png",
+    "actualRuntimeSha256": "7b897185b73a32f80150823a256246da4d1fbb457337c78c49cb3a33f508373d",
+    "actualRuntimeDimensions": [
+      1004,
+      852
+    ],
+    "magentaCandidateVisiblePixels": 1481,
+    "residualOutput": {
+      "path": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/workshop-industrial.png",
+      "sha256": "4b98fa009be202f9cfb6d33538e1fa7f82f9e0131d86cfe3a6c144fe3c9bac36",
+      "dimensions": {
+        "width": 985,
+        "height": 834
+      }
+    },
+    "sameAsResidual": false,
+    "note": "Color candidates diagnostic; runtime screenshots confirm obvious TownHall magenta patches in Iron/Medieval/Modern."
+  }
+}

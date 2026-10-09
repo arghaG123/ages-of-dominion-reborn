@@ -37,7 +37,8 @@ test('army plates follow creature and age, and reject the steam-walker rifleman'
   assert.ok(creaturePlate('harpy'));
   assert.ok(troopPlate(2, 'melee'), '1K iron melee legionary stays available');
   assert.equal(plates.troops['5-heavy'].file, 'assets/derivatives/substitutions/v3/troop-industrial-heavy.png');
-  assert.equal(troopPlate(5, 'heavy').file, 'assets/derivatives/substitutions/v3/troop-industrial-heavy.png');
+  assert.equal(troopPlate(5, 'heavy').file, 'assets/runtime-code-20261007/troops/troop-industrial-heavy.png');
+  assert.equal(troopPlate(5, 'heavy').file.includes('rifleman'), false);
   assert.equal(plates.rejected['troop-industrial-heavy'].includes('rifleman'), true);
 });
 

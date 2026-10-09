@@ -360,7 +360,7 @@
     },
     "tokenStandardCostUSD": 42.383,
     "overheadAndStorageBufferUSD": 5.247,
-    "reconciledBatches01To17TotalUSD": 40.240,
+    "reconciledBatches01To17TotalUSD": 40.24,
     "historicalMockReservationUSD": 2.0,
     "safetyReserveUSD": 15.0,
     "reconciledInteractive4KRun01CostUSD": 1.8293,
@@ -379,11 +379,181 @@
     "reconciledInteractive2KLater73JournalCostUSD": 7.5644,
     "reconciledInteractive2KLater73AmbiguousLiabilitiesUSD": 0.2872,
     "reconciledInteractive2KLater73TotalExposureUSD": 7.8516,
-    "totalCommittedProtectedUSD": 70.7012,
+    "totalCommittedProtectedUSD": 71.1156,
     "hardCapUSD": 80.0,
-    "marginUnderHardCapUSD": 9.2988,
+    "marginUnderHardCapUSD": 8.8844,
     "targetUSD": 60.0,
     "marginUnderTargetUSD": -10.7012,
-    "invoiceStatus": "BILLED_TOTAL_REMAINS_UNKNOWN_HOLDS_RECONCILED"
+    "invoiceStatus": "BILLED_TOTAL_REMAINS_UNKNOWN_HOLDS_RECONCILED",
+    "reconciledInteractiveRegen4CostUSD": 0.4144
+  },
+  "vertexRepair20261009": {
+    "previousCommittedProtectedUSD": 71.1156,
+    "note": "Added by the 9 October environment coordinator. reconciliationTrail was not rewritten.",
+    "attempts": [
+      {
+        "attemptId": "env-kingdom-terrain-stone-v1-a1",
+        "scene": "kingdom-terrain-stone",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:18:00.785178+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-bronze-v1-a1",
+        "scene": "kingdom-terrain-bronze",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:19:13.597819+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-iron-v1-a1",
+        "scene": "kingdom-terrain-iron",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:20:16.410776+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-medieval-v1-a1",
+        "scene": "kingdom-terrain-medieval",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:21:18.143677+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-gunpowder-v1-a1",
+        "scene": "kingdom-terrain-gunpowder",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:22:17.191123+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-industrial-v1-a1",
+        "scene": "kingdom-terrain-industrial",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:23:20.775204+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-modern-v1-a1",
+        "scene": "kingdom-terrain-modern",
+        "reservedUSD": 0.493,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:24:22.483976+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-future-v1-a1",
+        "scene": "kingdom-terrain-future",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:25:38.337802+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-stone-v2-a1",
+        "scene": "kingdom-terrain-stone",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:29:12.933740+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-bronze-v2-a1",
+        "scene": "kingdom-terrain-bronze",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:30:17.558189+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-iron-v2-a1",
+        "scene": "kingdom-terrain-iron",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:31:22.098209+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-medieval-v2-a1",
+        "scene": "kingdom-terrain-medieval",
+        "reservedUSD": 0.4931,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:33:11+00:00",
+        "note": "Definite 429, then one same-body resume. Collected native 5504x3072. Reservation was not duplicated. Geometry review is FAIL.",
+        "updatedAt": "2026-10-09T07:52:30.890685+00:00"
+      },
+      {
+        "attemptId": "actors-class-knight-standing-body-v1-a1",
+        "scene": "class-knight-standing-body",
+        "ownerQueue": "ACTORS",
+        "reservedUSD": 0.4,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:46:00.868705+00:00"
+      },
+      {
+        "attemptId": "actors-class-ranger-standing-body-v1-a1",
+        "scene": "class-ranger-standing-body",
+        "ownerQueue": "ACTORS",
+        "reservedUSD": 0.4,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:46:45.837594+00:00"
+      },
+      {
+        "attemptId": "actors-class-warlock-standing-body-v1-a1",
+        "scene": "class-warlock-standing-body",
+        "ownerQueue": "ACTORS",
+        "reservedUSD": 0.4,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:47:32.819551+00:00"
+      },
+      {
+        "attemptId": "actors-class-mage-standing-body-v1-a1",
+        "scene": "class-mage-standing-body",
+        "ownerQueue": "ACTORS",
+        "reservedUSD": 0.4,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:48:10.172299+00:00"
+      },
+      {
+        "attemptId": "actors-class-paladin-standing-body-v1-a1",
+        "scene": "class-paladin-standing-body",
+        "ownerQueue": "ACTORS",
+        "reservedUSD": 0.4,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:48:48.562369+00:00"
+      },
+      {
+        "attemptId": "actors-class-barbarian-standing-body-v1-a1",
+        "scene": "class-barbarian-standing-body",
+        "ownerQueue": "ACTORS",
+        "reservedUSD": 0.4,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:49:59.169720+00:00"
+      },
+      {
+        "attemptId": "actors-class-necromancer-standing-body-v1-a1",
+        "scene": "class-necromancer-standing-body",
+        "ownerQueue": "ACTORS",
+        "reservedUSD": 0.4,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-09T07:50:58.678106+00:00"
+      }
+    ],
+    "addedRetainedUSD": 8.7171,
+    "currentCommittedProtectedUSD": 79.8327
   }
 }

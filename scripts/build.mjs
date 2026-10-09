@@ -15,6 +15,9 @@ const plateCatalog = JSON.parse(await fs.readFile(path.join(root, 'src/data/plat
 const ageBuildings = JSON.parse(await fs.readFile(path.join(root, 'src/data/age-buildings.json'), 'utf8'));
 const portraitCards = JSON.parse(await fs.readFile(path.join(root, 'src/data/portrait-cards.json'), 'utf8'));
 const modeScenes = JSON.parse(await fs.readFile(path.join(root, 'src/data/mode-scenes.json'), 'utf8'));
+const plateOverrides = JSON.parse(await fs.readFile(path.join(root, 'src/data/plate-overrides-20261007.json'), 'utf8'));
+const gearIcons = JSON.parse(await fs.readFile(path.join(root, 'src/data/gear-icons-20261007.json'), 'utf8'));
+const consumerCatalog = JSON.parse(await fs.readFile(path.join(root, 'src/data/consumer-catalog-20261007.json'), 'utf8').catch(() => '{"assets":[]}'));
 const files = new Set();
 const visit = (value) => {
   if (!value || typeof value !== 'object') return;
@@ -29,6 +32,11 @@ visit(actorAtlas);
 visit(plateCatalog);
 visit(ageBuildings);
 visit(portraitCards);
+visit(plateOverrides);
+visit(gearIcons);
+for (const asset of consumerCatalog.assets || []) {
+  if (asset.gates?.runtime === 'PASS' && typeof asset.outputPath === 'string') files.add(asset.outputPath);
+}
 for (const mode of ['adventure', 'tactical', 'defense']) {
   for (const file of modeScenes[mode] || []) files.add(file);
 }

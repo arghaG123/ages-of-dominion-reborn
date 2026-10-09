@@ -1,0 +1,53 @@
+{
+  "id": "receipt-env-kingdom-terrain-medieval-v1-a1",
+  "canonicalId": "kingdom-terrain-medieval",
+  "owner": "ENVIRONMENT",
+  "attemptId": "env-kingdom-terrain-medieval-v1-a1",
+  "requestPackSHA256": "e9d5eeaace678e987c19aa4b0d8231133e8b14661643156d0caf42e78e9a8445",
+  "wireBodySHA256": "69f2a0bc91134fb963d0b34ebbf885dec6ef96fff2e2af5a3df84964066f7a68",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "4K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-medieval-v1-a1/response.json",
+  "rawResponseSHA256": "3c14d9a9a989968a3f710fe883b140ced4afac90be353ae683dc6aeaa2fefa18",
+  "images": [
+    {
+      "path": "assets/derivatives/image-vertex-repair-20261009/environment/native/kingdom-terrain-medieval-candidate-a.png",
+      "sha256": "5237aa4b6a0b4d1db2011da06f668ec3d303ccb613565d027278d916036d00b5",
+      "bytes": 25662483,
+      "dimensions": {
+        "width": 5504,
+        "height": 3072
+      }
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 2428,
+    "candidatesTokenCount": 2520,
+    "totalTokenCount": 4948,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2240
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 188
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2520
+      }
+    ]
+  },
+  "reservedUSD": 0.4931,
+  "actualOrRetainedExposureUSD": 0.4931,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "Review candidate pixels before any correction call."
+}

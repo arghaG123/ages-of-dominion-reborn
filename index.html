@@ -20,6 +20,7 @@
     <button id="save" type="button">Save</button>
   </header>
   <section id="stage">
+    <div id="stage-field">
     <div id="frame">
       <img id="terrain" alt="">
       <svg id="world" viewBox="0 0 1376 768" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Campaign scene"></svg>
@@ -34,6 +35,12 @@
       <div id="gate-actions" aria-label="Campaign gate"></div>
     </div>
     <div id="dock" aria-label="Primary actions"></div>
+    <aside id="panel">
+      <h2 id="selected">Kingdom</h2>
+      <div id="choices"></div>
+      <p id="message" role="alert"></p>
+    </aside>
+    </div>
     <div id="retreat" role="dialog" aria-modal="true" aria-labelledby="retreat-title" hidden>
       <h2 id="retreat-title">Retreat</h2>
       <p id="retreat-body"></p>
@@ -42,11 +49,6 @@
         <button type="button" id="retreat-confirm" data-choice="retreat-confirm">Confirm retreat</button>
       </div>
     </div>
-    <aside id="panel">
-      <h2 id="selected">Kingdom</h2>
-      <div id="choices"></div>
-      <p id="message" role="alert"></p>
-    </aside>
   </section>
   <footer>
     <nav id="nav" aria-label="Screens"></nav>

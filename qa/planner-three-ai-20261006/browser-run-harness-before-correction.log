@@ -1,0 +1,48 @@
+{
+  "errors": [
+    "retreat-modal-background-inert {\"panelFocus\":{\"choice\":\"move:0,3\",\"inside\":false},\"panelActionsBefore\":8,\"panelActionsAfter\":9}",
+    "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#retreat-cancel')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" id=\"retreat-cancel\" data-choice=\"retreat-cancel\">Cancel</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\dev\\ages-of-dominion-reborn\\qa\\planner-three-ai-20261006\\browser-recheck.mjs:165:41"
+  ],
+  "checks": [
+    {
+      "id": "kingdom-player-text",
+      "pass": true
+    },
+    {
+      "id": "tactical-label-screen-space",
+      "pass": true
+    },
+    {
+      "id": "held-pointer-across-redraw",
+      "pass": true
+    },
+    {
+      "id": "map-handlers-not-bound-to-replaced-nodes",
+      "pass": true
+    },
+    {
+      "id": "map-one-move-after-frames",
+      "pass": true
+    },
+    {
+      "id": "map-ignores-closed-cell",
+      "pass": true
+    },
+    {
+      "id": "keyboard-move",
+      "pass": true
+    },
+    {
+      "id": "retreat-open-spends-nothing",
+      "pass": true
+    },
+    {
+      "id": "retreat-escape-no-spend",
+      "pass": true
+    },
+    {
+      "id": "retreat-modal-background-inert",
+      "pass": false
+    }
+  ]
+}

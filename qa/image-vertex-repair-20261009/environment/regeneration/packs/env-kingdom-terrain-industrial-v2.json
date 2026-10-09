@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "env-kingdom-terrain-industrial-v2",
+  "owner": "ENVIRONMENT",
+  "canonicalId": "kingdom-terrain-industrial",
+  "version": "v2",
+  "state": "READY",
+  "defect": "Candidate A redrew the guide and did not keep frozen pad positions. Conflict count remains 8",
+  "reason": "One directed correction. The wireframe must not be copied, and reserved rectangles stay empty natural ground.",
+  "priorSourceHashes": [
+    "b8d44f3d7be8161b49e48a4853af399d87c52457c76ce202cc7cc1d4a31274c1"
+  ],
+  "referenceRefs": [
+    {
+      "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/08-kingdom-industrial.jpg",
+      "sha256": "845714405780e04ff9fb887296dbcfd7a30ce3a9d402be3c15c53369426e8f3e",
+      "bytes": 390620
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/environment/geography/guides/kingdom-terrain-industrial-legal-guide-v2.png",
+    "sha256": "6f6c7697b1956fcba6444b0bcd260e0a6a0a95b8a9b15d37c1ff4507fe8404a5",
+    "bytes": 12739,
+    "dimensions": {
+      "width": 1376,
+      "height": 768
+    }
+  },
+  "landmarks": {
+    "pads": [
+      "townhall",
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17"
+    ],
+    "roads": [
+      "west-entry",
+      "rail-spur-boulevard",
+      "iron-truss-bridge-approach",
+      "canal-side-arc"
+    ]
+  },
+  "legalGeometrySHA256": "20e2a45d89b04bd3d4a6b3bace904784415dc88d2a82dfe4ef4c8fae1156ff24",
+  "requestedResolution": "4K",
+  "aspectRatio": "16:9",
+  "expectedNativeDimensions": null,
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/environment/regeneration/prompts/kingdom-terrain-industrial-v2.txt",
+  "promptSHA256": "363a61b8ff602ed5e6037bf2767137b5ded18d443ab6c3ffff8f2cc8b750c50a",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/environment/regeneration/wire/kingdom-terrain-industrial-v2.json",
+  "wireBodySHA256": "8758dbcf85b7799d65380bb14605bcfc1df8162435ba748bfa224bf5650b0838",
+  "inputTransforms": [
+    {
+      "from": [
+        1376,
+        768
+      ],
+      "to": [
+        1024,
+        572
+      ],
+      "scale": 0.744186,
+      "method": "LANCZOS request-reference copy. The generated output is not this resize."
+    }
+  ],
+  "semanticCriteria": [
+    "Age materials match the prompt and the approved landscape direction.",
+    "No text, HUD, people, or device frame.",
+    "Reserved rectangles stay empty ground."
+  ],
+  "geometryCriteria": [
+    "Output is native 4K 16:9, decoded from the response, not upscaled afterward.",
+    "Guide rectangles remain the empty-pad targets. Frozen affine and Hall scale are not edited.",
+    "Road paint must clear pad quads by more than 8 legal px plus trace uncertainty after the same measurement."
+  ],
+  "maskApplicability": "No inpainting mask is sent. The guide image is a labeled spatial input. The API mask field is not used.",
+  "maxCandidateCalls": 2,
+  "estimatedUpperBoundUSD": 0.4931,
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/environment/geography/kingdom-terrain-industrial-clearance.json"
+  ],
+  "blockedBy": [],
+  "priority": 1,
+  "priorAttempt": "env-kingdom-terrain-industrial-v1-a1"
+}

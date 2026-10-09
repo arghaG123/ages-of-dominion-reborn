@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "attacker-bronze-runner",
+  "owner": "ACTORS",
+  "canonicalId": "attacker-bronze-runner",
+  "version": "2026-10-09.1",
+  "state": "READY",
+  "defect": "A single Bronze Age runner with a round shield and short blade, running pose, full body. No castle, no road, no HUD, no buttons, no text.",
+  "reason": "Existing source has no compatible full subject, or a bounded local matte split or left the required subject unusable.",
+  "priorSourceHashes": [],
+  "referenceRefs": [
+    {
+      "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-bronze-runner/guide.png",
+      "sha256": "a0b94152ab0d83d572ba902ad592cbab51256efae6ffb4e7600a86c93178ce67",
+      "bytes": 14107,
+      "dimensions": {
+        "width": 768,
+        "height": 1024
+      }
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-bronze-runner/guide.png",
+    "sha256": "a0b94152ab0d83d572ba902ad592cbab51256efae6ffb4e7600a86c93178ce67",
+    "bytes": 14107,
+    "dimensions": {
+      "width": 768,
+      "height": 1024
+    }
+  },
+  "landmarks": {
+    "view": "front",
+    "normalized": {
+      "head": [
+        0.5,
+        0.18
+      ],
+      "shoulders": [
+        0.5,
+        0.27
+      ],
+      "hips": [
+        0.5,
+        0.51
+      ],
+      "footL": [
+        0.38,
+        0.88
+      ],
+      "footR": [
+        0.62,
+        0.88
+      ]
+    },
+    "note": "Normalized to the guide image. Not measured on a real body."
+  },
+  "legalGeometrySHA256": null,
+  "requestedResolution": "2K",
+  "aspectRatio": "1:1",
+  "expectedNativeDimensions": {
+    "width": 2048,
+    "height": 2048
+  },
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-bronze-runner/prompt.txt",
+  "promptSHA256": "e5d7b873f07131fb8e052487d20b7a3fa1aeb3cc325aa169cc69abeed6ae7087",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-bronze-runner/wire_body.json",
+  "wireBodySHA256": "4abcd6db599ee2456bba482114af3468b56d7ed1ceb3aa22c43f4282f4ca9c86",
+  "inputTransforms": [
+    {
+      "order": [
+        "prompt text",
+        "guide.png"
+      ],
+      "note": "Coordinator attaches guide.png as an image part. Do not invent a mask API field. candidateCount stays 1."
+    }
+  ],
+  "semanticCriteria": [
+    "A single Bronze Age runner with a round shield and short blade, running pose, full body. No castle, no road, no HUD, no buttons, no text.",
+    "one subject",
+    "no text",
+    "no checker",
+    "no HUD"
+  ],
+  "geometryCriteria": [
+    {
+      "fullSubjectInsideFrame": true,
+      "nativeDecoded": "2048x2048",
+      "noUpscaleClaim": true
+    }
+  ],
+  "maxCandidateCalls": 1,
+  "estimatedUpperBoundUSD": 0.4,
+  "upperBoundBasis": "Reservation ceiling for one 2K attempt covering about 0.101 output plus inputs, text, reasoning, and one unexpected extra image. Not an invoice.",
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-bronze-runner/guide.png",
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/attacker-bronze-runner/prompt.txt"
+  ],
+  "blockedBy": [],
+  "priority": 10,
+  "maskApplicability": "No source mask: the request asks for a new complete subject, not an inpaint of a defective plate."
+}

@@ -1,0 +1,52 @@
+{
+  "id": "troop-stone-ranged",
+  "method": "neutral-light checker border flood, then one correction removing enclosed chroma<=8 value>=210 components of area>=400",
+  "forbidden": "floating-range flood fill tolerance 25",
+  "baseline": {
+    "path": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged-baseline.png",
+    "sha256": "aec9bebff1bf526370c5226119be446257fee42a94113e9bc41abf98e00a5fdb",
+    "bytes": 3525594,
+    "dimensions": {
+      "width": 1093,
+      "height": 1930
+    }
+  },
+  "baselineRoi": [
+    363,
+    79,
+    1456,
+    2009
+  ],
+  "correction": {
+    "path": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+    "sha256": "53233e6284322f73650529bcfe08f8141e37897cca0a57b0b3454a547dd97ba3",
+    "bytes": 3528333,
+    "dimensions": {
+      "width": 1093,
+      "height": 1930
+    }
+  },
+  "sourceRoi": [
+    363,
+    79,
+    1456,
+    2009
+  ],
+  "stats": {
+    "opaque": 0.4438,
+    "border": 0.0142,
+    "bbox": [
+      0,
+      0,
+      1093,
+      1930
+    ],
+    "cropFill": 0.4438,
+    "components": 71,
+    "bigComponents": 1,
+    "wh": [
+      1093,
+      1930
+    ]
+  }
+}
