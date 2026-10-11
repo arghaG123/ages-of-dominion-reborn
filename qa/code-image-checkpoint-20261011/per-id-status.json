@@ -1,0 +1,100 @@
+{
+  "status": "INCOMPLETE",
+  "rows": [
+    {
+      "id": "git-revision",
+      "status": "PASS",
+      "evidence": "HEAD a0b8f48b52a10944611fae672264b56494c0ffc0 on main. Audit document publication 5bd4545f0a0bd4228a7a4500bc60527a24390c26. Recorded transfer base 73fdfc3ad4568a2f668dbbcc0aa65acf567f8b07. Origin is https://github.com/arghaG123/ages-of-dominion-reborn.git."
+    },
+    {
+      "id": "asset-hashes",
+      "status": "PASS",
+      "evidence": "All 3647 assets.zip manifest files are present and match sha256 and size. 0 mismatches. assets.zip, qa-and-lineage.zip and final-audit-captures.zip are absent, so the zip-copy step stays UNVERIFIED. 2019 qa-and-lineage entries and 4 capture entries are missing."
+    },
+    {
+      "id": "historical-raw-backups",
+      "status": "BLOCKED",
+      "evidence": "The transfer still records 124 retired raw responses as external. Those bytes were not restored in this session."
+    },
+    {
+      "id": "kingdom-guide-v4",
+      "status": "PASS",
+      "evidence": "qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v4-guide.png sha256 609d3195018ccf448f339f79e45fe90b9e5adfb2859674e40383144d2106f848."
+    },
+    {
+      "id": "kingdom-guide-v5",
+      "status": "PASS",
+      "evidence": "qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v5-guide.png sha256 673492a6a1c6780eb77d9b0b24f7eefe30a98dc119c7fbee9e3edef088b8c1ff."
+    },
+    {
+      "id": "node-tests",
+      "status": "PASS",
+      "evidence": "node --test tests/*.test.mjs: 108 pass, 0 fail. Assertions were not weakened. Node v24.19.0."
+    },
+    {
+      "id": "retreat-navigation",
+      "status": "PASS",
+      "evidence": "Headless Chrome at 825x375. With the Retreat dialog open, HTMLElement.click on nav:kingdom left the view on tactical, kept the dialog open, and did not add a battle action. Cancel hid the dialog and stayed on tactical. qa/code-image-checkpoint-20261011/browser-retreat-army.json."
+    },
+    {
+      "id": "army-phone-composition",
+      "status": "PASS",
+      "evidence": "Army uses a screen-space board. Captions are 14 CSS px and plates stay inside the stage at 825x375, 933x424, 1180x820 and 1280x720, without board scroll. This check is Stone review plates, not eight earned ages."
+    },
+    {
+      "id": "scene-source-binding",
+      "status": "PASS",
+      "evidence": "24 Adventure, Tactical and Defense rows now cite the existing files in src/data/mode-scenes.json. All 32 scene binding gates are PASS. The 9 October interface bytes were left in place."
+    },
+    {
+      "id": "scene-geometry",
+      "status": "FAIL",
+      "evidence": "All 32 scene spatial gates remain FAIL. Frozen kingdom affine and Hall scale were not changed. No painted-road trace or registered prototype was promoted."
+    },
+    {
+      "id": "image-hash-reconciliation",
+      "status": "PARTIAL",
+      "evidence": "55 output hashes in the new revision were refreshed from current bytes. 8 native receipt paths are missing. Protected troop and Healer boot hashes PASS. Standing bodies were not promoted to rigs."
+    },
+    {
+      "id": "matte-rig-atlas",
+      "status": "FAIL",
+      "evidence": "Wolf, brute, drone timing, class gaits and atlas frames remain unfinished. No new pixels were painted and no duration was invented."
+    },
+    {
+      "id": "verified-art-integration",
+      "status": "UNVERIFIED",
+      "evidence": "No new Image row was bound into the runtime. Existing protected crops stay in place. Scene and rig gates do not meet READY."
+    },
+    {
+      "id": "forge-and-equipment",
+      "status": "PARTIAL",
+      "evidence": "tests/systems.test.mjs forges one weapon after adding resources in the test, equips it, and unequips it. Six earned slots through the Forge screen were not replayed."
+    },
+    {
+      "id": "prepared-siege-victory",
+      "status": "PARTIAL",
+      "evidence": "tests/defense-causal-20261004.test.mjs builds a workshop, buys a splash tower through End Day, and resolves a siege with winner p. Browser settlement and reload of that win were not replayed."
+    },
+    {
+      "id": "five-war-flows",
+      "status": "PARTIAL",
+      "evidence": "tests/war-defense.test.mjs starts Skirmish, Challenge, Duel, Siege and Endless and checks practice isolation for Skirmish and Challenge. Full earned round-trips through save and reload were not replayed in the browser."
+    },
+    {
+      "id": "eight-age-progression",
+      "status": "UNVERIFIED",
+      "evidence": "Age-up coverage reaches Bronze by assigning Hall level and resources in a test. Earned progression through all eight ages was not played."
+    },
+    {
+      "id": "screen-reference-comparison",
+      "status": "UNVERIFIED",
+      "evidence": "The 30 primary landscape mocks were not compared screen by screen in this session."
+    },
+    {
+      "id": "package-and-device",
+      "status": "BLOCKED",
+      "evidence": "dist and the preview APK were not rebuilt. Device QA remains STOPPED. Owner acceptance remains UNVERIFIED."
+    }
+  ]
+}

@@ -15,7 +15,7 @@ import { drawBoundActor } from './anatomy.js';
 import { pendingPortrait, portraitCard } from './portraits.js';
 import { heroFocus, heroStage, KINGDOM_PAD_PRESENTATION, wallPresentation } from './presentation.js';
 import { armedChoice, parseChallenge } from './choices.js';
-import { acceptMapActivation, defaultIntent, intentSentence, keepIntent, modeRows, moveLabel, retreatFocusTarget, retreatNotice, spellLabel, stackCaption, strikeLabel } from './tactical-ui.js';
+import { acceptMapActivation, defaultIntent, intentSentence, keepIntent, modeRows, moveLabel, retreatBlocksBackground, retreatFocusTarget, retreatNotice, spellLabel, stackCaption, strikeLabel, viewDuringRetreat } from './tactical-ui.js';
 import { visibleBox } from './visible-size.js';
 import { createFrameClock, travelProgress, travelSample } from './motion.js';
 import { applySettings, arm, blip, nextSuspended, suspendAudio, resumeAudio } from './audio.js';
@@ -186,6 +186,13 @@ function button(label, onClick, disabled = false, choiceId = '', dock = false) {
     if (choiceId) node.dataset.choice = choiceId;
     node.addEventListener('pointerdown', () => { armed = { id: choiceId, fn: onClick }; });
     node.addEventListener('click', event => {
+      const inDialog = Boolean(event.currentTarget.closest('#retreat'));
+      if (retreatBlocksBackground({ retreatArmed, inDialog })) {
+        event.preventDefault();
+        event.stopPropagation();
+        armed = null;
+        return;
+      }
       const released = event.currentTarget.dataset.choice || '';
       if (armed?.id && released && armed.id !== released) {
         event.preventDefault();
@@ -817,45 +824,66 @@ function hero() {
   say(`Attack ${stats.atk}, Defense ${stats.def}, Power ${stats.pow}, Knowledge ${stats.kno}. Mana ${state.hero.mana}/${manaMax(state, data)}. Daily moves ${dailyMoves(state, data)}. Points ${state.hero.points}. ${equipped}. ${blocked.skills}`);
 }
 
+function armyCard(src, caption, capCss, attrs) {
+  const card = document.createElement('div');
+  card.className = 'board-card';
+  if (src) {
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = '';
+    img.dataset.plate = src;
+    const cap = Number.isFinite(capCss) && capCss > 0 ? capCss : 130;
+    img.style.maxHeight = `min(calc(100% - 2.75em), ${cap}px)`;
+    card.append(img);
+  }
+  const span = document.createElement('span');
+  span.textContent = caption;
+  for (const [key, value] of Object.entries(attrs)) span.setAttribute(key, value);
+  card.append(span);
+  return card;
+}
+function plateCap(plate, fallback) {
+  if (Number.isFinite(plate?.maxVisibleCssPx) && plate.maxVisibleCssPx > 0) return plate.maxVisibleCssPx;
+  if (Number.isFinite(plate?.staticMaxHeight) && plate.staticMaxHeight > 0) return plate.staticMaxHeight;
+  return fallback;
+}
 function paintArmy() {
   const world = $('world');
-  world.append(element('rect', { width: 1376, height: 768, fill: '#1a1814' }));
-  world.append(element('rect', { x: 48, y: 36, width: 1280, height: 680, rx: 16, fill: '#243036', stroke: '#c9a35b', 'stroke-width': 3, 'data-roster': '1' }));
+  world.setAttribute('data-roster', '1');
+  world.setAttribute('data-army-layout', 'screen');
+  const board = $('board');
+  if (!board) return;
+  board.replaceChildren();
+  board.dataset.armyLayout = 'screen';
   const reviewAge = plateReviewAge == null ? state.age : plateReviewAge;
-  let reviewX = 180;
+  const review = document.createElement('div');
+  review.className = 'board-row';
+  review.dataset.armyRow = 'review';
   for (const role of ['melee', 'ranged', 'heavy']) {
     const plate = troopPlate(reviewAge, role);
-    if (!drawPlate(world, element, plate, reviewX, 210, 130, { time: 0, clip: 'idle', reduced: true })) {
-      const missing = element('text', { x: reviewX, y: 160, 'text-anchor': 'middle', fill: '#f1e9d9', 'font-size': 16 });
-      missing.textContent = role;
-      world.append(missing);
-    }
-    const caption = element('text', { x: reviewX, y: 236, 'text-anchor': 'middle', fill: '#f1dba5', 'font-size': 16, 'data-plate-review': `${reviewAge}-${role}` });
-    caption.textContent = `${data.AGES[reviewAge].n} ${data.ROLES[role].names[reviewAge]}`;
-    world.append(caption);
-    reviewX += 220;
+    review.append(armyCard(plate?.file || '', `${data.AGES[reviewAge].n} ${data.ROLES[role].names[reviewAge]}`, plateCap(plate, 130), {
+      'data-plate-review': `${reviewAge}-${role}`,
+    }));
   }
   const agedMount = staticMountForAge(reviewAge);
   if (agedMount) {
-    drawStaticMount(world, element, agedMount, 900, 200, { time: 0, reduced: true });
-    const mountCaption = element('text', { x: 900, y: 236, 'text-anchor': 'middle', fill: '#f1dba5', 'font-size': 16, 'data-mount-review': agedMount.id });
-    mountCaption.textContent = data.AGES[reviewAge].n + ' transport';
-    world.append(mountCaption);
+    review.append(armyCard(agedMount.file, `${data.AGES[reviewAge].n} transport`, 64, {
+      'data-mount-review': agedMount.id,
+    }));
   }
-  let x = 160;
+  const roster = document.createElement('div');
+  roster.className = 'board-row';
+  roster.dataset.armyRow = 'roster';
+  const columns = Math.max(1, state.army.length);
+  review.style.gridTemplateColumns = `repeat(${review.children.length}, minmax(0, 1fr))`;
+  roster.style.gridTemplateColumns = `repeat(${columns}, minmax(0, 1fr))`;
   for (const stack of state.army) {
     const plate = plateForStack(stack);
-    const fly = stack.kind === 'creature' && Boolean(data.CREATURES[stack.type]?.fly);
-    if (!drawPlate(world, element, plate, x, 520, 200, { time: 0, fly: false, clip: 'idle', reduced: true })) {
-      const text = element('text', { x, y: 360, 'text-anchor': 'middle', fill: '#f1e9d9', 'font-size': 18 });
-      text.textContent = stack.type;
-      world.append(text);
-    }
-    const caption = element('text', { x, y: 548, 'text-anchor': 'middle', fill: '#f1e9d9', 'font-size': 16 });
-    caption.textContent = stackTitle(stack, data);
-    world.append(caption);
-    x += 260;
+    roster.append(armyCard(plate?.file || '', stackTitle(stack, data), plateCap(plate, 130), {
+      'data-stack-caption': stack.id,
+    }));
   }
+  board.append(review, roster);
 }
 function army() {
   clearWorld();
@@ -1469,6 +1497,7 @@ function setPanel(open) {
   $('context').setAttribute('aria-expanded', String(open));
 }
 function render() {
+  if (state?.battle?.status === 'ACTIVE') view = viewDuringRetreat(view, { retreatArmed, battleActive: true });
   const panel = $('panel');
   const scroll = panel.scrollTop;
   const focusId = document.activeElement?.dataset?.choice || '';
@@ -1548,6 +1577,13 @@ function render() {
     const escaped = CSS.escape(focusTarget);
     (panel.querySelector(`[data-choice="${escaped}"]`) || $('dock').querySelector(`[data-choice="${escaped}"]`))?.focus();
   }
+  const board = $('board');
+  if (board) {
+    const showBoard = view === 'army' && Boolean(state);
+    board.hidden = !showBoard;
+    $('frame').hidden = showBoard;
+    if (!showBoard) board.replaceChildren();
+  }
   const resume = $('resume');
   if (resumeNote && view !== 'home') {
     resume.hidden = false;
@@ -1594,10 +1630,24 @@ function installLifecycle() {
     if (!armed && (view === 'kingdom' || view === 'adventure' || view === 'defense')) render();
   }, 250);
 }
-$('save').onclick = () => { if (state) persist(); };
-$('context').onclick = () => { setPanel(!$('panel').classList.contains('open')); render(); };
+$('save').onclick = () => {
+  if (retreatBlocksBackground({ retreatArmed, inDialog: false })) return;
+  if (state) persist();
+};
+$('context').onclick = () => {
+  if (retreatBlocksBackground({ retreatArmed, inDialog: false })) return;
+  setPanel(!$('panel').classList.contains('open'));
+  render();
+};
 document.addEventListener('pointerup', event => {
   if (!armed) return;
+  const inDialog = Boolean(event.target?.closest?.('#retreat'));
+  if (retreatBlocksBackground({ retreatArmed, inDialog })) {
+    const blocked = armed;
+    armed = null;
+    window.rebornChoice = { armed: blocked.id, released: '', applied: false, blocked: 'retreat' };
+    return;
+  }
   const released = event.target?.closest?.('button')?.dataset?.choice || '';
   const chosen = armed;
   armed = null;

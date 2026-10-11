@@ -65,6 +65,17 @@ export function retreatFocusTarget({ open, restoreTrigger, activeChoice, trigger
   return '';
 }
 
+// Inert markup does not stop HTMLElement.click(). Background dispatch stays closed while Retreat is armed.
+export function retreatBlocksBackground({ retreatArmed, inDialog = false }) {
+  return Boolean(retreatArmed) && !inDialog;
+}
+
+// A redraw may observe a requested screen. An open Retreat battle stays on Tactical until Cancel or Confirm.
+export function viewDuringRetreat(requested, { retreatArmed, battleActive }) {
+  if (retreatArmed && battleActive && requested !== 'tactical') return 'tactical';
+  return requested;
+}
+
 export function retreatNotice(practice) {
   const campaign = practice === 'campaign';
   return {

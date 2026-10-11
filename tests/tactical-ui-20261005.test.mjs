@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { acceptMapActivation, defaultIntent, keepIntent, modeRows, moveLabel, retreatNotice, stackCaption, strikeLabel, spellLabel } from '../src/client/tactical-ui.js';
+import { acceptMapActivation, defaultIntent, keepIntent, modeRows, moveLabel, retreatBlocksBackground, retreatNotice, stackCaption, strikeLabel, spellLabel, viewDuringRetreat } from '../src/client/tactical-ui.js';
 
 const legal = { moves: [[2, 9], [1, 8]], melee: ['e1'], ranged: [], };
 
@@ -39,6 +39,16 @@ test('map activation accepts one still-legal release and drops a stale or illega
     intent: 'shoot',
     legal: { moves: [], melee: [], ranged: ['e1'] },
   }), { action: 'strike', targetId: 'e1' });
+});
+
+test('an open Retreat blocks background navigation and keeps the battle on Tactical', () => {
+  assert.equal(retreatBlocksBackground({ retreatArmed: true, inDialog: false }), true);
+  assert.equal(retreatBlocksBackground({ retreatArmed: true, inDialog: true }), false);
+  assert.equal(retreatBlocksBackground({ retreatArmed: false, inDialog: false }), false);
+  assert.equal(viewDuringRetreat('kingdom', { retreatArmed: true, battleActive: true }), 'tactical');
+  assert.equal(viewDuringRetreat('tactical', { retreatArmed: true, battleActive: true }), 'tactical');
+  assert.equal(viewDuringRetreat('kingdom', { retreatArmed: false, battleActive: true }), 'kingdom');
+  assert.equal(viewDuringRetreat('kingdom', { retreatArmed: true, battleActive: false }), 'kingdom');
 });
 
 test('retreat notice names the consequences and keeps cancel free of a resolution', () => {
