@@ -1,0 +1,192 @@
+[
+  {
+    "id": "creature-wolf",
+    "removed": 2090,
+    "output": {
+      "path": "assets/derivatives/image-unified-reserve-20261009/actors/creatures/creature-wolf.png",
+      "sha256": "dba1a3615f3f175ea39b12ffe66c27c9c99c631d5c99cf4ce092b932ec7c0f40",
+      "bytes": 1376048,
+      "dimensions": {
+        "width": 890,
+        "height": 873
+      }
+    }
+  },
+  {
+    "id": "creature-drone",
+    "removed": 13062,
+    "output": {
+      "path": "assets/derivatives/image-unified-reserve-20261009/actors/creatures/creature-drone.png",
+      "sha256": "c7a61d0a1bb2d40b8ab9e4711660f6df5966c0ff1beb902908522d06e6e856d6",
+      "bytes": 705743,
+      "dimensions": {
+        "width": 820,
+        "height": 686
+      }
+    },
+    "frames": [
+      {
+        "id": "creature-drone-frame-00",
+        "roi": [
+          110,
+          0,
+          575,
+          270
+        ],
+        "uv": [
+          0.13414634146341464,
+          0.0,
+          0.7012195121951219,
+          0.3935860058309038
+        ],
+        "pivot": [
+          342,
+          269
+        ],
+        "sourceToFrame": [
+          1,
+          0,
+          0,
+          1,
+          -110,
+          0
+        ],
+        "output": {
+          "path": "assets/derivatives/image-unified-reserve-20261009/actors/frames/creature-drone/00.png",
+          "sha256": "936f9b5474062467373180be6c2affe83a45130469720005a2d2767b75ee731b",
+          "bytes": 194304,
+          "dimensions": {
+            "width": 465,
+            "height": 270
+          }
+        },
+        "semantic": "separated-opaque-component",
+        "sequence": "creature-drone",
+        "durationMs": null,
+        "timing": "BLOCKED",
+        "reason": "Source sheet has no action-duration evidence. No gait or effect timing was invented."
+      },
+      {
+        "id": "creature-drone-frame-01",
+        "roi": [
+          0,
+          245,
+          388,
+          479
+        ],
+        "uv": [
+          0.0,
+          0.35714285714285715,
+          0.47317073170731705,
+          0.6982507288629738
+        ],
+        "pivot": [
+          194,
+          478
+        ],
+        "sourceToFrame": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          -245
+        ],
+        "output": {
+          "path": "assets/derivatives/image-unified-reserve-20261009/actors/frames/creature-drone/01.png",
+          "sha256": "9c33621ea3c7de35e5b7f7f095f8ff17f0e82572234b641f9920eb419a5571e4",
+          "bytes": 139680,
+          "dimensions": {
+            "width": 388,
+            "height": 234
+          }
+        },
+        "semantic": "separated-opaque-component",
+        "sequence": "creature-drone",
+        "durationMs": null,
+        "timing": "BLOCKED",
+        "reason": "Source sheet has no action-duration evidence. No gait or effect timing was invented."
+      },
+      {
+        "id": "creature-drone-frame-02",
+        "roi": [
+          400,
+          278,
+          817,
+          534
+        ],
+        "uv": [
+          0.4878048780487805,
+          0.40524781341107874,
+          0.9963414634146341,
+          0.7784256559766763
+        ],
+        "pivot": [
+          608,
+          533
+        ],
+        "sourceToFrame": [
+          1,
+          0,
+          0,
+          1,
+          -400,
+          -278
+        ],
+        "output": {
+          "path": "assets/derivatives/image-unified-reserve-20261009/actors/frames/creature-drone/02.png",
+          "sha256": "0d5c0ff886d586cd004ce8f38143d3eef7fd2112eadbd9c9a0915cc74f5d558c",
+          "bytes": 161259,
+          "dimensions": {
+            "width": 417,
+            "height": 256
+          }
+        },
+        "semantic": "separated-opaque-component",
+        "sequence": "creature-drone",
+        "durationMs": null,
+        "timing": "BLOCKED",
+        "reason": "Source sheet has no action-duration evidence. No gait or effect timing was invented."
+      }
+    ]
+  },
+  {
+    "id": "attacker-stone-brute",
+    "removed": 710,
+    "output": {
+      "path": "assets/derivatives/image-unified-reserve-20261009/actors/attackers/attacker-stone-brute.png",
+      "sha256": "c403682fa47a1d315f6c855dd888cd1a9cb443b715b2ed34b7a046e66115e3dc",
+      "bytes": 898453,
+      "dimensions": {
+        "width": 714,
+        "height": 807
+      }
+    }
+  },
+  {
+    "id": "workshop-iron",
+    "removed": 23946,
+    "output": {
+      "path": "assets/derivatives/image-unified-reserve-20261009/environment/buildings/workshop-iron.png",
+      "sha256": "aa0253483cf03bcf9a702713ae8df82f7d8ab9e609b4737d0d5263f7ea9cdb3c",
+      "bytes": 1541201,
+      "dimensions": {
+        "width": 1024,
+        "height": 974
+      }
+    }
+  },
+  {
+    "id": "hall-industrial",
+    "removed": 433,
+    "output": {
+      "path": "assets/derivatives/image-unified-reserve-20261009/environment/buildings/hall-industrial.png",
+      "sha256": "3e004e3b043c6bbc243921efe5349143b938c56f686b89c6f4b0eab2b2ec917f",
+      "bytes": 1155989,
+      "dimensions": {
+        "width": 927,
+        "height": 678
+      }
+    }
+  }
+]

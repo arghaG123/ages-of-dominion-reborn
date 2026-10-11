@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "class-necromancer-standing-body",
+  "owner": "ACTORS",
+  "canonicalId": "class-necromancer-standing-body",
+  "version": "2026-10-09.1",
+  "state": "READY",
+  "defect": "A single adult Necromancer in bone-trimmed robes, standing, both feet visible, full body inside the frame.",
+  "reason": "Existing source has no compatible full subject, or a bounded local matte split or left the required subject unusable.",
+  "priorSourceHashes": [],
+  "referenceRefs": [
+    {
+      "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-necromancer-standing-body/guide.png",
+      "sha256": "a527c3f8398bba095bcc0d359f8f1868e4bb997386e9137e42678dad118a932c",
+      "bytes": 14606,
+      "dimensions": {
+        "width": 768,
+        "height": 1024
+      }
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-necromancer-standing-body/guide.png",
+    "sha256": "a527c3f8398bba095bcc0d359f8f1868e4bb997386e9137e42678dad118a932c",
+    "bytes": 14606,
+    "dimensions": {
+      "width": 768,
+      "height": 1024
+    }
+  },
+  "landmarks": {
+    "view": "front",
+    "normalized": {
+      "head": [
+        0.5,
+        0.18
+      ],
+      "shoulders": [
+        0.5,
+        0.27
+      ],
+      "hips": [
+        0.5,
+        0.51
+      ],
+      "footL": [
+        0.38,
+        0.88
+      ],
+      "footR": [
+        0.62,
+        0.88
+      ]
+    },
+    "note": "Normalized to the guide image. Not measured on a real body."
+  },
+  "legalGeometrySHA256": null,
+  "requestedResolution": "2K",
+  "aspectRatio": "1:1",
+  "expectedNativeDimensions": {
+    "width": 2048,
+    "height": 2048
+  },
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-necromancer-standing-body/prompt.txt",
+  "promptSHA256": "b3f3d5559ab5756558c829caa9975f7e86e438df45772c652587ba1ce889557d",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-necromancer-standing-body/wire_body.json",
+  "wireBodySHA256": "3ee3124aba4aae8632eb9ffee0cf86a25524afd8c05f374f63d5c10936db3b8c",
+  "inputTransforms": [
+    {
+      "order": [
+        "prompt text",
+        "guide.png"
+      ],
+      "note": "Coordinator attaches guide.png as an image part. Do not invent a mask API field. candidateCount stays 1."
+    }
+  ],
+  "semanticCriteria": [
+    "A single adult Necromancer in bone-trimmed robes, standing, both feet visible, full body inside the frame.",
+    "one subject",
+    "no text",
+    "no checker",
+    "no HUD"
+  ],
+  "geometryCriteria": [
+    {
+      "fullSubjectInsideFrame": true,
+      "nativeDecoded": "2048x2048",
+      "noUpscaleClaim": true
+    }
+  ],
+  "maxCandidateCalls": 1,
+  "estimatedUpperBoundUSD": 0.4,
+  "upperBoundBasis": "Reservation ceiling for one 2K attempt covering about 0.101 output plus inputs, text, reasoning, and one unexpected extra image. Not an invoice.",
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-necromancer-standing-body/guide.png",
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-necromancer-standing-body/prompt.txt"
+  ],
+  "blockedBy": [],
+  "priority": 7,
+  "maskApplicability": "No source mask: the request asks for a new complete subject, not an inpaint of a defective plate."
+}

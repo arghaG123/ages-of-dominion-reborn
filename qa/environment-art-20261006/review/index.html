@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 1: Local Environment Art Delivery & Verification Dossier</title>
+<style>
+  :root {
+    --bg-dark: #0f1117;
+    --card-bg: #181b24;
+    --border-color: #2b3040;
+    --accent: #e5a93c;
+    --accent-blue: #3b82f6;
+    --accent-green: #10b981;
+    --accent-red: #ef4444;
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    padding: 24px;
+  }
+  header {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  .badge-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .badge-status { background: #dc2626; color: white; }
+  .badge-info { background: #1f2937; color: #93c5fd; border: 1px solid #374151; }
+  .badge-pass { background: #065f46; color: #6ee7b7; }
+  
+  nav.tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 24px;
+    overflow-x: auto;
+  }
+  nav.tabs button {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  nav.tabs button:hover { color: var(--text-main); }
+  nav.tabs button.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    background: rgba(229, 169, 60, 0.08);
+  }
+  
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  h2 { color: var(--accent); margin-bottom: 14px; font-size: 20px; }
+  h3 { color: var(--text-main); margin-bottom: 10px; font-size: 16px; }
+  p { color: var(--text-muted); margin-bottom: 12px; font-size: 14px; }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 13px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+  }
+  th { background: #13161f; color: var(--accent); }
+  
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 16px;
+  }
+  .grid-card {
+    background: #12141c;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: repeating-conic-gradient(#1f2430 0% 25%, #161a24 0% 50%) 50% / 16px 16px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .grid-card-info {
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .grid-card-info strong { font-size: 14px; color: var(--text-main); }
+  .grid-card-info span { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+  
+  .side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 16px;
+  }
+  .side-col {
+    background: #12141c;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+  }
+  .side-col img {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid #2b3040;
+  }
+  
+  @media (max-width: 900px) {
+    .side-by-side { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AI 1: Local Environment Art Delivery & Verification Dossier</h1>
+  <p>Owner Scope: Local Environment, Building, Tower, Site Geography, and UI-Material Delivery across all 8 Ages & 4 Game Modes.</p>
+  <div class="badge-container">
+    <span class="badge badge-status">Overall Status: INCOMPLETE (Awaiting Owner Review & AI 2/3 Integration)</span>
+    <span class="badge badge-pass">Chroma Extraction: 100% PASS (Zero Residual Magenta Bleed)</span>
+    <span class="badge badge-pass">Scene Geography: 32 / 32 Traced (Roads, Rivers, Bridges, Walkable)</span>
+    <span class="badge badge-pass">Derivative Rows: 145 Matted Items (80 Buildings, 32 Towers, 12 Sites, 21 UI)</span>
+    <span class="badge badge-info">Frozen Affine: [60, -10, 25, 35, 170, 165] (Unmutated / Proposed Record)</span>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="active" onclick="showTab('tab-overview')">1. Overview & Gates</button>
+  <button onclick="showTab('tab-sidebyside')">2. Reference vs Composite</button>
+  <button onclick="showTab('tab-geography')">3. 32-Scene Geography Overlays</button>
+  <button onclick="showTab('tab-buildings')">4. Building Catalog (80)</button>
+  <button onclick="showTab('tab-towers')">5. Tower Catalog (32)</button>
+  <button onclick="showTab('tab-sites-ui')">6. Sites & UI Materials (33)</button>
+  <button onclick="showTab('tab-viewports')">7. 4-Viewport Composites</button>
+</nav>
+
+<!-- TAB 1: OVERVIEW -->
+<div id="tab-overview" class="tab-content active">
+  <div class="card">
+    <h2>Delivery Status & Strict Audit Gates</h2>
+    <p>In accordance with prompt directives, overall status is explicitly declared <strong>INCOMPLETE</strong> because game runtime execution, physical device integration, and final visual owner acceptance remain pending external verification. All local environment art generation within AI 1 ownership is 100% complete.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Gate Name</th>
+          <th>Status</th>
+          <th>Verification Evidence & Methodology</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>binding</strong></td>
+          <td><span style="color:#10b981;font-weight:bold;">PASS</span></td>
+          <td>Every artifact row binds to an existing purchased raster SHA-256 and verified coordinate ROI.</td>
+        </tr>
+        <tr>
+          <td><strong>semantics</strong></td>
+          <td><span style="color:#10b981;font-weight:bold;">PASS</span></td>
+          <td>10 building classes across 8 ages (80 total) match architectural motifs; 4 tower families x 8 ages match roles.</td>
+        </tr>
+        <tr>
+          <td><strong>matte</strong></td>
+          <td><span style="color:#10b981;font-weight:bold;">PASS</span></td>
+          <td>Chroma keying with magenta de-spill completely eliminated guide lines, dashed perimeters, and background bleed. Zero residual magenta artifacts across all buildings and towers.</td>
+        </tr>
+        <tr>
+          <td><strong>spatial</strong></td>
+          <td><span style="color:#10b981;font-weight:bold;">PASS / PROPOSED</span></td>
+          <td>All 17 Kingdom pads, Adventure sites, and Defense tower pads checked against road corridors. Frozen affine geometry preserved; versioned proposal logged.</td>
+        </tr>
+        <tr>
+          <td><strong>articulation</strong></td>
+          <td><span style="color:#9ca3af;font-weight:bold;">NOT_APPLICABLE</span></td>
+          <td>Environment static assets (buildings, terrain, icons) have no skeletal joint articulation. Explicitly justified per row.</td>
+        </tr>
+        <tr>
+          <td><strong>runtime</strong></td>
+          <td><span style="color:#f59e0b;font-weight:bold;">UNVERIFIED</span></td>
+          <td>Awaiting runtime construction and game code binding by AI 3.</td>
+        </tr>
+        <tr>
+          <td><strong>owner</strong></td>
+          <td><span style="color:#f59e0b;font-weight:bold;">UNVERIFIED</span></td>
+          <td>Awaiting final owner visual inspection of side-by-side gallery.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TAB 2: REFERENCE VS COMPOSITE -->
+<div id="tab-sidebyside" class="tab-content">
+  <div class="card">
+    <h2>Side-by-Side: Owner-Approved Reference Mock vs Local Asset Composite</h2>
+    <p>Comparing the owner-approved landscape mock reference against the local ASSET_COMPOSITE generated from matted derivatives, clean ground seating, and frozen coordinate layout.</p>
+    
+    <div class="side-by-side">
+      <div class="side-col">
+        <h3>Approved Reference Mock (Stone Age)</h3>
+        <span class="badge badge-info">Source: design-preview/generated/.../01-kingdom-stone.jpg</span>
+        <img src="../../../design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/01-kingdom-stone.jpg" alt="Reference Mock">
+      </div>
+      <div class="side-col">
+        <h3>Produced Local ASSET_COMPOSITE (Stone Developed 1280x720)</h3>
+        <span class="badge badge-pass">playabilityUNVERIFIED: true | Zero Magenta Bleed</span>
+        <img src="../composites/kingdom-stone-developed-1280x720.png" alt="Local Composite">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 3: 32 SCENE GEOGRAPHY -->
+<div id="tab-geography" class="tab-content">
+  <div class="card">
+    <h2>All 32 Scene Geography Overlays</h2>
+    <p>Source-backed traced geography with tight uncertainty (&le; 14px legal, below corridor width). Legend: Gold=Roads, Cyan=Rivers, Orange=Bridge Decks, Green=Walkable, Red=Obstacles, Purple=Legal Site Pads.</p>
+    <div class="grid-gallery">
+
+      <div class="grid-card">
+        <img src="../geography/kingdom-terrain-stone-overlay.png" alt="kingdom-terrain-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-terrain-stone</strong>
+          <span>Mode: KINGDOM | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/kingdom-terrain-bronze-overlay.png" alt="kingdom-terrain-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-terrain-bronze</strong>
+          <span>Mode: KINGDOM | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/kingdom-terrain-iron-overlay.png" alt="kingdom-terrain-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-terrain-iron</strong>
+          <span>Mode: KINGDOM | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/kingdom-terrain-medieval-overlay.png" alt="kingdom-terrain-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-terrain-medieval</strong>
+          <span>Mode: KINGDOM | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/kingdom-terrain-gunpowder-overlay.png" alt="kingdom-terrain-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-terrain-gunpowder</strong>
+          <span>Mode: KINGDOM | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/kingdom-terrain-industrial-overlay.png" alt="kingdom-terrain-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-terrain-industrial</strong>
+          <span>Mode: KINGDOM | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/kingdom-terrain-modern-overlay.png" alt="kingdom-terrain-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-terrain-modern</strong>
+          <span>Mode: KINGDOM | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/kingdom-terrain-future-overlay.png" alt="kingdom-terrain-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-terrain-future</strong>
+          <span>Mode: KINGDOM | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/adventure-terrain-overlay.png" alt="adventure-terrain" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-terrain</strong>
+          <span>Mode: ADVENTURE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/adventure-terrain-plains-overlay.png" alt="adventure-terrain-plains" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-terrain-plains</strong>
+          <span>Mode: ADVENTURE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/adventure-terrain-hills-overlay.png" alt="adventure-terrain-hills" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-terrain-hills</strong>
+          <span>Mode: ADVENTURE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/adventure-terrain-swamp-overlay.png" alt="adventure-terrain-swamp" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-terrain-swamp</strong>
+          <span>Mode: ADVENTURE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/adventure-terrain-desert-overlay.png" alt="adventure-terrain-desert" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-terrain-desert</strong>
+          <span>Mode: ADVENTURE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/adventure-terrain-snow-overlay.png" alt="adventure-terrain-snow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-terrain-snow</strong>
+          <span>Mode: ADVENTURE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/adventure-terrain-waste-overlay.png" alt="adventure-terrain-waste" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-terrain-waste</strong>
+          <span>Mode: ADVENTURE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/adventure-terrain-ruins-overlay.png" alt="adventure-terrain-ruins" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-terrain-ruins</strong>
+          <span>Mode: ADVENTURE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/tactical-terrain-overlay.png" alt="tactical-terrain" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-terrain</strong>
+          <span>Mode: TACTICAL | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/tactical-terrain-plains-overlay.png" alt="tactical-terrain-plains" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-terrain-plains</strong>
+          <span>Mode: TACTICAL | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/tactical-terrain-hills-overlay.png" alt="tactical-terrain-hills" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-terrain-hills</strong>
+          <span>Mode: TACTICAL | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/tactical-terrain-swamp-overlay.png" alt="tactical-terrain-swamp" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-terrain-swamp</strong>
+          <span>Mode: TACTICAL | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/tactical-terrain-desert-overlay.png" alt="tactical-terrain-desert" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-terrain-desert</strong>
+          <span>Mode: TACTICAL | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/tactical-terrain-snow-overlay.png" alt="tactical-terrain-snow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-terrain-snow</strong>
+          <span>Mode: TACTICAL | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/tactical-terrain-waste-overlay.png" alt="tactical-terrain-waste" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-terrain-waste</strong>
+          <span>Mode: TACTICAL | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/tactical-terrain-ruins-overlay.png" alt="tactical-terrain-ruins" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-terrain-ruins</strong>
+          <span>Mode: TACTICAL | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/defense-terrain-overlay.png" alt="defense-terrain" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-terrain</strong>
+          <span>Mode: DEFENSE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/defense-terrain-plains-overlay.png" alt="defense-terrain-plains" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-terrain-plains</strong>
+          <span>Mode: DEFENSE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/defense-terrain-hills-overlay.png" alt="defense-terrain-hills" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-terrain-hills</strong>
+          <span>Mode: DEFENSE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/defense-terrain-swamp-overlay.png" alt="defense-terrain-swamp" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-terrain-swamp</strong>
+          <span>Mode: DEFENSE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/defense-terrain-desert-overlay.png" alt="defense-terrain-desert" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-terrain-desert</strong>
+          <span>Mode: DEFENSE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/defense-terrain-snow-overlay.png" alt="defense-terrain-snow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-terrain-snow</strong>
+          <span>Mode: DEFENSE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/defense-terrain-waste-overlay.png" alt="defense-terrain-waste" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-terrain-waste</strong>
+          <span>Mode: DEFENSE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../geography/defense-terrain-ruins-overlay.png" alt="defense-terrain-ruins" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-terrain-ruins</strong>
+          <span>Mode: DEFENSE | Uncertainty: &le; 14px</span>
+          <span>Roads: PASS | River/Bridge: PASS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- TAB 4: BUILDINGS -->
+<div id="tab-buildings" class="tab-content">
+  <div class="card">
+    <h2>80 Matted Buildings (All 10 Types Across 8 Ages)</h2>
+    <p>100% clean alpha transparency, spill suppression applied, zero magenta guide marks or dashed perimeters.</p>
+    <div class="grid-gallery">
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/townhall-stone.png" alt="townhall-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>townhall-stone</strong>
+          <span>Size: 1024x988 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/farm-stone.png" alt="farm-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>farm-stone</strong>
+          <span>Size: 973x700 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/lumber-stone.png" alt="lumber-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>lumber-stone</strong>
+          <span>Size: 966x776 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/quarry-stone.png" alt="quarry-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>quarry-stone</strong>
+          <span>Size: 937x918 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/mine-stone.png" alt="mine-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>mine-stone</strong>
+          <span>Size: 917x665 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/barracks-stone.png" alt="barracks-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>barracks-stone</strong>
+          <span>Size: 951x762 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/workshop-stone.png" alt="workshop-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>workshop-stone</strong>
+          <span>Size: 1024x990 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/hall-stone.png" alt="hall-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>hall-stone</strong>
+          <span>Size: 957x759 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/armory-stone.png" alt="armory-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>armory-stone</strong>
+          <span>Size: 979x916 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/stone/walls-stone.png" alt="walls-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>walls-stone</strong>
+          <span>Size: 1000x839 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/townhall-bronze.png" alt="townhall-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>townhall-bronze</strong>
+          <span>Size: 981x956 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/farm-bronze.png" alt="farm-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>farm-bronze</strong>
+          <span>Size: 1024x843 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/lumber-bronze.png" alt="lumber-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>lumber-bronze</strong>
+          <span>Size: 1004x893 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/quarry-bronze.png" alt="quarry-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>quarry-bronze</strong>
+          <span>Size: 944x875 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/mine-bronze.png" alt="mine-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>mine-bronze</strong>
+          <span>Size: 989x985 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/barracks-bronze.png" alt="barracks-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>barracks-bronze</strong>
+          <span>Size: 957x844 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/workshop-bronze.png" alt="workshop-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>workshop-bronze</strong>
+          <span>Size: 1004x805 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/hall-bronze.png" alt="hall-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>hall-bronze</strong>
+          <span>Size: 980x883 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/armory-bronze.png" alt="armory-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>armory-bronze</strong>
+          <span>Size: 947x767 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/bronze/walls-bronze.png" alt="walls-bronze" loading="lazy">
+        <div class="grid-card-info">
+          <strong>walls-bronze</strong>
+          <span>Size: 1008x710 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/townhall-iron.png" alt="townhall-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>townhall-iron</strong>
+          <span>Size: 848x860 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/farm-iron.png" alt="farm-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>farm-iron</strong>
+          <span>Size: 1024x976 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/lumber-iron.png" alt="lumber-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>lumber-iron</strong>
+          <span>Size: 969x849 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/quarry-iron.png" alt="quarry-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>quarry-iron</strong>
+          <span>Size: 969x825 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/mine-iron.png" alt="mine-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>mine-iron</strong>
+          <span>Size: 958x894 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/barracks-iron.png" alt="barracks-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>barracks-iron</strong>
+          <span>Size: 863x805 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/workshop-iron.png" alt="workshop-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>workshop-iron</strong>
+          <span>Size: 1024x982 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/hall-iron.png" alt="hall-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>hall-iron</strong>
+          <span>Size: 820x760 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/armory-iron.png" alt="armory-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>armory-iron</strong>
+          <span>Size: 912x834 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/iron/walls-iron.png" alt="walls-iron" loading="lazy">
+        <div class="grid-card-info">
+          <strong>walls-iron</strong>
+          <span>Size: 996x822 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/townhall-medieval.png" alt="townhall-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>townhall-medieval</strong>
+          <span>Size: 810x773 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/farm-medieval.png" alt="farm-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>farm-medieval</strong>
+          <span>Size: 994x950 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/lumber-medieval.png" alt="lumber-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>lumber-medieval</strong>
+          <span>Size: 994x764 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/quarry-medieval.png" alt="quarry-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>quarry-medieval</strong>
+          <span>Size: 959x734 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/mine-medieval.png" alt="mine-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>mine-medieval</strong>
+          <span>Size: 945x969 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/barracks-medieval.png" alt="barracks-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>barracks-medieval</strong>
+          <span>Size: 796x765 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/workshop-medieval.png" alt="workshop-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>workshop-medieval</strong>
+          <span>Size: 975x917 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/hall-medieval.png" alt="hall-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>hall-medieval</strong>
+          <span>Size: 944x883 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/armory-medieval.png" alt="armory-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>armory-medieval</strong>
+          <span>Size: 855x760 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/medieval/walls-medieval.png" alt="walls-medieval" loading="lazy">
+        <div class="grid-card-info">
+          <strong>walls-medieval</strong>
+          <span>Size: 985x670 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/townhall-gunpowder.png" alt="townhall-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>townhall-gunpowder</strong>
+          <span>Size: 883x716 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/farm-gunpowder.png" alt="farm-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>farm-gunpowder</strong>
+          <span>Size: 922x639 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/lumber-gunpowder.png" alt="lumber-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>lumber-gunpowder</strong>
+          <span>Size: 976x794 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/quarry-gunpowder.png" alt="quarry-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>quarry-gunpowder</strong>
+          <span>Size: 1024x857 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/mine-gunpowder.png" alt="mine-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>mine-gunpowder</strong>
+          <span>Size: 1006x850 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/barracks-gunpowder.png" alt="barracks-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>barracks-gunpowder</strong>
+          <span>Size: 964x821 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/workshop-gunpowder.png" alt="workshop-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>workshop-gunpowder</strong>
+          <span>Size: 949x712 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/hall-gunpowder.png" alt="hall-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>hall-gunpowder</strong>
+          <span>Size: 949x842 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/armory-gunpowder.png" alt="armory-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>armory-gunpowder</strong>
+          <span>Size: 985x757 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/gunpowder/walls-gunpowder.png" alt="walls-gunpowder" loading="lazy">
+        <div class="grid-card-info">
+          <strong>walls-gunpowder</strong>
+          <span>Size: 952x844 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/townhall-industrial.png" alt="townhall-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>townhall-industrial</strong>
+          <span>Size: 931x772 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/farm-industrial.png" alt="farm-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>farm-industrial</strong>
+          <span>Size: 1024x997 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/lumber-industrial.png" alt="lumber-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>lumber-industrial</strong>
+          <span>Size: 1019x886 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/quarry-industrial.png" alt="quarry-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>quarry-industrial</strong>
+          <span>Size: 973x816 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/mine-industrial.png" alt="mine-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>mine-industrial</strong>
+          <span>Size: 968x816 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/barracks-industrial.png" alt="barracks-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>barracks-industrial</strong>
+          <span>Size: 1024x832 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/workshop-industrial.png" alt="workshop-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>workshop-industrial</strong>
+          <span>Size: 993x842 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/hall-industrial.png" alt="hall-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>hall-industrial</strong>
+          <span>Size: 935x686 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/armory-industrial.png" alt="armory-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>armory-industrial</strong>
+          <span>Size: 987x876 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/industrial/walls-industrial.png" alt="walls-industrial" loading="lazy">
+        <div class="grid-card-info">
+          <strong>walls-industrial</strong>
+          <span>Size: 974x878 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/townhall-modern.png" alt="townhall-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>townhall-modern</strong>
+          <span>Size: 931x808 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/farm-modern.png" alt="farm-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>farm-modern</strong>
+          <span>Size: 974x929 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/lumber-modern.png" alt="lumber-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>lumber-modern</strong>
+          <span>Size: 979x759 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/quarry-modern.png" alt="quarry-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>quarry-modern</strong>
+          <span>Size: 965x794 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/mine-modern.png" alt="mine-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>mine-modern</strong>
+          <span>Size: 939x900 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/barracks-modern.png" alt="barracks-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>barracks-modern</strong>
+          <span>Size: 1004x779 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/workshop-modern.png" alt="workshop-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>workshop-modern</strong>
+          <span>Size: 1024x901 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/hall-modern.png" alt="hall-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>hall-modern</strong>
+          <span>Size: 1003x774 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/armory-modern.png" alt="armory-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>armory-modern</strong>
+          <span>Size: 1011x821 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/modern/walls-modern.png" alt="walls-modern" loading="lazy">
+        <div class="grid-card-info">
+          <strong>walls-modern</strong>
+          <span>Size: 933x878 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/townhall-future.png" alt="townhall-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>townhall-future</strong>
+          <span>Size: 890x892 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/farm-future.png" alt="farm-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>farm-future</strong>
+          <span>Size: 1024x868 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/lumber-future.png" alt="lumber-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>lumber-future</strong>
+          <span>Size: 861x758 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/quarry-future.png" alt="quarry-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>quarry-future</strong>
+          <span>Size: 963x905 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/mine-future.png" alt="mine-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>mine-future</strong>
+          <span>Size: 843x839 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/barracks-future.png" alt="barracks-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>barracks-future</strong>
+          <span>Size: 953x665 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/workshop-future.png" alt="workshop-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>workshop-future</strong>
+          <span>Size: 941x731 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/hall-future.png" alt="hall-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>hall-future</strong>
+          <span>Size: 914x881 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/armory-future.png" alt="armory-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>armory-future</strong>
+          <span>Size: 898x898 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/buildings/future/walls-future.png" alt="walls-future" loading="lazy">
+        <div class="grid-card-info">
+          <strong>walls-future</strong>
+          <span>Size: 969x724 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- TAB 5: TOWERS -->
+<div id="tab-towers" class="tab-content">
+  <div class="card">
+    <h2>32 Matted Defense Towers (All 4 Families Across 8 Ages)</h2>
+    <p>Extracted and matted for Defense mode pads D1 through D8.</p>
+    <div class="grid-gallery">
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/stone/tower-stone-arrow.png" alt="tower-stone-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-stone-arrow</strong>
+          <span>Size: 575x890 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/stone/tower-stone-splash.png" alt="tower-stone-splash" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-stone-splash</strong>
+          <span>Size: 500x758 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/stone/tower-stone-slow.png" alt="tower-stone-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-stone-slow</strong>
+          <span>Size: 816x980 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/stone/tower-stone-support.png" alt="tower-stone-support" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-stone-support</strong>
+          <span>Size: 455x851 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/bronze/tower-bronze-arrow.png" alt="tower-bronze-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-bronze-arrow</strong>
+          <span>Size: 455x831 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/bronze/tower-bronze-splash.png" alt="tower-bronze-splash" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-bronze-splash</strong>
+          <span>Size: 841x920 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/bronze/tower-bronze-slow.png" alt="tower-bronze-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-bronze-slow</strong>
+          <span>Size: 790x964 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/bronze/tower-bronze-support.png" alt="tower-bronze-support" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-bronze-support</strong>
+          <span>Size: 985x964 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/iron/tower-iron-arrow.png" alt="tower-iron-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-iron-arrow</strong>
+          <span>Size: 591x853 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/iron/tower-iron-splash.png" alt="tower-iron-splash" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-iron-splash</strong>
+          <span>Size: 859x915 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/iron/tower-iron-slow.png" alt="tower-iron-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-iron-slow</strong>
+          <span>Size: 548x944 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/iron/tower-iron-support.png" alt="tower-iron-support" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-iron-support</strong>
+          <span>Size: 754x993 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/medieval/tower-medieval-arrow.png" alt="tower-medieval-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-medieval-arrow</strong>
+          <span>Size: 694x996 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/medieval/tower-medieval-splash.png" alt="tower-medieval-splash" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-medieval-splash</strong>
+          <span>Size: 778x984 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/medieval/tower-medieval-slow.png" alt="tower-medieval-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-medieval-slow</strong>
+          <span>Size: 574x907 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/medieval/tower-medieval-support.png" alt="tower-medieval-support" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-medieval-support</strong>
+          <span>Size: 934x928 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/gunpowder/tower-gunpowder-arrow.png" alt="tower-gunpowder-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-gunpowder-arrow</strong>
+          <span>Size: 502x913 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/gunpowder/tower-gunpowder-splash.png" alt="tower-gunpowder-splash" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-gunpowder-splash</strong>
+          <span>Size: 848x914 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/gunpowder/tower-gunpowder-slow.png" alt="tower-gunpowder-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-gunpowder-slow</strong>
+          <span>Size: 633x944 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/gunpowder/tower-gunpowder-support.png" alt="tower-gunpowder-support" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-gunpowder-support</strong>
+          <span>Size: 529x892 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/industrial/tower-industrial-arrow.png" alt="tower-industrial-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-industrial-arrow</strong>
+          <span>Size: 520x801 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/industrial/tower-industrial-splash.png" alt="tower-industrial-splash" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-industrial-splash</strong>
+          <span>Size: 901x945 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/industrial/tower-industrial-slow.png" alt="tower-industrial-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-industrial-slow</strong>
+          <span>Size: 758x958 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/industrial/tower-industrial-support.png" alt="tower-industrial-support" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-industrial-support</strong>
+          <span>Size: 451x863 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/modern/tower-modern-arrow.png" alt="tower-modern-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-modern-arrow</strong>
+          <span>Size: 830x945 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/modern/tower-modern-splash.png" alt="tower-modern-splash" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-modern-splash</strong>
+          <span>Size: 633x899 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/modern/tower-modern-slow.png" alt="tower-modern-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-modern-slow</strong>
+          <span>Size: 872x915 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/modern/tower-modern-support.png" alt="tower-modern-support" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-modern-support</strong>
+          <span>Size: 830x987 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/future/tower-future-arrow.png" alt="tower-future-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-future-arrow</strong>
+          <span>Size: 430x850 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/future/tower-future-splash.png" alt="tower-future-splash" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-future-splash</strong>
+          <span>Size: 706x796 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/future/tower-future-slow.png" alt="tower-future-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-future-slow</strong>
+          <span>Size: 842x835 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/towers/future/tower-future-support.png" alt="tower-future-support" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tower-future-support</strong>
+          <span>Size: 759x927 px</span>
+          <span style="color:#10b981;">Chroma: PASS | Spill: PASS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- TAB 6: SITES & UI -->
+<div id="tab-sites-ui" class="tab-content">
+  <div class="card">
+    <h2>Adventure Sites, Resources, Skills, and Spells (33 Items)</h2>
+    <div class="grid-gallery">
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/adventure-site-town.png" alt="adventure-site-town" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-site-town</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 984x748 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/adventure-site-ruin.png" alt="adventure-site-ruin" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-site-ruin</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 996x842 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/adventure-site-mill.png" alt="adventure-site-mill" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-site-mill</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 854x874 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/adventure-site-mine.png" alt="adventure-site-mine" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-site-mine</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 892x834 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/adventure-site-dwelling.png" alt="adventure-site-dwelling" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-site-dwelling</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 898x718 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/adventure-site-shrine.png" alt="adventure-site-shrine" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-site-shrine</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 773x828 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/site-treasure.png" alt="site-treasure" loading="lazy">
+        <div class="grid-card-info">
+          <strong>site-treasure</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 953x766 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/site-rest.png" alt="site-rest" loading="lazy">
+        <div class="grid-card-info">
+          <strong>site-rest</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 948x896 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/site-exit.png" alt="site-exit" loading="lazy">
+        <div class="grid-card-info">
+          <strong>site-exit</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 816x938 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/site-rival.png" alt="site-rival" loading="lazy">
+        <div class="grid-card-info">
+          <strong>site-rival</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 810x777 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/site-human.png" alt="site-human" loading="lazy">
+        <div class="grid-card-info">
+          <strong>site-human</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 963x750 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/sites/site-guard.png" alt="site-guard" loading="lazy">
+        <div class="grid-card-info">
+          <strong>site-guard</strong>
+          <span>Role: adventure-site</span>
+          <span>Size: 902x981 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/resources/resource-food.png" alt="resource-food" loading="lazy">
+        <div class="grid-card-info">
+          <strong>resource-food</strong>
+          <span>Role: resource-icon</span>
+          <span>Size: 706x787 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/resources/resource-wood.png" alt="resource-wood" loading="lazy">
+        <div class="grid-card-info">
+          <strong>resource-wood</strong>
+          <span>Role: resource-icon</span>
+          <span>Size: 803x721 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/resources/resource-stone.png" alt="resource-stone" loading="lazy">
+        <div class="grid-card-info">
+          <strong>resource-stone</strong>
+          <span>Role: resource-icon</span>
+          <span>Size: 777x703 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/resources/resource-gold.png" alt="resource-gold" loading="lazy">
+        <div class="grid-card-info">
+          <strong>resource-gold</strong>
+          <span>Role: resource-icon</span>
+          <span>Size: 686x718 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-offense.png" alt="skill-offense" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-offense</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-archery.png" alt="skill-archery" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-archery</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-armorer.png" alt="skill-armorer" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-armorer</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-wisdom.png" alt="skill-wisdom" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-wisdom</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-leadership.png" alt="skill-leadership" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-leadership</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-luck.png" alt="skill-luck" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-luck</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-tactics.png" alt="skill-tactics" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-tactics</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-logistics.png" alt="skill-logistics" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-logistics</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/skills/skill-firstaid.png" alt="skill-firstaid" loading="lazy">
+        <div class="grid-card-info">
+          <strong>skill-firstaid</strong>
+          <span>Role: skill-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/spells/spell-arrow.png" alt="spell-arrow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>spell-arrow</strong>
+          <span>Role: spell-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/spells/spell-bless.png" alt="spell-bless" loading="lazy">
+        <div class="grid-card-info">
+          <strong>spell-bless</strong>
+          <span>Role: spell-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/spells/spell-haste.png" alt="spell-haste" loading="lazy">
+        <div class="grid-card-info">
+          <strong>spell-haste</strong>
+          <span>Role: spell-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/spells/spell-cure.png" alt="spell-cure" loading="lazy">
+        <div class="grid-card-info">
+          <strong>spell-cure</strong>
+          <span>Role: spell-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/spells/spell-slow.png" alt="spell-slow" loading="lazy">
+        <div class="grid-card-info">
+          <strong>spell-slow</strong>
+          <span>Role: spell-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/spells/spell-bolt.png" alt="spell-bolt" loading="lazy">
+        <div class="grid-card-info">
+          <strong>spell-bolt</strong>
+          <span>Role: spell-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/spells/spell-fireball.png" alt="spell-fireball" loading="lazy">
+        <div class="grid-card-info">
+          <strong>spell-fireball</strong>
+          <span>Role: spell-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../../assets/derivatives/environment-20261006/icons/spells/spell-resurrect.png" alt="spell-resurrect" loading="lazy">
+        <div class="grid-card-info">
+          <strong>spell-resurrect</strong>
+          <span>Role: spell-icon</span>
+          <span>Size: 953x953 px</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- TAB 7: VIEWPORTS -->
+<div id="tab-viewports" class="tab-content">
+  <div class="card">
+    <h2>4-Viewport Responsive Composites</h2>
+    <p>Verified across [825, 375], [933, 424], [1180, 820], [1280, 720]. Labeled ASSET_COMPOSITE with playabilityUNVERIFIED: true.</p>
+    <div class="grid-gallery">
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-stone-sparse-825x375.png" alt="kingdom-stone-sparse-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-stone-sparse-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-stone-developed-825x375.png" alt="kingdom-stone-developed-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-stone-developed-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-stone-sparse-933x424.png" alt="kingdom-stone-sparse-933x424.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-stone-sparse-933x424.png</strong>
+          <span>Viewport: 933x424</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-stone-developed-933x424.png" alt="kingdom-stone-developed-933x424.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-stone-developed-933x424.png</strong>
+          <span>Viewport: 933x424</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-stone-sparse-1180x820.png" alt="kingdom-stone-sparse-1180x820.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-stone-sparse-1180x820.png</strong>
+          <span>Viewport: 1180x820</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-stone-developed-1180x820.png" alt="kingdom-stone-developed-1180x820.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-stone-developed-1180x820.png</strong>
+          <span>Viewport: 1180x820</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-stone-sparse-1280x720.png" alt="kingdom-stone-sparse-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-stone-sparse-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-stone-developed-1280x720.png" alt="kingdom-stone-developed-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-stone-developed-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-bronze-developed-1280x720.png" alt="kingdom-bronze-developed-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-bronze-developed-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-bronze-developed-825x375.png" alt="kingdom-bronze-developed-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-bronze-developed-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-iron-developed-1280x720.png" alt="kingdom-iron-developed-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-iron-developed-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-iron-developed-825x375.png" alt="kingdom-iron-developed-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-iron-developed-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-medieval-developed-1280x720.png" alt="kingdom-medieval-developed-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-medieval-developed-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-medieval-developed-825x375.png" alt="kingdom-medieval-developed-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-medieval-developed-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-gunpowder-developed-1280x720.png" alt="kingdom-gunpowder-developed-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-gunpowder-developed-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-gunpowder-developed-825x375.png" alt="kingdom-gunpowder-developed-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-gunpowder-developed-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-industrial-developed-1280x720.png" alt="kingdom-industrial-developed-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-industrial-developed-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-industrial-developed-825x375.png" alt="kingdom-industrial-developed-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-industrial-developed-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-modern-developed-1280x720.png" alt="kingdom-modern-developed-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-modern-developed-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-modern-developed-825x375.png" alt="kingdom-modern-developed-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-modern-developed-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-future-developed-1280x720.png" alt="kingdom-future-developed-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-future-developed-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/kingdom-future-developed-825x375.png" alt="kingdom-future-developed-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>kingdom-future-developed-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/adventure-plains-825x375.png" alt="adventure-plains-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-plains-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/adventure-plains-933x424.png" alt="adventure-plains-933x424.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-plains-933x424.png</strong>
+          <span>Viewport: 933x424</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/adventure-plains-1180x820.png" alt="adventure-plains-1180x820.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-plains-1180x820.png</strong>
+          <span>Viewport: 1180x820</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/adventure-plains-1280x720.png" alt="adventure-plains-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>adventure-plains-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/tactical-plains-825x375.png" alt="tactical-plains-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-plains-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/tactical-plains-933x424.png" alt="tactical-plains-933x424.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-plains-933x424.png</strong>
+          <span>Viewport: 933x424</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/tactical-plains-1180x820.png" alt="tactical-plains-1180x820.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-plains-1180x820.png</strong>
+          <span>Viewport: 1180x820</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/tactical-plains-1280x720.png" alt="tactical-plains-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>tactical-plains-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/defense-plains-825x375.png" alt="defense-plains-825x375.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-plains-825x375.png</strong>
+          <span>Viewport: 825x375</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/defense-plains-933x424.png" alt="defense-plains-933x424.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-plains-933x424.png</strong>
+          <span>Viewport: 933x424</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/defense-plains-1180x820.png" alt="defense-plains-1180x820.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-plains-1180x820.png</strong>
+          <span>Viewport: 1180x820</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+      <div class="grid-card">
+        <img src="../composites/defense-plains-1280x720.png" alt="defense-plains-1280x720.png" loading="lazy">
+        <div class="grid-card-info">
+          <strong>defense-plains-1280x720.png</strong>
+          <span>Viewport: 1280x720</span>
+          <span style="color:#ef4444;">playabilityUNVERIFIED: true</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function showTab(tabId) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('nav.tabs button').forEach(el => el.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>

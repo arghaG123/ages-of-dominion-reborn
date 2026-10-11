@@ -1,0 +1,624 @@
+{
+  "python": "3.13.7",
+  "bindings": 167,
+  "bindingFailures": [],
+  "readyRasterChecks": [
+    {
+      "id": "troop-bronze-melee",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        200,
+        162,
+        1658,
+        1949
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "troop-bronze-ranged",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        628,
+        79,
+        1769,
+        1771
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "troop-iron-ranged",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        622,
+        206,
+        1738,
+        1914
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "troop-iron-heavy",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        233,
+        82,
+        1824,
+        1854
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "troop-gunpowder-melee",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        0,
+        65,
+        1418,
+        1942
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "troop-gunpowder-ranged",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        732,
+        153,
+        1871,
+        1672
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "troop-modern-melee",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        594,
+        146,
+        1589,
+        1770
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "troop-future-melee",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        0,
+        177,
+        1616,
+        1887
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "troop-stone-heavy",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        225,
+        58,
+        1574,
+        1974
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "healer-boot",
+      "dimensions": [
+        135,
+        131
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        0,
+        0,
+        135,
+        131
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "healer-head-front-neck",
+      "dimensions": [
+        263,
+        483
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        0,
+        0,
+        263,
+        483
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "healer-head-front-bust",
+      "dimensions": [
+        247,
+        385
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        0,
+        0,
+        247,
+        385
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "healer-head-three-quarter",
+      "dimensions": [
+        273,
+        381
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        0,
+        0,
+        273,
+        381
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "healer-head-profile-braid",
+      "dimensions": [
+        295,
+        630
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        0,
+        0,
+        295,
+        630
+      ],
+      "boundsMatch": true
+    },
+    {
+      "id": "healer-head-profile-bun",
+      "dimensions": [
+        311,
+        477
+      ],
+      "dimensionsMatch": true,
+      "alpha16Bounds": [
+        0,
+        0,
+        311,
+        477
+      ],
+      "boundsMatch": true
+    }
+  ],
+  "jointChecks": [
+    {
+      "id": "ranger-sleeve-to-open-hand",
+      "angle": -25,
+      "overlap": 7814,
+      "expected": 7814,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "ranger-sleeve-to-open-hand",
+      "angle": 0,
+      "overlap": 8071,
+      "expected": 8071,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "ranger-sleeve-to-open-hand",
+      "angle": 25,
+      "overlap": 7874,
+      "expected": 7874,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "healer-leg-greave",
+      "angle": -25,
+      "overlap": 5344,
+      "expected": 5344,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "healer-leg-greave",
+      "angle": 0,
+      "overlap": 5183,
+      "expected": 5183,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "healer-leg-greave",
+      "angle": 25,
+      "overlap": 5260,
+      "expected": 5260,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "healer-greave-boot",
+      "angle": -25,
+      "overlap": 2812,
+      "expected": 2812,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "healer-greave-boot",
+      "angle": 0,
+      "overlap": 2591,
+      "expected": 2591,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "healer-greave-boot",
+      "angle": 25,
+      "overlap": 2707,
+      "expected": 2707,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "paladin-knee-greave",
+      "angle": -25,
+      "overlap": 7313,
+      "expected": 7313,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "paladin-knee-greave",
+      "angle": 0,
+      "overlap": 7359,
+      "expected": 7359,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    },
+    {
+      "id": "paladin-knee-greave",
+      "angle": 25,
+      "overlap": 7968,
+      "expected": 7968,
+      "match": true,
+      "canvasConvention": "height,width as implemented; not declared in v8"
+    }
+  ],
+  "semanticsRows": 78,
+  "classChains": 8,
+  "scenes": [
+    {
+      "id": "adventure-terrain",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "adventure-terrain-plains",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "adventure-terrain-hills",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "adventure-terrain-swamp",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "adventure-terrain-desert",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "adventure-terrain-snow",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "adventure-terrain-waste",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "adventure-terrain-ruins",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "tactical-terrain-plains",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "tactical-terrain-hills",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "tactical-terrain-swamp",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "tactical-terrain-desert",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "tactical-terrain-waste",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "tactical-terrain-ruins",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "defense-terrain",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "defense-terrain-plains",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "defense-terrain-hills",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "defense-terrain-swamp",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "defense-terrain-desert",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "defense-terrain-snow",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "defense-terrain-waste",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "defense-terrain-ruins",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "tactical-terrain",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "kingdom-terrain-stone",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 4,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "sourceMatch": true,
+      "affineMatchesContract": true,
+      "roadCount": 0,
+      "walkableCount": 0,
+      "promoted": false,
+      "interfaceRoadsMatch": true
+    }
+  ],
+  "readySourceGateUnverified": [],
+  "limits": "Bindings/overlap reproduction do not prove anatomy, full rigs, painted geography, native or owner acceptance."
+}

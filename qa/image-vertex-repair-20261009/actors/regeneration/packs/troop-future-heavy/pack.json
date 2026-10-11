@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "troop-future-heavy",
+  "owner": "ACTORS",
+  "canonicalId": "troop-future-heavy",
+  "version": "2026-10-09.1",
+  "state": "READY",
+  "defect": "A single future hover tank, isolated, no hangar and no extra vehicles.",
+  "reason": "Existing source has no compatible full subject, or a bounded local matte split or left the required subject unusable.",
+  "priorSourceHashes": [],
+  "referenceRefs": [
+    {
+      "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/troop-future-heavy/guide.png",
+      "sha256": "bbbea96505c174c514daa2c18a1dace5d23e685e7d20b06bb58ade867ca9e063",
+      "bytes": 13997,
+      "dimensions": {
+        "width": 768,
+        "height": 1024
+      }
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/actors/regeneration/packs/troop-future-heavy/guide.png",
+    "sha256": "bbbea96505c174c514daa2c18a1dace5d23e685e7d20b06bb58ade867ca9e063",
+    "bytes": 13997,
+    "dimensions": {
+      "width": 768,
+      "height": 1024
+    }
+  },
+  "landmarks": {
+    "view": "front",
+    "normalized": {
+      "head": [
+        0.5,
+        0.18
+      ],
+      "shoulders": [
+        0.5,
+        0.27
+      ],
+      "hips": [
+        0.5,
+        0.51
+      ],
+      "footL": [
+        0.38,
+        0.88
+      ],
+      "footR": [
+        0.62,
+        0.88
+      ]
+    },
+    "note": "Normalized to the guide image. Not measured on a real body."
+  },
+  "legalGeometrySHA256": null,
+  "requestedResolution": "2K",
+  "aspectRatio": "1:1",
+  "expectedNativeDimensions": {
+    "width": 2048,
+    "height": 2048
+  },
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/troop-future-heavy/prompt.txt",
+  "promptSHA256": "3cab731a2890b2ae80c590bd2cf27d710ab43d00667b40c790445aa345d606e1",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/actors/regeneration/packs/troop-future-heavy/wire_body.json",
+  "wireBodySHA256": "85786b73e19001bd33f216e24ab2f51f5d9f802b94218a97b8accc900c56fd22",
+  "inputTransforms": [
+    {
+      "order": [
+        "prompt text",
+        "guide.png"
+      ],
+      "note": "Coordinator attaches guide.png as an image part. Do not invent a mask API field. candidateCount stays 1."
+    }
+  ],
+  "semanticCriteria": [
+    "A single future hover tank, isolated, no hangar and no extra vehicles.",
+    "one subject",
+    "no text",
+    "no checker",
+    "no HUD"
+  ],
+  "geometryCriteria": [
+    {
+      "fullSubjectInsideFrame": true,
+      "nativeDecoded": "2048x2048",
+      "noUpscaleClaim": true
+    }
+  ],
+  "maxCandidateCalls": 1,
+  "estimatedUpperBoundUSD": 0.4,
+  "upperBoundBasis": "Reservation ceiling for one 2K attempt covering about 0.101 output plus inputs, text, reasoning, and one unexpected extra image. Not an invoice.",
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/troop-future-heavy/guide.png",
+    "qa/image-vertex-repair-20261009/actors/regeneration/packs/troop-future-heavy/prompt.txt"
+  ],
+  "blockedBy": [],
+  "priority": 14,
+  "maskApplicability": "No source mask: the request asks for a new complete subject, not an inpaint of a defective plate."
+}

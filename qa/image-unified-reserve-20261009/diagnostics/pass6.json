@@ -1,0 +1,217 @@
+[
+  {
+    "id": "creature-wolf",
+    "removed": 1715,
+    "after": {
+      "id": "creature-wolf",
+      "remainingMatchedPixels": 0
+    },
+    "preview": "qa/image-unified-reserve-20261009/review/creature-wolf-pass6.jpg"
+  },
+  {
+    "id": "workshop-iron",
+    "removed": 8467,
+    "after": {
+      "id": "workshop-iron",
+      "remainingMatchedPixels": 1481
+    },
+    "preview": "qa/image-unified-reserve-20261009/review/workshop-iron-pass6.jpg"
+  },
+  {
+    "id": "class-warlock-standing-body",
+    "removed": 85443,
+    "after": {
+      "id": "class-warlock-standing-body",
+      "whitePixels": 26199,
+      "lowestWhiteY": 112
+    },
+    "preview": "qa/image-unified-reserve-20261009/review/class-warlock-pass6.jpg"
+  },
+  {
+    "id": "attacker-stone-brute",
+    "removed": 547,
+    "components": [
+      {
+        "area": 194,
+        "bbox": [
+          296,
+          519,
+          363,
+          558
+        ]
+      },
+      {
+        "area": 112,
+        "bbox": [
+          599,
+          532,
+          642,
+          576
+        ]
+      },
+      {
+        "area": 74,
+        "bbox": [
+          410,
+          608,
+          448,
+          652
+        ]
+      },
+      {
+        "area": 84,
+        "bbox": [
+          372,
+          658,
+          400,
+          700
+        ]
+      },
+      {
+        "area": 83,
+        "bbox": [
+          307,
+          686,
+          338,
+          734
+        ]
+      }
+    ],
+    "after": {
+      "id": "attacker-stone-brute",
+      "remainingMatchedPixels": 3150
+    }
+  },
+  {
+    "id": "creature-drone",
+    "removed": 0,
+    "staleFrame": "deleted stale frame 03; current sheet split has three subject components",
+    "frames": [
+      {
+        "id": "creature-drone-frame-00",
+        "roi": [
+          110,
+          0,
+          575,
+          270
+        ],
+        "uv": [
+          0.13414634146341464,
+          0.0,
+          0.7012195121951219,
+          0.3935860058309038
+        ],
+        "pivot": [
+          342,
+          269
+        ],
+        "sourceToFrame": [
+          1,
+          0,
+          0,
+          1,
+          -110,
+          0
+        ],
+        "output": {
+          "path": "assets/derivatives/image-unified-reserve-20261009/actors/frames/creature-drone/00.png",
+          "sha256": "936f9b5474062467373180be6c2affe83a45130469720005a2d2767b75ee731b",
+          "bytes": 194304,
+          "dimensions": {
+            "width": 465,
+            "height": 270
+          }
+        },
+        "semantic": "separated-opaque-component",
+        "sequence": "creature-drone",
+        "durationMs": null,
+        "timing": "BLOCKED",
+        "reason": "Source sheet has no action-duration evidence. No gait or effect timing was invented."
+      },
+      {
+        "id": "creature-drone-frame-01",
+        "roi": [
+          0,
+          245,
+          388,
+          479
+        ],
+        "uv": [
+          0.0,
+          0.35714285714285715,
+          0.47317073170731705,
+          0.6982507288629738
+        ],
+        "pivot": [
+          194,
+          478
+        ],
+        "sourceToFrame": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          -245
+        ],
+        "output": {
+          "path": "assets/derivatives/image-unified-reserve-20261009/actors/frames/creature-drone/01.png",
+          "sha256": "9c33621ea3c7de35e5b7f7f095f8ff17f0e82572234b641f9920eb419a5571e4",
+          "bytes": 139680,
+          "dimensions": {
+            "width": 388,
+            "height": 234
+          }
+        },
+        "semantic": "separated-opaque-component",
+        "sequence": "creature-drone",
+        "durationMs": null,
+        "timing": "BLOCKED",
+        "reason": "Source sheet has no action-duration evidence. No gait or effect timing was invented."
+      },
+      {
+        "id": "creature-drone-frame-02",
+        "roi": [
+          400,
+          278,
+          817,
+          534
+        ],
+        "uv": [
+          0.4878048780487805,
+          0.40524781341107874,
+          0.9963414634146341,
+          0.7784256559766763
+        ],
+        "pivot": [
+          608,
+          533
+        ],
+        "sourceToFrame": [
+          1,
+          0,
+          0,
+          1,
+          -400,
+          -278
+        ],
+        "output": {
+          "path": "assets/derivatives/image-unified-reserve-20261009/actors/frames/creature-drone/02.png",
+          "sha256": "0d5c0ff886d586cd004ce8f38143d3eef7fd2112eadbd9c9a0915cc74f5d558c",
+          "bytes": 161259,
+          "dimensions": {
+            "width": 417,
+            "height": 256
+          }
+        },
+        "semantic": "separated-opaque-component",
+        "sequence": "creature-drone",
+        "durationMs": null,
+        "timing": "BLOCKED",
+        "reason": "Source sheet has no action-duration evidence. No gait or effect timing was invented."
+      }
+    ],
+    "timing": "BLOCKED",
+    "durationMs": null
+  }
+]

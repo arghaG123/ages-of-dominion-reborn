@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "env-kingdom-terrain-iron-v2",
+  "owner": "ENVIRONMENT",
+  "canonicalId": "kingdom-terrain-iron",
+  "version": "v2",
+  "state": "READY",
+  "defect": "Candidate A redrew the guide and did not keep frozen pad positions. Conflict count remains 7",
+  "reason": "One directed correction. The wireframe must not be copied, and reserved rectangles stay empty natural ground.",
+  "priorSourceHashes": [
+    "b007e856c9af75ce6fa44656af8fbf6b530487aa0bcb46f04fab3aa36c92d709"
+  ],
+  "referenceRefs": [
+    {
+      "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/05-kingdom-iron.jpg",
+      "sha256": "e646336f428e9fde63c2b657a10d7375b177a5689944c7a44e8a80aae8821694",
+      "bytes": 373842
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/environment/geography/guides/kingdom-terrain-iron-legal-guide-v2.png",
+    "sha256": "d9f7a384a2899d6a7ca0048b51fb7a3e922d25d585ca4f787dd8a248eb462e86",
+    "bytes": 12744,
+    "dimensions": {
+      "width": 1376,
+      "height": 768
+    }
+  },
+  "landmarks": {
+    "pads": [
+      "townhall",
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17"
+    ],
+    "roads": [
+      "west-entry",
+      "iron-spine",
+      "bastion-bridge-road",
+      "south-perimeter"
+    ]
+  },
+  "legalGeometrySHA256": "20e2a45d89b04bd3d4a6b3bace904784415dc88d2a82dfe4ef4c8fae1156ff24",
+  "requestedResolution": "4K",
+  "aspectRatio": "16:9",
+  "expectedNativeDimensions": null,
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/environment/regeneration/prompts/kingdom-terrain-iron-v2.txt",
+  "promptSHA256": "c0bb5cbb98f08cbec8c0257b0af5b7019bdeb72a1687824f3b2f205c8487e23b",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/environment/regeneration/wire/kingdom-terrain-iron-v2.json",
+  "wireBodySHA256": "3d6aee4465e6b95bed5f2176c6a5c2a355cc67b26df8d3adb9becff74f52d65c",
+  "inputTransforms": [
+    {
+      "from": [
+        1376,
+        768
+      ],
+      "to": [
+        1024,
+        572
+      ],
+      "scale": 0.744186,
+      "method": "LANCZOS request-reference copy. The generated output is not this resize."
+    }
+  ],
+  "semanticCriteria": [
+    "Age materials match the prompt and the approved landscape direction.",
+    "No text, HUD, people, or device frame.",
+    "Reserved rectangles stay empty ground."
+  ],
+  "geometryCriteria": [
+    "Output is native 4K 16:9, decoded from the response, not upscaled afterward.",
+    "Guide rectangles remain the empty-pad targets. Frozen affine and Hall scale are not edited.",
+    "Road paint must clear pad quads by more than 8 legal px plus trace uncertainty after the same measurement."
+  ],
+  "maskApplicability": "No inpainting mask is sent. The guide image is a labeled spatial input. The API mask field is not used.",
+  "maxCandidateCalls": 2,
+  "estimatedUpperBoundUSD": 0.4931,
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/environment/geography/kingdom-terrain-iron-clearance.json"
+  ],
+  "blockedBy": [],
+  "priority": 1,
+  "priorAttempt": "env-kingdom-terrain-iron-v1-a1"
+}

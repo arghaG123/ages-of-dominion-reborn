@@ -1,0 +1,123 @@
+{
+  "errors": [],
+  "steps": [
+    "fresh-kingdom",
+    "build-click-lumber",
+    "build-click-farm",
+    "build-click-quarry",
+    "build-click-barracks",
+    "buildings-up",
+    "after-real-production-window",
+    "after-recruit",
+    "left-town",
+    "travel-stop",
+    "after-guard",
+    "equipped-loot",
+    "return-attempt",
+    "defense-before-settle",
+    "after-defense",
+    "before-reload",
+    "after-reload"
+  ],
+  "dockAtLeast48": true,
+  "reloadMatches": true,
+  "portrait": {
+    "rotate": "block",
+    "app": "none",
+    "resources": {
+      "food": 68.38399999999994,
+      "wood": 92.06199999999997,
+      "stone": 111.36550000000028,
+      "gold": 250
+    }
+  },
+  "last": {
+    "id": "after-reload",
+    "state": {
+      "revision": 638,
+      "resources": {
+        "food": 68.38399999999994,
+        "wood": 92.06199999999997,
+        "stone": 111.36550000000028,
+        "gold": 250
+      },
+      "day": 2,
+      "army": [
+        {
+          "id": "army-2",
+          "kind": "role",
+          "type": "ranged",
+          "age": 0,
+          "count": 6,
+          "rank": 0,
+          "xp": 24
+        }
+      ],
+      "inventory": [],
+      "equip": {
+        "helm": null,
+        "weapon": null,
+        "offhand": null,
+        "armor": null,
+        "boots": null,
+        "accessory": {
+          "id": "loot-142-0-accessory",
+          "kind": "artifact",
+          "artifactId": "orb",
+          "slot": "accessory"
+        }
+      },
+      "plots": [
+        {
+          "id": "townhall",
+          "type": "townhall",
+          "level": 1
+        },
+        {
+          "id": "P01",
+          "type": "lumber",
+          "level": 1
+        },
+        {
+          "id": "P02",
+          "type": "farm",
+          "level": 1
+        },
+        {
+          "id": "P03",
+          "type": "quarry",
+          "level": 1
+        },
+        {
+          "id": "P04",
+          "type": "barracks",
+          "level": 1
+        }
+      ],
+      "jobs": [],
+      "adventure": {
+        "x": 8,
+        "y": 4,
+        "moves": 2,
+        "visited": [
+          "8,8",
+          "8,7",
+          "9,7",
+          "9,6",
+          "10,6",
+          "10,5",
+          "9,5",
+          "9,4",
+          "8,4"
+        ],
+        "resolvedGuards": [
+          "10,5"
+        ],
+        "pendingEncounter": null,
+        "atTown": true
+      },
+      "battle": null,
+      "defense": null
+    }
+  }
+}

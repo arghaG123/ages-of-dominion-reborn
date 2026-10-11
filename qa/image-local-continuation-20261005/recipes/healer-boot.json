@@ -1,0 +1,43 @@
+{
+  "id": "healer-boot",
+  "semantic": "boot",
+  "side": "UNKNOWN",
+  "source": "assets/derivatives/rigs/v6/healer/boot.png",
+  "sourceSha256": "6766d8e70129ed023a41e555add178fb9767f769d927784675362bdcbf9220d6",
+  "upstreamSource": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+  "derivative": "assets/derivatives/rigs/v7/healer/boot.png",
+  "sha256": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+  "mask": "qa/image-local-continuation-20261005/masks/healer-boot-removed-neighbor.png",
+  "dimensions": [
+    135,
+    131
+  ],
+  "visibleAlpha16": [
+    0,
+    0,
+    135,
+    131
+  ],
+  "visibleAlpha128": [
+    0,
+    0,
+    135,
+    131
+  ],
+  "method": "remove-components-disconnected-by-at-least-2px-from-largest-boot",
+  "removed": [
+    {
+      "index": 1,
+      "pixels": 1860,
+      "bbox": [
+        48,
+        0,
+        146,
+        35
+      ],
+      "decision": "REMOVED_DISCONNECTED"
+    }
+  ],
+  "mainPixelsKept": 12474,
+  "toeAnkle": "Largest component was not edited."
+}

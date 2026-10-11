@@ -1,0 +1,107 @@
+Language/framework/version: JavaScript ES modules, HTML/CSS/SVG; Node >=24, custom scripts/serve.mjs and scripts/build.mjs (not Vite). Local image tools recorded 6 October 2026: Python 3.13.7, Pillow 12.3.0, NumPy 2.5.3, OpenCV 5.0.0, SciPy 1.18.1. Bundled Python 3.12.14 was used by the planner on 7 October. Verify your current interpreter. Task type: Debugging and local image delivery.
+
+1. Task Summary
+
+You are Image AI 1, the ENVIRONMENT executor. Execute all remaining feasible local fixes to terrain, buildings, Walls, towers, sites and environmental/UI artwork across all eight ages and every required screen. Start from your 6 October delivery and the 7 October independent audit. Fix confirmed defects, reuse adequate rows unchanged, and finish precise per-ID evidence and a consumable successor interface. Do not stop after Stone or return only another plan. Code AI will receive a separate assignment after both image deliveries are checked.
+
+2. Environment
+
+Repository: C:/dev/ages-of-dominion-reborn. Use installed tools and existing purchased images only. Original and hard-linked inputs, previous derivatives, previous interfaces and QA history are read-only.
+
+Exclusive writes:
+- assets/derivatives/image-residual-executor-20261007/environment/
+- qa/image-residual-executor-20261007/environment/ for your helpers, recipes, masks, scene annotations, composites, gallery, checkpoint and handoff.
+- docs/plan/ENVIRONMENT-ART-RESIDUAL-INTERFACE-2026-10-07.json
+
+Image AI 2 exclusively owns the sibling actors directories and ACTORS successor interface. You own terrain/buildings/Hall/Wall/static sites/stationary towers/resource/skill/spell/navigation/button materials and static world effects. AI 2 owns people, creatures, attacking roles, mounts/vehicles, gear/artifact item images and actor effects. Neither producer edits shared runtime catalogs, shared helpers or root status pointers.
+
+Read AGENTS.md, START-HERE.md, CURRENT-STATUS.md, DECISIONS.md, docs/SESSION-HANDOFF.md, docs/BUILD-PROGRESS.md and the reading order in docs/plan/README.md. Interpret latest dated owner instructions over historical banners. Read docs/plan/IMAGE-RESIDUAL-INDEPENDENT-AUDIT-2026-10-07.md and qa/image-residual-20261007/per-id-status.json.
+
+Authority: LOCAL processing only. NO_NEW_PAID_CALLS. Purchased batches/native images are immutable inputs. No provider/account/project/job/bucket query, generation, reserve spending or replacement purchase. Frozen Kingdom affine [60,-10,25,35,170,165] and Hall scale 0.1312 remain active; alternate geometry is PROPOSED only. Device STOPPED. Runtime is offline with zero permissions including INTERNET/VIBRATE.
+
+Assumptions: the 30 landscape mocks remain approved direction; current composite/runtime is not owner accepted; source availability and exact causality of visible defects require per-row investigation. Record missing inputs explicitly and continue unrelated ready work.
+
+3. Inputs & Outputs
+
+Read-only delivery inputs:
+docs/plan/ENVIRONMENT-ART-INTERFACE-2026-10-06.json;
+qa/environment-art-20261006/{checkpoint.json,handoff.md,scenes.json,recipes/,masks/,geography/,composites/,review/index.html};
+assets/derivatives/environment-20261006/;
+assets/production/ and assets/high-res/.
+Read AI 2's 6 October interface only for composite dependencies. Missing actor art never halts your environment queue.
+
+Canonical authority in docs/plan/: FULL-IMPLEMENTATION-SPEC.md, MASTER-PLAN.md, IMPLEMENTATION-CONTRACT.json, GAME-DATA-REFERENCE.json, DATA-ADOPTION-LEDGER.json, SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md, REQUIREMENTS-MATRIX-CANONICAL-2026-10-04.md and WHOLE-PLAN-INDEPENDENT-AUDIT-2026-10-04.md; active frame in src/data/implementation-contract.json is read-only.
+
+Primary references: design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/.
+01-home.jpg; 02-kingdom-day1.jpg; 03-kingdom-stone.jpg; 04-kingdom-bronze.jpg; 05-kingdom-iron.jpg; 06-kingdom-medieval.jpg; 07-kingdom-gunpowder.jpg; 08-kingdom-industrial.jpg; 09-kingdom-modern.jpg; 10-kingdom-future.jpg; 11-adventure-overview.jpg; 12-adventure-crossing.jpg; 13-adventure-foot.jpg; 14-tactical-deployment.jpg; 15-tactical-action.jpg; 16-battle-result.jpg; 17-defense-preparation.jpg; 18-defense-wave.jpg; 19-hero-equipment.jpg; 20-skills.jpg; 21-spells.jpg; 22-forge.jpg; 23-inventory.jpg; 24-army.jpg; 25-story.jpg; 26-quests.jpg; 27-tutorial.jpg; 28-settings.jpg; 29-save-recovery.jpg; 30-icon-material-board.jpg.
+Earlier 26 vertical references in assets/mocks/INDEX.md supply style/content. Correct mock title/Stone/Future/data errors from canonical authority. Do not extract mutable UI or full screenshots as fake gameplay.
+
+Coverage: Stone/Bronze/Iron/Medieval/Gunpowder/Industrial/Modern/Future; Kingdom 17 pads plus Hall and separate Walls; ten building types; Adventure 16x10; Tactical 7 columns x10 rows/commander(0,9); Defense 9x15/four tower families. Include available Home/Army/Forge/Inventory/Market/Story/Quests/Tutorial/Settings/recovery environmental layers, four resources, nine skills, eight spells and navigation/material/static effects. Source absence is an explicit blocker; Code-owned CSS/layout is a Code dependency.
+
+Starting findings:
+- 145 asset rows have matching source/output hashes, decode and dimensions, but pixel quality is not certified by those checks.
+- All32 scenes now have annotations; all are PARTIAL/unpromoted with PROPOSED geometry. Do not restart tracing as if no work exists.
+- Stone geography overlay visibly routes a yellow trace through/over P07. Verify coordinate frames and full clearance before deciding the correction.
+- Developed Stone composite has bright green triangular patches at several structure bases. Identify contributing row/transform/diagnostic layer before touching image pixels.
+- test_townhall_matte.png has a magenta fringe; determine whether it is intentionally diagnostic. The producer validator does not measure matte contamination or clearance.
+- The two exact historical v4/v5 guide PNGs remain absent. Do not fabricate them or treat them as global blockers.
+
+Typed outputs:
+Gate=PASS|FAIL|UNVERIFIED|BLOCKED|NOT_APPLICABLE.
+XY=[number,number]; DimensionsWH={width:int,height:int}; BoxXYXY is half-open.
+Affine6=[a,b,c,d,e,f], x'=a*x+c*y+e, y'=b*x+d*y+f.
+ArtifactRow={id:string,role:string,age:int0..7|null,classId:null,status:READY|PARTIAL|FAIL|BLOCKED,source:{path:string,sha256:string,roi:BoxXYXY|null},output:{path:string,sha256:string,dimensions:DimensionsWH}|null,sourceToOutput:Affine6|null,intendedUse:string,maxDisplayCssPx:number|null,side:NOT_APPLICABLE|UNKNOWN,groundContact:XY[]|null,footprint:XY[]|null,entrance:XY|null,heightEnvelope:BoxXYXY|null,frame:string,transforms:object,gates:{binding:Gate,semantics:Gate,matte:Gate,spatial:Gate,articulation:Gate,runtime:Gate,owner:Gate},evidencePaths:string[],limitations:string[],blockedBy:string[],nextAction:string|null}.
+Interface={schema:1,producer:ENVIRONMENT,version:string,inputSnapshot:object,rows:ArtifactRow[],readySubset:string[],wholeDeliveryReady:boolean,reviewGallery:string,checkpoint:string}.
+SceneRow includes exact id/source hash/annotation frame/source-to-legal transform/roads/banks/decks/approaches/walkable/blocked polygons/uncertainty/full-footprint clearance results/proposal status/evidence/next action.
+Checkpoint includes completedIds,partialIds,failedIds,blockedIds,nextExecutableActions,sourceHashes,evidencePaths,polishQueue,authorityLimits,status,localProcessingComplete:boolean and localCompletionReason:string. localProcessingComplete may be true only when every feasible local action is finished and every remaining blocker has exact evidence; it does not promote blocked rows or establish whole-art/runtime/owner acceptance.
+
+Publish separate scene and artifact readiness. readySubset equals exactly represented READY artifact IDs. An inactive scene proposal may be ready for review, never active runtime PASS.
+
+4. Step-by-Step Instructions
+
+1. Record an immutable input/hash snapshot.
+2. Build a per-ID queue from all145 rows, all32 scenes and canonical environmental families omitted from the old queue.
+3. Inspect actual approved-reference and current-result pixels for every owned family.
+4. Identify the exact contributors to the green patches in the Stone composite.
+5. Classify the magenta diagnostic image against its actual recipe and intended use.
+6. Reproduce each confirmed matte defect on contrasting backgrounds.
+7. Apply source-supported matte/crop corrections only to implicated rows.
+8. Validate subject preservation for each corrected row.
+9. Recompute Stone P07 clearance in the explicitly named coordinate frames.
+10. Assess all17 Kingdom footprints, Hall, Walls, roads, banks, bridge and approaches against painted ground with uncertainty.
+11. Check each other Kingdom age against its own source pixels.
+12. Check every Adventure/Tactical/Defense annotation against its own source pixels.
+13. Correct inaccurate annotations using visible source features.
+14. Publish inactive geometry/camera proposals for conflicts requiring Code/owner coordination.
+15. Assess sparse/construction/completed/upgrade/Wall states for source-supported layers.
+16. Prepare any omitted feasible support-screen environmental/material layers from existing images.
+17. Render ASSET_COMPOSITE comparisons at 825x375,933x424,1180x820,1280x720 with uniform camera scale and actual chrome safe areas.
+18. Verify final hashes, decode, dimensions, alpha, transforms and input preservation.
+19. Publish your successor interface and source-versus-result gallery.
+20. Publish your checkpoint/handoff with exact per-ID blockers and Code dependencies.
+21. Continue every independent feasible row until delivered or honestly scoped-blocked.
+
+5. Edge Cases & Failure Modes
+
+Do not erase genuine foliage/soil merely because it is green. A patch may arise from a diagnostic overlay or composite transform; establish cause first. Do not repair a coordinate mismatch by moving painted roads or frozen pads. Clearance includes corridor width, full subject/approach footprints, obstacles and trace uncertainty; centre points are insufficient.
+
+Hidden required ground cannot be reconstructed by blur, warp or guessed painting. Keep source absence separate from geometry authority. Existing scene annotation counts do not prove accurate tracing. Defense's absent river/bank/deck annotations need a per-source applicability decision, not invented features.
+
+A genuinely new ROI/method gets one baseline and at most one justified correction with saved evidence. Reuse valid rows unchanged. Failed/exhausted historical methods do not restart under new names. Owner acceptance/runtime integration/device work are separate gates and never global stops for local tasks.
+
+6. Acceptance Criteria
+
+[ ] All145 artifact IDs and all32 scenes have explicit current outcomes and exact next actions.
+[ ] Every confirmed defect has source-bound before/after evidence and a reproducible recipe.
+[ ] Green/magenta concerns have exact causes and row IDs; legitimate source pixels are preserved.
+[ ] Full footprint/corridor clearance is assessed with correct coordinate frames and uncertainty.
+[ ] Every age and relevant screen family is delivered, reused or precisely blocked.
+[ ] Frozen geometry is unchanged; alternate proposals remain inactive.
+[ ] Reference-versus-result gallery uses actual decoded pixels at intended sizes and four viewports.
+[ ] readySubset matches READY rows; file hashes/dimensions/transforms are correct.
+[ ] Checkpoint separates local image completion, partial scene/authority blockers, Code dependencies and owner/runtime acceptance.
+[ ] Historical/source/other-producer/shared runtime bytes remain intact.
+
+7. Do NOT
+
+Do not edit AI2's outputs, either previous delivery, src/, runtime catalogs, tests, Android, root status pointers, shared helpers or canonical contracts. Do not generate, query providers, purchase replacements, touch budgets/locks, install dependencies/devices, build packages, sign/deploy/upload, restore/clean storage or mutate Git. Do not message another executor or spawn agents. Do not use a few corrected Stone assets, technical counts or composites to declare whole-game completion.

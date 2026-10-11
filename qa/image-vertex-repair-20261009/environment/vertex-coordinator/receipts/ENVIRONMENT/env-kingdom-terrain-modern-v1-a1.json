@@ -1,0 +1,53 @@
+{
+  "id": "receipt-env-kingdom-terrain-modern-v1-a1",
+  "canonicalId": "kingdom-terrain-modern",
+  "owner": "ENVIRONMENT",
+  "attemptId": "env-kingdom-terrain-modern-v1-a1",
+  "requestPackSHA256": "1712914853ad60875b4f0672533e9afb7b82ba9b00f5410f975f45168c330577",
+  "wireBodySHA256": "82eb567973f524375708cc30ebe08fe02160b5039415b367601e0088a060240d",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "4K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-modern-v1-a1/response.json",
+  "rawResponseSHA256": "3f5b82e8a09e7e9e9bb75f870022535472b12a391aaa64807508481ac502ed6f",
+  "images": [
+    {
+      "path": "assets/derivatives/image-vertex-repair-20261009/environment/native/kingdom-terrain-modern-candidate-a.png",
+      "sha256": "903d9baf996702b517e7f3b4c030f6d7eeb920ff5ead12023faa2240adfcc9a0",
+      "bytes": 25316081,
+      "dimensions": {
+        "width": 5504,
+        "height": 3072
+      }
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 2426,
+    "candidatesTokenCount": 2520,
+    "totalTokenCount": 4946,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2240
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 186
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2520
+      }
+    ]
+  },
+  "reservedUSD": 0.493,
+  "actualOrRetainedExposureUSD": 0.493,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "Review candidate pixels before any correction call."
+}

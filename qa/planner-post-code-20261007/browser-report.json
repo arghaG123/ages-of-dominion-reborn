@@ -1,0 +1,622 @@
+{
+  "type": "FRESH_ISOLATED_BROWSER",
+  "origin": "http://127.0.0.1:4427",
+  "errors": [],
+  "checks": [
+    {
+      "id": "natural-day1-sparse",
+      "pass": true
+    },
+    {
+      "id": "tactical-labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "Clubman ×6 · 6 · 60/60 hp · move",
+          "size": 14
+        },
+        {
+          "text": "Dire Wolf ×4 · 4 · 40/40 hp",
+          "size": 14
+        }
+      ]
+    },
+    {
+      "id": "retreat-opens-without-action",
+      "pass": true,
+      "detail": {
+        "before": 2
+      }
+    },
+    {
+      "id": "retreat-inert",
+      "pass": true,
+      "detail": [
+        {
+          "id": "stage-field",
+          "inert": true
+        },
+        {
+          "id": "world",
+          "inert": true
+        },
+        {
+          "id": "terrain",
+          "inert": true
+        },
+        {
+          "id": "panel",
+          "inert": true
+        },
+        {
+          "id": "nav",
+          "inert": true
+        },
+        {
+          "id": "dock",
+          "inert": true
+        },
+        {
+          "id": "context",
+          "inert": true
+        },
+        {
+          "id": "save",
+          "inert": true
+        }
+      ]
+    },
+    {
+      "id": "retreat-tab-contained",
+      "pass": true
+    },
+    {
+      "id": "retreat-cancel-focus-return",
+      "pass": true,
+      "detail": {
+        "id": "",
+        "choice": "retreat",
+        "hidden": true,
+        "actions": 2
+      }
+    },
+    {
+      "id": "retreat-cancel-no-action",
+      "pass": true,
+      "detail": {
+        "id": "",
+        "choice": "retreat",
+        "hidden": true,
+        "actions": 2
+      }
+    },
+    {
+      "id": "retreat-escape-focus-return",
+      "pass": true
+    },
+    {
+      "id": "retreat-confirm-once",
+      "pass": true
+    },
+    {
+      "id": "portrait-state-preserved",
+      "pass": true
+    },
+    {
+      "id": "army-fixture-size-age-0",
+      "pass": null,
+      "detail": [
+        {
+          "path": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-stone-ranged.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/actors/v5/troop-stone-heavy.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "200"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-stone-ranged.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "200"
+        },
+        {
+          "path": "assets/derivatives/actors/v5/troop-stone-heavy.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "129.99999999999997"
+        }
+      ]
+    },
+    {
+      "id": "army-fixture-size-age-1",
+      "pass": null,
+      "detail": [
+        {
+          "path": "assets/derivatives/actors/v4/troop-bronze-melee.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-bronze-ranged.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-bronze-heavy.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "106.74424242424243"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-bronze-melee.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "129.99999999999997"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-bronze-ranged.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "129.99999999999997"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-bronze-heavy.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "106.7442424242424"
+        }
+      ]
+    },
+    {
+      "id": "army-fixture-size-age-2",
+      "pass": null,
+      "detail": [
+        {
+          "path": "assets/derivatives/substitutions/v3/troop-iron-melee.png",
+          "width": 77.94332122802734,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-iron-ranged.png",
+          "width": 77.94331359863281,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-iron-heavy.png",
+          "width": 77.94332885742188,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/substitutions/v3/troop-iron-melee.png",
+          "width": 119.91278839111328,
+          "height": 119.91279602050781,
+          "parentHeight": "200"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-iron-ranged.png",
+          "width": 77.94331359863281,
+          "height": 77.94332885742188,
+          "parentHeight": "129.99999999999997"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-iron-heavy.png",
+          "width": 77.94329833984375,
+          "height": 77.94332885742188,
+          "parentHeight": "129.99999999999997"
+        }
+      ]
+    },
+    {
+      "id": "army-fixture-size-age-3",
+      "pass": null,
+      "detail": [
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-melee.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-ranged.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-heavy.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-melee.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "200"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-ranged.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "200"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-medieval-heavy.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "200"
+        }
+      ]
+    },
+    {
+      "id": "army-fixture-size-age-4",
+      "pass": null,
+      "detail": [
+        {
+          "path": "assets/derivatives/actors/v4/troop-gunpowder-melee.png",
+          "width": 77.94332122802734,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-gunpowder-ranged.png",
+          "width": 77.94331359863281,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-gunpowder-heavy.png",
+          "width": 64,
+          "height": 64,
+          "parentHeight": "106.74424242424243"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-gunpowder-melee.png",
+          "width": 77.94331359863281,
+          "height": 77.94332885742188,
+          "parentHeight": "129.99999999999997"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-gunpowder-ranged.png",
+          "width": 77.94331359863281,
+          "height": 77.94332885742188,
+          "parentHeight": "129.99999999999997"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-gunpowder-heavy.png",
+          "width": 64,
+          "height": 64,
+          "parentHeight": "106.7442424242424"
+        }
+      ]
+    },
+    {
+      "id": "army-fixture-size-age-5",
+      "pass": null,
+      "detail": [
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-industrial-melee.png",
+          "width": 59.85235595703125,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/runtime-code-20261007/troops/troop-industrial-ranged.png",
+          "width": 52.5096435546875,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/runtime-code-20261007/troops/troop-industrial-heavy.png",
+          "width": 66.54193115234375,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-industrial-melee.png",
+          "width": 92.08053588867188,
+          "height": 119.91279602050781,
+          "parentHeight": "200"
+        },
+        {
+          "path": "assets/runtime-code-20261007/troops/troop-industrial-ranged.png",
+          "width": 80.78404235839844,
+          "height": 119.91279602050781,
+          "parentHeight": "200"
+        },
+        {
+          "path": "assets/runtime-code-20261007/troops/troop-industrial-heavy.png",
+          "width": 102.3721923828125,
+          "height": 119.91279602050781,
+          "parentHeight": "200"
+        }
+      ]
+    },
+    {
+      "id": "army-fixture-size-age-6",
+      "pass": null,
+      "detail": [
+        {
+          "path": "assets/derivatives/actors/v4/troop-modern-melee.png",
+          "width": 77.94332122802734,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-modern-ranged.png",
+          "width": 39.975616455078125,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-modern-heavy.png",
+          "width": 49.959228515625,
+          "height": 77.94331359863281,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-modern-melee.png",
+          "width": 77.94331359863281,
+          "height": 77.94332885742188,
+          "parentHeight": "129.99999999999997"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-modern-ranged.png",
+          "width": 61.50093078613281,
+          "height": 119.91279602050781,
+          "parentHeight": "200"
+        },
+        {
+          "path": "assets/delivery/stone-starter-20261003/derivatives/v2/live/plates/troop-modern-heavy.png",
+          "width": 76.86041259765625,
+          "height": 119.91279602050781,
+          "parentHeight": "200"
+        }
+      ]
+    },
+    {
+      "id": "army-fixture-size-age-7",
+      "pass": null,
+      "detail": [
+        {
+          "path": "assets/derivatives/actors/v4/troop-future-melee.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "130"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-future-ranged.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "106.74424242424243"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-future-heavy.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "106.74424242424243"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-future-melee.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "129.99999999999997"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-future-ranged.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "106.7442424242424"
+        },
+        {
+          "path": "assets/derivatives/actors/v4/troop-future-heavy.png",
+          "width": 0,
+          "height": 0,
+          "parentHeight": "106.7442424242424"
+        }
+      ]
+    }
+  ],
+  "captures": [
+    {
+      "id": "home-1280",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "class-selection",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "kingdom-day1",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "adventure",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "hero",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "army",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "forge",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "market",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "story",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "settings",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "help",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "war",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "tactical",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "id": "portrait-rotate",
+      "type": "NATURAL",
+      "viewport": {
+        "width": 375,
+        "height": 825
+      }
+    },
+    {
+      "id": "army-age-0",
+      "type": "FIXTURE",
+      "viewport": [
+        825,
+        375
+      ]
+    },
+    {
+      "id": "army-age-1",
+      "type": "FIXTURE",
+      "viewport": [
+        825,
+        375
+      ]
+    },
+    {
+      "id": "army-age-2",
+      "type": "FIXTURE",
+      "viewport": [
+        825,
+        375
+      ]
+    },
+    {
+      "id": "army-age-3",
+      "type": "FIXTURE",
+      "viewport": [
+        825,
+        375
+      ]
+    },
+    {
+      "id": "army-age-4",
+      "type": "FIXTURE",
+      "viewport": [
+        825,
+        375
+      ]
+    },
+    {
+      "id": "army-age-5",
+      "type": "FIXTURE",
+      "viewport": [
+        825,
+        375
+      ]
+    },
+    {
+      "id": "army-age-6",
+      "type": "FIXTURE",
+      "viewport": [
+        825,
+        375
+      ]
+    },
+    {
+      "id": "army-age-7",
+      "type": "FIXTURE",
+      "viewport": [
+        825,
+        375
+      ]
+    }
+  ],
+  "journey": "Natural new campaign/class selection/Skirmish; age layouts below are FIXTURE, no earned campaign claim",
+  "serverLog": "Reborn local preview: http://127.0.0.1:4427\n"
+}

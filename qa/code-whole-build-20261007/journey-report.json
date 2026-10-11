@@ -1,0 +1,181 @@
+{
+  "game": "http://127.0.0.1:4387",
+  "shots": [
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\home-825x375.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\home-933x424.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\home-1180x820.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\home-1280x720.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\class-select.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\kingdom-stone-empty.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\market.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\story.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\war.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\settings.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\help.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\army.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\forge.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\skirmish.png",
+    "C:\\dev\\ages-of-dominion-reborn\\qa\\code-whole-build-20261007\\shots\\retreat-open.png"
+  ],
+  "checks": [
+    {
+      "screen": "home",
+      "viewport": [
+        825,
+        375
+      ],
+      "buttons": [
+        {
+          "text": "New campaign",
+          "w": 380,
+          "h": 48
+        },
+        {
+          "text": "Load",
+          "w": 380,
+          "h": 48
+        },
+        {
+          "text": "Settings",
+          "w": 380,
+          "h": 48
+        }
+      ],
+      "small": []
+    },
+    {
+      "screen": "home",
+      "viewport": [
+        933,
+        424
+      ],
+      "buttons": [
+        {
+          "text": "New campaign",
+          "w": 380,
+          "h": 48
+        },
+        {
+          "text": "Load",
+          "w": 380,
+          "h": 48
+        },
+        {
+          "text": "Settings",
+          "w": 380,
+          "h": 48
+        }
+      ],
+      "small": []
+    },
+    {
+      "screen": "home",
+      "viewport": [
+        1180,
+        820
+      ],
+      "buttons": [
+        {
+          "text": "New campaign",
+          "w": 380,
+          "h": 48
+        },
+        {
+          "text": "Load",
+          "w": 380,
+          "h": 48
+        },
+        {
+          "text": "Settings",
+          "w": 380,
+          "h": 48
+        }
+      ],
+      "small": []
+    },
+    {
+      "screen": "home",
+      "viewport": [
+        1280,
+        720
+      ],
+      "buttons": [
+        {
+          "text": "New campaign",
+          "w": 380,
+          "h": 48
+        },
+        {
+          "text": "Load",
+          "w": 380,
+          "h": 48
+        },
+        {
+          "text": "Settings",
+          "w": 380,
+          "h": 48
+        }
+      ],
+      "small": []
+    },
+    {
+      "screen": "class-select",
+      "classes": [
+        "knight",
+        "ranger",
+        "warlock",
+        "mage",
+        "paladin",
+        "barbarian",
+        "necromancer",
+        "healer"
+      ]
+    },
+    {
+      "screen": "kingdom",
+      "pads": 18,
+      "walls": "unbuilt",
+      "hall": "present"
+    },
+    {
+      "screen": "market",
+      "layout": "market"
+    },
+    {
+      "screen": "story",
+      "layout": "story"
+    },
+    {
+      "screen": "war",
+      "layout": "war"
+    },
+    {
+      "screen": "settings",
+      "layout": "settings"
+    },
+    {
+      "screen": "help",
+      "layout": "help"
+    },
+    {
+      "screen": "army",
+      "layout": ""
+    },
+    {
+      "screen": "forge",
+      "layout": ""
+    },
+    {
+      "screen": "retreat-open",
+      "field": true,
+      "worldAncestor": true,
+      "dialog": true
+    },
+    {
+      "screen": "retreat-escape",
+      "hidden": true,
+      "field": false,
+      "focus": "retreat"
+    }
+  ]
+}

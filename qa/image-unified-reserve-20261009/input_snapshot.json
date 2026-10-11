@@ -1,0 +1,104 @@
+{
+  "recordedAt": "2026-10-09T11:00:55.472668+00:00",
+  "controlsBeforeRelease": {
+    "submission.mutex.json": {
+      "present": true,
+      "sha256": "e9b8519c1fd52b362cf09846e40d70d8a29a0a7867dcf1cd57433e9ab89f6917",
+      "bytes": 313,
+      "archive": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/submission.mutex.json.e9b8519c1fd52b36"
+    },
+    "active-batch.lock.json": {
+      "present": true,
+      "sha256": "df6cf288f06392f34b5c179e050442d199a45572b497ff4d721fb17b5beec3f7",
+      "bytes": 260,
+      "archive": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/active-batch.lock.json.df6cf288f06392f3"
+    },
+    "pacing_state.json": {
+      "present": true,
+      "sha256": "d2e70b0ec870abec7487f339252952c9777c4da65ff40c5597c583b8fc43f741",
+      "bytes": 245,
+      "archive": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/pacing_state.json.d2e70b0ec870abec"
+    },
+    "budget-ledger.json": {
+      "present": true,
+      "sha256": "448df9e21317ef9e162446c3a1774bfb77eff625cd824de356db10963df3fad5",
+      "bytes": 23595,
+      "archive": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/budget-ledger.json.448df9e21317ef9e"
+    },
+    "reconciled-accounting-ledger.json": {
+      "present": true,
+      "sha256": "69dc34ddbcf7c83a3e4cb6501a50533fc580145ec25a9d4f78a5d4262b7761ff",
+      "bytes": 1729,
+      "archive": "qa/image-unified-reserve-20261009/vertex-coordinator/evidence/archive/reconciled-accounting-ledger.json.69dc34ddbcf7c83a"
+    }
+  },
+  "files": [
+    {
+      "path": "docs/plan/ENVIRONMENT-ART-VERTEX-REPAIR-INTERFACE-2026-10-09.json",
+      "sha256": "96b4dae762b7894c9d689c07736b5c962b0fac46d4dc296ce63276adc7aefa6e",
+      "bytes": 1265192,
+      "present": true
+    },
+    {
+      "path": "docs/plan/ACTORS-EQUIPMENT-VERTEX-REPAIR-INTERFACE-2026-10-09.json",
+      "sha256": "2cb4c97a6e181a6633c6ed9f7fdc8417d1a6e45a315e921201474c2d9d2d17fa",
+      "bytes": 599183,
+      "present": true
+    },
+    {
+      "path": "docs/plan/OWNER-RESERVE-RELEASE-SINGLE-IMAGE-AI-2026-10-09.md",
+      "sha256": "e36ae5b28e47585420074406167b9e477689688f3d66238cc33db1fb42b32b0a",
+      "bytes": 5069,
+      "present": true
+    },
+    {
+      "path": "docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+      "sha256": "e82c28f8c95bfeaf08bff13304f754be9b23d37865292a3ebf42c920d946cd7b",
+      "bytes": 33687,
+      "present": true
+    },
+    {
+      "path": "src/data/implementation-contract.json",
+      "sha256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd",
+      "bytes": 23160,
+      "present": true
+    },
+    {
+      "path": "src/data/stone-scene.json",
+      "sha256": "32e4306459fe280f418f60ca2e4cb1bb5341f0aff7bc6a4d343dce9438e33922",
+      "bytes": 835,
+      "present": true
+    },
+    {
+      "path": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+      "sha256": "53233e6284322f73650529bcfe08f8141e37897cca0a57b0b3454a547dd97ba3",
+      "bytes": 3528333,
+      "present": true
+    },
+    {
+      "path": "assets/derivatives/rigs/v7/healer/boot.png",
+      "sha256": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "bytes": 33467,
+      "present": true
+    },
+    {
+      "path": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+      "sha256": "c61f0e3dec06a344744f3f4d21a6cf7dabdb4df61730c42eac535c7988f2104a",
+      "bytes": 3112875,
+      "present": true
+    },
+    {
+      "path": "assets/runtime-code-20261007/troops/troop-industrial-ranged.png",
+      "sha256": "5df473c9336451f51f2babf21ed88b7c5dc8bd5bc901615b8851a07c5183823f",
+      "bytes": 2495714,
+      "present": true
+    },
+    {
+      "path": "assets/runtime-code-20261007/troops/troop-industrial-heavy.png",
+      "sha256": "9455bf02f32921c7fa0bf3d2bce4f561e9c311a37e36ad99bd3dbafa7fcbc758",
+      "bytes": 4384118,
+      "present": true
+    }
+  ],
+  "note": "Producer, Code, and original bytes were hashed or archived. They were not rewritten except the authorized control ledger append."
+}

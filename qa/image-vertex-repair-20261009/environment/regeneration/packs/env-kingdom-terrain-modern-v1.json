@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "env-kingdom-terrain-modern-v1",
+  "owner": "ENVIRONMENT",
+  "canonicalId": "kingdom-terrain-modern",
+  "version": "v1",
+  "state": "READY",
+  "defect": "8 painted-road corridor conflicts against frozen pads",
+  "reason": "Local blur or warp cannot rebuild hidden or wrongly painted ground. A new guided source is required.",
+  "priorSourceHashes": [
+    "606d04fc98640fa6644b8dec4f420987cd9455b70f44a795802d69f09afaa29c"
+  ],
+  "referenceRefs": [
+    {
+      "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/09-kingdom-modern.jpg",
+      "sha256": "3f22f3fe01890d388eeebc999c74019113f270b1cdd8802d9dd73ffaf7c1bf15",
+      "bytes": 408088
+    }
+  ],
+  "base": null,
+  "mask": null,
+  "guide": {
+    "path": "qa/image-vertex-repair-20261009/environment/geography/guides/kingdom-terrain-modern-legal-guide.png",
+    "sha256": "560b3689a32b96c51473b45dc8278766c750b07e855efd1343c48fb16ce20581",
+    "bytes": 11632,
+    "dimensions": {
+      "width": 1376,
+      "height": 768
+    }
+  },
+  "landmarks": {
+    "pads": [
+      "townhall",
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17"
+    ],
+    "roads": [
+      "west-entry",
+      "metropolitan-boulevard",
+      "concrete-viaduct-road",
+      "highway-ring"
+    ]
+  },
+  "legalGeometrySHA256": "20e2a45d89b04bd3d4a6b3bace904784415dc88d2a82dfe4ef4c8fae1156ff24",
+  "requestedResolution": "4K",
+  "aspectRatio": "16:9",
+  "expectedNativeDimensions": null,
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "promptPath": "qa/image-vertex-repair-20261009/environment/regeneration/prompts/kingdom-terrain-modern.txt",
+  "promptSHA256": "31a4d3b56ab4e3ee4d245bd0c23d247b167d650fb782b9afe9c6ea6cb07c0e4d",
+  "wireBodyPath": "qa/image-vertex-repair-20261009/environment/regeneration/wire/kingdom-terrain-modern.json",
+  "wireBodySHA256": "82eb567973f524375708cc30ebe08fe02160b5039415b367601e0088a060240d",
+  "inputTransforms": [
+    {
+      "from": [
+        1376,
+        768
+      ],
+      "to": [
+        1024,
+        572
+      ],
+      "scale": 0.744186,
+      "method": "LANCZOS request-reference copy. The generated output is not this resize."
+    }
+  ],
+  "semanticCriteria": [
+    "Age materials match the prompt and the approved landscape direction.",
+    "No text, HUD, people, or device frame.",
+    "Reserved rectangles stay empty ground."
+  ],
+  "geometryCriteria": [
+    "Output is native 4K 16:9, decoded from the response, not upscaled afterward.",
+    "Guide rectangles remain the empty-pad targets. Frozen affine and Hall scale are not edited.",
+    "Road paint must clear pad quads by more than 8 legal px plus trace uncertainty after the same measurement."
+  ],
+  "maskApplicability": "No inpainting mask is sent. The guide image is a labeled spatial input. The API mask field is not used.",
+  "maxCandidateCalls": 2,
+  "estimatedUpperBoundUSD": 0.493,
+  "readinessEvidence": [
+    "qa/image-vertex-repair-20261009/environment/geography/kingdom-terrain-modern-clearance.json"
+  ],
+  "blockedBy": [],
+  "priority": 1
+}

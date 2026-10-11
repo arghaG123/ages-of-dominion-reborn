@@ -1,0 +1,57 @@
+{
+  "conflictCount": 4,
+  "conflicts": [
+    {
+      "road": "main-trail",
+      "site": "town",
+      "distanceLegalPx": 0.0,
+      "requiredLegalPx": 20.0,
+      "units": "legal px",
+      "method": "segment distance from declared painted polyline to pad quad",
+      "uncertaintyLegalPx": 12.0
+    },
+    {
+      "road": "ruin-spur",
+      "site": "town",
+      "distanceLegalPx": 0.0,
+      "requiredLegalPx": 22.0,
+      "units": "legal px",
+      "method": "segment distance from declared painted polyline to pad quad",
+      "uncertaintyLegalPx": 14.0
+    },
+    {
+      "road": "ruin-spur",
+      "site": "ruin",
+      "distanceLegalPx": 0.0,
+      "requiredLegalPx": 22.0,
+      "units": "legal px",
+      "method": "segment distance from declared painted polyline to pad quad",
+      "uncertaintyLegalPx": 14.0
+    },
+    {
+      "road": "crossing-branch",
+      "site": "mill",
+      "distanceLegalPx": 0.0,
+      "requiredLegalPx": 20.0,
+      "units": "legal px",
+      "method": "segment distance from declared painted polyline to pad quad",
+      "uncertaintyLegalPx": 12.0
+    }
+  ],
+  "padGapUnder16LegalPx": [
+    {
+      "a": "mine",
+      "b": "dwelling",
+      "distanceLegalPx": 0.0,
+      "requiredLegalPx": 16
+    }
+  ],
+  "water": {
+    "water": "STATIC",
+    "waterPixelFractionOn1376BoxDownsample": 0.00246,
+    "waterMethod": "BOX downsample to 1376x768, blue dominance B>R+18 and B>G+8 and B>70",
+    "bridge": "PRESENT_IN_LEGAL_CONTRACT",
+    "banks": "UNVERIFIED_NOT_ASSERTED_ABSENT",
+    "decks": "UNVERIFIED_NOT_ASSERTED_ABSENT"
+  }
+}

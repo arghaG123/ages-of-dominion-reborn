@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-07",
+  "authority": "independent planner/verifier; read-only against production sources, derivatives and game source",
+  "runtimeSnapshot": {
+    "head": "c266e220fa024dfb95fbf534f180c40ed52585e3",
+    "codeCheckpoint": "qa/code-executor-20261005/checkpoint.json",
+    "codePrompt": "docs/plan/CODE-AI-COMPLETE-VISUAL-PLAYABLE-PROMPT-2026-10-06.txt",
+    "sourceTreeChangedSinceHead": false
+  },
+  "environment": {
+    "interface": "docs/plan/ENVIRONMENT-ART-INTERFACE-2026-10-06.json",
+    "interfaceRows": 145,
+    "outputAndSourceBindings": "PASS",
+    "allOutputDecodeAndDeclaredDimensions": "PASS",
+    "interfaceRowStatuses": {"READY": 145},
+    "checkpointStatus": "INCOMPLETE",
+    "checkpointCompletedRows": 145,
+    "checkpointPartialSceneIds": [
+      "kingdom-terrain-stone", "kingdom-terrain-bronze", "kingdom-terrain-iron", "kingdom-terrain-medieval", "kingdom-terrain-gunpowder", "kingdom-terrain-industrial", "kingdom-terrain-modern", "kingdom-terrain-future",
+      "adventure-terrain", "adventure-terrain-plains", "adventure-terrain-hills", "adventure-terrain-swamp", "adventure-terrain-desert", "adventure-terrain-snow", "adventure-terrain-waste", "adventure-terrain-ruins",
+      "tactical-terrain", "tactical-terrain-plains", "tactical-terrain-hills", "tactical-terrain-swamp", "tactical-terrain-desert", "tactical-terrain-snow", "tactical-terrain-waste", "tactical-terrain-ruins",
+      "defense-terrain", "defense-terrain-plains", "defense-terrain-hills", "defense-terrain-swamp", "defense-terrain-desert", "defense-terrain-snow", "defense-terrain-waste", "defense-terrain-ruins"
+    ],
+    "checkpointBlockedIds": ["kingdom-stone-day1-composition-v4-guide", "kingdom-stone-day1-composition-v5-guide"],
+    "all32ScenesUnpromoted": true,
+    "all32CameraProposals": "PROPOSED",
+    "observedVisualIssues": [
+      "Stone overlay visibly routes a road trace through/over the P07 legal footprint; clearance claim needs point/segment-to-full-footprint recomputation.",
+      "Developed Stone ASSET_COMPOSITE has bright green triangular ground/matte wedges at several building-layer edges.",
+      "qa/environment-art-20261006/test_townhall_matte.png visibly carries a magenta fringe; its intended diagnostic role is undocumented and must be reconciled with the handoff's zero-magenta claim.",
+      "The environment validator checks paths, hashes, decodability, schema and file counts; it does not measure matte contamination, ground clearance, or visual fidelity."
+    ],
+    "sceneCoverage": {
+      "kingdom": {"count": 8, "roadTracesEach": 4, "riverPolygonsEach": 1, "bankTracesEach": 2, "bridgeDeckEach": true, "walkablePolygonsEach": 3, "blockedPolygonsEach": 2},
+      "adventure": {"count": 8, "roadTracesEach": 3, "riverPolygonsEach": 1, "bankTracesEach": 2, "bridgeDeckEach": true, "walkablePolygonsEach": 2, "blockedPolygonsEach": 2},
+      "tactical": {"count": 8, "roadTracesEach": 2, "riverPolygonsEach": 1, "bankTracesEach": 2, "bridgeDeckEach": true, "walkablePolygonsEach": 2, "blockedPolygonsEach": 1},
+      "defense": {"count": 8, "roadTracesEach": 1, "riverPolygonsEach": 0, "bankTracesEach": 0, "bridgeDeckEach": false, "walkablePolygonsEach": 1, "blockedPolygonsEach": 1}
+    },
+    "remainingDisposition": "Existing extensive annotations are useful candidates. Manual per-scene source/pixel and full-footprint verification, correction where source supports it, proposal coordination, and scene/age visual comparison remain feasible. Keep geometry/camera proposals inactive and do not edit the frozen affine or Hall scale."
+  },
+  "actors": {
+    "interface": "docs/plan/ACTORS-EQUIPMENT-INTERFACE-2026-10-06.json",
+    "interfaceRows": 158,
+    "outputAndSourceHashes": "PASS for existing path-bound rows",
+    "decodedImageRowsAndDimensions": "PASS except seven assembly/diagram rows whose interface dimensions disagree with actual file dimensions",
+    "interfaceRowStatuses": {"READY": 142, "PARTIAL": 13, "BLOCKED": 3},
+    "readySubsetCount": 144,
+    "readySubsetMissingRows": ["healer-greave-boot", "healer-leg-greave"],
+    "checkpointCompletedIdsMissingInterfaceRows": ["healer-greave-boot", "healer-leg-greave"],
+    "checkpointFailedIdsNotRepresentedAsInterfaceRows": ["healer-head-to-torso", "healer-skirt-to-leg", "knight-thigh-greave", "paladin-greave-boot", "paladin-head-raster", "paladin-thigh-knee"],
+    "assemblyDimensionMismatches": {
+      "healer-leg-subchain": {"file": [203, 858], "declared": [900, 900]},
+      "healer-chain-diagram": {"file": [1040, 320], "declared": [780, 320]},
+      "ranger-chain-diagram": {"file": [520, 320], "declared": [780, 320]},
+      "mage-chain-diagram": {"file": [520, 320], "declared": [780, 320]},
+      "warlock-chain-diagram": {"file": [520, 320], "declared": [780, 320]},
+      "necromancer-chain-diagram": {"file": [520, 320], "declared": [780, 320]},
+      "barbarian-chain-diagram": {"file": [520, 320], "declared": [780, 320]}
+    },
+    "unfinishedFeasibleOrSourceCheckRequired": [
+      "healer-leg-subchain: valid partial only; test source-supported waist/neck landmarks once with bounded, evidence-backed methods; existing head-to-torso and skirt-to-leg attempts failed.",
+      "Industrial melee/heavy and Modern ranged/heavy: partial matte/refinement or snow/slab issues; do not accept until exact source defects and legal consumer bounds are checked.",
+      "Eight class full-body chains: current image assemblies are explicitly missing-link diagrams, not scale-matched full-body results; inspect existing source ROIs and produce only links with source landmarks.",
+      "Gunpowder heavy, Future ranged, Future heavy: preserve the recorded 64 CSS-pixel consumer ceiling pending exact legacy interpretation; do not silently expose 130px from the interface."
+    ],
+    "blockedNoPaidAuthority": {
+      "troop-stone-melee": "Dirt slab / replacement draft requires owner budget authorization.",
+      "troop-stone-ranged": "Wooden platform / replacement draft requires owner budget authorization.",
+      "troop-industrial-ranged": "Source is prone and cannot establish the required standing pose; replacement draft requires owner budget authorization."
+    },
+    "exhaustedOrAbsentEvidence": {
+      "knight-thigh-greave": "13 attempts exhausted; do not restart.",
+      "paladin-thigh-knee": "Failed bounded link; do not synthesize anatomy.",
+      "paladin-greave-boot": "Failed bounded link; do not synthesize anatomy.",
+      "paladin-head-raster": "Rejected candidate bytes absent; do not recreate from description."
+    },
+    "completedFamilies": "Existing rows cover troop plates, eight creatures, attacker roles, three mount/vehicle families, ten artifact icons, eight ages of six-slot gear, and battle effects. This confirms useful consumer-specific rows only; it does not establish full hero bodies, animation, runtime integration or owner acceptance."
+  },
+  "explicitlyNotImageWork": [
+    "Game code, runtime catalogs and source/consumer integration belong to Code.",
+    "Home, class-select, Kingdom pad/building state integration, Adventure/Tactical/Defense layout and all supporting screen construction remain Code-owned.",
+    "Owner visual acceptance, physical device tests, frozen-geometry activation, paid replacements, missing historical guide recovery, and runtime/gameplay acceptance are not authorized image-processing tasks."
+  ],
+  "provenance": {
+    "pythonUsed": "3.12.14 bundled runtime",
+    "method": "Independent read-only SHA-256, Pillow decode, actual-dimension checks over both interfaces; direct visual inspection of selected existing composites/assembly/overlay pixels; no producer helper executed.",
+    "noProductionMutation": true,
+    "noCodeExecutionOrBuild": true,
+    "noProviderOrDeviceOperation": true
+  }
+}

@@ -1,12 +1,15 @@
 // Live placement for review. This does not edit the active Kingdom contract.
 export const STAGE = [1376, 768];
 export const ACTIVE_AFFINE = [60, -10, 25, 35, 170, 165];
+// Empty sites are brass outlines and a stake. The painted ground stays visible.
+// The affine and Hall scale stay frozen.
+export const KINGDOM_PAD_PRESENTATION = 'kingdom-pad-state-v2';
 
 export function heroStage() {
   return {
-    card: { x: 128, y: 40, width: 500, height: 500 },
-    figure: { x: 1020, y: 530 },
-    ground: { x1: 860, y: 530, x2: 1200 },
+    card: { x: 48, y: 40, width: 460, height: 460 },
+    figure: { x: 278, y: 700 },
+    ground: { x1: 40, y: 700, x2: 1330 },
   };
 }
 

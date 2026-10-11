@@ -1,0 +1,51 @@
+{
+  "id": "receipt-actors-class-necromancer-standing-body-v1-a1",
+  "canonicalId": "class-necromancer-standing-body",
+  "owner": "ACTORS",
+  "attemptId": "actors-class-necromancer-standing-body-v1-a1",
+  "requestPackSHA256": "921a898ae2fd346ff03423f48b35b4bac3c5dcc85ffae7e2ced70a45a31b1b0d",
+  "wireBodySHA256": "3ee3124aba4aae8632eb9ffee0cf86a25524afd8c05f374f63d5c10936db3b8c",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "2K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-necromancer-standing-body-v1-a1/response.json",
+  "rawResponseSHA256": "03e6cf1e4df08e2c6f2b6d72f9fc946f7837f7471f5c7226c826c8f543bb761f",
+  "images": [
+    {
+      "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-necromancer-standing-body.png",
+      "sha256": "74aead791db83e0e6713efb0620f6967b7d81a4d3013b525a60e613361460f54",
+      "bytes": 4398955,
+      "dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "format": "PNG"
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 115,
+    "candidatesTokenCount": 1680,
+    "totalTokenCount": 1795,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 115
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1680
+      }
+    ]
+  },
+  "reservedUSD": 0.4,
+  "actualOrRetainedExposureUSD": 0.4,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "AI2 reviews this candidate. Coordinator did not write AI2 directories or mark the sprite READY.",
+  "review": "UNREVIEWED_BY_OWNER"
+}

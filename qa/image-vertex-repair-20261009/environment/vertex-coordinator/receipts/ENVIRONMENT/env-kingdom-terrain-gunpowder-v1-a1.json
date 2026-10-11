@@ -1,0 +1,53 @@
+{
+  "id": "receipt-env-kingdom-terrain-gunpowder-v1-a1",
+  "canonicalId": "kingdom-terrain-gunpowder",
+  "owner": "ENVIRONMENT",
+  "attemptId": "env-kingdom-terrain-gunpowder-v1-a1",
+  "requestPackSHA256": "d853d7f44d1dcf73d489cafed2cf0d153d06a2cde867c803fd3f222e70b972cd",
+  "wireBodySHA256": "4b211c80cd245416e4ab52f1a93c100c152c3f3079e4e56b9709a374085c2b0f",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "4K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-gunpowder-v1-a1/response.json",
+  "rawResponseSHA256": "5810c3fb29641343afad599b61cd316116615d58d9bc8c4072f36963f8836141",
+  "images": [
+    {
+      "path": "assets/derivatives/image-vertex-repair-20261009/environment/native/kingdom-terrain-gunpowder-candidate-a.png",
+      "sha256": "0373dec678ca56a3dbecf5d0d20f6b542b4836d10681007da43427b2cedea855",
+      "bytes": 25692657,
+      "dimensions": {
+        "width": 5504,
+        "height": 3072
+      }
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 2431,
+    "candidatesTokenCount": 2520,
+    "totalTokenCount": 4951,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2240
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 191
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2520
+      }
+    ]
+  },
+  "reservedUSD": 0.4931,
+  "actualOrRetainedExposureUSD": 0.4931,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "Review candidate pixels before any correction call."
+}

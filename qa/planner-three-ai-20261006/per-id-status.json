@@ -1,0 +1,702 @@
+{
+  "readyRows": [
+    {
+      "id": "troop-bronze-melee",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "troop-bronze-ranged",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "troop-iron-ranged",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "troop-iron-heavy",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "troop-gunpowder-melee",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "troop-gunpowder-ranged",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "troop-modern-melee",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "troop-future-melee",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "troop-stone-heavy",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified."
+    },
+    {
+      "id": "ranger-sleeve-to-open-hand",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Recorded placement remeasured once. The 12-placement search was not rerun. Not a whole rig or an arbitrary angle."
+    },
+    {
+      "id": "healer-boot",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Disconnected neighboring armor was removed. The largest boot component was not edited. Not a leg rig by itself."
+    },
+    {
+      "id": "healer-leg-greave",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "These three angles only. Not a whole rig. Side UNKNOWN."
+    },
+    {
+      "id": "healer-greave-boot",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "These three angles only. Not a whole rig. Side UNKNOWN."
+    },
+    {
+      "id": "paladin-knee-greave",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "These three angles only. Not a whole rig. Side UNKNOWN."
+    },
+    {
+      "id": "healer-head-front-neck",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head."
+    },
+    {
+      "id": "healer-head-front-bust",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head."
+    },
+    {
+      "id": "healer-head-three-quarter",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head."
+    },
+    {
+      "id": "healer-head-profile-braid",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head."
+    },
+    {
+      "id": "healer-head-profile-bun",
+      "producerStatus": "READY",
+      "binding": "PASS",
+      "runtime": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "limitations": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "adventure-terrain",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "adventure-terrain-plains",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "adventure-terrain-hills",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "adventure-terrain-swamp",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "adventure-terrain-desert",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "adventure-terrain-snow",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "adventure-terrain-waste",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "adventure-terrain-ruins",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "tactical-terrain-plains",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "tactical-terrain-hills",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "tactical-terrain-swamp",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "tactical-terrain-desert",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "tactical-terrain-waste",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "tactical-terrain-ruins",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "defense-terrain",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "defense-terrain-plains",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "defense-terrain-hills",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "defense-terrain-swamp",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "defense-terrain-desert",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "defense-terrain-snow",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "defense-terrain-waste",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "defense-terrain-ruins",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "tactical-terrain",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Open the saved legal-frame preview and trace painted roads, water, and obstacles. Sobel ridges stay withdrawn.",
+      "executor": "AI1"
+    },
+    {
+      "id": "kingdom-terrain-stone",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 4,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Tighten bank and road traces below corridor width, then compare every legal site polygon to the trace.",
+      "executor": "AI1"
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "executor": "AI1"
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "executor": "AI1"
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "executor": "AI1"
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "executor": "AI1"
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "executor": "AI1"
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "executor": "AI1"
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "producerStatus": "PARTIAL",
+      "promoted": false,
+      "binding": "PASS",
+      "roadPaths": 0,
+      "walkablePolygons": 0,
+      "spatial": "UNVERIFIED",
+      "owner": "UNVERIFIED",
+      "nextAction": "Manual legal-frame trace of this plate's roads, banks, and bridge. Do not copy the Stone polylines.",
+      "executor": "AI1"
+    }
+  ],
+  "classChains": [
+    {
+      "id": "healer-neutral-chain",
+      "class": "healer",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/healer-chain-v9.png",
+      "neutralPose": "SUBCHAIN_ONLY",
+      "measured": [
+        "upper-leg to greave",
+        "greave to boot"
+      ],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "paladin-neutral-chain",
+      "class": "paladin",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/paladin-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "ranger-neutral-chain",
+      "class": "ranger",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/ranger-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "knight-neutral-chain",
+      "class": "knight",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/knight-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "mage-neutral-chain",
+      "class": "mage",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/mage-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "warlock-neutral-chain",
+      "class": "warlock",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/warlock-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "necromancer-neutral-chain",
+      "class": "necromancer",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/necromancer-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    },
+    {
+      "id": "barbarian-neutral-chain",
+      "class": "barbarian",
+      "status": "PARTIAL",
+      "fullBody": "FAIL",
+      "side": "UNKNOWN",
+      "diagram": "qa/image-local-delivery-v9-20261005/assemblies/barbarian-chain-v9.png",
+      "neutralPose": "NOT_A_SINGLE_SCALE_BODY",
+      "measured": [],
+      "nextExecutableAction": "Attach only where a new source landmark passes one bounded test."
+    }
+  ],
+  "extraFocus": {
+    "id": "retreat-cancel-restore-trigger-focus",
+    "gate": "FAIL",
+    "observed": {
+      "id": ""
+    },
+    "scope": "Cancel safely dismisses; active element ID empty and no trigger choice. Legacy20 modal/input checks still PASS."
+  },
+  "consumerSizes": [
+    {
+      "age": 4,
+      "path": "assets/derivatives/actors/v4/troop-gunpowder-heavy.png",
+      "imageLegalHeight": 130.0,
+      "imageCssHeight": 102.578125,
+      "visibleAlpha16CssHeight": 57.54993438720703,
+      "deliveryLimitPx": 64,
+      "exceedsVisible64": false,
+      "stateKind": "FIXTURE",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "age": 7,
+      "path": "assets/derivatives/actors/v4/troop-future-ranged.png",
+      "imageLegalHeight": 130.0,
+      "imageCssHeight": 102.578125,
+      "visibleAlpha16CssHeight": 84.04594421386719,
+      "deliveryLimitPx": 64,
+      "exceedsVisible64": true,
+      "stateKind": "FIXTURE",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "age": 7,
+      "path": "assets/derivatives/actors/v4/troop-future-heavy.png",
+      "imageLegalHeight": 130.0,
+      "imageCssHeight": 102.578125,
+      "visibleAlpha16CssHeight": 79.98889923095703,
+      "deliveryLimitPx": 64,
+      "exceedsVisible64": true,
+      "stateKind": "FIXTURE",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "age": 7,
+      "path": "assets/derivatives/actors/v4/troop-future-ranged.png",
+      "imageLegalHeight": 130.0,
+      "imageCssHeight": 102.578125,
+      "visibleAlpha16CssHeight": 84.04594421386719,
+      "deliveryLimitPx": 64,
+      "exceedsVisible64": true,
+      "stateKind": "FIXTURE",
+      "viewport": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "wholeProduct": "INCOMPLETE"
+}

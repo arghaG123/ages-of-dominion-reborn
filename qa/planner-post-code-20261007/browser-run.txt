@@ -1,0 +1,105 @@
+{
+  "errors": [],
+  "checks": [
+    {
+      "id": "natural-day1-sparse",
+      "pass": true
+    },
+    {
+      "id": "tactical-labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "Clubman ×6 · 6 · 60/60 hp · move",
+          "size": 14
+        },
+        {
+          "text": "Dire Wolf ×4 · 4 · 40/40 hp",
+          "size": 14
+        }
+      ]
+    },
+    {
+      "id": "retreat-opens-without-action",
+      "pass": true,
+      "detail": {
+        "before": 2
+      }
+    },
+    {
+      "id": "retreat-inert",
+      "pass": true,
+      "detail": [
+        {
+          "id": "stage-field",
+          "inert": true
+        },
+        {
+          "id": "world",
+          "inert": true
+        },
+        {
+          "id": "terrain",
+          "inert": true
+        },
+        {
+          "id": "panel",
+          "inert": true
+        },
+        {
+          "id": "nav",
+          "inert": true
+        },
+        {
+          "id": "dock",
+          "inert": true
+        },
+        {
+          "id": "context",
+          "inert": true
+        },
+        {
+          "id": "save",
+          "inert": true
+        }
+      ]
+    },
+    {
+      "id": "retreat-tab-contained",
+      "pass": true
+    },
+    {
+      "id": "retreat-cancel-focus-return",
+      "pass": true,
+      "detail": {
+        "id": "",
+        "choice": "retreat",
+        "hidden": true,
+        "actions": 2
+      }
+    },
+    {
+      "id": "retreat-cancel-no-action",
+      "pass": true,
+      "detail": {
+        "id": "",
+        "choice": "retreat",
+        "hidden": true,
+        "actions": 2
+      }
+    },
+    {
+      "id": "retreat-escape-focus-return",
+      "pass": true
+    },
+    {
+      "id": "retreat-confirm-once",
+      "pass": true
+    },
+    {
+      "id": "portrait-state-preserved",
+      "pass": true
+    }
+  ],
+  "captures": 22
+}

@@ -1,0 +1,457 @@
+{
+  "evidenceType": "planner rerun of reviewed executor probes plus independent held-pointer, modal-focus and portrait probes; Forge remains injected fixture",
+  "errors": [
+    "retreat-modal-background-inert {\"panelFocus\":{\"choice\":\"move:1,4\",\"inside\":false},\"panelActionsBefore\":8,\"panelActionsAfter\":9}"
+  ],
+  "checks": [
+    {
+      "id": "kingdom-player-text",
+      "pass": true,
+      "kingdomMessage": "Stone Age. Hall level 1. 17 of 17 sites are empty. Walls are a separate site and are still unbuilt. Select a site to build or upgrade. A scaffold is still under construction. Day 1, clear.  Next: Build a Lumber Camp."
+    },
+    {
+      "id": "tactical-label-screen-space",
+      "pass": true,
+      "labels": [
+        {
+          "text": "Clubman ×6 · 6 · 60/60 hp · move",
+          "fontSize": "14px",
+          "width": 217.859375,
+          "height": 21.5
+        },
+        {
+          "text": "Dire Wolf ×4 · 4 · 40/40 hp",
+          "fontSize": "14px",
+          "width": 175.296875,
+          "height": 21.499996185302734
+        }
+      ]
+    },
+    {
+      "id": "held-pointer-across-redraw",
+      "pass": true,
+      "heldBefore": 0,
+      "heldAfter": 1
+    },
+    {
+      "id": "map-handlers-not-bound-to-replaced-nodes",
+      "pass": true,
+      "sample": 70
+    },
+    {
+      "id": "map-one-move-after-frames",
+      "pass": true,
+      "cell": "0,3",
+      "moves": [
+        {
+          "type": "BATTLE",
+          "action": "move",
+          "to": [
+            0,
+            3
+          ],
+          "targetId": null
+        }
+      ],
+      "revision": [
+        32,
+        35
+      ]
+    },
+    {
+      "id": "map-ignores-closed-cell",
+      "pass": true,
+      "closed": "0,0",
+      "beforeInvalid": 7,
+      "afterInvalid": 7
+    },
+    {
+      "id": "keyboard-move",
+      "pass": true,
+      "beforeKey": 2,
+      "afterKey": 3
+    },
+    {
+      "id": "retreat-open-spends-nothing",
+      "pass": true,
+      "retreatBefore": {
+        "gold": 150,
+        "mana": 20,
+        "rng": 123456789,
+        "actions": 9,
+        "status": "ACTIVE",
+        "log": 9,
+        "stacks": [
+          {
+            "id": "sk-p",
+            "side": "p",
+            "x": 0,
+            "y": 4,
+            "count": 4,
+            "maxCount": 6,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 6,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "role",
+            "type": "melee",
+            "age": 0,
+            "acted": false,
+            "waited": false,
+            "retaliated": true,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 37,
+            "bless": false
+          },
+          {
+            "id": "sk-e",
+            "side": "e",
+            "x": 1,
+            "y": 3,
+            "count": 1,
+            "maxCount": 4,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 3,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "creature",
+            "type": "wolf",
+            "age": 0,
+            "acted": true,
+            "waited": false,
+            "retaliated": false,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 24,
+            "bless": false
+          }
+        ]
+      },
+      "opened": {
+        "gold": 150,
+        "mana": 20,
+        "rng": 123456789,
+        "actions": 8,
+        "status": "ACTIVE",
+        "log": 8,
+        "stacks": [
+          {
+            "id": "sk-p",
+            "side": "p",
+            "x": 0,
+            "y": 4,
+            "count": 4,
+            "maxCount": 6,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 6,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "role",
+            "type": "melee",
+            "age": 0,
+            "acted": false,
+            "waited": false,
+            "retaliated": true,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 37,
+            "bless": false
+          },
+          {
+            "id": "sk-e",
+            "side": "e",
+            "x": 1,
+            "y": 3,
+            "count": 1,
+            "maxCount": 4,
+            "atk": 4,
+            "def": 3,
+            "dmin": 2,
+            "dmax": 3,
+            "uhp": 10,
+            "top": 3,
+            "spd": 5,
+            "rng": 0,
+            "shots": 0,
+            "fly": 0,
+            "kind": "creature",
+            "type": "wolf",
+            "age": 0,
+            "acted": true,
+            "waited": false,
+            "retaliated": false,
+            "defending": false,
+            "dead": false,
+            "hasteCounter": 0,
+            "slowCounter": 0,
+            "blessCounter": 0,
+            "dealt": 24,
+            "bless": false
+          }
+        ]
+      },
+      "body": "This practice battle ends with no victory reward. It does not change campaign resources, items, casualties, experience, mana, or story. Cancel spends no turn."
+    },
+    {
+      "id": "retreat-escape-no-spend",
+      "pass": true,
+      "escape": {
+        "hidden": true,
+        "actions": 8,
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "id": "retreat-modal-background-inert",
+      "pass": false,
+      "panelFocus": {
+        "choice": "move:1,4",
+        "inside": false
+      },
+      "panelActionsBefore": 8,
+      "panelActionsAfter": 9
+    },
+    {
+      "id": "retreat-cancel-spends-nothing",
+      "pass": true,
+      "cancelled": {
+        "hidden": true,
+        "status": "ACTIVE",
+        "actions": 9,
+        "log": 9
+      }
+    },
+    {
+      "id": "retreat-confirm-once",
+      "pass": true,
+      "gold": 150,
+      "retreats": 1,
+      "settles": 1
+    },
+    {
+      "id": "portrait-return-keeps-campaign",
+      "pass": true,
+      "portrait": {
+        "rotate": "block",
+        "app": "none"
+      }
+    },
+    {
+      "id": "map-reduced-motion",
+      "pass": true,
+      "cell": "0,3",
+      "reducedBefore": 0,
+      "reducedAfter": 1
+    },
+    {
+      "id": "map-touch-one-move",
+      "pass": true,
+      "cell": "0,3",
+      "touchMoves": 1
+    },
+    {
+      "id": "map-after-resize",
+      "pass": true,
+      "cell": "0,3",
+      "resizedMoves": 1
+    },
+    {
+      "id": "forge-delta-825x375",
+      "pass": true,
+      "box": {
+        "panel": {
+          "x": 577,
+          "y": 78.375,
+          "width": 240,
+          "height": 144.625,
+          "top": 78.375,
+          "right": 817,
+          "bottom": 223,
+          "left": 577
+        },
+        "delta": {
+          "x": 586,
+          "y": 80.875,
+          "width": 222,
+          "height": 74.671875,
+          "top": 80.875,
+          "right": 808,
+          "bottom": 155.546875,
+          "left": 586
+        },
+        "confirm": {
+          "x": 586,
+          "y": 163.546875,
+          "width": 222,
+          "height": 58.5,
+          "top": 163.546875,
+          "right": 808,
+          "bottom": 222.046875,
+          "left": 586
+        },
+        "text": "Worn empty (no item). Selected Flint Club · Crude (atk +1). atk 3 to 4."
+      }
+    },
+    {
+      "id": "forge-delta-933x424",
+      "pass": true,
+      "box": {
+        "panel": {
+          "x": 685,
+          "y": 64,
+          "width": 240,
+          "height": 208,
+          "top": 64,
+          "right": 925,
+          "bottom": 272,
+          "left": 685
+        },
+        "delta": {
+          "x": 694,
+          "y": 129.5,
+          "width": 222,
+          "height": 74.671875,
+          "top": 129.5,
+          "right": 916,
+          "bottom": 204.171875,
+          "left": 694
+        },
+        "confirm": {
+          "x": 694,
+          "y": 212.171875,
+          "width": 222,
+          "height": 58.5,
+          "top": 212.171875,
+          "right": 916,
+          "bottom": 270.671875,
+          "left": 694
+        },
+        "text": "Worn empty (no item). Selected Flint Club · Crude (atk +1). atk 3 to 4."
+      }
+    },
+    {
+      "id": "forge-delta-1180x820",
+      "pass": true,
+      "box": {
+        "panel": {
+          "x": 892,
+          "y": 64,
+          "width": 280,
+          "height": 612,
+          "top": 64,
+          "right": 1172,
+          "bottom": 676,
+          "left": 892
+        },
+        "delta": {
+          "x": 901,
+          "y": 504.5,
+          "width": 262,
+          "height": 55.78125,
+          "top": 504.5,
+          "right": 1163,
+          "bottom": 560.28125,
+          "left": 901
+        },
+        "confirm": {
+          "x": 901,
+          "y": 568.28125,
+          "width": 262,
+          "height": 48,
+          "top": 568.28125,
+          "right": 1163,
+          "bottom": 616.28125,
+          "left": 901
+        },
+        "text": "Worn empty (no item). Selected Flint Club · Crude (atk +1). atk 3 to 4."
+      }
+    },
+    {
+      "id": "forge-delta-1280x720",
+      "pass": true,
+      "box": {
+        "panel": {
+          "x": 992,
+          "y": 64,
+          "width": 280,
+          "height": 512,
+          "top": 64,
+          "right": 1272,
+          "bottom": 576,
+          "left": 992
+        },
+        "delta": {
+          "x": 1001,
+          "y": 462.5,
+          "width": 262,
+          "height": 55.78125,
+          "top": 462.5,
+          "right": 1263,
+          "bottom": 518.28125,
+          "left": 1001
+        },
+        "confirm": {
+          "x": 1001,
+          "y": 526.28125,
+          "width": 262,
+          "height": 48,
+          "top": 526.28125,
+          "right": 1263,
+          "bottom": 574.28125,
+          "left": 1001
+        },
+        "text": "Worn empty (no item). Selected Flint Club · Crude (atk +1). atk 3 to 4."
+      }
+    }
+  ],
+  "modalFocusProbe": {
+    "id": "",
+    "text": "Retreat",
+    "inside": false
+  },
+  "modalBackgroundProbe": {
+    "backgroundFocus": {
+      "choice": "defend",
+      "inside": false
+    },
+    "modalActionsBefore": 8,
+    "modalActionsAfter": 8
+  },
+  "modalPanelProbe": {
+    "panelFocus": {
+      "choice": "move:1,4",
+      "inside": false
+    },
+    "panelActionsBefore": 8,
+    "panelActionsAfter": 9
+  },
+  "serverLog": "Reborn local preview: http://127.0.0.1:4237\n"
+}

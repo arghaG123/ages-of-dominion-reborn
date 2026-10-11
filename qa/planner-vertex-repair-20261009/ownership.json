@@ -1,0 +1,16 @@
+{
+  "environmentAssets": "assets/derivatives/image-vertex-repair-20261009/environment/",
+  "actorsAssets": "assets/derivatives/image-vertex-repair-20261009/actors/",
+  "environmentQA": "qa/image-vertex-repair-20261009/environment/",
+  "actorsQA": "qa/image-vertex-repair-20261009/actors/",
+  "vertexCoordinator": "AI1_ONLY",
+  "providerReceipts": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/{ENVIRONMENT,ACTORS}/",
+  "readyIndexes": [
+    "qa/image-vertex-repair-20261009/environment/regeneration/ready-index.json",
+    "qa/image-vertex-repair-20261009/actors/regeneration/ready-index.json"
+  ],
+  "exclusiveLocalWriters": true,
+  "sharedControlWriter": "AI1_ONLY_WITH_HISTORICAL_PRESERVATION",
+  "localParallelPaidSerial": true,
+  "executorDispatched": false
+}

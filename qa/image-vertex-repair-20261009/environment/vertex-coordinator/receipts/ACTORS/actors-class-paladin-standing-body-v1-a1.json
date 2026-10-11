@@ -1,0 +1,51 @@
+{
+  "id": "receipt-actors-class-paladin-standing-body-v1-a1",
+  "canonicalId": "class-paladin-standing-body",
+  "owner": "ACTORS",
+  "attemptId": "actors-class-paladin-standing-body-v1-a1",
+  "requestPackSHA256": "3be3d861b74a6280f6ce4e6d5db294407476fb3913bc093b5b08b34b2d402194",
+  "wireBodySHA256": "27c389987bd1c706fabdfe9ded0cee2a99cdf841a1f6e4e56c3e01f437df72ca",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "2K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-paladin-standing-body-v1-a1/response.json",
+  "rawResponseSHA256": "9f0cfbdfa94d2e765c0173a626705a6b4e9aaa9f1e6f0ed55a8880083efd7d57",
+  "images": [
+    {
+      "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-paladin-standing-body.png",
+      "sha256": "f03dc822be71126fdbfeece55b0156dd090d1efb0d57a43948675e278edaaf0b",
+      "bytes": 3819354,
+      "dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "format": "PNG"
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 112,
+    "candidatesTokenCount": 1680,
+    "totalTokenCount": 1792,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 112
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1680
+      }
+    ]
+  },
+  "reservedUSD": 0.4,
+  "actualOrRetainedExposureUSD": 0.4,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "AI2 reviews this candidate. Coordinator did not write AI2 directories or mark the sprite READY.",
+  "review": "UNREVIEWED_BY_OWNER"
+}

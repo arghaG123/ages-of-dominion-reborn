@@ -1,0 +1,96 @@
+Language/framework/version: JavaScript ES modules, HTML/CSS/SVG; Node >=24 with custom scripts/serve.mjs and scripts/build.mjs (not Vite). The previous measured local image runtime was Python 3.13.7 with Pillow 12.3.0, NumPy 2.5.3, OpenCV 5.0.0 and SciPy 1.18.1 on 6 October 2026; verify the interpreter currently available before describing it as current. Android remains local/offline, zero declared/granted permissions, device STOPPED. This is an IMAGE-ONLY local processing assignment. No paid calls or provider access are authorized.
+
+1. Task Summary
+
+Continue only feasible, source-supported local image processing for the full Ages of Dominion Reborn plan after the 6 October Environment and Actors/Equipment deliveries. Independently audit the new pixels and per-ID contracts, repair only defects that can be corrected from existing source pixels, and publish separate versioned Environment and Actors handoffs in the successor paths below. Preserve the original two deliveries and all failed evidence. A source gap or a forbidden paid replacement stays BLOCKED for its exact ID. Do not treat a local composite, hash, file count, or your own completion claim as runtime, gameplay, visual-owner, device, or whole-game acceptance.
+
+2. Environment
+
+- Repository: `C:/dev/ages-of-dominion-reborn`, branch/history and working tree are owner data. Do not reset, stash, clean, stage, commit or push.
+- Project: JavaScript ES modules, HTML/CSS/SVG; custom Node serve/build scripts; current project language/framework versions are as stated above. The task is local asset processing and QA only; do not create or edit game code, runtime catalogs, tests, dependency manifests or Android files.
+- Primary appearance targets are the 30 owner-approved landscape mock images in `design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/`; earlier 26 supplied vertical mocks in `assets/mocks/INDEX.md` are style/content references. Compare actual pixels, not filenames.
+- Read current root instructions/status, `docs/plan/IMAGE-RESIDUAL-INDEPENDENT-AUDIT-2026-10-07.md`, `qa/image-residual-20261007/per-id-status.json`, both 6 October prompts/interfaces/checkpoints/handoffs, `docs/plan/THREE-AI-OWNERSHIP-2026-10-06.md`, the canonical eight-age scope/contract documents, `assets/mocks/INDEX.md`, and the current source rows before processing.
+- Inputs are read-only: `assets/production/`, `assets/high-res/`, `assets/derivatives/environment-20261006/`, `assets/derivatives/actors-equipment-20261006/`, all prior `assets/derivatives/actors/` and `assets/derivatives/rigs/`, both 6 October QA roots, both 6 October interfaces, the active implementation contract and canonical data/reference ledgers. Preserve all originals, hard-linked source bytes, historical versions, masks, recipes, failures and current interfaces.
+- Use exclusive successor outputs: `assets/derivatives/image-residual-executor-20261007/environment/` and `assets/derivatives/image-residual-executor-20261007/actors/`; QA helpers, recipes, masks, annotations, composites, gallery, checkpoint and handoff under `qa/image-residual-executor-20261007/environment/` and `qa/image-residual-executor-20261007/actors/`; interfaces at `docs/plan/ENVIRONMENT-ART-RESIDUAL-INTERFACE-2026-10-07.json` and `docs/plan/ACTORS-EQUIPMENT-RESIDUAL-INTERFACE-2026-10-07.json`. Never overwrite another producer's paths or the planner audit under `qa/image-residual-20261007/`.
+- The 8 ages are Stone/Bronze/Iron/Medieval/Gunpowder/Industrial/Modern/Future. Retain all 30 mock references: 01 Home; 02 Day 1 Kingdom; 03 Stone Kingdom; 04 Bronze; 05 Iron; 06 Medieval; 07 Gunpowder; 08 Industrial; 09 Modern; 10 Future; 11 Adventure overview; 12 Adventure crossing; 13 Adventure foot; 14 Tactical deployment; 15 Tactical action; 16 Battle result; 17 Defense preparation; 18 Defense wave; 19 Hero equipment; 20 Skills; 21 Spells; 22 Forge; 23 Inventory; 24 Army; 25 Story; 26 Quests; 27 Tutorial; 28 Settings; 29 Save recovery; 30 icon/material board. Correct canonical title, age/role, Future identity, gear and six slot names. Never use a full screenshot as fake interactive art.
+- Do not change frozen Kingdom affine `[60,-10,25,35,170,165]` or Hall scale `0.1312`. Any alternate camera/geometry is a versioned PROPOSED record, never activation authority.
+- Existing recorded environment: 145 asset rows (80 buildings, 32 towers, 12 sites, 21 resource/skill/spell icons) with file bindings/decode/dimension checks passing; 32 annotated but PARTIAL/unpromoted scene rows. Existing actor interface has 142 READY, 13 PARTIAL, 3 BLOCKED rows; its readySubset is inconsistent. Exact findings are in the audit and machine record. Do not repeat work that a fresh pixel check establishes as good.
+
+3. Inputs & Outputs
+
+Inputs:
+
+- `ArtifactRow` IDs and prior results in the two 6 October JSON interfaces; scene IDs and actual annotation data in `qa/environment-art-20261006/scenes.json`; immutable recipes/masks/composites and current executor galleries.
+- Existing environment sources include 8-age x 10-building-type layers (townhall, farm, lumber, quarry, mine, barracks, workshop, hall, armory, walls), four tower families per age, six Adventure sites, six generic Adventure markers, and 4 resources, 9 skills, 8 spells.
+- Actor sources include all eight class body/part trees and prior rigs, 24 age/role troop rows, 8 creatures, attacker role plates, 3 mount/vehicle rows, 10 artifacts, six-slot gear across eight ages, and battle effects. Existing source inventory is evidence to inspect, not proof every needed anatomy/pose exists.
+- `Gate = PASS | FAIL | UNVERIFIED | BLOCKED | NOT_APPLICABLE`.
+- `DimensionsWH = {width: integer, height: integer}`; `BoxXYXY` uses half-open coordinates; `Affine6 = [a,b,c,d,e,f]` with `x'=a*x+c*y+e`, `y'=b*x+d*y+f`; `XY = [x,y]`.
+- Each successor `ArtifactRow = {id:string, role:string, age:int0..7|null, classId:string|null, status:READY|PARTIAL|FAIL|BLOCKED, source:{path:string,sha256:string,roi:BoxXYXY|null}, output:{path:string,sha256:string,dimensions:DimensionsWH}|null, sourceToOutput:Affine6|null, intendedUse:string, maxDisplayCssPx:number|null, side:LEFT|RIGHT|UNKNOWN|NOT_APPLICABLE, groundContact:XY[]|null, footprint:XY[]|null, entrance:XY|null, heightEnvelope:BoxXYXY|null, frame:string, transforms:object, gates:{binding:Gate,semantics:Gate,matte:Gate,spatial:Gate,articulation:Gate,runtime:Gate,owner:Gate}, evidencePaths:string[], limitations:string[], blockedBy:string[], nextAction:string|null}`. A READY row is ready only for its stated role, size, pose and checked consumer; it never means owner/runtime accepted.
+- Each separate successor `ArtInterface = {schema:1, producer:ENVIRONMENT|ACTORS, version:string, inputSnapshot:object, rows:ArtifactRow[], readySubset:string[], wholeDeliveryReady:boolean, reviewGallery:string, checkpoint:string}`. `readySubset` must be exactly the IDs with rows whose status is READY; no missing rows or undocumented IDs.
+- Per producer, publish `Checkpoint = {status:INCOMPLETE|READY_FOR_OWNER_REVIEW, completedIds:string[], partialIds:string[], failedIds:string[], blockedIds:string[], nextExecutableActions:object, sourceHashes:object, evidencePaths:string[], polishQueue:object[], authorityLimits:string[]}`. Persist exact failure and blocker history in `qa/...`; do not claim whole game READY.
+- Produce side-by-side actual-reference/actual-output HTML galleries for each changed row/scene, with actual source/output hashes, viewport/display size, state, processing recipe, differences, and `playability=UNVERIFIED`. Add selected original-size and intended-consumer-size captures. Label all flat composites `ASSET_COMPOSITE`.
+
+Outputs:
+
+- Only new files within the exclusive successor asset/QA paths and the two new successor interface paths named in Section 2.
+- A finite per-ID outcome for every 145 Environment rows, all 32 scenes, all actor rows including checkpoint-only failures, and all scoped canonical art families not in the original queues. Each outcome says whether changed, reused unchanged, feasible next action, or blocked by a named source/authority gap.
+- Local source-supported cleanup or refinement for exact rows where actual pixels establish matte fringe/green wedges, incorrect cutout, incomplete registered feature, wrong crop, or consumer-size issue; revised annotation where trace intersects a full pad/obstacle or misses a visible road/bank/deck/approach. Preserve source and publish recipes and before/after evidence.
+- Corrected, independently validated row bindings and `readySubset` contracts in successor interfaces. Do not edit either 6 October interface in place.
+
+4. Step-by-Step Instructions
+
+1. Snapshot current file hashes and relevant Git/source state without changing Git.
+2. Check that no other process is actively writing the proposed successor paths before starting.
+3. Read every named canonical scope, ownership, interface, checkpoint and gallery input listed above.
+4. Build one combined local per-ID queue that reconciles interface rows, checkpoint completed/partial/failed/blocked IDs and canonical required families.
+5. Compare all 30 actual landscape references with the current Environment and Actors galleries and select exact, source-backed remaining image tasks.
+6. Recompute source/output hashes, decode results, actual dimensions, alpha bounds and transforms for each interface row without importing or running producer mutation helpers.
+7. Inspect every scene overlay against native source pixels, starting with Stone P07, each complete legal footprint, visible paths, banks, deck, obstacles, lane/walkable/blocked areas and uncertainty.
+8. Correct only trace/clearance annotations that existing source pixels can establish; preserve all camera proposals as inactive until coordinated geometry review.
+9. Inspect source/output mattes for exact rows implicated by the green wedges and diagnostic magenta fringe, and record whether each is a real output defect or an intentionally diagnostic image.
+10. Apply one bounded source-supported matte/crop correction per confirmed defective row and retain its before image, after image and recipe.
+11. Inspect every one of the 8 class chains for same-scale grounded anatomy and usable joint landmarks without inventing missing body parts.
+12. Continue a class attachment only when a visible source landmark supports it; otherwise record the precise missing anatomy and stop that row.
+13. Reconcile the actors successor `readySubset` with actual READY rows and correct all interface/file dimension mismatches in the new interface metadata.
+14. Keep Knight thigh/greave's 13 exhausted attempts and failed Paladin links/head bytes as historical failures; do not repeat, synthesize, mirror or fabricate them.
+15. Keep Stone Clubman, Stone Slinger and Industrial standing Sharpshooter BLOCKED until an owner-authorized source or replacement exists; do not make a paid call or prepare a billing request.
+16. Recheck Gunpowder heavy, Future ranged and Future heavy against the recorded 64 CSS-pixel consumer limit and exact legacy height/longest-dimension rule; do not expand their limit by assumption.
+17. Audit whether existing source pixels can supply other complete class/body/kit, screen environment and age-role art required by the canonical scope; assign Code-owned layout/runtime/gameplay work to Code and do not implement it.
+18. Render new source and before/after views at the four landscape sizes 825x375, 933x424, 1180x820 and 1280x720 without changing the approved target screenshots.
+19. Independently verify every changed file hash, decode, dimensions, alpha, transform, interface row and scene geometry evidence.
+20. Publish the Environment successor interface, exclusive gallery, checkpoint and handoff without changing shared root status/current pointers.
+21. Publish the Actors successor interface, exclusive gallery, checkpoint and handoff without changing shared root status/current pointers.
+22. Preserve all per-ID unfinished, failed, blocked and owner-review outcomes and list the exact next action for each.
+23. Leave both whole-delivery states INCOMPLETE wherever visual, spatial, full-body, runtime, owner or source gates remain open.
+
+5. Edge Cases & Failure Modes
+
+- A source/output hash match proves byte identity, not clean matte, semantic correctness, useful anatomy, full site clearance, natural appearance or consumer acceptance.
+- The Environment's visible green ground/matte wedges and the magenta diagnostic image are concrete review targets. Do not claim global contamination from one sample or global cleanliness from one validator pass; identify exact row IDs by pixel comparison.
+- Scene traces already exist for all 32 IDs. Do not label them absent; inspect their accuracy. Defense scenes currently have lanes and one walkable/blocked area each, but no river/bank/deck. Preserve these distinctions.
+- A segment-to-point distance is not clearance from a full polygon. Include trace width, full structure/approach envelopes and uncertainty. A crossing through a pad is FAIL until corrected or precisely scoped.
+- Frozen geometry, unavailable pixels, incorrect source identity, unknown facing, ambiguous joint landmarks and missing source anatomy are separate per-ID outcomes. Never warp, mirror or invent to hide them.
+- A class diagnostic sheet is not a body. The Healer leg subchain does not close head/torso/skirt attachments. Articulation for a static troop plate does not imply hero rig completion.
+- Historical missing v4/v5 guides remain exact absent files and test failures. Do not fabricate lookalikes, weaken tests, restore archives, or let them stop unrelated rows.
+- Do not use Stone as a stopping point; carry the same source-backed validation over all eight ages and every required screen family. Respect the 30 landscape references and canonical names.
+- Current actor interface has 2 READY IDs missing rows and 7 diagram/subchain dimension mismatches; fix only in the successor interface and validate against actual files.
+- No source anatomy, geometry change, paid replacement, new provider scope, owner art acceptance, runtime implementation, device state or owner decision can be inferred from this prompt.
+
+6. Acceptance Criteria
+
+[ ] Both successor interfaces have exact, typed, current source/output paths, hashes and actual dimensions; all rows reconcile with the checkpoint, and `readySubset` equals exactly the READY row IDs.
+[ ] Every environment row, all 32 scenes and every actor/gear/creature/mount/role/class family has an honest per-ID disposition; no required canonical family disappears because it was absent from the initial queue.
+[ ] Every modified matte or geometry annotation has source-bound before/after pixels, reproducible recipe, uncertainty and row-specific evidence.
+[ ] Stone P07 and all other roads/decks/approaches are tested against full legal footprints and obstacles; geometry/camera proposals remain inactive.
+[ ] No unreviewed green/magenta fringe is called clean; diagnostic images are labeled and excluded from deliverables where appropriate.
+[ ] Full-body chains are only READY when actual same-scale source anatomy and complete joints support the declared use; otherwise remain PARTIAL/BLOCKED with exact missing inputs.
+[ ] Stone Clubman, Stone Slinger, and Industrial standing Sharpshooter remain blocked without owner replacement authority; no paid/provider calls occurred.
+[ ] Gunpowder heavy and Future ranged/heavy retain the recorded consumer ceiling until the precise legacy rule and actual viewport proof support any later change.
+[ ] Each successor gallery compares unchanged approved references with actual output at intended size and all four landscape viewport sizes; composites say `ASSET_COMPOSITE` and playability remains UNVERIFIED.
+[ ] Original, production and prior derivative bytes, historical ledgers, failed evidence, Code source/catalogs, runtime, shared current pointers, Git, provider state and device state are unchanged.
+[ ] The Environment and Actors outputs remain independent and do not overwrite either prior executor, each other, or Code-owned catalogs/helpers.
+[ ] Status remains INCOMPLETE while any applicable source, matte, spatial, full-body, runtime or owner gate remains open.
+
+7. Do NOT
+
+Do not stop with a status summary, repeat already-valid bulk processing, or turn the whole plan into an unspecified polish queue. Do not change `src/`, tests, runtime catalogs, Android files, shared root pointers, canonical contracts, original assets or either 6 October delivery in place. Do not call image generation, a provider, account/project/job/bucket API, billing tools, or any paid service. Do not query/install devices, deploy, sign, upload, mutate Git, restore archives, clean storage, message/dispatch another AI or spawn agents. Do not spend replacement budget, invent new anatomy, recreate missing heads/guides, restart exhausted sweeps, expand the 64px consumer cap, activate a camera/affine change, or mark owner/runtime/gameplay acceptance from an asset composite.

@@ -1,0 +1,53 @@
+{
+  "id": "receipt-env-kingdom-terrain-iron-v2-a1",
+  "canonicalId": "kingdom-terrain-iron",
+  "owner": "ENVIRONMENT",
+  "attemptId": "env-kingdom-terrain-iron-v2-a1",
+  "requestPackSHA256": "efe5db0edb257b5e6e9973ce8b68fa77bec4c085401c5022686bc444e481691f",
+  "wireBodySHA256": "3d6aee4465e6b95bed5f2176c6a5c2a355cc67b26df8d3adb9becff74f52d65c",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "model": "gemini-3.1-flash-image",
+  "resolution": "4K",
+  "status": "SUCCEEDED_CANDIDATE",
+  "providerOperation": null,
+  "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-iron-v2-a1/response.json",
+  "rawResponseSHA256": "19e0f441367fd7f9cf441c070099572652d3d64f128e042364b8ded94e0e2fa4",
+  "images": [
+    {
+      "path": "assets/derivatives/image-vertex-repair-20261009/environment/native/kingdom-terrain-iron-candidate-a.png",
+      "sha256": "91984c494aaf3986cead5a2e829d72d453cd42ee88124b3d38a188654280de11",
+      "bytes": 25864166,
+      "dimensions": {
+        "width": 5504,
+        "height": 3072
+      }
+    }
+  ],
+  "usage": {
+    "promptTokenCount": 2425,
+    "candidatesTokenCount": 2520,
+    "totalTokenCount": 4945,
+    "trafficType": "ON_DEMAND",
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2240
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 185
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2520
+      }
+    ]
+  },
+  "reservedUSD": 0.4931,
+  "actualOrRetainedExposureUSD": 0.4931,
+  "complete": true,
+  "rejectionEvidence": [],
+  "nextAction": "Review candidate pixels before any correction call."
+}

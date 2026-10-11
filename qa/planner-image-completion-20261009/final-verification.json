@@ -1,0 +1,66 @@
+{
+  "atUTC": "2026-10-09T08:26:45.890736+00:00",
+  "protectedFilesChecked": 3782,
+  "protectedChanges": [],
+  "libraries": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "pillow": "12.3.0",
+    "numpy": "2.5.3",
+    "opencv": "5.0.0",
+    "scipy": "1.18.1"
+  },
+  "producerSnapshotChecks": [
+    {
+      "owner": "environment",
+      "capturedAt": "2026-10-09T07:11:25.120001+00:00",
+      "checked": 19,
+      "mismatches": [
+        {
+          "path": "docs/plan/image-production/budget-ledger.json",
+          "match": false,
+          "expectedSHA256": "0955c1a0cdf8f7928ece96c3863e0cd9eaf93e01b16c11e732de1cea7b2345b6",
+          "actualSHA256": "448df9e21317ef9e162446c3a1774bfb77eff625cd824de356db10963df3fad5"
+        },
+        {
+          "path": "docs/plan/image-production/submission.mutex.json",
+          "match": false,
+          "expectedSHA256": "5a3cd261dc6ff49c0cddb7fdc9d0acfc9911677170220dbe22c1cb592c662570",
+          "actualSHA256": "e9b8519c1fd52b362cf09846e40d70d8a29a0a7867dcf1cd57433e9ab89f6917"
+        },
+        {
+          "path": "docs/plan/image-production/active-batch.lock.json",
+          "match": false,
+          "expectedSHA256": "2c8a3bfff5c12ca66c3a66bd5fd3b12fc525475a38b7af085b5f4283447fc6df",
+          "actualSHA256": "df6cf288f06392f34b5c179e050442d199a45572b497ff4d721fb17b5beec3f7"
+        },
+        {
+          "path": "docs/plan/image-production/pacing_state.json",
+          "match": false,
+          "expectedSHA256": "03830e0a31ba4f21aa54857c177b9850806d05587547984e676119fb44f8278f",
+          "actualSHA256": "d2e70b0ec870abec7487f339252952c9777c4da65ff40c5597c583b8fc43f741"
+        }
+      ]
+    },
+    {
+      "owner": "actors",
+      "capturedAt": "2026-10-09T07:12:55.788613+00:00",
+      "checked": 13,
+      "mismatches": [
+        {
+          "path": "docs/plan/image-production/budget-ledger.json",
+          "match": false,
+          "expectedSHA256": "0955c1a0cdf8f7928ece96c3863e0cd9eaf93e01b16c11e732de1cea7b2345b6",
+          "actualSHA256": "448df9e21317ef9e162446c3a1774bfb77eff625cd824de356db10963df3fad5"
+        }
+      ]
+    }
+  ],
+  "matteAffectedAttackerCreatureRows": 47,
+  "greenBaseVisualRows": 8,
+  "transformWarnings": 32,
+  "wholeGame": "INCOMPLETE",
+  "device": "STOPPED",
+  "runtime": "UNVERIFIED",
+  "providerLiveState": "UNVERIFIED",
+  "billedTotal": "UNKNOWN"
+}

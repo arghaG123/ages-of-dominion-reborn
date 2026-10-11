@@ -1,0 +1,63 @@
+{
+  "id": "walls-gunpowder",
+  "magentaPixels": 0,
+  "opaqueFraction": 0.563,
+  "slabRemoved": false,
+  "repairNote": null,
+  "outputContacts": [
+    [
+      16.0,
+      659.0
+    ],
+    [
+      412.0,
+      718.0
+    ],
+    [
+      809.0,
+      659.0
+    ]
+  ],
+  "contactHits": [
+    {
+      "inside": true,
+      "alpha": 0
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    },
+    {
+      "inside": true,
+      "alpha": 255
+    }
+  ],
+  "entranceHit": {
+    "inside": true,
+    "alpha": 255
+  },
+  "outOfFrame": [],
+  "namedGreenConcern": false,
+  "runtimeBinding": {
+    "id": "walls-gunpowder",
+    "age": "gunpowder",
+    "kind": "walls",
+    "actualRuntimePath": "assets/delivery/stone-starter-20261003/derivatives/v2/live/buildings/walls-gunpowder.png",
+    "actualRuntimeSha256": "63edbcc854eea9afb758af2a1d3face9b5bd4956d13a9ef3ff71bb05913bbd98",
+    "actualRuntimeDimensions": [
+      962,
+      855
+    ],
+    "magentaCandidateVisiblePixels": 2573,
+    "residualOutput": {
+      "path": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/walls-gunpowder.png",
+      "sha256": "1f00a638bce9afbc231e702c41232e3493afd1f0f8054d0c6a012dc8e5bc8a21",
+      "dimensions": {
+        "width": 944,
+        "height": 836
+      }
+    },
+    "sameAsResidual": false,
+    "note": "Color candidates diagnostic; runtime screenshots confirm obvious TownHall magenta patches in Iron/Medieval/Modern."
+  }
+}

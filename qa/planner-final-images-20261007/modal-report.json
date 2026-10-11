@@ -1,0 +1,51 @@
+{
+  "errors": [],
+  "checks": [
+    {
+      "id": "actual-background-inert-and-map-command-guard",
+      "pass": false,
+      "detail": {
+        "inert": [
+          {
+            "id": "world",
+            "inert": false
+          },
+          {
+            "id": "terrain",
+            "inert": true
+          },
+          {
+            "id": "panel",
+            "inert": true
+          },
+          {
+            "id": "nav",
+            "inert": true
+          },
+          {
+            "id": "dock",
+            "inert": true
+          },
+          {
+            "id": "context",
+            "inert": true
+          },
+          {
+            "id": "save",
+            "inert": true
+          }
+        ],
+        "before": 2,
+        "after": 2
+      }
+    },
+    {
+      "id": "cancel-focus-restoration",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": ""
+      }
+    }
+  ]
+}

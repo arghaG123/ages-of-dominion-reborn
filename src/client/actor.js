@@ -3,7 +3,19 @@ import atlas from '../data/actor-atlas.json' with { type: 'json' };
 import reviewMount from '../data/mount-review-v1.json' with { type: 'json' };
 import staticMounts from '../data/static-mounts-v1.json' with { type: 'json' };
 import plates from '../data/plate-catalog.json' with { type: 'json' };
+import plateOverrides from '../data/plate-overrides-20261007.json' with { type: 'json' };
 import { hoofContact, pose } from './rig.js';
+import { visibleBox } from './visible-size.js';
+
+let worldCssPerUnit = 1;
+export function setWorldCssScale(scale) {
+  worldCssPerUnit = Number.isFinite(scale) && scale > 0 ? scale : 1;
+}
+function plateView(group, key, plate) {
+  if (!plate) return null;
+  const extra = plateOverrides[group]?.[key];
+  return extra ? { ...plate, ...extra } : plate;
+}
 
 export function clipAngles(clip, t, reduced = false) {
   const u = reduced ? 0 : ((t % 1) + 1) % 1;
@@ -304,7 +316,14 @@ export function drawStaticMount(world, element, mount, x, y, { facing = 1, time 
   if (!mount?.file || mount.displayHeight > 64 || mount.gait !== 'single-pose') return null;
   const [x0, y0, x1, y1] = mount.tightBBox;
   const bboxH = y1 - y0;
-  const pixel = mount.displayHeight / bboxH;
+  const rawPixel = mount.displayHeight / bboxH;
+  const drawn = visibleBox({
+    width: mount.width * rawPixel,
+    height: mount.height * rawPixel,
+    maxVisibleCssPx: 64,
+    staticMaxHeight: mount.displayHeight,
+  }, mount.height * rawPixel, worldCssPerUnit);
+  const pixel = drawn.height / mount.height;
   const bob = moving && !reduced ? Math.sin((((time % 1) + 1) % 1) * Math.PI * 2) * 1.5 : 0;
   const root = element('g', {
     transform: `translate(${x} ${y}) scale(${facing} 1)`,
@@ -330,8 +349,12 @@ export function drawStaticMount(world, element, mount, x, y, { facing = 1, time 
 
 export function drawPlate(world, element, plate, x, y, height, { opacity = 1, time = 0, fly = false, clip = 'idle', reduced = false } = {}) {
   if (!plate?.file) return false;
-  const drawnHeight = plate.staticMaxHeight ? Math.min(height, plate.staticMaxHeight) : height;
-  const width = drawnHeight * ((plate.width || drawnHeight) / (plate.height || drawnHeight));
+  const fitted = visibleBox({
+    ...plate,
+    defaultVisibleCssPx: plate.maxVisibleCssPx || plate.staticMaxHeight ? undefined : 130,
+  }, height, worldCssPerUnit);
+  const drawnHeight = fitted.height;
+  const width = fitted.width;
   const single = plate.pose === 'single';
   const motion = single
     ? { y: reduced ? 0 : Math.sin((((time % 1) + 1) % 1) * Math.PI * 2) * 1.5, rot: 0 }
@@ -341,6 +364,8 @@ export function drawPlate(world, element, plate, x, y, height, { opacity = 1, ti
     'data-plate-motion': clip,
     'data-articulation': single ? 'single-pose' : 'plate',
     'data-plate-height': String(drawnHeight),
+    'data-plate-css-height': String(fitted.cssHeight),
+    'data-plate-css-cap': fitted.capCss == null ? '' : String(fitted.capCss),
     'data-plate-provisional': plate.provisional ? '1' : '0',
   });
   group.append(element('ellipse', { cx: 0, cy: 2, rx: Math.max(8, width * 0.28), ry: 5, fill: '#00000066', opacity }));
@@ -349,11 +374,11 @@ export function drawPlate(world, element, plate, x, y, height, { opacity = 1, ti
   return true;
 }
 
-export function creaturePlate(type) { return plates.creatures[type] || null; }
-export function troopPlate(age, role) { return plates.troops[`${age}-${role}`] || null; }
-export function attackerPlate(age, role) { return plates.attackers[`${age}-${role}`] || null; }
-export function towerPlate(age, family) { return plates.towers[`${age}-${family}`] || null; }
-export function projectilePlate(family) { return plates.projectiles[family] || null; }
+export function creaturePlate(type) { return plateView('creatures', type, plates.creatures[type] || null); }
+export function troopPlate(age, role) { return plateView('troops', `${age}-${role}`, plates.troops[`${age}-${role}`] || null); }
+export function attackerPlate(age, role) { return plateView('attackers', `${age}-${role}`, plates.attackers[`${age}-${role}`] || null); }
+export function towerPlate(age, family) { return plateView('towers', `${age}-${family}`, plates.towers[`${age}-${family}`] || null); }
+export function projectilePlate(family) { return plateView('projectiles', family, plates.projectiles[family] || null); }
 export function plateForStack(stack) {
   if (!stack) return null;
   if (stack.kind === 'creature') return creaturePlate(stack.type);

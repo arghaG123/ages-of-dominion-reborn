@@ -1,0 +1,173 @@
+{
+  "status": "INCOMPLETE",
+  "completedIds": [
+    "troop-stone-melee",
+    "troop-industrial-ranged",
+    "troop-industrial-heavy",
+    "troop-stone-ranged",
+    "healer-boot"
+  ],
+  "partialIds": [
+    "class-knight-standing-body",
+    "class-ranger-standing-body",
+    "class-warlock-standing-body",
+    "class-mage-standing-body",
+    "class-paladin-standing-body",
+    "class-barbarian-standing-body",
+    "class-necromancer-standing-body",
+    "paladin-head-raster",
+    "workshop-iron",
+    "hall-industrial",
+    "creature-drone"
+  ],
+  "failedIds": [
+    "attacker-bronze-runner",
+    "attacker-medieval-archer",
+    "creature-wolf",
+    "attacker-stone-brute"
+  ],
+  "blockedIds": [
+    "class-healer-standing-body"
+  ],
+  "paidCompletedIds": [],
+  "paidPendingIds": [],
+  "retainedUnknownIds": [],
+  "localProcessingComplete": false,
+  "imageWorkComplete": false,
+  "wholeDeliveryReady": false,
+  "device": "STOPPED",
+  "runtime": "UNVERIFIED",
+  "ownerAcceptance": "UNVERIFIED",
+  "pass6to11": "qa/image-unified-reserve-20261009/diagnostics/pass6.json through pass11.json",
+  "remainingLocalActions": [
+    {
+      "id": "creature-wolf",
+      "action": "Pass 11 removed 266 stroke pixels in x340-580 y700-900, including 5 red-dot pixels. 139 far-thin pixels remain in five fragments, largest 55 at bbox [563, 791, 580, 821]. A 21-pixel red disk remains at [473, 783, 478, 795], mean RGB 102,26,14. Matte loop stopped."
+    },
+    {
+      "id": "creature-drone",
+      "action": "Purple slab is gone. Three frame files remain. Stale frame 03 was deleted. durationMs is null because the sheet has no timing source."
+    },
+    {
+      "id": "attacker-stone-brute",
+      "action": "Pass 11 removed 294 stroke pixels in x280-680 y640-807. Feet stayed. 111 far-thin pixels remain in seven fragments, largest 30 at bbox [367, 786, 379, 804]. Matte loop stopped."
+    },
+    {
+      "id": "workshop-iron",
+      "action": "Pass 11 removed 2383 perspective-outline pixels in three components. No bright far-from-building pixels remain. Stone, roof, forge, and tools stayed. Not accepted."
+    },
+    {
+      "id": "class-warlock-standing-body",
+      "action": "The white floor island and the lower-right dust specks are gone. A dark nick in the right boot sole is in the painted boot. No gait."
+    },
+    {
+      "id": "kingdom-terrain-all",
+      "action": "Manual painted-road trace. Do not pay for another free-layout scene."
+    },
+    {
+      "id": "class-rigs",
+      "action": "No full gait exists. Do not promote standing bodies to rigs."
+    }
+  ],
+  "remainingPaidActions": [
+    {
+      "id": "class-healer-standing-body",
+      "boundUSD": 0.5266,
+      "reason": "Wire decoded with 4 inline PNGs, SHA256 36cc6350e43c79a3ae3e21f0016932b475e530f96dd8e3bcfb80b4fe866dc087. The single jobs list returned HTTP 400. No POST was sent."
+    },
+    {
+      "id": "attacker-bronze-runner",
+      "boundUSD": 0.4594,
+      "reason": "HUD scene. No validated mask, so no request."
+    },
+    {
+      "id": "attacker-medieval-archer",
+      "boundUSD": 0.4594,
+      "reason": "Damaged silhouette. No validated mask, so no request."
+    },
+    {
+      "id": "kingdom-terrain-eight-ages",
+      "boundUSD": null,
+      "reason": "Stone local prototype does not satisfy legal roads. The free-layout method was not repeated and no kingdom image was purchased."
+    }
+  ],
+  "scopeCoverage": [
+    {
+      "newDerivativePngs": 123,
+      "bodyCandidatesAccepted": 7,
+      "readyReuse": [
+        "troop-stone-melee",
+        "troop-industrial-ranged",
+        "troop-industrial-heavy",
+        "troop-stone-ranged",
+        "healer-boot"
+      ],
+      "sceneRows": 32,
+      "sceneSpatialPass": 0,
+      "kingdomAffine": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "hallScale": 0.1312
+    }
+  ],
+  "budgetSnapshot": {
+    "hardCapUSD": 80,
+    "historicalProtectedUSD": 79.8327,
+    "effectivePriorLiabilityUSD": 64.8327,
+    "effectiveReserveUSD": 0,
+    "newHoldsThisRunUSD": 0,
+    "invoicedUSD": null,
+    "remainingCapacityUSD": 15.1673,
+    "pricing": {
+      "source": "Vertex AI Gemini 3.1 Flash Image standard tier, image output $60/1M, 1680 tokens at 2K",
+      "twoKFourImageWorstCaseUSD": 0.5266
+    },
+    "notPurchased": [
+      {
+        "id": "class-healer-standing-body",
+        "boundUSD": 0.5266,
+        "reason": "Wire decoded with 4 inline PNGs. Jobs list returned HTTP 400. Not sent."
+      },
+      {
+        "id": "attacker-bronze-runner",
+        "boundUSD": 0.4594,
+        "reason": "HUD scene. No validated mask, so no request."
+      },
+      {
+        "id": "attacker-medieval-archer",
+        "boundUSD": 0.4594,
+        "reason": "Damaged silhouette. No validated mask, so no request."
+      },
+      {
+        "id": "kingdom-terrain-eight-ages",
+        "boundUSD": null,
+        "reason": "Stone local prototype does not satisfy legal roads. The free-layout method was not repeated and no kingdom image was purchased."
+      }
+    ]
+  },
+  "sourceHashes": {
+    "inputSnapshot": "qa/image-unified-reserve-20261009/input_snapshot.json"
+  },
+  "evidencePaths": [
+    "qa/image-unified-reserve-20261009/review/bodies-on-dark.jpg",
+    "qa/image-unified-reserve-20261009/review/matte-before-after.jpg",
+    "qa/image-unified-reserve-20261009/diagnostics/scenes.json"
+  ],
+  "nextExecutableActions": {
+    "local": "Matte loop is stopped. Wolf still has 139 far-thin pixels and a 21-pixel red disk. Brute still has 111 far-thin pixels.",
+    "paid": "One unfiltered batchPredictionJobs list, then one cloud-lock read. Send the decoded healer wire only if both are terminal. Do not send a new wire. Do not buy kingdom, runner, or archer."
+  },
+  "polishQueue": [],
+  "authorityLimits": [
+    "Hard cap remains 80.",
+    "Reserve release was recorded once. Effective reserve is 0.",
+    "No kingdom repurchase until a local prototype matches legal roads.",
+    "Device remains STOPPED. Runtime and owner acceptance are separate."
+  ],
+  "localCompletionReason": "Pass 11 removed the wolf and brute ground strokes that sat away from the feet, and the workshop perspective outline. Short fragments remain on the wolf and brute. The healer wire decodes to 4 inline images and was not posted. All 32 scene rows remain unresolved."
+}

@@ -1,0 +1,847 @@
+{
+  "updated": "2026-10-05",
+  "providerCalls": 0,
+  "codeAIHandoffReady": false,
+  "librariesMeasuredThisRun": {
+    "python": "3.13.7",
+    "Pillow": "12.3.0",
+    "NumPy": "2.5.3",
+    "OpenCV": "5.0.0",
+    "SciPy": "1.18.1"
+  },
+  "inputHashesChanged": [],
+  "preserve": {
+    "before": {
+      "contract": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd",
+      "v7Interface": "96801c8eefe3542e6eae5715fd8ae16db490049eb37bd413c7d4b7b50dc135bd",
+      "healerBoot": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "draft": "d9564c16c84cb68e230ddbe39d919a1036fa498377643b19085ecac4371864e0"
+    },
+    "after": {
+      "contract": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd",
+      "v7Interface": "96801c8eefe3542e6eae5715fd8ae16db490049eb37bd413c7d4b7b50dc135bd",
+      "healerBoot": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "draft": "d9564c16c84cb68e230ddbe39d919a1036fa498377643b19085ecac4371864e0"
+    }
+  },
+  "arithmetic": {
+    "scenes": 32,
+    "changedScenes": 8,
+    "candidatePixelsChanged": 13360,
+    "stage": "legal-grid candidate mask before connected-component filtering",
+    "not": "river, bank, or runtime accuracy"
+  },
+  "counts": {
+    "reused": 14,
+    "partial": 43,
+    "failed": 4,
+    "blocked": 1,
+    "scenes": 32,
+    "proposals": 1
+  },
+  "items": [
+    {
+      "id": "troop-bronze-melee",
+      "sourceHash": "d9c6c3c6f773eaa4ffbd892a3b04e8af083ae1f84426d42c0332bce6da0ef593",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-melee-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-melee-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-melee-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-bronze-ranged",
+      "sourceHash": "37dd82bc78e87c77e483ab4544141eb26590cc1e98b02328ea40f0164da221aa",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-ranged-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-ranged-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-bronze-ranged-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-iron-ranged",
+      "sourceHash": "5adcd8ffd5ce1c349abda1c913ca1a7c44281571fcaa5bfb38348ae6241d7780",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-ranged-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-ranged-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-ranged-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-iron-heavy",
+      "sourceHash": "620b7997f747333eeafe75c76edda53642566b4ec05b2990f3c5a2d5c269c96e",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-heavy-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-heavy-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-iron-heavy-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-gunpowder-melee",
+      "sourceHash": "307adeb670a6f81f25b4e0b1118e645da712d5b752429cd2a726cb89498c00d4",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-melee-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-melee-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-melee-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-gunpowder-ranged",
+      "sourceHash": "d4ee6bebee78ef0bb3f6659e55b099f5ad0307831bfe931bd164ce542dcdd403",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-ranged-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-ranged-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-gunpowder-ranged-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-modern-melee",
+      "sourceHash": "de22ca26babb42396a2741c9f54a5ac3e9f4da36c49732a01c4679bc4567d779",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-modern-melee-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-modern-melee-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-modern-melee-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-future-melee",
+      "sourceHash": "fe23ac2e32c9cba7294873a33435dbb3c3e529f560c6424f9fa1553453c3f445",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-future-melee-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-future-melee-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-future-melee-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-stone-heavy",
+      "sourceHash": "dde192c590f148b9883b29e69f0dbba3c4fa2a78257aeace17d352c173359a37",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-continuation-20261005/diagnostics/troop-stone-heavy-50.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-stone-heavy-64.png",
+        "qa/image-local-continuation-20261005/diagnostics/troop-stone-heavy-130.png"
+      ],
+      "remainingGap": "Prior static acceptance at 130px. Not an articulated body. Owner acceptance remains unverified.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "ranger-sleeve-to-open-hand",
+      "sourceHash": null,
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [],
+      "remainingGap": "Recorded placement remeasured once. The 12-placement search was not rerun. Not a whole rig or an arbitrary angle.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "healer-boot",
+      "sourceHash": "4a700eeedbabc9710db137491825d0c2ec439db15b10c619f0997a93accfab21",
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [],
+      "remainingGap": "Disconnected neighboring armor was removed. The largest boot component was not edited. Not a leg rig by itself.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "healer-leg-greave",
+      "sourceHash": null,
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [],
+      "remainingGap": "These three angles only. Not a whole rig. Side UNKNOWN.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "healer-greave-boot",
+      "sourceHash": null,
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [],
+      "remainingGap": "These three angles only. Not a whole rig. Side UNKNOWN.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "paladin-knee-greave",
+      "sourceHash": null,
+      "state": "reused",
+      "method": "v7 ready row, rebound in v8",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [],
+      "remainingGap": "These three angles only. Not a whole rig. Side UNKNOWN.",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "healer-neutral-chain",
+      "sourceHash": "5562a7ae252353048d8dbcdb7cc446f71622a7737ed47c41436d008b37859191",
+      "state": "partial",
+      "method": "visual chain diagram from existing crops",
+      "attempts": 1,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/assemblies/healer-missing-chain.png"
+      ],
+      "remainingGap": "full body FAIL",
+      "nextExecutableAction": "A new source-supported separation is required before another joint. Do not rerun exhausted placements."
+    },
+    {
+      "id": "paladin-neutral-chain",
+      "sourceHash": "dd9a1b336c15d30599466491c10bab723697cbdefba50518b6fe61d51e786187",
+      "state": "partial",
+      "method": "visual chain diagram from existing crops",
+      "attempts": 1,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/assemblies/paladin-missing-chain.png"
+      ],
+      "remainingGap": "full body FAIL",
+      "nextExecutableAction": "A new source-supported separation is required before another joint. Do not rerun exhausted placements."
+    },
+    {
+      "id": "ranger-neutral-chain",
+      "sourceHash": "aacbcd185f2624a29a4cf24519803948a637f7c005d194c40781659bbf55002b",
+      "state": "partial",
+      "method": "visual chain diagram from existing crops",
+      "attempts": 1,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/assemblies/ranger-missing-chain.png"
+      ],
+      "remainingGap": "full body FAIL",
+      "nextExecutableAction": "A new source-supported separation is required before another joint. Do not rerun exhausted placements."
+    },
+    {
+      "id": "knight-neutral-chain",
+      "sourceHash": "6e0e20ffd4bb8a79d0b0b302f4306b78f7bd832c795d4414ebd7dedeed165b21",
+      "state": "partial",
+      "method": "visual chain diagram from existing crops",
+      "attempts": 1,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/assemblies/knight-missing-chain.png"
+      ],
+      "remainingGap": "full body FAIL",
+      "nextExecutableAction": "A new source-supported separation is required before another joint. Do not rerun exhausted placements."
+    },
+    {
+      "id": "mage-neutral-chain",
+      "sourceHash": "56ba00e2445ca11719a4009aa47a3907371f76ca4f0b6d7be61b7f3a6a58aed8",
+      "state": "partial",
+      "method": "visual chain diagram from existing crops",
+      "attempts": 1,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/assemblies/mage-missing-chain.png"
+      ],
+      "remainingGap": "full body FAIL",
+      "nextExecutableAction": "A new source-supported separation is required before another joint. Do not rerun exhausted placements."
+    },
+    {
+      "id": "warlock-neutral-chain",
+      "sourceHash": "a0b56227b0051ede00b40e0971f7521fb07cd00c6ec3b86608945cb179c646fb",
+      "state": "partial",
+      "method": "visual chain diagram from existing crops",
+      "attempts": 1,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/assemblies/warlock-missing-chain.png"
+      ],
+      "remainingGap": "full body FAIL",
+      "nextExecutableAction": "A new source-supported separation is required before another joint. Do not rerun exhausted placements."
+    },
+    {
+      "id": "necromancer-neutral-chain",
+      "sourceHash": "1b6518f3db028faad9ef52bd8d0b7b721e4721625482301a487195a7213c614a",
+      "state": "partial",
+      "method": "visual chain diagram from existing crops",
+      "attempts": 1,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/assemblies/necromancer-missing-chain.png"
+      ],
+      "remainingGap": "full body FAIL",
+      "nextExecutableAction": "A new source-supported separation is required before another joint. Do not rerun exhausted placements."
+    },
+    {
+      "id": "barbarian-neutral-chain",
+      "sourceHash": "adbc90c684c85931cbb7ff3b101c8572eff98ace377775997f4e6329ff5cc833",
+      "state": "partial",
+      "method": "visual chain diagram from existing crops",
+      "attempts": 1,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/assemblies/barbarian-missing-chain.png"
+      ],
+      "remainingGap": "full body FAIL",
+      "nextExecutableAction": "A new source-supported separation is required before another joint. Do not rerun exhausted placements."
+    },
+    {
+      "id": "adventure-terrain",
+      "sourceHash": "bac89323d80cc953db73af945bbd4277a9001c040eee567fef6328d7b196c0df",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "adventure-terrain-plains",
+      "sourceHash": "05afa074262f1f3c567f92d8000998441fe704eda20ae2a11ad12c54e2951858",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-plains-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "adventure-terrain-hills",
+      "sourceHash": "79e65680d4953559bcfc0d9d0695ab40c07f21c8f08d0b92dd8402028aa3319d",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-hills-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "adventure-terrain-swamp",
+      "sourceHash": "f612975cfe39ee6cf422d1d82b56bff886498d2a4e06f1d8bf3e0087600c5005",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-swamp-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "adventure-terrain-desert",
+      "sourceHash": "501e57f1631d04a04ed54297cbeeb3b62ba37372b699bbf5eee0254a40c37953",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-desert-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "adventure-terrain-snow",
+      "sourceHash": "86f64b17582726831524c6ae48a90efd2451e254f478a5a49d5f7e8bd39fd7c2",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-snow-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "adventure-terrain-waste",
+      "sourceHash": "8ede49b9c7c679c600d04ff605164801b7bfa0166fbcc94c93ac7923d751d5d5",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-waste-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "adventure-terrain-ruins",
+      "sourceHash": "3a4315fd7a0e52e83c2047847bfc6c1a899121937b8facf363f82fc7bfba41e3",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/adventure-terrain-ruins-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "tactical-terrain-plains",
+      "sourceHash": "5916792b12a1d9cdec26cd96477b5aeeba57feae8afae3a91e87124635273ef6",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-plains-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "tactical-terrain-hills",
+      "sourceHash": "30c3aa2f29f8281d6b9736c8d65a0cde637ff1d56cd00af9edc3d0145bf8cdcb",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-hills-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "tactical-terrain-swamp",
+      "sourceHash": "95c293612f625fa0e896442673148a9ed20b3fdca43a521e8edb5c2149e84c51",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-swamp-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "tactical-terrain-desert",
+      "sourceHash": "5f5206c89caa2e29958f5b344d26d3f2342f07c73e42b3caedc503557abda83c",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-desert-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "tactical-terrain-waste",
+      "sourceHash": "8159cb4d9126752f8327ee1a77ef595b67c9fdf94833f06536feb493d779d9c8",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-waste-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "tactical-terrain-ruins",
+      "sourceHash": "c96446ba9f8cdb2e9c5c081653246fab5fac419dc4afae2005e48e9119989cf5",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-ruins-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "defense-terrain",
+      "sourceHash": "01c19c36e58c6e542dc8506da2f367cdc45a47345d8947723e97d9650866aeb2",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "defense-terrain-plains",
+      "sourceHash": "7941ee34e62b2053c4c4d309e8a42bba795c39605627f2a3911e1fb8c84678da",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-plains-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "defense-terrain-hills",
+      "sourceHash": "a5b979e6f3fc483ac79d0fb9e6c165e8f710e7d8d498fe9f92c3e10730d47ec9",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-hills-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "defense-terrain-swamp",
+      "sourceHash": "380a0cc2343985d0fa0e6491932374eb078b2d4842d60f5a77f96202ef2e88ff",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-swamp-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "defense-terrain-desert",
+      "sourceHash": "7da55fccca84bc13acb282ce7bd30bbdf3504eb2614024cc2a8b7bd932ab1ce9",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-desert-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "defense-terrain-snow",
+      "sourceHash": "514ad172d646a9d17103a55b32f093634ac2e7307c0269fe977f8ea1dcde448e",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-snow-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "defense-terrain-waste",
+      "sourceHash": "c165d958c68f052d10aab4318d005b4963f9efd59c9ea4b3f708111249632967",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-waste-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "defense-terrain-ruins",
+      "sourceHash": "71ecaf6c98b90bd95f08a87dfeed3ec257e4968949b6af3e7bbcb34fbee0c981",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/defense-terrain-ruins-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "tactical-terrain",
+      "sourceHash": "6eadf55f2df8727bcc0415b0f5bc2a8f8c5c766e8ce18f7839923401e0c39e5e",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "tactical-terrain-snow",
+      "sourceHash": "c1b39f72f6ded4bb12de468aff09a9c6d071ace467482c4cdff77e86015d8840",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/tactical-terrain-snow-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "kingdom-terrain-stone",
+      "sourceHash": "a32475f5756d16f510887cd145495a7bfaefe043473d257428ecd3f8b9520ae4",
+      "state": "partial",
+      "method": "manual 100px legal-grid reading after ridge failure",
+      "attempts": 2,
+      "exhausted": false,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-stone-painted-and-legal.png"
+      ],
+      "remainingGap": "Coarse tracks only. Rocks are not polygonized. Full-body terrain is not promoted.",
+      "nextExecutableAction": "Code may review the PROPOSED world tracks. Do not activate the affine."
+    },
+    {
+      "id": "kingdom-terrain-bronze",
+      "sourceHash": "0312c0dc67638cf75e090f27d89a6d0a0afa3b180da666288d4123f2ff59bf71",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-bronze-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "kingdom-terrain-iron",
+      "sourceHash": "b007e856c9af75ce6fa44656af8fbf6b530487aa0bcb46f04fab3aa36c92d709",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-iron-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "kingdom-terrain-medieval",
+      "sourceHash": "56cf0629ff12a0f251d15a9a86a1995b15c3b781668ef809f2ffcbe7a81f719d",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-medieval-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "kingdom-terrain-gunpowder",
+      "sourceHash": "b4564a2a28440069aec1febaf663e5eb56166ddcd0f81cc072dfe2caf827d390",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-gunpowder-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "kingdom-terrain-industrial",
+      "sourceHash": "b8d44f3d7be8161b49e48a4853af399d87c52457c76ce202cc7cc1d4a31274c1",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-industrial-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "kingdom-terrain-modern",
+      "sourceHash": "606d04fc98640fa6644b8dec4f420987cd9455b70f44a795802d69f09afaa29c",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-modern-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "kingdom-terrain-future",
+      "sourceHash": "ea3dd0083f27dcbf8e641b1aad8c0d2450e7944e378c41d5da2e4fc936a33153",
+      "state": "partial",
+      "method": "ridge roads rejected after the Stone visual check; river color-axis kept where present",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-delivery-v8-20261005/terrain/kingdom-terrain-future-painted-and-legal.png"
+      ],
+      "remainingGap": "Painted roads were not traced. Empty road arrays mean unresolved, not absent.",
+      "nextExecutableAction": "A different road method is required. Do not sweep the Sobel percentile."
+    },
+    {
+      "id": "three-role-draft",
+      "sourceHash": "d9564c16c84cb68e230ddbe39d919a1036fa498377643b19085ecac4371864e0",
+      "state": "blocked",
+      "method": "unchanged draft",
+      "attempts": 0,
+      "exhausted": false,
+      "evidence": [
+        "docs/plan/REPLACEMENT-DRAFT-THREE-ROLES-V6-CLARIFICATION-2026-10-04.json"
+      ],
+      "remainingGap": "OWNER_BUDGET_AUTHORIZATION_REQUIRED",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "knight-thigh-greave",
+      "sourceHash": null,
+      "state": "failed",
+      "method": "12 placements plus one 0.45 cuff correction",
+      "attempts": 13,
+      "exhausted": true,
+      "evidence": [],
+      "remainingGap": "failed",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "paladin-thigh-knee",
+      "sourceHash": null,
+      "state": "failed",
+      "method": "scale 1 cuff ratio",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [],
+      "remainingGap": "failed",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "paladin-greave-boot",
+      "sourceHash": null,
+      "state": "failed",
+      "method": "scale 1 cuff ratio",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [],
+      "remainingGap": "failed",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-industrial-melee-matte",
+      "sourceHash": null,
+      "state": "partial",
+      "method": "restore dark coat from v5",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [],
+      "remainingGap": "partial",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-modern-heavy",
+      "sourceHash": null,
+      "state": "partial",
+      "method": "no new method",
+      "attempts": 0,
+      "exhausted": true,
+      "evidence": [],
+      "remainingGap": "partial",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "troop-modern-ranged",
+      "sourceHash": null,
+      "state": "partial",
+      "method": "no new method",
+      "attempts": 0,
+      "exhausted": true,
+      "evidence": [],
+      "remainingGap": "partial",
+      "nextExecutableAction": null
+    },
+    {
+      "id": "paladin-head_three_quarter",
+      "sourceHash": null,
+      "state": "failed",
+      "method": "upward extension deleted",
+      "attempts": 1,
+      "exhausted": true,
+      "evidence": [
+        "qa/image-local-continuation-20261005/recipes/paladin-head_three_quarter.json"
+      ],
+      "remainingGap": "FAILED_BYTES_UNAVAILABLE",
+      "nextExecutableAction": null
+    }
+  ],
+  "ridgeRoadsWithdrawn": true
+}

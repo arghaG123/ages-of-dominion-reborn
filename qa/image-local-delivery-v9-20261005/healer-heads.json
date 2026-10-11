@@ -1,0 +1,504 @@
+{
+  "dropped": [
+    {
+      "area": 2974,
+      "solidity": 0.003,
+      "box": [
+        16,
+        16,
+        992,
+        992
+      ]
+    }
+  ],
+  "filledPinholePixels": 28,
+  "rows": [
+    {
+      "id": "healer-head-front-neck",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head_with_neck",
+      "view": "FRONT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-front-neck.png",
+      "sha256": "92ae24378c70885f29ca99a1cdfe12416389b988adaa7102760db63590e5741d",
+      "dimensions": [
+        263,
+        483
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        263,
+        483
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        263,
+        483
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        35,
+        476,
+        298,
+        959
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-front-neck.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-front-neck.json",
+      "neckPivotCropXY": [
+        132.0,
+        482
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-front-bust",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head",
+      "view": "FRONT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-front-bust.png",
+      "sha256": "e426695a7a1a28c075e91ecce69b274569af71d36ddf10ca7984b5412e952cba",
+      "dimensions": [
+        247,
+        385
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        247,
+        385
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        247,
+        385
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        43,
+        30,
+        290,
+        415
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-front-bust.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-front-bust.json",
+      "neckPivotCropXY": [
+        121.0,
+        384
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-three-quarter",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head",
+      "view": "THREE_QUARTER_IMAGE_RIGHT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-three-quarter.png",
+      "sha256": "c6dc9cef385e9abf25f88d36b869a0e7ba73c52ddf389c3cfd3c4f83eda7b32e",
+      "dimensions": [
+        273,
+        381
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        273,
+        381
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        273,
+        381
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        353,
+        33,
+        626,
+        414
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-three-quarter.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-three-quarter.json",
+      "neckPivotCropXY": [
+        161.0,
+        380
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-profile-braid",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head_and_attached_braid",
+      "view": "PROFILE_IMAGE_RIGHT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-profile-braid.png",
+      "sha256": "2bea8cac2b923e798ea95118fddf4fcc26e65bc0032d4c84acfb3ae4066cf690",
+      "dimensions": [
+        295,
+        630
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        295,
+        630
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        295,
+        630
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        683,
+        27,
+        978,
+        657
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-profile-braid.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-profile-braid.json",
+      "neckPivotCropXY": [
+        26.0,
+        629
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-profile-bun",
+      "status": "READY",
+      "role": "static-head-or-card",
+      "semantic": "head_with_neck",
+      "view": "PROFILE_IMAGE_LEFT",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-profile-bun.png",
+      "sha256": "1ad22e750b7ba6b13791d2de6f328fc56d3370bab2b3a093cd57459e076e07c6",
+      "dimensions": [
+        311,
+        477
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        311,
+        477
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        311,
+        477
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        316,
+        474,
+        627,
+        951
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-profile-bun.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-profile-bun.json",
+      "neckPivotCropXY": [
+        87.0,
+        476
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-head-crown",
+      "status": "PARTIAL",
+      "role": "static-part",
+      "semantic": "head_top",
+      "view": "CROWN",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-head-crown.png",
+      "sha256": "6faf627fe34bd1f70698382a938c74d6bd7ee2d3798f6d724fb6eda77f29b471",
+      "dimensions": [
+        261,
+        334
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        261,
+        334
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        261,
+        334
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        708,
+        641,
+        969,
+        975
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-head-crown.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-head-crown.json",
+      "neckPivotCropXY": [
+        132.0,
+        333
+      ],
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    },
+    {
+      "id": "healer-braid",
+      "status": "PARTIAL",
+      "role": "static-part",
+      "semantic": "braid",
+      "view": "SEPARATE_BRAID",
+      "side": "UNKNOWN",
+      "path": "assets/derivatives/rigs/v9/healer/healer-braid.png",
+      "sha256": "b118d859beb2814a788431440883ad75ed124cc83cf010371aea134b4e466aed",
+      "dimensions": [
+        54,
+        305
+      ],
+      "visibleAlpha16": [
+        0,
+        0,
+        54,
+        305
+      ],
+      "visibleAlpha128": [
+        0,
+        0,
+        54,
+        305
+      ],
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+      "sourceROI": [
+        606,
+        352,
+        660,
+        657
+      ],
+      "mask": "qa/image-local-delivery-v9-20261005/masks/healer-braid.png",
+      "recipe": "qa/image-local-delivery-v9-20261005/recipes/healer-braid.json",
+      "neckPivotCropXY": null,
+      "enclosedHolesLeft": 0,
+      "displaySizes": [
+        50,
+        64,
+        130
+      ],
+      "limit": "Static painted view. Anatomical side is UNKNOWN. Not a body and not an animated head.",
+      "droppedFrameComponents": 1,
+      "gates": {
+        "sourceBinding": {
+          "gate": "PASS",
+          "evidence": "Written and hashed in this run."
+        },
+        "matte": {
+          "gate": "PASS",
+          "evidence": "White, black, and green composites. Enclosed holes left 0."
+        },
+        "articulation": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "A painted head crop has no joint."
+        },
+        "fullBody": {
+          "gate": "NOT_APPLICABLE",
+          "reason": "Row is one painted part."
+        },
+        "owner": {
+          "gate": "UNVERIFIED",
+          "evidence": "No owner acceptance on this row."
+        }
+      }
+    }
+  ]
+}

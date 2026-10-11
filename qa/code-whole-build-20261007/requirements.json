@@ -1,0 +1,25 @@
+{
+  "status": "INCOMPLETE",
+  "rows": [
+    {"id": "home-gate", "status": "PARTIAL", "evidencePaths": ["qa/code-whole-build-20261007/shots/home-1280x720.png"], "remaining": ["Owner has not accepted the gate against mock 01."]},
+    {"id": "class-select", "status": "PARTIAL", "evidencePaths": ["qa/code-whole-build-20261007/shots/class-select.png"], "remaining": ["Eight class cards are shown. Full bodies and gait are not available."]},
+    {"id": "kingdom-stone", "status": "PARTIAL", "evidencePaths": ["qa/code-whole-build-20261007/shots/kingdom-stone-empty.png", "qa/code-whole-build-20261007/geometry-proposal-v20261007.json"], "remaining": ["Painted roads conflict with pads. Geometry proposal is inactive."]},
+    {"id": "kingdom-ages-1-7", "status": "PARTIAL", "evidencePaths": ["src/data/age-buildings.json", "src/data/reviewed-source-selection.json"], "remaining": ["Age buildings and terrain files exist. This pass did not capture a fresh screenshot of each age, and green-base rows were not promoted."]},
+    {"id": "adventure-tactical-defense", "status": "PARTIAL", "evidencePaths": ["qa/code-whole-build-20261007/shots/skirmish.png"], "remaining": ["Mode paintings are baked-unaccepted. Scene proposals stay inactive."]},
+    {"id": "hero-skills-spells-forge-inventory-army", "status": "PARTIAL", "evidencePaths": ["qa/code-whole-build-20261007/shots/forge.png", "qa/code-whole-build-20261007/shots/army.png"], "remaining": ["Six slots and class cards render. Full articulated bodies remain blocked."]},
+    {"id": "market-story-war-settings-help", "status": "PARTIAL", "evidencePaths": ["qa/code-whole-build-20261007/shots/market.png", "qa/code-whole-build-20261007/shots/story.png", "qa/code-whole-build-20261007/shots/war.png", "qa/code-whole-build-20261007/shots/settings.png", "qa/code-whole-build-20261007/shots/help.png"], "remaining": ["Layouts are native SVG and HTML. They are not the approved mock frames."]},
+    {"id": "retreat-isolation", "status": "PASS", "evidencePaths": ["qa/code-whole-build-20261007/journey-report.json"], "remaining": []},
+    {"id": "consumer-adapter", "status": "PASS", "evidencePaths": ["src/data/consumer-catalog-20261007.json", "tests/consumer-adapter-20261007.test.mjs"], "remaining": ["Runtime PASS is limited to repaired troops and clean material icons."]},
+    {"id": "troop-stone-ranged", "status": "FAIL", "evidencePaths": ["qa/code-whole-build-20261007/matte-previews/troop-stone-ranged-neutral.jpg"], "remaining": ["Painted checker remains. The previous plate stays bound."]},
+    {"id": "troop-stone-melee", "status": "PARTIAL", "evidencePaths": ["assets/runtime-code-20261007/troops/troop-stone-melee.png"], "remaining": ["Subject-preserving crop is bound. Owner acceptance is unverified."]},
+    {"id": "troop-industrial-ranged", "status": "PARTIAL", "evidencePaths": ["assets/runtime-code-20261007/troops/troop-industrial-ranged.png"], "remaining": ["Subject-preserving crop is bound. Owner acceptance is unverified."]},
+    {"id": "troop-industrial-heavy", "status": "PARTIAL", "evidencePaths": ["assets/runtime-code-20261007/troops/troop-industrial-heavy.png"], "remaining": ["Steam walker crop is bound. The rifleman plate stays rejected."]},
+    {"id": "visible-css-cap", "status": "PASS", "evidencePaths": ["src/client/visible-size.js", "tests/consumer-adapter-20261007.test.mjs"], "remaining": []},
+    {"id": "guide-bytes", "status": "FAIL", "evidencePaths": [], "remaining": ["kingdom-stone-day1-composition-v4-guide.png and v5-guide.png are absent. Tests still expect the recorded bytes."]},
+    {"id": "positive-morale", "status": "BLOCKED", "evidencePaths": ["src/core/mechanics.js"], "remaining": ["MORALE_EFFECT stays PENDING_OWNER_DECISION. No extra turn was added."]},
+    {"id": "full-class-bodies", "status": "BLOCKED", "evidencePaths": ["src/data/consumer-catalog-20261007.json"], "remaining": ["Failed joints and incomplete chains are not promoted to heroes."]},
+    {"id": "natural-siege-and-eight-ages", "status": "UNVERIFIED", "evidencePaths": ["tests/defense.test.mjs"], "remaining": ["Node coverage exists for a prepared siege. This browser pass did not play a natural siege win or an earned eight-age journey."]},
+    {"id": "device", "status": "BLOCKED", "evidencePaths": [], "remaining": ["No adb, install, or device run."]},
+    {"id": "owner-acceptance", "status": "UNVERIFIED", "evidencePaths": [], "remaining": ["The owner has not accepted the game."]}
+  ]
+}
