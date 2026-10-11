@@ -1,0 +1,9 @@
+# Today's assets and continuation
+
+Read the [single portable continuation document](../../plan/CROSS-DEVICE-CONTINUATION-2026-10-11.md), [fresh audit](../../plan/PROJECT-DEVICE-HANDOFF-AUDIT-2026-10-11.md), [delta manifest](new-assets-manifest.json) and [short prompt](TRANSFER-PROMPT.txt).
+
+Exactly one local payload: `C:/dev/ages-of-dominion-reborn/output/device-transfer-20261011/new-assets-20261011.zip`;73,779,502 bytes; SHA256 `567627a1a24ea291c948018caf9b4ebd55436e1405d19da6144534807dfe205a`.99 new assets-folder PNGs + two small metadata entries. Baseline assets, APKs, QA pictures, raw responses and secrets are excluded. No new native generation was observed relative to the evidenced baseline; these are source-bound derivatives and repairs, not blanket visual acceptance.
+
+Copy this ZIP as-is to your transfer drive/new PC. Clone/pull the published `main` commit. Supply the existing baseline assets folder separately if destination does not have it; verify all3,647 baseline files with `python docs/migration/device-handoff-20261011/transfer.py verify-baseline`. Then run `verify --zip PATH` and `restore --zip PATH` with that utility. It validates all members and destinations, rejects different existing bytes/links/traversal, and skips identical bytes. No force override or old archive reconstruction. All99 ZIP images and their source bindings were verified locally; new-device restore is still UNVERIFIED.
+
+`inventory.py` is a read-only source/disk inventory that writes its own audit metadata. `cleanup.ps1` is historical execution evidence, **do not rerun it on a new device**: today's cleanup/move is already completed, and its artifact names refer to this source snapshot. Build/web/native helpers write generated artifacts and need separate executor readiness checks. Original art/history/required QA/saves and both release APKs were preserved. Git was compressed without history rewriting or pruning.

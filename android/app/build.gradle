@@ -21,6 +21,13 @@ android {
             minifyEnabled false
         }
     }
+    // Distinct package filename per build type so a rebuild never silently replaces an older
+    // package under the generic app-release-unsigned.apk name.
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "ages-of-dominion-reborn-preview-${variant.buildType.name}-unsigned-20261011.apk"
+        }
+    }
 }
 
 dependencies {

@@ -7,7 +7,8 @@ export const AGE_POWER = [0.91, 0.99, 1.17, 1.06, 0.99, 0.74, 0.68, 0.72];
 export const RANK_XP = [0, 60, 180, 420, 900];
 export const PRIMARY_ORDER = ['atk', 'def', 'pow', 'kno'];
 export const LOOT_GEAR_SLOTS = [...GEAR_SLOTS];
-export const MORALE_EFFECT = 'PENDING_OWNER_DECISION';
+export const MORALE_EFFECT = 'BONUS_ACTION';
+export const MORALE_COEFFICIENT = 0.042;
 
 const WEATHER_ORDER = ['clear', 'rain', 'fog', 'storm', 'blizz', 'sand', 'heat'];
 

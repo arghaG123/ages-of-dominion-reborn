@@ -1,0 +1,63 @@
+{
+  "at": "2026-10-11",
+  "tests": "121/121 PASS on Node, tests/*.test.mjs",
+  "product": "INCOMPLETE",
+  "device": "DEFERRED",
+  "paidDispatch": "none",
+  "apkRebuild": "none",
+  "git": "none",
+  "rows": [
+    {
+      "id": "positive-morale",
+      "result": "PASS",
+      "scope": "Tactical bonus action. p = max(0, morale) * 0.042. One Move/Melee/Shoot check per stack per round. Bonus may Move, Melee, Shoot, Defend or Skip. No Wait, no chain, no roll on Defend, Spell, Wait, retaliation, rejection, death or a resolved battle. Challenge results stay off campaign story.",
+      "evidence": "tests/blocker-repair-20261011.test.mjs"
+    },
+    {
+      "id": "hero-hall-xp",
+      "result": "PASS",
+      "scope": "Victory XP uses the completed Hero Hall level, not Town Hall. An unfinished Hall job does not raise the multiplier. Town Hall level 4 with Hall level 3 credits 131, not 144. Hall level 2 with a pending upgrade credits 117.",
+      "evidence": "src/core/campaign.js grantHeroXp(..., levelOf(s, 'hall'))"
+    },
+    {
+      "id": "resurrection",
+      "result": "PASS",
+      "scope": "A living friendly stack at 15 of 40 HP recovers 10 HP from Power 0.2, spends 20 mana, and cannot cast again that round. A dead stack remains an unsupported target.",
+      "evidence": "tests/blocker-repair-20261011.test.mjs"
+    },
+    {
+      "id": "defense-xp",
+      "result": "PASS",
+      "scope": "Each blow adds 0.045 of the dealt damage to that tower, hero or army accumulator. The killing blow adds 5, or 18 for a boss, once. Overkill uses the full blow. Settlement rounds the session total once through rankForXp. A wrecked tower does not lose a rank. That rank loss in the old siege ending is not adopted.",
+      "source": "C:/dev/ages-of-dominion/src/siege/index.js bHurt and endBattle",
+      "evidence": "tests/blocker-repair-20261011.test.mjs"
+    },
+    {
+      "id": "defense-cast",
+      "result": "PASS",
+      "scope": "Hero blast spends 40 campaign mana and deals Power*4 + level*6 inside radius 1.6. It grants no experience. The old per-second mana regeneration is not adopted.",
+      "evidence": "tests/blocker-repair-20261011.test.mjs"
+    },
+    {
+      "id": "dwelling-history",
+      "result": "PASS",
+      "scope": "Eight distinct creature types can be bought at the existing dwelling, one offer per type. Cancel keeps the open terms. A second offer of a claimed or migrated type is rejected. Same transaction cannot claim twice.",
+      "evidence": "tests/blocker-repair-20261011.test.mjs"
+    },
+    {
+      "id": "q6-ten-waves",
+      "result": "UNVERIFIED",
+      "scope": "The goal remains 10 cleared waves. This pass did not run an earned Endless journey to that goal."
+    },
+    {
+      "id": "wisdom-3-earned",
+      "result": "UNVERIFIED",
+      "scope": "Hero Hall attribution is corrected. The historical 124-duel route is not a post-change recipe. No earned Wisdom 3 journey was rerun."
+    },
+    {
+      "id": "scenes-rigs-healer-charioteer-package-paid",
+      "result": "UNVERIFIED",
+      "scope": "No scene trace, rig, Healer body, Charioteer source, package rebuild or paid call in this pass."
+    }
+  ]
+}

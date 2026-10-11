@@ -9,27 +9,30 @@ export function defaultIntent(legal, spellCount) {
   return 'defend';
 }
 
-export function keepIntent(intent, legal, spellCount, waited) {
+export function keepIntent(intent, legal, spellCount, waited, bonus = false) {
+  if (bonus && (intent === 'wait' || intent === 'skip-bonus')) return intent === 'skip-bonus' ? 'skip-bonus' : defaultIntent(legal, spellCount);
   if (intent === 'move' && legal.moves.length) return intent;
   if (intent === 'melee' && legal.melee.length) return intent;
   if (intent === 'shoot' && legal.ranged.length) return intent;
   if (intent === 'spell' && spellCount > 0) return intent;
-  if (intent === 'wait' && !waited) return intent;
+  if (intent === 'wait' && !waited && !bonus) return intent;
   if (intent === 'defend' || intent === 'auto' || intent === 'retreat') return intent;
   return defaultIntent(legal, spellCount);
 }
 
-export function modeRows({ moves, melee, ranged, spells, waited }) {
-  return [
+export function modeRows({ moves, melee, ranged, spells, waited, bonus = false }) {
+  const rows = [
     { id: 'move', label: 'Move', enabled: moves.length > 0, detail: moves.length ? `${moves.length} open cells` : 'No open cell' },
     { id: 'melee', label: 'Melee', enabled: melee.length > 0, detail: melee.length ? `${melee.length} in reach` : 'None in reach' },
     { id: 'shoot', label: 'Shoot', enabled: ranged.length > 0, detail: ranged.length ? `${ranged.length} in range` : 'No shot' },
     { id: 'spell', label: 'Spell', enabled: spells > 0, detail: spells ? `${spells} casts` : 'No cast' },
     { id: 'defend', label: 'Defend', enabled: true, detail: 'Brace this stack' },
-    { id: 'wait', label: 'Wait', enabled: !waited, detail: waited ? 'Already waited' : 'Act later this round' },
+    { id: 'wait', label: 'Wait', enabled: !waited && !bonus, detail: bonus ? 'Wait is unavailable during a bonus action' : waited ? 'Already waited' : 'Act later this round' },
     { id: 'auto', label: 'Auto', enabled: true, detail: 'Resolve legal actions' },
     { id: 'retreat', label: 'Retreat', enabled: true, detail: 'Leave this battle' },
   ];
+  if (bonus) rows.push({ id: 'skip-bonus', label: 'Skip bonus', enabled: true, detail: 'End the extra action' });
+  return rows;
 }
 
 export function moveLabel(cell) {
@@ -52,7 +55,8 @@ export function intentSentence(intent, stackTitle) {
   if (intent === 'shoot') return `${who} can shoot one listed target.`;
   if (intent === 'spell') return 'Choose one listed cast. A stack casts once this round.';
   if (intent === 'defend') return `${who} braces and ends this action.`;
-  if (intent === 'wait') return `${who} can wait once, then act later this round.`;
+  if (intent === 'wait') return `${who} can wait once, then act later this round. Wait does not roll morale.`;
+  if (intent === 'skip-bonus') return 'Skip ends this bonus action. It does not roll morale again, and it does not restore a spell, a shot, or retaliation.';
   if (intent === 'auto') return 'Auto uses the legal engine. It does not invent a result.';
   if (intent === 'retreat') return 'Retreat leaves this battle. Confirm or cancel in the dialog. Cancel spends nothing.';
   return 'Choose Move, Melee, Shoot, Spell, Defend, Wait, Auto or Retreat.';

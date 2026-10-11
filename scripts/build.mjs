@@ -17,6 +17,7 @@ const portraitCards = JSON.parse(await fs.readFile(path.join(root, 'src/data/por
 const modeScenes = JSON.parse(await fs.readFile(path.join(root, 'src/data/mode-scenes.json'), 'utf8'));
 const plateOverrides = JSON.parse(await fs.readFile(path.join(root, 'src/data/plate-overrides-20261007.json'), 'utf8'));
 const gearIcons = JSON.parse(await fs.readFile(path.join(root, 'src/data/gear-icons-20261007.json'), 'utf8'));
+const heroBodies = JSON.parse(await fs.readFile(path.join(root, 'src/data/hero-bodies-20261011.json'), 'utf8'));
 const consumerCatalog = JSON.parse(await fs.readFile(path.join(root, 'src/data/consumer-catalog-20261007.json'), 'utf8').catch(() => '{"assets":[]}'));
 const files = new Set();
 const visit = (value) => {
@@ -34,6 +35,7 @@ visit(ageBuildings);
 visit(portraitCards);
 visit(plateOverrides);
 visit(gearIcons);
+visit(heroBodies);
 for (const asset of consumerCatalog.assets || []) {
   if (asset.gates?.runtime === 'PASS' && typeof asset.outputPath === 'string') files.add(asset.outputPath);
 }

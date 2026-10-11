@@ -345,7 +345,19 @@
       "id": "tactical-turns",
       "sourcePath": "C:/dev/ages-of-dominion/src/battle/index.js",
       "functionOrSearch": "initiative/turn/Wait/Defend/Retreat handlers",
-      "status": "DOCUMENTED_PARTIAL_TURNS_MORALE_DECISION_PENDING",
+      "status": "DOCUMENTED_TURNS_MORALE_DESIGN_DECIDED_IMPLEMENTATION_UNVERIFIED",
+      "moraleDecision20261011": {
+        "authority": "Owner delegates positive morale design to planner after research",
+        "specification": "docs/plan/OWNER-REVIEW-SEQUENCE-AND-MORALE-DECISION-2026-10-11.md",
+        "priorStatus": "DOCUMENTED_PARTIAL_TURNS_MORALE_DECISION_PENDING",
+        "probabilityPerPositivePoint": 0.042,
+        "moraleCap": 3,
+        "maximumBonusActivationsPerStackRound": 1,
+        "chains": false,
+        "implementationStatus": "IMPLEMENTED_TESTS_PASS_VISUAL_AND_EARNED_JOURNEY_UNVERIFIED",
+        "implementedAt": "2026-10-11",
+        "implementation": "src/core/battle.js finishStackAction/resolveMorale. Chance max(0,morale)*0.042. One bonus Move/Melee/Shoot/Defend/Skip per stack per round. No Wait, no chain, no Defense bonus. Tests: tests/blocker-repair-20261011.test.mjs."
+      },
       "requiredEvidence": "exact queue/reload/retreat consequence parity from specification, fresh implementation",
       "reason": "Source definitions documented; completion requires fresh independent implementation and affected fixtures/integration. Partial policies stay explicitly open.",
       "planningHistory": [
@@ -364,7 +376,8 @@
       ],
       "specification": "docs/plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
       "sourceEvidence": "qa/planner-verifier-v3-20261003/formula-source-provenance.json",
-      "implemented": false
+      "implemented": true,
+      "implementationNote": "2026-10-11 bonus action is tested. Earned journey and visual acceptance remain open."
     },
     {
       "id": "spells-legality",
@@ -581,6 +594,7 @@
     "specification": "docs/plan/SOURCE-EQUATIONS-ADDENDUM-2026-10-03.md",
     "runtimeVerified": false,
     "ownerAccepted": false,
-    "moraleDecision": "PENDING_OWNER_CHOICE_EXTRA_TURN_VS_COSMETIC"
+    "moraleDecision": "DECIDED_OWNER_DELEGATED_PLANNER_EXTRA_ACTION_20261011",
+    "priorMoraleDecision": "PENDING_OWNER_CHOICE_EXTRA_TURN_VS_COSMETIC"
   }
 }

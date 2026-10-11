@@ -1,6 +1,6 @@
 // Documented scalar rules. Damage, waves, encounters, loot, hero experience and End Day
-// live in mechanics.js. Positive morale does not grant an extra turn while that owner
-// decision is pending.
+// live in mechanics.js. Positive morale grants one unchainable Tactical bonus action.
+// The chance is max(0, morale) * 0.042, and morale is clamped to [-3, 3].
 
 export const SKILL_IDS = ['offense', 'archery', 'armorer', 'wisdom', 'leadership', 'luck', 'tactics', 'logistics', 'firstaid'];
 export const GEAR_SLOTS = ['helm', 'weapon', 'offhand', 'armor', 'boots', 'accessory'];
@@ -75,6 +75,17 @@ export function heroStats(state, data) {
   stats.morale += hero.skills.leadership;
   stats.luck += hero.skills.luck;
   return stats;
+}
+
+export function clampMorale(value) {
+  if (!Number.isFinite(value)) throw new Error('Invalid morale');
+  return Math.max(-3, Math.min(3, value));
+}
+
+// Commander morale is Leadership plus supported artifact and equipment bonuses, minus the documented weather penalty.
+export function battleMorale(state, data) {
+  const penalty = Number(data.WEATHER[state.weather]?.mods?.moraleMinus || 0);
+  return clampMorale(heroStats(state, data).morale - penalty);
 }
 
 export function manaMax(state, data) {

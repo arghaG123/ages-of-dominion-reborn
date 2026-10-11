@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-11",
+  "authorization": "Owner clarified remove only verified unnecessary files",
+  "firstPass": "First invocation removed dist, generated www, Gradle intermediates/tmp and untracked scripts/tests caches; stopped on tracked legacy cache before report write. Preserved both tracked QA caches. Before/after category snapshots quantify total reduction.",
+  "apkMove": {
+    "source": "android\\app\\build\\outputs\\apk\\release\\ages-of-dominion-reborn-preview-release-unsigned-20261011.apk",
+    "target": "delivery\\ages-of-dominion-reborn-preview-4fa30fa0.apk",
+    "sha256": "4fa30fa016f3a8f7cb1751b7624ffbecd924182f51686d920af5b37096a8037c",
+    "bytes": 584755522,
+    "copyMade": false
+  },
+  "deletedThisPass": [
+    {
+      "path": ".git\\objects\\51\\tmp_obj_Ahuw7G",
+      "files": 1,
+      "bytes": 386,
+      "reason": "Reproducible build/cache or abandoned unreferenced Git temporary output"
+    },
+    {
+      "path": ".git\\objects\\89\\tmp_obj_jczCPL",
+      "files": 1,
+      "bytes": 88494080,
+      "reason": "Reproducible build/cache or abandoned unreferenced Git temporary output"
+    },
+    {
+      "path": ".git\\objects\\89\\tmp_obj_oGAi3s",
+      "files": 1,
+      "bytes": 1073152,
+      "reason": "Reproducible build/cache or abandoned unreferenced Git temporary output"
+    },
+    {
+      "path": ".git\\objects\\89\\tmp_obj_ZnngUp",
+      "files": 1,
+      "bytes": 544768,
+      "reason": "Reproducible build/cache or abandoned unreferenced Git temporary output"
+    }
+  ],
+  "preservedTrackedCaches": [
+    "qa/asset-audit-20261003/__pycache__",
+    "qa/planner-verifier-v3-20261003/__pycache__"
+  ],
+  "deletedBytesThisPass": 90112386.0,
+  "refsUnchanged": true,
+  "productionDeleted": false
+}

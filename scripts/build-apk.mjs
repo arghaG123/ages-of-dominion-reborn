@@ -87,8 +87,12 @@ async function syncWww() {
   return { copied: next.size, removed: previous.filter(file => !next.has(file)).length };
 }
 
-const preserved = await preserveExisting();
-console.log('Preserved existing APK copies: ' + (preserved.length ? JSON.stringify(preserved) : 'none present'));
+// Owner instruction 11 October 2026: no further APK preservation copies (storage depleted).
+// preserveExisting() is retained for reference but only runs with --preserve-existing.
+if (process.argv.includes('--preserve-existing')) {
+  const preserved = await preserveExisting();
+  console.log('Preserved existing APK copies: ' + (preserved.length ? JSON.stringify(preserved) : 'none present'));
+}
 await run(process.execPath, [path.join(root, 'scripts', 'build.mjs')], root);
 const sync = await syncWww();
 console.log(`Synchronized ${sync.copied} generated files into android www. Removed ${sync.removed} stale www files.`);
@@ -98,6 +102,7 @@ if (process.platform === 'win32') {
 } else {
   await run(path.join(androidDir, 'gradlew'), ['assembleRelease'], androidDir);
 }
-const apk = path.join(root, 'android', 'app', 'build', 'outputs', 'apk', 'release', 'app-release-unsigned.apk');
+// Filename is set by applicationVariants.all in android/app/build.gradle.
+const apk = path.join(root, 'android', 'app', 'build', 'outputs', 'apk', 'release', 'ages-of-dominion-reborn-preview-release-unsigned-20261011.apk');
 const stat = await fs.stat(apk);
 console.log(`Preview APK: ${apk} (${stat.size} bytes). Unsigned. Not installed.`);

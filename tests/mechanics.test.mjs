@@ -89,7 +89,7 @@ test('hero experience, loot, dwellings and waves follow the addendum', () => {
   assert.equal(later.gap, 0.8);
   assert.equal(encounterVerdict(1, 0), 'Deadly');
   assert.equal(encounterVerdict(0.7, 1), 'Easy');
-  assert.equal(MORALE_EFFECT, 'PENDING_OWNER_DECISION');
+  assert.equal(MORALE_EFFECT, 'BONUS_ACTION');
   const host = hostPower(fresh().army, 3, 3);
   assert.ok(host > 0);
   const seeded = fresh();

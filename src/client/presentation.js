@@ -5,21 +5,36 @@ export const ACTIVE_AFFINE = [60, -10, 25, 35, 170, 165];
 // The affine and Hall scale stay frozen.
 export const KINGDOM_PAD_PRESENTATION = 'kingdom-pad-state-v2';
 
+// Hero equipment room (reference 19-hero-equipment): full standing body centred, three slot cards
+// on each side, stat strip along the floor. `card` is the body box; the portrait card for a class
+// without a standing body (Healer) is fitted inside the same box.
+export const HERO_SLOT_COLUMNS = { left: ['helm', 'weapon', 'offhand'], right: ['armor', 'boots', 'accessory'] };
 export function heroStage() {
+  const slot = { width: 272, height: 128, gap: 20, top: 104 };
+  const column = index => ({ y: slot.top + index * (slot.height + slot.gap), width: slot.width, height: slot.height });
   return {
-    card: { x: 48, y: 40, width: 460, height: 460 },
-    figure: { x: 278, y: 700 },
+    card: { x: 448, y: 72, width: 480, height: 628 },
+    figure: { x: 688, y: 700 },
     ground: { x1: 40, y: 700, x2: 1330 },
+    title: { x: 72, y: 72 },
+    slots: {
+      left: HERO_SLOT_COLUMNS.left.map((id, index) => ({ id, x: 72, ...column(index) })),
+      right: HERO_SLOT_COLUMNS.right.map((id, index) => ({ id, x: 1032, ...column(index) })),
+    },
+    classGrid: { x: 72, y: 104, width: 272, height: 140, gap: 14, columns: 1 },
+    // Two side panels sit under the slot columns, above the dock band.
+    progress: { x: 72, y: 556, width: 272, height: 134 },
+    stats: { x: 1032, y: 556, width: 272, height: 134 },
   };
 }
 
 export function heroFocus(stage = heroStage()) {
   const cardBottom = stage.card.y + stage.card.height;
   return {
-    minX: stage.card.x - 24,
-    minY: Math.max(0, stage.card.y - 16),
-    maxX: stage.ground.x2 + 20,
-    maxY: Math.max(cardBottom, stage.ground.y) + 24,
+    minX: 0,
+    minY: 0,
+    maxX: STAGE[0],
+    maxY: Math.max(STAGE[1], cardBottom, stage.ground.y),
   };
 }
 

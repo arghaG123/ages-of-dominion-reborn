@@ -5,6 +5,7 @@ import scene from '../data/stone-scene.json' with { type: 'json' };
 import modeScenes from '../data/mode-scenes.json' with { type: 'json' };
 import ageBuildings from '../data/age-buildings.json' with { type: 'json' };
 import gearIcons from '../data/gear-icons-20261007.json' with { type: 'json' };
+
 import { newCampaign, command, advanceReported, formatResume, cost, heroStats, manaMax, dailyMoves, gateHp, futureConclusion, questReady, stackTitle } from '../core/campaign.js';
 import { activeStackId, legalTargets, meleeCommand } from '../core/battle.js';
 import { save, load, SAVE_KEY, rememberView, rememberedView, encode, decode, restoreBackup, storeSlot, loadSlot, replaceCampaign } from '../core/save.js';
@@ -14,13 +15,14 @@ import { attackerPlate, drawActor, drawMount, drawPlate, drawReviewMount, drawSt
 import { drawBoundActor } from './anatomy.js';
 import { pendingPortrait, portraitCard } from './portraits.js';
 import { heroFocus, heroStage, KINGDOM_PAD_PRESENTATION, wallPresentation } from './presentation.js';
+import { bodyMatchesKit, drawHeroRoom, heroBody, kitEra, selectGearIcon } from './hero-room.js';
 import { armedChoice, parseChallenge } from './choices.js';
 import { acceptMapActivation, defaultIntent, intentSentence, keepIntent, modeRows, moveLabel, retreatBlocksBackground, retreatFocusTarget, retreatNotice, spellLabel, stackCaption, strikeLabel, viewDuringRetreat } from './tactical-ui.js';
 import { visibleBox } from './visible-size.js';
 import { createFrameClock, travelProgress, travelSample } from './motion.js';
 import { applySettings, arm, blip, nextSuspended, suspendAudio, resumeAudio } from './audio.js';
 import { SKILL_IDS, GEAR_SLOTS, RIVALS, forgeOffer, gearBonus, recruitCost, spellEffect, towerPurchaseCost } from '../core/rules.js';
-import { unitStats } from '../core/mechanics.js';
+import { dwellingCost, dwellingPool, unitStats } from '../core/mechanics.js';
 import { adventureMap, routeCost } from '../core/navigation.js';
 import { challengeDescriptor, validateDescriptor, encodeChallengeCode, decodeChallengeCode, challengeResult } from '../core/challenge.js';
 
@@ -59,6 +61,8 @@ let focusChoice = '';
 let plateReviewAge = null;
 let moreOpen = false;
 let challengeDraft = { seed: '123456789', code: 'valley-1', error: '', copy: '' };
+let blastAim = false;
+let defensePad = '';
 let view = initial.status === 'VALID' ? rememberedView(localStorage, screens) : 'home';
 const tutorialCue = ['Build a Lumber Camp.', 'Build a Farm.', 'Build a Quarry.', 'Build a Barracks.', 'Recruit a stack.', 'Leave town.', 'Fight the guard.', 'Hold the lane.'];
 const tutorialChoice = ['lumber', 'farm', 'quarry', 'barracks', 'recruit:', 'enter-adventure', 'begin-encounter', 'start-siege'];
@@ -229,6 +233,13 @@ function resources() {
     $('resources').append(span);
   }
 }
+function clearSceneUi() {
+  const host = $('scene-ui');
+  if (!host) return;
+  host.hidden = true;
+  host.className = '';
+  host.replaceChildren();
+}
 function clearWorld() {
   const world = $('world');
   world.replaceChildren();
@@ -238,6 +249,7 @@ function clearWorld() {
   delete world.dataset.screen;
   delete world.dataset.supportLayout;
   $('terrain').hidden = true;
+  clearSceneUi();
 }
 function choiceHeading(text) {
   const node = document.createElement('p');
@@ -358,27 +370,8 @@ function paintChamber(title, subtitle, kind = '') {
   }
   if (kind) paintSupportBoard(kind);
 }
-function gearIconFor(slot) {
-  const age = state?.age ?? 0;
-  return (gearIcons.icons || []).find(icon => icon.slot === slot && icon.age === age)
-    || (gearIcons.icons || []).find(icon => icon.slot === slot && icon.age == null)
-    || null;
-}
 function slotGlyph(slot, x, y) {
-  const icon = gearIconFor(slot);
   const group = element('g', { transform: `translate(${x} ${y})`, 'data-slot-icon': slot, fill: 'none', stroke: '#e6d3a1', 'stroke-width': 3, 'stroke-linecap': 'round' });
-  if (icon?.file) {
-    const fitted = visibleBox({ width: icon.width || 64, height: icon.height || 64, maxVisibleCssPx: 64 }, 36, frameFit.fit.scale || 1);
-    group.append(element('image', {
-      href: icon.file,
-      x: -fitted.width / 2,
-      y: -fitted.height / 2,
-      width: fitted.width,
-      height: fitted.height,
-      'data-gear-icon': icon.id,
-    }));
-    return group;
-  }
   const path = {
     helm: 'M-16,10 Q-18,-8 0,-18 Q18,-8 16,10 Z M-8,10 H8',
     weapon: 'M-4,-20 L6,8 M-10,2 H2 M2,8 L10,16',
@@ -696,13 +689,33 @@ function adventure() {
     }, !travelPreview, 'confirm-route', true));
     $('choices').append(button('Clear preview', () => { travelPreview = null; render(); }, !travelPreview));
     $('choices').append(button('Rest', () => act('REST', {})));
+    const dwellingSite = geo.sites.find(site => site.id === 'dwelling');
+    const atDwelling = Boolean(dwellingSite && state.adventure.x === dwellingSite.approach[0] && state.adventure.y === dwellingSite.approach[1]);
+    if (atDwelling) {
+      choiceHeading('Creature dwelling');
+      const open = state.dwelling && !state.dwelling.claimed ? state.dwelling : null;
+      if (open) {
+        const payment = dwellingCost(data, open.type, open.multiplier);
+        const price = Object.entries(payment).map(([key, amount]) => `${amount} ${key}`).join(', ');
+        const short = Object.entries(payment).filter(([key, amount]) => state.resources[key] < amount).map(([key, amount]) => `${Math.ceil(amount - state.resources[key])} ${key}`);
+        const full = state.army.length >= 2 + levelOf('barracks');
+        const reason = full ? 'Roster is full.' : short.length ? `Need ${short.join(', ')}.` : '';
+        $('choices').append(button(`Claim ${open.count} ${data.CREATURES[open.type].n} — ${price}${reason ? ' — ' + reason : ''}`, () => act('CLAIM_DWELLING', {}), Boolean(reason), 'claim-dwelling', true));
+        $('choices').append(button('Decline this offer', () => act('CANCEL_DWELLING', {}), false, 'cancel-dwelling'));
+      } else {
+        for (const type of dwellingPool(data, state.age)) {
+          $('choices').append(button(`Ask the ${data.CREATURES[type].n} dwelling`, () => act('OFFER_DWELLING', { type }), false, `offer-dwelling:${type}`));
+        }
+      }
+    }
     const approach = geo.sites.find(site => site.id === 'town').approach;
     const atApproach = state.adventure.x === approach[0] && state.adventure.y === approach[1];
     const returnReason = state.adventure.pendingEncounter ? 'Clear the guard before returning.' : atApproach ? '' : 'Reach the town approach first.';
     $('choices').append(button(returnReason ? `Return — ${returnReason}` : 'Return to town', () => { travelMotion = null; act('RETURN_TOWN', {}); view = 'kingdom'; render(); }, Boolean(returnReason), 'return-town', true));
     if (state.adventure.pendingEncounter && !state.battle) $('choices').append(button('Fight the guard', () => { travelMotion = null; act('BEGIN_ENCOUNTER', {}); if (state.battle) { view = 'tactical'; render(); } }, false, 'begin-encounter', true));
     const preview = travelPreview ? ` Preview cost ${travelPreview.cost}. Confirm spends that cost once.` : '';
-    say((state.adventure.pendingEncounter ? 'An unresolved guard is waiting. Movement stays spent until that guard is cleared.' : 'Road steps cost 1. Water and site footprints are blocked.') + preview + cue());
+    const dwellingLine = atDwelling ? (state.dwelling && !state.dwelling.claimed ? ` The dwelling offers ${state.dwelling.count} ${data.CREATURES[state.dwelling.type].n}; the saved terms do not reroll.` : ' A creature dwelling is here. Ask for an offer.') : '';
+    say((state.adventure.pendingEncounter ? 'An unresolved guard is waiting. Movement stays spent until that guard is cleared.' : 'Road steps cost 1. Water and site footprints are blocked.') + preview + dwellingLine + cue());
   } else if (!worldOnly) {
     $('selected').textContent = 'Adventure';
     $('choices').append(button('Leave town', () => { clip = 'walk'; travelPreview = null; travelMotion = null; act('ENTER_ADVENTURE', {}); }, false, 'enter-adventure', true));
@@ -711,48 +724,79 @@ function adventure() {
   }
 }
 
-function paintCard(world, card, presentation) {
-  const stage = heroStage();
-  world.append(element('rect', { x: stage.card.x - 12, y: stage.card.y - 12, width: stage.card.width + 24, height: stage.card.height + 36, rx: 8, fill: '#1c2428', stroke: '#c9a35b', 'stroke-width': 3, 'data-ground': 'plinth' }));
-  if (card) {
-    const box = stage.card;
-    const group = element('g', {
-      'data-actor': presentation === 'title-card' ? 'title' : state?.hero?.class || 'title',
-      'data-clip': 'idle',
-      'data-presentation': presentation,
-      'data-articulation': 'card-bounded',
-      'data-card-box': `${box.x},${box.y},${box.width},${box.height}`,
-    });
-    group.append(element('image', {
-      href: card.file, x: box.x, y: box.y, width: box.width, height: box.height,
-      'data-card-era': card.era,
-      'data-card-status': presentation === 'pending-card' ? 'pending-review' : 'bounded-card',
-    }));
-    world.append(group);
+const classChoiceOpen = () => Boolean(state) && state.hero.xp === 0 && !state.inventory.length && !Object.values(state.hero.equip).some(Boolean) && !state.adventure && !state.battle;
+function sceneCopy(text, name) {
+  const node = document.createElement('p');
+  node.textContent = text;
+  if (name) node.dataset[name] = '1';
+  return node;
+}
+function heroSlotButton(slot) {
+  const item = state.hero.equip[slot];
+  const node = button('', () => { forgeSlot = slot; view = 'forge'; render(); }, false, `scene-hero-slot:${slot}`);
+  node.dataset.heroSlot = slot;
+  node.dataset.worn = item ? '1' : '0';
+  const icon = selectGearIcon(gearIcons.icons, slot, item);
+  if (icon?.file) {
+    const img = document.createElement('img');
+    img.src = icon.file;
+    img.alt = '';
+    img.dataset.gearIcon = icon.id;
+    img.setAttribute('href', icon.file);
+    node.append(img);
   }
+  const title = document.createElement('span');
+  title.dataset.slotTitle = slot;
+  title.textContent = `${slotName[slot]}: ${item ? itemTitle(item) : 'Empty'}`;
+  node.append(title);
+  return node;
+}
+function mountHeroChrome() {
+  const host = $('scene-ui');
+  host.hidden = false;
+  host.className = 'hero';
+  const left = document.createElement('div');
+  left.className = 'col';
+  const mid = document.createElement('div');
+  mid.className = 'copy';
+  const right = document.createElement('div');
+  right.className = 'col';
+  const classId = state.hero.class;
+  const body = heroBody(classId);
+  const era = kitEra(state.age);
+  const kitLine = !body
+    ? 'No standing body exists for this class. The portrait card stands in.'
+    : bodyMatchesKit(body, state.age)
+      ? `Standing plate matches the ${era} kit. It is a static pose, not a worn attachment.`
+      : body.depictedKitEra
+        ? `This plate is ${body.depictedKitEra} kit. It is not the worn ${era} gear. Empty slots stay empty.`
+        : 'The era of this standing plate is unverified. It is not proof of worn gear.';
+  mid.append(sceneCopy(`${data.CLASSES[classId].n}. ${data.AGES[state.age].n}. ${era} kit. Level ${state.hero.level}.`, 'kitNote'));
+  mid.append(sceneCopy(kitLine, 'kitDetail'));
+  if (classChoiceOpen()) {
+    for (const id of Object.keys(data.CLASSES)) {
+      const node = button(data.CLASSES[id].n, () => act('SET_CLASS', { class: id }), false, `scene-class:${id}`);
+      node.dataset.classCard = id;
+      node.dataset.current = id === classId ? '1' : '0';
+      if (id === classId) node.setAttribute('aria-current', 'true');
+      left.append(node);
+    }
+    right.append(button('Enter the valley', () => { view = 'kingdom'; render(); }, false, 'scene-enter-valley'));
+    for (const slot of GEAR_SLOTS) right.append(heroSlotButton(slot));
+  } else {
+    GEAR_SLOTS.slice(0, 3).forEach(slot => left.append(heroSlotButton(slot)));
+    GEAR_SLOTS.slice(3).forEach(slot => right.append(heroSlotButton(slot)));
+  }
+  const stats = heroStats(state, data);
+  right.append(sceneCopy(`Attack ${stats.atk}. Defense ${stats.def}. Power ${stats.pow}. Knowledge ${stats.kno}.`, 'stat'));
+  right.append(sceneCopy(`Mana ${state.hero.mana}/${manaMax(state, data)}. XP ${state.hero.xp}. Points ${state.hero.points}.`, 'progress'));
+  host.replaceChildren(left, mid, right);
 }
 function paintHero() {
-  const world = $('world');
-  world.append(element('rect', { width: 1376, height: 768, fill: '#1b2822' }));
-  const card = portraitCard(state.hero.class, state.age);
-  const pending = pendingPortrait(state.hero.class, state.age);
-  paintCard(world, card || pending, card ? 'portrait-card' : pending ? 'pending-card' : 'portrait-card');
-
-  if (!card && !pending) {
-    const note = element('text', { x: heroStage().card.x, y: heroStage().card.y + 48, fill: '#f1dba5', 'font-size': 28 });
-    note.textContent = 'The knight portrait opens in the Medieval age.';
-    world.append(note);
-  }
-  const classOpen = state && state.hero.xp === 0 && !state.inventory.length && !Object.values(state.hero.equip).some(Boolean) && !state.adventure && !state.battle;
-  if (!classOpen) return;
-  Object.keys(data.CLASSES).forEach((id, index) => {
-    const portrait = portraitCard(id, state.age) || pendingPortrait(id, state.age);
-    const x = 540 + (index % 4) * 190;
-    const y = 80 + Math.floor(index / 4) * 250;
-    if (portrait) world.append(element('image', { href: portrait.file, x, y, width: 170, height: 170, 'data-class-card': id }));
-    const caption = element('text', { x: x + 85, y: y + 196, 'text-anchor': 'middle', fill: id === state.hero.class ? '#e6d3a1' : '#f1e9d9', 'font-size': 18, 'data-class-name': id });
-    caption.textContent = data.CLASSES[id].n;
-    world.append(caption);
+  drawHeroRoom($('world'), element, {
+    state, data, slotName,
+    cssScale: frameFit.fit.scale || 1,
+    portraitCard, pendingPortrait,
   });
 }
 function itemTitle(item) {
@@ -784,14 +828,19 @@ function hero() {
   const stats = heroStats(state, data);
   $('selected').textContent = data.CLASSES[state.hero.class].n;
   paintHero();
-  const classOpen = state.hero.xp === 0 && !state.inventory.length && !Object.values(state.hero.equip).some(Boolean) && !state.adventure && !state.battle;
+  mountHeroChrome();
+  const classOpen = classChoiceOpen();
   if (classOpen) {
     const ids = Object.keys(data.CLASSES);
     choiceHeading('Class');
-    for (const id of ids) $('choices').append(button(data.CLASSES[id].n, () => act('SET_CLASS', { class: id }), false, `class:${id}`, true));
+    for (const id of ids) $('choices').append(button(data.CLASSES[id].n, () => act('SET_CLASS', { class: id }), false, `class:${id}`));
     $('choices').append(button('Enter the valley', () => { view = 'kingdom'; render(); }, false, 'enter-valley', true));
   }
   choiceHeading('Equipment worn');
+  for (const slot of GEAR_SLOTS) {
+    const item = state.hero.equip[slot];
+    $('choices').append(button(`${slotName[slot]}: ${itemTitle(item)}`, () => { forgeSlot = slot; view = 'forge'; render(); }, false, `hero-slot:${slot}`));
+  }
   if (state.hero.points > 0) {
     for (const stat of ['atk', 'def', 'pow', 'kno']) {
       $('choices').append(button(`Spend point on ${stat}`, () => act('SPEND_POINT', { stat }), false, `spend:${stat}`));
@@ -805,7 +854,7 @@ function hero() {
     const offered = offer?.choices.includes(id) && level < 3;
     $('choices').append(button(`${skill.ic} ${skill.n} ${level}/3`, () => {
       if (offered) act('CHOOSE_SKILL', { skill: id });
-      else say(`${skill.n}: ${skill.d} Level ${level} of 3.`);
+      else say(`${skill.n}: ${skill.d} Level ${level} of 3.${id === 'leadership' ? ' Positive morale gives one immediate bonus action after the first Move, Melee or Shoot each round. The chance is 4.2% per morale point, at most 12.6%. The bonus cannot chain or Wait. Defense and Endless do not gain a bonus turn.' : ''}`);
     }, false, `skill:${id}`));
   }
   if (offer) $('choices').append(button('Decline skill offer', () => act('DECLINE_SKILL', {}), false, 'decline-skill'));
@@ -856,12 +905,20 @@ function paintArmy() {
   board.replaceChildren();
   board.dataset.armyLayout = 'screen';
   const reviewAge = plateReviewAge == null ? state.age : plateReviewAge;
+  // Muster ground: the age's realistic Kingdom painting sits behind the roster instead of a bare panel.
+  const ground = selection.kingdomTerrain[ages[reviewAge]];
+  const groundFile = ground?.displayFile || ground?.sourceFile;
+  board.style.backgroundImage = groundFile ? `linear-gradient(#10171bb8, #10171bd9), url("${groundFile}")` : '';
+  board.style.backgroundSize = 'cover';
+  board.style.backgroundPosition = 'center 35%';
+  board.dataset.armyGround = groundFile || 'none';
   const review = document.createElement('div');
   review.className = 'board-row';
   review.dataset.armyRow = 'review';
   for (const role of ['melee', 'ranged', 'heavy']) {
     const plate = troopPlate(reviewAge, role);
-    review.append(armyCard(plate?.file || '', `${data.AGES[reviewAge].n} ${data.ROLES[role].names[reviewAge]}`, plateCap(plate, 130), {
+    const reviewCaption = `${data.AGES[reviewAge].n} ${data.ROLES[role].names[reviewAge]}${plate?.semanticLimit ? '. ' + plate.semanticLimit : ''}`;
+    review.append(armyCard(plate?.file || '', reviewCaption, plateCap(plate, 130), {
       'data-plate-review': `${reviewAge}-${role}`,
     }));
   }
@@ -879,8 +936,10 @@ function paintArmy() {
   roster.style.gridTemplateColumns = `repeat(${columns}, minmax(0, 1fr))`;
   for (const stack of state.army) {
     const plate = plateForStack(stack);
-    roster.append(armyCard(plate?.file || '', stackTitle(stack, data), plateCap(plate, 130), {
+    const caption = plate?.semanticLimit ? `${stackTitle(stack, data)}. ${plate.semanticLimit}` : stackTitle(stack, data);
+    roster.append(armyCard(plate?.file || '', caption, plateCap(plate, 130), {
       'data-stack-caption': stack.id,
+      ...(plate?.semanticLimit ? { 'data-semantic-limit': plate.semanticLimit } : {}),
     }));
   }
   board.append(review, roster);
@@ -919,43 +978,73 @@ function army() {
   say(`Army ${state.army.length}/${capacity}. Capacity is 2 plus Barracks level. Recruitment pays five of the current age. Plate review does not change the age.`);
 }
 
+// Forge (reference 22-forge): smithy backdrop, the selected slot's next piece on the anvil bench,
+// recipe cost and worn-versus-next comparison, six compact slot rows on the right.
 function paintForge() {
   const world = $('world');
-  world.append(element('rect', { width: 1376, height: 768, fill: '#1a1814' }));
-  world.append(element('rect', { x: 160, y: 48, width: 1056, height: 660, rx: 16, fill: '#243036', stroke: '#c9a35b', 'stroke-width': 3, 'data-forge-bench': '1' }));
-  const columns = [['helm', 'weapon', 'offhand'], ['armor', 'boots', 'accessory']];
+  const defs = element('defs', {});
+  const wall = element('linearGradient', { id: 'forge-wall', x1: 0, y1: 0, x2: 0, y2: 1 });
+  wall.append(element('stop', { offset: '0', 'stop-color': '#17130f' }), element('stop', { offset: '1', 'stop-color': '#3a2a1e' }));
+  const ember = element('radialGradient', { id: 'forge-ember', cx: '0.3', cy: '0.6', r: '0.5' });
+  ember.append(element('stop', { offset: '0', 'stop-color': '#e07a2a', 'stop-opacity': '0.35' }), element('stop', { offset: '1', 'stop-color': '#e07a2a', 'stop-opacity': '0' }));
+  defs.append(wall, ember);
+  world.append(defs);
+  world.append(element('rect', { width: 1376, height: 768, fill: 'url(#forge-wall)', 'data-backdrop': 'native-svg-smithy' }));
+  world.append(element('rect', { width: 1376, height: 768, fill: 'url(#forge-ember)' }));
+  world.append(element('rect', { x: 0, y: 640, width: 1376, height: 128, fill: '#1e1712' }));
   let offer = null;
   try { offer = forgeOffer(state.age, levelOf('armory'), null); } catch { offer = null; }
-  columns.forEach((slots, column) => {
-    slots.forEach((slot, row) => {
-      const x = column === 0 ? 420 : 940;
-      const y = 210 + row * 180;
-      const item = state.hero.equip[slot];
-      const selectedSlot = slot === forgeSlot;
-      world.append(element('rect', {
-        x: x - 150, y: y - 78, width: 300, height: 128, rx: 10,
-        fill: selectedSlot ? '#3d3424' : '#152128', stroke: selectedSlot ? '#e6d3a1' : '#8c7447', 'stroke-width': selectedSlot ? 3 : 1,
-        'data-slot': slot, 'data-selected': selectedSlot ? '1' : '0', 'data-worn': item ? '1' : '0',
-      }));
-      world.append(slotGlyph(slot, x - 110, y - 8));
-      const label = element('text', { x: x - 70, y: y - 28, fill: '#e6d3a1', 'font-size': 16 });
-      label.textContent = slotName[slot];
-      world.append(label);
-      const worn = element('text', { x: x - 70, y: y + 4, fill: '#f4ecdf', 'font-size': 18 });
-      worn.textContent = item ? itemTitle(item) : 'Empty';
-      world.append(worn);
-      const bonus = element('text', { x: x - 70, y: y + 28, fill: '#f1dba5', 'font-size': 14 });
-      bonus.textContent = item ? bonusText(item) : 'nothing worn';
-      world.append(bonus);
-    });
-  });
+  const scale = frameFit.fit.scale || 1;
+  // Bench and anvil.
+  world.append(element('rect', { x: 150, y: 470, width: 560, height: 36, rx: 6, fill: '#2c2118', stroke: '#8c7447', 'data-forge-bench': '1' }));
+  world.append(element('path', { d: 'M250,470 L250,420 Q250,400 275,398 L470,398 Q500,398 520,380 L540,380 L540,420 L500,428 L500,470 Z', fill: '#3b3b40', stroke: '#8c8c92', 'stroke-width': 2, 'data-forge-anvil': '1' }));
   const worn = state.hero.equip[forgeSlot];
-  const summary = element('text', { x: 688, y: 700, 'text-anchor': 'middle', fill: '#f1dba5', 'font-size': 22, 'data-forge-summary': '1' });
-  const costText = offer ? Object.entries(offer.cost).map(([key, amount]) => `${amount} ${key}`).join(', ') : 'Armory required';
-  const quality = offer ? (data.QUAL[offer.quality]?.n || `quality ${offer.quality}`) : 'no result';
   const nextItem = offer ? { kind: 'gear', slot: forgeSlot, age: state.age, quality: offer.quality } : null;
-  summary.textContent = `${slotName[forgeSlot]} · worn ${itemTitle(worn)} (${bonusText(worn)}) · next ${nextItem ? itemTitle(nextItem) : quality} (${nextItem ? bonusText(nextItem) : 'no result'}) · ${costText}`;
-  world.append(summary);
+  const icon = selectGearIcon(gearIcons.icons, forgeSlot, nextItem) || selectGearIcon(gearIcons.icons, forgeSlot, worn);
+  if (icon?.file) {
+    const requested = 64 / scale;
+    const fitted = visibleBox({ width: icon.width || 64, height: icon.height || 64, maxVisibleCssPx: 64 }, requested, scale);
+    world.append(element('image', { href: icon.file, x: 395 - fitted.width / 2, y: 392 - fitted.height, width: fitted.width, height: fitted.height, 'data-forge-piece': forgeSlot, 'data-gear-icon': icon.id, 'data-gear-age': String(icon.age) }));
+  } else world.append(slotGlyph(forgeSlot, 395, 320));
+}
+function mountForgeChrome(offer, offerError) {
+  const host = $('scene-ui');
+  host.hidden = false;
+  host.className = 'forge';
+  const copy = document.createElement('div');
+  copy.className = 'copy';
+  const worn = state.hero.equip[forgeSlot];
+  const nextItem = offer ? { kind: 'gear', slot: forgeSlot, age: state.age, quality: offer.quality } : null;
+  const costText = offer ? Object.entries(offer.cost).map(([key, amount]) => `${amount} ${key}`).join(', ') : 'Armory required';
+  copy.append(sceneCopy('Forge', 'forgeTitle'));
+  copy.append(sceneCopy(offer ? `Armory level ${levelOf('armory')}. ${data.AGES[state.age].n} patterns. Best quality ${data.QUAL[offer.cap]?.n}.` : (offerError || 'Build an Armory to open the forge.'), 'forgeOffer'));
+  copy.append(sceneCopy(`${slotName[forgeSlot]}. Next piece: ${nextItem ? itemTitle(nextItem) : 'none'}. Cost: ${costText}.`, 'forgeNext'));
+  copy.append(sceneCopy(`Gain: ${nextItem ? bonusText(nextItem) : 'none'}. Worn: ${itemTitle(worn)} (${bonusText(worn)}). The worn icon uses that item's own age.`, 'forgeWorn'));
+  const slots = document.createElement('div');
+  slots.className = 'col';
+  for (const slot of GEAR_SLOTS) {
+    const item = state.hero.equip[slot];
+    const node = button('', () => { forgeSlot = slot; render(); }, false, `scene-forge-slot:${slot}`);
+    node.dataset.slot = slot;
+    node.dataset.worn = item ? '1' : '0';
+    node.dataset.selected = slot === forgeSlot ? '1' : '0';
+    if (slot === forgeSlot) node.setAttribute('aria-current', 'true');
+    const icon = selectGearIcon(gearIcons.icons, slot, item);
+    if (icon?.file) {
+      const img = document.createElement('img');
+      img.src = icon.file;
+      img.alt = '';
+      img.dataset.gearIcon = icon.id;
+      img.dataset.gearAge = String(item.age);
+      node.append(img);
+    }
+    const title = document.createElement('span');
+    title.dataset.slotTitle = slot;
+    title.textContent = `${slotName[slot]}: ${item ? itemTitle(item) : 'Empty'}`;
+    node.append(title);
+    slots.append(node);
+  }
+  host.replaceChildren(copy, slots);
 }
 function forge() {
   clearWorld();
@@ -966,6 +1055,7 @@ function forge() {
   let offerError = '';
   try { offer = forgeOffer(state.age, levelOf('armory'), null); }
   catch (error) { offerError = error.message; }
+  mountForgeChrome(offer, offerError);
   for (const slot of GEAR_SLOTS) {
     $('choices').append(button(slotName[slot], () => { forgeSlot = slot; render(); }, false, `forge-slot:${slot}`));
     const worn = state.hero.equip[slot];
@@ -977,6 +1067,13 @@ function forge() {
     const costText = Object.entries(offer.cost).map(([key, amount]) => `${amount} ${key}`).join(', ');
     const short = Object.entries(offer.cost).filter(([key, amount]) => state.resources[key] < amount).map(([key, amount]) => `${Math.ceil(amount - state.resources[key])} ${key}`);
     $('choices').append(button(`Forge ${named} · ${quality} — ${costText}${short.length ? ' — Need ' + short.join(', ') : ''}`, () => act('FORGE', { slot: forgeSlot, quality: offer.quality }), short.length > 0, 'forge-confirm', true));
+    // Lower qualities the Armory already allows (cheaper recipes, reference 22-forge quality menu).
+    for (let lower = offer.cap - 1; lower >= 0; lower -= 1) {
+      const cheap = forgeOffer(state.age, levelOf('armory'), lower);
+      const cheapCost = Object.entries(cheap.cost).map(([key, amount]) => `${amount} ${key}`).join(', ');
+      const cheapShort = Object.entries(cheap.cost).some(([key, amount]) => state.resources[key] < amount);
+      $('choices').append(button(`Forge ${named} · ${data.QUAL[lower]?.n || lower} — ${cheapCost}`, () => act('FORGE', { slot: forgeSlot, quality: lower }), cheapShort, `forge-quality:${lower}`));
+    }
   }
   const preview = state.inventory.find(item => item.id === forgePreview) || null;
   if (forgePreview && !preview) forgePreview = null;
@@ -1097,7 +1194,7 @@ function tactical() {
     retreatRestorePending = true;
     retreatArmed = false;
   }
-  if (actor?.side === 'p') tacticalIntent = keepIntent(tacticalIntent, legal, offers.length, Boolean(actor.waited));
+  if (actor?.side === 'p') tacticalIntent = keepIntent(tacticalIntent, legal, offers.length, Boolean(actor.waited), actor.bonusPending === true);
   const ground = modeGround('tactical');
   world.setAttribute('data-board', ground ? 'tactical-painted-v1' : 'tactical-provisional-v1');
   world.setAttribute('data-registration', modeScenes.registration);
@@ -1164,13 +1261,14 @@ function tactical() {
       finally { opponentRender = false; }
       return;
     }
-    const rows = modeRows({ moves: legal.moves, melee: legal.melee, ranged: legal.ranged, spells: offers.length, waited: stack.waited });
+    const rows = modeRows({ moves: legal.moves, melee: legal.melee, ranged: legal.ranged, spells: offers.length, waited: stack.waited, bonus: stack.bonusPending === true });
     for (const row of rows) {
       const choiceId = ['move', 'melee', 'shoot', 'spell'].includes(row.id) ? `intent:${row.id}` : row.id;
       const choose = () => {
         if (retreatArmed) return;
         if (row.id === 'defend') { act('BATTLE', { action: 'defend', stackId: active }); return; }
         if (row.id === 'wait') { act('BATTLE', { action: 'wait', stackId: active }); return; }
+        if (row.id === 'skip-bonus') { act('BATTLE', { action: 'skip-bonus', stackId: active }); return; }
         if (row.id === 'auto') { act('BATTLE', { action: 'auto' }); return; }
         if (row.id === 'retreat') { retreatArmed = true; focusChoice = 'retreat-cancel'; render(); return; }
         tacticalIntent = row.id;
@@ -1204,8 +1302,12 @@ function tactical() {
   }
   const last = battle.log?.[battle.log.length - 1];
   const phase = battle.pendingSettlement ? 'The result is waiting. Apply it once.' : active && actor?.side === 'p' ? intentSentence(tacticalIntent, battleTitle(actor)) : active ? 'The opponent is acting.' : 'The round is changing.';
-  const modeLine = actor?.side === 'p' ? modeRows({ moves: legal.moves, melee: legal.melee, ranged: legal.ranged, spells: offers.length, waited: actor.waited }).find(row => row.id === tacticalIntent)?.detail : '';
-  say(`${battle.practice} battle, round ${battle.round}. ${battle.stacks.filter(item => !item.dead).length} stacks remain. ${last ? 'Last action ' + last.type + '.' : 'No action yet.'} ${phase} ${modeLine || ''}`);
+  const modeLine = actor?.side === 'p' ? modeRows({ moves: legal.moves, melee: legal.melee, ranged: legal.ranged, spells: offers.length, waited: actor.waited, bonus: actor.bonusPending === true }).find(row => row.id === tacticalIntent)?.detail : '';
+  const moraleLine = last?.type === 'morale' && last.outcome === 'bonus'
+    ? `High morale — extra action. Chance ${(last.chance * 100).toFixed(1)}%.`
+    : last?.type === 'morale' ? 'Morale did not grant an action.' : last ? 'Last action ' + last.type + '.' : 'No action yet.';
+  const bonusLine = actor?.bonusPending ? ' This bonus can Move, Melee, Shoot, Defend or Skip. It cannot Wait or grant another action.' : '';
+  say(`${battle.practice} battle, round ${battle.round}. ${battle.stacks.filter(item => !item.dead).length} stacks remain. ${moraleLine} ${phase} ${modeLine || ''}${bonusLine}`);
 }
 
 function defense() {
@@ -1244,6 +1346,22 @@ function defense() {
       world.append(element('polygon', { points: `${at[0]},${at[1] - 14} ${at[0] + 12},${at[1] + 10} ${at[0] - 12},${at[1] + 10}`, fill: '#9bb7d0' }));
     }
   }
+  if (blastAim && session?.status === 'ACTIVE' && session.heroDeployed) {
+    for (let y = 0; y < contract.geometry.defense.rows; y++) {
+      for (let x = 0; x < contract.geometry.defense.cols; x++) {
+        const cell = element('polygon', {
+          points: cellPoints(matrix, x, y),
+          fill: '#f0a92e22',
+          stroke: '#f1e9d9',
+          'data-cell': `${x},${y}`,
+          'data-open': '1',
+          'data-kind': 'blast',
+        });
+        cell.style.cursor = 'pointer';
+        world.append(cell);
+      }
+    }
+  }
   if (markers.hero) {
     const at = project(matrix, markers.hero.at);
     const heroFigure = { x: at[0], y: at[1] + 8, clip: 'idle', time: 0, reduced: true };
@@ -1257,9 +1375,25 @@ function defense() {
   if (session?.status === 'ACTIVE') {
     $('choices').append(button(session.paused ? 'Resume' : 'Pause', () => act('DEFENSE', { paused: !session.paused, dt: 0 }), false, 'defense-pause', true));
     $('choices').append(button(session.speed === 2 ? 'Speed 1x' : 'Speed 2x', () => act('DEFENSE', { speed: session.speed === 2 ? 1 : 2, dt: 0 }), false, 'defense-speed', true));
-    $('choices').append(button(session.heroDeployed ? 'Deploy hero — already on the field' : 'Deploy hero', () => act('DEPLOY_DEFENSE', {}), session.heroDeployed, 'deploy-hero', true));
+    if (session.heroDeployed) {
+      const ready = state.hero.mana >= 40 && (session.heroHp ?? 1) > 0;
+      const heroAt = markers.hero?.at;
+      $('choices').append(button(ready ? 'Aim hero blast — 40 mana' : 'Hero blast — need 40 mana', () => { blastAim = ready ? !blastAim : false; render(); }, !ready, 'defense-cast', true));
+      if (ready && heroAt) $('choices').append(button('Blast at the hero', () => { blastAim = false; act('DEFENSE_CAST', { x: heroAt[0], y: heroAt[1] }); }, false, 'defense-cast-hero', true));
+    }
+    const occupied = new Set(session.towers.map(tower => tower.siteId).filter(Boolean));
+    if (session.heroSite) occupied.add(session.heroSite);
+    if (session.army?.siteId) occupied.add(session.army.siteId);
+    if (!session.heroDeployed || !session.armyDeployed) {
+      $('choices').append(button(defensePad ? `Placement ${defensePad}` : 'Placement: the lane', () => { defensePad = ''; render(); }, false, 'defense-pad-lane'));
+      for (const site of contract.geometry.defense.sites) {
+        if (occupied.has(site.id)) continue;
+        $('choices').append(button(defensePad === site.id ? `Selected ${site.id}` : `Place on ${site.id}`, () => { defensePad = site.id; render(); }, false, `defense-pad:${site.id}`));
+      }
+    }
+    $('choices').append(button(session.heroDeployed ? 'Deploy hero — already on the field' : (defensePad ? `Deploy hero on ${defensePad}` : 'Deploy hero on the lane'), () => act('DEPLOY_DEFENSE', defensePad ? { siteId: defensePad } : {}), session.heroDeployed, 'deploy-hero', true));
     for (const stack of state.army) {
-      $('choices').append(button((session.armyDeployed ? 'Deployed — ' : 'Deploy ') + stackTitle(stack, data), () => act('DEPLOY_ARMY', { stackId: stack.id }), session.armyDeployed, `deploy-army:${stack.id}`, true));
+      $('choices').append(button((session.armyDeployed ? 'Deployed — ' : (defensePad ? `Deploy on ${defensePad} ` : 'Deploy ')) + stackTitle(stack, data), () => act('DEPLOY_ARMY', defensePad ? { stackId: stack.id, siteId: defensePad } : { stackId: stack.id }), session.armyDeployed, `deploy-army:${stack.id}`, true));
     }
     if (session.practice === 'siege') {
       const wave = session.clearedWaves - 1;
@@ -1285,7 +1419,8 @@ function defense() {
   let guidance = 'Preparation. The starter towers already cover the lane. Archers and sappers cut them down if you send the lane out alone. Build a Siege Workshop, buy a Rock Chucker, then deploy the hero and one stack. An unprepared defense can fall, and that result still settles once.';
   if (session?.pendingSettlement) guidance = session.winner === 'p' ? 'The lane held. Apply the result. The reward is paid once.' : 'The core fell. Apply the result. Losses are recorded once.';
   else if (session?.paused) guidance = 'Paused. Resume continues this same wave. Nothing is caught up while paused.';
-  else if (session) guidance = `Running. Cleared ${session.clearedWaves} of ${session.waves}. Core ${Math.max(0, Math.round(session.core))}. Towers ${towerLine}. ${session.heroDeployed ? 'Hero is deployed.' : 'Deploy the hero.'} ${session.armyDeployed ? 'A stack is deployed.' : 'Deploy one stack.'}`;
+  else if (blastAim) guidance = 'Choose a cell on the field. The blast spends 40 mana at that world point and does not move the wave. Pause still freezes the attackers.';
+  else if (session) guidance = `Running. Cleared ${session.clearedWaves} of ${session.waves}. Core ${Math.max(0, Math.round(session.core))}. Towers ${towerLine}. ${session.heroDeployed ? 'Hero is deployed.' : 'Deploy the hero.'} ${session.armyDeployed ? 'A stack is deployed.' : 'Deploy one stack.'} Aim the blast or cast it at the hero. Positive morale does not add a turn in Defense or Endless.`;
   const preview = upcoming ? ` Next ${upcoming}.` : '';
   say(guidance + preview);
 }
@@ -1482,7 +1617,7 @@ function help() {
   clearWorld();
   paintChamber('Help', 'Credits and privacy stay on this device.', 'help');
   $('selected').textContent = 'Help, credits and privacy';
-  say('Help: use Kingdom to build, Adventure to travel, Tactical and Defense for battles, and Story for the seven chapters, quests and age records. The Future conclusion is The Valley We Keep and grants nothing by itself. Credits: Ages of Dominion Reborn is an offline local campaign. Privacy: there is no account, no network request and no device permission. Saves, slots and exports stay on this device.');
+  say('Help: use Kingdom to build, Adventure to travel, Tactical and Defense for battles, and Story for the seven chapters, quests and age records. Positive morale is a Tactical bonus action, once each round, at 4.2% per morale point. The Future conclusion is The Valley We Keep and grants nothing by itself. Credits: Ages of Dominion Reborn is an offline local campaign. Privacy: there is no account, no network request and no device permission. Saves, slots and exports stay on this device.');
 }
 function download(name, text) {
   const blob = new Blob([text], { type: 'application/json' });
@@ -1575,7 +1710,7 @@ function render() {
     if (document.activeElement !== $('retreat-cancel') && document.activeElement !== $('retreat-confirm')) $('retreat-cancel').focus();
   } else if (focusTarget) {
     const escaped = CSS.escape(focusTarget);
-    (panel.querySelector(`[data-choice="${escaped}"]`) || $('dock').querySelector(`[data-choice="${escaped}"]`))?.focus();
+    (panel.querySelector(`[data-choice="${escaped}"]`) || $('dock').querySelector(`[data-choice="${escaped}"]`) || $('scene-ui')?.querySelector(`[data-choice="${escaped}"]`))?.focus();
   }
   const board = $('board');
   if (board) {
@@ -1671,12 +1806,23 @@ function mapHit(node) {
   if (!cell || cell.dataset.open !== '1') return null;
   const [x, y] = cell.dataset.cell.split(',').map(Number);
   if (!Number.isInteger(x) || !Number.isInteger(y)) return null;
+  if (cell.dataset.kind === 'blast') return { key: `blast:${cell.dataset.cell}`, kind: 'blast', cell: [x, y] };
   return { key: `move:${cell.dataset.cell}`, kind: 'move', cell: [x, y] };
 }
 function releaseMap(clientX, clientY) {
   const armed = mapArm;
   mapArm = null;
-  if (!armed || retreatArmed || view !== 'tactical' || !state?.battle || state.battle.status !== 'ACTIVE') return;
+  if (!armed || retreatArmed) return;
+  if (view === 'defense') {
+    if (!blastAim || !state?.defense || state.defense.status !== 'ACTIVE') return;
+    const released = mapHit(document.elementFromPoint(clientX, clientY));
+    if (!released || released.kind !== 'blast' || released.key !== armed.key) return;
+    blastAim = false;
+    swallowMapClick = true;
+    act('DEFENSE_CAST', { x: released.cell[0] + 0.5, y: released.cell[1] + 0.5 });
+    return;
+  }
+  if (view !== 'tactical' || !state?.battle || state.battle.status !== 'ACTIVE') return;
   const released = mapHit(document.elementFromPoint(clientX, clientY));
   const active = activeStackId(state.battle);
   const actor = state.battle.stacks.find(item => item.id === active);
@@ -1689,7 +1835,14 @@ function releaseMap(clientX, clientY) {
   else act('BATTLE', { action: 'strike', stackId: active, targetId: order.targetId });
 }
 $('world').addEventListener('pointerdown', event => {
-  if (view !== 'tactical' || retreatArmed) { mapArm = null; return; }
+  if (retreatArmed) { mapArm = null; return; }
+  if (view === 'defense') {
+    if (!blastAim) { mapArm = null; return; }
+    const hit = mapHit(event.target);
+    mapArm = hit?.kind === 'blast' ? { ...hit, pointerId: event.pointerId } : null;
+    return;
+  }
+  if (view !== 'tactical') { mapArm = null; return; }
   const hit = mapHit(event.target);
   mapArm = hit ? { ...hit, pointerId: event.pointerId } : null;
 });

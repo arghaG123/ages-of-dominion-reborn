@@ -1,9 +1,9 @@
 // Positioned tactical commands. Scalar damage stays in mechanics.js.
-// Auto combat calls these same predicates. Positive morale does not grant an extra turn.
+// Auto combat calls these same predicates. Positive morale grants one bonus action.
 import contract from '../data/implementation-contract.json' with { type: 'json' };
-import { applyDamage, calcDamage, previewRetaliation, unitStats } from './mechanics.js';
+import { applyDamage, calcDamage, MORALE_COEFFICIENT, previewRetaliation, unitStats } from './mechanics.js';
 import { draw } from './rng.js';
-import { heroStats, spellEffect } from './rules.js';
+import { battleMorale, clampMorale, heroStats, spellEffect } from './rules.js';
 
 const geo = contract.geometry.tactical;
 export const BOARD = { cols: geo.cols, rows: geo.rows };
@@ -189,6 +189,26 @@ export function validateBattle(battle) {
     seenQueue.add(id);
   }
   if (battle.status === 'ACTIVE' && !activeStackId(battle)) throw new Error('Empty active queue');
+  if (battle.morale != null && (!Number.isFinite(battle.morale) || battle.morale < -3 || battle.morale > 3)) throw new Error('Invalid morale');
+  const pendingBonus = battle.stacks.filter(stack => stack.bonusPending === true);
+  if (pendingBonus.length > 1) throw new Error('Invalid morale bonus');
+  const bonusId = battle.currentBonusId ?? null;
+  if (bonusId != null && typeof bonusId !== 'string') throw new Error('Invalid morale bonus');
+  if (battle.status !== 'ACTIVE' && (pendingBonus.length > 0 || bonusId)) throw new Error('Invalid morale bonus');
+  if (pendingBonus.length === 1) {
+    const stack = pendingBonus[0];
+    if (stack.dead || stack.count <= 0 || stack.acted || bonusId !== stack.id || stack.moraleChecked !== true || stack.moraleBonusGranted !== true) throw new Error('Invalid morale bonus');
+    if (activeStackId(battle) !== stack.id) throw new Error('Invalid morale bonus');
+    if (!Number.isInteger(battle.bonusRound) || battle.bonusRound !== battle.round) throw new Error('Invalid morale bonus');
+  } else if (bonusId) throw new Error('Invalid morale bonus');
+  for (const stack of battle.stacks) {
+    if (stack.moraleChecked != null && typeof stack.moraleChecked !== 'boolean') throw new Error('Invalid morale bonus');
+    if (stack.bonusPending != null && typeof stack.bonusPending !== 'boolean') throw new Error('Invalid morale bonus');
+    if (stack.moraleBonusGranted != null && typeof stack.moraleBonusGranted !== 'boolean') throw new Error('Invalid morale bonus');
+    if (stack.morale != null && (!Number.isFinite(stack.morale) || stack.morale < -3 || stack.morale > 3)) throw new Error('Invalid morale');
+    if (stack.moraleMod != null && !Number.isFinite(stack.moraleMod)) throw new Error('Invalid morale');
+    if (stack.bonusPending === true && stack.acted === true) throw new Error('Invalid morale bonus');
+  }
   return true;
 }
 
@@ -208,7 +228,29 @@ function normalize(stack) {
     maxCount: stack.maxCount ?? stack.count,
     shots: stack.shots ?? 0,
     rng: stack.rng ?? 0,
+    moraleChecked: false,
+    moraleBonusGranted: false,
+    bonusPending: false,
+    moraleMod: Number.isFinite(stack.moraleMod) ? stack.moraleMod : 0,
   };
+}
+
+export function adoptBattle(battle) {
+  if (!battle || typeof battle !== 'object' || !Array.isArray(battle.stacks)) return battle;
+  const absent = (owner, key) => owner != null && !Object.prototype.hasOwnProperty.call(owner, key);
+  for (const stack of battle.stacks) {
+    if (!stack || typeof stack !== 'object') continue;
+    if (absent(stack, 'moraleChecked')) stack.moraleChecked = stack.acted === true;
+    if (absent(stack, 'moraleBonusGranted')) stack.moraleBonusGranted = false;
+    if (absent(stack, 'bonusPending')) stack.bonusPending = false;
+    if (absent(stack, 'moraleMod')) stack.moraleMod = 0;
+  }
+  if (absent(battle, 'currentBonusId')) battle.currentBonusId = null;
+  if (absent(battle, 'bonusRound')) {
+    const pending = battle.stacks.filter(stack => stack && stack.bonusPending === true && stack.moraleBonusGranted === true);
+    if (pending.length === 1 && battle.currentBonusId === pending[0].id && Number.isInteger(battle.round)) battle.bonusRound = battle.round;
+  }
+  return battle;
 }
 
 export function turnOrder(battle) {
@@ -241,6 +283,8 @@ export function startBattle(spec) {
     outcome: null,
     pendingSettlement: false,
     settled: false,
+    morale: clampMorale(spec.morale ?? 0),
+    currentBonusId: null,
   };
   battle.queue = turnOrder(battle);
   validateBattle(battle);
@@ -267,9 +311,50 @@ function endAction(battle) {
   if (battle.status === 'ACTIVE' && !activeStackId(battle)) nextRound(battle);
 }
 
+function stackMoraleValue(battle, stack) {
+  if (Number.isFinite(stack.morale)) return clampMorale(stack.morale);
+  if (stack.side !== 'p') return 0;
+  const base = Number.isFinite(battle.morale) ? battle.morale : 0;
+  const mod = Number.isFinite(stack.moraleMod) ? stack.moraleMod : 0;
+  return clampMorale(base + mod);
+}
+
+function resolveMorale(battle, stack) {
+  if (battle.status !== 'ACTIVE' || stack.dead || stack.count <= 0 || stack.moraleChecked || stack.bonusPending) return;
+  const morale = stackMoraleValue(battle, stack);
+  stack.moraleChecked = true;
+  if (!(morale > 0)) return;
+  const chance = morale * MORALE_COEFFICIENT;
+  const roll = draw(battle);
+  const outcome = roll < chance ? 'bonus' : 'none';
+  battle.log.push({ type: 'morale', id: stack.id, round: battle.round, morale, chance, roll, outcome, text: outcome === 'bonus' ? 'High morale — extra action' : 'Morale holds' });
+  if (outcome !== 'bonus') return;
+  stack.moraleBonusGranted = true;
+  stack.bonusPending = true;
+  stack.acted = false;
+  battle.currentBonusId = stack.id;
+  battle.bonusRound = battle.round;
+  battle.queue = [stack.id, ...battle.queue.filter(item => item !== stack.id)];
+}
+
+function finishStackAction(battle, stack, ordinary) {
+  const wasBonus = stack.bonusPending === true || battle.currentBonusId === stack.id;
+  stack.acted = true;
+  stack.bonusPending = false;
+  if (battle.currentBonusId === stack.id) {
+    battle.currentBonusId = null;
+    battle.bonusRound = null;
+  }
+  decay(stack);
+  finishIfDecided(battle);
+  if (ordinary && !wasBonus) resolveMorale(battle, stack);
+  if (battle.status === 'ACTIVE' && !activeStackId(battle)) nextRound(battle);
+}
+
 export function wait(battle, id) {
   const next = clone(battle);
   const stack = requireTurn(next, id);
+  if (stack.bonusPending || next.currentBonusId === id) throw new Error('Wait is unavailable during a bonus action');
   if (stack.waited) throw new Error('Wait already used');
   stack.waited = true;
   next.queue = next.queue.filter(item => item !== id).concat(id);
@@ -282,10 +367,18 @@ export function defend(battle, id) {
   const next = clone(battle);
   const stack = requireTurn(next, id);
   stack.defending = true;
-  stack.acted = true;
-  decay(stack);
   next.log.push({ type: 'defend', id });
-  endAction(next);
+  finishStackAction(next, stack, false);
+  validateBattle(next);
+  return next;
+}
+
+export function skipBonus(battle, id) {
+  const next = clone(battle);
+  const stack = requireTurn(next, id);
+  if (next.currentBonusId !== id || !stack.bonusPending) throw new Error('No bonus action');
+  next.log.push({ type: 'skip-bonus', id });
+  finishStackAction(next, stack, false);
   validateBattle(next);
   return next;
 }
@@ -298,10 +391,8 @@ export function move(battle, id, to) {
   if (!legal) throw new Error('Illegal move');
   stack.x = to[0];
   stack.y = to[1];
-  stack.acted = true;
-  decay(stack);
   next.log.push({ type: 'move', id, to: [to[0], to[1]] });
-  endAction(next);
+  finishStackAction(next, stack, true);
   validateBattle(next);
   return next;
 }
@@ -337,8 +428,6 @@ export function strike(battle, attackerId, defenderId, options = {}) {
   defender.dead = applied.dead;
   attacker.dealt += rolled.dmg;
   if (ranged) attacker.shots -= 1;
-  attacker.acted = true;
-  decay(attacker);
   next.log.push({ type: 'strike', attackerId, defenderId, damage: rolled.dmg, killed: applied.killed, ranged, preview });
   if (!ranged && !applied.dead && !defender.retaliated && defender.count > 0) {
     defender.bless = defender.blessCounter > 0;
@@ -351,7 +440,7 @@ export function strike(battle, attackerId, defenderId, options = {}) {
     defender.retaliated = true;
     next.log.push({ type: 'retaliate', attackerId: defenderId, defenderId: attackerId, damage: back.dmg, killed: answer.killed });
   }
-  endAction(next);
+  finishStackAction(next, attacker, true);
   validateBattle(next);
   return next;
 }
@@ -420,11 +509,16 @@ export function retreat(battle) {
 function nextRound(battle) {
   battle.round += 1;
   battle.castThisRound = false;
+  battle.currentBonusId = null;
+  battle.bonusRound = null;
   for (const stack of battle.stacks) {
     stack.acted = false;
     stack.waited = false;
     stack.retaliated = false;
     stack.defending = false;
+    stack.moraleChecked = false;
+    stack.moraleBonusGranted = false;
+    stack.bonusPending = false;
   }
   battle.queue = turnOrder(battle);
 }
@@ -562,7 +656,8 @@ export function createEncounterBattle(state, data) {
     rngState: state.rngState,
     mana: state.hero.mana,
     wisdom: state.hero.skills.wisdom,
-    hero: { atk: stats.atk, def: stats.def, pow: stats.pow, kno: stats.kno, luck: stats.luck, skills: { ...state.hero.skills }, shootBon: 0 },
+    hero: { atk: stats.atk, def: stats.def, pow: stats.pow, kno: stats.kno, luck: stats.luck, morale: battleMorale(state, data), skills: { ...state.hero.skills }, shootBon: 0 },
+    morale: battleMorale(state, data),
     stacks: [...allies.fielded, ...enemies.fielded],
     encounterId: pending.id,
     origin: pending.origin ?? [state.adventure.x, state.adventure.y],
@@ -586,7 +681,8 @@ export function createDuelBattle(state, data) {
     rngState: state.rngState,
     mana: state.hero.mana,
     wisdom: state.hero.skills.wisdom,
-    hero: { atk: stats.atk, def: stats.def, pow: stats.pow, kno: stats.kno, luck: stats.luck, skills: { ...state.hero.skills }, shootBon: 0 },
+    hero: { atk: stats.atk, def: stats.def, pow: stats.pow, kno: stats.kno, luck: stats.luck, morale: battleMorale(state, data), skills: { ...state.hero.skills }, shootBon: 0 },
+    morale: battleMorale(state, data),
     stacks: [...allies.fielded, ...enemies.fielded],
     encounterId: `duel-${state.day}`,
     difficulty: 1,

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-11",
+  "product": "INCOMPLETE",
+  "tests": { "command": "node --test tests/*.test.mjs", "pass": 127, "fail": 0 },
+  "blast": {
+    "status": "PASS",
+    "bookkeeping": "settleAfterDamage recomputes cleared waves, syncs the queue, resolves a cleared Siege, or appends three Endless waves before validation",
+    "targeting": "finite world point inside the frozen 9x15 board; omitted point uses the hero world position; lane index is not a distance",
+    "mana": "40 on an accepted cast, including a miss; rejected points leave mana and the session unchanged",
+    "xp": "blast passes a null source, so towers and the army gain no experience"
+  },
+  "saves": {
+    "status": "PASS",
+    "morale": "a pending bonus must be the living active stack, with granted true, checked true, and bonusRound equal to the current round",
+    "defenseXp": "session tower, army and hero combat experience must be finite and nonnegative",
+    "dwelling": "open offer id, count, multiplier and claimed flag must equal the single history row for that site and type"
+  },
+  "defenseRoster": {
+    "status": "PARTIAL",
+    "stackFactor": "max(1, ceil(currentHp/unitHp)*0.4+0.6)",
+    "block": "max(0.1, 1-0.06*block)",
+    "rangedScale": "max(1, sourceRange*0.45); Stone shooter is 2.7",
+    "rangedPenalty": 0.5,
+    "survivors": "ceil(hp/unitHp) capped at the deployed count",
+    "hero": "campaign deployment uses attack*3, range 2.2, rate 1.1 and 400 HP",
+    "slowSupport": "slow and support towers do not emit gun projectiles",
+    "heroCombatXpPolicy": "The session heroXp accumulator is not granted at settlement. Completed Hero Hall victory XP remains the hero grant. The old endBattle also omitted this accumulator."
+  },
+  "endlessFormula": {
+    "status": "ADOPTED",
+    "compositionIndex": "Extension batches use wavePlan index 0, 1, 2. Source genWaves restarts that index on each added batch.",
+    "difficulty": "1+0.12*globalWaveIndex",
+    "core": "Endless multiplies 400+180*walls+60*age by 1.4, matching source bStart."
+  },
+  "earnedScope": {
+    "file": "qa/remaining-repair-20261011/earned-scope.json",
+    "preservedPrior": "qa/code-image-repair-20261011/earned-scope.json",
+    "method": "command-driven simulated clock",
+    "siege": "5/5 win",
+    "endless": "cleared 20, extended 3 to 24, core then fell, q6 claimed once after reload",
+    "creatures": ["wolf", "bandit", "bear", "harpy", "golem", "griffin", "wyvern", "drone"],
+    "wisdom": 3,
+    "uncastSpells": [],
+    "resurrect": "Closing with the duel wolf wounded a stack to 26/41 HP and the wolf died to retaliation in that same action, so the battle resolved before a cast. The earned cast that does occur is on a full 5x57 stack and the pool stays 285. The isolated fixture still restores a wounded stack from 2 to 3 under 20 mana."
+  },
+  "notDone": [
+    "Earned Resurrection recovery on a wounded living stack. The seed cast it on a full stack.",
+    "32 physical scenes",
+    "Healer body, Bronze Charioteer, industrial-support matte",
+    "full rigs and gait",
+    "unique paid liability table and any provider call",
+    "device and owner review"
+  ]
+}

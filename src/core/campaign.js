@@ -3,8 +3,8 @@ import contract from '../data/implementation-contract.json' with { type: 'json' 
 import { adventureMap, routeCost } from './navigation.js';
 import { addRankXp, dwellingCost, dwellingPool, dwellingTerms, endDay, grantHeroXp, makePack, rankForXp, rollLoot } from './mechanics.js';
 import { GEAR_SLOTS, RIVALS, SKILL_IDS, agePrice, dailyMoves, forgeOffer, gateHp, heroStats, manaMax, marketQuote, recruitCost, towerPurchaseCost, validItem } from './rules.js';
-import { activeStackId, autoStep, castSpell, createChallengeBattle, createDuelBattle, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, playOut, retreat, strike, validateBattle, wait as battleWait } from './battle.js';
-import { advanceDefense, createDefense, deployArmy, deployHero, earlyCall, validateDefense } from './defense.js';
+import { activeStackId, adoptBattle, autoStep, castSpell, createChallengeBattle, createDuelBattle, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, playOut, retreat, skipBonus, strike, validateBattle, wait as battleWait } from './battle.js';
+import { adoptDefense, advanceDefense, castDefense, createDefense, deployArmy, deployHero, earlyCall, validateDefense } from './defense.js';
 export const SCHEMA = 1;
 export { gateHp, heroStats, manaMax, dailyMoves };
 const producers = { farm: ['food', .55], lumber: ['wood', .45], quarry: ['stone', .35], mine: ['gold', .25] };
@@ -25,7 +25,8 @@ export function newCampaign(contract, data, now, seed = 123456789) {
     inventory: [], story: { rival: null, flags: {}, chapter: 0, choices: [], futureSeen: false, milestones: {} },
     quests: Object.fromEntries(data.QUEST_TEMPLATES.map(quest => [quest.id, { claimed: false }])),
     tutorial: { step: 0, skipped: false },
-    settings: { music: .6, sfx: .8, reducedMotion: false }, weather: 'clear', adventure: null, battle: null, defense: null, dwelling: null,
+    settings: { music: .6, sfx: .8, reducedMotion: false }, weather: 'clear', adventure: null, battle: null, defense: null, dwelling: null, dwellingHistory: [],
+    practice: { challenges: {} },
     settledTransactions: {}
   };
   validate(state, data); return state;
@@ -99,6 +100,32 @@ export function validate(s, data) {
     if (typeof offer.type !== 'string' || !data.CREATURES[offer.type] || !Number.isInteger(offer.count) || offer.count < 1 || typeof offer.multiplier !== 'number' || typeof offer.claimed !== 'boolean') throw new Error('Invalid dwelling');
     if (!dwellingPool(data, s.age).includes(offer.type)) throw new Error('Invalid dwelling tier');
   }
+  if (s.dwellingHistory != null) {
+    if (!Array.isArray(s.dwellingHistory)) throw new Error('Invalid dwelling history');
+    const historyIds = new Set();
+    for (const row of s.dwellingHistory) {
+      if (!row || typeof row.id !== 'string' || !row.id || historyIds.has(row.id) || row.siteId !== 'dwelling') throw new Error('Invalid dwelling history');
+      historyIds.add(row.id);
+      if (!data.CREATURES[row.type] || typeof row.claimed !== 'boolean' || !Number.isInteger(row.count) || row.count < 1 || typeof row.multiplier !== 'number' || row.multiplier <= 0) throw new Error('Invalid dwelling history');
+    }
+    const logical = new Set();
+    for (const row of s.dwellingHistory) {
+      const key = `${row.siteId}:${row.type}`;
+      if (logical.has(key)) throw new Error('Invalid dwelling history');
+      logical.add(key);
+    }
+    if (s.dwelling) {
+      const row = s.dwellingHistory.find(item => item.type === s.dwelling.type && item.siteId === 'dwelling');
+      if (!row || row.id !== s.dwelling.id || row.count !== s.dwelling.count || row.multiplier !== s.dwelling.multiplier || row.claimed !== s.dwelling.claimed) throw new Error('Invalid dwelling history');
+    }
+  }
+  if (s.practice != null) {
+    const challenges = s.practice.challenges;
+    if (!challenges || typeof challenges !== 'object' || Array.isArray(challenges)) throw new Error('Invalid practice record');
+    for (const [key, row] of Object.entries(challenges)) {
+      if (!key || !row || !['p', 'e', 'none', 'retreat'].includes(row.winner)) throw new Error('Invalid practice record');
+    }
+  }
   if (!s.settings || typeof s.settings.reducedMotion !== 'boolean' || !Number.isFinite(s.settings.music) || !Number.isFinite(s.settings.sfx) || s.settings.music < 0 || s.settings.music > 1 || s.settings.sfx < 0 || s.settings.sfx > 1) throw new Error('Invalid settings');
   if (!s.story || typeof s.story.flags !== 'object' || Array.isArray(s.story.flags) || !s.tutorial || !Number.isInteger(s.tutorial.step) || s.tutorial.step < 0 || typeof s.tutorial.skipped !== 'boolean') throw new Error('Invalid campaign progress');
   for (const [key, value] of Object.entries(s.story.flags)) {
@@ -145,6 +172,28 @@ function levelOf(s, type) {
 }
 function armyCapacity(s) { return 2 + levelOf(s, 'barracks'); }
 function dwellingSite() { return contract.geometry.adventure.sites.find(site => site.id === 'dwelling'); }
+function ensureDwellingHistory(s) {
+  if (Array.isArray(s.dwellingHistory)) return;
+  s.dwellingHistory = [];
+  const seen = new Set();
+  if (s.dwelling) {
+    seen.add(s.dwelling.type);
+    s.dwellingHistory.push({
+      id: s.dwelling.id || `dwelling:dwelling:${s.dwelling.type}`,
+      siteId: 'dwelling',
+      type: s.dwelling.type,
+      count: s.dwelling.count,
+      multiplier: s.dwelling.multiplier,
+      claimed: s.dwelling.claimed === true,
+      migrated: true,
+    });
+  }
+  for (const stack of s.army) {
+    if (stack.kind !== 'creature' || seen.has(stack.type)) continue;
+    seen.add(stack.type);
+    s.dwellingHistory.push({ id: `dwelling:dwelling:${stack.type}`, siteId: 'dwelling', type: stack.type, count: stack.count, multiplier: 1, claimed: true, migrated: true });
+  }
+}
 function atDwelling(s) {
   const site = dwellingSite();
   if (!site || !s.adventure || s.adventure.atTown) return false;
@@ -172,6 +221,9 @@ export function adoptProgress(state, data) {
   else if (state.quests && typeof state.quests === 'object' && !Array.isArray(state.quests)) {
     for (const quest of data.QUEST_TEMPLATES) if (missing(state.quests, quest.id)) state.quests[quest.id] = { claimed: false };
   }
+  ensureDwellingHistory(state);
+  adoptBattle(state.battle);
+  adoptDefense(state.defense);
   return state;
 }
 export function stackTitle(stack, data) {
@@ -271,7 +323,14 @@ function applyBattleResult(s, data) {
   const battle = s.battle;
   if (!battle || battle.status !== 'RESOLVED' || !battle.pendingSettlement || battle.settled) throw new Error('No pending battle result');
   if (battle.practice === 'skirmish' || battle.practice === 'challenge') {
-    if (battle.practice === 'challenge') s.story.flags[`challenge:${battle.id}`] = battle.outcome?.winner ?? 'none';
+    if (battle.practice === 'challenge') {
+      if (!s.practice) s.practice = { challenges: {} };
+      s.practice.challenges[battle.id] = {
+        winner: battle.outcome?.winner ?? 'none',
+        seed: battle.challenge?.seed ?? null,
+        label: battle.challenge?.label ?? null,
+      };
+    }
     s.battle = null;
     return;
   }
@@ -297,8 +356,7 @@ function applyBattleResult(s, data) {
   s.rngState = battle.rngState >>> 0;
   if (winner === 'p') {
     s.resources.gold += 150;
-    const hall = s.plots.find(plot => plot.id === 'townhall');
-    grantHeroXp(s, data, Math.round(110 * (battle.difficulty || 1)), hall?.level ?? 1);
+    grantHeroXp(s, data, Math.round(110 * (battle.difficulty || 1)), levelOf(s, 'hall'));
     rollLoot(s, data, battle.difficulty || 1).forEach((drop, index) => {
       s.inventory.push({ ...drop, id: `loot-${s.revision}-${index}-${drop.slot}` });
     });
@@ -323,17 +381,31 @@ function applyBattleResult(s, data) {
   s.story.flags[flag] = winner;
   s.battle = null;
 }
+function grantDefenseExperience(s, session) {
+  for (const runtime of session.towers) {
+    const tower = s.towers.find(item => item.id === runtime.id);
+    if (tower) addRankXp(tower, Math.round(runtime.xp || 0));
+  }
+  if (session.armyDeployed && session.army?.stackId) {
+    const stack = s.army.find(item => item.id === session.army.stackId);
+    if (stack && stack.count > 0) addRankXp(stack, Math.round(session.army.xp || 0));
+  }
+}
 function settleDefense(s, data) {
   const session = s.defense;
   if (!session || session.status !== 'RESOLVED' || !session.pendingSettlement) throw new Error('No pending defense result');
   if (session.armyDeployed && session.army) {
     const stack = s.army.find(item => item.id === session.army.stackId);
     if (stack && session.army.maxHp > 0) {
-      const ratio = Math.max(0, session.army.hp) / session.army.maxHp;
-      stack.count = Math.max(0, Math.floor(stack.count * ratio + 1e-9));
+      const survivors = session.army.unitHp > 0
+        ? (session.army.hp <= 0 ? 0 : Math.min(stack.count, Math.ceil(Math.max(0, session.army.hp) / session.army.unitHp)))
+        : Math.max(0, Math.floor(stack.count * (Math.max(0, session.army.hp) / session.army.maxHp) + 1e-9));
+      stack.count = survivors;
       if (stack.count === 0) s.army = s.army.filter(item => item.id !== stack.id);
     }
   }
+  // Session XP is fractional. One rounded grant per owned id. A wrecked tower keeps its rank.
+  grantDefenseExperience(s, session);
   if (session.practice === 'endless') {
     s.story.flags[`endless:${session.id}`] = session.clearedWaves;
     s.defense = null;
@@ -343,8 +415,7 @@ function settleDefense(s, data) {
     const difficulty = session.difficulty || 1;
     s.resources.gold += Math.round(150 * difficulty);
     s.resources.food += Math.round(100 * difficulty);
-    const hall = s.plots.find(plot => plot.id === 'townhall');
-    grantHeroXp(s, data, Math.round(90 * difficulty), hall?.level ?? 1);
+    grantHeroXp(s, data, Math.round(90 * difficulty), levelOf(s, 'hall'));
     rollLoot(s, data, difficulty * 0.6).forEach((drop, index) => {
       s.inventory.push({ ...drop, id: `siege-${s.revision}-${index}-${drop.slot || drop.artifactId || 'drop'}` });
     });
@@ -361,11 +432,12 @@ export function command(state, input, now, data) {
     return structuredClone(state);
   }
   const s = advance(state, now, data);
+  ensureDwellingHistory(s);
   const payload = input.payload ?? {};
   const battlePending = s.battle && (s.battle.status === 'ACTIVE' || s.battle.pendingSettlement);
   const defensePending = s.defense && (s.defense.status === 'ACTIVE' || s.defense.pendingSettlement);
   if (battlePending && input.type !== 'BATTLE' && input.type !== 'SETTLE_BATTLE') throw new Error('Battle result is pending');
-  if (defensePending && !['DEFENSE', 'SETTLE_DEFENSE', 'EARLY_CALL', 'DEPLOY_DEFENSE', 'DEPLOY_ARMY'].includes(input.type)) throw new Error('Defense result is pending');
+  if (defensePending && !['DEFENSE', 'SETTLE_DEFENSE', 'EARLY_CALL', 'DEPLOY_DEFENSE', 'DEPLOY_ARMY', 'DEFENSE_CAST'].includes(input.type)) throw new Error('Defense result is pending');
   if (input.type === 'BUILD') {
     const { plotId, building } = payload;
     const p = plotId === 'walls' ? s.walls : s.plots.find(p => p.id === plotId);
@@ -524,6 +596,7 @@ export function command(state, input, now, data) {
     else if (action === 'strike') s.battle = strike(s.battle, payload.stackId, payload.targetId, { forceMelee: payload.forceMelee === true, approach: payload.approach });
     else if (action === 'defend') s.battle = defend(s.battle, payload.stackId);
     else if (action === 'wait') s.battle = battleWait(s.battle, payload.stackId);
+    else if (action === 'skip-bonus') s.battle = skipBonus(s.battle, payload.stackId);
     else if (action === 'spell') {
       const spell = data.SPELLS[payload.spell];
       if (!spell) throw new Error('Unsupported spell');
@@ -560,15 +633,22 @@ export function command(state, input, now, data) {
   } else if (input.type === 'DEPLOY_DEFENSE') {
     if (!s.defense || s.defense.status !== 'ACTIVE') throw new Error('No active defense');
     const gold = s.resources.gold;
-    s.defense = deployHero(s.defense, heroStats(s, data).atk);
+    s.defense = deployHero(s.defense, heroStats(s, data).atk * 3, payload.siteId ?? null);
     if (s.resources.gold !== gold) throw new Error('Deployment fee');
   } else if (input.type === 'DEPLOY_ARMY') {
     if (!s.defense || s.defense.status !== 'ACTIVE') throw new Error('No active defense');
     const stack = s.army.find(item => item.id === payload.stackId);
     if (!stack) throw new Error('Unknown army stack');
     const gold = s.resources.gold;
-    s.defense = deployArmy(s.defense, stack);
+    s.defense = deployArmy(s.defense, stack, payload.siteId ?? null);
     if (s.resources.gold !== gold) throw new Error('Deployment fee');
+  } else if (input.type === 'DEFENSE_CAST') {
+    if (!s.defense || s.defense.status !== 'ACTIVE' || !s.defense.heroDeployed) throw new Error('No deployed hero');
+    if (s.hero.mana < 40) throw new Error('Not enough mana');
+    const stats = heroStats(s, data);
+    const next = castDefense(s.defense, stats.pow * 4 + s.hero.level * 6, payload);
+    s.hero.mana -= 40;
+    s.defense = next;
   } else if (input.type === 'EARLY_CALL') {
     if (!s.defense) throw new Error('No active defense');
     const gold = s.resources.gold;
@@ -593,14 +673,17 @@ export function command(state, input, now, data) {
     if (!offer) throw new Error('Invalid skill offer');
     offer.declined = true;
   } else if (input.type === 'OFFER_DWELLING') {
+    // One offer per creature type at this site. Cancel keeps the open terms and does not reroll.
     if (!atDwelling(s)) throw new Error('Not at the dwelling');
     if (s.dwelling && !s.dwelling.claimed) {
       if (payload.type && payload.type !== s.dwelling.type) throw new Error('Offer already open');
-      // Saved terms stay. Cancel and reload must not roll a new pack.
     } else {
+      if (s.dwellingHistory.some(row => row.type === payload.type)) throw new Error('Dwelling type already offered');
       const terms = dwellingTerms(s.story.flags || {});
       if (!dwellingPool(data, s.age).includes(payload.type)) throw new Error('Invalid dwelling tier');
-      s.dwelling = { type: payload.type, count: terms.count, multiplier: terms.multiplier, claimed: false };
+      const offer = { id: `dwelling:dwelling:${payload.type}`, siteId: 'dwelling', type: payload.type, count: terms.count, multiplier: terms.multiplier, claimed: false };
+      s.dwelling = offer;
+      s.dwellingHistory.push({ ...offer });
     }
   } else if (input.type === 'CANCEL_DWELLING') {
     if (!s.dwelling || s.dwelling.claimed) throw new Error('No dwelling offer');
@@ -613,6 +696,12 @@ export function command(state, input, now, data) {
     pay(s, payment);
     s.army.push({ id: `army-${input.id}`, kind: 'creature', type: s.dwelling.type, age: s.age, count: s.dwelling.count, rank: 0, xp: 0 });
     s.dwelling.claimed = true;
+    const row = s.dwellingHistory.find(item => item.type === s.dwelling.type);
+    if (row) {
+      row.claimed = true;
+      row.payment = payment;
+      row.transactionId = input.id;
+    }
   } else if (input.type === 'SETTINGS') {
     const music = payload.music ?? s.settings.music;
     const sfx = payload.sfx ?? s.settings.sfx;

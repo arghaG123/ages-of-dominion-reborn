@@ -1,7 +1,8 @@
 // Fixed-step defense. Pause adds no catch-up attacks. 2x multiplies the same 1/60 step.
 import contract from '../data/implementation-contract.json' with { type: 'json' };
+import referenceData from '../data/reference-data.json' with { type: 'json' };
 
-import { ROLE_MULTIPLIER, seededOrder, towerStats, wavePlan } from './mechanics.js';
+import { ROLE_MULTIPLIER, seededOrder, towerStats, unitStats, wavePlan } from './mechanics.js';
 
 export const STEP = 1 / 60;
 const FRAME_CAP = 0.25;
@@ -73,8 +74,9 @@ function schedule(age, baseDifficulty, startWave, count, rngState, scaleByWave) 
   const random = { rngState };
   for (let offset = 0; offset < count; offset++) {
     const wave = startWave + offset;
+    // Source extension batches restart the composition index at 0. Difficulty keeps 1+0.12*globalWave.
     const difficulty = scaleByWave ? baseDifficulty * (1 + 0.12 * wave) : baseDifficulty;
-    const plan = wavePlan(wave, age, difficulty);
+    const plan = wavePlan(scaleByWave ? offset : wave, age, difficulty);
     const bag = [];
     for (const role of ROLES) for (let n = 0; n < plan.counts[role]; n++) bag.push(role);
     const ordered = seededOrder(bag, random);
@@ -113,9 +115,10 @@ export function createDefense(state, data, { practice, waves, difficulty = 1 }) 
   const planned = schedule(state.age, difficulty, 0, waves, state.rngState, false);
   const towers = state.towers.map((tower, index) => {
     const stats = towerStats(tower, data);
-    const pad = pads[index % pads.length];
+    const pad = pads[index];
+    if (!pad) throw new Error('No open defense cell');
     return {
-      id: tower.id, fam: tower.fam, x: pad.x, y: pad.y, cooldown: 0,
+      id: tower.id, fam: tower.fam, siteId: pad.id, x: pad.x, y: pad.y, cooldown: 0, xp: 0,
       dmg: stats.dmg, rate: stats.rate, rng: stats.rng, splash: stats.splash, slow: stats.slow, aura: stats.aura,
       hp: stats.hp, maxHp: stats.hp,
     };
@@ -123,7 +126,7 @@ export function createDefense(state, data, { practice, waves, difficulty = 1 }) 
   return {
     id: `${practice}-${state.day}-${state.revision}`,
     practice, status: 'ACTIVE', pendingSettlement: false, difficulty, age: state.age,
-    core: 400 + 180 * (state.walls?.level || 0) + 60 * state.age,
+    core: (400 + 180 * (state.walls?.level || 0) + 60 * state.age) * (practice === 'endless' ? 1.4 : 1),
     time: 0, accumulator: 0, speed: 1, paused: false,
     waves, clearedWaves: 0, earlyCalls: [], heroDeployed: false, armyDeployed: false, army: null,
     extensions: 0, rngState: planned.rngState,
@@ -154,10 +157,15 @@ export function validateDefense(session) {
   if (!Array.isArray(session.queue) || session.queue.length < 1) throw new Error('Empty active queue');
   if (!Array.isArray(session.enemies) || !Array.isArray(session.towers) || !Array.isArray(session.earlyCalls) || !Array.isArray(session.projectiles)) throw new Error('Invalid defense queue');
   if (typeof session.heroDeployed !== 'boolean' || typeof session.armyDeployed !== 'boolean') throw new Error('Invalid defense');
-  if (session.heroDeployed && (!finiteField(session.heroDamage, Number.MIN_VALUE) || session.heroDamage <= 0 || !finiteField(session.heroAt) || !finiteField(session.heroCooldown))) throw new Error('Invalid defense');
+  if (session.heroDeployed && (!finiteField(session.heroDamage, Number.MIN_VALUE) || session.heroDamage <= 0 || !finiteField(session.heroAt) || !finiteField(session.heroCooldown) || !finiteField(session.heroX) || !finiteField(session.heroY) || !finiteField(session.heroRange, Number.MIN_VALUE) || !finiteField(session.heroRate, Number.MIN_VALUE) || !finiteField(session.heroHp) || !finiteField(session.heroMaxHp, Number.MIN_VALUE))) throw new Error('Invalid defense');
+  if (session.heroXp != null && !finiteField(session.heroXp)) throw new Error('Invalid defense experience');
   if (session.armyDeployed) {
     const army = session.army;
-    if (!army || typeof army.stackId !== 'string' || !finiteField(army.at) || !finiteField(army.hp) || !finiteField(army.maxHp, Number.MIN_VALUE) || !finiteField(army.damage, Number.MIN_VALUE) || !finiteField(army.cooldown)) throw new Error('Invalid army deployment');
+    if (!army || typeof army.stackId !== 'string' || !finiteField(army.at) || !finiteField(army.x) || !finiteField(army.y) || !finiteField(army.hp) || !finiteField(army.maxHp, Number.MIN_VALUE) || !finiteField(army.damage, Number.MIN_VALUE) || !finiteField(army.cooldown)) throw new Error('Invalid army deployment');
+    if (army.unitHp != null && !finiteField(army.unitHp, Number.MIN_VALUE)) throw new Error('Invalid army deployment');
+    if (army.block != null && !finiteField(army.block)) throw new Error('Invalid army deployment');
+    if (army.shots != null && (!Number.isFinite(army.shots) || army.shots < 0)) throw new Error('Invalid army deployment');
+    if (army.xp != null && !finiteField(army.xp)) throw new Error('Invalid defense experience');
   } else if (session.army != null) throw new Error('Invalid army deployment');
   for (const shot of session.projectiles) {
     if (!shot || typeof shot.id !== 'string' || typeof shot.fam !== 'string' || !finiteField(shot.born) || !finiteField(shot.life, Number.MIN_VALUE)) throw new Error('Invalid projectile');
@@ -206,6 +214,7 @@ export function validateDefense(session) {
     if (!finiteField(tower.x) || !finiteField(tower.y) || !finiteField(tower.cooldown) || !finiteField(tower.dmg)) throw new Error('Invalid tower damage');
     if (!finiteField(tower.rate) || !finiteField(tower.rng) || !finiteField(tower.splash) || !finiteField(tower.slow) || !finiteField(tower.aura) || tower.slow > 1) throw new Error('Invalid defense');
     if (!Number.isFinite(tower.hp) || !finiteField(tower.maxHp, Number.MIN_VALUE)) throw new Error('Invalid tower damage');
+    if (!finiteField(tower.xp)) throw new Error('Invalid defense experience');
   }
   const allSpawned = session.queue.every(enemy => enemy.spawned);
   const allDown = session.queue.every(enemy => enemy.hp <= 0);
@@ -260,6 +269,71 @@ function hurtTower(tower, amount) {
   tower.hp = Math.max(0, tower.hp - amount);
 }
 
+// Source bHurt credits 0.045 of the dealt blow, then 5, or 18 for a boss, once when this blow kills.
+// Overkill still uses the full blow. A second blow on a dead enemy credits nothing. Wrecked towers do not lose rank.
+function hurtEnemy(enemy, amount, source) {
+  if (!(amount > 0) || enemy.hp <= 0 || enemy.leaked) return false;
+  const killing = enemy.hp <= amount;
+  enemy.hp -= amount;
+  if (source && typeof source === 'object') {
+    source.xp = (source.xp || 0) + amount * 0.045;
+    if (killing) source.xp += enemy.boss ? 18 : 5;
+  }
+  return killing;
+}
+
+function padById(siteId) {
+  const pad = pads.find(item => item.id === siteId);
+  if (!pad) throw new Error('Invalid defense cell');
+  return pad;
+}
+
+function cellOccupied(session, siteId) {
+  if (!siteId) return false;
+  if (session.towers.some(tower => tower.siteId === siteId)) return true;
+  if (session.heroSite === siteId) return true;
+  if (session.army?.siteId === siteId) return true;
+  return false;
+}
+
+function nearestProgress(x, y) {
+  let best = 0;
+  let gap = Infinity;
+  lane.forEach((point, index) => {
+    const distanceToPad = Math.hypot(point[0] - x, point[1] - y);
+    if (distanceToPad < gap) { gap = distanceToPad; best = index; }
+  });
+  return best;
+}
+
+const BOARD_COLS = geo.cols;
+const BOARD_ROWS = geo.rows;
+const RANGED_LANE_SCALE = 0.45;
+
+function onBoard(x, y) {
+  return Number.isFinite(x) && Number.isFinite(y) && x >= 0 && x < BOARD_COLS && y >= 0 && y < BOARD_ROWS;
+}
+function stackFactor(army) {
+  if (!(army?.unitHp > 0) || !(army.hp > 0)) return 1;
+  return Math.max(1, Math.ceil(army.hp / army.unitHp) * 0.4 + 0.6);
+}
+function blockMultiplier(block) {
+  return Math.max(0.1, 1 - 0.06 * (Number.isFinite(block) ? block : 0));
+}
+function heroPoint(session) {
+  if (Number.isFinite(session.heroX) && Number.isFinite(session.heroY)) return [session.heroX, session.heroY];
+  return pointAt(session.heroAt || 0);
+}
+function armyPoint(session) {
+  const army = session.army;
+  if (Number.isFinite(army?.x) && Number.isFinite(army?.y)) return [army.x, army.y];
+  return pointAt(army?.at || 0);
+}
+function placeOnLane(progress) {
+  const at = pointAt(progress);
+  return { x: at[0], y: at[1] };
+}
+
 function enemyAttack(session, enemy) {
   const profile = RANGED[enemy.role];
   const at = pointAt(enemy.progress);
@@ -298,16 +372,16 @@ function enemyAttack(session, enemy) {
       const gap = distance(at, [tower.x, tower.y]);
       if (gap < best) { best = gap; target = tower; }
     }
-    if (session.heroDeployed) {
-      const gap = Math.abs(enemy.progress - session.heroAt);
+    if (session.heroDeployed && (session.heroHp ?? 1) > 0) {
+      const gap = distance(at, heroPoint(session));
       if (gap < best && gap <= profile.range) { best = gap; target = { kind: 'hero' }; }
     }
     if (session.armyDeployed && session.army.hp > 0) {
-      const gap = Math.abs(enemy.progress - session.army.at);
+      const gap = distance(at, armyPoint(session));
       if (gap < best && gap <= profile.range) { best = gap; target = { kind: 'army' }; }
     }
     if (target && best <= profile.range) {
-      if (target.kind === 'hero') session.heroDamage = Math.max(1, session.heroDamage * 0.92);
+      if (target.kind === 'hero') session.heroHp = Math.max(0, (session.heroHp ?? 0) - enemy.damage);
       else if (target.kind === 'army') session.army.hp = Math.max(0, session.army.hp - enemy.damage);
       else {
         hurtTower(target, enemy.damage);
@@ -315,6 +389,45 @@ function enemyAttack(session, enemy) {
       }
       enemy.attackCooldown = profile.delay;
     }
+  }
+}
+
+function stepArmy(session) {
+  const army = session.army;
+  if (!session.armyDeployed || !army || !(army.hp > 0)) return;
+  if (!Number.isFinite(army.x) || !Number.isFinite(army.y)) return;
+  if (army.role === 'ranged' || army.range > 0) {
+    army.x = army.homeX;
+    army.y = army.homeY;
+    return;
+  }
+  const living = livingEnemies(session).filter(entered);
+  let target = null;
+  let best = Infinity;
+  for (const enemy of living) {
+    const fromHome = distance([army.homeX, army.homeY], pointAt(enemy.progress));
+    if (army.role !== 'fly' && fromHome > (army.engage || 2.6)) continue;
+    const gap = distance([army.x, army.y], pointAt(enemy.progress));
+    if (gap < best) { best = gap; target = enemy; }
+  }
+  const speed = (army.speed || 0.64) * (army.role === 'fly' ? 1.4 : 1) * STEP;
+  const goal = target ? pointAt(target.progress) : [army.homeX, army.homeY];
+  const dist = distance([army.x, army.y], goal);
+  if (!(dist > (target ? 1 : 0.02))) return;
+  const travel = target ? Math.min(dist - 0.95, speed) : Math.min(dist, speed);
+  if (!(travel > 0)) return;
+  army.x += (goal[0] - army.x) / dist * travel;
+  army.y += (goal[1] - army.y) / dist * travel;
+}
+
+function settleAfterDamage(session) {
+  session.clearedWaves = countCleared(session);
+  syncEnemies(session);
+  if (session.status !== 'ACTIVE') return;
+  if (session.core <= 0) finish(session, 'e');
+  else if (session.queue.every(enemy => enemy.spawned) && session.queue.every(enemy => enemy.hp <= 0)) {
+    if (session.practice === 'endless') extendEndless(session);
+    else finish(session, 'p');
   }
 }
 
@@ -353,8 +466,8 @@ function tick(session) {
         // A nearby attacker is not a target. Holding for allies froze archers
         // outside every living tower and left the wave unable to clear or leak.
         const threat = livingTowers(session).some(tower => distance(at, [tower.x, tower.y]) <= ranged.range)
-          || (session.heroDeployed && Math.abs(enemy.progress - session.heroAt) <= ranged.range)
-          || (session.armyDeployed && session.army.hp > 0 && Math.abs(enemy.progress - session.army.at) <= ranged.range);
+          || (session.heroDeployed && (session.heroHp ?? 1) > 0 && distance(at, heroPoint(session)) <= ranged.range)
+          || (session.armyDeployed && session.army.hp > 0 && distance(at, armyPoint(session)) <= ranged.range);
         if (threat) hold = true;
       }
     }
@@ -367,16 +480,23 @@ function tick(session) {
     }
     if (entered(enemy) && enemy.attackCooldown <= 0 && ranged) enemyAttack(session, enemy);
     if (entered(enemy) && !ranged && enemy.attackCooldown <= 0) {
-      if (session.armyDeployed && session.army.hp > 0 && Math.abs(enemy.progress - session.army.at) <= CONTACT) {
-        session.army.hp = Math.max(0, session.army.hp - enemy.damage);
-        enemy.hp -= session.army.damage;
+      const army = session.army;
+      const armyContact = session.armyDeployed && army?.hp > 0 && !(army.range > 0) && distance(armyPoint(session), pointAt(enemy.progress)) <= CONTACT;
+      const heroContact = session.heroDeployed && (session.heroHp ?? 1) > 0 && distance(heroPoint(session), pointAt(enemy.progress)) <= CONTACT;
+      if (armyContact) {
+        army.hp = Math.max(0, army.hp - enemy.damage * blockMultiplier(army.block));
+        hurtEnemy(enemy, army.damage * stackFactor(army), army);
         enemy.attackCooldown = MELEE_DELAY;
-      } else if (session.heroDeployed && Math.abs(enemy.progress - session.heroAt) <= CONTACT) {
-        enemy.hp -= session.heroDamage;
+      } else if (heroContact) {
+        const bucket = { xp: session.heroXp || 0 };
+        hurtEnemy(enemy, session.heroDamage, bucket);
+        session.heroXp = bucket.xp;
+        session.heroHp = Math.max(0, (session.heroHp ?? 0) - enemy.damage);
         enemy.attackCooldown = MELEE_DELAY;
       }
     }
   }
+  stepArmy(session);
   const aura = livingTowers(session).filter(tower => tower.aura > 0);
   for (const tower of session.towers) {
     if (!(tower.rate > 0) || tower.hp <= 0) continue;
@@ -388,46 +508,64 @@ function tick(session) {
     const living = livingEnemies(session).filter(entered);
     const support = aura.reduce((sum, other) => sum + (distance([other.x, other.y], [tower.x, tower.y]) <= other.rng ? other.aura : 0), 0);
     const amount = tower.dmg * (1 + support);
-    target.hp -= amount;
-    emitProjectile(session, tower.fam, [tower.x, tower.y], pointAt(target.progress));
+    hurtEnemy(target, amount, tower);
+    if (!(tower.slow > 0) && !(tower.aura > 0) && tower.fam !== 'slow' && tower.fam !== 'support') {
+      emitProjectile(session, tower.fam, [tower.x, tower.y], pointAt(target.progress));
+    }
     if (tower.splash > 0) {
       const centre = pointAt(target.progress);
       for (const other of living) {
-        if (other !== target && distance(centre, pointAt(other.progress)) <= tower.splash) other.hp -= amount * 0.6;
+        if (other !== target && distance(centre, pointAt(other.progress)) <= tower.splash) hurtEnemy(other, amount * 0.6, tower);
       }
     }
     if (tower.slow > 0) { target.slowUntil = session.time + 1.4; target.slowFraction = tower.slow; }
     tower.cooldown = 1 / tower.rate;
   }
-  if (session.heroDeployed) {
+  if (session.heroDeployed && (session.heroHp ?? 1) > 0) {
     session.heroCooldown = Math.max(0, (session.heroCooldown || 0) - STEP);
     if (session.heroCooldown <= 0) {
-      const foe = livingEnemies(session).find(enemy => entered(enemy) && Math.abs(enemy.progress - session.heroAt) <= CONTACT);
-      if (foe) {
-        foe.hp -= session.heroDamage;
-        emitProjectile(session, 'hero', pointAt(session.heroAt), pointAt(foe.progress));
+      const origin = heroPoint(session);
+      const range = session.heroRange || 2.2;
+      let foe = null;
+      let best = Infinity;
+      for (const enemy of livingEnemies(session)) {
+        if (!entered(enemy)) continue;
+        const gap = distance(origin, pointAt(enemy.progress));
+        if (gap <= range && gap < best) { best = gap; foe = enemy; }
       }
-      session.heroCooldown = 1 / HERO_RATE;
+      if (foe) {
+        const crowded = livingEnemies(session).some(enemy => entered(enemy) && distance(origin, pointAt(enemy.progress)) <= 1);
+        const bucket = { xp: session.heroXp || 0 };
+        hurtEnemy(foe, session.heroDamage * (crowded ? 0.5 : 1), bucket);
+        session.heroXp = bucket.xp;
+        emitProjectile(session, 'hero', origin, pointAt(foe.progress));
+      }
+      session.heroCooldown = 1 / (session.heroRate || 1.1);
     }
   }
-  if (session.armyDeployed && session.army.hp > 0) {
+  if (session.armyDeployed && session.army.hp > 0 && session.army.range > 0) {
     session.army.cooldown = Math.max(0, session.army.cooldown - STEP);
-    if (session.army.cooldown <= 0) {
-      const foe = livingEnemies(session).find(enemy => entered(enemy) && Math.abs(enemy.progress - session.army.at) <= CONTACT);
+    if (session.army.cooldown <= 0 && session.army.shots > 0) {
+      const origin = armyPoint(session);
+      let foe = null;
+      let best = -Infinity;
+      for (const enemy of livingEnemies(session)) {
+        if (!entered(enemy)) continue;
+        const gap = distance(origin, pointAt(enemy.progress));
+        if (gap > session.army.range) continue;
+        const threat = (enemy.boss ? 200 : 0) + enemy.damage * enemy.speed * 10 - gap;
+        if (threat > best) { best = threat; foe = enemy; }
+      }
       if (foe) {
-        foe.hp -= session.army.damage;
-        emitProjectile(session, 'army', pointAt(session.army.at), pointAt(foe.progress));
+        const crowded = livingEnemies(session).some(enemy => entered(enemy) && distance(origin, pointAt(enemy.progress)) <= 1);
+        hurtEnemy(foe, session.army.damage * stackFactor(session.army) * (crowded ? 0.5 : 1), session.army);
+        session.army.shots -= 1;
+        emitProjectile(session, 'army', origin, pointAt(foe.progress));
       }
       session.army.cooldown = 1 / ARMY_RATE;
     }
   }
-  session.clearedWaves = countCleared(session);
-  syncEnemies(session);
-  if (session.core <= 0) finish(session, 'e');
-  else if (session.queue.every(enemy => enemy.spawned) && session.queue.every(enemy => enemy.hp <= 0)) {
-    if (session.practice === 'endless') extendEndless(session);
-    else finish(session, 'p');
-  }
+  settleAfterDamage(session);
 }
 
 export function advanceDefense(session, dt, { paused = false, speed = session.speed } = {}) {
@@ -451,7 +589,7 @@ export function advanceDefense(session, dt, { paused = false, speed = session.sp
   return next;
 }
 
-export function deployHero(session, damage) {
+export function deployHero(session, damage, siteId = null) {
   validateDefense(session);
   if (session.status !== 'ACTIVE') throw new Error('No active defense');
   if (session.heroDeployed) throw new Error('Hero already deployed');
@@ -459,30 +597,90 @@ export function deployHero(session, damage) {
   const next = clone(session);
   next.heroDeployed = true;
   next.heroDamage = damage;
-  next.heroAt = Math.max(ENTRY + 0.2, next.laneLength * 0.45);
+  next.heroXp = 0;
   next.heroCooldown = 0;
+  next.heroRange = 2.2;
+  next.heroRate = 1.1;
+  next.heroHp = 400;
+  next.heroMaxHp = 400;
+  if (siteId) {
+    if (cellOccupied(next, siteId)) throw new Error('Defense cell is occupied');
+    const pad = padById(siteId);
+    next.heroSite = siteId;
+    next.heroAt = nearestProgress(pad.x, pad.y);
+    next.heroX = pad.x;
+    next.heroY = pad.y;
+  } else {
+    next.heroSite = null;
+    next.heroAt = Math.max(ENTRY + 0.2, next.laneLength * 0.45);
+    const placed = placeOnLane(next.heroAt);
+    next.heroX = placed.x;
+    next.heroY = placed.y;
+  }
   validateDefense(next);
   return next;
 }
 
-export function deployArmy(session, stack) {
+export function deployArmy(session, stack, siteId = null) {
   validateDefense(session);
   if (session.status !== 'ACTIVE') throw new Error('No active defense');
   if (session.armyDeployed) throw new Error('Army already deployed');
   if (!stack || typeof stack.id !== 'string' || !(stack.count > 0)) throw new Error('Invalid army stack');
+  const stats = unitStats(stack, referenceData);
   const next = clone(session);
-  const unitHp = 24 + 6 * (stack.rank || 0) + 4 * (stack.age || 0);
+  if (siteId && cellOccupied(next, siteId)) throw new Error('Defense cell is occupied');
+  const pad = siteId ? padById(siteId) : null;
+  const at = pad ? nearestProgress(pad.x, pad.y) : Math.max(ENTRY + 0.35, next.laneLength * 0.55);
+  const placed = pad ? { x: pad.x, y: pad.y } : placeOnLane(at);
+  const ranged = (stats.rng || 0) > 0;
   next.armyDeployed = true;
   next.army = {
     stackId: stack.id,
     kind: stack.kind,
     type: stack.type,
-    at: Math.max(ENTRY + 0.35, next.laneLength * 0.55),
-    hp: unitHp * stack.count,
-    maxHp: unitHp * stack.count,
-    damage: 4 + 2 * (stack.rank || 0) + (stack.kind === 'creature' ? 1 : 0),
+    count: stack.count,
+    siteId: siteId || null,
+    at,
+    x: placed.x,
+    y: placed.y,
+    homeX: placed.x,
+    homeY: placed.y,
+    hp: stats.hp * stack.count,
+    maxHp: stats.hp * stack.count,
+    unitHp: stats.hp,
+    damage: Math.max(1, Math.round((stats.dmin + stats.dmax) / 2)),
+    range: ranged ? Math.max(1, stats.rng * RANGED_LANE_SCALE) : 0,
+    shots: stats.shots || 0,
+    block: stats.block || 0,
+    fly: stats.fly || 0,
+    role: ranged ? 'ranged' : (stats.fly > 0 ? 'fly' : 'melee'),
+    speed: (stats.spd || 4) * 0.16,
+    engage: 2.6,
+    xp: 0,
     cooldown: 0,
   };
+  validateDefense(next);
+  return next;
+}
+
+export function castDefense(session, damage, target) {
+  validateDefense(session);
+  if (session.status !== 'ACTIVE' || !session.heroDeployed || (session.heroHp ?? 1) <= 0) throw new Error('No deployed hero');
+  if (!(damage > 0) || !Number.isFinite(damage)) throw new Error('Invalid defense cast');
+  const explicit = Boolean(target) && ('x' in target || 'y' in target);
+  const centre = explicit ? [target.x, target.y] : heroPoint(session);
+  if (!onBoard(centre[0], centre[1])) throw new Error('Invalid defense cast');
+  const before = clone(session);
+  const next = clone(session);
+  for (const enemy of next.queue) {
+    if (!enemy.spawned || enemy.hp <= 0 || enemy.leaked) continue;
+    if (distance(centre, pointAt(enemy.progress)) <= 1.6) hurtEnemy(enemy, damage, null);
+  }
+  next.time = before.time;
+  next.accumulator = before.accumulator;
+  next.paused = before.paused;
+  next.speed = before.speed;
+  settleAfterDamage(next);
   validateDefense(next);
   return next;
 }
@@ -498,6 +696,30 @@ export function earlyCall(session) {
   return next;
 }
 
+export function adoptDefense(session) {
+  if (!session || typeof session !== 'object') return session;
+  if (session.heroDeployed) {
+    if (!Number.isFinite(session.heroX) && Number.isFinite(session.heroAt)) {
+      const at = pointAt(session.heroAt);
+      session.heroX = at[0];
+      session.heroY = at[1];
+    }
+    if (!Number.isFinite(session.heroRange)) session.heroRange = 2.2;
+    if (!Number.isFinite(session.heroRate)) session.heroRate = 1.1;
+    if (!Number.isFinite(session.heroHp)) session.heroHp = 400;
+    if (!Number.isFinite(session.heroMaxHp)) session.heroMaxHp = 400;
+    if (!Number.isFinite(session.heroXp)) session.heroXp = 0;
+  }
+  if (session.armyDeployed && session.army && !Number.isFinite(session.army.x) && Number.isFinite(session.army.at)) {
+    const at = pointAt(session.army.at);
+    session.army.x = at[0];
+    session.army.y = at[1];
+    if (!Number.isFinite(session.army.homeX)) session.army.homeX = at[0];
+    if (!Number.isFinite(session.army.homeY)) session.army.homeY = at[1];
+  }
+  return session;
+}
+
 export function defenseMarkers(session) {
   if (!session) return { enemies: [], towers: [], hero: null, army: null, queue: [], projectiles: [] };
   const t = session.time;
@@ -507,8 +729,8 @@ export function defenseMarkers(session) {
       entered: enemy.progress >= ENTRY, telegraphId: enemy.telegraphId,
     })),
     towers: session.towers.map(tower => ({ id: tower.id, fam: tower.fam, hp: tower.hp, maxHp: tower.maxHp, at: [tower.x, tower.y], alive: tower.hp > 0 })),
-    hero: session.heroDeployed ? { at: pointAt(session.heroAt) } : null,
-    army: session.armyDeployed && session.army.hp > 0 ? { at: pointAt(session.army.at), hp: session.army.hp, maxHp: session.army.maxHp, stackId: session.army.stackId } : null,
+    hero: session.heroDeployed ? { at: heroPoint(session), hp: session.heroHp ?? 0 } : null,
+    army: session.armyDeployed && session.army.hp > 0 ? { at: armyPoint(session), hp: session.army.hp, maxHp: session.army.maxHp, stackId: session.army.stackId } : null,
     queue: session.queue.filter(enemy => !enemy.spawned).map(enemy => ({ id: enemy.id, role: enemy.role, boss: enemy.boss, wave: enemy.wave, spawnAt: enemy.spawnAt })),
     projectiles: session.projectiles.map(shot => {
       const u = Math.min(1, (t - shot.born) / shot.life);

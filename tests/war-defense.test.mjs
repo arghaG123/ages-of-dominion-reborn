@@ -24,10 +24,17 @@ test('the five war options start, and skirmish and challenge leave campaign gold
   const resolvedA = playOut(challengeA.battle);
   const resolvedB = playOut(challengeB.battle);
   assert.equal(resolvedA.outcome.winner, resolvedB.outcome.winner);
+  const before = structuredClone(challengeA);
   challengeA.battle = resolvedA;
   challengeA = act(challengeA, 'challenge-settle', 'SETTLE_BATTLE');
   assert.equal(challengeA.resources.gold, 150);
-  assert.equal(challengeA.story.flags['challenge:challenge-valley'], resolvedA.outcome.winner);
+  assert.equal(challengeA.story.flags['challenge:challenge-valley'], undefined);
+  assert.deepEqual(challengeA.story, before.story);
+  assert.deepEqual(challengeA.hero, before.hero);
+  assert.deepEqual(challengeA.quests, before.quests);
+  assert.deepEqual(challengeA.army, before.army);
+  assert.equal(challengeA.rngState, before.rngState);
+  assert.equal(challengeA.practice.challenges[resolvedA.id].winner, resolvedA.outcome.winner);
 
   let duel = act(fresh(), 'duel', 'START_DUEL');
   assert.equal(duel.battle.practice, 'campaign');

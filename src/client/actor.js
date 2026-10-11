@@ -11,10 +11,19 @@ let worldCssPerUnit = 1;
 export function setWorldCssScale(scale) {
   worldCssPerUnit = Number.isFinite(scale) && scale > 0 ? scale : 1;
 }
+// Reviewed subject failures. The role name stays canonical. The plate must not be treated as that subject.
+const PLATE_LIMITS = {
+  troops: {
+    '1-heavy': 'Plate is one infantryman on a dirt slab, not Charioteer crew, horse and vehicle.',
+  },
+
+};
 function plateView(group, key, plate) {
   if (!plate) return null;
   const extra = plateOverrides[group]?.[key];
-  return extra ? { ...plate, ...extra } : plate;
+  const view = extra ? { ...plate, ...extra } : { ...plate };
+  if (PLATE_LIMITS[group]?.[key]) view.semanticLimit = PLATE_LIMITS[group][key];
+  return view;
 }
 
 export function clipAngles(clip, t, reduced = false) {
@@ -367,6 +376,7 @@ export function drawPlate(world, element, plate, x, y, height, { opacity = 1, ti
     'data-plate-css-height': String(fitted.cssHeight),
     'data-plate-css-cap': fitted.capCss == null ? '' : String(fitted.capCss),
     'data-plate-provisional': plate.provisional ? '1' : '0',
+    'data-semantic-limit': plate.semanticLimit || '',
   });
   group.append(element('ellipse', { cx: 0, cy: 2, rx: Math.max(8, width * 0.28), ry: 5, fill: '#00000066', opacity }));
   group.append(element('image', { href: plate.file, x: -width / 2, y: -drawnHeight, width, height: drawnHeight, opacity, 'data-plate': plate.file }));

@@ -1,0 +1,64 @@
+{
+  "package": {
+    "path": "android\\app\\build\\outputs\\apk\\release\\ages-of-dominion-reborn-preview-release-unsigned-20261011.apk",
+    "bytes": 584456970,
+    "sha256": "8ebaf5e3921f3344a7903c6b4a62232340456c8c5bccff10fb711e5cb3168c88"
+  },
+  "sourceParity": [
+    {
+      "file": "src/client/main.js",
+      "match": false,
+      "sourceSHA256": "d9c16620e51b5de526a0dfead3062be31f971e9e0de859ae54066efa8bb76314",
+      "apkSHA256": "54a4fa955f0e25e995cddca060bc8a9f93c37c5515491a135e23d6f5ec9a8c40"
+    },
+    {
+      "file": "src/client/hero-room.js",
+      "match": false,
+      "sourceSHA256": "71b9d08196ae30aacc1b93f20917e197cc4b7beb73109bdb0114dac9301b74ee",
+      "apkSHA256": "37987c62e3392f14db09df0987b3efd8f3ce625282ab387d45170506e8283380"
+    },
+    {
+      "file": "src/client/game.css",
+      "match": false,
+      "sourceSHA256": "b84d5fc4235683d46fb0348d6fc544924850f223348331864d681f6b9a85aa7e",
+      "apkSHA256": "123755055a8a537a28216973fb2394671ae593fa925cc27a3cc12a7f594887d1"
+    },
+    {
+      "file": "src/data/plate-overrides-20261007.json",
+      "match": false,
+      "sourceSHA256": "ba415be80a6fcfba207947217db1559b27cac649cace6a0db2ab206f53a96970",
+      "apkSHA256": "382cba063a048361a65adca8a200f515f685adb144dd880345d9245aa7ef6a30"
+    }
+  ],
+  "supportMatte": {
+    "file": "assets\\derivatives\\image-repair-20261011\\actors\\plates\\tower-industrial-support.png",
+    "opaqueMagentaPixels": 20074,
+    "samples": {
+      "(0, 0)": [
+        254,
+        0,
+        254,
+        0
+      ],
+      "(50, 50)": [
+        254,
+        3,
+        254,
+        0
+      ],
+      "(450, 250)": [
+        254,
+        1,
+        252,
+        0
+      ],
+      "(470, 800)": [
+        252,
+        0,
+        253,
+        0
+      ]
+    },
+    "limitation": "Sampled exterior alpha is zero. Magenta counts include intentional violet FX and do not prove a remaining floor or semantic matte failure. Full composite/mask review still needed."
+  }
+}

@@ -34,6 +34,9 @@ qa/**/*.webm
 qa/**/*.pdf
 qa/**/*.wav
 qa/**/*.mp3
+# Two essential exact Kingdom composition guides (52050 / 33988 bytes) stay portable.
+!qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v4-guide.png
+!qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v5-guide.png
 
 # Local browser sessions contain caches, databases, and account state.
 chrome-profile/
@@ -86,3 +89,7 @@ service_account*.json
 /qa/planner-device-handoff-20261009/restore-safety-fixture/
 /qa/image-unified-reserve-*/**/vertex-coordinator/**/request_body.json
 /qa/image-unified-reserve-*/**/vertex-coordinator/**/response.json
+
+# Owner-requested today's asset delta and retained APK deliveries stay local.
+/output/device-transfer-20261011/
+/delivery/

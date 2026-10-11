@@ -1,0 +1,352 @@
+{
+  "version": "code-image-complete-20261011",
+  "generatedAt": "2026-10-11T11:06:02.671Z",
+  "gitHeadBefore": "790629dec96226021182c8ab5c03bc4e474b8db9",
+  "overall": "INCOMPLETE",
+  "openMandatoryGates": [
+    "32 scene spatial registration FAIL",
+    "rigs/atlases absent",
+    "Healer body missing",
+    "eight-age earned play beyond Stone Age not demonstrated",
+    "owner acceptance UNVERIFIED",
+    "device STOPPED"
+  ],
+  "tests": {
+    "pass": 111,
+    "fail": 0,
+    "total": 111
+  },
+  "earnedJourney": {
+    "file": "qa/code-image-complete-20261011/earned-journey.json",
+    "checks": 50,
+    "passed": 50,
+    "failed": [],
+    "consoleErrors": 0,
+    "pass": true,
+    "steps": [
+      {
+        "id": "armory-affordable",
+        "at": 1791716087826,
+        "detail": {
+          "waitedMs": 124267
+        }
+      },
+      {
+        "id": "forge-affordable",
+        "at": 1791716265497,
+        "detail": {
+          "waitedMs": 174099
+        }
+      },
+      {
+        "id": "siege-preparation",
+        "at": 1791716268071,
+        "detail": {
+          "towerBought": null,
+          "towers": [
+            "arrow",
+            "slow"
+          ],
+          "gold": 100,
+          "army": [
+            "meleex12",
+            "rangedx6"
+          ]
+        }
+      },
+      {
+        "id": "siege-outcome",
+        "at": 1791716297622,
+        "detail": {
+          "ms": 28241,
+          "winner": "e",
+          "cleared": 2,
+          "waves": 5,
+          "core": -17.614999999999974
+        }
+      },
+      {
+        "id": "endless-progress",
+        "at": 1791716337004,
+        "detail": {
+          "waves": 6,
+          "cleared": 2,
+          "pending": false
+        }
+      }
+    ],
+    "screens": 40
+  },
+  "regression": {
+    "file": "qa/code-image-complete-20261011/regression/browser-retreat-army.json",
+    "checks": [
+      {
+        "id": "programmatic-navigation",
+        "pass": true
+      },
+      {
+        "id": "retreat-cancel",
+        "pass": true
+      },
+      {
+        "id": "army-825x375",
+        "pass": true
+      },
+      {
+        "id": "army-933x424",
+        "pass": true
+      },
+      {
+        "id": "army-1180x820",
+        "pass": true
+      },
+      {
+        "id": "army-1280x720",
+        "pass": true
+      }
+    ],
+    "screensFailed": 0
+  },
+  "package": {
+    "file": "qa/code-image-complete-20261011/package-check.json",
+    "pass": true,
+    "apk": "android/app/build/outputs/apk/release/ages-of-dominion-reborn-preview-release-unsigned-20261011.apk",
+    "apkBytes": 584456970,
+    "apkSHA256": "8ebaf5e3921f3344a7903c6b4a62232340456c8c5bccff10fb711e5cb3168c88",
+    "files": 473,
+    "applicationId": "com.agesofdominion.game.reborn.preview",
+    "permissions": [],
+    "signed": false,
+    "note": "Gradle packaging replaced the release output directory: the stale 4 October app-release-unsigned.apk (319,425,603 bytes, 02f85e52...) no longer exists; no preservation copy was made (no-backup constraint). The 3 October debug APK remains."
+  },
+  "image": {
+    "interface": {
+      "file": "docs/plan/IMAGE-COMPLETE-INTERFACE-2026-10-11.json",
+      "sha256": "4cd311b24217481c0a249f885449e45abeb675f322c6316a9f0bae07db909927",
+      "imageWorkComplete": false,
+      "readySubset": [
+        "troop-stone-melee",
+        "troop-industrial-ranged",
+        "troop-industrial-heavy",
+        "troop-stone-ranged",
+        "healer-boot",
+        "class-knight-standing-body",
+        "class-ranger-standing-body",
+        "class-warlock-standing-body",
+        "class-mage-standing-body",
+        "class-paladin-standing-body",
+        "class-barbarian-standing-body",
+        "class-necromancer-standing-body"
+      ]
+    },
+    "nativeRebind": {
+      "status": "PASS",
+      "pointersRebound": 7
+    },
+    "bodies": {
+      "contract": "src/data/hero-bodies-20261011.json",
+      "ready": [
+        "knight",
+        "ranger",
+        "warlock",
+        "mage",
+        "paladin",
+        "barbarian",
+        "necromancer"
+      ],
+      "missing": [
+        "healer"
+      ]
+    },
+    "plateDespill": {
+      "rows": 108,
+      "repaired": 90,
+      "kept": 18,
+      "residualAbove1pct": [
+        "6-archer",
+        "0-support",
+        "3-support",
+        "4-support",
+        "5-support",
+        "arrow",
+        "splash",
+        "slow",
+        "support"
+      ]
+    },
+    "adoptedPlates": [
+      "troops 0-ranged Slinger (image-vertex-repair-20261009)"
+    ],
+    "paidGeneration": "NONE performed. No provider, account, IAM, billing or CLI change."
+  },
+  "budget": {
+    "hardCapUsd": 80,
+    "reserveReleasedOnce": true,
+    "effectiveReserve": 0,
+    "priorLiabilityUsd": 64.8327,
+    "capacityBeforeLaterLiabilitiesUsd": 15.1673,
+    "unknownHoldsUsd": [
+      0.2872,
+      0.4144
+    ],
+    "invoices": "UNKNOWN",
+    "changedByThisPass": false
+  },
+  "constraints": {
+    "backupsOrZips": "none created",
+    "originalsModified": false,
+    "deviceWork": "none",
+    "gitWriteActions": "none (no add/commit/push/reset/stash/clean)",
+    "moraleDecision": "PENDING_OWNER_DECISION"
+  },
+  "requirementMatrix": [
+    {
+      "id": "REQ-ages",
+      "requirement": "Eight ages, three modes, six slots, connected campaign",
+      "status": "IMPLEMENTED_PARTIALLY_VERIFIED",
+      "evidence": "Core rules cover eight ages; earned browser journey verified Stone Age day 1-3 only (build, recruit, guard fight, forge, equip, siege loss, war modes, story, settings, slots)."
+    },
+    {
+      "id": "REQ-kingdom",
+      "requirement": "Natural Kingdom economy and tutorial",
+      "status": "VERIFIED_IN_BROWSER",
+      "evidence": "Real-time production, scaffold durations and affordability waits (Armory 124 s, forge 174 s) exercised; 17 sites; tutorial steps advance."
+    },
+    {
+      "id": "REQ-hero",
+      "requirement": "Realistic Hero equipment room",
+      "status": "IMPLEMENTED_VERIFIED",
+      "evidence": "Seven static standing bodies (hero-bodies-20261011) with six slot cards, class cards, stats; Healer falls back to portrait (body missing)."
+    },
+    {
+      "id": "REQ-army",
+      "requirement": "Army with reviewed plates and terrain backdrop",
+      "status": "IMPLEMENTED_VERIFIED",
+      "evidence": "Slinger adopted; captions 14 CSS px inside the stage at four sizes; terrain backdrop per age."
+    },
+    {
+      "id": "REQ-forge",
+      "requirement": "Forge with anvil composition and quality menu",
+      "status": "IMPLEMENTED_VERIFIED",
+      "evidence": "Six slot rows, selected piece on the anvil, cost/gain/worn lines, lower-quality recipes exposed; forge+equip verified."
+    },
+    {
+      "id": "REQ-adventure",
+      "requirement": "Adventure map with town approach, guards, dwelling",
+      "status": "IMPLEMENTED_VERIFIED",
+      "evidence": "Dwelling claim UI added; guard encounter settled once; reload persists exact facts."
+    },
+    {
+      "id": "REQ-tactical",
+      "requirement": "Tactical 7x10 battles, Retreat modal",
+      "status": "VERIFIED_IN_BROWSER",
+      "evidence": "Guard, skirmish, duel, challenge flows settle once; programmatic Retreat navigation PASS."
+    },
+    {
+      "id": "REQ-defense",
+      "requirement": "Defense 9x15 siege and endless",
+      "status": "VERIFIED_IN_BROWSER_WITH_LOSS",
+      "evidence": "Siege ran with starter towers, hero and one stack; lost after 2 of 5 waves (documented legitimate outcome); endless extends; settlement survives reload."
+    },
+    {
+      "id": "REQ-war",
+      "requirement": "Five War flows",
+      "status": "VERIFIED_IN_BROWSER",
+      "evidence": "Skirmish, Campaign Siege, Tactical Duel, Challenge, Endless all exercised."
+    },
+    {
+      "id": "REQ-narrative",
+      "requirement": "Story, rival, chapter choice, milestone, saves",
+      "status": "VERIFIED_IN_BROWSER",
+      "evidence": "Rival chosen, chapter choice recorded, milestone recorded, slot save/load round trip."
+    },
+    {
+      "id": "REQ-viewports",
+      "requirement": "Four landscape viewports plus portrait guidance",
+      "status": "VERIFIED_IN_BROWSER",
+      "evidence": "40 screen/viewport combinations: no broken images, no interactive target under 48 px; portrait shows rotate guidance and keeps state."
+    },
+    {
+      "id": "REQ-image-bodies",
+      "requirement": "Seven class bodies processed",
+      "status": "STATIC_READY_NOT_RIGGED",
+      "evidence": "Matte-cleaned static standing bodies; no rigs or atlases; Healer missing."
+    },
+    {
+      "id": "REQ-image-mattes",
+      "requirement": "Magenta residue removal on live plates",
+      "status": "REPAIRED_LOCALLY",
+      "evidence": "90 plates despilled, 18 kept; residual above 1%: 6-archer, 0-support, 3-support, 4-support, 5-support, arrow, splash, slow, support."
+    },
+    {
+      "id": "REQ-image-scenes",
+      "requirement": "32 scene spatial registration",
+      "status": "FAIL_OPEN",
+      "evidence": "All 32 scenes remain spatially unregistered; lane/pad overlays do not match painted terrain. No registered terrain edit was produced; paid constrained edits not performed."
+    },
+    {
+      "id": "REQ-image-rigs",
+      "requirement": "Articulated rigs/atlases",
+      "status": "NOT_DONE",
+      "evidence": "No new rig work; existing measured-part actors unchanged."
+    },
+    {
+      "id": "REQ-package",
+      "requirement": "Web dist and APK parity, zero permissions, preview id",
+      "status": "VERIFIED",
+      "evidence": "473 files identical across source/dist/www/APK; CRC clean; com.agesofdominion.game.reborn.preview; permissions []."
+    },
+    {
+      "id": "REQ-device",
+      "requirement": "Physical-device install",
+      "status": "STOPPED",
+      "evidence": "Owner permission not renewed; no device work."
+    },
+    {
+      "id": "REQ-owner",
+      "requirement": "Owner visual acceptance",
+      "status": "UNVERIFIED",
+      "evidence": "Separate gate."
+    },
+    {
+      "id": "REQ-morale",
+      "requirement": "Positive morale behaviour",
+      "status": "PENDING_OWNER_DECISION",
+      "evidence": "No extra turns invented."
+    }
+  ],
+  "changedFiles": [
+    "M .gitignore",
+    " M CURRENT-STATUS.md",
+    " M android/app/build.gradle",
+    " M docs/BUILD-PROGRESS.md",
+    " M docs/SESSION-HANDOFF.md",
+    " M docs/plan/README.md",
+    " M index.html",
+    " M qa/recovery-executor-20261003/dist-closure.json",
+    " M scripts/build-apk.mjs",
+    " M scripts/build.mjs",
+    " M src/client/game.css",
+    " M src/client/main.js",
+    " M src/client/presentation.js",
+    " M src/data/plate-overrides-20261007.json",
+    "?? docs/plan/IMAGE-COMPLETE-INTERFACE-2026-10-11.json",
+    "?? docs/plan/WHOLE-CODE-IMAGE-COMPLETION-EXECUTOR-PROMPT-2026-10-11.txt",
+    "?? docs/plan/WHOLE-PROJECT-RECHECK-2026-10-11.md",
+    "?? qa/code-image-complete-20261011/",
+    "?? qa/image-complete-20261011/",
+    "?? qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v4-guide.png",
+    "?? qa/recovery-executor-20261003/guides/kingdom-stone-day1-composition-v5-guide.png",
+    "?? qa/whole-project-audit-20261011/",
+    "?? scripts/image_complete_bodies_20261011.py",
+    "?? scripts/image_complete_interface_update_20261011.mjs",
+    "?? scripts/image_despill_plates_20261011.py",
+    "?? scripts/image_rebind_natives_20261011.py",
+    "?? scripts/verify-earned-journey-20261011.mjs",
+    "?? scripts/verify-package-20261011.py",
+    "?? scripts/write-checkpoint-20261011.mjs",
+    "?? src/client/hero-room.js",
+    "?? src/data/hero-bodies-20261011.json",
+    "?? tests/hero-room-20261011.test.mjs"
+  ]
+}
