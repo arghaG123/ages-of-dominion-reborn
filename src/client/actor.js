@@ -13,10 +13,7 @@ export function setWorldCssScale(scale) {
 }
 // Reviewed subject failures. The role name stays canonical. The plate must not be treated as that subject.
 const PLATE_LIMITS = {
-  troops: {
-    '1-heavy': 'Plate is one infantryman on a dirt slab, not Charioteer crew, horse and vehicle.',
-  },
-
+  troops: {},
 };
 function plateView(group, key, plate) {
   if (!plate) return null;
@@ -48,6 +45,12 @@ export function clipAngles(clip, t, reduced = false) {
     pose.weapon = -50 + u * 100;
     pose.spine = -8;
     pose.head = -4;
+  } else if (clip === 'cast') {
+    pose.arm = -70 + swing * 25;
+    pose.forearm = -45 + swing * 15;
+    pose.weapon = -30 + swing * 20;
+    pose.spine = -6;
+    pose.head = -2;
   } else if (clip === 'hit') {
     pose.spine = 26;
     pose.head = 18;

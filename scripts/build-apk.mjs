@@ -98,7 +98,7 @@ const sync = await syncWww();
 console.log(`Synchronized ${sync.copied} generated files into android www. Removed ${sync.removed} stale www files.`);
 const androidDir = path.join(root, 'android');
 if (process.platform === 'win32') {
-  await run(process.env.ComSpec || 'cmd.exe', ['/d', '/c', 'gradlew.bat assembleRelease'], androidDir);
+  await run(process.env.ComSpec || 'cmd.exe', ['/d', '/c', '.\\gradlew.bat assembleRelease'], androidDir);
 } else {
   await run(path.join(androidDir, 'gradlew'), ['assembleRelease'], androidDir);
 }

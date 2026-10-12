@@ -34,6 +34,47 @@ function mountLegs(phase, moving) {
   return { body: [0, 70], ...hooves };
 }
 
+// Multi-joint bone hierarchies for active humanoids and mounts
+export const BONE_HIERARCHY = {
+  root: null,
+  hip: 'root',
+  torso: 'hip',
+  head: 'torso',
+  upperArmL: 'torso',
+  forearmL: 'upperArmL',
+  handL: 'forearmL',
+  upperArmR: 'torso',
+  forearmR: 'upperArmR',
+  handR: 'forearmR',
+  weapon: 'handR',
+  upperLegL: 'hip',
+  lowerLegL: 'upperLegL',
+  footL: 'lowerLegL',
+  upperLegR: 'hip',
+  lowerLegR: 'upperLegR',
+  footR: 'lowerLegR',
+};
+
+export const MOUNT_BONE_HIERARCHY = {
+  root: null,
+  body: 'root',
+  neck: 'body',
+  head: 'neck',
+  saddle: 'body',
+  hipFL: 'body',
+  legFL: 'hipFL',
+  hoofFL: 'legFL',
+  hipFR: 'body',
+  legFR: 'hipFR',
+  hoofFR: 'legFR',
+  hipHL: 'body',
+  legHL: 'hipHL',
+  hoofHL: 'legHL',
+  hipHR: 'body',
+  legHR: 'hipHR',
+  hoofHR: 'legHR',
+};
+
 export function pose(clip, t, { reduced = false } = {}) {
   const u = reduced ? 0 : ((t % 1) + 1) % 1;
   const root = [80, reduced ? 0 : clip === 'walk' || clip === 'mountWalk' ? 0 : Math.sin(u * Math.PI * 2) * 0.4];
@@ -42,6 +83,7 @@ export function pose(clip, t, { reduced = false } = {}) {
   const human = legs(clip === 'walk' && !reduced ? u : 0, clip === 'walk' && !reduced ? 16 : 0);
   if (clip === 'work') arm = -1.2 + Math.sin(u * Math.PI * 2) * 0.8;
   if (clip === 'attack') arm = -2.2 + u * 2.4;
+  if (clip === 'cast') { spine = -0.1; arm = -1.5 + Math.sin(u * Math.PI * 2) * 0.3; }
   if (clip === 'hit') { spine = 0.45; arm = 1.2; }
   if (clip === 'death') { spine = 1.35; arm = 1.6; root[1] = 16; }
   if (clip === 'idle') arm = 0.35 + Math.sin(u * Math.PI * 2) * 0.05;
@@ -58,3 +100,15 @@ export function hoofContact(sample) {
     : [sample.hoofL, sample.hoofR];
   return hooves.filter(([, y]) => Math.abs(y - GROUND) < 1e-6).length;
 }
+
+export function footContact(sample) {
+  return hoofContact(sample);
+}
+
+export function contactPhase(sample) {
+  const c = footContact(sample);
+  if (c >= 2) return 'standing';
+  if (c === 1) return 'plant';
+  return 'swing';
+}
+

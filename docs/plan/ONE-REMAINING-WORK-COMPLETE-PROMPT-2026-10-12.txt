@@ -1,0 +1,127 @@
+# Ages of Dominion Reborn — Complete Remaining Work Prompt (12 October 2026)
+
+Environment: JavaScript ES modules, HTML/CSS/SVG; Node 24.19.0; Python 3.13.7 (Pillow, OpenCV, NumPy, SciPy); Android SDK 36 (minSdk 24, targetSdk 36), Java 21, Gradle 8.11.1 / AGP 8.7.3.
+Active Root: C:/dev/ages-of-dominion-reborn.
+
+================================================================================
+SECTION 1: TASK SUMMARY
+================================================================================
+Execute and finalize the complete remaining scope for Ages of Dominion Reborn, ordered strictly from highest priority to lowest priority. All 127 automated Node tests pass, all 32 physical scenes are closed and registered (ACCEPTED_BOUNDED_USE), and the offline unsigned preview APK (584,765,566 bytes, SHA256 de2fcfa817f14890537c21e278482dbe3e130ca57786ba08187456c566212630) matches 473 package files with zero permissions. The remaining work consists of: (1) completing the Healer standing body plate and Bronze Charioteer vehicle artwork; (2) expanding articulated multi-joint rigs and gait animation curves beyond static plates; (3) auditing all UI screens against the 30 landscape mocks across 4 responsive viewports (825x375, 933x424, 1180x820, 1280x720); (4) packaging the final lean release build; and (5) preparing physical-device handoff and owner review.
+
+================================================================================
+SECTION 2: ENVIRONMENT & FINANCIAL CONSTRAINTS
+================================================================================
+- Runtime: Pure offline local game. Zero declared or granted Android permissions (`uses-permission` empty; no INTERNET, no VIBRATE).
+- Custom build tools: `scripts/serve.mjs` (port 4501), `scripts/build.mjs` (standalone web dist), `scripts/build-apk.mjs` (Android release APK assembly). Do not run Vite.
+- Test runner: `node --test tests/*.test.mjs` (127 tests must maintain 100% pass rate).
+- Package check: `python scripts/verify-package-20261011.py` (must report `pass: true`, 0 diffs across source, dist, www, and APK, CRC clean).
+- Paid Art Generation Authority (if needed):
+  - Hard cap: US$80.00.
+  - $15 reserve released ONCE on 9 Oct (`effectiveReserve: 0`).
+  - Prior liabilities: US$64.8327, leaving US$15.1673 capacity BEFORE later liabilities.
+  - Provider: Google Cloud Vertex AI, project `project-eaa4c1cc-8f19-4d24-9e6`, account `arghawork3@gmail.com`, model `gemini-3.1-flash-image`.
+  - Concurrency: Exactly ONE active or in-flight operation globally across batch and progressive.
+  - Pacing: Progressive inter-call delay >= 20 seconds after successful response completion. Stop immediately on 429 quota exhaustion (retry after >= 60 seconds).
+  - Existing local high-res parts in `assets/high-res/final-native2k/` and `assets/derivatives/rigs/` must be checked before making any paid call.
+
+================================================================================
+SECTION 3: INPUTS & OUTPUTS
+================================================================================
+Inputs:
+- Active Codebase: `src/core/` (campaign, battle, mechanics, defense, navigation, rules, save, challenge), `src/client/` (main, actor, rig, anatomy, hero-room, presentation, projection).
+- Active Data: `src/data/implementation-contract.json`, `reference-data.json`, `stone-scene.json`, `mode-scenes.json`, `actor-atlas.json`, `anatomy-binding-v1.json`, `hero-bodies-20261011.json`, `gear-icons-20261007.json`, `plate-catalog.json`.
+- Visual Reference Mocks: `assets/mocks/INDEX.md` and 30 landscape mock compositions in `design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/`.
+- Predecessor Delivery: `delivery/app-release-unsigned-5007D6D7.apk` (retained predecessor) and `delivery/ages-of-dominion-reborn-preview-8ebaf5e3.apk`.
+- QA Evidence: `qa/remaining-repair-20261011/repair.json`, `qa/scene-verification-20261012/scene-completion-report.json`, `qa/remaining-repair-20261011/earned-scope.json`.
+
+Outputs:
+- Art assets:
+  - `class-healer-standing-body.png` registered in `src/data/hero-bodies-20261011.json` with half-open XYXY cropROI, height 600 CSS px cap, ground contact coordinates.
+  - `troop-bronze-heavy.png` updated with authentic chariot, crew, and harness artwork or verified bounded derivative.
+- Animation contracts:
+  - `src/data/actor-atlas.json` and `src/data/anatomy-binding-v1.json` with multi-joint hierarchy, idle, walk, attack, cast, and hit frames for active actors.
+  - `src/client/rig.js` and `src/client/actor.js` with validated foot plant/lift timing and articulation transforms.
+- Visual inspection report:
+  - `qa/mock-audit-20261012/` comparing rendered screens across 4 landscape viewports against all 30 mocks.
+- Production delivery:
+  - Standalone `dist/` and Android `www/` synced with 0 drift.
+  - Final unsigned release APK at `android/app/build/outputs/apk/release/ages-of-dominion-reborn-preview-release-unsigned-20261011.apk`.
+  - Updated status trackers: `CURRENT-STATUS.md`, `docs/SESSION-HANDOFF.md`, `docs/BUILD-PROGRESS.md`.
+
+================================================================================
+SECTION 4: STEP-BY-STEP INSTRUCTIONS (PRIORITY ORDER)
+================================================================================
+
+### PRIORITY 1: ARTWORK COMPLETION — HEALER BODY & BRONZE CHARIOTEER
+1. Inspect available local high-res Healer source parts: check `assets/high-res/final-native2k/rig-source-parts-healer.png`, `assets/derivatives/rigs/v9/healer/`, and `assets/production/production-12-20261003/images/23-rig-healer.png`.
+2. Assemble and despill a clean full standing body plate for the Healer class (`class-healer-standing-body.png`) with clean alpha, ground contact at bottom, and save to `assets/derivatives/image-complete-20261011/actors/bodies/class-healer-standing-body.png`.
+3. Register `class-healer-standing-body` in `src/data/hero-bodies-20261011.json` with width, height, sha256, half-open XYXY `cropROI`, `groundContact`, and `maxVisibleCssPx: 600`.
+4. Inspect `troop-bronze-heavy` source representations in `assets/production/production-07-20261003/images/08-troop-bronze-heavy.png` and `assets/derivatives/actors/`. If no chariot source exists on disk, assemble a source-compatible chariot vehicle plate or formulate a single 2K progressive request within the US$15.1673 remaining capacity.
+5. Update `docs/plan/IMAGE-COMPLETE-INTERFACE-2026-10-11.json` row statuses for `class-healer-standing-body` and `troop-bronze-heavy`.
+
+### PRIORITY 2: ARTICULATED RIGS & GAIT ANIMATION
+6. Read `src/data/actor-atlas.json`, `src/data/anatomy-binding-v1.json`, and `src/client/rig.js`.
+7. Define bone hierarchy (root, hip, torso, head, left/right upper leg, lower leg, foot, upper arm, forearm, hand/weapon) for the active humanoids and mounts.
+8. Calibrate the walk cycle in `src/client/rig.js`: enforce contact phases where `hoofContact` / `footContact` equals 2 when standing, 1 during plant, and 0 during swing phase.
+9. Verify that animated actors retain origin alignment and do not jitter or drift from their world coordinates during battle steps in `src/client/main.js`.
+10. Ensure fallback to clean static plate rendering remains robust if a rig part or texture coordinate is undefined.
+
+### PRIORITY 3: DESKTOP VISUAL AUDIT AGAINST 30 LANDSCAPE MOCKS
+11. Read `assets/mocks/INDEX.md` and review the 30 mock compositions in `design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/`.
+12. Launch `node scripts/serve.mjs --port 4501` in background.
+13. Using Playwright or headless browser scripting, capture all primary screens (`home`, `kingdom`, `adventure`, `hero`, `army`, `forge`, `market`, `tactical`, `defense`, `story`, `war`, `settings`, `help`) across 4 landscape viewports:
+    - 825x375 (compact mobile landscape)
+    - 933x424 (tall phone landscape)
+    - 1180x820 (tablet landscape)
+    - 1280x720 (standard 16:9 desktop/console landscape)
+14. Compare rendered UI elements against mock compositions:
+    - Minimum 48 CSS px interactive hit targets.
+    - Safe area margins respected on both left and right notches.
+    - Readable copy (minimum 14-15 CSS px font size).
+    - Modal dialogs (Retreat, Forfeit, Save/Load, Settings) properly trap focus and block background clicks.
+15. Record screenshots and side-by-side comparisons in `qa/mock-audit-20261012/`.
+
+### PRIORITY 4: PACKAGE CLOSURE & LEAN PREVIEW APK ASSEMBLY
+16. Run `node scripts/build.mjs` to compile the standalone distribution (`dist/`).
+17. Run `node scripts/build-apk.mjs` to synchronize `dist/` into `android/app/src/main/assets/www/` and execute Gradle `assembleRelease`.
+18. Execute `python scripts/verify-package-20261011.py` and confirm that all package files match with 0 differences, CRC clean, and `pass: true`.
+19. Re-run `node --test tests/*.test.mjs` and verify that all 127 tests pass.
+20. Update `qa/remaining-repair-20261011/repair.json`, `CURRENT-STATUS.md`, `docs/SESSION-HANDOFF.md`, and `docs/BUILD-PROGRESS.md`.
+
+### PRIORITY 5: PHYSICAL DEVICE HANDOFF & OWNER ACCEPTANCE
+21. Verify that the generated APK (`ages-of-dominion-reborn-preview-release-unsigned-20261011.apk`) installs cleanly via `adb install -r` on a physical target Android device (ARM64 / x86_64, API 24+).
+22. Confirm zero crash logs on device startup (`adb logcat -d | grep com.agesofdominion`).
+23. Prepare the final delivery report for the owner with verification hashes, screenshots, and test receipts.
+
+================================================================================
+SECTION 5: EDGE CASES & FAILURE MODES
+================================================================================
+- Fallback Handling: When Healer body is selected, `heroBody('healer')` must return either the valid standing body or gracefully fall back to `paintPortrait` without throwing undefined errors.
+- Coordinate Consistency: All rig part offsets must be computed relative to the actor origin `[cx, cy]` without introducing secondary card scaling.
+- Asset Drift: Any newly created PNG in `assets/` must be included in `scripts/build.mjs` texture catalogs so that `verify-package-20261011.py` does not report `distDiffers` or `apkMissingCurrentFiles`.
+- Budget Cap: Never make an unbudgeted or unreserved Vertex AI call. US$80 hard cap must never be exceeded ($15.1673 max headroom remaining).
+- Permissions: AndroidManifest.xml must never introduce `<uses-permission>` tags (zero network, zero storage, zero hardware permissions).
+
+================================================================================
+SECTION 6: ACCEPTANCE CRITERIA (PASS/FAIL CHECKLIST)
+================================================================================
+- [ ] Healer Standing Body: `class-healer-standing-body` rendered cleanly in Hero equipment room with 600 CSS px cap.
+- [ ] Bronze Heavy Troop: Display plate presents an authentic chariot figure with harness and crew.
+- [ ] Rigs & Gaits: Walk cycles plant and lift feet smoothly without foot-sliding or floating.
+- [ ] 30 Landscape Mocks: Visual comparison audit documented in `qa/mock-audit-20261012/` with 0 clipped buttons or unreadable text.
+- [ ] Responsive Viewports: Clean layout without overflow at 825x375, 933x424, 1180x820, and 1280x720.
+- [ ] Test Suite: 127 / 127 tests pass (`node --test tests/*.test.mjs`).
+- [ ] Package Closure: `python scripts/verify-package-20261011.py` reports `pass: true` (0 diffs, CRC clean).
+- [ ] Offline & Zero Permissions: Release APK declares zero permissions in manifest and requires no network.
+
+================================================================================
+SECTION 7: DO NOT (COMMON MISTAKES TO AVOID)
+================================================================================
+- Do NOT run `vite` or install unnecessary npm packages; use custom `scripts/serve.mjs` and `scripts/build.mjs`.
+- Do NOT re-alter already verified mechanics, blast targeting, 32 scene geometry, or Resurrection math.
+- Do NOT make blind, repeated, or concurrent Vertex AI API calls. Maintain single-operation mutex and >=20s pacing.
+- Do NOT resize or warp existing scene geometries to force fit. Camera matrices are frozen.
+- Do NOT delete or modify historical delivery APKs in `delivery/`.
+- Do NOT commit or push Git without explicit user direction.
+- Do NOT claim visual or physical completion without providing rendered evidence files.
+

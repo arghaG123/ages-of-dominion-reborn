@@ -5,10 +5,10 @@ import crypto from 'node:crypto';
 import heroBodies from '../src/data/hero-bodies-20261011.json' with { type: 'json' };
 import { bodyMatchesKit, fitBody, heroBody, kitEra, selectGearIcon } from '../src/client/hero-room.js';
 
-test('hero body contract: seven static standing bodies exist with pinned bytes, Healer recorded missing', () => {
+test('hero body contract: eight static standing bodies exist with pinned bytes', () => {
   const ids = Object.keys(heroBodies.bodies);
-  assert.equal(ids.length, 7);
-  assert.ok(heroBodies.missing?.healer, 'Healer must be recorded as missing, not invented');
+  assert.equal(ids.length, 8);
+  assert.ok(heroBodies.bodies.healer, 'Healer standing body must be present');
   for (const [id, body] of Object.entries(heroBodies.bodies)) {
     assert.ok(fs.existsSync(body.file), `${id} body file missing: ${body.file}`);
     const sha = crypto.createHash('sha256').update(fs.readFileSync(body.file)).digest('hex');

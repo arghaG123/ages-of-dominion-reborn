@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-12",
+  "status": "INCOMPLETE",
+  "mattes": {
+    "tower-industrial-support": {
+      "status": "PASS",
+      "file": "assets/derivatives/image-repair-20261011/actors/plates/tower-industrial-support.png",
+      "composite": "qa/image-repair-20261011/support-composite.jpg",
+      "internalHolesCleared": 7038,
+      "rimPixelsDespilled": 10912,
+      "violetRaysRestored": 40954,
+      "method": "border-flood exterior plus enclosed interior magenta holes cleared; rim despilled and feathered; violet rays protected"
+    },
+    "attacker-medieval-archer": {
+      "status": "PASS",
+      "file": "assets/derivatives/image-repair-20261011/actors/plates/attacker-medieval-archer.png",
+      "floorPixelsCleared": 653251,
+      "method": "border-connected flat olive rectangle cleared; subject dilated by 1 px and kept; RGB preserved"
+    },
+    "tower-medieval-arrow": {
+      "status": "PASS",
+      "file": "assets/derivatives/image-complete-20261011/actors/plates/tower-medieval-arrow.png",
+      "bottomFoundation": "natural stone/dirt (std 23.43)",
+      "oliveBoxDefect": "ABSENT",
+      "magentaPixels": 0
+    }
+  },
+  "preparedSources": {
+    "class-healer-standing-body": {
+      "status": "PREPARED_PACK_READY",
+      "pack": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-healer-standing-body/pack.json",
+      "guide": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-healer-standing-body/guide.png",
+      "prompt": "qa/image-vertex-repair-20261009/actors/regeneration/packs/class-healer-standing-body/prompt.txt",
+      "format": "2K 2048x2048 PNG",
+      "maxCostUSD": 0.40
+    },
+    "troop-bronze-heavy": {
+      "status": "PREPARED_PACK_READY",
+      "pack": "assets/high-res/later73-preparation-packs/troop-bronze-heavy",
+      "format": "2K 2048x2048 PNG",
+      "subject": "Bronze Age Charioteer with heavy two-wheeled bronze chariot and team of horses",
+      "maxCostUSD": 0.40
+    }
+  },
+  "accounting": {
+    "hardCapUSD": 80.0,
+    "effectiveReserveUSD": 0.0,
+    "priorLiabilitiesUSD": 64.8327,
+    "capacityUSD": 15.1673,
+    "activeBatchLock": "RELEASED",
+    "submissionMutex": "RELEASED"
+  },
+  "nextStage": "Independent desktop visual and functionality verification before completed-build owner review"
+}
+

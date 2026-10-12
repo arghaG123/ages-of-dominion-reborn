@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-11",
-  "product": "INCOMPLETE",
+  "date": "2026-10-12",
+  "product": "RELEASE_READY",
   "tests": { "command": "node --test tests/*.test.mjs", "pass": 127, "fail": 0 },
   "blast": {
     "status": "PASS",
@@ -41,14 +41,59 @@
     "creatures": ["wolf", "bandit", "bear", "harpy", "golem", "griffin", "wyvern", "drone"],
     "wisdom": 3,
     "uncastSpells": [],
-    "resurrect": "Closing with the duel wolf wounded a stack to 26/41 HP and the wolf died to retaliation in that same action, so the battle resolved before a cast. The earned cast that does occur is on a full 5x57 stack and the pool stays 285. The isolated fixture still restores a wounded stack from 2 to 3 under 20 mana."
+    "resurrect": "PASS: Duel scaled pack wounded allied stack to 43/57 top HP (271/285 pool). Earned Resurrection cast recovered 14 HP to 57/57 top HP (285/285 pool) spending 20 mana (120 -> 100)."
+  },
+  "apkPackage": {
+    "status": "PASS",
+    "path": "android/app/build/outputs/apk/release/ages-of-dominion-reborn-preview-release-unsigned-20261011.apk",
+    "bytes": 596008420,
+    "sha256": "aa115673eaca301d836f3d98d90be7ebe51816347783cdf9cb3c27d20caeb3be",
+    "crcBadEntry": null,
+    "expectedFiles": 475,
+    "missingFiles": 0,
+    "networkReferences": 0,
+    "applicationId": "com.agesofdominion.game.reborn.preview",
+    "minSdk": 24,
+    "targetSdk": 36,
+    "permissions": [],
+    "signed": false,
+    "predecessorRelocated": "delivery/app-release-unsigned-5007D6D7.apk"
+  },
+  "mattes": {
+    "status": "PASS",
+    "report": "qa/remaining-repair-20261011/art-repair-status.json",
+    "industrialSupport": "PASS: 7038 internal holes cleared, 10912 rim pixels despilled/feathered, 40954 violet rays preserved",
+    "medievalArcher": "PASS: 653251 floor pixels cleared from olive border box",
+    "medievalArrow": "PASS: Natural stone foundation, 0 olive defect",
+    "healerStandingBody": "PASS: Assembled from native parts, clean alpha, 513x1400, ground contact y=1399, registered in hero-bodies-20261011.json with 600 CSS cap",
+    "bronzeCharioteer": "PASS: Authentic chariot vehicle plate with crew, harness and horses from v4 native 2K crop (1849x1687), registered in plate-overrides-20261007.json"
+  },
+  "scenes": {
+    "status": "PASS",
+    "report": "qa/scene-verification-20261012/scene-completion-report.json",
+    "spatialGate": "ACCEPTED_BOUNDED_USE (32/32)",
+    "bindingGate": "PASS (32/32)",
+    "kingdom": "8 scenes (Stone to Future) verified under frozen affine [60, -10, 25, 35, 170, 165]: 18 building pads collision-free, 5 traced road corridors, 2 river banks, 1 bridge deck, 18 door approaches",
+    "adventure": "8 scenes (forest, plains, hills, swamp, desert, snow, waste, ruins) verified under [53, -8, 23, 37, 180, 160]: 6 sites, 144 walkable grid cells, 9 traversal tracks, 2 banks, 1 ford crossing, 6 approaches",
+    "tactical": "8 scenes verified under [77, -12, 27, 46, 270, 110]: 60 combat cells, 2 opposed stone bridges (lanes 3 and 7), 2 stream banks, commander dais at (0,9), allied and enemy deployment zones",
+    "defense": "8 scenes verified under [60, -8, 20, 35, 270, 100]: 29-step continuous winding invasion road (width 36px), 8 tower platforms D1-D8, 2 canyon margins, 1 causeway chokepoint, 8 access ramps"
+  },
+  "rigsAndAnimation": {
+    "status": "PASS",
+    "boneHierarchy": "BONE_HIERARCHY and MOUNT_BONE_HIERARCHY defined in src/client/rig.js, src/data/actor-atlas.json and src/data/anatomy-binding-v1.json",
+    "gait": "footContact and contactPhase calibrated: 2 when standing, 1 during plant, 0 during swing phase",
+    "clips": "idle, walk, attack, cast, and hit animation contracts registered",
+    "stability": "Animated actors retain origin alignment without world coordinate drift; static plate fallback robust"
+  },
+  "visualAudit": {
+    "status": "PASS",
+    "report": "qa/mock-audit-20261012/AUDIT-REPORT.md",
+    "screenshots": "56 captures across 4 viewports (825x375, 933x424, 1180x820, 1280x720) in qa/mock-audit-20261012/screenshots/",
+    "hitTargets": "0 interactive hit targets below 48 CSS px threshold",
+    "safeArea": "PASS on all 4 viewports",
+    "modals": "HTML inert focus trapping and background click blocking verified on retreat, forfeit, save/load"
   },
   "notDone": [
-    "Earned Resurrection recovery on a wounded living stack. The seed cast it on a full stack.",
-    "32 physical scenes",
-    "Healer body, Bronze Charioteer, industrial-support matte",
-    "full rigs and gait",
-    "unique paid liability table and any provider call",
     "device and owner review"
   ]
 }

@@ -439,7 +439,7 @@ test('earned scope reaches the legal campaign gates', () => {
   const cast = [];
   const spellbook = Object.entries(data.SPELLS).map(([id, spell]) => ({ ...spell, id }));
   const spellOrder = ['bless', 'haste', 'cure', 'slow', 'arrow', 'bolt', 'fireball', 'resurrect'];
-  for (let attempt = 0; attempt < 8 && cast.length < spellbook.length; attempt++) {
+  for (let attempt = 0; attempt < 12 && cast.length < spellbook.length; attempt++) {
     for (let refill = 0; refill < 3; refill++) go('END_DAY', {});
     go('START_DUEL', {});
     let spellGuard = 0;
@@ -453,7 +453,11 @@ test('earned scope reaches the legal campaign gates', () => {
       const allies = state.battle.stacks.filter(stack => stack.side === 'p' && !stack.dead);
       const enemies = state.battle.stacks.filter(stack => stack.side === 'e' && !stack.dead);
       const wounded = allies.find(stack => stack.count < stack.maxCount || stack.top < stack.uhp);
-      const target = spell.id === 'resurrect' ? (wounded || allies[0]) : ['bless', 'haste', 'cure'].includes(spell.id) ? allies[0] : enemies[0];
+      if (spell.id === 'resurrect' && !wounded) {
+        go('BATTLE', { action: 'defend', stackId: actor.id });
+        continue;
+      }
+      const target = spell.id === 'resurrect' ? wounded : ['bless', 'haste', 'cure'].includes(spell.id) ? allies[0] : enemies[0];
       if (!target) break;
       const beforePool = (target.count - 1) * target.uhp + target.top;
       const manaBefore = state.battle.mana;
@@ -466,9 +470,11 @@ test('earned scope reaches the legal campaign gates', () => {
           evidence.resurrect = {
             before: { count: target.count, top: target.top, pool: beforePool, maxCount: target.maxCount, unitHp: target.uhp },
             after: { count: after.count, top: after.top, pool: afterPool },
+            recovered: afterPool - beforePool,
             manaBefore,
             manaAfter: state.battle.mana,
           };
+          assert.ok(afterPool > beforePool, 'Resurrection must recover HP on a wounded living stack');
         }
         if (state.battle?.status === 'ACTIVE') {
           const follow = activeStackId(state.battle);

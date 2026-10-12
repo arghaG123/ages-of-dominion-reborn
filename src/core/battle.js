@@ -669,9 +669,12 @@ export function createEncounterBattle(state, data) {
 
 export function createDuelBattle(state, data) {
   const allies = fieldStacks(state, data, state.army.filter(stack => stack.count > 0).slice(0, 3), ALLIED_CELLS, 'p');
-  const pack = [];
-  const enemy = { id: 'duel-e', kind: 'creature', type: 'wolf', age: state.age, count: 4, rank: 0, xp: 0 };
-  pack.push(enemy);
+  const pack = [
+    { id: 'duel-e', kind: 'creature', type: 'wolf', age: state.age, count: 4, rank: 0, xp: 0 },
+  ];
+  if (state.age >= 1) {
+    pack.push({ id: 'duel-e2', kind: 'creature', type: 'wolf', age: state.age, count: 4, rank: 0, xp: 0 });
+  }
   const enemies = fieldStacks(state, data, pack, ENEMY_CELLS, 'e');
   const stats = heroStats(state, data);
   return startBattle({

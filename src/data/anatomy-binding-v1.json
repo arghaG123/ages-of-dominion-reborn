@@ -254,5 +254,243 @@
     "bow-torso-70": 4568
   },
   "overlapPass": true,
-  "overlapFailures": []
+  "overlapFailures": [],
+  "boneHierarchy": {
+    "root": null,
+    "hip": "root",
+    "torso": "hip",
+    "head": "torso",
+    "upperArmL": "torso",
+    "forearmL": "upperArmL",
+    "handL": "forearmL",
+    "upperArmR": "torso",
+    "forearmR": "upperArmR",
+    "handR": "forearmR",
+    "weapon": "handR",
+    "upperLegL": "hip",
+    "lowerLegL": "upperLegL",
+    "footL": "lowerLegL",
+    "upperLegR": "hip",
+    "lowerLegR": "upperLegR",
+    "footR": "lowerLegR"
+  },
+  "mountBoneHierarchy": {
+    "root": null,
+    "body": "root",
+    "neck": "body",
+    "head": "neck",
+    "saddle": "body",
+    "hipFL": "body",
+    "legFL": "hipFL",
+    "hoofFL": "legFL",
+    "hipFR": "body",
+    "legFR": "hipFR",
+    "hoofFR": "legFR",
+    "hipHL": "body",
+    "legHL": "hipHL",
+    "hoofHL": "legHL",
+    "hipHR": "body",
+    "legHR": "hipHR",
+    "hoofHR": "legHR"
+  },
+  "clips": {
+    "idle": {
+      "duration": 1.0,
+      "loop": true,
+      "frames": [
+        {
+          "time": 0.0,
+          "spine": 0,
+          "arm": 14,
+          "forearm": 8,
+          "weapon": 16,
+          "thighL": 8,
+          "thighR": -6,
+          "shinL": 4,
+          "shinR": 6,
+          "footContact": 2
+        },
+        {
+          "time": 0.5,
+          "spine": 0.5,
+          "arm": 16,
+          "forearm": 10,
+          "weapon": 18,
+          "thighL": 8,
+          "thighR": -6,
+          "shinL": 4,
+          "shinR": 6,
+          "footContact": 2
+        },
+        {
+          "time": 1.0,
+          "spine": 0,
+          "arm": 14,
+          "forearm": 8,
+          "weapon": 16,
+          "thighL": 8,
+          "thighR": -6,
+          "shinL": 4,
+          "shinR": 6,
+          "footContact": 2
+        }
+      ]
+    },
+    "walk": {
+      "duration": 0.8,
+      "loop": true,
+      "frames": [
+        {
+          "time": 0.0,
+          "spine": 0,
+          "arm": 0,
+          "forearm": 12,
+          "weapon": 16,
+          "thighL": 0,
+          "thighR": 0,
+          "shinL": 0,
+          "shinR": 0,
+          "footContact": 2
+        },
+        {
+          "time": 0.25,
+          "spine": -2,
+          "arm": -22,
+          "forearm": 12,
+          "weapon": 16,
+          "thighL": 32,
+          "thighR": -32,
+          "shinL": 28,
+          "shinR": 0,
+          "footContact": 1
+        },
+        {
+          "time": 0.5,
+          "spine": 0,
+          "arm": 0,
+          "forearm": 12,
+          "weapon": 16,
+          "thighL": 0,
+          "thighR": 0,
+          "shinL": 0,
+          "shinR": 0,
+          "footContact": 2
+        },
+        {
+          "time": 0.75,
+          "spine": 2,
+          "arm": 22,
+          "forearm": 12,
+          "weapon": 16,
+          "thighL": -32,
+          "thighR": 32,
+          "shinL": 0,
+          "shinR": 28,
+          "footContact": 1
+        },
+        {
+          "time": 1.0,
+          "spine": 0,
+          "arm": 0,
+          "forearm": 12,
+          "weapon": 16,
+          "thighL": 0,
+          "thighR": 0,
+          "shinL": 0,
+          "shinR": 0,
+          "footContact": 2
+        }
+      ]
+    },
+    "attack": {
+      "duration": 0.6,
+      "loop": false,
+      "frames": [
+        {
+          "time": 0.0,
+          "spine": -8,
+          "head": -4,
+          "arm": -78,
+          "forearm": -36,
+          "weapon": -50,
+          "footContact": 2
+        },
+        {
+          "time": 0.5,
+          "spine": -4,
+          "head": -2,
+          "arm": -3,
+          "forearm": -12,
+          "weapon": 0,
+          "footContact": 2
+        },
+        {
+          "time": 1.0,
+          "spine": 0,
+          "head": 0,
+          "arm": 72,
+          "forearm": 12,
+          "weapon": 50,
+          "footContact": 2
+        }
+      ]
+    },
+    "cast": {
+      "duration": 0.7,
+      "loop": false,
+      "frames": [
+        {
+          "time": 0.0,
+          "spine": -6,
+          "head": -2,
+          "arm": -70,
+          "forearm": -45,
+          "weapon": -30,
+          "footContact": 2
+        },
+        {
+          "time": 0.5,
+          "spine": -8,
+          "head": -3,
+          "arm": -45,
+          "forearm": -30,
+          "weapon": -10,
+          "footContact": 2
+        },
+        {
+          "time": 1.0,
+          "spine": 0,
+          "head": 0,
+          "arm": 14,
+          "forearm": 8,
+          "weapon": 16,
+          "footContact": 2
+        }
+      ]
+    },
+    "hit": {
+      "duration": 0.4,
+      "loop": false,
+      "frames": [
+        {
+          "time": 0.0,
+          "spine": 26,
+          "head": 18,
+          "arm": 34,
+          "forearm": 20,
+          "weapon": 16,
+          "footContact": 2
+        },
+        {
+          "time": 1.0,
+          "spine": 0,
+          "head": 0,
+          "arm": 14,
+          "forearm": 8,
+          "weapon": 16,
+          "footContact": 2
+        }
+      ]
+    }
+  }
 }

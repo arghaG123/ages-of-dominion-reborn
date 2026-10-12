@@ -1,7 +1,7 @@
 {
   "version": "hero-bodies-20261011",
   "status": "STATIC_STANDING_BODIES_NOT_RIGS",
-  "note": "Seven realistic standing class bodies, matte-cleaned from the 9 October natives for the Hero equipment room and class choice. Healer has no body native and stays on its portrait card. These are single front poses, not articulated rigs; animation eligibility is separate. Contract revision 2026-10-11: cropROI is half-open XYXY; status is PARTIAL because kit era and rigs are incomplete; the 600 CSS cap is the Hero-room figure only.",
+  "note": "Eight realistic standing class bodies, matte-cleaned from the 9 October natives for the Hero equipment room and class choice. All 8 classes now have standing bodies. These are single front poses, not articulated rigs; animation eligibility is separate. Contract revision 2026-10-12: cropROI is half-open XYXY; the 600 CSS cap is the Hero-room figure only.",
   "maxVisibleCssPx": 600,
   "bodies": {
     "knight": {
@@ -453,11 +453,75 @@
         "purpose": "HERO_ROOM_STANDING full figure. Ordinary plates stay 130. Gear, mounts and effects stay 64. This cap is not a Forge or world-actor permission."
       },
       "rigEligibility": "NOT_APPLICABLE"
+    },
+    "healer": {
+      "id": "class-healer-standing-body",
+      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-healer-standing-body.png",
+      "sha256": "dbd779c15bd63381708ef759953cca84a319126c37bc5060f805ba2e68f47862",
+      "bytes": 1009748,
+      "width": 513,
+      "height": 1400,
+      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "sourceSHA256": "3eb2d3258c70a8523cba96e62c1ba5bb46b28f8fdfce077a7d4e5fcaab114383",
+      "native": "assets/high-res/final-native2k/rig-source-parts-healer.png",
+      "nativeSHA256": "3eb2d3258c70a8523cba96e62c1ba5bb46b28f8fdfce077a7d4e5fcaab114383",
+      "cropROI": [
+        260,
+        30,
+        742,
+        1345
+      ],
+      "cropROIConvention": "half-open-xyxy",
+      "sourceToOutput": [
+        1.064638783269962,
+        0,
+        0,
+        1.064638783269962,
+        -276.8060836501901,
+        -31.93916349809886
+      ],
+      "groundContact": {
+        "y": 1399,
+        "x": [
+          159,
+          427
+        ]
+      },
+      "foot": [
+        0.571150097465887,
+        0.9992857142857143
+      ],
+      "side": "FRONT",
+      "intendedUse": "HERO_ROOM_STANDING",
+      "depictedKitEra": "ancient",
+      "depictedKitEvidence": "Serene ancient healer robes, healing staff, celestial circlet and grounded sandals.",
+      "maxVisibleCssPx": 600,
+      "matteRepair": {
+        "droppedComponents": 0,
+        "droppedComponentPixels": 0,
+        "droppedGroundPixels": 0,
+        "groundShadowRuleApplied": false
+      },
+      "status": "PARTIAL",
+      "notRig": true,
+      "frames": {
+        "source": "NATIVE",
+        "intermediate": "SOURCE_BODY",
+        "part": "STANDING",
+        "canvas": "OUTPUT",
+        "trim": "half-open-xyxy"
+      },
+      "articulation": "NOT_APPLICABLE",
+      "staticApplicability": "HERO_ROOM_STANDING",
+      "displayCap": {
+        "cssPx": 600,
+        "basis": "HEIGHT",
+        "purpose": "HERO_ROOM_STANDING full figure. Ordinary plates stay 130. Gear, mounts and effects stay 64. This cap is not a Forge or world-actor permission."
+      },
+      "rigEligibility": "NOT_APPLICABLE"
     }
   },
-  "missing": {
-    "healer": "no standing-body native exists; portrait card remains the Hero presentation"
-  },
+  "missing": {},
   "vocabulary": {
     "status": [
       "READY",

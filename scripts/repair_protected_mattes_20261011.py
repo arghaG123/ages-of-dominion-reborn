@@ -57,17 +57,29 @@ def repair_support() -> dict:
     damaged = ROOT / "assets/derivatives/image-complete-20261011/actors/plates/tower-industrial-support.png"
     src = np.array(Image.open(source).convert("RGBA"))
     rgb = src[:, :, :3]
+    damaged_alpha = np.array(Image.open(damaged).convert("RGBA"))[:, :, 3]
     magenta = np.array([255, 0, 255], dtype=np.int16)
     distance = np.linalg.norm(rgb.astype(np.int16) - magenta, axis=2)
     flat = local_std(rgb) < 14
-    # Flat backdrop only. High-contrast violet bolts and the cyan ring stay.
-    mask = border_flood((distance < 90) & flat)
-    alpha = np.where(mask, 0, 255).astype(np.uint8)
+    ext_mask = border_flood((distance < 90) & flat & (rgb[:, :, 1] < 45))
+    int_mask = (distance < 80) & flat & (rgb[:, :, 1] < 45)
+    key_mask = ext_mask | int_mask
+    dilated = ndimage.binary_dilation(key_mask, iterations=3)
+    rim = dilated & ~key_mask
+    rim_mag = rim & (distance < 150) & (rgb[:, :, 0] > rgb[:, :, 1]) & (rgb[:, :, 2] > rgb[:, :, 1])
+    alpha = np.ones(distance.shape, dtype=np.float32) * 255.0
+    alpha[key_mask] = 0.0
+    alpha[rim_mag] = np.clip((distance[rim_mag] - 80.0) / 70.0, 0.0, 1.0) * 255.0
+    alpha = alpha.astype(np.uint8)
+    out_rgb = rgb.astype(np.float32).copy()
+    excess = np.maximum(0.0, np.minimum(out_rgb[:, :, 0] - out_rgb[:, :, 1], out_rgb[:, :, 2] - out_rgb[:, :, 1]))
+    out_rgb[rim_mag, 0] -= excess[rim_mag] * 0.8
+    out_rgb[rim_mag, 2] -= excess[rim_mag] * 0.8
+    out_rgb = np.clip(out_rgb, 0, 255).astype(np.uint8)
     OUT.mkdir(parents=True, exist_ok=True)
     dest = OUT / "tower-industrial-support.png"
-    save_rgba(dest, rgb, alpha)
-    damaged_alpha = np.array(Image.open(damaged).convert("RGBA"))[:, :, 3]
-    restored = int(((damaged_alpha < 16) & (alpha > 250) & ~mask).sum())
+    save_rgba(dest, out_rgb, alpha)
+    restored = int(((damaged_alpha < 16) & (alpha > 250) & ~key_mask).sum())
     return {
         "id": "5-support",
         "file": dest.relative_to(ROOT).as_posix(),
@@ -77,10 +89,12 @@ def repair_support() -> dict:
         "height": int(rgb.shape[0]),
         "source": source.relative_to(ROOT).as_posix(),
         "damagedKept": damaged.relative_to(ROOT).as_posix(),
-        "backgroundPixels": int(mask.sum()),
+        "backgroundPixels": int(key_mask.sum()),
+        "internalHolesCleared": int((int_mask & ~ext_mask).sum()),
+        "rimPixelsDespilled": int(rim_mag.sum()),
         "opaquePixels": int((alpha > 250).sum()),
         "restoredFromNearlyTransparent": restored,
-        "method": "border-connected flat magenta from the immutable source; RGB copied, not recoloured",
+        "method": "border-flood exterior plus enclosed interior magenta holes cleared; rim despilled and feathered; violet rays protected",
     }
 
 
