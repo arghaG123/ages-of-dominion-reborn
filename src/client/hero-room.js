@@ -2,6 +2,7 @@
 // cards with gear icons, class choice cards and the stat strip into the 1376x768 world.
 // The backdrop is native SVG (no interior painting exists); it is labelled as such in data-backdrop.
 import heroBodies from '../data/hero-bodies-20261011.json' with { type: 'json' };
+import gearIcons from '../data/gear-icons-20261007.json' with { type: 'json' };
 import { HERO_SLOT_COLUMNS, heroStage } from './presentation.js';
 import { visibleBox } from './visible-size.js';
 
@@ -72,6 +73,32 @@ function paintPortrait(world, element, ctx, stage, classId, portrait, reason) {
   world.append(group);
 }
 
+function paintEquippedSockets(group, element, state, fitted) {
+  if (!state?.hero?.equip || !fitted) return;
+  const sockets = [
+    { slot: 'weapon', x: fitted.x + fitted.width * 0.76, y: fitted.y + fitted.height * 0.44, size: 84 },
+    { slot: 'offhand', x: fitted.x - 24, y: fitted.y + fitted.height * 0.48, size: 84 },
+    { slot: 'helm', x: fitted.x + (fitted.width - 76) / 2, y: fitted.y - 28, size: 76 },
+  ];
+  for (const s of sockets) {
+    const item = state.hero.equip[s.slot];
+    if (!item) continue;
+    const icon = selectGearIcon(gearIcons.icons, s.slot, item);
+    if (icon?.file) {
+      const g = element('g', { 'data-socket': s.slot, 'data-socket-item': item.id || s.slot });
+      g.append(element('image', {
+        href: icon.file,
+        x: s.x,
+        y: s.y,
+        width: s.size,
+        height: s.size,
+        'data-gear-icon': icon.id,
+      }));
+      group.append(g);
+    }
+  }
+}
+
 // Slot cards, class cards and copy live in the CSS overlay. The world keeps the figure and the room.
 export function drawHeroRoom(world, element, ctx) {
   const stage = heroStage();
@@ -82,18 +109,15 @@ export function drawHeroRoom(world, element, ctx) {
   const body = heroBody(classId);
   const portrait = ctx.portraitCard(classId, state.age) || ctx.pendingPortrait(classId, state.age);
   const kitMatches = body && bodyMatchesKit(body, state.age);
-  if (body && kitMatches) {
+  if (body) {
     const fitted = fitBody(body, stage.figure.x, stage.ground.y, stage.card.height, ctx.cssScale);
-    const group = element('g', { 'data-actor': classId, 'data-clip': 'idle', 'data-presentation': 'standing-body', 'data-articulation': 'static-standing', 'data-kit-match': '1', 'data-card-box': `${stage.card.x},${stage.card.y},${stage.card.width},${stage.card.height}` });
-    group.append(element('image', { href: body.file, x: fitted.x, y: fitted.y, width: fitted.width, height: fitted.height, 'data-body': body.id, 'data-body-sha256': body.sha256, 'data-depicted-kit': body.depictedKitEra, 'data-visible-css-height': String(Math.round(fitted.cssHeight)) }));
-    world.append(group);
-  } else if (body && !body.depictedKitEra) {
-    const fitted = fitBody(body, stage.figure.x, stage.ground.y, stage.card.height, ctx.cssScale);
-    const group = element('g', { 'data-actor': classId, 'data-clip': 'idle', 'data-presentation': 'standing-body', 'data-articulation': 'static-standing', 'data-kit-match': 'unverified', 'data-card-box': `${stage.card.x},${stage.card.y},${stage.card.width},${stage.card.height}` });
-    group.append(element('image', { href: body.file, x: fitted.x, y: fitted.y, width: fitted.width, height: fitted.height, 'data-body': body.id, 'data-body-sha256': body.sha256, 'data-depicted-kit': 'unverified', 'data-visible-css-height': String(Math.round(fitted.cssHeight)) }));
+    const matchStatus = kitMatches ? '1' : body.depictedKitEra ? 'mismatch' : 'unverified';
+    const group = element('g', { 'data-actor': classId, 'data-clip': 'idle', 'data-presentation': 'standing-body', 'data-articulation': 'static-standing', 'data-kit-match': matchStatus, 'data-card-box': `${stage.card.x},${stage.card.y},${stage.card.width},${stage.card.height}` });
+    group.append(element('image', { href: body.file, x: fitted.x, y: fitted.y, width: fitted.width, height: fitted.height, 'data-body': body.id, 'data-body-sha256': body.sha256, 'data-depicted-kit': body.depictedKitEra || 'unverified', 'data-visible-css-height': String(Math.round(fitted.cssHeight)) }));
+    paintEquippedSockets(group, element, state, fitted);
     world.append(group);
   } else {
-    paintPortrait(world, element, ctx, stage, classId, portrait, body ? 'kit-era-mismatch' : 'no-standing-body');
+    paintPortrait(world, element, ctx, stage, classId, portrait, 'no-standing-body');
   }
   return stage;
 }

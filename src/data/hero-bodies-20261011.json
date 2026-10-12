@@ -457,8 +457,8 @@
     "healer": {
       "id": "class-healer-standing-body",
       "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-healer-standing-body.png",
-      "sha256": "dbd779c15bd63381708ef759953cca84a319126c37bc5060f805ba2e68f47862",
-      "bytes": 1009748,
+      "sha256": "babb4fda8ae7f42d85f5735aa11576ca93d153a26fe038344f75765953a92f35",
+      "bytes": 1004382,
       "width": 513,
       "height": 1400,
       "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
@@ -498,9 +498,10 @@
       "maxVisibleCssPx": 600,
       "matteRepair": {
         "droppedComponents": 0,
-        "droppedComponentPixels": 0,
+        "droppedComponentPixels": 1649,
         "droppedGroundPixels": 0,
-        "groundShadowRuleApplied": false
+        "groundShadowRuleApplied": false,
+        "magentaNeckStripeRemoved": true
       },
       "status": "PARTIAL",
       "notRig": true,
@@ -518,7 +519,8 @@
         "basis": "HEIGHT",
         "purpose": "HERO_ROOM_STANDING full figure. Ordinary plates stay 130. Gear, mounts and effects stay 64. This cap is not a Forge or world-actor permission."
       },
-      "rigEligibility": "NOT_APPLICABLE"
+      "rigEligibility": "NOT_APPLICABLE",
+      "compositionMethod": "coherent neck despill, detached island cleared, source parts provenance recorded"
     }
   },
   "missing": {},

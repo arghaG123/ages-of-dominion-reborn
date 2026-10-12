@@ -64,6 +64,7 @@ let challengeDraft = { seed: '123456789', code: 'valley-1', error: '', copy: '' 
 let blastAim = false;
 let defensePad = '';
 let view = initial.status === 'VALID' ? rememberedView(localStorage, screens) : 'home';
+let lastRenderedView = null;
 const tutorialCue = ['Build a Lumber Camp.', 'Build a Farm.', 'Build a Quarry.', 'Build a Barracks.', 'Recruit a stack.', 'Leave town.', 'Fight the guard.', 'Hold the lane.'];
 const tutorialChoice = ['lumber', 'farm', 'quarry', 'barracks', 'recruit:', 'enter-adventure', 'begin-encounter', 'start-siege'];
 const slotName = { helm: 'Helm', weapon: 'Weapon', offhand: 'Offhand', armor: 'Armor', boots: 'Boots', accessory: 'Accessory' };
@@ -213,7 +214,7 @@ function button(label, onClick, disabled = false, choiceId = '', dock = false) {
 }
 function resources() {
   $('resources').replaceChildren();
-  const show = Boolean(state) && view !== 'home';
+  const show = Boolean(state) && view !== 'home' && view !== 'tactical' && view !== 'defense';
   $('resources').hidden = !show;
   if (!show || !state) return;
   for (const k of ['food', 'wood', 'stone', 'gold']) {
@@ -276,6 +277,26 @@ function supportText(x, y, text, size, fill, extra = {}) {
   node.textContent = text;
   return node;
 }
+function supportMultiline(x, y, text, size, fill, maxCharsPerLine = 28) {
+  const words = text.split(' ');
+  const lines = [];
+  let current = '';
+  for (const w of words) {
+    if ((current + ' ' + w).trim().length > maxCharsPerLine) {
+      if (current) lines.push(current);
+      current = w;
+    } else {
+      current = current ? current + ' ' + w : w;
+    }
+  }
+  if (current) lines.push(current);
+  const group = element('g', {});
+  const lineH = Math.round(size * 1.35);
+  lines.forEach((line, i) => {
+    group.append(supportText(x, y + i * lineH, line, size, fill));
+  });
+  return group;
+}
 function paintSupportBoard(kind) {
   const world = $('world');
   world.setAttribute('data-support-layout', kind);
@@ -288,7 +309,7 @@ function paintSupportBoard(kind) {
       const amount = state ? String(Math.floor(state.resources[key])) : '0';
       world.append(supportText(x + 24, 350, amount, 36, '#e6d3a1'));
       const note = key === 'gold' ? 'Price, not a batch' : state && state.age < 1 ? 'Opens in Bronze' : 'Batch of 100';
-      world.append(supportText(x + 24, 420, note, 16, '#f1e9d9'));
+      world.append(supportText(x + 24, 420, note, 18, '#f1e9d9'));
     });
     return;
   }
@@ -305,7 +326,7 @@ function paintSupportBoard(kind) {
         'data-chapter': String(index), 'data-open': open ? '1' : '0',
       }));
       world.append(supportText(x + 16, y + 42, data.STORY[index].t, 18, '#f4ecdf'));
-      world.append(supportText(x + 16, y + 78, open ? (chosen ? 'Choice saved' : 'Open') : 'Opens in ' + data.AGES[index].n, 14, '#e6d3a1'));
+      world.append(supportText(x + 16, y + 78, open ? (chosen ? 'Choice saved' : 'Open') : 'Opens in ' + data.AGES[index].n, 15, '#e6d3a1'));
     }
     const futureOpen = Boolean(state && state.age >= 7 && state.story.chapter >= data.STORY.length);
     world.append(supportText(140, 620, futureOpen ? 'The Valley We Keep is open and grants nothing.' : 'The Valley We Keep opens in the Future age.', 18, '#f1e9d9', { 'data-future': futureOpen ? 'open' : 'closed' }));
@@ -322,8 +343,8 @@ function paintSupportBoard(kind) {
     modes.forEach(([title, detail], index) => {
       const x = 120 + index * 230;
       world.append(element('rect', { x, y: 240, width: 210, height: 280, rx: 12, fill: '#152128', stroke: '#c9a35b', 'data-war-mode': title }));
-      world.append(supportText(x + 16, 300, title, 20, '#f4ecdf'));
-      world.append(supportText(x + 16, 360, detail, 14, '#e6d3a1'));
+      world.append(supportText(x + 16, 300, title, 22, '#f4ecdf'));
+      world.append(supportMultiline(x + 16, 350, detail, 16, '#e6d3a1', 18));
     });
     return;
   }
@@ -350,7 +371,7 @@ function paintSupportBoard(kind) {
       const x = 140 + index * 380;
       world.append(element('rect', { x, y: 230, width: 340, height: 320, rx: 12, fill: '#152128', stroke: '#c9a35b', 'data-help-column': title.toLowerCase() }));
       world.append(supportText(x + 20, 290, title, 28, '#f4ecdf'));
-      world.append(supportText(x + 20, 360, body, 16, '#f1e9d9'));
+      world.append(supportMultiline(x + 20, 350, body, 18, '#f1e9d9', 30));
     });
   }
 }
@@ -535,9 +556,11 @@ function measureFrame() {
   const inset = panel.classList.contains('open') ? panel.getBoundingClientRect().width + 8 : 0;
   const width = Math.max(1, rect.width - inset);
   const height = Math.max(1, rect.height);
+  const isChamber = ['market', 'story', 'war', 'settings', 'help', 'army'].includes(view);
   const focus = view === 'kingdom'
     ? kingdomFocusBounds(contract.geometry.kingdom, scene.hall)
-    : view === 'hero' ? heroFocus() : null;
+    : view === 'hero' ? heroFocus()
+    : isChamber ? { minX: 72, minY: 56, maxX: 1304, maxY: 696 } : null;
   frameFit = { width, height, inset, rect, fit: camera([1376, 768], width, height, focus, view === 'kingdom' ? 24 : focus ? 12 : 0) };
   setWorldCssScale(frameFit.fit.scale);
 }
@@ -1149,7 +1172,15 @@ function board(mode) {
 
 function drawFigure(world, origin, stack, alive) {
   const plate = plateForStack(stack);
-  if (plate) drawPlate(world, element, plate, origin[0], origin[1] + 8, alive ? 28 : 22, { opacity: alive ? 1 : 0.35, time: 0, fly: false, clip: 'idle', reduced: true });
+  const reduced = Boolean(state?.settings?.reducedMotion);
+  const isActing = stack?.id && stack.id === state?.battle?.active;
+  if (plate) drawPlate(world, element, plate, origin[0], origin[1] + 8, alive ? 28 : 22, {
+    opacity: alive ? 1 : 0.35,
+    time: animTime(),
+    fly: false,
+    clip: alive ? (isActing ? 'attack' : 'idle') : 'death',
+    reduced,
+  });
   else world.append(element('circle', { cx: origin[0], cy: origin[1], r: 5, fill: alive ? '#d5b573' : '#6d6458' }));
 }
 
@@ -1316,10 +1347,12 @@ function defense() {
   const world = $('world');
   const matrix = contract.geometry.defense.worldToSource;
   const markers = defenseMarkers(session);
+  const reduced = Boolean(state?.settings?.reducedMotion);
+  const now = animTime();
   for (const tower of markers.towers) {
     const at = project(matrix, tower.at);
     const plate = towerPlate(state.age, tower.fam);
-    if (!drawPlate(world, element, plate, at[0], at[1] + 8, 52, { opacity: tower.alive ? 1 : 0.4, time: 0, clip: 'idle', reduced: true })) {
+    if (!drawPlate(world, element, plate, at[0], at[1] + 8, 52, { opacity: tower.alive ? 1 : 0.4, time: now, clip: 'idle', reduced })) {
       world.append(element('rect', { x: at[0] - 12, y: at[1] - 20, width: 24, height: 32, fill: '#8c7447' }));
     }
     queueLabel(`${tower.fam} ${Math.max(0, Math.round(tower.hp))}`, at[0], at[1] - 28);
@@ -1328,21 +1361,21 @@ function defense() {
     const at = project(matrix, enemy.at);
     const plate = attackerPlate(state.age, enemy.role);
     const height = enemy.boss ? 64 : 40;
-    if (!drawPlate(world, element, plate, at[0], at[1] + 6, height, { opacity: enemy.entered ? 1 : 0.45, time: 0, clip: 'idle', reduced: true })) {
+    if (!drawPlate(world, element, plate, at[0], at[1] + 6, height, { opacity: enemy.entered ? 1 : 0.45, time: now, clip: 'walk', reduced })) {
       world.append(element('circle', { cx: at[0], cy: at[1], r: enemy.boss ? 14 : 8, fill: '#c83e38', opacity: enemy.entered ? 1 : 0.45 }));
     }
     if (enemy.telegraphId) world.append(element('circle', { cx: at[0], cy: at[1], r: 18, fill: 'none', stroke: '#f1e9d9', 'stroke-width': 2 }));
   }
   for (const shot of markers.projectiles) {
     const at = project(matrix, shot.at);
-    if (!drawPlate(world, element, projectilePlate(shot.fam), at[0], at[1] + 6, 18, { time: 0, clip: 'idle', reduced: true })) {
+    if (!drawPlate(world, element, projectilePlate(shot.fam), at[0], at[1] + 6, 18, { time: now, clip: 'walk', reduced })) {
       world.append(element('circle', { cx: at[0], cy: at[1], r: 3, fill: '#f1e9d9' }));
     }
   }
   if (markers.army) {
     const at = project(matrix, markers.army.at);
     const stack = state.army.find(item => item.id === markers.army.stackId);
-    if (!drawPlate(world, element, plateForStack(stack), at[0], at[1] + 8, 48, { time: 0, clip: 'idle', reduced: true })) {
+    if (!drawPlate(world, element, plateForStack(stack), at[0], at[1] + 8, 48, { time: now, clip: 'idle', reduced })) {
       world.append(element('polygon', { points: `${at[0]},${at[1] - 14} ${at[0] + 12},${at[1] + 10} ${at[0] - 12},${at[1] + 10}`, fill: '#9bb7d0' }));
     }
   }
@@ -1547,6 +1580,7 @@ function paintGate() {
     : state
       ? `${data.AGES[state.age].n}, day ${state.day}. Continue keeps this save.`
       : 'No campaign is stored on this device.';
+  $('gate-kicker').textContent = 'Campaign I: The Shattered Kingdom';
   $('gate-line').textContent = line;
   const actions = $('gate-actions');
   actions.replaceChildren();
@@ -1634,7 +1668,9 @@ function setPanel(open) {
 function render() {
   if (state?.battle?.status === 'ACTIVE') view = viewDuringRetreat(view, { retreatArmed, battleActive: true });
   const panel = $('panel');
-  const scroll = panel.scrollTop;
+  const viewChanged = lastRenderedView !== view;
+  lastRenderedView = view;
+  const scroll = viewChanged ? 0 : panel.scrollTop;
   const focusId = document.activeElement?.dataset?.choice || '';
   labelQueue = [];
   resources();
