@@ -1,5 +1,6 @@
 // Painted partial ranger. Joints use corrected roles. Missing hands stay missing.
 import binding from '../data/anatomy-binding-v1.json' with { type: 'json' };
+import { paintWornSlots } from './actor.js';
 
 export function anatomyBinding() {
   return binding;
@@ -100,7 +101,7 @@ export function legDrop() {
   return Math.max(drop('left'), drop('right'));
 }
 
-export function drawBoundActor(world, element, classId, { x = 0, y = 0, scale = 1, facing = 1, clip = 'idle', time = 0, reduced = false } = {}) {
+export function drawBoundActor(world, element, classId, { x = 0, y = 0, scale = 1, facing = 1, clip = 'idle', time = 0, reduced = false, worn = null } = {}) {
   if (classId !== binding.classId || !binding.overlapPass) return null;
   const pose = paintedPose(clip, time, reduced);
   if (!withinTested(pose)) return null;
@@ -153,6 +154,7 @@ export function drawBoundActor(world, element, classId, { x = 0, y = 0, scale = 
   hips.append(trunk);
   drawLeg(element, hips, binding.legs.right, right, pose);
   root.append(hips);
+  paintWornSlots(root, element, worn, { x: -46, y: -150, width: 92, height: 150 });
   world.append(root);
   return root;
 }

@@ -1,0 +1,77 @@
+{
+  "at": "2026-10-13T06:54:59.629Z",
+  "viewportChecked": [
+    "825x375",
+    "1280x720"
+  ],
+  "findings": [
+    {
+      "name": "compact-nav",
+      "pass": true,
+      "detail": [
+        "Kingdom",
+        "Adventure",
+        "Hero",
+        "Army",
+        "War",
+        "More"
+      ]
+    },
+    {
+      "name": "market-body-16",
+      "pass": true,
+      "detail": {
+        "marketFont": 16,
+        "marketTitle": 25,
+        "marketBox": {
+          "width": 825,
+          "height": 201,
+          "scroll": 201,
+          "client": 201
+        }
+      }
+    },
+    {
+      "name": "market-title-25",
+      "pass": true,
+      "detail": {
+        "marketTitle": 25
+      }
+    },
+    {
+      "name": "market-not-clipped-without-scroll",
+      "pass": true,
+      "detail": {
+        "clipped": false,
+        "marketBox": {
+          "width": 825,
+          "height": 201,
+          "scroll": 201,
+          "client": 201
+        }
+      }
+    },
+    {
+      "name": "market-body-16-wide",
+      "pass": true,
+      "detail": {
+        "wideFont": 16
+      }
+    },
+    {
+      "name": "combat-locks-roaming-nav",
+      "pass": true,
+      "detail": {
+        "combatView": "tactical",
+        "navDisplay": "none",
+        "resourcesHidden": ""
+      }
+    },
+    {
+      "name": "page-errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "pass": true
+}

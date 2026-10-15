@@ -109,6 +109,8 @@ function chain(element, parent, spec, href, names, angles, x, y) {
       transform: first
         ? `translate(${x} ${y}) rotate(${angles[index] || 0})`
         : `translate(0 ${host.__len || 0}) rotate(${angles[index] || 0})`,
+      'data-joint': name,
+      'data-angle': String(angles[index] || 0),
     });
     group.append(part.node);
     group.__len = part.length;
@@ -198,18 +200,70 @@ export function drawSchematic(world, element, x, y, { facing = 1, scale = 1, cli
   return root;
 }
 
-export function drawActor(world, element, classId, { x, y, scale = 0.2, facing = 1, clip = 'idle', time = 0, reduced = false } = {}) {
+const WORN_PLACES = {
+  helm: [0.5, 0.0],
+  weapon: [0.86, 0.4],
+  offhand: [0.02, 0.44],
+  armor: [0.5, 0.32],
+  boots: [0.5, 0.84],
+  accessory: [0.16, 0.2],
+};
+
+// Six worn slots sit on the figure. An empty slot stays an empty anchor. An icon is drawn only for a real equipped item.
+export function paintWornSlots(group, element, worn, box) {
+  if (!group || !box) return;
+  const items = worn?.items || {};
+  for (const slot of Object.keys(WORN_PLACES)) {
+    const item = items[slot] || null;
+    const [fx, fy] = WORN_PLACES[slot];
+    const size = Math.max(18, box.width * 0.14);
+    const x = box.x + box.width * fx - size / 2;
+    const y = box.y + box.height * fy;
+    const node = element('g', {
+      'data-worn-slot': slot,
+      'data-worn-state': item ? 'worn' : 'empty',
+      'data-worn-bonus': item?.bonus || '',
+      'data-worn-item': item?.id || '',
+    });
+    node.append(element('rect', {
+      x, y, width: size, height: size, rx: 4,
+      fill: item ? '#1c2428cc' : '#1c242866',
+      stroke: item ? '#e6d3a1' : '#8c7447',
+      'stroke-width': 2,
+    }));
+    if (item?.icon) {
+      node.append(element('image', {
+        href: item.icon, x, y, width: size, height: size, 'data-gear-icon': item.iconId || slot,
+      }));
+    } else {
+      const label = element('text', {
+        x: x + size / 2, y: y + size * 0.62, 'text-anchor': 'middle', fill: '#e6d3a1', 'font-size': Math.max(8, size * 0.22),
+      });
+      label.textContent = slot;
+      node.append(label);
+    }
+    group.append(node);
+  }
+}
+
+const JOINTS = ['head', 'torso', 'arm', 'forearm', 'thigh', 'shin', 'foot'];
+
+export function drawActor(world, element, classId, { x, y, scale = 0.2, facing = 1, clip = 'idle', time = 0, reduced = false, worn = null } = {}) {
   const spec = atlas.classes[classId] || atlas.classes.knight;
-  // Sheet crops still mix background, labels, and grouped parts. Do not place them in the world.
-  if (!atlas.worldReady || !spec?.parts?.torso) return null;
+  const limbs = spec?.parts || {};
+  if (!atlas.worldReady || JOINTS.some(name => !limbs[name])) return null;
   const pose = clipAngles(clip, time, reduced);
   const marks = landmarks(spec);
   const root = element('g', {
     transform: `translate(${x} ${y}) scale(${facing * scale} ${scale})`,
     'data-actor': classId,
     'data-clip': clip,
+    'data-gait': 'per-joint',
     'data-spine': String(pose.spine),
     'data-arm': String(pose.arm),
+    'data-forearm': String(pose.forearm),
+    'data-thigh': String(pose.thighL),
+    'data-shin': String(pose.shinL),
   });
   root.append(element('ellipse', { cx: 0, cy: 6, rx: 70, ry: 16, fill: '#00000066' }));
   const body = element('g', { transform: `rotate(${pose.spine})`, 'data-joint': 'spine' });
@@ -233,6 +287,8 @@ export function drawActor(world, element, classId, { x, y, scale = 0.2, facing =
   const armAngles = { arm: pose.arm, forearm: pose.forearm, weapon: pose.weapon };
   chain(element, armHost, spec, spec.file, armParts, armParts.map(name => armAngles[name]), marks.shoulder[0], marks.shoulder[1]);
   root.append(body);
+  const span = torso[3] + 40;
+  paintWornSlots(root, element, worn, { x: -span * 0.35, y: -span, width: span * 0.7, height: span });
   world.append(root);
   return root;
 }
@@ -368,7 +424,7 @@ export function drawPlate(world, element, plate, x, y, height, { opacity = 1, ti
   const drawnHeight = fitted.height;
   const width = fitted.width;
   const single = plate.pose === 'single';
-  const motion = single
+  const motion = single && clip === 'idle'
     ? { y: reduced ? 0 : Math.sin((((time % 1) + 1) % 1) * Math.PI * 2) * 1.5, rot: 0 }
     : plateOffset(time, { fly, clip, reduced });
   const group = element('g', {

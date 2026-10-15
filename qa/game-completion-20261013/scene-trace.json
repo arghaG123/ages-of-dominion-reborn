@@ -1,0 +1,6525 @@
+{
+  "method": "Each runtime painting's own pixels. Frozen worldToSource. Legal roads, bank edges, bridge decks, obstacles, site approaches, and lanes. Localized edge agreement is the pass predicate. Median RGB is recorded and cannot promote a row.",
+  "predecessor": "1376x768 blue-water sample, rejected. A missing saturated-blue hit is not acceptance.",
+  "closerScriptRun": false,
+  "legalCellsMoved": false,
+  "paidCall": false,
+  "acceptance": "PASS",
+  "pass": 32,
+  "fail": 0,
+  "blocked": 0,
+  "rows": [
+    {
+      "scene": "kingdom",
+      "age": 0,
+      "ageName": "stone",
+      "source": "assets/derivatives/scene-edges-20261013/kingdom-stone.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 50,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 50,
+            "aligned": 50,
+            "agreement": 1.0,
+            "controlAgreement": 0.16,
+            "localized": true
+          },
+          "medianRgb": [
+            176,
+            135,
+            95
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1,
+            "localized": true
+          },
+          "medianRgb": [
+            89,
+            94,
+            93
+          ]
+        },
+        "decks": [
+          {
+            "id": "right-crossing",
+            "rect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                12,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0,
+              "localized": true
+            },
+            "medianRgb": [
+              139,
+              110,
+              74
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "townhall",
+            "world": [
+              6.5,
+              1.5
+            ],
+            "source": [
+              597.5,
+              152.5
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "P01",
+            "world": [
+              2.7,
+              3.2
+            ],
+            "source": [
+              412.0,
+              250.0
+            ],
+            "nearestRoadPx": 209.56
+          },
+          {
+            "id": "P02",
+            "world": [
+              4.7,
+              3.2
+            ],
+            "source": [
+              532.0,
+              230.0
+            ],
+            "nearestRoadPx": 101.47
+          },
+          {
+            "id": "P03",
+            "world": [
+              6.7,
+              3.2
+            ],
+            "source": [
+              652.0,
+              210.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P04",
+            "world": [
+              8.7,
+              3.2
+            ],
+            "source": [
+              772.0,
+              190.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P05",
+            "world": [
+              10.7,
+              3.2
+            ],
+            "source": [
+              892.0,
+              170.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P06",
+            "world": [
+              2.7,
+              5.2
+            ],
+            "source": [
+              462.0,
+              320.0
+            ],
+            "nearestRoadPx": 215.44
+          },
+          {
+            "id": "P07",
+            "world": [
+              4.7,
+              5.2
+            ],
+            "source": [
+              582.0,
+              300.0
+            ],
+            "nearestRoadPx": 148.31
+          },
+          {
+            "id": "P08",
+            "world": [
+              8.7,
+              5.2
+            ],
+            "source": [
+              822.0,
+              260.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P09",
+            "world": [
+              10.7,
+              5.2
+            ],
+            "source": [
+              942.0,
+              240.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P10",
+            "world": [
+              1.7,
+              7.2
+            ],
+            "source": [
+              452.0,
+              400.0
+            ],
+            "nearestRoadPx": 287.1
+          },
+          {
+            "id": "P11",
+            "world": [
+              3.7,
+              7.2
+            ],
+            "source": [
+              572.0,
+              380.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P12",
+            "world": [
+              9.7,
+              7.2
+            ],
+            "source": [
+              932.0,
+              320.0
+            ],
+            "nearestRoadPx": 109.29
+          },
+          {
+            "id": "P13",
+            "world": [
+              11.7,
+              7.2
+            ],
+            "source": [
+              1052.0,
+              300.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P14",
+            "world": [
+              2.7,
+              9.2
+            ],
+            "source": [
+              562.0,
+              460.0
+            ],
+            "nearestRoadPx": 273.21
+          },
+          {
+            "id": "P15",
+            "world": [
+              4.7,
+              9.2
+            ],
+            "source": [
+              682.0,
+              440.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P16",
+            "world": [
+              8.7,
+              9.2
+            ],
+            "source": [
+              922.0,
+              400.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P17",
+            "world": [
+              10.7,
+              9.2
+            ],
+            "source": [
+              1042.0,
+              380.0
+            ],
+            "nearestRoadPx": 170.19
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "kingdom",
+      "age": 1,
+      "ageName": "bronze",
+      "source": "assets/derivatives/scene-edges-20261013/kingdom-bronze.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 50,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 50,
+            "aligned": 50,
+            "agreement": 1.0,
+            "controlAgreement": 0.26,
+            "localized": true
+          },
+          "medianRgb": [
+            169,
+            135,
+            103
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.0545,
+            "localized": true
+          },
+          "medianRgb": [
+            102,
+            102,
+            87
+          ]
+        },
+        "decks": [
+          {
+            "id": "right-crossing",
+            "rect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                12,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0,
+              "localized": true
+            },
+            "medianRgb": [
+              89,
+              95,
+              87
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "townhall",
+            "world": [
+              6.5,
+              1.5
+            ],
+            "source": [
+              597.5,
+              152.5
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "P01",
+            "world": [
+              2.7,
+              3.2
+            ],
+            "source": [
+              412.0,
+              250.0
+            ],
+            "nearestRoadPx": 209.56
+          },
+          {
+            "id": "P02",
+            "world": [
+              4.7,
+              3.2
+            ],
+            "source": [
+              532.0,
+              230.0
+            ],
+            "nearestRoadPx": 101.47
+          },
+          {
+            "id": "P03",
+            "world": [
+              6.7,
+              3.2
+            ],
+            "source": [
+              652.0,
+              210.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P04",
+            "world": [
+              8.7,
+              3.2
+            ],
+            "source": [
+              772.0,
+              190.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P05",
+            "world": [
+              10.7,
+              3.2
+            ],
+            "source": [
+              892.0,
+              170.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P06",
+            "world": [
+              2.7,
+              5.2
+            ],
+            "source": [
+              462.0,
+              320.0
+            ],
+            "nearestRoadPx": 215.44
+          },
+          {
+            "id": "P07",
+            "world": [
+              4.7,
+              5.2
+            ],
+            "source": [
+              582.0,
+              300.0
+            ],
+            "nearestRoadPx": 148.31
+          },
+          {
+            "id": "P08",
+            "world": [
+              8.7,
+              5.2
+            ],
+            "source": [
+              822.0,
+              260.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P09",
+            "world": [
+              10.7,
+              5.2
+            ],
+            "source": [
+              942.0,
+              240.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P10",
+            "world": [
+              1.7,
+              7.2
+            ],
+            "source": [
+              452.0,
+              400.0
+            ],
+            "nearestRoadPx": 287.1
+          },
+          {
+            "id": "P11",
+            "world": [
+              3.7,
+              7.2
+            ],
+            "source": [
+              572.0,
+              380.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P12",
+            "world": [
+              9.7,
+              7.2
+            ],
+            "source": [
+              932.0,
+              320.0
+            ],
+            "nearestRoadPx": 109.29
+          },
+          {
+            "id": "P13",
+            "world": [
+              11.7,
+              7.2
+            ],
+            "source": [
+              1052.0,
+              300.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P14",
+            "world": [
+              2.7,
+              9.2
+            ],
+            "source": [
+              562.0,
+              460.0
+            ],
+            "nearestRoadPx": 273.21
+          },
+          {
+            "id": "P15",
+            "world": [
+              4.7,
+              9.2
+            ],
+            "source": [
+              682.0,
+              440.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P16",
+            "world": [
+              8.7,
+              9.2
+            ],
+            "source": [
+              922.0,
+              400.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P17",
+            "world": [
+              10.7,
+              9.2
+            ],
+            "source": [
+              1042.0,
+              380.0
+            ],
+            "nearestRoadPx": 170.19
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "kingdom",
+      "age": 2,
+      "ageName": "iron",
+      "source": "assets/derivatives/scene-edges-20261013/kingdom-iron.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 50,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 50,
+            "aligned": 50,
+            "agreement": 1.0,
+            "controlAgreement": 0.22,
+            "localized": true
+          },
+          "medianRgb": [
+            181,
+            150,
+            119
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1455,
+            "localized": true
+          },
+          "medianRgb": [
+            100,
+            116,
+            120
+          ]
+        },
+        "decks": [
+          {
+            "id": "right-crossing",
+            "rect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                12,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.2727,
+              "localized": true
+            },
+            "medianRgb": [
+              192,
+              164,
+              134
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "townhall",
+            "world": [
+              6.5,
+              1.5
+            ],
+            "source": [
+              597.5,
+              152.5
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "P01",
+            "world": [
+              2.7,
+              3.2
+            ],
+            "source": [
+              412.0,
+              250.0
+            ],
+            "nearestRoadPx": 209.56
+          },
+          {
+            "id": "P02",
+            "world": [
+              4.7,
+              3.2
+            ],
+            "source": [
+              532.0,
+              230.0
+            ],
+            "nearestRoadPx": 101.47
+          },
+          {
+            "id": "P03",
+            "world": [
+              6.7,
+              3.2
+            ],
+            "source": [
+              652.0,
+              210.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P04",
+            "world": [
+              8.7,
+              3.2
+            ],
+            "source": [
+              772.0,
+              190.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P05",
+            "world": [
+              10.7,
+              3.2
+            ],
+            "source": [
+              892.0,
+              170.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P06",
+            "world": [
+              2.7,
+              5.2
+            ],
+            "source": [
+              462.0,
+              320.0
+            ],
+            "nearestRoadPx": 215.44
+          },
+          {
+            "id": "P07",
+            "world": [
+              4.7,
+              5.2
+            ],
+            "source": [
+              582.0,
+              300.0
+            ],
+            "nearestRoadPx": 148.31
+          },
+          {
+            "id": "P08",
+            "world": [
+              8.7,
+              5.2
+            ],
+            "source": [
+              822.0,
+              260.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P09",
+            "world": [
+              10.7,
+              5.2
+            ],
+            "source": [
+              942.0,
+              240.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P10",
+            "world": [
+              1.7,
+              7.2
+            ],
+            "source": [
+              452.0,
+              400.0
+            ],
+            "nearestRoadPx": 287.1
+          },
+          {
+            "id": "P11",
+            "world": [
+              3.7,
+              7.2
+            ],
+            "source": [
+              572.0,
+              380.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P12",
+            "world": [
+              9.7,
+              7.2
+            ],
+            "source": [
+              932.0,
+              320.0
+            ],
+            "nearestRoadPx": 109.29
+          },
+          {
+            "id": "P13",
+            "world": [
+              11.7,
+              7.2
+            ],
+            "source": [
+              1052.0,
+              300.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P14",
+            "world": [
+              2.7,
+              9.2
+            ],
+            "source": [
+              562.0,
+              460.0
+            ],
+            "nearestRoadPx": 273.21
+          },
+          {
+            "id": "P15",
+            "world": [
+              4.7,
+              9.2
+            ],
+            "source": [
+              682.0,
+              440.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P16",
+            "world": [
+              8.7,
+              9.2
+            ],
+            "source": [
+              922.0,
+              400.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P17",
+            "world": [
+              10.7,
+              9.2
+            ],
+            "source": [
+              1042.0,
+              380.0
+            ],
+            "nearestRoadPx": 170.19
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "kingdom",
+      "age": 3,
+      "ageName": "medieval",
+      "source": "assets/derivatives/scene-edges-20261013/kingdom-medieval.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 50,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 50,
+            "aligned": 50,
+            "agreement": 1.0,
+            "controlAgreement": 0.28,
+            "localized": true
+          },
+          "medianRgb": [
+            187,
+            150,
+            110
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.0909,
+            "localized": true
+          },
+          "medianRgb": [
+            86,
+            104,
+            111
+          ]
+        },
+        "decks": [
+          {
+            "id": "right-crossing",
+            "rect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                12,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.2727,
+              "localized": true
+            },
+            "medianRgb": [
+              182,
+              155,
+              129
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "townhall",
+            "world": [
+              6.5,
+              1.5
+            ],
+            "source": [
+              597.5,
+              152.5
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "P01",
+            "world": [
+              2.7,
+              3.2
+            ],
+            "source": [
+              412.0,
+              250.0
+            ],
+            "nearestRoadPx": 209.56
+          },
+          {
+            "id": "P02",
+            "world": [
+              4.7,
+              3.2
+            ],
+            "source": [
+              532.0,
+              230.0
+            ],
+            "nearestRoadPx": 101.47
+          },
+          {
+            "id": "P03",
+            "world": [
+              6.7,
+              3.2
+            ],
+            "source": [
+              652.0,
+              210.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P04",
+            "world": [
+              8.7,
+              3.2
+            ],
+            "source": [
+              772.0,
+              190.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P05",
+            "world": [
+              10.7,
+              3.2
+            ],
+            "source": [
+              892.0,
+              170.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P06",
+            "world": [
+              2.7,
+              5.2
+            ],
+            "source": [
+              462.0,
+              320.0
+            ],
+            "nearestRoadPx": 215.44
+          },
+          {
+            "id": "P07",
+            "world": [
+              4.7,
+              5.2
+            ],
+            "source": [
+              582.0,
+              300.0
+            ],
+            "nearestRoadPx": 148.31
+          },
+          {
+            "id": "P08",
+            "world": [
+              8.7,
+              5.2
+            ],
+            "source": [
+              822.0,
+              260.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P09",
+            "world": [
+              10.7,
+              5.2
+            ],
+            "source": [
+              942.0,
+              240.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P10",
+            "world": [
+              1.7,
+              7.2
+            ],
+            "source": [
+              452.0,
+              400.0
+            ],
+            "nearestRoadPx": 287.1
+          },
+          {
+            "id": "P11",
+            "world": [
+              3.7,
+              7.2
+            ],
+            "source": [
+              572.0,
+              380.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P12",
+            "world": [
+              9.7,
+              7.2
+            ],
+            "source": [
+              932.0,
+              320.0
+            ],
+            "nearestRoadPx": 109.29
+          },
+          {
+            "id": "P13",
+            "world": [
+              11.7,
+              7.2
+            ],
+            "source": [
+              1052.0,
+              300.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P14",
+            "world": [
+              2.7,
+              9.2
+            ],
+            "source": [
+              562.0,
+              460.0
+            ],
+            "nearestRoadPx": 273.21
+          },
+          {
+            "id": "P15",
+            "world": [
+              4.7,
+              9.2
+            ],
+            "source": [
+              682.0,
+              440.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P16",
+            "world": [
+              8.7,
+              9.2
+            ],
+            "source": [
+              922.0,
+              400.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P17",
+            "world": [
+              10.7,
+              9.2
+            ],
+            "source": [
+              1042.0,
+              380.0
+            ],
+            "nearestRoadPx": 170.19
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "kingdom",
+      "age": 4,
+      "ageName": "gunpowder",
+      "source": "assets/derivatives/scene-edges-20261013/kingdom-gunpowder.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 50,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 50,
+            "aligned": 50,
+            "agreement": 1.0,
+            "controlAgreement": 0.04,
+            "localized": true
+          },
+          "medianRgb": [
+            168,
+            143,
+            109
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1182,
+            "localized": true
+          },
+          "medianRgb": [
+            104,
+            111,
+            111
+          ]
+        },
+        "decks": [
+          {
+            "id": "right-crossing",
+            "rect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                12,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.2727,
+              "localized": true
+            },
+            "medianRgb": [
+              168,
+              142,
+              118
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "townhall",
+            "world": [
+              6.5,
+              1.5
+            ],
+            "source": [
+              597.5,
+              152.5
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "P01",
+            "world": [
+              2.7,
+              3.2
+            ],
+            "source": [
+              412.0,
+              250.0
+            ],
+            "nearestRoadPx": 209.56
+          },
+          {
+            "id": "P02",
+            "world": [
+              4.7,
+              3.2
+            ],
+            "source": [
+              532.0,
+              230.0
+            ],
+            "nearestRoadPx": 101.47
+          },
+          {
+            "id": "P03",
+            "world": [
+              6.7,
+              3.2
+            ],
+            "source": [
+              652.0,
+              210.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P04",
+            "world": [
+              8.7,
+              3.2
+            ],
+            "source": [
+              772.0,
+              190.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P05",
+            "world": [
+              10.7,
+              3.2
+            ],
+            "source": [
+              892.0,
+              170.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P06",
+            "world": [
+              2.7,
+              5.2
+            ],
+            "source": [
+              462.0,
+              320.0
+            ],
+            "nearestRoadPx": 215.44
+          },
+          {
+            "id": "P07",
+            "world": [
+              4.7,
+              5.2
+            ],
+            "source": [
+              582.0,
+              300.0
+            ],
+            "nearestRoadPx": 148.31
+          },
+          {
+            "id": "P08",
+            "world": [
+              8.7,
+              5.2
+            ],
+            "source": [
+              822.0,
+              260.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P09",
+            "world": [
+              10.7,
+              5.2
+            ],
+            "source": [
+              942.0,
+              240.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P10",
+            "world": [
+              1.7,
+              7.2
+            ],
+            "source": [
+              452.0,
+              400.0
+            ],
+            "nearestRoadPx": 287.1
+          },
+          {
+            "id": "P11",
+            "world": [
+              3.7,
+              7.2
+            ],
+            "source": [
+              572.0,
+              380.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P12",
+            "world": [
+              9.7,
+              7.2
+            ],
+            "source": [
+              932.0,
+              320.0
+            ],
+            "nearestRoadPx": 109.29
+          },
+          {
+            "id": "P13",
+            "world": [
+              11.7,
+              7.2
+            ],
+            "source": [
+              1052.0,
+              300.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P14",
+            "world": [
+              2.7,
+              9.2
+            ],
+            "source": [
+              562.0,
+              460.0
+            ],
+            "nearestRoadPx": 273.21
+          },
+          {
+            "id": "P15",
+            "world": [
+              4.7,
+              9.2
+            ],
+            "source": [
+              682.0,
+              440.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P16",
+            "world": [
+              8.7,
+              9.2
+            ],
+            "source": [
+              922.0,
+              400.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P17",
+            "world": [
+              10.7,
+              9.2
+            ],
+            "source": [
+              1042.0,
+              380.0
+            ],
+            "nearestRoadPx": 170.19
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "kingdom",
+      "age": 5,
+      "ageName": "industrial",
+      "source": "assets/derivatives/scene-edges-20261013/kingdom-industrial.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 50,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 50,
+            "aligned": 50,
+            "agreement": 1.0,
+            "controlAgreement": 0.38,
+            "localized": true
+          },
+          "medianRgb": [
+            137,
+            112,
+            91
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1091,
+            "localized": true
+          },
+          "medianRgb": [
+            92,
+            106,
+            108
+          ]
+        },
+        "decks": [
+          {
+            "id": "right-crossing",
+            "rect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                12,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.1818,
+              "localized": true
+            },
+            "medianRgb": [
+              82,
+              95,
+              93
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "townhall",
+            "world": [
+              6.5,
+              1.5
+            ],
+            "source": [
+              597.5,
+              152.5
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "P01",
+            "world": [
+              2.7,
+              3.2
+            ],
+            "source": [
+              412.0,
+              250.0
+            ],
+            "nearestRoadPx": 209.56
+          },
+          {
+            "id": "P02",
+            "world": [
+              4.7,
+              3.2
+            ],
+            "source": [
+              532.0,
+              230.0
+            ],
+            "nearestRoadPx": 101.47
+          },
+          {
+            "id": "P03",
+            "world": [
+              6.7,
+              3.2
+            ],
+            "source": [
+              652.0,
+              210.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P04",
+            "world": [
+              8.7,
+              3.2
+            ],
+            "source": [
+              772.0,
+              190.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P05",
+            "world": [
+              10.7,
+              3.2
+            ],
+            "source": [
+              892.0,
+              170.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P06",
+            "world": [
+              2.7,
+              5.2
+            ],
+            "source": [
+              462.0,
+              320.0
+            ],
+            "nearestRoadPx": 215.44
+          },
+          {
+            "id": "P07",
+            "world": [
+              4.7,
+              5.2
+            ],
+            "source": [
+              582.0,
+              300.0
+            ],
+            "nearestRoadPx": 148.31
+          },
+          {
+            "id": "P08",
+            "world": [
+              8.7,
+              5.2
+            ],
+            "source": [
+              822.0,
+              260.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P09",
+            "world": [
+              10.7,
+              5.2
+            ],
+            "source": [
+              942.0,
+              240.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P10",
+            "world": [
+              1.7,
+              7.2
+            ],
+            "source": [
+              452.0,
+              400.0
+            ],
+            "nearestRoadPx": 287.1
+          },
+          {
+            "id": "P11",
+            "world": [
+              3.7,
+              7.2
+            ],
+            "source": [
+              572.0,
+              380.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P12",
+            "world": [
+              9.7,
+              7.2
+            ],
+            "source": [
+              932.0,
+              320.0
+            ],
+            "nearestRoadPx": 109.29
+          },
+          {
+            "id": "P13",
+            "world": [
+              11.7,
+              7.2
+            ],
+            "source": [
+              1052.0,
+              300.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P14",
+            "world": [
+              2.7,
+              9.2
+            ],
+            "source": [
+              562.0,
+              460.0
+            ],
+            "nearestRoadPx": 273.21
+          },
+          {
+            "id": "P15",
+            "world": [
+              4.7,
+              9.2
+            ],
+            "source": [
+              682.0,
+              440.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P16",
+            "world": [
+              8.7,
+              9.2
+            ],
+            "source": [
+              922.0,
+              400.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P17",
+            "world": [
+              10.7,
+              9.2
+            ],
+            "source": [
+              1042.0,
+              380.0
+            ],
+            "nearestRoadPx": 170.19
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "kingdom",
+      "age": 6,
+      "ageName": "modern",
+      "source": "assets/derivatives/scene-edges-20261013/kingdom-modern.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 50,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 50,
+            "aligned": 50,
+            "agreement": 1.0,
+            "controlAgreement": 0.24,
+            "localized": true
+          },
+          "medianRgb": [
+            99,
+            86,
+            77
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.0455,
+            "localized": true
+          },
+          "medianRgb": [
+            73,
+            94,
+            98
+          ]
+        },
+        "decks": [
+          {
+            "id": "right-crossing",
+            "rect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                12,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              109,
+              101,
+              96
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "townhall",
+            "world": [
+              6.5,
+              1.5
+            ],
+            "source": [
+              597.5,
+              152.5
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "P01",
+            "world": [
+              2.7,
+              3.2
+            ],
+            "source": [
+              412.0,
+              250.0
+            ],
+            "nearestRoadPx": 209.56
+          },
+          {
+            "id": "P02",
+            "world": [
+              4.7,
+              3.2
+            ],
+            "source": [
+              532.0,
+              230.0
+            ],
+            "nearestRoadPx": 101.47
+          },
+          {
+            "id": "P03",
+            "world": [
+              6.7,
+              3.2
+            ],
+            "source": [
+              652.0,
+              210.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P04",
+            "world": [
+              8.7,
+              3.2
+            ],
+            "source": [
+              772.0,
+              190.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P05",
+            "world": [
+              10.7,
+              3.2
+            ],
+            "source": [
+              892.0,
+              170.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P06",
+            "world": [
+              2.7,
+              5.2
+            ],
+            "source": [
+              462.0,
+              320.0
+            ],
+            "nearestRoadPx": 215.44
+          },
+          {
+            "id": "P07",
+            "world": [
+              4.7,
+              5.2
+            ],
+            "source": [
+              582.0,
+              300.0
+            ],
+            "nearestRoadPx": 148.31
+          },
+          {
+            "id": "P08",
+            "world": [
+              8.7,
+              5.2
+            ],
+            "source": [
+              822.0,
+              260.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P09",
+            "world": [
+              10.7,
+              5.2
+            ],
+            "source": [
+              942.0,
+              240.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P10",
+            "world": [
+              1.7,
+              7.2
+            ],
+            "source": [
+              452.0,
+              400.0
+            ],
+            "nearestRoadPx": 287.1
+          },
+          {
+            "id": "P11",
+            "world": [
+              3.7,
+              7.2
+            ],
+            "source": [
+              572.0,
+              380.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P12",
+            "world": [
+              9.7,
+              7.2
+            ],
+            "source": [
+              932.0,
+              320.0
+            ],
+            "nearestRoadPx": 109.29
+          },
+          {
+            "id": "P13",
+            "world": [
+              11.7,
+              7.2
+            ],
+            "source": [
+              1052.0,
+              300.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P14",
+            "world": [
+              2.7,
+              9.2
+            ],
+            "source": [
+              562.0,
+              460.0
+            ],
+            "nearestRoadPx": 273.21
+          },
+          {
+            "id": "P15",
+            "world": [
+              4.7,
+              9.2
+            ],
+            "source": [
+              682.0,
+              440.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P16",
+            "world": [
+              8.7,
+              9.2
+            ],
+            "source": [
+              922.0,
+              400.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P17",
+            "world": [
+              10.7,
+              9.2
+            ],
+            "source": [
+              1042.0,
+              380.0
+            ],
+            "nearestRoadPx": 170.19
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "kingdom",
+      "age": 7,
+      "ageName": "future",
+      "source": "assets/derivatives/scene-edges-20261013/kingdom-future.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -10,
+        25,
+        35,
+        170,
+        165
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 50,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 50,
+            "aligned": 50,
+            "agreement": 1.0,
+            "controlAgreement": 0.24,
+            "localized": true
+          },
+          "medianRgb": [
+            134,
+            115,
+            94
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1091,
+            "localized": true
+          },
+          "medianRgb": [
+            86,
+            98,
+            102
+          ]
+        },
+        "decks": [
+          {
+            "id": "right-crossing",
+            "rect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                12,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              135,
+              122,
+              108
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "townhall",
+            "world": [
+              6.5,
+              1.5
+            ],
+            "source": [
+              597.5,
+              152.5
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "P01",
+            "world": [
+              2.7,
+              3.2
+            ],
+            "source": [
+              412.0,
+              250.0
+            ],
+            "nearestRoadPx": 209.56
+          },
+          {
+            "id": "P02",
+            "world": [
+              4.7,
+              3.2
+            ],
+            "source": [
+              532.0,
+              230.0
+            ],
+            "nearestRoadPx": 101.47
+          },
+          {
+            "id": "P03",
+            "world": [
+              6.7,
+              3.2
+            ],
+            "source": [
+              652.0,
+              210.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P04",
+            "world": [
+              8.7,
+              3.2
+            ],
+            "source": [
+              772.0,
+              190.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P05",
+            "world": [
+              10.7,
+              3.2
+            ],
+            "source": [
+              892.0,
+              170.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P06",
+            "world": [
+              2.7,
+              5.2
+            ],
+            "source": [
+              462.0,
+              320.0
+            ],
+            "nearestRoadPx": 215.44
+          },
+          {
+            "id": "P07",
+            "world": [
+              4.7,
+              5.2
+            ],
+            "source": [
+              582.0,
+              300.0
+            ],
+            "nearestRoadPx": 148.31
+          },
+          {
+            "id": "P08",
+            "world": [
+              8.7,
+              5.2
+            ],
+            "source": [
+              822.0,
+              260.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P09",
+            "world": [
+              10.7,
+              5.2
+            ],
+            "source": [
+              942.0,
+              240.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P10",
+            "world": [
+              1.7,
+              7.2
+            ],
+            "source": [
+              452.0,
+              400.0
+            ],
+            "nearestRoadPx": 287.1
+          },
+          {
+            "id": "P11",
+            "world": [
+              3.7,
+              7.2
+            ],
+            "source": [
+              572.0,
+              380.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P12",
+            "world": [
+              9.7,
+              7.2
+            ],
+            "source": [
+              932.0,
+              320.0
+            ],
+            "nearestRoadPx": 109.29
+          },
+          {
+            "id": "P13",
+            "world": [
+              11.7,
+              7.2
+            ],
+            "source": [
+              1052.0,
+              300.0
+            ],
+            "nearestRoadPx": 218.58
+          },
+          {
+            "id": "P14",
+            "world": [
+              2.7,
+              9.2
+            ],
+            "source": [
+              562.0,
+              460.0
+            ],
+            "nearestRoadPx": 273.21
+          },
+          {
+            "id": "P15",
+            "world": [
+              4.7,
+              9.2
+            ],
+            "source": [
+              682.0,
+              440.0
+            ],
+            "nearestRoadPx": 163.93
+          },
+          {
+            "id": "P16",
+            "world": [
+              8.7,
+              9.2
+            ],
+            "source": [
+              922.0,
+              400.0
+            ],
+            "nearestRoadPx": 54.64
+          },
+          {
+            "id": "P17",
+            "world": [
+              10.7,
+              9.2
+            ],
+            "source": [
+              1042.0,
+              380.0
+            ],
+            "nearestRoadPx": 170.19
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "adventure",
+      "age": 0,
+      "ageName": "stone",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-stone.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 9,
+          "samples": 174,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 174,
+            "aligned": 165,
+            "agreement": 0.9483,
+            "controlAgreement": 0.0632,
+            "localized": true
+          },
+          "medianRgb": [
+            153,
+            136,
+            79
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.0636,
+            "localized": true
+          },
+          "medianRgb": [
+            94,
+            116,
+            121
+          ]
+        },
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "rect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "approaches": [
+              [
+                3,
+                6
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 18,
+              "aligned": 18,
+              "agreement": 1.0,
+              "controlAgreement": 0.2778,
+              "localized": true
+            },
+            "medianRgb": [
+              201,
+              177,
+              148
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 16
+        },
+        "approaches": [
+          {
+            "id": "town",
+            "world": [
+              8,
+              4
+            ],
+            "source": [
+              696.0,
+              244.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "ruin",
+            "world": [
+              12,
+              3
+            ],
+            "source": [
+              885.0,
+              175.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mill",
+            "world": [
+              2,
+              6
+            ],
+            "source": [
+              424.0,
+              366.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mine",
+            "world": [
+              10,
+              6
+            ],
+            "source": [
+              848.0,
+              302.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "dwelling",
+            "world": [
+              10,
+              8
+            ],
+            "source": [
+              894.0,
+              376.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "shrine",
+            "world": [
+              2,
+              7
+            ],
+            "source": [
+              447.0,
+              403.0
+            ],
+            "nearestRoadPx": 0.0
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "adventure",
+      "age": 1,
+      "ageName": "bronze",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-bronze.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 9,
+          "samples": 174,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 174,
+            "aligned": 165,
+            "agreement": 0.9483,
+            "controlAgreement": 0.2069,
+            "localized": true
+          },
+          "medianRgb": [
+            133,
+            123,
+            58
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1091,
+            "localized": true
+          },
+          "medianRgb": [
+            150,
+            128,
+            70
+          ]
+        },
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "rect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "approaches": [
+              [
+                3,
+                6
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 18,
+              "aligned": 18,
+              "agreement": 1.0,
+              "controlAgreement": 0.2222,
+              "localized": true
+            },
+            "medianRgb": [
+              177,
+              140,
+              99
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 16
+        },
+        "approaches": [
+          {
+            "id": "town",
+            "world": [
+              8,
+              4
+            ],
+            "source": [
+              696.0,
+              244.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "ruin",
+            "world": [
+              12,
+              3
+            ],
+            "source": [
+              885.0,
+              175.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mill",
+            "world": [
+              2,
+              6
+            ],
+            "source": [
+              424.0,
+              366.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mine",
+            "world": [
+              10,
+              6
+            ],
+            "source": [
+              848.0,
+              302.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "dwelling",
+            "world": [
+              10,
+              8
+            ],
+            "source": [
+              894.0,
+              376.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "shrine",
+            "world": [
+              2,
+              7
+            ],
+            "source": [
+              447.0,
+              403.0
+            ],
+            "nearestRoadPx": 0.0
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "adventure",
+      "age": 2,
+      "ageName": "iron",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-iron.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 9,
+          "samples": 174,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 174,
+            "aligned": 165,
+            "agreement": 0.9483,
+            "controlAgreement": 0.069,
+            "localized": true
+          },
+          "medianRgb": [
+            141,
+            124,
+            74
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1818,
+            "localized": true
+          },
+          "medianRgb": [
+            137,
+            120,
+            93
+          ]
+        },
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "rect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "approaches": [
+              [
+                3,
+                6
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 18,
+              "aligned": 18,
+              "agreement": 1.0,
+              "controlAgreement": 0.3333,
+              "localized": true
+            },
+            "medianRgb": [
+              168,
+              142,
+              113
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 16
+        },
+        "approaches": [
+          {
+            "id": "town",
+            "world": [
+              8,
+              4
+            ],
+            "source": [
+              696.0,
+              244.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "ruin",
+            "world": [
+              12,
+              3
+            ],
+            "source": [
+              885.0,
+              175.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mill",
+            "world": [
+              2,
+              6
+            ],
+            "source": [
+              424.0,
+              366.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mine",
+            "world": [
+              10,
+              6
+            ],
+            "source": [
+              848.0,
+              302.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "dwelling",
+            "world": [
+              10,
+              8
+            ],
+            "source": [
+              894.0,
+              376.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "shrine",
+            "world": [
+              2,
+              7
+            ],
+            "source": [
+              447.0,
+              403.0
+            ],
+            "nearestRoadPx": 0.0
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "adventure",
+      "age": 3,
+      "ageName": "medieval",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-medieval.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 9,
+          "samples": 174,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 174,
+            "aligned": 165,
+            "agreement": 0.9483,
+            "controlAgreement": 0.2644,
+            "localized": true
+          },
+          "medianRgb": [
+            102,
+            96,
+            68
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.0727,
+            "localized": true
+          },
+          "medianRgb": [
+            93,
+            96,
+            83
+          ]
+        },
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "rect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "approaches": [
+              [
+                3,
+                6
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 18,
+              "aligned": 18,
+              "agreement": 1.0,
+              "controlAgreement": 0.1667,
+              "localized": true
+            },
+            "medianRgb": [
+              145,
+              124,
+              96
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 16
+        },
+        "approaches": [
+          {
+            "id": "town",
+            "world": [
+              8,
+              4
+            ],
+            "source": [
+              696.0,
+              244.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "ruin",
+            "world": [
+              12,
+              3
+            ],
+            "source": [
+              885.0,
+              175.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mill",
+            "world": [
+              2,
+              6
+            ],
+            "source": [
+              424.0,
+              366.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mine",
+            "world": [
+              10,
+              6
+            ],
+            "source": [
+              848.0,
+              302.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "dwelling",
+            "world": [
+              10,
+              8
+            ],
+            "source": [
+              894.0,
+              376.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "shrine",
+            "world": [
+              2,
+              7
+            ],
+            "source": [
+              447.0,
+              403.0
+            ],
+            "nearestRoadPx": 0.0
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "adventure",
+      "age": 4,
+      "ageName": "gunpowder",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-gunpowder.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 9,
+          "samples": 174,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 174,
+            "aligned": 165,
+            "agreement": 0.9483,
+            "controlAgreement": 0.0517,
+            "localized": true
+          },
+          "medianRgb": [
+            219,
+            183,
+            134
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1182,
+            "localized": true
+          },
+          "medianRgb": [
+            145,
+            115,
+            106
+          ]
+        },
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "rect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "approaches": [
+              [
+                3,
+                6
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 18,
+              "aligned": 18,
+              "agreement": 1.0,
+              "controlAgreement": 0.2778,
+              "localized": true
+            },
+            "medianRgb": [
+              174,
+              138,
+              108
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 16
+        },
+        "approaches": [
+          {
+            "id": "town",
+            "world": [
+              8,
+              4
+            ],
+            "source": [
+              696.0,
+              244.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "ruin",
+            "world": [
+              12,
+              3
+            ],
+            "source": [
+              885.0,
+              175.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mill",
+            "world": [
+              2,
+              6
+            ],
+            "source": [
+              424.0,
+              366.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mine",
+            "world": [
+              10,
+              6
+            ],
+            "source": [
+              848.0,
+              302.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "dwelling",
+            "world": [
+              10,
+              8
+            ],
+            "source": [
+              894.0,
+              376.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "shrine",
+            "world": [
+              2,
+              7
+            ],
+            "source": [
+              447.0,
+              403.0
+            ],
+            "nearestRoadPx": 0.0
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "adventure",
+      "age": 5,
+      "ageName": "industrial",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-industrial.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 9,
+          "samples": 174,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 174,
+            "aligned": 165,
+            "agreement": 0.9483,
+            "controlAgreement": 0.069,
+            "localized": true
+          },
+          "medianRgb": [
+            227,
+            225,
+            230
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.0818,
+            "localized": true
+          },
+          "medianRgb": [
+            170,
+            174,
+            185
+          ]
+        },
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "rect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "approaches": [
+              [
+                3,
+                6
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 18,
+              "aligned": 18,
+              "agreement": 1.0,
+              "controlAgreement": 0.2222,
+              "localized": true
+            },
+            "medianRgb": [
+              168,
+              167,
+              167
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 16
+        },
+        "approaches": [
+          {
+            "id": "town",
+            "world": [
+              8,
+              4
+            ],
+            "source": [
+              696.0,
+              244.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "ruin",
+            "world": [
+              12,
+              3
+            ],
+            "source": [
+              885.0,
+              175.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mill",
+            "world": [
+              2,
+              6
+            ],
+            "source": [
+              424.0,
+              366.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mine",
+            "world": [
+              10,
+              6
+            ],
+            "source": [
+              848.0,
+              302.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "dwelling",
+            "world": [
+              10,
+              8
+            ],
+            "source": [
+              894.0,
+              376.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "shrine",
+            "world": [
+              2,
+              7
+            ],
+            "source": [
+              447.0,
+              403.0
+            ],
+            "nearestRoadPx": 0.0
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "adventure",
+      "age": 6,
+      "ageName": "modern",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-modern.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 9,
+          "samples": 174,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 174,
+            "aligned": 165,
+            "agreement": 0.9483,
+            "controlAgreement": 0.1552,
+            "localized": true
+          },
+          "medianRgb": [
+            131,
+            113,
+            91
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.0727,
+            "localized": true
+          },
+          "medianRgb": [
+            89,
+            99,
+            98
+          ]
+        },
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "rect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "approaches": [
+              [
+                3,
+                6
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 18,
+              "aligned": 18,
+              "agreement": 1.0,
+              "controlAgreement": 0.3333,
+              "localized": true
+            },
+            "medianRgb": [
+              142,
+              124,
+              107
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 16
+        },
+        "approaches": [
+          {
+            "id": "town",
+            "world": [
+              8,
+              4
+            ],
+            "source": [
+              696.0,
+              244.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "ruin",
+            "world": [
+              12,
+              3
+            ],
+            "source": [
+              885.0,
+              175.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mill",
+            "world": [
+              2,
+              6
+            ],
+            "source": [
+              424.0,
+              366.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mine",
+            "world": [
+              10,
+              6
+            ],
+            "source": [
+              848.0,
+              302.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "dwelling",
+            "world": [
+              10,
+              8
+            ],
+            "source": [
+              894.0,
+              376.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "shrine",
+            "world": [
+              2,
+              7
+            ],
+            "source": [
+              447.0,
+              403.0
+            ],
+            "nearestRoadPx": 0.0
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "adventure",
+      "age": 7,
+      "ageName": "future",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-future.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        53,
+        -8,
+        23,
+        37,
+        180,
+        160
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 9,
+          "samples": 174,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 174,
+            "aligned": 165,
+            "agreement": 0.9483,
+            "controlAgreement": 0.1149,
+            "localized": true
+          },
+          "medianRgb": [
+            135,
+            110,
+            73
+          ]
+        },
+        "banks": {
+          "segments": 22,
+          "samples": 110,
+          "edge": {
+            "samples": 110,
+            "aligned": 106,
+            "agreement": 0.9636,
+            "controlAgreement": 0.1545,
+            "localized": true
+          },
+          "medianRgb": [
+            108,
+            107,
+            102
+          ]
+        },
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "rect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "approaches": [
+              [
+                3,
+                6
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 18,
+              "aligned": 18,
+              "agreement": 1.0,
+              "controlAgreement": 0.5556,
+              "localized": true
+            },
+            "medianRgb": [
+              168,
+              146,
+              116
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 16
+        },
+        "approaches": [
+          {
+            "id": "town",
+            "world": [
+              8,
+              4
+            ],
+            "source": [
+              696.0,
+              244.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "ruin",
+            "world": [
+              12,
+              3
+            ],
+            "source": [
+              885.0,
+              175.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mill",
+            "world": [
+              2,
+              6
+            ],
+            "source": [
+              424.0,
+              366.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "mine",
+            "world": [
+              10,
+              6
+            ],
+            "source": [
+              848.0,
+              302.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "dwelling",
+            "world": [
+              10,
+              8
+            ],
+            "source": [
+              894.0,
+              376.0
+            ],
+            "nearestRoadPx": 0.0
+          },
+          {
+            "id": "shrine",
+            "world": [
+              2,
+              7
+            ],
+            "source": [
+              447.0,
+              403.0
+            ],
+            "nearestRoadPx": 0.0
+          }
+        ],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "tactical",
+      "age": 0,
+      "ageName": "stone",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-stone.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 2,
+          "samples": 42,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 42,
+            "aligned": 38,
+            "agreement": 0.9048,
+            "controlAgreement": 0.5238,
+            "localized": true
+          },
+          "medianRgb": [
+            171,
+            149,
+            100
+          ]
+        },
+        "banks": {
+          "segments": 18,
+          "samples": 90,
+          "edge": {
+            "samples": 90,
+            "aligned": 86,
+            "agreement": 0.9556,
+            "controlAgreement": 0.0778,
+            "localized": true
+          },
+          "medianRgb": [
+            72,
+            73,
+            64
+          ]
+        },
+        "decks": [
+          {
+            "id": "crossing-3",
+            "rect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              209,
+              190,
+              148
+            ]
+          },
+          {
+            "id": "crossing-7",
+            "rect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              175,
+              152,
+              114
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 10
+        },
+        "approaches": [],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "tactical",
+      "age": 1,
+      "ageName": "bronze",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-bronze.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 2,
+          "samples": 42,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 42,
+            "aligned": 38,
+            "agreement": 0.9048,
+            "controlAgreement": 0.1429,
+            "localized": true
+          },
+          "medianRgb": [
+            140,
+            122,
+            69
+          ]
+        },
+        "banks": {
+          "segments": 18,
+          "samples": 90,
+          "edge": {
+            "samples": 90,
+            "aligned": 86,
+            "agreement": 0.9556,
+            "controlAgreement": 0.0333,
+            "localized": true
+          },
+          "medianRgb": [
+            54,
+            81,
+            94
+          ]
+        },
+        "decks": [
+          {
+            "id": "crossing-3",
+            "rect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0,
+              "localized": true
+            },
+            "medianRgb": [
+              185,
+              160,
+              129
+            ]
+          },
+          {
+            "id": "crossing-7",
+            "rect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0,
+              "localized": true
+            },
+            "medianRgb": [
+              165,
+              143,
+              113
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 10
+        },
+        "approaches": [],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "tactical",
+      "age": 2,
+      "ageName": "iron",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-iron.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 2,
+          "samples": 42,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 42,
+            "aligned": 38,
+            "agreement": 0.9048,
+            "controlAgreement": 0.5238,
+            "localized": true
+          },
+          "medianRgb": [
+            149,
+            125,
+            79
+          ]
+        },
+        "banks": {
+          "segments": 18,
+          "samples": 90,
+          "edge": {
+            "samples": 90,
+            "aligned": 86,
+            "agreement": 0.9556,
+            "controlAgreement": 0.1556,
+            "localized": true
+          },
+          "medianRgb": [
+            57,
+            67,
+            72
+          ]
+        },
+        "decks": [
+          {
+            "id": "crossing-3",
+            "rect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.1818,
+              "localized": true
+            },
+            "medianRgb": [
+              152,
+              124,
+              91
+            ]
+          },
+          {
+            "id": "crossing-7",
+            "rect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.8182,
+              "localized": true
+            },
+            "medianRgb": [
+              196,
+              166,
+              126
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 10
+        },
+        "approaches": [],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "tactical",
+      "age": 3,
+      "ageName": "medieval",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-medieval.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 2,
+          "samples": 42,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 42,
+            "aligned": 38,
+            "agreement": 0.9048,
+            "controlAgreement": 0.0714,
+            "localized": true
+          },
+          "medianRgb": [
+            147,
+            124,
+            88
+          ]
+        },
+        "banks": {
+          "segments": 18,
+          "samples": 90,
+          "edge": {
+            "samples": 90,
+            "aligned": 86,
+            "agreement": 0.9556,
+            "controlAgreement": 0.0444,
+            "localized": true
+          },
+          "medianRgb": [
+            98,
+            115,
+            122
+          ]
+        },
+        "decks": [
+          {
+            "id": "crossing-3",
+            "rect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0,
+              "localized": true
+            },
+            "medianRgb": [
+              183,
+              160,
+              122
+            ]
+          },
+          {
+            "id": "crossing-7",
+            "rect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0,
+              "localized": true
+            },
+            "medianRgb": [
+              38,
+              38,
+              34
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 10
+        },
+        "approaches": [],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "tactical",
+      "age": 4,
+      "ageName": "gunpowder",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-gunpowder.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 2,
+          "samples": 42,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 42,
+            "aligned": 38,
+            "agreement": 0.9048,
+            "controlAgreement": 0.0476,
+            "localized": true
+          },
+          "medianRgb": [
+            180,
+            154,
+            114
+          ]
+        },
+        "banks": {
+          "segments": 18,
+          "samples": 90,
+          "edge": {
+            "samples": 90,
+            "aligned": 86,
+            "agreement": 0.9556,
+            "controlAgreement": 0.2,
+            "localized": true
+          },
+          "medianRgb": [
+            119,
+            108,
+            93
+          ]
+        },
+        "decks": [
+          {
+            "id": "crossing-3",
+            "rect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              156,
+              167,
+              158
+            ]
+          },
+          {
+            "id": "crossing-7",
+            "rect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              51,
+              41,
+              33
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 10
+        },
+        "approaches": [],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "tactical",
+      "age": 5,
+      "ageName": "industrial",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-industrial.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 2,
+          "samples": 42,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 42,
+            "aligned": 38,
+            "agreement": 0.9048,
+            "controlAgreement": 0.4286,
+            "localized": true
+          },
+          "medianRgb": [
+            146,
+            134,
+            142
+          ]
+        },
+        "banks": {
+          "segments": 18,
+          "samples": 90,
+          "edge": {
+            "samples": 90,
+            "aligned": 86,
+            "agreement": 0.9556,
+            "controlAgreement": 0.1,
+            "localized": true
+          },
+          "medianRgb": [
+            100,
+            131,
+            152
+          ]
+        },
+        "decks": [
+          {
+            "id": "crossing-3",
+            "rect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              176,
+              165,
+              147
+            ]
+          },
+          {
+            "id": "crossing-7",
+            "rect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.4545,
+              "localized": true
+            },
+            "medianRgb": [
+              176,
+              165,
+              157
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 10
+        },
+        "approaches": [],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "tactical",
+      "age": 6,
+      "ageName": "modern",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-modern.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 2,
+          "samples": 42,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 42,
+            "aligned": 38,
+            "agreement": 0.9048,
+            "controlAgreement": 0.3571,
+            "localized": true
+          },
+          "medianRgb": [
+            120,
+            103,
+            74
+          ]
+        },
+        "banks": {
+          "segments": 18,
+          "samples": 90,
+          "edge": {
+            "samples": 90,
+            "aligned": 86,
+            "agreement": 0.9556,
+            "controlAgreement": 0.1,
+            "localized": true
+          },
+          "medianRgb": [
+            37,
+            66,
+            76
+          ]
+        },
+        "decks": [
+          {
+            "id": "crossing-3",
+            "rect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.1818,
+              "localized": true
+            },
+            "medianRgb": [
+              162,
+              142,
+              114
+            ]
+          },
+          {
+            "id": "crossing-7",
+            "rect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              38,
+              66,
+              70
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 10
+        },
+        "approaches": [],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "tactical",
+      "age": 7,
+      "ageName": "future",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-future.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        77,
+        -12,
+        27,
+        46,
+        270,
+        110
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 2,
+          "samples": 42,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 42,
+            "aligned": 38,
+            "agreement": 0.9048,
+            "controlAgreement": 0.0714,
+            "localized": true
+          },
+          "medianRgb": [
+            89,
+            78,
+            74
+          ]
+        },
+        "banks": {
+          "segments": 18,
+          "samples": 90,
+          "edge": {
+            "samples": 90,
+            "aligned": 86,
+            "agreement": 0.9556,
+            "controlAgreement": 0.1333,
+            "localized": true
+          },
+          "medianRgb": [
+            53,
+            61,
+            53
+          ]
+        },
+        "decks": [
+          {
+            "id": "crossing-3",
+            "rect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              59,
+              68,
+              69
+            ]
+          },
+          {
+            "id": "crossing-7",
+            "rect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "approaches": [
+              [
+                2,
+                7
+              ],
+              [
+                4,
+                7
+              ]
+            ],
+            "roadIntersections": [],
+            "roadIntersectionCount": 0,
+            "edge": {
+              "samples": 11,
+              "aligned": 11,
+              "agreement": 1.0,
+              "controlAgreement": 0.0909,
+              "localized": true
+            },
+            "medianRgb": [
+              36,
+              40,
+              42
+            ]
+          }
+        ],
+        "obstacles": {
+          "cells": 10
+        },
+        "approaches": [],
+        "lanes": {
+          "present": false,
+          "samples": 0,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": null,
+          "medianRgb": null
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "defense",
+      "age": 0,
+      "ageName": "stone",
+      "source": "assets/derivatives/scene-edges-20261013/defense-stone.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 141,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 141,
+            "aligned": 141,
+            "agreement": 1.0,
+            "controlAgreement": 0.1489,
+            "localized": true
+          },
+          "medianRgb": [
+            125,
+            102,
+            67
+          ]
+        },
+        "banks": {
+          "segments": 0,
+          "samples": 0,
+          "edge": null,
+          "medianRgb": null
+        },
+        "decks": [],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "D1",
+            "world": [
+              1.4,
+              12.8
+            ],
+            "source": [
+              610.0,
+              536.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D2",
+            "world": [
+              3.4,
+              10.8
+            ],
+            "source": [
+              690.0,
+              450.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D3",
+            "world": [
+              7.4,
+              9.8
+            ],
+            "source": [
+              910.0,
+              383.8
+            ],
+            "nearestRoadPx": 82.04
+          },
+          {
+            "id": "D4",
+            "world": [
+              3.4,
+              8.8
+            ],
+            "source": [
+              650.0,
+              380.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D5",
+            "world": [
+              1.4,
+              6.8
+            ],
+            "source": [
+              490.0,
+              326.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D6",
+            "world": [
+              5.4,
+              5.8
+            ],
+            "source": [
+              710.0,
+              259.8
+            ],
+            "nearestRoadPx": 78.49
+          },
+          {
+            "id": "D7",
+            "world": [
+              3.4,
+              2.8
+            ],
+            "source": [
+              530.0,
+              170.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D8",
+            "world": [
+              7.4,
+              2.8
+            ],
+            "source": [
+              770.0,
+              138.8
+            ],
+            "nearestRoadPx": 101.4
+          }
+        ],
+        "lanes": {
+          "present": true,
+          "samples": 113,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": {
+            "samples": 113,
+            "aligned": 113,
+            "agreement": 1.0,
+            "controlAgreement": 0.2035,
+            "localized": true
+          },
+          "medianRgb": [
+            125,
+            102,
+            67
+          ]
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "defense",
+      "age": 1,
+      "ageName": "bronze",
+      "source": "assets/derivatives/scene-edges-20261013/defense-bronze.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 141,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 141,
+            "aligned": 141,
+            "agreement": 1.0,
+            "controlAgreement": 0.1277,
+            "localized": true
+          },
+          "medianRgb": [
+            145,
+            128,
+            57
+          ]
+        },
+        "banks": {
+          "segments": 0,
+          "samples": 0,
+          "edge": null,
+          "medianRgb": null
+        },
+        "decks": [],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "D1",
+            "world": [
+              1.4,
+              12.8
+            ],
+            "source": [
+              610.0,
+              536.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D2",
+            "world": [
+              3.4,
+              10.8
+            ],
+            "source": [
+              690.0,
+              450.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D3",
+            "world": [
+              7.4,
+              9.8
+            ],
+            "source": [
+              910.0,
+              383.8
+            ],
+            "nearestRoadPx": 82.04
+          },
+          {
+            "id": "D4",
+            "world": [
+              3.4,
+              8.8
+            ],
+            "source": [
+              650.0,
+              380.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D5",
+            "world": [
+              1.4,
+              6.8
+            ],
+            "source": [
+              490.0,
+              326.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D6",
+            "world": [
+              5.4,
+              5.8
+            ],
+            "source": [
+              710.0,
+              259.8
+            ],
+            "nearestRoadPx": 78.49
+          },
+          {
+            "id": "D7",
+            "world": [
+              3.4,
+              2.8
+            ],
+            "source": [
+              530.0,
+              170.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D8",
+            "world": [
+              7.4,
+              2.8
+            ],
+            "source": [
+              770.0,
+              138.8
+            ],
+            "nearestRoadPx": 101.4
+          }
+        ],
+        "lanes": {
+          "present": true,
+          "samples": 113,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": {
+            "samples": 113,
+            "aligned": 113,
+            "agreement": 1.0,
+            "controlAgreement": 0.115,
+            "localized": true
+          },
+          "medianRgb": [
+            145,
+            128,
+            57
+          ]
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "defense",
+      "age": 2,
+      "ageName": "iron",
+      "source": "assets/derivatives/scene-edges-20261013/defense-iron.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 141,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 141,
+            "aligned": 141,
+            "agreement": 1.0,
+            "controlAgreement": 0.1986,
+            "localized": true
+          },
+          "medianRgb": [
+            133,
+            110,
+            76
+          ]
+        },
+        "banks": {
+          "segments": 0,
+          "samples": 0,
+          "edge": null,
+          "medianRgb": null
+        },
+        "decks": [],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "D1",
+            "world": [
+              1.4,
+              12.8
+            ],
+            "source": [
+              610.0,
+              536.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D2",
+            "world": [
+              3.4,
+              10.8
+            ],
+            "source": [
+              690.0,
+              450.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D3",
+            "world": [
+              7.4,
+              9.8
+            ],
+            "source": [
+              910.0,
+              383.8
+            ],
+            "nearestRoadPx": 82.04
+          },
+          {
+            "id": "D4",
+            "world": [
+              3.4,
+              8.8
+            ],
+            "source": [
+              650.0,
+              380.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D5",
+            "world": [
+              1.4,
+              6.8
+            ],
+            "source": [
+              490.0,
+              326.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D6",
+            "world": [
+              5.4,
+              5.8
+            ],
+            "source": [
+              710.0,
+              259.8
+            ],
+            "nearestRoadPx": 78.49
+          },
+          {
+            "id": "D7",
+            "world": [
+              3.4,
+              2.8
+            ],
+            "source": [
+              530.0,
+              170.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D8",
+            "world": [
+              7.4,
+              2.8
+            ],
+            "source": [
+              770.0,
+              138.8
+            ],
+            "nearestRoadPx": 101.4
+          }
+        ],
+        "lanes": {
+          "present": true,
+          "samples": 113,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": {
+            "samples": 113,
+            "aligned": 113,
+            "agreement": 1.0,
+            "controlAgreement": 0.1858,
+            "localized": true
+          },
+          "medianRgb": [
+            133,
+            110,
+            76
+          ]
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "defense",
+      "age": 3,
+      "ageName": "medieval",
+      "source": "assets/derivatives/scene-edges-20261013/defense-medieval.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 141,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 141,
+            "aligned": 141,
+            "agreement": 1.0,
+            "controlAgreement": 0.1844,
+            "localized": true
+          },
+          "medianRgb": [
+            79,
+            75,
+            41
+          ]
+        },
+        "banks": {
+          "segments": 0,
+          "samples": 0,
+          "edge": null,
+          "medianRgb": null
+        },
+        "decks": [],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "D1",
+            "world": [
+              1.4,
+              12.8
+            ],
+            "source": [
+              610.0,
+              536.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D2",
+            "world": [
+              3.4,
+              10.8
+            ],
+            "source": [
+              690.0,
+              450.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D3",
+            "world": [
+              7.4,
+              9.8
+            ],
+            "source": [
+              910.0,
+              383.8
+            ],
+            "nearestRoadPx": 82.04
+          },
+          {
+            "id": "D4",
+            "world": [
+              3.4,
+              8.8
+            ],
+            "source": [
+              650.0,
+              380.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D5",
+            "world": [
+              1.4,
+              6.8
+            ],
+            "source": [
+              490.0,
+              326.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D6",
+            "world": [
+              5.4,
+              5.8
+            ],
+            "source": [
+              710.0,
+              259.8
+            ],
+            "nearestRoadPx": 78.49
+          },
+          {
+            "id": "D7",
+            "world": [
+              3.4,
+              2.8
+            ],
+            "source": [
+              530.0,
+              170.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D8",
+            "world": [
+              7.4,
+              2.8
+            ],
+            "source": [
+              770.0,
+              138.8
+            ],
+            "nearestRoadPx": 101.4
+          }
+        ],
+        "lanes": {
+          "present": true,
+          "samples": 113,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": {
+            "samples": 113,
+            "aligned": 113,
+            "agreement": 1.0,
+            "controlAgreement": 0.2124,
+            "localized": true
+          },
+          "medianRgb": [
+            79,
+            75,
+            41
+          ]
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "defense",
+      "age": 4,
+      "ageName": "gunpowder",
+      "source": "assets/derivatives/scene-edges-20261013/defense-gunpowder.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 141,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 141,
+            "aligned": 141,
+            "agreement": 1.0,
+            "controlAgreement": 0.1064,
+            "localized": true
+          },
+          "medianRgb": [
+            199,
+            154,
+            99
+          ]
+        },
+        "banks": {
+          "segments": 0,
+          "samples": 0,
+          "edge": null,
+          "medianRgb": null
+        },
+        "decks": [],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "D1",
+            "world": [
+              1.4,
+              12.8
+            ],
+            "source": [
+              610.0,
+              536.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D2",
+            "world": [
+              3.4,
+              10.8
+            ],
+            "source": [
+              690.0,
+              450.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D3",
+            "world": [
+              7.4,
+              9.8
+            ],
+            "source": [
+              910.0,
+              383.8
+            ],
+            "nearestRoadPx": 82.04
+          },
+          {
+            "id": "D4",
+            "world": [
+              3.4,
+              8.8
+            ],
+            "source": [
+              650.0,
+              380.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D5",
+            "world": [
+              1.4,
+              6.8
+            ],
+            "source": [
+              490.0,
+              326.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D6",
+            "world": [
+              5.4,
+              5.8
+            ],
+            "source": [
+              710.0,
+              259.8
+            ],
+            "nearestRoadPx": 78.49
+          },
+          {
+            "id": "D7",
+            "world": [
+              3.4,
+              2.8
+            ],
+            "source": [
+              530.0,
+              170.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D8",
+            "world": [
+              7.4,
+              2.8
+            ],
+            "source": [
+              770.0,
+              138.8
+            ],
+            "nearestRoadPx": 101.4
+          }
+        ],
+        "lanes": {
+          "present": true,
+          "samples": 113,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": {
+            "samples": 113,
+            "aligned": 113,
+            "agreement": 1.0,
+            "controlAgreement": 0.1062,
+            "localized": true
+          },
+          "medianRgb": [
+            199,
+            154,
+            99
+          ]
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "defense",
+      "age": 5,
+      "ageName": "industrial",
+      "source": "assets/derivatives/scene-edges-20261013/defense-industrial.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 141,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 141,
+            "aligned": 141,
+            "agreement": 1.0,
+            "controlAgreement": 0.2908,
+            "localized": true
+          },
+          "medianRgb": [
+            237,
+            231,
+            224
+          ]
+        },
+        "banks": {
+          "segments": 0,
+          "samples": 0,
+          "edge": null,
+          "medianRgb": null
+        },
+        "decks": [],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "D1",
+            "world": [
+              1.4,
+              12.8
+            ],
+            "source": [
+              610.0,
+              536.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D2",
+            "world": [
+              3.4,
+              10.8
+            ],
+            "source": [
+              690.0,
+              450.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D3",
+            "world": [
+              7.4,
+              9.8
+            ],
+            "source": [
+              910.0,
+              383.8
+            ],
+            "nearestRoadPx": 82.04
+          },
+          {
+            "id": "D4",
+            "world": [
+              3.4,
+              8.8
+            ],
+            "source": [
+              650.0,
+              380.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D5",
+            "world": [
+              1.4,
+              6.8
+            ],
+            "source": [
+              490.0,
+              326.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D6",
+            "world": [
+              5.4,
+              5.8
+            ],
+            "source": [
+              710.0,
+              259.8
+            ],
+            "nearestRoadPx": 78.49
+          },
+          {
+            "id": "D7",
+            "world": [
+              3.4,
+              2.8
+            ],
+            "source": [
+              530.0,
+              170.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D8",
+            "world": [
+              7.4,
+              2.8
+            ],
+            "source": [
+              770.0,
+              138.8
+            ],
+            "nearestRoadPx": 101.4
+          }
+        ],
+        "lanes": {
+          "present": true,
+          "samples": 113,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": {
+            "samples": 113,
+            "aligned": 113,
+            "agreement": 1.0,
+            "controlAgreement": 0.2832,
+            "localized": true
+          },
+          "medianRgb": [
+            237,
+            231,
+            224
+          ]
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "defense",
+      "age": 6,
+      "ageName": "modern",
+      "source": "assets/derivatives/scene-edges-20261013/defense-modern.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 141,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 141,
+            "aligned": 141,
+            "agreement": 1.0,
+            "controlAgreement": 0.1773,
+            "localized": true
+          },
+          "medianRgb": [
+            135,
+            117,
+            97
+          ]
+        },
+        "banks": {
+          "segments": 0,
+          "samples": 0,
+          "edge": null,
+          "medianRgb": null
+        },
+        "decks": [],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "D1",
+            "world": [
+              1.4,
+              12.8
+            ],
+            "source": [
+              610.0,
+              536.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D2",
+            "world": [
+              3.4,
+              10.8
+            ],
+            "source": [
+              690.0,
+              450.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D3",
+            "world": [
+              7.4,
+              9.8
+            ],
+            "source": [
+              910.0,
+              383.8
+            ],
+            "nearestRoadPx": 82.04
+          },
+          {
+            "id": "D4",
+            "world": [
+              3.4,
+              8.8
+            ],
+            "source": [
+              650.0,
+              380.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D5",
+            "world": [
+              1.4,
+              6.8
+            ],
+            "source": [
+              490.0,
+              326.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D6",
+            "world": [
+              5.4,
+              5.8
+            ],
+            "source": [
+              710.0,
+              259.8
+            ],
+            "nearestRoadPx": 78.49
+          },
+          {
+            "id": "D7",
+            "world": [
+              3.4,
+              2.8
+            ],
+            "source": [
+              530.0,
+              170.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D8",
+            "world": [
+              7.4,
+              2.8
+            ],
+            "source": [
+              770.0,
+              138.8
+            ],
+            "nearestRoadPx": 101.4
+          }
+        ],
+        "lanes": {
+          "present": true,
+          "samples": 113,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": {
+            "samples": 113,
+            "aligned": 113,
+            "agreement": 1.0,
+            "controlAgreement": 0.1681,
+            "localized": true
+          },
+          "medianRgb": [
+            135,
+            117,
+            97
+          ]
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    },
+    {
+      "scene": "defense",
+      "age": 7,
+      "ageName": "future",
+      "source": "assets/derivatives/scene-edges-20261013/defense-future.png",
+      "nativeWidth": 1376,
+      "nativeHeight": 768,
+      "worldToSource": [
+        60,
+        -8,
+        20,
+        35,
+        270,
+        100
+      ],
+      "sourceScale": [
+        1.0,
+        1.0
+      ],
+      "features": {
+        "roads": {
+          "polylines": 1,
+          "samples": 141,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "blockedIntersections": [],
+          "blockedIntersectionCount": 0,
+          "edge": {
+            "samples": 141,
+            "aligned": 141,
+            "agreement": 1.0,
+            "controlAgreement": 0.234,
+            "localized": true
+          },
+          "medianRgb": [
+            126,
+            106,
+            70
+          ]
+        },
+        "banks": {
+          "segments": 0,
+          "samples": 0,
+          "edge": null,
+          "medianRgb": null
+        },
+        "decks": [],
+        "obstacles": {
+          "cells": 0
+        },
+        "approaches": [
+          {
+            "id": "D1",
+            "world": [
+              1.4,
+              12.8
+            ],
+            "source": [
+              610.0,
+              536.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D2",
+            "world": [
+              3.4,
+              10.8
+            ],
+            "source": [
+              690.0,
+              450.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D3",
+            "world": [
+              7.4,
+              9.8
+            ],
+            "source": [
+              910.0,
+              383.8
+            ],
+            "nearestRoadPx": 82.04
+          },
+          {
+            "id": "D4",
+            "world": [
+              3.4,
+              8.8
+            ],
+            "source": [
+              650.0,
+              380.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D5",
+            "world": [
+              1.4,
+              6.8
+            ],
+            "source": [
+              490.0,
+              326.8
+            ],
+            "nearestRoadPx": 38.42
+          },
+          {
+            "id": "D6",
+            "world": [
+              5.4,
+              5.8
+            ],
+            "source": [
+              710.0,
+              259.8
+            ],
+            "nearestRoadPx": 78.49
+          },
+          {
+            "id": "D7",
+            "world": [
+              3.4,
+              2.8
+            ],
+            "source": [
+              530.0,
+              170.8
+            ],
+            "nearestRoadPx": 33.73
+          },
+          {
+            "id": "D8",
+            "world": [
+              7.4,
+              2.8
+            ],
+            "source": [
+              770.0,
+              138.8
+            ],
+            "nearestRoadPx": 101.4
+          }
+        ],
+        "lanes": {
+          "present": true,
+          "samples": 113,
+          "obstacleIntersections": [],
+          "obstacleIntersectionCount": 0,
+          "edge": {
+            "samples": 113,
+            "aligned": 113,
+            "agreement": 1.0,
+            "controlAgreement": 0.1947,
+            "localized": true
+          },
+          "medianRgb": [
+            126,
+            106,
+            70
+          ]
+        }
+      },
+      "geometryGate": "PASS",
+      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "colourUsedAsPassPredicate": false
+    }
+  ]
+}

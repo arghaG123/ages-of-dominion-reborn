@@ -457,9 +457,9 @@
     "healer": {
       "id": "class-healer-standing-body",
       "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-healer-standing-body.png",
-      "sha256": "babb4fda8ae7f42d85f5735aa11576ca93d153a26fe038344f75765953a92f35",
-      "bytes": 1004382,
-      "width": 513,
+      "sha256": "d788dbbb49ec06b162d4f2edb737efd4b094f8f92aaf1d91befc1acfe920f185",
+      "bytes": 1074872,
+      "width": 536,
       "height": 1400,
       "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
       "sourceSHA256": "3eb2d3258c70a8523cba96e62c1ba5bb46b28f8fdfce077a7d4e5fcaab114383",
@@ -467,19 +467,83 @@
       "nativeSHA256": "3eb2d3258c70a8523cba96e62c1ba5bb46b28f8fdfce077a7d4e5fcaab114383",
       "cropROI": [
         260,
-        30,
+        35,
         742,
-        1345
+        1295
       ],
       "cropROIConvention": "half-open-xyxy",
       "sourceToOutput": [
-        1.064638783269962,
+        1.1111111111111112,
         0,
         0,
-        1.064638783269962,
-        -276.8060836501901,
-        -31.93916349809886
+        1.1111111111111112,
+        -288.8888888888889,
+        -38.888888888888886
       ],
+      "assembly": {
+        "method": "five-part-composite",
+        "canvas": [
+          1000,
+          1600
+        ],
+        "cropROI": [
+          260,
+          35,
+          742,
+          1295
+        ],
+        "parts": [
+          {
+            "part": "skirt",
+            "source": "assets/derivatives/rigs/v6/healer/skirt.png",
+            "offset": [
+              313,
+              646
+            ]
+          },
+          {
+            "part": "boot_left",
+            "source": "assets/derivatives/rigs/v7/healer/boot.png",
+            "offset": [
+              398,
+              1164
+            ]
+          },
+          {
+            "part": "boot_right",
+            "source": "assets/derivatives/rigs/v7/healer/boot.png",
+            "offset": [
+              523,
+              1164
+            ],
+            "flipX": true
+          },
+          {
+            "part": "torso",
+            "source": "assets/derivatives/rigs/v6/healer/torso.png",
+            "offset": [
+              260,
+              350
+            ]
+          },
+          {
+            "part": "head",
+            "source": "assets/derivatives/rigs/v9/healer/healer-head-front-bust.png",
+            "offset": [
+              381,
+              35
+            ]
+          },
+          {
+            "part": "staff_arms",
+            "source": "assets/derivatives/rigs/v6/healer/staff_arms_group.png",
+            "offset": [
+              262,
+              230
+            ]
+          }
+        ]
+      },
       "groundContact": {
         "y": 1399,
         "x": [

@@ -1,0 +1,4584 @@
+[
+  {
+    "path": "docs/plan/image-production/active-batch.lock.json",
+    "sha256": "df6cf288f06392f34b5c179e050442d199a45572b497ff4d721fb17b5beec3f7",
+    "data": {
+      "batch_id": "vertex-repair-20261009",
+      "state": "JOB_STATE_SUCCEEDED",
+      "workflow_state": "TERMINAL_COLLECTED",
+      "owner": "environment-vertex-medieval-resume-pid4484",
+      "releasedAt": "2026-10-09T07:52:33.847355+00:00",
+      "medievalResume": "CANDIDATE"
+    }
+  },
+  {
+    "path": "docs/plan/image-production/budget-ledger.json",
+    "sha256": "906c566ce5ef0b0e7d03bc30f974a42840b811b4dcc8b7165abddb838ad1e891",
+    "data": {
+      "version": 1,
+      "currency": "USD",
+      "hardCap": 80,
+      "target": 60,
+      "safetyReserve": 15,
+      "historicalMock": {
+        "outputOnlyEstimate": 0.504,
+        "conservativeReservation": 2,
+        "billedTotal": null
+      },
+      "batches": [
+        {
+          "id": "production-01-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T03:50:34.915778+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7379059066443661312",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded. reservedUSD stays. billedTotal is still unknown and is not zero.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-02-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T04:02:17.629751+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/2260718089937092608",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded. reservedUSD stays. billedTotal is still unknown and is not zero.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-03-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T05:18:06.595515+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/3389643852779356160",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and outputs were collected. reservedUSD stays. billedTotal is still unknown and is not zero. Visual review is not a pass.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-04-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T06:42:31.398185+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/6905547786872160256",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-05-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T08:24:23.263085+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/3746131910783401984",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-06-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T08:33:47.871817+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/6618865523092357120",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-07-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T08:41:14.176508+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/1624373536338477056",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-08-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T09:13:46.262477+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/6249288878671265792",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.37,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-09-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T11:27:51.949507+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7989419961254674432",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.39,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-10-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T11:35:12.844797+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/6595555876583505920",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.45,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-11-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T12:10:12.183402+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7177646128421142528",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.36,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-12-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T12:26:14.943362+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/1629211387500691456",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.36,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-13-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_PENDING",
+          "createdAt": "2026-10-03T13:01:40.436506+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/2619440355568779264",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.35,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-14-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T13:49:53.421235+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/9013425926528040960",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.34,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-15-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T14:03:14.612627+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7110655083964006400",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.34,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-16-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T14:12:56.363873+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/7070967112247803904",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.35,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "production-17-20261003",
+          "reservedUSD": 6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T14:49:40.440780+00:00",
+          "usageEstimateUSD": null,
+          "billedTotal": null,
+          "providerJob": "projects/186933974004/locations/global/batchPredictionJobs/5827973615093547008",
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Provider succeeded and 30 outputs collected. reservedUSD stays. billedTotal is still unknown and is not zero. Technical status PASS, visual status UNVERIFIED.",
+          "reconciledExposureUSD": 2.34,
+          "reconciliationStatus": "RECONCILED_UPPER_BOUND_STANDARD_RATES"
+        },
+        {
+          "id": "interactive-4k-first32-20261003",
+          "reservedUSD": 9.12,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-03T17:27:38Z",
+          "usageEstimateUSD": 1.8293,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K individual calls: 12 succeeded, 8 deferred. Invoices remain unknown.",
+          "reconciledExposureUSD": 2.1037,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_CALLS"
+        },
+        {
+          "id": "interactive-4k-first32-continuation-20261004",
+          "reservedUSD": 2.85,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T01:02:43Z",
+          "usageEstimateUSD": 0.6098,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Continuation: 4 succeeded, 1 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 0.7013,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_CONTINUATION"
+        },
+        {
+          "id": "interactive-4k-first32-continuation-run3-20261004",
+          "reservedUSD": 1.71,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T01:27:04Z",
+          "usageEstimateUSD": 0.1524,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Run 3: 1 succeeded, 1 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 0.1753,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_RUN3"
+        },
+        {
+          "id": "interactive-4k-first32-continuation-run4-20261004",
+          "reservedUSD": 1.45,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T01:39:49Z",
+          "usageEstimateUSD": 0.7622,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Run 4: 5 succeeded, 0 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 0.8765,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_RUN4"
+        },
+        {
+          "id": "interactive-4k-tactical-retry-20261004",
+          "reservedUSD": 0.6,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T01:59:00Z",
+          "usageEstimateUSD": 0.3049,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Tactical Retry: 2 succeeded, 0 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 0.3506,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_TACTICAL_RETRY"
+        },
+        {
+          "id": "interactive-4k-kingdom-20261004",
+          "reservedUSD": 2.28,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T02:33:25Z",
+          "usageEstimateUSD": 1.2193,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 4K Kingdom Run 06: 8 succeeded, 0 failed. Invoices remain unknown.",
+          "reconciledExposureUSD": 1.4022,
+          "reconciliationStatus": "RECONCILED_INTERACTIVE_4K_KINGDOM"
+        },
+        {
+          "id": "interactive-2k-later73-20261004",
+          "reservedUSD": 10.483676,
+          "state": "JOB_STATE_SUCCEEDED",
+          "createdAt": "2026-10-04T04:00:00Z",
+          "usageEstimateUSD": 7.403866,
+          "journalCostUSD": 7.564399,
+          "billedTotal": null,
+          "providerState": "JOB_STATE_SUCCEEDED",
+          "holdRetained": true,
+          "reconciliationNote": "Interactive 2K Later 73 Generation completed: 73 unique successes ($7.4039 raw usage / $7.4208 journal tariff), plus $0.2872 retained ambiguous holds (powder-barbarian crash + ranger timeout).",
+          "reconciledExposureUSD": 7.8516,
+          "reconciledBatchExposureUSD": 7.8516,
+          "reconciliationStatus": "RECONCILED_TERMINAL_COLLECTED_HOLDS_RETAINED"
+        }
+      ],
+      "billedTotal": null,
+      "billingStatus": "HOLDS_RETAINED_INVOICE_UNKNOWN",
+      "reconciliationTrail": {
+        "reconciledAt": "2026-10-04T06:30:00.000000+00:00",
+        "policy": "EVIDENCE_BOUNDED_STANDARD_RATE_CEILING_WITH_OVERHEAD",
+        "tariffSource": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "standardTariff": {
+          "inputPer1M": 0.5,
+          "imageOutputPer1M": 60.0,
+          "textThinkingPer1M": 3.0
+        },
+        "measuredCompletedUsageTokens": {
+          "inputTokens": 1074631,
+          "outputTokens": 697701,
+          "totalTokens": 1772332
+        },
+        "tokenStandardCostUSD": 42.383,
+        "overheadAndStorageBufferUSD": 5.247,
+        "reconciledBatches01To17TotalUSD": 40.24,
+        "historicalMockReservationUSD": 2.0,
+        "safetyReserveUSD": 15.0,
+        "reconciledInteractive4KRun01CostUSD": 1.8293,
+        "reconciledInteractive4KRun01BufferUSD": 2.1037,
+        "reconciledInteractive4KRun02CostUSD": 0.6098,
+        "reconciledInteractive4KRun02BufferUSD": 0.7013,
+        "reconciledInteractive4KRun03CostUSD": 0.1524,
+        "reconciledInteractive4KRun03BufferUSD": 0.1753,
+        "reconciledInteractive4KRun04CostUSD": 0.7622,
+        "reconciledInteractive4KRun04BufferUSD": 0.8765,
+        "reconciledInteractive4KTacticalRetryCostUSD": 0.3049,
+        "reconciledInteractive4KTacticalRetryBufferUSD": 0.3506,
+        "reconciledInteractive4KKingdomCostUSD": 1.2193,
+        "reconciledInteractive4KKingdomBufferUSD": 1.4022,
+        "reconciledInteractive2KLater73RawUsageUSD": 7.4039,
+        "reconciledInteractive2KLater73JournalCostUSD": 7.5644,
+        "reconciledInteractive2KLater73AmbiguousLiabilitiesUSD": 0.2872,
+        "reconciledInteractive2KLater73TotalExposureUSD": 7.8516,
+        "totalCommittedProtectedUSD": 71.1156,
+        "hardCapUSD": 80.0,
+        "marginUnderHardCapUSD": 8.8844,
+        "targetUSD": 60.0,
+        "marginUnderTargetUSD": -10.7012,
+        "invoiceStatus": "BILLED_TOTAL_REMAINS_UNKNOWN_HOLDS_RECONCILED",
+        "reconciledInteractiveRegen4CostUSD": 0.4144
+      },
+      "vertexRepair20261009": {
+        "previousCommittedProtectedUSD": 71.1156,
+        "note": "Added by the 9 October environment coordinator. reconciliationTrail was not rewritten.",
+        "attempts": [
+          {
+            "attemptId": "env-kingdom-terrain-stone-v1-a1",
+            "scene": "kingdom-terrain-stone",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:18:00.785178+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-bronze-v1-a1",
+            "scene": "kingdom-terrain-bronze",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:19:13.597819+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-iron-v1-a1",
+            "scene": "kingdom-terrain-iron",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:20:16.410776+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-medieval-v1-a1",
+            "scene": "kingdom-terrain-medieval",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:21:18.143677+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-gunpowder-v1-a1",
+            "scene": "kingdom-terrain-gunpowder",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:22:17.191123+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-industrial-v1-a1",
+            "scene": "kingdom-terrain-industrial",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:23:20.775204+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-modern-v1-a1",
+            "scene": "kingdom-terrain-modern",
+            "reservedUSD": 0.493,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:24:22.483976+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-future-v1-a1",
+            "scene": "kingdom-terrain-future",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:25:38.337802+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-stone-v2-a1",
+            "scene": "kingdom-terrain-stone",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:29:12.933740+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-bronze-v2-a1",
+            "scene": "kingdom-terrain-bronze",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:30:17.558189+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-iron-v2-a1",
+            "scene": "kingdom-terrain-iron",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:31:22.098209+00:00"
+          },
+          {
+            "attemptId": "env-kingdom-terrain-medieval-v2-a1",
+            "scene": "kingdom-terrain-medieval",
+            "reservedUSD": 0.4931,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:33:11+00:00",
+            "note": "Definite 429, then one same-body resume. Collected native 5504x3072. Reservation was not duplicated. Geometry review is FAIL.",
+            "updatedAt": "2026-10-09T07:52:30.890685+00:00"
+          },
+          {
+            "attemptId": "actors-class-knight-standing-body-v1-a1",
+            "scene": "class-knight-standing-body",
+            "ownerQueue": "ACTORS",
+            "reservedUSD": 0.4,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:46:00.868705+00:00"
+          },
+          {
+            "attemptId": "actors-class-ranger-standing-body-v1-a1",
+            "scene": "class-ranger-standing-body",
+            "ownerQueue": "ACTORS",
+            "reservedUSD": 0.4,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:46:45.837594+00:00"
+          },
+          {
+            "attemptId": "actors-class-warlock-standing-body-v1-a1",
+            "scene": "class-warlock-standing-body",
+            "ownerQueue": "ACTORS",
+            "reservedUSD": 0.4,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:47:32.819551+00:00"
+          },
+          {
+            "attemptId": "actors-class-mage-standing-body-v1-a1",
+            "scene": "class-mage-standing-body",
+            "ownerQueue": "ACTORS",
+            "reservedUSD": 0.4,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:48:10.172299+00:00"
+          },
+          {
+            "attemptId": "actors-class-paladin-standing-body-v1-a1",
+            "scene": "class-paladin-standing-body",
+            "ownerQueue": "ACTORS",
+            "reservedUSD": 0.4,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:48:48.562369+00:00"
+          },
+          {
+            "attemptId": "actors-class-barbarian-standing-body-v1-a1",
+            "scene": "class-barbarian-standing-body",
+            "ownerQueue": "ACTORS",
+            "reservedUSD": 0.4,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:49:59.169720+00:00"
+          },
+          {
+            "attemptId": "actors-class-necromancer-standing-body-v1-a1",
+            "scene": "class-necromancer-standing-body",
+            "ownerQueue": "ACTORS",
+            "reservedUSD": 0.4,
+            "retained": true,
+            "status": "SUCCEEDED_CANDIDATE",
+            "at": "2026-10-09T07:50:58.678106+00:00"
+          }
+        ],
+        "addedRetainedUSD": 8.7171,
+        "currentCommittedProtectedUSD": 79.8327
+      },
+      "ownerReserveRelease20261009": {
+        "id": "OWNER_RESERVE_RELEASE_20261009",
+        "recordedAt": "2026-10-09T11:00:55.472668+00:00",
+        "ownerQuote": "use $15 reserve and instruct remain work and solution to do for one AI with a prompt.",
+        "authorityDocument": "docs/plan/OWNER-RESERVE-RELEASE-SINGLE-IMAGE-AI-2026-10-09.md",
+        "releasedReserveUSD": 15.0,
+        "effectiveProtectedReserveUSD": 0.0,
+        "priorProtectedExposureUSD": 79.8327,
+        "priorLiabilityExcludingReserveUSD": 64.8327,
+        "remainingHeadroomUSD": 15.1673,
+        "hardCapUSD": 80.0,
+        "historicalSafetyReservePreservedUSD": 15.0,
+        "historicalCurrentCommittedProtectedUSD": 79.8327,
+        "invoiceStatus": "UNKNOWN",
+        "note": "Effective reserve is 0 for this authorized task. Do not subtract 15 from a balance that already excludes it. Historical safetyReserve and 79.8327 exposure stay in place."
+      },
+      "effectivePolicy20261009": {
+        "effectiveProtectedReserveUSD": 0.0,
+        "priorLiabilityExcludingReserveUSD": 64.8327,
+        "hardCapUSD": 80.0,
+        "remainingHeadroomAtReleaseUSD": 15.1673,
+        "consumers": "image-unified-reserve-20261009 coordinator guard_post"
+      }
+    }
+  },
+  {
+    "path": "docs/plan/image-production/IDENTITY-GAP-LEDGER-20261003.json",
+    "sha256": "313578c6d527a92b08a436a8cf9926041221fedf924008a4f50348ef0bb918bb",
+    "data": {
+      "version": 1,
+      "date": "2026-10-03",
+      "baselineUsefulOutputs": 480,
+      "totalExecutedAttempts": 240,
+      "distinctRequestedIDs": 235,
+      "duplicateRequestedAttempts": 5,
+      "unrequestedBaselineIDs": 245,
+      "requestedByCategory": {
+        "terrain": 32,
+        "buildings": 80,
+        "sites": 6,
+        "resources": 4,
+        "hero-paintings": 8,
+        "skills-spells": 17,
+        "gear": 6,
+        "town-sheets": 24,
+        "troops": 24,
+        "towers": 32,
+        "attackers": 2
+      },
+      "unrequestedByCategory": {
+        "attackers": 38,
+        "creatures": 8,
+        "hero-paintings": 24,
+        "gear": 122,
+        "artifacts": 10,
+        "sites": 6,
+        "supporting": 16,
+        "mounts": 3,
+        "rig-sheets": 8,
+        "effects": 10
+      },
+      "classifiedRequestedAttempts": {
+        "fulfilledOrViableSourceCandidates": 198,
+        "wrongCompleteIdentityReusableFragments": {
+          "count": 6,
+          "ids": [
+            "troop-bronze-heavy",
+            "troop-iron-heavy",
+            "troop-medieval-heavy",
+            "troop-gunpowder-heavy",
+            "troop-industrial-heavy",
+            "troop-modern-heavy",
+            "troop-future-heavy"
+          ],
+          "note": "Prompted as infantry in Batch 07; preserved as crew and visual reference fragments. Roster requires Charioteer, War Elephant, Siege Knight, Cannon Crew, Steam Walker, Battle Tank, Hover Tank."
+        },
+        "sourceCandidatesNeedingLocalRepair": {
+          "count": 30,
+          "examples": [
+            "townhall-stone (local v2 mask distance defect; v3 rebuild needed, not repurchase)",
+            "res-gold (localized red fringe correction needed)",
+            "workshop-stone (yard/base boundary clipping)",
+            "tower-iron-splash (catapult/mortar prompt review to prevent gunpowder look)"
+          ]
+        },
+        "completeSceneTopologyDefectsUsableMaterials": {
+          "count": 6,
+          "examples": [
+            "terrain-tactical-* (complete topologies non-compliant; material textures usable)",
+            "skill-ancient-warlock (village scene with no isolated character to extract)"
+          ]
+        }
+      },
+      "batch09TargetGaps": {
+        "category": "attackers",
+        "unrequestedAvailable": 38,
+        "selectedForBatch09": 30,
+        "remainingForBatch10": 8,
+        "selection": [
+          "attacker-stone-archer",
+          "attacker-stone-sapper",
+          "attacker-stone-shaman",
+          "attacker-bronze-brute",
+          "attacker-bronze-runner",
+          "attacker-bronze-archer",
+          "attacker-bronze-sapper",
+          "attacker-bronze-shaman",
+          "attacker-iron-brute",
+          "attacker-iron-runner",
+          "attacker-iron-archer",
+          "attacker-iron-sapper",
+          "attacker-iron-shaman",
+          "attacker-medieval-brute",
+          "attacker-medieval-runner",
+          "attacker-medieval-archer",
+          "attacker-medieval-sapper",
+          "attacker-medieval-shaman",
+          "attacker-gunpowder-brute",
+          "attacker-gunpowder-runner",
+          "attacker-gunpowder-archer",
+          "attacker-gunpowder-sapper",
+          "attacker-gunpowder-shaman",
+          "attacker-industrial-brute",
+          "attacker-industrial-runner",
+          "attacker-industrial-archer",
+          "attacker-industrial-sapper",
+          "attacker-industrial-shaman",
+          "attacker-modern-brute",
+          "attacker-modern-runner"
+        ]
+      },
+      "nextBatchDeferral": {
+        "batch": "production-09-20261003",
+        "status": "DEFERRED_PENDING_OWNER_AUTHORIZATION",
+        "reason": "Technical preparation and affordability verified ($71 USD projected vs $80 USD hard cap), but owner authorization for batch 09+ has not yet been granted. Executor will not submit paid calls without explicit owner approval."
+      }
+    }
+  },
+  {
+    "path": "docs/plan/image-production/interactive-2k-later73-journal.json",
+    "sha256": "01c21654ed7c4fb3c5ec8ffc690d15c8cbeff868824d3bb2d64d60bcc96f54f1",
+    "data": {
+      "runId": "run-later73-1791086973",
+      "startedAt": "2026-10-04T04:09:33.870729+00:00",
+      "attempts": [
+        {
+          "id": "knight-mounted-master",
+          "order": 1,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+          "costUSD": 0.101413,
+          "promptTokens": 1225,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:10:00.403476+00:00"
+        },
+        {
+          "id": "knight-mounted-master",
+          "order": 1,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:10:27.297302+00:00"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "order": 2,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "f3a32f6682bab256222a4f86bf902e5ee4bd7eac3a743b1443eefdae3917ac62",
+          "costUSD": 0.101412,
+          "promptTokens": 1223,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:10:46.710690+00:00"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "order": 3,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "83e229628bf527f9226c6a1f1763e307bc4025f54c224bbb79a431ed885e7fa7",
+          "costUSD": 0.101412,
+          "promptTokens": 1224,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:11:27.362918+00:00"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "order": 4,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "9d1128696562c314c977f8d6e62bcf333ca8afcaa15528d5e5902dddcd355554",
+          "costUSD": 0.101407,
+          "promptTokens": 1214,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:12:09.567533+00:00"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "order": 5,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "45f8ba7cb73d88e3ceef7e653e8612f62838ad5aa37b00030aeb211762fff7a9",
+          "costUSD": 0.101412,
+          "promptTokens": 1224,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:13:48.274910+00:00"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "order": 6,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "97ebbc00401e02cb1b25151687c9e21ecec03fee4e39639d4d62ac4923979ecf",
+          "costUSD": 0.101412,
+          "promptTokens": 1224,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:15:12.708920+00:00"
+        },
+        {
+          "id": "knight-mounted-master",
+          "order": 1,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:15:36.140776+00:00"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "order": 2,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f3a32f6682bab256222a4f86bf902e5ee4bd7eac3a743b1443eefdae3917ac62",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:15:36.152987+00:00"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "order": 3,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "83e229628bf527f9226c6a1f1763e307bc4025f54c224bbb79a431ed885e7fa7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:15:36.159824+00:00"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "order": 4,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "9d1128696562c314c977f8d6e62bcf333ca8afcaa15528d5e5902dddcd355554",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:15:36.166703+00:00"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "order": 5,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "45f8ba7cb73d88e3ceef7e653e8612f62838ad5aa37b00030aeb211762fff7a9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:15:36.173204+00:00"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "order": 6,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "97ebbc00401e02cb1b25151687c9e21ecec03fee4e39639d4d62ac4923979ecf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:15:36.178981+00:00"
+        },
+        {
+          "id": "portrait-ancient-necromancer",
+          "order": 7,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "0f8873c011a861ad9f4588ded83bda0e4fdfc9a782cbd990ffb095f2139dc385",
+          "costUSD": 0.101411,
+          "promptTokens": 1221,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:15:56.103006+00:00"
+        },
+        {
+          "id": "portrait-ancient-healer",
+          "order": 8,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "1078e29f0db578e35231b7ff4f0e9f95b40d3ac3d3b1a0ad0bf867e6933b9969",
+          "costUSD": 0.101409,
+          "promptTokens": 1218,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:17:19.812748+00:00"
+        },
+        {
+          "id": "portrait-medieval-knight",
+          "order": 9,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "768f7e63bfe5ef7163054a3ea515513456f3ec7fb8fffe786d05590f901a3347",
+          "costUSD": 0.108312,
+          "promptTokens": 1224,
+          "candidateTokens": 1795,
+          "timestamp": "2026-10-04T04:17:59.675222+00:00"
+        },
+        {
+          "id": "portrait-medieval-ranger",
+          "order": 10,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "4ec19340bd6e6511209857477550c4c89225ff1f3cacac8ad631609c8217c007",
+          "costUSD": 0.101411,
+          "promptTokens": 1221,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:19:13.959531+00:00"
+        },
+        {
+          "id": "portrait-medieval-warlock",
+          "order": 11,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "5fa91c78cc8427a13587ef35005b89977d4e76b44bb82a2fb4ce8ba0767d38f7",
+          "costUSD": 0.10141,
+          "promptTokens": 1220,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:19:52.536152+00:00"
+        },
+        {
+          "id": "portrait-medieval-mage",
+          "order": 12,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "987b64773a4baf080597feb71efc5f07851bcc7817676ca3edcbd0acc207e0cb",
+          "costUSD": 0.101407,
+          "promptTokens": 1215,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:21:29.115086+00:00"
+        },
+        {
+          "id": "portrait-medieval-paladin",
+          "order": 13,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "a3999fc72888dfbf334fe03b1175a23b60d285768f3b39a78298d9fd5b9329d2",
+          "costUSD": 0.101408,
+          "promptTokens": 1217,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:22:09.319221+00:00"
+        },
+        {
+          "id": "portrait-medieval-barbarian",
+          "order": 14,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "1d6c824ea6cca0efcc458f4e5e9c22d176499814c0035d698286a34050d15d04",
+          "costUSD": 0.101411,
+          "promptTokens": 1221,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:23:52.602759+00:00"
+        },
+        {
+          "id": "portrait-medieval-necromancer",
+          "order": 15,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "718e654380cd3bbbf0b5b9c863a148d72c1072c7af2b8b2328bb83dca43de711",
+          "costUSD": 0.101412,
+          "promptTokens": 1223,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:24:32.415148+00:00"
+        },
+        {
+          "id": "portrait-medieval-healer",
+          "order": 16,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "e2276f5ec1b0c889e9f9be215dd7eb1a93f55611a9750ca09da7c46a5ce9d4db",
+          "costUSD": 0.101408,
+          "promptTokens": 1216,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:25:10.841355+00:00"
+        },
+        {
+          "id": "knight-mounted-master",
+          "order": 1,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.792176+00:00"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "order": 2,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f3a32f6682bab256222a4f86bf902e5ee4bd7eac3a743b1443eefdae3917ac62",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.798838+00:00"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "order": 3,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "83e229628bf527f9226c6a1f1763e307bc4025f54c224bbb79a431ed885e7fa7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.805170+00:00"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "order": 4,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "9d1128696562c314c977f8d6e62bcf333ca8afcaa15528d5e5902dddcd355554",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.811392+00:00"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "order": 5,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "45f8ba7cb73d88e3ceef7e653e8612f62838ad5aa37b00030aeb211762fff7a9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.819054+00:00"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "order": 6,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "97ebbc00401e02cb1b25151687c9e21ecec03fee4e39639d4d62ac4923979ecf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.825355+00:00"
+        },
+        {
+          "id": "portrait-ancient-necromancer",
+          "order": 7,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f8873c011a861ad9f4588ded83bda0e4fdfc9a782cbd990ffb095f2139dc385",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.831650+00:00"
+        },
+        {
+          "id": "portrait-ancient-healer",
+          "order": 8,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1078e29f0db578e35231b7ff4f0e9f95b40d3ac3d3b1a0ad0bf867e6933b9969",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.838898+00:00"
+        },
+        {
+          "id": "portrait-medieval-knight",
+          "order": 9,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "768f7e63bfe5ef7163054a3ea515513456f3ec7fb8fffe786d05590f901a3347",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.844572+00:00"
+        },
+        {
+          "id": "portrait-medieval-ranger",
+          "order": 10,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4ec19340bd6e6511209857477550c4c89225ff1f3cacac8ad631609c8217c007",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.851175+00:00"
+        },
+        {
+          "id": "portrait-medieval-warlock",
+          "order": 11,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "5fa91c78cc8427a13587ef35005b89977d4e76b44bb82a2fb4ce8ba0767d38f7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.859056+00:00"
+        },
+        {
+          "id": "portrait-medieval-mage",
+          "order": 12,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "987b64773a4baf080597feb71efc5f07851bcc7817676ca3edcbd0acc207e0cb",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.866631+00:00"
+        },
+        {
+          "id": "portrait-medieval-paladin",
+          "order": 13,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "a3999fc72888dfbf334fe03b1175a23b60d285768f3b39a78298d9fd5b9329d2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.873577+00:00"
+        },
+        {
+          "id": "portrait-medieval-barbarian",
+          "order": 14,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1d6c824ea6cca0efcc458f4e5e9c22d176499814c0035d698286a34050d15d04",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.880881+00:00"
+        },
+        {
+          "id": "portrait-medieval-necromancer",
+          "order": 15,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "718e654380cd3bbbf0b5b9c863a148d72c1072c7af2b8b2328bb83dca43de711",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.886731+00:00"
+        },
+        {
+          "id": "portrait-medieval-healer",
+          "order": 16,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2276f5ec1b0c889e9f9be215dd7eb1a93f55611a9750ca09da7c46a5ce9d4db",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:25:26.893367+00:00"
+        },
+        {
+          "id": "portrait-powder-knight",
+          "order": 17,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "0f1777412533e7e12496126e80f5a7b1eff02d9c0e8f73b188b95e229384a901",
+          "costUSD": 0.10141,
+          "promptTokens": 1220,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:26:50.818977+00:00"
+        },
+        {
+          "id": "portrait-powder-ranger",
+          "order": 18,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "782bc50d7e59a42ec7e0ab2cde2bfc82b0876aaa2696d29043c2723d2adb82bf",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:27:29.900134+00:00"
+        },
+        {
+          "id": "portrait-powder-warlock",
+          "order": 19,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "71609b01a5acd56d89820498c0dcd2b5b12a0777ef67314f0d2f747838d34900",
+          "costUSD": 0.101408,
+          "promptTokens": 1217,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:29:45.332851+00:00"
+        },
+        {
+          "id": "portrait-powder-mage",
+          "order": 20,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "aee42d09ff856878ad82396749074ff5c5c6a69200db5d900b6590b064b66205",
+          "costUSD": 0.101408,
+          "promptTokens": 1216,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:30:24.125281+00:00"
+        },
+        {
+          "id": "portrait-powder-paladin",
+          "order": 21,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "e2b97a2b320fdbe396fc0764d968655d299094b8fb338c2d40910d679b3540d3",
+          "costUSD": 0.101406,
+          "promptTokens": 1212,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:32:29.023766+00:00"
+        },
+        {
+          "id": "portrait-powder-barbarian",
+          "order": 22,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "UNKNOWN_CRASH_DURING_DISPATCH",
+          "retainLiability": true,
+          "costUSD": 0.143612,
+          "timestamp": "2026-10-04T04:33:58Z",
+          "note": "Process interrupted during in-flight dispatch. Retains liability per owner rules; does not block remaining ready IDs."
+        },
+        {
+          "id": "knight-mounted-master",
+          "order": 1,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.839765+00:00"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "order": 2,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f3a32f6682bab256222a4f86bf902e5ee4bd7eac3a743b1443eefdae3917ac62",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.845475+00:00"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "order": 3,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "83e229628bf527f9226c6a1f1763e307bc4025f54c224bbb79a431ed885e7fa7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.851645+00:00"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "order": 4,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "9d1128696562c314c977f8d6e62bcf333ca8afcaa15528d5e5902dddcd355554",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.857865+00:00"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "order": 5,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "45f8ba7cb73d88e3ceef7e653e8612f62838ad5aa37b00030aeb211762fff7a9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.863747+00:00"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "order": 6,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "97ebbc00401e02cb1b25151687c9e21ecec03fee4e39639d4d62ac4923979ecf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.868814+00:00"
+        },
+        {
+          "id": "portrait-ancient-necromancer",
+          "order": 7,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f8873c011a861ad9f4588ded83bda0e4fdfc9a782cbd990ffb095f2139dc385",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.873730+00:00"
+        },
+        {
+          "id": "portrait-ancient-healer",
+          "order": 8,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1078e29f0db578e35231b7ff4f0e9f95b40d3ac3d3b1a0ad0bf867e6933b9969",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.879366+00:00"
+        },
+        {
+          "id": "portrait-medieval-knight",
+          "order": 9,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "768f7e63bfe5ef7163054a3ea515513456f3ec7fb8fffe786d05590f901a3347",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.884360+00:00"
+        },
+        {
+          "id": "portrait-medieval-ranger",
+          "order": 10,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4ec19340bd6e6511209857477550c4c89225ff1f3cacac8ad631609c8217c007",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.890197+00:00"
+        },
+        {
+          "id": "portrait-medieval-warlock",
+          "order": 11,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "5fa91c78cc8427a13587ef35005b89977d4e76b44bb82a2fb4ce8ba0767d38f7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.895583+00:00"
+        },
+        {
+          "id": "portrait-medieval-mage",
+          "order": 12,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "987b64773a4baf080597feb71efc5f07851bcc7817676ca3edcbd0acc207e0cb",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.900426+00:00"
+        },
+        {
+          "id": "portrait-medieval-paladin",
+          "order": 13,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "a3999fc72888dfbf334fe03b1175a23b60d285768f3b39a78298d9fd5b9329d2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.905692+00:00"
+        },
+        {
+          "id": "portrait-medieval-barbarian",
+          "order": 14,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1d6c824ea6cca0efcc458f4e5e9c22d176499814c0035d698286a34050d15d04",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.910468+00:00"
+        },
+        {
+          "id": "portrait-medieval-necromancer",
+          "order": 15,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "718e654380cd3bbbf0b5b9c863a148d72c1072c7af2b8b2328bb83dca43de711",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.915601+00:00"
+        },
+        {
+          "id": "portrait-medieval-healer",
+          "order": 16,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2276f5ec1b0c889e9f9be215dd7eb1a93f55611a9750ca09da7c46a5ce9d4db",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.922098+00:00"
+        },
+        {
+          "id": "portrait-powder-knight",
+          "order": 17,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f1777412533e7e12496126e80f5a7b1eff02d9c0e8f73b188b95e229384a901",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.927338+00:00"
+        },
+        {
+          "id": "portrait-powder-ranger",
+          "order": 18,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "782bc50d7e59a42ec7e0ab2cde2bfc82b0876aaa2696d29043c2723d2adb82bf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.932681+00:00"
+        },
+        {
+          "id": "portrait-powder-warlock",
+          "order": 19,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "71609b01a5acd56d89820498c0dcd2b5b12a0777ef67314f0d2f747838d34900",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.937930+00:00"
+        },
+        {
+          "id": "portrait-powder-mage",
+          "order": 20,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "aee42d09ff856878ad82396749074ff5c5c6a69200db5d900b6590b064b66205",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.943010+00:00"
+        },
+        {
+          "id": "portrait-powder-paladin",
+          "order": 21,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2b97a2b320fdbe396fc0764d968655d299094b8fb338c2d40910d679b3540d3",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:41:41.948499+00:00"
+        },
+        {
+          "id": "portrait-powder-barbarian",
+          "order": 22,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "UNKNOWN_RETAINED_LIABILITY",
+          "costUSD": 0.143612,
+          "timestamp": "2026-10-04T04:41:41.964575+00:00",
+          "note": "Unresolved in-flight crash from previous run; liability retained, skipped to avoid duplication."
+        },
+        {
+          "id": "portrait-powder-necromancer",
+          "order": 23,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "3e3f6e5b1ecaedca4d3a4345a8f1094227ef6e83c734d81effaaebf6fc93d7b2",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:42:53.457451+00:00"
+        },
+        {
+          "id": "portrait-powder-healer",
+          "order": 24,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "d5993f5b03a462644ced75cfb45b48aad2a8c3ea46d894bbbe8dc845ada563f3",
+          "costUSD": 0.108248,
+          "promptTokens": 1216,
+          "candidateTokens": 1794,
+          "timestamp": "2026-10-04T04:43:32.807394+00:00"
+        },
+        {
+          "id": "portrait-mech-knight",
+          "order": 25,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "196412b892a0cabd24a4893d5b0043114e6d936bb7068d69015b00cdef4e4a2f",
+          "costUSD": 0.101407,
+          "promptTokens": 1214,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:44:12.060275+00:00"
+        },
+        {
+          "id": "portrait-mech-ranger",
+          "order": 26,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "967a25538e94f755ae056751fa63642126c73ad8465410a5244cc67bb5db794c",
+          "costUSD": 0.101407,
+          "promptTokens": 1214,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:44:51.473733+00:00"
+        },
+        {
+          "id": "portrait-mech-warlock",
+          "order": 27,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "941f57a79e2817a943fd1c8b5fe84dfc7792ad38d9a6c6c540da37c29fd343c9",
+          "costUSD": 0.101408,
+          "promptTokens": 1217,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:47:35.734016+00:00"
+        },
+        {
+          "id": "portrait-mech-mage",
+          "order": 28,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "58060a38aadcf53613fd05b4bdd4f72c28a67e55917029667765700f5ad3b5d4",
+          "costUSD": 0.101406,
+          "promptTokens": 1213,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:48:15.710579+00:00"
+        },
+        {
+          "id": "portrait-mech-paladin",
+          "order": 29,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "41a8c510fa8c5a5fd8ac7386ce800a57edb809bea6f438eb37e69ce680afc6f0",
+          "costUSD": 0.101407,
+          "promptTokens": 1215,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:50:12.086874+00:00"
+        },
+        {
+          "id": "portrait-mech-barbarian",
+          "order": 30,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "09eb1b653d189415a50a7903e30c4d0cb6ed2c60c08a0a818f4f4d36ebbf8b77",
+          "costUSD": 0.101409,
+          "promptTokens": 1218,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:50:52.972687+00:00"
+        },
+        {
+          "id": "portrait-mech-necromancer",
+          "order": 31,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "f6189720291b817eece9b4450cef76a65bcc5fb1026efe858208ab39277a3652",
+          "costUSD": 0.101411,
+          "promptTokens": 1221,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:51:32.836243+00:00"
+        },
+        {
+          "id": "portrait-mech-healer",
+          "order": 32,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "db1900ee39e8cc0e1ff6d56ad902be8e3b373b07bc9ee462a60fa142ff29d500",
+          "costUSD": 0.101407,
+          "promptTokens": 1215,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:52:33.196235+00:00"
+        },
+        {
+          "id": "knight-mounted-master",
+          "order": 1,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.746295+00:00"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "order": 2,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f3a32f6682bab256222a4f86bf902e5ee4bd7eac3a743b1443eefdae3917ac62",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.752199+00:00"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "order": 3,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "83e229628bf527f9226c6a1f1763e307bc4025f54c224bbb79a431ed885e7fa7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.758908+00:00"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "order": 4,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "9d1128696562c314c977f8d6e62bcf333ca8afcaa15528d5e5902dddcd355554",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.765106+00:00"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "order": 5,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "45f8ba7cb73d88e3ceef7e653e8612f62838ad5aa37b00030aeb211762fff7a9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.771980+00:00"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "order": 6,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "97ebbc00401e02cb1b25151687c9e21ecec03fee4e39639d4d62ac4923979ecf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.777726+00:00"
+        },
+        {
+          "id": "portrait-ancient-necromancer",
+          "order": 7,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f8873c011a861ad9f4588ded83bda0e4fdfc9a782cbd990ffb095f2139dc385",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.783519+00:00"
+        },
+        {
+          "id": "portrait-ancient-healer",
+          "order": 8,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1078e29f0db578e35231b7ff4f0e9f95b40d3ac3d3b1a0ad0bf867e6933b9969",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.789813+00:00"
+        },
+        {
+          "id": "portrait-medieval-knight",
+          "order": 9,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "768f7e63bfe5ef7163054a3ea515513456f3ec7fb8fffe786d05590f901a3347",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.795175+00:00"
+        },
+        {
+          "id": "portrait-medieval-ranger",
+          "order": 10,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4ec19340bd6e6511209857477550c4c89225ff1f3cacac8ad631609c8217c007",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.801265+00:00"
+        },
+        {
+          "id": "portrait-medieval-warlock",
+          "order": 11,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "5fa91c78cc8427a13587ef35005b89977d4e76b44bb82a2fb4ce8ba0767d38f7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.807766+00:00"
+        },
+        {
+          "id": "portrait-medieval-mage",
+          "order": 12,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "987b64773a4baf080597feb71efc5f07851bcc7817676ca3edcbd0acc207e0cb",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.813372+00:00"
+        },
+        {
+          "id": "portrait-medieval-paladin",
+          "order": 13,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "a3999fc72888dfbf334fe03b1175a23b60d285768f3b39a78298d9fd5b9329d2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.819730+00:00"
+        },
+        {
+          "id": "portrait-medieval-barbarian",
+          "order": 14,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1d6c824ea6cca0efcc458f4e5e9c22d176499814c0035d698286a34050d15d04",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.826140+00:00"
+        },
+        {
+          "id": "portrait-medieval-necromancer",
+          "order": 15,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "718e654380cd3bbbf0b5b9c863a148d72c1072c7af2b8b2328bb83dca43de711",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.832715+00:00"
+        },
+        {
+          "id": "portrait-medieval-healer",
+          "order": 16,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2276f5ec1b0c889e9f9be215dd7eb1a93f55611a9750ca09da7c46a5ce9d4db",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.840252+00:00"
+        },
+        {
+          "id": "portrait-powder-knight",
+          "order": 17,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f1777412533e7e12496126e80f5a7b1eff02d9c0e8f73b188b95e229384a901",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.846146+00:00"
+        },
+        {
+          "id": "portrait-powder-ranger",
+          "order": 18,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "782bc50d7e59a42ec7e0ab2cde2bfc82b0876aaa2696d29043c2723d2adb82bf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.852266+00:00"
+        },
+        {
+          "id": "portrait-powder-warlock",
+          "order": 19,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "71609b01a5acd56d89820498c0dcd2b5b12a0777ef67314f0d2f747838d34900",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.859401+00:00"
+        },
+        {
+          "id": "portrait-powder-mage",
+          "order": 20,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "aee42d09ff856878ad82396749074ff5c5c6a69200db5d900b6590b064b66205",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.867340+00:00"
+        },
+        {
+          "id": "portrait-powder-paladin",
+          "order": 21,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2b97a2b320fdbe396fc0764d968655d299094b8fb338c2d40910d679b3540d3",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.875350+00:00"
+        },
+        {
+          "id": "portrait-powder-barbarian",
+          "order": 22,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "UNKNOWN_RETAINED_LIABILITY",
+          "costUSD": 0.143612,
+          "timestamp": "2026-10-04T04:53:16.877244+00:00",
+          "note": "Unresolved in-flight crash from previous run; liability retained, skipped to avoid duplication."
+        },
+        {
+          "id": "portrait-powder-necromancer",
+          "order": 23,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "3e3f6e5b1ecaedca4d3a4345a8f1094227ef6e83c734d81effaaebf6fc93d7b2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.884514+00:00"
+        },
+        {
+          "id": "portrait-powder-healer",
+          "order": 24,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "d5993f5b03a462644ced75cfb45b48aad2a8c3ea46d894bbbe8dc845ada563f3",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.891380+00:00"
+        },
+        {
+          "id": "portrait-mech-knight",
+          "order": 25,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "196412b892a0cabd24a4893d5b0043114e6d936bb7068d69015b00cdef4e4a2f",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.899860+00:00"
+        },
+        {
+          "id": "portrait-mech-ranger",
+          "order": 26,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "967a25538e94f755ae056751fa63642126c73ad8465410a5244cc67bb5db794c",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.906941+00:00"
+        },
+        {
+          "id": "portrait-mech-warlock",
+          "order": 27,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "941f57a79e2817a943fd1c8b5fe84dfc7792ad38d9a6c6c540da37c29fd343c9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.913551+00:00"
+        },
+        {
+          "id": "portrait-mech-mage",
+          "order": 28,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "58060a38aadcf53613fd05b4bdd4f72c28a67e55917029667765700f5ad3b5d4",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.920985+00:00"
+        },
+        {
+          "id": "portrait-mech-paladin",
+          "order": 29,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "41a8c510fa8c5a5fd8ac7386ce800a57edb809bea6f438eb37e69ce680afc6f0",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.928126+00:00"
+        },
+        {
+          "id": "portrait-mech-barbarian",
+          "order": 30,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "09eb1b653d189415a50a7903e30c4d0cb6ed2c60c08a0a818f4f4d36ebbf8b77",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.935232+00:00"
+        },
+        {
+          "id": "portrait-mech-necromancer",
+          "order": 31,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f6189720291b817eece9b4450cef76a65bcc5fb1026efe858208ab39277a3652",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.942029+00:00"
+        },
+        {
+          "id": "portrait-mech-healer",
+          "order": 32,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "db1900ee39e8cc0e1ff6d56ad902be8e3b373b07bc9ee462a60fa142ff29d500",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T04:53:16.948568+00:00"
+        },
+        {
+          "id": "hero-mount-horse",
+          "order": 1,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "00b2cb4f9c9a2f2e4f8c003c9e6b52dafb2c419aa0011c230393fab7a433ec57",
+          "costUSD": 0.101412,
+          "promptTokens": 1223,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:53:36.018958+00:00"
+        },
+        {
+          "id": "hero-mount-motor-transport",
+          "order": 2,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "c2320a5de41679072e4aeb6d0c2279cc3704656a2aacc410a00198a063d5dd08",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:54:34.409009+00:00"
+        },
+        {
+          "id": "hero-mount-future-transport",
+          "order": 3,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "a825d0858e883a24e5cf2a7d4376be43099baf0a8d76fe5fa74431e7be02467c",
+          "costUSD": 0.10141,
+          "promptTokens": 1220,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:56:37.127505+00:00"
+        },
+        {
+          "id": "rig-source-parts-knight",
+          "order": 4,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "6533e35255cb1def5f6d095d166ab5e89d1ad27c6d942c5d4f6a0d4ccbd9584c",
+          "costUSD": 0.101418,
+          "promptTokens": 1237,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T04:58:51.859936+00:00"
+        },
+        {
+          "id": "knight-mounted-master",
+          "order": 1,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.420044+00:00"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "order": 2,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f3a32f6682bab256222a4f86bf902e5ee4bd7eac3a743b1443eefdae3917ac62",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.427150+00:00"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "order": 3,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "83e229628bf527f9226c6a1f1763e307bc4025f54c224bbb79a431ed885e7fa7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.435245+00:00"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "order": 4,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "9d1128696562c314c977f8d6e62bcf333ca8afcaa15528d5e5902dddcd355554",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.442923+00:00"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "order": 5,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "45f8ba7cb73d88e3ceef7e653e8612f62838ad5aa37b00030aeb211762fff7a9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.448998+00:00"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "order": 6,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "97ebbc00401e02cb1b25151687c9e21ecec03fee4e39639d4d62ac4923979ecf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.455184+00:00"
+        },
+        {
+          "id": "portrait-ancient-necromancer",
+          "order": 7,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f8873c011a861ad9f4588ded83bda0e4fdfc9a782cbd990ffb095f2139dc385",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.462522+00:00"
+        },
+        {
+          "id": "portrait-ancient-healer",
+          "order": 8,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1078e29f0db578e35231b7ff4f0e9f95b40d3ac3d3b1a0ad0bf867e6933b9969",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.469870+00:00"
+        },
+        {
+          "id": "portrait-medieval-knight",
+          "order": 9,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "768f7e63bfe5ef7163054a3ea515513456f3ec7fb8fffe786d05590f901a3347",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.475638+00:00"
+        },
+        {
+          "id": "portrait-medieval-ranger",
+          "order": 10,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4ec19340bd6e6511209857477550c4c89225ff1f3cacac8ad631609c8217c007",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.484203+00:00"
+        },
+        {
+          "id": "portrait-medieval-warlock",
+          "order": 11,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "5fa91c78cc8427a13587ef35005b89977d4e76b44bb82a2fb4ce8ba0767d38f7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.490377+00:00"
+        },
+        {
+          "id": "portrait-medieval-mage",
+          "order": 12,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "987b64773a4baf080597feb71efc5f07851bcc7817676ca3edcbd0acc207e0cb",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.495967+00:00"
+        },
+        {
+          "id": "portrait-medieval-paladin",
+          "order": 13,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "a3999fc72888dfbf334fe03b1175a23b60d285768f3b39a78298d9fd5b9329d2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.502323+00:00"
+        },
+        {
+          "id": "portrait-medieval-barbarian",
+          "order": 14,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1d6c824ea6cca0efcc458f4e5e9c22d176499814c0035d698286a34050d15d04",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.508711+00:00"
+        },
+        {
+          "id": "portrait-medieval-necromancer",
+          "order": 15,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "718e654380cd3bbbf0b5b9c863a148d72c1072c7af2b8b2328bb83dca43de711",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.514987+00:00"
+        },
+        {
+          "id": "portrait-medieval-healer",
+          "order": 16,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2276f5ec1b0c889e9f9be215dd7eb1a93f55611a9750ca09da7c46a5ce9d4db",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.520814+00:00"
+        },
+        {
+          "id": "portrait-powder-knight",
+          "order": 17,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f1777412533e7e12496126e80f5a7b1eff02d9c0e8f73b188b95e229384a901",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.526269+00:00"
+        },
+        {
+          "id": "portrait-powder-ranger",
+          "order": 18,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "782bc50d7e59a42ec7e0ab2cde2bfc82b0876aaa2696d29043c2723d2adb82bf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.531567+00:00"
+        },
+        {
+          "id": "portrait-powder-warlock",
+          "order": 19,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "71609b01a5acd56d89820498c0dcd2b5b12a0777ef67314f0d2f747838d34900",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.536921+00:00"
+        },
+        {
+          "id": "portrait-powder-mage",
+          "order": 20,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "aee42d09ff856878ad82396749074ff5c5c6a69200db5d900b6590b064b66205",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.542791+00:00"
+        },
+        {
+          "id": "portrait-powder-paladin",
+          "order": 21,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2b97a2b320fdbe396fc0764d968655d299094b8fb338c2d40910d679b3540d3",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.548702+00:00"
+        },
+        {
+          "id": "portrait-powder-barbarian",
+          "order": 22,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "UNKNOWN_RETAINED_LIABILITY",
+          "costUSD": 0.143612,
+          "timestamp": "2026-10-04T05:02:10.549950+00:00",
+          "note": "Unresolved in-flight crash from previous run; liability retained, skipped to avoid duplication."
+        },
+        {
+          "id": "portrait-powder-necromancer",
+          "order": 23,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "3e3f6e5b1ecaedca4d3a4345a8f1094227ef6e83c734d81effaaebf6fc93d7b2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.555747+00:00"
+        },
+        {
+          "id": "portrait-powder-healer",
+          "order": 24,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "d5993f5b03a462644ced75cfb45b48aad2a8c3ea46d894bbbe8dc845ada563f3",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.560850+00:00"
+        },
+        {
+          "id": "portrait-mech-knight",
+          "order": 25,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "196412b892a0cabd24a4893d5b0043114e6d936bb7068d69015b00cdef4e4a2f",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.567100+00:00"
+        },
+        {
+          "id": "portrait-mech-ranger",
+          "order": 26,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "967a25538e94f755ae056751fa63642126c73ad8465410a5244cc67bb5db794c",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.573261+00:00"
+        },
+        {
+          "id": "portrait-mech-warlock",
+          "order": 27,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "941f57a79e2817a943fd1c8b5fe84dfc7792ad38d9a6c6c540da37c29fd343c9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.580503+00:00"
+        },
+        {
+          "id": "portrait-mech-mage",
+          "order": 28,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "58060a38aadcf53613fd05b4bdd4f72c28a67e55917029667765700f5ad3b5d4",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.587819+00:00"
+        },
+        {
+          "id": "portrait-mech-paladin",
+          "order": 29,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "41a8c510fa8c5a5fd8ac7386ce800a57edb809bea6f438eb37e69ce680afc6f0",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.595184+00:00"
+        },
+        {
+          "id": "portrait-mech-barbarian",
+          "order": 30,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "09eb1b653d189415a50a7903e30c4d0cb6ed2c60c08a0a818f4f4d36ebbf8b77",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.601707+00:00"
+        },
+        {
+          "id": "portrait-mech-necromancer",
+          "order": 31,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f6189720291b817eece9b4450cef76a65bcc5fb1026efe858208ab39277a3652",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.607964+00:00"
+        },
+        {
+          "id": "portrait-mech-healer",
+          "order": 32,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "db1900ee39e8cc0e1ff6d56ad902be8e3b373b07bc9ee462a60fa142ff29d500",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.614028+00:00"
+        },
+        {
+          "id": "hero-mount-horse",
+          "order": 1,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "00b2cb4f9c9a2f2e4f8c003c9e6b52dafb2c419aa0011c230393fab7a433ec57",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.621009+00:00"
+        },
+        {
+          "id": "hero-mount-motor-transport",
+          "order": 2,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "c2320a5de41679072e4aeb6d0c2279cc3704656a2aacc410a00198a063d5dd08",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.627007+00:00"
+        },
+        {
+          "id": "hero-mount-future-transport",
+          "order": 3,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "a825d0858e883a24e5cf2a7d4376be43099baf0a8d76fe5fa74431e7be02467c",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.632294+00:00"
+        },
+        {
+          "id": "rig-source-parts-knight",
+          "order": 4,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "6533e35255cb1def5f6d095d166ab5e89d1ad27c6d942c5d4f6a0d4ccbd9584c",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:02:10.638147+00:00"
+        },
+        {
+          "id": "rig-source-parts-ranger",
+          "order": 5,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "UNKNOWN_RETAINED_LIABILITY",
+          "costUSD": 0.143612,
+          "timestamp": "2026-10-04T05:02:10.639418+00:00",
+          "note": "Unresolved in-flight crash from previous run; liability retained, skipped to avoid duplication."
+        },
+        {
+          "id": "rig-source-parts-warlock",
+          "order": 6,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "36f7fd57356b3499e5badc8b3ea126645ab0ed0463c9cf0c72c0e55339cda916",
+          "costUSD": 0.10142,
+          "promptTokens": 1240,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:02:30.954281+00:00"
+        },
+        {
+          "id": "rig-source-parts-mage",
+          "order": 7,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "1220df812b5485dc408316cede4042952ca5ed169de62b8f2bfe7d0a1cfdc896",
+          "costUSD": 0.101418,
+          "promptTokens": 1237,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:03:09.767366+00:00"
+        },
+        {
+          "id": "rig-source-parts-paladin",
+          "order": 8,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "a6bafe602378104b1e6de8a77b900342590457a2019ed11d43fbf0a1899e7e55",
+          "costUSD": 0.10142,
+          "promptTokens": 1240,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:05:31.265139+00:00"
+        },
+        {
+          "id": "rig-source-parts-barbarian",
+          "order": 9,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "d470afa75c99d6a8910d84c1a1778daeab277ae3409cf901770f2488606aacc0",
+          "costUSD": 0.10142,
+          "promptTokens": 1241,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:08:07.864702+00:00"
+        },
+        {
+          "id": "rig-source-parts-necromancer",
+          "order": 10,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "5adc013f680913cb7d8bb7b3df02667a04af56caf1303d009d6b15059c28ed49",
+          "costUSD": 0.101421,
+          "promptTokens": 1243,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:10:32.356897+00:00"
+        },
+        {
+          "id": "rig-source-parts-healer",
+          "order": 11,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+          "costUSD": 0.101419,
+          "promptTokens": 1239,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:13:08.233847+00:00"
+        },
+        {
+          "id": "rival-identity-1",
+          "order": 12,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "4deac0ae4b94d9bfd21aa2647a7ce9628a2f5de475b912007b90e18263242807",
+          "costUSD": 0.101415,
+          "promptTokens": 1230,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:15:09.601559+00:00"
+        },
+        {
+          "id": "rival-identity-2",
+          "order": 13,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "53454f9b790fb0e6325d115a847648730e0cd55f8f9b97ccd57f08c987493ac1",
+          "costUSD": 0.10141,
+          "promptTokens": 1220,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:15:49.140447+00:00"
+        },
+        {
+          "id": "rival-identity-3",
+          "order": 14,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "9ac7dd5f4261cf01788b7e6e9bec1d08fdab99829544f952beabd5a9983fbe25",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:17:47.385787+00:00"
+        },
+        {
+          "id": "rival-identity-4",
+          "order": 15,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "3b50bd014bc81fadb004d295772cf55ed10f3bf03d623881a61b0b504bb4c655",
+          "costUSD": 0.101408,
+          "promptTokens": 1217,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:19:25.278555+00:00"
+        },
+        {
+          "id": "rival-identity-5",
+          "order": 16,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "7e26105acec408fb505a0561bd3e4ec9b50c7ebdad168244c098d721664fbac2",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:20:05.110294+00:00"
+        },
+        {
+          "id": "rival-identity-6",
+          "order": 17,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "7b10a411ebf3a84972165c2a8dd1ec12bc1613ab3a117d4a31ba882bd5bc41e0",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:21:31.331559+00:00"
+        },
+        {
+          "id": "knight-mounted-master",
+          "order": 1,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4d324dda996c1feab7832b8d60e5c8fb8ead1e38ec764e1ca82c6c747586afaf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.906237+00:00"
+        },
+        {
+          "id": "portrait-ancient-ranger",
+          "order": 2,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f3a32f6682bab256222a4f86bf902e5ee4bd7eac3a743b1443eefdae3917ac62",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.914812+00:00"
+        },
+        {
+          "id": "portrait-ancient-warlock",
+          "order": 3,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "83e229628bf527f9226c6a1f1763e307bc4025f54c224bbb79a431ed885e7fa7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.923513+00:00"
+        },
+        {
+          "id": "portrait-ancient-mage",
+          "order": 4,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "9d1128696562c314c977f8d6e62bcf333ca8afcaa15528d5e5902dddcd355554",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.931986+00:00"
+        },
+        {
+          "id": "portrait-ancient-paladin",
+          "order": 5,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "45f8ba7cb73d88e3ceef7e653e8612f62838ad5aa37b00030aeb211762fff7a9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.939354+00:00"
+        },
+        {
+          "id": "portrait-ancient-barbarian",
+          "order": 6,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "97ebbc00401e02cb1b25151687c9e21ecec03fee4e39639d4d62ac4923979ecf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.948219+00:00"
+        },
+        {
+          "id": "portrait-ancient-necromancer",
+          "order": 7,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f8873c011a861ad9f4588ded83bda0e4fdfc9a782cbd990ffb095f2139dc385",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.956347+00:00"
+        },
+        {
+          "id": "portrait-ancient-healer",
+          "order": 8,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1078e29f0db578e35231b7ff4f0e9f95b40d3ac3d3b1a0ad0bf867e6933b9969",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.963327+00:00"
+        },
+        {
+          "id": "portrait-medieval-knight",
+          "order": 9,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "768f7e63bfe5ef7163054a3ea515513456f3ec7fb8fffe786d05590f901a3347",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.969781+00:00"
+        },
+        {
+          "id": "portrait-medieval-ranger",
+          "order": 10,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4ec19340bd6e6511209857477550c4c89225ff1f3cacac8ad631609c8217c007",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.977880+00:00"
+        },
+        {
+          "id": "portrait-medieval-warlock",
+          "order": 11,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "5fa91c78cc8427a13587ef35005b89977d4e76b44bb82a2fb4ce8ba0767d38f7",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.983816+00:00"
+        },
+        {
+          "id": "portrait-medieval-mage",
+          "order": 12,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "987b64773a4baf080597feb71efc5f07851bcc7817676ca3edcbd0acc207e0cb",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.990085+00:00"
+        },
+        {
+          "id": "portrait-medieval-paladin",
+          "order": 13,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "a3999fc72888dfbf334fe03b1175a23b60d285768f3b39a78298d9fd5b9329d2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:53.996986+00:00"
+        },
+        {
+          "id": "portrait-medieval-barbarian",
+          "order": 14,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1d6c824ea6cca0efcc458f4e5e9c22d176499814c0035d698286a34050d15d04",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.004576+00:00"
+        },
+        {
+          "id": "portrait-medieval-necromancer",
+          "order": 15,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "718e654380cd3bbbf0b5b9c863a148d72c1072c7af2b8b2328bb83dca43de711",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.011779+00:00"
+        },
+        {
+          "id": "portrait-medieval-healer",
+          "order": 16,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2276f5ec1b0c889e9f9be215dd7eb1a93f55611a9750ca09da7c46a5ce9d4db",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.019225+00:00"
+        },
+        {
+          "id": "portrait-powder-knight",
+          "order": 17,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f1777412533e7e12496126e80f5a7b1eff02d9c0e8f73b188b95e229384a901",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.026636+00:00"
+        },
+        {
+          "id": "portrait-powder-ranger",
+          "order": 18,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "782bc50d7e59a42ec7e0ab2cde2bfc82b0876aaa2696d29043c2723d2adb82bf",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.033836+00:00"
+        },
+        {
+          "id": "portrait-powder-warlock",
+          "order": 19,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "71609b01a5acd56d89820498c0dcd2b5b12a0777ef67314f0d2f747838d34900",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.041268+00:00"
+        },
+        {
+          "id": "portrait-powder-mage",
+          "order": 20,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "aee42d09ff856878ad82396749074ff5c5c6a69200db5d900b6590b064b66205",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.048575+00:00"
+        },
+        {
+          "id": "portrait-powder-paladin",
+          "order": 21,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "e2b97a2b320fdbe396fc0764d968655d299094b8fb338c2d40910d679b3540d3",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.056007+00:00"
+        },
+        {
+          "id": "portrait-powder-barbarian",
+          "order": 22,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "UNKNOWN_RETAINED_LIABILITY",
+          "costUSD": 0.143612,
+          "timestamp": "2026-10-04T05:21:54.058232+00:00",
+          "note": "Unresolved in-flight crash from previous run; liability retained, skipped to avoid duplication."
+        },
+        {
+          "id": "portrait-powder-necromancer",
+          "order": 23,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "3e3f6e5b1ecaedca4d3a4345a8f1094227ef6e83c734d81effaaebf6fc93d7b2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.065786+00:00"
+        },
+        {
+          "id": "portrait-powder-healer",
+          "order": 24,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "d5993f5b03a462644ced75cfb45b48aad2a8c3ea46d894bbbe8dc845ada563f3",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.072637+00:00"
+        },
+        {
+          "id": "portrait-mech-knight",
+          "order": 25,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "196412b892a0cabd24a4893d5b0043114e6d936bb7068d69015b00cdef4e4a2f",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.080235+00:00"
+        },
+        {
+          "id": "portrait-mech-ranger",
+          "order": 26,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "967a25538e94f755ae056751fa63642126c73ad8465410a5244cc67bb5db794c",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.086808+00:00"
+        },
+        {
+          "id": "portrait-mech-warlock",
+          "order": 27,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "941f57a79e2817a943fd1c8b5fe84dfc7792ad38d9a6c6c540da37c29fd343c9",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.093981+00:00"
+        },
+        {
+          "id": "portrait-mech-mage",
+          "order": 28,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "58060a38aadcf53613fd05b4bdd4f72c28a67e55917029667765700f5ad3b5d4",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.100799+00:00"
+        },
+        {
+          "id": "portrait-mech-paladin",
+          "order": 29,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "41a8c510fa8c5a5fd8ac7386ce800a57edb809bea6f438eb37e69ce680afc6f0",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.107284+00:00"
+        },
+        {
+          "id": "portrait-mech-barbarian",
+          "order": 30,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "09eb1b653d189415a50a7903e30c4d0cb6ed2c60c08a0a818f4f4d36ebbf8b77",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.113809+00:00"
+        },
+        {
+          "id": "portrait-mech-necromancer",
+          "order": 31,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "f6189720291b817eece9b4450cef76a65bcc5fb1026efe858208ab39277a3652",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.120684+00:00"
+        },
+        {
+          "id": "portrait-mech-healer",
+          "order": 32,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "db1900ee39e8cc0e1ff6d56ad902be8e3b373b07bc9ee462a60fa142ff29d500",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.126966+00:00"
+        },
+        {
+          "id": "hero-mount-horse",
+          "order": 1,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "00b2cb4f9c9a2f2e4f8c003c9e6b52dafb2c419aa0011c230393fab7a433ec57",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.132279+00:00"
+        },
+        {
+          "id": "hero-mount-motor-transport",
+          "order": 2,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "c2320a5de41679072e4aeb6d0c2279cc3704656a2aacc410a00198a063d5dd08",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.138162+00:00"
+        },
+        {
+          "id": "hero-mount-future-transport",
+          "order": 3,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "a825d0858e883a24e5cf2a7d4376be43099baf0a8d76fe5fa74431e7be02467c",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.143598+00:00"
+        },
+        {
+          "id": "rig-source-parts-knight",
+          "order": 4,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "6533e35255cb1def5f6d095d166ab5e89d1ad27c6d942c5d4f6a0d4ccbd9584c",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.149727+00:00"
+        },
+        {
+          "id": "rig-source-parts-ranger",
+          "order": 5,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "UNKNOWN_RETAINED_LIABILITY",
+          "costUSD": 0.143612,
+          "timestamp": "2026-10-04T05:21:54.150989+00:00",
+          "note": "Unresolved in-flight crash from previous run; liability retained, skipped to avoid duplication."
+        },
+        {
+          "id": "rig-source-parts-warlock",
+          "order": 6,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "36f7fd57356b3499e5badc8b3ea126645ab0ed0463c9cf0c72c0e55339cda916",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.156288+00:00"
+        },
+        {
+          "id": "rig-source-parts-mage",
+          "order": 7,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "1220df812b5485dc408316cede4042952ca5ed169de62b8f2bfe7d0a1cfdc896",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.161397+00:00"
+        },
+        {
+          "id": "rig-source-parts-paladin",
+          "order": 8,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "a6bafe602378104b1e6de8a77b900342590457a2019ed11d43fbf0a1899e7e55",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.167327+00:00"
+        },
+        {
+          "id": "rig-source-parts-barbarian",
+          "order": 9,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "d470afa75c99d6a8910d84c1a1778daeab277ae3409cf901770f2488606aacc0",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.174931+00:00"
+        },
+        {
+          "id": "rig-source-parts-necromancer",
+          "order": 10,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "5adc013f680913cb7d8bb7b3df02667a04af56caf1303d009d6b15059c28ed49",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.181213+00:00"
+        },
+        {
+          "id": "rig-source-parts-healer",
+          "order": 11,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "0f576da0a5adce8ece30be32b487f58b20c7900001bfe6d31d80f8005b70aca1",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.187012+00:00"
+        },
+        {
+          "id": "rival-identity-1",
+          "order": 12,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "4deac0ae4b94d9bfd21aa2647a7ce9628a2f5de475b912007b90e18263242807",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.194532+00:00"
+        },
+        {
+          "id": "rival-identity-2",
+          "order": 13,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "53454f9b790fb0e6325d115a847648730e0cd55f8f9b97ccd57f08c987493ac1",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.200966+00:00"
+        },
+        {
+          "id": "rival-identity-3",
+          "order": 14,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "9ac7dd5f4261cf01788b7e6e9bec1d08fdab99829544f952beabd5a9983fbe25",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.208549+00:00"
+        },
+        {
+          "id": "rival-identity-4",
+          "order": 15,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "3b50bd014bc81fadb004d295772cf55ed10f3bf03d623881a61b0b504bb4c655",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.215402+00:00"
+        },
+        {
+          "id": "rival-identity-5",
+          "order": 16,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "7e26105acec408fb505a0561bd3e4ec9b50c7ebdad168244c098d721664fbac2",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.222376+00:00"
+        },
+        {
+          "id": "rival-identity-6",
+          "order": 17,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "REUSED_EXISTING_SUCCESS",
+          "sha256": "7b10a411ebf3a84972165c2a8dd1ec12bc1613ab3a117d4a31ba882bd5bc41e0",
+          "costUSD": 0.0,
+          "timestamp": "2026-10-04T05:21:54.229259+00:00"
+        },
+        {
+          "id": "troop-stone-melee",
+          "order": 1,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "629979bca666ff35bc4cf196d99598109a820bb75b3c456169d937bfa26b1b0f",
+          "costUSD": 0.101408,
+          "promptTokens": 1217,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:23:23.842110+00:00"
+        },
+        {
+          "id": "troop-stone-ranged",
+          "order": 2,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "fbad903b1168a20bb5dc075c3680d9ec0cb1a5cd84d6757465137a88473d8748",
+          "costUSD": 0.101409,
+          "promptTokens": 1218,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:24:55.263715+00:00"
+        },
+        {
+          "id": "troop-stone-heavy",
+          "order": 3,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "dd75ab45858989e183a7b9a4b59c4db0e4ad3b4f23f412568b279c423580ca0a",
+          "costUSD": 0.101409,
+          "promptTokens": 1218,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:26:08.917842+00:00"
+        },
+        {
+          "id": "troop-bronze-melee",
+          "order": 4,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "117532a07fbec5f3c731fbeac9c8091e30fdb85b42565bd838135c4a7680bd43",
+          "costUSD": 0.101411,
+          "promptTokens": 1221,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:26:46.927041+00:00"
+        },
+        {
+          "id": "troop-bronze-ranged",
+          "order": 5,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "c679721fbe1edbe602c1031eb49adb039505f567b0264755c1eb3d13ad165b7e",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:28:20.486498+00:00"
+        },
+        {
+          "id": "troop-bronze-heavy",
+          "order": 6,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "516f33f65dd6557ee1ae03654d43651eb3857cd88dad4ae584ba51d8ea529c02",
+          "costUSD": 0.101412,
+          "promptTokens": 1224,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:29:35.266301+00:00"
+        },
+        {
+          "id": "troop-iron-melee",
+          "order": 7,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "065a151c7b2ae7d31e30e60a103450752a1a0fe2c19224237b32d7aa558502fd",
+          "costUSD": 0.101412,
+          "promptTokens": 1223,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:30:11.484021+00:00"
+        },
+        {
+          "id": "troop-iron-ranged",
+          "order": 8,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "f0af299d817ca5f0d6364b0120d526998478e59ecf2559f5b50b1928d27b21be",
+          "costUSD": 0.101412,
+          "promptTokens": 1223,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:31:34.153165+00:00"
+        },
+        {
+          "id": "troop-iron-heavy",
+          "order": 9,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "8490ae4aff2c049cb421b1d0d460cdd1cad92dfc153801f9277268c039ee0e3b",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:32:39.796393+00:00"
+        },
+        {
+          "id": "troop-medieval-melee",
+          "order": 10,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "163931e8a5e8e1464e58177aa7c93feb5490cdff801562ade45c232aeae9fca5",
+          "costUSD": 0.101411,
+          "promptTokens": 1221,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:33:19.796439+00:00"
+        },
+        {
+          "id": "troop-medieval-ranged",
+          "order": 11,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "c6b083d2f99f9d98f650fc69462bfa66d6c16b28dfb4f223bc05e53b5ceb93f9",
+          "costUSD": 0.10141,
+          "promptTokens": 1220,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:34:35.765970+00:00"
+        },
+        {
+          "id": "troop-medieval-heavy",
+          "order": 12,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "701aa123b49018ce03dc660bde8e84044f425ae34c5b05b0c883f6d5091c96c2",
+          "costUSD": 0.101409,
+          "promptTokens": 1218,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:35:42.336944+00:00"
+        },
+        {
+          "id": "troop-gunpowder-melee",
+          "order": 13,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "2d24e05d68bb4284ac61f333c55130a2eb983e7af872d10acca9e00b81902ece",
+          "costUSD": 0.101411,
+          "promptTokens": 1221,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:36:41.932495+00:00"
+        },
+        {
+          "id": "troop-gunpowder-ranged",
+          "order": 14,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "04cb2017858823f25f8196b5c15eaf4e996d9e59397269c67ac0d60b71cc1b0c",
+          "costUSD": 0.101411,
+          "promptTokens": 1222,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:37:18.187022+00:00"
+        },
+        {
+          "id": "troop-gunpowder-heavy",
+          "order": 15,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "f361f5ee481818d7cf7b99d5d7f5ad82a10b55d32ae379d197a416f56a752dfe",
+          "costUSD": 0.101409,
+          "promptTokens": 1219,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:38:22.569908+00:00"
+        },
+        {
+          "id": "troop-industrial-melee",
+          "order": 16,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "5fc88477e51c3bd080408231360f77f099a0952f830cd6246ce7b421605d55c6",
+          "costUSD": 0.10141,
+          "promptTokens": 1220,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:39:00.320958+00:00"
+        },
+        {
+          "id": "troop-industrial-ranged",
+          "order": 17,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "4d4c2a234fbc000593a52e65b80214367e1c211dd1eef12fee1a078064093a09",
+          "costUSD": 0.101409,
+          "promptTokens": 1218,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:39:40.117779+00:00"
+        },
+        {
+          "id": "troop-industrial-heavy",
+          "order": 18,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "5c9704b200143afa039c910f1f439a532db4790a6b23435d998e70e2fc060a7a",
+          "costUSD": 0.105488,
+          "promptTokens": 1217,
+          "candidateTokens": 1748,
+          "timestamp": "2026-10-04T05:41:49.698533+00:00"
+        },
+        {
+          "id": "troop-modern-melee",
+          "order": 19,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "e825b2e3b0749fdf4e82891c288ecd02710186ee668e5a976c516cb2067e400f",
+          "costUSD": 0.101407,
+          "promptTokens": 1214,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:42:51.306386+00:00"
+        },
+        {
+          "id": "troop-modern-ranged",
+          "order": 20,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "e89d132617bbef3d6a53badd429169bcfccdc267e220f14d6a427f03509e9815",
+          "costUSD": 0.101409,
+          "promptTokens": 1218,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:43:51.294000+00:00"
+        },
+        {
+          "id": "troop-modern-heavy",
+          "order": 21,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "62561760350d361e036ed4abe87463a20dc59f34e44f1ce2462b9ed511754423",
+          "costUSD": 0.10141,
+          "promptTokens": 1220,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:44:28.492408+00:00"
+        },
+        {
+          "id": "troop-future-melee",
+          "order": 22,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "bf1e5c692fec229c5479c683a3d1276052daee19f8ab74b2e5396071bfa72f65",
+          "costUSD": 0.101407,
+          "promptTokens": 1214,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:45:29.494282+00:00"
+        },
+        {
+          "id": "troop-future-ranged",
+          "order": 23,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "bf2139aca7808a53e5578375db38f69f4b80cbf59a7dc02ee9011b5159efb502",
+          "costUSD": 0.101407,
+          "promptTokens": 1215,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:46:28.498485+00:00"
+        },
+        {
+          "id": "troop-future-heavy",
+          "order": 24,
+          "group": "2K-LATER-C-ARMY-24",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "e2c0542ad948ea4e29c18dbb2ff0d9c633e7083c321c427bb0cb2cfc75d1211a",
+          "costUSD": 0.101408,
+          "promptTokens": 1217,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:47:28.628144+00:00"
+        },
+        {
+          "id": "portrait-powder-barbarian",
+          "order": 22,
+          "group": "2K-LATER-A-HERO-32",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "a112dcb5829d2e7e359b8fcae2c093a0e758f6dcfcc99176c6f7340a9158bf25",
+          "costUSD": 0.101408,
+          "promptTokens": 1217,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:58:05.931954+00:00"
+        },
+        {
+          "id": "rig-source-parts-ranger",
+          "order": 5,
+          "group": "2K-LATER-B-MOUNTS-RIGS-RIVALS-17",
+          "status": "SUCCEEDED",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "sha256": "61ae71558e1ce5b744f957cc6c72ef30bb0d5efc3ab2a914f727bf79d66423f4",
+          "costUSD": 0.101418,
+          "promptTokens": 1237,
+          "candidateTokens": 1680,
+          "timestamp": "2026-10-04T05:59:06.195796+00:00"
+        }
+      ],
+      "summary": {
+        "totalSelected": 73,
+        "generated": 73,
+        "reused": 157,
+        "consumedFailed": 0,
+        "blocked": 0,
+        "unfunded": 0,
+        "unknown": 8,
+        "totalCostUSD": 7.564399000000001,
+        "promptTokens": 89149,
+        "candidateTokens": 122937,
+        "uniqueCompleted": 73,
+        "uniqueTotal": 73
+      }
+    }
+  },
+  {
+    "path": "docs/plan/image-production/pacing_state.json",
+    "sha256": "d2e70b0ec870abec7487f339252952c9777c4da65ff40c5597c583b8fc43f741",
+    "data": {
+      "lastCompletedAtTs": 1791532349.9840736,
+      "nextAllowedPOSTAtTs": 1791532369.9840736,
+      "nextEligibleRetryAtTs": 1791531251.5921347,
+      "updatedAt": "2026-10-09T07:52:29.984084+00:00",
+      "owner": "environment-vertex-medieval-resume-pid4484"
+    }
+  },
+  {
+    "path": "docs/plan/image-production/promotion-and-cleanup-journal.json",
+    "sha256": "68d0445abff3d798abf54cae9832b55e666407d1006e5866d62f24d9809aa5dd",
+    "data": [
+      {
+        "canonicalID": "kingdom-terrain-stone",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/kingdom-terrain-stone.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-stone/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "kingdom-terrain-bronze",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/kingdom-terrain-bronze.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-bronze/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "kingdom-terrain-iron",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/kingdom-terrain-iron.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-iron/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "kingdom-terrain-medieval",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/kingdom-terrain-medieval.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-medieval/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "kingdom-terrain-gunpowder",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/kingdom-terrain-gunpowder.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-gunpowder/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "kingdom-terrain-industrial",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/kingdom-terrain-industrial.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-industrial/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "kingdom-terrain-modern",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/kingdom-terrain-modern.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-modern/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "kingdom-terrain-future",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/kingdom-terrain-future.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-06-kingdom-20261004-023321/packs/kingdom-terrain-future/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "adventure-terrain",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/adventure-terrain.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "adventure-terrain-plains",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/adventure-terrain-plains.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-plains/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "adventure-terrain-hills",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/adventure-terrain-hills.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-hills/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "adventure-terrain-swamp",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/adventure-terrain-swamp.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-swamp/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "adventure-terrain-desert",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/adventure-terrain-desert.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-desert/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "adventure-terrain-snow",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/adventure-terrain-snow.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-snow/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "adventure-terrain-waste",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/adventure-terrain-waste.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-waste/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "adventure-terrain-ruins",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/adventure-terrain-ruins.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/adventure-terrain-ruins/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "tactical-terrain",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/tactical-terrain.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "tactical-terrain-plains",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/tactical-terrain-plains.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-plains/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "tactical-terrain-hills",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/tactical-terrain-hills.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-hills/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "tactical-terrain-swamp",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/tactical-terrain-swamp.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-swamp/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "tactical-terrain-desert",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/tactical-terrain-desert.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-01-20261003-172733/packs/tactical-terrain-desert/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "tactical-terrain-snow",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/tactical-terrain-snow.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain-snow/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "tactical-terrain-waste",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/tactical-terrain-waste.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/tactical-terrain-waste/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "tactical-terrain-ruins",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/tactical-terrain-ruins.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/tactical-terrain-ruins/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "defense-terrain",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/defense-terrain.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/defense-terrain/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "defense-terrain-plains",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/defense-terrain-plains.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-02-20261004-010239/packs/defense-terrain-plains/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "defense-terrain-hills",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/defense-terrain-hills.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-03-20261004-012700/packs/defense-terrain-hills/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "defense-terrain-swamp",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/defense-terrain-swamp.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-swamp/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "defense-terrain-desert",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/defense-terrain-desert.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-desert/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "defense-terrain-snow",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/defense-terrain-snow.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-snow/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "defense-terrain-waste",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/defense-terrain-waste.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-waste/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      },
+      {
+        "canonicalID": "defense-terrain-ruins",
+        "action": "EVALUATE_PROMOTION_ELIGIBILITY",
+        "eligible": false,
+        "targetPath": "assets/production/final-native4k/defense-terrain-ruins.png",
+        "retainedSourcePath": "assets/high-res/interactive-4k-first32-20261003/run-04-20261004-013946/packs/defense-terrain-ruins/output.png",
+        "note": "All 8 Kingdom fail bare-content/geometry; Adventure/Tactical/Defense pending spatial/appearance/owner signoff"
+      }
+    ]
+  },
+  {
+    "path": "docs/plan/image-production/reconciled-accounting-ledger.json",
+    "sha256": "69dc34ddbcf7c83a3e4cb6501a50533fc580145ec25a9d4f78a5d4262b7761ff",
+    "data": {
+      "version": "2.1-reconciled-completed-20261004",
+      "status": "RECONCILED_LATER73_COMPLETED",
+      "invoices": "UNKNOWN",
+      "ratesStatus": "OFFICIAL_STANDARD_RATES_20261004",
+      "tariffDetails": {
+        "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "inputTokenPer1M_USD": 0.5,
+        "outputTextThinkingPer1M_USD": 3.0,
+        "imageOutputPer1M_USD": 60.0,
+        "native2KImageTokens": 1680,
+        "inputImageTokens": 1120
+      },
+      "caps": {
+        "aimUSD": 60.0,
+        "hardUSD": 80.0,
+        "protectedReserveUSD": 15.0
+      },
+      "componentsUSD": {
+        "historicalBatches01to17Reconciled": 40.24,
+        "historicalMock": 2.0,
+        "run1SuccessfulImages": 1.8293,
+        "run1NoImageTextTariff": 0.001503,
+        "run2SuccessfulImages": 0.6098,
+        "run3SuccessfulImages": 0.1524,
+        "run4SuccessfulImages": 0.7622,
+        "run5TacticalRetry": 0.3049,
+        "run6KingdomTerrains": 1.2193,
+        "priorBufferAndOverhead": 0.7302,
+        "protectedReserve": 15.0,
+        "later73ActualSpendUSD": 7.5644,
+        "retainedUnresolvedLiabilitiesUSD": 0.2872
+      },
+      "retainedProvisionalPriorExposureUSD": 62.8496,
+      "totalReconciledExposureUSD": 70.7012,
+      "headroomUnderHardCapUSD": 9.2988,
+      "queueOutcome": {
+        "itemsCount": 73,
+        "completed": 73,
+        "reused": 157,
+        "promotedToFinalNative2k": 73,
+        "actualSpendUSD": 7.5644,
+        "averageCostPerImageUSD": 0.1036
+      },
+      "rulesEnforced": [
+        "Aim $60 / Hard $80 / Protected $15 reserve persist untouched",
+        "Zero batch 18+ or filler generations",
+        "Invoices remain UNKNOWN",
+        "Sequential individual generation with 20s gap and 60s+ 429 retry",
+        "100% of 73 promoted to assets/high-res/final-native2k/"
+      ]
+    }
+  },
+  {
+    "path": "docs/plan/image-production/submission.mutex.json",
+    "sha256": "fedd5128742fb87978a37546061428ea87a3c4e7f8846d4f54168b56bdd16e9e",
+    "data": {
+      "owner": "image-unified-reserve-20261009-21d9e764-pid24552",
+      "pid": 24552,
+      "runUuid": "21d9e76493eb45ca90498a4cbb605fda",
+      "acquiredAt": "2026-10-09T11:00:55.531390+00:00",
+      "active": false,
+      "lastState": "RELEASED_NO_PAID_DISPATCH",
+      "workflow": "image-unified-reserve-20261009",
+      "historicalOwnerPreserved": true,
+      "releasedAt": "2026-10-09T11:00:55.551585+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/reservations.json",
+    "sha256": "71d433fcf4386e892f4e18f5ac9fd99a30c9492c8a9dc112d4cd1ca38474083f",
+    "data": [
+      {
+        "attemptId": "env-kingdom-terrain-stone-v1-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:17:19.292922+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-bronze-v1-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:18:00.882314+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-iron-v1-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:19:13.748223+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-medieval-v1-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:20:16.629578+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-gunpowder-v1-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:21:18.247192+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-industrial-v1-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:22:17.332953+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-modern-v1-a1",
+        "reservedUSD": 0.493,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:23:20.908281+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-future-v1-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:24:22.552763+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-stone-v2-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:28:31.038089+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-bronze-v2-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:29:12.987305+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-iron-v2-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:30:17.620307+00:00"
+      },
+      {
+        "attemptId": "env-kingdom-terrain-medieval-v2-a1",
+        "reservedUSD": 0.4931,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:31:22.144957+00:00"
+      },
+      {
+        "attemptId": "actors-class-knight-standing-body-v1-a1",
+        "reservedUSD": 0.4,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:45:40.961026+00:00"
+      },
+      {
+        "attemptId": "actors-class-ranger-standing-body-v1-a1",
+        "reservedUSD": 0.4,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:46:00.878252+00:00"
+      },
+      {
+        "attemptId": "actors-class-warlock-standing-body-v1-a1",
+        "reservedUSD": 0.4,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:46:45.857643+00:00"
+      },
+      {
+        "attemptId": "actors-class-mage-standing-body-v1-a1",
+        "reservedUSD": 0.4,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:47:32.838894+00:00"
+      },
+      {
+        "attemptId": "actors-class-paladin-standing-body-v1-a1",
+        "reservedUSD": 0.4,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:48:10.190455+00:00"
+      },
+      {
+        "attemptId": "actors-class-barbarian-standing-body-v1-a1",
+        "reservedUSD": 0.4,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:48:48.584976+00:00"
+      },
+      {
+        "attemptId": "actors-class-necromancer-standing-body-v1-a1",
+        "reservedUSD": 0.4,
+        "status": "SUCCEEDED_LIABILITY_RETAINED_UNTIL_INVOICE",
+        "retained": true,
+        "recordedAt": "2026-10-09T07:49:59.190986+00:00"
+      }
+    ]
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-barbarian-standing-body-v1-a1/write_ahead_request.json",
+    "sha256": "ccd9079322f0af47e7f10d086d9ae70dca971258a217d1a71da78c2b0d686a96",
+    "data": {
+      "itemId": "class-barbarian-standing-body",
+      "attemptId": "actors-class-barbarian-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "4d1adfe03a75dede09bd25c5a260217fc2e71cf9257973a0f7e882bfd1c74058",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:48:48.576661+00:00",
+      "responseSHA256": "1be19803598742d61fabcfdd4b8546fab40745423c89a25f032331f29a624c02",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-barbarian-standing-body-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "f36eed26ed53036ec5c962e561a073324ff225234c001f404185661ea4b6cc93",
+    "data": {
+      "itemId": "class-barbarian-standing-body",
+      "attemptId": "actors-class-barbarian-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "4d1adfe03a75dede09bd25c5a260217fc2e71cf9257973a0f7e882bfd1c74058",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:48:48.576661+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-knight-standing-body-v1-a1/write_ahead_request.json",
+    "sha256": "b2ae8d32624d14bb301157a1ff21113a74dd5ed9004b17c8173541c54971acac",
+    "data": {
+      "itemId": "class-knight-standing-body",
+      "attemptId": "actors-class-knight-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "b8200930944649e922e1daad2066bb6b452e72236fbaf71bcbdec96e1716fddf",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:45:40.868200+00:00",
+      "responseSHA256": "26bf690c520e29e41816570d327fb1b13fcfc17a301ddf6f7ca776ce96df412f",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-knight-standing-body-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "c0eccf9c2c6595ad65189292aba8d4714d13f4dc999cf2d88a45080bf5d070cb",
+    "data": {
+      "itemId": "class-knight-standing-body",
+      "attemptId": "actors-class-knight-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "b8200930944649e922e1daad2066bb6b452e72236fbaf71bcbdec96e1716fddf",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:45:40.868200+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-mage-standing-body-v1-a1/write_ahead_request.json",
+    "sha256": "4e1fcc342e67753d29fd2b4d49e595ac4513d4470b8ad05643197037942097c0",
+    "data": {
+      "itemId": "class-mage-standing-body",
+      "attemptId": "actors-class-mage-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "1533bad28db3f5d5197d89fd519e578a5ceb9ee4dfcdbd4bb3c0204fa23d4870",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:47:32.832074+00:00",
+      "responseSHA256": "d5d9bb31a2c596935b8052cd846494f2527a7e1fe1113f2171305f055686897e",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-mage-standing-body-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "f4faf6182ee28ac1eb8bf686e27a3c18f4c7a6e3869d18c57eb96375958beda4",
+    "data": {
+      "itemId": "class-mage-standing-body",
+      "attemptId": "actors-class-mage-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "1533bad28db3f5d5197d89fd519e578a5ceb9ee4dfcdbd4bb3c0204fa23d4870",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:47:32.832074+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-necromancer-standing-body-v1-a1/write_ahead_request.json",
+    "sha256": "38eb7f1bc0bc85f55ec24f07e9c7eeb3be3f74692001fa18861c688256d9c625",
+    "data": {
+      "itemId": "class-necromancer-standing-body",
+      "attemptId": "actors-class-necromancer-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "3ee3124aba4aae8632eb9ffee0cf86a25524afd8c05f374f63d5c10936db3b8c",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:49:59.184398+00:00",
+      "responseSHA256": "03e6cf1e4df08e2c6f2b6d72f9fc946f7837f7471f5c7226c826c8f543bb761f",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-necromancer-standing-body-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "51eac79cc5dab744ccee0e82bb776c42907624ddcb5c8969c76d96c29b74d31b",
+    "data": {
+      "itemId": "class-necromancer-standing-body",
+      "attemptId": "actors-class-necromancer-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "3ee3124aba4aae8632eb9ffee0cf86a25524afd8c05f374f63d5c10936db3b8c",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:49:59.184398+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-paladin-standing-body-v1-a1/write_ahead_request.json",
+    "sha256": "5c8494ce93d28e29b6ee01ba73e2111ac8f58bfac463e9c05fd42f22405152dc",
+    "data": {
+      "itemId": "class-paladin-standing-body",
+      "attemptId": "actors-class-paladin-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "27c389987bd1c706fabdfe9ded0cee2a99cdf841a1f6e4e56c3e01f437df72ca",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:48:10.185107+00:00",
+      "responseSHA256": "9f0cfbdfa94d2e765c0173a626705a6b4e9aaa9f1e6f0ed55a8880083efd7d57",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-paladin-standing-body-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "e52685a2ce01ac1aa06d57ecf699090320435678d277b036e1b3f7343bf32206",
+    "data": {
+      "itemId": "class-paladin-standing-body",
+      "attemptId": "actors-class-paladin-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "27c389987bd1c706fabdfe9ded0cee2a99cdf841a1f6e4e56c3e01f437df72ca",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:48:10.185107+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-ranger-standing-body-v1-a1/write_ahead_request.json",
+    "sha256": "f09858e88ab1c3e3cb79684cfb0b1c68bd74feaafce0cb44bca7aee0653f045d",
+    "data": {
+      "itemId": "class-ranger-standing-body",
+      "attemptId": "actors-class-ranger-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "f46919e820c3d409760b386b4336c22538142904dcfbb47df7ef6f651c9fb958",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:46:00.871822+00:00",
+      "responseSHA256": "9410174db98c21e401eb099f788a461c9deec59f4ba59fd02b00e449aefbdaf3",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-ranger-standing-body-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "0258eabca6dd8e2f9bb6a0590589b3e7ad7d1166a379f17f8044f76dcf55b44f",
+    "data": {
+      "itemId": "class-ranger-standing-body",
+      "attemptId": "actors-class-ranger-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "f46919e820c3d409760b386b4336c22538142904dcfbb47df7ef6f651c9fb958",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:46:00.871822+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-warlock-standing-body-v1-a1/write_ahead_request.json",
+    "sha256": "b98547d6664d75930ca011189dfea7b87dbba512a2018ce6f128ea676de906be",
+    "data": {
+      "itemId": "class-warlock-standing-body",
+      "attemptId": "actors-class-warlock-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "e06d80d01f12c0e91b0dbab282023d69903b50a9eb2af1195cffd36f2bc81318",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:46:45.849757+00:00",
+      "responseSHA256": "963aa4202e6e8331a7b02a7a9aa2c34dfd3cffa2c4d5445b0c42946583dec0d6",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-warlock-standing-body-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "20c42457942a4ca460fafcc7e31ff9908152a167794ff0ff710d3628d841fdf5",
+    "data": {
+      "itemId": "class-warlock-standing-body",
+      "attemptId": "actors-class-warlock-standing-body-v1-a1",
+      "ownerQueue": "ACTORS",
+      "bodySHA256": "e06d80d01f12c0e91b0dbab282023d69903b50a9eb2af1195cffd36f2bc81318",
+      "reservationUSD": 0.4,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-actors-pid24432",
+      "recordedAt": "2026-10-09T07:46:45.849757+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-bronze-v1-a1/write_ahead_request.json",
+    "sha256": "3921a6a6b0239def9674bd74879c0e55a0a3c3cfec431abacf47a3077388529f",
+    "data": {
+      "itemId": "kingdom-terrain-bronze",
+      "attemptId": "env-kingdom-terrain-bronze-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "984e19cb8f0cefc7885bc198dbaa6a72e982515ebc3bb84e1f48178bed4b91e9",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:18:00.849642+00:00",
+      "responseSHA256": "5c7063fd90eee21319d0a3df7c1430b6828c857294450b9957aad7234b9bccd0",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-bronze-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "70cb67c5f68d7422a6717d169c5086a5a965bcd7f6868738d38d0cad79c16faa",
+    "data": {
+      "itemId": "kingdom-terrain-bronze",
+      "attemptId": "env-kingdom-terrain-bronze-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "984e19cb8f0cefc7885bc198dbaa6a72e982515ebc3bb84e1f48178bed4b91e9",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:18:00.849642+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-bronze-v2-a1/write_ahead_request.json",
+    "sha256": "557bb6a242c30c869d4c06a050c400619c96546f7c806d90828500467d6bc165",
+    "data": {
+      "itemId": "kingdom-terrain-bronze",
+      "attemptId": "env-kingdom-terrain-bronze-v2-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "f534f8e8165cac96d8ebdda0de9fdc870b3ec80e2d800eb0d44c20c94e58b032",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-correction-pid22916",
+      "recordedAt": "2026-10-09T07:29:12.973722+00:00",
+      "responseSHA256": "6506bd3a07a3a8ca7620d18bd9c64ab6516cf0066b715fb59ed484c4fd28423f",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-bronze-v2-a1/write_ahead_subattempt_1.json",
+    "sha256": "45320dd3e4b6a9fe7c6080a1ff15c9782eaed1ac639ca27d55e82b7bd4b178e9",
+    "data": {
+      "itemId": "kingdom-terrain-bronze",
+      "attemptId": "env-kingdom-terrain-bronze-v2-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "f534f8e8165cac96d8ebdda0de9fdc870b3ec80e2d800eb0d44c20c94e58b032",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-correction-pid22916",
+      "recordedAt": "2026-10-09T07:29:12.973722+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-future-v1-a1/write_ahead_request.json",
+    "sha256": "ca4198c23adedd01a2b0fd83459c0a2dba001ca1d4144dc12a28a903addb97dc",
+    "data": {
+      "itemId": "kingdom-terrain-future",
+      "attemptId": "env-kingdom-terrain-future-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "085fb7be028dd8353074c2a6b6ad3936d9a7638abcf6f88eff326b0601b1fa9d",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:24:22.531131+00:00",
+      "responseSHA256": "b69af8b1012f2d10731c14f35178b797f744cdc87217bbf054a6ce93417afcfb",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-future-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "51b5d778c28d4728bccdfe5357df89e2c2f37dce491c893135ea0c63f652296c",
+    "data": {
+      "itemId": "kingdom-terrain-future",
+      "attemptId": "env-kingdom-terrain-future-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "085fb7be028dd8353074c2a6b6ad3936d9a7638abcf6f88eff326b0601b1fa9d",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:24:22.531131+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-gunpowder-v1-a1/write_ahead_request.json",
+    "sha256": "229278ab21deb635e6cde09c67554e3dfe910dfd2826c1f42c2ad94d0fb6387b",
+    "data": {
+      "itemId": "kingdom-terrain-gunpowder",
+      "attemptId": "env-kingdom-terrain-gunpowder-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "4b211c80cd245416e4ab52f1a93c100c152c3f3079e4e56b9709a374085c2b0f",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:21:18.219609+00:00",
+      "responseSHA256": "5810c3fb29641343afad599b61cd316116615d58d9bc8c4072f36963f8836141",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-gunpowder-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "073b1283f14ed88641bf44afce2eb1f37b385b51eb02fc65bf71880339234e3f",
+    "data": {
+      "itemId": "kingdom-terrain-gunpowder",
+      "attemptId": "env-kingdom-terrain-gunpowder-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "4b211c80cd245416e4ab52f1a93c100c152c3f3079e4e56b9709a374085c2b0f",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:21:18.219609+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-industrial-v1-a1/write_ahead_request.json",
+    "sha256": "90263d3c14ecfbda59defeeb7427e930904edd5ace0661ff0d1b0e086636c6f1",
+    "data": {
+      "itemId": "kingdom-terrain-industrial",
+      "attemptId": "env-kingdom-terrain-industrial-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "2e71b6206a215d9f5f1c233269fbd48d93aa7f1374b2e0e93b59af0cf797f1c8",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:22:17.302616+00:00",
+      "responseSHA256": "14a5c19e336f70278a1dc37e5e91aa13c7a128e4911d5c09a32272a125674572",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-industrial-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "691d35dfbba48daf02b6d094911912ba44cee581df7250c3101ce1a5efebc792",
+    "data": {
+      "itemId": "kingdom-terrain-industrial",
+      "attemptId": "env-kingdom-terrain-industrial-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "2e71b6206a215d9f5f1c233269fbd48d93aa7f1374b2e0e93b59af0cf797f1c8",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:22:17.302616+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-iron-v1-a1/write_ahead_request.json",
+    "sha256": "6171b44d5714c32955b123565205652988511a8e0b35414b505d23349b1cc01d",
+    "data": {
+      "itemId": "kingdom-terrain-iron",
+      "attemptId": "env-kingdom-terrain-iron-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "8337f1dde82e4f9682b5992a166e11d6a965722becc19a7c81adce535155dece",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:19:13.717304+00:00",
+      "responseSHA256": "c85851891a5b7fe452c38fe58d9c09f4f9db7558c8ea9b5e00d3244cae01d61a",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-iron-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "279a3657e714acb77ab1a2c8abfa63814b11632c654df8013ad6f1705ecab8e3",
+    "data": {
+      "itemId": "kingdom-terrain-iron",
+      "attemptId": "env-kingdom-terrain-iron-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "8337f1dde82e4f9682b5992a166e11d6a965722becc19a7c81adce535155dece",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:19:13.717304+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-iron-v2-a1/write_ahead_request.json",
+    "sha256": "02e30a670bc60f040428c00c8b177667141029bdbeb7925286fc0e5c193d4601",
+    "data": {
+      "itemId": "kingdom-terrain-iron",
+      "attemptId": "env-kingdom-terrain-iron-v2-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "3d6aee4465e6b95bed5f2176c6a5c2a355cc67b26df8d3adb9becff74f52d65c",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-correction-pid22916",
+      "recordedAt": "2026-10-09T07:30:17.602103+00:00",
+      "responseSHA256": "19e0f441367fd7f9cf441c070099572652d3d64f128e042364b8ded94e0e2fa4",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-iron-v2-a1/write_ahead_subattempt_1.json",
+    "sha256": "e7803305a207534b7fbdd5fe78d867dcf05fca6ae0afd9c4d7fef13613fe98ec",
+    "data": {
+      "itemId": "kingdom-terrain-iron",
+      "attemptId": "env-kingdom-terrain-iron-v2-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "3d6aee4465e6b95bed5f2176c6a5c2a355cc67b26df8d3adb9becff74f52d65c",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-correction-pid22916",
+      "recordedAt": "2026-10-09T07:30:17.602103+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-medieval-v1-a1/write_ahead_request.json",
+    "sha256": "29103fd7bf4317302ebd695e51c88caffc41d1375273b1a6a85990910cae36bb",
+    "data": {
+      "itemId": "kingdom-terrain-medieval",
+      "attemptId": "env-kingdom-terrain-medieval-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "69f2a0bc91134fb963d0b34ebbf885dec6ef96fff2e2af5a3df84964066f7a68",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:20:16.595350+00:00",
+      "responseSHA256": "3c14d9a9a989968a3f710fe883b140ced4afac90be353ae683dc6aeaa2fefa18",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-medieval-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "d195ad68a4a4b8bdfdbc820a1684a76b202fafe652187583bacf59d1e41f4efc",
+    "data": {
+      "itemId": "kingdom-terrain-medieval",
+      "attemptId": "env-kingdom-terrain-medieval-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "69f2a0bc91134fb963d0b34ebbf885dec6ef96fff2e2af5a3df84964066f7a68",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:20:16.595350+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-medieval-v2-a1/write_ahead_request.json",
+    "sha256": "ebcf290623030fb3fe446ffe508c15789c443240eb3b22a59ed5b331d5946754",
+    "data": {
+      "itemId": "kingdom-terrain-medieval",
+      "attemptId": "env-kingdom-terrain-medieval-v2-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "3f48a38cc17fb4763ff44e84fb405a6d39d80a8963a810a38e966b1973d36769",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-medieval-resume-pid4484",
+      "recordedAt": "2026-10-09T07:31:22.131540+00:00",
+      "backoffSeconds": 60.0,
+      "httpCode": 200,
+      "headers": {
+        "Vary": "X-Origin",
+        "Content-Type": "application/json; charset=UTF-8",
+        "Date": "Fri, 09 Oct 2026 07:33:11 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "resumedAt": "2026-10-09T07:51:57.441515+00:00",
+      "responseSHA256": "cc792b9e5a90fdf2ce00891d0a634a29404b36c498abf9097f7f9ee211544f79"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-medieval-v2-a1/write_ahead_subattempt_1.json",
+    "sha256": "1d44c36585a3feeafc3b299378d47ab5687a4399a4515d1729c00d0a4c795418",
+    "data": {
+      "itemId": "kingdom-terrain-medieval",
+      "attemptId": "env-kingdom-terrain-medieval-v2-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "3f48a38cc17fb4763ff44e84fb405a6d39d80a8963a810a38e966b1973d36769",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-correction-pid22916",
+      "recordedAt": "2026-10-09T07:31:22.131540+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-modern-v1-a1/write_ahead_request.json",
+    "sha256": "34da38f341f1e0c450334c75098b27d6f754a9324ccb0a81f9ba990cb729988f",
+    "data": {
+      "itemId": "kingdom-terrain-modern",
+      "attemptId": "env-kingdom-terrain-modern-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "82eb567973f524375708cc30ebe08fe02160b5039415b367601e0088a060240d",
+      "reservationUSD": 0.493,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:23:20.871906+00:00",
+      "responseSHA256": "3f5b82e8a09e7e9e9bb75f870022535472b12a391aaa64807508481ac502ed6f",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-modern-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "e8a3ec8c430614dfc09019c2f21a2f458f18422d51282a74aa589988b62c8a81",
+    "data": {
+      "itemId": "kingdom-terrain-modern",
+      "attemptId": "env-kingdom-terrain-modern-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "82eb567973f524375708cc30ebe08fe02160b5039415b367601e0088a060240d",
+      "reservationUSD": 0.493,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:23:20.871906+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-stone-v1-a1/write_ahead_request.json",
+    "sha256": "3602af3e9aec6327b4e572f7af99ab7d1ad8ce7c9b343f0053ee05fd1784e687",
+    "data": {
+      "itemId": "kingdom-terrain-stone",
+      "attemptId": "env-kingdom-terrain-stone-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "86546495b2791fecaad05cb1645ab60c608109c66a510e1b71dd18110caee459",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:17:19.277458+00:00",
+      "responseSHA256": "7db848358d0dd5889ae8fbaab5046b1a726168da223280f1ed7b535afc191846",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-stone-v1-a1/write_ahead_subattempt_1.json",
+    "sha256": "ab540488cd376fd96a20edbf8c24c1b4f985d36732f2c53107d265ace4ce3893",
+    "data": {
+      "itemId": "kingdom-terrain-stone",
+      "attemptId": "env-kingdom-terrain-stone-v1-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "86546495b2791fecaad05cb1645ab60c608109c66a510e1b71dd18110caee459",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-20261009-pid7272",
+      "recordedAt": "2026-10-09T07:17:19.277458+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-stone-v2-a1/write_ahead_request.json",
+    "sha256": "187bc475e03185bd8d11c3d00a67f01c7985eb71b3a273376185e135b13131ca",
+    "data": {
+      "itemId": "kingdom-terrain-stone",
+      "attemptId": "env-kingdom-terrain-stone-v2-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "e9db6f13ce4cad371a45b5152d19cac1128cdb4d875342678fc8173450a2f370",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SUCCEEDED",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-correction-pid22916",
+      "recordedAt": "2026-10-09T07:28:31.025254+00:00",
+      "responseSHA256": "33123be203b1b8fba9a5502bc42a5ebfc9f1441b50ade08416d4cd3179d5d628",
+      "httpCode": 200
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/env-kingdom-terrain-stone-v2-a1/write_ahead_subattempt_1.json",
+    "sha256": "74681c0b8ede95d794f4225c867705caad4a9654c5fb74a3bff45d091be726c8",
+    "data": {
+      "itemId": "kingdom-terrain-stone",
+      "attemptId": "env-kingdom-terrain-stone-v2-a1",
+      "ownerQueue": "ENVIRONMENT",
+      "bodySHA256": "e9db6f13ce4cad371a45b5152d19cac1128cdb4d875342678fc8173450a2f370",
+      "reservationUSD": 0.4931,
+      "subattempt": 1,
+      "status": "SENDING_POST",
+      "endpoint": "https://aiplatform.googleapis.com/v1/projects/project-eaa4c1cc-8f19-4d24-9e6/locations/global/publishers/google/models/gemini-3.1-flash-image:generateContent",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "owner": "environment-vertex-correction-pid22916",
+      "recordedAt": "2026-10-09T07:28:31.025254+00:00"
+    }
+  },
+  {
+    "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/actors-class-warlock-standing-body-v1-a1.json",
+    "sha256": "479bf95bb06390a80f2f79f362ebd680304ecf4e4d4c95daa1b2e3182315f500",
+    "data": {
+      "id": "receipt-actors-class-warlock-standing-body-v1-a1",
+      "canonicalId": "class-warlock-standing-body",
+      "owner": "ACTORS",
+      "attemptId": "actors-class-warlock-standing-body-v1-a1",
+      "requestPackSHA256": "ef9fe202d916a1071ef2ecf4b623ef499862e3be21065d94859377db2bf09eda",
+      "wireBodySHA256": "e06d80d01f12c0e91b0dbab282023d69903b50a9eb2af1195cffd36f2bc81318",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "model": "gemini-3.1-flash-image",
+      "resolution": "2K",
+      "status": "SUCCEEDED_CANDIDATE",
+      "providerOperation": null,
+      "rawResponsePath": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/attempts/actors-class-warlock-standing-body-v1-a1/response.json",
+      "rawResponseSHA256": "963aa4202e6e8331a7b02a7a9aa2c34dfd3cffa2c4d5445b0c42946583dec0d6",
+      "images": [
+        {
+          "path": "qa/image-vertex-repair-20261009/environment/vertex-coordinator/receipts/ACTORS/natives/class-warlock-standing-body.png",
+          "sha256": "375134c7bf0fee3df35718862ea974436987ec82e9f4949fbeca8caee642d41f",
+          "bytes": 5601854,
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "format": "PNG"
+        }
+      ],
+      "usage": {
+        "promptTokenCount": 112,
+        "candidatesTokenCount": 1680,
+        "totalTokenCount": 1792,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 112
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1680
+          }
+        ]
+      },
+      "reservedUSD": 0.4,
+      "actualOrRetainedExposureUSD": 0.4,
+      "complete": true,
+      "rejectionEvidence": [],
+      "nextAction": "AI2 reviews this candidate. Coordinator did not write AI2 directories or mark the sprite READY.",
+      "review": "UNREVIEWED_BY_OWNER"
+    }
+  }
+]

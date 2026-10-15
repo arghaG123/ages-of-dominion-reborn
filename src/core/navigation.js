@@ -51,6 +51,40 @@ export function stepCost(map, from, to, terrainAt = () => 'plains') {
   return cost;
 }
 
+export function routeTo(map, start, goal, terrainAt) {
+  const [sx, sy] = start;
+  const [gx, gy] = goal;
+  if (!Number.isInteger(sx) || !Number.isInteger(sy) || !Number.isInteger(gx) || !Number.isInteger(gy)) throw new Error('Invalid route');
+  if (sx === gx && sy === gy) throw new Error('Already here');
+  if (!isOpen(map, gx, gy)) throw new Error('Blocked terrain');
+  const origin = key(sx, sy);
+  const queue = [[sx, sy]];
+  const prev = new Map([[origin, null]]);
+  const steps = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [1, -1], [-1, 1], [-1, -1]];
+  while (queue.length) {
+    const at = queue.shift();
+    for (const [dx, dy] of steps) {
+      const next = [at[0] + dx, at[1] + dy];
+      const id = key(next[0], next[1]);
+      if (prev.has(id)) continue;
+      try { stepCost(map, at, next, terrainAt); } catch { continue; }
+      prev.set(id, at);
+      if (next[0] === gx && next[1] === gy) {
+        const path = [];
+        let cursor = next;
+        while (key(cursor[0], cursor[1]) !== origin) {
+          path.push(cursor);
+          cursor = prev.get(key(cursor[0], cursor[1]));
+        }
+        path.reverse();
+        return routeCost(map, start, path, terrainAt);
+      }
+      queue.push(next);
+    }
+  }
+  throw new Error('No legal route');
+}
+
 export function routeCost(map, start, path, terrainAt) {
   if (!Array.isArray(path) || path.length === 0 || path.length > 64) throw new Error('Invalid route');
   let at = start;

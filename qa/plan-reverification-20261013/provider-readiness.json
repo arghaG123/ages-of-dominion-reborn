@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-13T06:23:45.933492+00:00",
+  "project": "project-eaa4c1cc-8f19-4d24-9e6",
+  "account": "arghawork3@gmail.com",
+  "generationPOSTs": 0,
+  "controlWrites": 0,
+  "checks": {
+    "tokenRefresh": "PASS",
+    "cloudLockMetadata": {
+      "generation": "1791532353596873",
+      "updated": "2026-10-09T07:52:33.614Z",
+      "size": "375"
+    },
+    "cloudLock": {
+      "batch_id": "vertex-repair-20261009",
+      "model": "gemini-3.1-flash-image",
+      "project": "project-eaa4c1cc-8f19-4d24-9e6",
+      "account": "arghawork3@gmail.com",
+      "state": "JOB_STATE_SUCCEEDED",
+      "workflow_state": "TERMINAL_COLLECTED",
+      "owner": "environment-vertex-medieval-resume-pid4484",
+      "releasedAt": "2026-10-09T07:52:30.895471+00:00",
+      "lastState": "RELEASED"
+    },
+    "jobs": {
+      "error": "TimeoutError",
+      "reason": "The read operation timed out"
+    }
+  },
+  "status": "BLOCKED_READINESS",
+  "locations": [
+    {
+      "location": "africa-south1",
+      "status": "CHECKED",
+      "jobs": 0,
+      "hasNextPage": false
+    },
+    {
+      "location": "asia-east1",
+      "status": "CHECKED",
+      "jobs": 0,
+      "hasNextPage": false
+    },
+    {
+      "location": "asia-east2",
+      "status": "CHECKED",
+      "jobs": 0,
+      "hasNextPage": false
+    },
+    {
+      "location": "asia-northeast1",
+      "status": "CHECKED",
+      "jobs": 0,
+      "hasNextPage": false
+    },
+    {
+      "location": "asia-northeast2",
+      "status": "CHECKED",
+      "jobs": 0,
+      "hasNextPage": false
+    },
+    {
+      "location": "asia-northeast3",
+      "status": "CHECKED",
+      "jobs": 0,
+      "hasNextPage": false
+    }
+  ]
+}

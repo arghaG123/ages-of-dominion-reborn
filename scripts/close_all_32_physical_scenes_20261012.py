@@ -51,21 +51,23 @@ def raster_polygon(shape, pts):
     return np.array(mask) > 0
 
 def extract_feature_masks(im_rgb):
-    r = im_rgb[:, :, 0].astype(np.int16)
-    g = im_rgb[:, :, 1].astype(np.int16)
-    b = im_rgb[:, :, 2].astype(np.int16)
+    r = im_rgb[:, :, 0].astype(np.int32)
+    g = im_rgb[:, :, 1].astype(np.int32)
+    b = im_rgb[:, :, 2].astype(np.int32)
+    hsv = cv2.cvtColor(im_rgb, cv2.COLOR_RGB2HSV)
+    h, s, v = hsv[:, :, 0], hsv[:, :, 1], hsv[:, :, 2]
 
-    # Water: blue dominant over red and green with sufficient luminance
-    water = (b > (r + 14)) & (b > (g - 5)) & (b > 50)
-    water = cv2.morphologyEx(water.astype(np.uint8), cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
-    
-    # Rock / dark rough obstacle
-    gray = im_rgb.mean(axis=2)
-    mean = cv2.blur(gray, (9, 9))
-    sq = cv2.blur(gray * gray, (9, 9))
-    std = np.sqrt(np.clip(sq - mean * mean, 0, None))
-    rock = (std > 25) & (gray < 100) & ~((g > r + 10) & (g > b))
-    rock = cv2.morphologyEx(rock.astype(np.uint8), cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
+    # Deep water channels: saturated blue water channels (b significantly exceeds r and g)
+    water = (h >= 95) & (h <= 130) & (s >= 115) & (b > r + 65) & (b > g + 20) & (v >= 35) & (v <= 210)
+    water = cv2.morphologyEx(water.astype(np.uint8), cv2.MORPH_OPEN, np.ones((7, 7), np.uint8))
+
+    # Unpassable canyon cliffs / steep crag obstacles (dense, high-contrast dark cliff crevices, not flat ground texture)
+    gray = cv2.cvtColor(im_rgb, cv2.COLOR_RGB2GRAY)
+    sobelx = cv2.Sobel(gray, cv2.CV_32F, 1, 0, ksize=3)
+    sobely = cv2.Sobel(gray, cv2.CV_32F, 0, 1, ksize=3)
+    grad = np.sqrt(sobelx * sobelx + sobely * sobely)
+    rock = (grad > 90) & (gray < 40)
+    rock = cv2.morphologyEx(rock.astype(np.uint8), cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
 
     return {
         "water": water.astype(bool),

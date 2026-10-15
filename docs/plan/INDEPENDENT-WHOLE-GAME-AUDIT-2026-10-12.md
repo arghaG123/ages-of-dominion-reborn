@@ -1,6 +1,9 @@
 Language/framework/version: JavaScript ES modules, HTML/CSS/SVG; custom Node 24.19.0 server/build tools; Python 3.13.7; Android Java/WebView wrapper (physical runtime deferred).
 Task: independent Code Review and Testing. Date: 12 October 2026 (Asia/Calcutta).
 
+> **Historical snapshot:** Newer implementation was independently rechecked. Read the [current-commit recheck](INDEPENDENT-WHOLE-GAME-RECHECK-6e1d9ec-2026-10-12.md) for fixes, remaining findings and the current APK. The original evidence below is preserved.
+
+
 # Independent whole-game visual and code audit
 
 **Verdict: INCOMPLETE. The 12 October RELEASE_READY banner and blanket visual/scene/rig completion claims are not supported. Physical-device testing remains deferred until the planned game, final build, and independent desktop review are complete.**

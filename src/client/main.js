@@ -21,9 +21,9 @@ import { acceptMapActivation, defaultIntent, intentSentence, keepIntent, modeRow
 import { visibleBox } from './visible-size.js';
 import { createFrameClock, travelProgress, travelSample } from './motion.js';
 import { applySettings, arm, blip, nextSuspended, suspendAudio, resumeAudio } from './audio.js';
-import { SKILL_IDS, GEAR_SLOTS, RIVALS, forgeOffer, gearBonus, recruitCost, spellEffect, towerPurchaseCost } from '../core/rules.js';
+import { SKILL_IDS, GEAR_SLOTS, RIVALS, forgeOffer, gearBonus, marketQuote, recruitCost, spellEffect, towerPurchaseCost } from '../core/rules.js';
 import { dwellingCost, dwellingPool, unitStats } from '../core/mechanics.js';
-import { adventureMap, routeCost } from '../core/navigation.js';
+import { adventureMap, isOpen, routeTo } from '../core/navigation.js';
 import { challengeDescriptor, validateDescriptor, encodeChallengeCode, decodeChallengeCode, challengeResult } from '../core/challenge.js';
 
 const $ = id => document.getElementById(id);
@@ -37,7 +37,7 @@ const blocked = {
   skills: 'A skill offer waits until you choose or decline it.',
   loot: 'Offers stay with this save.'
 };
-const primaryNav = new Set(['kingdom', 'adventure', 'hero', 'war']);
+const primaryNav = new Set(['kingdom', 'adventure', 'hero', 'army', 'war']);
 const initial = load(localStorage, data);
 let state = initial.state, selected = 'P01', suspended = false, timer, frameClock, resumeNote = '', clip = 'idle', opponentRender = false, saveFault = '';
 let frameFit = { width: 1, height: 1, fit: { scale: 1, offset: [0, 0] } };
@@ -272,124 +272,104 @@ function modeGround(mode) {
   if (file) showTerrain(file, `${data.AGES[age].n} ${biome} ${mode} ground`, modeScenes.status);
   return file;
 }
-function supportText(x, y, text, size, fill, extra = {}) {
-  const node = element('text', { x, y, fill, 'font-size': size, 'font-family': 'Palatino, Georgia, serif', ...extra });
-  node.textContent = text;
-  return node;
-}
-function supportMultiline(x, y, text, size, fill, maxCharsPerLine = 28) {
-  const words = text.split(' ');
-  const lines = [];
-  let current = '';
-  for (const w of words) {
-    if ((current + ' ' + w).trim().length > maxCharsPerLine) {
-      if (current) lines.push(current);
-      current = w;
-    } else {
-      current = current ? current + ' ' + w : w;
-    }
+function supportCard(title, body, attrs = {}) {
+  const card = document.createElement('article');
+  for (const [key, value] of Object.entries(attrs)) card.dataset[key] = value;
+  const heading = document.createElement('h3');
+  heading.textContent = title;
+  card.append(heading);
+  if (body) {
+    const copy = document.createElement('p');
+    copy.textContent = body;
+    card.append(copy);
   }
-  if (current) lines.push(current);
-  const group = element('g', {});
-  const lineH = Math.round(size * 1.35);
-  lines.forEach((line, i) => {
-    group.append(supportText(x, y + i * lineH, line, size, fill));
-  });
-  return group;
+  return card;
 }
-function paintSupportBoard(kind) {
-  const world = $('world');
-  world.setAttribute('data-support-layout', kind);
+function mountSupportChrome(kind, title, subtitle) {
+  const host = $('scene-ui');
+  host.hidden = false;
+  host.className = 'support';
+  const head = document.createElement('header');
+  const heading = document.createElement('h2');
+  heading.textContent = title;
+  head.append(heading);
+  if (subtitle) {
+    const line = document.createElement('p');
+    line.textContent = subtitle;
+    head.append(line);
+  }
+  const grid = document.createElement('div');
+  grid.className = 'support-grid';
+  grid.dataset.supportLayout = kind;
   if (kind === 'market') {
-    const goods = [['Food', 'food'], ['Wood', 'wood'], ['Stone', 'stone'], ['Gold', 'gold']];
-    goods.forEach(([label, key], index) => {
-      const x = 140 + index * 280;
-      world.append(element('rect', { x, y: 230, width: 240, height: 280, rx: 12, fill: '#152128', stroke: '#c9a35b', 'data-market-good': key }));
-      world.append(supportText(x + 24, 290, label, 28, '#f4ecdf'));
+    for (const [label, key] of [['Food', 'food'], ['Wood', 'wood'], ['Stone', 'stone'], ['Gold', 'gold']]) {
       const amount = state ? String(Math.floor(state.resources[key])) : '0';
-      world.append(supportText(x + 24, 350, amount, 36, '#e6d3a1'));
-      const note = key === 'gold' ? 'Price, not a batch' : state && state.age < 1 ? 'Opens in Bronze' : 'Batch of 100';
-      world.append(supportText(x + 24, 420, note, 18, '#f1e9d9'));
-    });
-    return;
-  }
-  if (kind === 'story') {
-    const chapters = data.STORY.length;
-    for (let index = 0; index < chapters; index += 1) {
-      const open = state && state.age >= index;
+      const note = key === 'gold' ? 'Price, not a batch' : state && state.age < 1 ? 'Opens in Bronze Age' : 'Batch of 100';
+      const card = supportCard(label, `${amount}. ${note}`, { marketGood: key });
+      card.querySelector('p').className = 'amount';
+      grid.append(card);
+    }
+  } else if (kind === 'story') {
+    for (let index = 0; index < data.STORY.length; index += 1) {
+      const open = Boolean(state && state.age >= index);
       const chosen = state?.story?.choices?.[index];
-      const x = 140 + (index % 4) * 280;
-      const y = 220 + Math.floor(index / 4) * 160;
-      world.append(element('rect', {
-        x, y, width: 250, height: 120, rx: 10,
-        fill: open ? '#3d3424' : '#152128', stroke: chosen ? '#70b9c5' : '#8c7447',
-        'data-chapter': String(index), 'data-open': open ? '1' : '0',
+      const parts = (data.STORY[index].t || '').split(' — ');
+      const statusText = open ? (chosen ? 'Choice saved' : 'Open') : 'Opens in ' + data.AGES[index].n;
+      grid.append(supportCard(parts[0] || `Chapter ${index + 1}`, `${parts[1] || ''} ${statusText}`.trim(), {
+        chapter: String(index),
+        open: open ? '1' : '0',
       }));
-      world.append(supportText(x + 16, y + 42, data.STORY[index].t, 18, '#f4ecdf'));
-      world.append(supportText(x + 16, y + 78, open ? (chosen ? 'Choice saved' : 'Open') : 'Opens in ' + data.AGES[index].n, 15, '#e6d3a1'));
     }
     const futureOpen = Boolean(state && state.age >= 7 && state.story.chapter >= data.STORY.length);
-    world.append(supportText(140, 620, futureOpen ? 'The Valley We Keep is open and grants nothing.' : 'The Valley We Keep opens in the Future age.', 18, '#f1e9d9', { 'data-future': futureOpen ? 'open' : 'closed' }));
+    const future = document.createElement('p');
+    future.dataset.future = futureOpen ? 'open' : 'closed';
+    future.textContent = futureOpen ? 'The Valley We Keep is open and grants nothing.' : 'The Valley We Keep opens in the Future age.';
+    host.replaceChildren(head, grid, future);
     return;
-  }
-  if (kind === 'war') {
-    const modes = [
+  } else if (kind === 'war') {
+    for (const [name, detail] of [
       ['Siege', 'Campaign reward, settled once'],
       ['Tactical Duel', 'Campaign reward, settled once'],
       ['Endless', 'Ongoing. No invented wave purse'],
       ['Skirmish', 'Practice. Campaign unchanged'],
       ['Challenge', 'Shared seed. Campaign unchanged'],
-    ];
-    modes.forEach(([title, detail], index) => {
-      const x = 120 + index * 230;
-      world.append(element('rect', { x, y: 240, width: 210, height: 280, rx: 12, fill: '#152128', stroke: '#c9a35b', 'data-war-mode': title }));
-      world.append(supportText(x + 16, 300, title, 22, '#f4ecdf'));
-      world.append(supportMultiline(x + 16, 350, detail, 16, '#e6d3a1', 18));
-    });
-    return;
-  }
-  if (kind === 'settings') {
+    ]) grid.append(supportCard(name, detail, { warMode: name }));
+  } else if (kind === 'settings') {
     const music = state?.settings?.music ?? 0;
     const sfx = state?.settings?.sfx ?? 0;
     const reduced = Boolean(state?.settings?.reducedMotion);
-    for (const [label, value, y] of [['Music', music, 280], ['Sound', sfx, 400]]) {
-      world.append(supportText(160, y, label, 22, '#f4ecdf'));
-      world.append(element('rect', { x: 360, y: y - 28, width: 640, height: 36, rx: 8, fill: '#152128', stroke: '#8c7447' }));
-      world.append(element('rect', { x: 360, y: y - 28, width: Math.max(8, 640 * value), height: 36, rx: 8, fill: '#c9a35b', 'data-level': label.toLowerCase() }));
+    for (const [label, value] of [['Music', music], ['Sound', sfx]]) {
+      const card = supportCard(label, '', { level: label.toLowerCase() });
+      const meter = document.createElement('div');
+      meter.className = 'meter';
+      meter.style.setProperty('--level', String(value));
+      card.append(meter);
+      grid.append(card);
     }
-    world.append(supportText(160, 540, reduced ? 'Reduced motion is on' : 'Reduced motion is off', 22, '#e6d3a1', { 'data-reduced-motion': reduced ? 'on' : 'off' }));
-    world.append(supportText(160, 600, 'Local tones only. No account and no network permission.', 16, '#f1e9d9'));
+    const motion = document.createElement('p');
+    motion.dataset.reducedMotion = reduced ? 'on' : 'off';
+    motion.textContent = reduced ? 'Reduced motion is on' : 'Reduced motion is off';
+    const local = document.createElement('p');
+    local.textContent = 'Local tones only. No account and no network permission.';
+    host.replaceChildren(head, grid, motion, local);
     return;
-  }
-  if (kind === 'help') {
-    const columns = [
+  } else if (kind === 'help') {
+    for (const [name, body] of [
       ['Help', 'Build, recruit, travel, fight, equip, and return. The tutorial can be skipped and reviewed.'],
       ['Credits', 'Ages of Dominion Reborn. Offline local campaign.'],
       ['Privacy', 'No account, no network request, and no device permission.'],
-    ];
-    columns.forEach(([title, body], index) => {
-      const x = 140 + index * 380;
-      world.append(element('rect', { x, y: 230, width: 340, height: 320, rx: 12, fill: '#152128', stroke: '#c9a35b', 'data-help-column': title.toLowerCase() }));
-      world.append(supportText(x + 20, 290, title, 28, '#f4ecdf'));
-      world.append(supportMultiline(x + 20, 350, body, 18, '#f1e9d9', 30));
-    });
+    ]) grid.append(supportCard(name, body, { helpColumn: name.toLowerCase() }));
   }
+  host.replaceChildren(head, grid);
 }
 function paintChamber(title, subtitle, kind = '') {
   const world = $('world');
   world.setAttribute('data-chamber', view);
+  world.setAttribute('data-support-layout', kind || 'chamber');
   world.append(element('rect', { width: 1376, height: 768, fill: '#1a1814' }));
   world.append(element('rect', { x: 72, y: 56, width: 1232, height: 640, rx: 16, fill: '#243036', stroke: '#c9a35b', 'stroke-width': 3 }));
   world.append(element('rect', { x: 72, y: 56, width: 18, height: 640, fill: '#8c7447' }));
-  const heading = element('text', { x: 120, y: 128, fill: '#f4ecdf', 'font-size': 42, 'font-family': 'Palatino, Georgia, serif' });
-  heading.textContent = title;
-  world.append(heading);
-  if (subtitle) {
-    const line = element('text', { x: 120, y: 168, fill: '#e6d3a1', 'font-size': 18 });
-    line.textContent = subtitle;
-    world.append(line);
-  }
-  if (kind) paintSupportBoard(kind);
+  if (kind) mountSupportChrome(kind, title, subtitle);
 }
 function slotGlyph(slot, x, y) {
   const group = element('g', { transform: `translate(${x} ${y})`, 'data-slot-icon': slot, fill: 'none', stroke: '#e6d3a1', 'stroke-width': 3, 'stroke-linecap': 'round' });
@@ -403,6 +383,22 @@ function slotGlyph(slot, x, y) {
   }[slot];
   if (path) group.append(element('path', { d: path }));
   return group;
+}
+function wornKit() {
+  const items = {};
+  for (const slot of GEAR_SLOTS) {
+    const item = state.hero.equip[slot];
+    if (!item) continue;
+    const bonus = item.kind === 'gear' ? gearBonus(item) : (data.ARTIFACTS[item.artifactId]?.b || {});
+    const icon = selectGearIcon(gearIcons.icons, slot, item);
+    items[slot] = {
+      id: item.id || slot,
+      bonus: Object.entries(bonus).map(([key, amount]) => `${key}+${amount}`).join(','),
+      icon: icon?.file || '',
+      iconId: icon?.id || '',
+    };
+  }
+  return { items };
 }
 function groundToken(world, x, y, label) {
   world.append(element('ellipse', { cx: x, cy: y + 4, rx: 16, ry: 6, fill: '#00000055', 'data-token': label }));
@@ -507,7 +503,7 @@ function kingdom() {
     group.append(element('rect', { x: centre[0] - diameter / 2, y: centre[1] - diameter / 2, width: diameter, height: diameter, fill: 'transparent' }));
     if (job) {
       group.append(element('circle', { cx: centre[0], cy: centre[1], r: Math.max(6, 10 / scale), fill: '#f1e9d9', stroke: '#d5b573', 'pointer-events': 'none' }));
-      const worker = { x: centre[0], y: centre[1], clip: 'work', time: animTime(), reduced: true };
+      const worker = { x: centre[0], y: centre[1], clip: 'work', time: animTime(), reduced: Boolean(state.settings.reducedMotion), worn: wornKit() };
       if (!drawActor(group, element, state.hero.class, { ...worker, scale: 0.08 }) && !drawBoundActor(group, element, state.hero.class, { ...worker, scale: 0.22 })) {
         groundToken(group, centre[0], centre[1], 'scaffold');
       }
@@ -651,12 +647,22 @@ function adventure() {
         time: animTime(), reduced: state.settings.reducedMotion,
       });
       if (review) {
-        const rider = drawBoundActor(world, element, state.hero.class, {
+        const riderClip = moving && !state.settings.reducedMotion ? 'mountWalk' : 'idle';
+        const rider = drawActor(world, element, state.hero.class, {
+          x: review.saddle.x + facing * -2,
+          y: review.saddle.y + 34,
+          scale: 0.1,
+          facing,
+          clip: riderClip,
+          time: animTime(),
+          reduced: Boolean(state.settings.reducedMotion) || !moving,
+          worn: wornKit(),
+        }) || drawBoundActor(world, element, state.hero.class, {
           x: review.saddle.x + facing * -2,
           y: review.saddle.y + 34,
           scale: 0.34,
           facing,
-          clip: moving && !state.settings.reducedMotion ? 'mountWalk' : 'idle',
+          clip: riderClip,
           time: animTime(),
           reduced: state.settings.reducedMotion || !moving,
         });
@@ -666,7 +672,16 @@ function adventure() {
         } else groundToken(world, review.saddle.x, review.saddle.y, state.hero.class);
         return;
       }
-      const rider = drawBoundActor(world, element, state.hero.class, {
+      const rider = drawActor(world, element, state.hero.class, {
+        x: at[0],
+        y: at[1],
+        scale: 0.1,
+        facing,
+        clip: moving ? 'walk' : 'idle',
+        time: animTime(),
+        reduced: Boolean(state.settings.reducedMotion),
+        worn: wornKit(),
+      }) || drawBoundActor(world, element, state.hero.class, {
         x: at[0],
         y: at[1],
         scale: 0.46,
@@ -676,23 +691,40 @@ function adventure() {
         reduced: true,
       });
       if (!rider) groundToken(world, at[0], at[1], state.hero.class);
-      else rider.setAttribute('data-rider', 'painted-partial');
+      else rider.setAttribute('data-rider', rider.getAttribute('data-gait') === 'per-joint' ? 'per-joint' : 'painted-partial');
     };
-    if (worldOnly) {
-      placeTraveler(project(matrix, shown));
-      return;
-    }
+    const showRoute = route => {
+      travelPreview = { path: route.cells, cells: route.cells, cost: route.cost };
+      render();
+    };
     placeTraveler(project(matrix, shown));
+    for (let y = 0; y < geo.rows; y += 1) {
+      for (let x = 0; x < geo.cols; x += 1) {
+        const open = isOpen(map, x, y);
+        const hit = element('polygon', {
+          points: cellPoints(matrix, x, y),
+          fill: '#00000000',
+          stroke: 'none',
+          'data-adventure-cell': `${x},${y}`,
+          'data-open': open ? '1' : '0',
+        });
+        if (open) {
+          hit.style.cursor = 'pointer';
+          hit.onclick = event => {
+            event.stopPropagation();
+            try { showRoute(routeTo(map, committed, [x, y])); }
+            catch (error) { say(error.message); }
+          };
+        }
+        world.append(hit);
+      }
+    }
+    if (worldOnly) return;
     $('selected').textContent = `Travel ${state.adventure.x},${state.adventure.y} · moves ${state.adventure.moves}`;
     const queueStep = (dx, dy) => {
       const from = travelPreview?.cells?.at(-1) || committed;
-      const next = [from[0] + dx, from[1] + dy];
-      const path = [...(travelPreview?.cells || []), next];
-      try {
-        const route = routeCost(map, committed, path);
-        travelPreview = { path, cells: route.cells, cost: route.cost };
-        render();
-      } catch (error) { say(error.message); }
+      try { showRoute(routeTo(map, committed, [from[0] + dx, from[1] + dy])); }
+      catch (error) { say(error.message); }
     };
     $('choices').append(button('North', () => queueStep(0, -1), false, 'preview-north', true));
     $('choices').append(button('South', () => queueStep(0, 1), false, 'preview-south', true));
@@ -857,7 +889,7 @@ function hero() {
     const ids = Object.keys(data.CLASSES);
     choiceHeading('Class');
     for (const id of ids) $('choices').append(button(data.CLASSES[id].n, () => act('SET_CLASS', { class: id }), false, `class:${id}`));
-    $('choices').append(button('Enter the valley', () => { view = 'kingdom'; render(); }, false, 'enter-valley', true));
+    $('choices').append(button('Enter the valley', () => { view = 'kingdom'; render(); }, false, 'enter-valley'));
   }
   choiceHeading('Equipment worn');
   for (const slot of GEAR_SLOTS) {
@@ -1137,8 +1169,10 @@ function market() {
   paintChamber('Market', state.age < 1 ? 'The market opens in the Bronze Age.' : 'Batches of 100. Gold is the price.', 'market');
   $('selected').textContent = 'Market';
   for (const resource of ['food', 'wood', 'stone']) {
-    $('choices').append(button('Buy 100 ' + resource + ' for 120 gold', () => act('MARKET', { side: 'buy', resource })));
-    $('choices').append(button('Sell 100 ' + resource + ' for 60 gold', () => act('MARKET', { side: 'sell', resource })));
+    const buy = marketQuote('buy', resource);
+    const sell = marketQuote('sell', resource);
+    $('choices').append(button(`Buy ${buy.gain[resource]} ${resource} for ${buy.spend.gold} gold`, () => act('MARKET', { side: 'buy', resource })));
+    $('choices').append(button(`Sell ${sell.spend[resource]} ${resource} for ${sell.gain.gold} gold`, () => act('MARKET', { side: 'sell', resource })));
   }
   say(state.age < 1 ? 'The market opens in the Bronze Age.' : 'Batches are exactly 100. Gold is the price, not a traded good.');
 }
@@ -1173,12 +1207,21 @@ function board(mode) {
 function drawFigure(world, origin, stack, alive) {
   const plate = plateForStack(stack);
   const reduced = Boolean(state?.settings?.reducedMotion);
-  const isActing = stack?.id && stack.id === state?.battle?.active;
+  const battle = state?.battle;
+  const activeId = battle?.status === 'ACTIVE' ? activeStackId(battle) : null;
+  const isActing = Boolean(stack?.id && stack.id === activeId);
+  const lastAction = battle?.log?.[battle.log.length - 1];
+  const isAttacking = isActing && (
+    tacticalIntent === 'melee' ||
+    tacticalIntent === 'shoot' ||
+    ((lastAction?.type === 'strike' || lastAction?.type === 'retaliate') && lastAction?.attackerId === stack.id)
+  );
+  const figureClip = alive ? (isAttacking ? 'attack' : (isActing && tacticalIntent === 'move') ? 'walk' : 'idle') : 'death';
   if (plate) drawPlate(world, element, plate, origin[0], origin[1] + 8, alive ? 28 : 22, {
     opacity: alive ? 1 : 0.35,
     time: animTime(),
     fly: false,
-    clip: alive ? (isActing ? 'attack' : 'idle') : 'death',
+    clip: figureClip,
     reduced,
   });
   else world.append(element('circle', { cx: origin[0], cy: origin[1], r: 5, fill: alive ? '#d5b573' : '#6d6458' }));
@@ -1395,9 +1438,31 @@ function defense() {
       }
     }
   }
+  if (session?.status === 'ACTIVE' && (!session.heroDeployed || !session.armyDeployed)) {
+    const occupiedPads = new Set(session.towers.map(tower => tower.siteId).filter(Boolean));
+    if (session.heroSite) occupiedPads.add(session.heroSite);
+    if (session.army?.siteId) occupiedPads.add(session.army.siteId);
+    for (const site of contract.geometry.defense.sites) {
+      if (occupiedPads.has(site.id)) continue;
+      const [x, y, w, h] = site.rect;
+      const pad = element('polygon', {
+        points: cellPoints(matrix, x, y, w, h),
+        fill: defensePad === site.id ? '#70b9c544' : '#d5b57322',
+        stroke: '#e6d3a1',
+        'data-defense-pad': site.id,
+      });
+      pad.style.cursor = 'pointer';
+      pad.onclick = event => {
+        event.stopPropagation();
+        defensePad = site.id;
+        render();
+      };
+      world.append(pad);
+    }
+  }
   if (markers.hero) {
     const at = project(matrix, markers.hero.at);
-    const heroFigure = { x: at[0], y: at[1] + 8, clip: 'idle', time: 0, reduced: true };
+    const heroFigure = { x: at[0], y: at[1] + 8, clip: 'idle', time: animTime(), reduced: Boolean(state.settings.reducedMotion), worn: wornKit() };
     if (!drawActor(world, element, state.hero.class, { ...heroFigure, scale: 0.12 }) && !drawBoundActor(world, element, state.hero.class, { ...heroFigure, scale: 0.28 })) {
       groundToken(world, at[0], at[1], state.hero.class);
     }
@@ -1663,11 +1728,17 @@ const draw = { home, kingdom, adventure, hero, army, forge, market, tactical, de
 
 function setPanel(open) {
   $('panel').classList.toggle('open', open);
+  $('stage-field')?.classList.toggle('panel-open', open);
   $('context').setAttribute('aria-expanded', String(open));
 }
 function render() {
-  if (state?.battle?.status === 'ACTIVE') view = viewDuringRetreat(view, { retreatArmed, battleActive: true });
+  const battleLive = state?.battle?.status === 'ACTIVE';
+  const defenseLive = state?.defense?.status === 'ACTIVE';
+  if (battleLive) view = 'tactical';
+  else if (defenseLive) view = 'defense';
+  if (battleLive) view = viewDuringRetreat(view, { retreatArmed, battleActive: true });
   const panel = $('panel');
+  $('stage-field')?.classList.toggle('panel-open', panel.classList.contains('open'));
   const viewChanged = lastRenderedView !== view;
   lastRenderedView = view;
   const scroll = viewChanged ? 0 : panel.scrollTop;
@@ -1688,7 +1759,7 @@ function render() {
   if (navNodes.length !== expected.length || navNodes.some((node, index) => node.dataset.choice !== expected[index])) {
     nav.replaceChildren();
     navNodes = screens.map(name => {
-      const node = button(name[0].toUpperCase() + name.slice(1), () => { view = name; render(); }, false, `nav:${name}`);
+      const node = button(name[0].toUpperCase() + name.slice(1), () => { view = name; moreOpen = false; render(); }, false, `nav:${name}`);
       nav.append(node);
       return node;
     });
@@ -1707,6 +1778,7 @@ function render() {
   });
   if (!state && view !== 'home' && view !== 'settings' && view !== 'help') view = 'home';
   $('app').dataset.view = view;
+  $('app').dataset.combat = battleLive || defenseLive ? '1' : '0';
   if (view !== 'home') $('gate').hidden = true;
   if (state && view !== 'home') rememberView(localStorage, view, screens);
   if (view === 'forge' && forgePreview) setPanel(true);
@@ -1715,7 +1787,7 @@ function render() {
   draw[view]();
   if (saveFault && view !== 'home') say(saveFault);
   if (state && view !== 'home') {
-    $('choices').append(button(state.tutorial.skipped ? 'Review tutorial' : 'Skip tutorial', () => act(state.tutorial.skipped ? 'TUTORIAL_REVIEW' : 'TUTORIAL_SKIP', {})));
+    $('choices').append(button(state.tutorial.skipped ? 'Review tutorial' : 'Skip tutorial', () => act(state.tutorial.skipped ? 'TUTORIAL_REVIEW' : 'TUTORIAL_SKIP', {}), false, 'tutorial-toggle'));
     const mark = tutorialChoice[state.tutorial.step];
     if (mark && !state.tutorial.skipped) {
       const nodes = [...$('choices').querySelectorAll('[data-choice]'), ...$('dock').querySelectorAll('[data-choice]')];

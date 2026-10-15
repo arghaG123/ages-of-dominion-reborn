@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
 import { command, newCampaign, validate } from '../src/core/campaign.js';
-import { adventureMap, isOpen, routeCost } from '../src/core/navigation.js';
+import { adventureMap, isOpen, routeCost, routeTo } from '../src/core/navigation.js';
 import { castSpell, legalMoves, move, startBattle, strike, validateBattle, wait } from '../src/core/battle.js';
 import { decode, encode } from '../src/core/save.js';
 
@@ -157,4 +157,17 @@ test('a guard battle settles once, retreat keeps the guard, and skirmish stays i
   assert.equal(practice.adventure, null);
   assert.ok(validate(practice, data));
   assert.ok(origin && cell);
+});
+
+test('routeTo previews one legal path and refuses a site footprint', () => {
+  const geometry = contract.geometry.adventure;
+  const map = adventureMap(geometry);
+  const start = geometry.sites.find(site => site.id === 'town').approach;
+  const goal = [start[0], start[1] + 1];
+  assert.equal(isOpen(map, goal[0], goal[1]), true);
+  const route = routeTo(map, start, goal);
+  assert.deepEqual(route.cells.at(-1), goal);
+  assert.equal(route.cost, routeCost(map, start, route.cells).cost);
+  const blocked = geometry.sites.find(site => site.id === 'town').rect;
+  assert.throws(() => routeTo(map, start, [blocked[0], blocked[1]]), /Blocked terrain/);
 });

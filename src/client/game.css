@@ -28,6 +28,7 @@ body { margin: 0; background: #100e0b; }
 }
 header, footer {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   align-items: center;
   min-width: 0;
@@ -58,9 +59,10 @@ h2 {
   letter-spacing: 0.03em;
 }
 #status {
-  font-size: 12px;
+  font-size: 14px;
   color: #d8c29d;
   font-weight: 500;
+  white-space: nowrap;
 }
 #resources {
   margin-left: auto;
@@ -146,7 +148,7 @@ button[data-anchor="tutorial"] {
 #resume {
   margin: 0;
   max-width: 28vw;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.35;
   color: #f7e6bd;
   background: rgba(22, 28, 32, 0.85);
@@ -212,6 +214,9 @@ button[data-anchor="tutorial"] {
   pointer-events: none;
   min-height: 0;
 }
+#stage-field.panel-open #scene-ui {
+  right: calc(min(350px, 39vw) + 12px);
+}
 #scene-ui[hidden] { display: none; }
 #scene-ui button, #scene-ui a, #scene-ui input, #scene-ui [role="button"] { pointer-events: auto; }
 #scene-ui.hero {
@@ -276,7 +281,7 @@ button[data-anchor="tutorial"] {
   border: 1px solid rgba(201, 163, 91, 0.4);
   border-radius: 6px;
   padding: 6px 12px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.35;
   color: #dcd4c5;
   text-align: center;
@@ -285,7 +290,7 @@ button[data-anchor="tutorial"] {
 #labels span {
   position: absolute;
   transform: translate(-50%, -120%);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.25;
   color: #f7eedb;
@@ -446,15 +451,20 @@ button[data-anchor="tutorial"] {
   bottom: 8px;
   z-index: 3;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  overflow-x: auto;
   pointer-events: none;
+}
+#stage-field.panel-open #dock {
+  right: calc(min(350px, 39vw) + 12px);
 }
 #dock:empty { display: none; }
 #dock button {
   pointer-events: auto;
   background: linear-gradient(180deg, rgba(32, 44, 52, 0.96) 0%, rgba(18, 26, 31, 0.96) 100%);
   white-space: nowrap;
+  flex-shrink: 0;
+  font-size: 14px;
 }
 #panel {
   display: none;
@@ -495,13 +505,99 @@ button[data-anchor="tutorial"] {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 #message {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   color: #f7e6bd;
 }
 #nav { display: flex; gap: 8px; overflow: auto; }
+#nav button { flex-shrink: 0; font-size: 14px; }
 #nav button[data-nav="more"] { display: none; }
 #nav.expanded button[data-nav="more"] { display: inline-flex; }
+#app[data-combat="1"] #nav { display: none; }
+
+#scene-ui.support {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px 16px;
+  overflow: auto;
+  background: rgba(16, 14, 11, 0.55);
+}
+#scene-ui.support h2 { font-size: 25px; line-height: 1.2; }
+#scene-ui.support h3 { margin: 0 0 6px; font-size: 20px; line-height: 1.25; color: #f4ecdf; font-weight: 500; }
+#scene-ui.support p { margin: 0; font-size: 16px; line-height: 1.4; color: #f1e9d9; }
+#scene-ui.support .support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  align-content: start;
+}
+#scene-ui.support article {
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(201, 163, 91, 0.55);
+  border-radius: 8px;
+  background: rgba(21, 33, 40, 0.94);
+}
+#scene-ui.support .meter {
+  height: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  background: #152128;
+  border: 1px solid #8c7447;
+  position: relative;
+  overflow: hidden;
+}
+#scene-ui.support .meter::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(var(--level) * 100%);
+  min-width: 8px;
+  background: #c9a35b;
+}
+
+#scene-ui.forge {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  padding: 14px 20px;
+  gap: 12px;
+}
+#scene-ui.forge .copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 480px;
+}
+#scene-ui.forge .copy p {
+  margin: 0;
+  padding: 6px 12px;
+  background: rgba(14, 20, 25, 0.9);
+  border: 1px solid rgba(201, 163, 91, 0.4);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #dcd4c5;
+}
+#scene-ui.forge .col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#scene-ui.forge button {
+  min-height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+#scene-ui.forge button img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
 
 .plot { cursor: pointer; }
 .plot:focus-visible { outline: 3px solid #70b9c5; }
@@ -522,7 +618,7 @@ button[data-anchor="tutorial"] {
 .plot polygon.building { stroke-width: 3; }
 .choice-heading {
   margin: 10px 0 2px;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #ffd875;
@@ -551,5 +647,59 @@ button[data-anchor="tutorial"] {
 @media(max-height:450px) {
   h1 { font-size: 16px; }
   header { padding: 4px 8px; }
-  #panel { width: min(250px, 40vw); bottom: 96px; }
+  #panel { width: min(280px, 42vw); top: 6px; bottom: 112px; padding: 8px; }
+  #stage-field.panel-open #dock { right: calc(min(280px, 42vw) + 12px); }
+  #stage-field.panel-open #scene-ui {
+    right: calc(min(280px, 42vw) + 12px);
+  }
+  #app[data-view="forge"] #choices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+  #app[data-view="forge"] #choices .choice-heading,
+  #app[data-view="forge"] #choices [data-choice="forge-confirm"],
+  #app[data-view="forge"] #choices [data-choice="forge-decision"],
+  #app[data-view="forge"] #choices button:not([data-choice^="forge-slot"]) {
+    grid-column: 1 / -1;
+  }
+  #choices button { font-size: 14px; padding: 6px 10px; min-height: 48px; }
+  #scene-ui.hero {
+    padding: 6px 10px;
+    grid-template-columns: minmax(160px, 26vw) minmax(0, 1fr) minmax(180px, 28vw);
+    align-items: start;
+    overflow-y: auto;
+  }
+  #scene-ui.hero .col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(75px, 1fr));
+    gap: 6px;
+  }
+  #scene-ui.hero button[data-hero-slot] {
+    min-height: 48px;
+    padding: 4px 6px;
+    gap: 6px;
+    font-size: 14px;
+    grid-template-columns: 32px 1fr;
+  }
+  #scene-ui.hero button[data-hero-slot] img {
+    width: 28px;
+    height: 28px;
+  }
+  #scene-ui.hero button[data-class-card] {
+    min-height: 48px;
+    padding: 4px 6px;
+    font-size: 14px;
+  }
+  #scene-ui.hero button[data-choice="scene-enter-valley"] {
+    grid-column: 1 / -1;
+    min-height: 48px;
+  }
+  #scene-ui.forge { padding: 6px 10px; gap: 6px; align-items: start; }
+  #scene-ui.forge .copy p { font-size: 14px; padding: 4px 8px; }
+  #scene-ui.forge .col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
+    gap: 6px;
+  }
+  #scene-ui.forge button { min-height: 48px; padding: 4px 8px; font-size: 14px; }
 }

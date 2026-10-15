@@ -5,6 +5,8 @@ import heroBodies from '../data/hero-bodies-20261011.json' with { type: 'json' }
 import gearIcons from '../data/gear-icons-20261007.json' with { type: 'json' };
 import { HERO_SLOT_COLUMNS, heroStage } from './presentation.js';
 import { visibleBox } from './visible-size.js';
+import { paintWornSlots } from './actor.js';
+import { gearBonus } from '../core/rules.js';
 
 // Four kit eras across eight ages (MASTER-PLAN): ancient, medieval, powder, mech.
 export function kitEra(age) {
@@ -73,30 +75,25 @@ function paintPortrait(world, element, ctx, stage, classId, portrait, reason) {
   world.append(group);
 }
 
-function paintEquippedSockets(group, element, state, fitted) {
-  if (!state?.hero?.equip || !fitted) return;
-  const sockets = [
-    { slot: 'weapon', x: fitted.x + fitted.width * 0.76, y: fitted.y + fitted.height * 0.44, size: 84 },
-    { slot: 'offhand', x: fitted.x - 24, y: fitted.y + fitted.height * 0.48, size: 84 },
-    { slot: 'helm', x: fitted.x + (fitted.width - 76) / 2, y: fitted.y - 28, size: 76 },
-  ];
-  for (const s of sockets) {
-    const item = state.hero.equip[s.slot];
+function wornPayload(state) {
+  const items = {};
+  for (const slot of ['helm', 'weapon', 'offhand', 'armor', 'boots', 'accessory']) {
+    const item = state?.hero?.equip?.[slot];
     if (!item) continue;
-    const icon = selectGearIcon(gearIcons.icons, s.slot, item);
-    if (icon?.file) {
-      const g = element('g', { 'data-socket': s.slot, 'data-socket-item': item.id || s.slot });
-      g.append(element('image', {
-        href: icon.file,
-        x: s.x,
-        y: s.y,
-        width: s.size,
-        height: s.size,
-        'data-gear-icon': icon.id,
-      }));
-      group.append(g);
-    }
+    const bonus = item.kind === 'gear' ? gearBonus(item) : {};
+    const icon = selectGearIcon(gearIcons.icons, slot, item);
+    items[slot] = {
+      id: item.id || slot,
+      bonus: Object.entries(bonus).map(([key, amount]) => `${key}+${amount}`).join(','),
+      icon: icon?.file || '',
+      iconId: icon?.id || '',
+    };
   }
+  return { items };
+}
+
+function paintEquippedSockets(group, element, state, fitted) {
+  paintWornSlots(group, element, wornPayload(state), fitted);
 }
 
 // Slot cards, class cards and copy live in the CSS overlay. The world keeps the figure and the room.
