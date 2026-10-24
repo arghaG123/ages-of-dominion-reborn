@@ -11,55 +11,14 @@ await fs.rm(dist, { recursive: true, force: true });
 await fs.mkdir(dist, { recursive: true });
 await fs.cp(path.join(root, 'index.html'), path.join(dist, 'index.html'));
 await fs.cp(path.join(root, 'src'), path.join(dist, 'src'), { recursive: true });
-const selection = JSON.parse(await fs.readFile(path.join(root, 'src/data/reviewed-source-selection.json'), 'utf8'));
-const scene = JSON.parse(await fs.readFile(path.join(root, 'src/data/stone-scene.json'), 'utf8'));
-const actorAtlas = JSON.parse(await fs.readFile(path.join(root, 'src/data/actor-atlas.json'), 'utf8'));
-const plateCatalog = JSON.parse(await fs.readFile(path.join(root, 'src/data/plate-catalog.json'), 'utf8'));
-const ageBuildings = JSON.parse(await fs.readFile(path.join(root, 'src/data/age-buildings.json'), 'utf8'));
-const portraitCards = JSON.parse(await fs.readFile(path.join(root, 'src/data/portrait-cards.json'), 'utf8'));
-const modeScenes = JSON.parse(await fs.readFile(path.join(root, 'src/data/mode-scenes.json'), 'utf8'));
-const plateOverrides = JSON.parse(await fs.readFile(path.join(root, 'src/data/plate-overrides-20261007.json'), 'utf8'));
-const gearIcons = JSON.parse(await fs.readFile(path.join(root, 'src/data/gear-icons-20261007.json'), 'utf8'));
-const heroBodies = JSON.parse(await fs.readFile(path.join(root, 'src/data/hero-bodies-20261011.json'), 'utf8'));
-const wallSegments = JSON.parse(await fs.readFile(path.join(root, 'src/data/wall-segments-20261016.json'), 'utf8').catch(() => '{}'));
-const staticMounts = JSON.parse(await fs.readFile(path.join(root, 'src/data/static-mounts-v1.json'), 'utf8').catch(() => '{}'));
-const mountReview = JSON.parse(await fs.readFile(path.join(root, 'src/data/mount-review-v1.json'), 'utf8').catch(() => '{}'));
-const consumerCatalog = JSON.parse(await fs.readFile(path.join(root, 'src/data/consumer-catalog-20261007.json'), 'utf8').catch(() => '{"assets":[]}'));
-const files = new Set();
-const visit = (value) => {
-  if (!value || typeof value !== 'object') return;
-  for (const [key, item] of Object.entries(value)) {
-    if (typeof item === 'string' && (key === 'file' || key === 'terrain' || key.endsWith('File') || key === 'uiFile' || key === 'sourceFile' || key === 'displayFile')) files.add(item);
-    else visit(item);
-  }
-};
-visit(selection);
-visit(scene);
-visit(actorAtlas);
-visit(plateCatalog);
-visit(ageBuildings);
-visit(portraitCards);
-visit(plateOverrides);
-visit(gearIcons);
-visit(heroBodies);
-visit(wallSegments);
-visit(staticMounts);
-visit(mountReview);
-for (const asset of consumerCatalog.assets || []) {
-  if (asset.gates?.runtime === 'PASS' && typeof asset.outputPath === 'string') files.add(asset.outputPath);
-}
-for (const mode of ['adventure', 'tactical', 'defense']) {
-  for (const file of modeScenes[mode] || []) files.add(file);
-}
 const closure = [];
-for (const file of dependencies.files) files.add(file);
-for (const relative of files) {
+for (const relative of dependencies.files) {
   const source = path.join(root, relative);
   const target = path.join(dist, relative);
   await fs.mkdir(path.dirname(target), { recursive: true });
   await fs.copyFile(source, target);
   const bytes = await fs.readFile(target);
-  closure.push({ file: relative.replaceAll('\\', '/'), sha256: crypto.createHash('sha256').update(bytes).digest('hex') });
+  closure.push({ file: relative.replaceAll('\\', '/'), bytes: bytes.length, sha256: crypto.createHash('sha256').update(bytes).digest('hex') });
 }
 const textFiles = [];
 const walk = async (dir) => {
@@ -82,7 +41,7 @@ for (const file of textFiles) {
 }
 const missing = [];
 for (const item of closure) if (!await fs.stat(path.join(dist, item.file)).catch(() => null)) missing.push(item.file);
-const report = { files: closure.length, assets: closure, missing, escaping, svgNamespaceIdentifiers: namespaces.length, networkDependency: escaping.length > 0 };
+const report = { files: closure.length, assetBytes: closure.reduce((sum, item) => sum + item.bytes, 0), provenanceImagesIncluded: false, assets: closure, missing, escaping, svgNamespaceIdentifiers: namespaces.length, networkDependency: escaping.length > 0 };
 const reportPath = path.resolve(root, process.env.DIST_CLOSURE_OUT || 'dist/dependency-closure.json');
 await fs.mkdir(path.dirname(reportPath), { recursive: true });
 await fs.writeFile(reportPath, JSON.stringify(report, null, 2) + '\n');

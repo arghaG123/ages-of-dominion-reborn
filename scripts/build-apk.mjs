@@ -106,3 +106,14 @@ if (process.platform === 'win32') {
 const apk = path.join(root, 'android', 'app', 'build', 'outputs', 'apk', 'release', 'ages-of-dominion-reborn-preview-release-unsigned-20261011.apk');
 const stat = await fs.stat(apk);
 console.log(`Preview APK: ${apk} (${stat.size} bytes). Unsigned. Not installed.`);
+
+// These are generated copies of the same art, not APK deliveries or source files.
+// Keep one packaged output by default; opt in when diagnosing Android build internals.
+if (!process.argv.includes('--keep-intermediates')) {
+  for (const relative of ['dist', 'android/app/src/main/assets/www', 'android/app/build/intermediates', 'android/app/build/tmp']) {
+    const generated = path.resolve(root, relative);
+    if (!generated.startsWith(root + path.sep)) throw new Error(`Cleanup escapes project: ${relative}`);
+    await fs.rm(generated, { recursive: true, force: true });
+  }
+  console.log('Removed generated web copies and Android intermediates; retained the APK. Use --keep-intermediates for diagnosis.');
+}

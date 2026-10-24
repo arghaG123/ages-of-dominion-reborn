@@ -941,3 +941,8 @@ Owner authorized maintenance and publication. See [storage/publication audit](ma
 ## 24 October 2026 - cleanup completed after permission update
 
 The earlier blocked cleanup status is superseded. Removed 3,133 verified files / 4,267,361,735 bytes (4.27 GB): generated build copies/caches, obsolete QA before 14 October, and 80 abandoned Git temporary files. All 4,082 asset SHA256 hashes remain unchanged; current work, APKs, recent QA, required older fixtures/receipts and Git history retained. Post-cleanup Node suite: 311 passed / 0 failed. See [cleanup receipts and verification](maintenance/cleanup-20261024/README.md). Whole-game acceptance remains INCOMPLETE.
+
+
+## 24 October 2026 - strict footprint targets met; all assets retained
+
+Owner chose to keep every asset and remove the exact QA capture subset; old APK removal was also explicitly requested. Current footprint is approximately 7.60 GB overall / 1.13 GB Git, below strict 8.0 / 1.5 billion-byte limits. Removed 4,934 regenerable captures, 1,478 unreachable loose Git blobs/trees (no commits/refs/reflogs), and three stale APKs. All 4,082 asset hashes unchanged. No APK currently retained; regenerate at the existing completed-game release gate. Revised web build uses a 577-image / 828.72 MB runtime closure instead of 810 images / 1,231.28 MB; no source art changed. Default post-APK cleanup now removes duplicate generated copies after success, but no APK build was run. Full post-cleanup Node suite: 313/313 passed. See [footprint, history and build evidence](maintenance/footprint-20261024/README.md). Whole game remains INCOMPLETE.
