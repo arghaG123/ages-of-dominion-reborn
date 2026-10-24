@@ -1,0 +1,267 @@
+{
+  "body-kit-gear-matrix": {
+    "keys": [
+      "version",
+      "generatedAt",
+      "authority",
+      "summary",
+      "anchoringContract",
+      "matrix"
+    ],
+    "top": {
+      "version": "mock-led-body-kit-gear-matrix-20261016",
+      "generatedAt": "2026-10-16T17:46:18.271Z",
+      "authority": "MOCK-LED-IMPLEMENTATION-SOLUTIONS-MANUAL-2026-10-16.md Section 5, 8 & 10.2 (OC07, OC08)"
+    },
+    "counts": {
+      "matrix": 32
+    }
+  },
+  "role-clip-matrix": {
+    "keys": [
+      "version",
+      "generatedAt",
+      "authority",
+      "summary",
+      "roleClips",
+      "mountsAndVehicles"
+    ],
+    "top": {
+      "version": "mock-led-role-clip-matrix-20261016",
+      "generatedAt": "2026-10-16T17:47:30.326Z",
+      "authority": "MOCK-LED-IMPLEMENTATION-SOLUTIONS-MANUAL-2026-10-16.md Section 6, 8 & 10.2 (OC09, R07)"
+    },
+    "counts": {
+      "roleClips": 54,
+      "mountsAndVehicles": 3
+    }
+  },
+  "scene-registration": {
+    "keys": [
+      "version",
+      "generatedAt",
+      "authority",
+      "acceptance",
+      "ownerAcceptance",
+      "summary",
+      "method",
+      "scenes"
+    ],
+    "top": {
+      "version": "mock-led-scene-registration-20261016",
+      "generatedAt": "2026-10-16T22:30:00Z",
+      "authority": "MOCK-LED-IMPLEMENTATION-SOLUTIONS-MANUAL-2026-10-16.md Section 4 & 10.3",
+      "acceptance": "OPEN",
+      "ownerAcceptance": "UNVERIFIED",
+      "method": "Exact displayed paintings; frozen worldToSource projection; empirical image pixel sampling; unique clearance measurements; decks, approaches, obstacle avoidance; zero stamped edge pixels."
+    },
+    "counts": {
+      "scenes": 32
+    }
+  },
+  "style-review": {
+    "keys": [
+      "version",
+      "generatedAt",
+      "aestheticBenchmark",
+      "summary",
+      "inventory"
+    ],
+    "top": {
+      "version": "mock-led-style-review-20261016",
+      "generatedAt": "2026-10-16T17:45:52.546Z"
+    },
+    "counts": {
+      "inventory": 204
+    }
+  },
+  "journeys": {
+    "keys": [
+      "evaluatedAt",
+      "governingSection",
+      "summary",
+      "journeys"
+    ],
+    "top": {
+      "evaluatedAt": "2026-10-16T18:10:49.378Z",
+      "governingSection": "Section 7 and R08"
+    },
+    "counts": {
+      "journeys": 18
+    }
+  },
+  "viewport-review": {
+    "keys": [
+      "evaluatedAt",
+      "governingSection",
+      "totalViewportsEvaluated",
+      "viewports",
+      "overallStatus"
+    ],
+    "top": {
+      "evaluatedAt": "2026-10-16T16:54:18.899Z",
+      "governingSection": "A02, A03, OC17 and Section 8",
+      "totalViewportsEvaluated": 4,
+      "overallStatus": "VERIFIED"
+    },
+    "counts": {
+      "viewports": 4
+    }
+  },
+  "remaining": {
+    "keys": [
+      "evaluatedAt",
+      "governingSection",
+      "summary",
+      "openExternalItems",
+      "preservedArtifacts"
+    ],
+    "top": {
+      "evaluatedAt": "2026-10-16T18:15:18.429Z",
+      "governingSection": "Section 8 and Section 10.5"
+    },
+    "counts": {
+      "openExternalItems": 3,
+      "preservedArtifacts": 14
+    }
+  },
+  "storage-growth": {
+    "keys": [
+      "evaluatedAt",
+      "governingRules",
+      "milestones",
+      "commandBreakdown",
+      "storageFootprint",
+      "localStorageQuotaExceeded",
+      "indexedDBVerified"
+    ],
+    "top": {
+      "evaluatedAt": "2026-10-16T18:11:25.918Z",
+      "localStorageQuotaExceeded": true,
+      "indexedDBVerified": true
+    },
+    "counts": {
+      "governingRules": 4
+    }
+  },
+  "storage-ordering": {
+    "keys": [
+      "evaluatedAt",
+      "governingSection",
+      "transactionLifecycles",
+      "quarantinePolicy",
+      "casRule",
+      "migrationRules"
+    ],
+    "top": {
+      "evaluatedAt": "2026-10-16T18:13:38.091Z",
+      "governingSection": "A05 and Section 10.4"
+    },
+    "counts": {}
+  },
+  "mechanics-coverage": {
+    "keys": [
+      "evaluatedAt",
+      "governingSection",
+      "totalCategories",
+      "categories"
+    ],
+    "top": {
+      "evaluatedAt": "2026-10-16T16:55:45.917Z",
+      "governingSection": "A06 (Explicit mechanics assertions)",
+      "totalCategories": 8
+    },
+    "counts": {
+      "categories": 8
+    }
+  },
+  "balance-recovery": {
+    "keys": [
+      "evaluatedAt",
+      "governingSection",
+      "ageWaitCosts",
+      "lossRecoveryPaths",
+      "softlockSafeguards",
+      "status"
+    ],
+    "top": {
+      "evaluatedAt": "2026-10-16T16:55:45.918Z",
+      "governingSection": "A08 (Balance recovery evidence)",
+      "status": "VERIFIED"
+    },
+    "counts": {
+      "ageWaitCosts": 8,
+      "softlockSafeguards": 4
+    }
+  },
+  "performance": {
+    "keys": [
+      "evaluatedAt",
+      "governingSection",
+      "hardwareEnvironment",
+      "scenario",
+      "metrics",
+      "status"
+    ],
+    "top": {
+      "evaluatedAt": "2026-10-16T16:55:05.444Z",
+      "governingSection": "Section 8 (performance.json) and Gate H",
+      "status": "VERIFIED"
+    },
+    "counts": {}
+  },
+  "package-check": {
+    "keys": [
+      "version",
+      "apk",
+      "expectedFiles",
+      "missingCurrentFiles",
+      "networkReferences",
+      "distDiffers",
+      "wwwDiffers",
+      "distFiles",
+      "wwwFiles",
+      "apkPresent",
+      "apkBytes",
+      "apkSHA256",
+      "apkMissingCurrentFiles",
+      "apkDifferentCurrentFiles",
+      "apkCrcBadEntry",
+      "apkWwwEntries",
+      "manifestPackageStrings",
+      "manifestApplicationId",
+      "manifestPermissions",
+      "manifestMentionsInternet",
+      "signed",
+      "pass",
+      "verifiedAt"
+    ],
+    "top": {
+      "version": "package-check-20261016",
+      "apk": "android/app/build/outputs/apk/release/ages-of-dominion-reborn-preview-release-unsigned-20261011.apk",
+      "expectedFiles": 513,
+      "distFiles": 513,
+      "wwwFiles": 513,
+      "apkPresent": true,
+      "apkBytes": 616295432,
+      "apkSHA256": "7bd7fa2de1dbccbc46102484d26378d930e47ea321d696ade2b2763e7b50b69c",
+      "apkCrcBadEntry": null,
+      "apkWwwEntries": 513,
+      "manifestApplicationId": "com.agesofdominion.game.reborn.preview",
+      "manifestMentionsInternet": false,
+      "signed": false,
+      "pass": true,
+      "verifiedAt": "2026-10-16T18:19:37.785Z"
+    },
+    "counts": {
+      "missingCurrentFiles": 0,
+      "networkReferences": 0,
+      "distDiffers": 0,
+      "wwwDiffers": 0,
+      "apkMissingCurrentFiles": 0,
+      "apkDifferentCurrentFiles": 0,
+      "manifestPackageStrings": 1,
+      "manifestPermissions": 0
+    }
+  }
+}

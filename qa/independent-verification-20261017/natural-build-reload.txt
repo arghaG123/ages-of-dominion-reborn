@@ -1,0 +1,50 @@
+- main:
+  - heading "Ages of Dominion" [level=1]
+  - status: Stone Age · day 1
+  - generic "Campaign resources":
+    - generic "food 250":
+      - generic: food
+      - generic: "250"
+    - generic "wood 265":
+      - generic: wood
+      - generic: "265"
+    - generic "stone 145":
+      - generic: stone
+      - generic: "145"
+    - generic "gold 150":
+      - generic: gold
+      - generic: "150"
+  - status: Away time credited 0m 0s. Gained wood +0.04. No construction finished. Dismissing this report does not credit the clock again.
+  - button "Menu"
+  - button "Save"
+  - img "stone kingdom none"
+  - img "Campaign scene":
+    - generic "Town Hall"
+    - 'button "townhall: townhall level 1"'
+    - 'button "P01: lumber level 1"':
+      - generic "Lumber Camp via measured-opaque-foot-v1; MEASURED_NOT_OWNER_ACCEPTED"
+    - 'button "P02: empty plot level 0"'
+    - 'button "P03: empty plot level 0"'
+    - 'button "P04: empty plot level 0"'
+    - 'button "P05: empty plot level 0"'
+    - 'button "P06: empty plot level 0"'
+    - 'button "P07: empty plot level 0"'
+    - 'button "P08: empty plot level 0"'
+    - 'button "P09: empty plot level 0"'
+    - 'button "P10: empty plot level 0"'
+    - 'button "P11: empty plot level 0"'
+    - 'button "P12: empty plot level 0"'
+    - 'button "P13: empty plot level 0"'
+    - 'button "P14: empty plot level 0"'
+    - 'button "P15: empty plot level 0"'
+    - 'button "P16: empty plot level 0"'
+    - 'button "P17: empty plot level 0"'
+  - generic "Primary actions":
+    - button "Dismiss report"
+  - navigation "Screens":
+    - button "Kingdom"
+    - button "Adventure"
+    - button "Hero"
+    - button "Army"
+    - button "War"
+    - button "More"

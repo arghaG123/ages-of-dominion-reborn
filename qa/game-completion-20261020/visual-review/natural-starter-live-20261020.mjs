@@ -1,0 +1,64 @@
+import { chromium } from 'file:///C:/Users/pupan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+const root=process.cwd();
+const out=path.join(root,'qa/game-completion-20261020/visual-review/starter-live');
+await fs.mkdir(out,{recursive:true});
+const report={recordedAt:new Date().toISOString(),classification:'FRESH_NATURAL_UI_JOURNEY_ISOLATED_BROWSER',journey:'new campaign -> choose Knight -> enter valley -> cancel build -> construct Lumber Camp -> upgrade Town Hall -> reload',base:'http://127.0.0.1:4179/?audit=1',viewports:[],errors:[]};
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+for(const size of [{name:'825x375',width:825,height:375},{name:'1280x720',width:1280,height:720}]){
+ const context=await browser.newContext({viewport:{width:size.width,height:size.height},deviceScaleFactor:1});
+ const page=await context.newPage(); const errors=[];
+ page.on('pageerror',e=>errors.push(String(e))); page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+ await page.goto(report.base,{waitUntil:'networkidle'});
+ const click=async selector=>{const el=page.locator(selector);await el.waitFor({state:'visible'});await el.click();await page.waitForTimeout(80);};
+ const choose=async id=>click(`[data-choice="${id}"]`);
+ const snap=async name=>{await page.waitForTimeout(120);const file=path.join(out,`${name}-${size.name}.png`);await page.screenshot({path:file,fullPage:false});return path.relative(root,file)};
+ const state=async()=>page.evaluate(()=>JSON.parse(document.querySelector('#audit-snapshot')?.textContent||'null'));
+ const until=async predicate=>{for(let i=0;i<100;i++){const value=await state();if(predicate(value))return value;await page.waitForTimeout(100);}throw new Error('Timed out waiting for natural campaign state');};
+ const result={viewport:size.name,screenshots:{},checks:{}};
+ try{
+  await choose('new-campaign'); await choose('scene-class:knight'); await choose('scene-enter-valley');
+  let audit=await until(x=>x?.state?.age===0&&x.state.story.flags.enteredValley===true);
+  result.screenshots.emptyKingdom=await snap('empty-kingdom');
+  const initial=audit.state;
+  result.checks.initial={age:initial.age,hallLevel:initial.plots.find(p=>p.id==='townhall')?.level,emptyOwnedSites:initial.plots.filter(p=>p.id!=='townhall'&&p.level===0).length,walls:initial.walls.level,resources:{...initial.resources}};
+  if(result.checks.initial.emptyOwnedSites!==17||result.checks.initial.hallLevel!==1||result.checks.initial.walls!==0)throw new Error('Fresh Kingdom state does not match the sparse starter contract');
+  await click('#context'); await choose('site-list'); await choose('choose-site:P01');
+  const beforeCancel=await state();
+  await choose('build:P01:lumber');
+  result.screenshots.buildPreview=await snap('build-preview');
+  await click('#build-cancel');
+  const afterCancel=await state();
+  result.checks.cancel={resourcesUnchanged:JSON.stringify(beforeCancel.state.resources)===JSON.stringify(afterCancel.state.resources),plot:{type:afterCancel.state.plots.find(p=>p.id==='P01')?.type,level:afterCancel.state.plots.find(p=>p.id==='P01')?.level},jobs:afterCancel.state.buildJobs.length};
+  if(!result.checks.cancel.resourcesUnchanged||result.checks.cancel.plot.type!==null||result.checks.cancel.jobs!==0)throw new Error('Cancel changed the campaign or reserved construction state');
+  result.screenshots.cancelled=await snap('build-cancelled');
+  await choose('build:P01:lumber'); await click('#build-commit');
+  audit=await until(x=>x?.state?.buildJobs?.some(job=>job.plotId==='P01'&&job.type==='lumber'));
+  result.checks.scaffold={resources:{...audit.state.resources},job:audit.state.buildJobs.find(job=>job.plotId==='P01')};
+  result.screenshots.scaffold=await snap('lumber-scaffold');
+  audit=await until(x=>x?.state?.plots?.some(plot=>plot.id==='P01'&&plot.type==='lumber'&&plot.level===1)&&!x.state.buildJobs.some(job=>job.plotId==='P01'));
+  result.checks.completedLumber={plot:audit.state.plots.find(plot=>plot.id==='P01'),jobs:audit.state.buildJobs.length};
+  result.screenshots.completedLumber=await snap('lumber-complete');
+  await click('#context'); await choose('site-list'); await choose('choose-site:townhall');
+  await choose('build:townhall:townhall'); await click('#build-commit');
+  audit=await until(x=>x?.state?.buildJobs?.some(job=>job.plotId==='townhall'&&job.type==='townhall'));
+  result.checks.hallUpgradeStarted=audit.state.buildJobs.find(job=>job.plotId==='townhall');
+  result.screenshots.hallScaffold=await snap('hall-scaffold');
+  audit=await until(x=>x?.state?.plots?.find(plot=>plot.id==='townhall')?.level===2&&!x.state.buildJobs.some(job=>job.plotId==='townhall'));
+  result.checks.hallUpgradeComplete={level:audit.state.plots.find(plot=>plot.id==='townhall').level,age:audit.state.age};
+  result.screenshots.hallUpgrade=await snap('hall-upgrade');
+  await page.reload({waitUntil:'networkidle'});
+  audit=await until(x=>x?.state?.plots?.find(plot=>plot.id==='townhall')?.level===2&&x.state.plots.some(plot=>plot.id==='P01'&&plot.type==='lumber'&&plot.level===1));
+  result.checks.reload={age:audit.state.age,hallLevel:audit.state.plots.find(plot=>plot.id==='townhall').level,lumber:audit.state.plots.find(plot=>plot.id==='P01'),resources:{...audit.state.resources}};
+  result.screenshots.reload=await snap('reloaded-kingdom');
+  if(result.checks.reload.hallLevel!==2||result.checks.reload.age!==0)throw new Error('Reload did not preserve the built age-0 campaign');
+ }catch(error){result.error=String(error);}
+ result.errors=errors; report.viewports.push(result); await context.close();
+}
+await browser.close();
+report.passed=report.viewports.every(v=>!v.error&&v.errors.length===0&&v.checks.initial?.emptyOwnedSites===17&&v.checks.cancel?.resourcesUnchanged===true&&v.checks.completedLumber?.plot?.level===1&&v.checks.hallUpgradeComplete?.level===2&&v.checks.reload?.hallLevel===2);
+await fs.writeFile(path.join(out,'natural-starter-live-20261020.json'),JSON.stringify(report,null,2));
+console.log(JSON.stringify({passed:report.passed,viewports:report.viewports,errors:report.errors,report:path.join(out,'natural-starter-live-20261020.json')},null,2));
+if(!report.passed)process.exitCode=1;

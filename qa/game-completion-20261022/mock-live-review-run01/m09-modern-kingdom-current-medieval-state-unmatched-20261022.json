@@ -1,0 +1,50 @@
+{
+  "reviewId": "M09-modern-kingdom-current-medieval-state-unmatched-20261022",
+  "reviewDate": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "runKind": "approved-localhost-natural-kingdom-state-reference-review",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/09-kingdom-modern.jpg",
+    "sha256": "3F22F3FE01890D388EEEBC999C74019113F270B1CDD8802D9DD73FFAF7C1BF15",
+    "dimensions": [1376, 768]
+  },
+  "status": "OPEN_M09_MODERN_AGE_STATE_NOT_REACHED",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "naturalCampaignState": true,
+    "slot1Touched": false
+  },
+  "screen": {
+    "surface": "Kingdom overview",
+    "viewportCss": [1280, 720],
+    "currentAge": "Medieval",
+    "targetAge": "Modern",
+    "selectedPlot": true,
+    "inspectorOpen": false
+  },
+  "visualFindings": [
+    "M09 depicts a modern walled city with high-rise districts, a left City Overview/Districts/Research/Construction/Trade rail, labeled resources, and a Residential Tower inspector with population, Upgrade, and Details.",
+    "The live campaign is Medieval and shows a stone-curtain city, repeated low structures, river, cyan plot outline, compact top resource chips, and no contextual inspector.",
+    "The live age and building state do not match the Modern target, so M09 remains OPEN."
+  ],
+  "sourceHashes": {
+    "src/client/main.js": "A4E205C0D6275FE43C8A9753F56230FAF2CBCDAA38541DD95D0FDD0D76A63462",
+    "src/client/game.css": "9921D5E885749D6278CD62DB69200E242D17080E7F69429C5AE2863284534AD0"
+  },
+  "evidence": {
+    "liveScreenshotObservedThroughApprovedCUA": true,
+    "liveScreenshotRetained": false,
+    "ageMatched": false,
+    "plotOrBuildingActionInvoked": false,
+    "slot1Touched": false,
+    "sourceOrTestChanges": false,
+    "ownerAccepted": false
+  },
+  "open": [
+    "Reach a natural Modern-age state and select a Residential Tower before comparing city composition, resources, and contextual building controls.",
+    "Complete M01-M30 and J01-J18 plus independent desktop, final package, device, and owner acceptance gates."
+  ]
+}

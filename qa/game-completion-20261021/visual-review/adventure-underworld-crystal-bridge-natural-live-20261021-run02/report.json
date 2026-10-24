@@ -1,0 +1,200 @@
+{
+  "recordedAt": "2026-10-21T12:51:01.156Z",
+  "classification": "NATURAL_UI_UNDERWORLD_FULL_CRYSTAL_BRIDGE_CROSSING_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> select Underworld -> travel to west bridge bank -> end day -> cross both bridge cells to far bank -> save and reload",
+  "note": "All campaign and movement actions use visible UI event handlers. Imported geometry and read-only state snapshots are assertions only.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-6da143ce-4be7-4fa2-991e-d9d1ea6195ae",
+  "map": {
+    "worldId": "underworld",
+    "seed": 338056069,
+    "layoutId": "underworld-layout-4",
+    "start": [
+      3,
+      6
+    ],
+    "blockers": [
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "serpentObstacle": [
+      7,
+      6
+    ],
+    "bridgeCells": [
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "approaches": [
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        7
+      ]
+    ]
+  },
+  "westApproachPreview": {
+    "target": [
+      5,
+      7
+    ],
+    "route": [
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "cost": 3,
+    "movementUnchanged": true,
+    "routePoints": "301,499.2 387,499.2 473,576"
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-underworld-crystal-bridge-natural-live-20261021-run02\\underworld-crystal-bridge-west-bank-preview-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-underworld-crystal-bridge-natural-live-20261021-run02\\underworld-crystal-bridge-full-crossing-preview-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-underworld-crystal-bridge-natural-live-20261021-run02\\underworld-crystal-bridge-far-bank-825x375.png"
+  ],
+  "movementSegments": [
+    {
+      "from": [
+        3,
+        6
+      ],
+      "to": [
+        5,
+        7
+      ],
+      "route": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "cost": 3,
+      "movesRemaining": 2,
+      "visited": [
+        "3,6",
+        "4,6",
+        "5,7"
+      ],
+      "saveState": "committed"
+    },
+    {
+      "action": "END_DAY",
+      "day": 2,
+      "movesRestored": 5
+    },
+    {
+      "from": [
+        5,
+        7
+      ],
+      "to": [
+        8,
+        7
+      ],
+      "route": [
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "cost": 3,
+      "movesRemaining": 2,
+      "visitedBridgeCells": [
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "saveState": "committed"
+    }
+  ],
+  "crossingPreview": {
+    "from": [
+      5,
+      7
+    ],
+    "target": [
+      8,
+      7
+    ],
+    "route": [
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        7
+      ]
+    ],
+    "cost": 3,
+    "movementUnchanged": true,
+    "routePoints": "473,576 559,576 645,576 731,576"
+  },
+  "reload": {
+    "position": [
+      8,
+      7
+    ],
+    "moves": 2,
+    "visited": [
+      "3,6",
+      "4,6",
+      "5,7",
+      "6,7",
+      "7,7",
+      "8,7"
+    ]
+  },
+  "result": "PASS_BOUNDED_NATURAL_UNDERWORLD_FULL_BRIDGE_CROSSING_FAR_BANK_SAVE_RELOAD; NOT_FULL_WORLD_OR_MOCK_ACCEPTANCE"
+}

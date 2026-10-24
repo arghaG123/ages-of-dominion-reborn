@@ -1,0 +1,93 @@
+{
+  "reviewId": "M25-story-chapter4-natural-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/25-story.jpg",
+  "status": "PARTIAL_VISUAL_REVIEW; NATURAL_CHAPTER_IV; M25_AND_WHOLE_GAME_OPEN",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "storyStart": "Chapter I — The First Fire",
+    "naturalChoices": [
+      {
+        "choice": "Share the fire",
+        "result": "Chapter II — Metal and Debt"
+      },
+      {
+        "choice": "Mine your own",
+        "result": "Chapter III — The Iron Road"
+      },
+      {
+        "choice": "Fortify the passes",
+        "result": "Chapter IV — The Divided Gate"
+      }
+    ],
+    "finalStoryText": "Chapter IV — The Divided Gate. Varek Iron-Eye: “You arrive late, Arn. The High Council demands fealty, not hesitation.”",
+    "availableFinalChoices": [
+      "We do not kneel.",
+      "The council must wait."
+    ],
+    "finalChoiceMade": false,
+    "chapterArchive": [
+      "Chapter I: Open",
+      "Chapter II: Open",
+      "Chapter III: Open",
+      "Chapter IV: Open",
+      "Chapter V: Opens in Gunpowder Age",
+      "Chapter VI: Opens in Industrial Age",
+      "Chapter VII: Opens in Modern Age"
+    ]
+  },
+  "persistence": {
+    "slot2Stored": true,
+    "slot2Reloaded": true,
+    "storyChapterAfterReload": "Chapter IV — The Divided Gate",
+    "armyAfterReload": "4 / 4 formations; Man-at-Arms ×5 preserved",
+    "visibleSavedRecord": "You shared the first fire. The strangers stayed, and they remembered. You dug your own ore. Slower, but yours. You chose walls over marches.",
+    "slot1Touched": false
+  },
+  "viewport": {
+    "requestedCss": [
+      1280,
+      720
+    ],
+    "observedCss": [
+      1280,
+      720
+    ]
+  },
+  "visualFindings": [
+    "The natural Chapter IV scene broadly matches M25: a central stone gate, two foreground rivals, dialogue in a lower panel, and two opposing choice buttons. The Chapter IV narrative and choice labels align with the mock.",
+    "The HUD does not yet match: M25 places a Chapter IV progress plaque and resource tray at upper left, a title centered at top, and Settings/Objectives at upper right. Live shows the game title and Story/rival panel at upper left, compact resources at upper right, and a Chapter archive control; no centered title is present.",
+    "This is a state-matched visual review after natural progression, not owner acceptance. The reference-like scene is strong; overall M25 remains PARTIAL because the HUD hierarchy differs and compact sizes are unreviewed."
+  ],
+  "evidence": {
+    "accessibilityState": [
+      "Medieval Age · day 4 · storm",
+      "Chapter IV — The Divided Gate. Varek Iron-Eye: “You arrive late, Arn. The High Council demands fealty, not hesitation.”",
+      "We do not kneel.",
+      "The council must wait.",
+      "Slot 2 loaded.",
+      "Your army · 4 / 4 formations",
+      "Man-at-Arms ×5"
+    ],
+    "screenshotObservedInApprovedCUA": true,
+    "screenshotRetainedAsFile": true,
+    "screenshotPath": "m25-story-chapter4-natural-medieval-day4-1280x720.jpg",
+    "screenshotSha256": "B305AB093EC63933DEFEE6B2F97F1E945470052FB6380DA2FB8D8DA835FF33A0",
+    "postReloadScreenshotPath": "m25-story-chapter4-postreload-natural-medieval-day4-1280x720.jpg",
+    "postReloadScreenshotBytes": 125151,
+    "postReloadScreenshotSha256": "F81812EACB08DF03EE717608977058DABD4BC483E70F2FCFD8E7CCBE37EF2B57",
+    "preProgressCapture": "m25-story-chapter1-natural-medieval-day4-before-progress-1280x720.jpg",
+    "ownerAccepted": false,
+    "sourceOrTestChanges": false,
+    "fullNodeSuite": "Fresh node --test tests/*.test.mjs run passed 261/261 in 21.8s; bounded Node evidence"
+  },
+  "open": [
+    "Bring the live story HUD into M25 hierarchy while retaining accessible labels, save state, and compact controls.",
+    "Review exact 825×375 and 933×424 layouts and retain captures.",
+    "Continue the remaining natural story, campaign, mock, journey, independent desktop, final package, device, and owner gates."
+  ]
+}

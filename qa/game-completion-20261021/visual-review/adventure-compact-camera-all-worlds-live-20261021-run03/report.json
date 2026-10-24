@@ -1,0 +1,1234 @@
+{
+  "recordedAt": "2026-10-21T06:05:11.041Z",
+  "classification": "NATURAL_UI_ALL_12_CAMPAIGN_WORLDS_WITH_FOG_REPAIR",
+  "journey": "For each of 12 worlds: new campaign -> select map -> enter valley -> leave town -> one legal move -> save/reload",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "note": "Each world uses a fresh isolated browser context and visible controls. No campaign, selected world, map position, or movement state is injected. Every world checks the repaired fog veil, minimap terrain, one legal move and reload persistence; each receives an 825x375 landscape capture.",
+  "results": [
+    {
+      "worldId": "grasslands",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "width": 1672,
+        "height": 940,
+        "world": "grasslands",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2903348478,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          9,
+          3
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 446.54620361328125,
+              "top": 86.078369140625,
+              "right": 529.16015625,
+              "bottom": 166.781005859375
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 446.54620361328125,
+              "top": 86.078369140625,
+              "right": 529.16015625,
+              "bottom": 146.68096923828125
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          489.84375,
+          161.16279069767444
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\grasslands-fog-825x375.jpg",
+      "reload": {
+        "worldId": "grasslands",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 20
+      },
+      "passed": true
+    },
+    {
+      "worldId": "tundra",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "tundra",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 1081557735,
+      "move": {
+        "direction": "east",
+        "destination": [
+          11,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.6395348837209303,
+          "offset": [
+            -55,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            86,
+            0,
+            1290,
+            586.3636363636364
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": -55,
+          "width": 880,
+          "height": 491.16278076171875
+        },
+        "position": [
+          11,
+          3
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 493.72100830078125,
+              "top": 66.848388671875,
+              "right": 597.8324584960938,
+              "bottom": 178.35972595214844
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 493.72100830078125,
+              "top": 66.848388671875,
+              "right": 597.8324584960938,
+              "bottom": 169.61558532714844
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          577.5,
+          171.90697674418607
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\tundra-fog-825x375.jpg",
+      "reload": {
+        "worldId": "tundra",
+        "position": [
+          11,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "haunted-marsh",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "haunted-marsh",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 3732011439,
+      "move": {
+        "direction": "north",
+        "destination": [
+          10,
+          2
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          10,
+          2
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 483.8194885253906,
+              "top": 31.95538330078125,
+              "right": 587.9309692382812,
+              "bottom": 143.46670532226562
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 483.8194885253906,
+              "top": 31.95538330078125,
+              "right": 587.9309692382812,
+              "bottom": 134.7225799560547
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          541.40625,
+          115.11627906976744
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\haunted-marsh-fog-825x375.jpg",
+      "reload": {
+        "worldId": "haunted-marsh",
+        "position": [
+          10,
+          2
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "desert-volcano",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "width": 1672,
+        "height": 940,
+        "world": "desert-volcano",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 783211690,
+      "move": {
+        "direction": "east",
+        "destination": [
+          10,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          10,
+          3
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 460.0663757324219,
+              "top": 56.104217529296875,
+              "right": 564.1778564453125,
+              "bottom": 167.61553955078125
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 460.0663757324219,
+              "top": 56.104217529296875,
+              "right": 564.1778564453125,
+              "bottom": 158.8714141845703
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          541.40625,
+          161.16279069767444
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\desert-volcano-fog-825x375.jpg",
+      "reload": {
+        "worldId": "desert-volcano",
+        "position": [
+          10,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "underworld",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "underworld",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 1791382461,
+      "move": {
+        "direction": "north",
+        "destination": [
+          3,
+          5
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          3,
+          5
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 122.88199615478516,
+              "top": 170.81121826171875,
+              "right": 226.99346923828125,
+              "bottom": 282.3225402832031
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 122.88199615478516,
+              "top": 170.81121826171875,
+              "right": 226.99346923828125,
+              "bottom": 273.5783996582031
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          180.46875,
+          253.25581395348837
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\underworld-fog-825x375.jpg",
+      "reload": {
+        "worldId": "underworld",
+        "position": [
+          3,
+          5
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "feywild",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "feywild",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 324968980,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          9,
+          3
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 410.9101257324219,
+              "top": 56.104217529296875,
+              "right": 515.0216064453125,
+              "bottom": 167.61553955078125
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 410.9101257324219,
+              "top": 56.104217529296875,
+              "right": 515.0216064453125,
+              "bottom": 158.8714141845703
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          489.84375,
+          161.16279069767444
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\feywild-fog-825x375.jpg",
+      "reload": {
+        "worldId": "feywild",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "archipelago",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "archipelago",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 996701694,
+      "move": {
+        "direction": "north",
+        "destination": [
+          7,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          7,
+          4
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 329.1319885253906,
+              "top": 121.24468994140625,
+              "right": 433.24346923828125,
+              "bottom": 232.7560272216797
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 329.1319885253906,
+              "top": 121.24468994140625,
+              "right": 433.24346923828125,
+              "bottom": 224.01190185546875
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          386.71875,
+          207.20930232558138
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\archipelago-fog-825x375.jpg",
+      "reload": {
+        "worldId": "archipelago",
+        "position": [
+          7,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "mesa-savanna",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "mesa-savanna",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2939367398,
+      "move": {
+        "direction": "north",
+        "destination": [
+          4,
+          1
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          4,
+          1
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 184.7367401123047,
+              "top": 3.9999988079071045,
+              "right": 270.24078369140625,
+              "bottom": 95.58132815361023
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 184.7367401123047,
+              "top": 3.9999988079071045,
+              "right": 270.24078369140625,
+              "bottom": 88.40001559257507
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          232.03125,
+          69.06976744186046
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\mesa-savanna-fog-825x375.jpg",
+      "reload": {
+        "worldId": "mesa-savanna",
+        "position": [
+          4,
+          1
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "astral-peaks",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "astral-peaks",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 3010478876,
+      "move": {
+        "direction": "north",
+        "destination": [
+          4,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          4,
+          4
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 174.44448852539062,
+              "top": 124.05864715576172,
+              "right": 278.55596923828125,
+              "bottom": 235.56997680664062
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 174.44448852539062,
+              "top": 124.05864715576172,
+              "right": 278.55596923828125,
+              "bottom": 226.8258514404297
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          232.03125,
+          207.20930232558138
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\astral-peaks-fog-825x375.jpg",
+      "reload": {
+        "worldId": "astral-peaks",
+        "position": [
+          4,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "blood-moon",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "blood-moon",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2379860661,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          9,
+          3
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 406.1434631347656,
+              "top": 56.104217529296875,
+              "right": 510.25494384765625,
+              "bottom": 167.61553955078125
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 406.1434631347656,
+              "top": 56.104217529296875,
+              "right": 510.25494384765625,
+              "bottom": 158.8714141845703
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          489.84375,
+          161.16279069767444
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\blood-moon-fog-825x375.jpg",
+      "reload": {
+        "worldId": "blood-moon",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "jade-karst",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "jade-karst",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 3554285858,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          9,
+          4
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 406.9226379394531,
+              "top": 102.1507339477539,
+              "right": 511.03411865234375,
+              "bottom": 213.6620635986328
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 406.9226379394531,
+              "top": 102.1507339477539,
+              "right": 511.03411865234375,
+              "bottom": 204.91793823242188
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          489.84375,
+          207.20930232558138
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\jade-karst-fog-825x375.jpg",
+      "reload": {
+        "worldId": "jade-karst",
+        "position": [
+          9,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "sunken-jungle",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "sunken-jungle",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 3226687108,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          2
+        ],
+        "movesLeft": 4
+      },
+      "camera": {
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "worldWidth": 825,
+        "frame": {
+          "x": 0,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "position": [
+          9,
+          2
+        ],
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 407.7361755371094,
+              "top": 10.05771255493164,
+              "right": 511.84765625,
+              "bottom": 121.56903457641602
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 407.7361755371094,
+              "top": 10.05771255493164,
+              "right": 511.84765625,
+              "bottom": 112.82490921020508
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "heroScreen": [
+          489.84375,
+          115.11627906976744
+        ]
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-compact-camera-all-worlds-live-20261021-run03\\sunken-jungle-fog-825x375.jpg",
+      "reload": {
+        "worldId": "sunken-jungle",
+        "position": [
+          9,
+          2
+        ],
+        "revision": 13
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

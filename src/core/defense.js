@@ -134,6 +134,17 @@ export function createDefense(state, data, { practice, waves, difficulty = 1 }) 
   };
 }
 
+export function defensePreparationMarkers(state, data = referenceData) {
+  if (!state || !Array.isArray(state.towers)) return { enemies: [], towers: [], hero: null, army: null, queue: [], projectiles: [] };
+  const towers = state.towers.map((tower, index) => {
+    const pad = pads[index];
+    if (!pad) return null;
+    const stats = towerStats(tower, data);
+    return { id: tower.id, fam: tower.fam, hp: stats.hp, maxHp: stats.hp, at: [pad.x, pad.y], alive: true };
+  }).filter(Boolean);
+  return { enemies: [], towers, hero: null, army: null, queue: [], projectiles: [] };
+}
+
 function finiteField(value, min = 0) {
   return Number.isFinite(value) && value >= min;
 }
@@ -572,7 +583,7 @@ export function advanceDefense(session, dt, { paused = false, speed = session.sp
   validateDefense(session);
   const next = clone(session);
   if (next.status !== 'ACTIVE') return next;
-  if (paused) { next.paused = true; next.accumulator = 0; return next; }
+  if (paused) { next.paused = true; next.speed = speed === 2 ? 2 : 1; next.accumulator = 0; return next; }
   next.paused = false;
   next.speed = speed === 2 ? 2 : 1;
   let accumulator = next.accumulator + Math.min(Math.max(dt, 0), FRAME_CAP) * next.speed;

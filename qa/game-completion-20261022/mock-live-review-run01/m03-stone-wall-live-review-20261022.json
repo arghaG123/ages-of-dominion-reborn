@@ -1,0 +1,35 @@
+{
+  "reviewId": "M03-stone-wall-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/03-kingdom-stone.jpg",
+  "status": "FAIL_VISUAL_OPEN",
+  "campaign": {
+    "slot": 3,
+    "age": "Stone Age",
+    "day": 1,
+    "weather": "clear",
+    "loadedConfirmation": "Slot 3 loaded.",
+    "resourcesAtLoad": { "food": 6185, "wood": 4873, "stone": 3688, "gold": 46 },
+    "provenance": "A saved test copy of the Stone campaign after visible Kingdom wall construction; slot 1 remains preserved.",
+    "wall": "Built level-1 Stone timber palisade, rendered as stone kingdom timber-palisade."
+  },
+  "viewport": { "requestedCss": [1280, 720], "observedCss": [1280, 720] },
+  "visualFindings": [
+    "The live same-family timber palisade forms an integrated perimeter around the Stone settlement; wall and ground read as one scene.",
+    "The reference fills the inside of its palisade with a dense, varied settlement and crop plots, with a selected Sawmill inspector at the lower center.",
+    "The live view leaves much of the walled interior open, places many small structures outside the perimeter, and shows a Quarry inspector on the right. The live dynamic composition does not match M03 despite the improved wall treatment.",
+    "No foreign wall stamp or static mock copy was used; the slot contains the actual completed wall state."
+  ],
+  "evidence": {
+    "screenshotObservedInApprovedCUA": true,
+    "screenshotRetainedAsFile": false,
+    "accessibilityState": ["Stone Age · day 1 · clear", "Slot 3 loaded."],
+    "visualOwnerAccepted": false
+  },
+  "open": [
+    "Correct the truthful dynamic building layout and selected-building composition against M03 while preserving the integrated same-family wall states.",
+    "Review exact target sizes with retained captures and owner acceptance.",
+    "Complete the remaining M01-M30, J01-J18 and independent desktop gates."
+  ]
+}

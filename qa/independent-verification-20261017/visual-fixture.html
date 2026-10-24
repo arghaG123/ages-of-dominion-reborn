@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><title>Isolated visual fixture</title>
+<h1>Injected visual fixture, never natural journey evidence</h1>
+<p>Separate port 4539 only. Artificial resource supply; other changes use core commands and simulated construction time.</p>
+<label>Age<select id="age"><option value="0">Stone</option><option value="1">Bronze</option><option value="2">Iron</option><option value="3">Medieval</option><option value="4">Gunpowder</option><option value="5">Industrial</option><option value="6">Modern</option><option value="7" selected>Future</option></select></label>
+<label>Class<select id="class"><option>knight</option><option>paladin</option><option>healer</option></select></label>
+<button id="prepare">Prepare fixture and open game</button><pre id="result"></pre>
+<script type="module">
+import {newCampaign,command,advance} from '../../src/core/campaign.js';
+import {save,rememberView} from '../../src/core/save.js';
+import data from '../../src/data/reference-data.json' with {type:'json'};
+import contract from '../../src/data/implementation-contract.json' with {type:'json'};
+document.querySelector('#prepare').onclick=()=>{
+ try {
+ let s=newCampaign(contract,data,Date.now());s.resources={food:1e12,wood:1e12,stone:1e12,gold:1e12};let n=0;
+ const act=(type,payload={})=>s=command(s,{id:'isolated-fixture-'+(++n),type,payload},s.clock,data);
+ const finish=id=>{s=advance(s,s.buildJobs.find(x=>x.plotId===id).completesAt,data)};
+ act('SET_CLASS',{class:document.querySelector('#class').value});
+ for(let i=0;i<Number(document.querySelector('#age').value);i++){act('BUILD',{plotId:'townhall',building:'townhall'});finish('townhall');act('AGE_UP');}
+ act('BUILD',{plotId:'P02',building:'armory'});finish('P02');
+ for(const slot of ['helm','weapon','offhand','armor','boots','accessory']){act('FORGE',{slot,quality:0});const item=s.inventory.find(x=>x.slot===slot);act('EQUIP',{itemId:item.id});}
+ save(localStorage,s,data);rememberView(localStorage,'kingdom',['kingdom','hero','story']);
+ sessionStorage.setItem('audit-classification','INJECTED_VISUAL_FIXTURE_1e12_RESOURCES_SIMULATED_JOBS');
+ location.href='/';
+ } catch(e){document.querySelector('#result').textContent=e.stack;}
+};
+</script>

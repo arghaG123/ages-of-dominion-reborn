@@ -1,0 +1,64 @@
+{
+  "reviewId": "M13-dwelling-offer-natural-current-review-20261023",
+  "date": "2026-10-23",
+  "mockId": "M13",
+  "status": "FAIL_M13_NATURAL_DWELLING_VIEW_AND_RECRUIT_STATE_DO_NOT_MATCH",
+  "route": "http://localhost:4174/?audit",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "campaignState": {
+    "age": "Gunpowder",
+    "day": 4,
+    "world": "Sunlit Riverlands",
+    "site": "Creature dwelling",
+    "heroMode": "on-foot at non-town site approach",
+    "offerRequested": "Dire Wolf",
+    "offer": {
+      "count": 5,
+      "food": 40,
+      "gold": 35
+    },
+    "recruitButton": "disabled: roster is full",
+    "recruitmentCommitted": false,
+    "resourcesSpent": false
+  },
+  "comparison": {
+    "matchedNaturalSiteState": true,
+    "passedMechanics": [
+      "Natural travel reached the authored creature-dwelling approach.",
+      "The dwelling returns a fixed core-owned offer with an exact count and resource price.",
+      "The current campaign has three occupied roster stacks; the UI disables recruitment instead of changing roster or resources."
+    ],
+    "visualFailures": [
+      "The mock uses a contextual Woodcutter's Hut scene with a foreground walking hero, compact resource strip, hero portrait, and focused Recruit/Back card; the live screen remains the full campaign map and right-side travel panel.",
+      "The actual authored site is a farmstead village creature dwelling, not a Woodcutter's Hut.",
+      "The live Dire Wolf offer is 5 units for 40 food and 35 gold and cannot be claimed with the full roster; the mock's Recruit 20 wood action is absent."
+    ]
+  },
+  "mechanicBoundary": "The approved M13 recipe preserves current offers and says not to infer movement or recruitment economics from artwork. No new Woodcutter site, wood price, or creature mechanic was invented.",
+  "evidence": {
+    "mock": {
+      "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/13-adventure-foot.jpg",
+      "sha256": "40E2E30F2FE640796451F2CABCD063E9D1A779B98607C3CE787FD69985B2C295"
+    },
+    "liveScreenshot": {
+      "path": "qa/game-completion-20261023/m13-dwelling-offer-natural-current-20261023.png",
+      "sha256": "178BF604ED2CBD82757B80EFEAE78477879961A34457663946D52C954E8CCF86"
+    }
+  },
+  "sourceHashes": {
+    "src/client/main.js": "8E1BC107B6072A1E6473EB0530C7B0CC20E38D5753A657D4246C181FA3DA23AF",
+    "src/client/adventure-travel-presentation.js": "0F7C9BD9788DFC7E82E86C73C0EF36C726007D86F90A1D1193612EB6E6F8CD5B",
+    "src/client/adventure-map-source.js": "0D5E6B5C98854D48889E83FD30D0E85B6DAF14FBAA2FE6ABA873CEE1215C5C19",
+    "src/core/navigation.js": "03D7742F11447E20AE76484BD55505380635F2672A002832982DA0AB468BF51A",
+    "src/data/adventure-worlds.json": "EFD4FF11D5CFEE4824134A1EB1224C791D58BE75AA508C8124AF15143AC1646D"
+  },
+  "ownerAccepted": false,
+  "remaining": [
+    "In the failure pass, attempt a bounded scenic site/card treatment while leaving the authored offer and cost untouched.",
+    "Reach an offer that can be claimed through a natural available roster slot, or preserve this blocked offer as separate gameplay evidence.",
+    "Verify the exact roster/resource transaction, origin site, return route, and reload after an eligible claim before closing M13."
+  ]
+}

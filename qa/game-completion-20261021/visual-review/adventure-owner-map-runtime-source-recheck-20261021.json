@@ -1,0 +1,493 @@
+{
+  "recordedAt": "2026-10-21T13:26:51.8945802Z",
+  "classification": "FRESH_CURRENT_OWNER_MAP_VS_RUNTIME_SOURCE_RECHECK",
+  "sourceSelector": "src/client/main.js: modeGround() prefers mapFile then terrainFile; campaignMapImage() prefers mapFile then terrainFile then file",
+  "campaignCount": 12,
+  "liveReportPath": "qa/game-completion-20261021/visual-review/adventure-minimap-map-art-live-20261021/report.json",
+  "ownerFileRuntimeMatchCount": 0,
+  "liveRowsPassed": 12,
+  "liveRowsWhoseImageMatchesCurrentSelector": 12,
+  "liveRowsWhoseMinimapMatchesCurrentSelector": 12,
+  "worlds": [
+    {
+      "id": "grasslands",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+        "bytes": 2018275,
+        "sha256": "f2ec666ab7d2929e51f2d9153b22f3335d330952ea91775d27a2535ec01a14e9"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "bytes": 3946490,
+        "sha256": "6c3e1522aac39e15190cf848735c8fe51a0377b1b60eeb0db3ee1954058dca20"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "grasslands",
+        "reloadPosition": [
+          9,
+          3
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "tundra",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+        "bytes": 1996515,
+        "sha256": "c45ae88fab2f321840b1c1c9761ed1fb7ea13269945bc652376b9d3e6db56114"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "bytes": 3842824,
+        "sha256": "2e80d581b9ac670101ad8fecc9d6919fbd93d3923774723f40f232f52041db97"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "tundra",
+        "reloadPosition": [
+          11,
+          3
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "haunted-marsh",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/03_Vast_Map_Autumn_Marsh_Thunderstorm.png",
+        "bytes": 2101013,
+        "sha256": "52a11bacb9944e2a240a49e795b19b6fe20732ce66f8e3bc49c8d31f4b581429"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "bytes": 3542056,
+        "sha256": "59b04f2594cb723e853a28712a1bb2db925f651f0e8e37a9121c5b8237693d3f"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "haunted-marsh",
+        "reloadPosition": [
+          10,
+          2
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "desert-volcano",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+        "bytes": 2172901,
+        "sha256": "5c37a730955356dacc8997011af3778105e0d041ab9f056b761583e7a4c3887f"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "bytes": 3443226,
+        "sha256": "ccebc8220c699e272ab2b9d28691dde7b8c6014e55516fc84c3cf7b143dceca1"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "desert-volcano",
+        "reloadPosition": [
+          10,
+          3
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "underworld",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+        "bytes": 2008808,
+        "sha256": "3e9e84b895a22522bf468a2cb9a441ad498b6128cc3c89460803cf6841626541"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "bytes": 3499685,
+        "sha256": "a41501181a45399de608794d04b3f519271f09fdac0bc9dc9189f89261eb4e95"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "underworld",
+        "reloadPosition": [
+          3,
+          5
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "feywild",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+        "bytes": 2310257,
+        "sha256": "a1bb9ca33cb2c21f9bf951faa22efb94cb24d868ee10f851ed1af90160985c16"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "bytes": 3655609,
+        "sha256": "551a9ad65e23e4ef286c7f698b64e2d239f23707cae665219789667014ec3628"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "feywild",
+        "reloadPosition": [
+          9,
+          3
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "archipelago",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+        "bytes": 2034493,
+        "sha256": "01533c4dd285c7f624b7d8e756cdd353b48c6eb3faec510824147251efda1af6"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "bytes": 3562889,
+        "sha256": "54538c26a7a8ad36e6efdd49427efe8d312b682e973e98d77121af43ff494b1b"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "archipelago",
+        "reloadPosition": [
+          7,
+          4
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "mesa-savanna",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+        "bytes": 2100285,
+        "sha256": "70ffbaafe7bc62453b1379d9d403ae4a82db8b2a2bab11bcc7d8262dfe7c0441"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "bytes": 3605950,
+        "sha256": "ae31ac4223527dc2800af8ac9925f4a1d1164203b83f9c799d502eee3f37cb88"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "mesa-savanna",
+        "reloadPosition": [
+          4,
+          1
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "astral-peaks",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+        "bytes": 1926911,
+        "sha256": "ed46a60e312b87dd237a1d467aeed6c9bcfd35125c9a17baeccae7304d103cbd"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "bytes": 3411435,
+        "sha256": "2fa72351261cc7c4fcd76ff491491f3bf521cf18029bffd8639d98609ec8ef9f"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "astral-peaks",
+        "reloadPosition": [
+          4,
+          4
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "blood-moon",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/10_Vast_Map_Blood_Moon_Wasteland_Eclipse.png",
+        "bytes": 2124474,
+        "sha256": "633efffeb77fc761aad7ba473ba81c3c1bdd3670404a487132c6b53efa075036"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "bytes": 3755429,
+        "sha256": "8a5ec0b5836e23a804b24d078a445f6060c0543c67a12b5a37e772bec8c6a410"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "blood-moon",
+        "reloadPosition": [
+          9,
+          3
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "jade-karst",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+        "bytes": 2145550,
+        "sha256": "69e7be94d2fa3c0d7d7769bc48ff839610059a0e01a8b51453a5ee7480e12c55"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "bytes": 3998946,
+        "sha256": "0b4b38159bda4b86f8909948375e8d80f9630092ff71e476ae6ff6da262c8542"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "jade-karst",
+        "reloadPosition": [
+          9,
+          4
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "sunken-jungle",
+      "ownerFile": {
+        "path": "assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+        "bytes": 2028894,
+        "sha256": "6887fada0efd62f73d473d122d44b1adb6c5e0de287efa4d1300b21d2f3c1fbd"
+      },
+      "runtimeFile": {
+        "selectedField": "mapFile",
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "bytes": 3884652,
+        "sha256": "c0e29611a1473a4e7fa41c72a24bff0a2fed845504ff37be18111260b52badcf"
+      },
+      "sameContent": false,
+      "liveReport": {
+        "passed": true,
+        "imageSource": "/assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "imageMatchesCurrentSelector": true,
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png"
+        ],
+        "allMinimapLayersMatchCurrentSelector": true,
+        "reloadWorldId": "sunken-jungle",
+        "reloadPosition": [
+          9,
+          2
+        ],
+        "browserErrors": 0,
+        "failedResponses": 0
+      },
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ]
+    }
+  ]
+}

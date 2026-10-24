@@ -6,16 +6,16 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
+import adventureWorlds from '../src/data/adventure-worlds.json' with { type: 'json' };
 import { command, cost, futureConclusion, newCampaign, questReady, stackTitle } from '../src/core/campaign.js';
 import { activeStackId } from '../src/core/battle.js';
-import { adventureMap, isOpen, routeCost } from '../src/core/navigation.js';
+import { adventureGeometryForWorld, adventureMap, isOpen, routeCost } from '../src/core/navigation.js';
 import { QUALITY, RIVALS, agePrice, forgeOffer, gearBonus, marketQuote, recruitCost } from '../src/core/rules.js';
 import { dwellingCost } from '../src/core/mechanics.js';
+import { completeSkirmishDeployment } from './battle-deployment-helpers-20261022.mjs';
 import { SAVE_KEY, decode, encode, load, restoreBackup, save, storeSlot, loadSlot } from '../src/core/save.js';
 
 const CAP_MS = [8, 7, 6, 5, 4, 3.5, 3, 3].map(hours => hours * 3600000);
-const map = adventureMap(contract.geometry.adventure);
-
 function memory() {
   const box = new Map();
   return {
@@ -44,6 +44,9 @@ test('every class can be chosen before the hero is committed', () => {
 test('earned scope reaches the legal campaign gates', () => {
   let now = 1_700_000_000_000;
   let state = newCampaign(contract, data, now, 123456789);
+  const world = adventureWorlds.find(item => item.id === state.adventureWorldId);
+  const geometry = adventureGeometryForWorld(contract.geometry.adventure, world, state.seed);
+  const map = adventureMap(geometry);
   let n = 0;
   const evidence = {
     method: 'command-and-documented-income-cap',
@@ -145,7 +148,7 @@ test('earned scope reaches the legal campaign gates', () => {
   go('ENTER_ADVENTURE', {});
   assert.equal(state.tutorial.step, 6);
   const beforeSkirmish = { gold: state.resources.gold, army: JSON.stringify(state.army), xp: state.hero.xp };
-  go('START_SKIRMISH', {});
+  state = completeSkirmishDeployment(state, data, 'earned-skirmish');
   assert.equal(state.battle.practice, 'skirmish');
   assert.equal(settleBattle(), 'p');
   assert.equal(state.resources.gold, beforeSkirmish.gold);
@@ -323,13 +326,14 @@ test('earned scope reaches the legal campaign gates', () => {
   assert.equal(Object.keys(state.story.milestones).length, 8);
   if (questReady(state, data, 'q2')) go('CLAIM_QUEST', { id: 'q2' });
 
-  const approach = contract.geometry.adventure.sites.find(site => site.id === 'dwelling').approach;
+  const approach = geometry.sites.find(site => site.id === 'dwelling').approach;
   const neighbors = (x, y) => {
     const found = [];
     for (let dx = -1; dx <= 1; dx++) for (let dy = -1; dy <= 1; dy++) {
       if (!dx && !dy) continue;
       if (!isOpen(map, x + dx, y + dy)) continue;
       if (dx && dy && (!isOpen(map, x + dx, y) || !isOpen(map, x, y + dy))) continue;
+      if (dx && dy && (map.bridge.has(`${x},${y}`) || map.bridge.has(`${x + dx},${y + dy}`))) continue;
       found.push([x + dx, y + dy]);
     }
     return found;

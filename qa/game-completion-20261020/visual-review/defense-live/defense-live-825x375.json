@@ -1,0 +1,59 @@
+{
+  "recordedAt": "2026-10-19T22:55:25.214Z",
+  "viewport": "825x375",
+  "journey": "fresh campaign -> War -> Campaign Siege -> pause/preparation -> deploy hero and army -> first live wave",
+  "defense": {
+    "phase": "siege",
+    "paused": false,
+    "heroDeployed": true,
+    "armyDeployed": true,
+    "selectedStack": "deploy-army:army-1",
+    "wave": 0,
+    "time": 1.7499999999999987,
+    "core": 400,
+    "spawnedAttackers": 2,
+    "queuedAttackers": 54
+  },
+  "captures": {
+    "warModes": "qa\\game-completion-20261020\\visual-review\\defense-live\\war-modes-825x375.png",
+    "preparation": "qa\\game-completion-20261020\\visual-review\\defense-live\\defense-preparation-825x375.png",
+    "deployed": "qa\\game-completion-20261020\\visual-review\\defense-live\\defense-deployed-825x375.png",
+    "wave": "qa\\game-completion-20261020\\visual-review\\defense-live\\defense-wave-825x375.png"
+  },
+  "controls": [
+    {
+      "choice": "defense-pause",
+      "name": "Pause. Pause freezes the attackers",
+      "rect": [
+        10,
+        309,
+        48,
+        48
+      ],
+      "centerOwner": "defense-pause"
+    },
+    {
+      "choice": "defense-speed",
+      "name": "Speed 2×. Changes how fast the wave advances",
+      "rect": [
+        64,
+        309,
+        48,
+        48
+      ],
+      "centerOwner": "defense-speed"
+    },
+    {
+      "choice": "defense-cast",
+      "name": "Hero blast. Need 40 mana",
+      "rect": [
+        118,
+        309,
+        48,
+        48
+      ],
+      "centerOwner": "defense-cast"
+    }
+  ],
+  "errors": []
+}

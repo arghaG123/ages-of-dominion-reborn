@@ -1,0 +1,201 @@
+{
+  "recordedAt": "2026-10-20T16:42:14.627Z",
+  "classification": "NATURAL_UI_ENDLESS_TEN_WAVES_QUEST_CLAIM_RELOAD",
+  "journey": "fresh campaign -> War -> prepare Endless -> start paused -> deploy hero and ranged army -> use visible 2x control -> survive ten waves -> settle natural defeat -> claim Q6 -> save/reload and verify one-time payout",
+  "note": "Campaign setup, defense deployment, speed selection, and claim use visible game controls. No campaign, defense, wave, or resource state is injected.",
+  "errors": [],
+  "failedResponses": [],
+  "progress": [
+    {
+      "clearedWaves": 1,
+      "scheduledWaves": 3,
+      "core": 560,
+      "elapsedSimSeconds": 23.99999999999992,
+      "towers": [
+        {
+          "family": "arrow",
+          "hp": 0
+        },
+        {
+          "family": "slow",
+          "hp": 99.98
+        }
+      ],
+      "army": {
+        "role": "ranged",
+        "hp": 64
+      }
+    },
+    {
+      "clearedWaves": 2,
+      "scheduledWaves": 3,
+      "core": 560,
+      "elapsedSimSeconds": 29.499999999999606,
+      "towers": [
+        {
+          "family": "arrow",
+          "hp": 0
+        },
+        {
+          "family": "slow",
+          "hp": 59.030000000000015
+        }
+      ],
+      "army": {
+        "role": "ranged",
+        "hp": 64
+      }
+    }
+  ],
+  "captures": [
+    "qa\\game-completion-20261020\\visual-review\\m26-q6-endless-claim-live-20261020\\endless-preparation-825x375.png",
+    "qa\\game-completion-20261020\\visual-review\\m26-q6-endless-claim-live-20261020\\endless-start-paused-825x375.png",
+    "qa\\game-completion-20261020\\visual-review\\m26-q6-endless-claim-live-20261020\\endless-deployed-paused-825x375.png",
+    "qa\\game-completion-20261020\\visual-review\\m26-q6-endless-claim-live-20261020\\endless-wave-1-825x375.png"
+  ],
+  "campaignId": "campaign-03084b9b-a746-4519-9c1b-58c87371e5a1",
+  "worldId": "jade-karst",
+  "start": {
+    "practice": "endless",
+    "paused": true,
+    "towers": [
+      "arrow",
+      "slow"
+    ]
+  },
+  "speed": 2,
+  "result": {
+    "winner": "e",
+    "clearedWaves": 2,
+    "core": -50.88560000000006,
+    "status": "RESOLVED"
+  },
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: natural defense must survive at least ten complete waves; reached 2",
+  "debug": {
+    "view": "defense",
+    "paused": false,
+    "speed": 2,
+    "recentActions": [
+      {
+        "type": "SET_CLASS",
+        "action": null,
+        "to": null,
+        "targetId": null
+      },
+      {
+        "type": "START_ENDLESS",
+        "action": null,
+        "to": null,
+        "targetId": null
+      },
+      {
+        "type": "DEFENSE",
+        "action": null,
+        "to": null,
+        "targetId": null
+      },
+      {
+        "type": "DEPLOY_DEFENSE",
+        "action": null,
+        "to": null,
+        "targetId": null
+      },
+      {
+        "type": "DEPLOY_ARMY",
+        "action": null,
+        "to": null,
+        "targetId": null
+      },
+      {
+        "type": "DEFENSE",
+        "action": null,
+        "to": null,
+        "targetId": null
+      },
+      {
+        "type": "DEFENSE",
+        "action": null,
+        "to": null,
+        "targetId": null
+      }
+    ],
+    "controls": [
+      {
+        "choice": "defense-pause",
+        "label": "Pause. Pause freezes the attackers",
+        "text": "Pause",
+        "parent": "choices",
+        "disabled": false,
+        "bounds": [
+          546,
+          119,
+          262,
+          44
+        ],
+        "centerHit": "defense-pause"
+      },
+      {
+        "choice": "defense-speed",
+        "label": "Speed 1×. Changes how fast the wave advances",
+        "text": "Speed 1×",
+        "parent": "choices",
+        "disabled": false,
+        "bounds": [
+          546,
+          168,
+          262,
+          44
+        ],
+        "centerHit": "defense-speed"
+      }
+    ],
+    "choices": [
+      {
+        "choice": "defense-pause",
+        "text": "Pause",
+        "bounds": [
+          546,
+          119,
+          262,
+          44
+        ],
+        "visible": true
+      },
+      {
+        "choice": "defense-speed",
+        "text": "Speed 1×",
+        "bounds": [
+          546,
+          168,
+          262,
+          44
+        ],
+        "visible": true
+      },
+      {
+        "choice": "defense-cast",
+        "text": "Hero blast",
+        "bounds": [
+          546,
+          217,
+          262,
+          44
+        ],
+        "visible": true
+      },
+      {
+        "choice": "tutorial-toggle",
+        "text": "Skip tutorial",
+        "bounds": [
+          546,
+          266,
+          262,
+          48
+        ],
+        "visible": true
+      }
+    ],
+    "notification": ""
+  }
+}

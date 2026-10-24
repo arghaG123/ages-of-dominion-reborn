@@ -1,0 +1,169 @@
+{
+  "recordedAt": "2026-10-20T15:39:03.661Z",
+  "classification": "NATURAL_UI_QUEST_READY_CLAIM_RELOAD_CONTROLLED_BROWSER_CLOCK",
+  "journey": "new campaign -> legal producers -> Town Hall level 2 -> pay Bronze age gate -> claim q2 in Story -> reload and verify claimed state",
+  "note": "All campaign actions use visible UI controls. Playwright advances elapsed idle time for resource income and construction only; it does not inject campaign state or resources.",
+  "viewports": [
+    {
+      "viewport": "825x375",
+      "worldId": "jade-karst",
+      "startingAge": 0,
+      "reachedAge": 1,
+      "ready": {
+        "age": 1,
+        "resources": {
+          "food": 383.48045000000013,
+          "wood": 0.3678999999999707,
+          "stone": 25.28464999999992,
+          "gold": 109.23299999999996
+        },
+        "quest": {
+          "claimed": false
+        },
+        "status": "Ready to claim",
+        "progress": "1 / 1 age reached",
+        "rewardText": "Reward 200 150",
+        "claimPresent": true,
+        "claimDisabled": false,
+        "destinationPresent": true,
+        "cardBounds": {
+          "x": 23,
+          "y": 88.75,
+          "width": 278,
+          "height": 180.75,
+          "right": 301,
+          "bottom": 269.5
+        },
+        "panelBounds": {
+          "x": 12,
+          "y": 56,
+          "width": 300,
+          "height": 247,
+          "right": 312,
+          "bottom": 303
+        },
+        "claimBounds": {
+          "x": 107,
+          "y": 213.5,
+          "width": 83,
+          "height": 36,
+          "right": 190,
+          "bottom": 249.5
+        },
+        "cardFullyInPanel": true,
+        "claimFullyInPanel": true,
+        "visible": true
+      },
+      "rewardDeltas": {
+        "gold": 200,
+        "stone": 150
+      },
+      "elapsedForClaimMs": 11,
+      "claimedUi": {
+        "status": "Reward claimed",
+        "claimPresent": false,
+        "claimedPresent": true,
+        "claimedDisabled": true,
+        "destinationPresent": true,
+        "cardFullyInPanel": true,
+        "visible": true
+      },
+      "reloadPersisted": {
+        "status": "Reward claimed",
+        "claimPresent": false,
+        "claimedDisabled": true
+      },
+      "repeatReward": {
+        "gold": -1.9567680809018384e-14,
+        "stone": 1.2406742300186124e-14
+      },
+      "reloadElapsedMs": 686,
+      "screenshots": [
+        "q2-ready-825x375.png",
+        "q2-claimed-825x375.png"
+      ]
+    },
+    {
+      "viewport": "1280x720",
+      "worldId": "jade-karst",
+      "startingAge": 0,
+      "reachedAge": 1,
+      "ready": {
+        "age": 1,
+        "resources": {
+          "food": 383.4986000000002,
+          "wood": 0.3485500000000633,
+          "stone": 25.275199999999927,
+          "gold": 109.22874999999998
+        },
+        "quest": {
+          "claimed": false
+        },
+        "status": "Ready to claim",
+        "progress": "1 / 1 age reached",
+        "rewardText": "Reward 200 150",
+        "claimPresent": true,
+        "claimDisabled": false,
+        "destinationPresent": true,
+        "cardBounds": {
+          "x": 23,
+          "y": 272.75,
+          "width": 418,
+          "height": 157.75,
+          "right": 441,
+          "bottom": 430.5
+        },
+        "panelBounds": {
+          "x": 12,
+          "y": 56,
+          "width": 440,
+          "height": 592,
+          "right": 452,
+          "bottom": 648
+        },
+        "claimBounds": {
+          "x": 171,
+          "y": 375.5,
+          "width": 117,
+          "height": 42,
+          "right": 288,
+          "bottom": 417.5
+        },
+        "cardFullyInPanel": true,
+        "claimFullyInPanel": true,
+        "visible": true
+      },
+      "rewardDeltas": {
+        "gold": 199.99999999999994,
+        "stone": 150
+      },
+      "elapsedForClaimMs": 123,
+      "claimedUi": {
+        "status": "Reward claimed",
+        "claimPresent": false,
+        "claimedPresent": true,
+        "claimedDisabled": true,
+        "destinationPresent": true,
+        "cardFullyInPanel": true,
+        "visible": true
+      },
+      "reloadPersisted": {
+        "status": "Reward claimed",
+        "claimPresent": false,
+        "claimedDisabled": true
+      },
+      "repeatReward": {
+        "gold": 9.992007221626409e-15,
+        "stone": 1.404432126150823e-14
+      },
+      "reloadElapsedMs": 806,
+      "screenshots": [
+        "q2-ready-1280x720.png",
+        "q2-claimed-1280x720.png"
+      ]
+    }
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "passed": true
+}

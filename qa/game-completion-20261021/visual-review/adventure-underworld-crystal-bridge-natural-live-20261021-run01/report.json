@@ -1,0 +1,145 @@
+{
+  "recordedAt": "2026-10-21T12:12:35.514Z",
+  "classification": "NATURAL_UI_UNDERWORLD_CRYSTAL_BRIDGE_DECK_ROUTE_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> select Underworld -> enter Adventure -> preview route over bridge -> commit to east deck -> save and reload",
+  "note": "All campaign and movement actions use visible UI event handlers. Imported geometry and read-only state snapshots are assertions only.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-4b05fc5b-7352-4421-9705-35d9a5718cd3",
+  "map": {
+    "worldId": "underworld",
+    "seed": 799563480,
+    "layoutId": "underworld-layout-11",
+    "start": [
+      3,
+      6
+    ],
+    "blockers": [
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "serpentObstacle": [
+      7,
+      6
+    ],
+    "bridgeCells": [
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "approaches": [
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        7
+      ]
+    ]
+  },
+  "preview": {
+    "target": [
+      7,
+      7
+    ],
+    "route": [
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "cost": 5,
+    "movementUnchanged": true,
+    "routePoints": "301,499.2 387,499.2 473,576 559,576 645,576"
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-underworld-crystal-bridge-natural-live-20261021-run01\\underworld-crystal-bridge-route-preview-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-underworld-crystal-bridge-natural-live-20261021-run01\\underworld-crystal-bridge-east-deck-825x375.png"
+  ],
+  "move": {
+    "from": [
+      3,
+      6
+    ],
+    "to": [
+      7,
+      7
+    ],
+    "route": [
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "cost": 5,
+    "movesRemaining": 0,
+    "visited": [
+      "3,6",
+      "4,6",
+      "5,7",
+      "6,7",
+      "7,7"
+    ],
+    "saveState": "committed"
+  },
+  "reload": {
+    "position": [
+      7,
+      7
+    ],
+    "moves": 0,
+    "visited": [
+      "3,6",
+      "4,6",
+      "5,7",
+      "6,7",
+      "7,7"
+    ]
+  },
+  "result": "PASS_BOUNDED_NATURAL_BRIDGE_DECK_TRAVEL_SAVE_RELOAD; NOT_FULL_WORLD_OR_MOCK_ACCEPTANCE"
+}

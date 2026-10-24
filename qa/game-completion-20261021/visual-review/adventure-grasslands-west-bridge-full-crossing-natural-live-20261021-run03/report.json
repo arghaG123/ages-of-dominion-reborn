@@ -1,0 +1,229 @@
+{
+  "recordedAt": "2026-10-21T13:07:52.345Z",
+  "classification": "NATURAL_UI_GRASSLANDS_WEST_MILL_BRIDGE_FULL_CROSSING_SAVE_RELOAD",
+  "journey": "fresh visible Grasslands campaign -> reach east approach -> end day -> cross both west mill deck cells -> save and reload on west bank",
+  "note": "All campaign and movement actions use visible UI controls. Geometry and read-only snapshots are assertions only; no state or position is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-b4437d35-7aff-4749-bf8f-89c793e5e0f4",
+  "map": {
+    "worldId": "grasslands",
+    "seed": 1913600510,
+    "layoutId": "grasslands-layout-4",
+    "start": [
+      8,
+      3
+    ],
+    "blockedCells": 28,
+    "oldApproach": [
+      3,
+      3
+    ],
+    "correctedApproaches": [
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "bridge": {
+      "id": "grasslands-west-mill-crossing",
+      "cells": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "approaches": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    },
+    "renderedCells": 160
+  },
+  "approachArrival": {
+    "cell": [
+      6,
+      5
+    ],
+    "frames": 195,
+    "marker": [
+      559.0002579999999,
+      414.4
+    ],
+    "expected": [
+      559,
+      414.4
+    ],
+    "mode": "mounted"
+  },
+  "approachTravel": {
+    "from": [
+      8,
+      3
+    ],
+    "to": [
+      6,
+      5
+    ],
+    "path": [
+      [
+        8,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "cost": 4,
+    "movesRemaining": 1
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-grasslands-west-bridge-full-crossing-natural-live-20261021-run03\\grasslands-west-bridge-east-bank-preview-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-grasslands-west-bridge-full-crossing-natural-live-20261021-run03\\grasslands-west-bridge-east-bank-arrival-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-grasslands-west-bridge-full-crossing-natural-live-20261021-run03\\grasslands-west-mill-bridge-full-crossing-preview-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-grasslands-west-bridge-full-crossing-natural-live-20261021-run03\\grasslands-west-bridge-far-bank-825x375.png"
+  ],
+  "rest": {
+    "day": 2,
+    "movesRestored": 5
+  },
+  "crossingPreview": {
+    "from": [
+      6,
+      5
+    ],
+    "to": [
+      4,
+      3
+    ],
+    "path": [
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "cost": 4,
+    "deckCells": [
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        4
+      ]
+    ]
+  },
+  "farBankArrival": {
+    "cell": [
+      4,
+      3
+    ],
+    "frames": 260,
+    "marker": [
+      387,
+      260.8003072
+    ],
+    "expected": [
+      387,
+      260.8
+    ],
+    "mode": "mounted"
+  },
+  "crossing": {
+    "from": [
+      6,
+      5
+    ],
+    "to": [
+      4,
+      3
+    ],
+    "path": [
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "cost": 4,
+    "movesRemaining": 1,
+    "visited": [
+      "8,3",
+      "8,4",
+      "7,5",
+      "6,5",
+      "5,5",
+      "5,4",
+      "4,4",
+      "4,3"
+    ],
+    "saveState": "committed"
+  },
+  "reload": {
+    "position": [
+      4,
+      3
+    ],
+    "day": 2,
+    "moves": 1,
+    "visitedBridgeCells": [
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        4
+      ]
+    ]
+  },
+  "result": "PASS_BOUNDED_NATURAL_GRASSLANDS_WEST_MILL_BRIDGE_FULL_CROSSING_SAVE_RELOAD; NOT_FULL_WORLD_OR_MOCK_ACCEPTANCE"
+}

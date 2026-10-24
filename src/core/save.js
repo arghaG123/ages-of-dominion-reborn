@@ -1,4 +1,5 @@
 import { adoptProgress, validate } from './campaign.js';
+export { IndexedDBStorageAdapter } from './storage-adapter.js';
 export const SAVE_KEY = 'aod-reborn-v1';
 export const VIEW_KEY = SAVE_KEY + '-view';
 export function rememberView(storage, name, screens) {

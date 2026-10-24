@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-10-20T11:54:33.460Z",
+  "world": "jade-karst",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "captures": [],
+  "errors": [],
+  "failedResponses": [],
+  "failure": "Error: locator.click: Error: strict mode violation: locator('[data-choice=\"enter-adventure\"]') resolved to 2 elements:\n    1) <button type=\"button\" data-choice=\"enter-adventure\">Leave town</button> aka getByRole('button', { name: 'Leave town' })\n    2) <button type=\"button\" data-choice=\"enter-adventure\">Leave town</button> aka locator('#choices').getByText('Leave town')\n\nCall log:\n\u001b[2m  - waiting for locator('[data-choice=\"enter-adventure\"]')\u001b[22m\n",
+  "comparisonPassed": false
+}

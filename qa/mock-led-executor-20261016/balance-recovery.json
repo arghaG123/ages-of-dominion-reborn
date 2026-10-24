@@ -1,0 +1,106 @@
+{
+  "evaluatedAt": "2026-10-17T12:16:00.554Z",
+  "governingSection": "A08 (Balance recovery evidence)",
+  "ageWaitCosts": [
+    {
+      "age": 0,
+      "name": "Stone",
+      "hallUpgradeTimeSec": 3,
+      "ageAdvanceCost": {
+        "food": 645,
+        "wood": 602,
+        "stone": 473,
+        "gold": 387
+      }
+    },
+    {
+      "age": 1,
+      "name": "Bronze",
+      "hallUpgradeTimeSec": 8,
+      "ageAdvanceCost": {
+        "food": 1387,
+        "wood": 1294,
+        "stone": 1017,
+        "gold": 832
+      }
+    },
+    {
+      "age": 2,
+      "name": "Iron",
+      "hallUpgradeTimeSec": 15,
+      "ageAdvanceCost": {
+        "food": 2982,
+        "wood": 2783,
+        "stone": 2186,
+        "gold": 1789
+      }
+    },
+    {
+      "age": 3,
+      "name": "Medieval",
+      "hallUpgradeTimeSec": 25,
+      "ageAdvanceCost": {
+        "food": 6410,
+        "wood": 5983,
+        "stone": 4701,
+        "gold": 3846
+      }
+    },
+    {
+      "age": 4,
+      "name": "Gunpowder",
+      "hallUpgradeTimeSec": 40,
+      "ageAdvanceCost": {
+        "food": 13782,
+        "wood": 12863,
+        "stone": 10107,
+        "gold": 8269
+      }
+    },
+    {
+      "age": 5,
+      "name": "Industrial",
+      "hallUpgradeTimeSec": 60,
+      "ageAdvanceCost": {
+        "food": 29631,
+        "wood": 27656,
+        "stone": 21730,
+        "gold": 17779
+      }
+    },
+    {
+      "age": 6,
+      "name": "Modern",
+      "hallUpgradeTimeSec": 90,
+      "ageAdvanceCost": {
+        "food": 63707,
+        "wood": 59460,
+        "stone": 46719,
+        "gold": 38224
+      }
+    },
+    {
+      "age": 7,
+      "name": "Future",
+      "hallUpgradeTimeSec": 0,
+      "ageAdvanceCost": "Max age reached"
+    }
+  ],
+  "lossRecoveryPaths": {
+    "tacticalDefeat": {
+      "consequences": "Hero survives with 1 HP; lost units removed from army stack.",
+      "recoveryRoute": "Rest in town restores mana; recruit replacement stack at Barracks using passive producer gold; re-enter encounter."
+    },
+    "defenseDefeat": {
+      "consequences": "Core breaches and defense resolves DEFEATED; 0 gold gained; surviving towers retain rank.",
+      "recoveryRoute": "Clean re-entry into fresh defense session; reposition hero/army on pads; adjust tower placement."
+    }
+  },
+  "softlockSafeguards": [
+    "Town Hall produces continuous baseline resources even with 0 external producers.",
+    "Rest action costs 0 gold/food and restores 100% hero mana.",
+    "Market quotes guaranteed baseline exchange rates for excess wood/stone to gold.",
+    "Practice Skirmish and Challenge allow free skill and tactical rehearsal without casualty risk."
+  ],
+  "status": "VERIFIED"
+}

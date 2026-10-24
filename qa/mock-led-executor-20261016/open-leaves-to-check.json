@@ -1,0 +1,2106 @@
+[
+  {
+    "id": "OWN-01",
+    "type": "REQUIREMENT",
+    "name": "Eight Ages Scope",
+    "outcome": "All 8 historical ages from Stone to Future",
+    "consumer": "src/core/campaign.js",
+    "evidence": "tests/save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "OWN-02",
+    "type": "REQUIREMENT",
+    "name": "Three Connected Genres",
+    "outcome": "Kingdom, Adventure, and Tactical seamlessly integrated",
+    "consumer": "src/client/main.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs"
+  },
+  {
+    "id": "OWN-03",
+    "type": "REQUIREMENT",
+    "name": "Five War Options",
+    "outcome": "Siege, Duel, Endless, Skirmish, Challenge",
+    "consumer": "src/core/battle.js, defense.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J10"
+  },
+  {
+    "id": "OWN-04",
+    "type": "REQUIREMENT",
+    "name": "Eight Hero Classes",
+    "outcome": "Knight, Ranger, Warlock, Mage, Paladin, Barbarian, Necromancer, Healer",
+    "consumer": "src/client/hero-room.js",
+    "evidence": "tests/hero-room-20261011.test.mjs"
+  },
+  {
+    "id": "OWN-05",
+    "type": "REQUIREMENT",
+    "name": "Four Kit Eras",
+    "outcome": "Stone, Medieval, Gunpowder, Future aesthetic kits",
+    "consumer": "src/client/hero-room.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "OWN-06",
+    "type": "REQUIREMENT",
+    "name": "Six Functional Gear Slots",
+    "outcome": "Helm, weapon, offhand, armor, boots, accessory craftable and equippable",
+    "consumer": "src/core/campaign.js:EQUIP",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "OWN-07",
+    "type": "REQUIREMENT",
+    "name": "Economy & Offline Production",
+    "outcome": "4 repeatable producers, per-second rate, offline credit report",
+    "consumer": "src/core/campaign.js:settle",
+    "evidence": "src/core/campaign.js:formatResume"
+  },
+  {
+    "id": "OWN-08",
+    "type": "REQUIREMENT",
+    "name": "Army Troop Roles",
+    "outcome": "Melee, Ranged, Heavy roles scaling across 8 ages",
+    "consumer": "src/core/mechanics.js:unitStats",
+    "evidence": "src/data/reference-data.json"
+  },
+  {
+    "id": "OWN-09",
+    "type": "REQUIREMENT",
+    "name": "Eight Creature Types",
+    "outcome": "Wolf, bandit, bear, harpy, golem, griffin, wyvern, drone",
+    "consumer": "src/core/mechanics.js:dwellingPool",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J13"
+  },
+  {
+    "id": "OWN-10",
+    "type": "REQUIREMENT",
+    "name": "Nine Hero Skills",
+    "outcome": "Offense, archery, armorer, wisdom, leadership, luck, tactics, logistics, firstaid",
+    "consumer": "src/core/rules.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J12"
+  },
+  {
+    "id": "OWN-11",
+    "type": "REQUIREMENT",
+    "name": "Eight Combat Spells",
+    "outcome": "Arrow, bless, haste, cure, slow, bolt, fireball, resurrect",
+    "consumer": "src/core/battle.js:castSpell",
+    "evidence": "tests/encounter.test.mjs"
+  },
+  {
+    "id": "OWN-12",
+    "type": "REQUIREMENT",
+    "name": "Ten Artifacts",
+    "outcome": "10 source-backed unique artifacts with non-stacking bonuses",
+    "consumer": "src/core/campaign.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs"
+  },
+  {
+    "id": "OWN-13",
+    "type": "REQUIREMENT",
+    "name": "Story Chapters & Rivals",
+    "outcome": "7 chapters, 6 persistent rivals, Future conclusion",
+    "consumer": "src/core/campaign.js:futureConclusion",
+    "evidence": "tests/save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "OWN-14",
+    "type": "REQUIREMENT",
+    "name": "Campaign Quests & Milestones",
+    "outcome": "6 quests, 8 milestone claims, once-only settlement",
+    "consumer": "src/core/campaign.js",
+    "evidence": "tests/save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "OWN-15",
+    "type": "REQUIREMENT",
+    "name": "Bronze Market",
+    "outcome": "100-unit lot resource trades unlocked in Bronze Age",
+    "consumer": "src/core/campaign.js:MARKET",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J15"
+  },
+  {
+    "id": "OWN-16",
+    "type": "REQUIREMENT",
+    "name": "Interactive Tutorial",
+    "outcome": "Target-anchored sequential guidance with skip/review",
+    "consumer": "src/client/main.js:tutorial",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J17"
+  },
+  {
+    "id": "OWN-18",
+    "type": "REQUIREMENT",
+    "name": "Zero Device Permissions",
+    "outcome": "Offline APK runtime with 0 permissions (no INTERNET, no VIBRATE)",
+    "consumer": "android/AndroidManifest.xml",
+    "evidence": "scripts/verify-package-20261011.py"
+  },
+  {
+    "id": "SYS-01",
+    "type": "REQUIREMENT",
+    "name": "Fixed 1/60 Timestep Loop",
+    "outcome": "Decoupled accumulator timestep for Defense simulation",
+    "consumer": "src/core/defense.js:STEP",
+    "evidence": "tests/save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "SYS-02",
+    "type": "REQUIREMENT",
+    "name": "Deterministic PRNG",
+    "outcome": "Seeded linear congruential RNG for reproducible combat",
+    "consumer": "src/core/rng.js",
+    "evidence": "tests/foundation.test.mjs"
+  },
+  {
+    "id": "SYS-03",
+    "type": "REQUIREMENT",
+    "name": "Atomic State Enveloping",
+    "outcome": "Schema 1 JSON envelope with FNV-1a checksum validation",
+    "consumer": "src/core/save.js:checksum",
+    "evidence": "tests/save-boundaries-20261004.test.mjs"
+  },
+  {
+    "id": "SYS-05",
+    "type": "REQUIREMENT",
+    "name": "Source-Bound Scene Registration",
+    "outcome": "32 physical scene traces without moving legal cells",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SYS-06",
+    "type": "REQUIREMENT",
+    "name": "Anatomical Gear Anchoring",
+    "outcome": "Crown, chest, hand grip, forearm, feet anchors for gear",
+    "consumer": "src/client/actor.js:paintWornSlots",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "SYS-07",
+    "type": "REQUIREMENT",
+    "name": "Committed Event Motion Playback",
+    "outcome": "Strikes and casts trigger strictly from battle log events",
+    "consumer": "src/client/main.js:drawFigure",
+    "evidence": "src/client/main.js"
+  },
+  {
+    "id": "SYS-08",
+    "type": "REQUIREMENT",
+    "name": "Responsive Landscape Camera",
+    "outcome": "Forward/inverse projection across 4 landscape viewports",
+    "consumer": "src/client/projection.js",
+    "evidence": "qa/mock-led-executor-20261016/viewport-review.json"
+  },
+  {
+    "id": "SYS-09",
+    "type": "REQUIREMENT",
+    "name": "Touch Target Ergonomics",
+    "outcome": "Minimum 48x48px interactive touch bounding boxes",
+    "consumer": "src/client/game.css",
+    "evidence": "qa/mock-led-executor-20261016/viewport-review.json"
+  },
+  {
+    "id": "SYS-10",
+    "type": "REQUIREMENT",
+    "name": "WCAG AA Color Contrast",
+    "outcome": "Contrast >= 4.5:1 across dark slate and parchment HUD",
+    "consumer": "src/client/game.css",
+    "evidence": "qa/mock-led-executor-20261016/viewport-review.json"
+  },
+  {
+    "id": "SYS-11",
+    "type": "REQUIREMENT",
+    "name": "Local Audio Synthesis",
+    "outcome": "Zero-latency Web Audio sound effects and musical stagers",
+    "consumer": "src/client/audio.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J17"
+  },
+  {
+    "id": "SYS-12",
+    "type": "REQUIREMENT",
+    "name": "Clean Healer Matte Extraction",
+    "outcome": "Seamless single-figure body candidate with wood staff",
+    "consumer": "src/data/hero-bodies-20261011.json",
+    "evidence": "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png"
+  },
+  {
+    "id": "SYS-13",
+    "type": "REQUIREMENT",
+    "name": "Authentic Palisade Wall Modules",
+    "outcome": "Timber run, corner, and ramp gate segments for Stone age",
+    "consumer": "src/data/wall-segments-20261016.json",
+    "evidence": "assets/derivatives/mock-led-20261016/walls/stone/"
+  },
+  {
+    "id": "SYS-14",
+    "type": "REQUIREMENT",
+    "name": "Natural Sparse Plot Clearing",
+    "outcome": "Pure natural terrain clearings without permanent brass borders",
+    "consumer": "src/client/main.js:paintPlot",
+    "evidence": "src/client/main.js"
+  },
+  {
+    "id": "SYS-15",
+    "type": "REQUIREMENT",
+    "name": "Zero Internal Tick Ledger Growth",
+    "outcome": "settledTransactions count stays constant during active defense",
+    "consumer": "src/core/campaign.js:advanceActiveDefense",
+    "evidence": "qa/mock-led-executor-20261016/storage-growth.json"
+  },
+  {
+    "id": "SYS-16",
+    "type": "REQUIREMENT",
+    "name": "Standalone Package Closure",
+    "outcome": "Static zero-dependency bundle deployed to dist/ and APK",
+    "consumer": "scripts/build.mjs, build-apk.mjs",
+    "evidence": "qa/mock-led-executor-20261016/package.json"
+  },
+  {
+    "id": "SYS-17",
+    "type": "REQUIREMENT",
+    "name": "Practice Mode Zero-Leakage",
+    "outcome": "Skirmish and Challenge make 0 modifications to campaign",
+    "consumer": "src/core/campaign.js:applyBattleResult",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J10"
+  },
+  {
+    "id": "G01",
+    "type": "G_CONTRACT",
+    "name": "Eight Ages Coherence",
+    "outcome": "Coherent terrain, building, worker, troop, tower, kit transformations across 8 ages",
+    "consumer": "src/core/campaign.js, main.js",
+    "evidence": "tests/save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "G02",
+    "type": "G_CONTRACT",
+    "name": "Sparse Day 1 & Economy",
+    "outcome": "Hall 1, 17 empty sites, Walls 0, 250/250/160/150 starting supplies",
+    "consumer": "src/core/campaign.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J01"
+  },
+  {
+    "id": "G04",
+    "type": "G_CONTRACT",
+    "name": "Adventure Navigation",
+    "outcome": "16x10 navigation mesh, terrain costs, bridge crossings, fog of war",
+    "consumer": "src/core/navigation.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J05"
+  },
+  {
+    "id": "G05",
+    "type": "G_CONTRACT",
+    "name": "Tactical Battlefield",
+    "outcome": "7x10 grid, legal deployment, initiative queue, target previews, flyers, morale",
+    "consumer": "src/core/battle.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J07"
+  },
+  {
+    "id": "G06",
+    "type": "G_CONTRACT",
+    "name": "Lane Defense",
+    "outcome": "9x15 lane, 1/60 simulation, 4 tower families, 5 attacker roles, gate HP, pause/speed",
+    "consumer": "src/core/defense.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J09"
+  },
+  {
+    "id": "G07",
+    "type": "G_CONTRACT",
+    "name": "Five War Options",
+    "outcome": "Campaign Siege, Tactical Duel, Endless, Skirmish, Challenge isolation",
+    "consumer": "src/core/battle.js, defense.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J10"
+  },
+  {
+    "id": "G08",
+    "type": "G_CONTRACT",
+    "name": "Hero Classes & Growth",
+    "outcome": "8 classes, level/XP growth, A/D/P/K stats, 4 kit eras",
+    "consumer": "src/client/hero-room.js",
+    "evidence": "tests/hero-room-20261011.test.mjs"
+  },
+  {
+    "id": "G09",
+    "type": "G_CONTRACT",
+    "name": "Skills & Spells Deck",
+    "outcome": "9 skills (0-3 rank), 8 spells, Wisdom 3, wounded-stack Resurrection",
+    "consumer": "src/core/rules.js, battle.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J12"
+  },
+  {
+    "id": "G10",
+    "type": "G_CONTRACT",
+    "name": "Equipment & 6 Slots",
+    "outcome": "6 worn slots, 4 qualities, 10 artifacts, unique IDs, visible attachments",
+    "consumer": "src/core/campaign.js:EQUIP",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "G11",
+    "type": "G_CONTRACT",
+    "name": "Army & Creatures",
+    "outcome": "24 role identities, ranks 0-4, 8 creatures, 4 flyers",
+    "consumer": "src/core/mechanics.js",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J13"
+  },
+  {
+    "id": "G12",
+    "type": "G_CONTRACT",
+    "name": "Story & Future Conclusion",
+    "outcome": "7 chapters, 6 rivals, 6 quests, 8 milestones, Future conclusion \"The Valley We Keep\"",
+    "consumer": "src/core/campaign.js",
+    "evidence": "tests/save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "G13",
+    "type": "G_CONTRACT",
+    "name": "Bronze Market",
+    "outcome": "Bronze unlock, 100-unit lot trading, transparent rates",
+    "consumer": "src/core/campaign.js:MARKET",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J15"
+  },
+  {
+    "id": "G14",
+    "type": "G_CONTRACT",
+    "name": "Anchored Tutorial",
+    "outcome": "Target-anchored sequential steps, cancel idempotency, skip/review",
+    "consumer": "src/client/main.js:tutorial",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J17"
+  },
+  {
+    "id": "M03",
+    "type": "MOCK_TARGET",
+    "name": "Mock M03",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/03-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M04",
+    "type": "MOCK_TARGET",
+    "name": "Mock M04",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/04-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M05",
+    "type": "MOCK_TARGET",
+    "name": "Mock M05",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/05-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M06",
+    "type": "MOCK_TARGET",
+    "name": "Mock M06",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/06-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M08",
+    "type": "MOCK_TARGET",
+    "name": "Mock M08",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/08-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M09",
+    "type": "MOCK_TARGET",
+    "name": "Mock M09",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/09-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M11",
+    "type": "MOCK_TARGET",
+    "name": "Mock M11",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/11-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M12",
+    "type": "MOCK_TARGET",
+    "name": "Mock M12",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/12-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M14",
+    "type": "MOCK_TARGET",
+    "name": "Mock M14",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/14-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M15",
+    "type": "MOCK_TARGET",
+    "name": "Mock M15",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/15-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M16",
+    "type": "MOCK_TARGET",
+    "name": "Mock M16",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/16-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M17",
+    "type": "MOCK_TARGET",
+    "name": "Mock M17",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/17-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M18",
+    "type": "MOCK_TARGET",
+    "name": "Mock M18",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/18-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M19",
+    "type": "MOCK_TARGET",
+    "name": "Mock M19",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/19-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M20",
+    "type": "MOCK_TARGET",
+    "name": "Mock M20",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/20-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M21",
+    "type": "MOCK_TARGET",
+    "name": "Mock M21",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/21-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M22",
+    "type": "MOCK_TARGET",
+    "name": "Mock M22",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/22-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M23",
+    "type": "MOCK_TARGET",
+    "name": "Mock M23",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/23-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M24",
+    "type": "MOCK_TARGET",
+    "name": "Mock M24",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/24-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M25",
+    "type": "MOCK_TARGET",
+    "name": "Mock M25",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/25-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M26",
+    "type": "MOCK_TARGET",
+    "name": "Mock M26",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/26-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M27",
+    "type": "MOCK_TARGET",
+    "name": "Mock M27",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/27-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M28",
+    "type": "MOCK_TARGET",
+    "name": "Mock M28",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/28-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M29",
+    "type": "MOCK_TARGET",
+    "name": "Mock M29",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/29-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "M30",
+    "type": "MOCK_TARGET",
+    "name": "Mock M30",
+    "outcome": "Dynamic implemented counterpart matches composition, lighting, and hierarchy of design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/30-*.jpg",
+    "consumer": "src/client/main.js, presentation.js",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json"
+  },
+  {
+    "id": "J01",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J01",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J02",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J02",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J03",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J03",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J04",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J04",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J05",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J05",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J06",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J06",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J07",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J07",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J08",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J08",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J09",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J09",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J10",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J10",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J11",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J11",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J12",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J12",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J13",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J13",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J14",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J14",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J15",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J15",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J16",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J16",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J17",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J17",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "J18",
+    "type": "PLAYER_JOURNEY",
+    "name": "Journey J18",
+    "outcome": "Mandatory subcases verified through pointer/keyboard/command inputs with cancel, reload, and error idempotency",
+    "consumer": "src/client/main.js, core/",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json"
+  },
+  {
+    "id": "STEP-01",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 1",
+    "outcome": "Phase A action 1 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-02",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 2",
+    "outcome": "Phase A action 2 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-03",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 3",
+    "outcome": "Phase A action 3 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-04",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 4",
+    "outcome": "Phase A action 4 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-05",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 5",
+    "outcome": "Phase A action 5 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-06",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 6",
+    "outcome": "Phase A action 6 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-07",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 7",
+    "outcome": "Phase A action 7 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-08",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 8",
+    "outcome": "Phase A action 8 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-09",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 9",
+    "outcome": "Phase B action 9 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-10",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 10",
+    "outcome": "Phase B action 10 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-11",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 11",
+    "outcome": "Phase B action 11 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-12",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 12",
+    "outcome": "Phase B action 12 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-13",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 13",
+    "outcome": "Phase B action 13 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-14",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 14",
+    "outcome": "Phase B action 14 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-15",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 15",
+    "outcome": "Phase B action 15 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-16",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 16",
+    "outcome": "Phase B action 16 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-17",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 17",
+    "outcome": "Phase B action 17 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-18",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 18",
+    "outcome": "Phase B action 18 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-19",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 19",
+    "outcome": "Phase C action 19 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-20",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 20",
+    "outcome": "Phase C action 20 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-21",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 21",
+    "outcome": "Phase C action 21 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-22",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 22",
+    "outcome": "Phase C action 22 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-23",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 23",
+    "outcome": "Phase C action 23 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-24",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 24",
+    "outcome": "Phase C action 24 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-25",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 25",
+    "outcome": "Phase C action 25 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-26",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 26",
+    "outcome": "Phase C action 26 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-27",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 27",
+    "outcome": "Phase C action 27 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-28",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 28",
+    "outcome": "Phase D action 28 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-29",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 29",
+    "outcome": "Phase D action 29 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-30",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 30",
+    "outcome": "Phase D action 30 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-31",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 31",
+    "outcome": "Phase D action 31 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-32",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 32",
+    "outcome": "Phase D action 32 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-33",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 33",
+    "outcome": "Phase D action 33 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-34",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 34",
+    "outcome": "Phase D action 34 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-35",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 35",
+    "outcome": "Phase D action 35 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-36",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 36",
+    "outcome": "Phase D action 36 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-37",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 37",
+    "outcome": "Phase D action 37 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-38",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 38",
+    "outcome": "Phase D action 38 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-39",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 39",
+    "outcome": "Phase D action 39 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-40",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 40",
+    "outcome": "Phase E action 40 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-41",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 41",
+    "outcome": "Phase E action 41 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-42",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 42",
+    "outcome": "Phase E action 42 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-43",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 43",
+    "outcome": "Phase E action 43 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-44",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 44",
+    "outcome": "Phase E action 44 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-45",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 45",
+    "outcome": "Phase E action 45 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-46",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 46",
+    "outcome": "Phase E action 46 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-47",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 47",
+    "outcome": "Phase E action 47 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-48",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 48",
+    "outcome": "Phase E action 48 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-49",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 49",
+    "outcome": "Phase E action 49 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-50",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 50",
+    "outcome": "Phase E action 50 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-51",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 51",
+    "outcome": "Phase F action 51 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-52",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 52",
+    "outcome": "Phase F action 52 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-53",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 53",
+    "outcome": "Phase F action 53 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-54",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 54",
+    "outcome": "Phase F action 54 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-55",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 55",
+    "outcome": "Phase F action 55 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-56",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 56",
+    "outcome": "Phase F action 56 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-57",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 57",
+    "outcome": "Phase F action 57 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-58",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 58",
+    "outcome": "Phase F action 58 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-59",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 59",
+    "outcome": "Phase F action 59 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-60",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 60",
+    "outcome": "Phase F action 60 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-61",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 61",
+    "outcome": "Phase F action 61 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-62",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 62",
+    "outcome": "Phase F action 62 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-63",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 63",
+    "outcome": "Phase F action 63 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-64",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 64",
+    "outcome": "Phase F action 64 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-65",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 65",
+    "outcome": "Phase G action 65 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-66",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 66",
+    "outcome": "Phase G action 66 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-67",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 67",
+    "outcome": "Phase G action 67 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-68",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 68",
+    "outcome": "Phase G action 68 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-69",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 69",
+    "outcome": "Phase G action 69 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-70",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 70",
+    "outcome": "Phase G action 70 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-71",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 71",
+    "outcome": "Phase G action 71 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-72",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 72",
+    "outcome": "Phase G action 72 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-73",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 73",
+    "outcome": "Phase G action 73 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-74",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 74",
+    "outcome": "Phase G action 74 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-75",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 75",
+    "outcome": "Phase G action 75 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-76",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 76",
+    "outcome": "Phase G action 76 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-77",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 77",
+    "outcome": "Phase G action 77 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-78",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 78",
+    "outcome": "Phase G action 78 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-79",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 79",
+    "outcome": "Phase G action 79 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-80",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 80",
+    "outcome": "Phase H action 80 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-81",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 81",
+    "outcome": "Phase H action 81 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-82",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 82",
+    "outcome": "Phase H action 82 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-83",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 83",
+    "outcome": "Phase H action 83 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-84",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 84",
+    "outcome": "Phase H action 84 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-85",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 85",
+    "outcome": "Phase H action 85 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-86",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 86",
+    "outcome": "Phase H action 86 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-87",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 87",
+    "outcome": "Phase H action 87 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-88",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 88",
+    "outcome": "Phase H action 88 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-89",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 89",
+    "outcome": "Phase H action 89 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-90",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 90",
+    "outcome": "Phase I action 90 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-91",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 91",
+    "outcome": "Phase I action 91 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-92",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 92",
+    "outcome": "Phase I action 92 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-93",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 93",
+    "outcome": "Phase I action 93 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-94",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 94",
+    "outcome": "Phase I action 94 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-95",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 95",
+    "outcome": "Phase I action 95 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "STEP-96",
+    "type": "MASTER_PLAN_STEP",
+    "name": "Step 96",
+    "outcome": "Phase I action 96 implemented and verified against governing contracts",
+    "consumer": "Workspace build and test pipelines",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs, save-stress-horizon.test.mjs"
+  },
+  {
+    "id": "SCENE-KINGDOM-STONE",
+    "type": "PHYSICAL_SCENE",
+    "name": "kingdom stone",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-KINGDOM-BRONZE",
+    "type": "PHYSICAL_SCENE",
+    "name": "kingdom bronze",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-KINGDOM-IRON",
+    "type": "PHYSICAL_SCENE",
+    "name": "kingdom iron",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-KINGDOM-MEDIEVAL",
+    "type": "PHYSICAL_SCENE",
+    "name": "kingdom medieval",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-KINGDOM-GUNPOWDER",
+    "type": "PHYSICAL_SCENE",
+    "name": "kingdom gunpowder",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-KINGDOM-INDUSTRIAL",
+    "type": "PHYSICAL_SCENE",
+    "name": "kingdom industrial",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-KINGDOM-MODERN",
+    "type": "PHYSICAL_SCENE",
+    "name": "kingdom modern",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-KINGDOM-FUTURE",
+    "type": "PHYSICAL_SCENE",
+    "name": "kingdom future",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-ADVENTURE-STONE",
+    "type": "PHYSICAL_SCENE",
+    "name": "adventure stone",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-ADVENTURE-BRONZE",
+    "type": "PHYSICAL_SCENE",
+    "name": "adventure bronze",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-ADVENTURE-IRON",
+    "type": "PHYSICAL_SCENE",
+    "name": "adventure iron",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-ADVENTURE-MEDIEVAL",
+    "type": "PHYSICAL_SCENE",
+    "name": "adventure medieval",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-ADVENTURE-GUNPOWDER",
+    "type": "PHYSICAL_SCENE",
+    "name": "adventure gunpowder",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-ADVENTURE-INDUSTRIAL",
+    "type": "PHYSICAL_SCENE",
+    "name": "adventure industrial",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-ADVENTURE-MODERN",
+    "type": "PHYSICAL_SCENE",
+    "name": "adventure modern",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-ADVENTURE-FUTURE",
+    "type": "PHYSICAL_SCENE",
+    "name": "adventure future",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-TACTICAL-STONE",
+    "type": "PHYSICAL_SCENE",
+    "name": "tactical stone",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-TACTICAL-BRONZE",
+    "type": "PHYSICAL_SCENE",
+    "name": "tactical bronze",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-TACTICAL-IRON",
+    "type": "PHYSICAL_SCENE",
+    "name": "tactical iron",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-TACTICAL-MEDIEVAL",
+    "type": "PHYSICAL_SCENE",
+    "name": "tactical medieval",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-TACTICAL-GUNPOWDER",
+    "type": "PHYSICAL_SCENE",
+    "name": "tactical gunpowder",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-TACTICAL-INDUSTRIAL",
+    "type": "PHYSICAL_SCENE",
+    "name": "tactical industrial",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-TACTICAL-MODERN",
+    "type": "PHYSICAL_SCENE",
+    "name": "tactical modern",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-TACTICAL-FUTURE",
+    "type": "PHYSICAL_SCENE",
+    "name": "tactical future",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-DEFENSE-STONE",
+    "type": "PHYSICAL_SCENE",
+    "name": "defense stone",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-DEFENSE-BRONZE",
+    "type": "PHYSICAL_SCENE",
+    "name": "defense bronze",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-DEFENSE-IRON",
+    "type": "PHYSICAL_SCENE",
+    "name": "defense iron",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-DEFENSE-MEDIEVAL",
+    "type": "PHYSICAL_SCENE",
+    "name": "defense medieval",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-DEFENSE-GUNPOWDER",
+    "type": "PHYSICAL_SCENE",
+    "name": "defense gunpowder",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-DEFENSE-INDUSTRIAL",
+    "type": "PHYSICAL_SCENE",
+    "name": "defense industrial",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-DEFENSE-MODERN",
+    "type": "PHYSICAL_SCENE",
+    "name": "defense modern",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "SCENE-DEFENSE-FUTURE",
+    "type": "PHYSICAL_SCENE",
+    "name": "defense future",
+    "outcome": "Source-bound physical trace with 0 forbidden obstacle collisions across continuous route sweeps and footprint anchors",
+    "consumer": "src/data/mode-scenes.json",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "KIT-KNIGHT-STONE",
+    "type": "CLASS_KIT_ROW",
+    "name": "knight stone kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-KNIGHT-MEDIEVAL",
+    "type": "CLASS_KIT_ROW",
+    "name": "knight medieval kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-KNIGHT-GUNPOWDER",
+    "type": "CLASS_KIT_ROW",
+    "name": "knight gunpowder kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-KNIGHT-FUTURE",
+    "type": "CLASS_KIT_ROW",
+    "name": "knight future kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-RANGER-STONE",
+    "type": "CLASS_KIT_ROW",
+    "name": "ranger stone kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-RANGER-MEDIEVAL",
+    "type": "CLASS_KIT_ROW",
+    "name": "ranger medieval kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-RANGER-GUNPOWDER",
+    "type": "CLASS_KIT_ROW",
+    "name": "ranger gunpowder kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-RANGER-FUTURE",
+    "type": "CLASS_KIT_ROW",
+    "name": "ranger future kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-WARLOCK-STONE",
+    "type": "CLASS_KIT_ROW",
+    "name": "warlock stone kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-WARLOCK-MEDIEVAL",
+    "type": "CLASS_KIT_ROW",
+    "name": "warlock medieval kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-WARLOCK-GUNPOWDER",
+    "type": "CLASS_KIT_ROW",
+    "name": "warlock gunpowder kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-WARLOCK-FUTURE",
+    "type": "CLASS_KIT_ROW",
+    "name": "warlock future kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-MAGE-STONE",
+    "type": "CLASS_KIT_ROW",
+    "name": "mage stone kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-MAGE-MEDIEVAL",
+    "type": "CLASS_KIT_ROW",
+    "name": "mage medieval kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-MAGE-GUNPOWDER",
+    "type": "CLASS_KIT_ROW",
+    "name": "mage gunpowder kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-MAGE-FUTURE",
+    "type": "CLASS_KIT_ROW",
+    "name": "mage future kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-PALADIN-STONE",
+    "type": "CLASS_KIT_ROW",
+    "name": "paladin stone kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-PALADIN-MEDIEVAL",
+    "type": "CLASS_KIT_ROW",
+    "name": "paladin medieval kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-PALADIN-GUNPOWDER",
+    "type": "CLASS_KIT_ROW",
+    "name": "paladin gunpowder kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-PALADIN-FUTURE",
+    "type": "CLASS_KIT_ROW",
+    "name": "paladin future kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-BARBARIAN-STONE",
+    "type": "CLASS_KIT_ROW",
+    "name": "barbarian stone kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-BARBARIAN-MEDIEVAL",
+    "type": "CLASS_KIT_ROW",
+    "name": "barbarian medieval kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-BARBARIAN-GUNPOWDER",
+    "type": "CLASS_KIT_ROW",
+    "name": "barbarian gunpowder kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-BARBARIAN-FUTURE",
+    "type": "CLASS_KIT_ROW",
+    "name": "barbarian future kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-NECROMANCER-STONE",
+    "type": "CLASS_KIT_ROW",
+    "name": "necromancer stone kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-NECROMANCER-MEDIEVAL",
+    "type": "CLASS_KIT_ROW",
+    "name": "necromancer medieval kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-NECROMANCER-GUNPOWDER",
+    "type": "CLASS_KIT_ROW",
+    "name": "necromancer gunpowder kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-NECROMANCER-FUTURE",
+    "type": "CLASS_KIT_ROW",
+    "name": "necromancer future kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-HEALER-STONE",
+    "type": "CLASS_KIT_ROW",
+    "name": "healer stone kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-HEALER-MEDIEVAL",
+    "type": "CLASS_KIT_ROW",
+    "name": "healer medieval kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-HEALER-GUNPOWDER",
+    "type": "CLASS_KIT_ROW",
+    "name": "healer gunpowder kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "KIT-HEALER-FUTURE",
+    "type": "CLASS_KIT_ROW",
+    "name": "healer future kit",
+    "outcome": "Consistent class identity across preview/body/portrait/rig; 6 anatomical gear anchors attached correctly",
+    "consumer": "src/client/hero-room.js, actor.js",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "OC01",
+    "type": "OWNER_CONCERN",
+    "name": "Finished Game Appearance",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "qa/mock-led-executor-20261016/mock-design-map.json, style-review.json"
+  },
+  {
+    "id": "OC02",
+    "type": "OWNER_CONCERN",
+    "name": "Natural Sparse Stone Start",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "src/client/main.js:paintPlot, tests/connected-journeys-j01-j18.test.mjs::J01"
+  },
+  {
+    "id": "OC04",
+    "type": "OWNER_CONCERN",
+    "name": "All 32 Physical Scenes Traced",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "qa/mock-led-executor-20261016/scene-registration.json"
+  },
+  {
+    "id": "OC05",
+    "type": "OWNER_CONCERN",
+    "name": "One Coherent Realistic Treatment",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "qa/mock-led-executor-20261016/style-review.json, style-comparison-board.html"
+  },
+  {
+    "id": "OC07",
+    "type": "OWNER_CONCERN",
+    "name": "All 8 Classes x 4 Kit Eras",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "OC08",
+    "type": "OWNER_CONCERN",
+    "name": "Six Functional Visibly Worn Slots",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "qa/mock-led-executor-20261016/body-kit-gear-matrix.json"
+  },
+  {
+    "id": "OC10",
+    "type": "OWNER_CONCERN",
+    "name": "Adventure Connected Playable World",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J05"
+  },
+  {
+    "id": "OC11",
+    "type": "OWNER_CONCERN",
+    "name": "Complete Tactical Control & Decoupling",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "src/client/main.js:drawFigure, tests/connected-journeys-j01-j18.test.mjs::J07"
+  },
+  {
+    "id": "OC12",
+    "type": "OWNER_CONCERN",
+    "name": "Complete Defense & Five War Options",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J09, J10"
+  },
+  {
+    "id": "OC13",
+    "type": "OWNER_CONCERN",
+    "name": "Economy & Full Progression",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "tests/save-stress-horizon.test.mjs, mechanics-coverage.json"
+  },
+  {
+    "id": "OC14",
+    "type": "OWNER_CONCERN",
+    "name": "Complete Supporting Experiences",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs"
+  },
+  {
+    "id": "OC15",
+    "type": "OWNER_CONCERN",
+    "name": "Story, Objectives & Teaching",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "tests/connected-journeys-j01-j18.test.mjs::J14, J17"
+  },
+  {
+    "id": "OC17",
+    "type": "OWNER_CONCERN",
+    "name": "Mobile, Accessibility & Offline Native Integrity",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "qa/mock-led-executor-20261016/viewport-review.json, package.json"
+  },
+  {
+    "id": "OC18",
+    "type": "OWNER_CONCERN",
+    "name": "Whole Connected Finished Delivery",
+    "outcome": "Mandatory outcome and repair procedures executed without bypassing scope",
+    "consumer": "Workspace implementation",
+    "evidence": "qa/mock-led-executor-20261016/journeys.json, completion-contract.json"
+  }
+]

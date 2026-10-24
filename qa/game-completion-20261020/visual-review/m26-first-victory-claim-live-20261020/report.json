@@ -1,0 +1,77 @@
+{
+  "recordedAt": "2026-10-20T16:05:49.071Z",
+  "classification": "NATURAL_UI_FIRST_VICTORY_QUEST_CLAIM_RELOAD",
+  "journey": "new campaign -> visible War menu -> campaign duel -> win -> claim q1 -> reload and verify one-time reward",
+  "note": "Campaign and battle actions use visible game controls. Auto-resolve is the normal in-game tactical action. No campaign state or resources are injected.",
+  "viewports": [
+    {
+      "viewport": "825x375",
+      "worldId": "jade-karst",
+      "startingAge": 0,
+      "winner": "p",
+      "clearedEncounter": "cleared:duel-1",
+      "ready": {
+        "quest": {
+          "claimed": false
+        },
+        "progress": "1 / 1 battle wins",
+        "status": "Ready to claim",
+        "reward": "Reward 120",
+        "claim": true,
+        "disabled": false
+      },
+      "exactPayout": 120,
+      "claimUi": {
+        "status": "Reward claimed",
+        "claimStillPresent": false,
+        "claimedDisabled": true
+      },
+      "repeatPayout": 0,
+      "reloadUi": {
+        "status": "Reward claimed",
+        "claimPresent": false,
+        "claimedDisabled": true
+      },
+      "screenshots": [
+        "q1-ready-825x375.png",
+        "q1-claimed-825x375.png"
+      ]
+    },
+    {
+      "viewport": "1280x720",
+      "worldId": "jade-karst",
+      "startingAge": 0,
+      "winner": "p",
+      "clearedEncounter": "cleared:duel-1",
+      "ready": {
+        "quest": {
+          "claimed": false
+        },
+        "progress": "1 / 1 battle wins",
+        "status": "Ready to claim",
+        "reward": "Reward 120",
+        "claim": true,
+        "disabled": false
+      },
+      "exactPayout": 120,
+      "claimUi": {
+        "status": "Reward claimed",
+        "claimStillPresent": false,
+        "claimedDisabled": true
+      },
+      "repeatPayout": 0,
+      "reloadUi": {
+        "status": "Reward claimed",
+        "claimPresent": false,
+        "claimedDisabled": true
+      },
+      "screenshots": [
+        "q1-ready-1280x720.png",
+        "q1-claimed-1280x720.png"
+      ]
+    }
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "passed": true
+}

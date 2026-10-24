@@ -1,0 +1,387 @@
+{
+  "recordedAt": "2026-10-21T10:43:08.664Z",
+  "classification": "NATURAL_CARDINAL_JOURNEY_TO_OUTER_MAP_EDGE_CURRENT_SOURCE",
+  "journey": "Fresh visible campaign -> underworld -> cardinal moves to an unblocked outer map cell -> save/reload",
+  "note": "Campaign, world, and movement state are never injected. A read-only path search selects an open border cell while excluding guards; every step is then previewed and committed through visible game controls. Actor bounding boxes are recorded as diagnostics and may fail at map edges.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "steps": [
+    {
+      "direction": "south",
+      "position": [
+        3,
+        7
+      ],
+      "moves": 4,
+      "day": 1,
+      "revision": 13,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            -85.46511627906978
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            142.54545454545456,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "frame": {
+          "left": 0,
+          "top": -85.46511840820312,
+          "right": 825,
+          "bottom": 375
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          180.46875,
+          259.8837209302326
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 122.88199615478516,
+              "top": 119.42051696777344,
+              "right": 226.99346923828125,
+              "bottom": 242.47705078125
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 122.88199615478516,
+              "top": 119.42051696777344,
+              "right": 226.99346923828125,
+              "bottom": 222.18771362304688
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "edgeBackdrop": false,
+        "boardGeometry": true,
+        "position": [
+          3,
+          7
+        ]
+      }
+    },
+    {
+      "direction": "south",
+      "position": [
+        3,
+        8
+      ],
+      "moves": 3,
+      "day": 1,
+      "revision": 17,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            -85.46511627906978
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            142.54545454545456,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "frame": {
+          "left": 0,
+          "top": -85.46511840820312,
+          "right": 825,
+          "bottom": 375
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          180.46875,
+          305.9302325581395
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 122.88199615478516,
+              "top": 169.88748168945312,
+              "right": 226.99346923828125,
+              "bottom": 290.5254821777344
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 122.88199615478516,
+              "top": 169.88748168945312,
+              "right": 226.99346923828125,
+              "bottom": 272.6546936035156
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "edgeBackdrop": false,
+        "boardGeometry": true,
+        "position": [
+          3,
+          8
+        ]
+      }
+    },
+    {
+      "direction": "south",
+      "position": [
+        3,
+        9
+      ],
+      "moves": 2,
+      "day": 1,
+      "revision": 20,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            -85.46511627906978
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            142.54545454545456,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "frame": {
+          "left": 0,
+          "top": -85.46511840820312,
+          "right": 825,
+          "bottom": 375
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          180.46875,
+          351.9767441860465
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 122.88199615478516,
+              "top": 207.26702880859375,
+              "right": 226.99346923828125,
+              "bottom": 318.7783203125
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 122.88199615478516,
+              "top": 207.26702880859375,
+              "right": 226.99346923828125,
+              "bottom": 310.0342102050781
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "edgeBackdrop": false,
+        "boardGeometry": true,
+        "position": [
+          3,
+          9
+        ]
+      }
+    }
+  ],
+  "start": {
+    "position": [
+      3,
+      6
+    ],
+    "moves": 5,
+    "revision": 10,
+    "seed": 1727119546,
+    "worldId": "underworld"
+  },
+  "edge": {
+    "position": [
+      3,
+      9
+    ],
+    "pathLength": 3,
+    "path": [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ]
+    ],
+    "candidateCount": 43,
+    "mapSize": [
+      16,
+      10
+    ]
+  },
+  "compactStartCamera": {
+    "viewport": [
+      825,
+      375
+    ],
+    "fit": {
+      "scale": 0.5995639534883721,
+      "offset": [
+        0,
+        -44.30232558139531
+      ],
+      "mode": "focus-cover",
+      "window": [
+        0,
+        73.89090909090902,
+        1376,
+        625.4545454545455
+      ]
+    },
+    "frame": {
+      "left": 0,
+      "top": -44.30232620239258,
+      "right": 825,
+      "bottom": 416.16279220581055
+    },
+    "stage": {
+      "left": 0,
+      "top": 0,
+      "right": 825,
+      "bottom": 375
+    },
+    "heroScreen": [
+      180.46875,
+      255.00000000000003
+    ],
+    "heroVisible": true,
+    "actors": [
+      {
+        "kind": "mount",
+        "id": "horse",
+        "bounds": {
+          "left": 134.40667724609375,
+          "top": 175.1215057373047,
+          "right": 222.29547119140625,
+          "bottom": 260.9769287109375
+        },
+        "withinViewport": true
+      },
+      {
+        "kind": "actor",
+        "id": "knight",
+        "bounds": {
+          "left": 134.40667724609375,
+          "top": 175.1215057373047,
+          "right": 222.29547119140625,
+          "bottom": 239.5935516357422
+        },
+        "withinViewport": true
+      }
+    ],
+    "allActorsWithinViewport": true,
+    "frameCoversViewport": true,
+    "edgeBackdrop": false,
+    "boardGeometry": true,
+    "position": [
+      3,
+      6
+    ]
+  },
+  "destination": {
+    "position": [
+      3,
+      9
+    ],
+    "moves": 2,
+    "day": 1,
+    "visited": [
+      "3,6",
+      "3,7",
+      "3,8",
+      "3,9"
+    ],
+    "revision": 20
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-boundary-underworld-live-20261021-run03\\underworld-outer-edge-825x375.jpg"
+  ],
+  "reload": {
+    "worldId": "underworld",
+    "position": [
+      3,
+      9
+    ],
+    "visited": [
+      "3,6",
+      "3,7",
+      "3,8",
+      "3,9"
+    ],
+    "revision": 24
+  },
+  "actorBoundsPass": true,
+  "passed": true
+}

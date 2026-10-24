@@ -1,0 +1,234 @@
+{
+  "recordedAt": "2026-10-21T07:26:36.658Z",
+  "classification": "NATURAL_UI_GRASSLANDS_STONE_AGE_DWELLING_CLAIM_RELOAD_NOT_FULL_GAME_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh Stone Age Grasslands campaign -> build Barracks -> leave town -> preview/cancel full route -> commit legal route one visible step at a time with visible day restoration when needed -> on-foot dwelling arrival -> ask for fixed offer -> back/reopen -> save/reload -> claim five creatures -> verify once-only payment and reload roster",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "grasslands",
+    "layoutId": "grasslands-layout-15",
+    "start": [
+      8,
+      4
+    ],
+    "destination": [
+      4,
+      6
+    ],
+    "cost": 8,
+    "cells": [
+      [
+        7,
+        4
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "routeBasis": "registered geometry and navigation rules used as read-only assertions; movement is committed one visible map step at a time",
+    "dayRestores": 0,
+    "steps": [
+      {
+        "from": [
+          8,
+          4
+        ],
+        "to": [
+          7,
+          4
+        ],
+        "cost": 1,
+        "movesBefore": 5,
+        "movesAfter": 4
+      },
+      {
+        "from": [
+          7,
+          4
+        ],
+        "to": [
+          6,
+          3
+        ],
+        "cost": 2,
+        "movesBefore": 4,
+        "movesAfter": 2
+      }
+    ],
+    "seedSamples": [
+      {
+        "seed": 1263893816,
+        "layoutId": "grasslands-layout-15",
+        "guardCells": [
+          "6,4",
+          "10,4"
+        ]
+      },
+      {
+        "seed": 1263893816,
+        "layoutId": "grasslands-layout-15",
+        "guardCells": [
+          "6,4",
+          "10,4"
+        ]
+      },
+      {
+        "seed": 1263893816,
+        "layoutId": "grasslands-layout-15",
+        "guardCells": [
+          "6,4",
+          "10,4"
+        ]
+      }
+    ],
+    "fullPreviewTitle": "6 needed · 5 left. Shorten route or end day.",
+    "lastStepState": {
+      "seed": 1263893816,
+      "pendingEncounter": {
+        "id": "guard-5,4",
+        "cell": [
+          5,
+          4
+        ],
+        "origin": [
+          6,
+          3
+        ],
+        "status": "UNRESOLVED",
+        "pack": {
+          "stacks": [
+            {
+              "kind": "creature",
+              "type": "wolf",
+              "age": 0,
+              "rank": 0,
+              "count": 7
+            },
+            {
+              "kind": "creature",
+              "type": "bandit",
+              "age": 0,
+              "rank": 0,
+              "count": 8
+            }
+          ],
+          "boss": false,
+          "power": 1.3104,
+          "row": 2,
+          "carry": -0.4400000000000013
+        }
+      },
+      "cell": [
+        5,
+        4
+      ]
+    }
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [],
+  "campaignId": "campaign-baae9a40-7a18-4e8a-a111-fe226397c407",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 8,
+    "y": 4,
+    "moves": 5,
+    "visited": [
+      "8,4"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 146,
+      "wood": 138,
+      "stone": 119,
+      "gold": 225
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 146,
+      "mineGold": 225
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "geometrySeed": 1263893816,
+  "geometryAnchors": {
+    "hero": [
+      8.5,
+      3.5
+    ],
+    "food": [
+      1.5,
+      1.5
+    ],
+    "wood": [
+      4.5,
+      1.5
+    ],
+    "stone": [
+      10.5,
+      7.5
+    ],
+    "gold": [
+      13.5,
+      4.5
+    ],
+    "guard-ruin": [
+      6.5,
+      4.5
+    ],
+    "guard-mine": [
+      10.5,
+      4.5
+    ]
+  },
+  "geometryGuardCells": [
+    "6,4",
+    "10,4"
+  ],
+  "cancel": {
+    "preservedPosition": [
+      8,
+      4
+    ],
+    "preservedMoves": 5
+  },
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: the committed route step does not start an encounter\n+ actual - expected\n\n+ {\n+   cell: [\n+     5,\n+     4\n+   ],\n+   id: 'guard-5,4',\n+   origin: [\n+     6,\n+     3\n+   ],\n+   pack: {\n+     boss: false,\n+     carry: -0.4400000000000013,\n+     power: 1.3104,\n+     row: 2,\n+     stacks: [\n+       {\n+         age: 0,\n+         count: 7,\n+         kind: 'creature',\n+         rank: 0,\n+         type: 'wolf'\n+       },\n+       {\n+         age: 0,\n+         count: 8,\n+         kind: 'creature',\n+         rank: 0,\n+         type: 'bandit'\n+       }\n+     ]\n+   },\n+   status: 'UNRESOLVED'\n+ }\n- null\n",
+  "failureStack": "AssertionError [ERR_ASSERTION]: the committed route step does not start an encounter\n+ actual - expected\n\n+ {\n+   cell: [\n+     5,\n+     4\n+   ],\n+   id: 'guard-5,4',\n+   origin: [\n+     6,\n+     3\n+   ],\n+   pack: {\n+     boss: false,\n+     carry: -0.4400000000000013,\n+     power: 1.3104,\n+     row: 2,\n+     stacks: [\n+       {\n+         age: 0,\n+         count: 7,\n+         kind: 'creature',\n+         rank: 0,\n+         type: 'wolf'\n+       },\n+       {\n+         age: 0,\n+         count: 8,\n+         kind: 'creature',\n+         rank: 0,\n+         type: 'bandit'\n+       }\n+     ]\n+   },\n+   status: 'UNRESOLVED'\n+ }\n- null\n\n    at file:///C:/dev/ages-of-dominion-reborn/qa/game-completion-20261021/visual-review/adventure-grasslands-stone-dwelling-natural-live-20261021.mjs:220:12"
+}

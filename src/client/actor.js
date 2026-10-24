@@ -8,6 +8,27 @@ import { hoofContact, pose } from './rig.js';
 import { visibleBox } from './visible-size.js';
 
 let worldCssPerUnit = 1;
+let actorImages = new Map();
+let reusableImages = new Map();
+export function beginActorFrame() {
+  reusableImages = actorImages;
+  actorImages = new Map();
+}
+function actorImage(element, attributes) {
+  const key = attributes.href;
+  const available = reusableImages.get(key);
+  const image = available?.pop() || element('image', attributes);
+  if (!image?.attributes || typeof image.getAttribute !== 'function' || typeof image.setAttribute !== 'function' || typeof image.removeAttribute !== 'function') return image;
+  for (const attribute of [...image.attributes]) {
+    if (!(attribute.name in attributes)) image.removeAttribute(attribute.name);
+  }
+  for (const [name, value] of Object.entries(attributes)) {
+    if (image.getAttribute(name) !== String(value)) image.setAttribute(name, value);
+  }
+  if (!actorImages.has(key)) actorImages.set(key, []);
+  actorImages.get(key).push(image);
+  return image;
+}
 export function setWorldCssScale(scale) {
   worldCssPerUnit = Number.isFinite(scale) && scale > 0 ? scale : 1;
 }
@@ -51,6 +72,23 @@ export function clipAngles(clip, t, reduced = false) {
     pose.weapon = -30 + swing * 20;
     pose.spine = -6;
     pose.head = -2;
+  } else if (clip === 'buff') {
+    pose.arm = -48 + swing * 18;
+    pose.forearm = -28 + swing * 10;
+    pose.weapon = -12 + swing * 12;
+    pose.spine = -4;
+    pose.head = -4;
+  } else if (clip === 'heal') {
+    pose.arm = -42 + swing * 14;
+    pose.forearm = -24 + swing * 10;
+    pose.weapon = -8 + swing * 8;
+    pose.spine = -3;
+    pose.head = -3;
+  } else if (clip === 'debuff') {
+    pose.spine = 8;
+    pose.head = 6;
+    pose.arm = 18;
+    pose.forearm = 12;
   } else if (clip === 'hit') {
     pose.spine = 26;
     pose.head = 18;
@@ -81,16 +119,13 @@ export function mountGait(t, reduced = false) {
   });
 }
 
-let clipSerial = 0;
 function sheetCrop(element, href, box, pivot) {
   const [bx, by, bw, bh] = box;
   const [px, py] = pivot;
-  const id = `part-clip-${clipSerial++}`;
-  const clip = element('clipPath', { id, clipPathUnits: 'userSpaceOnUse' });
-  clip.append(element('rect', { x: 0, y: 0, width: bw, height: bh }));
   const group = element('g', { transform: `translate(${-bw * px} ${-bh * py})` });
-  group.append(clip);
-  group.append(element('image', { href, x: -bx, y: -by, width: 1024, height: 1024, 'clip-path': `url(#${id})` }));
+  const crop = element('svg', { x: 0, y: 0, width: bw, height: bh, viewBox: `${bx} ${by} ${bw} ${bh}`, overflow: 'hidden', preserveAspectRatio: 'none' });
+  crop.append(actorImage(element, { href: new URL(`../../${href}`, import.meta.url).href, x: 0, y: 0, width: 1024, height: 1024 }));
+  group.append(crop);
   return { node: group, length: bh * (1 - py) };
 }
 function partNode(element, spec, name, href) {
@@ -118,6 +153,7 @@ function chain(element, parent, spec, href, names, angles, x, y) {
     host = group;
     first = false;
   });
+  return host;
 }
 
 function landmarks(spec) {
@@ -200,49 +236,154 @@ export function drawSchematic(world, element, x, y, { facing = 1, scale = 1, cli
   return root;
 }
 
-const WORN_PLACES = {
-  helm: [0.5, 0.0],
-  weapon: [0.86, 0.4],
-  offhand: [0.02, 0.44],
-  armor: [0.5, 0.32],
-  boots: [0.5, 0.84],
-  accessory: [0.16, 0.2],
+// Fractions of the standing figure. The icon is drawn at this anchor, not in a floating card.
+export const WORN_ANCHORS = {
+  helm: [0.5, 0.08],
+  weapon: [0.88, 0.53],
+  offhand: [0.13, 0.53],
+  armor: [0.5, 0.36],
+  boots: [0.5, 0.92],
+  accessory: [0.5, 0.19],
+};
+const WORN_PLACES = WORN_ANCHORS;
+
+// Body attachments are stricter than item icons. Only a reviewed native-alpha wearable
+// layer or held prop with a local source and declared role may appear on the anatomy.
+export function isWearLayerSupported(slot, layer) {
+  const role = slot === 'weapon' ? 'held-prop' : 'wearable-layer';
+  return Boolean(
+    WORN_PLACES[slot] &&
+    layer &&
+    typeof layer.file === 'string' &&
+    layer.file.startsWith('assets/') &&
+    !/^https?:/i.test(layer.file) &&
+    layer.assetRole === role &&
+    layer.nativeAlpha === true &&
+    Number.isFinite(layer.aspect) && layer.aspect > 0 &&
+    (!layer.fit || (Number.isFinite(layer.fit.w) && layer.fit.w > 0 && layer.fit.w <= 1.5 && Number.isFinite(layer.fit.h) && layer.fit.h > 0 && layer.fit.h <= 1.5)) &&
+    Array.isArray(layer.sourceAnchor) && layer.sourceAnchor.length === 2 &&
+    layer.sourceAnchor.every(value => Number.isFinite(value) && value >= 0 && value <= 1)
+  );
+}
+
+export function shouldDrawRigWeapon(worn) {
+  if (worn == null) return true;
+  const weapon = worn.items?.weapon;
+  return Boolean(weapon) && !isWearLayerSupported('weapon', weapon.wearLayer);
+}
+
+// Box fractions are intentionally sized against a standing figure, then fit without stretching.
+// The destination is the real attachment point, not the centre of a floating inventory plate.
+const SLOT_FIT = {
+  helm: { w: 0.28, h: 0.15, rotate: 0, source: [0.5, 0.5] },
+  weapon: { w: 0.54, h: 0.31, rotate: 0, source: [0.72, 0.52] },
+  offhand: { w: 0.33, h: 0.27, rotate: 0, source: [0.5, 0.5] },
+  armor: { w: 0.56, h: 0.34, rotate: 0, source: [0.5, 0.5] },
+  boots: { w: 0.32, h: 0.16, rotate: 0, source: [0.5, 0.5] },
+  accessory: { w: 0.13, h: 0.11, rotate: 0, source: [0.5, 0.5] },
 };
 
-// Six worn slots sit on the figure. An empty slot stays an empty anchor. An icon is drawn only for a real equipped item.
-export function paintWornSlots(group, element, worn, box) {
+export function paintWornSlots(group, element, worn, box, { slots = Object.keys(WORN_PLACES), attachedTo = null } = {}) {
   if (!group || !box) return;
   const items = worn?.items || {};
-  for (const slot of Object.keys(WORN_PLACES)) {
+  for (const slot of slots) {
     const item = items[slot] || null;
+    const wearLayer = item?.wearLayer || null;
+    const attached = isWearLayerSupported(slot, wearLayer);
     const [fx, fy] = WORN_PLACES[slot];
-    const size = Math.max(18, box.width * 0.14);
-    const x = box.x + box.width * fx - size / 2;
-    const y = box.y + box.height * fy;
-    const node = element('g', {
+    const attributes = {
       'data-worn-slot': slot,
       'data-worn-state': item ? 'worn' : 'empty',
-      'data-worn-bonus': item?.bonus || '',
+      'data-worn-appearance': attached ? 'attached-asset' : item ? 'socket-only' : 'empty',
       'data-worn-item': item?.id || '',
-    });
-    node.append(element('rect', {
-      x, y, width: size, height: size, rx: 4,
-      fill: item ? '#1c2428cc' : '#1c242866',
-      stroke: item ? '#e6d3a1' : '#8c7447',
-      'stroke-width': 2,
-    }));
-    if (item?.icon) {
-      node.append(element('image', {
-        href: item.icon, x, y, width: size, height: size, 'data-gear-icon': item.iconId || slot,
-      }));
-    } else {
-      const label = element('text', {
-        x: x + size / 2, y: y + size * 0.62, 'text-anchor': 'middle', fill: '#e6d3a1', 'font-size': Math.max(8, size * 0.22),
+    };
+    if (attachedTo) attributes['data-attached-to'] = attachedTo;
+    const node = element('g', attributes);
+    if (attached) {
+      const fit = SLOT_FIT[slot];
+      const fitted = wearLayer.fit || fit;
+      const maxWidth = box.width * fitted.w;
+      const maxHeight = box.height * fitted.h;
+      const drawHeight = Math.min(maxHeight, maxWidth / wearLayer.aspect);
+      const drawWidth = drawHeight * wearLayer.aspect;
+      const cx = box.x + box.width * fx;
+      const cy = box.y + box.height * fy;
+      const [sourceX, sourceY] = wearLayer.sourceAnchor;
+      const rotation = Number.isFinite(wearLayer.rotate) ? wearLayer.rotate : fit.rotate;
+      const layer = element('g', {
+        transform: `translate(${cx} ${cy}) rotate(${rotation})`,
+        'data-slot-layer': slot,
+        'data-anchor': `${fx},${fy}`,
+        'data-source-anchor': `${sourceX},${sourceY}`,
       });
-      label.textContent = slot;
-      node.append(label);
+      layer.append(element('image', {
+        href: wearLayer.file,
+        class: 'worn-gear-art',
+        preserveAspectRatio: 'xMidYMid meet',
+        x: -drawWidth * sourceX,
+        y: -drawHeight * sourceY,
+        width: drawWidth,
+        height: drawHeight,
+        'data-wear-layer-role': wearLayer.assetRole,
+        'data-wear-layer-source': wearLayer.file,
+      }));
+      node.append(layer);
     }
     group.append(node);
+  }
+}
+
+
+function paintWornBootPair(body, element, worn, box, feet) {
+  const item = worn?.items?.boots || null;
+  const layer = item?.wearLayer || null;
+  const split = layer?.pairSplit;
+  const anchorY = layer?.pairAnchorY;
+  const supportedPair = isWearLayerSupported('boots', layer)
+    && Number.isFinite(split) && split > 0 && split < 1
+    && Number.isFinite(anchorY) && anchorY >= 0 && anchorY <= 1
+    && feet?.far && feet?.near;
+  if (!supportedPair) {
+    paintWornSlots(body, element, worn, box, { slots: ['boots'], attachedTo: 'spine' });
+    return;
+  }
+
+  const fit = layer.fit || SLOT_FIT.boots;
+  const maxWidth = box.width * fit.w;
+  const maxHeight = box.height * fit.h;
+  const drawHeight = Math.min(maxHeight, maxWidth / layer.aspect);
+  const shoeWidth = drawHeight * layer.aspect * split;
+  for (const [side, foot, sourceX] of [['far', feet.far, 0], ['near', feet.near, split]]) {
+    const overlay = element('g', {
+      'data-worn-slot': 'boots',
+      'data-worn-state': 'worn',
+      'data-worn-appearance': 'attached-asset',
+      'data-worn-item': item.id || '',
+      'data-attached-to': 'foot',
+      'data-boot-side': side,
+    });
+    const crop = element('svg', {
+      x: -shoeWidth / 2,
+      y: (foot.__len || 0) - drawHeight * anchorY,
+      width: shoeWidth,
+      height: drawHeight,
+      viewBox: `${sourceX} 0 ${split} 1`,
+      preserveAspectRatio: 'none',
+      overflow: 'hidden',
+      'data-boot-overlay': side,
+    });
+    crop.append(element('image', {
+      href: layer.file,
+      x: 0,
+      y: 0,
+      width: 1,
+      height: 1,
+      preserveAspectRatio: 'none',
+      'data-wear-layer-role': layer.assetRole,
+      'data-wear-layer-source': layer.file,
+    }));
+    overlay.append(crop);
+    foot.append(overlay);
   }
 }
 
@@ -268,8 +409,9 @@ export function drawActor(world, element, classId, { x, y, scale = 0.2, facing =
   root.append(element('ellipse', { cx: 0, cy: 6, rx: 70, ry: 16, fill: '#00000066' }));
   const body = element('g', { transform: `rotate(${pose.spine})`, 'data-joint': 'spine' });
   const torso = spec.parts.torso;
-  chain(element, body, spec, spec.file, ['thigh', 'shin', 'foot'], [pose.thighL, pose.shinL, 0], marks.farHip[0], marks.farHip[1]);
+  const farFoot = chain(element, body, spec, spec.file, ['thigh', 'shin', 'foot'], [pose.thighL, pose.shinL, 0], marks.farHip[0], marks.farHip[1]);
   const trunk = partNode(element, spec, 'torso', spec.file);
+  let headJoint = null;
   if (trunk) {
     const placed = element('g', { 'data-joint': 'torso' });
     placed.append(trunk.node);
@@ -279,16 +421,38 @@ export function drawActor(world, element, classId, { x, y, scale = 0.2, facing =
       const neck = element('g', { transform: `translate(${marks.neck[0]} ${marks.neck[1]}) rotate(${pose.head})`, 'data-joint': 'neck' });
       neck.append(head.node);
       placed.append(neck);
+      headJoint = neck;
     }
   }
-  chain(element, body, spec, spec.file, ['thigh', 'shin', 'foot'], [pose.thighR, pose.shinR, 0], marks.nearHip[0], marks.nearHip[1]);
+  const nearFoot = chain(element, body, spec, spec.file, ['thigh', 'shin', 'foot'], [pose.thighR, pose.shinR, 0], marks.nearHip[0], marks.nearHip[1]);
   const armHost = body.querySelector?.('[data-joint="torso"]') || body;
-  const armParts = ['arm', 'forearm', 'weapon'].filter(name => spec.parts[name]);
+  const rigWeapon = shouldDrawRigWeapon(worn);
+  const armParts = ['arm', 'forearm', ...(rigWeapon ? ['weapon'] : [])].filter(name => spec.parts[name]);
   const armAngles = { arm: pose.arm, forearm: pose.forearm, weapon: pose.weapon };
-  chain(element, armHost, spec, spec.file, armParts, armParts.map(name => armAngles[name]), marks.shoulder[0], marks.shoulder[1]);
+  const armEnd = chain(element, armHost, spec, spec.file, armParts, armParts.map(name => armAngles[name]), marks.shoulder[0], marks.shoulder[1]);
   root.append(body);
   const span = torso[3] + 40;
-  paintWornSlots(root, element, worn, { x: -span * 0.35, y: -span, width: span * 0.7, height: span });
+  const wornBox = { x: -span * 0.35, y: -span, width: span * 0.7, height: span };
+  paintWornSlots(body, element, worn, wornBox, { slots: ['offhand', 'armor', 'accessory'], attachedTo: 'spine' });
+  paintWornBootPair(body, element, worn, wornBox, { far: farFoot, near: nearFoot });
+  const headBox = headJoint
+    ? { ...wornBox, x: wornBox.x - marks.neck[0], y: wornBox.y - marks.neck[1] }
+    : wornBox;
+  paintWornSlots(headJoint || body, element, worn, headBox, { slots: ['helm'], attachedTo: headJoint ? 'head' : 'spine' });
+  const weapon = worn?.items?.weapon?.wearLayer;
+  if (isWearLayerSupported('weapon', weapon) && armEnd) {
+    const [fx, fy] = WORN_ANCHORS.weapon;
+    const handBox = { ...wornBox, x: wornBox.x - wornBox.width * fx, y: wornBox.y - wornBox.height * fy };
+    const hand = element('g', {
+      transform: `translate(0 ${armEnd.__len || 0}) rotate(${pose.weapon})`,
+      'data-joint': 'weapon',
+      'data-angle': String(pose.weapon),
+    });
+    paintWornSlots(hand, element, worn, handBox, { slots: ['weapon'], attachedTo: 'hand' });
+    armEnd.append(hand);
+  } else {
+    paintWornSlots(root, element, worn, wornBox, { slots: ['weapon'], attachedTo: 'root' });
+  }
   world.append(root);
   return root;
 }
@@ -314,6 +478,7 @@ export function drawReviewMount(world, element, { x, y, facing = 1, time = 0, re
     'data-gait': reviewMount.gait,
     'data-hoof-articulation': reviewMount.hoofArticulation,
     'data-moving': moving && !reduced ? 'bob-only' : 'still',
+    'pointer-events': 'none',
   });
   root.append(element('image', {
     href: reviewMount.file,
@@ -333,13 +498,13 @@ export function drawReviewMount(world, element, { x, y, facing = 1, time = 0, re
   };
 }
 
-export function drawMount(world, element, { x, y, scale = 0.28, facing = 1, time = 0, reduced = false, moving = false, riderClass = null } = {}) {
+export function drawMount(world, element, { x, y, scale = 0.28, facing = 1, time = 0, reduced = false, moving = false, riderClass = null, worn = null } = {}) {
   const mount = atlas.mounts.horse;
   // The horse crop still includes its floor plane. It is not a world sprite.
-  if (!atlas.mountReady || !mount?.bodyFile || !mount.legs?.length) return null;
+  if (!mount?.bodyFile || !mount.legs?.length) return null;
   const gait = mountGait(moving && !reduced ? time : 0, reduced || !moving);
   const [bx, by, bw, bh] = mount.body;
-  const root = element('g', { transform: `translate(${x} ${y}) scale(${facing * scale} ${scale})`, 'data-mount': 'horse', 'data-moving': moving ? '1' : '0' });
+  const root = element('g', { transform: `translate(${x} ${y}) scale(${facing * scale} ${scale})`, 'data-mount': 'horse', 'data-gait': 'legged', 'data-moving': moving ? '1' : '0', 'pointer-events': 'none' });
   root.append(element('ellipse', { cx: bw * 0.45, cy: 8, rx: bw * 0.32, ry: 18, fill: '#00000066' }));
   const body = sheetCrop(element, mount.bodyFile, mount.body, [0, 1]);
   root.append(body.node);
@@ -357,10 +522,14 @@ export function drawMount(world, element, { x, y, scale = 0.28, facing = 1, time
   if (riderClass) {
     const saddle = mount.saddle || [0.46, 0.58];
     drawActor(root, element, riderClass, {
-      x: bw * saddle[0], y: -bh * saddle[1], scale: 0.22, facing: 1,
+      x: bw * saddle[0], y: -bh * saddle[1], scale: mount.riderScale || 0.22, facing: 1,
       clip: moving && !reduced ? 'mountWalk' : 'idle', time, reduced: reduced || !moving,
+      worn,
     });
   }
+  const centred = element('g', { transform: `translate(${-bw / 2} 0)` });
+  centred.append(...root.childNodes);
+  root.append(centred);
   world.append(root);
   return root;
 }
@@ -369,18 +538,23 @@ export function plateOffset(time, { fly = false, clip = 'idle', reduced = false 
   if (reduced) return { y: 0, rot: 0 };
   const u = ((time % 1) + 1) % 1;
   const wave = Math.sin(u * Math.PI * 2);
+  const arc = Math.sin(u * Math.PI);
+  if (clip === 'cast') return { y: (fly ? -10 : 0) - arc * 6, rot: -arc * 6 };
+  if (clip === 'buff') return { y: (fly ? -10 : 0) - arc * 4, rot: 0 };
+  if (clip === 'heal') return { y: (fly ? -10 : 0) - arc * 5, rot: 0 };
+  if (clip === 'debuff') return { y: (fly ? -6 : 0) + arc * 3, rot: 0 };
   if (fly) return { y: -10 + wave * -8, rot: wave * 6 };
   if (clip === 'walk' || clip === 'attack') return { y: Math.abs(wave) * -5, rot: clip === 'attack' ? -12 + u * 24 : wave * 3 };
   if (clip === 'hit') return { y: 2, rot: 14 };
   if (clip === 'death') return { y: 8, rot: 70 };
-  return { y: wave * 1.2, rot: 0 };
+  return { y: 0, rot: 0 };
 }
 
 export function staticMountForAge(age) {
   return Object.values(staticMounts.mounts).find(mount => age >= mount.minAge && age <= mount.maxAge) || null;
 }
 
-export function drawStaticMount(world, element, mount, x, y, { facing = 1, time = 0, reduced = false, moving = false } = {}) {
+export function drawStaticMount(world, element, mount, x, y, { facing = 1, time = 0, reduced = false, moving = false, riderClass = null, worn = null } = {}) {
   if (!mount?.file || mount.displayHeight > 64 || mount.gait !== 'single-pose') return null;
   const [x0, y0, x1, y1] = mount.tightBBox;
   const bboxH = y1 - y0;
@@ -403,6 +577,7 @@ export function drawStaticMount(world, element, mount, x, y, { facing = 1, time 
     'data-rider': mount.rider,
     'data-display-height': String(mount.displayHeight),
     'data-moving': moving && !reduced ? 'bob-only' : 'still',
+    'pointer-events': 'none',
   });
   root.append(element('image', {
     href: mount.file,
@@ -411,6 +586,18 @@ export function drawStaticMount(world, element, mount, x, y, { facing = 1, time 
     width: mount.width * pixel,
     height: mount.height * pixel,
   }));
+  if (riderClass) {
+    const seatY = -y1 * pixel + bob + drawn.height * 0.22;
+    const seatX = 0;
+    const driver = drawActor(root, element, riderClass, {
+      x: seatX, y: seatY, scale: 0.12, facing: 1,
+      clip: moving && !reduced ? 'mountWalk' : 'idle', time, reduced: reduced || !moving,
+      worn,
+    });
+    if (driver) {
+      driver.setAttribute('data-vehicle-driver', riderClass);
+    }
+  }
   world.append(root);
   return root;
 }
@@ -425,7 +612,7 @@ export function drawPlate(world, element, plate, x, y, height, { opacity = 1, ti
   const width = fitted.width;
   const single = plate.pose === 'single';
   const motion = single && clip === 'idle'
-    ? { y: reduced ? 0 : Math.sin((((time % 1) + 1) % 1) * Math.PI * 2) * 1.5, rot: 0 }
+    ? { y: 0, rot: 0 }
     : plateOffset(time, { fly, clip, reduced });
   const group = element('g', {
     transform: `translate(${x} ${y + motion.y}) rotate(${motion.rot})`,
@@ -438,7 +625,7 @@ export function drawPlate(world, element, plate, x, y, height, { opacity = 1, ti
     'data-semantic-limit': plate.semanticLimit || '',
   });
   group.append(element('ellipse', { cx: 0, cy: 2, rx: Math.max(8, width * 0.28), ry: 5, fill: '#00000066', opacity }));
-  group.append(element('image', { href: plate.file, x: -width / 2, y: -drawnHeight, width, height: drawnHeight, opacity, 'data-plate': plate.file }));
+  group.append(actorImage(element, { href: plate.file, x: -width / 2, y: -drawnHeight, width, height: drawnHeight, opacity, 'data-plate': plate.file }));
   world.append(group);
   return true;
 }

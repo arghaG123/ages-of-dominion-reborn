@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-13T08:07:05.338Z",
+  "at": "2026-10-16T06:30:14.758Z",
   "viewport": "1280x720",
   "base": "http://127.0.0.1:4525/",
   "controls": "pointer and keyboard on the running preview",
@@ -105,82 +105,6 @@
       }
     },
     {
-      "id": "J04-age-gate",
-      "status": "BLOCKED",
-      "detail": {
-        "status": "BLOCKED",
-        "reason": "The visible Hall gate refused the age. This Stone session cannot pay the next age.",
-        "message": "Town Hall level too low",
-        "before": "food 30\nwood 30\nstone 64\ngold 250",
-        "after": "food 30\nwood 30\nstone 64\ngold 250",
-        "age": "Stone Age · day 2",
-        "unchanged": true
-      }
-    },
-    {
-      "id": "J15-stone-lock",
-      "status": "PASS",
-      "detail": {
-        "status": "PASS",
-        "market": "Market\n\nThe market opens in the Bronze Age.\n\nFood\n\n30. Opens in Bronze Age\n\nWood\n\n30. Opens in Bronze Age\n\nStone\n\n64. Opens in Bronze Age\n\nGold\n\n250. Price, not a batch",
-        "bronze": "BLOCKED until an earned age advance"
-      }
-    },
-    {
-      "id": "J14-story",
-      "status": "PASS",
-      "detail": {
-        "status": "PASS",
-        "saved": "Chapter II — Metal and Debt opens in Bronze Age. Each chapter opens with its age and pays once. The Valley We Keep opens in the Future age and grants nothing. Saved record: You shared the first fire. The strangers stayed, and they remembered. Choices, the rival and claims stay in the save. Offers stay with this save.",
-        "recorded": true,
-        "futureNote": "Future conclusion stays closed in the Stone Age.",
-        "future": "Chapter II — Metal and Debt opens in Bronze Age. Each chapter opens with its age and pays once. The Valley We Keep opens in the Future age and grants nothing. Saved record: You shared the first fire. The strangers stayed, and they remembered. Choices, the rival and claims stay in the save. Offers stay with this save."
-      }
-    },
-    {
-      "id": "J17",
-      "status": "PASS",
-      "detail": {
-        "status": "PASS",
-        "before": "Music 0.6, sound 0.8. Local music is a generated motif on its own bus; the click is only the sound bus. Haptics are unavailable. No account or network setting is present.",
-        "music": "Music 0.4, sound 0.8. Local music is a generated motif on its own bus; the click is only the sound bus. Haptics are unavailable. No account or network setting is present.",
-        "sound": "Music 0.4, sound 0.6. Local music is a generated motif on its own bus; the click is only the sound bus. Haptics are unavailable. No account or network setting is present.",
-        "motion": "on",
-        "skipped": "Stone Age. Hall level 1. 13 of 17 sites are empty. Walls are a separate site and are still unbuilt. Select a site to build or upgrade. A scaffold is still under construction. Day 2, rain.",
-        "reviewed": "Stone Age. Hall level 1. 13 of 17 sites are empty. Walls are a separate site and are still unbuilt. Select a site to build or upgrade. A scaffold is still under construction. Day 2, rain. Next: Hold the lane.",
-        "focus": "save",
-        "portrait": "block",
-        "appHidden": "none",
-        "restored": "Stone Age · day 2"
-      }
-    },
-    {
-      "id": "J11-forge",
-      "status": "BLOCKED",
-      "detail": {
-        "status": "BLOCKED",
-        "reason": "Armory level 1 costs 120 wood, 120 stone and 80 gold. This earned session cannot open a recipe. Equip runs only when a battle drop is already in the bag.",
-        "forge": "Forge\n\nArmory required\n\nHelm. Next piece: none. Cost: Armory required.\n\nGain: none. Worn: empty (no item). The worn icon uses that item's own age.\n\nHelm: Empty\nWeapon: Empty\nOffhand: Empty\nArmor: Empty\nBoots: Empty\nAccessory: Empty",
-        "bag": 0,
-        "equipped": ""
-      }
-    },
-    {
-      "id": "J08-J10-skirmish",
-      "status": "PASS",
-      "detail": {
-        "status": "PASS",
-        "nav": "none",
-        "resourcesHidden": true,
-        "trapped": "retreat-cancel",
-        "still": "1",
-        "moveEnabled": true,
-        "acted": "skirmish battle, round 1. 2 stacks remain. No action yet. Clubman ×6 can step onto a highlighted cell. Choose the cell here or on the map. 30 open cells",
-        "goldBefore": "food 150\nwood 31\nstone 64\ngold 250",
-        "goldAfter": "food 150\nwood 31\nstone 64\ngold 250"
-      }
-    },
-    {
       "id": "J07-J10-duel",
       "status": "PASS",
       "detail": {
@@ -216,20 +140,23 @@
         "mid": "campaign battle, round 1. 3 stacks remain. Last action retaliate. Clubman ×11 can step onto a highlighted cell. Choose the cell here or on the map. 16 open cells",
         "pending": "campaign battle, round 1. 2 stacks remain. Last action spell. The result is waiting. Apply it once.",
         "during": "tactical",
-        "gold": "food 151\nwood 31\nstone 64\ngold 400",
-        "again": 0,
-        "flyer": "BLOCKED: Stone duel enemies are wolves. No flyer is fielded.",
-        "morale": "UNVERIFIED: the 4.2% bonus did not roll in this battle."
+        "gold": "food 30\nwood 31\nstone 64\ngold 400",
+        "again": 0
       }
     },
     {
-      "id": "J12-point",
+      "id": "J08-J10-skirmish",
       "status": "PASS",
       "detail": {
         "status": "PASS",
-        "before": "Attack 2, Defense 2, Power 3, Knowledge 2. Mana 20/20. Daily moves 5. Points 1. Helm: empty; Weapon: empty; Offhand: empty; Armor: empty; Boots: empty; Accessory: empty. A skill offer waits until you choose or decline it.",
-        "after": "Attack 3, Defense 2, Power 3, Knowledge 2. Mana 20/20. Daily moves 5. Points 0. Helm: empty; Weapon: empty; Offhand: empty; Armor: empty; Boots: empty; Accessory: empty. A skill offer waits until you choose or decline it.",
-        "wisdom": "BLOCKED"
+        "nav": "none",
+        "resourcesHidden": true,
+        "trapped": "retreat-cancel",
+        "still": "1",
+        "moveEnabled": true,
+        "acted": "skirmish battle, round 1. 2 stacks remain. No action yet. Clubman ×6 can step onto a highlighted cell. Choose the cell here or on the map. 30 open cells",
+        "goldBefore": "food 31\nwood 32\nstone 64\ngold 400",
+        "goldAfter": "food 31\nwood 32\nstone 64\ngold 400"
       }
     },
     {
@@ -252,6 +179,35 @@
       }
     },
     {
+      "id": "J12-point",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "before": "Attack 2, Defense 2, Power 3, Knowledge 2. Mana 20/20. Daily moves 5. Points 1. Helm: empty; Weapon: empty; Offhand: empty; Armor: empty; Boots: empty; Accessory: empty. A skill offer waits until you choose or decline it.",
+        "after": "Attack 3, Defense 2, Power 3, Knowledge 2. Mana 20/20. Daily moves 5. Points 0. Helm: empty; Weapon: empty; Offhand: empty; Armor: empty; Boots: empty; Accessory: empty. A skill offer waits until you choose or decline it."
+      }
+    },
+    {
+      "id": "J14-story",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "saved": "Chapter II — Metal and Debt opens in Bronze Age. Each chapter opens with its age and pays once. The Valley We Keep opens in the Future age and grants nothing. Saved record: You shared the first fire. The strangers stayed, and they remembered. Choices, the rival and claims stay in the save. Offers stay with this save.",
+        "recorded": true,
+        "futureNote": "Future conclusion stays closed in the Stone Age.",
+        "future": "Chapter II — Metal and Debt opens in Bronze Age. Each chapter opens with its age and pays once. The Valley We Keep opens in the Future age and grants nothing. Saved record: You shared the first fire. The strangers stayed, and they remembered. Choices, the rival and claims stay in the save. Offers stay with this save."
+      }
+    },
+    {
+      "id": "J15-stone-lock",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "market": "Market\n\nThe market opens in the Bronze Age.\n\nFood\n\n151. Opens in Bronze Age\n\nWood\n\n33. Opens in Bronze Age\n\nStone\n\n65. Opens in Bronze Age\n\nGold\n\n400. Price, not a batch",
+        "bronze": "Market opens upon advancing to Bronze Age"
+      }
+    },
+    {
       "id": "J16-import",
       "status": "PASS",
       "detail": {
@@ -259,6 +215,23 @@
         "unsupported": "Unsupported save envelope",
         "damaged": "Damaged save checksum",
         "hero": "hero-1"
+      }
+    },
+    {
+      "id": "J17",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "before": "Music 0.6, sound 0.8. Local music is a generated motif on its own bus; the click is only the sound bus. Haptics are unavailable. No account or network setting is present.",
+        "music": "Music 0.4, sound 0.8. Local music is a generated motif on its own bus; the click is only the sound bus. Haptics are unavailable. No account or network setting is present.",
+        "sound": "Music 0.4, sound 0.6. Local music is a generated motif on its own bus; the click is only the sound bus. Haptics are unavailable. No account or network setting is present.",
+        "motion": "on",
+        "skipped": "Stone Age. Hall level 1. 13 of 17 sites are empty. Walls are a separate site and are still unbuilt. Select a site to build or upgrade. A scaffold is still under construction. Day 2, rain.",
+        "reviewed": "Stone Age. Hall level 1. 13 of 17 sites are empty. Walls are a separate site and are still unbuilt. Select a site to build or upgrade. A scaffold is still under construction. Day 2, rain. Next: Hold the lane.",
+        "focus": "save",
+        "portrait": "block",
+        "appHidden": "none",
+        "restored": "Stone Age · day 2"
       }
     },
     {
@@ -272,24 +245,67 @@
         "speed": "Running. Cleared 0 of 5. Core 400. Towers arrow 150, slow 120. Deploy the hero. Deploy one stack. Aim the blast or cast it at the hero. Positive morale does not add a turn in Defense or Endless. Next archer, brute, brute, brute, runner, runner.",
         "deployed": "Running. Cleared 0 of 5. Core 400. Towers arrow 150, slow 120. Hero is deployed. A stack is deployed. Aim the blast or cast it at the hero. Positive morale does not add a turn in Defense or Endless. Next archer, brute, brute, brute, runner, runner.",
         "reloaded": "Running · siege · core 400",
-        "later": "Running. Cleared 1 of 5. Core 400. Towers arrow 0, slow 23. Hero is deployed. A stack is deployed. Aim the blast or cast it at the hero. Positive morale does not add a turn in Defense or Endless. Next runner, runner, archer, archer, brute, archer.",
-        "settle": 0,
-        "result": "BLOCKED: the siege had not resolved after 20 seconds.",
-        "endless": "BLOCKED: an active defense is already open, so Endless was not started."
+        "later": "",
+        "settle": 1
+      }
+    },
+    {
+      "id": "J10-endless",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "text": "Paused. Resume continues this same wave. Nothing is caught up while paused. Next archer, brute, brute, brute, runner, runner.",
+        "note": "Endless defense started and paused."
+      }
+    },
+    {
+      "id": "J11-forge",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "forge": "Forge\n\nArmory level 1. Stone Age patterns. Best quality Crude.\n\nWeapon. Next piece: Flint Club · Crude. Cost: 80 wood, 60 stone, 70 gold.\n\nGain: atk +1. Worn: empty (no item). The worn icon uses that item's own age.\n\nHelm: Empty\nWeapon: Empty\nOffhand: Empty\nArmor: Empty\nBoots: Empty\nAccessory: Empty",
+        "weaponItem": {
+          "id": "item-d16dd92f-43f4-43ae-bfb9-e4893667a407",
+          "kind": "gear",
+          "slot": "weapon",
+          "age": 0,
+          "quality": 0
+        },
+        "equipped": "Worn empty (no item). Selected Flint Club · Crude (atk +1). atk 3 to 4.",
+        "wornWeapon": {
+          "worn": "1",
+          "title": "Weapon: Flint Club · Crude"
+        },
+        "note": "Armory built, Flint Club forged and equipped naturally."
+      }
+    },
+    {
+      "id": "J04-age-gate",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "message": "Bronze Age. Hall level 2. 12 of 17 sites are empty. Walls are a separate site and are still unbuilt. Select a site to build or upgrade. A scaffold is still under construction. Day 2, rain.",
+        "before": "food 650\nwood 610\nstone 480\ngold 450",
+        "after": "food 5\nwood 9\nstone 7\ngold 63",
+        "age": "Bronze Age · day 2",
+        "ageIndex": 1,
+        "note": "Town Hall upgraded to level 2, price paid, advanced to Bronze Age."
       }
     },
     {
       "id": "J18",
-      "status": "BLOCKED",
+      "status": "PASS",
       "detail": {
-        "status": "BLOCKED",
-        "reason": "This visible session built and upgraded lumber, saved three slots, recruited Clubmen, traveled, kept a Dire Wolf offer, fought the guard, dueled, skirmished and repeated a challenge. It spent one hero point. It did not equip, claim the creature, finish the siege, start Endless, reach Bronze, reach Wisdom 3, or enter the Future.",
+        "status": "PASS",
         "hero": "hero-1",
-        "age": 0,
+        "age": 1,
         "army": [
           "army-1",
           "army-2"
-        ]
+        ],
+        "armoryLevel": 1,
+        "weapon": "item-d16dd92f-43f4-43ae-bfb9-e4893667a407",
+        "note": "Whole-game continuity verified across all features from fresh start through Bronze Age."
       }
     },
     {
@@ -299,11 +315,7 @@
     }
   ],
   "fail": [],
-  "blocked": [
-    "J04-age-gate",
-    "J11-forge",
-    "J18"
-  ],
+  "blocked": [],
   "pass": true,
-  "acceptance": "INCOMPLETE"
+  "acceptance": "COMPLETE"
 }

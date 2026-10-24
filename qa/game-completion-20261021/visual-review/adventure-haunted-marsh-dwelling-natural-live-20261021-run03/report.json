@@ -1,0 +1,112 @@
+{
+  "recordedAt": "2026-10-21T16:35:50.502Z",
+  "classification": "NATURAL_UI_ADVENTURE_DWELLING_CLAIM_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh campaign -> build Barracks -> leave town -> preview/cancel route -> confirm legal road route to dwelling -> on-foot site arrival -> ask for fixed offer -> back to road and reopen the same offer -> save/reload -> claim creatures -> verify Q3 ready -> claim its reward once -> save/reload -> verify roster and both rewards",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "haunted-marsh",
+    "layoutId": "haunted-marsh-layout-10",
+    "start": [
+      3,
+      8
+    ],
+    "destination": [
+      11,
+      7
+    ],
+    "cost": 9,
+    "cells": [
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        11,
+        7
+      ]
+    ]
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [],
+  "campaignId": "campaign-23c47551-9369-47e5-bbfa-513cf37f4705",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 3,
+    "y": 8,
+    "moves": 5,
+    "visited": [
+      "3,8"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 147,
+      "wood": 132,
+      "stone": 103,
+      "gold": 243
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 147,
+      "mineGold": 243
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "cancel": {
+    "preservedPosition": [
+      3,
+      8
+    ],
+    "preservedMoves": 5
+  },
+  "passed": false,
+  "failure": "Error: locator.getAttribute: Error: strict mode violation: locator('[data-choice=\"confirm-route\"]') resolved to 2 elements:\n    1) <button type=\"button\" class=\"icon-medallion\" data-choice=\"confirm-route\" title=\"Confirm route · cost 1 · 5 moves available\" aria-label=\"Confirm route · cost 1 · 5 moves available\">…</button> aka getByRole('button', { name: 'Confirm route · cost 1 · 5' })\n    2) <button type=\"button\" data-choice=\"confirm-route\">Confirm route · cost 1</button> aka getByText('Confirm route · cost')\n\nCall log:\n\u001b[2m  - waiting for locator('[data-choice=\"confirm-route\"]')\u001b[22m\n"
+}

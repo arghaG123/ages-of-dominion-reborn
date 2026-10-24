@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/24-army.jpg",
+  "screen": "Army",
+  "status": "PARTIAL_VISUAL_REVIEW; NATURAL_MEDIEVAL_RECHECK_ADDED; M24_AND_WHOLE_GAME_OPEN",
+  "supersededBy": "m24-army-natural-medieval-live-review-20261022.json supersedes this record's Iron-age campaign provenance only; its earlier layout measurements and preview review remain historical.",
+  "campaign": {
+    "slot": 2,
+    "age": "Iron Age",
+    "day": 3,
+    "provenance": "Working test copy saved from the preserved slot 1 before natural actions; slot 1 was not edited.",
+    "naturalActions": [
+      "Upgrade Town Hall from level 2 to level 3 through the visible Kingdom action.",
+      "End one day through the visible Kingdom action so construction completed.",
+      "Advance naturally from Bronze Age to Iron Age through the visible confirmation."
+    ]
+  },
+  "armyPreview": {
+    "reviewAge": "Medieval Age",
+    "source": "Visible audit-only Show Medieval Age units control.",
+    "isNaturalCampaignAge": false,
+    "selectedRole": "Man-at-Arms",
+    "roster": ["Clubman x12", "Slinger x8", "Bone Crusher x5"],
+    "codexAge": "Iron Age",
+    "recruitment": "No Medieval recruitment was performed; campaign remains Iron Age."
+  },
+  "viewports": [
+    {
+      "requested": [1280, 720],
+      "observedCss": [1280, 720],
+      "boxes": {
+        "showcase": [24, 78, 1232, 574],
+        "centeredRoleImages": [448, 284, 105, 210],
+        "codex": [1102, 10, 166, 418],
+        "inspector": [980, 434, 288, 274],
+        "roster": [72, 472, 287, 168],
+        "rosterRow": [82, 507, 267, 127],
+        "rosterCards": [
+          [82, 507, 82, 117],
+          [168, 507, 82, 117],
+          [254, 507, 82, 117]
+        ],
+        "navigation": [14, 650, 274, 58]
+      }
+    },
+    {
+      "requested": [933, 424],
+      "observedCss": [934, 424],
+      "boxes": {
+        "showcase": [12, 56, 668, 211],
+        "codex": [692, 56, 230, 126],
+        "inspector": [692, 188, 230, 168],
+        "roster": [12, 272, 668, 84],
+        "navigation": [10, 360, 264, 56]
+      }
+    },
+    {
+      "requested": [825, 375],
+      "observedCss": [826, 375],
+      "boxes": {
+        "showcase": [12, 56, 560, 162],
+        "codex": [584, 56, 230, 126],
+        "inspector": [584, 188, 230, 119],
+        "roster": [12, 223, 560, 84],
+        "navigation": [10, 312, 264, 56]
+      }
+    }
+  ],
+  "visualFindings": [
+    "At 1280x720, the live Army desktop now follows the M24 panel composition: a wide courtyard, smaller centered troop lineup, Codex upper-right, selected/recruitment inspector lower-right, and roster lower-left.",
+    "All three current formation cards fit within the desktop roster shelf without horizontal scrolling; compact rules restore the dock inset and retain the scrollable roster cards.",
+    "At 933x424 and 825x375, the desktop overlays return to the compact two-column layout; the Codex and inspector stack in the right column and the roster stays in the left lower row.",
+    "The test copy is naturally Iron Age while the visible Army preview is Medieval. The live visual preview is useful for the mock comparison, but it does not prove a natural Medieval campaign, Medieval Codex unlock state, or natural Medieval recruitment.",
+    "Compact viewport overrides report one extra CSS pixel of width: 934 instead of 933, and 826 instead of 825. These are not exact-size captures.",
+    "The in-session CUA screenshots were visually inspected but were not saved as image files in this record. Bounding boxes and accessibility state are retained as supporting evidence, not a substitute for retained pixel captures or owner acceptance."
+  ],
+  "verification": {
+    "targetedResponsiveTests": "27/27 passed",
+    "fullNodeSuite": "260/260 passed",
+    "sourceChanges": ["src/client/polish.css", "tests/visual-responsive-20261018.test.mjs"],
+    "release": "No build or APK made."
+  },
+  "open": [
+    "See m24-army-natural-medieval-live-review-20261022.json for the subsequent natural Medieval age comparison; recruitment, all-age lineup, exact compact sizes, retained captures and owner acceptance remain open.",
+    "Capture and review current M24 pixels at exact 825x375, 933x424 and 1280x720 sizes.",
+    "Verify all-age Army lineups, real Medieval recruitment, all M01-M30 mock surfaces, J01-J18 natural journeys, and the complete independent desktop acceptance gate.",
+    "M18 age-matched defense and ten-wave natural Endless requirements remain open; the latest recorded Endless run ended after two non-leaked clears."
+  ]
+}

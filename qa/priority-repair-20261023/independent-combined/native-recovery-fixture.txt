@@ -1,0 +1,6 @@
+- heading "Isolated native IndexedDB recovery fixture" [level=1]
+- paragraph: This page refuses to seed any origin with existing campaign data. Fixture only.
+- button "Create damaged fixture with valid backup" [disabled]
+- generic: "{ \"fixture\": true, \"native\": true, \"staleRejected\": true, \"staleDidNotChangeLive\": true, \"backupMatchesRevision0\": true, \"status\": \"DAMAGED\", \"backupGold\": 150, \"rawMatches\": true, \"head\": { \"epoch\": 1, \"campaignId\": \"campaign-23102377\", \"revision\": 1, \"checksum\": \"67271eb0\", \"updatedAt\": 1792764899563 } }"
+- link "Open game recovery":
+  - /url: /?audit

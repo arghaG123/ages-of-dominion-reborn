@@ -1,0 +1,15 @@
+{
+  "status": "REJECTED_GEOMETRY",
+  "bindingChanged": false,
+  "nativeSHA256": "4dbd7a5ca798173d39596b0edfa91797d2723c09b2ee40b162990256ec5ba796",
+  "evidence": "qa-geometry-overlay.png",
+  "observations": [
+    "The river and crossing centers broadly follow the guide, but physical bridge decks extend substantially outside the specified crossing rectangles.",
+    "The R3 starting formation is on a raised bank/cliff rather than continuous legal dry ground.",
+    "The L3 foot envelope contacts the bridge edge and adjacent inaccessible bank.",
+    "Some legal cells adjacent to the river contain cliff faces and boulders. Center sampling alone would miss this."
+  ],
+  "nextRepair": "Constrained edit of this returned native with an explicit dry-ground repair mask and exact geometry guide; remove intruding bank cliffs and flatten/shorten crossings. Do not regenerate other ages from this failed template.",
+  "liabilityRetainedUSD": 0.4,
+  "ownerAcceptance": "NOT_REQUESTED"
+}

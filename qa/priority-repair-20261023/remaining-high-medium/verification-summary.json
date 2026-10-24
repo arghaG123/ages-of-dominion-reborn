@@ -1,0 +1,4664 @@
+{
+  "verifiedAt": "2026-10-24T06:01:44.910Z",
+  "url": "http://127.0.0.1:62364",
+  "isolatedContext": true,
+  "existingUserOriginsTouched": false,
+  "skirmishTwoRoundRepro": {
+    "round1Before": {
+      "viewport": "825x375",
+      "usefulWorldRatio": 0.9094,
+      "panelOpen": false,
+      "panelWidth": 0,
+      "stageWidth": 825,
+      "stageHeight": 375,
+      "plaque": {
+        "text": "Knight · Level 1 XP 0 · Mana 10 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+        "ariaLabel": "Knight, level 1, 0 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 10.",
+        "width": 220,
+        "height": 70
+      },
+      "spellButton": {
+        "disabled": false,
+        "reason": "available",
+        "ariaLabel": "Spell. 9 casts · 1/round",
+        "title": "9 casts · 1/round"
+      },
+      "statusAllowance": {
+        "reason": "available",
+        "text": "Clubman ×12 · Your turn · Spell: 9 casts · 1/round"
+      },
+      "messageText": "skirmish battle, round 1. 5 stacks remain. Last action defend. Clubman ×12 can step onto a highlighted cell. Choose the cell here or on the map. 21 open cells"
+    },
+    "round1Arrow": {
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "bearClip": "hit",
+      "spellEffects": [
+        {
+          "targetId": "sk-e-bear",
+          "spellId": "arrow",
+          "category": "damage",
+          "motif": "damage-impact",
+          "selfTarget": false,
+          "reducedMotion": false
+        }
+      ]
+    },
+    "movedClubmanWalkCount": 6,
+    "slingerTurnRound1": {
+      "viewport": "825x375",
+      "usefulWorldRatio": 0.9094,
+      "panelOpen": false,
+      "panelWidth": 0,
+      "stageWidth": 825,
+      "stageHeight": 375,
+      "plaque": {
+        "text": "Knight · Level 1 XP 0 · Mana 5 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+        "ariaLabel": "Knight, level 1, 0 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 5.",
+        "width": 220,
+        "height": 70
+      },
+      "spellButton": {
+        "disabled": true,
+        "reason": "round-used",
+        "ariaLabel": "Spell. Round cast used (1/round)",
+        "title": "Round cast used (1/round)"
+      },
+      "statusAllowance": {
+        "reason": "round-used",
+        "text": "Slinger ×7 · Your turn · Spell: Round cast used (1/round)"
+      },
+      "messageText": "skirmish battle, round 1. 5 stacks remain. Last action move. Slinger ×7 can step onto a highlighted cell. Choose the cell here or on the map. 28 open cells Spell: Round cast used (1/round)."
+    },
+    "round2Before": {
+      "viewport": "825x375",
+      "usefulWorldRatio": 0.9094,
+      "panelOpen": false,
+      "panelWidth": 0,
+      "stageWidth": 825,
+      "stageHeight": 375,
+      "plaque": {
+        "text": "Knight · Level 1 XP 0 · Mana 5 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+        "ariaLabel": "Knight, level 1, 0 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 5.",
+        "width": 220,
+        "height": 70
+      },
+      "spellButton": {
+        "disabled": false,
+        "reason": "available",
+        "ariaLabel": "Spell. 5 casts · 1/round",
+        "title": "5 casts · 1/round"
+      },
+      "statusAllowance": {
+        "reason": "available",
+        "text": "Clubman ×12 · Your turn · Spell: 5 casts · 1/round"
+      },
+      "messageText": "skirmish battle, round 2. 5 stacks remain. Last action strike. Clubman ×12 can step onto a highlighted cell. Choose the cell here or on the map. 11 open cells"
+    },
+    "round2Bless": {
+      "clubmanFigures": [
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "cast",
+          "targetClip": "buff",
+          "spellRole": "self-cast",
+          "spellId": "bless",
+          "spellCategory": "buff",
+          "selfTarget": true,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "cast",
+          "plateTransform": "translate(698 524.530953758357) rotate(-0.4690462416429759)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "cast",
+          "targetClip": "buff",
+          "spellRole": "self-cast",
+          "spellId": "bless",
+          "spellCategory": "buff",
+          "selfTarget": true,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "cast",
+          "plateTransform": "translate(719 524.530953758357) rotate(-0.4690462416429759)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "cast",
+          "targetClip": "buff",
+          "spellRole": "self-cast",
+          "spellId": "bless",
+          "spellCategory": "buff",
+          "selfTarget": true,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "cast",
+          "plateTransform": "translate(740 524.530953758357) rotate(-0.4690462416429759)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "cast",
+          "targetClip": "buff",
+          "spellRole": "self-cast",
+          "spellId": "bless",
+          "spellCategory": "buff",
+          "selfTarget": true,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "cast",
+          "plateTransform": "translate(698 542.530953758357) rotate(-0.4690462416429759)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "cast",
+          "targetClip": "buff",
+          "spellRole": "self-cast",
+          "spellId": "bless",
+          "spellCategory": "buff",
+          "selfTarget": true,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "cast",
+          "plateTransform": "translate(719 542.530953758357) rotate(-0.4690462416429759)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "cast",
+          "targetClip": "buff",
+          "spellRole": "self-cast",
+          "spellId": "bless",
+          "spellCategory": "buff",
+          "selfTarget": true,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "cast",
+          "plateTransform": "translate(740 542.530953758357) rotate(-0.4690462416429759)",
+          "actorClip": null
+        }
+      ],
+      "spellEffects": [
+        {
+          "targetId": "sk-p-army-1",
+          "spellId": "bless",
+          "category": "buff",
+          "motif": "buff-crest",
+          "selfTarget": true,
+          "reducedMotion": false
+        }
+      ]
+    },
+    "round2AfterBlessZeroMana": {
+      "viewport": "825x375",
+      "usefulWorldRatio": 0.9094,
+      "panelOpen": false,
+      "panelWidth": 0,
+      "stageWidth": 825,
+      "stageHeight": 375,
+      "plaque": {
+        "text": "Knight · Level 1 XP 0 · Mana 0 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+        "ariaLabel": "Knight, level 1, 0 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 0.",
+        "width": 220,
+        "height": 70
+      },
+      "spellButton": {
+        "disabled": true,
+        "reason": "round-used",
+        "ariaLabel": "Spell. Round cast used (1/round)",
+        "title": "Round cast used (1/round)"
+      },
+      "statusAllowance": {
+        "reason": "round-used",
+        "text": "Clubman ×12 · Your turn · Spell: Round cast used (1/round)"
+      },
+      "messageText": "skirmish battle, round 2. 5 stacks remain. Last action spell (Bless). Clubman ×12 can step onto a highlighted cell. Choose the cell here or on the map. 11 open cells Spell: Round cast used (1/round)."
+    }
+  },
+  "viewports": {
+    "825x375": {
+      "beforeCast": {
+        "viewport": "825x375",
+        "usefulWorldRatio": 0.9094,
+        "panelOpen": false,
+        "panelWidth": 0,
+        "stageWidth": 825,
+        "stageHeight": 375,
+        "plaque": {
+          "text": "Knight · Level 1 XP 120 · Mana 30 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+          "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 30.",
+          "width": 220,
+          "height": 70
+        },
+        "spellButton": {
+          "disabled": false,
+          "reason": "available",
+          "ariaLabel": "Spell. 20 casts · 1/round",
+          "title": "20 casts · 1/round"
+        },
+        "statusAllowance": {
+          "reason": "available",
+          "text": "Clubman ×4 · Your turn · Spell: 20 casts · 1/round"
+        },
+        "messageText": "Imported campaign loaded."
+      },
+      "afterCastRoundUsed": {
+        "viewport": "825x375",
+        "usefulWorldRatio": 0.9094,
+        "panelOpen": false,
+        "panelWidth": 0,
+        "stageWidth": 825,
+        "stageHeight": 375,
+        "plaque": {
+          "text": "Knight · Level 1 XP 120 · Mana 16 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+          "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 16.",
+          "width": 220,
+          "height": 70
+        },
+        "spellButton": {
+          "disabled": true,
+          "reason": "round-used",
+          "ariaLabel": "Spell. Round cast used (1/round)",
+          "title": "Round cast used (1/round)"
+        },
+        "statusAllowance": {
+          "reason": "round-used",
+          "text": "Clubman ×4 · Your turn · Spell: Round cast used (1/round)"
+        },
+        "messageText": "skirmish battle, round 1. 5 stacks remain. Last action spell (Fireball). Clubman ×4 can step onto a highlighted cell. Choose the cell here or on the map. 24 open cells Spell: Round cast used (1/round)."
+      },
+      "zeroMana": {
+        "viewport": "825x375",
+        "usefulWorldRatio": 0.9094,
+        "panelOpen": false,
+        "panelWidth": 0,
+        "stageWidth": 825,
+        "stageHeight": 375,
+        "plaque": {
+          "text": "Knight · Level 1 XP 120 · Mana 0 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+          "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 0.",
+          "width": 220,
+          "height": 70
+        },
+        "spellButton": {
+          "disabled": true,
+          "reason": "insufficient-mana",
+          "ariaLabel": "Spell. Insufficient mana (0/5)",
+          "title": "Insufficient mana (0/5)"
+        },
+        "statusAllowance": {
+          "reason": "insufficient-mana",
+          "text": "Clubman ×4 · Your turn · Spell: Insufficient mana (0/5)"
+        },
+        "messageText": "Imported campaign loaded."
+      }
+    },
+    "933x424": {
+      "metricsAfterFiveManaCastToZero": {
+        "viewport": "933x424",
+        "usefulWorldRatio": 0.9292,
+        "panelOpen": false,
+        "panelWidth": 0,
+        "stageWidth": 933,
+        "stageHeight": 424,
+        "plaque": {
+          "text": "Knight · Level 1 XP 120 · Mana 0 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+          "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 0.",
+          "width": 220,
+          "height": 70
+        },
+        "spellButton": {
+          "disabled": true,
+          "reason": "round-used",
+          "ariaLabel": "Spell. Round cast used (1/round)",
+          "title": "Round cast used (1/round)"
+        },
+        "statusAllowance": {
+          "reason": "round-used",
+          "text": "Clubman ×4 · Your turn · Spell: Round cast used (1/round)"
+        },
+        "messageText": "skirmish battle, round 1. 5 stacks remain. Last action spell (Magic Arrow). Clubman ×4 can step onto a highlighted cell. Choose the cell here or on the map. 24 open cells Spell: Round cast used (1/round)."
+      },
+      "spellEffectsCount": 1
+    },
+    "1280x720": {
+      "metricsAfterFiveManaCastToZero": {
+        "viewport": "1280x720",
+        "usefulWorldRatio": 0.9245,
+        "panelOpen": false,
+        "panelWidth": 0,
+        "stageWidth": 1280,
+        "stageHeight": 720,
+        "plaque": {
+          "text": "Knight · Level 1 XP 120 · Mana 0 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+          "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 0.",
+          "width": 278,
+          "height": 93
+        },
+        "spellButton": {
+          "disabled": true,
+          "reason": "round-used",
+          "ariaLabel": "Spell. Round cast used (1/round)",
+          "title": "Round cast used (1/round)"
+        },
+        "statusAllowance": {
+          "reason": "round-used",
+          "text": "Clubman ×4 · Your turn · Spell: Round cast used (1/round)"
+        },
+        "messageText": "skirmish battle, round 1. 5 stacks remain. Last action spell (Magic Arrow). Clubman ×4 can step onto a highlighted cell. Choose the cell here or on the map. 24 open cells Spell: Round cast used (1/round)."
+      },
+      "spellEffectsCount": 1
+    }
+  },
+  "spellsVerified": {
+    "fireball": {
+      "choiceId": "spellcast:fireball:sk-e-wolf",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.2922231028517) rotate(-0.7077768971482717)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.2922231028517) rotate(-0.7077768971482717)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.2922231028517) rotate(-0.7077768971482717)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.2922231028517) rotate(-0.7077768971482717)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.2922231028517) rotate(-0.7077768971482717)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.2922231028517) rotate(-0.7077768971482717)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(644 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(665 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 441) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(644 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(665 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(713 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(734 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(755 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(713 141) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(686 77) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(707 77) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(728 77) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(663 181) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "fireball",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(684 181) rotate(14)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-e-wolf",
+            "spellId": "fireball",
+            "category": "damage",
+            "motif": "damage-impact",
+            "selfTarget": false,
+            "reducedMotion": false
+          },
+          {
+            "targetId": "sk-e-bandit",
+            "spellId": "fireball",
+            "category": "damage",
+            "motif": "damage-impact",
+            "selfTarget": false,
+            "reducedMotion": false
+          },
+          {
+            "targetId": "sk-e-bear",
+            "spellId": "fireball",
+            "category": "damage",
+            "motif": "damage-impact",
+            "selfTarget": false,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "fireball",
+            "category": "damage",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "fireball",
+            "category": "damage",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "fireball",
+            "category": "damage",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "fireball",
+            "category": "damage",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-e-wolf"
+          }
+        ]
+      }
+    },
+    "arrow": {
+      "choiceId": "spellcast:arrow:sk-e-wolf",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.2616032198194) rotate(-0.738396780180601)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.2616032198194) rotate(-0.738396780180601)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.2616032198194) rotate(-0.738396780180601)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.2616032198194) rotate(-0.738396780180601)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.2616032198194) rotate(-0.738396780180601)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.2616032198194) rotate(-0.738396780180601)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(644 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(665 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 441) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(644 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(665 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(713 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(734 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(755 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "arrow",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(713 141) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-e-wolf",
+            "spellId": "arrow",
+            "category": "damage",
+            "motif": "damage-impact",
+            "selfTarget": false,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "arrow",
+            "category": "damage",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "arrow",
+            "category": "damage",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-e-wolf"
+          }
+        ]
+      }
+    },
+    "bolt": {
+      "choiceId": "spellcast:bolt:sk-e-wolf",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.53778747044674) rotate(-0.4622125295532288)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.53778747044674) rotate(-0.4622125295532288)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.53778747044674) rotate(-0.4622125295532288)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.53778747044674) rotate(-0.4622125295532288)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.53778747044674) rotate(-0.4622125295532288)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.53778747044674) rotate(-0.4622125295532288)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(644 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(665 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 441) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(644 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(665 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(713 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(734 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(755 123) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "hit",
+            "targetClip": "hit",
+            "spellRole": "target",
+            "spellId": "bolt",
+            "spellCategory": "damage",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "hit",
+            "plateTransform": "translate(713 141) rotate(14)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-e-wolf",
+            "spellId": "bolt",
+            "category": "damage",
+            "motif": "damage-impact",
+            "selfTarget": false,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "bolt",
+            "category": "damage",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "bolt",
+            "category": "damage",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-e-wolf"
+          }
+        ]
+      }
+    },
+    "blessSelf": {
+      "choiceId": "spellcast:bless:sk-p-army-1",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "buff",
+            "spellRole": "self-cast",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.2922231028517) rotate(-0.7077768971482759)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "buff",
+            "spellRole": "self-cast",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.2922231028517) rotate(-0.7077768971482759)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "buff",
+            "spellRole": "self-cast",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.2922231028517) rotate(-0.7077768971482759)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "buff",
+            "spellRole": "self-cast",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.2922231028517) rotate(-0.7077768971482759)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "buff",
+            "spellRole": "self-cast",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.2922231028517) rotate(-0.7077768971482759)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "buff",
+            "spellRole": "self-cast",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.2922231028517) rotate(-0.7077768971482759)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(644 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(665 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 441) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(644 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(665 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(734 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(755 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 139) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-p-army-1",
+            "spellId": "bless",
+            "category": "buff",
+            "motif": "buff-crest",
+            "selfTarget": true,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "bless",
+            "category": "buff",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "bless",
+            "category": "buff",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-p-army-1"
+          }
+        ]
+      }
+    },
+    "blessAlly": {
+      "choiceId": "spellcast:bless:sk-p-army-2",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.28881995512364) rotate(-0.7111800448763509)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.28881995512364) rotate(-0.7111800448763509)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.28881995512364) rotate(-0.7111800448763509)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.28881995512364) rotate(-0.7111800448763509)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.28881995512364) rotate(-0.7111800448763509)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.28881995512364) rotate(-0.7111800448763509)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(644 432.5258799700824) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(665 432.5258799700824) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(686 432.5258799700824) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(644 450.5258799700824) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(665 450.5258799700824) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "bless",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(686 450.5258799700824) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(734 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(755 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 139) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-p-army-2",
+            "spellId": "bless",
+            "category": "buff",
+            "motif": "buff-crest",
+            "selfTarget": false,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "bless",
+            "category": "buff",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "bless",
+            "category": "buff",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-p-army-2"
+          }
+        ]
+      }
+    },
+    "haste": {
+      "choiceId": "spellcast:haste:sk-p-army-2",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(644 432.6827471056041) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(665 432.6827471056041) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(686 432.6827471056041) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(644 450.6827471056041) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(665 450.6827471056041) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "buff",
+            "targetClip": "buff",
+            "spellRole": "target",
+            "spellId": "haste",
+            "spellCategory": "buff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "buff",
+            "plateTransform": "translate(686 450.6827471056041) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(734 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(755 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 139) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-p-army-2",
+            "spellId": "haste",
+            "category": "buff",
+            "motif": "buff-crest",
+            "selfTarget": false,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "haste",
+            "category": "buff",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "haste",
+            "category": "buff",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-p-army-2"
+          }
+        ]
+      }
+    },
+    "cureSelf": {
+      "choiceId": "spellcast:cure:sk-p-army-1",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "heal",
+            "spellRole": "self-cast",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "heal",
+            "spellRole": "self-cast",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "heal",
+            "spellRole": "self-cast",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "heal",
+            "spellRole": "self-cast",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "heal",
+            "spellRole": "self-cast",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": "heal",
+            "spellRole": "self-cast",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": true,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(644 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(665 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 441) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(644 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(665 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(734 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(755 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 139) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-p-army-1",
+            "spellId": "cure",
+            "category": "heal",
+            "motif": "heal-restoration",
+            "selfTarget": true,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "cure",
+            "category": "heal",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "cure",
+            "category": "heal",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-p-army-1"
+          }
+        ]
+      }
+    },
+    "cureAlly": {
+      "choiceId": "spellcast:cure:sk-p-army-2",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.5275371313069) rotate(-0.4724628686931236)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.5275371313069) rotate(-0.4724628686931236)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.5275371313069) rotate(-0.4724628686931236)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.5275371313069) rotate(-0.4724628686931236)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.5275371313069) rotate(-0.4724628686931236)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.5275371313069) rotate(-0.4724628686931236)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(644 432.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(665 432.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(686 432.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(644 450.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(665 450.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "cure",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(686 450.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(734 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(755 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 139) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-p-army-2",
+            "spellId": "cure",
+            "category": "heal",
+            "motif": "heal-restoration",
+            "selfTarget": false,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "cure",
+            "category": "heal",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "cure",
+            "category": "heal",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-p-army-2"
+          }
+        ]
+      }
+    },
+    "resurrect": {
+      "choiceId": "spellcast:resurrect:sk-p-army-2",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.5275371313069) rotate(-0.47246286869313203)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(644 432.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(665 432.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(686 432.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(644 450.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(665 450.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "heal",
+            "targetClip": "heal",
+            "spellRole": "target",
+            "spellId": "resurrect",
+            "spellCategory": "heal",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "heal",
+            "plateTransform": "translate(686 450.60628094275575) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(734 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(755 121) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(713 139) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-p-army-2",
+            "spellId": "resurrect",
+            "category": "heal",
+            "motif": "resurrect-crown",
+            "selfTarget": false,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "resurrect",
+            "category": "heal",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "resurrect",
+            "category": "heal",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-p-army-2"
+          }
+        ]
+      }
+    },
+    "slow": {
+      "choiceId": "spellcast:slow:sk-e-wolf",
+      "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+      "sample": {
+        "figures": [
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 398.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 398.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 398.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(540 416.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(561 416.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-1",
+            "side": "p",
+            "clip": "cast",
+            "targetClip": null,
+            "spellRole": "caster",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+            "plateMotion": "cast",
+            "plateTransform": "translate(582 416.52412065840616) rotate(-0.47587934159383005)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(644 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(665 433) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 441) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(644 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(665 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-p-army-2",
+            "side": "p",
+            "clip": "death",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "single-pose",
+            "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+            "plateMotion": "death",
+            "plateTransform": "translate(686 459) rotate(70)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "debuff",
+            "targetClip": "debuff",
+            "spellRole": "target",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "debuff",
+            "plateTransform": "translate(713 121.23793967079692) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "debuff",
+            "targetClip": "debuff",
+            "spellRole": "target",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "debuff",
+            "plateTransform": "translate(734 121.23793967079692) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "debuff",
+            "targetClip": "debuff",
+            "spellRole": "target",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "debuff",
+            "plateTransform": "translate(755 121.23793967079692) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-wolf",
+            "side": "e",
+            "clip": "debuff",
+            "targetClip": "debuff",
+            "spellRole": "target",
+            "spellId": "slow",
+            "spellCategory": "debuff",
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+            "plateMotion": "debuff",
+            "plateTransform": "translate(713 139.23793967079692) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(686 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(707 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bandit",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(728 75) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(663 179) rotate(0)",
+            "actorClip": null
+          },
+          {
+            "stackId": "sk-e-bear",
+            "side": "e",
+            "clip": "idle",
+            "targetClip": null,
+            "spellRole": null,
+            "spellId": null,
+            "spellCategory": null,
+            "selfTarget": false,
+            "articulation": "plate",
+            "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+            "plateMotion": "idle",
+            "plateTransform": "translate(684 179) rotate(0)",
+            "actorClip": null
+          }
+        ],
+        "spellEffects": [
+          {
+            "targetId": "sk-e-wolf",
+            "spellId": "slow",
+            "category": "debuff",
+            "motif": "slow-shackle",
+            "selfTarget": false,
+            "reducedMotion": false
+          }
+        ],
+        "spellCasters": [
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "slow",
+            "category": "debuff",
+            "reducedMotion": false
+          },
+          {
+            "casterId": "sk-p-army-1",
+            "spellId": "slow",
+            "category": "debuff",
+            "reducedMotion": false
+          }
+        ],
+        "committedFeedback": [
+          {
+            "kind": "spell",
+            "sourceId": "sk-p-army-1",
+            "targetId": "sk-e-wolf"
+          }
+        ]
+      }
+    }
+  },
+  "allowanceStatesVerified": {
+    "roundUsed": {
+      "viewport": "825x375",
+      "usefulWorldRatio": 0.9094,
+      "panelOpen": false,
+      "panelWidth": 0,
+      "stageWidth": 825,
+      "stageHeight": 375,
+      "plaque": {
+        "text": "Knight · Level 1 XP 120 · Mana 16 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+        "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 16.",
+        "width": 220,
+        "height": 70
+      },
+      "spellButton": {
+        "disabled": true,
+        "reason": "round-used",
+        "ariaLabel": "Spell. Round cast used (1/round)",
+        "title": "Round cast used (1/round)"
+      },
+      "statusAllowance": {
+        "reason": "round-used",
+        "text": "Clubman ×4 · Your turn · Spell: Round cast used (1/round)"
+      },
+      "messageText": "skirmish battle, round 1. 5 stacks remain. Last action spell (Fireball). Clubman ×4 can step onto a highlighted cell. Choose the cell here or on the map. 24 open cells Spell: Round cast used (1/round)."
+    },
+    "insufficientMana": {
+      "viewport": "825x375",
+      "usefulWorldRatio": 0.9094,
+      "panelOpen": false,
+      "panelWidth": 0,
+      "stageWidth": 825,
+      "stageHeight": 375,
+      "plaque": {
+        "text": "Knight · Level 1 XP 120 · Mana 0 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+        "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 0.",
+        "width": 220,
+        "height": 70
+      },
+      "spellButton": {
+        "disabled": true,
+        "reason": "insufficient-mana",
+        "ariaLabel": "Spell. Insufficient mana (0/5)",
+        "title": "Insufficient mana (0/5)"
+      },
+      "statusAllowance": {
+        "reason": "insufficient-mana",
+        "text": "Clubman ×4 · Your turn · Spell: Insufficient mana (0/5)"
+      },
+      "messageText": "Imported campaign loaded."
+    },
+    "noKnownSpell": {
+      "viewport": "825x375",
+      "usefulWorldRatio": 0.9094,
+      "panelOpen": false,
+      "panelWidth": 0,
+      "stageWidth": 825,
+      "stageHeight": 375,
+      "plaque": {
+        "text": "Knight · Level 1 XP 120 · Mana 15 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+        "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 15.",
+        "width": 220,
+        "height": 70
+      },
+      "spellButton": {
+        "disabled": true,
+        "reason": "no-known-spell",
+        "ariaLabel": "Spell. No known spell",
+        "title": "No known spell"
+      },
+      "statusAllowance": {
+        "reason": "no-known-spell",
+        "text": "Clubman ×4 · Your turn · Spell: No known spell"
+      },
+      "messageText": "Imported campaign loaded."
+    },
+    "noTarget": {
+      "state": {
+        "enabled": false,
+        "reason": "no-target",
+        "detail": "No legal spell target",
+        "offers": [],
+        "knownSpells": 2,
+        "minSpellMana": 5,
+        "mana": 12,
+        "castThisRound": false
+      },
+      "spellRow": {
+        "id": "spell",
+        "label": "Spell",
+        "enabled": false,
+        "detail": "No legal spell target",
+        "reason": "no-target"
+      },
+      "sentence": "Cannot cast: no legal target for affordable spells. Your hero casts once per battle round."
+    }
+  },
+  "zeroManaVerified": {
+    "825x375": {
+      "viewport": "825x375",
+      "usefulWorldRatio": 0.9094,
+      "panelOpen": false,
+      "panelWidth": 0,
+      "stageWidth": 825,
+      "stageHeight": 375,
+      "plaque": {
+        "text": "Knight · Level 1 XP 120 · Mana 0 ATK 3 · DEF 3 · PWR 1 · KNO 1 Morale 0.0 · 0.0% bonus chance",
+        "ariaLabel": "Knight, level 1, 120 experience. Attack 3, defense 3, power 1, knowledge 1, battle mana 0.",
+        "width": 220,
+        "height": 70
+      },
+      "spellButton": {
+        "disabled": true,
+        "reason": "insufficient-mana",
+        "ariaLabel": "Spell. Insufficient mana (0/5)",
+        "title": "Insufficient mana (0/5)"
+      },
+      "statusAllowance": {
+        "reason": "insufficient-mana",
+        "text": "Clubman ×4 · Your turn · Spell: Insufficient mana (0/5)"
+      },
+      "messageText": "Imported campaign loaded."
+    }
+  },
+  "reducedMotionVerified": {
+    "choiceId": "spellcast:cure:sk-p-army-1",
+    "guidanceText": "Choose one listed cast. Your hero casts once per battle round.",
+    "sample": {
+      "figures": [
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(540 399) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(561 399) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(582 399) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "death",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "death",
+          "plateTransform": "translate(540 417) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "death",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "death",
+          "plateTransform": "translate(561 417) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-1",
+          "side": "p",
+          "clip": "death",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/runtime-code-20261007/troops/troop-stone-melee.png",
+          "plateMotion": "death",
+          "plateTransform": "translate(582 417) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-2",
+          "side": "p",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(644 433) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-2",
+          "side": "p",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(665 433) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-2",
+          "side": "p",
+          "clip": "death",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+          "plateMotion": "death",
+          "plateTransform": "translate(686 433) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-2",
+          "side": "p",
+          "clip": "death",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+          "plateMotion": "death",
+          "plateTransform": "translate(644 451) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-2",
+          "side": "p",
+          "clip": "death",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+          "plateMotion": "death",
+          "plateTransform": "translate(665 451) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-p-army-2",
+          "side": "p",
+          "clip": "death",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "single-pose",
+          "file": "assets/derivatives/image-vertex-repair-20261009/actors/troops/troop-stone-ranged.png",
+          "plateMotion": "death",
+          "plateTransform": "translate(686 451) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-wolf",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(713 121) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-wolf",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(734 121) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-wolf",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(755 121) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-wolf",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-wolf.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(713 139) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-bandit",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(686 75) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-bandit",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(707 75) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-bandit",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bandit.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(728 75) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-bear",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(663 179) rotate(0)",
+          "actorClip": null
+        },
+        {
+          "stackId": "sk-e-bear",
+          "side": "e",
+          "clip": "idle",
+          "targetClip": null,
+          "spellRole": null,
+          "spellId": null,
+          "spellCategory": null,
+          "selfTarget": false,
+          "articulation": "plate",
+          "file": "assets/derivatives/image-complete-20261011/actors/plates/creature-bear.png",
+          "plateMotion": "idle",
+          "plateTransform": "translate(684 179) rotate(0)",
+          "actorClip": null
+        }
+      ],
+      "spellEffects": [
+        {
+          "targetId": "sk-p-army-1",
+          "spellId": "cure",
+          "category": "heal",
+          "motif": "heal-restoration",
+          "selfTarget": true,
+          "reducedMotion": true
+        }
+      ],
+      "spellCasters": [
+        {
+          "casterId": "sk-p-army-1",
+          "spellId": "cure",
+          "category": "heal",
+          "reducedMotion": true
+        },
+        {
+          "casterId": "sk-p-army-1",
+          "spellId": "cure",
+          "category": "heal",
+          "reducedMotion": true
+        }
+      ],
+      "committedFeedback": [
+        {
+          "kind": "spell",
+          "sourceId": "sk-p-army-1",
+          "targetId": "sk-p-army-1"
+        }
+      ]
+    }
+  },
+  "combatAndSettlementReload": {
+    "goldBeforeDuel": 150,
+    "xpBeforeDuel": 120,
+    "postSettleState": {
+      "view": "war",
+      "combat": "0",
+      "goldText": "150"
+    },
+    "postReloadState": {
+      "view": "war",
+      "combat": "0",
+      "goldText": "150",
+      "spellEffectsOnReload": 0
+    }
+  },
+  "smokeChecks": {
+    "deploymentHitProbes": [
+      {
+        "size": {
+          "width": 825,
+          "height": 375
+        },
+        "cells": [
+          {
+            "cell": "0,6",
+            "hit": "0,6"
+          },
+          {
+            "cell": "1,6",
+            "hit": "1,6"
+          },
+          {
+            "cell": "2,6",
+            "hit": "2,6"
+          },
+          {
+            "cell": "0,7",
+            "hit": "0,7"
+          },
+          {
+            "cell": "1,7",
+            "hit": "1,7"
+          },
+          {
+            "cell": "2,7",
+            "hit": "2,7"
+          },
+          {
+            "cell": "0,8",
+            "hit": "0,8"
+          },
+          {
+            "cell": "1,8",
+            "hit": "1,8"
+          },
+          {
+            "cell": "2,8",
+            "hit": "2,8"
+          },
+          {
+            "cell": "1,9",
+            "hit": "1,9"
+          },
+          {
+            "cell": "2,9",
+            "hit": "2,9"
+          }
+        ]
+      },
+      {
+        "size": {
+          "width": 933,
+          "height": 424
+        },
+        "cells": [
+          {
+            "cell": "0,6",
+            "hit": "0,6"
+          },
+          {
+            "cell": "1,6",
+            "hit": "1,6"
+          },
+          {
+            "cell": "2,6",
+            "hit": "2,6"
+          },
+          {
+            "cell": "0,7",
+            "hit": "0,7"
+          },
+          {
+            "cell": "1,7",
+            "hit": "1,7"
+          },
+          {
+            "cell": "2,7",
+            "hit": "2,7"
+          },
+          {
+            "cell": "0,8",
+            "hit": "0,8"
+          },
+          {
+            "cell": "1,8",
+            "hit": "1,8"
+          },
+          {
+            "cell": "2,8",
+            "hit": "2,8"
+          },
+          {
+            "cell": "1,9",
+            "hit": "1,9"
+          },
+          {
+            "cell": "2,9",
+            "hit": "2,9"
+          }
+        ]
+      },
+      {
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "cells": [
+          {
+            "cell": "0,6",
+            "hit": "0,6"
+          },
+          {
+            "cell": "1,6",
+            "hit": "1,6"
+          },
+          {
+            "cell": "2,6",
+            "hit": "2,6"
+          },
+          {
+            "cell": "0,7",
+            "hit": "0,7"
+          },
+          {
+            "cell": "1,7",
+            "hit": "1,7"
+          },
+          {
+            "cell": "2,7",
+            "hit": "2,7"
+          },
+          {
+            "cell": "0,8",
+            "hit": "0,8"
+          },
+          {
+            "cell": "1,8",
+            "hit": "1,8"
+          },
+          {
+            "cell": "2,8",
+            "hit": "2,8"
+          },
+          {
+            "cell": "1,9",
+            "hit": "1,9"
+          },
+          {
+            "cell": "2,9",
+            "hit": "2,9"
+          }
+        ]
+      }
+    ],
+    "towerHitProbes": [
+      {
+        "size": {
+          "width": 825,
+          "height": 375
+        },
+        "targets": [
+          {
+            "name": "Inspect Sling Post",
+            "hit": "Inspect Sling Post",
+            "width": 64,
+            "height": 64
+          },
+          {
+            "name": "Inspect Tar Pit",
+            "hit": "Inspect Tar Pit",
+            "width": 64,
+            "height": 64.00001525878906
+          }
+        ]
+      },
+      {
+        "size": {
+          "width": 933,
+          "height": 424
+        },
+        "targets": [
+          {
+            "name": "Inspect Sling Post",
+            "hit": "Inspect Sling Post",
+            "width": 64,
+            "height": 63.999969482421875
+          },
+          {
+            "name": "Inspect Tar Pit",
+            "hit": "Inspect Tar Pit",
+            "width": 64,
+            "height": 63.99998474121094
+          }
+        ]
+      },
+      {
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "targets": [
+          {
+            "name": "Inspect Sling Post",
+            "hit": "Inspect Sling Post",
+            "width": 64,
+            "height": 64
+          },
+          {
+            "name": "Inspect Tar Pit",
+            "hit": "Inspect Tar Pit",
+            "width": 64,
+            "height": 64.00003051757812
+          }
+        ]
+      }
+    ],
+    "kingdomWarNav": {
+      "825x375": {
+        "width": 48,
+        "height": 48,
+        "selfHit": true
+      },
+      "933x424": {
+        "width": 48,
+        "height": 48,
+        "selfHit": true
+      },
+      "1280x720": {
+        "width": 48,
+        "height": 50,
+        "selfHit": true
+      }
+    }
+  }
+}

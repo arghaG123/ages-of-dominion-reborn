@@ -1,0 +1,4715 @@
+{
+  "classification": "PRESERVED_PRE_V3_PRODUCTION_GEOMETRY_SNAPSHOT",
+  "capturedFrom": "src/data/adventure-worlds.json before version-3 migration",
+  "worldCount": 12,
+  "worlds": [
+    {
+      "id": "grasslands",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "sourceSha256": "6c3e1522aac39e15190cf848735c8fe51a0377b1b60eeb0db3ee1954058dca20",
+        "sourceSize": [
+          1672,
+          940
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94,
+          0,
+          0
+        ],
+        "defaultTerrain": "plains",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              13,
+              5
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              14,
+              6
+            ],
+            [
+              15,
+              6
+            ]
+          ],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            14,
+            5
+          ],
+          [
+            14,
+            6
+          ],
+          [
+            15,
+            6
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            15,
+            1
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [
+          {
+            "id": "west-river-arch",
+            "type": "bridge",
+            "cells": [
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "approaches": [
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          },
+          {
+            "id": "central-stone-bridge",
+            "type": "bridge",
+            "cells": [
+              [
+                8,
+                3
+              ],
+              [
+                9,
+                3
+              ]
+            ],
+            "approaches": [
+              [
+                7,
+                3
+              ],
+              [
+                10,
+                3
+              ]
+            ]
+          },
+          {
+            "id": "east-river-arch",
+            "type": "bridge",
+            "cells": [
+              [
+                11,
+                4
+              ],
+              [
+                12,
+                4
+              ]
+            ],
+            "approaches": [
+              [
+                10,
+                4
+              ],
+              [
+                13,
+                4
+              ]
+            ]
+          }
+        ],
+        "roads": [
+          [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          [
+            [
+              10,
+              6
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              12,
+              6
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              7,
+              1,
+              4,
+              2
+            ],
+            "approach": [
+              8,
+              3
+            ],
+            "landmark": "walled river citadel",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              0,
+              6,
+              2,
+              2
+            ],
+            "approach": [
+              2,
+              6
+            ],
+            "landmark": "weathered cliffside sanctuary",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "approach": [
+              4,
+              3
+            ],
+            "landmark": "hilltop windmill",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              13,
+              7,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              7
+            ],
+            "landmark": "gold hoist and mine camp",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              4,
+              5,
+              2,
+              2
+            ],
+            "approach": [
+              4,
+              4
+            ],
+            "landmark": "farmstead village",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              7,
+              4,
+              1,
+              1
+            ],
+            "approach": [
+              7,
+              5
+            ],
+            "landmark": "roadside standing-stone shrine",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            6.5,
+            5.5
+          ],
+          "food": [
+            6.5,
+            6.5
+          ],
+          "wood": [
+            1.5,
+            8.5
+          ],
+          "stone": [
+            12.5,
+            2.5
+          ],
+          "gold": [
+            12.5,
+            7.5
+          ],
+          "guard-ruin": [
+            2.5,
+            5.5
+          ],
+          "guard-mine": [
+            12.5,
+            5.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "tundra",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "sourceSha256": "2e80d581b9ac670101ad8fecc9d6919fbd93d3923774723f40f232f52041db97",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "snow",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            13,
+            0
+          ],
+          [
+            14,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [],
+        "roads": [
+          [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              6,
+              4
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              10,
+              4
+            ]
+          ],
+          [
+            [
+              8,
+              7
+            ],
+            [
+              9,
+              7
+            ],
+            [
+              10,
+              7
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              8,
+              1,
+              4,
+              3
+            ],
+            "approach": [
+              9,
+              4
+            ],
+            "landmark": "torchlit mountain citadel",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              14,
+              4,
+              2,
+              2
+            ],
+            "approach": [
+              13,
+              4
+            ],
+            "landmark": "icebound guardian statue",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              9,
+              6,
+              2,
+              2
+            ],
+            "approach": [
+              9,
+              5
+            ],
+            "landmark": "timber sawmill camp",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              13,
+              7,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              7
+            ],
+            "landmark": "gold mine hoist",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              3,
+              2,
+              3,
+              2
+            ],
+            "approach": [
+              6,
+              3
+            ],
+            "landmark": "cliffside lodge settlement",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              0,
+              4,
+              2,
+              3
+            ],
+            "approach": [
+              2,
+              5
+            ],
+            "landmark": "glacier shrine statue",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            7.5,
+            5.5
+          ],
+          "food": [
+            11.5,
+            8.5
+          ],
+          "wood": [
+            6.5,
+            7.5
+          ],
+          "stone": [
+            10.5,
+            5.5
+          ],
+          "gold": [
+            14.5,
+            6.5
+          ],
+          "guard-ruin": [
+            13.5,
+            3.5
+          ],
+          "guard-mine": [
+            12.5,
+            5.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "haunted-marsh",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "sourceSha256": "59b04f2594cb723e853a28712a1bb2db925f651f0e8e37a9121c5b8237693d3f",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "bog",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [],
+          "bog": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              12,
+              8
+            ],
+            [
+              13,
+              8
+            ],
+            [
+              14,
+              8
+            ]
+          ],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            12,
+            8
+          ],
+          [
+            13,
+            8
+          ],
+          [
+            14,
+            8
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [],
+        "roads": [
+          [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              4
+            ]
+          ],
+          [
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              7
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              10,
+              0,
+              3,
+              3
+            ],
+            "approach": [
+              9,
+              3
+            ],
+            "landmark": "stormlit necropolis keep",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "approach": [
+              4,
+              3
+            ],
+            "landmark": "haunted grove of stone remnants",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              13,
+              2,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              3
+            ],
+            "landmark": "marshside windmill",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              4,
+              6,
+              3,
+              2
+            ],
+            "approach": [
+              7,
+              6
+            ],
+            "landmark": "sunken quarry and hoist",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "approach": [
+              3,
+              1
+            ],
+            "landmark": "marsh village and timber homes",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              7,
+              3,
+              2,
+              2
+            ],
+            "approach": [
+              8,
+              5
+            ],
+            "landmark": "lantern shrine on the causeway",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            8.5,
+            6.5
+          ],
+          "food": [
+            13.5,
+            5.5
+          ],
+          "wood": [
+            2.5,
+            7.5
+          ],
+          "stone": [
+            9.5,
+            7.5
+          ],
+          "gold": [
+            4.5,
+            4.5
+          ],
+          "guard-ruin": [
+            4.5,
+            2.5
+          ],
+          "guard-mine": [
+            7.5,
+            7.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "desert-volcano",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "sourceSha256": "ccebc8220c699e272ab2b9d28691dde7b8c6014e55516fc84c3cf7b143dceca1",
+        "sourceSize": [
+          1672,
+          940
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94,
+          0,
+          0
+        ],
+        "defaultTerrain": "sand",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ]
+          ],
+          "bog": [],
+          "lava": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "cliff": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              15,
+              4
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ],
+          [
+            8,
+            5
+          ],
+          [
+            9,
+            5
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            4
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [],
+        "roads": [
+          [
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              11,
+              3
+            ]
+          ],
+          [
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              10,
+              6
+            ]
+          ],
+          [
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              8,
+              0,
+              4,
+              3
+            ],
+            "approach": [
+              8,
+              3
+            ],
+            "landmark": "sandstone palace and city gate",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              0,
+              5,
+              2,
+              2
+            ],
+            "approach": [
+              2,
+              5
+            ],
+            "landmark": "skull-cave ruin",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              6,
+              4,
+              2,
+              2
+            ],
+            "approach": [
+              6,
+              6
+            ],
+            "landmark": "oasis watermill",
+            "representation": "runtime-object"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              3,
+              3,
+              2,
+              2
+            ],
+            "approach": [
+              5,
+              3
+            ],
+            "landmark": "desert mine entrance",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              5,
+              1,
+              2,
+              2
+            ],
+            "approach": [
+              6,
+              3
+            ],
+            "landmark": "oasis caravan quarter",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              12,
+              5,
+              3,
+              3
+            ],
+            "approach": [
+              11,
+              5
+            ],
+            "landmark": "sun-temple portal",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            7.5,
+            6.5
+          ],
+          "food": [
+            10.5,
+            6.5
+          ],
+          "wood": [
+            5.5,
+            5.5
+          ],
+          "stone": [
+            14.5,
+            2.5
+          ],
+          "gold": [
+            4.5,
+            5.5
+          ],
+          "guard-ruin": [
+            2.5,
+            4.5
+          ],
+          "guard-mine": [
+            5.5,
+            4.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "underworld",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "sourceSha256": "a41501181a45399de608794d04b3f519271f09fdac0bc9dc9189f89261eb4e95",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "stone",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              9,
+              7
+            ],
+            [
+              9,
+              8
+            ]
+          ],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              9
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              14,
+              9
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            9,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            14,
+            9
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [],
+        "roads": [
+          [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ]
+          ],
+          [
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              12,
+              3
+            ]
+          ],
+          [
+            [
+              8,
+              6
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              10,
+              6
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              0,
+              5,
+              3,
+              3
+            ],
+            "approach": [
+              3,
+              6
+            ],
+            "landmark": "underground fortress district",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              12,
+              6,
+              3,
+              2
+            ],
+            "approach": [
+              11,
+              6
+            ],
+            "landmark": "serpent-skull cavern",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              5,
+              6,
+              2,
+              2
+            ],
+            "approach": [
+              5,
+              5
+            ],
+            "landmark": "crystal-stream watermill",
+            "representation": "runtime-object"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              13,
+              2,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              3
+            ],
+            "landmark": "deep gold mine works",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              13,
+              0,
+              3,
+              2
+            ],
+            "approach": [
+              12,
+              1
+            ],
+            "landmark": "glowing mushroom grotto",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              5,
+              3,
+              2,
+              2
+            ],
+            "approach": [
+              6,
+              5
+            ],
+            "landmark": "crystal altar and portal",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            4.5,
+            5.5
+          ],
+          "food": [
+            4.5,
+            3.5
+          ],
+          "wood": [
+            2.5,
+            4.5
+          ],
+          "stone": [
+            9.5,
+            5.5
+          ],
+          "gold": [
+            12.5,
+            5.5
+          ],
+          "guard-ruin": [
+            11.5,
+            7.5
+          ],
+          "guard-mine": [
+            12.5,
+            4.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "feywild",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "sourceSha256": "551a9ad65e23e4ef286c7f698b64e2d239f23707cae665219789667014ec3628",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "forest",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ]
+          ],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [],
+        "roads": [
+          [
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          [
+            [
+              8,
+              6
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              10,
+              6
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              8,
+              1,
+              4,
+              3
+            ],
+            "approach": [
+              9,
+              4
+            ],
+            "landmark": "illuminated sylvan city",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              1,
+              4,
+              3,
+              2
+            ],
+            "approach": [
+              4,
+              5
+            ],
+            "landmark": "moss-covered stone circle",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              4,
+              1,
+              2,
+              2
+            ],
+            "approach": [
+              5,
+              3
+            ],
+            "landmark": "fairy-grove watermill",
+            "representation": "runtime-object"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              6,
+              3,
+              2,
+              1
+            ],
+            "approach": [
+              7,
+              4
+            ],
+            "landmark": "blue crystal quarry",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              12,
+              1,
+              2,
+              2
+            ],
+            "approach": [
+              14,
+              2
+            ],
+            "landmark": "lanternlit woodland homes",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              7,
+              6,
+              3,
+              2
+            ],
+            "approach": [
+              8,
+              5
+            ],
+            "landmark": "central crystal spring shrine",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            7.5,
+            5.5
+          ],
+          "food": [
+            3.5,
+            7.5
+          ],
+          "wood": [
+            2.5,
+            8.5
+          ],
+          "stone": [
+            11.5,
+            5.5
+          ],
+          "gold": [
+            12.5,
+            7.5
+          ],
+          "guard-ruin": [
+            5.5,
+            5.5
+          ],
+          "guard-mine": [
+            10.5,
+            7.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "archipelago",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "sourceSha256": "54538c26a7a8ad36e6efdd49427efe8d312b682e973e98d77121af43ff494b1b",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "sand",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              13,
+              4
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              13,
+              5
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              15,
+              5
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              12,
+              6
+            ],
+            [
+              13,
+              6
+            ],
+            [
+              14,
+              6
+            ],
+            [
+              15,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              9
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              15,
+              9
+            ]
+          ],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              2,
+              0
+            ],
+            [
+              15,
+              8
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            11,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            15,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            12,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            14,
+            4
+          ],
+          [
+            15,
+            4
+          ],
+          [
+            12,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            14,
+            5
+          ],
+          [
+            15,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            6
+          ],
+          [
+            13,
+            6
+          ],
+          [
+            14,
+            6
+          ],
+          [
+            15,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            15,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            8
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            9
+          ],
+          [
+            15,
+            9
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            15,
+            8
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [
+          {
+            "id": "west-island-sandbar",
+            "type": "sandbar",
+            "cells": [
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "approaches": [
+              [
+                2,
+                2
+              ],
+              [
+                5,
+                2
+              ]
+            ]
+          },
+          {
+            "id": "central-island-causeway",
+            "type": "causeway",
+            "cells": [
+              [
+                6,
+                3
+              ],
+              [
+                7,
+                3
+              ]
+            ],
+            "approaches": [
+              [
+                5,
+                3
+              ],
+              [
+                8,
+                3
+              ]
+            ]
+          },
+          {
+            "id": "harbor-sandbar",
+            "type": "sandbar",
+            "cells": [
+              [
+                8,
+                4
+              ],
+              [
+                9,
+                4
+              ]
+            ],
+            "approaches": [
+              [
+                7,
+                4
+              ],
+              [
+                10,
+                4
+              ]
+            ]
+          },
+          {
+            "id": "southwestern-reef-causeway",
+            "type": "causeway",
+            "cells": [
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "approaches": [
+              [
+                3,
+                5
+              ],
+              [
+                6,
+                5
+              ]
+            ]
+          }
+        ],
+        "roads": [
+          [
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              12,
+              7
+            ]
+          ],
+          [
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              8,
+              5,
+              3,
+              2
+            ],
+            "approach": [
+              9,
+              4
+            ],
+            "landmark": "central harbor city and east dockwalk",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              8,
+              0,
+              2,
+              2
+            ],
+            "approach": [
+              8,
+              3
+            ],
+            "landmark": "overgrown island temple",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              4,
+              4,
+              2,
+              1
+            ],
+            "approach": [
+              6,
+              3
+            ],
+            "landmark": "shoreline watermill",
+            "representation": "runtime-object"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              1,
+              1,
+              1,
+              3
+            ],
+            "approach": [
+              2,
+              2
+            ],
+            "landmark": "volcanic island mine cave",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              12,
+              1,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              3
+            ],
+            "landmark": "northern island village",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              1,
+              5,
+              2,
+              2
+            ],
+            "approach": [
+              3,
+              5
+            ],
+            "landmark": "seaside beacon shrine",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            7.5,
+            5.5
+          ],
+          "food": [
+            7.5,
+            6.5
+          ],
+          "wood": [
+            5.5,
+            7.5
+          ],
+          "stone": [
+            13.5,
+            8.5
+          ],
+          "gold": [
+            11.5,
+            7.5
+          ],
+          "guard-ruin": [
+            7.5,
+            2.5
+          ],
+          "guard-mine": [
+            3.5,
+            3.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "mesa-savanna",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "sourceSha256": "ae31ac4223527dc2800af8ac9925f4a1d1164203b83f9c799d502eee3f37cb88",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "savanna",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            4
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [],
+        "roads": [
+          [
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              9,
+              2
+            ]
+          ],
+          [
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              9,
+              3
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              12,
+              3
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              1,
+              1,
+              3,
+              2
+            ],
+            "approach": [
+              4,
+              2
+            ],
+            "landmark": "mesa-top stone citadel",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              13,
+              4,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              5
+            ],
+            "landmark": "great fossil arch ruin",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              6,
+              6,
+              2,
+              2
+            ],
+            "approach": [
+              6,
+              5
+            ],
+            "landmark": "savanna windmill",
+            "representation": "runtime-object"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              13,
+              1,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              2
+            ],
+            "landmark": "canyon mine entrance",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              8,
+              1,
+              2,
+              2
+            ],
+            "approach": [
+              8,
+              3
+            ],
+            "landmark": "lonely mesa watchtower",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              2,
+              4,
+              3,
+              2
+            ],
+            "approach": [
+              4,
+              6
+            ],
+            "landmark": "ancient stone-circle shrine",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            5.5,
+            3.5
+          ],
+          "food": [
+            7.5,
+            5.5
+          ],
+          "wood": [
+            2.5,
+            8.5
+          ],
+          "stone": [
+            11.5,
+            7.5
+          ],
+          "gold": [
+            12.5,
+            3.5
+          ],
+          "guard-ruin": [
+            12.5,
+            6.5
+          ],
+          "guard-mine": [
+            11.5,
+            3.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "astral-peaks",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "sourceSha256": "2fa72351261cc7c4fcd76ff491491f3bf521cf18029bffd8639d98609ec8ef9f",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "alpine",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            14,
+            2
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [],
+        "roads": [
+          [
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              4
+            ]
+          ],
+          [
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              12,
+              6
+            ],
+            [
+              13,
+              6
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              0,
+              4,
+              4,
+              2
+            ],
+            "approach": [
+              4,
+              4
+            ],
+            "landmark": "western observatory city",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              9,
+              4,
+              3,
+              2
+            ],
+            "approach": [
+              8,
+              5
+            ],
+            "landmark": "moon-arch ruins",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              6,
+              5,
+              2,
+              2
+            ],
+            "approach": [
+              8,
+              6
+            ],
+            "landmark": "cloud-valley watermill",
+            "representation": "runtime-object"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              14,
+              6,
+              2,
+              2
+            ],
+            "approach": [
+              13,
+              6
+            ],
+            "landmark": "blue crystal quarry",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              13,
+              0,
+              3,
+              2
+            ],
+            "approach": [
+              12,
+              2
+            ],
+            "landmark": "high-aerie creature roost",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              10,
+              3,
+              2,
+              3
+            ],
+            "approach": [
+              12,
+              5
+            ],
+            "landmark": "lunar gate sanctuary",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            5.5,
+            5.5
+          ],
+          "food": [
+            8.5,
+            7.5
+          ],
+          "wood": [
+            2.5,
+            7.5
+          ],
+          "stone": [
+            9.5,
+            8.5
+          ],
+          "gold": [
+            13.5,
+            5.5
+          ],
+          "guard-ruin": [
+            8.5,
+            3.5
+          ],
+          "guard-mine": [
+            13.5,
+            7.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "blood-moon",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "sourceSha256": "8a5ec0b5836e23a804b24d078a445f6060c0543c67a12b5a37e772bec8c6a410",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "ash",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [],
+          "bog": [],
+          "lava": [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              12,
+              8
+            ]
+          ],
+          "cliff": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            0,
+            2
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            8,
+            6
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            12,
+            8
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            15,
+            1
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [],
+        "roads": [
+          [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ]
+          ],
+          [
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              6
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              7,
+              0,
+              3,
+              3
+            ],
+            "approach": [
+              8,
+              3
+            ],
+            "landmark": "eclipse fortress and gate",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              1,
+              1,
+              2,
+              3
+            ],
+            "approach": [
+              3,
+              3
+            ],
+            "landmark": "blood-red obelisk ruin",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              4,
+              4,
+              2,
+              2
+            ],
+            "approach": [
+              6,
+              4
+            ],
+            "landmark": "ashland millworks",
+            "representation": "runtime-object"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              1,
+              6,
+              2,
+              2
+            ],
+            "approach": [
+              3,
+              6
+            ],
+            "landmark": "crystal mine and hoist",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              13,
+              6,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              6
+            ],
+            "landmark": "red-crystal creature den",
+            "representation": "runtime-object"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              10,
+              4,
+              2,
+              2
+            ],
+            "approach": [
+              9,
+              4
+            ],
+            "landmark": "ritual fire shrine",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            7.5,
+            5.5
+          ],
+          "food": [
+            5.5,
+            7.5
+          ],
+          "wood": [
+            3.5,
+            5.5
+          ],
+          "stone": [
+            9.5,
+            7.5
+          ],
+          "gold": [
+            12.5,
+            5.5
+          ],
+          "guard-ruin": [
+            3.5,
+            4.5
+          ],
+          "guard-mine": [
+            4.5,
+            7.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "jade-karst",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "sourceSha256": "0b4b38159bda4b86f8909948375e8d80f9630092ff71e476ae6ff6da262c8542",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "forest",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [
+            [
+              11,
+              3
+            ],
+            [
+              12,
+              3
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            11,
+            3
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            12,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [
+          {
+            "id": "east-river-stone-arch",
+            "type": "bridge",
+            "cells": [
+              [
+                11,
+                4
+              ],
+              [
+                12,
+                4
+              ]
+            ],
+            "approaches": [
+              [
+                10,
+                4
+              ],
+              [
+                13,
+                4
+              ]
+            ]
+          },
+          {
+            "id": "southern-karst-arch",
+            "type": "bridge",
+            "cells": [
+              [
+                6,
+                6
+              ],
+              [
+                7,
+                6
+              ]
+            ],
+            "approaches": [
+              [
+                5,
+                6
+              ],
+              [
+                8,
+                6
+              ]
+            ]
+          }
+        ],
+        "roads": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              10,
+              3
+            ]
+          ],
+          [
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              4
+            ]
+          ],
+          [
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              6
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              7,
+              2,
+              3,
+              2
+            ],
+            "approach": [
+              8,
+              4
+            ],
+            "landmark": "central karst palace",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              1,
+              2,
+              2,
+              2
+            ],
+            "approach": [
+              3,
+              3
+            ],
+            "landmark": "weathered cliff pagoda",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              8,
+              0,
+              2,
+              2
+            ],
+            "approach": [
+              10,
+              1
+            ],
+            "landmark": "terraced windmill",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              14,
+              5,
+              2,
+              2
+            ],
+            "approach": [
+              13,
+              5
+            ],
+            "landmark": "river-cliff mine works",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              3,
+              1,
+              2,
+              2
+            ],
+            "approach": [
+              5,
+              2
+            ],
+            "landmark": "bamboo hamlet",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              10,
+              6,
+              2,
+              2
+            ],
+            "approach": [
+              10,
+              5
+            ],
+            "landmark": "blue waterfall shrine",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            7.5,
+            5.5
+          ],
+          "food": [
+            3.5,
+            6.5
+          ],
+          "wood": [
+            4.5,
+            8.5
+          ],
+          "stone": [
+            13.5,
+            8.5
+          ],
+          "gold": [
+            13.5,
+            6.5
+          ],
+          "guard-ruin": [
+            4.5,
+            4.5
+          ],
+          "guard-mine": [
+            12.5,
+            7.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "sunken-jungle",
+      "productionMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+      "geometry": {
+        "version": 2,
+        "sourceFile": "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "sourceSha256": "c0e29611a1473a4e7fa41c72a24bff0a2fed845504ff37be18111260b52badcf",
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "cols": 16,
+        "rows": 10,
+        "worldToSource": [
+          104.5,
+          0,
+          0,
+          94.1,
+          0,
+          0
+        ],
+        "defaultTerrain": "jungle",
+        "walkableTerrain": [],
+        "terrainMasks": {
+          "water": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "bog": [],
+          "lava": [],
+          "cliff": [
+            [
+              0,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              15,
+              9
+            ]
+          ]
+        },
+        "blocked": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "obstacles": [],
+        "bridges": [
+          {
+            "id": "west-ruin-stone-crossing",
+            "type": "bridge",
+            "cells": [
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "approaches": [
+              [
+                3,
+                5
+              ],
+              [
+                6,
+                5
+              ]
+            ]
+          },
+          {
+            "id": "central-jungle-causeway",
+            "type": "causeway",
+            "cells": [
+              [
+                7,
+                5
+              ],
+              [
+                8,
+                5
+              ]
+            ],
+            "approaches": [
+              [
+                6,
+                5
+              ],
+              [
+                9,
+                5
+              ]
+            ]
+          },
+          {
+            "id": "lower-stone-stepping-route",
+            "type": "stepping-stones",
+            "cells": [
+              [
+                7,
+                6
+              ],
+              [
+                8,
+                6
+              ]
+            ],
+            "approaches": [
+              [
+                6,
+                6
+              ],
+              [
+                9,
+                6
+              ]
+            ]
+          }
+        ],
+        "roads": [
+          [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              10,
+              3
+            ]
+          ],
+          [
+            [
+              6,
+              4
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              4
+            ]
+          ],
+          [
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              5
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              5
+            ]
+          ]
+        ],
+        "sites": [
+          {
+            "id": "town",
+            "rect": [
+              5,
+              0,
+              3,
+              2
+            ],
+            "approach": [
+              6,
+              2
+            ],
+            "landmark": "upper jungle temple settlement",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "ruin",
+            "rect": [
+              1,
+              2,
+              2,
+              2
+            ],
+            "approach": [
+              3,
+              3
+            ],
+            "landmark": "left-bank stone ruin",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mill",
+            "rect": [
+              10,
+              5,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              5
+            ],
+            "landmark": "jungle river waterwheel",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "mine",
+            "rect": [
+              1,
+              0,
+              2,
+              2
+            ],
+            "approach": [
+              3,
+              1
+            ],
+            "landmark": "overgrown mine cave",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "dwelling",
+            "rect": [
+              13,
+              0,
+              2,
+              2
+            ],
+            "approach": [
+              12,
+              2
+            ],
+            "landmark": "eastern canopy village",
+            "representation": "painted-landmark"
+          },
+          {
+            "id": "shrine",
+            "rect": [
+              10,
+              3,
+              2,
+              2
+            ],
+            "approach": [
+              9,
+              4
+            ],
+            "landmark": "blue river shrine",
+            "representation": "painted-landmark"
+          }
+        ],
+        "anchors": {
+          "hero": [
+            7.5,
+            3.5
+          ],
+          "food": [
+            11.5,
+            7.5
+          ],
+          "wood": [
+            2.5,
+            8.5
+          ],
+          "stone": [
+            8.5,
+            8.5
+          ],
+          "gold": [
+            3.5,
+            6.5
+          ],
+          "guard-ruin": [
+            4.5,
+            3.5
+          ],
+          "guard-mine": [
+            13.5,
+            4.5
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "reviewId": "M12-crossing-focus-guard-repair-20261023",
+  "date": "2026-10-23",
+  "mockId": "M12",
+  "status": "CANDIDATE_REPAIR_LIVE_NATURAL_REVIEW_REQUIRED",
+  "sourceChanges": {
+    "src/client/main.js": [
+      "Only enable the crossing camera crop when the campaign has the registered version-4 Adventure map.",
+      "Clear the old map-coordinate HTML labels during the close-up crop so they cannot remain at stale unzoomed positions."
+    ],
+    "src/client/adventure-crossing-presentation.js": "Existing candidate registration binds the generated crop to Sunlit Riverlands central-stone-bridge cells [8,3] and [9,3]."
+  },
+  "sourceSha256": {
+    "src/client/main.js": "06C59F8EBE312D1F9A79169DB663B347B26F58A618ECA61FED6EF6F36A198794",
+    "src/client/adventure-crossing-presentation.js": "AD6A1F43F47943636C36019EC62B997704825C0BF65F35402DCF8A3BDCD40629",
+    "src/client/polish.css": "02E67B377FD8E92ED12154DF96F57313A15328506FDFEC6FE2A58157F09D65D9",
+    "assets/derivatives/adventure-crossing-focus-20261023/grasslands-central-bridge-focus-v1.png": "416807E229FF9B352DE3BE604743B2F0C4103E212CD19F02F648763433251A7F"
+  },
+  "verification": {
+    "command": "node --test tests/adventure-crossing-presentation.test.mjs tests/adventure-travel-presentation.test.mjs tests/adventure-worlds.test.mjs",
+    "tests": 28,
+    "passed": 28,
+    "failed": 0,
+    "syntax": "node --check src/client/main.js and src/client/adventure-crossing-presentation.js passed",
+    "mainJsLineEndings": { "crlf": 5309, "bareLf": 0 }
+  },
+  "liveReview": {
+    "route": "http://localhost:4174/?audit",
+    "observedCampaign": { "age": 0, "day": 1, "view": "kingdom", "tutorialStep": 5, "wallLevel": 1 },
+    "naturalM12CrossingReached": false,
+    "matchedScreenshotRetained": false,
+    "inputAttempt": "Adventure, Hero, and Manage Kingdom semantic actions plus one visible-coordinate Adventure action left the rendered screen unchanged.",
+    "noGameCommand": "No age advance, trade, construction, recruitment, save-slot operation, or mock-state injection was performed."
+  },
+  "acceptance": "M12 remains FAIL/OPEN until the natural bridge-crossing state can be reopened, the focus crop and live actor contacts can be compared with the reference, and movement/save continuity can be rechecked."
+}

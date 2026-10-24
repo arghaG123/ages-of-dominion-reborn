@@ -1,0 +1,55 @@
+{
+  "reviewId": "M13-dwelling-recruit-copy-repair-20261023",
+  "reviewDate": "2026-10-23",
+  "mockId": "M13",
+  "status": "OPEN_M13_NATURAL_SITE_AND_MECHANIC_MATCH_UNVERIFIED",
+  "change": {
+    "summary": "An open creature-dwelling offer now labels its existing CLAIM_DWELLING action as Recruit with the actual offered creature and count. The core-selected offer, price, roster capacity, transaction, and save behavior are unchanged.",
+    "sourceFiles": [
+      "src/client/adventure-travel-presentation.js",
+      "src/client/main.js"
+    ],
+    "tests": [
+      "tests/adventure-travel-presentation.test.mjs"
+    ]
+  },
+  "sourceFindings": {
+    "onFootMode": "The existing traveler mode switches to on-foot at a non-town site's authored approach and uses the hero actor renderer.",
+    "currentDwelling": "The Sunlit Riverlands geometry names its dwelling landmark farmstead village; its natural flow offers existing creatures and claims a creature stack using the data-defined food/gold price.",
+    "mockMapping": "The M13 reference says Woodcutter's Hut and shows Recruit for 20 wood. That site identity and price do not map to the current dwelling offer data, so no new site, unit, or wood-price mechanic was inferred."
+  },
+  "verification": {
+    "command": "node --test tests/adventure-travel-presentation.test.mjs",
+    "tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "syntax": {
+      "command": "node --check src/client/main.js && node --check src/client/adventure-travel-presentation.js",
+      "passed": true
+    },
+    "lineEndings": {
+      "file": "src/client/main.js",
+      "crlf": 5270,
+      "bareLf": 0
+    }
+  },
+  "browserReview": {
+    "route": "http://localhost:4174/?audit",
+    "observedState": "Rotate to landscape to play. Your campaign stays saved.",
+    "naturalWoodcutterStateReached": false,
+    "recruitmentInvoked": false,
+    "saveChanged": false,
+    "screenshotRetained": false
+  },
+  "sourceHashes": {
+    "src/client/main.js": "7FB01F7E93F8F0A2F42860A133FFA9CA89E3C3077E1F9DD7179322A912C736AA",
+    "src/client/adventure-travel-presentation.js": "0F7C9BD9788DFC7E82E86C73C0EF36C726007D86F90A1D1193612EB6E6F8CD5B",
+    "tests/adventure-travel-presentation.test.mjs": "5E2B9950C919C5E7184BBD1A0EDEC22D922D54D27C4A0EDE691353ED0EDCFE2E"
+  },
+  "remaining": [
+    "Reach the natural M13 site and retain a matched landscape capture for the on-foot hero, site, mount, HUD, and action panel.",
+    "Resolve whether M13's Woodcutter's Hut and 20-wood Recruit are intended to map to an existing mechanic or require an explicit new gameplay rule; then verify the exact roster/resource delta and reload.",
+    "Verify the return action and accepted visual fidelity before changing M13 from OPEN."
+  ],
+  "ownerAccepted": false
+}

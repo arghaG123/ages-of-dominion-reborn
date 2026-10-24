@@ -1,0 +1,388 @@
+{
+  "recordedAt": "2026-10-21T13:31:12.753Z",
+  "classification": "ISOLATED_NATURAL_UI_OWNER_MAP_SOURCE_RECHECK",
+  "purpose": "Inspect the actual campaign picker and Adventure DOM image sources for all 12 worlds through visible user controls in fresh isolated browser contexts.",
+  "url": "http://127.0.0.1:4179/?audit=owner-map-runtime-recheck",
+  "results": [
+    {
+      "worldId": "grasslands",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "width": 1672,
+        "height": 940
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "grasslands",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 940,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\grasslands-1280x720.png"
+    },
+    {
+      "worldId": "tundra",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "tundra",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\tundra-1280x720.png"
+    },
+    {
+      "worldId": "haunted-marsh",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/03_Vast_Map_Autumn_Marsh_Thunderstorm.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/03_Vast_Map_Autumn_Marsh_Thunderstorm.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "haunted-marsh",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/03_Vast_Map_Autumn_Marsh_Thunderstorm.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\haunted-marsh-1280x720.png"
+    },
+    {
+      "worldId": "desert-volcano",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "width": 1672,
+        "height": 940
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "desert-volcano",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 940,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\desert-volcano-1280x720.png"
+    },
+    {
+      "worldId": "underworld",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "underworld",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\underworld-1280x720.png"
+    },
+    {
+      "worldId": "feywild",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "feywild",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\feywild-1280x720.png"
+    },
+    {
+      "worldId": "archipelago",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "archipelago",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\archipelago-1280x720.png"
+    },
+    {
+      "worldId": "mesa-savanna",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "mesa-savanna",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\mesa-savanna-1280x720.png"
+    },
+    {
+      "worldId": "astral-peaks",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "astral-peaks",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\astral-peaks-1280x720.png"
+    },
+    {
+      "worldId": "blood-moon",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/10_Vast_Map_Blood_Moon_Wasteland_Eclipse.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/10_Vast_Map_Blood_Moon_Wasteland_Eclipse.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "blood-moon",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/10_Vast_Map_Blood_Moon_Wasteland_Eclipse.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\blood-moon-1280x720.png"
+    },
+    {
+      "worldId": "jade-karst",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "jade-karst",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\jade-karst-1280x720.png"
+    },
+    {
+      "worldId": "sunken-jungle",
+      "errors": [],
+      "failedResponses": [],
+      "picker": {
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "selectedPreviewAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "selectedThumbnailSource": "/assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "width": 1672,
+        "height": 941
+      },
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+      "expectedOwnerPath": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+      "pickerShowsOwnerFile": false,
+      "runtime": {
+        "worldId": "sunken-jungle",
+        "terrainSource": "/assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "terrainAttribute": "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "referenceAttribute": "assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+        "minimapSources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png"
+        ],
+        "width": 1672,
+        "height": 941,
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "runtimeShowsOwnerFile": false,
+      "minimapShowsOwnerFile": false,
+      "screenshot": "qa\\game-completion-20261021\\visual-review\\adventure-owner-map-runtime-live-recheck-20261021\\sunken-jungle-1280x720.png"
+    }
+  ],
+  "summary": {
+    "worlds": 12,
+    "pickerOwnerMatches": 0,
+    "runtimeOwnerMatches": 0,
+    "minimapOwnerMatches": 0,
+    "browserErrorWorlds": 0,
+    "failedResponseWorlds": 0
+  }
+}

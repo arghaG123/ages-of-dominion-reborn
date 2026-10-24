@@ -1,0 +1,44 @@
+{
+  "classification": "NATURAL_POINTER_KEYBOARD_UI",
+  "rows": [
+    {
+      "name": "Lumber preview preserves resources and jobs",
+      "pass": true
+    },
+    {
+      "name": "Cancel preserves resources and P01",
+      "pass": true
+    },
+    {
+      "name": "Confirm pays exactly once and starts one job",
+      "pass": true,
+      "before": {
+        "food": 250,
+        "wood": 250,
+        "stone": 160,
+        "gold": 150
+      },
+      "after": {
+        "food": 250,
+        "wood": 225,
+        "stone": 145,
+        "gold": 150
+      }
+    },
+    {
+      "name": "Ordinary completion makes real Lumber Camp",
+      "pass": true,
+      "plot": {
+        "id": "P01",
+        "type": "lumber",
+        "level": 1
+      },
+      "resources": {
+        "food": 250,
+        "wood": 226.66365000000013,
+        "stone": 145,
+        "gold": 150
+      }
+    }
+  ]
+}

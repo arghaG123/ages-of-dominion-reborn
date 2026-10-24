@@ -1,0 +1,78 @@
+{
+  "recordedAt": "2026-10-21T12:23:10.518Z",
+  "classification": "NATURAL_UI_FEYWILD_CRYSTAL_SPRING_MAP_LOAD_MOVE_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> select Feywild -> enter Adventure -> inspect registered crystal-spring blockers -> commit a legal adjacent step -> save and reload",
+  "note": "All campaign and movement actions use visible controls. Imported map geometry and read-only snapshots are assertions only.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-5ab7e334-0d47-4e3e-bfdf-d1be216ea213",
+  "map": {
+    "worldId": "feywild",
+    "seed": 4121353921,
+    "layoutId": "feywild-layout-5",
+    "start": [
+      8,
+      3
+    ],
+    "blockers": [
+      [
+        11,
+        6
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        11,
+        9
+      ]
+    ],
+    "blockedInLiveRenderer": true,
+    "renderedCells": 160
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-feywild-crystal-spring-natural-live-20261021-run02\\feywild-crystal-spring-water-mask-start-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-feywild-crystal-spring-natural-live-20261021-run02\\feywild-crystal-spring-water-mask-after-move-825x375.png"
+  ],
+  "move": {
+    "from": [
+      8,
+      3
+    ],
+    "to": [
+      8,
+      4
+    ],
+    "route": [
+      [
+        8,
+        4
+      ]
+    ],
+    "cost": 1,
+    "movesRemaining": 4,
+    "visited": [
+      "8,3",
+      "8,4"
+    ],
+    "saveState": "committed"
+  },
+  "reload": {
+    "position": [
+      8,
+      4
+    ],
+    "moves": 4,
+    "visited": [
+      "8,3",
+      "8,4"
+    ]
+  },
+  "result": "PASS_BOUNDED_LIVE_MAP_LOAD_LEGAL_MOVE_SAVE_RELOAD; NOT_FULL_JOURNEY_OR_MAP_ART_ACCEPTANCE"
+}

@@ -5,6 +5,7 @@ import contract from '../src/data/implementation-contract.json' with { type: 'js
 import { command, futureConclusion, newCampaign, questReady, stackTitle, validate } from '../src/core/campaign.js';
 import { decode, encode, load, save, storeSlot, loadSlot } from '../src/core/save.js';
 import { GEAR_SLOTS } from '../src/core/rules.js';
+import { storyHeaderTitle } from '../src/client/story-view.js';
 
 const fresh = () => newCampaign(contract, data, 1000);
 const act = (state, id, type, payload, now = 1000) => command(state, { id, type, payload }, now, data);
@@ -14,6 +15,27 @@ class Memory {
   setItem(k, v) { this.values.set(k, v); }
   removeItem(k) { this.values.delete(k); }
 }
+
+test('Chapter IV branch copy matches The Divided Gate while preserving saved branch identities and rewards', () => {
+  const chapter = data.STORY[3];
+  assert.equal(chapter.t, 'Chapter IV — The Divided Gate');
+  assert.equal(chapter.d, 'Varek Iron-Eye: “You arrive late, Arn. The High Council demands fealty, not hesitation.”');
+  assert.deepEqual(chapter.ch.map(choice => choice.t), ['We do not kneel.', 'The council must wait.']);
+  assert.deepEqual(chapter.ch.map(choice => choice.flag), ['council', 'crown']);
+  assert.deepEqual(chapter.ch.map(choice => choice.fx), [{ food: 800, wood: 800 }, { gold: 900 }]);
+});
+
+test('Story chapter plaque reflects saved progress without changing the campaign', () => {
+  const state = fresh();
+  state.age = 3;
+  state.story.chapter = 3;
+  const before = structuredClone(state);
+  assert.equal(storyHeaderTitle(state, data), 'Chapter IV — The Divided Gate (4/8)');
+  assert.deepEqual(state, before);
+  state.age = 7;
+  state.story.chapter = data.STORY.length;
+  assert.equal(storyHeaderTitle(state, data), 'The Valley We Keep (8/8)');
+});
 
 test('seven chapters, future conclusion and rival survive reload without a second grant', () => {
   let state = act(fresh(), 'rival', 'CHOOSE_RIVAL', { name: 'Varek Iron-Eye' });

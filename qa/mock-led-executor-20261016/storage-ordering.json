@@ -1,0 +1,56 @@
+{
+  "evaluatedAt": "2026-10-24T06:56:56.381Z",
+  "governingSection": "A05 and Section 10.4",
+  "transactionLifecycles": {
+    "commit": [
+      "serializeCandidate",
+      "validateCandidate",
+      "verifyCASHead",
+      "rotateLiveToBackup",
+      "putNewLive",
+      "readbackVerify"
+    ],
+    "replace": [
+      "advanceEpoch",
+      "rotateLiveToBackup",
+      "putNewLive",
+      "readbackVerify"
+    ],
+    "recovery": [
+      "detectDamagedLive",
+      "quarantineToDamagedStore",
+      "readLastGoodBackup",
+      "validateBackup",
+      "promoteBackupToLive"
+    ]
+  },
+  "quarantinePolicy": {
+    "onLiveCorruption": "Preserve damaged raw payload in SAVE_KEY-damaged; restore backup if valid.",
+    "onQuotaError": "Reject transaction; abort staged write; retain existing live and backup intact; report saveFault.",
+    "memoryIsolation": "A failed save must NEVER certify the in-memory state as saved; saveFault must be displayed."
+  },
+  "casRule": {
+    "headStructure": [
+      "epoch",
+      "campaignId",
+      "revision",
+      "checksum",
+      "updatedAt"
+    ],
+    "rejectionOnStaleEpochOrRev": true
+  },
+  "migrationRules": {
+    "keysCovered": [
+      "aod-reborn-v1",
+      "aod-reborn-v1-backup",
+      "aod-reborn-v1-staged",
+      "aod-reborn-v1-damaged",
+      "aod-reborn-v1-slot-1",
+      "slot-2",
+      "slot-3",
+      "aod-reborn-v1-view"
+    ],
+    "atomicCommitMarker": true,
+    "originalLocalStorageUntouched": true
+  }
+}

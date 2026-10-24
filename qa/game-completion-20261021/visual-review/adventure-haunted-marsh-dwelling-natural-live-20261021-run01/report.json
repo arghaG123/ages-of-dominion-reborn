@@ -1,0 +1,182 @@
+{
+  "recordedAt": "2026-10-21T06:51:10.767Z",
+  "classification": "NATURAL_UI_ADVENTURE_DWELLING_CLAIM_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh campaign -> build Barracks -> leave town -> preview/cancel route -> confirm legal road route to dwelling -> on-foot site arrival -> ask for fixed offer -> back to road and reopen the same offer -> save/reload -> claim creatures -> verify Q3 ready -> claim its reward once -> save/reload -> verify roster and both rewards",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "haunted-marsh",
+    "layoutId": "haunted-marsh-layout-2",
+    "start": [
+      10,
+      3
+    ],
+    "destination": [
+      11,
+      7
+    ],
+    "cost": 5,
+    "cells": [
+      [
+        10,
+        4
+      ],
+      [
+        10,
+        5
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        11,
+        7
+      ]
+    ]
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [
+    {
+      "name": "dwelling-on-foot",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run01\\dwelling-on-foot-825x375.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run01\\dwelling-on-foot-933x424.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run01\\dwelling-on-foot-1280x720.png"
+    },
+    {
+      "name": "dwelling-context-panel",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run01\\dwelling-context-panel-825x375.png"
+    }
+  ],
+  "campaignId": "campaign-a333a2bc-f8dd-4282-ab38-38d5890edaba",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 10,
+    "y": 3,
+    "moves": 5,
+    "visited": [
+      "10,3"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 135,
+      "wood": 133,
+      "stone": 102,
+      "gold": 243
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 135,
+      "mineGold": 243
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "cancel": {
+    "preservedPosition": [
+      10,
+      3
+    ],
+    "preservedMoves": 5
+  },
+  "arrivalVisibleLabelCount": 1,
+  "arrival": {
+    "adventure": {
+      "x": 11,
+      "y": 7,
+      "moves": 0,
+      "visited": [
+        "10,3",
+        "10,4",
+        "10,5",
+        "10,6",
+        "11,7"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 135,
+        "wood": 133,
+        "stone": 102,
+        "gold": 243
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 135,
+        "mineGold": 243
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "travelerMode": "on-foot",
+    "siteVisible": "dwelling",
+    "mountVisible": false
+  },
+  "panelComposition": [
+    {
+      "size": "825x375",
+      "panel": {
+        "left": 537,
+        "right": 817,
+        "top": 54,
+        "bottom": 335
+      },
+      "hero": {
+        "left": 133.24127197265625,
+        "right": 639.1533813476562,
+        "top": 43.95263671875,
+        "bottom": 415.071533203125
+      },
+      "heroAnchor": {
+        "x": 375.90001714229584,
+        "y": 254.99999237060547
+      },
+      "site": {
+        "left": 425.79998779296875,
+        "right": 625.3999633789062,
+        "top": 210.4381103515625,
+        "bottom": 388.68560791015625
+      },
+      "viewport": {
+        "width": 825,
+        "height": 375
+      }
+    }
+  ],
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: the dwelling art stays fully visible beside the inspector"
+}

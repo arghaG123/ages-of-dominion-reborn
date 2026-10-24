@@ -1,0 +1,34 @@
+{
+  "reviewId": "M02-stone-day1-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/02-kingdom-day1.jpg",
+  "status": "FAIL_VISUAL_OPEN",
+  "campaign": {
+    "slot": 1,
+    "age": "Stone Age",
+    "day": 1,
+    "weather": "clear",
+    "loadedConfirmation": "Slot 1 loaded.",
+    "resourcesAtLoad": { "food": 1782, "wood": 1310, "stone": 1006, "gold": 46 },
+    "preservation": "Slot 1 was loaded for read-only comparison and was not saved over. Passive production continued only in the active loaded state."
+  },
+  "viewport": { "requestedCss": [1280, 720], "observedCss": [1280, 720] },
+  "visualFindings": [
+    "The reference is a high-angle, circular stone-walled settlement with a central keep and many clearly empty building plots.",
+    "The live age-matched Stone day-1 scene has no wall, no centered keep, and already shows scattered settlement structures, roads, fields and activity around the open plots.",
+    "The live screen places the selected Quarry inspector on the right and navigation along the lower-left edge; the reference places a hero at upper left, navigation at right, and resources along the top.",
+    "The live scene is not compositionally close to M02. The unbuilt wall state is also truthful to current campaign progress and should not be replaced with a fake completed wall."
+  ],
+  "evidence": {
+    "screenshotObservedInApprovedCUA": true,
+    "screenshotRetainedAsFile": false,
+    "accessibilityState": ["Stone Age · day 1 · clear", "Slot 1 loaded."],
+    "visualOwnerAccepted": false
+  },
+  "open": [
+    "Reconcile the mock's Day-1 walled composition with truthful wall progression using registered, age-family ground states and real dynamic buildings.",
+    "Review M02 at exact target viewports with retained captures and owner acceptance.",
+    "Complete the remaining M01-M30, J01-J18 and independent desktop gates."
+  ]
+}

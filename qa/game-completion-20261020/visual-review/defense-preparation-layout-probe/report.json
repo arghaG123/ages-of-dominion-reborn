@@ -1,0 +1,302 @@
+{
+  "layout": {
+    "view": "defense",
+    "sheet": "defense-preparation",
+    "panel": {
+      "tag": "ASIDE",
+      "choice": "",
+      "text": "× Endless preparation Choose defenseCampaign SiegeEndlessStart EndlessReturn to WarEndless records e",
+      "rect": [
+        537,
+        54,
+        280,
+        257
+      ],
+      "display": "flex",
+      "position": "absolute",
+      "overflow": "hidden",
+      "gridColumn": "auto",
+      "flex": "0 1 auto"
+    },
+    "panelChildren": [
+      {
+        "tag": "BUTTON",
+        "choice": "",
+        "text": "×",
+        "rect": [
+          768,
+          63,
+          40,
+          40
+        ],
+        "display": "block",
+        "position": "sticky",
+        "overflow": "visible",
+        "gridColumn": "auto",
+        "flex": "0 0 auto"
+      },
+      {
+        "tag": "H2",
+        "choice": "",
+        "text": "Endless preparation",
+        "rect": [
+          546,
+          107,
+          262,
+          26
+        ],
+        "display": "block",
+        "position": "sticky",
+        "overflow": "visible",
+        "gridColumn": "auto",
+        "flex": "0 0 auto"
+      },
+      {
+        "tag": "DIV",
+        "choice": "",
+        "text": "Choose defenseCampaign SiegeEndlessStart EndlessReturn to WarEndless records each cleared wave and e",
+        "rect": [
+          546,
+          141,
+          262,
+          128.625
+        ],
+        "display": "grid",
+        "position": "static",
+        "overflow": "auto",
+        "gridColumn": "auto",
+        "flex": "1 1 auto"
+      },
+      {
+        "tag": "P",
+        "choice": "",
+        "text": "Preparation. Buy or retrofit towers, deploy a Hero and one army stack, then resume.",
+        "rect": [
+          546,
+          275.625,
+          262,
+          26.375
+        ],
+        "display": "block",
+        "position": "static",
+        "overflow": "auto",
+        "gridColumn": "auto",
+        "flex": "0 0 auto"
+      }
+    ],
+    "choices": {
+      "tag": "DIV",
+      "choice": "",
+      "text": "Choose defenseCampaign SiegeEndlessStart EndlessReturn to WarEndless records each cleared wave and e",
+      "rect": [
+        546,
+        141,
+        262,
+        128.625
+      ],
+      "display": "grid",
+      "position": "static",
+      "overflow": "auto",
+      "gridColumn": "auto",
+      "flex": "1 1 auto",
+      "clientHeight": 129,
+      "scrollHeight": 316,
+      "scrollTop": 0,
+      "children": [
+        {
+          "tag": "P",
+          "choice": "",
+          "text": "Choose defense",
+          "rect": [
+            546,
+            145,
+            262,
+            17
+          ],
+          "display": "block",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "1 / -1",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "defense-mode:siege",
+          "text": "Campaign Siege",
+          "rect": [
+            546,
+            168,
+            129,
+            40
+          ],
+          "display": "block",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "auto",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "defense-mode:endless",
+          "text": "Endless",
+          "rect": [
+            679,
+            168,
+            129,
+            40
+          ],
+          "display": "block",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "auto",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "start-endless",
+          "text": "Start Endless",
+          "rect": [
+            546,
+            212,
+            262,
+            42
+          ],
+          "display": "block",
+          "position": "sticky",
+          "overflow": "visible",
+          "gridColumn": "1 / -1",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "defense-back-war",
+          "text": "Return to War",
+          "rect": [
+            546,
+            258,
+            262,
+            48
+          ],
+          "display": "block",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "1 / -1",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "P",
+          "choice": "",
+          "text": "Endless records each cleared wave and ends only when the core falls.",
+          "rect": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "display": "none",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "1 / -1",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "P",
+          "choice": "",
+          "text": "Tower roster · 2/2",
+          "rect": [
+            546,
+            314,
+            262,
+            17
+          ],
+          "display": "block",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "1 / -1",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "buy-tower:arrow",
+          "text": "Buy Arrow703025",
+          "rect": [
+            546,
+            337,
+            129,
+            56
+          ],
+          "display": "flex",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "auto",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "buy-tower:splash",
+          "text": "Buy Splash809045",
+          "rect": [
+            679,
+            337,
+            129,
+            56
+          ],
+          "display": "flex",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "auto",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "buy-tower:slow",
+          "text": "Buy Control507025",
+          "rect": [
+            546,
+            397,
+            129,
+            56
+          ],
+          "display": "flex",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "auto",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "buy-tower:support",
+          "text": "Buy Support805060",
+          "rect": [
+            679,
+            397,
+            129,
+            56
+          ],
+          "display": "flex",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "auto",
+          "flex": "0 1 auto"
+        },
+        {
+          "tag": "BUTTON",
+          "choice": "tutorial-toggle",
+          "text": "Skip tutorial",
+          "rect": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "display": "none",
+          "position": "static",
+          "overflow": "visible",
+          "gridColumn": "auto",
+          "flex": "0 1 auto"
+        }
+      ]
+    }
+  },
+  "screenshot": "qa\\game-completion-20261020\\visual-review\\defense-preparation-layout-probe\\prep-825x375.png"
+}

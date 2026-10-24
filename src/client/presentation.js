@@ -1,14 +1,26 @@
 // Live placement for review. This does not edit the active Kingdom contract.
 export const STAGE = [1376, 768];
 export const ACTIVE_AFFINE = [60, -10, 25, 35, 170, 165];
-// Empty sites are brass outlines and a stake. The painted ground stays visible.
+// Natural ground clearings without permanent grids; outline only for selection, focus, preview or tutorial.
 // The affine and Hall scale stay frozen.
-export const KINGDOM_PAD_PRESENTATION = 'kingdom-pad-state-v2';
+export const KINGDOM_PAD_PRESENTATION = 'kingdom-pad-state-v3';
 
 // Hero equipment room (reference 19-hero-equipment): full standing body centred, three slot cards
 // on each side, stat strip along the floor. `card` is the body box; the portrait card for a class
 // without a standing body (Healer) is fitted inside the same box.
 export const HERO_SLOT_COLUMNS = { left: ['helm', 'weapon', 'offhand'], right: ['armor', 'boots', 'accessory'] };
+export function armyRankStars(rank) {
+  if (!Number.isInteger(rank) || rank < 0 || rank > 4) throw new RangeError('Army rank must be between 0 and 4');
+  return `${'★'.repeat(rank)}${'☆'.repeat(4 - rank)}`;
+}
+
+export function armyRosterCapacity(count, capacity) {
+  if (!Number.isInteger(count) || !Number.isInteger(capacity) || count < 0 || capacity < 1 || count > capacity) {
+    throw new RangeError('Army formation count must fit its capacity');
+  }
+  return { value: count, max: capacity, ratio: count / capacity, label: `${count} of ${capacity} formations` };
+}
+
 export function heroStage() {
   const slot = { width: 272, height: 128, gap: 20, top: 104 };
   const column = index => ({ y: slot.top + index * (slot.height + slot.gap), width: slot.width, height: slot.height });
@@ -43,36 +55,48 @@ export function cardInsideStage(stage = heroStage(), source = STAGE) {
   return box.x >= 0 && box.y >= 0 && box.x + box.width <= source[0] && box.y + box.height <= source[1];
 }
 
-// Separate unbuilt perimeter. Site rectangles stay on the active contract.
+// Visual perimeter only. Legal site rectangles stay on the active contract.
+// The front line sits on the road anchor so the gate opening meets the road.
+// Side runs split at mid-depth: the far half is behind buildings, the near half is in front.
 export function wallPresentation(geo) {
-  let minX = Infinity;
-  let minY = Infinity;
-  let maxX = -Infinity;
-  let maxY = -Infinity;
-  for (const site of geo.sites) {
-    const [x, y, w, h] = site.rect;
-    minX = Math.min(minX, x);
-    minY = Math.min(minY, y);
-    maxX = Math.max(maxX, x + w);
-    maxY = Math.max(maxY, y + h);
-  }
-  const pad = 0.55;
-  const left = minX - pad;
-  const top = minY - pad;
-  const right = maxX + pad;
-  const bottom = maxY + pad;
-  const gateX = geo.anchors?.gate?.[0] ?? (left + right) / 2;
-  const gap = 0.7;
+  const gateX = geo.anchors?.gate?.[0] ?? 7.7;
+  const bottom = 9.45;
+  const gap = 1;
+  const left = 0.7;
+  const right = 12.6;
+  const top = 0.15;
+
+  // Clearing perimeter, outside P01–P17 and north of the painted foreground huts.
+  // The contract gate anchor stays south of this front line.
+  const nw = [left, top];
+  const ne = [right, top];
+  const midW = [left, 4.7];
+  const sw = [left, bottom];
+  const midE = [right, 4.7];
+  const se = [right, bottom];
+
+  const segment = (id, depth, a, b) => ({ id, depth, a, b, kind: 'run' });
+  const corner = (id, depth, at) => ({ id, depth, at });
   return {
-    version: 'walls-presentation-v1',
+    version: 'walls-isometric-v4',
     contractUnchanged: true,
-    points: [
-      [gateX - gap, bottom],
-      [left, bottom],
-      [left, top],
-      [right, top],
-      [right, bottom],
-      [gateX + gap, bottom],
+    gate: [gateX, bottom],
+    road: [gateX, bottom],
+    opening: gap,
+    corners: [
+      corner('nw', 'back', nw),
+      corner('ne', 'back', ne),
+      corner('sw', 'front', sw),
+      corner('se', 'front', se),
+    ],
+    segments: [
+      segment('back', 'back', nw, ne),
+      segment('side-west-far', 'back', nw, midW),
+      segment('side-east-far', 'back', ne, midE),
+      segment('side-west-near', 'front', midW, sw),
+      segment('side-east-near', 'front', midE, se),
+      segment('front-west', 'front', sw, [gateX - gap / 2, bottom]),
+      segment('front-east', 'front', [gateX + gap / 2, bottom], se),
     ],
   };
 }

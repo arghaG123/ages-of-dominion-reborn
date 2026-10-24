@@ -1,0 +1,2016 @@
+{
+  "recordedAt": "2026-10-21T04:51:40.266Z",
+  "classification": "CURRENT_SOURCE_BOUND_32_KIT_192_SLOT_MATRIX",
+  "summary": {
+    "classKitRows": 32,
+    "slotDecisions": 192,
+    "attached-asset": 9,
+    "static-baked-weapon": 24,
+    "socket-only": 159,
+    "uniqueBoundImages": 41
+  },
+  "interpretation": {
+    "attachedAsset": "Current painter has a distinct wearable/held-prop asset for the selected item age and slot.",
+    "staticBakedWeapon": "The body plate contains a weapon, so the painter suppresses the selected-item layer; item-specific replacement is not visible.",
+    "socketOnly": "The item is recorded in its slot, but no current item-specific body layer is bound."
+  },
+  "limits": "The all-slots-worn rows are synthetic source-consumer fixtures. They verify current bindings and file integrity, not natural acquisition, equip persistence, pixel fit, motion integration, or owner acceptance. Existing natural Future Knight captures are reviewed separately.",
+  "rows": [
+    {
+      "classId": "knight",
+      "era": "ancient",
+      "age": 0,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-knight-ancient.png",
+        "bytes": 1079391,
+        "sha256": "add37e3364726f7e52438051c6844e3881b7d6833b946143928a22c8437f6601",
+        "width": 578,
+        "height": 1472,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": false,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 0,
+          "itemId": "matrix-knight-ancient-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 0,
+          "itemId": "matrix-knight-ancient-weapon",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/worn-gear-20261018/flint-club-stone.png",
+            "bytes": 1685485,
+            "sha256": "bff9bf7b9a838cc121a4f2ca1d17c2d96d46b664cc3722c0a136eb4916523eef",
+            "width": 1536,
+            "height": 1024,
+            "colorType": 6
+          },
+          "anchor": [
+            0.88,
+            0.53
+          ]
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 0,
+          "itemId": "matrix-knight-ancient-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 0,
+          "itemId": "matrix-knight-ancient-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 0,
+          "itemId": "matrix-knight-ancient-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 0,
+          "itemId": "matrix-knight-ancient-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "knight",
+      "era": "medieval",
+      "age": 3,
+      "body": {
+        "file": "assets/derivatives/visual-repair-20261020/hero-bodies/class-knight-medieval-unarmed-v1.png",
+        "bytes": 1782115,
+        "sha256": "a6d16d1f8b86a6bb755dc3c1ae50e560531d5d9462f31e51d266e599cf951c9a",
+        "width": 822,
+        "height": 1914,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": false,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 3,
+          "itemId": "matrix-knight-medieval-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 3,
+          "itemId": "matrix-knight-medieval-weapon",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/worn-gear-20261020/weapon-medieval.png",
+            "bytes": 1258046,
+            "sha256": "7d66a94bdcf9c89a76469da08e397014a54aca390ef0e1a5aef130c453673916",
+            "width": 1536,
+            "height": 1024,
+            "colorType": 6
+          },
+          "anchor": [
+            0.88,
+            0.53
+          ]
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 3,
+          "itemId": "matrix-knight-medieval-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 3,
+          "itemId": "matrix-knight-medieval-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 3,
+          "itemId": "matrix-knight-medieval-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 3,
+          "itemId": "matrix-knight-medieval-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "knight",
+      "era": "powder",
+      "age": 4,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-knight-powder.png",
+        "bytes": 856564,
+        "sha256": "c9c59df86005f5f759ba921da900eac0db18a6a7a8bea981997d0a63dd260096",
+        "width": 646,
+        "height": 1517,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": false,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 4,
+          "itemId": "matrix-knight-powder-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 4,
+          "itemId": "matrix-knight-powder-weapon",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/worn-gear-20261020/weapon-gunpowder.png",
+            "bytes": 1300887,
+            "sha256": "aeabfafcf5c427bd6632789fc7ca594c71d701228e43f5d726c90466f7c87715",
+            "width": 1536,
+            "height": 1024,
+            "colorType": 6
+          },
+          "anchor": [
+            0.88,
+            0.53
+          ]
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 4,
+          "itemId": "matrix-knight-powder-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 4,
+          "itemId": "matrix-knight-powder-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 4,
+          "itemId": "matrix-knight-powder-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 4,
+          "itemId": "matrix-knight-powder-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "knight",
+      "era": "mech",
+      "age": 7,
+      "body": {
+        "file": "assets/derivatives/visual-repair-20261020/hero-bodies/class-knight-mech-unarmed-v1.png",
+        "bytes": 1719032,
+        "sha256": "8c27e9afae3bc577eae14c127f2e4f986f98c8ad7f13420575aff6d6044a8d1c",
+        "width": 767,
+        "height": 2051,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": false,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 7,
+          "itemId": "matrix-knight-mech-helm",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/visual-repair-20261020/hero-gear/class-knight-future-helm-v1.png",
+            "bytes": 2083003,
+            "sha256": "f5f558bebe7a6fadd4b780765519869c9597fb0a297865dd22e6695c77917c4e",
+            "width": 1144,
+            "height": 1375,
+            "colorType": 6
+          },
+          "anchor": [
+            0.5,
+            0.08
+          ]
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 7,
+          "itemId": "matrix-knight-mech-weapon",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/worn-gear-20261020/weapon-future.png",
+            "bytes": 1352608,
+            "sha256": "f1bb98a8b7d05e380243f56e76f8e74c999324f06d2f1a20a1b826f737bad5d2",
+            "width": 1536,
+            "height": 1024,
+            "colorType": 6
+          },
+          "anchor": [
+            0.88,
+            0.53
+          ]
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 7,
+          "itemId": "matrix-knight-mech-offhand",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/visual-repair-20261020/hero-gear/class-knight-future-offhand-v1.png",
+            "bytes": 1963363,
+            "sha256": "9d7efc99a1b58b6d2d2395ad20c2023c946ffd5f3c39876a186ea2d84cae6309",
+            "width": 1312,
+            "height": 1199,
+            "colorType": 6
+          },
+          "anchor": [
+            0.13,
+            0.53
+          ]
+        },
+        {
+          "slot": "armor",
+          "itemAge": 7,
+          "itemId": "matrix-knight-mech-armor",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/visual-repair-20261020/hero-gear/class-knight-future-armor-v1.png",
+            "bytes": 1819587,
+            "sha256": "922e413d00ea4199bec9feb10b0ac6dfb39d3ca358bb0d807ae94ce4389f842f",
+            "width": 1222,
+            "height": 1287,
+            "colorType": 6
+          },
+          "anchor": [
+            0.5,
+            0.36
+          ]
+        },
+        {
+          "slot": "boots",
+          "itemAge": 7,
+          "itemId": "matrix-knight-mech-boots",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/visual-repair-20261020/hero-gear/class-knight-future-boots-v2.png",
+            "bytes": 1528914,
+            "sha256": "69376950cdf392f1f8fdd98b8e31e0a4f09e65795e5975e03f14bfb3d57851c4",
+            "width": 1536,
+            "height": 1024,
+            "colorType": 6
+          },
+          "anchor": [
+            0.5,
+            0.92
+          ]
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 7,
+          "itemId": "matrix-knight-mech-accessory",
+          "painterAppearance": "attached-asset",
+          "status": "attached-asset",
+          "image": {
+            "file": "assets/derivatives/visual-repair-20261020/hero-gear/class-knight-future-accessory-v1.png",
+            "bytes": 1147952,
+            "sha256": "2ebaf27cad131f650080ab124733da9dae5e6ce2f3f7d811a4875dd7d31523d3",
+            "width": 1254,
+            "height": 1254,
+            "colorType": 6
+          },
+          "anchor": [
+            0.5,
+            0.19
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "ranger",
+      "era": "ancient",
+      "age": 0,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-ranger-ancient-v2.png",
+        "bytes": 1290514,
+        "sha256": "ed8e5b0cc564aa0a4854b71ed32b4d9ce2cd20ec7adf6c3458d30f5645f02b59",
+        "width": 1100,
+        "height": 1429,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 0,
+          "itemId": "matrix-ranger-ancient-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 0,
+          "itemId": "matrix-ranger-ancient-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 0,
+          "itemId": "matrix-ranger-ancient-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 0,
+          "itemId": "matrix-ranger-ancient-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 0,
+          "itemId": "matrix-ranger-ancient-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 0,
+          "itemId": "matrix-ranger-ancient-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "ranger",
+      "era": "medieval",
+      "age": 3,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-ranger-standing-body.png",
+        "bytes": 1329089,
+        "sha256": "ba651f83e03b84497a1ef511769cdfea25d17ab4d8a887692c6e69479894d53d",
+        "width": 1061,
+        "height": 1400,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 3,
+          "itemId": "matrix-ranger-medieval-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 3,
+          "itemId": "matrix-ranger-medieval-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 3,
+          "itemId": "matrix-ranger-medieval-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 3,
+          "itemId": "matrix-ranger-medieval-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 3,
+          "itemId": "matrix-ranger-medieval-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 3,
+          "itemId": "matrix-ranger-medieval-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "ranger",
+      "era": "powder",
+      "age": 4,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-ranger-powder.png",
+        "bytes": 655459,
+        "sha256": "e6530a449d9055d30e264814da46e5800750d8c34e8c872292fba4b7128e7039",
+        "width": 674,
+        "height": 1075,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 4,
+          "itemId": "matrix-ranger-powder-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 4,
+          "itemId": "matrix-ranger-powder-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 4,
+          "itemId": "matrix-ranger-powder-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 4,
+          "itemId": "matrix-ranger-powder-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 4,
+          "itemId": "matrix-ranger-powder-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 4,
+          "itemId": "matrix-ranger-powder-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "ranger",
+      "era": "mech",
+      "age": 7,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-ranger-mech-v2.png",
+        "bytes": 1957189,
+        "sha256": "42bb0ca8567de8f66af77349b7d7ec9267d063cafbbd6b93864e6bdc95f0bcf6",
+        "width": 1024,
+        "height": 1536,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 7,
+          "itemId": "matrix-ranger-mech-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 7,
+          "itemId": "matrix-ranger-mech-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 7,
+          "itemId": "matrix-ranger-mech-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 7,
+          "itemId": "matrix-ranger-mech-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 7,
+          "itemId": "matrix-ranger-mech-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 7,
+          "itemId": "matrix-ranger-mech-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "warlock",
+      "era": "ancient",
+      "age": 0,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-warlock-ancient.png",
+        "bytes": 830811,
+        "sha256": "5328a0bcc55f1a1c03e1a93320633f6cd55e0c3dfa7045cae27da7502e5575d4",
+        "width": 563,
+        "height": 1354,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 0,
+          "itemId": "matrix-warlock-ancient-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 0,
+          "itemId": "matrix-warlock-ancient-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 0,
+          "itemId": "matrix-warlock-ancient-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 0,
+          "itemId": "matrix-warlock-ancient-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 0,
+          "itemId": "matrix-warlock-ancient-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 0,
+          "itemId": "matrix-warlock-ancient-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "warlock",
+      "era": "medieval",
+      "age": 3,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-warlock-standing-body.png",
+        "bytes": 1394447,
+        "sha256": "4229174740dc3d4917b12cd5d950faefe88cc328a5f6c5a0763a45b7c8b9201c",
+        "width": 669,
+        "height": 1400,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 3,
+          "itemId": "matrix-warlock-medieval-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 3,
+          "itemId": "matrix-warlock-medieval-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 3,
+          "itemId": "matrix-warlock-medieval-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 3,
+          "itemId": "matrix-warlock-medieval-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 3,
+          "itemId": "matrix-warlock-medieval-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 3,
+          "itemId": "matrix-warlock-medieval-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "warlock",
+      "era": "powder",
+      "age": 4,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-warlock-powder.png",
+        "bytes": 568674,
+        "sha256": "c6417b2ca95b29654ce1576dc566fbccaceae11c82824880d255cba03b3874ec",
+        "width": 515,
+        "height": 1372,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 4,
+          "itemId": "matrix-warlock-powder-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 4,
+          "itemId": "matrix-warlock-powder-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 4,
+          "itemId": "matrix-warlock-powder-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 4,
+          "itemId": "matrix-warlock-powder-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 4,
+          "itemId": "matrix-warlock-powder-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 4,
+          "itemId": "matrix-warlock-powder-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "warlock",
+      "era": "mech",
+      "age": 7,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-warlock-mech-v2.png",
+        "bytes": 1686532,
+        "sha256": "08f0926ab2f2179876085994a669ab30cca8b0cdbd79f432ec90de4d592937e9",
+        "width": 805,
+        "height": 1954,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": false,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 7,
+          "itemId": "matrix-warlock-mech-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 7,
+          "itemId": "matrix-warlock-mech-weapon",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 7,
+          "itemId": "matrix-warlock-mech-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 7,
+          "itemId": "matrix-warlock-mech-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 7,
+          "itemId": "matrix-warlock-mech-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 7,
+          "itemId": "matrix-warlock-mech-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "mage",
+      "era": "ancient",
+      "age": 0,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-mage-standing-body.png",
+        "bytes": 1208970,
+        "sha256": "4cc5ce5218f8a6f52ffaf52ec600e6a7a8b32684a82506ce98739550137a2a49",
+        "width": 607,
+        "height": 1400,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 0,
+          "itemId": "matrix-mage-ancient-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 0,
+          "itemId": "matrix-mage-ancient-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 0,
+          "itemId": "matrix-mage-ancient-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 0,
+          "itemId": "matrix-mage-ancient-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 0,
+          "itemId": "matrix-mage-ancient-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 0,
+          "itemId": "matrix-mage-ancient-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "mage",
+      "era": "medieval",
+      "age": 3,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-mage-medieval.png",
+        "bytes": 843213,
+        "sha256": "1d0c3c2f1d806b51915114e23edbcd954fbd8fed4c8efbbeba6d06593b13ee09",
+        "width": 587,
+        "height": 1352,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 3,
+          "itemId": "matrix-mage-medieval-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 3,
+          "itemId": "matrix-mage-medieval-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 3,
+          "itemId": "matrix-mage-medieval-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 3,
+          "itemId": "matrix-mage-medieval-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 3,
+          "itemId": "matrix-mage-medieval-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 3,
+          "itemId": "matrix-mage-medieval-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "mage",
+      "era": "powder",
+      "age": 4,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-mage-powder.png",
+        "bytes": 758219,
+        "sha256": "a453a540f4ec42c7f5f0f06b0caef1ad202529a0f29691e386ad9b4b3e86e860",
+        "width": 563,
+        "height": 1399,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 4,
+          "itemId": "matrix-mage-powder-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 4,
+          "itemId": "matrix-mage-powder-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 4,
+          "itemId": "matrix-mage-powder-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 4,
+          "itemId": "matrix-mage-powder-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 4,
+          "itemId": "matrix-mage-powder-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 4,
+          "itemId": "matrix-mage-powder-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "mage",
+      "era": "mech",
+      "age": 7,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-mage-mech.png",
+        "bytes": 777527,
+        "sha256": "2559cc0c241525ec4de7e9d58894373b05e75ec8376df2c007c53e3a39d1a66a",
+        "width": 596,
+        "height": 1432,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 7,
+          "itemId": "matrix-mage-mech-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 7,
+          "itemId": "matrix-mage-mech-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 7,
+          "itemId": "matrix-mage-mech-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 7,
+          "itemId": "matrix-mage-mech-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 7,
+          "itemId": "matrix-mage-mech-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 7,
+          "itemId": "matrix-mage-mech-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "paladin",
+      "era": "ancient",
+      "age": 0,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-paladin-ancient-v2.png",
+        "bytes": 1913232,
+        "sha256": "a7b66b03419e8806f69a186bfca89726aba5e6b4fb0b42d5c201df301fd3a68f",
+        "width": 1024,
+        "height": 1536,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": false,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 0,
+          "itemId": "matrix-paladin-ancient-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 0,
+          "itemId": "matrix-paladin-ancient-weapon",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 0,
+          "itemId": "matrix-paladin-ancient-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 0,
+          "itemId": "matrix-paladin-ancient-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 0,
+          "itemId": "matrix-paladin-ancient-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 0,
+          "itemId": "matrix-paladin-ancient-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "paladin",
+      "era": "medieval",
+      "age": 3,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-paladin-standing-body.png",
+        "bytes": 1118855,
+        "sha256": "a756d8fd92e44f2dcb2285ef3f1db977bf85ca61ac2b18fd36dbac155b4d99ed",
+        "width": 592,
+        "height": 1400,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": false,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 3,
+          "itemId": "matrix-paladin-medieval-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 3,
+          "itemId": "matrix-paladin-medieval-weapon",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 3,
+          "itemId": "matrix-paladin-medieval-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 3,
+          "itemId": "matrix-paladin-medieval-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 3,
+          "itemId": "matrix-paladin-medieval-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 3,
+          "itemId": "matrix-paladin-medieval-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "paladin",
+      "era": "powder",
+      "age": 4,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-paladin-powder.png",
+        "bytes": 1413653,
+        "sha256": "8fbcbb327013a6831421b7bc538cb89685e1bf92867d21661063a977d6bcfb13",
+        "width": 626,
+        "height": 1485,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 4,
+          "itemId": "matrix-paladin-powder-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 4,
+          "itemId": "matrix-paladin-powder-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 4,
+          "itemId": "matrix-paladin-powder-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 4,
+          "itemId": "matrix-paladin-powder-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 4,
+          "itemId": "matrix-paladin-powder-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 4,
+          "itemId": "matrix-paladin-powder-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "paladin",
+      "era": "mech",
+      "age": 7,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-paladin-mech-v2.png",
+        "bytes": 1703937,
+        "sha256": "34da15ccfbba1c5ebd0c88a63552e0736ed605349726366443416239b82eebf4",
+        "width": 1024,
+        "height": 1536,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": false,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 7,
+          "itemId": "matrix-paladin-mech-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 7,
+          "itemId": "matrix-paladin-mech-weapon",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 7,
+          "itemId": "matrix-paladin-mech-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 7,
+          "itemId": "matrix-paladin-mech-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 7,
+          "itemId": "matrix-paladin-mech-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 7,
+          "itemId": "matrix-paladin-mech-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "barbarian",
+      "era": "ancient",
+      "age": 0,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-barbarian-standing-body.png",
+        "bytes": 1276569,
+        "sha256": "ca230f764843e8e92a47a496ddb91c1c692eeacb0edf6e90eab4b87e05c10a94",
+        "width": 627,
+        "height": 1400,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 0,
+          "itemId": "matrix-barbarian-ancient-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 0,
+          "itemId": "matrix-barbarian-ancient-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 0,
+          "itemId": "matrix-barbarian-ancient-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 0,
+          "itemId": "matrix-barbarian-ancient-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 0,
+          "itemId": "matrix-barbarian-ancient-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 0,
+          "itemId": "matrix-barbarian-ancient-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "barbarian",
+      "era": "medieval",
+      "age": 3,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-barbarian-medieval.png",
+        "bytes": 1066471,
+        "sha256": "1dca0ab536c40c8ad166097408fd5e5e1e220557d04ac93bf17bc4feba3881bb",
+        "width": 639,
+        "height": 1437,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 3,
+          "itemId": "matrix-barbarian-medieval-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 3,
+          "itemId": "matrix-barbarian-medieval-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 3,
+          "itemId": "matrix-barbarian-medieval-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 3,
+          "itemId": "matrix-barbarian-medieval-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 3,
+          "itemId": "matrix-barbarian-medieval-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 3,
+          "itemId": "matrix-barbarian-medieval-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "barbarian",
+      "era": "powder",
+      "age": 4,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-barbarian-powder.png",
+        "bytes": 1167841,
+        "sha256": "09bae31e45607e841138882c6b89f7ef6bc5fe8db4042695a279a9c21a9a09ab",
+        "width": 664,
+        "height": 1498,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 4,
+          "itemId": "matrix-barbarian-powder-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 4,
+          "itemId": "matrix-barbarian-powder-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 4,
+          "itemId": "matrix-barbarian-powder-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 4,
+          "itemId": "matrix-barbarian-powder-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 4,
+          "itemId": "matrix-barbarian-powder-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 4,
+          "itemId": "matrix-barbarian-powder-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "barbarian",
+      "era": "mech",
+      "age": 7,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-barbarian-mech.png",
+        "bytes": 1024291,
+        "sha256": "656b9daa8a73c11ddd5eb51b05a9509742854b1ec24fa639461e7e7f550f0337",
+        "width": 660,
+        "height": 1498,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 7,
+          "itemId": "matrix-barbarian-mech-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 7,
+          "itemId": "matrix-barbarian-mech-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 7,
+          "itemId": "matrix-barbarian-mech-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 7,
+          "itemId": "matrix-barbarian-mech-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 7,
+          "itemId": "matrix-barbarian-mech-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 7,
+          "itemId": "matrix-barbarian-mech-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "necromancer",
+      "era": "ancient",
+      "age": 0,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-necromancer-ancient.png",
+        "bytes": 962189,
+        "sha256": "a4005c9d16026066cae49a6b160d8df8369721e5da50f6d4b651b252ed749c42",
+        "width": 602,
+        "height": 1320,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 0,
+          "itemId": "matrix-necromancer-ancient-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 0,
+          "itemId": "matrix-necromancer-ancient-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 0,
+          "itemId": "matrix-necromancer-ancient-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 0,
+          "itemId": "matrix-necromancer-ancient-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 0,
+          "itemId": "matrix-necromancer-ancient-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 0,
+          "itemId": "matrix-necromancer-ancient-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "necromancer",
+      "era": "medieval",
+      "age": 3,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-necromancer-standing-body.png",
+        "bytes": 1099889,
+        "sha256": "cbbf39bc8126daac14783f1d818834406a9cb0eba602002358fc5781c4d61794",
+        "width": 583,
+        "height": 1400,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 3,
+          "itemId": "matrix-necromancer-medieval-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 3,
+          "itemId": "matrix-necromancer-medieval-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 3,
+          "itemId": "matrix-necromancer-medieval-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 3,
+          "itemId": "matrix-necromancer-medieval-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 3,
+          "itemId": "matrix-necromancer-medieval-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 3,
+          "itemId": "matrix-necromancer-medieval-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "necromancer",
+      "era": "powder",
+      "age": 4,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-necromancer-powder.png",
+        "bytes": 581349,
+        "sha256": "2c1f93f60f7f202ef8d8c1c53e43120821a1ffd9638020d28367ff1fb256f19a",
+        "width": 541,
+        "height": 1394,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 4,
+          "itemId": "matrix-necromancer-powder-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 4,
+          "itemId": "matrix-necromancer-powder-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 4,
+          "itemId": "matrix-necromancer-powder-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 4,
+          "itemId": "matrix-necromancer-powder-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 4,
+          "itemId": "matrix-necromancer-powder-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 4,
+          "itemId": "matrix-necromancer-powder-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "necromancer",
+      "era": "mech",
+      "age": 7,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-necromancer-mech.png",
+        "bytes": 566841,
+        "sha256": "0da9f09b57591d59bf55af5b1f9d78df595d1f473fd8f816bba9bc8df5cdf147",
+        "width": 572,
+        "height": 1388,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 7,
+          "itemId": "matrix-necromancer-mech-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 7,
+          "itemId": "matrix-necromancer-mech-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 7,
+          "itemId": "matrix-necromancer-mech-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 7,
+          "itemId": "matrix-necromancer-mech-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 7,
+          "itemId": "matrix-necromancer-mech-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 7,
+          "itemId": "matrix-necromancer-mech-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "healer",
+      "era": "ancient",
+      "age": 0,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png",
+        "bytes": 1619580,
+        "sha256": "f50a1d2530492b194ab4098566a43f38f96f426a2d7e842574f996a25d15a4be",
+        "width": 832,
+        "height": 1385,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 0,
+          "itemId": "matrix-healer-ancient-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 0,
+          "itemId": "matrix-healer-ancient-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 0,
+          "itemId": "matrix-healer-ancient-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 0,
+          "itemId": "matrix-healer-ancient-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 0,
+          "itemId": "matrix-healer-ancient-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 0,
+          "itemId": "matrix-healer-ancient-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "healer",
+      "era": "medieval",
+      "age": 3,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-healer-medieval-v2.png",
+        "bytes": 2173464,
+        "sha256": "b4db03edcd067f19afaa9b436287fa0c4e3d284c460d52be8a348fca87364e97",
+        "width": 966,
+        "height": 1628,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 3,
+          "itemId": "matrix-healer-medieval-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 3,
+          "itemId": "matrix-healer-medieval-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 3,
+          "itemId": "matrix-healer-medieval-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 3,
+          "itemId": "matrix-healer-medieval-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 3,
+          "itemId": "matrix-healer-medieval-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 3,
+          "itemId": "matrix-healer-medieval-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "healer",
+      "era": "powder",
+      "age": 4,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-healer-powder.png",
+        "bytes": 881419,
+        "sha256": "e498c95a1270e8547abe0856c0b92beffbf4b99277e5bb62c01cbd59347baff7",
+        "width": 772,
+        "height": 1216,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 4,
+          "itemId": "matrix-healer-powder-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 4,
+          "itemId": "matrix-healer-powder-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 4,
+          "itemId": "matrix-healer-powder-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 4,
+          "itemId": "matrix-healer-powder-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 4,
+          "itemId": "matrix-healer-powder-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 4,
+          "itemId": "matrix-healer-powder-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    },
+    {
+      "classId": "healer",
+      "era": "mech",
+      "age": 7,
+      "body": {
+        "file": "assets/derivatives/mock-led-20261016/bodies/eras/class-healer-mech.png",
+        "bytes": 898730,
+        "sha256": "c8feb4c3f7f342b9a85a26f0436e851b566fcb20b57eac47f5b8f8b05c865daf",
+        "width": 708,
+        "height": 1229,
+        "colorType": 6
+      },
+      "bodyKitMatch": true,
+      "heldWeaponBakedIntoBody": true,
+      "decisions": [
+        {
+          "slot": "helm",
+          "itemAge": 7,
+          "itemId": "matrix-healer-mech-helm",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "weapon",
+          "itemAge": 7,
+          "itemId": "matrix-healer-mech-weapon",
+          "painterAppearance": "socket-only",
+          "status": "static-baked-weapon"
+        },
+        {
+          "slot": "offhand",
+          "itemAge": 7,
+          "itemId": "matrix-healer-mech-offhand",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "armor",
+          "itemAge": 7,
+          "itemId": "matrix-healer-mech-armor",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "boots",
+          "itemAge": 7,
+          "itemId": "matrix-healer-mech-boots",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        },
+        {
+          "slot": "accessory",
+          "itemAge": 7,
+          "itemId": "matrix-healer-mech-accessory",
+          "painterAppearance": "socket-only",
+          "status": "socket-only"
+        }
+      ]
+    }
+  ]
+}

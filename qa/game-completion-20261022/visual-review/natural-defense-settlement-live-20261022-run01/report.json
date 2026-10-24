@@ -1,0 +1,103 @@
+{
+  "recordedAt": "2026-10-22T05:19:43.442Z",
+  "classification": "NATURAL_UI_CAMPAIGN_SIEGE_FIVE_WAVE_SETTLEMENT_RELOAD",
+  "url": "http://127.0.0.1:4173/?audit=1",
+  "viewport": "1280x720",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-c40099dc-54d6-4211-ac08-9ca989715302",
+  "preRun": {
+    "campaignId": "campaign-c40099dc-54d6-4211-ac08-9ca989715302",
+    "age": 0,
+    "day": 1,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "army": [
+      {
+        "id": "army-1",
+        "count": 12
+      },
+      {
+        "id": "army-2",
+        "count": 8
+      }
+    ],
+    "defense": {
+      "status": "ACTIVE",
+      "speed": 2,
+      "heroDeployed": true,
+      "armyDeployed": true
+    }
+  },
+  "resultBeforeSettlement": {
+    "campaignId": "campaign-c40099dc-54d6-4211-ac08-9ca989715302",
+    "age": 0,
+    "day": 1,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "army": [
+      {
+        "id": "army-1",
+        "count": 12
+      },
+      {
+        "id": "army-2",
+        "count": 8
+      }
+    ],
+    "defense": {
+      "status": "RESOLVED",
+      "practice": "siege",
+      "clearedWaves": 2,
+      "waves": 5,
+      "pendingSettlement": true,
+      "winner": "e",
+      "core": -5.804999999999964
+    }
+  },
+  "afterSettlement": {
+    "campaignId": "campaign-c40099dc-54d6-4211-ac08-9ca989715302",
+    "age": 0,
+    "day": 1,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "army": [
+      {
+        "id": "army-2",
+        "count": 8
+      }
+    ],
+    "defense": null
+  },
+  "reloadState": {
+    "campaignId": "campaign-c40099dc-54d6-4211-ac08-9ca989715302",
+    "age": 0,
+    "day": 1,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "army": [
+      {
+        "id": "army-2",
+        "count": 8
+      }
+    ],
+    "defense": null
+  },
+  "passed": false
+}

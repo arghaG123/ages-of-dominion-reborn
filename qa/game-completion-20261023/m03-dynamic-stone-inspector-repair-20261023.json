@@ -1,0 +1,33 @@
+{
+  "reviewId": "M03-dynamic-stone-inspector-repair-20261023",
+  "date": "2026-10-23",
+  "mock": "M03",
+  "status": "FAIL_DYNAMIC_STONE_CITY_LAYOUT_UNRESOLVED",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/03-kingdom-stone.jpg",
+    "sha256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+    "dimensions": [
+      1376,
+      768
+    ]
+  },
+  "priorMatchedEvidence": "qa/game-completion-20261022/mock-live-review-run01/m03-stone-wall-live-review-20261022.json",
+  "repair": {
+    "attempted": "A duplicate Kingdom inspector adjustment was drafted and immediately removed after checking the shared status notes.",
+    "reason": "The bottom-center inspector and left Kingdom rail already exist in src/client/polish.css from the other AI work; retaining a second implementation could conflict.",
+    "retainedSourceChange": false
+  },
+  "verification": {
+    "command": "node --check src/client/main.js",
+    "result": "PASS after duplicate removal",
+    "sourceSha256": {
+      "src/client/main.js": "a784a3bebc2f455023bf2402ff7e2779159ac42da38ea171ca94fec035e0fd7a",
+      "src/client/game.css": "74bc6b6dd9804408114019463a27c8bbdb71a7296fce2345035644206288143b"
+    }
+  },
+  "remaining": [
+    "M03 remains a confirmed visual FAIL: the known natural Stone wall capture shows sparse interior density, outlying buildings, and Quarry rather than the matched Sawmill inspector.",
+    "The existing approved site geometry and saved building identities must remain intact; the current source and approved browser tab do not provide a verified density/placement correction.",
+    "Retain a matched landscape capture and verify density, placements, building state, and inspector after a valid repair."
+  ]
+}

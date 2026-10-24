@@ -1,21 +1,206 @@
 // Independently authored campaign; approved tables are injected as data.
 import contract from '../data/implementation-contract.json' with { type: 'json' };
-import { adventureMap, routeCost } from './navigation.js';
-import { addRankXp, dwellingCost, dwellingPool, dwellingTerms, endDay, grantHeroXp, makePack, rankForXp, rollLoot } from './mechanics.js';
+import adventureWorlds from '../data/adventure-worlds.json' with { type: 'json' };
+import { adventureGeometryForWorld, adventureMap, isOpen, routeCost, routeTo } from './navigation.js';
+import { addRankXp, createSkillOffer, dwellingCost, dwellingPool, dwellingTerms, endDay, grantHeroXp, makePack, rankForXp, rollLoot } from './mechanics.js';
 import { GEAR_SLOTS, RIVALS, SKILL_IDS, agePrice, dailyMoves, forgeOffer, gateHp, heroStats, manaMax, marketQuote, recruitCost, towerPurchaseCost, validItem } from './rules.js';
-import { activeStackId, adoptBattle, autoStep, castSpell, createChallengeBattle, createDuelBattle, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, playOut, retreat, skipBonus, strike, validateBattle, wait as battleWait } from './battle.js';
+import { activeStackId, adoptBattle, autoStep, castSpell, createChallengeBattle, createDuelBattle, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, placeDeployment, playOut, retreat, skipBonus, startDeployedBattle, strike, validateBattle, wait as battleWait } from './battle.js';
 import { adoptDefense, advanceDefense, castDefense, createDefense, deployArmy, deployHero, earlyCall, validateDefense } from './defense.js';
 export const SCHEMA = 1;
 export { gateHp, heroStats, manaMax, dailyMoves };
 const producers = { farm: ['food', .55], lumber: ['wood', .45], quarry: ['stone', .35], mine: ['gold', .25] };
 const unique = new Set(['barracks', 'workshop', 'hall', 'armory']);
 const resources = ['food', 'wood', 'stone', 'gold'];
-const map = adventureMap(contract.geometry.adventure);
-const townApproach = contract.geometry.adventure.sites.find(site => site.id === 'town').approach;
-const heroAnchor = contract.geometry.adventure.anchors.hero;
-export function newCampaign(contract, data, now, seed = 123456789) {
+export const DEFAULT_ADVENTURE_WORLD_ID = adventureWorlds[0].id;
+const adventureWorldIds = new Set(adventureWorlds.map(world => world.id));
+const adventureWorld = id => adventureWorlds.find(world => world.id === id);
+const adventureGeometry = (id, seed) => adventureGeometryForWorld(contract.geometry.adventure, adventureWorld(id), seed);
+const adventureMapForWorld = (id, seed) => adventureMap(adventureGeometry(id, seed));
+const ADVENTURE_GEOMETRY_VERSION = 4;
+
+function nearestReachableCell(geometry, map, target, preferred = []) {
+  const start = geometry.anchors.hero.map(Math.floor);
+  const preferredSet = new Set(preferred);
+  const candidates = [];
+  for (let y = 0; y < map.rows; y += 1) for (let x = 0; x < map.cols; x += 1) {
+    if (!isOpen(map, x, y) || map.guards?.has(`${x},${y}`)) continue;
+    candidates.push([x, y]);
+  }
+  candidates.sort((first, second) => {
+    const firstId = first.join(','), secondId = second.join(',');
+    const firstDistance = Math.abs(first[0] - target[0]) + Math.abs(first[1] - target[1]);
+    const secondDistance = Math.abs(second[0] - target[0]) + Math.abs(second[1] - target[1]);
+    return firstDistance - secondDistance
+      || Number(preferredSet.has(secondId)) - Number(preferredSet.has(firstId))
+      || first[1] - second[1] || first[0] - second[0];
+  });
+  for (const candidate of candidates) {
+    try {
+      if (candidate[0] === start[0] && candidate[1] === start[1]) return candidate;
+      routeTo(map, start, candidate);
+      return candidate;
+    } catch { /* Choose the nearest reachable cell that keeps the journey valid. */ }
+  }
+  throw new Error('No reachable Adventure recovery cell');
+}
+
+function currentGuardCells(geometry) {
+  return Object.entries(geometry.anchors)
+    .filter(([id]) => id.startsWith('guard-'))
+    .map(([id, point]) => ({ id, cell: point.map(Math.floor), key: point.map(Math.floor).join(',') }))
+    .sort((first, second) => first.id.localeCompare(second.id));
+}
+
+function nearestGuardCell(guards, point) {
+  return [...guards].sort((first, second) => {
+    const distance = row => Math.abs(row.cell[0] - point[0]) + Math.abs(row.cell[1] - point[1]);
+    return distance(first) - distance(second) || first.id.localeCompare(second.id);
+  })[0];
+}
+
+function remapLegacyResolvedGuards(adventure, geometry) {
+  if (!Array.isArray(adventure.resolvedGuards)) return;
+  const guards = currentGuardCells(geometry);
+  const pending = adventure.pendingEncounter;
+  const pendingCell = pending && String(pending.status).startsWith('UNRESOLVED')
+    && Array.isArray(pending.cell) && pending.cell.length === 2 && pending.cell.every(Number.isInteger)
+    ? pending.cell
+    : null;
+  const pendingTarget = pendingCell && guards.length ? nearestGuardCell(guards, pendingCell)?.key : null;
+  const used = new Set();
+  const output = [];
+  const oldCells = [];
+  for (const value of adventure.resolvedGuards) {
+    if (typeof value !== 'string' || !/^\d+,\d+$/.test(value)) {
+      output.push(value);
+      continue;
+    }
+    if (pendingCell && value === pendingCell.join(',')) continue;
+    if (guards.some(row => row.key === value) && value !== pendingTarget && !used.has(value)) {
+      used.add(value);
+      output.push(value);
+    } else {
+      oldCells.push(value.split(',').map(Number));
+    }
+  }
+  for (const oldCell of oldCells) {
+    const target = nearestGuardCell(guards.filter(row => row.key !== pendingTarget && !used.has(row.key)), oldCell);
+    if (!target) {
+      // Keep excess historical clear markers instead of silently reducing progress.
+      output.push(oldCell.join(','));
+      continue;
+    }
+    used.add(target.key);
+    output.push(target.key);
+  }
+  adventure.resolvedGuards = [...new Set(output)];
+}
+
+function relocateLegacyEncounter(state, geometry, map) {
+  const adventure = state.adventure;
+  const pending = adventure.pendingEncounter;
+  if (!pending || !String(pending.status).startsWith('UNRESOLVED')) return false;
+  if (!Array.isArray(pending.cell) || pending.cell.length !== 2 || !pending.cell.every(Number.isInteger)) return false;
+  const guards = currentGuardCells(geometry).filter(row => !adventure.resolvedGuards.includes(row.key));
+  if (!guards.length) return false;
+  const { cell: targetCell } = nearestGuardCell(guards, pending.cell);
+  const cell = targetCell;
+  const oldOrigin = Array.isArray(pending.origin) && pending.origin.length === 2 && pending.origin.every(Number.isInteger)
+    ? pending.origin
+    : geometry.anchors.hero.map(Math.floor);
+  const neighbors = [[0,-1],[-1,0],[1,0],[0,1]].map(([dx,dy]) => [cell[0] + dx, cell[1] + dy])
+    .filter(([x,y]) => isOpen(map, x, y) && !map.guards.has(`${x},${y}`))
+    .sort((first, second) => {
+      const firstDistance = Math.abs(first[0] - oldOrigin[0]) + Math.abs(first[1] - oldOrigin[1]);
+      const secondDistance = Math.abs(second[0] - oldOrigin[0]) + Math.abs(second[1] - oldOrigin[1]);
+      return firstDistance - secondDistance || first[1] - second[1] || first[0] - second[0];
+    });
+  const start = geometry.anchors.hero.map(Math.floor);
+  let origin = null;
+  for (const candidate of neighbors) {
+    try {
+      if (candidate[0] === start[0] && candidate[1] === start[1]) { origin = candidate; break; }
+      routeTo(map, start, candidate);
+      origin = candidate;
+      break;
+    } catch { /* Try the next adjacent open cell. */ }
+  }
+  if (!origin) return false;
+  adventure.x = cell[0];
+  adventure.y = cell[1];
+  const guardKey = cell.join(',');
+  pending.id = `guard-${guardKey}`;
+  pending.cell = cell;
+  pending.origin = origin;
+  if (!adventure.visited.includes(guardKey)) adventure.visited.push(guardKey);
+  if (state.battle) {
+    state.battle.adventureCell = cell;
+    state.battle.origin = origin;
+  }
+  return true;
+}
+
+function reachableFromMapStart(geometry, map, cell) {
+  const start = geometry.anchors.hero.map(Math.floor);
+  if (cell[0] === start[0] && cell[1] === start[1]) return true;
+  try { routeTo(map, start, cell); return true; }
+  catch { return false; }
+}
+
+function migrateAdventureGeometry(state) {
+  const adventure = state.adventure;
+  if (!adventure || typeof adventure !== 'object' || Array.isArray(adventure)) return;
+  const fromVersion = missing(adventure, 'geometryVersion') ? 1 : adventure.geometryVersion;
+  if (![1, 2, 3].includes(fromVersion)) return;
+  // v1 and v2 may need remapping; v3 to v4 only adjusts two site hitboxes.
+  // Only coordinates that are invalid or disconnected from the current safe start move.
+  const geometry = adventureGeometry(state.adventureWorldId, state.seed);
+  const map = adventureMap(geometry);
+  if (missing(adventure, 'resolvedGuards')) adventure.resolvedGuards = [];
+  if (fromVersion <= 2) remapLegacyResolvedGuards(adventure, geometry);
+  if (missing(adventure, 'visited')) adventure.visited = [];
+  const visited = Array.isArray(adventure.visited) ? adventure.visited : [];
+  const preferred = visited.filter(value => typeof value === 'string' && /^\d+,\d+$/.test(value));
+  const oldPosition = Number.isInteger(adventure.x) && Number.isInteger(adventure.y)
+    ? [adventure.x, adventure.y]
+    : geometry.anchors.hero.map(Math.floor);
+  const pending = adventure.pendingEncounter;
+  const pendingCell = pending?.cell;
+  const preserveVersion3Encounter = fromVersion === 3
+    && pending && String(pending.status).startsWith('UNRESOLVED')
+    && Array.isArray(pendingCell) && pendingCell.length === 2 && pendingCell.every(Number.isInteger)
+    && pendingCell[0] === oldPosition[0] && pendingCell[1] === oldPosition[1]
+    && map.guards.has(pendingCell.join(','))
+    && Array.isArray(pending.origin) && pending.origin.length === 2 && pending.origin.every(Number.isInteger)
+    && isOpen(map, ...pending.origin) && reachableFromMapStart(geometry, map, pending.origin);
+  const relocatedEncounter = fromVersion <= 2
+    ? relocateLegacyEncounter(state, geometry, map)
+    : fromVersion === 3 && pending && String(pending.status).startsWith('UNRESOLVED') && !preserveVersion3Encounter
+      ? relocateLegacyEncounter(state, geometry, map)
+      : false;
+  if (!relocatedEncounter && !preserveVersion3Encounter
+    && (!isOpen(map, ...oldPosition) || map.guards.has(oldPosition.join(','))
+      || !reachableFromMapStart(geometry, map, oldPosition))) {
+    [adventure.x, adventure.y] = nearestReachableCell(geometry, map, oldPosition, preferred);
+  }
+  if (!Number.isInteger(adventure.x) || !Number.isInteger(adventure.y)) {
+    [adventure.x, adventure.y] = geometry.anchors.hero.map(Math.floor);
+  }
+  if (state.battle && Array.isArray(state.battle.adventureCell)) {
+    state.battle.adventureCell = [adventure.x, adventure.y];
+    if (Array.isArray(state.battle.origin)
+      && (!isOpen(map, ...state.battle.origin) || !reachableFromMapStart(geometry, map, state.battle.origin))) {
+      state.battle.origin = nearestReachableCell(geometry, map, state.battle.origin, preferred);
+    }
+  }
+  const recovered = `${adventure.x},${adventure.y}`;
+  if (Array.isArray(adventure.visited) && !adventure.visited.includes(recovered)) adventure.visited.push(recovered);
+  adventure.geometryVersion = ADVENTURE_GEOMETRY_VERSION;
+}
+export function newCampaign(contract, data, now, seed = 123456789, adventureWorldId = DEFAULT_ADVENTURE_WORLD_ID) {
   const state = {
     schema: SCHEMA, id: `campaign-${seed}`, revision: 0, seed, rngState: seed >>> 0,
+    adventureWorldId,
     age: 0, day: 1, resources: { food: 250, wood: 250, stone: 160, gold: 150 },
     plots: contract.geometry.kingdom.sites.map(s => ({ id: s.id, type: s.id === 'townhall' ? 'townhall' : null, level: s.id === 'townhall' ? 1 : 0 })),
     walls: { level: 0 }, buildJobs: [], clock: now,
@@ -37,6 +222,7 @@ function bag(value) {
 }
 export function validate(s, data) {
   if (s?.schema !== SCHEMA) throw new Error('Unsupported save schema');
+  if (!adventureWorldIds.has(s.adventureWorldId)) throw new Error('Invalid Adventure world');
   if (!Number.isInteger(s.age) || s.age < 0 || s.age > 7 || !Number.isFinite(s.clock) || s.clock < 0 || !Number.isInteger(s.revision) || s.revision < 0) throw new Error('Invalid age/clock/revision');
   if (!Number.isInteger(s.day) || s.day < 1 || !Number.isInteger(s.rngState) || s.rngState < 0 || s.rngState > 0xffffffff) throw new Error('Invalid day or random state');
   if (s.weather != null && !data.WEATHER[s.weather]) throw new Error('Invalid weather');
@@ -65,6 +251,10 @@ export function validate(s, data) {
   if (!Array.isArray(hero.offers)) throw new Error('Invalid skill offer');
   for (const offer of hero.offers) {
     if (!Number.isInteger(offer.level) || !Array.isArray(offer.choices) || offer.choices.length < 1 || offer.choices.length > 2 || new Set(offer.choices).size !== offer.choices.length || offer.choices.some(id => !SKILL_IDS.includes(id))) throw new Error('Invalid skill offer');
+    if (offer.source != null && (offer.source !== 'adventure-shrine' || offer.siteId !== 'shrine')) throw new Error('Invalid skill offer source');
+    if (offer.source === 'adventure-shrine' && (!s.adventure
+      || (s.adventure.claimedSites.includes('shrine') && !offer.chosen && !offer.declined)
+      || ((offer.chosen || offer.declined) && !s.adventure.claimedSites.includes('shrine')))) throw new Error('Invalid shrine offer state');
   }
   if (GEAR_SLOTS.some(slot => !(slot in hero.equip))) throw new Error('Invalid equipment slots');
   for (const slot of GEAR_SLOTS) {
@@ -87,7 +277,15 @@ export function validate(s, data) {
   }
   if (s.adventure != null) {
     const a = s.adventure;
+    const geometry = adventureGeometry(s.adventureWorldId, s.seed);
+    const map = adventureMap(geometry);
+    if (!Number.isInteger(a.geometryVersion) || a.geometryVersion !== ADVENTURE_GEOMETRY_VERSION) throw new Error('Invalid Adventure geometry version');
     if (!Number.isInteger(a.x) || !Number.isInteger(a.y) || !map || !Number.isInteger(a.moves) || a.moves < 0 || a.moves > dailyMoves(s, data) || typeof a.atTown !== 'boolean' || !Array.isArray(a.visited) || !Array.isArray(a.resolvedGuards)) throw new Error('Invalid journey');
+    const cacheIds = resources.filter(id => Object.hasOwn(geometry.anchors, id));
+    if (!a.cacheOffers || typeof a.cacheOffers !== 'object' || Array.isArray(a.cacheOffers) || Object.keys(a.cacheOffers).length !== cacheIds.length || cacheIds.some(id => !Number.isInteger(a.cacheOffers[id]) || a.cacheOffers[id] < 1) || !Array.isArray(a.collectedCaches) || new Set(a.collectedCaches).size !== a.collectedCaches.length || a.collectedCaches.some(id => !cacheIds.includes(id))) throw new Error('Invalid Adventure caches');
+    const siteOfferKeys = ['millFood', 'mineGold', 'ruinXp'];
+    const claimedSiteIds = ['mill', 'mine', 'ruin', 'shrine'];
+    if (!a.siteOffers || typeof a.siteOffers !== 'object' || Array.isArray(a.siteOffers) || Object.keys(a.siteOffers).sort().join(',') !== siteOfferKeys.join(',') || siteOfferKeys.some(id => !Number.isInteger(a.siteOffers[id]) || a.siteOffers[id] < 1) || !Array.isArray(a.claimedSites) || new Set(a.claimedSites).size !== a.claimedSites.length || a.claimedSites.some(id => !claimedSiteIds.includes(id))) throw new Error('Invalid Adventure site offers');
     const open = a.x >= 0 && a.y >= 0 && a.x < map.cols && a.y < map.rows && !map.blocked.has(`${a.x},${a.y}`);
     if (!open) throw new Error('Invalid journey');
     if (a.pendingEncounter != null) {
@@ -171,7 +369,7 @@ function levelOf(s, type) {
   return s.plots.find(p => p.type === type)?.level ?? 0;
 }
 function armyCapacity(s) { return 2 + levelOf(s, 'barracks'); }
-function dwellingSite() { return contract.geometry.adventure.sites.find(site => site.id === 'dwelling'); }
+function dwellingSite(state) { return adventureGeometry(state.adventureWorldId, state.seed).sites.find(site => site.id === 'dwelling'); }
 function ensureDwellingHistory(s) {
   if (Array.isArray(s.dwellingHistory)) return;
   s.dwellingHistory = [];
@@ -195,9 +393,14 @@ function ensureDwellingHistory(s) {
   }
 }
 function atDwelling(s) {
-  const site = dwellingSite();
+  const site = dwellingSite(s);
   if (!site || !s.adventure || s.adventure.atTown) return false;
   return s.adventure.x === site.approach[0] && s.adventure.y === site.approach[1];
+}
+function atAdventureSite(s, siteId) {
+  const site = adventureGeometry(s.adventureWorldId, s.seed).sites.find(row => row.id === siteId);
+  return Boolean(site && s.adventure && !s.adventure.atTown
+    && s.adventure.x === site.approach[0] && s.adventure.y === site.approach[1]);
 }
 function pay(s, payment) {
   if (Object.entries(payment).some(([k, n]) => !Number.isFinite(n) || n < 0 || s.resources[k] < n)) throw new Error('Not enough resources');
@@ -208,8 +411,22 @@ function missing(owner, key) {
   // Legacy migration fills only genuinely absent properties. Present null/wrong-type stays for validation.
   return owner == null || !Object.prototype.hasOwnProperty.call(owner, key);
 }
+function makeAdventureCacheOffers(state) {
+  const anchors = adventureGeometry(state.adventureWorldId, state.seed).anchors;
+  return Object.fromEntries(resources.filter(id => Object.hasOwn(anchors, id)).map(id => {
+    let hash = 2166136261;
+    const source = `${state.seed}:${state.adventureWorldId}:${id}`;
+    for (let index = 0; index < source.length; index += 1) hash = Math.imul(hash ^ source.charCodeAt(index), 16777619);
+    const base = ({ food: 110, wood: 130, stone: 100, gold: 210 })[id] + ((hash >>> 0) % 41);
+    return [id, Math.round(base * (1 + state.age * 0.3))];
+  }));
+}
+function makeAdventureSiteOffers(cacheOffers) {
+  return { ruinXp: 90, millFood: cacheOffers.food, mineGold: cacheOffers.gold };
+}
 export function adoptProgress(state, data) {
   // Fill recognized missing legacy fields only. A present malformed value stays for validation and must not reset history.
+  if (missing(state, 'adventureWorldId')) state.adventureWorldId = DEFAULT_ADVENTURE_WORLD_ID;
   if (missing(state, 'story')) state.story = { flags: {} };
   if (!state.story || typeof state.story !== 'object' || Array.isArray(state.story)) return state;
   if (missing(state.story, 'flags')) state.story.flags = {};
@@ -220,6 +437,15 @@ export function adoptProgress(state, data) {
   if (missing(state, 'quests')) state.quests = Object.fromEntries(data.QUEST_TEMPLATES.map(quest => [quest.id, { claimed: false }]));
   else if (state.quests && typeof state.quests === 'object' && !Array.isArray(state.quests)) {
     for (const quest of data.QUEST_TEMPLATES) if (missing(state.quests, quest.id)) state.quests[quest.id] = { claimed: false };
+  }
+  if (state.adventure && typeof state.adventure === 'object' && !Array.isArray(state.adventure)) {
+    if (missing(state.adventure, 'cacheOffers')) state.adventure.cacheOffers = makeAdventureCacheOffers(state);
+    if (missing(state.adventure, 'collectedCaches')) state.adventure.collectedCaches = [];
+    if (missing(state.adventure, 'siteOffers')) state.adventure.siteOffers = state.adventure.cacheOffers && typeof state.adventure.cacheOffers === 'object'
+      ? makeAdventureSiteOffers(state.adventure.cacheOffers)
+      : null;
+    if (missing(state.adventure, 'claimedSites')) state.adventure.claimedSites = [];
+    migrateAdventureGeometry(state);
   }
   ensureDwellingHistory(state);
   adoptBattle(state.battle);
@@ -311,8 +537,16 @@ function settle(state, now, data, caps = [8, 7, 6, 5, 4, 3.5, 3, 3]) {
 }
 export function advance(state, now, data, caps) { return settle(state, now, data, caps).state; }
 export function advanceReported(state, now, data, caps) { return settle(state, now, data, caps); }
+
+// Internal defense simulation. It does not purchase, grant, or append a dedupe record.
+export function advanceActiveDefense(state, dt) {
+  if (!state?.defense || state.defense.status !== 'ACTIVE' || state.defense.paused) return state;
+  const next = structuredClone(state);
+  next.defense = advanceDefense(next.defense, dt, { paused: false, speed: next.defense.speed });
+  return next;
+}
 export function formatResume(report) {
-  if (!report || (report.creditedMs <= 0 && report.completed.length === 0)) return '';
+  if (!report || (report.creditedMs < 1000 && report.completed.length === 0)) return '';
   const minutes = Math.floor(report.creditedMs / 60000);
   const seconds = Math.floor((report.creditedMs % 60000) / 1000);
   const gained = resources.filter(k => report.income[k] > 0).map(k => `${k} +${report.income[k].toFixed(2)}`);
@@ -434,10 +668,11 @@ export function command(state, input, now, data) {
   const s = advance(state, now, data);
   ensureDwellingHistory(s);
   const payload = input.payload ?? {};
-  const battlePending = s.battle && (s.battle.status === 'ACTIVE' || s.battle.pendingSettlement);
+  const battlePending = s.battle && (s.battle.status === 'PENDING' || s.battle.status === 'ACTIVE' || s.battle.pendingSettlement);
   const defensePending = s.defense && (s.defense.status === 'ACTIVE' || s.defense.pendingSettlement);
-  if (battlePending && input.type !== 'BATTLE' && input.type !== 'SETTLE_BATTLE') throw new Error('Battle result is pending');
-  if (defensePending && !['DEFENSE', 'SETTLE_DEFENSE', 'EARLY_CALL', 'DEPLOY_DEFENSE', 'DEPLOY_ARMY', 'DEFENSE_CAST'].includes(input.type)) throw new Error('Defense result is pending');
+  const localPreferences = ['SETTINGS', 'TUTORIAL_SKIP', 'TUTORIAL_REVIEW'].includes(input.type);
+  if (battlePending && !localPreferences && !['BATTLE', 'SETTLE_BATTLE', 'DEPLOY_BATTLE_STACK', 'START_DEPLOYED_BATTLE', 'CANCEL_BATTLE_SETUP'].includes(input.type)) throw new Error('Battle result is pending');
+  if (defensePending && !localPreferences && !['DEFENSE', 'SETTLE_DEFENSE', 'EARLY_CALL', 'DEPLOY_DEFENSE', 'DEPLOY_ARMY', 'DEFENSE_CAST'].includes(input.type)) throw new Error('Defense result is pending');
   if (input.type === 'BUILD') {
     const { plotId, building } = payload;
     const p = plotId === 'walls' ? s.walls : s.plots.find(p => p.id === plotId);
@@ -545,13 +780,17 @@ export function command(state, input, now, data) {
       if (!s.adventure.atTown) throw new Error('Journey already open');
       s.adventure.atTown = false;
     } else {
+      const geometry = adventureGeometry(s.adventureWorldId, s.seed);
+      const heroAnchor = geometry.anchors.hero;
       const x = Math.floor(heroAnchor[0]);
       const y = Math.floor(heroAnchor[1]);
-      s.adventure = { x, y, moves: dailyMoves(s, data), visited: [`${x},${y}`], resolvedGuards: [], pendingEncounter: null, atTown: false };
+      const cacheOffers = makeAdventureCacheOffers(s);
+      s.adventure = { geometryVersion: ADVENTURE_GEOMETRY_VERSION, x, y, moves: dailyMoves(s, data), visited: [`${x},${y}`], resolvedGuards: [], cacheOffers, collectedCaches: [], siteOffers: makeAdventureSiteOffers(cacheOffers), claimedSites: [], pendingEncounter: null, atTown: false };
     }
   } else if (input.type === 'MOVE') {
     if (!s.adventure || s.adventure.atTown) throw new Error('Not traveling');
     if (s.adventure.pendingEncounter && String(s.adventure.pendingEncounter.status).startsWith('UNRESOLVED')) throw new Error('Unresolved encounter');
+    const map = adventureMapForWorld(s.adventureWorldId, s.seed);
     const start = [s.adventure.x, s.adventure.y];
     const route = routeCost(map, start, payload.path);
     let guardAt = -1;
@@ -573,18 +812,50 @@ export function command(state, input, now, data) {
       const origin = guardAt === 0 ? start : route.cells[guardAt - 1];
       s.adventure.pendingEncounter = { id: `guard-${cell[0]},${cell[1]}`, cell, origin, status: 'UNRESOLVED', pack: makePack(s, data, s.age, { boss: false, row: 2 }) };
     }
+  } else if (input.type === 'CLAIM_ADVENTURE_CACHE') {
+    if (!s.adventure || s.adventure.atTown) throw new Error('Not traveling');
+    if (s.adventure.pendingEncounter && String(s.adventure.pendingEncounter.status).startsWith('UNRESOLVED')) throw new Error('Clear the guard first');
+    const id = payload.id;
+    const anchor = adventureGeometry(s.adventureWorldId, s.seed).anchors[id];
+    if (!resources.includes(id) || !anchor) throw new Error('Invalid cache');
+    const cell = `${Math.floor(anchor[0])},${Math.floor(anchor[1])}`;
+    if (`${s.adventure.x},${s.adventure.y}` !== cell) throw new Error('Reach the cache first');
+    if (s.adventure.collectedCaches.includes(id)) throw new Error('Cache already collected');
+    gain(s, { [id]: s.adventure.cacheOffers[id] });
+    s.adventure.collectedCaches.push(id);
+  } else if (input.type === 'CLAIM_ADVENTURE_SITE') {
+    if (!s.adventure || s.adventure.atTown) throw new Error('Not traveling');
+    if (s.adventure.pendingEncounter && String(s.adventure.pendingEncounter.status).startsWith('UNRESOLVED')) throw new Error('Clear the guard first');
+    const id = payload.id;
+    if (!['ruin', 'mill', 'mine'].includes(id) || !atAdventureSite(s, id)) throw new Error('Reach a claimable Adventure site first');
+    if (s.adventure.claimedSites.includes(id)) throw new Error('Adventure site already claimed');
+    if (id === 'ruin') grantHeroXp(s, data, s.adventure.siteOffers.ruinXp, levelOf(s, 'hall'));
+    else if (id === 'mill') gain(s, { food: s.adventure.siteOffers.millFood });
+    else gain(s, { gold: s.adventure.siteOffers.mineGold });
+    s.adventure.claimedSites.push(id);
+  } else if (input.type === 'OFFER_ADVENTURE_SHRINE_SKILL') {
+    if (!s.adventure || s.adventure.atTown) throw new Error('Not traveling');
+    if (s.adventure.pendingEncounter && String(s.adventure.pendingEncounter.status).startsWith('UNRESOLVED')) throw new Error('Clear the guard first');
+    if (!atAdventureSite(s, 'shrine')) throw new Error('Reach the skill shrine first');
+    if (s.adventure.claimedSites.includes('shrine')) throw new Error('Skill shrine already visited');
+    if (s.hero.offers.some(offer => !offer.chosen && !offer.declined)) throw new Error('Resolve the pending skill offer first');
+    const offer = createSkillOffer(s);
+    if (offer) s.hero.offers.push({ ...offer, source: 'adventure-shrine', siteId: 'shrine' });
+    else s.adventure.claimedSites.push('shrine');
   } else if (input.type === 'REST') {
     if (!s.adventure || s.adventure.atTown || s.adventure.moves < 1) throw new Error('Not enough movement');
     s.adventure.moves -= 1;
     s.hero.mana = manaMax(s, data);
   } else if (input.type === 'RETURN_TOWN') {
-    if (!s.adventure || s.adventure.atTown || s.adventure.x !== townApproach[0] || s.adventure.y !== townApproach[1]) throw new Error('Not at the town approach');
+    const townApproach = adventureGeometry(s.adventureWorldId, s.seed).sites.find(site => site.id === 'town')?.approach;
+    if (!s.adventure || s.adventure.atTown || !townApproach || s.adventure.x !== townApproach[0] || s.adventure.y !== townApproach[1]) throw new Error('Not at the town approach');
     if (s.adventure.pendingEncounter && String(s.adventure.pendingEncounter.status).startsWith('UNRESOLVED')) throw new Error('Unresolved encounter');
     s.adventure.atTown = true;
   } else if (input.type === 'BEGIN_ENCOUNTER') {
     if (s.battle) throw new Error('Battle already open');
     s.battle = createEncounterBattle(s, data);
     s.battle.id = `battle-${s.adventure.pendingEncounter.id}-r${s.revision}`;
+    s.battle = passEnemyTurns(s.battle);
   } else if (input.type === 'BATTLE') {
     if (!s.battle || s.battle.status !== 'ACTIVE') throw new Error('No active battle');
     const action = payload.action;
@@ -611,16 +882,27 @@ export function command(state, input, now, data) {
   else if (input.type === 'START_SKIRMISH') {
     if (s.battle || s.defense) throw new Error('Battle already open');
     if (s.adventure?.pendingEncounter && String(s.adventure.pendingEncounter.status).startsWith('UNRESOLVED')) throw new Error('Unresolved encounter');
-    s.battle = createSkirmishBattle(s);
+    s.battle = createSkirmishBattle(s, data, s.tutorial.step);
+  } else if (input.type === 'DEPLOY_BATTLE_STACK') {
+    if (!s.battle || s.battle.status !== 'PENDING' || !s.battle.deployment) throw new Error('No deployment setup');
+    s.battle = placeDeployment(s.battle, payload.stackId, payload.cell);
+  } else if (input.type === 'START_DEPLOYED_BATTLE') {
+    if (!s.battle || s.battle.status !== 'PENDING' || !s.battle.deployment) throw new Error('No deployment setup');
+    s.battle = passEnemyTurns(startDeployedBattle(s.battle));
+  } else if (input.type === 'CANCEL_BATTLE_SETUP') {
+    if (!s.battle || s.battle.status !== 'PENDING' || !s.battle.deployment) throw new Error('No deployment setup');
+    const previousStep = s.battle.deployment.previousTutorialStep;
+    s.battle = null;
+    if (!s.tutorial.skipped && Number.isInteger(previousStep) && s.tutorial.step === previousStep + 1) s.tutorial.step = previousStep;
   } else if (input.type === 'START_DUEL') {
     if (s.battle || s.defense) throw new Error('Battle already open');
-    s.battle = createDuelBattle(s, data);
+    s.battle = passEnemyTurns(createDuelBattle(s, data));
   } else if (input.type === 'START_CHALLENGE') {
     if (s.battle || s.defense) throw new Error('Battle already open');
     if (payload.schema != null && payload.schema !== 1) throw new Error('Unsupported challenge schema.');
     if (payload.scenarioId != null && payload.scenarioId !== 'duel-v1') throw new Error('Unsupported challenge scenario.');
     const label = payload.label ?? payload.code;
-    s.battle = createChallengeBattle(payload.seed, label);
+    s.battle = passEnemyTurns(createChallengeBattle(payload.seed, label));
   } else if (input.type === 'START_SIEGE') {
     if (s.battle || s.defense) throw new Error('Battle already open');
     s.defense = createDefense(s, data, { practice: 'siege', waves: 5 });
@@ -668,10 +950,12 @@ export function command(state, input, now, data) {
     if (!offer || !offer.choices.includes(payload.skill) || s.hero.skills[payload.skill] >= 3) throw new Error('Invalid skill offer');
     s.hero.skills[payload.skill] += 1;
     offer.chosen = payload.skill;
+    if (offer.source === 'adventure-shrine') s.adventure.claimedSites.push('shrine');
   } else if (input.type === 'DECLINE_SKILL') {
     const offer = s.hero.offers.find(item => !item.chosen && !item.declined);
     if (!offer) throw new Error('Invalid skill offer');
     offer.declined = true;
+    if (offer.source === 'adventure-shrine') s.adventure.claimedSites.push('shrine');
   } else if (input.type === 'OFFER_DWELLING') {
     // One offer per creature type at this site. Cancel keeps the open terms and does not reroll.
     if (!atDwelling(s)) throw new Error('Not at the dwelling');

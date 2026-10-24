@@ -6,9 +6,9 @@
   "bodies": {
     "knight": {
       "id": "class-knight-standing-body",
-      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-knight-standing-body.png",
-      "sha256": "eb06669d93b04d63c6abbdf2e9535e06be094649ad4ca78d8d7f50cb90c5bd16",
-      "bytes": 979636,
+      "file": "assets/derivatives/mock-led-20261016/bodies/class-knight-standing-body.png",
+      "sha256": "e0919ba5c1400231b287a957cd9d6fbfd289341ecccc67be12c8ed1e87e98f21",
+      "bytes": 983700,
       "width": 601,
       "height": 1400,
       "source": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-knight-standing-body.png",
@@ -49,7 +49,8 @@
         "droppedComponents": 8,
         "droppedComponentPixels": 10,
         "droppedGroundPixels": 0,
-        "groundShadowRuleApplied": false
+        "groundShadowRuleApplied": false,
+        "paperWhiteBackdropCleared": 17568
       },
       "status": "PARTIAL",
       "notRig": true,
@@ -72,9 +73,9 @@
     },
     "ranger": {
       "id": "class-ranger-standing-body",
-      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-ranger-standing-body.png",
-      "sha256": "7f886c3ce70c62f30cd0ee6d2b15cd2a8c41e11e9e56ae4bd87386765aee325b",
-      "bytes": 1323474,
+      "file": "assets/derivatives/mock-led-20261016/bodies/class-ranger-standing-body.png",
+      "sha256": "ba651f83e03b84497a1ef511769cdfea25d17ab4d8a887692c6e69479894d53d",
+      "bytes": 1329089,
       "width": 1061,
       "height": 1400,
       "source": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-ranger-standing-body.png",
@@ -113,7 +114,8 @@
         "droppedComponents": 388,
         "droppedComponentPixels": 788,
         "droppedGroundPixels": 78639,
-        "groundShadowRuleApplied": true
+        "groundShadowRuleApplied": true,
+        "paperWhiteBackdropCleared": 19544
       },
       "status": "PARTIAL",
       "notRig": true,
@@ -136,9 +138,9 @@
     },
     "warlock": {
       "id": "class-warlock-standing-body",
-      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-warlock-standing-body.png",
-      "sha256": "36f92201a9d50175e5276fbec5d4dbd7cd07c4be2adea1294ced534660811bf9",
-      "bytes": 1443024,
+      "file": "assets/derivatives/mock-led-20261016/bodies/class-warlock-standing-body.png",
+      "sha256": "4229174740dc3d4917b12cd5d950faefe88cc328a5f6c5a0763a45b7c8b9201c",
+      "bytes": 1394447,
       "width": 669,
       "height": 1400,
       "source": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-warlock-standing-body.png",
@@ -177,7 +179,8 @@
         "droppedComponents": 2018,
         "droppedComponentPixels": 3287,
         "droppedGroundPixels": 0,
-        "groundShadowRuleApplied": false
+        "groundShadowRuleApplied": false,
+        "paperWhiteBackdropCleared": 7681
       },
       "status": "PARTIAL",
       "notRig": true,
@@ -200,38 +203,38 @@
     },
     "mage": {
       "id": "class-mage-standing-body",
-      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-mage-standing-body.png",
-      "sha256": "ee10eda3558cb7658eda8fd3b2a7c220f4fa66d02fedd014a4c51dfeda7a9095",
-      "bytes": 1194434,
-      "width": 692,
+      "file": "assets/derivatives/mock-led-20261016/bodies/class-mage-standing-body.png",
+      "sha256": "4cc5ce5218f8a6f52ffaf52ec600e6a7a8b32684a82506ce98739550137a2a49",
+      "bytes": 1208970,
+      "width": 607,
       "height": 1400,
-      "source": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-mage-standing-body.png",
-      "sourceSHA256": "ead5960eab7cfa1bafc0baf171c65109958ee90a0ec653cdddcfa7c46ef32aca",
-      "native": "assets/derivatives/image-unified-reserve-20261009/actors/natives/class-mage-standing-body.png",
-      "nativeSHA256": "f3307618794d6a98ccf79595963520c91370bcddd4f5352c429906cb64194eb7",
+      "source": "assets/derivatives/mock-led-20261016/bodies/natives/class-mage-standing-body.png",
+      "sourceSHA256": "3750cf018c025d56ec4ce5927c4d1330bbff59872fcc49bcf5a9d682226f5e5f",
+      "native": "assets/derivatives/mock-led-20261016/bodies/natives/class-mage-standing-body.png",
+      "nativeSHA256": "3750cf018c025d56ec4ce5927c4d1330bbff59872fcc49bcf5a9d682226f5e5f",
       "cropROI": [
-        461,
-        103,
-        1389,
-        1981
+        611,
+        117,
+        1419,
+        1980
       ],
       "sourceToOutput": [
-        0.7454739084132055,
+        0.7514761137949544,
         0,
         0,
-        0.7454739084132055,
-        -343.66347177848775,
-        -76.78381256656017
+        0.7514761137949544,
+        -459.1519055287171,
+        -87.92270531400966
       ],
       "groundContact": {
         "y": 1399,
         "x": [
-          524,
-          614
+          466,
+          500
         ]
       },
       "foot": [
-        0.8222543352601156,
+        0.7957166392092258,
         0.9992857142857143
       ],
       "side": "FRONT",
@@ -241,7 +244,9 @@
         "droppedComponents": 4,
         "droppedComponentPixels": 8,
         "droppedGroundPixels": 0,
-        "groundShadowRuleApplied": false
+        "groundShadowRuleApplied": false,
+        "paperWhiteBackdropCleared": 1982,
+        "styleRepair": "2026-10-16 photographic studio body. Wooden staff is the class-focus prop, not a worn weapon slot."
       },
       "status": "PARTIAL",
       "notRig": true,
@@ -264,38 +269,38 @@
     },
     "paladin": {
       "id": "class-paladin-standing-body",
-      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-paladin-standing-body.png",
-      "sha256": "094321de8c04d03f9d49afc1a487d2c1dc8071c9860fe00fa32ecd0828a90bbd",
-      "bytes": 1702626,
-      "width": 888,
+      "file": "assets/derivatives/mock-led-20261016/bodies/class-paladin-standing-body.png",
+      "sha256": "a756d8fd92e44f2dcb2285ef3f1db977bf85ca61ac2b18fd36dbac155b4d99ed",
+      "bytes": 1118855,
+      "width": 592,
       "height": 1400,
-      "source": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-paladin-standing-body.png",
-      "sourceSHA256": "707405aca69a80c47ae64c8221b040d180a7ff43bbd2e5a80534789b993279cd",
-      "native": "assets/derivatives/image-unified-reserve-20261009/actors/natives/class-paladin-standing-body.png",
-      "nativeSHA256": "f03dc822be71126fdbfeece55b0156dd090d1efb0d57a43948675e278edaaf0b",
+      "source": "assets/derivatives/mock-led-20261016/bodies/natives/class-paladin-standing-body.png",
+      "sourceSHA256": "c9fbb53e52b44fff266ec99828e5d903280da737b2c551730eae883939099d2e",
+      "native": "assets/derivatives/mock-led-20261016/bodies/natives/class-paladin-standing-body.png",
+      "nativeSHA256": "c9fbb53e52b44fff266ec99828e5d903280da737b2c551730eae883939099d2e",
       "cropROI": [
-        390,
-        81,
-        1596,
-        1983
+        643,
+        168,
+        1407,
+        1974
       ],
       "sourceToOutput": [
-        0.7360672975814931,
+        0.7751937984496124,
         0,
         0,
-        0.7360672975814931,
-        -287.06624605678235,
-        -59.62145110410094
+        0.7751937984496124,
+        -498.4496124031008,
+        -130.2325581395349
       ],
       "groundContact": {
         "y": 1399,
         "x": [
-          188,
-          736
+          106,
+          564
         ]
       },
       "foot": [
-        0.5202702702702703,
+        0.5658783783783784,
         0.9992857142857143
       ],
       "side": "FRONT",
@@ -305,7 +310,9 @@
         "droppedComponents": 0,
         "droppedComponentPixels": 0,
         "droppedGroundPixels": 0,
-        "groundShadowRuleApplied": false
+        "groundShadowRuleApplied": false,
+        "paperWhiteBackdropCleared": 3460777,
+        "styleRepair": "2026-10-16 photographic studio body."
       },
       "status": "PARTIAL",
       "notRig": true,
@@ -328,38 +335,38 @@
     },
     "barbarian": {
       "id": "class-barbarian-standing-body",
-      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-barbarian-standing-body.png",
-      "sha256": "1074aa23a2ede8151da0029b63a69c70bde5554c720bb6c98197d31c57446201",
-      "bytes": 1433349,
-      "width": 907,
+      "file": "assets/derivatives/mock-led-20261016/bodies/class-barbarian-standing-body.png",
+      "sha256": "ca230f764843e8e92a47a496ddb91c1c692eeacb0edf6e90eab4b87e05c10a94",
+      "bytes": 1276569,
+      "width": 627,
       "height": 1400,
-      "source": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-barbarian-standing-body.png",
-      "sourceSHA256": "daf4ffcd0781c8a154ea487930077698ac236ac11cbb148140ceb671503f3bc7",
-      "native": "assets/derivatives/image-unified-reserve-20261009/actors/natives/class-barbarian-standing-body.png",
-      "nativeSHA256": "e06ddc9422b27a39c22103d2790ca71a26dd77bccff85b5c2e37d08b94d4e60c",
+      "source": "assets/derivatives/mock-led-20261016/bodies/natives/class-barbarian-standing-body.png",
+      "sourceSHA256": "fe691aa0a7e49b4c246fcb9c8d9525c2e21f10c6387252b5d6b8ef173e0bdbfd",
+      "native": "assets/derivatives/mock-led-20261016/bodies/natives/class-barbarian-standing-body.png",
+      "nativeSHA256": "fe691aa0a7e49b4c246fcb9c8d9525c2e21f10c6387252b5d6b8ef173e0bdbfd",
       "cropROI": [
-        340,
-        54,
-        1608,
-        2011
+        582,
+        98,
+        1429,
+        1988
       ],
       "sourceToOutput": [
-        0.7153806847215125,
+        0.7407407407407407,
         0,
         0,
-        0.7153806847215125,
-        -243.22943280531425,
-        -38.63055697496168
+        0.7407407407407407,
+        -431.1111111111111,
+        -72.5925925925926
       ],
       "groundContact": {
         "y": 1399,
         "x": [
-          668,
-          779
+          115,
+          594
         ]
       },
       "foot": [
-        0.7976846747519294,
+        0.5653907496012759,
         0.9992857142857143
       ],
       "side": "FRONT",
@@ -369,7 +376,9 @@
         "droppedComponents": 15,
         "droppedComponentPixels": 35,
         "droppedGroundPixels": 0,
-        "groundShadowRuleApplied": false
+        "groundShadowRuleApplied": false,
+        "paperWhiteBackdropCleared": 3185269,
+        "styleRepair": "2026-10-16 photographic studio body. Wooden club is the class-focus prop, not a worn weapon slot."
       },
       "status": "PARTIAL",
       "notRig": true,
@@ -392,38 +401,38 @@
     },
     "necromancer": {
       "id": "class-necromancer-standing-body",
-      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-necromancer-standing-body.png",
-      "sha256": "2136b4dd6026db04ae50c344e3dacbacbc8d14af594fb83eada72a5564e7d996",
-      "bytes": 1321072,
-      "width": 736,
+      "file": "assets/derivatives/mock-led-20261016/bodies/class-necromancer-standing-body.png",
+      "sha256": "cbbf39bc8126daac14783f1d818834406a9cb0eba602002358fc5781c4d61794",
+      "bytes": 1099889,
+      "width": 583,
       "height": 1400,
-      "source": "assets/derivatives/image-unified-reserve-20261009/actors/bodies/class-necromancer-standing-body.png",
-      "sourceSHA256": "260e3ea76b9e5f558f0bc900e780b6871e9dde86e50e9d82a7c419b2529cb042",
-      "native": "assets/derivatives/image-unified-reserve-20261009/actors/natives/class-necromancer-standing-body.png",
-      "nativeSHA256": "74aead791db83e0e6713efb0620f6967b7d81a4d3013b525a60e613361460f54",
+      "source": "assets/derivatives/mock-led-20261016/bodies/natives/class-necromancer-standing-body.png",
+      "sourceSHA256": "6a2523615c7b9ad74db752ab9c1e6791594492e5110aa66619e6e5587e471680",
+      "native": "assets/derivatives/mock-led-20261016/bodies/natives/class-necromancer-standing-body.png",
+      "nativeSHA256": "6a2523615c7b9ad74db752ab9c1e6791594492e5110aa66619e6e5587e471680",
       "cropROI": [
-        607,
-        59,
-        1634,
-        2013
+        635,
+        140,
+        1401,
+        1980
       ],
       "sourceToOutput": [
-        0.7164790174002047,
+        0.7608695652173914,
         0,
         0,
-        0.7164790174002047,
-        -434.90276356192425,
-        -42.272262026612076
+        0.7608695652173914,
+        -483.1521739130435,
+        -106.5217391304348
       ],
       "groundContact": {
         "y": 1399,
         "x": [
-          75,
-          167
+          57,
+          513
         ]
       },
       "foot": [
-        0.1644021739130435,
+        0.4888507718696398,
         0.9992857142857143
       ],
       "side": "FRONT",
@@ -433,7 +442,9 @@
         "droppedComponents": 5,
         "droppedComponentPixels": 8,
         "droppedGroundPixels": 0,
-        "groundShadowRuleApplied": false
+        "groundShadowRuleApplied": false,
+        "paperWhiteBackdropCleared": 3273108,
+        "styleRepair": "2026-10-16 photographic studio body. Dark staff is the class-focus prop, not a worn weapon slot."
       },
       "status": "PARTIAL",
       "notRig": true,
@@ -456,31 +467,89 @@
     },
     "healer": {
       "id": "class-healer-standing-body",
-      "file": "assets/derivatives/image-complete-20261011/actors/bodies/class-healer-standing-body.png",
-      "sha256": "d788dbbb49ec06b162d4f2edb737efd4b094f8f92aaf1d91befc1acfe920f185",
-      "bytes": 1074872,
-      "width": 536,
-      "height": 1400,
-      "source": "assets/high-res/final-native2k/rig-source-parts-healer.png",
-      "sourceSHA256": "3eb2d3258c70a8523cba96e62c1ba5bb46b28f8fdfce077a7d4e5fcaab114383",
-      "native": "assets/high-res/final-native2k/rig-source-parts-healer.png",
-      "nativeSHA256": "3eb2d3258c70a8523cba96e62c1ba5bb46b28f8fdfce077a7d4e5fcaab114383",
+      "file": "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png",
+      "sha256": "f50a1d2530492b194ab4098566a43f38f96f426a2d7e842574f996a25d15a4be",
+      "bytes": 1619580,
+      "width": 832,
+      "height": 1385,
+      "source": "assets/derivatives/mock-led-20261016/bodies/natives/class-healer-standing-body.png",
+      "sourceSHA256": "3d57bb92b460bf48845ed878d3460dc256a7d46b0f5eba3ed7d97ab29fd1d96d",
+      "native": "assets/derivatives/mock-led-20261016/bodies/natives/class-healer-standing-body.png",
+      "nativeSHA256": "3d57bb92b460bf48845ed878d3460dc256a7d46b0f5eba3ed7d97ab29fd1d96d",
       "cropROI": [
-        260,
-        35,
-        742,
-        1295
+        430,
+        105,
+        1549,
+        1988
       ],
       "cropROIConvention": "half-open-xyxy",
       "sourceToOutput": [
-        1.1111111111111112,
+        0.7434944237918215,
         0,
         0,
-        1.1111111111111112,
-        -288.8888888888889,
-        -38.888888888888886
+        0.7434944237918215,
+        -319.70260223048325,
+        -78.06691449814126
       ],
       "assembly": {
+        "method": "complete-body-extraction",
+        "source": "assets/derivatives/mock-led-20261016/bodies/natives/class-healer-standing-body.png",
+        "matte": "paper-white-backdrop-cleared",
+        "classFocusProps": [
+          "staff",
+          "basket"
+        ],
+        "classFocusNote": "Staff and basket are the class identity props. They are not helm, weapon, offhand, armor, boots or accessory items."
+      },
+      "groundContact": {
+        "y": 1384,
+        "x": [
+          303,
+          367
+        ]
+      },
+      "foot": [
+        0.4026442307692308,
+        0.9992779783393501
+      ],
+      "side": "FRONT",
+      "intendedUse": "HERO_ROOM_STANDING",
+      "depictedKitEra": "ancient",
+      "depictedKitEvidence": "Photographic bearded herbalist, linen hood, birch staff and herb basket.",
+      "maxVisibleCssPx": 600,
+      "matteRepair": {
+        "droppedComponents": 0,
+        "droppedComponentPixels": 1649,
+        "droppedGroundPixels": 0,
+        "groundShadowRuleApplied": false,
+        "magentaNeckStripeRemoved": true,
+        "paperWhiteBackdropCleared": 3104815,
+        "styleRepair": "2026-10-16 photographic studio body.",
+        "staffExtendedBelowBoots": 0,
+        "staffEndsAtBootSoles": true,
+        "paperWhiteBackdropClearedRemnantsRemoved": true,
+        "whiteRemnantBelowStaffCleaned": true
+      },
+      "status": "COMPLETE_BODY_CANDIDATE",
+      "notRig": true,
+      "frames": {
+        "source": "NATIVE",
+        "intermediate": "SOURCE_BODY",
+        "part": "STANDING",
+        "canvas": "OUTPUT",
+        "trim": "half-open-xyxy"
+      },
+      "articulation": "NOT_APPLICABLE",
+      "staticApplicability": "HERO_ROOM_STANDING",
+      "displayCap": {
+        "cssPx": 600,
+        "basis": "HEIGHT",
+        "purpose": "HERO_ROOM_STANDING full figure. Ordinary plates stay 130. Gear, mounts and effects stay 64. This cap is not a Forge or world-actor permission."
+      },
+      "rigEligibility": "RIG_AVAILABLE",
+      "rigFile": "assets/derivatives/rig-limbs-20261013/rigs/healer.png",
+      "compositionMethod": "coherent neck despill, detached island cleared, source parts provenance recorded",
+      "rejectedAssembly": {
         "method": "five-part-composite",
         "canvas": [
           1000,
@@ -543,48 +612,7 @@
             ]
           }
         ]
-      },
-      "groundContact": {
-        "y": 1399,
-        "x": [
-          159,
-          427
-        ]
-      },
-      "foot": [
-        0.571150097465887,
-        0.9992857142857143
-      ],
-      "side": "FRONT",
-      "intendedUse": "HERO_ROOM_STANDING",
-      "depictedKitEra": "ancient",
-      "depictedKitEvidence": "Serene ancient healer robes, healing staff, celestial circlet and grounded sandals.",
-      "maxVisibleCssPx": 600,
-      "matteRepair": {
-        "droppedComponents": 0,
-        "droppedComponentPixels": 1649,
-        "droppedGroundPixels": 0,
-        "groundShadowRuleApplied": false,
-        "magentaNeckStripeRemoved": true
-      },
-      "status": "PARTIAL",
-      "notRig": true,
-      "frames": {
-        "source": "NATIVE",
-        "intermediate": "SOURCE_BODY",
-        "part": "STANDING",
-        "canvas": "OUTPUT",
-        "trim": "half-open-xyxy"
-      },
-      "articulation": "NOT_APPLICABLE",
-      "staticApplicability": "HERO_ROOM_STANDING",
-      "displayCap": {
-        "cssPx": 600,
-        "basis": "HEIGHT",
-        "purpose": "HERO_ROOM_STANDING full figure. Ordinary plates stay 130. Gear, mounts and effects stay 64. This cap is not a Forge or world-actor permission."
-      },
-      "rigEligibility": "NOT_APPLICABLE",
-      "compositionMethod": "coherent neck despill, detached island cleared, source parts provenance recorded"
+      }
     }
   },
   "missing": {},

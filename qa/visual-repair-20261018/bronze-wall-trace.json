@@ -1,0 +1,277 @@
+{
+  "status": "GEOMETRY_CANDIDATE",
+  "sourceContract": "src/data/implementation-contract.json",
+  "contractSHA256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd",
+  "baseGuide": "docs/plan/image-production/guides/kingdom.png",
+  "baseGuideSHA256": "a29195ac287fe6c612d0f424c20d1de2b93bbdc730265004bd0f2761bc10a3a9",
+  "sourceSize": [
+    1376,
+    768
+  ],
+  "worldToSource": [
+    60,
+    -10,
+    25,
+    35,
+    170,
+    165
+  ],
+  "perimeterGrid": [
+    [
+      0.6,
+      9.0
+    ],
+    [
+      0.3,
+      6.0
+    ],
+    [
+      0.4,
+      3.0
+    ],
+    [
+      1.2,
+      1.2
+    ],
+    [
+      2.4,
+      -0.1
+    ],
+    [
+      4.0,
+      -0.5
+    ],
+    [
+      6.5,
+      -0.6
+    ],
+    [
+      9.0,
+      -0.3
+    ],
+    [
+      11.0,
+      0.7
+    ],
+    [
+      12.1,
+      2.4
+    ],
+    [
+      12.4,
+      4.4
+    ],
+    [
+      12.6,
+      6.3
+    ],
+    [
+      12.6,
+      7.8
+    ],
+    [
+      12.5,
+      8.6
+    ],
+    [
+      12.0,
+      9.5
+    ],
+    [
+      11.1,
+      10.1
+    ],
+    [
+      8.2,
+      10.25
+    ],
+    [
+      7.2,
+      10.25
+    ],
+    [
+      4.0,
+      10.25
+    ],
+    [
+      1.8,
+      9.8
+    ]
+  ],
+  "wallRunsGrid": [
+    [
+      [
+        0.6,
+        9.0
+      ],
+      [
+        0.3,
+        6.0
+      ],
+      [
+        0.4,
+        3.0
+      ],
+      [
+        1.2,
+        1.2
+      ],
+      [
+        2.4,
+        -0.1
+      ],
+      [
+        4.0,
+        -0.5
+      ],
+      [
+        6.5,
+        -0.6
+      ],
+      [
+        9.0,
+        -0.3
+      ],
+      [
+        11.0,
+        0.7
+      ],
+      [
+        12.1,
+        2.4
+      ],
+      [
+        12.4,
+        4.4
+      ],
+      [
+        12.6,
+        6.3
+      ]
+    ],
+    [
+      [
+        12.6,
+        7.8
+      ],
+      [
+        12.5,
+        8.6
+      ],
+      [
+        12.0,
+        9.5
+      ],
+      [
+        11.1,
+        10.1
+      ],
+      [
+        8.2,
+        10.25
+      ]
+    ],
+    [
+      [
+        7.2,
+        10.25
+      ],
+      [
+        4.0,
+        10.25
+      ],
+      [
+        1.8,
+        9.8
+      ],
+      [
+        0.6,
+        9.0
+      ]
+    ]
+  ],
+  "gateOpeningsGrid": {
+    "river-crossing": [
+      [
+        12.6,
+        6.3
+      ],
+      [
+        12.6,
+        7.8
+      ]
+    ],
+    "south-road": [
+      [
+        8.2,
+        10.25
+      ],
+      [
+        7.2,
+        10.25
+      ]
+    ]
+  },
+  "bridges": [
+    {
+      "id": "right-crossing",
+      "rect": [
+        12.5,
+        7,
+        1.5,
+        0.8
+      ],
+      "cells": [
+        [
+          13,
+          7
+        ]
+      ],
+      "approaches": [
+        [
+          12,
+          7
+        ]
+      ]
+    }
+  ],
+  "roads": [
+    [
+      [
+        6.5,
+        1.5
+      ],
+      [
+        7.7,
+        1.6
+      ],
+      [
+        7.7,
+        4
+      ],
+      [
+        7.7,
+        6
+      ],
+      [
+        7.7,
+        8
+      ],
+      [
+        7.7,
+        10
+      ]
+    ]
+  ],
+  "siteCount": 18,
+  "trace": {
+    "siteCornersOutsidePerimeter": [],
+    "wallTouchesSites": [],
+    "status": "PASS_BOUNDED",
+    "meaning": "Grid-space perimeter containment and no site intersection only; not a native pixel wall/deck/ground contact trace."
+  },
+  "wallContactTrace": "NOT_PERFORMED",
+  "imageGeneration": "CANDIDATE_ONLY",
+  "runtimeBinding": "NONE",
+  "ownerAcceptance": "UNVERIFIED"
+}

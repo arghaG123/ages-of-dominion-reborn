@@ -1,0 +1,89 @@
+from pathlib import Path
+import json,hashlib,re,datetime
+ROOT=Path(__file__).resolve().parents[2];OUT=Path(__file__).resolve().parent
+PLAN=ROOT/'docs/plan';PROMPT=PLAN/'ONE-COMPLETE-REPAIR-AFTER-VERIFICATION-2026-10-17.txt'
+def load(n):return json.loads((OUT/n).read_text(encoding='utf8'))
+def put(n,x):(OUT/n).write_text(json.dumps(x,indent=2,ensure_ascii=False),encoding='utf8')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+delimiter=b'===== BEGIN UNMODIFIED ORIGINAL AUTHORITATIVE COMPLETE EXECUTOR FILE ====='
+wrapper=PROMPT.read_bytes().split(delimiter)[0].decode('utf8')
+wrapper=wrapper.replace('B0UNDED','BOUNDED').replace('Prior$80','Prior $80').replace('at most$20','at most $20').replace('ceiling$100','ceiling $100').replace('Released$15','Released $15').replace('response completion→at least20seconds','response completion → at least 20 seconds').replace('definite429→at least60seconds','definite 429 → at least 60 seconds').replace('Default1K','Default 1K').replace('exactly30','exactly 30').replace('Necessary2K','Necessary 2K').replace('proven4K','proven 4K').replace('required functional/visual/interaction/desktop assertion is current PASS','required pre-package functional/visual/interaction/desktop assertion is current PASS')
+original=(PLAN/'ONE-COMPLETE-EXECUTOR-CONTINUATION-2026-10-16.txt').read_bytes()
+PROMPT.write_bytes(wrapper.encode('utf8')+delimiter+b'\n'+original)
+reqs=load('original-35-current.json');steps=load('original-96-current.json');scope=load('scope-summary.json')
+G=[
+('G01','OPEN','Logical progression tests pass bounded; eight-age scene/kit/role/composite acceptance fails F05-F08.'),
+('G02','FAIL / PASS_BOUNDED','Fresh Hall1/17 sites/Walls0, exact start and first producer observed; ordinary phone world metric fails F09; full economy chronology remains broader.'),
+('G03','OPEN / PASS_BOUNDED','25 wood/15 stone Lumber and ordinary completion/income/reload observed; all producer/facility/age/cancel/upgrade children not all played.'),
+('G04','OPEN','Navigation regressions and live Stone overview; full crossing/approach/contact/site/weather/natural flows unverified F07-F08.'),
+('G05','OPEN','Core legality/morale/spell/settlement tests bounded; actual formation/event/depth/flyer/action desktop closure unverified F07-F08.'),
+('G06','OPEN','Defense regressions bounded; full actual visible session/roles/physical fit/active time and natural result remain open F03/F07/F08.'),
+('G07','OPEN','Core five-mode regressions bounded; full ordinary setup/actions/results/Challenge files/Endless defeat not independently replayed.'),
+('G08','FAIL / PASS_BOUNDED','32 current file hashes and selector tests pass; incomplete Paladin bodies/matte/rig identities fail F06.'),
+('G09','OPEN','Numeric core tests bounded; all A06 children and natural earned Wisdom3/wounded-stack Resurrection remain unverified.'),
+('G10','FAIL / PASS_BOUNDED','Six-slot functional tests and fixture Unequip8→3/reload pass; worn visual miniature icons/default prop conflict fail F04.'),
+('G11','OPEN','Earned core scope tests bounded; current role/era/body/motion and full natural dwelling/survivor/rank path open.'),
+('G12','OPEN / PASS_BOUNDED','Seven ordinary UI choices in injected Future setup plus ACK no reward/reload pass; natural quests/rivals/milestones/J18 and mock journal open.'),
+('G13','OPEN','Core quote/buy/sell regressions bounded; natural Bronze buy/sell/cancel/error/reload/return not replayed.'),
+('G14','OPEN / PASS_BOUNDED','Initial Lumber target and successful advancement to Farm observed; wrong/cancel/review/full sequence not all exercised.'),
+('G15','FAIL','Five real native IndexedDB failures F01; complete storage/audio/settings/lifecycle horizon open.'),
+('G16','OPEN / PASS_BOUNDED','Core shared consequences/idempotency tests bounded; full natural single-campaign J18 and browser failure ordering open F01-F03.')]
+Mnotes={
+1:'Home current fixture viewed; panorama/state flows not full mock PASS.',2:'Fresh logical sparse state/first build observed; ordinary Stone phone metric FAIL.',
+**{i:'Age/state source paintings inspected; blurred terrain/repeated wall strips/composite/depth FAIL; full mature current runtime comparison OPEN.' for i in range(3,11)},
+11:'Stone runtime overview plus eight displayed sources reviewed; physical/site/role/flow OPEN.',12:'Eight sources reviewed; natural actual articulated crossing and footprint proof OPEN.',13:'Producer cites Tactical for Adventure; real on-foot approach evidence OPEN.',
+14:'Terrain sources/core tests inspected; full current actual deployment composition OPEN.',15:'Core tests bounded; committed event/role/grounding proof OPEN.',16:'Core outcome tests bounded; current victory/defeat/retreat visual/reload flow OPEN.',
+17:'Terrain sources/core preparation bounded; full actual owned roster/range/placement composition OPEN.',18:'Actual dense active session/natural Endless/motion/physical fit OPEN.',19:'Fresh Hero pixels FAIL worn clothing/room; anatomy/kit scope open.',20:'Skills source/tests bounded; real designed nine-sigil panel and earned-offer UI OPEN.',21:'Spell core tests bounded; full spellbook and natural Resurrection OPEN.',22:'Fresh Forge pixels FAIL material workshop/selected-object target.',23:'Fixture bag/unequip bounded; dense/artifact/full visual inventory OPEN.',24:'Fresh Army fixture reviewed; roster/era/role/motion/creature journey OPEN.',25:'Ending UI fixture passes bounded; material journal/encounter composition FAIL.',26:'Quest predicates/core tests bounded; actual six quests/eight claims/natural q6 OPEN.',27:'Fresh Lumber target/build observed; complete anchored sequence/wrong/cancel/resize OPEN.',28:'Current settings screenshot reviewed; material design/audio/heard/focus/inset full acceptance OPEN.',29:'Actual IndexedDB safety FAIL; three-slot/full horizon/recovery UI OPEN.',30:'Source vocabulary/target pixels inspected; intended-size semantics/style/contrast whole-set OPEN.'}
+classrows=load('kit-identity.json');slotrows=[]
+for r in classrows:
+    note='Hash matches; full visual/identity/attachment/alpha/contact acceptance OPEN.'
+    if r['class']=='paladin' and r['era'] in ['ancient','mech']:note='FAIL: incomplete lower legs/feet in actual source, despite foot metadata near bottom row.'
+    if r['class']=='healer':note='Below-foot staff bounded repair retained; complete identity/rig/matte/kit/contact OPEN.'
+    r['independentVerdict']=note
+    for slot in ['helm','weapon','offhand','armor','boots','accessory']:
+        slotrows.append({'class':r['class'],'kitEra':r['era'],'slot':slot,'body':r['file'],'bodySHA256':r['actualSHA256'],'functionalEvidence':'four-repairs Node six-slot fixture PASS; one actual Future Weapon unequip/stat/reload PASS_BOUNDED','visualResult':'OPEN_REQUIRED_REPAIR','visualReason':'Generic inventory-icon layer does not establish class/era anatomical wearing; all required empty/equipped/old-item observations remain required.','source':'src/client/actor.js:paintWornSlots; src/client/hero-room.js:wornPayload/drawHeroRoom'})
+put('class-kit-32-dispositions.json',classrows);put('class-kit-slot-192-current.json',slotrows)
+lines=['# Independent current coverage — 17 October 2026','','**Product INCOMPLETE.** This is an obligation-by-obligation closure audit, not a claim that every action or artistic frame was executed. Fresh methods/findings/limits: [report](INDEPENDENT-EXECUTOR-VERIFICATION-2026-10-17.md). One current complete handoff: [repair file](ONE-COMPLETE-REPAIR-AFTER-VERIFICATION-2026-10-17.txt).','','## Original 35 identities','', 'These are the actual 19 OWN + 16 SYS identities, with later authority retained. The producer renamed several meanings and omitted OWN-19; its substitute count is not this crosswalk. Each complete product requirement remains OPEN at one or more required layers.','', '| ID | Original requirement | Current disposition |','|---|---|---|']
+for r in reqs:
+    note='OPEN — see related full G contracts and F01–F10; current tests/source provide bounded evidence only.'
+    if r['id']=='OWN-01':note='Latest override applied: full candidate then independent desktop/device/owner; no interim section-preview approval blocker.'
+    if r['id']=='OWN-02':note='PASS_BOUNDED import/source scan; no old executable imports found in current local consumer paths; exhaustive code ancestry not established.'
+    if r['id']=='OWN-16':note='Verifier handoff/report/crosswalk produced; game implementation acceptance remains OPEN.'
+    if r['id']=='OWN-17':note='Recorded environment reused and local runtime versions refreshed; no setup re-interview. Not the producer\'s renamed storage meaning.'
+    if r['id']=='OWN-18':note='Budget/provider authority preserved; live invoices/capacity/provider state UNVERIFIED. No provider action here.'
+    if r['id'] in ['OWN-19','SYS-14']:note='Existing static preview ID/zero permissions/CRC PASS_BOUNDED; current-source package FAIL; final native/device behavior UNVERIFIED.'
+    if r['id']=='SYS-12':note='FAIL F01: actual browser CAS/replacement/migration; full capacity/recovery horizon OPEN.'
+    lines.append(f"| {r['id']} | {r['originalRequirement'].replace('|','/')} | {note} |")
+lines+=['','## All 16 feature contracts','','| Contract | Whole-contract status | Current evidence and limit |','|---|---|---|']
+for ident,status,note in G:lines.append(f'| {ident} | {status} | {note} |')
+lines+=['','## All 30 mock targets','','Actual target pixels were inspected. No complete mock/state/input/viewport acceptance is awarded. Producer M07/M10/M13 cite the wrong views; existing screenshots must be matched to actual state and current consumer hashes.','','| Mock | Current counterpart disposition |','|---|---|']
+for i in range(1,31):lines.append(f'| M{i:02} | {Mnotes[i]} |')
+lines+=['','## All 18 journeys','','All full natural journeys remain OPEN/UNVERIFIED. Producer summary: 0 complete, all18 labelled simulation,16 PASS/20 UNVERIFIED subcases. Those36 are not a replacement for the full manual numbering and J18 continuity chain. [Full original assertion text with current dispositions](../../qa/independent-verification-20261017/J-current-coverage.json).','','| Journey | Fresh subset / outstanding acceptance |','|---|---|']
+for i in range(1,19):
+    note='Existing core tests are bounded; required ordinary UI action/negative/reload/visible/return children were not all independently executed.'
+    if i==1:note='Natural New/Knight/enter/sparse values and ordinary reload observed; all selection/tutorial wrong/cancel children not closed.'
+    if i==2:note='Natural P01 Lumber25wood/15stone, ordinary complete/income/reload observed; preview cancel/double input/upgrade children OPEN.'
+    if i==11:note='Functional six-slot fixture tests and actual Future Weapon unequip Attack8→3/bag/reload bounded; worn visual FAIL; natural paid Armory/craft/equip chain OPEN.'
+    if i==12:note='Natural earned Wisdom3/living wounded Resurrection NOT performed; source/core boundaries bounded only.'
+    if i==14:note='Injected Future setup + seven ordinary UI choices/ACK no reward/reload PASS_BOUNDED; natural all quests/rivals/milestones OPEN.'
+    if i==16:note='Actual native IndexedDB adversarial FAIL; all three distinct slots/full horizon/export/import/fault UI not fully exercised.'
+    if i==17:note='Phone Stone metric FAIL; Future four actual-size fixture rectangle metrics bounded PASS; exact odd widths/insets/contrast/audio/portrait/focus scope OPEN.'
+    if i==18:note='Same fresh campaign full build→recruit→craft→travel→campaign combat→loot→Defense→objective→export/relaunch chain NOT completed. No practice/import substitution.'
+    lines.append(f'| J{i:02} | {note} |')
+unverified=load('journey-evidence-audit.json')['unverifiedSubcases']
+lines+=['','Producer explicitly unverified: '+', '.join(unverified)+'. These are necessary remaining cases, not permission to omit the other manual assertions.','','## Original 96 steps','','All96 current original action strings match their saved original crosswalk. Every step is retained below. A source/test observation is not completion of its action and all acceptance children. [Machine crosswalk](../../qa/independent-verification-20261017/original-96-current.json).','','| Step | Original required action | Current closure |','|---|---|---|']
+for r in steps:lines.append(f"| {r['originalNumber']} | {r['action'].replace('|','/')} | OPEN_FULL_ACCEPTANCE; source text retained |")
+lines+=['','## Scene, class, slot, role and mechanics obligations','','- **32 scenes:** [current exact-source/hash crosswalk](../../qa/independent-verification-20261017/scene-32-current.json). All8 Kingdom source hashes stale in producer proof; other24 source identities match. Full physical trace/sweep/contact/composite closure remains OPEN for all32. Ground/wall source overview is not native polygon acceptance.','- **32 class/kit rows:** [actual current hashes and dispositions](../../qa/independent-verification-20261017/class-kit-32-dispositions.json). All file/hash selectors pass bounded; Paladin truncation and matte/identity defects remain.','- **192 slot decisions:** [one row per class×era×slot](../../qa/independent-verification-20261017/class-kit-slot-192-current.json). Functional fixture tests do not close visual attachment or all ordinary UI contexts. No192-image purchasing implication.','- **Roles/mounts:** producer54 clip entries/3 mount families remain OPEN. Five actual labelled pose sets are body-identical across five clips; role/era/direction/source contact and finite event playback require real runtime evidence.','- **Adopted mechanics:** manual A06 all eight categories and frozen source/equation/data identities remain required. [Mechanics evidence audit](../../qa/independent-verification-20261017/mechanics-assertion-audit.json); descriptive generated natural/VERIFIED rows are not observed numeric tests.','- **Storage horizon:** redirected stress is an injected fixture, not legal Future/real20clears/ten ACTIVE hours/native-browser durability. Native browser probe FAIL. All A05 adversarial schedules and real dense payload/slots/backup/failure acceptance remain.','- **Views:** required exact825×375/933×424/1180×820/1280×720, inset/open/focused/dense/portrait states remain. Actual odd-width browser layout is826/934. Fresh natural Stone world metric78.30% FAIL; separate Future fixture rectangle metrics pass bounded, not whole-view acceptance.','- **Package:** current567-path closure has54missing/15different in each existing output; old APK CRC/ID/zero permissions pass bounded. Exact final source/native/delivered/device/owner layers remain separate.','','## Authority and preservation','','Manual and complete-file hashes are unchanged: `9e57cab76d3644cf07df3734032ce807ca795ccf77036060c69bc4a003aa3d3e` and `a6a4793241685e2f08ac6f93589e4cfea384e25206ffd858f300cd3852cc035e`. Current handoff embeds that original complete file byte-for-byte. Review [handoff/protection evidence](../../qa/independent-verification-20261017/handoff-verification.json). No production/provider/build/device/Git/cleanup/dispatch action here. **Whole product remains INCOMPLETE.**','']
+(PLAN/'INDEPENDENT-EXECUTOR-COVERAGE-2026-10-17.md').write_text('\n'.join(lines),encoding='utf8')
+reportRel='docs/plan/INDEPENDENT-EXECUTOR-VERIFICATION-2026-10-17.md';promptRel='docs/plan/ONE-COMPLETE-REPAIR-AFTER-VERIFICATION-2026-10-17.txt'
+for rel in ['AGENTS.md','START-HERE.md','CURRENT-STATUS.md','DECISIONS.md','docs/SESSION-HANDOFF.md','docs/BUILD-PROGRESS.md','docs/plan/README.md']:
+    p=ROOT/rel;old=p.read_text(encoding='utf-8-sig')
+    if old.startswith('> **Fresh independent executor verification — 17 October 2026'):
+        old=old.split('\n\n',1)[1]
+    import os
+    rlink=Path(os.path.relpath(ROOT/reportRel,p.parent)).as_posix();plink=Path(os.path.relpath(ROOT/promptRel,p.parent)).as_posix()
+    banner=f'> **Fresh independent executor verification — 17 October 2026: INCOMPLETE.** [Current report]({rlink}); give the other implementation AI [ONE complete current repair file]({plink}). This entrypoint supersedes the older remaining-work and four-live-failures prompts; the original complete 16 October specification remains authoritative and is embedded unmodified. Fresh 162 Node tests plus 1 redirected stress fixture pass bounded, but 5 native IndexedDB probe assertions fail; worn gear, walls, motion, kits, scenes and coverage remain open. Formerly missing screenshots now exist, 32 kit files hash-match, and Healer below-foot staff is 0; compact balances and the seven-choice Future conclusion pass bounded. Current outputs miss 54 and differ in 15 of 567 required paths. Existing APK SHA256 `7bd7fa2de1dbccbc46102484d26378d930e47ea321d696ade2b2763e7b50b69c`, 616,295,432 bytes, is stale against current source. Natural Stone at 826×375 has 78.30% useful world, below 80%; exact 825/933 sizes, full natural journeys and final native/device/owner acceptance remain unverified. Planner QA/docs/isolated browser verification only; no production/provider/build/device/Git/cleanup/dispatch. Older banners are historical.\n\n'
+    # Preserve the prior document bytes/content after the new dated pointer.
+    p.write_text(banner+old,encoding='utf8')
+put('handoff-verification.json',{'generatedUTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'oneCurrentPrompt':promptRel,'newPromptBytes':PROMPT.stat().st_size,'newPromptSHA256':sha(PROMPT),'originalEmbeddedByteExact':PROMPT.read_bytes().split(delimiter+b'\n',1)[1]==original,'originalSourceSHA256':sha(PLAN/'ONE-COMPLETE-EXECUTOR-CONTINUATION-2026-10-16.txt'),'manualSHA256':sha(PLAN/'MOCK-LED-IMPLEMENTATION-SOLUTIONS-MANUAL-2026-10-16.md'),'coverageCounts':scope,'newRequiredInputsPreserved':True,'scope':'Documentation structure and preservation, NOT game acceptance'})
+print('One current prompt:',PROMPT.name,PROMPT.stat().st_size,sha(PROMPT))

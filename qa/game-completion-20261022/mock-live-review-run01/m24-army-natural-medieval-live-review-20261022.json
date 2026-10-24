@@ -1,0 +1,75 @@
+{
+  "reviewId": "M24-army-natural-medieval-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/24-army.jpg",
+  "status": "PARTIAL_VISUAL_REVIEW; M24_AND_WHOLE_GAME_OPEN",
+  "latestLiveUpdate": {
+    "date": "2026-10-22",
+    "route": "http://localhost:4174/?audit",
+    "screen": "Army",
+    "viewport": { "observedCss": [1280, 720] },
+    "sourceChanges": ["src/client/polish.css", "tests/visual-responsive-20261018.test.mjs"],
+    "visual": "After widening the lower-left roster shelf, the four actual formations Clubman ×12, Slinger ×8, Bone Crusher ×5, and Man-at-Arms ×5 are visible together. The desktop fade no longer covers the first stack; each art tile uses a circular frame closer to the mock's portrait shelf. Screenshot was observed live in the approved CUA route and is not retained as a file.",
+    "accessibilityState": ["Medieval Age · day 4 · storm", "Your army · 4 / 4 formations", "Clubman ×12", "Slinger ×8", "Bone Crusher ×5", "Man-at-Arms ×5", "Save campaign"],
+    "browserLogs": { "errors": 0, "warnings": 0 },
+    "saveState": "Save campaign; no in-game transaction or state-changing action was taken during this layout check. Passive production continued.",
+    "verification": { "targetedResponsiveTests": "34/34 passed", "fullNodeSuite": "271/271 passed on current source", "mainSyntax": "passed" },
+    "visualOwnerAccepted": false,
+    "status": "FOUR_STACK_SHELF_FIX_VERIFIED; M24_PARTIAL"
+  },
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "provenance": "The working campaign copy advanced naturally from Iron Age through visible Market purchases and the confirmed Age-up action; no audit-only age preview was used. It then naturally upgraded Barracks, recruited Man-at-Arms, saved slot 2, and loaded that slot to verify persistence.",
+    "resourcesAtArmyObservation": { "food": 1429, "wood": 478, "stone": 337, "gold": 4055 }
+  },
+  "postRecruitmentPersistenceCheck": {
+    "barracksUpgrade": { "building": "P04 Barracks", "fromLevel": 1, "toLevel": 2, "visibleConfirmation": true, "cost": { "wood": 144, "stone": 72 } },
+    "capacityAfterUpgradeBeforeRecruitment": "3 / 4 formations",
+    "recruitment": { "unit": "Man-at-Arms", "count": 5, "visibleCost": { "food": 730, "gold": 165 }, "completedThroughArmyUI": true },
+    "savedSlot": 2,
+    "reloadResult": "Slot 2 loaded.",
+    "postReloadAssertions": ["Barracks · level 2", "Your army · 4 / 4 formations", "Man-at-Arms ×5"]
+  },
+  "army": {
+    "roster": ["Clubman x12", "Slinger x8", "Bone Crusher x5", "Man-at-Arms x5"],
+    "capacity": "4 / 4 formations after recruitment; 3 / 4 after the Barracks upgrade and before recruitment",
+    "medievalRecruitChoices": ["Man-at-Arms", "Longbowman", "Siege Knight"],
+    "recruitment": "Natural Man-at-Arms recruitment was verified: Barracks level 1 was upgraded to level 2 for 144 wood and 72 stone; capacity became 3/4; the visible Recruit 5 action then showed 730 food and 165 gold and was used. The roster became 4/4 with Man-at-Arms x5. Slot 2 was saved and loaded; fresh UI confirmed Barracks level 2 and the 4/4 roster. Passive production continued, so no transaction resource delta is inferred.",
+    "codex": [
+      { "entry": "Dire Wolf", "status": "Available" },
+      { "entry": "Bandit", "status": "Available" },
+      { "entry": "Cave Bear", "status": "Available" },
+      { "entry": "Harpy", "status": "Available" },
+      { "entry": "Stone Golem", "status": "Locked until Gunpowder Age" },
+      { "entry": "Griffin", "status": "Locked until Gunpowder Age" },
+      { "entry": "Wyvern", "status": "Locked until Modern Age" },
+      { "entry": "Drone Swarm", "status": "Locked until Modern Age" }
+    ]
+  },
+  "viewport": { "requestedCss": [1280, 720], "observedCss": [1280, 720] },
+  "visualFindings": [
+    "The main field and major pane regions roughly align with M24: open Medieval courtyard, centered role showcase, upper-right Codex, lower-right recruitment inspector, and lower-left roster. Overall pixel match remains weak; the live compact resource chips sit at the upper right rather than following the mock's large top-centered labeled resource tray.",
+    "The mock shows four named role figures (Melee, Swordsman, Archer, Armored Pikeman) and five compact circular roster portraits. The live role showcase has three figures; its roster preserves Clubman x12, Slinger x8, and Bone Crusher x5 and now includes Man-at-Arms x5, but the troop identities and card treatment differ. The default lower-left shelf shows only three rectangular cards; the fourth sits beyond its horizontal scroll position.",
+    "The live Codex contains eight entries including Griffin; the reference shows six creature portraits and a Future Drone tile, without Griffin. Live cards and short labels are substantially smaller and less legible than the mock.",
+    "The campaign age, one natural Medieval Man-at-Arms recruitment, and the save/reload result are now verified. The post-reload screenshot is retained at exact 1280x720. This evidence does not prove all role-family recruitment, every-age Army fidelity, exact compact viewport sizes, or owner acceptance."
+  ],
+  "evidence": {
+    "accessibilityState": ["Medieval Age · day 4 · storm", "Slot 2 loaded.", "Barracks · level 2", "Your army · 4 / 4 formations", "Man-at-Arms ×5", "RECRUITMENT · MEDIEVAL AGE", "Creature Codex · Medieval Age"],
+    "screenshotObservedInApprovedCUA": true,
+    "screenshotRetainedAsFile": true,
+    "screenshotPath": "m24-army-natural-medieval-recruitment-slot2-reloaded-1280x720.jpg",
+    "screenshotSha256": "9A393B9A689AEE7291B9AE2AF6B494AB1D313A8D501EE42A498A8B85FFB7F9E6",
+    "visualOwnerAccepted": false
+  },
+  "supersedes": "The age-provenance limitation in m24-army-mock-layout-review-20261022.json only. The earlier viewport/layout measurements remain historical evidence.",
+  "open": [
+    "Match the live roster to the Medieval mock lineup and review Longbowman and Siege Knight recruitment; Man-at-Arms x5 is now naturally recruited while the three preserved Stone-age stacks remain intact.",
+    "Match Codex sizing, labels, available/locked entries and future-status presentation to M24 while retaining the full required creature roster.",
+    "Review the four-stack portrait shelf at all ages and exact 825x375 and 933x424 captures; the live desktop shelf fix does not close M24 or replace retained pixel captures and owner acceptance.",
+    "Complete the remaining M01-M30, J01-J18 and independent desktop gates."
+  ]
+}

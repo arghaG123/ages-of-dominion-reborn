@@ -10,6 +10,8 @@ export const BOARD = { cols: geo.cols, rows: geo.rows };
 export const COMMANDER = [Math.floor(geo.anchors.commander[0]), Math.floor(geo.anchors.commander[1])];
 const ALLIED_CELLS = ['L1', 'L2', 'L3'].map(id => [Math.floor(geo.anchors[id][0]), Math.floor(geo.anchors[id][1])]);
 const ENEMY_CELLS = ['R1', 'R2', 'R3'].map(id => [Math.floor(geo.anchors[id][0]), Math.floor(geo.anchors[id][1])]);
+const ALLIED_DEPLOYMENT = geo.deployment.allied;
+const ENEMY_DEPLOYMENT = geo.deployment.enemy;
 const river = new Set(geo.blocked.map(([x, y]) => `${x},${y}`));
 for (const crossing of geo.bridges) for (const [x, y] of crossing.cells) river.delete(`${x},${y}`);
 const obstacles = new Set((geo.obstacles ?? []).map(([x, y]) => `${x},${y}`));
@@ -21,6 +23,9 @@ function living(stacks, side) {
   return stacks.filter(stack => stack.side === side && !stack.dead && stack.count > 0);
 }
 function hard(x, y) { return river.has(key(x, y)) || obstacles.has(key(x, y)); }
+function insideZone(x, y, zone) {
+  return x >= zone[0] && y >= zone[1] && x < zone[0] + zone[2] && y < zone[1] + zone[3];
+}
 
 export function chebyshev(a, b) {
   return Math.max(Math.abs(a.x - b.x), Math.abs(a.y - b.y));
@@ -108,6 +113,44 @@ export function legalTargets(battle, id) {
   return { melee, ranged, moves: legalMoves(battle, id) };
 }
 
+export function legalDeploymentCells(battle, id) {
+  if (battle?.status !== 'PENDING' || !battle.deployment?.movableIds?.includes(id)) return [];
+  const stack = stackById(battle, id);
+  if (stack.side !== 'p' || stack.dead || stack.count <= 0) return [];
+  const cells = [];
+  for (let y = ALLIED_DEPLOYMENT[1]; y < ALLIED_DEPLOYMENT[1] + ALLIED_DEPLOYMENT[3]; y++) {
+    for (let x = ALLIED_DEPLOYMENT[0]; x < ALLIED_DEPLOYMENT[0] + ALLIED_DEPLOYMENT[2]; x++) {
+      if (insideZone(x, y, ALLIED_DEPLOYMENT) && enterable(battle, x, y, stack)) cells.push([x, y]);
+    }
+  }
+  return cells;
+}
+
+export function placeDeployment(battle, id, cell) {
+  if (!Array.isArray(cell) || cell.length !== 2 || !legalDeploymentCells(battle, id).some(([x, y]) => x === cell[0] && y === cell[1])) {
+    throw new Error('Illegal deployment cell');
+  }
+  const next = clone(battle);
+  const stack = stackById(next, id);
+  [stack.x, stack.y] = cell;
+  if (!next.deployment.placedIds.includes(id)) next.deployment.placedIds.push(id);
+  validateBattle(next);
+  return next;
+}
+
+export function startDeployedBattle(battle) {
+  if (battle?.status !== 'PENDING' || !battle.deployment) throw new Error('No deployment setup');
+  const { movableIds, placedIds } = battle.deployment;
+  if (movableIds.some(id => !placedIds.includes(id))) throw new Error('Place every formation before starting');
+  const next = clone(battle);
+  delete next.deployment;
+  next.status = 'ACTIVE';
+  next.round = 1;
+  next.queue = turnOrder(next);
+  validateBattle(next);
+  return next;
+}
+
 /** Complete melee transaction: adjacent strikes omit approach; reachable strikes include one legal cell. */
 export function meleeCommand(battle, attackerId, defenderId) {
   const approaches = meleeApproaches(battle, attackerId, defenderId);
@@ -138,6 +181,29 @@ export function validateBattle(battle) {
   if (!Array.isArray(battle.stacks) || !Array.isArray(battle.queue)) throw new Error('Invalid battle');
   if (battle.round == null || !Number.isInteger(battle.round) || battle.round < 1) throw new Error('Invalid battle');
   if (typeof battle.pendingSettlement !== 'boolean' || typeof battle.settled !== 'boolean') throw new Error('Invalid battle phase');
+  if (battle.status === 'PENDING') {
+    const deployment = battle.deployment;
+    if (battle.practice !== 'skirmish' || !battle.positioned || battle.pendingSettlement || battle.settled || !deployment
+      || !Array.isArray(deployment.movableIds) || deployment.movableIds.length < 1 || deployment.movableIds.length > 3
+      || new Set(deployment.movableIds).size !== deployment.movableIds.length
+      || deployment.movableIds.some(id => typeof id !== 'string' || !id)
+      || !Array.isArray(deployment.placedIds) || new Set(deployment.placedIds).size !== deployment.placedIds.length
+      || deployment.placedIds.some(id => !deployment.movableIds.includes(id))
+      || battle.queue.length !== 0
+      || (deployment.previousTutorialStep != null && (!Number.isInteger(deployment.previousTutorialStep) || deployment.previousTutorialStep < 0))) {
+      throw new Error('Invalid battle deployment');
+    }
+    for (const id of deployment.movableIds) {
+      const stack = battle.stacks.find(item => item.id === id);
+      if (!stack || stack.side !== 'p') throw new Error('Invalid battle deployment roster');
+      const placed = deployment.placedIds.includes(id);
+      if (placed !== (Number.isInteger(stack.x) && Number.isInteger(stack.y))) throw new Error('Invalid battle deployment placement');
+    }
+    for (const stack of battle.stacks) {
+      if (stack.side === 'e' && (!Number.isInteger(stack.x) || !Number.isInteger(stack.y))) throw new Error('Invalid enemy deployment');
+      if (stack.side === 'p' && !deployment.movableIds.includes(stack.id)) throw new Error('Invalid battle deployment roster');
+    }
+  } else if (battle.deployment != null) throw new Error('Invalid battle deployment phase');
   if (battle.pendingSettlement && battle.status !== 'RESOLVED') throw new Error('Invalid battle phase');
   if (battle.status === 'RESOLVED') {
     const winner = battle.outcome?.winner;
@@ -168,6 +234,8 @@ export function validateBattle(battle) {
       finiteCounter(stack, 'slowCounter');
       finiteCounter(stack, 'blessCounter');
     }
+    const unplaced = battle.status === 'PENDING' && battle.deployment?.movableIds.includes(stack.id) && stack.x == null && stack.y == null;
+    if (unplaced) continue;
     const positioned = battle.positioned || stack.x != null || stack.y != null;
     if (positioned && !stack.dead) {
       if (!Number.isInteger(stack.x) || !Number.isInteger(stack.y)) throw new Error('Out of bounds position');
@@ -175,6 +243,7 @@ export function validateBattle(battle) {
       if (stack.x === COMMANDER[0] && stack.y === COMMANDER[1]) throw new Error('Commander cell is not a stack cell');
       // Flight may cross obstacles. A saved stack must still finish on a legal cell.
       if (hard(stack.x, stack.y)) throw new Error('Blocked-water flyer destination');
+      if (battle.deployment && stack.side === 'p' && !insideZone(stack.x, stack.y, ALLIED_DEPLOYMENT)) throw new Error('Outside allied deployment zone');
       const cell = key(stack.x, stack.y);
       if (occupiedCells.has(cell)) throw new Error('Occupied cell');
       occupiedCells.add(cell);
@@ -183,6 +252,7 @@ export function validateBattle(battle) {
   }
   if (placed > 6) throw new Error('Too many stacks');
   if (battle.status === 'ACTIVE' && battle.queue.length < 1) throw new Error('Empty active queue');
+  if (battle.status === 'PENDING' && battle.queue.length !== 0) throw new Error('Invalid pending battle queue');
   const seenQueue = new Set();
   for (const id of battle.queue) {
     if (!ids.has(id) || seenQueue.has(id)) throw new Error('Unknown queue id');
@@ -260,10 +330,11 @@ export function turnOrder(battle) {
 }
 
 export function startBattle(spec) {
+  const deployment = spec.deployment ?? null;
   const battle = {
     id: spec.id,
     kind: spec.kind || 'tactical',
-    status: 'ACTIVE',
+    status: deployment ? 'PENDING' : 'ACTIVE',
     practice: spec.practice || 'campaign',
     positioned: spec.positioned === true,
     rngState: spec.rngState >>> 0,
@@ -285,8 +356,13 @@ export function startBattle(spec) {
     settled: false,
     morale: clampMorale(spec.morale ?? 0),
     currentBonusId: null,
+    ...(deployment ? { deployment: {
+      movableIds: [...deployment.movableIds],
+      placedIds: [],
+      ...(deployment.previousTutorialStep != null ? { previousTutorialStep: deployment.previousTutorialStep } : {}),
+    } } : {}),
   };
-  battle.queue = turnOrder(battle);
+  battle.queue = deployment ? [] : turnOrder(battle);
   validateBattle(battle);
   return battle;
 }
@@ -489,7 +565,7 @@ export function castSpell(battle, spell, targetId, power) {
   } else throw new Error('Unsupported spell');
   next.mana -= spell.mana;
   next.castThisRound = true;
-  next.log.push({ type: 'spell', id: spell.id, targetId });
+  next.log.push({ type: 'spell', id: spell.id, casterId: actorId, targetId });
   finishIfDecided(next);
   validateBattle(next);
   return next;
@@ -617,7 +693,7 @@ function fieldStacks(state, data, sources, cells, side) {
     const cell = cells[fielded.length];
     fielded.push({
       id: source.id ?? `${side}${index}`,
-      campaignId: side === 'p' ? source.id : null,
+      campaignId: side === 'p' ? (Object.hasOwn(source, 'campaignId') ? source.campaignId : source.id) : null,
       side,
       x: cell[0],
       y: cell[1],
@@ -715,22 +791,30 @@ export function createChallengeBattle(seed, code) {
   return battle;
 }
 
-export function createSkirmishBattle(state) {
-  const stack = (id, side, x, y, count, identity) => ({
-    id, side, x, y, count, maxCount: count, atk: 4, def: 3, dmin: 2, dmax: 3, uhp: 10, top: 10, spd: 5, rng: 0, shots: 0, fly: 0,
-    kind: identity.kind, type: identity.type, age: state.age,
-  });
+export function createSkirmishBattle(state, data, previousTutorialStep = null) {
+  const owned = (state.army ?? []).filter(source => source.count > 0).slice(0, 3);
+  const allies = fieldStacks(state, data, owned.length ? owned.map(source => ({ ...source, id: `sk-p-${source.id}`, campaignId: null })) : [{
+    id: 'sk-p-training', campaignId: null, kind: 'role', type: 'melee', age: state.age, count: 6, rank: 0, xp: 0,
+  }], ALLIED_CELLS, 'p');
+  for (const stack of allies.fielded) { delete stack.x; delete stack.y; }
+  const enemies = fieldStacks(state, data, [
+    { id: 'sk-e-wolf', kind: 'creature', type: 'wolf', age: state.age, count: 4, rank: 0, xp: 0 },
+    { id: 'sk-e-bandit', kind: 'creature', type: 'bandit', age: state.age, count: 3, rank: 0, xp: 0 },
+    { id: 'sk-e-bear', kind: 'creature', type: 'bear', age: state.age, count: 2, rank: 0, xp: 0 },
+  ], ENEMY_CELLS, 'e');
+  const stats = heroStats(state, data);
+  const morale = battleMorale(state, data);
   return startBattle({
     id: `skirmish-${state.day}-${state.revision}`,
     positioned: true,
     practice: 'skirmish',
     rngState: state.rngState,
-    mana: 0,
-    wisdom: 0,
-    stacks: [
-      stack('sk-p', 'p', 1, 8, 6, { kind: 'role', type: 'melee' }),
-      stack('sk-e', 'e', 5, 1, 4, { kind: 'creature', type: 'wolf' }),
-    ],
+    mana: state.hero.mana,
+    wisdom: state.hero.skills.wisdom,
+    hero: { atk: stats.atk, def: stats.def, pow: stats.pow, kno: stats.kno, luck: stats.luck, morale, skills: { ...state.hero.skills }, shootBon: 0 },
+    morale,
+    stacks: [...allies.fielded, ...enemies.fielded],
+    deployment: { movableIds: allies.fielded.map(item => item.id), previousTutorialStep },
     difficulty: 0,
   });
 }

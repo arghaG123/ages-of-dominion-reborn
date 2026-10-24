@@ -1,0 +1,50 @@
+{
+  "reviewId": "M18-active-wave-counter-repair-20261023",
+  "reviewDate": "2026-10-23",
+  "mockId": "M18",
+  "status": "OPEN_M18_ACTIVE_ENDLESS_VISUAL_STATE_UNVERIFIED",
+  "finding": "clearedWaves is the number of waves already completed. The live Defense header previously rendered it as the current wave, one behind during an ACTIVE session.",
+  "change": {
+    "summary": "The active Defense header now shows clearedWaves + 1, capped at the current wave horizon. Paused sessions keep the active wave; settled sessions show the completed-wave count. Core timing, wave generation, combat, and settlement are unchanged.",
+    "sourceFiles": [
+      "src/client/defense-wave-presentation.js",
+      "src/client/main.js"
+    ],
+    "tests": [
+      "tests/defense-wave-presentation.test.mjs"
+    ]
+  },
+  "verification": {
+    "command": "node --test tests/defense-wave-presentation.test.mjs tests/adventure-travel-presentation.test.mjs tests/screen-presentation.test.mjs",
+    "tests": 26,
+    "passed": 26,
+    "failed": 0,
+    "syntax": {
+      "command": "node --check src/client/main.js && node --check src/client/defense-wave-presentation.js",
+      "passed": true
+    },
+    "lineEndings": {
+      "file": "src/client/main.js",
+      "crlf": 5271,
+      "bareLf": 0
+    }
+  },
+  "browserReview": {
+    "route": "http://localhost:4174/?audit",
+    "observedState": "Rotate to landscape to play. Your campaign stays saved.",
+    "activeEndlessStateReached": false,
+    "campaignOrDefenseStateChanged": false,
+    "screenshotRetained": false
+  },
+  "sourceHashes": {
+    "src/client/main.js": "400A81117A26D065D3FE5B25AE456AA5A5C4A92B8351260CAD357F495E1E03DC",
+    "src/client/defense-wave-presentation.js": "79549A85F66279364F24D8BCAC17DEFCC580B27FE5B02689CC52D395EA682781",
+    "tests/defense-wave-presentation.test.mjs": "C31CABA4341997558E694470DAA2C75AFFDF10F965D8F7B396B199AE5FC8EB27"
+  },
+  "remaining": [
+    "Reach a natural ACTIVE Endless state at the M18 wave 14 / 20 target and retain a matched live capture.",
+    "Verify gate/core health, visible attackers, towers, hero and army, animation, pause/speed controls, background behavior, and reload against the mock.",
+    "The separate recorded Stone Endless attempt ended after two clears and remains a gameplay failure; it is not M18 visual acceptance."
+  ],
+  "ownerAccepted": false
+}

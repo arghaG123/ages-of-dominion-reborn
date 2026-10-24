@@ -1,0 +1,188 @@
+{
+  "recordedAt": "2026-10-21T06:15:46.890Z",
+  "classification": "NATURAL_GRASSLANDS_MINE_CLAIM_ON_FOOT_SAVE_RELOAD",
+  "journey": "Fresh visible Grasslands campaign -> cardinal route to Mine approach -> on-foot arrival -> recover gold -> save/reload",
+  "note": "Campaign, position, and resources are never injected. A read-only path search excludes unresolved guards; each move and the claim use visible game controls. SVG actor DOM bounds include transparent source-image margins, so on-foot visibility is reviewed in the saved pixels rather than inferred from that rectangle.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "steps": [
+    {
+      "position": [
+        9,
+        3
+      ],
+      "moves": 4,
+      "day": 1,
+      "revision": 11
+    },
+    {
+      "position": [
+        10,
+        3
+      ],
+      "moves": 3,
+      "day": 1,
+      "revision": 13
+    },
+    {
+      "position": [
+        11,
+        3
+      ],
+      "moves": 2,
+      "day": 1,
+      "revision": 16
+    },
+    {
+      "position": [
+        12,
+        3
+      ],
+      "moves": 1,
+      "day": 1,
+      "revision": 19
+    },
+    {
+      "position": [
+        12,
+        4
+      ],
+      "moves": 0,
+      "day": 1,
+      "revision": 21
+    },
+    {
+      "position": [
+        12,
+        5
+      ],
+      "moves": 4,
+      "day": 2,
+      "revision": 27
+    },
+    {
+      "position": [
+        12,
+        6
+      ],
+      "moves": 3,
+      "day": 2,
+      "revision": 32
+    },
+    {
+      "position": [
+        12,
+        7
+      ],
+      "moves": 2,
+      "day": 2,
+      "revision": 35
+    }
+  ],
+  "start": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "revision": 8,
+    "seed": 3212358925
+  },
+  "site": {
+    "id": "mine",
+    "approach": [
+      12,
+      7
+    ],
+    "pathCells": [
+      [
+        9,
+        3
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        4
+      ],
+      [
+        12,
+        5
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        7
+      ]
+    ],
+    "pathLength": 8,
+    "offer": 222
+  },
+  "visualLabels": {
+    "visibleTexts": [
+      "Town",
+      "Mine"
+    ],
+    "nearbyAccessibleAnchors": [],
+    "onFootHeroVisibleLabel": false,
+    "onFootHeroAccessibleName": "Your hero on foot",
+    "compactScale": 1.4920265780730897
+  },
+  "claim": {
+    "beforeGold": 150,
+    "offer": 222,
+    "afterGold": 372,
+    "claimedSites": [
+      "mine"
+    ],
+    "traveler": {
+      "mode": "on-foot",
+      "actor": {
+        "kind": "actor",
+        "id": "knight",
+        "domBoundsIncludeTransparentSourceMargins": true,
+        "bounds": {
+          "left": 63.91015625,
+          "top": -16.3466796875,
+          "right": 714.3685302734375,
+          "bottom": 460.80621337890625
+        },
+        "visualReviewCaptureRequired": true,
+        "role": "img",
+        "accessibleName": "Your hero on foot"
+      }
+    },
+    "day": 2,
+    "revision": 39
+  },
+  "capture": "qa\\game-completion-20261021\\visual-review\\adventure-mine-natural-live-20261021-run03\\grasslands-mine-claimed-on-foot-825x375.jpg",
+  "reload": {
+    "position": [
+      12,
+      7
+    ],
+    "day": 2,
+    "gold": 372,
+    "claimedSites": [
+      "mine"
+    ],
+    "mineClaimButtonCount": 0,
+    "claimedCopy": "MINE\n\nThis site has already been explored.\n\nTRAVEL\n\nDISCOVERED PLACES\n\nTown\nMine\nRest · spend 1 move to restore mana\nEnd day · Restore daily movement\nReturn — Reach the town approach first.\nReview tutorial",
+    "revision": 42
+  },
+  "passed": true
+}

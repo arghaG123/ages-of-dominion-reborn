@@ -1,0 +1,91 @@
+{
+  "recordedAt": "2026-10-21T11:50:33.478Z",
+  "classification": "NATURAL_UI_SUNKEN_JUNGLE_WATER_MASK_MAP_LOAD_MOVE_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> select Sunken Jungle -> enter Adventure -> inspect registered basin blockers -> commit a legal adjacent step -> save and reload",
+  "note": "All campaign and movement actions use visible controls. Imported map geometry and read-only snapshots are used only for assertions.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-5b5a09f1-2834-4cf6-8180-ab5963c7ba92",
+  "map": {
+    "worldId": "sunken-jungle",
+    "seed": 3086486390,
+    "layoutId": "sunken-jungle-layout-7",
+    "start": [
+      8,
+      2
+    ],
+    "blockers": [
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ]
+    ],
+    "blockedInLiveRenderer": true,
+    "authoredFoodAnchor": [
+      6.5,
+      8.5
+    ],
+    "seededFoodAnchor": [
+      11.5,
+      8.5
+    ],
+    "renderedCells": 160
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\sunken-jungle-water-mask-natural-live-20261021-run01\\sunken-jungle-water-mask-start-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\sunken-jungle-water-mask-natural-live-20261021-run01\\sunken-jungle-water-mask-after-move-825x375.png"
+  ],
+  "move": {
+    "from": [
+      8,
+      2
+    ],
+    "to": [
+      9,
+      2
+    ],
+    "route": [
+      [
+        9,
+        2
+      ]
+    ],
+    "cost": 1,
+    "movesRemaining": 4,
+    "visited": [
+      "8,2",
+      "9,2"
+    ],
+    "saveState": "committed"
+  },
+  "reload": {
+    "view": "adventure",
+    "position": [
+      9,
+      2
+    ],
+    "moves": 4,
+    "visited": [
+      "8,2",
+      "9,2"
+    ]
+  },
+  "result": "PASS_BOUNDED_LIVE_MAP_LOAD_LEGAL_MOVE_SAVE_RELOAD; NOT_FULL_JOURNEY_OR_MAP_ART_ACCEPTANCE"
+}

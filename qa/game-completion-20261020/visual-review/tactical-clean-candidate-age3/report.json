@@ -1,0 +1,74 @@
+{
+  "recordedAt": "2026-10-20T04:19:04.839Z",
+  "classification": "IMAGEGEN_TACTICAL_SCENE_CANDIDATE_LIVE_REVIEW_NOT_BOUND_OR_ACCEPTED",
+  "age": 3,
+  "original": "assets/derivatives/scene-edges-20261013/tactical-medieval.png",
+  "candidate": "assets\\derivatives\\visual-repair-20261020\\scenes\\tactical-medieval-clean-candidate-v1.png",
+  "originalFixture": "qa\\game-completion-20261020\\visual-review\\tactical-clean-candidate-age3\\fixture.json",
+  "visualLimit": "Live browser screenshots and cell overlays are reviewed manually; this capture does not prove exact terrain-cell registration or owner acceptance.",
+  "runs": [
+    {
+      "viewport": [
+        825,
+        375
+      ],
+      "runtime": {
+        "age": 3,
+        "battle": "ACTIVE",
+        "terrainSource": "assets/derivatives/scene-edges-20261013/tactical-medieval.png",
+        "naturalSize": [
+          1678,
+          937
+        ],
+        "board": "tactical-painted-v1",
+        "cellCount": 70,
+        "visibleCellCount": 70
+      },
+      "screenshot": "qa\\game-completion-20261020\\visual-review\\tactical-clean-candidate-age3\\825x375.png",
+      "errors": [],
+      "failedResponses": []
+    },
+    {
+      "viewport": [
+        933,
+        424
+      ],
+      "runtime": {
+        "age": 3,
+        "battle": "ACTIVE",
+        "terrainSource": "assets/derivatives/scene-edges-20261013/tactical-medieval.png",
+        "naturalSize": [
+          1678,
+          937
+        ],
+        "board": "tactical-painted-v1",
+        "cellCount": 70,
+        "visibleCellCount": 70
+      },
+      "screenshot": "qa\\game-completion-20261020\\visual-review\\tactical-clean-candidate-age3\\933x424.png",
+      "errors": [],
+      "failedResponses": []
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "runtime": {
+        "age": 3,
+        "battle": "ACTIVE",
+        "terrainSource": "assets/derivatives/scene-edges-20261013/tactical-medieval.png",
+        "naturalSize": [
+          1678,
+          937
+        ],
+        "board": "tactical-painted-v1",
+        "cellCount": 70,
+        "visibleCellCount": 70
+      },
+      "screenshot": "qa\\game-completion-20261020\\visual-review\\tactical-clean-candidate-age3\\1280x720.png",
+      "errors": [],
+      "failedResponses": []
+    }
+  ]
+}

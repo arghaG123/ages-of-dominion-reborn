@@ -1,0 +1,1880 @@
+{
+  "session": "http://127.0.0.1:4517/",
+  "checkedAt": "2026-10-17",
+  "campaign": {
+    "status": "Stone Age day 1",
+    "alert": "Hall level 1, 17 of 17 sites empty, Walls level 1",
+    "resources": {
+      "food": 250,
+      "wood": 210,
+      "stone": 40,
+      "gold": 150
+    },
+    "advanceAge": "Town Hall level too low",
+    "hallUpgrade": "disabled, needs 30 stone"
+  },
+  "openedScreens": [
+    "adventure",
+    "army",
+    "defense",
+    "forge",
+    "help",
+    "hero",
+    "home",
+    "kingdom",
+    "market",
+    "settings",
+    "story",
+    "tactical",
+    "war"
+  ],
+  "openLeavesChecked": 263,
+  "summary": {
+    "NOT_REACHED": 190,
+    "SHOWN_ONLY": 49,
+    "FAIL": 24
+  },
+  "leaves": [
+    {
+      "id": "OWN-01",
+      "type": "REQUIREMENT",
+      "name": "Eight Ages Scope",
+      "verdict": "NOT_REACHED",
+      "reason": "Age stayed Stone. Advance age returned Town Hall level too low."
+    },
+    {
+      "id": "OWN-02",
+      "type": "REQUIREMENT",
+      "name": "Three Connected Genres",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Kingdom, Adventure, and Tactical all opened. Tactical had no battle."
+    },
+    {
+      "id": "OWN-03",
+      "type": "REQUIREMENT",
+      "name": "Five War Options",
+      "verdict": "SHOWN_ONLY",
+      "reason": "War showed Campaign Siege, Tactical Duel, Endless, Skirmish, and Start challenge. None was started."
+    },
+    {
+      "id": "OWN-04",
+      "type": "REQUIREMENT",
+      "name": "Eight Hero Classes",
+      "verdict": "FAIL",
+      "reason": "Eight Stone plates were shown, and their own captions reject era or worn-gear acceptance."
+    },
+    {
+      "id": "OWN-05",
+      "type": "REQUIREMENT",
+      "name": "Four Kit Eras",
+      "verdict": "FAIL",
+      "reason": "Eight Stone plates were shown, and their own captions reject era or worn-gear acceptance."
+    },
+    {
+      "id": "OWN-06",
+      "type": "REQUIREMENT",
+      "name": "Six Functional Gear Slots",
+      "verdict": "FAIL",
+      "reason": "Forge says Armory required and the bag holds 0. All six hero slots are empty, with no worn art."
+    },
+    {
+      "id": "OWN-07",
+      "type": "REQUIREMENT",
+      "name": "Economy & Offline Production",
+      "verdict": "SHOWN_ONLY",
+      "reason": "The resume report credited 0m 0s and no production. No producer is built."
+    },
+    {
+      "id": "OWN-08",
+      "type": "REQUIREMENT",
+      "name": "Army Troop Roles",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Army shows Clubman, Slinger, and Heavy recruit buttons, plus a Future plate review. Age stayed Stone."
+    },
+    {
+      "id": "OWN-09",
+      "type": "REQUIREMENT",
+      "name": "Eight Creature Types",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Dire Wolf, Bandit, Cave Bear, Harpy, Stone Golem, Griffin, Wyvern, and Drone Swarm are listed. None was claimed."
+    },
+    {
+      "id": "OWN-10",
+      "type": "REQUIREMENT",
+      "name": "Nine Hero Skills",
+      "verdict": "SHOWN_ONLY",
+      "reason": "All nine skills are listed at 0/3. No point was spent."
+    },
+    {
+      "id": "OWN-11",
+      "type": "REQUIREMENT",
+      "name": "Eight Combat Spells",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Eight spell names are listed. Wisdom is 0/3 and none was cast."
+    },
+    {
+      "id": "OWN-12",
+      "type": "REQUIREMENT",
+      "name": "Ten Artifacts",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "OWN-13",
+      "type": "REQUIREMENT",
+      "name": "Story Chapters & Rivals",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Chapter I and six rivals are on the Story screen. No chapter was finished."
+    },
+    {
+      "id": "OWN-14",
+      "type": "REQUIREMENT",
+      "name": "Campaign Quests & Milestones",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Six quests and eight milestone buttons are listed as open. None was claimed."
+    },
+    {
+      "id": "OWN-15",
+      "type": "REQUIREMENT",
+      "name": "Bronze Market",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Market says it opens in the Bronze Age. Buy and sell buttons are visible and the age did not change."
+    },
+    {
+      "id": "OWN-16",
+      "type": "REQUIREMENT",
+      "name": "Interactive Tutorial",
+      "verdict": "SHOWN_ONLY",
+      "reason": "The tutorial says Next: Build a Lumber Camp, and Skip tutorial is available. The camp was not built."
+    },
+    {
+      "id": "OWN-18",
+      "type": "REQUIREMENT",
+      "name": "Zero Device Permissions",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-01",
+      "type": "REQUIREMENT",
+      "name": "Fixed 1/60 Timestep Loop",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-02",
+      "type": "REQUIREMENT",
+      "name": "Deterministic PRNG",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-03",
+      "type": "REQUIREMENT",
+      "name": "Atomic State Enveloping",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-05",
+      "type": "REQUIREMENT",
+      "name": "Source-Bound Scene Registration",
+      "verdict": "NOT_REACHED",
+      "reason": "Only Stone kingdom, adventure, tactical, and defense images were displayed."
+    },
+    {
+      "id": "SYS-06",
+      "type": "REQUIREMENT",
+      "name": "Anatomical Gear Anchoring",
+      "verdict": "FAIL",
+      "reason": "Forge says Armory required and the bag holds 0. All six hero slots are empty, with no worn art."
+    },
+    {
+      "id": "SYS-07",
+      "type": "REQUIREMENT",
+      "name": "Committed Event Motion Playback",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-08",
+      "type": "REQUIREMENT",
+      "name": "Responsive Landscape Camera",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-09",
+      "type": "REQUIREMENT",
+      "name": "Touch Target Ergonomics",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-10",
+      "type": "REQUIREMENT",
+      "name": "WCAG AA Color Contrast",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-11",
+      "type": "REQUIREMENT",
+      "name": "Local Audio Synthesis",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-12",
+      "type": "REQUIREMENT",
+      "name": "Clean Healer Matte Extraction",
+      "verdict": "FAIL",
+      "reason": "Eight Stone plates were shown, and their own captions reject era or worn-gear acceptance."
+    },
+    {
+      "id": "SYS-13",
+      "type": "REQUIREMENT",
+      "name": "Authentic Palisade Wall Modules",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Stone draws 46 run segments, 4 corners, and 1 gate. Walls are level 1 on an empty day-1 town."
+    },
+    {
+      "id": "SYS-14",
+      "type": "REQUIREMENT",
+      "name": "Natural Sparse Plot Clearing",
+      "verdict": "FAIL",
+      "reason": "Empty plots are still bare rectangles on kingdom-stone-ground.png while nothing is built."
+    },
+    {
+      "id": "SYS-15",
+      "type": "REQUIREMENT",
+      "name": "Zero Internal Tick Ledger Growth",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-16",
+      "type": "REQUIREMENT",
+      "name": "Standalone Package Closure",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "SYS-17",
+      "type": "REQUIREMENT",
+      "name": "Practice Mode Zero-Leakage",
+      "verdict": "NOT_REACHED",
+      "reason": "This Stone day-1 session did not produce the required state."
+    },
+    {
+      "id": "G01",
+      "type": "G_CONTRACT",
+      "name": "Eight Ages Coherence",
+      "verdict": "NOT_REACHED",
+      "reason": "Age stayed Stone. Advance age returned Town Hall level too low."
+    },
+    {
+      "id": "G02",
+      "type": "G_CONTRACT",
+      "name": "Sparse Day 1 & Economy",
+      "verdict": "FAIL",
+      "reason": "Day 1 has Walls level 1, wood 210, and stone 40. The required start is walls 0 and 250/250/160/150."
+    },
+    {
+      "id": "G04",
+      "type": "G_CONTRACT",
+      "name": "Adventure Navigation",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Adventure shows saved movement 5 and Leave town. The party did not travel."
+    },
+    {
+      "id": "G05",
+      "type": "G_CONTRACT",
+      "name": "Tactical Battlefield",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Tactical says no battle is open and gate strength is 580."
+    },
+    {
+      "id": "G06",
+      "type": "G_CONTRACT",
+      "name": "Lane Defense",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Defense is on the preparation screen. No wave was fought."
+    },
+    {
+      "id": "G07",
+      "type": "G_CONTRACT",
+      "name": "Five War Options",
+      "verdict": "SHOWN_ONLY",
+      "reason": "All five War choices are on screen. None was played."
+    },
+    {
+      "id": "G08",
+      "type": "G_CONTRACT",
+      "name": "Hero Classes & Growth",
+      "verdict": "FAIL",
+      "reason": "Eight Stone plates were shown, and their own captions reject era or worn-gear acceptance."
+    },
+    {
+      "id": "G09",
+      "type": "G_CONTRACT",
+      "name": "Skills & Spells Deck",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Nine skills at 0/3 and eight spell names are visible. None was used."
+    },
+    {
+      "id": "G10",
+      "type": "G_CONTRACT",
+      "name": "Equipment & 6 Slots",
+      "verdict": "FAIL",
+      "reason": "Forge says Armory required and the bag holds 0. All six hero slots are empty, with no worn art."
+    },
+    {
+      "id": "G11",
+      "type": "G_CONTRACT",
+      "name": "Army & Creatures",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Stone troops and eight creature names are listed. Capacity is 2/2 and Barracks is required."
+    },
+    {
+      "id": "G12",
+      "type": "G_CONTRACT",
+      "name": "Story & Future Conclusion",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Story is on Chapter I. The Future conclusion was not reached."
+    },
+    {
+      "id": "G13",
+      "type": "G_CONTRACT",
+      "name": "Bronze Market",
+      "verdict": "SHOWN_ONLY",
+      "reason": "The market screen says it opens in the Bronze Age."
+    },
+    {
+      "id": "G14",
+      "type": "G_CONTRACT",
+      "name": "Anchored Tutorial",
+      "verdict": "SHOWN_ONLY",
+      "reason": "Skip tutorial is present. The anchored lumber-camp step was not completed."
+    },
+    {
+      "id": "M03",
+      "type": "MOCK_TARGET",
+      "name": "Mock M03",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M04",
+      "type": "MOCK_TARGET",
+      "name": "Mock M04",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M05",
+      "type": "MOCK_TARGET",
+      "name": "Mock M05",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M06",
+      "type": "MOCK_TARGET",
+      "name": "Mock M06",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M08",
+      "type": "MOCK_TARGET",
+      "name": "Mock M08",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M09",
+      "type": "MOCK_TARGET",
+      "name": "Mock M09",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M11",
+      "type": "MOCK_TARGET",
+      "name": "Mock M11",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M12",
+      "type": "MOCK_TARGET",
+      "name": "Mock M12",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M14",
+      "type": "MOCK_TARGET",
+      "name": "Mock M14",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M15",
+      "type": "MOCK_TARGET",
+      "name": "Mock M15",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M16",
+      "type": "MOCK_TARGET",
+      "name": "Mock M16",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M17",
+      "type": "MOCK_TARGET",
+      "name": "Mock M17",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M18",
+      "type": "MOCK_TARGET",
+      "name": "Mock M18",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M19",
+      "type": "MOCK_TARGET",
+      "name": "Mock M19",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M20",
+      "type": "MOCK_TARGET",
+      "name": "Mock M20",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M21",
+      "type": "MOCK_TARGET",
+      "name": "Mock M21",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M22",
+      "type": "MOCK_TARGET",
+      "name": "Mock M22",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M23",
+      "type": "MOCK_TARGET",
+      "name": "Mock M23",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M24",
+      "type": "MOCK_TARGET",
+      "name": "Mock M24",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M25",
+      "type": "MOCK_TARGET",
+      "name": "Mock M25",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M26",
+      "type": "MOCK_TARGET",
+      "name": "Mock M26",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M27",
+      "type": "MOCK_TARGET",
+      "name": "Mock M27",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M28",
+      "type": "MOCK_TARGET",
+      "name": "Mock M28",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M29",
+      "type": "MOCK_TARGET",
+      "name": "Mock M29",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "M30",
+      "type": "MOCK_TARGET",
+      "name": "Mock M30",
+      "verdict": "SHOWN_ONLY",
+      "reason": "A live screen was opened in this session. It was not held against this mock's pixels."
+    },
+    {
+      "id": "J01",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J01",
+      "verdict": "FAIL",
+      "reason": "Day 1 Stone session is not the required sparse start: walls level 1, wood 210, stone 40, gold 150, and the plot rectangles are visible."
+    },
+    {
+      "id": "J02",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J02",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J03",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J03",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J04",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J04",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J05",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J05",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J06",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J06",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J07",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J07",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J08",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J08",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J09",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J09",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J10",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J10",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J11",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J11",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J12",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J12",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J13",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J13",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J14",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J14",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J15",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J15",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J16",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J16",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J17",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J17",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "J18",
+      "type": "PLAYER_JOURNEY",
+      "name": "Journey J18",
+      "verdict": "NOT_REACHED",
+      "reason": "The journey was not played in this session. Related screens were opened, and no journey result was produced."
+    },
+    {
+      "id": "STEP-01",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 1",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase A action 1 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-02",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 2",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase A action 2 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-03",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 3",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase A action 3 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-04",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 4",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase A action 4 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-05",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 5",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase A action 5 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-06",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 6",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase A action 6 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-07",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 7",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase A action 7 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-08",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 8",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase A action 8 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-09",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 9",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 9 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-10",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 10",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 10 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-11",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 11",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 11 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-12",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 12",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 12 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-13",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 13",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 13 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-14",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 14",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 14 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-15",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 15",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 15 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-16",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 16",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 16 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-17",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 17",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 17 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-18",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 18",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase B action 18 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-19",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 19",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 19 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-20",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 20",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 20 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-21",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 21",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 21 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-22",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 22",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 22 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-23",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 23",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 23 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-24",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 24",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 24 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-25",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 25",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 25 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-26",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 26",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 26 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-27",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 27",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase C action 27 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-28",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 28",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 28 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-29",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 29",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 29 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-30",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 30",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 30 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-31",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 31",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 31 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-32",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 32",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 32 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-33",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 33",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 33 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-34",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 34",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 34 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-35",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 35",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 35 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-36",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 36",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 36 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-37",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 37",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 37 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-38",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 38",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 38 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-39",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 39",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase D action 39 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-40",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 40",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 40 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-41",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 41",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 41 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-42",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 42",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 42 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-43",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 43",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 43 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-44",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 44",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 44 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-45",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 45",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 45 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-46",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 46",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 46 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-47",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 47",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 47 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-48",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 48",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 48 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-49",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 49",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 49 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-50",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 50",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase E action 50 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-51",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 51",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 51 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-52",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 52",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 52 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-53",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 53",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 53 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-54",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 54",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 54 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-55",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 55",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 55 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-56",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 56",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 56 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-57",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 57",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 57 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-58",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 58",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 58 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-59",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 59",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 59 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-60",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 60",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 60 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-61",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 61",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 61 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-62",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 62",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 62 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-63",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 63",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 63 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-64",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 64",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase F action 64 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-65",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 65",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 65 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-66",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 66",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 66 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-67",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 67",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 67 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-68",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 68",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 68 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-69",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 69",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 69 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-70",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 70",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 70 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-71",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 71",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 71 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-72",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 72",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 72 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-73",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 73",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 73 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-74",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 74",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 74 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-75",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 75",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 75 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-76",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 76",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 76 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-77",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 77",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 77 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-78",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 78",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 78 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-79",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 79",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase G action 79 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-80",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 80",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 80 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-81",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 81",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 81 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-82",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 82",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 82 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-83",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 83",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 83 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-84",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 84",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 84 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-85",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 85",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 85 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-86",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 86",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 86 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-87",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 87",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 87 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-88",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 88",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 88 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-89",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 89",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase H action 89 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-90",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 90",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase I action 90 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-91",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 91",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase I action 91 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-92",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 92",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase I action 92 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-93",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 93",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase I action 93 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-94",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 94",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase I action 94 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-95",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 95",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase I action 95 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "STEP-96",
+      "type": "MASTER_PLAN_STEP",
+      "name": "Step 96",
+      "verdict": "NOT_REACHED",
+      "reason": "The ledger only says 'Phase I action 96 implemented and verified against governing contracts'. This session did not verify that step."
+    },
+    {
+      "id": "SCENE-KINGDOM-STONE",
+      "type": "PHYSICAL_SCENE",
+      "name": "kingdom stone",
+      "verdict": "FAIL",
+      "reason": "This session shows kingdom-stone-ground.png with bare plot rectangles and a full palisade while the alert says Walls level 1, Hall 1, 17 empty sites, day 1."
+    },
+    {
+      "id": "SCENE-KINGDOM-BRONZE",
+      "type": "PHYSICAL_SCENE",
+      "name": "kingdom bronze",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-KINGDOM-IRON",
+      "type": "PHYSICAL_SCENE",
+      "name": "kingdom iron",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-KINGDOM-MEDIEVAL",
+      "type": "PHYSICAL_SCENE",
+      "name": "kingdom medieval",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-KINGDOM-GUNPOWDER",
+      "type": "PHYSICAL_SCENE",
+      "name": "kingdom gunpowder",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-KINGDOM-INDUSTRIAL",
+      "type": "PHYSICAL_SCENE",
+      "name": "kingdom industrial",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-KINGDOM-MODERN",
+      "type": "PHYSICAL_SCENE",
+      "name": "kingdom modern",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-KINGDOM-FUTURE",
+      "type": "PHYSICAL_SCENE",
+      "name": "kingdom future",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-ADVENTURE-STONE",
+      "type": "PHYSICAL_SCENE",
+      "name": "adventure stone",
+      "verdict": "SHOWN_ONLY",
+      "reason": "The Stone scene image for this mode was on screen. No route, deck, or footprint trace was measured in this session."
+    },
+    {
+      "id": "SCENE-ADVENTURE-BRONZE",
+      "type": "PHYSICAL_SCENE",
+      "name": "adventure bronze",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-ADVENTURE-IRON",
+      "type": "PHYSICAL_SCENE",
+      "name": "adventure iron",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-ADVENTURE-MEDIEVAL",
+      "type": "PHYSICAL_SCENE",
+      "name": "adventure medieval",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-ADVENTURE-GUNPOWDER",
+      "type": "PHYSICAL_SCENE",
+      "name": "adventure gunpowder",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-ADVENTURE-INDUSTRIAL",
+      "type": "PHYSICAL_SCENE",
+      "name": "adventure industrial",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-ADVENTURE-MODERN",
+      "type": "PHYSICAL_SCENE",
+      "name": "adventure modern",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-ADVENTURE-FUTURE",
+      "type": "PHYSICAL_SCENE",
+      "name": "adventure future",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-TACTICAL-STONE",
+      "type": "PHYSICAL_SCENE",
+      "name": "tactical stone",
+      "verdict": "SHOWN_ONLY",
+      "reason": "The Stone scene image for this mode was on screen. No route, deck, or footprint trace was measured in this session."
+    },
+    {
+      "id": "SCENE-TACTICAL-BRONZE",
+      "type": "PHYSICAL_SCENE",
+      "name": "tactical bronze",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-TACTICAL-IRON",
+      "type": "PHYSICAL_SCENE",
+      "name": "tactical iron",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-TACTICAL-MEDIEVAL",
+      "type": "PHYSICAL_SCENE",
+      "name": "tactical medieval",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-TACTICAL-GUNPOWDER",
+      "type": "PHYSICAL_SCENE",
+      "name": "tactical gunpowder",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-TACTICAL-INDUSTRIAL",
+      "type": "PHYSICAL_SCENE",
+      "name": "tactical industrial",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-TACTICAL-MODERN",
+      "type": "PHYSICAL_SCENE",
+      "name": "tactical modern",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-TACTICAL-FUTURE",
+      "type": "PHYSICAL_SCENE",
+      "name": "tactical future",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-DEFENSE-STONE",
+      "type": "PHYSICAL_SCENE",
+      "name": "defense stone",
+      "verdict": "SHOWN_ONLY",
+      "reason": "The Stone scene image for this mode was on screen. No route, deck, or footprint trace was measured in this session."
+    },
+    {
+      "id": "SCENE-DEFENSE-BRONZE",
+      "type": "PHYSICAL_SCENE",
+      "name": "defense bronze",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-DEFENSE-IRON",
+      "type": "PHYSICAL_SCENE",
+      "name": "defense iron",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-DEFENSE-MEDIEVAL",
+      "type": "PHYSICAL_SCENE",
+      "name": "defense medieval",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-DEFENSE-GUNPOWDER",
+      "type": "PHYSICAL_SCENE",
+      "name": "defense gunpowder",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-DEFENSE-INDUSTRIAL",
+      "type": "PHYSICAL_SCENE",
+      "name": "defense industrial",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-DEFENSE-MODERN",
+      "type": "PHYSICAL_SCENE",
+      "name": "defense modern",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "SCENE-DEFENSE-FUTURE",
+      "type": "PHYSICAL_SCENE",
+      "name": "defense future",
+      "verdict": "NOT_REACHED",
+      "reason": "The campaign stayed Stone Age day 1. This age's scene was not displayed."
+    },
+    {
+      "id": "KIT-KNIGHT-STONE",
+      "type": "CLASS_KIT_ROW",
+      "name": "knight stone kit",
+      "verdict": "FAIL",
+      "reason": "Knight caption: the plate is medieval kit, not worn ancient gear. Empty slots stay empty."
+    },
+    {
+      "id": "KIT-KNIGHT-MEDIEVAL",
+      "type": "CLASS_KIT_ROW",
+      "name": "knight medieval kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-KNIGHT-GUNPOWDER",
+      "type": "CLASS_KIT_ROW",
+      "name": "knight gunpowder kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-KNIGHT-FUTURE",
+      "type": "CLASS_KIT_ROW",
+      "name": "knight future kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-RANGER-STONE",
+      "type": "CLASS_KIT_ROW",
+      "name": "ranger stone kit",
+      "verdict": "FAIL",
+      "reason": "Caption: the era of this standing plate is unverified and it is not proof of worn gear."
+    },
+    {
+      "id": "KIT-RANGER-MEDIEVAL",
+      "type": "CLASS_KIT_ROW",
+      "name": "ranger medieval kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-RANGER-GUNPOWDER",
+      "type": "CLASS_KIT_ROW",
+      "name": "ranger gunpowder kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-RANGER-FUTURE",
+      "type": "CLASS_KIT_ROW",
+      "name": "ranger future kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-WARLOCK-STONE",
+      "type": "CLASS_KIT_ROW",
+      "name": "warlock stone kit",
+      "verdict": "FAIL",
+      "reason": "Caption: the era of this standing plate is unverified and it is not proof of worn gear."
+    },
+    {
+      "id": "KIT-WARLOCK-MEDIEVAL",
+      "type": "CLASS_KIT_ROW",
+      "name": "warlock medieval kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-WARLOCK-GUNPOWDER",
+      "type": "CLASS_KIT_ROW",
+      "name": "warlock gunpowder kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-WARLOCK-FUTURE",
+      "type": "CLASS_KIT_ROW",
+      "name": "warlock future kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-MAGE-STONE",
+      "type": "CLASS_KIT_ROW",
+      "name": "mage stone kit",
+      "verdict": "FAIL",
+      "reason": "Caption: the era of this standing plate is unverified and it is not proof of worn gear."
+    },
+    {
+      "id": "KIT-MAGE-MEDIEVAL",
+      "type": "CLASS_KIT_ROW",
+      "name": "mage medieval kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-MAGE-GUNPOWDER",
+      "type": "CLASS_KIT_ROW",
+      "name": "mage gunpowder kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-MAGE-FUTURE",
+      "type": "CLASS_KIT_ROW",
+      "name": "mage future kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-PALADIN-STONE",
+      "type": "CLASS_KIT_ROW",
+      "name": "paladin stone kit",
+      "verdict": "FAIL",
+      "reason": "Caption: the era of this standing plate is unverified and it is not proof of worn gear."
+    },
+    {
+      "id": "KIT-PALADIN-MEDIEVAL",
+      "type": "CLASS_KIT_ROW",
+      "name": "paladin medieval kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-PALADIN-GUNPOWDER",
+      "type": "CLASS_KIT_ROW",
+      "name": "paladin gunpowder kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-PALADIN-FUTURE",
+      "type": "CLASS_KIT_ROW",
+      "name": "paladin future kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-BARBARIAN-STONE",
+      "type": "CLASS_KIT_ROW",
+      "name": "barbarian stone kit",
+      "verdict": "FAIL",
+      "reason": "Caption: the era of this standing plate is unverified and it is not proof of worn gear."
+    },
+    {
+      "id": "KIT-BARBARIAN-MEDIEVAL",
+      "type": "CLASS_KIT_ROW",
+      "name": "barbarian medieval kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-BARBARIAN-GUNPOWDER",
+      "type": "CLASS_KIT_ROW",
+      "name": "barbarian gunpowder kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-BARBARIAN-FUTURE",
+      "type": "CLASS_KIT_ROW",
+      "name": "barbarian future kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-NECROMANCER-STONE",
+      "type": "CLASS_KIT_ROW",
+      "name": "necromancer stone kit",
+      "verdict": "FAIL",
+      "reason": "Caption: the era of this standing plate is unverified and it is not proof of worn gear."
+    },
+    {
+      "id": "KIT-NECROMANCER-MEDIEVAL",
+      "type": "CLASS_KIT_ROW",
+      "name": "necromancer medieval kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-NECROMANCER-GUNPOWDER",
+      "type": "CLASS_KIT_ROW",
+      "name": "necromancer gunpowder kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-NECROMANCER-FUTURE",
+      "type": "CLASS_KIT_ROW",
+      "name": "necromancer future kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-HEALER-STONE",
+      "type": "CLASS_KIT_ROW",
+      "name": "healer stone kit",
+      "verdict": "FAIL",
+      "reason": "Healer caption: static pose, not a worn attachment."
+    },
+    {
+      "id": "KIT-HEALER-MEDIEVAL",
+      "type": "CLASS_KIT_ROW",
+      "name": "healer medieval kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-HEALER-GUNPOWDER",
+      "type": "CLASS_KIT_ROW",
+      "name": "healer gunpowder kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "KIT-HEALER-FUTURE",
+      "type": "CLASS_KIT_ROW",
+      "name": "healer future kit",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the Stone ancient kit was opened. This later kit was not on screen."
+    },
+    {
+      "id": "OC01",
+      "type": "OWNER_CONCERN",
+      "name": "Finished Game Appearance",
+      "verdict": "FAIL",
+      "reason": "The opened kingdom, home, and hero screens do not match the finished mock look."
+    },
+    {
+      "id": "OC02",
+      "type": "OWNER_CONCERN",
+      "name": "Natural Sparse Stone Start",
+      "verdict": "FAIL",
+      "reason": "Alert: Hall 1, 17 empty, Walls level 1, day 1. Supplies are food 250, wood 210, stone 40, gold 150. Plot rectangles remain visible."
+    },
+    {
+      "id": "OC04",
+      "type": "OWNER_CONCERN",
+      "name": "All 32 Physical Scenes Traced",
+      "verdict": "NOT_REACHED",
+      "reason": "Only the four Stone mode images appeared. The other 28 scenes were not shown, and none were traced."
+    },
+    {
+      "id": "OC05",
+      "type": "OWNER_CONCERN",
+      "name": "One Coherent Realistic Treatment",
+      "verdict": "FAIL",
+      "reason": "All eight classes were opened on the Stone kit. Knight is the wrong era, Healer is a static pose, the other plates say their era is unverified, and all six slots are empty."
+    },
+    {
+      "id": "OC07",
+      "type": "OWNER_CONCERN",
+      "name": "All 8 Classes x 4 Kit Eras",
+      "verdict": "FAIL",
+      "reason": "All eight classes were opened on the Stone kit. Knight is the wrong era, Healer is a static pose, the other plates say their era is unverified, and all six slots are empty."
+    },
+    {
+      "id": "OC08",
+      "type": "OWNER_CONCERN",
+      "name": "Six Functional Visibly Worn Slots",
+      "verdict": "FAIL",
+      "reason": "All eight classes were opened on the Stone kit. Knight is the wrong era, Healer is a static pose, the other plates say their era is unverified, and all six slots are empty."
+    },
+    {
+      "id": "OC10",
+      "type": "OWNER_CONCERN",
+      "name": "Adventure Connected Playable World",
+      "verdict": "NOT_REACHED",
+      "reason": "The entry screen was opened. The required play, later ages, or layout measurements were not completed in this session."
+    },
+    {
+      "id": "OC11",
+      "type": "OWNER_CONCERN",
+      "name": "Complete Tactical Control & Decoupling",
+      "verdict": "NOT_REACHED",
+      "reason": "The entry screen was opened. The required play, later ages, or layout measurements were not completed in this session."
+    },
+    {
+      "id": "OC12",
+      "type": "OWNER_CONCERN",
+      "name": "Complete Defense & Five War Options",
+      "verdict": "NOT_REACHED",
+      "reason": "The entry screen was opened. The required play, later ages, or layout measurements were not completed in this session."
+    },
+    {
+      "id": "OC13",
+      "type": "OWNER_CONCERN",
+      "name": "Economy & Full Progression",
+      "verdict": "NOT_REACHED",
+      "reason": "The entry screen was opened. The required play, later ages, or layout measurements were not completed in this session."
+    },
+    {
+      "id": "OC14",
+      "type": "OWNER_CONCERN",
+      "name": "Complete Supporting Experiences",
+      "verdict": "NOT_REACHED",
+      "reason": "The entry screen was opened. The required play, later ages, or layout measurements were not completed in this session."
+    },
+    {
+      "id": "OC15",
+      "type": "OWNER_CONCERN",
+      "name": "Story, Objectives & Teaching",
+      "verdict": "NOT_REACHED",
+      "reason": "The entry screen was opened. The required play, later ages, or layout measurements were not completed in this session."
+    },
+    {
+      "id": "OC17",
+      "type": "OWNER_CONCERN",
+      "name": "Mobile, Accessibility & Offline Native Integrity",
+      "verdict": "NOT_REACHED",
+      "reason": "The entry screen was opened. The required play, later ages, or layout measurements were not completed in this session."
+    },
+    {
+      "id": "OC18",
+      "type": "OWNER_CONCERN",
+      "name": "Whole Connected Finished Delivery",
+      "verdict": "NOT_REACHED",
+      "reason": "The entry screen was opened. The required play, later ages, or layout measurements were not completed in this session."
+    }
+  ]
+}

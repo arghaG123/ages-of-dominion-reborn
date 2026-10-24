@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-23",
+  "scope": "Campaign gate title-art and title-copy clarity",
+  "status": "PARTIAL",
+  "findings": {
+    "titleAsset": "assets/production/production-11-20261003/images/30-supporting-title.png",
+    "sourceDimensions": [1376, 768],
+    "priorSvgBounds": { "x": -260, "y": -40, "width": 1896, "height": 848, "preserveAspectRatio": "xMidYMid slice" },
+    "priorHorizontalUpscale": 1.3779,
+    "priorTextShadows": {
+      "gateKicker": "0 1px 3px rgba(0, 0, 0, 0.9)",
+      "gateTitle": "0 4px 14px rgba(0, 0, 0, 0.95), 0 0 24px rgba(201, 163, 91, 0.45)"
+    }
+  },
+  "changes": [
+    "The gate renders the existing 1376x768 title asset at native frame dimensions with xMidYMid meet, removing the prior 1.3779x horizontal raster enlargement.",
+    "The small campaign kicker shadow is reduced to 1px blur; the title glow is reduced from 14px and 24px to a 2px dark contrast shadow.",
+    "A responsive-source regression checks the native image bounds and restrained title shadows."
+  ],
+  "verification": {
+    "liveRoute": "http://localhost:4174/?audit",
+    "viewport": [1280, 720],
+    "liveState": "Campaign gate after reload; no campaign action or save/export was invoked.",
+    "liveDom": {
+      "titleImageAttributes": { "x": "0", "y": "0", "width": "1376", "height": "768", "preserveAspectRatio": "xMidYMid meet" },
+      "renderedImageRect": [0, 2.7907, 1280, 714.4186],
+      "gateKickerShadow": "rgba(0, 0, 0, 0.9) 0px 1px 1px",
+      "gateTitleShadow": "rgba(0, 0, 0, 0.9) 0px 1px 2px",
+      "computedFilters": "none on title, body, stage, and title-image element",
+      "fontFaceSet": "loaded"
+    },
+    "capture": "CUA screenshot was a 1280x720 JPEG (103208 bytes), displayed but not retained. Text and art still looked soft in the tool capture; this does not establish visual acceptance.",
+    "focusedCommand": "node --test tests/visual-responsive-20261018.test.mjs tests/story-support.test.mjs tests/save-feedback.test.mjs",
+    "focused": 46,
+    "focusedPass": 46,
+    "focusedFail": 0,
+    "fullCommand": "node --test --test-reporter=dot tests/*.test.mjs",
+    "full": 277,
+    "fullPass": 277,
+    "fullFail": 0,
+    "exitCode": 0,
+    "syntaxChecks": ["node --check src/client/main.js", "node --check src/client/story-view.js", "node --check src/client/save-feedback.js"],
+    "lineEndings": { "main.js": { "crlf": 5263, "bareLf": 0 }, "game.css": { "crlf": 1213, "bareLf": 0 } }
+  },
+  "sourceSha256": {
+    "src/client/main.js": "e248a636a7a054a2e17753405459262fd8bf1e09823b15bff1ab4ac38a34edea",
+    "src/client/game.css": "8d4d356a72c2e5e58ea5e37189c65cf6d2f14a0f36f6253c34d27c48265e7dce",
+    "tests/visual-responsive-20261018.test.mjs": "db9f5adcd7c7cdcaafe67cee69cfb7d0bb832707142572ab176e550eb58f59a7"
+  },
+  "acceptance": {
+    "titleGateVisual": "UNVERIFIED",
+    "M25StoryHud": "UNVERIFIED",
+    "wholeGame": "INCOMPLETE",
+    "finalPackage": "NOT_BUILT",
+    "deviceAcceptance": "NOT_STARTED",
+    "ownerAcceptance": "NOT_STARTED"
+  }
+}

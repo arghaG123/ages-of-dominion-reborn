@@ -578,5 +578,91 @@
     "hardCapUSD": 80.0,
     "remainingHeadroomAtReleaseUSD": 15.1673,
     "consumers": "image-unified-reserve-20261009 coordinator guard_post"
+  },
+  "professionalRepairAuthority20261018": {
+    "ownerQuote": "Allow this scoped exception; retain the charge and $100 cap",
+    "excludedFromActiveRequestLockOnly": ["style-barbarian-standing-body-v1-a1"],
+    "historicalRequestStatus": "UNKNOWN_READ_TIMEOUT",
+    "historicalLiabilityRetainedUSD": 0.5,
+    "projectExposureCeilingUSD": 100,
+    "releaseOrRefundAuthorized": false,
+    "newUnknownRequestsExcluded": false,
+    "scope": "Necessary professional scene and worn-equipment art repairs after local review. All existing pacing, preservation, reservation, receipt and single-active controls continue."
+  },
+  "styleRepair20261016": {
+    "authority": "Owner 16 October 2026: up to 20 USD beyond 80, absolute ceiling 100, for style and Healer fixes only.",
+    "ceilingUSD": 100.0,
+    "attempts": [
+      {
+        "attemptId": "style-mage-standing-body-v1-a1",
+        "scene": "class-mage-standing-body",
+        "reservedUSD": 0.5,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-16T12:54:24Z",
+        "output": "qa/mock-led-executor-20261016/style-repair/mage/native.png",
+        "outputSHA256": "3750cf018c025d56ec4ce5927c4d1330bbff59872fcc49bcf5a9d682226f5e5f",
+        "promptTokens": 1233,
+        "candidateTokens": 1680
+      },
+      {
+        "attemptId": "style-paladin-standing-body-v1-a1",
+        "scene": "class-paladin-standing-body",
+        "reservedUSD": 0.5,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-16T12:57:55Z",
+        "output": "qa/mock-led-executor-20261016/style-repair/paladin/native.png",
+        "outputSHA256": "c9fbb53e52b44fff266ec99828e5d903280da737b2c551730eae883939099d2e",
+        "promptTokens": 1239,
+        "candidateTokens": 1680
+      },
+      {
+        "attemptId": "style-barbarian-standing-body-v1-a1",
+        "scene": "class-barbarian-standing-body",
+        "reservedUSD": 0.5,
+        "retained": true,
+        "status": "UNKNOWN_READ_TIMEOUT",
+        "at": "2026-10-16T12:58:35Z",
+        "note": "The request was sent. The response read timed out, so the image bytes are unknown. Do not replay this attempt. The 0.50 reservation stays."
+      },
+      {
+        "attemptId": "style-barbarian-standing-body-v1-a2",
+        "scene": "class-barbarian-standing-body",
+        "reservedUSD": 0.5,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-16T13:13:24Z",
+        "output": "qa/mock-led-executor-20261016/style-repair/barbarian/native.png",
+        "outputSHA256": "fe691aa0a7e49b4c246fcb9c8d9525c2e21f10c6387252b5d6b8ef173e0bdbfd",
+        "promptTokens": 1220,
+        "candidateTokens": 1680
+      },
+      {
+        "attemptId": "style-necromancer-standing-body-v1-a1",
+        "scene": "class-necromancer-standing-body",
+        "reservedUSD": 0.5,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-16T13:14:39Z",
+        "output": "qa/mock-led-executor-20261016/style-repair/necromancer/native.png",
+        "outputSHA256": "6a2523615c7b9ad74db752ab9c1e6791594492e5110aa66619e6e5587e471680",
+        "promptTokens": 1219,
+        "candidateTokens": 1680
+      },
+      {
+        "attemptId": "style-healer-standing-body-v1-a1",
+        "scene": "class-healer-standing-body",
+        "reservedUSD": 0.5,
+        "retained": true,
+        "status": "SUCCEEDED_CANDIDATE",
+        "at": "2026-10-16T13:15:20Z",
+        "output": "qa/mock-led-executor-20261016/style-repair/healer/native.png",
+        "outputSHA256": "3d57bb92b460bf48845ed878d3460dc256a7d46b0f5eba3ed7d97ab29fd1d96d",
+        "promptTokens": 1233,
+        "candidateTokens": 1680
+      }
+    ],
+    "retainedUSD": 3.0
   }
 }

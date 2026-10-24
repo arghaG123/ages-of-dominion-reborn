@@ -1,0 +1,106 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Isolated IndexedDB verification 18 October 2026</title>
+<h1>Disposable native IndexedDB probes</h1>
+<p>Runs only against two named probe databases on this isolated origin.</p>
+<button id="run">Run probes once</button>
+<pre id="result">Pending</pre>
+<script type="module">
+import { IndexedDBStorageAdapter } from '../../src/core/storage-adapter.js';
+import { newCampaign } from '../../src/core/campaign.js';
+import { encode, SAVE_KEY, VIEW_KEY } from '../../src/core/save.js';
+import data from '../../src/data/reference-data.json' with {type:'json'};
+import contract from '../../src/data/implementation-contract.json' with {type:'json'};
+
+const result = document.querySelector('#result');
+const run = document.querySelector('#run');
+const clearProbeDatabase = name => new Promise((resolve, reject) => {
+  const request = indexedDB.deleteDatabase(name);
+  request.onsuccess = () => resolve();
+  request.onerror = () => reject(request.error);
+  request.onblocked = () => reject(new Error(`Probe database ${name} is blocked`));
+});
+const failUnless = (rows, name, condition, details = {}) => rows.push({
+  name,
+  expected: true,
+  actual: Boolean(condition),
+  verdict: condition ? 'PASS_BOUNDED' : 'FAIL',
+  ...details,
+});
+
+run.onclick = async () => {
+  run.disabled = true;
+  const rows = [];
+  try {
+    await clearProbeDatabase('aod-reborn-probe-20261018');
+    await clearProbeDatabase('aod-reborn-probe-empty-20261018');
+
+    const a = new IndexedDBStorageAdapter(indexedDB, 'aod-reborn-probe-20261018');
+    await a.open();
+    const seed = newCampaign(contract, data, 1000);
+    seed.revision = 100;
+    let head = await a.commit(null, encode(seed, data), data);
+
+    const next = structuredClone(seed);
+    next.revision = 101;
+    let rejected = false;
+    try {
+      await a.commit({ ...head, checksum: 'wrong-checksum', campaignId: 'wrong-identity' }, encode(next, data), data);
+    } catch { rejected = true; }
+    failUnless(rows, 'CAS rejects a mismatched campaign identity/checksum', rejected);
+
+    const b = new IndexedDBStorageAdapter(indexedDB, 'aod-reborn-probe-20261018');
+    await b.open();
+    const replacement = structuredClone(seed);
+    replacement.revision = 200;
+    head = await a.loadLive(data).then(snapshot => snapshot.head);
+    await a.replace(head, encode(replacement, data), data);
+    const stale = structuredClone(seed);
+    stale.revision = 150;
+    rejected = false;
+    try { await b.replace(head, encode(stale, data), data); } catch { rejected = true; }
+    failUnless(rows, 'stale second-writer replacement is rejected', rejected);
+
+    let live = await a.loadLive(data);
+    failUnless(rows, 'newer replacement survives stale replacement', live.state?.revision === 200, { actualRevision: live.state?.revision });
+
+    const protectedSlot = structuredClone(seed);
+    protectedSlot.revision = 90;
+    await a.storeSlot(1, encode(protectedSlot, data), data);
+    const oldSource = newCampaign(contract, data, 1000);
+    oldSource.revision = 1;
+    const source = new Map([
+      [SAVE_KEY, encode(oldSource, data)],
+      [SAVE_KEY + '-backup', encode(protectedSlot, data)],
+      [SAVE_KEY + '-staged', 'preserve-staged-bytes'],
+      [SAVE_KEY + '-slot-1', encode(oldSource, data)],
+      [SAVE_KEY + '-slot-2', encode(oldSource, data)],
+      [VIEW_KEY, 'adventure'],
+    ]);
+    const migration = await a.migrateFromLocalStorage({ getItem: key => source.get(key) ?? null }, data);
+    live = await a.loadLive(data);
+    failUnless(rows, 'migration cannot overwrite newer live campaign', live.state?.revision === 200, { actualRevision: live.state?.revision });
+    failUnless(rows, 'migration preserves the current slot over a stale source slot', (await a.loadSlot(1, data))?.revision === 90);
+    failUnless(rows, 'migration imports a previously empty save slot', (await a.loadSlot(2, data))?.revision === 1);
+    const exported = await a.export();
+    failUnless(rows, 'migration preserves staged bytes', exported.campaigns.staged === 'preserve-staged-bytes');
+    failUnless(rows, 'migration retains the original staged source record', Object.values(exported.campaigns).includes('preserve-staged-bytes'));
+    failUnless(rows, 'migration inventory records the original view', migration.inventory.view === 'adventure');
+    failUnless(rows, 'migration marker records a complete source hash', exported.metadata['migration-marker']?.complete === true && Boolean(exported.metadata['migration-marker']?.sourceHash));
+
+    const empty = new IndexedDBStorageAdapter(indexedDB, 'aod-reborn-probe-empty-20261018');
+    await empty.open();
+    const imported = newCampaign(contract, data, 2000);
+    imported.revision = 7;
+    const legacy = new Map([[SAVE_KEY, encode(imported, data)], [VIEW_KEY, 'hero']]);
+    await empty.migrateFromLocalStorage({ getItem: key => legacy.get(key) ?? null }, data);
+    const importedLive = await empty.loadLive(data);
+    failUnless(rows, 'empty database imports valid legacy campaign bytes', importedLive.status === 'VALID' && importedLive.state.revision === 7);
+    failUnless(rows, 'empty database restores legacy view state', importedLive.view === 'hero');
+
+    result.textContent = JSON.stringify({ classification: 'NATIVE_BROWSER_ISOLATED_ADVERSARIAL_FIXTURE', rows }, null, 2);
+  } catch (error) {
+    result.textContent = JSON.stringify({ classification: 'NATIVE_BROWSER_ISOLATED_ADVERSARIAL_FIXTURE', rows, error: String(error), stack: error.stack }, null, 2);
+  }
+};
+</script>

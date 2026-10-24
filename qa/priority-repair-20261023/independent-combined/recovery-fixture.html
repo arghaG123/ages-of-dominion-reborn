@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><title>Independent recovery fixture</title>
+<h1>Isolated native IndexedDB recovery fixture</h1>
+<p>This page refuses to seed any origin with existing campaign data. Fixture only.</p>
+<button id="seed" disabled>Create damaged fixture with valid backup</button>
+<pre id="result">Opening…</pre><a href="/?audit">Open game recovery</a>
+<script type="module">
+import data from '/src/data/reference-data.json' with {type:'json'};
+import contract from '/src/data/implementation-contract.json' with {type:'json'};
+import {newCampaign} from '/src/core/campaign.js';
+import {encode,IndexedDBStorageAdapter,SAVE_KEY} from '/src/core/save.js';
+const adapter=new IndexedDBStorageAdapter();
+const result=document.querySelector('#result'),button=document.querySelector('#seed');
+const existing=await adapter.export();
+const empty=Object.values(existing).every(store=>Object.keys(store).length===0)&&localStorage.getItem(SAVE_KEY)===null;
+result.textContent=JSON.stringify({origin:location.origin,empty,existingKeys:Object.fromEntries(Object.entries(existing).map(([k,v])=>[k,Object.keys(v)]))},null,2);
+button.disabled=!empty;
+button.onclick=async()=>{button.disabled=true;try{
+ const state=newCampaign(contract,data,Date.now(),23102377);
+ const raw0=encode(state,data),head0=await adapter.commit(null,raw0,data);
+ state.revision++;state.resources.gold=151;
+ const raw1=encode(state,data),head1=await adapter.commit(head0,raw1,data);
+ let staleRejected=false;try{await adapter.commit(head0,raw1,data)}catch{staleRejected=true}
+ const before=await adapter.export();
+ const db=await adapter.open();
+ await new Promise((resolve,reject)=>{const tx=db.transaction(['campaigns'],'readwrite');tx.objectStore('campaigns').put('{independent-damaged-live','live');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});
+ const loaded=await adapter.loadLive(data);
+ result.textContent=JSON.stringify({fixture:true,native:db instanceof IDBDatabase,staleRejected,staleDidNotChangeLive:before.campaigns.live===raw1,backupMatchesRevision0:before.campaigns.backup===raw0,status:loaded.status,backupGold:loaded.backup?.resources.gold,rawMatches:loaded.raw==='{independent-damaged-live',head:head1},null,2);
+}catch(error){result.textContent=error.stack}}
+</script>

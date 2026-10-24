@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
+import adventureWorlds from '../src/data/adventure-worlds.json' with { type: 'json' };
 import {
   advance,
   command,
@@ -11,7 +12,7 @@ import {
   validate
 } from '../src/core/campaign.js';
 import { activeStackId } from '../src/core/battle.js';
-import { adventureMap, routeCost } from '../src/core/navigation.js';
+import { adventureGeometryForWorld, adventureMap, routeCost, stepCost } from '../src/core/navigation.js';
 import {
   GEAR_SLOTS,
   RIVALS,
@@ -23,6 +24,7 @@ import {
   recruitCost
 } from '../src/core/rules.js';
 import { dwellingCost, makePack } from '../src/core/mechanics.js';
+import { completeSkirmishDeployment } from './battle-deployment-helpers-20261022.mjs';
 import {
   decode,
   encode,
@@ -50,6 +52,11 @@ const finishBuild = state => {
   if (!state.buildJobs.length) return state;
   return advance(state, state.buildJobs[0].completesAt, data);
 };
+const selectedAdventureGeometry = state => adventureGeometryForWorld(
+  contract.geometry.adventure,
+  adventureWorlds.find(world => world.id === state.adventureWorldId),
+  state.seed,
+);
 
 // ---------------------------------------------------------------------------
 // J01: Fresh start
@@ -185,29 +192,34 @@ test('J04 Age progression: Hall payment gate, next-age world transformation, ret
 test('J05 Adventure travel: leave town, route preview/cancel, legal move, fog uncover, reload', () => {
   const store = memory();
   let state = newCampaign(contract, data, 1_000_000);
-  
-  // Leave town (hero starts at [8, 8])
+  const geometry = selectedAdventureGeometry(state);
+  const map = adventureMap(geometry);
+
+  // Leave town from the selected world’s registered entrance.
   state = act(state, 'ENTER_ADVENTURE', {});
   assert.equal(state.adventure.atTown, false);
   const initialMoves = state.adventure.moves;
-  assert.equal(state.adventure.x, 8);
-  assert.equal(state.adventure.y, 8);
+  const start = geometry.anchors.hero.slice(0, 2).map(Math.floor);
+  assert.deepEqual([state.adventure.x, state.adventure.y], start);
   
-  // Blocked move onto water or obstacle throws and leaves state unchanged
-  assert.throws(() => act(state, 'MOVE', { path: [[4, 5]] }), /Illegal|Blocked/);
+  // A non-adjacent move is rejected without spending the travel budget.
+  assert.throws(() => act(state, 'MOVE', { path: [[start[0] + 2, start[1]]] }), /Illegal|Blocked/);
   assert.equal(state.adventure.moves, initialMoves);
   
-  // Legal move along road to [8, 7]
-  state = act(state, 'MOVE', { path: [[8, 7]] });
-  assert.equal(state.adventure.x, 8);
-  assert.equal(state.adventure.y, 7);
+  const directions = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [1, -1], [-1, 1], [-1, -1]];
+  const next = directions.map(([dx, dy]) => [start[0] + dx, start[1] + dy]).find(cell => {
+    if (map.guards.has(cell.join(','))) return false;
+    try { return stepCost(map, start, cell) <= initialMoves; } catch { return false; }
+  });
+  assert.ok(next, 'the selected world has a legal first travel step');
+  state = act(state, 'MOVE', { path: [next] });
+  assert.deepEqual([state.adventure.x, state.adventure.y], next);
   assert.ok(state.adventure.moves < initialMoves);
 
   // Reload verification
   save(store, state, data);
   const loaded = load(store, data);
-  assert.equal(loaded.state.adventure.x, 8);
-  assert.equal(loaded.state.adventure.y, 7);
+  assert.deepEqual([loaded.state.adventure.x, loaded.state.adventure.y], next);
   assert.equal(loaded.state.adventure.atTown, false);
 });
 
@@ -258,12 +270,12 @@ test('J07 Tactical interaction: unit selection, initiative queue, legal actions,
   
   const activeId = activeStackId(state.battle);
   assert.ok(activeId, 'Active stack must exist');
+  assert.equal(state.battle.stacks.find(stack => stack.id === activeId)?.side, 'p', 'enemy initiative resolves before the player is asked to act');
   
   // Legal Defend command
   state = act(state, 'BATTLE', { action: 'defend', stackId: activeId });
-  const lastAction = state.battle.log[state.battle.log.length - 1];
-  assert.ok(lastAction, 'Action must be logged');
-  assert.equal(lastAction.type, 'defend');
+  const defendAction = state.battle.log.find(event => event.type === 'defend' && event.id === activeId);
+  assert.ok(defendAction, 'the player defend action is logged even when the enemy follows with its own action');
 });
 
 // ---------------------------------------------------------------------------
@@ -272,7 +284,7 @@ test('J07 Tactical interaction: unit selection, initiative queue, legal actions,
 test('J08 Retreat/Auto/results: retreat confirmation, auto resolution, settlement once-only', () => {
   const store = memory();
   let state = newCampaign(contract, data, 1_000_000);
-  state = act(state, 'START_SKIRMISH', {});
+  state = completeSkirmishDeployment(state, data, 'j08-skirmish');
   assert.equal(state.battle.status, 'ACTIVE');
   
   // Auto resolve
@@ -330,7 +342,7 @@ test('J10 War modes: Siege, Duel, Endless, Skirmish, Challenge practice isolatio
   // 1. Skirmish isolation
   let state = newCampaign(contract, data, 1_000_000);
   const gold = state.resources.gold;
-  state = act(state, 'START_SKIRMISH', {});
+  state = completeSkirmishDeployment(state, data, 'j10-skirmish');
   assert.equal(state.battle.practice, 'skirmish');
   state = act(state, 'BATTLE', { action: 'auto' });
   state = act(state, 'SETTLE_BATTLE', {});
@@ -445,11 +457,13 @@ test('J13 Creatures/roster: dwelling offer, cancel keeps terms, claim recruits c
   state = act(state, 'BUILD', { plotId: 'P04', building: 'barracks' });
   state = finishBuild(state);
   
+  const dwelling = selectedAdventureGeometry(state).sites.find(site => site.id === 'dwelling');
   state = act(state, 'ENTER_ADVENTURE', {});
   
-  // Move to dwelling site approach: contract dwelling site approach is at [10, 8]
-  state.adventure.x = 10;
-  state.adventure.y = 8;
+  // Place the journey at the selected world’s registered dwelling approach.
+  state.adventure.x = dwelling.approach[0];
+  state.adventure.y = dwelling.approach[1];
+  state.adventure.visited.push(dwelling.approach.join(','));
   
   // Open offer
   state = act(state, 'OFFER_DWELLING', { type: 'wolf' });
@@ -636,10 +650,12 @@ test('J18 Whole-game continuity: build -> recruit -> craft -> travel -> fight ->
   assert.equal(state.hero.equip.weapon.id, sword.id);
   
   // 4. Adventure travel & return to town approach [8, 4]
+  const townApproach = selectedAdventureGeometry(state).sites.find(site => site.id === 'town').approach;
   state = act(state, 'ENTER_ADVENTURE', {});
   assert.equal(state.adventure.atTown, false);
-  state.adventure.x = 8;
-  state.adventure.y = 4;
+  state.adventure.x = townApproach[0];
+  state.adventure.y = townApproach[1];
+  state.adventure.visited.push(townApproach.join(','));
   state = act(state, 'RETURN_TOWN', {});
   assert.equal(state.adventure.atTown, true);
   

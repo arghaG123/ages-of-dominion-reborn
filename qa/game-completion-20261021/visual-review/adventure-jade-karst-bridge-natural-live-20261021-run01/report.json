@@ -1,0 +1,244 @@
+{
+  "recordedAt": "2026-10-21T06:38:52.673Z",
+  "classification": "NATURAL_JADE_KARST_ROUTE_PREVIEW_CANCEL_BRIDGE_SAVE_RELOAD",
+  "journey": "Fresh visible campaign -> Jade Karst -> preview legal bridge route -> cancel unchanged -> confirm -> reload",
+  "note": "All campaign actions use visible controls. Snapshot reads and imported geometry are assertions only; no campaign state, route, or movement is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "start": {
+    "position": [
+      8,
+      4
+    ],
+    "moves": 5,
+    "revision": 8,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "bridgeCell": [
+      6,
+      5
+    ],
+    "expectedRoute": {
+      "cost": 3,
+      "cells": [
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "destination": [
+        6,
+        5
+      ]
+    }
+  },
+  "openPanelCancelControls": {
+    "panelClear": 1,
+    "panelCancel": 0,
+    "dockCancel": 0
+  },
+  "preview": {
+    "status": "Jade Karst KingdomCost 3 · 5 moves left · Confirm to travel.",
+    "actualPoints": "731,345.59999999999997 645,345.59999999999997 559,345.59999999999997 559,422.4",
+    "position": [
+      8,
+      4
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "revisionBefore": 8,
+    "revisionAfter": 9,
+    "gameplayStateUnchanged": true
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-natural-live-20261021-run01\\jade-karst-bridge-route-preview-1280x720.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-natural-live-20261021-run01\\jade-karst-bridge-route-dock-825x375.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-natural-live-20261021-run01\\jade-karst-bridge-crossing-825x375.jpg"
+  ],
+  "cancel": {
+    "position": [
+      8,
+      4
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "revision": 9
+  },
+  "compactClosedPanelCamera": {
+    "fit": {
+      "scale": 0.5995639534883721,
+      "offset": [
+        0,
+        0
+      ],
+      "mode": "focus-cover",
+      "window": [
+        0,
+        0,
+        1376,
+        625.4545454545455
+      ]
+    },
+    "worldWidth": 825,
+    "viewport": [
+      825,
+      375
+    ],
+    "frame": {
+      "x": 0,
+      "width": 825,
+      "height": 460.4651184082031
+    }
+  },
+  "closedPanelCancelControls": {
+    "panelClear": 0,
+    "panelCancel": 0,
+    "dockCancel": 1
+  },
+  "closedPanelCancel": {
+    "position": [
+      8,
+      4
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    }
+  },
+  "move": {
+    "position": [
+      6,
+      5
+    ],
+    "moves": 2,
+    "cost": 3,
+    "visited": [
+      "8,4",
+      "7,4",
+      "6,4",
+      "6,5"
+    ],
+    "saveState": "committed"
+  },
+  "compactLayout": {
+    "innerWidth": 825,
+    "innerHeight": 375,
+    "devicePixelRatio": 1,
+    "app": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "stage": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "stageField": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "frame": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 460.4651184082031,
+      "cssWidth": "1376px"
+    },
+    "terrain": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 460.4651184082031,
+      "cssWidth": "1376px"
+    },
+    "mapImageWidth": 1672,
+    "view": "adventure",
+    "panelOpen": false,
+    "panel": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "cssWidth": "280px"
+    },
+    "frameTransform": "translate(0px, 0px) scale(0.599564)",
+    "adventure": {
+      "x": 6,
+      "y": 5,
+      "moves": 2,
+      "visited": [
+        "8,4",
+        "7,4",
+        "6,4",
+        "6,5"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 125,
+        "wood": 137,
+        "stone": 122,
+        "gold": 230
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 125,
+        "mineGold": 230
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "auditSnapshot": "{\"view\":\"adventure\",\"state\":{\"schema\":1,\"id\":\"campaign-fcc0cbaf-237b-4d09-a78d-4308f05b5f7d\",\"revision\":18,\"seed\":533176862,\"rngState\":533176862,\"adventureWorldId\":\"jade-karst\",\"age\":0,\"day\":1,\"resources\":{\"food\":250,\"wood\":250,\"stone\":160,\"gold\":150},\"plots\":[{\"id\":\"townhall\",\"type\":\"townhall\",\"level\":1},{\"id\":\"P01\",\"type\":null,\"level\":0},{\"id\":\"P02\",\"type\":null,\"level\":0},{\"id\":\"P03\",\"type\":null,\"level\":0},{\"id\":\"P04\",\"type\":null,\"level\":0},{\"id\":\"P05\",\"type\":null,\"level\":0},{\"id\":\"P06\",\"type\":null,\"level\":0},{\"id\":\"P07\",\"type\":null,\"level\":0},{\"id\":\"P08\",\"type\":null,\"level\":0},{\"id\":\"P09\",\"type\":null,\"level\":0},{\"id\":\"P10\",\"type\":null,\"level\":0},{\"id\":\"P11\",\"type\":null,\"level\":0},{\"id\":\"P12\",\"type\":null,\"level\":0},{\"id\":\"P13\",\"type\":null,\"level\":0},{\"id\":\"P14\",\"type\":null,\"level\":0},{\"id\":\"P15\",\"type\":null,\"level\":0},{\"id\":\"P16\",\"type\":null,\"level\":0},{\"id\":\"P17\",\"type\":null,\"level\":0}],\"walls\":{\"level\":0},\"buildJobs\":[],\"clock\":1792564729618,\"hero\":{\"id\":\"hero-1\",\"class\":\"knight\",\"level\":1,\"xp\":0,\"points\":0,\"growth\":{\"atk\":0,\"def\":0,\"pow\":0,\"kno\":0},\"bonus\":{\"atk\":0,\"def\":0,\"pow\":0,\"kno\":0},\"offers\":[],\"mana\":10,\"skills\":{\"offense\":0,\"archery\":0,\"armorer\":0,\"wisdom\":0,\"leadership\":0,\"luck\":0,\"tactics\":0,\"logistics\":0,\"firstaid\":0},\"equip\":{\"helm\":null,\"weapon\":null,\"offhand\":null,\"armor\":null,\"boots\":null,\"accessory\":null}},\"army\":[{\"id\":\"army-1\",\"kind\":\"role\",\"type\":\"melee\",\"age\":0,\"count\":12,\"rank\":0,\"xp\":0},{\"id\":\"army-2\",\"kind\":\"role\",\"type\":\"ranged\",\"age\":0,\"count\":8,\"rank\":0,\"xp\":0}],\"towers\":[{\"id\":\"tower-1\",\"fam\":\"arrow\",\"tier\":0,\"rank\":0,\"xp\":0},{\"id\":\"tower-2\",\"fam\":\"slow\",\"tier\":0,\"rank\":0,\"xp\":0}],\"inventory\":[],\"story\":{\"rival\":null,\"flags\":{\"enteredValley\":true},\"chapter\":0,\"choices\":[],\"futureSeen\":false,\"milestones\":{}},\"quests\":{\"q1\":{\"claimed\":false},\"q2\":{\"claimed\":false},\"q3\":{\"claimed\":false},\"q4\":{\"claimed\":false},\"q5\":{\"claimed\":false},\"q6\":{\"claimed\":false}},\"tutorial\":{\"step\":0,\"skipped\":true},\"settings\":{\"music\":0.6,\"sfx\":0.8,\"reducedMotion\":false},\"weather\":\"clear\",\"adventure\":{\"x\":6,\"y\":5,\"moves\":2,\"visited\":[\"8,4\",\"7,4\",\"6,4\",\"6,5\"],\"resolvedGuards\":[],\"cacheOffers\":{\"food\":125,\"wood\":137,\"stone\":122,\"gold\":230},\"collectedCaches\":[],\"siteOffers\":{\"ruinXp\":90,\"millFood\":125,\"mineGold\":230},\"claimedSites\":[],\"pendingEncounter\":null,\"atTown\":false},\"battle\":null,\"defense\":null,\"dwelling\":null,\"dwellingHistory\":[],\"practice\":{\"challenges\":{}},\"settledTransactions\":{\"31c2d215-55c5-456a-aabd-b21660021528\":\"{\\\"type\\\":\\\"SET_CLASS\\\",\\\"payload\\\":{\\\"class\\\":\\\"knight\\\"}}\",\"cdba1b7b-c0e4-4859-a9dc-c630a9e34bae\":\"{\\\"type\\\":\\\"TUTORIAL_SKIP\\\",\\\"payload\\\":{}}\",\"9151587d-4b82-4c2f-84a4-5a9a27fd647b\":\"{\\\"type\\\":\\\"ENTER_ADVENTURE\\\",\\\"payload\\\":{}}\",\"819b52d8-1d29-472d-8b4b-7c0475900b14\":\"{\\\"type\\\":\\\"MOVE\\\",\\\"payload\\\":{\\\"path\\\":[[7,4],[6,4],[6,5]]}}\"}},\"storage\":{\"kind\":\"committed\",\"sequence\":9,\"head\":{\"epoch\":1,\"campaignId\":\"campaign-fcc0cbaf-237b-4d09-a78d-4308f05b5f7d\",\"revision\":17,\"checksum\":\"814b5121\",\"updatedAt\":1792564729382}},\"frame\":{\"width\":825,\"height\":375,\"inset\":0,\"rect\":{\"x\":0,\"y\":0,\"width\":825,\"height\":375,\"top\":0,\"right\":825,\"bottom\":375,\"left\":0},\"fit\":{\"scale\":0.5995639534883721,\"offset\":[0,0],\"mode\":\"focus-cover\",\"window\":[0,0,1376,625.4545454545455]},\"worldWidth\":825,\"boardGeometry\":true}}"
+  },
+  "reload": {
+    "worldId": "jade-karst",
+    "position": [
+      6,
+      5
+    ],
+    "moves": 2,
+    "visited": [
+      "8,4",
+      "7,4",
+      "6,4",
+      "6,5"
+    ],
+    "revision": 29
+  },
+  "passed": true
+}

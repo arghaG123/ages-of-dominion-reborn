@@ -1,0 +1,112 @@
+{
+  "recordedAt": "2026-10-21T16:36:31.019Z",
+  "classification": "NATURAL_UI_ADVENTURE_DWELLING_CLAIM_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh campaign -> build Barracks -> leave town -> preview/cancel route -> confirm legal road route to dwelling -> on-foot site arrival -> ask for fixed offer -> back to road and reopen the same offer -> save/reload -> claim creatures -> verify Q3 ready -> claim its reward once -> save/reload -> verify roster and both rewards",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "haunted-marsh",
+    "layoutId": "haunted-marsh-layout-14",
+    "start": [
+      3,
+      8
+    ],
+    "destination": [
+      11,
+      7
+    ],
+    "cost": 11,
+    "cells": [
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        11,
+        7
+      ]
+    ]
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [],
+  "campaignId": "campaign-36d40d83-3b57-4e11-a542-abbd12373673",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 3,
+    "y": 8,
+    "moves": 5,
+    "visited": [
+      "3,8"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 111,
+      "wood": 143,
+      "stone": 133,
+      "gold": 218
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 111,
+      "mineGold": 218
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "cancel": {
+    "preservedPosition": [
+      3,
+      8
+    ],
+    "preservedMoves": 5
+  },
+  "passed": false,
+  "failure": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-choice=\"adventure-end-day\"]').first() to be visible\u001b[22m\n\u001b[2m    24 × locator resolved to hidden <button type=\"button\" data-choice=\"adventure-end-day\">End day · Restore daily movement</button>\u001b[22m\n"
+}

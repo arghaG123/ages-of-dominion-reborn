@@ -1,0 +1,33 @@
+{
+  "reviewId": "M10-future-natural-age-gate-review-20261023",
+  "mock": "M10",
+  "status": "OPEN_M10_FUTURE_AGE_NOT_REACHED",
+  "reviewedAt": "2026-10-23",
+  "reference": {
+    "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/10-kingdom-future.jpg",
+    "sha256": "94FD03C0EA803D4538C696989C65C1F22700D57C7AE78B71EE0DD3CA32E54443"
+  },
+  "currentScreenshot": {
+    "file": "qa/game-completion-20261023/m08-industrial-not-reached-current-20261023.png",
+    "sha256": "3A9101DC766D7B2E6785ADDBB9CC00FE1A8E5CA63AE37F1029C73B775F34C8DF",
+    "viewport": [1280, 720]
+  },
+  "source": {
+    "mainJsSHA256": "8E1BC107B6072A1E6473EB0530C7B0CC20E38D5753A657D4246C181FA3DA23AF",
+    "gameCssSHA256": "28C7F82297508DC977C9FB5F76D6E9196873DCB6BA431AA15A288AF47AF78577"
+  },
+  "naturalState": {
+    "campaignId": "campaign-8be86723-842b-4775-b29b-e988acd7bec6",
+    "currentAge": 4,
+    "currentView": "kingdom",
+    "townHallLevel": 6,
+    "storage": "committed",
+    "revision": 32272
+  },
+  "unmatchedTarget": {
+    "targetAge": 7,
+    "selectedBuilding": "Advanced Research Lab · level 5",
+    "note": "The current natural campaign is three ages short of the target. No Future state or lab-selection mechanics were exercised."
+  },
+  "acceptance": "OPEN: the Future target state was not reached, so this mock has no current matched visual assessment."
+}

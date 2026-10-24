@@ -1,6 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { acceptMapActivation, defaultIntent, keepIntent, modeRows, moveLabel, retreatBlocksBackground, retreatNotice, stackCaption, strikeLabel, spellLabel, viewDuringRetreat } from '../src/client/tactical-ui.js';
+import {
+  acceptMapActivation,
+  battleSpellAvailability,
+  defaultIntent,
+  intentSentence,
+  keepIntent,
+  modeRows,
+  moveLabel,
+  retreatBlocksBackground,
+  retreatNotice,
+  spellAvailability,
+  spellLabel,
+  stackCaption,
+  strikeLabel,
+  tacticalHeroPlaqueCopy,
+  viewDuringRetreat,
+} from '../src/client/tactical-ui.js';
 
 const legal = { moves: [[2, 9], [1, 8]], melee: ['e1'], ranged: [], };
 
@@ -60,4 +76,90 @@ test('retreat notice names the consequences and keeps cancel free of a resolutio
   const practice = retreatNotice('skirmish');
   assert.match(practice.body, /does not change campaign resources/i);
   assert.match(stackCaption({ title: 'Slinger', count: 5, hp: 22, maxHp: 55, action: 'move' }), /Slinger · 5 · 22\/55 hp · move/);
+});
+
+test('spell guidance states one cast per round and distinguishes round-used, insufficient-mana, no-known-spell, and no-target', () => {
+  assert.equal(intentSentence('spell', 'Warrior'), 'Choose one listed cast. Your hero casts once per battle round.');
+  assert.match(intentSentence('spell', 'Warrior', { castThisRound: true, mana: 9, knownSpells: ['arrow'], minSpellCost: 4 }), /Round cast used/i);
+  assert.match(intentSentence('spell', 'Warrior', { castThisRound: false, mana: 0, knownSpells: ['arrow'], minSpellCost: 4 }), /0\/4/i);
+
+  const used = spellAvailability({ spells: 0, castThisRound: true, mana: 8, knownSpells: ['arrow', 'bless'], minSpellCost: 4 });
+  assert.equal(used.reason, 'round-used');
+  assert.equal(used.detail, 'Round cast used (1/round)');
+
+  const lowMana = spellAvailability({ spells: 0, castThisRound: false, mana: 0, knownSpells: ['arrow'], minSpellCost: 4 });
+  assert.equal(lowMana.reason, 'insufficient-mana');
+  assert.equal(lowMana.detail, 'Insufficient mana (0/4)');
+
+  const noKnown = spellAvailability({ spells: 0, castThisRound: false, mana: 10, knownSpells: [] });
+  assert.equal(noKnown.reason, 'no-known-spell');
+  assert.equal(noKnown.detail, 'No known spell');
+
+  const noTarget = spellAvailability({ spells: 0, castThisRound: false, mana: 10, knownSpells: ['resurrect'], minSpellCost: 9 });
+  assert.equal(noTarget.reason, 'no-target');
+  assert.equal(noTarget.detail, 'No legal spell target');
+
+  const fromBattle = battleSpellAvailability(
+    { castThisRound: true, mana: 6, wisdom: 1, stacks: [] },
+    { arrow: { mana: 4, lv: 1, type: 'dmg' }, bless: { mana: 5, lv: 1, type: 'buff' } }
+  );
+  assert.equal(fromBattle.reason, 'round-used');
+});
+
+test('battleSpellAvailability evaluates live battle stacks across all five cast states and zero-count targets', () => {
+  const spellbook = {
+    arrow: { mana: 5, lv: 1, type: 'dmg' },
+    bolt: { mana: 10, lv: 2, type: 'dmg' },
+  };
+  const ready = battleSpellAvailability(
+    { castThisRound: false, mana: 8, wisdom: 1, stacks: [{ id: 'p1', side: 'p', dead: false, count: 4 }, { id: 'e1', side: 'e', dead: false, count: 3 }] },
+    spellbook
+  );
+  assert.equal(ready.enabled, true);
+  assert.equal(ready.reason, 'available');
+  assert.equal(ready.offers.length, 1);
+
+  const noTarget = battleSpellAvailability(
+    { castThisRound: false, mana: 8, wisdom: 1, stacks: [{ id: 'p1', side: 'p', dead: false, count: 4 }, { id: 'e1', side: 'e', dead: false, count: 0 }] },
+    spellbook
+  );
+  assert.equal(noTarget.enabled, false);
+  assert.equal(noTarget.reason, 'no-target');
+  assert.match(intentSentence('spell', 'Warrior', noTarget), /no legal target/i);
+
+  const lowMana = battleSpellAvailability(
+    { castThisRound: false, mana: 3, wisdom: 1, stacks: [{ id: 'e1', side: 'e', dead: false, count: 3 }] },
+    spellbook
+  );
+  assert.equal(lowMana.reason, 'insufficient-mana');
+  assert.equal(lowMana.detail, 'Insufficient mana (3/5)');
+
+  const noKnown = battleSpellAvailability(
+    { castThisRound: false, mana: 12, wisdom: -1, stacks: [{ id: 'e1', side: 'e', dead: false, count: 3 }] },
+    spellbook
+  );
+  assert.equal(noKnown.reason, 'no-known-spell');
+  assert.match(intentSentence('spell', 'Warrior', noKnown), /no known spell at current Wisdom/i);
+});
+
+test('tactical hero plaque copy keeps zero mana visible and accessible in ariaLabel', () => {
+  const withMana = tacticalHeroPlaqueCopy({
+    heroName: 'Aegis',
+    classTitle: 'Warrior',
+    level: 2,
+    xp: 22,
+    mana: 9,
+  });
+  assert.equal(withMana.subtext, 'XP 22 · Mana 9');
+  assert.match(withMana.ariaLabel, /battle mana 9\./);
+
+  const zeroMana = tacticalHeroPlaqueCopy({
+    heroName: 'Aegis',
+    classTitle: 'Warrior',
+    level: 2,
+    xp: 22,
+    mana: 0,
+  });
+  assert.equal(zeroMana.subtext, 'XP 22 · Mana 0');
+  assert.match(zeroMana.ariaLabel, /battle mana 0\./);
 });

@@ -1,0 +1,52 @@
+{
+  "reviewId": "M01-home-live-review-20261022",
+  "date": "2026-10-22",
+  "status": "PARTIAL",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/01-home.jpg",
+  "origin": "http://localhost:4174/?audit",
+  "liveState": {
+    "screen": "saved campaign gate",
+    "campaign": "Sunlit Riverlands",
+    "age": "Iron Age",
+    "day": 4,
+    "testCopy": "slot 2",
+    "preservedSlot": 1,
+    "titleBackdrop": "assets/production/production-11-20261003/images/30-supporting-title.png",
+    "transientAwayTimeReport": "Dismissed for the clean comparison; its stored report was inspected first."
+  },
+  "viewports": [
+    {
+      "requested": [1280, 720],
+      "observed": [1280, 720],
+      "gate": [0, 0, 384, 720],
+      "actions": {
+        "Continue": [32, 228, 318, 52],
+        "New campaign": [32, 288, 318, 52],
+        "Settings": [32, 348, 154, 48],
+        "Save/Load": [196, 348, 154, 48]
+      }
+    },
+    {
+      "requested": [825, 375],
+      "observed": [826, 375],
+      "gate": [0, 0, 320, 375],
+      "allActionsInsideGate": true
+    }
+  ],
+  "visualFindings": [
+    "The live title scene uses a valley-and-castle composition visually aligned with the M01 reference and a dark left campaign panel.",
+    "Saved-campaign actions now follow the mock hierarchy: two stacked primary actions and a paired Settings / Save-Load row.",
+    "The visible product title is Ages of Dominion; mock copy branding is not reproduced."
+  ],
+  "verification": {
+    "responsiveTests": "28/28",
+    "fullNodeSuite": "261/261",
+    "liveScreenshotRetainedAsFile": false,
+    "ownerAccepted": false
+  },
+  "limitations": [
+    "The compact viewport override measured one CSS pixel wider than requested.",
+    "This saved-campaign gate review does not close new-campaign, save-load, damaged-save, J01, or owner acceptance contracts.",
+    "The M01 full-game and remaining M01-M30/J01-J18 gates remain open."
+  ]
+}

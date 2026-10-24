@@ -1,0 +1,130 @@
+[
+  {
+    "id": "G01",
+    "contract": "| G01 | Eight ages: Stone, Bronze, Iron, Medieval, Gunpowder, Industrial, Modern, Future | Age changes terrain treatment, settlement, workers/transport, buildings, troops, towers and class kit coherently; retained items keep their own identity/age. |",
+    "sourceLine": 116,
+    "manualInstructions": "R03/R05/A06–A07",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G02",
+    "contract": "| G02 | Sparse Day 1 and economy | Town Hall 1 plus 17 empty pads, separate Walls 0; four resources; initial supplies 250 food/250 wood/160 stone/150 gold; hero with empty gear; stored 12 melee/8 ranged and owned arrow/slow towers. No prebuilt facilities masquerading as progression. |",
+    "sourceLine": 117,
+    "manualInstructions": "R01/J01/A03",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G03",
+    "contract": "| G03 | Construction and progression | Four repeatable producers; unique Barracks/Workshop/Great Hall/Armory; separate Town Hall/Walls; actual costs, scaffold/timer/completion, facility capacities, age gates and capped offline income. Cancel spends zero. |",
+    "sourceLine": 118,
+    "manualInstructions": "R01/R02/J02/J04/A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G04",
+    "contract": "| G04 | Adventure | Hidden 16×10 navigation, terrain-grounded land/bridge routes, documented clearings/sites/pickups/guards, fog, fixed offers, movement/weather/rest/day transitions and committed travel without double spend. |",
+    "sourceLine": 119,
+    "manualInstructions": "R03/M11–M13/J05–J06/A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G05",
+    "contract": "| G05 | Tactical | Hidden 7×10 topology, commander and six stack slots, legal deployment, true initiative, reachability/target previews, Move/Melee/Shoot/Defend/Wait/Spell/Auto/confirmed Retreat, flyers, effects and saved outcomes. |",
+    "sourceLine": 120,
+    "manualInstructions": "R07/M14–M16/J07–J08/A03/A04/A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G06",
+    "contract": "| G06 | Defense | Hidden 9×15 lane/pads, fixed 1/60 simulation, four tower families, five attacker roles, persistent hero/army ownership, zero deployment fee, visible range/telegraphs/abilities, pause/2×/waves/gate HP/results. |",
+    "sourceLine": 121,
+    "manualInstructions": "R03/R07/M17–M18/J09/A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G07",
+    "contract": "| G07 | Five War options | Campaign Siege, Tactical Duel, Endless, isolated no-consequence Skirmish and offline shared-seed Challenge; real setup, consequence explanation, execution and result for each. |",
+    "sourceLine": 122,
+    "manualInstructions": "J10/A06–A07",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G08",
+    "contract": "| G08 | Hero/classes | Knight, Ranger, Warlock, Mage, Paladin, Barbarian, Necromancer, Healer; correct identity/stats, level/XP, A/D/P/K, Knowledge×10 mana, morale/luck, four kit eras and actual battle influence. |",
+    "sourceLine": 123,
+    "manualInstructions": "R04/R05/M19/J12/A04/A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G09",
+    "contract": "| G09 | Skills/spells | Nine exact skills with three levels/effects/prerequisites; eight exact spells with eligibility, mana and legal targets; earned Wisdom 3 and wounded-stack Resurrection included. |",
+    "sourceLine": 124,
+    "manualInstructions": "M20–M21/J12/A04/A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G10",
+    "contract": "| G10 | Equipment/Forge/bag | Six slots, four qualities Crude/Fine/Master/Relic, ten source-backed artifacts, unique IDs/compatibility, real craft/loot/equip/unequip/compare/stat deltas and worn appearance. Armory gates and actual quality/recipe costs apply. |",
+    "sourceLine": 125,
+    "manualInstructions": "R06/M22–M23/J11/A06–A07",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G11",
+    "contract": "| G11 | Army/creatures | Three role families across eight ages, quantities/ranks/capacity/reinforcement and all eight creatures: wolf, bandit, bear, harpy, golem, griffin, wyvern, drone. Existing flyer traits persist. No invented split/merge rules. |",
+    "sourceLine": 126,
+    "manualInstructions": "M24/J03/J13/A06–A07",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G12",
+    "contract": "| G12 | Story/quests | Seven existing chapter subjects, persistent source-backed rival/branches, six quests, eight milestones and Future conclusion “The Valley We Keep”; once-only outcomes and saved consequences. |",
+    "sourceLine": 127,
+    "manualInstructions": "M25–M26/J14/A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G13",
+    "contract": "| G13 | Market | Bronze unlock, four-resource rules, documented 100-unit transactions and exact buy/sell prices; unavailable reasons and transaction feedback. |",
+    "sourceLine": 128,
+    "manualInstructions": "J15/A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G14",
+    "contract": "| G14 | Tutorial | Affordable sparse-start Build/Recruit/Travel/Tactical/Defense sequence anchored to actual objects/controls; wrong clicks do not advance; skip/review and step persistence. |",
+    "sourceLine": 129,
+    "manualInstructions": "M27/J01/J17",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G15",
+    "contract": "| G15 | Save/recovery/settings | Real save slots, import/export, corrupt/unsupported/quota handling, backup/recovery, lifecycle suspension; independent local music/SFX, reduced motion, Help/Credits/Privacy. |",
+    "sourceLine": 130,
+    "manualInstructions": "R09/R10/M28–M29/J16–J17/A05",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  },
+  {
+    "id": "G16",
+    "contract": "| G16 | Shared consequences | Same hero/army/items/resources across campaign modes; persisted settlement IDs; no duplicate rewards, free revived losses, invisible second treasury or practice leakage. |",
+    "sourceLine": 131,
+    "manualInstructions": "J18/A05–A06",
+    "planDisposition": "SPECIFIED_WITH_REFERENCED_CORRECTIONS",
+    "implementationAcceptance": "NOT_TESTED"
+  }
+]

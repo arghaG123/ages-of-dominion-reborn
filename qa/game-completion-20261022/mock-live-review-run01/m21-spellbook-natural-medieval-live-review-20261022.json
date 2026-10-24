@@ -1,0 +1,59 @@
+{
+  "reviewId": "M21-spellbook-natural-medieval-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/21-spells.jpg",
+    "sha256": "B5289F2C8EAE4BE22E1B7B58201E73779BC151D326E66F6832656099C3B00A77",
+    "dimensions": [
+      1376,
+      768
+    ]
+  },
+  "status": "PARTIAL_SPELL_SET_PRESENT_BATTLE_STATE_AND_LAYOUT_MISMATCH",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "hero": "Knight, level 1",
+    "mana": "10/10",
+    "naturalCampaignState": true,
+    "slot1Touched": false
+  },
+  "screen": {
+    "surface": "Hero, Spellbook",
+    "viewportCss": [
+      1280,
+      720
+    ],
+    "spells": [
+      "Magic Arrow, 5 mana, available",
+      "Bless, 5 mana, available",
+      "Haste, 6 mana, available",
+      "Cure, 6 mana, available",
+      "Slow, 8 mana, locked until Wisdom 1",
+      "Lightning Bolt, 10 mana, locked until Wisdom 1",
+      "Fireball, 14 mana, locked until Wisdom 2",
+      "Resurrection, 20 mana, locked until Wisdom 3"
+    ],
+    "spellCastInvoked": false
+  },
+  "visualFindings": [
+    "The live Spellbook exposes the same eight broad spell families shown in M21: Arrow, Bless, Haste, Cure, Slow, Lightning Bolt, Fireball and Resurrection. Four are currently available and four remain locked by Wisdom requirements; the hero has 10/10 mana.",
+    "M21 depicts an active battle over a fortified castle landscape, a level-12 Valerius, upper-right labeled resources, and a bottom-left 2x4 spellbook with a bottom unit/action bar. The live page is the natural Medieval campaign map with a left-side Spellbook panel and no active battle target or combat action bar.",
+    "The icon tiles and context hierarchy differ, and the state is not matched to the battle mock. No spell was cast, so this does not verify targeting, mana debit, combat resolution or effects."
+  ],
+  "evidence": {
+    "liveScreenshotObservedThroughApprovedCUA": true,
+    "liveScreenshotRetained": false,
+    "noSpellCastInvoked": true,
+    "sourceOrTestChanges": false,
+    "ownerAccepted": false
+  },
+  "open": [
+    "Review all eight spells in an age- and battle-matched natural encounter, including target legality, mana debit, effect and save/reload state.",
+    "Compare M21 at exact compact sizes and retain matched battle captures.",
+    "Complete the remaining M01-M30/J01-J18, independent desktop, package, device and owner acceptance gates."
+  ]
+}

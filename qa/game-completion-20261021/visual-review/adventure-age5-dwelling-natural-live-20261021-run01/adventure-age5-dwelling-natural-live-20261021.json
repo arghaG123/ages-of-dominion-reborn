@@ -1,0 +1,3002 @@
+{
+  "recordedAt": "2026-10-21T07:11:00.125Z",
+  "classification": "NATURAL_UI_INDUSTRIAL_AGE_DWELLING_GRIFFIN_CLAIM_RELOAD_NOT_FULL_GAME_OR_OWNER_ACCEPTANCE",
+  "journey": "new campaign -> skip optional tutorial -> build four income sites -> upgrade Hall and walls -> pay the Stone, Bronze, Iron, Medieval, and Gunpowder age gates -> capture natural Industrial Adventure -> build a Barracks -> travel by visible route previews to the registered dwelling -> ask for Griffins -> save/reload the fixed offer -> claim the visible offer -> save/reload and inspect the Army roster",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "note": "All campaign, construction, movement, offer, claim, and save actions use visible controls. Playwright fast-forwards only idle elapsed time for natural resource production, construction, or day restoration. No campaign state, route, movement, or resources are injected. The earlier verified all-age runner supplies the naturally progressed campaign path through Industrial Age.",
+  "errors": [],
+  "failedResponses": [],
+  "ages": [
+    {
+      "age": 0,
+      "name": "Stone Age",
+      "wallPhases": [
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-stone-populated-20261021/stone-scaffold.png",
+          "terrainLoaded": true,
+          "wallPhase": "scaffold",
+          "wallLevel": 0,
+          "wallKind": "scaffold",
+          "wallPainting": "assets/derivatives/kingdom-stone-populated-20261021/stone-scaffold.png",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+              "box": [
+                0,
+                0,
+                1024,
+                1024
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/farm-stone.png",
+              "box": [
+                367.9,
+                189.1,
+                92,
+                66
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/lumber-stone.png",
+              "box": [
+                485.1,
+                161.1,
+                92,
+                73.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/quarry-stone.png",
+              "box": [
+                601.2,
+                125.2,
+                92,
+                90.1
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/mine-stone.png",
+              "box": [
+                725.5,
+                127,
+                92,
+                66.5
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-stone-populated-20261021/stone-wall.png",
+          "terrainLoaded": true,
+          "wallPhase": "built",
+          "wallLevel": 1,
+          "wallKind": "timber-palisade",
+          "wallPainting": "assets/derivatives/kingdom-stone-populated-20261021/stone-wall.png",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+              "box": [
+                0,
+                0,
+                1024,
+                1024
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/farm-stone.png",
+              "box": [
+                367.9,
+                189.1,
+                92,
+                66
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/lumber-stone.png",
+              "box": [
+                485.1,
+                161.1,
+                92,
+                73.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/quarry-stone.png",
+              "box": [
+                601.2,
+                125.2,
+                92,
+                90.1
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/mine-stone.png",
+              "box": [
+                725.5,
+                127,
+                92,
+                66.5
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-stone-populated-20261021/stone-wall.png",
+          "terrainLoaded": true,
+          "wallPhase": "built",
+          "wallLevel": 1,
+          "wallKind": "timber-palisade",
+          "wallPainting": "assets/derivatives/kingdom-stone-populated-20261021/stone-wall.png",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+              "box": [
+                0,
+                0,
+                1024,
+                1024
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/farm-stone.png",
+              "box": [
+                367.9,
+                189.1,
+                92,
+                66
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/lumber-stone.png",
+              "box": [
+                485.1,
+                161.1,
+                92,
+                73.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/quarry-stone.png",
+              "box": [
+                601.2,
+                125.2,
+                92,
+                90.1
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/mine-stone.png",
+              "box": [
+                725.5,
+                127,
+                92,
+                66.5
+              ]
+            }
+          ]
+        }
+      ],
+      "adventureScene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": [],
+        "board": "adventure-live-world-v2",
+        "mountedTraveler": true,
+        "visibleSites": 1,
+        "visitedCells": 1,
+        "terrainRouteOverlay": null
+      },
+      "advancedTo": "Bronze Age",
+      "balanceAfterPayment": {
+        "food": 532.7526500000004,
+        "wood": 82.48889999999994,
+        "stone": 0.25749999999993634,
+        "gold": 177.06899999999996
+      }
+    },
+    {
+      "age": 1,
+      "name": "Bronze Age",
+      "wallPhases": [
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/bronze/wall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "built",
+          "wallLevel": 1,
+          "wallKind": "bronze-faced-palisade",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/bronze/wall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/townhall-bronze.png",
+              "box": [
+                496.2,
+                12.8,
+                152.6,
+                148.7
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/farm-bronze.png",
+              "box": [
+                363.1,
+                179.7,
+                92,
+                75
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/lumber-bronze.png",
+              "box": [
+                486.7,
+                155.2,
+                92,
+                81.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/quarry-bronze.png",
+              "box": [
+                605.3,
+                131.8,
+                92,
+                85.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/mine-bronze.png",
+              "box": [
+                734.6,
+                103.1,
+                92,
+                91.6
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/bronze/scaffold.webp",
+          "terrainLoaded": true,
+          "wallPhase": "scaffold",
+          "wallLevel": 1,
+          "wallKind": "scaffold",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/bronze/scaffold.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/townhall-bronze.png",
+              "box": [
+                496.2,
+                12.8,
+                152.6,
+                148.7
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/farm-bronze.png",
+              "box": [
+                363.1,
+                179.7,
+                92,
+                75
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/lumber-bronze.png",
+              "box": [
+                486.7,
+                155.2,
+                92,
+                81.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/quarry-bronze.png",
+              "box": [
+                605.3,
+                131.8,
+                92,
+                85.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/mine-bronze.png",
+              "box": [
+                734.6,
+                103.1,
+                92,
+                91.6
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/bronze/wall-tall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "tall",
+          "wallLevel": 2,
+          "wallKind": "bronze-faced-palisade",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/bronze/wall-tall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/townhall-bronze.png",
+              "box": [
+                496.2,
+                12.8,
+                152.6,
+                148.7
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/farm-bronze.png",
+              "box": [
+                363.1,
+                179.7,
+                92,
+                75
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/lumber-bronze.png",
+              "box": [
+                486.7,
+                155.2,
+                92,
+                81.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/quarry-bronze.png",
+              "box": [
+                605.3,
+                131.8,
+                92,
+                85.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/mine-bronze.png",
+              "box": [
+                734.6,
+                103.1,
+                92,
+                91.6
+              ]
+            }
+          ]
+        }
+      ],
+      "adventureScene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": [],
+        "board": "adventure-live-world-v2",
+        "mountedTraveler": true,
+        "visibleSites": 1,
+        "visitedCells": 1,
+        "terrainRouteOverlay": null
+      },
+      "advancedTo": "Iron Age",
+      "balanceAfterPayment": {
+        "food": 1239.0889500000003,
+        "wood": 253.21859999999992,
+        "stone": 0.38059999999984484,
+        "gold": 296.5854999999999
+      }
+    },
+    {
+      "age": 2,
+      "name": "Iron Age",
+      "wallPhases": [
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/iron/wall-tall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "tall",
+          "wallLevel": 2,
+          "wallKind": "iron-stake-wall",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/iron/wall-tall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/townhall-iron.png",
+              "box": [
+                522.7,
+                12.8,
+                144.5,
+                146.6
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/farm-iron.png",
+              "box": [
+                359.6,
+                165.9,
+                92,
+                86.9
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/lumber-iron.png",
+              "box": [
+                495.6,
+                153.5,
+                92,
+                80.5
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/quarry-iron.png",
+              "box": [
+                608.1,
+                135.2,
+                92,
+                78.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/mine-iron.png",
+              "box": [
+                724.9,
+                108.5,
+                92,
+                85.8
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/iron/scaffold.webp",
+          "terrainLoaded": true,
+          "wallPhase": "scaffold",
+          "wallLevel": 2,
+          "wallKind": "scaffold",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/iron/scaffold.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/townhall-iron.png",
+              "box": [
+                522.7,
+                12.8,
+                144.5,
+                146.6
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/farm-iron.png",
+              "box": [
+                359.6,
+                165.9,
+                92,
+                86.9
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/lumber-iron.png",
+              "box": [
+                495.6,
+                153.5,
+                92,
+                80.5
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/quarry-iron.png",
+              "box": [
+                608.1,
+                135.2,
+                92,
+                78.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/mine-iron.png",
+              "box": [
+                724.9,
+                108.5,
+                92,
+                85.8
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/iron/wall-tall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "tall",
+          "wallLevel": 3,
+          "wallKind": "iron-stake-wall",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/iron/wall-tall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/townhall-iron.png",
+              "box": [
+                522.7,
+                12.8,
+                144.5,
+                146.6
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/farm-iron.png",
+              "box": [
+                359.6,
+                165.9,
+                92,
+                86.9
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/lumber-iron.png",
+              "box": [
+                495.6,
+                153.5,
+                92,
+                80.5
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/quarry-iron.png",
+              "box": [
+                608.1,
+                135.2,
+                92,
+                78.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/mine-iron.png",
+              "box": [
+                724.9,
+                108.5,
+                92,
+                85.8
+              ]
+            }
+          ]
+        }
+      ],
+      "adventureScene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": [],
+        "board": "adventure-live-world-v2",
+        "mountedTraveler": true,
+        "visibleSites": 1,
+        "visitedCells": 1,
+        "terrainRouteOverlay": null
+      },
+      "advancedTo": "Medieval Age",
+      "balanceAfterPayment": {
+        "food": 2510.969350000001,
+        "wood": 526.6662000000001,
+        "stone": 0.3953999999998814,
+        "gold": 441.1675
+      }
+    },
+    {
+      "age": 3,
+      "name": "Medieval Age",
+      "wallPhases": [
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/medieval/wall-tall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "tall",
+          "wallLevel": 3,
+          "wallKind": "stone-curtain",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/medieval/wall-tall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/townhall-medieval.png",
+              "box": [
+                561.7,
+                12.8,
+                152.2,
+                145.2
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/farm-medieval.png",
+              "box": [
+                370.7,
+                169,
+                92,
+                87.5
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/lumber-medieval.png",
+              "box": [
+                485.4,
+                163.4,
+                92,
+                70.5
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/quarry-medieval.png",
+              "box": [
+                606.7,
+                143.2,
+                92,
+                70.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/mine-medieval.png",
+              "box": [
+                724.4,
+                100.2,
+                92,
+                94.3
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/medieval/scaffold.webp",
+          "terrainLoaded": true,
+          "wallPhase": "scaffold",
+          "wallLevel": 3,
+          "wallKind": "scaffold",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/medieval/scaffold.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/townhall-medieval.png",
+              "box": [
+                561.7,
+                12.8,
+                152.2,
+                145.2
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/farm-medieval.png",
+              "box": [
+                370.7,
+                169,
+                92,
+                87.5
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/lumber-medieval.png",
+              "box": [
+                485.4,
+                163.4,
+                92,
+                70.5
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/quarry-medieval.png",
+              "box": [
+                606.7,
+                143.2,
+                92,
+                70.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/mine-medieval.png",
+              "box": [
+                724.4,
+                100.2,
+                92,
+                94.3
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/medieval/wall-tall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "tall",
+          "wallLevel": 4,
+          "wallKind": "stone-curtain",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/medieval/wall-tall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/townhall-medieval.png",
+              "box": [
+                561.7,
+                12.8,
+                152.2,
+                145.2
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/farm-medieval.png",
+              "box": [
+                370.7,
+                169,
+                92,
+                87.5
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/lumber-medieval.png",
+              "box": [
+                485.4,
+                163.4,
+                92,
+                70.5
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/quarry-medieval.png",
+              "box": [
+                606.7,
+                143.2,
+                92,
+                70.2
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/mine-medieval.png",
+              "box": [
+                724.4,
+                100.2,
+                92,
+                94.3
+              ]
+            }
+          ]
+        }
+      ],
+      "adventureScene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": [],
+        "board": "adventure-live-world-v2",
+        "mountedTraveler": true,
+        "visibleSites": 1,
+        "visitedCells": 1,
+        "terrainRouteOverlay": null
+      },
+      "advancedTo": "Gunpowder Age",
+      "balanceAfterPayment": {
+        "food": 4850.715300000002,
+        "wood": 975.5492499999991,
+        "stone": 0.41554999999971187,
+        "gold": 572.3247499999998
+      }
+    },
+    {
+      "age": 4,
+      "name": "Gunpowder Age",
+      "wallPhases": [
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/gunpowder/wall-tall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "tall",
+          "wallLevel": 4,
+          "wallKind": "brick-bastion",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/gunpowder/wall-tall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+              "box": [
+                524,
+                12.8,
+                147.1,
+                147.1
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/farm-gunpowder.png",
+              "box": [
+                365,
+                190.2,
+                92,
+                63.5
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/lumber-gunpowder.png",
+              "box": [
+                490.3,
+                158.6,
+                92,
+                74.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/quarry-gunpowder.png",
+              "box": [
+                610.8,
+                138.5,
+                92,
+                76.3
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/mine-gunpowder.png",
+              "box": [
+                716.8,
+                118,
+                92,
+                77.6
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/gunpowder/scaffold.webp",
+          "terrainLoaded": true,
+          "wallPhase": "scaffold",
+          "wallLevel": 4,
+          "wallKind": "scaffold",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/gunpowder/scaffold.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+              "box": [
+                524,
+                12.8,
+                147.1,
+                147.1
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/farm-gunpowder.png",
+              "box": [
+                365,
+                190.2,
+                92,
+                63.5
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/lumber-gunpowder.png",
+              "box": [
+                490.3,
+                158.6,
+                92,
+                74.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/quarry-gunpowder.png",
+              "box": [
+                610.8,
+                138.5,
+                92,
+                76.3
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/mine-gunpowder.png",
+              "box": [
+                716.8,
+                118,
+                92,
+                77.6
+              ]
+            }
+          ]
+        },
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/gunpowder/wall-tall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "tall",
+          "wallLevel": 5,
+          "wallKind": "brick-bastion",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/gunpowder/wall-tall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+              "box": [
+                524,
+                12.8,
+                147.1,
+                147.1
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/farm-gunpowder.png",
+              "box": [
+                365,
+                190.2,
+                92,
+                63.5
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/lumber-gunpowder.png",
+              "box": [
+                490.3,
+                158.6,
+                92,
+                74.7
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/quarry-gunpowder.png",
+              "box": [
+                610.8,
+                138.5,
+                92,
+                76.3
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/mine-gunpowder.png",
+              "box": [
+                716.8,
+                118,
+                92,
+                77.6
+              ]
+            }
+          ]
+        }
+      ],
+      "adventureScene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": [],
+        "board": "adventure-live-world-v2",
+        "mountedTraveler": true,
+        "visibleSites": 1,
+        "visitedCells": 1,
+        "terrainRouteOverlay": null
+      },
+      "advancedTo": "Industrial Age",
+      "balanceAfterPayment": {
+        "food": 9218.418849999998,
+        "wood": 1715.3066999999974,
+        "stone": 0.2268999999978405,
+        "gold": 553.1900000000005
+      }
+    },
+    {
+      "age": 5,
+      "name": "Industrial Age",
+      "wallPhases": [
+        {
+          "view": "kingdom",
+          "terrainStatus": "kingdom-painting",
+          "terrain": "assets/derivatives/kingdom-families-20261018/industrial/wall-tall.webp",
+          "terrainLoaded": true,
+          "wallPhase": "tall",
+          "wallLevel": 5,
+          "wallKind": "riveted-plate",
+          "wallPainting": "assets/derivatives/kingdom-families-20261018/industrial/wall-tall.webp",
+          "wallStamps": 0,
+          "renderedBuildings": [
+            {
+              "label": "Town Hall",
+              "href": "assets/derivatives/visual-repair-20261020/buildings/industrial/townhall-industrial-candidate-v1.png",
+              "box": [
+                524,
+                12.8,
+                147.1,
+                147.1
+              ]
+            },
+            {
+              "label": "Farm",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/farm-industrial.png",
+              "box": [
+                367.8,
+                163.8,
+                92,
+                89.2
+              ]
+            },
+            {
+              "label": "Lumber Camp",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/lumber-industrial.png",
+              "box": [
+                494.7,
+                154.9,
+                92,
+                79.9
+              ]
+            },
+            {
+              "label": "Quarry",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/quarry-industrial.png",
+              "box": [
+                606.5,
+                136.5,
+                92,
+                77
+              ]
+            },
+            {
+              "label": "Gold Mine",
+              "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/mine-industrial.png",
+              "box": [
+                728.1,
+                118.1,
+                92,
+                77.4
+              ]
+            }
+          ]
+        }
+      ],
+      "adventureScene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": [],
+        "board": "adventure-live-world-v2",
+        "mountedTraveler": true,
+        "visibleSites": 1,
+        "visitedCells": 1,
+        "terrainRouteOverlay": null
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-stone-populated-20261021/stone-ground.png",
+        "terrainLoaded": true,
+        "wallPhase": "none",
+        "wallLevel": 0,
+        "wallKind": "none",
+        "wallPainting": "assets/derivatives/kingdom-stone-populated-20261021/stone-ground.png",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+            "box": [
+              0,
+              0,
+              1024,
+              1024
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-0-no-wall",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-no-wall-825x375.png"
+        },
+        {
+          "name": "age-0-no-wall",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-no-wall-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-stone-populated-20261021/stone-ground.png",
+        "terrainLoaded": true,
+        "wallPhase": "none",
+        "wallLevel": 0,
+        "wallKind": "none",
+        "wallPainting": "assets/derivatives/kingdom-stone-populated-20261021/stone-ground.png",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+            "box": [
+              0,
+              0,
+              1024,
+              1024
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/farm-stone.png",
+            "box": [
+              367.9,
+              189.1,
+              92,
+              66
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/lumber-stone.png",
+            "box": [
+              485.1,
+              161.1,
+              92,
+              73.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/quarry-stone.png",
+            "box": [
+              601.2,
+              125.2,
+              92,
+              90.1
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/mine-stone.png",
+            "box": [
+              725.5,
+              127,
+              92,
+              66.5
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-0-producers-no-wall",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-producers-no-wall-825x375.png"
+        },
+        {
+          "name": "age-0-producers-no-wall",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-producers-no-wall-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-stone-populated-20261021/stone-scaffold.png",
+        "terrainLoaded": true,
+        "wallPhase": "scaffold",
+        "wallLevel": 0,
+        "wallKind": "scaffold",
+        "wallPainting": "assets/derivatives/kingdom-stone-populated-20261021/stone-scaffold.png",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+            "box": [
+              0,
+              0,
+              1024,
+              1024
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/farm-stone.png",
+            "box": [
+              367.9,
+              189.1,
+              92,
+              66
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/lumber-stone.png",
+            "box": [
+              485.1,
+              161.1,
+              92,
+              73.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/quarry-stone.png",
+            "box": [
+              601.2,
+              125.2,
+              92,
+              90.1
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/mine-stone.png",
+            "box": [
+              725.5,
+              127,
+              92,
+              66.5
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-0-wall-scaffold",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-wall-scaffold-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-stone-populated-20261021/stone-wall.png",
+        "terrainLoaded": true,
+        "wallPhase": "built",
+        "wallLevel": 1,
+        "wallKind": "timber-palisade",
+        "wallPainting": "assets/derivatives/kingdom-stone-populated-20261021/stone-wall.png",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+            "box": [
+              0,
+              0,
+              1024,
+              1024
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/farm-stone.png",
+            "box": [
+              367.9,
+              189.1,
+              92,
+              66
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/lumber-stone.png",
+            "box": [
+              485.1,
+              161.1,
+              92,
+              73.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/quarry-stone.png",
+            "box": [
+              601.2,
+              125.2,
+              92,
+              90.1
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/mine-stone.png",
+            "box": [
+              725.5,
+              127,
+              92,
+              66.5
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-0-wall-level-1",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-wall-level-1-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-stone-populated-20261021/stone-wall.png",
+        "terrainLoaded": true,
+        "wallPhase": "built",
+        "wallLevel": 1,
+        "wallKind": "timber-palisade",
+        "wallPainting": "assets/derivatives/kingdom-stone-populated-20261021/stone-wall.png",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/delivery/stone-starter-20261003/derivatives/v3/townhall-stone.png",
+            "box": [
+              0,
+              0,
+              1024,
+              1024
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/farm-stone.png",
+            "box": [
+              367.9,
+              189.1,
+              92,
+              66
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/lumber-stone.png",
+            "box": [
+              485.1,
+              161.1,
+              92,
+              73.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/quarry-stone.png",
+            "box": [
+              601.2,
+              125.2,
+              92,
+              90.1
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/stone/mine-stone.png",
+            "box": [
+              725.5,
+              127,
+              92,
+              66.5
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-0-built-wall",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-built-wall-825x375.png"
+        },
+        {
+          "name": "age-0-built-wall",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-built-wall-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": []
+      },
+      "captures": [
+        {
+          "name": "age-0-adventure",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-adventure-825x375.png"
+        },
+        {
+          "name": "age-0-adventure",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-0-adventure-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/bronze/wall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "built",
+        "wallLevel": 1,
+        "wallKind": "bronze-faced-palisade",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/bronze/wall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/townhall-bronze.png",
+            "box": [
+              496.2,
+              12.8,
+              152.6,
+              148.7
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/farm-bronze.png",
+            "box": [
+              363.1,
+              179.7,
+              92,
+              75
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/lumber-bronze.png",
+            "box": [
+              486.7,
+              155.2,
+              92,
+              81.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/quarry-bronze.png",
+            "box": [
+              605.3,
+              131.8,
+              92,
+              85.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/mine-bronze.png",
+            "box": [
+              734.6,
+              103.1,
+              92,
+              91.6
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-1-entered",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-1-entered-825x375.png"
+        },
+        {
+          "name": "age-1-entered",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-1-entered-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": []
+      },
+      "captures": [
+        {
+          "name": "age-1-adventure",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-1-adventure-825x375.png"
+        },
+        {
+          "name": "age-1-adventure",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-1-adventure-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/bronze/scaffold.webp",
+        "terrainLoaded": true,
+        "wallPhase": "scaffold",
+        "wallLevel": 1,
+        "wallKind": "scaffold",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/bronze/scaffold.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/townhall-bronze.png",
+            "box": [
+              496.2,
+              12.8,
+              152.6,
+              148.7
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/farm-bronze.png",
+            "box": [
+              363.1,
+              179.7,
+              92,
+              75
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/lumber-bronze.png",
+            "box": [
+              486.7,
+              155.2,
+              92,
+              81.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/quarry-bronze.png",
+            "box": [
+              605.3,
+              131.8,
+              92,
+              85.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/mine-bronze.png",
+            "box": [
+              734.6,
+              103.1,
+              92,
+              91.6
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-1-wall-scaffold",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-1-wall-scaffold-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/bronze/wall-tall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "tall",
+        "wallLevel": 2,
+        "wallKind": "bronze-faced-palisade",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/bronze/wall-tall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/townhall-bronze.png",
+            "box": [
+              496.2,
+              12.8,
+              152.6,
+              148.7
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/farm-bronze.png",
+            "box": [
+              363.1,
+              179.7,
+              92,
+              75
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/lumber-bronze.png",
+            "box": [
+              486.7,
+              155.2,
+              92,
+              81.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/quarry-bronze.png",
+            "box": [
+              605.3,
+              131.8,
+              92,
+              85.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/bronze/mine-bronze.png",
+            "box": [
+              734.6,
+              103.1,
+              92,
+              91.6
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-1-wall-level-2",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-1-wall-level-2-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/iron/wall-tall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "tall",
+        "wallLevel": 2,
+        "wallKind": "iron-stake-wall",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/iron/wall-tall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/townhall-iron.png",
+            "box": [
+              522.7,
+              12.8,
+              144.5,
+              146.6
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/farm-iron.png",
+            "box": [
+              359.6,
+              165.9,
+              92,
+              86.9
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/lumber-iron.png",
+            "box": [
+              495.6,
+              153.5,
+              92,
+              80.5
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/quarry-iron.png",
+            "box": [
+              608.1,
+              135.2,
+              92,
+              78.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/mine-iron.png",
+            "box": [
+              724.9,
+              108.5,
+              92,
+              85.8
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-2-entered",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-2-entered-825x375.png"
+        },
+        {
+          "name": "age-2-entered",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-2-entered-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": []
+      },
+      "captures": [
+        {
+          "name": "age-2-adventure",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-2-adventure-825x375.png"
+        },
+        {
+          "name": "age-2-adventure",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-2-adventure-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/iron/scaffold.webp",
+        "terrainLoaded": true,
+        "wallPhase": "scaffold",
+        "wallLevel": 2,
+        "wallKind": "scaffold",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/iron/scaffold.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/townhall-iron.png",
+            "box": [
+              522.7,
+              12.8,
+              144.5,
+              146.6
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/farm-iron.png",
+            "box": [
+              359.6,
+              165.9,
+              92,
+              86.9
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/lumber-iron.png",
+            "box": [
+              495.6,
+              153.5,
+              92,
+              80.5
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/quarry-iron.png",
+            "box": [
+              608.1,
+              135.2,
+              92,
+              78.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/mine-iron.png",
+            "box": [
+              724.9,
+              108.5,
+              92,
+              85.8
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-2-wall-scaffold",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-2-wall-scaffold-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/iron/wall-tall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "tall",
+        "wallLevel": 3,
+        "wallKind": "iron-stake-wall",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/iron/wall-tall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/townhall-iron.png",
+            "box": [
+              522.7,
+              12.8,
+              144.5,
+              146.6
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/farm-iron.png",
+            "box": [
+              359.6,
+              165.9,
+              92,
+              86.9
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/lumber-iron.png",
+            "box": [
+              495.6,
+              153.5,
+              92,
+              80.5
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/quarry-iron.png",
+            "box": [
+              608.1,
+              135.2,
+              92,
+              78.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/iron/mine-iron.png",
+            "box": [
+              724.9,
+              108.5,
+              92,
+              85.8
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-2-wall-level-3",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-2-wall-level-3-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/medieval/wall-tall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "tall",
+        "wallLevel": 3,
+        "wallKind": "stone-curtain",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/medieval/wall-tall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/townhall-medieval.png",
+            "box": [
+              561.7,
+              12.8,
+              152.2,
+              145.2
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/farm-medieval.png",
+            "box": [
+              370.7,
+              169,
+              92,
+              87.5
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/lumber-medieval.png",
+            "box": [
+              485.4,
+              163.4,
+              92,
+              70.5
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/quarry-medieval.png",
+            "box": [
+              606.7,
+              143.2,
+              92,
+              70.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/mine-medieval.png",
+            "box": [
+              724.4,
+              100.2,
+              92,
+              94.3
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-3-entered",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-3-entered-825x375.png"
+        },
+        {
+          "name": "age-3-entered",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-3-entered-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": []
+      },
+      "captures": [
+        {
+          "name": "age-3-adventure",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-3-adventure-825x375.png"
+        },
+        {
+          "name": "age-3-adventure",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-3-adventure-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/medieval/scaffold.webp",
+        "terrainLoaded": true,
+        "wallPhase": "scaffold",
+        "wallLevel": 3,
+        "wallKind": "scaffold",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/medieval/scaffold.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/townhall-medieval.png",
+            "box": [
+              561.7,
+              12.8,
+              152.2,
+              145.2
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/farm-medieval.png",
+            "box": [
+              370.7,
+              169,
+              92,
+              87.5
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/lumber-medieval.png",
+            "box": [
+              485.4,
+              163.4,
+              92,
+              70.5
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/quarry-medieval.png",
+            "box": [
+              606.7,
+              143.2,
+              92,
+              70.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/mine-medieval.png",
+            "box": [
+              724.4,
+              100.2,
+              92,
+              94.3
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-3-wall-scaffold",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-3-wall-scaffold-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/medieval/wall-tall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "tall",
+        "wallLevel": 4,
+        "wallKind": "stone-curtain",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/medieval/wall-tall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/townhall-medieval.png",
+            "box": [
+              561.7,
+              12.8,
+              152.2,
+              145.2
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/farm-medieval.png",
+            "box": [
+              370.7,
+              169,
+              92,
+              87.5
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/lumber-medieval.png",
+            "box": [
+              485.4,
+              163.4,
+              92,
+              70.5
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/quarry-medieval.png",
+            "box": [
+              606.7,
+              143.2,
+              92,
+              70.2
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/medieval/mine-medieval.png",
+            "box": [
+              724.4,
+              100.2,
+              92,
+              94.3
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-3-wall-level-4",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-3-wall-level-4-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/gunpowder/wall-tall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "tall",
+        "wallLevel": 4,
+        "wallKind": "brick-bastion",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/gunpowder/wall-tall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+            "box": [
+              524,
+              12.8,
+              147.1,
+              147.1
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/farm-gunpowder.png",
+            "box": [
+              365,
+              190.2,
+              92,
+              63.5
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/lumber-gunpowder.png",
+            "box": [
+              490.3,
+              158.6,
+              92,
+              74.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/quarry-gunpowder.png",
+            "box": [
+              610.8,
+              138.5,
+              92,
+              76.3
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/mine-gunpowder.png",
+            "box": [
+              716.8,
+              118,
+              92,
+              77.6
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-4-entered",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-4-entered-825x375.png"
+        },
+        {
+          "name": "age-4-entered",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-4-entered-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": []
+      },
+      "captures": [
+        {
+          "name": "age-4-adventure",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-4-adventure-825x375.png"
+        },
+        {
+          "name": "age-4-adventure",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-4-adventure-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/gunpowder/scaffold.webp",
+        "terrainLoaded": true,
+        "wallPhase": "scaffold",
+        "wallLevel": 4,
+        "wallKind": "scaffold",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/gunpowder/scaffold.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+            "box": [
+              524,
+              12.8,
+              147.1,
+              147.1
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/farm-gunpowder.png",
+            "box": [
+              365,
+              190.2,
+              92,
+              63.5
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/lumber-gunpowder.png",
+            "box": [
+              490.3,
+              158.6,
+              92,
+              74.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/quarry-gunpowder.png",
+            "box": [
+              610.8,
+              138.5,
+              92,
+              76.3
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/mine-gunpowder.png",
+            "box": [
+              716.8,
+              118,
+              92,
+              77.6
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-4-wall-scaffold",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-4-wall-scaffold-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/gunpowder/wall-tall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "tall",
+        "wallLevel": 5,
+        "wallKind": "brick-bastion",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/gunpowder/wall-tall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+            "box": [
+              524,
+              12.8,
+              147.1,
+              147.1
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/farm-gunpowder.png",
+            "box": [
+              365,
+              190.2,
+              92,
+              63.5
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/lumber-gunpowder.png",
+            "box": [
+              490.3,
+              158.6,
+              92,
+              74.7
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/quarry-gunpowder.png",
+            "box": [
+              610.8,
+              138.5,
+              92,
+              76.3
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/mine-gunpowder.png",
+            "box": [
+              716.8,
+              118,
+              92,
+              77.6
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-4-wall-level-5",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-4-wall-level-5-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "kingdom",
+        "terrainStatus": "kingdom-painting",
+        "terrain": "assets/derivatives/kingdom-families-20261018/industrial/wall-tall.webp",
+        "terrainLoaded": true,
+        "wallPhase": "tall",
+        "wallLevel": 5,
+        "wallKind": "riveted-plate",
+        "wallPainting": "assets/derivatives/kingdom-families-20261018/industrial/wall-tall.webp",
+        "wallStamps": 0,
+        "renderedBuildings": [
+          {
+            "label": "Town Hall",
+            "href": "assets/derivatives/visual-repair-20261020/buildings/industrial/townhall-industrial-candidate-v1.png",
+            "box": [
+              524,
+              12.8,
+              147.1,
+              147.1
+            ]
+          },
+          {
+            "label": "Farm",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/farm-industrial.png",
+            "box": [
+              367.8,
+              163.8,
+              92,
+              89.2
+            ]
+          },
+          {
+            "label": "Lumber Camp",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/lumber-industrial.png",
+            "box": [
+              494.7,
+              154.9,
+              92,
+              79.9
+            ]
+          },
+          {
+            "label": "Quarry",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/quarry-industrial.png",
+            "box": [
+              606.5,
+              136.5,
+              92,
+              77
+            ]
+          },
+          {
+            "label": "Gold Mine",
+            "href": "assets/derivatives/image-residual-executor-20261007/environment/buildings/industrial/mine-industrial.png",
+            "box": [
+              728.1,
+              118.1,
+              92,
+              77.4
+            ]
+          }
+        ]
+      },
+      "captures": [
+        {
+          "name": "age-5-entered",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-5-entered-825x375.png"
+        },
+        {
+          "name": "age-5-entered",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-5-entered-1280x720.png"
+        }
+      ]
+    },
+    {
+      "scene": {
+        "view": "adventure",
+        "terrainStatus": "generated-integrated-world-map",
+        "terrain": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "terrainLoaded": true,
+        "wallLevel": null,
+        "wallStamps": null,
+        "renderedBuildings": []
+      },
+      "captures": [
+        {
+          "name": "age-5-adventure",
+          "size": "825x375",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-5-adventure-825x375.png"
+        },
+        {
+          "name": "age-5-adventure",
+          "size": "1280x720",
+          "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\age-5-adventure-1280x720.png"
+        }
+      ]
+    },
+    {
+      "name": "industrial-age-dwelling-on-foot",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\industrial-age-dwelling-on-foot-825x375.png"
+    },
+    {
+      "name": "industrial-age-dwelling-on-foot",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\industrial-age-dwelling-on-foot-1280x720.png"
+    },
+    {
+      "name": "industrial-age-dwelling-context-panel",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\industrial-age-dwelling-context-panel-825x375.png"
+    },
+    {
+      "name": "industrial-age-dwelling-context-panel",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\industrial-age-dwelling-context-panel-1280x720.png"
+    },
+    {
+      "name": "industrial-age-griffin-offer",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\industrial-age-griffin-offer-825x375.png"
+    },
+    {
+      "name": "industrial-age-griffin-army-roster",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-age5-dwelling-natural-live-20261021-run01\\industrial-age-griffin-army-roster-1280x720.png"
+    }
+  ],
+  "tutorialSkippedThroughVisibleControl": true,
+  "startClock": 1792566661646,
+  "startCampaignId": "campaign-0e053a0c-da6f-43c3-a37e-2ce696c30e0f",
+  "selectedWorld": "grasslands",
+  "producers": [
+    {
+      "id": "P01",
+      "type": "farm",
+      "level": 1
+    },
+    {
+      "id": "P02",
+      "type": "lumber",
+      "level": 1
+    },
+    {
+      "id": "P03",
+      "type": "quarry",
+      "level": 1
+    },
+    {
+      "id": "P04",
+      "type": "mine",
+      "level": 1
+    }
+  ],
+  "incomeRates": {
+    "food": 0.55,
+    "wood": 0.45,
+    "stone": 0.35,
+    "gold": 0.25
+  },
+  "industrialBarracks": {
+    "siteId": "P05",
+    "type": "barracks",
+    "level": 1,
+    "resources": {
+      "food": 9294.703299999997,
+      "wood": 1687.721249999997,
+      "stone": 3.771549999997834,
+      "gold": 587.8647500000005
+    }
+  },
+  "industrialDwellingRoute": {
+    "worldId": "grasslands",
+    "layoutId": "grasslands-layout-10",
+    "from": [
+      8,
+      3
+    ],
+    "to": [
+      4,
+      6
+    ],
+    "calculatedCost": 7,
+    "cells": [
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "routeBasis": "registered geometry and navigation rules used as read-only assertions; movement is committed one visible map step at a time",
+    "steps": [
+      {
+        "from": [
+          8,
+          3
+        ],
+        "to": [
+          7,
+          3
+        ],
+        "cost": 1,
+        "movesBefore": 5,
+        "movesAfter": 4
+      },
+      {
+        "from": [
+          7,
+          3
+        ],
+        "to": [
+          6,
+          3
+        ],
+        "cost": 1,
+        "movesBefore": 4,
+        "movesAfter": 3
+      },
+      {
+        "from": [
+          6,
+          3
+        ],
+        "to": [
+          5,
+          4
+        ],
+        "cost": 2,
+        "movesBefore": 3,
+        "movesAfter": 1
+      },
+      {
+        "from": [
+          5,
+          4
+        ],
+        "to": [
+          5,
+          5
+        ],
+        "cost": 1,
+        "movesBefore": 1,
+        "movesAfter": 0
+      },
+      {
+        "from": [
+          5,
+          5
+        ],
+        "to": [
+          4,
+          6
+        ],
+        "cost": 2,
+        "movesBefore": 5,
+        "movesAfter": 3
+      }
+    ],
+    "dayRestores": 1,
+    "movesBefore": 5,
+    "movesAfter": 3
+  },
+  "industrialGriffinOffer": {
+    "terms": {
+      "id": "dwelling:dwelling:griffin",
+      "siteId": "dwelling",
+      "type": "griffin",
+      "count": 5,
+      "multiplier": 1,
+      "claimed": false
+    },
+    "payment": {
+      "food": 120,
+      "gold": 180
+    },
+    "resourcesBeforeOffer": {
+      "food": 9297.048499999999,
+      "wood": 1689.6400499999966,
+      "stone": 5.263949999997834,
+      "gold": 588.9307500000004
+    },
+    "resourcesAfterAsk": {
+      "food": 9297.319650000001,
+      "wood": 1689.8618999999965,
+      "stone": 5.436499999997834,
+      "gold": 589.0540000000004
+    },
+    "offerElapsedMs": 493,
+    "offerAccrual": {
+      "food": {
+        "natural": 0.27115000000000006,
+        "actual": 0.27115000000230793
+      },
+      "wood": {
+        "natural": 0.22185,
+        "actual": 0.22184999999990396
+      },
+      "stone": {
+        "natural": 0.17254999999999998,
+        "actual": 0.1725500000000002
+      },
+      "gold": {
+        "natural": 0.12325,
+        "actual": 0.12324999999998454
+      }
+    },
+    "reloadBeforeClaim": {
+      "campaignId": "campaign-0e053a0c-da6f-43c3-a37e-2ce696c30e0f",
+      "age": 5,
+      "dwelling": {
+        "id": "dwelling:dwelling:griffin",
+        "siteId": "dwelling",
+        "type": "griffin",
+        "count": 5,
+        "multiplier": 1,
+        "claimed": false
+      },
+      "resources": {
+        "food": 9297.875700000002,
+        "wood": 1690.3168499999963,
+        "stone": 5.790349999997834,
+        "gold": 589.3067500000004
+      },
+      "naturalReloadAccrual": {
+        "elapsedMs": 1011,
+        "deltas": {
+          "food": {
+            "expected": 0.55605,
+            "actual": 0.5560500000010506
+          },
+          "wood": {
+            "expected": 0.45494999999999997,
+            "actual": 0.4549499999998261
+          },
+          "stone": {
+            "expected": 0.35384999999999994,
+            "actual": 0.35384999999999955
+          },
+          "gold": {
+            "expected": 0.25275,
+            "actual": 0.2527499999999918
+          }
+        }
+      }
+    },
+    "claim": {
+      "payment": {
+        "food": 120,
+        "gold": 180
+      },
+      "claimElapsedMs": 360,
+      "naturalAccrual": {
+        "food": {
+          "natural": 0.19800000000000004,
+          "charged": 120,
+          "expectedNetChange": -119.802,
+          "actualNetChange": -119.8020000000015
+        },
+        "wood": {
+          "natural": 0.162,
+          "charged": 0,
+          "expectedNetChange": 0.162,
+          "actualNetChange": 0.16200000000003456
+        },
+        "stone": {
+          "natural": 0.12599999999999997,
+          "charged": 0,
+          "expectedNetChange": 0.12599999999999997,
+          "actualNetChange": 0.12599999999999945
+        },
+        "gold": {
+          "natural": 0.09,
+          "charged": 180,
+          "expectedNetChange": -179.91,
+          "actualNetChange": -179.90999999999997
+        }
+      },
+      "stack": {
+        "id": "army-1bd3a7ce-eb50-4461-bdb1-df0bb2e5ff84",
+        "kind": "creature",
+        "type": "griffin",
+        "age": 5,
+        "count": 5,
+        "rank": 0,
+        "xp": 0
+      },
+      "resourcesBefore": {
+        "food": 9297.875700000002,
+        "wood": 1690.3168499999963,
+        "stone": 5.790349999997834,
+        "gold": 589.3067500000004
+      },
+      "resourcesAfter": {
+        "food": 9178.0737,
+        "wood": 1690.4788499999963,
+        "stone": 5.916349999997833,
+        "gold": 409.39675000000045
+      },
+      "historyRows": 1
+    }
+  },
+  "reloadAfterClaim": {
+    "campaignId": "campaign-0e053a0c-da6f-43c3-a37e-2ce696c30e0f",
+    "age": 5,
+    "dwelling": {
+      "id": "dwelling:dwelling:griffin",
+      "siteId": "dwelling",
+      "type": "griffin",
+      "count": 5,
+      "multiplier": 1,
+      "claimed": true
+    },
+    "griffinStacks": [
+      {
+        "id": "army-1bd3a7ce-eb50-4461-bdb1-df0bb2e5ff84",
+        "kind": "creature",
+        "type": "griffin",
+        "age": 5,
+        "count": 5,
+        "rank": 0,
+        "xp": 0
+      }
+    ],
+    "resources": {
+      "food": 9178.40535,
+      "wood": 1690.7501999999963,
+      "stone": 6.127399999997833,
+      "gold": 409.5475000000004
+    },
+    "naturalAccrual": {
+      "elapsedMs": 603,
+      "deltas": {
+        "food": {
+          "expected": 0.33165000000000006,
+          "actual": 0.3316500000000815
+        },
+        "wood": {
+          "expected": 0.27135000000000004,
+          "actual": 0.271349999999984
+        },
+        "stone": {
+          "expected": 0.21105,
+          "actual": 0.2110499999999993
+        },
+        "gold": {
+          "expected": 0.15075,
+          "actual": 0.15074999999995953
+        }
+      }
+    }
+  },
+  "griffinRoster": {
+    "label": "Griffin flyer ×5",
+    "accessibleName": "Griffin flyer ×5. Rank 0 of 4 stars.",
+    "selected": true,
+    "imageLoaded": true,
+    "viewport": {
+      "width": 825,
+      "height": 375
+    },
+    "bounds": {
+      "left": 269,
+      "top": 243,
+      "right": 361,
+      "bottom": 303
+    }
+  },
+  "finalState": {
+    "age": 5,
+    "hallLevel": 6,
+    "barracks": "barracks",
+    "griffinCount": 5,
+    "elapsedControlledMs": 62285271
+  },
+  "passed": true
+}

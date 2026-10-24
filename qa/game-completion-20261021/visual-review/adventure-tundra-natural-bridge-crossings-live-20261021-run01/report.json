@@ -1,0 +1,45 @@
+{
+  "recordedAt": "2026-10-21T17:29:24.317Z",
+  "classification": "NATURAL_UI_TUNDRA_FULL_BRIDGE_CROSSINGS_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Tundra -> naturally approach and traverse each registered bridge deck -> persist and reload final position/visited cells",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "tundra-west-stone-bridge",
+    "tundra-east-ice-channel-bridge",
+    "tundra-south-channel-bridge"
+  ],
+  "campaignId": "campaign-9636d1f0-b56e-423e-b049-9d8dab3a14cc",
+  "layoutId": "tundra-layout-14",
+  "seed": 1623064929,
+  "start": {
+    "x": 3,
+    "y": 5,
+    "moves": 5,
+    "visited": [
+      "3,5"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 118,
+      "wood": 155,
+      "stone": 136,
+      "gold": 219
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 118,
+      "mineGold": 219
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [],
+  "captures": [],
+  "errors": [],
+  "notFound": [],
+  "passed": false,
+  "error": "AssertionError [ERR_ASSERTION]: tundra-west-stone-bridge is rendered from the live owner map\n\n0 !== 1\n\n    at file:///C:/dev/ages-of-dominion-reborn/qa/game-completion-20261021/visual-review/adventure-tundra-natural-bridge-crossings-live-20261021.mjs:151:12"
+}

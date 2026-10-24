@@ -1,0 +1,2541 @@
+{
+  "generatedAt": "2026-10-20T03:27:53.175Z",
+  "source": "natural visible-control campaign journeys in isolated browser contexts",
+  "modes": [
+    "skirmish",
+    "duel",
+    "challenge"
+  ],
+  "viewports": [
+    {
+      "width": 825,
+      "height": 375
+    },
+    {
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "runs": [
+    {
+      "mode": "skirmish",
+      "viewport": {
+        "width": 825,
+        "height": 375
+      },
+      "campaignId": "campaign-ba95a6f8-2c6e-41f5-8693-175ee5b2bdb0",
+      "practice": "skirmish",
+      "challenge": null,
+      "challengeDescriptorExport": null,
+      "challengeResultExport": null,
+      "result": {
+        "winner": "p",
+        "round": 3,
+        "casualties": 2
+      },
+      "before": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "after": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "warScreen": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "war",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "start-skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 72,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 221,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 370,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 519,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "open-challenge",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 668,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          }
+        ]
+      },
+      "challengeForm": null,
+      "tacticalStart": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 331,
+          "y": 309,
+          "width": 480,
+          "height": 48
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "intent:move",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 331,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:melee",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 385,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:shoot",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 439,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:spell",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 493,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "defend",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 547,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "wait",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 601,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "auto",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 655,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "retreat",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 709,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "inspect:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 763,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "resultScreen": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "result:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 323,
+              "y": 244,
+              "width": 180,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failedResponses": [],
+      "reloadPersisted": true
+    },
+    {
+      "mode": "duel",
+      "viewport": {
+        "width": 825,
+        "height": 375
+      },
+      "campaignId": "campaign-22e7905f-cf3b-4a79-8b51-6fc0e932c1f1",
+      "practice": "campaign",
+      "challenge": null,
+      "challengeDescriptorExport": null,
+      "challengeResultExport": null,
+      "result": {
+        "winner": "p",
+        "round": 1,
+        "casualties": 1
+      },
+      "before": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "after": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 300
+        },
+        "hero": {
+          "xp": 110,
+          "level": 1,
+          "mana": 5
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 20,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 7,
+            "xp": 22,
+            "rank": 0
+          }
+        ],
+        "rngState": 1157896869
+      },
+      "warScreen": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "war",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "start-skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 72,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 221,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 370,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 519,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "open-challenge",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 668,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          }
+        ]
+      },
+      "challengeForm": null,
+      "tacticalStart": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 331,
+          "y": 309,
+          "width": 480,
+          "height": 48
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "intent:move",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 331,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:melee",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 385,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:shoot",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 439,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:spell",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 493,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "defend",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 547,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "wait",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 601,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "auto",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 655,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "retreat",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 709,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "inspect:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 763,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "resultScreen": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "result:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 323,
+              "y": 255,
+              "width": 180,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failedResponses": [],
+      "reloadPersisted": true
+    },
+    {
+      "mode": "challenge",
+      "viewport": {
+        "width": 825,
+        "height": 375
+      },
+      "campaignId": "campaign-0ee38fb4-da6d-41ce-9bf9-648b24b01fee",
+      "practice": "challenge",
+      "challenge": {
+        "schema": 1,
+        "scenarioId": "duel-v1",
+        "seed": 123456789,
+        "label": "visual-check"
+      },
+      "challengeDescriptorExport": {
+        "schema": 1,
+        "scenarioId": "duel-v1",
+        "seed": 123456789,
+        "label": "visual-check"
+      },
+      "challengeResultExport": {
+        "seed": 123456789,
+        "label": "visual-check",
+        "winner": "p",
+        "digest": "86383172"
+      },
+      "result": {
+        "winner": "p",
+        "round": 3,
+        "casualties": 2
+      },
+      "before": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "after": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "warScreen": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "war",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "start-skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 72,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 221,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 370,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 519,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          },
+          {
+            "choice": "open-challenge",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 668,
+              "y": 102,
+              "width": 143,
+              "height": 120
+            }
+          }
+        ]
+      },
+      "challengeForm": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "war",
+        "panelOpen": true,
+        "panel": {
+          "x": 537,
+          "y": 54,
+          "width": 280,
+          "height": 257
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "start-skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 72,
+              "y": 102,
+              "width": 85,
+              "height": 176
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 163,
+              "y": 102,
+              "width": 85,
+              "height": 176
+            }
+          },
+          {
+            "choice": "start-duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 253,
+              "y": 102,
+              "width": 85,
+              "height": 176
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 344,
+              "y": 102,
+              "width": 85,
+              "height": 176
+            }
+          },
+          {
+            "choice": "open-challenge",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 434,
+              "y": 102,
+              "width": 85,
+              "height": 176
+            }
+          },
+          {
+            "choice": "Skirmish",
+            "disabled": false,
+            "within": false,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 546,
+              "y": -51,
+              "width": 216,
+              "height": 48
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 546,
+              "y": 2,
+              "width": 216,
+              "height": 48
+            }
+          },
+          {
+            "choice": "Tactical Duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 546,
+              "y": 55,
+              "width": 216,
+              "height": 48
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 546,
+              "y": 108,
+              "width": 216,
+              "height": 48
+            }
+          },
+          {
+            "choice": "challenge-seed",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 637,
+              "y": 161,
+              "width": 125,
+              "height": 42
+            }
+          },
+          {
+            "choice": "challenge-code",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 637,
+              "y": 208,
+              "width": 125,
+              "height": 42
+            }
+          },
+          {
+            "choice": "challenge-start",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 546,
+              "y": 255,
+              "width": 216,
+              "height": 48
+            }
+          },
+          {
+            "choice": "challenge-export",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 546,
+              "y": 308,
+              "width": 216,
+              "height": 48
+            }
+          },
+          {
+            "choice": "challenge-copy",
+            "disabled": false,
+            "within": false,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 546,
+              "y": 361,
+              "width": 216,
+              "height": 48
+            }
+          },
+          {
+            "choice": "challenge-import",
+            "disabled": false,
+            "within": false,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 546,
+              "y": 414,
+              "width": 216,
+              "height": 48
+            }
+          },
+          {
+            "choice": "tutorial-toggle",
+            "disabled": false,
+            "within": false,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 546,
+              "y": 467,
+              "width": 216,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "tacticalStart": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 331,
+          "y": 309,
+          "width": 480,
+          "height": 48
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "intent:move",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 331,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:melee",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 385,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:shoot",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 439,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:spell",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 493,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "defend",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 547,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "wait",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 601,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "auto",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 655,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "retreat",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 709,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "inspect:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 763,
+              "y": 309,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "resultScreen": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 825,
+          "height": 375
+        },
+        "documentWidth": 825,
+        "documentHeight": 375,
+        "exposed": [
+          {
+            "choice": "challenge-result",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 316,
+              "y": 217,
+              "width": 193,
+              "height": 48
+            }
+          },
+          {
+            "choice": "result:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 323,
+              "y": 271,
+              "width": 180,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failedResponses": [],
+      "reloadPersisted": true
+    },
+    {
+      "mode": "skirmish",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "campaignId": "campaign-28b5bc8d-1ec5-40de-a4b2-bb248b522dd0",
+      "practice": "skirmish",
+      "challenge": null,
+      "challengeDescriptorExport": null,
+      "challengeResultExport": null,
+      "result": {
+        "winner": "p",
+        "round": 3,
+        "casualties": 2
+      },
+      "before": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "after": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "warScreen": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "war",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "start-skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 100,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 318,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 536,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 754,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "open-challenge",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 972,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          }
+        ]
+      },
+      "challengeForm": null,
+      "tacticalStart": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 786,
+          "y": 654,
+          "width": 480,
+          "height": 48
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "intent:move",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 786,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:melee",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 840,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:shoot",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 894,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:spell",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 948,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "defend",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1002,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "wait",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1056,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "auto",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1110,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "retreat",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1164,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "inspect:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1218,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "resultScreen": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "result:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 540,
+              "y": 447,
+              "width": 200,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failedResponses": [],
+      "reloadPersisted": true
+    },
+    {
+      "mode": "duel",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "campaignId": "campaign-93f163b5-3369-408f-aebd-23ea443dbde5",
+      "practice": "campaign",
+      "challenge": null,
+      "challengeDescriptorExport": null,
+      "challengeResultExport": null,
+      "result": {
+        "winner": "p",
+        "round": 1,
+        "casualties": 1
+      },
+      "before": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "after": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 300
+        },
+        "hero": {
+          "xp": 110,
+          "level": 1,
+          "mana": 5
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 20,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 7,
+            "xp": 22,
+            "rank": 0
+          }
+        ],
+        "rngState": 1157896869
+      },
+      "warScreen": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "war",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "start-skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 100,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 318,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 536,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 754,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "open-challenge",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 972,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          }
+        ]
+      },
+      "challengeForm": null,
+      "tacticalStart": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 1218,
+          "y": 654,
+          "width": 48,
+          "height": 48
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "inspect:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1218,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "resultScreen": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "result:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 540,
+              "y": 458,
+              "width": 200,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failedResponses": [],
+      "reloadPersisted": true
+    },
+    {
+      "mode": "challenge",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "campaignId": "campaign-8e6e19fe-19fc-4873-9d08-e46430fd95bf",
+      "practice": "challenge",
+      "challenge": {
+        "schema": 1,
+        "scenarioId": "duel-v1",
+        "seed": 123456789,
+        "label": "visual-check"
+      },
+      "challengeDescriptorExport": {
+        "schema": 1,
+        "scenarioId": "duel-v1",
+        "seed": 123456789,
+        "label": "visual-check"
+      },
+      "challengeResultExport": {
+        "seed": 123456789,
+        "label": "visual-check",
+        "winner": "p",
+        "digest": "86383172"
+      },
+      "result": {
+        "winner": "p",
+        "round": 3,
+        "casualties": 2
+      },
+      "before": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "after": {
+        "age": 0,
+        "day": 1,
+        "resources": {
+          "food": 250,
+          "wood": 250,
+          "stone": 160,
+          "gold": 150
+        },
+        "hero": {
+          "xp": 0,
+          "level": 1,
+          "mana": 10
+        },
+        "inventory": [],
+        "army": [
+          {
+            "id": "army-1",
+            "count": 12,
+            "xp": 0,
+            "rank": 0
+          },
+          {
+            "id": "army-2",
+            "count": 8,
+            "xp": 0,
+            "rank": 0
+          }
+        ],
+        "rngState": 123456789
+      },
+      "warScreen": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "war",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "start-skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 100,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 318,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 536,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 754,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          },
+          {
+            "choice": "open-challenge",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 972,
+              "y": 474,
+              "width": 208,
+              "height": 160
+            }
+          }
+        ]
+      },
+      "challengeForm": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "war",
+        "panelOpen": true,
+        "panel": {
+          "x": 922,
+          "y": 72,
+          "width": 350,
+          "height": 568
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "start-skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 24,
+              "y": 304,
+              "width": 210,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 244,
+              "y": 304,
+              "width": 210,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 464,
+              "y": 304,
+              "width": 210,
+              "height": 160
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 684,
+              "y": 304,
+              "width": 210,
+              "height": 160
+            }
+          },
+          {
+            "choice": "open-challenge",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 24,
+              "y": 474,
+              "width": 210,
+              "height": 160
+            }
+          },
+          {
+            "choice": "Skirmish",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 935,
+              "y": 166,
+              "width": 268,
+              "height": 48
+            }
+          },
+          {
+            "choice": "start-siege",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 935,
+              "y": 222,
+              "width": 268,
+              "height": 48
+            }
+          },
+          {
+            "choice": "Tactical Duel",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 935,
+              "y": 278,
+              "width": 268,
+              "height": 48
+            }
+          },
+          {
+            "choice": "start-endless",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 935,
+              "y": 334,
+              "width": 268,
+              "height": 48
+            }
+          },
+          {
+            "choice": "challenge-seed",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1026,
+              "y": 390,
+              "width": 177,
+              "height": 42
+            }
+          },
+          {
+            "choice": "challenge-code",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1026,
+              "y": 440,
+              "width": 177,
+              "height": 42
+            }
+          },
+          {
+            "choice": "challenge-start",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 935,
+              "y": 490,
+              "width": 268,
+              "height": 48
+            }
+          },
+          {
+            "choice": "challenge-export",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 935,
+              "y": 546,
+              "width": 268,
+              "height": 48
+            }
+          },
+          {
+            "choice": "challenge-copy",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 935,
+              "y": 602,
+              "width": 268,
+              "height": 48
+            }
+          },
+          {
+            "choice": "challenge-import",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 935,
+              "y": 658,
+              "width": 268,
+              "height": 48
+            }
+          },
+          {
+            "choice": "tutorial-toggle",
+            "disabled": false,
+            "within": false,
+            "centerReceivesInput": false,
+            "rect": {
+              "x": 935,
+              "y": 714,
+              "width": 268,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "tacticalStart": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 786,
+          "y": 654,
+          "width": 480,
+          "height": 48
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "intent:move",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 786,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:melee",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 840,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:shoot",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 894,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "intent:spell",
+            "disabled": true,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 948,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "defend",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1002,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "wait",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1056,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "auto",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1110,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "retreat",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1164,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          },
+          {
+            "choice": "inspect:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 1218,
+              "y": 654,
+              "width": 48,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "resultScreen": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "view": "tactical",
+        "panelOpen": false,
+        "panel": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "dock": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "documentWidth": 1280,
+        "documentHeight": 720,
+        "exposed": [
+          {
+            "choice": "challenge-result",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 540,
+              "y": 417,
+              "width": 200,
+              "height": 48
+            }
+          },
+          {
+            "choice": "result:tactical",
+            "disabled": false,
+            "within": true,
+            "centerReceivesInput": true,
+            "rect": {
+              "x": 540,
+              "y": 477,
+              "width": 200,
+              "height": 48
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failedResponses": [],
+      "reloadPersisted": true
+    }
+  ],
+  "result": "FOCUSED PASS",
+  "wholeGame": "INCOMPLETE"
+}

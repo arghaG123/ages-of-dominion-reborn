@@ -1,0 +1,89 @@
+{
+  "recordedAt": "2026-10-19T22:10:26.491Z",
+  "classification": "NATURAL_UI_ADVENTURE_ROUTE_AND_SAVE",
+  "journey": "new campaign -> skip optional tutorial in the UI -> leave town -> preview and confirm one visible road cell -> save/reload",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "note": "The campaign and route are created and advanced through visible controls. No campaign state, route, or resources are injected.",
+  "errors": [],
+  "captures": [
+    {
+      "name": "adventure-exploration-before-route",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-live\\adventure-exploration-before-route-825x375.png"
+    },
+    {
+      "name": "adventure-exploration-before-route",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-live\\adventure-exploration-before-route-1280x720.png"
+    },
+    {
+      "name": "adventure-route-preview-8-7",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-live\\adventure-route-preview-8-7-1280x720.png"
+    },
+    {
+      "name": "adventure-after-route-8-7",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-live\\adventure-after-route-8-7-825x375.png"
+    },
+    {
+      "name": "adventure-after-route-8-7",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-live\\adventure-after-route-8-7-1280x720.png"
+    }
+  ],
+  "campaignId": "campaign-bc0eda76-9634-4791-9f09-70a2e91c4228",
+  "before": {
+    "x": 8,
+    "y": 8,
+    "moves": 5,
+    "visited": [
+      "8,8"
+    ],
+    "resolvedGuards": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "mountInputOwner": "none",
+  "preview": {
+    "destinationCount": 1,
+    "confirmations": [
+      {
+        "disabled": false,
+        "label": "Confirm route · cost 1 · 5 moves available"
+      },
+      {
+        "disabled": false,
+        "label": null
+      }
+    ]
+  },
+  "afterMove": {
+    "x": 8,
+    "y": 7,
+    "moves": 4,
+    "visited": [
+      "8,8",
+      "8,7"
+    ],
+    "resolvedGuards": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "reload": {
+    "campaignId": "campaign-bc0eda76-9634-4791-9f09-70a2e91c4228",
+    "adventure": {
+      "x": 8,
+      "y": 7,
+      "moves": 4,
+      "visited": [
+        "8,8",
+        "8,7"
+      ],
+      "resolvedGuards": [],
+      "pendingEncounter": null,
+      "atTown": false
+    }
+  },
+  "passed": true
+}

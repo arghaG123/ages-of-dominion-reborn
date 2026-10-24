@@ -1,0 +1,34 @@
+{
+  "reviewId": "M09-modern-natural-age-gate-review-20261023",
+  "mock": "M09",
+  "status": "OPEN_M09_MODERN_AGE_NOT_REACHED",
+  "reviewedAt": "2026-10-23",
+  "reference": {
+    "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/09-kingdom-modern.jpg",
+    "sha256": "3F22F3FE01890D388EEEBC999C74019113F270B1CDD8802D9DD73FFAF7C1BF15"
+  },
+  "currentScreenshot": {
+    "file": "qa/game-completion-20261023/m08-industrial-not-reached-current-20261023.png",
+    "sha256": "3A9101DC766D7B2E6785ADDBB9CC00FE1A8E5CA63AE37F1029C73B775F34C8DF",
+    "viewport": [1280, 720]
+  },
+  "source": {
+    "mainJsSHA256": "8E1BC107B6072A1E6473EB0530C7B0CC20E38D5753A657D4246C181FA3DA23AF",
+    "gameCssSHA256": "28C7F82297508DC977C9FB5F76D6E9196873DCB6BA431AA15A288AF47AF78577"
+  },
+  "naturalState": {
+    "campaignId": "campaign-8be86723-842b-4775-b29b-e988acd7bec6",
+    "currentAge": 4,
+    "currentView": "kingdom",
+    "townHallLevel": 6,
+    "storage": "committed",
+    "revision": 32272
+  },
+  "unmatchedTarget": {
+    "targetAge": 6,
+    "selectedBuilding": "Residential Tower",
+    "selectionActions": ["Upgrade", "Details"],
+    "note": "The current natural campaign is two ages short of the target. The mock also depicts city-manager, districts, research, construction, trade and population UI; these details require review in an age-matched saved state before deciding which are supported mechanics."
+  },
+  "acceptance": "OPEN: the Modern target state was not reached, so this mock has no current matched visual assessment."
+}

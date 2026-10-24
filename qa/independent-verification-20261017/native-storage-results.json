@@ -1,0 +1,66 @@
+{
+  "classification": "NATIVE_BROWSER_ISOLATED_ADVERSARIAL_FIXTURE",
+  "rows": [
+    {
+      "name": "CAS checks campaignId and checksum",
+      "expected": true,
+      "actual": false,
+      "verdict": "FAIL"
+    },
+    {
+      "name": "stale second writer replacement rejected",
+      "expected": true,
+      "actual": false,
+      "verdict": "FAIL"
+    },
+    {
+      "name": "newer replacement survives stale replacement",
+      "expected": 200,
+      "actual": 150,
+      "verdict": "FAIL"
+    },
+    {
+      "name": "migration cannot overwrite newer existing DB",
+      "expected": 150,
+      "actual": 1,
+      "verdict": "FAIL"
+    },
+    {
+      "name": "migration preserves staged bytes",
+      "expected": true,
+      "actual": false,
+      "verdict": "FAIL"
+    },
+    {
+      "name": "raw-native-store-export",
+      "head": {
+        "live": {
+          "epoch": 1,
+          "campaignId": 0,
+          "revision": 1,
+          "checksum": "5275c0da",
+          "migratedFromLocalStorage": true
+        }
+      },
+      "keys": [
+        "backup",
+        "live"
+      ],
+      "migration": {
+        "migrated": true,
+        "inventory": {
+          "hasLive": true,
+          "hasBackup": false,
+          "hasStaged": true,
+          "hasDamaged": false,
+          "hasSlots": [
+            false,
+            false,
+            false
+          ],
+          "view": "kingdom"
+        }
+      }
+    }
+  ]
+}

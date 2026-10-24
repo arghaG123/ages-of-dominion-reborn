@@ -1,0 +1,59 @@
+{
+  "reviewId": "M19-hero-equipment-natural-medieval-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/19-hero-equipment.jpg",
+    "sha256": "6A3A4E08E823A00A9069960AF331AF6D95B9EBB6629ECC31B5A0E7AC17939F2E",
+    "dimensions": [
+      1376,
+      768
+    ]
+  },
+  "status": "PARTIAL_HERO_ROOM_AND_SIX_SLOTS_PRESENT_EMPTY_LOADOUT_AND_HUD_MISMATCH",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "hero": "Knight level 1",
+    "naturalCampaignState": true,
+    "slot1Touched": false
+  },
+  "screen": {
+    "surface": "Hero room, equipment overview",
+    "viewportCss": [
+      1280,
+      720
+    ],
+    "equipmentSlots": [
+      "Helm empty",
+      "Weapon empty",
+      "Offhand empty",
+      "Armor empty",
+      "Boots empty",
+      "Accessory empty"
+    ],
+    "carriedEquipmentCount": 1,
+    "stats": "ATK 3 · DEF 3 · PWR 1 · KNO 1 · Mana 10/10 · XP 0 · 0 points",
+    "resourceTrayPosition": "Upper right, compact chips",
+    "equipmentSelectionInvoked": false
+  },
+  "visualFindings": [
+    "M19 shows a full-body hero in an armory, six item tiles with named equipment around the body, a selected Excalibur-versus-Broadsword comparison at right, labeled resources at upper left, and a separate attribute summary at lower right.",
+    "Live shows a full-body Knight in a polished Hero room with six matching socket positions and a compact level/stat summary. It has only empty equipment slots, one carried Flint Club, no selected item, and a compact resource tray at upper right.",
+    "The Hero room art and six-slot arrangement align broadly. The mock equipment set, selected comparison/upgrade controls, equipment names, and resource/stat hierarchy differ; the empty socket icons and baseline armor on the avatar do not visually communicate six unequipped slots clearly."
+  ],
+  "evidence": {
+    "liveScreenshotObservedThroughApprovedCUA": true,
+    "liveScreenshotRetained": false,
+    "noEquipmentSlotOrEquipActionInvoked": true,
+    "sourceOrTestChanges": false,
+    "ownerAccepted": false
+  },
+  "open": [
+    "Review naturally acquired and equipped Medieval gear in a matched Hero room; compare item names, rarity/material, selected-item stats, upgrade/equip states and empty-slot semantics to M19.",
+    "Verify that worn item appearance agrees with equipment state; the current Knight appears armored while all six accessible sockets report Empty.",
+    "Retain exact desktop and compact captures, then complete M01-M30/J01-J18 and remaining acceptance gates."
+  ]
+}

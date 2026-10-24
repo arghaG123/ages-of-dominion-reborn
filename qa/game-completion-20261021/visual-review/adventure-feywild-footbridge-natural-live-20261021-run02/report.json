@@ -1,0 +1,202 @@
+{
+  "recordedAt": "2026-10-21T12:30:52.036Z",
+  "classification": "NATURAL_UI_FEYWILD_FOOTBRIDGE_CROSSING_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> Feywild -> route from east to west bank through the footbridge -> save and reload",
+  "note": "Campaign and all movement use visible UI controls. Read-only state, geometry, and path calculations are assertions only; no campaign state or position is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "movementSegments": [
+    {
+      "from": [
+        8,
+        3
+      ],
+      "to": [
+        5,
+        5
+      ],
+      "path": [
+        [
+          7,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "cost": 5,
+      "movesRemaining": 0,
+      "saveState": "committed"
+    },
+    {
+      "from": [
+        5,
+        5
+      ],
+      "to": [
+        1,
+        6
+      ],
+      "path": [
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "cost": 5,
+      "movesRemaining": 0,
+      "saveState": "committed"
+    }
+  ],
+  "campaignId": "campaign-bc047bf4-9300-43fb-a73c-4746397dd82c",
+  "map": {
+    "worldId": "feywild",
+    "seed": 1452071799,
+    "layoutId": "feywild-layout-3",
+    "start": [
+      8,
+      3
+    ],
+    "blockers": [
+      [
+        3,
+        5
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        11,
+        9
+      ]
+    ],
+    "bridge": {
+      "id": "feywild-waterfall-footbridge-2-6",
+      "cells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "approaches": [
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    "renderedCells": 160
+  },
+  "fullRoute": {
+    "destination": [
+      1,
+      6
+    ],
+    "route": [
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "cost": 10,
+    "bridgeCells": [
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        6
+      ]
+    ]
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-feywild-footbridge-natural-live-20261021-run02\\feywild-footbridge-far-bank-825x375.png"
+  ],
+  "reload": {
+    "position": [
+      1,
+      6
+    ],
+    "day": 2,
+    "moves": 0,
+    "visited": [
+      "8,3",
+      "7,3",
+      "6,4",
+      "5,5",
+      "4,6",
+      "3,6",
+      "2,6",
+      "1,6"
+    ]
+  },
+  "result": "PASS_BOUNDED_NATURAL_FEYWILD_FOOTBRIDGE_CROSSING_SAVE_RELOAD; NOT_FULL_WORLD_OR_MOCK_ACCEPTANCE"
+}

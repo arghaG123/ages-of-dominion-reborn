@@ -1,0 +1,83 @@
+{
+  "recordedAt": "2026-10-20T00:35:51.448Z",
+  "classification": "NATIVE_BROWSER_ISOLATED_ADVERSARIAL_FIXTURE",
+  "isolation": "fresh in-memory Playwright browser context; writes only the two named probe databases",
+  "rows": [
+    {
+      "name": "CAS rejects a mismatched campaign identity/checksum",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "stale second-writer replacement is rejected",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "newer replacement survives stale replacement",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED",
+      "actualRevision": 200
+    },
+    {
+      "name": "migration cannot overwrite newer live campaign",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED",
+      "actualRevision": 200
+    },
+    {
+      "name": "migration preserves the current slot over a stale source slot",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "migration imports a previously empty save slot",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "migration preserves staged bytes",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "migration retains the original staged source record",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "migration inventory records the original view",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "migration marker records a complete source hash",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "empty database imports valid legacy campaign bytes",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    },
+    {
+      "name": "empty database restores legacy view state",
+      "expected": true,
+      "actual": true,
+      "verdict": "PASS_BOUNDED"
+    }
+  ],
+  "errors": [],
+  "notFound": []
+}

@@ -1,0 +1,145 @@
+{
+  "recordedAt": "2026-10-20T05:25:10.955Z",
+  "classification": "NATURAL_UI_BROWSER_JOURNEY_FRESH_PROFILE_BUILD_RECRUIT_ADVENTURE_TACTICAL_AND_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "viewport": "825x375",
+  "route": "fresh isolated profile -> new knight campaign -> build Barracks -> recruit 5 Melee -> leave town -> preview and confirm guard route -> Tactical manual Move -> UI auto-resolve remainder -> settle -> durable acknowledgement -> reload",
+  "campaignId": "campaign-b3473827-c019-4829-b8da-f4ec08cf1106",
+  "construction": {
+    "plotId": "P01",
+    "building": "barracks",
+    "level": 1
+  },
+  "recruitment": {
+    "before": 12,
+    "after": 17,
+    "armyStacks": 2
+  },
+  "adventure": {
+    "start": {
+      "x": 8,
+      "y": 8,
+      "moves": 5,
+      "visited": [
+        "8,8"
+      ],
+      "resolvedGuards": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "route": {
+      "destination": [
+        10,
+        5
+      ],
+      "cost": 5,
+      "cells": [
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          5
+        ]
+      ]
+    },
+    "guardId": "guard-mine",
+    "guardKey": "10,5",
+    "markerCounts": {
+      "staleSpawnBeforeBattle": 0,
+      "worldBeforeBattle": 1,
+      "minimapBeforeBattle": 1,
+      "worldAfterSettlement": 0,
+      "minimapAfterSettlement": 0,
+      "worldAfterReload": 0,
+      "staleSpawnAfterReload": 0,
+      "minimapAfterReload": 0
+    },
+    "preview": {
+      "status": "Stone Age · day 1 · clear",
+      "destination": [
+        {
+          "text": "5",
+          "title": "Confirm route · cost 5 · 5 moves available"
+        },
+        {
+          "text": "Confirm route · cost 5",
+          "title": ""
+        }
+      ]
+    },
+    "encounter": {
+      "id": "guard-10,5",
+      "cell": [
+        10,
+        5
+      ],
+      "origin": [
+        9,
+        6
+      ],
+      "status": "UNRESOLVED",
+      "pack": {
+        "stacks": [
+          {
+            "kind": "creature",
+            "type": "bandit",
+            "age": 0,
+            "rank": 0,
+            "count": 7
+          },
+          {
+            "kind": "creature",
+            "type": "bandit",
+            "age": 0,
+            "rank": 0,
+            "count": 8
+          }
+        ],
+        "boss": false,
+        "power": 1.3104,
+        "row": 2,
+        "carry": -0.4400000000000013
+      }
+    },
+    "resolvedGuards": [
+      "10,5"
+    ]
+  },
+  "battle": {
+    "id": "battle-guard-10,5-r39",
+    "encounterId": "guard-10,5",
+    "winner": "p",
+    "pendingSettlement": true,
+    "afterSettlementOpen": false,
+    "settledMeleeCount": 13,
+    "persistedMeleeCount": 13
+  },
+  "manualMove": {
+    "activeStackId": "army-1",
+    "start": [
+      1,
+      8
+    ],
+    "destination": [
+      2,
+      5
+    ],
+    "legalChoiceCount": 20
+  },
+  "spellCast": null,
+  "screenshots": [
+    "army-after-recruit.png",
+    "adventure-guard-encounter.png",
+    "tactical-encounter-start.png",
+    "tactical-after-manual-move.png",
+    "tactical-result-before-settlement.png",
+    "adventure-after-battle-reload.png"
+  ],
+  "errors": [],
+  "notFound": []
+}

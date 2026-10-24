@@ -1,0 +1,80 @@
+{
+  "reviewId": "M01-home-live-review-20261023-followup",
+  "date": "2026-10-23",
+  "status": "PARTIAL",
+  "follows": "M01-home-live-review-20261022",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/01-home.jpg",
+  "origin": "http://localhost:4174/?audit",
+  "summary": "The compact title scene now fills the landscape viewports, and the saved-campaign Continue route now ignores Settings/help overlays and resumes the last playable screen. M01 remains partial because the browser viewport API cannot produce exact 825/933 CSS sizes and no-save, damaged-save, and active-combat resume states were not reviewed.",
+  "sourceChanges": [
+    {
+      "file": "src/client/projection.js",
+      "change": "Added coverCamera(source, width, height) for a centered full-bleed crop."
+    },
+    {
+      "file": "src/client/main.js",
+      "change": "The home view uses coverCamera; Settings/help/home overlays preserve a validated playable resume destination, including for legacy settings/help save metadata."
+    },
+    {
+      "file": "tests/visual-responsive-20261018.test.mjs",
+      "change": "Added compact cover geometry and M01 resume-overlay regressions."
+    }
+  ],
+  "browserReview": {
+    "savedCampaign": "Sunlit Riverlands, Stone Age, day 1",
+    "viewports": [
+      {
+        "requested": [825, 375],
+        "windowInner": [826, 375],
+        "stageCss": [825.6, 375.2],
+        "screenshotRaster": [824, 375],
+        "frameCss": [0, -42.8, 825.6, 460.8],
+        "actionsInsideGate": true,
+        "capture": "m01-home-compact-requested-825x375-captured-824x375.jpg"
+      },
+      {
+        "requested": [933, 424],
+        "windowInner": [934, 424],
+        "stageCss": [933.6, 424],
+        "screenshotRaster": [932, 424],
+        "frameCss": [0, -48.54, 933.6, 521.08],
+        "actionsInsideGate": true,
+        "capture": "m01-home-compact-requested-933x424-captured-932x424.jpg"
+      },
+      {
+        "requested": [1280, 720],
+        "windowInner": [1280, 720],
+        "screenshotRaster": [1166, 530],
+        "exactCaptureAccepted": false,
+        "capture": "m01-home-desktop-css-1280x720-capture-1166x530.jpg"
+      }
+    ],
+    "functionalChecks": {
+      "newCampaignWorldPickerAndReturn": "PASS; opened world picker and returned to gate without beginning or replacing a campaign",
+      "saveLoadManagerEntry": "PASS; slots/export/import were visible; no slot action was invoked",
+      "settingsAndBack": "PASS; returned to gate",
+      "continueAfterSettingsBack": "PASS; resumed Kingdom at Stone Age day 1",
+      "noSaveState": "NOT_REVIEWED",
+      "damagedSaveState": "NOT_REVIEWED",
+      "activeBattleOrDefenseResume": "NOT_REVIEWED"
+    },
+    "awayTimeReport": "Inspected before dismissal: 0m 2s, food +1.29, wood +1.06, stone +0.82, no construction completed. No save slot was stored or loaded.",
+    "browserErrors": "72 repeated Art-foot-above-visible-scene errors occurred during a temporary return to the host 403x716 viewport; count stopped increasing after restoring the compact landscape viewport, with no newer entries. Keep portrait resize as a separate runtime follow-up."
+  },
+  "verification": {
+    "responsiveTestFile": "tests/visual-responsive-20261018.test.mjs",
+    "responsiveTests": "39/39 PASS",
+    "fullNodeSuite": "279/279 PASS"
+  },
+  "limitations": [
+    "Exact viewport requests are offset by the in-app browser: 825 becomes 826 CSS px and a 824px screenshot raster; 933 becomes 934 CSS px and a 932px raster. Fractional viewport sizes are rejected.",
+    "The 1280x720 browser request produced a 1166x530 screenshot raster, so it is not an exact desktop capture.",
+    "No-save, damaged-save and active battle/defense resume states remain unreviewed; the owner acceptance gate remains open."
+  ],
+  "artifacts": [
+    "m01-home-compact-requested-825x375-captured-824x375.jpg",
+    "m01-home-compact-requested-933x424-captured-932x424.jpg",
+    "m01-home-desktop-css-1280x720-capture-1166x530.jpg"
+  ],
+  "ownerAccepted": false
+}

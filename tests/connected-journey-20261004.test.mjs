@@ -4,6 +4,7 @@ import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
 import { advance, command, newCampaign } from '../src/core/campaign.js';
 import { encode, load, replaceCampaign, save, SAVE_KEY } from '../src/core/save.js';
+import { completeSkirmishDeployment } from './battle-deployment-helpers-20261022.mjs';
 
 const fresh = () => newCampaign(contract, data, 1000);
 const act = (state, id, type, payload, now = state.clock) => command(state, { id, type, payload }, now, data);
@@ -83,7 +84,7 @@ test('connected starter journey: build/recruit/adventure/defense/story/save with
 });
 
 test('negative actions: duplicate settle and skirmish isolation stay blocked', () => {
-  let state = act(fresh(), 'skirmish', 'START_SKIRMISH');
+  let state = completeSkirmishDeployment(fresh(), data, 'negative-skirmish');
   const gold = state.resources.gold;
   const xp = state.hero.xp;
   state = act(state, 'auto', 'BATTLE', { action: 'auto' }, state.clock);

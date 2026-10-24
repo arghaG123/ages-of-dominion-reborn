@@ -1,0 +1,237 @@
+{
+  "recordedAt": "2026-10-21T05:46:50.809Z",
+  "classification": "NATURAL_GRASSLANDS_ROUTE_PREVIEW_CANCEL_BRIDGE_SAVE_RELOAD",
+  "journey": "Fresh visible campaign -> Grasslands -> preview legal bridge route -> cancel unchanged -> confirm -> reload",
+  "note": "All campaign actions use visible controls. Snapshot reads and imported geometry are assertions only; no campaign state, route, or movement is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "start": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "revision": 8,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "bridgeCell": [
+      8,
+      5
+    ],
+    "expectedRoute": {
+      "cost": 2,
+      "cells": [
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "destination": [
+        8,
+        5
+      ]
+    }
+  },
+  "openPanelCancelControls": {
+    "panelClear": 1,
+    "panelCancel": 0,
+    "dockCancel": 0
+  },
+  "preview": {
+    "status": "Sunlit RiverlandsCost 2 · 5 moves left · Confirm to travel.",
+    "actualPoints": "731,268.8 731,345.59999999999997 731,422.4",
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "revisionBefore": 8,
+    "revisionAfter": 8,
+    "gameplayStateUnchanged": true
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-bridge-preview-cancel-live-20261021-run11\\grasslands-bridge-route-preview-1280x720.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-bridge-preview-cancel-live-20261021-run11\\grasslands-bridge-route-dock-825x375.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-bridge-preview-cancel-live-20261021-run11\\grasslands-bridge-crossing-825x375.jpg"
+  ],
+  "cancel": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "revision": 9
+  },
+  "compactClosedPanelCamera": {
+    "fit": {
+      "scale": 0.5995639534883721,
+      "offset": [
+        0,
+        0
+      ],
+      "mode": "focus-cover",
+      "window": [
+        0,
+        0,
+        1376,
+        625.4545454545455
+      ]
+    },
+    "worldWidth": 825,
+    "viewport": [
+      825,
+      375
+    ],
+    "frame": {
+      "x": 0,
+      "width": 825,
+      "height": 460.4651184082031
+    }
+  },
+  "closedPanelCancelControls": {
+    "panelClear": 0,
+    "panelCancel": 0,
+    "dockCancel": 1
+  },
+  "closedPanelCancel": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    }
+  },
+  "move": {
+    "position": [
+      8,
+      5
+    ],
+    "moves": 3,
+    "cost": 2,
+    "visited": [
+      "8,3",
+      "8,4",
+      "8,5"
+    ],
+    "saveState": "committed"
+  },
+  "compactLayout": {
+    "innerWidth": 825,
+    "innerHeight": 375,
+    "devicePixelRatio": 1,
+    "app": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "stage": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "stageField": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "frame": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 460.4651184082031,
+      "cssWidth": "1376px"
+    },
+    "terrain": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 460.4651184082031,
+      "cssWidth": "1376px"
+    },
+    "mapImageWidth": 1672,
+    "view": "adventure",
+    "panelOpen": false,
+    "panel": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "cssWidth": "280px"
+    },
+    "frameTransform": "translate(0px, 0px) scale(0.599564)",
+    "adventure": {
+      "x": 8,
+      "y": 5,
+      "moves": 3,
+      "visited": [
+        "8,3",
+        "8,4",
+        "8,5"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 140,
+        "wood": 139,
+        "stone": 123,
+        "gold": 227
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 140,
+        "mineGold": 227
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "auditSnapshot": "{\"view\":\"adventure\",\"state\":{\"schema\":1,\"id\":\"campaign-d91467f7-1b64-40ef-9abe-3c57fb40d4a8\",\"revision\":18,\"seed\":179932740,\"rngState\":179932740,\"adventureWorldId\":\"grasslands\",\"age\":0,\"day\":1,\"resources\":{\"food\":250,\"wood\":250,\"stone\":160,\"gold\":150},\"plots\":[{\"id\":\"townhall\",\"type\":\"townhall\",\"level\":1},{\"id\":\"P01\",\"type\":null,\"level\":0},{\"id\":\"P02\",\"type\":null,\"level\":0},{\"id\":\"P03\",\"type\":null,\"level\":0},{\"id\":\"P04\",\"type\":null,\"level\":0},{\"id\":\"P05\",\"type\":null,\"level\":0},{\"id\":\"P06\",\"type\":null,\"level\":0},{\"id\":\"P07\",\"type\":null,\"level\":0},{\"id\":\"P08\",\"type\":null,\"level\":0},{\"id\":\"P09\",\"type\":null,\"level\":0},{\"id\":\"P10\",\"type\":null,\"level\":0},{\"id\":\"P11\",\"type\":null,\"level\":0},{\"id\":\"P12\",\"type\":null,\"level\":0},{\"id\":\"P13\",\"type\":null,\"level\":0},{\"id\":\"P14\",\"type\":null,\"level\":0},{\"id\":\"P15\",\"type\":null,\"level\":0},{\"id\":\"P16\",\"type\":null,\"level\":0},{\"id\":\"P17\",\"type\":null,\"level\":0}],\"walls\":{\"level\":0},\"buildJobs\":[],\"clock\":1792561607980,\"hero\":{\"id\":\"hero-1\",\"class\":\"knight\",\"level\":1,\"xp\":0,\"points\":0,\"growth\":{\"atk\":0,\"def\":0,\"pow\":0,\"kno\":0},\"bonus\":{\"atk\":0,\"def\":0,\"pow\":0,\"kno\":0},\"offers\":[],\"mana\":10,\"skills\":{\"offense\":0,\"archery\":0,\"armorer\":0,\"wisdom\":0,\"leadership\":0,\"luck\":0,\"tactics\":0,\"logistics\":0,\"firstaid\":0},\"equip\":{\"helm\":null,\"weapon\":null,\"offhand\":null,\"armor\":null,\"boots\":null,\"accessory\":null}},\"army\":[{\"id\":\"army-1\",\"kind\":\"role\",\"type\":\"melee\",\"age\":0,\"count\":12,\"rank\":0,\"xp\":0},{\"id\":\"army-2\",\"kind\":\"role\",\"type\":\"ranged\",\"age\":0,\"count\":8,\"rank\":0,\"xp\":0}],\"towers\":[{\"id\":\"tower-1\",\"fam\":\"arrow\",\"tier\":0,\"rank\":0,\"xp\":0},{\"id\":\"tower-2\",\"fam\":\"slow\",\"tier\":0,\"rank\":0,\"xp\":0}],\"inventory\":[],\"story\":{\"rival\":null,\"flags\":{\"enteredValley\":true},\"chapter\":0,\"choices\":[],\"futureSeen\":false,\"milestones\":{}},\"quests\":{\"q1\":{\"claimed\":false},\"q2\":{\"claimed\":false},\"q3\":{\"claimed\":false},\"q4\":{\"claimed\":false},\"q5\":{\"claimed\":false},\"q6\":{\"claimed\":false}},\"tutorial\":{\"step\":0,\"skipped\":true},\"settings\":{\"music\":0.6,\"sfx\":0.8,\"reducedMotion\":false},\"weather\":\"clear\",\"adventure\":{\"x\":8,\"y\":5,\"moves\":3,\"visited\":[\"8,3\",\"8,4\",\"8,5\"],\"resolvedGuards\":[],\"cacheOffers\":{\"food\":140,\"wood\":139,\"stone\":123,\"gold\":227},\"collectedCaches\":[],\"siteOffers\":{\"ruinXp\":90,\"millFood\":140,\"mineGold\":227},\"claimedSites\":[],\"pendingEncounter\":null,\"atTown\":false},\"battle\":null,\"defense\":null,\"dwelling\":null,\"dwellingHistory\":[],\"practice\":{\"challenges\":{}},\"settledTransactions\":{\"feab5872-5aeb-43f8-bf40-501cf55906d7\":\"{\\\"type\\\":\\\"SET_CLASS\\\",\\\"payload\\\":{\\\"class\\\":\\\"knight\\\"}}\",\"5767964d-b9c0-4126-9c62-81d16d363847\":\"{\\\"type\\\":\\\"TUTORIAL_SKIP\\\",\\\"payload\\\":{}}\",\"8d04e737-1b5f-466c-a8a7-c668e833dc57\":\"{\\\"type\\\":\\\"ENTER_ADVENTURE\\\",\\\"payload\\\":{}}\",\"54a245a4-f26a-4386-982c-0905a1206dd4\":\"{\\\"type\\\":\\\"MOVE\\\",\\\"payload\\\":{\\\"path\\\":[[8,4],[8,5]]}}\"}},\"storage\":{\"kind\":\"pending\",\"sequence\":9},\"frame\":{\"width\":825,\"height\":375,\"inset\":0,\"rect\":{\"x\":0,\"y\":0,\"width\":825,\"height\":375,\"top\":0,\"right\":825,\"bottom\":375,\"left\":0},\"fit\":{\"scale\":0.5995639534883721,\"offset\":[0,0],\"mode\":\"focus-cover\",\"window\":[0,0,1376,625.4545454545455]},\"worldWidth\":825,\"boardGeometry\":true}}"
+  },
+  "reload": {
+    "worldId": "grasslands",
+    "position": [
+      8,
+      5
+    ],
+    "moves": 3,
+    "visited": [
+      "8,3",
+      "8,4",
+      "8,5"
+    ],
+    "revision": 29
+  },
+  "passed": true
+}

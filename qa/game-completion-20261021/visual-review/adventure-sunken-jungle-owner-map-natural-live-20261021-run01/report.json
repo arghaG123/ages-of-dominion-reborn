@@ -1,0 +1,1028 @@
+{
+  "recordedAt": "2026-10-21T18:26:00.253Z",
+  "classification": "NATURAL_UI_SUNKEN_JUNGLE_OWNER_MAP_FOUR_BRIDGES_SIX_SITES_TOWN_RETURN_REENTRY_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Sunken Jungle -> naturally traverse all four registered bridge decks -> visit and interact with all six registered sites -> return to Town and re-enter Adventure -> persist and reload position, rewards and discoveries",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "sunken-west-rope-bridge",
+    "sunken-central-stone-causeway",
+    "sunken-east-timber-bridge",
+    "sunken-southeast-rope-bridge"
+  ],
+  "campaignId": "campaign-a5221a45-9e1a-4169-a389-d7bebbdad4be",
+  "layoutId": "sunken-jungle-layout-9",
+  "seed": 2327855614,
+  "renderBinding": {
+    "worldId": "sunken-jungle",
+    "terrainFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+    "renderModel": "integrated-map-art-plus-live-interactions",
+    "registeredBridgeCount": 4,
+    "playableCrossingCount": 4,
+    "artMode": "painted source bridges remain in the integrated owner painting; no duplicate generic bridge stamp is expected"
+  },
+  "start": {
+    "x": 8,
+    "y": 4,
+    "moves": 5,
+    "visited": [
+      "8,4"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 145,
+      "wood": 139,
+      "stone": 110,
+      "gold": 221
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 145,
+      "mineGold": 221
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [
+    {
+      "bridgeId": "sunken-west-rope-bridge",
+      "start": [
+        8,
+        4
+      ],
+      "nearBank": [
+        3,
+        5
+      ],
+      "farBank": [
+        5,
+        4
+      ],
+      "approachCells": [
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "deckCells": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "crossingCells": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "committedCells": [
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "movementCost": 9,
+      "daysEnded": 1,
+      "finalPosition": [
+        5,
+        4
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "sunken-central-stone-causeway",
+      "start": [
+        5,
+        4
+      ],
+      "nearBank": [
+        3,
+        6
+      ],
+      "farBank": [
+        8,
+        7
+      ],
+      "approachCells": [
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "deckCells": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "crossingCells": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "committedCells": [
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "movementCost": 10,
+      "daysEnded": 2,
+      "finalPosition": [
+        8,
+        7
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "sunken-east-timber-bridge",
+      "start": [
+        8,
+        7
+      ],
+      "nearBank": [
+        10,
+        4
+      ],
+      "farBank": [
+        13,
+        6
+      ],
+      "approachCells": [
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          4
+        ]
+      ],
+      "deckCells": [
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      "crossingCells": [
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ]
+      ],
+      "committedCells": [
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ]
+      ],
+      "movementCost": 14,
+      "daysEnded": 3,
+      "finalPosition": [
+        13,
+        6
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "sunken-southeast-rope-bridge",
+      "start": [
+        13,
+        6
+      ],
+      "nearBank": [
+        10,
+        8
+      ],
+      "farBank": [
+        13,
+        8
+      ],
+      "approachCells": [
+        [
+          12,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "deckCells": [
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ]
+      ],
+      "crossingCells": [
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ]
+      ],
+      "committedCells": [
+        [
+          12,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ]
+      ],
+      "movementCost": 8,
+      "daysEnded": 2,
+      "finalPosition": [
+        13,
+        8
+      ],
+      "allDeckVisited": true
+    }
+  ],
+  "siteInteractions": [
+    {
+      "siteId": "shrine",
+      "start": [
+        13,
+        8
+      ],
+      "approach": [
+        4,
+        3
+      ],
+      "route": [
+        [
+          12,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "routeCost": 14,
+      "skillId": "leadership",
+      "choices": [
+        "leadership",
+        "tactics"
+      ],
+      "claimed": true,
+      "skillRankBefore": 0,
+      "skillRankAfter": 1
+    },
+    {
+      "siteId": "ruin",
+      "start": [
+        4,
+        3
+      ],
+      "approach": [
+        8,
+        7
+      ],
+      "route": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "routeCost": 10,
+      "choiceText": "Study the ruins · +90 XP",
+      "xpBefore": 0,
+      "xpAfter": 90,
+      "levelBefore": 1,
+      "levelAfter": 1,
+      "claimed": true
+    },
+    {
+      "siteId": "mill",
+      "start": [
+        8,
+        7
+      ],
+      "approach": [
+        13,
+        3
+      ],
+      "route": [
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          13,
+          3
+        ]
+      ],
+      "routeCost": 13,
+      "choiceText": "Collect provisions · +145 food",
+      "amount": 145,
+      "resource": "food",
+      "claimed": true
+    },
+    {
+      "siteId": "mine",
+      "start": [
+        13,
+        3
+      ],
+      "approach": [
+        2,
+        5
+      ],
+      "route": [
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "routeCost": 19,
+      "choiceText": "Recover gold · +221",
+      "amount": 221,
+      "resource": "gold",
+      "claimed": true
+    },
+    {
+      "siteId": "dwelling",
+      "start": [
+        2,
+        5
+      ],
+      "approach": [
+        7,
+        4
+      ],
+      "route": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "routeCost": 6,
+      "offerChoice": "offer-dwelling:wolf",
+      "terms": {
+        "id": "dwelling:dwelling:wolf",
+        "siteId": "dwelling",
+        "type": "wolf",
+        "count": 5,
+        "multiplier": 1,
+        "claimed": false
+      },
+      "payment": {
+        "food": 40,
+        "gold": 35
+      },
+      "claimed": true
+    }
+  ],
+  "townReturn": {
+    "start": [
+      7,
+      4
+    ],
+    "route": [
+      [
+        8,
+        4
+      ]
+    ],
+    "routeCost": 1,
+    "townApproach": [
+      8,
+      4
+    ],
+    "atTown": true,
+    "kingdomView": true
+  },
+  "townReentry": {
+    "position": [
+      8,
+      4
+    ],
+    "atTown": false,
+    "visitedCount": 36,
+    "claimedSites": [
+      "shrine",
+      "ruin",
+      "mill",
+      "mine"
+    ]
+  },
+  "captures": [
+    {
+      "name": "sunken-jungle-start",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\sunken-jungle-start-1280x720.png"
+    },
+    {
+      "name": "after-sunken-west-rope-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-sunken-west-rope-bridge-1280x720.png"
+    },
+    {
+      "name": "after-sunken-central-stone-causeway",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-sunken-central-stone-causeway-1280x720.png"
+    },
+    {
+      "name": "after-sunken-east-timber-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-sunken-east-timber-bridge-1280x720.png"
+    },
+    {
+      "name": "after-sunken-southeast-rope-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-sunken-southeast-rope-bridge-1280x720.png"
+    },
+    {
+      "name": "after-site-shrine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-site-shrine-1280x720.png"
+    },
+    {
+      "name": "after-site-ruin",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-site-ruin-1280x720.png"
+    },
+    {
+      "name": "after-site-mill",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-site-mill-1280x720.png"
+    },
+    {
+      "name": "after-site-mine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-site-mine-1280x720.png"
+    },
+    {
+      "name": "after-site-dwelling",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\after-site-dwelling-1280x720.png"
+    },
+    {
+      "name": "sunken-jungle-town-approach",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\sunken-jungle-town-approach-1280x720.png"
+    },
+    {
+      "name": "returned-to-kingdom",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\returned-to-kingdom-1280x720.png"
+    },
+    {
+      "name": "sunken-jungle-reentered-adventure",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\sunken-jungle-reentered-adventure-1280x720.png"
+    }
+  ],
+  "responsiveCaptures": [
+    {
+      "name": "sunken-jungle-start",
+      "viewport": "825x375",
+      "layout": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "world": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 460.4651184082031,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 392.2192077636719,
+          "top": 127.33080291748047,
+          "right": 480.10797119140625,
+          "bottom": 191.80284118652344
+        },
+        "documentScroll": {
+          "width": 825,
+          "height": 375
+        }
+      },
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\sunken-jungle-start-825x375.png"
+    },
+    {
+      "name": "sunken-jungle-start",
+      "viewport": "933x424",
+      "layout": {
+        "viewport": {
+          "width": 933,
+          "height": 424
+        },
+        "world": {
+          "left": 0,
+          "top": 0,
+          "right": 933,
+          "bottom": 520.744140625,
+          "width": 933,
+          "height": 520.744140625
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 449.5941467285156,
+          "top": 154.45635986328125,
+          "right": 537.4829711914062,
+          "bottom": 218.9284210205078
+        },
+        "documentScroll": {
+          "width": 933,
+          "height": 424
+        }
+      },
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-sunken-jungle-owner-map-natural-live-20261021-run01\\sunken-jungle-start-933x424.png"
+    }
+  ],
+  "errors": [],
+  "notFound": [],
+  "reload": {
+    "campaignId": "campaign-a5221a45-9e1a-4169-a389-d7bebbdad4be",
+    "position": [
+      8,
+      4
+    ],
+    "allDecksRemainVisited": true,
+    "revision": 513,
+    "browserView": "adventure",
+    "siteClaimsPersisted": true,
+    "dwellingClaimPersisted": true
+  },
+  "totalDaysEnded": 21,
+  "passed": true
+}

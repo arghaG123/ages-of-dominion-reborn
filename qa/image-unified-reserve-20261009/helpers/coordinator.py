@@ -77,7 +77,7 @@ def estimate_upper_bound_usd(resolution: str, input_images: int, prompt_chars: i
     """Worst case: two image outputs, declared inputs, text, 2048 thinking tokens, overhead."""
     out_tokens = TOKENS_4K if resolution == "4K" else TOKENS_2K
     output_cost = 2 * out_tokens * IMAGE_PER_1M / 1_000_000
-    input_image_cost = max(0, input_images) * INPUT_IMAGE_TOKENS * IMAGE_PER_1M / 1_000_000
+    input_image_cost = max(0, input_images) * INPUT_IMAGE_TOKENS * INPUT_PER_1M / 1_000_000
     text_cost = (max(prompt_chars, 0) / 4) * INPUT_PER_1M / 1_000_000
     thinking_cost = 2048 * TEXT_PER_1M / 1_000_000
     return round(output_cost + input_image_cost + text_cost + thinking_cost + 0.05, 4)
@@ -157,9 +157,20 @@ def guard_post(
     attempt_id: str,
     unknown_outstanding: bool,
     double_subtracted: bool,
+    hard_cap_usd: float = HARD_CAP_USD,
+    ceiling_authority: dict | None = None,
 ) -> dict:
     """Reject unsafe POSTs. Returns the exposure breakdown when the POST may be reserved."""
     assert_release_authority(release)
+    if hard_cap_usd > HARD_CAP_USD:
+        if hard_cap_usd != 100 or not isinstance(ceiling_authority, dict):
+            raise BudgetError("higher ceiling requires the explicit owner authority")
+        if ceiling_authority.get("ownerQuote") != "Allow this scoped exception; retain the charge and $100 cap" or ceiling_authority.get("projectExposureCeilingUSD") != 100:
+            raise BudgetError("unrecognized ceiling authority")
+        if ceiling_authority.get("excludedFromActiveRequestLockOnly") != ["style-barbarian-standing-body-v1-a1"] or ceiling_authority.get("historicalLiabilityRetainedUSD") != 0.5 or ceiling_authority.get("releaseOrRefundAuthorized") is not False or ceiling_authority.get("newUnknownRequestsExcluded") is not False:
+            raise BudgetError("historical unknown liability must stay protected")
+    if hard_cap_usd <= 0:
+        raise BudgetError("invalid ceiling")
     if double_subtracted:
         raise BudgetError("double subtraction of the released reserve")
     if unknown_outstanding:
@@ -175,10 +186,10 @@ def guard_post(
     if abs(effective_reserve_usd - float(release["effectiveProtectedReserveUSD"])) > 1e-9:
         raise BudgetError("effective reserve does not match the release record")
     total = round(prior_liability_usd + other_effective_holds_usd + new_reservation_usd + effective_reserve_usd, 6)
-    headroom = round(HARD_CAP_USD - (prior_liability_usd + other_effective_holds_usd + effective_reserve_usd), 6)
-    if new_reservation_usd > headroom + 1e-9 or total > HARD_CAP_USD + 1e-9:
+    headroom = round(hard_cap_usd - (prior_liability_usd + other_effective_holds_usd + effective_reserve_usd), 6)
+    if new_reservation_usd > headroom + 1e-9 or total > hard_cap_usd + 1e-9:
         raise BudgetError(
-            f"insufficient worst-case funds: reservation {new_reservation_usd} total {total} cap {HARD_CAP_USD}"
+            f"insufficient worst-case funds: reservation {new_reservation_usd} total {total} cap {hard_cap_usd}"
         )
     return {"totalUSD": total, "headroomBeforeUSD": headroom, "authorized": True}
 
@@ -219,6 +230,7 @@ class Coordinator:
         sleeper=time.sleep,
         success_gap: float = SUCCESS_GAP_SECONDS,
         backoff_429: float = BACKOFF_429_SECONDS,
+        ceiling_authority: dict | None = None,
     ):
         self.work_dir = Path(work_dir)
         self.work_dir.mkdir(parents=True, exist_ok=True)
@@ -228,6 +240,7 @@ class Coordinator:
         self.prior_liability_usd = float(prior_liability_usd)
         self.effective_reserve_usd = float(effective_reserve_usd)
         self.hard_cap_usd = float(hard_cap_usd)
+        self.ceiling_authority = ceiling_authority
         self.release = release
         self.cloud_lock_enabled = cloud_lock_enabled
         self.transport = transport
@@ -293,11 +306,15 @@ class Coordinator:
 
     def acquire_mutex(self):
         self.mutex_file.parent.mkdir(parents=True, exist_ok=True)
+        historical_unknown = None
         if self.mutex_file.exists():
             content = self.mutex_file.read_text(encoding="utf-8").strip()
             if not content:
                 raise MutexError("Mutex file exists but is empty")
             data = json.loads(content)
+            historical_unknown = data.get("unknownAttempt")
+            if historical_unknown and historical_unknown not in (self.ceiling_authority or {}).get("excludedFromActiveRequestLockOnly", []):
+                raise MutexError("Historical unknown request has no scoped exclusion")
             state = str(data.get("lastState", ""))
             if "UNKNOWN" in state:
                 raise MutexError(f"Mutex retains UNKNOWN state from {data.get('owner')}")
@@ -322,6 +339,9 @@ class Coordinator:
             "workflow": "image-unified-reserve-20261009",
             "historicalOwnerPreserved": True,
         }
+        if historical_unknown:
+            lock_data["unknownAttempt"] = historical_unknown
+            lock_data["exclusionAuthority"] = "professionalRepairAuthority20261018"
         self._atomic_write(self.mutex_file, json.dumps(lock_data, indent=2).encode("utf-8"))
         verified = json.loads(self.mutex_file.read_text(encoding="utf-8"))
         if verified.get("owner") != self.owner_id or verified.get("pid") != self.pid:
@@ -384,7 +404,7 @@ class Coordinator:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 meta = json.loads(resp.read().decode("utf-8"))
             generation = str(meta.get("generation"))
-            media = urllib.request.Request(meta_url + "?alt=media", headers={"Authorization": "Bearer " + token})
+            media = urllib.request.Request(meta_url + "?alt=media&generation=" + generation, headers={"Authorization": "Bearer " + token})
             with urllib.request.urlopen(media, timeout=30) as resp:
                 content = json.loads(resp.read().decode("utf-8"))
             return content, generation
@@ -503,6 +523,8 @@ class Coordinator:
             attempt_id=attempt_id,
             unknown_outstanding=bool(self.unresolved_items),
             double_subtracted=False,
+            hard_cap_usd=self.hard_cap_usd,
+            ceiling_authority=self.ceiling_authority,
         )
         req_path = pack_dir / "request_body.json"
         sub_path = pack_dir / "write_ahead_subattempt_1.json"
@@ -560,7 +582,7 @@ class Coordinator:
             body = err.read()
             headers = dict(err.headers or {})
             if err.code == 429:
-                raise QuotaStop(json.dumps({"code": 429, "headers": headers, "body": body.decode("utf-8", "replace")[:4000]}))
+                return body, err.code, headers
             if err.code in {401, 403}:
                 raise AuthError(f"HTTP {err.code}")
             if err.code >= 500:

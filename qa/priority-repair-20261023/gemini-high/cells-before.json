@@ -1,0 +1,26 @@
+[
+  {
+    "viewport": [825, 375],
+    "tray": { "y": 226, "h": 131, "bottom": 357 },
+    "visibleCenters": 0,
+    "covered": 11,
+    "miss": [],
+    "note": "Measured before the short-landscape tray move. Every legal-cell center sat inside the opaque full-width tray. elementFromPoint still reached the deployment cell because the tray has pointer-events: none."
+  },
+  {
+    "viewport": [933, 424],
+    "tray": { "y": 275, "h": 131, "bottom": 406 },
+    "visibleCenters": 1,
+    "covered": 10,
+    "miss": ["2,7"],
+    "note": "Ten legal-cell centers sat inside the tray. Cell 2,7 resolved to a button."
+  },
+  {
+    "viewport": [1280, 720],
+    "tray": { "y": 582, "h": 120, "bottom": 702 },
+    "visibleCenters": 11,
+    "covered": 0,
+    "miss": [],
+    "note": "Desktop tray already sat below the legal cells. That layout was left in place."
+  }
+]

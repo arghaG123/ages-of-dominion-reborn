@@ -1,0 +1,454 @@
+{
+  "recordedAt": "2026-10-21T07:52:26.875Z",
+  "classification": "NATURAL_CARDINAL_JOURNEY_TO_NORTH_EDGE_CAMERA_SAFETY_CANDIDATE",
+  "journey": "Fresh visible campaign -> sunken-jungle -> cardinal moves to an unblocked outer map cell -> save/reload",
+  "note": "Campaign, world, and movement state are never injected. A read-only path search selects an open reachable north-edge cell while excluding guards; every step is then previewed and committed through visible game controls. This candidate allows an inset and biome backdrop at y=0; screen evidence is reviewed separately from bounds assertions.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "steps": [
+    {
+      "direction": "east",
+      "position": [
+        9,
+        2
+      ],
+      "moves": 4,
+      "day": 1,
+      "revision": 11,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.8033989266547407,
+          "offset": [
+            -280.4769230769232,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            349.1128924515699,
+            0,
+            1026.88710754843,
+            466.76686706746824
+          ]
+        },
+        "frame": {
+          "left": -280.4769287109375,
+          "top": 0,
+          "right": 825,
+          "bottom": 617.0103759765625
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          375.9,
+          154.25259391771021
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 252.41448974609375,
+              "top": 49.19401931762695,
+              "right": 356.5260009765625,
+              "bottom": 160.70534133911133
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 252.41448974609375,
+              "top": 49.19401931762695,
+              "right": 356.5260009765625,
+              "bottom": 151.9612159729004
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "boardGeometry": true,
+        "edgeSafety": null,
+        "stageBackground": "none",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 252.41448974609375,
+              "top": 49.19401931762695,
+              "right": 356.5260009765625,
+              "bottom": 160.70534133911133
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          9,
+          2
+        ]
+      }
+    },
+    {
+      "direction": "north",
+      "position": [
+        9,
+        1
+      ],
+      "moves": 3,
+      "day": 1,
+      "revision": 14,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.8033989266547407,
+          "offset": [
+            -280.4769230769232,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            349.1128924515699,
+            0,
+            1026.88710754843,
+            466.76686706746824
+          ]
+        },
+        "frame": {
+          "left": -280.4769287109375,
+          "top": 0,
+          "right": 825,
+          "bottom": 617.0103759765625
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          375.9,
+          92.55155635062611
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 43.503807067871094,
+              "right": 422.4246826171875,
+              "bottom": 166.56036376953125
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 43.503807067871094,
+              "right": 422.4246826171875,
+              "bottom": 146.27101135253906
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "boardGeometry": true,
+        "edgeSafety": null,
+        "stageBackground": "none",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 43.503807067871094,
+              "right": 422.4246826171875,
+              "bottom": 166.56036376953125
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          9,
+          1
+        ]
+      }
+    },
+    {
+      "direction": "north",
+      "position": [
+        9,
+        0
+      ],
+      "moves": 2,
+      "day": 1,
+      "revision": 17,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.8033989266547407,
+          "offset": [
+            -280.4769230769232,
+            64
+          ],
+          "mode": "focus-cover",
+          "window": [
+            349.1128924515699,
+            -79.6615453128479,
+            1026.88710754843,
+            466.76686706746824
+          ]
+        },
+        "frame": {
+          "left": -280.4769287109375,
+          "top": 64,
+          "right": 825,
+          "bottom": 681.0103759765625
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          375.9,
+          94.85051878354204
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 329.837890625,
+              "top": 14.972007751464844,
+              "right": 417.7266845703125,
+              "bottom": 100.82745361328125
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 329.837890625,
+              "top": 14.972007751464844,
+              "right": 417.7266845703125,
+              "bottom": 79.44405364990234
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": false,
+        "boardGeometry": true,
+        "edgeSafety": {
+          "side": "north",
+          "stageOffsetY": 64,
+          "backdropWorldId": "sunken-jungle"
+        },
+        "stageBackground": "linear-gradient(rgba(16, 23, 27, 0.78), rgba(16, 23, 27, 0.78)), url(\"http://127.0.0.1:4179/assets/derivatives/adventure-world-terrain-generated-20261020/sunken-jungle-terrain-v1.png\")",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 329.837890625,
+              "top": 14.972007751464844,
+              "right": 417.7266845703125,
+              "bottom": 100.82745361328125
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          9,
+          0
+        ]
+      }
+    }
+  ],
+  "start": {
+    "position": [
+      8,
+      2
+    ],
+    "moves": 5,
+    "revision": 8,
+    "seed": 2671968275,
+    "worldId": "sunken-jungle"
+  },
+  "edge": {
+    "position": [
+      9,
+      0
+    ],
+    "pathLength": 3,
+    "path": [
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        9,
+        0
+      ]
+    ],
+    "candidateCount": 13,
+    "mapSize": [
+      16,
+      10
+    ]
+  },
+  "compactStartCamera": {
+    "viewport": [
+      825,
+      375
+    ],
+    "fit": {
+      "scale": 0.6962790697674419,
+      "offset": [
+        -133.08000000000004,
+        0
+      ],
+      "mode": "focus-cover",
+      "window": [
+        191.13026052104212,
+        0,
+        1184.8697394789579,
+        538.5771543086172
+      ]
+    },
+    "frame": {
+      "left": -133.0800018310547,
+      "top": 0,
+      "right": 824.9999542236328,
+      "bottom": 534.7423095703125
+    },
+    "stage": {
+      "left": 0,
+      "top": 0,
+      "right": 825,
+      "bottom": 375
+    },
+    "heroScreen": [
+      375.9,
+      133.68558139534883
+    ],
+    "heroVisible": true,
+    "actors": [
+      {
+        "kind": "mount",
+        "id": "horse",
+        "bounds": {
+          "left": 329.837890625,
+          "top": 53.807064056396484,
+          "right": 417.7266845703125,
+          "bottom": 139.66250228881836
+        },
+        "withinViewport": true
+      },
+      {
+        "kind": "actor",
+        "id": "knight",
+        "bounds": {
+          "left": 329.837890625,
+          "top": 53.807064056396484,
+          "right": 417.7266845703125,
+          "bottom": 118.27910995483398
+        },
+        "withinViewport": true
+      }
+    ],
+    "allActorsWithinViewport": true,
+    "frameCoversViewport": true,
+    "boardGeometry": true,
+    "edgeSafety": null,
+    "stageBackground": "none",
+    "traveler": [
+      {
+        "tag": "g",
+        "mode": null,
+        "rider": null,
+        "mount": "horse",
+        "bounds": {
+          "left": 329.837890625,
+          "top": 53.807064056396484,
+          "right": 417.7266845703125,
+          "bottom": 139.66250228881836
+        },
+        "withinViewport": true
+      }
+    ],
+    "position": [
+      8,
+      2
+    ]
+  },
+  "destination": {
+    "position": [
+      9,
+      0
+    ],
+    "moves": 2,
+    "day": 1,
+    "visited": [
+      "8,2",
+      "9,2",
+      "9,1",
+      "9,0"
+    ],
+    "revision": 22
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-north-safety-sunken-jungle-live-20261021-run01\\sunken-jungle-north-edge-safe-825x375.jpg"
+  ],
+  "reload": {
+    "worldId": "sunken-jungle",
+    "position": [
+      9,
+      0
+    ],
+    "visited": [
+      "8,2",
+      "9,2",
+      "9,1",
+      "9,0"
+    ],
+    "revision": 25
+  },
+  "passed": true
+}

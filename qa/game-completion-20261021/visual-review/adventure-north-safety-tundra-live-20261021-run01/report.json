@@ -1,0 +1,656 @@
+{
+  "recordedAt": "2026-10-21T07:51:38.825Z",
+  "classification": "NATURAL_CARDINAL_JOURNEY_TO_NORTH_EDGE_CAMERA_SAFETY_CANDIDATE",
+  "journey": "Fresh visible campaign -> tundra -> cardinal moves to an unblocked outer map cell -> save/reload",
+  "note": "Campaign, world, and movement state are never injected. A read-only path search selects an open reachable north-edge cell while excluding guards; every step is then previewed and committed through visible game controls. This candidate allows an inset and biome backdrop at y=0; screen evidence is reviewed separately from bounds assertions.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "steps": [
+    {
+      "direction": "west",
+      "position": [
+        9,
+        3
+      ],
+      "moves": 4,
+      "day": 1,
+      "revision": 11,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.8033989266547407,
+          "offset": [
+            -280.4769230769232,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            349.1128924515699,
+            0,
+            1026.88710754843,
+            466.76686706746824
+          ]
+        },
+        "frame": {
+          "left": -280.4769287109375,
+          "top": 0,
+          "right": 825,
+          "bottom": 617.0103759765625
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          375.9,
+          215.9536314847943
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 395.25860595703125,
+              "top": 110.89505004882812,
+              "right": 499.3701171875,
+              "bottom": 231.53305053710938
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 395.25860595703125,
+              "top": 110.89505004882812,
+              "right": 499.3701171875,
+              "bottom": 213.6622314453125
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "boardGeometry": true,
+        "edgeSafety": null,
+        "stageBackground": "none",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 395.25860595703125,
+              "top": 110.89505004882812,
+              "right": 499.3701171875,
+              "bottom": 231.53305053710938
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          9,
+          3
+        ]
+      }
+    },
+    {
+      "direction": "west",
+      "position": [
+        8,
+        3
+      ],
+      "moves": 3,
+      "day": 1,
+      "revision": 13,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.6962790697674419,
+          "offset": [
+            -133.08000000000004,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            191.13026052104212,
+            0,
+            1184.8697394789579,
+            538.5771543086172
+          ]
+        },
+        "frame": {
+          "left": -133.0800018310547,
+          "top": 0,
+          "right": 824.9999542236328,
+          "bottom": 534.7423095703125
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          375.9,
+          187.1598139534884
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 383.73297119140625,
+              "top": 82.10122680664062,
+              "right": 487.844482421875,
+              "bottom": 193.61256408691406
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 383.73297119140625,
+              "top": 82.10122680664062,
+              "right": 487.844482421875,
+              "bottom": 184.86842346191406
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "boardGeometry": true,
+        "edgeSafety": null,
+        "stageBackground": "none",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 383.73297119140625,
+              "top": 82.10122680664062,
+              "right": 487.844482421875,
+              "bottom": 193.61256408691406
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          8,
+          3
+        ]
+      }
+    },
+    {
+      "direction": "north",
+      "position": [
+        8,
+        2
+      ],
+      "moves": 2,
+      "day": 1,
+      "revision": 16,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.6962790697674419,
+          "offset": [
+            -133.08000000000004,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            191.13026052104212,
+            0,
+            1184.8697394789579,
+            538.5771543086172
+          ]
+        },
+        "frame": {
+          "left": -133.0800018310547,
+          "top": 0,
+          "right": 824.9999542236328,
+          "bottom": 534.7423095703125
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          375.9,
+          133.68558139534883
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 77.14595031738281,
+              "right": 422.4246826171875,
+              "bottom": 200.2025146484375
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 77.14595031738281,
+              "right": 422.4246826171875,
+              "bottom": 179.91314697265625
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "boardGeometry": true,
+        "edgeSafety": null,
+        "stageBackground": "none",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 77.14595031738281,
+              "right": 422.4246826171875,
+              "bottom": 200.2025146484375
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "direction": "north",
+      "position": [
+        8,
+        1
+      ],
+      "moves": 1,
+      "day": 1,
+      "revision": 19,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.6962790697674419,
+          "offset": [
+            -133.08000000000004,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            191.13026052104212,
+            0,
+            1184.8697394789579,
+            538.5771543086172
+          ]
+        },
+        "frame": {
+          "left": -133.0800018310547,
+          "top": 0,
+          "right": 824.9999542236328,
+          "bottom": 534.7423095703125
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          375.9,
+          80.2113488372093
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 25.347246170043945,
+              "right": 422.4246826171875,
+              "bottom": 135.80464363098145
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 25.347246170043945,
+              "right": 422.4246826171875,
+              "bottom": 128.11445808410645
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "boardGeometry": true,
+        "edgeSafety": null,
+        "stageBackground": "none",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 25.347246170043945,
+              "right": 422.4246826171875,
+              "bottom": 135.80464363098145
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          8,
+          1
+        ]
+      }
+    },
+    {
+      "direction": "north",
+      "position": [
+        8,
+        0
+      ],
+      "moves": 0,
+      "day": 1,
+      "revision": 21,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.6962790697674419,
+          "offset": [
+            -133.08000000000004,
+            64
+          ],
+          "mode": "focus-cover",
+          "window": [
+            191.13026052104212,
+            -91.91716766867067,
+            1184.8697394789579,
+            538.5771543086172
+          ]
+        },
+        "frame": {
+          "left": -133.0800018310547,
+          "top": 64,
+          "right": 824.9999542236328,
+          "bottom": 598.7423095703125
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "heroScreen": [
+          375.9,
+          90.73711627906977
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 34.19749069213867,
+              "right": 422.4246826171875,
+              "bottom": 144.6548728942871
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 34.19749069213867,
+              "right": 422.4246826171875,
+              "bottom": 136.9646873474121
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": false,
+        "boardGeometry": true,
+        "edgeSafety": {
+          "side": "north",
+          "stageOffsetY": 64,
+          "backdropWorldId": "tundra"
+        },
+        "stageBackground": "linear-gradient(rgba(16, 23, 27, 0.78), rgba(16, 23, 27, 0.78)), url(\"http://127.0.0.1:4179/assets/derivatives/adventure-world-terrain-generated-20261020/tundra-terrain-v1.png\")",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 318.313232421875,
+              "top": 34.19749069213867,
+              "right": 422.4246826171875,
+              "bottom": 144.6548728942871
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          8,
+          0
+        ]
+      }
+    }
+  ],
+  "start": {
+    "position": [
+      10,
+      3
+    ],
+    "moves": 5,
+    "revision": 8,
+    "seed": 1084177041,
+    "worldId": "tundra"
+  },
+  "edge": {
+    "position": [
+      8,
+      0
+    ],
+    "pathLength": 5,
+    "path": [
+      [
+        9,
+        3
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        0
+      ]
+    ],
+    "candidateCount": 16,
+    "mapSize": [
+      16,
+      10
+    ]
+  },
+  "compactStartCamera": {
+    "viewport": [
+      825,
+      375
+    ],
+    "fit": {
+      "scale": 0.9494714587737844,
+      "offset": [
+        -481.4727272727273,
+        -0.21792811839321757
+      ],
+      "mode": "focus-cover",
+      "window": [
+        507.09552438209755,
+        0.2295257181028544,
+        868.9044756179024,
+        394.9565798263193
+      ]
+    },
+    "frame": {
+      "left": -481.47271728515625,
+      "top": -0.21792811155319214,
+      "right": 825.0000610351562,
+      "bottom": 728.9761636853218
+    },
+    "stage": {
+      "left": 0,
+      "top": 0,
+      "right": 825,
+      "bottom": 375
+    },
+    "heroScreen": [
+      375.9,
+      255.00000000000003
+    ],
+    "heroVisible": true,
+    "actors": [
+      {
+        "kind": "mount",
+        "id": "horse",
+        "bounds": {
+          "left": 329.83795166015625,
+          "top": 175.12147521972656,
+          "right": 417.72674560546875,
+          "bottom": 260.9769287109375
+        },
+        "withinViewport": true
+      },
+      {
+        "kind": "actor",
+        "id": "knight",
+        "bounds": {
+          "left": 329.83795166015625,
+          "top": 175.12147521972656,
+          "right": 417.72674560546875,
+          "bottom": 239.59352111816406
+        },
+        "withinViewport": true
+      }
+    ],
+    "allActorsWithinViewport": true,
+    "frameCoversViewport": true,
+    "boardGeometry": true,
+    "edgeSafety": null,
+    "stageBackground": "none",
+    "traveler": [
+      {
+        "tag": "g",
+        "mode": null,
+        "rider": null,
+        "mount": "horse",
+        "bounds": {
+          "left": 329.83795166015625,
+          "top": 175.12147521972656,
+          "right": 417.72674560546875,
+          "bottom": 260.9769287109375
+        },
+        "withinViewport": true
+      }
+    ],
+    "position": [
+      10,
+      3
+    ]
+  },
+  "destination": {
+    "position": [
+      8,
+      0
+    ],
+    "moves": 0,
+    "day": 1,
+    "visited": [
+      "10,3",
+      "9,3",
+      "8,3",
+      "8,2",
+      "8,1",
+      "8,0"
+    ],
+    "revision": 21
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-north-safety-tundra-live-20261021-run01\\tundra-north-edge-safe-825x375.jpg"
+  ],
+  "reload": {
+    "worldId": "tundra",
+    "position": [
+      8,
+      0
+    ],
+    "visited": [
+      "10,3",
+      "9,3",
+      "8,3",
+      "8,2",
+      "8,1",
+      "8,0"
+    ],
+    "revision": 24
+  },
+  "passed": true
+}

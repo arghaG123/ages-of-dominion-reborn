@@ -1,0 +1,2607 @@
+{
+  "version": "mock-led-scene-registration-20261016",
+  "generatedAt": "2026-10-20T04:27:08Z",
+  "authority": "MOCK-LED-IMPLEMENTATION-SOLUTIONS-MANUAL-2026-10-16.md Section 4 & 10.3",
+  "acceptance": "OPEN",
+  "ownerAcceptance": "UNVERIFIED",
+  "summary": {
+    "totalScenes": 32,
+    "pass": 0,
+    "open": 32,
+    "fail": 0,
+    "blocked": 0,
+    "byMode": {
+      "kingdom": 8,
+      "adventure": 8,
+      "tactical": 8,
+      "defense": 8
+    }
+  },
+  "method": "Exact displayed paintings; frozen worldToSource projection; empirical image pixel sampling; unique clearance measurements; decks, approaches, obstacle avoidance; zero stamped edge pixels.",
+  "scenes": [
+    {
+      "mode": "kingdom",
+      "ageIndex": 0,
+      "ageName": "stone",
+      "displayedSource": {
+        "path": "assets/derivatives/mock-led-20261016/kingdom/kingdom-stone-ground.png",
+        "sha256": "84606749c39bbd9526d348a62f919e6412781d709ad6956d529617651cf8a961",
+        "width": 1376,
+        "height": 768,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 56,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 4.225,
+        "decks": [
+          {
+            "id": "right-crossing",
+            "worldRect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                1095.0,
+                285.0
+              ],
+              [
+                1185.0,
+                270.0
+              ],
+              [
+                1205.0,
+                298.0
+              ],
+              [
+                1115.0,
+                313.0
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ANCIENT_RIVER_CROSSING"
+          }
+        ],
+        "sitesCount": 18
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on kingdom stone: 56 samples, 4.225 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "kingdom",
+      "ageIndex": 1,
+      "ageName": "bronze",
+      "displayedSource": {
+        "path": "assets/derivatives/mock-led-20261016/kingdom/kingdom-bronze-ground.png",
+        "sha256": "56c652c36e2e381c2251d5a7d4006f37a6c9783c73ef2a1ac4ca64230156ef3c",
+        "width": 1376,
+        "height": 768,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 53,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 4.751,
+        "decks": [
+          {
+            "id": "right-crossing",
+            "worldRect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                1095.0,
+                285.0
+              ],
+              [
+                1185.0,
+                270.0
+              ],
+              [
+                1205.0,
+                298.0
+              ],
+              [
+                1115.0,
+                313.0
+              ]
+            ],
+            "deckAlignedWithApproaches": false,
+            "alignmentStatus": "UNALIGNED_NO_STRUCTURE_IN_ERA"
+          }
+        ],
+        "sitesCount": 18
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "OPEN",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on kingdom bronze: 53 samples, 4.751 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "kingdom",
+      "ageIndex": 2,
+      "ageName": "iron",
+      "displayedSource": {
+        "path": "assets/derivatives/mock-led-20261016/kingdom/kingdom-iron-ground.png",
+        "sha256": "4a03ea3d1531a40560246356c982a64403d70224cdb3751ee3a8345497d989d9",
+        "width": 1376,
+        "height": 768,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 52,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 5.672,
+        "decks": [
+          {
+            "id": "right-crossing",
+            "worldRect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                1095.0,
+                285.0
+              ],
+              [
+                1185.0,
+                270.0
+              ],
+              [
+                1205.0,
+                298.0
+              ],
+              [
+                1115.0,
+                313.0
+              ]
+            ],
+            "deckAlignedWithApproaches": false,
+            "alignmentStatus": "UNALIGNED_NO_STRUCTURE_IN_ERA"
+          }
+        ],
+        "sitesCount": 18
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "OPEN",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on kingdom iron: 52 samples, 5.672 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "kingdom",
+      "ageIndex": 3,
+      "ageName": "medieval",
+      "displayedSource": {
+        "path": "assets/derivatives/mock-led-20261016/kingdom/kingdom-medieval-ground.png",
+        "sha256": "6e711f4e9a1da2b6effbac1dec15846128be3f25167cc656e81a7f4e1d7f2035",
+        "width": 1376,
+        "height": 768,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 56,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 4.636,
+        "decks": [
+          {
+            "id": "right-crossing",
+            "worldRect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                1095.0,
+                285.0
+              ],
+              [
+                1185.0,
+                270.0
+              ],
+              [
+                1205.0,
+                298.0
+              ],
+              [
+                1115.0,
+                313.0
+              ]
+            ],
+            "deckAlignedWithApproaches": false,
+            "alignmentStatus": "UNALIGNED_NO_STRUCTURE_IN_ERA"
+          }
+        ],
+        "sitesCount": 18
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "OPEN",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on kingdom medieval: 56 samples, 4.636 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "kingdom",
+      "ageIndex": 4,
+      "ageName": "gunpowder",
+      "displayedSource": {
+        "path": "assets/derivatives/mock-led-20261016/kingdom/kingdom-gunpowder-ground.png",
+        "sha256": "7705daeda4b6a23c5f5ea7f4218caaca44f2e1ceb16077f75c591a15e21fb353",
+        "width": 1376,
+        "height": 768,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 53,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.099,
+        "decks": [
+          {
+            "id": "right-crossing",
+            "worldRect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                1095.0,
+                285.0
+              ],
+              [
+                1185.0,
+                270.0
+              ],
+              [
+                1205.0,
+                298.0
+              ],
+              [
+                1115.0,
+                313.0
+              ]
+            ],
+            "deckAlignedWithApproaches": false,
+            "alignmentStatus": "UNALIGNED_NO_STRUCTURE_IN_ERA"
+          }
+        ],
+        "sitesCount": 18
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "OPEN",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on kingdom gunpowder: 53 samples, 0.099 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "kingdom",
+      "ageIndex": 5,
+      "ageName": "industrial",
+      "displayedSource": {
+        "path": "assets/derivatives/mock-led-20261016/kingdom/kingdom-industrial-ground.png",
+        "sha256": "119a8442735189198b3eacd862bb62ab790d318431d748cbaf6d3152f17c31e1",
+        "width": 1376,
+        "height": 768,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 52,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 4.652,
+        "decks": [
+          {
+            "id": "right-crossing",
+            "worldRect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                1095.0,
+                285.0
+              ],
+              [
+                1185.0,
+                270.0
+              ],
+              [
+                1205.0,
+                298.0
+              ],
+              [
+                1115.0,
+                313.0
+              ]
+            ],
+            "deckAlignedWithApproaches": false,
+            "alignmentStatus": "UNALIGNED_NO_STRUCTURE_IN_ERA"
+          }
+        ],
+        "sitesCount": 18
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "OPEN",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on kingdom industrial: 52 samples, 4.652 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "kingdom",
+      "ageIndex": 6,
+      "ageName": "modern",
+      "displayedSource": {
+        "path": "assets/derivatives/mock-led-20261016/kingdom/kingdom-modern-ground.png",
+        "sha256": "a20a7195dce1ac2d13e8738bba26c82e9939185861e74ae18123b37b25ad7cfd",
+        "width": 1376,
+        "height": 768,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 56,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.69,
+        "decks": [
+          {
+            "id": "right-crossing",
+            "worldRect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                1095.0,
+                285.0
+              ],
+              [
+                1185.0,
+                270.0
+              ],
+              [
+                1205.0,
+                298.0
+              ],
+              [
+                1115.0,
+                313.0
+              ]
+            ],
+            "deckAlignedWithApproaches": false,
+            "alignmentStatus": "UNALIGNED_NO_STRUCTURE_IN_ERA"
+          }
+        ],
+        "sitesCount": 18
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "OPEN",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on kingdom modern: 56 samples, 0.69 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "kingdom",
+      "ageIndex": 7,
+      "ageName": "future",
+      "displayedSource": {
+        "path": "assets/derivatives/mock-led-20261016/kingdom/kingdom-future-ground.png",
+        "sha256": "18f77362f85813487e9c199cadc45e746ddd780c4dd0ea4099148500b5434bd6",
+        "width": 1376,
+        "height": 768,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -10,
+          25,
+          35,
+          170,
+          165
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 53,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.049,
+        "decks": [
+          {
+            "id": "right-crossing",
+            "worldRect": [
+              12.5,
+              7,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                1095.0,
+                285.0
+              ],
+              [
+                1185.0,
+                270.0
+              ],
+              [
+                1205.0,
+                298.0
+              ],
+              [
+                1115.0,
+                313.0
+              ]
+            ],
+            "deckAlignedWithApproaches": false,
+            "alignmentStatus": "UNALIGNED_NO_STRUCTURE_IN_ERA"
+          }
+        ],
+        "sitesCount": 18
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "OPEN",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on kingdom future: 53 samples, 0.049 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "adventure",
+      "ageIndex": 0,
+      "ageName": "stone",
+      "displayedSource": {
+        "path": "assets/derivatives/professional-20261018/scenes/adventure-stone-organic-v1.png",
+        "sha256": "9072db2d95839e7ffb2b3dc5b866d67c74301f1391362abd1d7f8febd9adb6cd",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          53,
+          -8,
+          23,
+          37,
+          180,
+          160
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 9,
+        "routeSamples": 212,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.09,
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "worldRect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "sourcePolygon": [
+              [
+                517.9,
+                353.85
+              ],
+              [
+                650.4,
+                333.85
+              ],
+              [
+                671.1,
+                367.15
+              ],
+              [
+                538.6,
+                387.15
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 6
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on adventure stone: 212 samples, 1.09 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "adventure",
+      "ageIndex": 1,
+      "ageName": "bronze",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/adventure-bronze-clean-v1.png",
+        "sha256": "6c6438b050c19628c7c487850960c7775eb1af70876fbb38ceae8545038e171a",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          53,
+          -8,
+          23,
+          37,
+          180,
+          160
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 9,
+        "routeSamples": 212,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.122,
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "worldRect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "sourcePolygon": [
+              [
+                517.9,
+                353.85
+              ],
+              [
+                650.4,
+                333.85
+              ],
+              [
+                671.1,
+                367.15
+              ],
+              [
+                538.6,
+                387.15
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 6
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on adventure bronze: 212 samples, 1.122 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "adventure",
+      "ageIndex": 2,
+      "ageName": "iron",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/adventure-iron-clean-v1.png",
+        "sha256": "212bf3c2cba60deca08a317ad4dbcd5accf33e20602a05575878ec423f1fdaec",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          53,
+          -8,
+          23,
+          37,
+          180,
+          160
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 9,
+        "routeSamples": 193,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.082,
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "worldRect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "sourcePolygon": [
+              [
+                517.9,
+                353.85
+              ],
+              [
+                650.4,
+                333.85
+              ],
+              [
+                671.1,
+                367.15
+              ],
+              [
+                538.6,
+                387.15
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 6
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on adventure iron: 193 samples, 1.082 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "adventure",
+      "ageIndex": 3,
+      "ageName": "medieval",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/adventure-medieval-clean-v1.png",
+        "sha256": "bf40d4baed4e17a67e5c64547ef55580019282364506d33bd463e51ecaffdad7",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          53,
+          -8,
+          23,
+          37,
+          180,
+          160
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 9,
+        "routeSamples": 212,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.1,
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "worldRect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "sourcePolygon": [
+              [
+                517.9,
+                353.85
+              ],
+              [
+                650.4,
+                333.85
+              ],
+              [
+                671.1,
+                367.15
+              ],
+              [
+                538.6,
+                387.15
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 6
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on adventure medieval: 212 samples, 1.1 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "adventure",
+      "ageIndex": 4,
+      "ageName": "gunpowder",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/adventure-gunpowder-clean-v1.png",
+        "sha256": "967008a61650d66e183b7e6471700728bf6e13ac8beff84d6dff2294a736f500",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          53,
+          -8,
+          23,
+          37,
+          180,
+          160
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 9,
+        "routeSamples": 212,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.152,
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "worldRect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "sourcePolygon": [
+              [
+                517.9,
+                353.85
+              ],
+              [
+                650.4,
+                333.85
+              ],
+              [
+                671.1,
+                367.15
+              ],
+              [
+                538.6,
+                387.15
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 6
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on adventure gunpowder: 212 samples, 1.152 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "adventure",
+      "ageIndex": 5,
+      "ageName": "industrial",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/adventure-industrial-clean-v1.png",
+        "sha256": "9f887dc673b654d27da2866f20391370a859e85bbd328e2a0e18630d26efe176",
+        "width": 1679,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          53,
+          -8,
+          23,
+          37,
+          180,
+          160
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.220203488372093,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 9,
+        "routeSamples": 193,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.161,
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "worldRect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "sourcePolygon": [
+              [
+                517.9,
+                353.85
+              ],
+              [
+                650.4,
+                333.85
+              ],
+              [
+                671.1,
+                367.15
+              ],
+              [
+                538.6,
+                387.15
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 6
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on adventure industrial: 193 samples, 1.161 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "adventure",
+      "ageIndex": 6,
+      "ageName": "modern",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/adventure-modern-clean-v1.png",
+        "sha256": "41580d85ad457b409180e41e600a4904199211694a69dd19c4210091d2b6cbb8",
+        "width": 1679,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          53,
+          -8,
+          23,
+          37,
+          180,
+          160
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.220203488372093,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 9,
+        "routeSamples": 212,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.081,
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "worldRect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "sourcePolygon": [
+              [
+                517.9,
+                353.85
+              ],
+              [
+                650.4,
+                333.85
+              ],
+              [
+                671.1,
+                367.15
+              ],
+              [
+                538.6,
+                387.15
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 6
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on adventure modern: 212 samples, 1.081 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "adventure",
+      "ageIndex": 7,
+      "ageName": "future",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/adventure-future-clean-v1.png",
+        "sha256": "1865e4e075da376032c412f350a316a2d4e59c223f601a2b00171de2ac5178b1",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          53,
+          -8,
+          23,
+          37,
+          180,
+          160
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 9,
+        "routeSamples": 212,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.062,
+        "decks": [
+          {
+            "id": "stone-crossing",
+            "worldRect": [
+              3.75,
+              6.05,
+              2.5,
+              0.9
+            ],
+            "sourcePolygon": [
+              [
+                517.9,
+                353.85
+              ],
+              [
+                650.4,
+                333.85
+              ],
+              [
+                671.1,
+                367.15
+              ],
+              [
+                538.6,
+                387.15
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 6
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on adventure future: 212 samples, 1.062 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "tactical",
+      "ageIndex": 0,
+      "ageName": "stone",
+      "displayedSource": {
+        "path": "assets/derivatives/professional-20261018/scenes/tactical-stone.webp",
+        "sha256": "dca324e2c59be491765ebb13f85ecfaeefd2f66656fbc3bc6c8a6ff5b056f772",
+        "width": 5504,
+        "height": 3072,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          77,
+          -12,
+          27,
+          46,
+          270,
+          110
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          4.0,
+          4.0
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 2,
+        "routeSamples": 82,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.134,
+        "decks": [
+          {
+            "id": "crossing-3",
+            "worldRect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                565.45,
+                219.6
+              ],
+              [
+                680.95,
+                201.6
+              ],
+              [
+                702.55,
+                238.4
+              ],
+              [
+                587.05,
+                256.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          },
+          {
+            "id": "crossing-7",
+            "worldRect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                673.45,
+                403.6
+              ],
+              [
+                788.95,
+                385.6
+              ],
+              [
+                810.55,
+                422.4
+              ],
+              [
+                695.05,
+                440.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 0
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on tactical stone: 82 samples, 1.134 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "tactical",
+      "ageIndex": 1,
+      "ageName": "bronze",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/tactical-bronze-clean-v1.png",
+        "sha256": "188275ba8dea806be83dc18cacd8e084a016d88dca256f92f57ab4ab75b452b8",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          77,
+          -12,
+          27,
+          46,
+          270,
+          110
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 2,
+        "routeSamples": 82,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.135,
+        "decks": [
+          {
+            "id": "crossing-3",
+            "worldRect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                565.45,
+                219.6
+              ],
+              [
+                680.95,
+                201.6
+              ],
+              [
+                702.55,
+                238.4
+              ],
+              [
+                587.05,
+                256.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          },
+          {
+            "id": "crossing-7",
+            "worldRect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                673.45,
+                403.6
+              ],
+              [
+                788.95,
+                385.6
+              ],
+              [
+                810.55,
+                422.4
+              ],
+              [
+                695.05,
+                440.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 0
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on tactical bronze: 82 samples, 1.135 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "tactical",
+      "ageIndex": 2,
+      "ageName": "iron",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/tactical-iron-clean-v1.png",
+        "sha256": "51784e8015edd0d09e813861e07181fbc54600c5832a5649941da5324d8879ec",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          77,
+          -12,
+          27,
+          46,
+          270,
+          110
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 2,
+        "routeSamples": 74,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.054,
+        "decks": [
+          {
+            "id": "crossing-3",
+            "worldRect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                565.45,
+                219.6
+              ],
+              [
+                680.95,
+                201.6
+              ],
+              [
+                702.55,
+                238.4
+              ],
+              [
+                587.05,
+                256.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          },
+          {
+            "id": "crossing-7",
+            "worldRect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                673.45,
+                403.6
+              ],
+              [
+                788.95,
+                385.6
+              ],
+              [
+                810.55,
+                422.4
+              ],
+              [
+                695.05,
+                440.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 0
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on tactical iron: 74 samples, 1.054 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "tactical",
+      "ageIndex": 3,
+      "ageName": "medieval",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/tactical-medieval-clean-candidate-v1.png",
+        "sha256": "6f3eb57663cb3aa584a9a7e74f8df67f394c8845508a57511e0809b7867e83d2",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          77,
+          -12,
+          27,
+          46,
+          270,
+          110
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 2,
+        "routeSamples": 82,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.09,
+        "decks": [
+          {
+            "id": "crossing-3",
+            "worldRect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                565.45,
+                219.6
+              ],
+              [
+                680.95,
+                201.6
+              ],
+              [
+                702.55,
+                238.4
+              ],
+              [
+                587.05,
+                256.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          },
+          {
+            "id": "crossing-7",
+            "worldRect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                673.45,
+                403.6
+              ],
+              [
+                788.95,
+                385.6
+              ],
+              [
+                810.55,
+                422.4
+              ],
+              [
+                695.05,
+                440.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 0
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on tactical medieval: 82 samples, 1.09 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "tactical",
+      "ageIndex": 4,
+      "ageName": "gunpowder",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/tactical-gunpowder-clean-v1.png",
+        "sha256": "c385b058d2dc588d2c80566c54a16b83fec9262a401f9798365134e6e4d74da5",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          77,
+          -12,
+          27,
+          46,
+          270,
+          110
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 2,
+        "routeSamples": 82,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.136,
+        "decks": [
+          {
+            "id": "crossing-3",
+            "worldRect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                565.45,
+                219.6
+              ],
+              [
+                680.95,
+                201.6
+              ],
+              [
+                702.55,
+                238.4
+              ],
+              [
+                587.05,
+                256.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          },
+          {
+            "id": "crossing-7",
+            "worldRect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                673.45,
+                403.6
+              ],
+              [
+                788.95,
+                385.6
+              ],
+              [
+                810.55,
+                422.4
+              ],
+              [
+                695.05,
+                440.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 0
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on tactical gunpowder: 82 samples, 1.136 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "tactical",
+      "ageIndex": 5,
+      "ageName": "industrial",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/tactical-industrial-clean-v1.png",
+        "sha256": "31450700341b7cf2563485952e88ff5f305e09c297203e3df3ceda75729b59ff",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          77,
+          -12,
+          27,
+          46,
+          270,
+          110
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 2,
+        "routeSamples": 74,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.112,
+        "decks": [
+          {
+            "id": "crossing-3",
+            "worldRect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                565.45,
+                219.6
+              ],
+              [
+                680.95,
+                201.6
+              ],
+              [
+                702.55,
+                238.4
+              ],
+              [
+                587.05,
+                256.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          },
+          {
+            "id": "crossing-7",
+            "worldRect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                673.45,
+                403.6
+              ],
+              [
+                788.95,
+                385.6
+              ],
+              [
+                810.55,
+                422.4
+              ],
+              [
+                695.05,
+                440.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 0
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on tactical industrial: 74 samples, 1.112 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "tactical",
+      "ageIndex": 6,
+      "ageName": "modern",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/tactical-modern-clean-v1.png",
+        "sha256": "0263d4320baa2b9a0b6ef2b2781835da45086f348da60bd2748159f8223545f5",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          77,
+          -12,
+          27,
+          46,
+          270,
+          110
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 2,
+        "routeSamples": 82,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.065,
+        "decks": [
+          {
+            "id": "crossing-3",
+            "worldRect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                565.45,
+                219.6
+              ],
+              [
+                680.95,
+                201.6
+              ],
+              [
+                702.55,
+                238.4
+              ],
+              [
+                587.05,
+                256.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          },
+          {
+            "id": "crossing-7",
+            "worldRect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                673.45,
+                403.6
+              ],
+              [
+                788.95,
+                385.6
+              ],
+              [
+                810.55,
+                422.4
+              ],
+              [
+                695.05,
+                440.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 0
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on tactical modern: 82 samples, 1.065 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "tactical",
+      "ageIndex": 7,
+      "ageName": "future",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/tactical-future-clean-candidate-v1.png",
+        "sha256": "e4b0bfd0e75e600afeda1daa5b86934449ed8f63e94f6f88e313cbfbed6a3d01",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          77,
+          -12,
+          27,
+          46,
+          270,
+          110
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 2,
+        "routeSamples": 82,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 1.12,
+        "decks": [
+          {
+            "id": "crossing-3",
+            "worldRect": [
+              2.75,
+              3.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                565.45,
+                219.6
+              ],
+              [
+                680.95,
+                201.6
+              ],
+              [
+                702.55,
+                238.4
+              ],
+              [
+                587.05,
+                256.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          },
+          {
+            "id": "crossing-7",
+            "worldRect": [
+              2.75,
+              7.1,
+              1.5,
+              0.8
+            ],
+            "sourcePolygon": [
+              [
+                673.45,
+                403.6
+              ],
+              [
+                788.95,
+                385.6
+              ],
+              [
+                810.55,
+                422.4
+              ],
+              [
+                695.05,
+                440.4
+              ]
+            ],
+            "deckAlignedWithApproaches": true,
+            "alignmentStatus": "ALIGNED_APPROACH"
+          }
+        ],
+        "sitesCount": 0
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on tactical future: 82 samples, 1.12 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "defense",
+      "ageIndex": 0,
+      "ageName": "stone",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/defense-stone-clean-v1.png",
+        "sha256": "e4b1f8749f355cc483615c499c0a1b3f03e902a60233ab2b163b85ff09f6b79f",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -8,
+          20,
+          35,
+          270,
+          100
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 183,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.245,
+        "decks": [],
+        "sitesCount": 8
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on defense stone: 183 samples, 0.245 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "defense",
+      "ageIndex": 1,
+      "ageName": "bronze",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/defense-bronze-clean-v1.png",
+        "sha256": "95694c56b3756a8746d1c799685e309598113455a2c014d5294c7955911b6969",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -8,
+          20,
+          35,
+          270,
+          100
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 169,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.296,
+        "decks": [],
+        "sitesCount": 8
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on defense bronze: 169 samples, 0.296 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "defense",
+      "ageIndex": 2,
+      "ageName": "iron",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/defense-iron-clean-v1.png",
+        "sha256": "7602c8bf8397202493bc03b3d109aac65b22d69405f05d4410ceca484d3182be",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -8,
+          20,
+          35,
+          270,
+          100
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 169,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.255,
+        "decks": [],
+        "sitesCount": 8
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on defense iron: 169 samples, 0.255 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "defense",
+      "ageIndex": 3,
+      "ageName": "medieval",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/defense-medieval-clean-v1.png",
+        "sha256": "dfccd09fad358f75ce4041240fc43f71263cd68be4652f3ccf4f276fefcb68df",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -8,
+          20,
+          35,
+          270,
+          100
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 183,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.287,
+        "decks": [],
+        "sitesCount": 8
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on defense medieval: 183 samples, 0.287 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "defense",
+      "ageIndex": 4,
+      "ageName": "gunpowder",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/defense-gunpowder-clean-v1.png",
+        "sha256": "f0fee8add27e435169abc809f3897f142a5e838ec301ff3b2a635432a03461a8",
+        "width": 1679,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -8,
+          20,
+          35,
+          270,
+          100
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.220203488372093,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 169,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.261,
+        "decks": [],
+        "sitesCount": 8
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on defense gunpowder: 169 samples, 0.261 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "defense",
+      "ageIndex": 5,
+      "ageName": "industrial",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/defense-industrial-clean-v1.png",
+        "sha256": "4993058348da3a56d2bb2e70e256e3256cd1e0e4219a9ba0549c96af2e8bfdb4",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -8,
+          20,
+          35,
+          270,
+          100
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 169,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.268,
+        "decks": [],
+        "sitesCount": 8
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on defense industrial: 169 samples, 0.268 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "defense",
+      "ageIndex": 6,
+      "ageName": "modern",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/defense-modern-clean-v1.png",
+        "sha256": "5924aba51e60ac639f4feb88668eeae0f57d51822d0a5a1d18a3c7859a5972e5",
+        "width": 1679,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -8,
+          20,
+          35,
+          270,
+          100
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.220203488372093,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 183,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.228,
+        "decks": [],
+        "sitesCount": 8
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on defense modern: 183 samples, 0.228 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    },
+    {
+      "mode": "defense",
+      "ageIndex": 7,
+      "ageName": "future",
+      "displayedSource": {
+        "path": "assets/derivatives/visual-repair-20261020/scenes/defense-future-clean-v1.png",
+        "sha256": "66c6904bfe6ea83d02910c4f7764b98f194768c17e8fa62b4b5fe6b57503ef89",
+        "width": 1678,
+        "height": 937,
+        "exists": true
+      },
+      "sourceBinding": {
+        "worldToSource": [
+          60,
+          -8,
+          20,
+          35,
+          270,
+          100
+        ],
+        "sourceSize": [
+          1376,
+          768
+        ],
+        "scale": [
+          1.2194767441860466,
+          1.2200520833333333
+        ]
+      },
+      "geometry": {
+        "traversableRouteCount": 1,
+        "routeSamples": 169,
+        "realIntersections": [],
+        "realIntersectionCount": 0,
+        "minClearanceToObstacleWorld": 0.251,
+        "decks": [],
+        "sitesCount": 8
+      },
+      "physicalFitGate": {
+        "sweptFootprintClearance": "PASS",
+        "deckApproachAlignment": "PASS",
+        "groundContactVerified": "PASS"
+      },
+      "compositeGate": {
+        "visualGrounding": "PASS",
+        "noSampleStamps": "VERIFIED_CLEAN",
+        "edgeStampRejected": true
+      },
+      "result": "OPEN",
+      "notes": "Empirical image pixel sampling on defense future: 169 samples, 0.251 world clearance. Zero stamped edge pixels. Verification status OPEN."
+    }
+  ]
+}

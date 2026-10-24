@@ -1,0 +1,242 @@
+{
+  "recordedAt": "2026-10-21T14:20:50.251Z",
+  "classification": "ISOLATED_NATURAL_UI_GRASSLANDS_OWNER_MAP_BRIDGE_CROSSINGS",
+  "note": "New isolated campaign. All position changes use visible cardinal route-preview and confirm controls; pure grid searches only select legal destinations and never mutate campaign state.",
+  "worldId": "grasslands",
+  "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+  "crossings": [
+    {
+      "id": "grasslands-west-mill-crossing",
+      "start": [
+        4,
+        3
+      ],
+      "end": [
+        5,
+        5
+      ],
+      "plannedCells": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "deckVisited": [
+        {
+          "cell": [
+            4,
+            4
+          ],
+          "visited": true
+        },
+        {
+          "cell": [
+            5,
+            4
+          ],
+          "visited": true
+        }
+      ],
+      "allDeckCellsCommitted": true,
+      "movesLeft": 2
+    },
+    {
+      "id": "grasslands-central-stone-bridge",
+      "start": [
+        6,
+        2
+      ],
+      "end": [
+        9,
+        4
+      ],
+      "plannedCells": [
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      "deckVisited": [
+        {
+          "cell": [
+            7,
+            2
+          ],
+          "visited": true
+        },
+        {
+          "cell": [
+            8,
+            2
+          ],
+          "visited": true
+        },
+        {
+          "cell": [
+            8,
+            3
+          ],
+          "visited": true
+        },
+        {
+          "cell": [
+            9,
+            3
+          ],
+          "visited": true
+        }
+      ],
+      "allDeckCellsCommitted": true,
+      "movesLeft": 3
+    },
+    {
+      "id": "grasslands-east-stone-bridge",
+      "start": [
+        11,
+        5
+      ],
+      "end": [
+        13,
+        4
+      ],
+      "plannedCells": [
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "deckVisited": [
+        {
+          "cell": [
+            11,
+            4
+          ],
+          "visited": true
+        },
+        {
+          "cell": [
+            12,
+            4
+          ],
+          "visited": true
+        }
+      ],
+      "allDeckCellsCommitted": true,
+      "movesLeft": 2
+    }
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "start": {
+    "position": [
+      4,
+      3
+    ],
+    "moves": 5,
+    "seed": 3893279654,
+    "visited": [
+      "4,3"
+    ],
+    "ownerSource": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png"
+  },
+  "reload": {
+    "before": {
+      "position": [
+        13,
+        4
+      ],
+      "moves": 2,
+      "seed": 3893279654,
+      "visited": [
+        "4,3",
+        "4,4",
+        "5,4",
+        "5,5",
+        "5,3",
+        "5,2",
+        "6,2",
+        "7,2",
+        "8,2",
+        "8,3",
+        "9,3",
+        "9,4",
+        "9,5",
+        "10,5",
+        "11,5",
+        "11,4",
+        "12,4",
+        "13,4"
+      ]
+    },
+    "after": {
+      "position": [
+        13,
+        4
+      ],
+      "moves": 2,
+      "seed": 3893279654,
+      "visited": [
+        "4,3",
+        "4,4",
+        "5,4",
+        "5,5",
+        "5,3",
+        "5,2",
+        "6,2",
+        "7,2",
+        "8,2",
+        "8,3",
+        "9,3",
+        "9,4",
+        "9,5",
+        "10,5",
+        "11,5",
+        "11,4",
+        "12,4",
+        "13,4"
+      ]
+    },
+    "positionPreserved": true,
+    "allDecksPreserved": true,
+    "ownerSource": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png"
+  },
+  "summary": {
+    "crossings": 3,
+    "fullDecksCommitted": 3,
+    "reloadPass": false,
+    "browserErrors": 0,
+    "failedResponses": 0
+  }
+}

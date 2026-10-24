@@ -1,0 +1,180 @@
+{
+  "recordedAt": "2026-10-19T22:58:45.150Z",
+  "classification": "FRESH_NATURAL_UI_JOURNEY_ISOLATED_BROWSER",
+  "journey": "new campaign -> choose Knight -> enter valley -> cancel build -> construct Lumber Camp -> upgrade Town Hall -> reload",
+  "base": "http://127.0.0.1:4179/?audit=1",
+  "viewports": [
+    {
+      "viewport": "825x375",
+      "screenshots": {
+        "emptyKingdom": "qa\\game-completion-20261020\\visual-review\\starter-live\\empty-kingdom-825x375.png",
+        "buildPreview": "qa\\game-completion-20261020\\visual-review\\starter-live\\build-preview-825x375.png",
+        "cancelled": "qa\\game-completion-20261020\\visual-review\\starter-live\\build-cancelled-825x375.png",
+        "scaffold": "qa\\game-completion-20261020\\visual-review\\starter-live\\lumber-scaffold-825x375.png",
+        "completedLumber": "qa\\game-completion-20261020\\visual-review\\starter-live\\lumber-complete-825x375.png",
+        "hallScaffold": "qa\\game-completion-20261020\\visual-review\\starter-live\\hall-scaffold-825x375.png",
+        "hallUpgrade": "qa\\game-completion-20261020\\visual-review\\starter-live\\hall-upgrade-825x375.png",
+        "reload": "qa\\game-completion-20261020\\visual-review\\starter-live\\reloaded-kingdom-825x375.png"
+      },
+      "checks": {
+        "initial": {
+          "age": 0,
+          "hallLevel": 1,
+          "emptyOwnedSites": 17,
+          "walls": 0,
+          "resources": {
+            "food": 250,
+            "wood": 250,
+            "stone": 160,
+            "gold": 150
+          }
+        },
+        "cancel": {
+          "resourcesUnchanged": true,
+          "plot": {
+            "type": null,
+            "level": 0
+          },
+          "jobs": 0
+        },
+        "scaffold": {
+          "resources": {
+            "food": 250,
+            "wood": 225,
+            "stone": 145,
+            "gold": 150
+          },
+          "job": {
+            "id": "bd904515-a17a-44cb-9fbf-416f7caa3284",
+            "plotId": "P01",
+            "type": "lumber",
+            "targetLevel": 1,
+            "completesAt": 1792450733029
+          }
+        },
+        "completedLumber": {
+          "plot": {
+            "id": "P01",
+            "type": "lumber",
+            "level": 1
+          },
+          "jobs": 0
+        },
+        "hallUpgradeStarted": {
+          "id": "be8499ab-ef54-44b7-8e5a-3acbc241a5a7",
+          "plotId": "townhall",
+          "type": "townhall",
+          "targetLevel": 2,
+          "completesAt": 1792450737094
+        },
+        "hallUpgradeComplete": {
+          "level": 2,
+          "age": 0
+        },
+        "reload": {
+          "age": 0,
+          "hallLevel": 2,
+          "lumber": {
+            "id": "P01",
+            "type": "lumber",
+            "level": 1
+          },
+          "resources": {
+            "food": 250,
+            "wood": 122.42324999999997,
+            "stone": 75,
+            "gold": 150
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "viewport": "1280x720",
+      "screenshots": {
+        "emptyKingdom": "qa\\game-completion-20261020\\visual-review\\starter-live\\empty-kingdom-1280x720.png",
+        "buildPreview": "qa\\game-completion-20261020\\visual-review\\starter-live\\build-preview-1280x720.png",
+        "cancelled": "qa\\game-completion-20261020\\visual-review\\starter-live\\build-cancelled-1280x720.png",
+        "scaffold": "qa\\game-completion-20261020\\visual-review\\starter-live\\lumber-scaffold-1280x720.png",
+        "completedLumber": "qa\\game-completion-20261020\\visual-review\\starter-live\\lumber-complete-1280x720.png",
+        "hallScaffold": "qa\\game-completion-20261020\\visual-review\\starter-live\\hall-scaffold-1280x720.png",
+        "hallUpgrade": "qa\\game-completion-20261020\\visual-review\\starter-live\\hall-upgrade-1280x720.png",
+        "reload": "qa\\game-completion-20261020\\visual-review\\starter-live\\reloaded-kingdom-1280x720.png"
+      },
+      "checks": {
+        "initial": {
+          "age": 0,
+          "hallLevel": 1,
+          "emptyOwnedSites": 17,
+          "walls": 0,
+          "resources": {
+            "food": 250,
+            "wood": 250,
+            "stone": 160,
+            "gold": 150
+          }
+        },
+        "cancel": {
+          "resourcesUnchanged": true,
+          "plot": {
+            "type": null,
+            "level": 0
+          },
+          "jobs": 0
+        },
+        "scaffold": {
+          "resources": {
+            "food": 250,
+            "wood": 225,
+            "stone": 145,
+            "gold": 150
+          },
+          "job": {
+            "id": "f8ae8cff-406a-46cc-9716-ed35541e1c96",
+            "plotId": "P01",
+            "type": "lumber",
+            "targetLevel": 1,
+            "completesAt": 1792450744656
+          }
+        },
+        "completedLumber": {
+          "plot": {
+            "id": "P01",
+            "type": "lumber",
+            "level": 1
+          },
+          "jobs": 0
+        },
+        "hallUpgradeStarted": {
+          "id": "7a3f7445-ba9b-47b2-9c91-13e1a5ecac1f",
+          "plotId": "townhall",
+          "type": "townhall",
+          "targetLevel": 2,
+          "completesAt": 1792450748658
+        },
+        "hallUpgradeComplete": {
+          "level": 2,
+          "age": 0
+        },
+        "reload": {
+          "age": 0,
+          "hallLevel": 2,
+          "lumber": {
+            "id": "P01",
+            "type": "lumber",
+            "level": 1
+          },
+          "resources": {
+            "food": 250,
+            "wood": 122.54114999999999,
+            "stone": 75,
+            "gold": 150
+          }
+        }
+      },
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

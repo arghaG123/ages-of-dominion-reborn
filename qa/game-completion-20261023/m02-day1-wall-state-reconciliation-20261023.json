@@ -1,0 +1,37 @@
+{
+  "reviewId": "M02-day1-wall-state-reconciliation-20261023",
+  "date": "2026-10-23",
+  "mock": "M02",
+  "status": "FAIL_UNRESOLVED_MOCK_STATE_CONFLICT",
+  "reference": {
+    "dimensions": [
+      1376,
+      768
+    ],
+    "sha256": "2f709bf6173af1c8d38405ae8a4b25844b4856da11924cea43d807fe45e4e1f6",
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/02-kingdom-day1.jpg"
+  },
+  "currentEvidence": {
+    "naturalState": "Stone age, day 1, Walls level 0",
+    "finding": "Current no-wall state is truthful; the mock image visibly contains a completed circular perimeter and centered keep.",
+    "sourceRecord": "qa/game-completion-20261022/mock-live-review-run01/m02-stone-day1-live-review-20261022.json"
+  },
+  "sourceReview": {
+    "files": [
+      "src/client/kingdom-view.js",
+      "src/client/main.js",
+      "src/core/campaign.js"
+    ],
+    "sha256": {
+      "src/client/kingdom-view.js": "6c68db3435f0db62d060e239b31750a835670457376f74295c1c27f2f6b4c67c",
+      "src/client/main.js": "a784a3bebc2f455023bf2402ff7e2779159ac42da38ea171ca94fec035e0fd7a"
+    },
+    "wallState": "Existing source selects ground at level 0, scaffold while a legal wall job is active, built wall at level 1, and taller wall at level 2 or higher. A no-wall save is not painted as built."
+  },
+  "result": "No safe code change can make the same Day-1 state both Walls level 0 and visibly walled. I did not set a false wall, alter game rules, or replace the mock.",
+  "next": [
+    "Resolve the conflicting M02 reference/acceptance state: either retain a no-wall Day-1 view and revise the target composition, or review a naturally built wall state as the intended matched state.",
+    "Then retain a landscape matched screenshot and verify all 17 functional sites, Hall, wall phase, and empty-site state.",
+    "Keep M02 FAIL until this is resolved and visually rechecked."
+  ]
+}

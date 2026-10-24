@@ -1,0 +1,828 @@
+{
+  "recordedAt": "2026-10-20T04:47:06.763Z",
+  "classification": "ISOLATED_FRESH_CAMPAIGN_HERO_CLASS_SELECTION_UI_REVIEW_NOT_FULL_GAMEPLAY_OR_OWNER_ACCEPTANCE",
+  "fixtureNote": "Each run begins from a new isolated browser profile, selects every class through the real class-card UI, then enters Kingdom with the last selected class. No existing save is read or changed.",
+  "classes": [
+    "knight",
+    "ranger",
+    "warlock",
+    "mage",
+    "paladin",
+    "barbarian",
+    "necromancer",
+    "healer"
+  ],
+  "sizes": [
+    {
+      "width": 825,
+      "height": 375
+    },
+    {
+      "width": 933,
+      "height": 424
+    },
+    {
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "runs": [
+    {
+      "view": "hero",
+      "viewport": [
+        825,
+        375
+      ],
+      "documentSize": [
+        825,
+        375
+      ],
+      "cardChoiceOpen": "true",
+      "cards": [
+        {
+          "id": "knight",
+          "label": "Knight",
+          "visibleName": "Knight",
+          "nameVisible": true,
+          "current": true,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 16,
+            "y": 79,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/mock-led-20261016/bodies/eras/class-knight-ancient.png",
+            "loaded": true,
+            "dimensions": [
+              578,
+              1472
+            ],
+            "className": "portrait-body-crop"
+          }
+        },
+        {
+          "id": "ranger",
+          "label": "Ranger",
+          "visibleName": "Ranger",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 159,
+            "y": 79,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-ranger.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "warlock",
+          "label": "Warlock",
+          "visibleName": "Warlock",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 16,
+            "y": 133,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-warlock.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "mage",
+          "label": "Mage",
+          "visibleName": "Mage",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 159,
+            "y": 133,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-mage.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "paladin",
+          "label": "Paladin",
+          "visibleName": "Paladin",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 16,
+            "y": 187,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-paladin.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "barbarian",
+          "label": "Barbarian",
+          "visibleName": "Barbarian",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 159,
+            "y": 187,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-barbarian.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "necromancer",
+          "label": "Necromancer",
+          "visibleName": "Necromancer",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 16,
+            "y": 241,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-necromancer.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "healer",
+          "label": "Healer",
+          "visibleName": "Healer",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 159,
+            "y": 241,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-healer.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        }
+      ],
+      "enterWithin": true,
+      "screenshot": "qa\\game-completion-20261020\\visual-review\\hero-class-roster-live\\hero-class-roster-825x375.png",
+      "selectionRuns": [
+        {
+          "classId": "knight",
+          "selected": true
+        },
+        {
+          "classId": "ranger",
+          "selected": true
+        },
+        {
+          "classId": "warlock",
+          "selected": true
+        },
+        {
+          "classId": "mage",
+          "selected": true
+        },
+        {
+          "classId": "paladin",
+          "selected": true
+        },
+        {
+          "classId": "barbarian",
+          "selected": true
+        },
+        {
+          "classId": "necromancer",
+          "selected": true
+        },
+        {
+          "classId": "healer",
+          "selected": true
+        }
+      ],
+      "finalClass": "healer",
+      "entry": {
+        "view": "kingdom",
+        "heroClass": "healer",
+        "enteredValley": true
+      },
+      "errors": [],
+      "failedResponses": [],
+      "allCardsWithin": true,
+      "allCardCentersHit": true,
+      "allClassNamesVisible": true,
+      "allTargetsAtLeast48": true,
+      "allPortraitImagesLoaded": true,
+      "allClassesSelectable": true,
+      "noDocumentOverflow": true
+    },
+    {
+      "view": "hero",
+      "viewport": [
+        933,
+        424
+      ],
+      "documentSize": [
+        933,
+        424
+      ],
+      "cardChoiceOpen": "true",
+      "cards": [
+        {
+          "id": "knight",
+          "label": "Knight",
+          "visibleName": "Knight",
+          "nameVisible": true,
+          "current": true,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 16,
+            "y": 103,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/mock-led-20261016/bodies/eras/class-knight-ancient.png",
+            "loaded": true,
+            "dimensions": [
+              578,
+              1472
+            ],
+            "className": "portrait-body-crop"
+          }
+        },
+        {
+          "id": "ranger",
+          "label": "Ranger",
+          "visibleName": "Ranger",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 159,
+            "y": 103,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-ranger.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "warlock",
+          "label": "Warlock",
+          "visibleName": "Warlock",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 16,
+            "y": 157,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-warlock.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "mage",
+          "label": "Mage",
+          "visibleName": "Mage",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 159,
+            "y": 157,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-mage.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "paladin",
+          "label": "Paladin",
+          "visibleName": "Paladin",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 16,
+            "y": 211,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-paladin.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "barbarian",
+          "label": "Barbarian",
+          "visibleName": "Barbarian",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 159,
+            "y": 211,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-barbarian.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "necromancer",
+          "label": "Necromancer",
+          "visibleName": "Necromancer",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 16,
+            "y": 265,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-necromancer.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "healer",
+          "label": "Healer",
+          "visibleName": "Healer",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 159,
+            "y": 265,
+            "width": 137,
+            "height": 48
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-healer.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        }
+      ],
+      "enterWithin": true,
+      "screenshot": "qa\\game-completion-20261020\\visual-review\\hero-class-roster-live\\hero-class-roster-933x424.png",
+      "selectionRuns": [
+        {
+          "classId": "knight",
+          "selected": true
+        },
+        {
+          "classId": "ranger",
+          "selected": true
+        },
+        {
+          "classId": "warlock",
+          "selected": true
+        },
+        {
+          "classId": "mage",
+          "selected": true
+        },
+        {
+          "classId": "paladin",
+          "selected": true
+        },
+        {
+          "classId": "barbarian",
+          "selected": true
+        },
+        {
+          "classId": "necromancer",
+          "selected": true
+        },
+        {
+          "classId": "healer",
+          "selected": true
+        }
+      ],
+      "finalClass": "healer",
+      "entry": {
+        "view": "kingdom",
+        "heroClass": "healer",
+        "enteredValley": true
+      },
+      "errors": [],
+      "failedResponses": [],
+      "allCardsWithin": true,
+      "allCardCentersHit": true,
+      "allClassNamesVisible": true,
+      "allTargetsAtLeast48": true,
+      "allPortraitImagesLoaded": true,
+      "allClassesSelectable": true,
+      "noDocumentOverflow": true
+    },
+    {
+      "view": "hero",
+      "viewport": [
+        1280,
+        720
+      ],
+      "documentSize": [
+        1280,
+        720
+      ],
+      "cardChoiceOpen": "true",
+      "cards": [
+        {
+          "id": "knight",
+          "label": "Knight",
+          "visibleName": "Knight",
+          "nameVisible": true,
+          "current": true,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 24,
+            "y": 236,
+            "width": 136,
+            "height": 56
+          },
+          "image": {
+            "src": "assets/derivatives/mock-led-20261016/bodies/eras/class-knight-ancient.png",
+            "loaded": true,
+            "dimensions": [
+              578,
+              1472
+            ],
+            "className": "portrait-body-crop"
+          }
+        },
+        {
+          "id": "ranger",
+          "label": "Ranger",
+          "visibleName": "Ranger",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 168,
+            "y": 236,
+            "width": 136,
+            "height": 56
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-ranger.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "warlock",
+          "label": "Warlock",
+          "visibleName": "Warlock",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 24,
+            "y": 300,
+            "width": 136,
+            "height": 56
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-warlock.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "mage",
+          "label": "Mage",
+          "visibleName": "Mage",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 168,
+            "y": 300,
+            "width": 136,
+            "height": 56
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-mage.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "paladin",
+          "label": "Paladin",
+          "visibleName": "Paladin",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 24,
+            "y": 364,
+            "width": 136,
+            "height": 56
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-paladin.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "barbarian",
+          "label": "Barbarian",
+          "visibleName": "Barbarian",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 168,
+            "y": 364,
+            "width": 136,
+            "height": 56
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-barbarian.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "necromancer",
+          "label": "Necromancer",
+          "visibleName": "Necromancer",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 24,
+            "y": 428,
+            "width": 136,
+            "height": 56
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-necromancer.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        },
+        {
+          "id": "healer",
+          "label": "Healer",
+          "visibleName": "Healer",
+          "nameVisible": true,
+          "current": false,
+          "within": true,
+          "minimumTarget": true,
+          "centerReceivesInput": true,
+          "bounds": {
+            "x": 168,
+            "y": 428,
+            "width": 136,
+            "height": 56
+          },
+          "image": {
+            "src": "assets/derivatives/portraits/portrait-ancient-healer.png",
+            "loaded": true,
+            "dimensions": [
+              512,
+              512
+            ],
+            "className": ""
+          }
+        }
+      ],
+      "enterWithin": true,
+      "screenshot": "qa\\game-completion-20261020\\visual-review\\hero-class-roster-live\\hero-class-roster-1280x720.png",
+      "selectionRuns": [
+        {
+          "classId": "knight",
+          "selected": true
+        },
+        {
+          "classId": "ranger",
+          "selected": true
+        },
+        {
+          "classId": "warlock",
+          "selected": true
+        },
+        {
+          "classId": "mage",
+          "selected": true
+        },
+        {
+          "classId": "paladin",
+          "selected": true
+        },
+        {
+          "classId": "barbarian",
+          "selected": true
+        },
+        {
+          "classId": "necromancer",
+          "selected": true
+        },
+        {
+          "classId": "healer",
+          "selected": true
+        }
+      ],
+      "finalClass": "healer",
+      "entry": {
+        "view": "kingdom",
+        "heroClass": "healer",
+        "enteredValley": true
+      },
+      "errors": [],
+      "failedResponses": [],
+      "allCardsWithin": true,
+      "allCardCentersHit": true,
+      "allClassNamesVisible": true,
+      "allTargetsAtLeast48": true,
+      "allPortraitImagesLoaded": true,
+      "allClassesSelectable": true,
+      "noDocumentOverflow": true
+    }
+  ],
+  "result": "FOCUSED PASS",
+  "wholeGame": "INCOMPLETE"
+}

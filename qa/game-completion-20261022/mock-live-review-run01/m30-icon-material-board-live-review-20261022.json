@@ -1,0 +1,78 @@
+{
+  "reviewId": "M30-icon-material-board-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/30-icon-material-board.jpg",
+    "sha256": "9E927748289178EDC5D2CE132AD4A6A053051DC976DF1D7D2DFEE990CC40B1D3",
+    "dimensions": [
+      1376,
+      768
+    ],
+    "role": "supporting material and icon style board"
+  },
+  "status": "PARTIAL_ICON_CATEGORIES_PRESENT_MATERIAL_AND_HIERARCHY_MISMATCH",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "naturalCampaignState": true,
+    "slot1Touched": false
+  },
+  "screens": [
+    {
+      "surface": "Story Quests",
+      "viewportCss": [
+        1280,
+        720
+      ],
+      "reviewedThroughApprovedCUA": true
+    },
+    {
+      "surface": "Army",
+      "viewportCss": [
+        1280,
+        720
+      ],
+      "reviewedThroughApprovedCUA": true,
+      "roster": "4 / 4 formations",
+      "codex": "eight visible creature entries",
+      "noRecruitmentActionInvoked": true
+    }
+  ],
+  "visualFindings": [
+    "M30 presents four physical resource subjects—food, logs, stone and coins—plus raised bronze/steel circular and square icon tiles with dimensional materials.",
+    "The live resource strip exposes Food, Wood, Stone and Gold symbols and amounts, so the categories are present. In the live 1280 x 720 view the symbols are very small, low-detail glyphs inside compact dark chips; they do not reproduce the board's realistic material objects.",
+    "The live Army screen has circular creature portraits, dark rectangular roster cards, round navigation controls and square-like Codex tiles. Those silhouettes loosely echo the board, while the live icons appear muted and less dimensional than its raised metal-and-stone treatments.",
+    "The live Army and Story action areas rely mainly on text labels. The board's distinct structure, trade, siege, map and equipment pictograms were not matched one by one across all game surfaces in this review.",
+    "This review is partial: the reference is a style/material sheet rather than one complete gameplay-screen composition, and only Story and Army were compared. It does not establish that every referenced icon is absent from other screens."
+  ],
+  "evidence": {
+    "referenceDimensionsAndHashIndependentlyChecked": true,
+    "liveScreenshotObservedThroughApprovedCUA": true,
+    "liveScreenshotRetained": false,
+    "liveScreenshotViewportCss": [
+      1280,
+      720
+    ],
+    "liveScreenshotHash": null,
+    "liveObservedArmyState": [
+      "Medieval Age · day 4 · storm",
+      "Food 2715",
+      "Wood 4373",
+      "Stone 4007",
+      "Gold 12866",
+      "Your army · 4 / 4 formations"
+    ],
+    "noRecruitmentOrSaveActionInvoked": true,
+    "sourceOrTestChanges": false,
+    "ownerAccepted": false
+  },
+  "open": [
+    "Inventory and visually compare every current production resource, navigation, structure, trade, siege, equipment and action icon against the individual M30 board symbols.",
+    "Review the relevant Kingdom, Adventure, Hero, Army and War screens at exact 825 x 375, 933 x 424 and 1280 x 720 sizes, retaining captures and accessible-name evidence.",
+    "Repair low-detail or materially mismatched icon treatments and recheck their semantic identity, contrast, scale, accessibility names and mock composition.",
+    "Complete the remaining M01-M30 and J01-J18 gates, independent desktop review, final package, device QA and owner acceptance."
+  ]
+}

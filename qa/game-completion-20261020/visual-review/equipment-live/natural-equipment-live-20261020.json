@@ -1,0 +1,106 @@
+{
+  "recordedAt": "2026-10-20T01:08:00.257Z",
+  "classification": "FRESH_UI_JOURNEY_CONTROLLED_BROWSER_CLOCK",
+  "journey": "new campaign -> build Quarry and Armory -> advance the browser clock for legal production -> forge weapon -> compare and equip -> reload -> verify equipped weapon on the Adventure rider",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "checks": {
+    "quarry": {
+      "level": 1,
+      "resources": {
+        "food": 250,
+        "wood": 205,
+        "stone": 145.28595,
+        "gold": 150
+      },
+      "rate": 0.35
+    },
+    "armory": {
+      "level": 1,
+      "resources": {
+        "food": 250,
+        "wood": 85,
+        "stone": 26.68594999999998,
+        "gold": 70
+      }
+    },
+    "production": {
+      "stoneAvailable": 61.685949999999416,
+      "sufficientForForge": true,
+      "controlledClockAdvanceMs": 100000
+    },
+    "forged": {
+      "item": {
+        "id": "item-955c9e43-c412-4b28-a657-ac31c14dea9c",
+        "kind": "gear",
+        "slot": "weapon",
+        "age": 0,
+        "quality": 0
+      },
+      "resources": {
+        "food": 250,
+        "wood": 5,
+        "stone": 1.8266499999994181,
+        "gold": 0
+      }
+    },
+    "equipped": {
+      "itemId": "item-955c9e43-c412-4b28-a657-ac31c14dea9c",
+      "slot": "weapon",
+      "quality": 0,
+      "inventoryNoLongerContainsItem": true,
+      "bodyWearAppearance": "attached-asset",
+      "itemLayerCount": 1,
+      "wearLayerProbe": {
+        "href": "assets/derivatives/worn-gear-20261018/flint-club-stone.png",
+        "localBox": [
+          -103.86,
+          -63.92,
+          133.16,
+          88.77
+        ],
+        "screenRect": [
+          400.28,
+          167.81,
+          60.86,
+          40.57
+        ],
+        "opacity": "1",
+        "visibility": "visible"
+      }
+    },
+    "reload": {
+      "view": "home",
+      "equippedWeapon": "item-955c9e43-c412-4b28-a657-ac31c14dea9c",
+      "slot": "weapon",
+      "inventoryCount": 0
+    },
+    "adventureRider": {
+      "view": "adventure",
+      "appearance": "attached-asset",
+      "layerCount": 1,
+      "genericWeaponJointCount": 0,
+      "href": "assets/derivatives/worn-gear-20261018/flint-club-stone.png"
+    },
+    "desktop": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "wornLayerCount": 1,
+      "bodyRect": {
+        "x": 513.2386474609375,
+        "y": 77.25,
+        "width": 223.474365234375,
+        "height": 569.125
+      }
+    }
+  },
+  "screenshots": {
+    "forgeWeapon": "qa\\game-completion-20261020\\visual-review\\equipment-live\\forge-weapon-825x375.png",
+    "heroWeaponPhone": "qa\\game-completion-20261020\\visual-review\\equipment-live\\hero-weapon-equipped-825x375.png",
+    "adventureRider": "qa\\game-completion-20261020\\visual-review\\equipment-live\\hero-mounted-weapon-825x375.png",
+    "heroWeaponDesktop": "qa\\game-completion-20261020\\visual-review\\equipment-live\\hero-weapon-equipped-1280x720.png"
+  },
+  "passed": true
+}

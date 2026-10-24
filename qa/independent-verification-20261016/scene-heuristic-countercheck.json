@@ -1,0 +1,1575 @@
+{
+  "method": "Recompute the producer edge heuristic on BOTH original and runtime copy. This heuristic is not physical or visual acceptance.",
+  "beforePass": 0,
+  "displayPass": 32,
+  "rows": [
+    {
+      "mode": "kingdom",
+      "age": "stone",
+      "changedPixels": 604,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05716,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/01-kingdom-terrain-stone.png",
+        "sha256": "6cb13e0d4deaf2924a1b089d57356c973b4998621e59a66a8d3edca1b03daad1",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 50,
+          "aligned": 2,
+          "agreement": 0.04,
+          "controlAgreement": 0.16,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 3,
+          "agreement": 0.0273,
+          "controlAgreement": 0.1,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/kingdom-stone.png",
+        "sha256": "ca4b03b68f70245a42cf863d827d77211708c8b09a939fc2265f01de19b54fa2",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 50,
+          "aligned": 50,
+          "agreement": 1.0,
+          "controlAgreement": 0.16,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "kingdom",
+      "age": "bronze",
+      "changedPixels": 604,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05716,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/02-kingdom-terrain-bronze.png",
+        "sha256": "49f13640f0d3f1b44769606ae541e8f67bd34d861dc0052e6bd69af7342230c1",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 50,
+          "aligned": 10,
+          "agreement": 0.2,
+          "controlAgreement": 0.26,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 0,
+          "agreement": 0.0,
+          "controlAgreement": 0.0545,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/kingdom-bronze.png",
+        "sha256": "565f43c60ac63214956bff89e7800a0226ddf3f063243efd1764e73c7de023e9",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 50,
+          "aligned": 50,
+          "agreement": 1.0,
+          "controlAgreement": 0.26,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.0545,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "kingdom",
+      "age": "iron",
+      "changedPixels": 604,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05716,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/03-kingdom-terrain-iron.png",
+        "sha256": "a05358dba5c543bdde5d17d0ad65aa59b24e8afc6705d95cadfd002436df8fb9",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 50,
+          "aligned": 7,
+          "agreement": 0.14,
+          "controlAgreement": 0.22,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 2,
+          "agreement": 0.0182,
+          "controlAgreement": 0.1455,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/kingdom-iron.png",
+        "sha256": "f2bc9b151b89b78c1032db313114bc0c9852870c55a99a3857c424c3efb9c3c5",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 50,
+          "aligned": 50,
+          "agreement": 1.0,
+          "controlAgreement": 0.22,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1455,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "kingdom",
+      "age": "medieval",
+      "changedPixels": 604,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05716,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/04-kingdom-terrain-medieval.png",
+        "sha256": "3eea9e8d20e1f4648f95eec2ae735079b36287a976a6b4f25ae94be4f48b7453",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 50,
+          "aligned": 2,
+          "agreement": 0.04,
+          "controlAgreement": 0.28,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 5,
+          "agreement": 0.0455,
+          "controlAgreement": 0.0909,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/kingdom-medieval.png",
+        "sha256": "8569b3369d5468f16ed5791efeb880381f812c279e613f96e3eccc707414da29",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 50,
+          "aligned": 50,
+          "agreement": 1.0,
+          "controlAgreement": 0.28,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.0909,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "kingdom",
+      "age": "gunpowder",
+      "changedPixels": 604,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05716,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/05-kingdom-terrain-gunpowder.png",
+        "sha256": "9aec2f273a388c3061d9c1237be4590d678c34c7962c366c7944db38c6228879",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 50,
+          "aligned": 10,
+          "agreement": 0.2,
+          "controlAgreement": 0.04,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 0,
+          "agreement": 0.0,
+          "controlAgreement": 0.1182,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/kingdom-gunpowder.png",
+        "sha256": "b11013a75cf249a3d458aabe312dbbe2827f419c705348df7c249a8bca3eb77a",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 50,
+          "aligned": 50,
+          "agreement": 1.0,
+          "controlAgreement": 0.04,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1182,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "kingdom",
+      "age": "industrial",
+      "changedPixels": 604,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05716,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/06-kingdom-terrain-industrial.png",
+        "sha256": "85440ec67f04e90b144f1f6ecc281fc1b898b584c38deec0b8e512e7f2d512d6",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 50,
+          "aligned": 5,
+          "agreement": 0.1,
+          "controlAgreement": 0.38,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 3,
+          "agreement": 0.0273,
+          "controlAgreement": 0.1091,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/kingdom-industrial.png",
+        "sha256": "9e9240b0c8dea0ec4f74b55dc13a69ae0b704f2131af3dd987d651a326fd2f7c",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 50,
+          "aligned": 50,
+          "agreement": 1.0,
+          "controlAgreement": 0.38,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1091,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "kingdom",
+      "age": "modern",
+      "changedPixels": 604,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05716,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/07-kingdom-terrain-modern.png",
+        "sha256": "c53704f6a8cb8e6586d0fe0c26b5e9af172f9d3d8cba6489affe2c1fae5cc926",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 50,
+          "aligned": 10,
+          "agreement": 0.2,
+          "controlAgreement": 0.24,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 0,
+          "agreement": 0.0,
+          "controlAgreement": 0.0455,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/kingdom-modern.png",
+        "sha256": "10eeaedfe6bb5d32078777e64cf57940e181aef6b57787b89c3cd03b614d80fa",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 50,
+          "aligned": 50,
+          "agreement": 1.0,
+          "controlAgreement": 0.24,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.0455,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "kingdom",
+      "age": "future",
+      "changedPixels": 604,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05716,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/08-kingdom-terrain-future.png",
+        "sha256": "df5e35eeca4df63ec2fd636dfe4d7522b6a33f805ff7c4e84aee321423f6fd8d",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal bank.",
+        "roads": {
+          "samples": 50,
+          "aligned": 25,
+          "agreement": 0.5,
+          "controlAgreement": 0.24,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 7,
+          "agreement": 0.0636,
+          "controlAgreement": 0.1091,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/kingdom-future.png",
+        "sha256": "030cdd26c0fbdd52a57208bb0284d6aa685715b106f342389c51bc541bdbaca8",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 50,
+          "aligned": 50,
+          "agreement": 1.0,
+          "controlAgreement": 0.24,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1091,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "adventure",
+      "age": "stone",
+      "changedPixels": 1048,
+      "totalPixels": 1056768,
+      "changedPercent": 0.09917,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/17-adventure-terrain.png",
+        "sha256": "d7b85885045bdedca6f0d203a56f1a57786074afb8591f6a72cefbf75bd7faab",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 174,
+          "aligned": 9,
+          "agreement": 0.0517,
+          "controlAgreement": 0.0632,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 1,
+          "agreement": 0.0091,
+          "controlAgreement": 0.0636,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/adventure-stone.png",
+        "sha256": "44e972935e798d34cc3d819d51df9386b01955e8d4dbf36afea40184035164f6",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 174,
+          "aligned": 165,
+          "agreement": 0.9483,
+          "controlAgreement": 0.0632,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.0636,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "adventure",
+      "age": "bronze",
+      "changedPixels": 1048,
+      "totalPixels": 1056768,
+      "changedPercent": 0.09917,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/06-adventure-terrain-plains.png",
+        "sha256": "0f0b91561a84029bd333924fd7560e59fbc6c4704079c54a1b2673348f24f2aa",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 174,
+          "aligned": 13,
+          "agreement": 0.0747,
+          "controlAgreement": 0.2069,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 10,
+          "agreement": 0.0909,
+          "controlAgreement": 0.1091,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/adventure-bronze.png",
+        "sha256": "28d9e36c62f61630c17b7224168b37b687284bbfdcb2057b9e67b9837792de31",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 174,
+          "aligned": 165,
+          "agreement": 0.9483,
+          "controlAgreement": 0.2069,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1091,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "adventure",
+      "age": "iron",
+      "changedPixels": 1048,
+      "totalPixels": 1056768,
+      "changedPercent": 0.09917,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/07-adventure-terrain-hills.png",
+        "sha256": "d7341f4c346f63f54b36605428491d2eb9e6c6e57da8b72c94a22d3744c10028",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 174,
+          "aligned": 17,
+          "agreement": 0.0977,
+          "controlAgreement": 0.069,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 5,
+          "agreement": 0.0455,
+          "controlAgreement": 0.1818,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/adventure-iron.png",
+        "sha256": "3090dbcb43a8f344026b6416ce58e3a5790ee7ba746d51d3892c84cf6deb3a5d",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 174,
+          "aligned": 165,
+          "agreement": 0.9483,
+          "controlAgreement": 0.069,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1818,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "adventure",
+      "age": "medieval",
+      "changedPixels": 1048,
+      "totalPixels": 1056768,
+      "changedPercent": 0.09917,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/08-adventure-terrain-swamp.png",
+        "sha256": "7b63336ba39b633efa60d8f90e2f731c18f59a2755a72b025b661b68e9a8493e",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 174,
+          "aligned": 19,
+          "agreement": 0.1092,
+          "controlAgreement": 0.2644,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 6,
+          "agreement": 0.0545,
+          "controlAgreement": 0.0727,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/adventure-medieval.png",
+        "sha256": "f6a94503101465955550aab8f686ca17a1a3caffbdba2a8f95050b2c28ac83e4",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 174,
+          "aligned": 165,
+          "agreement": 0.9483,
+          "controlAgreement": 0.2644,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.0727,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "adventure",
+      "age": "gunpowder",
+      "changedPixels": 1048,
+      "totalPixels": 1056768,
+      "changedPercent": 0.09917,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/09-adventure-terrain-desert.png",
+        "sha256": "face19a6f2f5cf492c0a037246d95195a20df1f9a50759cac402dd99bf19b427",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 174,
+          "aligned": 7,
+          "agreement": 0.0402,
+          "controlAgreement": 0.0517,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 7,
+          "agreement": 0.0636,
+          "controlAgreement": 0.1182,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/adventure-gunpowder.png",
+        "sha256": "5a23022b6cc2029b9d59981f17ff6fc7eb80dd6e9f3ae4df0096e9a8c0308922",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 174,
+          "aligned": 165,
+          "agreement": 0.9483,
+          "controlAgreement": 0.0517,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1182,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "adventure",
+      "age": "industrial",
+      "changedPixels": 1048,
+      "totalPixels": 1056768,
+      "changedPercent": 0.09917,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/10-adventure-terrain-snow.png",
+        "sha256": "7a9615b285ef6dff89628fa874e467c6e21e8f591c8e90755a2cdd984c73ff46",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 174,
+          "aligned": 15,
+          "agreement": 0.0862,
+          "controlAgreement": 0.069,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 12,
+          "agreement": 0.1091,
+          "controlAgreement": 0.0818,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/adventure-industrial.png",
+        "sha256": "8a6e4ad2d52a002b289bbf7cae6833a4bdaa0802290a6b35f5e2194ec956ac43",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 174,
+          "aligned": 165,
+          "agreement": 0.9483,
+          "controlAgreement": 0.069,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.0818,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "adventure",
+      "age": "modern",
+      "changedPixels": 1048,
+      "totalPixels": 1056768,
+      "changedPercent": 0.09917,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/11-adventure-terrain-waste.png",
+        "sha256": "097c0dca278e541d9845378ce4275b4b5cda0ff4cb94eb25c4008252d578e7a8",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 174,
+          "aligned": 13,
+          "agreement": 0.0747,
+          "controlAgreement": 0.1552,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 8,
+          "agreement": 0.0727,
+          "controlAgreement": 0.0727,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/adventure-modern.png",
+        "sha256": "5392b682edc7b95889c9231223b957fb0b9de675daaac286baa0267fd5816b9b",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 174,
+          "aligned": 165,
+          "agreement": 0.9483,
+          "controlAgreement": 0.1552,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.0727,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "adventure",
+      "age": "future",
+      "changedPixels": 1048,
+      "totalPixels": 1056768,
+      "changedPercent": 0.09917,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/12-adventure-terrain-ruins.png",
+        "sha256": "64a0e78027abe94cd8f7c9c529d32500d60bf82f2509681b46fac42c227a6107",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 174,
+          "aligned": 14,
+          "agreement": 0.0805,
+          "controlAgreement": 0.1149,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 7,
+          "agreement": 0.0636,
+          "controlAgreement": 0.1545,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/adventure-future.png",
+        "sha256": "49e938e12949a8a4f44cfb308be6e4121159dc5f47fbac1de0ff034445928467",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 174,
+          "aligned": 165,
+          "agreement": 0.9483,
+          "controlAgreement": 0.1149,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 110,
+          "aligned": 106,
+          "agreement": 0.9636,
+          "controlAgreement": 0.1545,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "tactical",
+      "age": "stone",
+      "changedPixels": 544,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05148,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/18-tactical-terrain.png",
+        "sha256": "13b7c602053e026039c5f04fe692a9073d17cd96da12af3bfdec2da668224646",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 42,
+          "aligned": 19,
+          "agreement": 0.4524,
+          "controlAgreement": 0.5238,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 1,
+          "agreement": 0.0111,
+          "controlAgreement": 0.0778,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/tactical-stone.png",
+        "sha256": "92eff62cba995921d0f92a03d3316494eb08bfccd0524b6652f54b3f06d5f181",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 42,
+          "aligned": 38,
+          "agreement": 0.9048,
+          "controlAgreement": 0.5238,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 86,
+          "agreement": 0.9556,
+          "controlAgreement": 0.0778,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "tactical",
+      "age": "bronze",
+      "changedPixels": 544,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05148,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/13-tactical-terrain-plains.png",
+        "sha256": "e5dc2c794ef9fc921df75a5969d3e1fc08ede8987379cd49c4cbe8747bc70ce8",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 42,
+          "aligned": 11,
+          "agreement": 0.2619,
+          "controlAgreement": 0.1429,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 1,
+          "agreement": 0.0111,
+          "controlAgreement": 0.0333,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/tactical-bronze.png",
+        "sha256": "20e1014295de3665d098f927a1da2720c98dd5a42c30ac035badae87c7831482",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 42,
+          "aligned": 38,
+          "agreement": 0.9048,
+          "controlAgreement": 0.1429,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 86,
+          "agreement": 0.9556,
+          "controlAgreement": 0.0333,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "tactical",
+      "age": "iron",
+      "changedPixels": 544,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05148,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/14-tactical-terrain-hills.png",
+        "sha256": "fe1d2f26a4dcb0cd07970e441ff4946ddd21ccbcaa75bca3574ec45407168365",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 42,
+          "aligned": 17,
+          "agreement": 0.4048,
+          "controlAgreement": 0.5238,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 4,
+          "agreement": 0.0444,
+          "controlAgreement": 0.1556,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/tactical-iron.png",
+        "sha256": "613f66be01ed207ccada6f99afef9cfcb4365b421dc0784ce2f8702cacce2c0e",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 42,
+          "aligned": 38,
+          "agreement": 0.9048,
+          "controlAgreement": 0.5238,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 86,
+          "agreement": 0.9556,
+          "controlAgreement": 0.1556,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "tactical",
+      "age": "medieval",
+      "changedPixels": 544,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05148,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/15-tactical-terrain-swamp.png",
+        "sha256": "f7690dad04255e3085a0830cde7d6fad4a9e7f460c06416e543595a5cbb5d7b1",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 42,
+          "aligned": 4,
+          "agreement": 0.0952,
+          "controlAgreement": 0.0714,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 0,
+          "agreement": 0.0,
+          "controlAgreement": 0.0444,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/tactical-medieval.png",
+        "sha256": "88f86d5f9223ca4d6250b56003a24b809214d7603ef035313c7b429db1724078",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 42,
+          "aligned": 38,
+          "agreement": 0.9048,
+          "controlAgreement": 0.0714,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 86,
+          "agreement": 0.9556,
+          "controlAgreement": 0.0444,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "tactical",
+      "age": "gunpowder",
+      "changedPixels": 544,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05148,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/16-tactical-terrain-desert.png",
+        "sha256": "ad6b64e774530faebd4bda061e8966e99934a7ed35b52d7aca86d587d876a21c",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 42,
+          "aligned": 10,
+          "agreement": 0.2381,
+          "controlAgreement": 0.0476,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 5,
+          "agreement": 0.0556,
+          "controlAgreement": 0.2,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/tactical-gunpowder.png",
+        "sha256": "7efec5a32f0b1f641383e8f7f14a9b0ff9123973c24f213fce54d52b306169e7",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 42,
+          "aligned": 38,
+          "agreement": 0.9048,
+          "controlAgreement": 0.0476,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 86,
+          "agreement": 0.9556,
+          "controlAgreement": 0.2,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "tactical",
+      "age": "industrial",
+      "changedPixels": 544,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05148,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/17-tactical-terrain-snow.png",
+        "sha256": "67a47456a41e35dcad4bd37dbd2b852ad9c790da99c2ded92ddac11593fa19a1",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 42,
+          "aligned": 4,
+          "agreement": 0.0952,
+          "controlAgreement": 0.4286,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 7,
+          "agreement": 0.0778,
+          "controlAgreement": 0.1,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/tactical-industrial.png",
+        "sha256": "588065da0dbc798da328e35d5a9d09313641b273a0cfec1c29d32e7bc0557be8",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 42,
+          "aligned": 38,
+          "agreement": 0.9048,
+          "controlAgreement": 0.4286,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 86,
+          "agreement": 0.9556,
+          "controlAgreement": 0.1,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "tactical",
+      "age": "modern",
+      "changedPixels": 544,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05148,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/18-tactical-terrain-waste.png",
+        "sha256": "c7300c3824e935913f5c44fdc5e2143064b0bfb59601b913850dc13212dd180a",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 42,
+          "aligned": 9,
+          "agreement": 0.2143,
+          "controlAgreement": 0.3571,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 3,
+          "agreement": 0.0333,
+          "controlAgreement": 0.1,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/tactical-modern.png",
+        "sha256": "5078eea85aafb0bfe9081094a8422b5f7e76ad02ba6903b92583cad9167dd382",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 42,
+          "aligned": 38,
+          "agreement": 0.9048,
+          "controlAgreement": 0.3571,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 86,
+          "agreement": 0.9556,
+          "controlAgreement": 0.1,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "tactical",
+      "age": "future",
+      "changedPixels": 544,
+      "totalPixels": 1056768,
+      "changedPercent": 0.05148,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/19-tactical-terrain-ruins.png",
+        "sha256": "fd7e61df00ea74f661dcae72be993ede354577628e3034dc9e7e10f9dd7f2630",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 42,
+          "aligned": 3,
+          "agreement": 0.0714,
+          "controlAgreement": 0.0714,
+          "localized": false
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 2,
+          "agreement": 0.0222,
+          "controlAgreement": 0.1333,
+          "localized": false
+        }
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/tactical-future.png",
+        "sha256": "f72778d65597d712388e581ca1629af2dc7399a173ed563a3bbf4e33ba36cdba",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 42,
+          "aligned": 38,
+          "agreement": 0.9048,
+          "controlAgreement": 0.0714,
+          "localized": true
+        },
+        "lane": null,
+        "banks": {
+          "samples": 90,
+          "aligned": 86,
+          "agreement": 0.9556,
+          "controlAgreement": 0.1333,
+          "localized": true
+        }
+      }
+    },
+    {
+      "mode": "defense",
+      "age": "stone",
+      "changedPixels": 900,
+      "totalPixels": 1056768,
+      "changedPercent": 0.08517,
+      "before": {
+        "path": "assets/production/production-01-20261003/images/19-defense-terrain.png",
+        "sha256": "4399132dcd0cce9e1563e2e3525f0cc61b5b6a4368c268dd2ca3125d02aaae2a",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 141,
+          "aligned": 18,
+          "agreement": 0.1277,
+          "controlAgreement": 0.1489,
+          "localized": false
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 11,
+          "agreement": 0.0973,
+          "controlAgreement": 0.2035,
+          "localized": false
+        },
+        "banks": null
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/defense-stone.png",
+        "sha256": "9beecf526a7b074b74b5dfed6c3fcd9481530849878cc7ff1728d32befed4744",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 141,
+          "aligned": 141,
+          "agreement": 1.0,
+          "controlAgreement": 0.1489,
+          "localized": true
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 113,
+          "agreement": 1.0,
+          "controlAgreement": 0.2035,
+          "localized": true
+        },
+        "banks": null
+      }
+    },
+    {
+      "mode": "defense",
+      "age": "bronze",
+      "changedPixels": 900,
+      "totalPixels": 1056768,
+      "changedPercent": 0.08517,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/20-defense-terrain-plains.png",
+        "sha256": "74ae033202abdd569275cde5c4db117f0c4aa9d1d51b995e8a3529aef5f39c95",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 141,
+          "aligned": 7,
+          "agreement": 0.0496,
+          "controlAgreement": 0.1277,
+          "localized": false
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 4,
+          "agreement": 0.0354,
+          "controlAgreement": 0.115,
+          "localized": false
+        },
+        "banks": null
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/defense-bronze.png",
+        "sha256": "767c61e2e854a5c994c43ee399642db197b6dd6b289435ecf82b083c79cd7333",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 141,
+          "aligned": 141,
+          "agreement": 1.0,
+          "controlAgreement": 0.1277,
+          "localized": true
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 113,
+          "agreement": 1.0,
+          "controlAgreement": 0.115,
+          "localized": true
+        },
+        "banks": null
+      }
+    },
+    {
+      "mode": "defense",
+      "age": "iron",
+      "changedPixels": 900,
+      "totalPixels": 1056768,
+      "changedPercent": 0.08517,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/21-defense-terrain-hills.png",
+        "sha256": "85683199e550e019adfa557e6344fc11ec690cb075d99a2c25a8df70ac4d92bc",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 141,
+          "aligned": 10,
+          "agreement": 0.0709,
+          "controlAgreement": 0.1986,
+          "localized": false
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 10,
+          "agreement": 0.0885,
+          "controlAgreement": 0.1858,
+          "localized": false
+        },
+        "banks": null
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/defense-iron.png",
+        "sha256": "30dad8dfb44a19ca9136d115e6b9844cf789207284f45905625338a9d490f2e9",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 141,
+          "aligned": 141,
+          "agreement": 1.0,
+          "controlAgreement": 0.1986,
+          "localized": true
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 113,
+          "agreement": 1.0,
+          "controlAgreement": 0.1858,
+          "localized": true
+        },
+        "banks": null
+      }
+    },
+    {
+      "mode": "defense",
+      "age": "medieval",
+      "changedPixels": 900,
+      "totalPixels": 1056768,
+      "changedPercent": 0.08517,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/22-defense-terrain-swamp.png",
+        "sha256": "e6f9acb065d03e88a3d7c78f82671d4cd4c9054be99c064ef9b0867a753514cf",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 141,
+          "aligned": 18,
+          "agreement": 0.1277,
+          "controlAgreement": 0.1844,
+          "localized": false
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 14,
+          "agreement": 0.1239,
+          "controlAgreement": 0.2124,
+          "localized": false
+        },
+        "banks": null
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/defense-medieval.png",
+        "sha256": "e38e0289d8f5caa8b1aa8c50ba5b3c3ce4c4820ebcf1c8c01c9fdce1f8eec800",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 141,
+          "aligned": 141,
+          "agreement": 1.0,
+          "controlAgreement": 0.1844,
+          "localized": true
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 113,
+          "agreement": 1.0,
+          "controlAgreement": 0.2124,
+          "localized": true
+        },
+        "banks": null
+      }
+    },
+    {
+      "mode": "defense",
+      "age": "gunpowder",
+      "changedPixels": 900,
+      "totalPixels": 1056768,
+      "changedPercent": 0.08517,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/23-defense-terrain-desert.png",
+        "sha256": "ee719f87cd37f2a19e29041fc387fc394f5326d0e9043acb21e06310107ca4d3",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 141,
+          "aligned": 27,
+          "agreement": 0.1915,
+          "controlAgreement": 0.1064,
+          "localized": false
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 21,
+          "agreement": 0.1858,
+          "controlAgreement": 0.1062,
+          "localized": false
+        },
+        "banks": null
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/defense-gunpowder.png",
+        "sha256": "9c11bd97d9beb7f492888db2586706e4caee8a445a5a26f07c03d12afd3d4fa3",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 141,
+          "aligned": 141,
+          "agreement": 1.0,
+          "controlAgreement": 0.1064,
+          "localized": true
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 113,
+          "agreement": 1.0,
+          "controlAgreement": 0.1062,
+          "localized": true
+        },
+        "banks": null
+      }
+    },
+    {
+      "mode": "defense",
+      "age": "industrial",
+      "changedPixels": 900,
+      "totalPixels": 1056768,
+      "changedPercent": 0.08517,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/24-defense-terrain-snow.png",
+        "sha256": "b9baf2f8d31a329326f954de42badd025e3626658e0814dcb5a435c254ef28fe",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 141,
+          "aligned": 9,
+          "agreement": 0.0638,
+          "controlAgreement": 0.2908,
+          "localized": false
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 9,
+          "agreement": 0.0796,
+          "controlAgreement": 0.2832,
+          "localized": false
+        },
+        "banks": null
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/defense-industrial.png",
+        "sha256": "6f17926cb999a286b51ad7a41942dae88b48f299125e752cf39ce0b7536e91ae",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 141,
+          "aligned": 141,
+          "agreement": 1.0,
+          "controlAgreement": 0.2908,
+          "localized": true
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 113,
+          "agreement": 1.0,
+          "controlAgreement": 0.2832,
+          "localized": true
+        },
+        "banks": null
+      }
+    },
+    {
+      "mode": "defense",
+      "age": "modern",
+      "changedPixels": 900,
+      "totalPixels": 1056768,
+      "changedPercent": 0.08517,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/25-defense-terrain-waste.png",
+        "sha256": "369fc0142573387fd8341126501c53741ad13b4e207e35fa70081d63af862104",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 141,
+          "aligned": 12,
+          "agreement": 0.0851,
+          "controlAgreement": 0.1773,
+          "localized": false
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 14,
+          "agreement": 0.1239,
+          "controlAgreement": 0.1681,
+          "localized": false
+        },
+        "banks": null
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/defense-modern.png",
+        "sha256": "208ec3022a876670912aa3e982b56ca2ed2c36dc1578f4504aae29bc8160964c",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 141,
+          "aligned": 141,
+          "agreement": 1.0,
+          "controlAgreement": 0.1773,
+          "localized": true
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 113,
+          "agreement": 1.0,
+          "controlAgreement": 0.1681,
+          "localized": true
+        },
+        "banks": null
+      }
+    },
+    {
+      "mode": "defense",
+      "age": "future",
+      "changedPixels": 900,
+      "totalPixels": 1056768,
+      "changedPercent": 0.08517,
+      "before": {
+        "path": "assets/production/production-03-20261003/images/26-defense-terrain-ruins.png",
+        "sha256": "77c66e4ae0e19442811f43b0556bc30623ddb21faae954935e6d177c10962887",
+        "heuristicPass": false,
+        "reason": "The painting has no localized edge along the legal road.",
+        "roads": {
+          "samples": 141,
+          "aligned": 16,
+          "agreement": 0.1135,
+          "controlAgreement": 0.234,
+          "localized": false
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 12,
+          "agreement": 0.1062,
+          "controlAgreement": 0.1947,
+          "localized": false
+        },
+        "banks": null
+      },
+      "displayed": {
+        "path": "assets/derivatives/scene-edges-20261013/defense-future.png",
+        "sha256": "c65b1b4634f41d7d082db08a337077a94f5fe0468073cba73f3de85326991663",
+        "heuristicPass": true,
+        "reason": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+        "roads": {
+          "samples": 141,
+          "aligned": 141,
+          "agreement": 1.0,
+          "controlAgreement": 0.234,
+          "localized": true
+        },
+        "lane": {
+          "samples": 113,
+          "aligned": 113,
+          "agreement": 1.0,
+          "controlAgreement": 0.1947,
+          "localized": true
+        },
+        "banks": null
+      }
+    }
+  ]
+}

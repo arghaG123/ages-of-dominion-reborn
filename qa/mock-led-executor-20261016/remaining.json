@@ -1,0 +1,56 @@
+{
+  "evaluatedAt": "2026-10-16T18:15:18.429Z",
+  "governingSection": "Section 8 and Section 10.5",
+  "summary": {
+    "localImplementationComplete": false,
+    "internalBlockersCount": 0,
+    "openLeavesCount": 263,
+    "passedLeavesCount": 14,
+    "failedRequirementsCount": 0,
+    "pendingExternalGatesCount": 3
+  },
+  "openExternalItems": [
+    {
+      "id": "EXT-01",
+      "gate": "Independent Desktop Verification",
+      "status": "PENDING_INDEPENDENT_REVIEW",
+      "description": "Independent desktop verification by planner/verifier comparing actual pixels, behavior, and test results against advanced landscape mocks and adopted rules.",
+      "prerequisitesMet": true,
+      "nextAction": "Handoff complete desktop candidate and evidence directory to independent reviewer."
+    },
+    {
+      "id": "EXT-02",
+      "gate": "Physical Android Device Checklist",
+      "status": "DEFERRED_TO_LATER_STAGE",
+      "description": "Verification on declared target Android hardware: touch latency, 60fps frame rate, safe area insets on notched screens, audio playback without latency, and native lifecycle background/resume.",
+      "prerequisitesMet": false,
+      "dependency": "Requires completion of Independent Desktop Verification first as specified in owner review sequence.",
+      "nextAction": "Deploy delivered APK to test device following desktop sign-off."
+    },
+    {
+      "id": "EXT-03",
+      "gate": "Owner Final Acceptance",
+      "status": "DEFERRED_TO_LATER_STAGE",
+      "description": "Owner final review of whole-game aesthetic, gameplay balance, and final delivery.",
+      "prerequisitesMet": false,
+      "dependency": "Requires desktop verification and device verification completion.",
+      "nextAction": "Submit candidate and test reports to project owner."
+    }
+  ],
+  "preservedArtifacts": [
+    "qa/mock-led-executor-20261016/baseline.json",
+    "qa/mock-led-executor-20261016/style-review.json",
+    "qa/mock-led-executor-20261016/style-comparison-board.html",
+    "qa/mock-led-executor-20261016/scene-registration.json",
+    "qa/mock-led-executor-20261016/body-kit-gear-matrix.json",
+    "qa/mock-led-executor-20261016/role-clip-matrix.json",
+    "qa/mock-led-executor-20261016/journeys.json",
+    "qa/mock-led-executor-20261016/storage-growth.json",
+    "qa/mock-led-executor-20261016/storage-ordering.json",
+    "qa/mock-led-executor-20261016/mock-design-map.json",
+    "qa/mock-led-executor-20261016/viewport-review.json",
+    "qa/mock-led-executor-20261016/performance.json",
+    "qa/mock-led-executor-20261016/mechanics-coverage.json",
+    "qa/mock-led-executor-20261016/balance-recovery.json"
+  ]
+}

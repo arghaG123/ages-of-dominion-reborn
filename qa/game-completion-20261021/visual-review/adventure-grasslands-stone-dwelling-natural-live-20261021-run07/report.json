@@ -1,0 +1,289 @@
+{
+  "recordedAt": "2026-10-21T07:29:24.826Z",
+  "classification": "NATURAL_UI_GRASSLANDS_STONE_AGE_DWELLING_CLAIM_RELOAD_NOT_FULL_GAME_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh Stone Age Grasslands campaign -> build Barracks -> leave town -> preview/cancel full route -> commit legal route one visible step at a time with visible day restoration when needed -> on-foot dwelling arrival -> ask for fixed offer -> back/reopen -> save/reload -> claim five creatures -> verify once-only payment and reload roster",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "grasslands",
+    "layoutId": "grasslands-layout-13",
+    "start": [
+      8,
+      3
+    ],
+    "destination": [
+      4,
+      6
+    ],
+    "cost": 7,
+    "cells": [
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "routeBasis": "registered geometry and navigation rules used as read-only assertions; movement is committed one visible map step at a time",
+    "dayRestores": 1,
+    "steps": [
+      {
+        "from": [
+          8,
+          3
+        ],
+        "to": [
+          7,
+          3
+        ],
+        "cost": 1,
+        "movesBefore": 5,
+        "movesAfter": 4
+      },
+      {
+        "from": [
+          7,
+          3
+        ],
+        "to": [
+          6,
+          3
+        ],
+        "cost": 1,
+        "movesBefore": 4,
+        "movesAfter": 3
+      },
+      {
+        "from": [
+          6,
+          3
+        ],
+        "to": [
+          5,
+          3
+        ],
+        "cost": 1,
+        "movesBefore": 3,
+        "movesAfter": 2
+      },
+      {
+        "from": [
+          5,
+          3
+        ],
+        "to": [
+          4,
+          4
+        ],
+        "cost": 2,
+        "movesBefore": 2,
+        "movesAfter": 0
+      },
+      {
+        "from": [
+          4,
+          4
+        ],
+        "to": [
+          4,
+          5
+        ],
+        "cost": 1,
+        "movesBefore": 5,
+        "movesAfter": 4
+      },
+      {
+        "from": [
+          4,
+          5
+        ],
+        "to": [
+          4,
+          6
+        ],
+        "cost": 1,
+        "movesBefore": 4,
+        "movesAfter": 3
+      }
+    ],
+    "seedSamples": [
+      {
+        "seed": 1280415862,
+        "layoutId": "grasslands-layout-13",
+        "guardCells": [
+          "5,4",
+          "13,3"
+        ]
+      },
+      {
+        "seed": 1280415862,
+        "layoutId": "grasslands-layout-13",
+        "guardCells": [
+          "5,4",
+          "13,3"
+        ]
+      },
+      {
+        "seed": 1280415862,
+        "layoutId": "grasslands-layout-13",
+        "guardCells": [
+          "5,4",
+          "13,3"
+        ]
+      },
+      {
+        "seed": 1280415862,
+        "layoutId": "grasslands-layout-13",
+        "guardCells": [
+          "5,4",
+          "13,3"
+        ]
+      },
+      {
+        "seed": 1280415862,
+        "layoutId": "grasslands-layout-13",
+        "guardCells": [
+          "5,4",
+          "13,3"
+        ]
+      },
+      {
+        "seed": 1280415862,
+        "layoutId": "grasslands-layout-13",
+        "guardCells": [
+          "5,4",
+          "13,3"
+        ]
+      },
+      {
+        "seed": 1280415862,
+        "layoutId": "grasslands-layout-13",
+        "guardCells": [
+          "5,4",
+          "13,3"
+        ]
+      }
+    ],
+    "fullPreviewTitle": "7 needed · 5 left. Shorten route or end day.",
+    "lastStepState": {
+      "seed": 1280415862,
+      "pendingEncounter": null,
+      "cell": [
+        4,
+        6
+      ]
+    }
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [],
+  "campaignId": "campaign-5eb47446-f312-4437-a5e4-5fd279531160",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 8,
+    "y": 3,
+    "moves": 5,
+    "visited": [
+      "8,3"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 143,
+      "wood": 149,
+      "stone": 105,
+      "gold": 221
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 143,
+      "mineGold": 221
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "geometrySeed": 1280415862,
+  "geometryAnchors": {
+    "hero": [
+      8.5,
+      3.5
+    ],
+    "food": [
+      10.5,
+      4.5
+    ],
+    "wood": [
+      11.5,
+      6.5
+    ],
+    "stone": [
+      2.5,
+      1.5
+    ],
+    "gold": [
+      12.5,
+      1.5
+    ],
+    "guard-ruin": [
+      5.5,
+      4.5
+    ],
+    "guard-mine": [
+      13.5,
+      3.5
+    ]
+  },
+  "geometryGuardCells": [
+    "5,4",
+    "13,3"
+  ],
+  "cancel": {
+    "preservedPosition": [
+      8,
+      3
+    ],
+    "preservedMoves": 5
+  },
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: the visible site name does not overlap the on-foot traveler\n\ntrue !== false\n",
+  "failureStack": "AssertionError [ERR_ASSERTION]: the visible site name does not overlap the on-foot traveler\n\ntrue !== false\n\n    at file:///C:/dev/ages-of-dominion-reborn/qa/game-completion-20261021/visual-review/adventure-grasslands-stone-dwelling-natural-live-20261021.mjs:245:10"
+}

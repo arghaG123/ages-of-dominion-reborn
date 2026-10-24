@@ -1,8 +1,8 @@
 {
-  "version": "mode-scenes-v1",
-  "status": "EDGE_LOCALIZED_PASS",
-  "registration": "LOCAL_EDGE_ON_FROZEN_GEOMETRY",
-  "note": "Runtime files are local luminance-edge copies in assets/derivatives/scene-edges-20261013. Production paintings and legal cells are unchanged. qa/game-completion-20261013/scene-trace.json records 32 pass. Owner acceptance remains UNVERIFIED.",
+  "version": "mode-scenes-v2",
+  "status": "SOURCE_BOUND_PHYSICAL_TRACES",
+  "registration": "PHYSICAL_TRACES_ON_FROZEN_GEOMETRY",
+  "note": "Candidates, not visual acceptance. Stone Tactical has a source-bound native registration. All eight Adventure ages use cleaned terrain candidates; Gunpowder pairs its clean background with a contract-derived route layer, and Iron has one live route smoke check. Tactical Bronze, Iron, Gunpowder, Industrial and Modern plus Defense Stone, Bronze, Iron, Medieval, Gunpowder, Industrial, Modern and Future use clean scene candidates with isolated runtime previews at 825x375, 933x424 and 1280x720. Full physical site/route trace across ages and the other age-mode scene failures remain open. Frozen game geometry and legal cells stay unchanged. Owner acceptance is UNVERIFIED.",
   "biomes": [
     "forest",
     "plains",
@@ -13,34 +13,266 @@
     "waste",
     "ruins"
   ],
+  "modeBiomes": {
+    "tactical": {
+      "3": "wooded river gorge"
+    }
+  },
   "adventure": [
-    "assets/derivatives/scene-edges-20261013/adventure-stone.png",
-    "assets/derivatives/scene-edges-20261013/adventure-bronze.png",
-    "assets/derivatives/scene-edges-20261013/adventure-iron.png",
-    "assets/derivatives/scene-edges-20261013/adventure-medieval.png",
-    "assets/derivatives/scene-edges-20261013/adventure-gunpowder.png",
-    "assets/derivatives/scene-edges-20261013/adventure-industrial.png",
-    "assets/derivatives/scene-edges-20261013/adventure-modern.png",
-    "assets/derivatives/scene-edges-20261013/adventure-future.png"
+    "assets/derivatives/professional-20261018/scenes/adventure-stone-organic-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/adventure-bronze-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/adventure-iron-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/adventure-medieval-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/adventure-gunpowder-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/adventure-industrial-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/adventure-modern-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/adventure-future-clean-v1.png"
   ],
   "tactical": [
-    "assets/derivatives/scene-edges-20261013/tactical-stone.png",
-    "assets/derivatives/scene-edges-20261013/tactical-bronze.png",
-    "assets/derivatives/scene-edges-20261013/tactical-iron.png",
-    "assets/derivatives/scene-edges-20261013/tactical-medieval.png",
-    "assets/derivatives/scene-edges-20261013/tactical-gunpowder.png",
-    "assets/derivatives/scene-edges-20261013/tactical-industrial.png",
-    "assets/derivatives/scene-edges-20261013/tactical-modern.png",
-    "assets/derivatives/scene-edges-20261013/tactical-future.png"
+    "assets/derivatives/professional-20261018/scenes/tactical-stone.webp",
+    "assets/derivatives/visual-repair-20261020/scenes/tactical-bronze-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/tactical-iron-clean-v1.png",
+    "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain/output.png",
+    "assets/derivatives/visual-repair-20261020/scenes/tactical-gunpowder-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/tactical-industrial-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/tactical-modern-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/tactical-future-clean-candidate-v1.png"
   ],
   "defense": [
-    "assets/derivatives/scene-edges-20261013/defense-stone.png",
-    "assets/derivatives/scene-edges-20261013/defense-bronze.png",
-    "assets/derivatives/scene-edges-20261013/defense-iron.png",
-    "assets/derivatives/scene-edges-20261013/defense-medieval.png",
-    "assets/derivatives/scene-edges-20261013/defense-gunpowder.png",
-    "assets/derivatives/scene-edges-20261013/defense-industrial.png",
-    "assets/derivatives/scene-edges-20261013/defense-modern.png",
-    "assets/derivatives/scene-edges-20261013/defense-future.png"
-  ]
+    "assets/derivatives/visual-repair-20261020/scenes/defense-stone-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/defense-bronze-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/defense-iron-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/defense-medieval-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/defense-gunpowder-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/defense-industrial-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/defense-modern-clean-v1.png",
+    "assets/derivatives/visual-repair-20261020/scenes/defense-future-clean-v1.png"
+  ],
+  "candidates": {
+    "tactical-medieval": {
+      "status": "CANDIDATE_LOCAL_SOURCE_BOUND_RUNTIME_REVIEW_PENDING",
+      "candidate": "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain/output.png",
+      "candidateSha256": "6eadf55f2df8727bcc0415b0f5bc2a8f8c5c766e8ce18f7839923401e0c39e5e",
+      "candidateSize": [5504, 3072],
+      "geometry": "assets/high-res/interactive-4k-first32-20261003/run-05-tactical-retry-20261004-015857/packs/tactical-terrain/geometry.json",
+      "verification": "M14's wooded twin-bridge river gorge was compared visually with the matching source. The frozen 7x10 transform, river column, both bridge rectangles, and allied deployment zone were overlaid without changing legal geometry. This local source is now used for Medieval Tactical review; runtime comparison and owner acceptance remain open."
+    },
+    "tactical-gunpowder": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-gunpowder.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/tactical-gunpowder-clean-v1.png",
+      "sourceSha256": "7efec5a32f0b1f641383e8f7f14a9b0ff9123973c24f213fce54d52b306169e7",
+      "candidateSha256": "c385b058d2dc588d2c80566c54a16b83fec9262a401f9798365134e6e4d74da5",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Baked board-cell grid and guide dots removed. SIFT source registration after equal-size normalization: 1805/1821 good matches inliers; median reprojection error 0.46px, p95 1.51px. Isolated active-skirmish fixture previews passed at 825x375, 933x424 and 1280x720; terrain loaded, all 70 cells remained, and browser errors were zero. Physical bridge/site trace and natural age progression remain pending."
+    },
+    "tactical-industrial": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-industrial.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/tactical-industrial-clean-v1.png",
+      "sourceSha256": "588065da0dbc798da328e35d5a9d09313641b273a0cfec1c29d32e7bc0557be8",
+      "candidateSha256": "31450700341b7cf2563485952e88ff5f305e09c297203e3df3ceda75729b59ff",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Flat green deployment pads, hard rectangular borders and dotted editor guides removed; snow, firs, river forks and both bridges retained. SIFT source registration after equal-size normalization: 1069/1100 good matches inliers; median reprojection error 0.57px, p95 1.75px. Isolated active-skirmish fixture previews passed at 825x375, 933x424 and 1280x720; terrain loaded, all 70 cells remained, and browser errors were zero. Physical crossing trace and natural age progression remain pending."
+    },
+    "tactical-iron": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-iron.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/tactical-iron-clean-v1.png",
+      "sourceSha256": "613f66be01ed207ccada6f99afef9cfcB4365b421dc0784ce2f8702cacce2c0e",
+      "candidateSha256": "51784e8015edd0d09e813861e07181fbc54600c5832a5649941da5324d8879ec",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Baked R1/R2/L1/L2/RS/L3/commander labels and dotted editor guides removed; both paver bridges, river and rocky terrain retained. SIFT source registration after equal-size normalization: 1869/1885 good matches inliers; median reprojection error 0.44px, p95 1.33px. Isolated active-skirmish fixture previews passed at 825x375, 933x424 and 1280x720; terrain loaded, all 70 cells remained, and browser errors were zero. Physical crossing trace and natural age progression remain pending."
+    },
+    "tactical-bronze": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-bronze.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/tactical-bronze-clean-v1.png",
+      "sourceSha256": "20e1014295de3665d098f927a1da2720c98dd5a42c30ac035badae87c7831482",
+      "candidateSha256": "188275ba8dea806be83dc18cacd8e084a016d88dca256f92f57ab4ab75b452b8",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Large uniform field panels and red/white editor markers removed; grass, trees, twin roads, river and both bridges retained. SIFT source registration after equal-size normalization: 970/990 good matches inliers; median reprojection error 0.53px, p95 1.75px. Isolated active-skirmish fixture previews passed at 825x375, 933x424 and 1280x720; terrain loaded, all 70 cells remained, and browser errors were zero. Physical crossing trace and natural age progression remain pending."
+    },
+    "tactical-modern": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/tactical-modern.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/tactical-modern-clean-v1.png",
+      "sourceSha256": "5078eea85aafb0bfe9081094a8422b5f7e76ad02ba6903b92583cad9167dd382",
+      "candidateSha256": "0263d4320baa2b9a0b6ef2b2781835da45086f348da60bd2748159f8223545f5",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Checkerboard pads, uniform grid and dotted guides removed; irregular cracked earth, river and bridge retained. SIFT source registration after equal-size normalization: 846/860 good matches inliers; median reprojection error 0.46px, p95 1.37px. Isolated active-skirmish fixture previews passed at 825x375, 933x424 and 1280x720; terrain loaded, all 70 cells remained, and browser errors were zero. Physical bridge/site trace and natural age progression remain pending."
+    },
+    "defense-gunpowder": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/defense-gunpowder.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/defense-gunpowder-clean-v1.png",
+      "sourceSha256": "9c11bd97d9beb7f492888db2586706e4caee8a445a5a26f07c03d12afd3d4fa3",
+      "candidateSha256": "f0fee8add27e435169abc809f3897f142a5e838ec301ff3b2a635432a03461a8",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1679, 937],
+      "verification": "Solid red spawn/gate markers and dotted editor guides removed; winding road, fortress, bridge, river and surrounding terrain retained. SIFT source registration after equal-size normalization: 2343/2370 good matches inliers; median reprojection error 0.43px, p95 1.35px. Isolated siege setup, deployment and first-wave previews passed at 825x375, 933x424 and 1280x720 with the candidate loaded and zero browser errors. Physical path/bridge/gate trace and natural age progression remain pending."
+    },
+    "defense-bronze": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/defense-bronze.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/defense-bronze-clean-v1.png",
+      "sourceSha256": "767c61e2e854a5c994c43ee399642db197b6dd6b289435ecf82b083c79cd7333",
+      "candidateSha256": "95694c56b3756a8746d1c799685e309598113455a2c014d5294c7955911b6969",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Square build pads and dotted editor route guide removed; curving dirt road, ford, wood bridges, gate, river and meadow retained. SIFT source registration after equal-size normalization: 1343/1358 good matches inliers; median reprojection error 0.52px, p95 1.61px. Isolated siege setup, deployment and first-wave previews passed at 825x375, 933x424 and 1280x720 with the candidate loaded and zero browser errors. Physical road/site trace and natural age progression remain pending."
+    },
+    "defense-iron": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/defense-iron.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/defense-iron-clean-v1.png",
+      "sourceSha256": "30dad8dfb44a19ca9136d115e6b9844cf789207284f45905625338a9d490f2e9",
+      "candidateSha256": "7602c8bf8397202493bc03b3d109aac65b22d69405f05d4410ceca484d3182be",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Isolated Siege setup/deployment/first-wave previews passed at 825x375, 933x424 and 1280x720 with the candidate loaded and zero browser errors. Physical road/site trace and natural age progression remain pending."
+    },
+    "defense-medieval": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/defense-medieval.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/defense-medieval-clean-v1.png",
+      "sourceSha256": "e38e0289d8f5caa8b1aa8c50ba5b3c3ce4c4820ebcf1c8c01c9fdce1f8eec800",
+      "candidateSha256": "dfccd09fad358f75ce4041240fc43f71263cd68be4652f3ccf4f276fefcb68df",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Square build pads and dotted placement route removed; winding road, marsh, reeds, stone gate, ford and wooden bridge retained. SIFT source registration after equal-size normalization: 572 good matches, 565 inliers; median reprojection error 0.52px, p95 1.50px. Isolated Siege setup/deployment/first-wave previews passed at 825x375, 933x424 and 1280x720 with the candidate loaded and zero browser errors. Physical road/site trace and natural age progression remain pending."
+    },
+    "defense-industrial": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/defense-industrial.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/defense-industrial-clean-v1.png",
+      "sourceSha256": "6f17926cb999a286b51ad7a41942dae88b48f299125e752cf39ce0b7536e91ae",
+      "candidateSha256": "4993058348da3a56d2bb2e70e256e3256cd1e0e4219a9ba0549c96af2e8bfdb4",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Flat tan/green editor build pads and dotted placement route removed; winding dirt road, river crossing, bridge, fortress, snow, rocks and trees retained. SIFT source registration after equal-size normalization: 1670 good matches, 1635 inliers; median reprojection error 0.47px, p95 1.54px. Isolated Siege setup/deployment/first-wave previews passed at 825x375, 933x424 and 1280x720 with the candidate loaded and zero browser errors. Physical road/site trace and natural age progression remain pending."
+    },
+    "defense-modern": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/defense-modern.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/defense-modern-clean-v1.png",
+      "sourceSha256": "208ec3022a876670912aa3e982b56ca2ed2c36dc1578f4504aae29bc8160964c",
+      "candidateSha256": "5924aba51e60ac639f4feb88668eeae0f57d51822d0a5a1d18a3c7859a5972e5",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1679, 937],
+      "verification": "White dotted editor route removed while the winding road, gate, walls, town, river, bridge and rocky ground were retained. SIFT source registration after equal-size normalization: 1727 good matches, 1696 inliers; median reprojection error 0.47px, p95 1.55px. Isolated Siege setup/deployment/first-wave previews passed at 825x375, 933x424 and 1280x720 with the candidate loaded and zero browser errors. Physical road/site trace and natural age progression remain pending."
+    },
+    "defense-future": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/defense-future.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/defense-future-clean-v1.png",
+      "sourceSha256": "c65b1b4634f41d7d082db08a337077a94f5fe0468073cba73f3de85326991663",
+      "candidateSha256": "66c6904bfe6ea83d02910c4f7764b98f194768c17e8fa62b4b5fe6b57503ef89",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Fine white dotted editor route removed; broken walls, columns, rubble, rock outcrops, grass, road, bridge and river retained. SIFT source registration after equal-size normalization: 1719 good matches, 1702 inliers; median reprojection error 0.44px, p95 1.39px. Isolated Siege setup/deployment/first-wave previews passed at 825x375, 933x424 and 1280x720 with the candidate loaded and zero browser errors. Physical obstacle/road/site trace and natural age progression remain pending."
+    },
+    "defense-stone": {
+      "status": "CANDIDATE_RUNTIME_CHECKED_PHYSICAL_TRACE_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/defense-stone.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/defense-stone-clean-v1.png",
+      "sourceSha256": "9beecf526a7b074b74b5dfed6c3fcd9481530849878cc7ff1728d32befed4744",
+      "candidateSha256": "e4b1f8749f355cc483615c499c0a1b3f03e902a60233ab2b163b85ff09f6b79f",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Rectangular editor build pads and dotted route removed; winding dirt road, timber bridge, broad upper stone terrace, rocks and trees retained. SIFT source registration after equal-size normalization: 1304 good matches, 1293 inliers; median reprojection error 0.49px, p95 1.43px. Isolated Siege setup/deployment/first-wave previews passed at 825x375, 933x424 and 1280x720 with the candidate loaded and zero browser errors. Physical road/site trace and natural age progression remain pending."
+    },
+    "adventure-stone": {
+      "status": "CANDIDATE_RUNTIME_REVIEW_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-stone.png",
+      "candidate": "assets/derivatives/professional-20261018/scenes/adventure-stone-organic-v1.png",
+      "sourceSha256": "59aeceab75b8b9ec52487a56b25f709fb7a1ac611ed6ed803095f69c2ebcbe4c",
+      "candidateSha256": "9072db2d95839e7ffb2b3dc5b866d67c74301f1391362abd1d7f8febd9adb6cd",
+      "sourceSize": [
+        1376,
+        768
+      ],
+      "candidateSize": [
+        1678,
+        937
+      ],
+      "verification": "Known placeholder patches/alignment specks edited; route, bridge, site, traversal and viewport traces remain pending."
+    },
+    "adventure-iron": {
+      "status": "CANDIDATE_LIVE_RUNTIME_CHECKED_SPATIAL_TRACE_UNVERIFIED",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-iron.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/adventure-iron-clean-v1.png",
+      "sourceSha256": "c0ee492c8aba95ad11324879c9569b86a52cf56f74e0c30b759557f0f13f3ce9",
+      "candidateSha256": "212bf3c2cba60deca08a317ad4dbcd5acfc33e20602a05575878ec423f1fdaec",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Editor outlines, labels, grid specks, red markers and baked rider removed. SIFT source registration: 2486/2513 good matches inliers; residual 0.53px median, 1.25px p90 after normalization. Natural Iron UI journey loaded the image at 825x375 and 1280x720, selected and confirmed adjacent road cell 8,7, and saved/reloaded Future with no browser errors. Full physical site/route trace and owner acceptance remain unverified."
+    },
+    "adventure-bronze": {
+      "status": "CANDIDATE_SOURCE_MATCHED_RUNTIME_REVIEW_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-bronze.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/adventure-bronze-clean-v1.png",
+      "sourceSha256": "20a3aec6d7c888f6fa5bc1103a3791d88098e77f2612216c8fb305a2d3a545ae",
+      "candidateSha256": "6c6438b050c19628c7c487850960c7775eb1af70876fbb38ceae8545038e171a",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Dotted guides and hard plot borders removed or softened. SIFT source registration: 2237/2259 matches inliers; residual 0.69px median, 1.33px p90 after normalization. Runtime review pending."
+    },
+    "adventure-medieval": {
+      "status": "CANDIDATE_SOURCE_MATCHED_RUNTIME_REVIEW_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-medieval.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/adventure-medieval-clean-v1.png",
+      "sourceSha256": "f6a94503101465955550aab8f686ca17a1a3caffbdba2a8f95050b2c28ac83e4",
+      "candidateSha256": "bf40d4baed4e17a67e5c64547ef55580019282364506d33bd463e51ecaffdad7",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Dotted guides and pale plot outlines removed. SIFT source registration: 2043/2065 matches inliers; residual 0.53px median, 1.28px p90 after normalization. Runtime review pending."
+    },
+    "adventure-industrial": {
+      "status": "CANDIDATE_SOURCE_MATCHED_RUNTIME_REVIEW_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-industrial.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/adventure-industrial-clean-v1.png",
+      "sourceSha256": "8a6e4ad2d52a002b289bbf7cae6833a4bdaaa0802290a6b35f5e2194ec956ac43",
+      "candidateSha256": "9f887dc673b654d27da2866f20391370a859e85bbd328e2a0e18630d26efe176",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1679, 937],
+      "verification": "Most dotted guide marks removed; snow, forest, river, bridge and road texture retained. SIFT source registration: 2565/2617 matches inliers; residual 0.51px median, 1.27px p90 after normalization. Residual circular/site marks require runtime visual review."
+    },
+    "adventure-gunpowder": {
+      "status": "CANDIDATE_WITH_CONTRACT_ROAD_OVERLAY_RUNTIME_REVIEW_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-gunpowder.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/adventure-gunpowder-clean-v1.png",
+      "sourceSha256": "1ca42187e8c2e1ac512cf1a581ca71339136f0663563336eab2ac80390a98f75",
+      "candidateSha256": "967008a61650d66e183b7e6471700728bf6e13ac8beff84d6dff2294a736f500",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "routeOverlay": "contract-roads-v1",
+      "verification": "Editor circles, pad rectangles, labels, guide dots and baked rider removed. Clean image SIFT registration: 2650/2691 matches inliers; residual 0.87px median, 1.57px p90 after normalization. Exact legal roads are drawn from frozen adventure.geometry; runtime visual review pending."
+    },
+    "adventure-modern": {
+      "status": "CANDIDATE_SOURCE_MATCHED_RUNTIME_REVIEW_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-modern.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/adventure-modern-clean-v1.png",
+      "sourceSha256": "5392b682edc7b95889c9231223b957fb0b9de675daaac286baa0267fd5816b9b",
+      "candidateSha256": "41580d85ad457b409180e41e600a4904199211694a69dd19c4210091d2b6cbb8",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1679, 937],
+      "verification": "Registration outlines and uniform dots removed while burned trunks, cracks and ruins were retained. SIFT source registration: 2969/3003 matches inliers; residual 0.82px median, 1.53px p90 after normalization. Runtime review pending."
+    },
+    "adventure-future": {
+      "status": "CANDIDATE_SOURCE_MATCHED_RUNTIME_REVIEW_PENDING",
+      "source": "assets/derivatives/scene-edges-20261013/adventure-future.png",
+      "candidate": "assets/derivatives/visual-repair-20261020/scenes/adventure-future-clean-v1.png",
+      "sourceSha256": "054b5aad92bf95511e4bb5aa98c99420f45c038c358b119fe6ec8988ec8b63f6",
+      "candidateSha256": "1865e4e075da376032c412f350a316a2d4e59c223f601a2b00171de2ac5178b1",
+      "sourceSize": [1376, 768],
+      "candidateSize": [1678, 937],
+      "verification": "Hard square plot patterns and dotted registration traces removed; ruined columns, rubble and crossing retained. SIFT source registration: 2511/2529 matches inliers; residual 0.46px median, 1.16px p90 after normalization. Runtime review pending."
+    }
+  }
 }

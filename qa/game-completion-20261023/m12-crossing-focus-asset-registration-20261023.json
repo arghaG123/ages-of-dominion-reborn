@@ -1,0 +1,37 @@
+{
+  "reviewId": "M12-crossing-focus-asset-registration-20261023",
+  "mockId": "M12",
+  "status": "CANDIDATE_ASSET_LIVE_REVIEW_REQUIRED",
+  "asset": {
+    "path": "assets/derivatives/adventure-crossing-focus-20261023/grasslands-central-bridge-focus-v1.png",
+    "sha256": "416807e229ff9b352de3be604743b2f0c4103e212cd19f02f648763433251a7f",
+    "dimensions": [1672, 941],
+    "layer": "background only; bridge traveler, route, HUD, and controls remain dynamic"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "date": "2026-10-23",
+    "references": [
+      {
+        "path": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "sha256": "6c3e1522aac39e15190cf848735c8fe51a0377b1b60eeb0db3ee1954058dca20",
+        "role": "current Sunlit Riverlands world identity"
+      },
+      {
+        "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/12-adventure-crossing.jpg",
+        "sha256": "9ef148954dbf2a22c3a497efe0af03c83b5ea1e9f52452aa56ba6162b305f13",
+        "role": "composition and mood reference"
+      }
+    ]
+  },
+  "registration": {
+    "worldId": "grasslands",
+    "geometryVersion": 4,
+    "bridgeId": "central-stone-bridge",
+    "bridgeCells": [[8, 3], [9, 3]],
+    "approachCells": [[7, 3], [10, 3]],
+    "sourceRect": [774, 223, 342, 192],
+    "alignment": "candidate measured against the registered bridge cells; verify the deck, two approaches, and hero feet through the live route"
+  },
+  "acceptance": "M12 remains FAIL until a natural crossing state is reopened, the live pixels are reviewed, and movement debit/save continuity are rechecked."
+}

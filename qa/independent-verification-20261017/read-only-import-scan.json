@@ -1,0 +1,524 @@
+{
+  "imports": [
+    {
+      "path": "src/client/actor.js",
+      "line": 2,
+      "text": "import atlas from '../data/actor-atlas.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/actor.js",
+      "line": 3,
+      "text": "import reviewMount from '../data/mount-review-v1.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/actor.js",
+      "line": 4,
+      "text": "import staticMounts from '../data/static-mounts-v1.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/actor.js",
+      "line": 5,
+      "text": "import plates from '../data/plate-catalog.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/actor.js",
+      "line": 6,
+      "text": "import plateOverrides from '../data/plate-overrides-20261007.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/actor.js",
+      "line": 7,
+      "text": "import { hoofContact, pose } from './rig.js';"
+    },
+    {
+      "path": "src/client/actor.js",
+      "line": 8,
+      "text": "import { visibleBox } from './visible-size.js';"
+    },
+    {
+      "path": "src/client/anatomy.js",
+      "line": 2,
+      "text": "import binding from '../data/anatomy-binding-v1.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/anatomy.js",
+      "line": 3,
+      "text": "import { paintWornSlots } from './actor.js';"
+    },
+    {
+      "path": "src/client/anatomy.js",
+      "line": 129,
+      "text": "      'data-renamed-from': quiver.renamedFrom,"
+    },
+    {
+      "path": "src/client/anatomy.js",
+      "line": 149,
+      "text": "      'data-renamed-from': bowSpec.renamedFrom,"
+    },
+    {
+      "path": "src/client/choices.js",
+      "line": 8,
+      "text": "  if (!/^\\d+$/.test(String(seedText ?? '').trim())) return { error: 'Seed must be an integer from 0 to 4294967295.' };"
+    },
+    {
+      "path": "src/client/choices.js",
+      "line": 10,
+      "text": "  if (!Number.isInteger(seed) || seed < 0 || seed > 0xffffffff) return { error: 'Seed must be an integer from 0 to 4294967295.' };"
+    },
+    {
+      "path": "src/client/hero-room.js",
+      "line": 4,
+      "text": "import heroBodies from '../data/hero-bodies-20261011.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/hero-room.js",
+      "line": 5,
+      "text": "import gearIcons from '../data/gear-icons-20261007.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/hero-room.js",
+      "line": 6,
+      "text": "import { HERO_SLOT_COLUMNS, heroStage } from './presentation.js';"
+    },
+    {
+      "path": "src/client/hero-room.js",
+      "line": 7,
+      "text": "import { visibleBox } from './visible-size.js';"
+    },
+    {
+      "path": "src/client/hero-room.js",
+      "line": 8,
+      "text": "import { paintWornSlots, WORN_ANCHORS } from './actor.js';"
+    },
+    {
+      "path": "src/client/hero-room.js",
+      "line": 9,
+      "text": "import { gearBonus } from '../core/rules.js';"
+    },
+    {
+      "path": "src/client/hero-room.js",
+      "line": 10,
+      "text": "import kitEras from '../data/hero-kit-eras-20261017.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/hero-room.js",
+      "line": 53,
+      "text": "// then applies the CSS cap from the contract. Returns the drawn box or null."
+    },
+    {
+      "path": "src/client/kingdom-view.js",
+      "line": 3,
+      "text": "import { wallPresentation } from './presentation.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 1,
+      "text": "import data from '../data/reference-data.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 2,
+      "text": "import contract from '../data/implementation-contract.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 3,
+      "text": "import selection from '../data/reviewed-source-selection.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 4,
+      "text": "import scene from '../data/stone-scene.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 5,
+      "text": "import modeScenes from '../data/mode-scenes.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 6,
+      "text": "import ageBuildings from '../data/age-buildings.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 7,
+      "text": "import gearIcons from '../data/gear-icons-20261007.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 8,
+      "text": "import { kingdomPainting, plotPresentation, wallHostAttrs } from './kingdom-view.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 9,
+      "text": "import { resourceChipLabel } from './resource-bar.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 11,
+      "text": "import { newCampaign, command, advanceReported, advanceActiveDefense, formatResume, cost, heroStats, manaMax, dailyMoves, gateHp, questReady, stackTitle } from '../core/campaign.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 12,
+      "text": "import { activeStackId, legalTargets, meleeCommand } from '../core/battle.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 13,
+      "text": "import { save, load, SAVE_KEY, rememberView, rememberedView, encode, decode, restoreBackup, storeSlot, loadSlot, replaceCampaign, IndexedDBStorageAdapter } from '../core/save.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 14,
+      "text": "import { camera, inverse, project, kingdomFocusBounds, targetSourceSize } from './projection.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 15,
+      "text": "import { defenseMarkers } from '../core/defense.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 16,
+      "text": "import { attackerPlate, drawActor, drawMount, drawPlate, drawReviewMount, drawStaticMount, plateForStack, projectilePlate, setWorldCssScale, staticMountForAge, towerPlate, troopPlate } from './actor.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 17,
+      "text": "import { drawBoundActor } from './anatomy.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 18,
+      "text": "import { pendingPortrait, portraitCard } from './portraits.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 19,
+      "text": "import { heroFocus, heroStage, KINGDOM_PAD_PRESENTATION } from './presentation.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 20,
+      "text": "import { drawHeroRoom, heroKitCaption, kitEra, selectGearIcon } from './hero-room.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 21,
+      "text": "import { storyScreen, storyChamberLine } from './story-view.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 22,
+      "text": "import { armedChoice, parseChallenge } from './choices.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 23,
+      "text": "import { acceptMapActivation, defaultIntent, intentSentence, keepIntent, modeRows, moveLabel, retreatBlocksBackground, retreatFocusTarget, retreatNotice, spellLabel, stackCaption, strikeLabel, viewDuringRetreat } from './tactical-ui.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 24,
+      "text": "import { visibleBox } from './visible-size.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 25,
+      "text": "import { createFrameClock, travelProgress, travelSample } from './motion.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 26,
+      "text": "import { applySettings, arm, blip, nextSuspended, suspendAudio, resumeAudio } from './audio.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 27,
+      "text": "import { SKILL_IDS, GEAR_SLOTS, RIVALS, forgeOffer, gearBonus, marketQuote, recruitCost, spellEffect, towerPurchaseCost } from '../core/rules.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 28,
+      "text": "import { dwellingCost, dwellingPool, unitStats } from '../core/mechanics.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 29,
+      "text": "import { adventureMap, isOpen, routeTo } from '../core/navigation.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 30,
+      "text": "import { challengeDescriptor, validateDescriptor, encodeChallengeCode, decodeChallengeCode, challengeResult } from '../core/challenge.js';"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 903,
+      "text": "      const from = travelPreview?.cells?.at(-1) || committed;"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 904,
+      "text": "      try { showRoute(routeTo(map, committed, [from[0] + dx, from[1] + dy])); }"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 913,
+      "text": "      const from = [state.adventure.x, state.adventure.y];"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 918,
+      "text": "        travelMotion = { points: [from, ...path], started: motionTime, duration: Math.max(0.35, path.length * 0.45) };"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 1410,
+      "text": "  // Action events derive from committed actions in battle.log; tool selection/preview does not play strike or walk"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 1816,
+      "text": "  $('choices').append(button('Import challenge file', () => $('challenge-file').click(), false, 'challenge-import'));"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 1831,
+      "text": "  if (!state) { say('Start or import a campaign before changing settings.'); return; }"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 1850,
+      "text": "    ? 'The stored campaign is damaged. Restore a backup, import a file, or start a new campaign.'"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 1893,
+      "text": "  $('choices').append(button('Import campaign', () => $('import-file').click()));"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 1918,
+      "text": "  else if (!state) say('Ages of Dominion. No campaign is stored on this device. Start a new one and choose a class, or import a local file.');"
+    },
+    {
+      "path": "src/client/main.js",
+      "line": 2281,
+      "text": "$('import-file').addEventListener('change', event => {"
+    },
+    {
+      "path": "src/client/portraits.js",
+      "line": 1,
+      "text": "import cards from '../data/portrait-cards.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/client/story-view.js",
+      "line": 4,
+      "text": "import { futureConclusion } from '../core/campaign.js';"
+    },
+    {
+      "path": "src/client/tactical-ui.js",
+      "line": 86,
+      "text": "    title: 'Retreat from this battle?',"
+    },
+    {
+      "path": "src/core/battle.js",
+      "line": 3,
+      "text": "import contract from '../data/implementation-contract.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/core/battle.js",
+      "line": 4,
+      "text": "import { applyDamage, calcDamage, MORALE_COEFFICIENT, previewRetaliation, unitStats } from './mechanics.js';"
+    },
+    {
+      "path": "src/core/battle.js",
+      "line": 5,
+      "text": "import { draw } from './rng.js';"
+    },
+    {
+      "path": "src/core/battle.js",
+      "line": 6,
+      "text": "import { battleMorale, clampMorale, heroStats, spellEffect } from './rules.js';"
+    },
+    {
+      "path": "src/core/campaign.js",
+      "line": 2,
+      "text": "import contract from '../data/implementation-contract.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/core/campaign.js",
+      "line": 3,
+      "text": "import { adventureMap, routeCost } from './navigation.js';"
+    },
+    {
+      "path": "src/core/campaign.js",
+      "line": 4,
+      "text": "import { addRankXp, dwellingCost, dwellingPool, dwellingTerms, endDay, grantHeroXp, makePack, rankForXp, rollLoot } from './mechanics.js';"
+    },
+    {
+      "path": "src/core/campaign.js",
+      "line": 5,
+      "text": "import { GEAR_SLOTS, RIVALS, SKILL_IDS, agePrice, dailyMoves, forgeOffer, gateHp, heroStats, manaMax, marketQuote, recruitCost, towerPurchaseCost, validItem } from './rules.js';"
+    },
+    {
+      "path": "src/core/campaign.js",
+      "line": 6,
+      "text": "import { activeStackId, adoptBattle, autoStep, castSpell, createChallengeBattle, createDuelBattle, createEncounterBattle, createSkirmishBattle, defend, move as battleMove, playOut, retreat, skipBonus, strike, validateBattle, wait as battleWait } from './battle.js';"
+    },
+    {
+      "path": "src/core/campaign.js",
+      "line": 7,
+      "text": "import { adoptDefense, advanceDefense, castDefense, createDefense, deployArmy, deployHero, earlyCall, validateDefense } from './defense.js';"
+    },
+    {
+      "path": "src/core/challenge.js",
+      "line": 2,
+      "text": "import { checksum } from './save.js';"
+    },
+    {
+      "path": "src/core/challenge.js",
+      "line": 3,
+      "text": "import { createChallengeBattle, playOut } from './battle.js';"
+    },
+    {
+      "path": "src/core/challenge.js",
+      "line": 10,
+      "text": "  if (!Number.isInteger(seed) || seed < 0 || seed > 0xffffffff) throw new Error('Seed must be an integer from 0 to 4294967295.');"
+    },
+    {
+      "path": "src/core/challenge.js",
+      "line": 21,
+      "text": "  if (!Number.isInteger(value.seed) || value.seed < 0 || value.seed > 0xffffffff) return { error: 'Seed must be an integer from 0 to 4294967295.' };"
+    },
+    {
+      "path": "src/core/defense.js",
+      "line": 2,
+      "text": "import contract from '../data/implementation-contract.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/core/defense.js",
+      "line": 3,
+      "text": "import referenceData from '../data/reference-data.json' with { type: 'json' };"
+    },
+    {
+      "path": "src/core/defense.js",
+      "line": 5,
+      "text": "import { ROLE_MULTIPLIER, seededOrder, towerStats, unitStats, wavePlan } from './mechanics.js';"
+    },
+    {
+      "path": "src/core/defense.js",
+      "line": 64,
+      "text": "function emitProjectile(session, fam, from, to) {"
+    },
+    {
+      "path": "src/core/defense.js",
+      "line": 67,
+      "text": "    fam, from: [...from], to: [...to], born: session.time, life: PROJECTILE_LIFE,"
+    },
+    {
+      "path": "src/core/defense.js",
+      "line": 172,
+      "text": "    if (!Array.isArray(shot.from) || !Array.isArray(shot.to) || shot.from.length !== 2 || shot.to.length !== 2) throw new Error('Invalid projectile');"
+    },
+    {
+      "path": "src/core/defense.js",
+      "line": 739,
+      "text": "        at: [shot.from[0] + (shot.to[0] - shot.from[0]) * u, shot.from[1] + (shot.to[1] - shot.from[1]) * u],"
+    },
+    {
+      "path": "src/core/mechanics.js",
+      "line": 1,
+      "text": "// Independently authored mechanics from the source-equation addendum."
+    },
+    {
+      "path": "src/core/mechanics.js",
+      "line": 3,
+      "text": "import { draw, drawInt } from './rng.js';"
+    },
+    {
+      "path": "src/core/mechanics.js",
+      "line": 4,
+      "text": "import { GEAR_SLOTS, SKILL_IDS, manaMax } from './rules.js';"
+    },
+    {
+      "path": "src/core/navigation.js",
+      "line": 1,
+      "text": "// Adventure navigation from the registered geometry. Costs follow the adopted rule:"
+    },
+    {
+      "path": "src/core/navigation.js",
+      "line": 40,
+      "text": "export function stepCost(map, from, to, terrainAt = () => 'plains') {"
+    },
+    {
+      "path": "src/core/navigation.js",
+      "line": 41,
+      "text": "  const [x, y] = from;"
+    },
+    {
+      "path": "src/core/save.js",
+      "line": 1,
+      "text": "import { adoptProgress, validate } from './campaign.js';"
+    },
+    {
+      "path": "src/core/save.js",
+      "line": 2,
+      "text": "export { IndexedDBStorageAdapter } from './storage-adapter.js';"
+    },
+    {
+      "path": "src/core/storage-adapter.js",
+      "line": 3,
+      "text": "// multi-slot storage, backup preservation, and complete migration from localStorage."
+    },
+    {
+      "path": "src/core/storage-adapter.js",
+      "line": 5,
+      "text": "import { checksum, decode, encode, SAVE_KEY, VIEW_KEY } from './save.js';"
+    },
+    {
+      "path": "src/core/storage-adapter.js",
+      "line": 182,
+      "text": "   * Advances the adapter epoch so any delayed autosaves from the prior epoch are rejected."
+    },
+    {
+      "path": "src/core/storage-adapter.js",
+      "line": 253,
+      "text": "   * Loads a campaign snapshot from slot 1, 2, or 3."
+    }
+  ],
+  "oldExecutablePathSuspects": [],
+  "oldReferenceDataProvenancePaths": [
+    {
+      "path": "src/data/reference-data.json",
+      "line": 915,
+      "text": "        \"sourcePath\": \"C:/dev/ages-of-dominion/core/data/hero.js\","
+    },
+    {
+      "path": "src/data/reference-data.json",
+      "line": 945,
+      "text": "        \"sourcePath\": \"C:/dev/ages-of-dominion/core/data/hero.js\","
+    },
+    {
+      "path": "src/data/reference-data.json",
+      "line": 967,
+      "text": "        \"sourcePath\": \"C:/dev/ages-of-dominion/core/data/hero.js\","
+    },
+    {
+      "path": "src/data/reference-data.json",
+      "line": 981,
+      "text": "        \"sourcePath\": \"C:/dev/ages-of-dominion/core/data/hero.js\","
+    },
+    {
+      "path": "src/data/reference-data.json",
+      "line": 995,
+      "text": "        \"sourcePath\": \"C:/dev/ages-of-dominion/core/data/hero.js\","
+    }
+  ],
+  "sourceSymlinks": [],
+  "limitation": "Text/import path scan only. JSON sourcePath metadata is reference provenance, not an executable import. Does not establish exhaustive authored-code ancestry."
+}

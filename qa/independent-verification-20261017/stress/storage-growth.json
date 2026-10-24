@@ -1,0 +1,55 @@
+{
+  "evaluatedAt": "2026-10-17T06:44:52.475Z",
+  "governingRules": [
+    "OC16",
+    "R09",
+    "Section 10.4",
+    "A05"
+  ],
+  "milestones": {
+    "freshStone": {
+      "clock": 1000000,
+      "revision": 0,
+      "serializedChars": 2055,
+      "settledTxCount": 0
+    },
+    "futureProgression": {
+      "clock": 1045131,
+      "revision": 78,
+      "serializedChars": 5554,
+      "settledTxCount": 34
+    },
+    "twentyEndlessClears": {
+      "clearedWaves": 20,
+      "revision": 78,
+      "serializedChars": 7111
+    },
+    "tenHourDefense": {
+      "accumulatedSeconds": 36000,
+      "txCountBefore": 34,
+      "txCountAfter": 34,
+      "zeroGrowthVerified": true
+    },
+    "afterTenThousandCommands": {
+      "revision": 20078,
+      "settledTxCount": 10034,
+      "serializedChars": 975011,
+      "serializedBytes": 975011
+    }
+  },
+  "commandBreakdown": {
+    "SETTINGS": 4000,
+    "MARKET_BUY": 2000,
+    "MARKET_SELL": 2000,
+    "TUTORIAL_CYCLES": 1000,
+    "VOLUME_ADJUSTMENTS": 1000,
+    "totalCommandsExecuted": 10000
+  },
+  "storageFootprint": {
+    "charactersInStorageBeforeReplacement": 5026583,
+    "quotaLimitCharacters": 5242880,
+    "percentOfQuota": "95.87%"
+  },
+  "localStorageQuotaExceeded": true,
+  "indexedDBVerified": true
+}

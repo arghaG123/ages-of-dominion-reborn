@@ -1,0 +1,415 @@
+{
+  "recordedAt": "2026-10-20T11:37:05.953Z",
+  "classification": "NATURAL_UI_ADVENTURE_SITE_JOURNEY",
+  "journey": "new campaign -> select Jade map -> start Adventure -> travel through visible route controls -> claim ruins XP, skill, mill food and mine gold once each -> save and reload",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "note": "All campaign, route, site reward, and skill choices are made through rendered UI controls. No campaign, route, or reward state is injected.",
+  "errors": [],
+  "failedResponses": [],
+  "captures": [
+    {
+      "name": "ruins-ready",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\ruins-ready-825x375.png"
+    },
+    {
+      "name": "ruin-action",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\ruin-action-825x375.png"
+    },
+    {
+      "name": "ruin-action",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\ruin-action-933x424.png"
+    },
+    {
+      "name": "ruin-action",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\ruin-action-1280x720.png"
+    },
+    {
+      "name": "ruins-claimed",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\ruins-claimed-933x424.png"
+    },
+    {
+      "name": "shrine-ready",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\shrine-ready-825x375.png"
+    },
+    {
+      "name": "shrine-action",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\shrine-action-825x375.png"
+    },
+    {
+      "name": "shrine-action",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\shrine-action-933x424.png"
+    },
+    {
+      "name": "shrine-action",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\shrine-action-1280x720.png"
+    },
+    {
+      "name": "shrine-resolved",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\shrine-resolved-1280x720.png"
+    },
+    {
+      "name": "mill-ready",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\mill-ready-825x375.png"
+    },
+    {
+      "name": "mill-action",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\mill-action-825x375.png"
+    },
+    {
+      "name": "mill-action",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\mill-action-933x424.png"
+    },
+    {
+      "name": "mill-action",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\mill-action-1280x720.png"
+    },
+    {
+      "name": "mine-ready",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\mine-ready-825x375.png"
+    },
+    {
+      "name": "mine-action",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\mine-action-825x375.png"
+    },
+    {
+      "name": "mine-action",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\mine-action-933x424.png"
+    },
+    {
+      "name": "mine-action",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-interactions-live-20261020\\mine-action-1280x720.png"
+    }
+  ],
+  "sites": {
+    "ruin": {
+      "coordinates": [
+        3,
+        7
+      ],
+      "rewardBefore": 0,
+      "offer": 90,
+      "claimedBefore": false,
+      "actionLayout": [
+        {
+          "size": "825x375",
+          "scrollTop": 0,
+          "panel": {
+            "left": 537,
+            "top": 54,
+            "right": 817,
+            "bottom": 335
+          },
+          "control": {
+            "left": 546,
+            "top": 147,
+            "right": 808,
+            "bottom": 195,
+            "width": 262,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        },
+        {
+          "size": "933x424",
+          "scrollTop": 0,
+          "panel": {
+            "left": 645,
+            "top": 54,
+            "right": 925,
+            "bottom": 360
+          },
+          "control": {
+            "left": 654,
+            "top": 162,
+            "right": 916,
+            "bottom": 210,
+            "width": 262,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        },
+        {
+          "size": "1280x720",
+          "scrollTop": 0,
+          "panel": {
+            "left": 922,
+            "top": 72,
+            "right": 1272,
+            "bottom": 640
+          },
+          "control": {
+            "left": 935,
+            "top": 166,
+            "right": 1203,
+            "bottom": 214,
+            "width": 268,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        }
+      ],
+      "claimed": true,
+      "rewardAfter": 90
+    },
+    "shrine": {
+      "coordinates": [
+        8,
+        7
+      ],
+      "claimedBefore": false,
+      "actionLayout": [
+        {
+          "size": "825x375",
+          "scrollTop": 0,
+          "panel": {
+            "left": 537,
+            "top": 54,
+            "right": 817,
+            "bottom": 335
+          },
+          "control": {
+            "left": 546,
+            "top": 147,
+            "right": 808,
+            "bottom": 195,
+            "width": 262,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        },
+        {
+          "size": "933x424",
+          "scrollTop": 0,
+          "panel": {
+            "left": 645,
+            "top": 54,
+            "right": 925,
+            "bottom": 360
+          },
+          "control": {
+            "left": 654,
+            "top": 162,
+            "right": 916,
+            "bottom": 210,
+            "width": 262,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        },
+        {
+          "size": "1280x720",
+          "scrollTop": 0,
+          "panel": {
+            "left": 922,
+            "top": 72,
+            "right": 1272,
+            "bottom": 640
+          },
+          "control": {
+            "left": 935,
+            "top": 166,
+            "right": 1203,
+            "bottom": 214,
+            "width": 268,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        }
+      ],
+      "offer": {
+        "choices": [
+          "wisdom",
+          "leadership"
+        ]
+      },
+      "chosen": "wisdom"
+    },
+    "mill": {
+      "coordinates": [
+        3,
+        3
+      ],
+      "reward": 129,
+      "resourceBefore": 250,
+      "claimedBefore": false,
+      "actionLayout": [
+        {
+          "size": "825x375",
+          "scrollTop": 0,
+          "panel": {
+            "left": 537,
+            "top": 54,
+            "right": 817,
+            "bottom": 335
+          },
+          "control": {
+            "left": 546,
+            "top": 147,
+            "right": 808,
+            "bottom": 195,
+            "width": 262,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        },
+        {
+          "size": "933x424",
+          "scrollTop": 0,
+          "panel": {
+            "left": 645,
+            "top": 54,
+            "right": 925,
+            "bottom": 360
+          },
+          "control": {
+            "left": 654,
+            "top": 162,
+            "right": 916,
+            "bottom": 210,
+            "width": 262,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        },
+        {
+          "size": "1280x720",
+          "scrollTop": 0,
+          "panel": {
+            "left": 922,
+            "top": 72,
+            "right": 1272,
+            "bottom": 640
+          },
+          "control": {
+            "left": 935,
+            "top": 166,
+            "right": 1203,
+            "bottom": 214,
+            "width": 268,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        }
+      ],
+      "claimed": true,
+      "resourceGain": 129
+    },
+    "mine": {
+      "coordinates": [
+        12,
+        6
+      ],
+      "reward": 212,
+      "resourceBefore": 150,
+      "claimedBefore": false,
+      "actionLayout": [
+        {
+          "size": "825x375",
+          "scrollTop": 0,
+          "panel": {
+            "left": 537,
+            "top": 54,
+            "right": 817,
+            "bottom": 335
+          },
+          "control": {
+            "left": 546,
+            "top": 147,
+            "right": 808,
+            "bottom": 195,
+            "width": 262,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        },
+        {
+          "size": "933x424",
+          "scrollTop": 0,
+          "panel": {
+            "left": 645,
+            "top": 54,
+            "right": 925,
+            "bottom": 360
+          },
+          "control": {
+            "left": 654,
+            "top": 162,
+            "right": 916,
+            "bottom": 210,
+            "width": 262,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        },
+        {
+          "size": "1280x720",
+          "scrollTop": 0,
+          "panel": {
+            "left": 922,
+            "top": 72,
+            "right": 1272,
+            "bottom": 640
+          },
+          "control": {
+            "left": 935,
+            "top": 166,
+            "right": 1203,
+            "bottom": 214,
+            "width": 268,
+            "height": 48
+          },
+          "panelOpen": true,
+          "visible": true
+        }
+      ],
+      "claimed": true,
+      "resourceGain": 212
+    }
+  },
+  "campaignId": "campaign-c7dd49d6-ec4d-41a0-a325-cbd476cebb24",
+  "worldId": "jade-karst",
+  "seed": 3715770858,
+  "layoutId": "jade-karst-layout-9",
+  "layoutIndex": 8,
+  "reload": {
+    "revision": 226,
+    "worldId": "jade-karst",
+    "claimedSites": [
+      "ruin",
+      "shrine",
+      "mill",
+      "mine"
+    ],
+    "selectedSkill": "wisdom"
+  },
+  "passed": true
+}

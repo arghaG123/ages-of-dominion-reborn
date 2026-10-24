@@ -1,0 +1,45 @@
+{
+  "recordedAt": "2026-10-20T00:39:28.231Z",
+  "classification": "NATURAL_UI_BROWSER_J01_J02_SUBJOURNEY_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "route": "fresh isolated browser profile -> new campaign -> choose Knight -> enter Kingdom -> build Lumber Camp -> durable acknowledgement -> reload -> verify state",
+  "campaignId": "campaign-a1508267-409f-41e4-920c-94470081bf76",
+  "firstEmpty": "P01",
+  "beforeReload": {
+    "view": "kingdom",
+    "revision": 22,
+    "head": {
+      "epoch": 1,
+      "campaignId": "campaign-a1508267-409f-41e4-920c-94470081bf76",
+      "revision": 22,
+      "checksum": "05533d89",
+      "updatedAt": 1792456765583
+    },
+    "building": {
+      "id": "P01",
+      "type": "lumber",
+      "level": 1
+    }
+  },
+  "afterReload": {
+    "view": "kingdom",
+    "revision": 32,
+    "head": {
+      "epoch": 1,
+      "campaignId": "campaign-a1508267-409f-41e4-920c-94470081bf76",
+      "revision": 32,
+      "checksum": "281ec63b",
+      "updatedAt": 1792456768070
+    },
+    "building": {
+      "id": "P01",
+      "type": "lumber",
+      "level": 1
+    }
+  },
+  "captures": [
+    "qa\\game-completion-20261020\\visual-review\\natural-campaign-build-reload\\kingdom-after-lumber-build-before-reload.png",
+    "qa\\game-completion-20261020\\visual-review\\natural-campaign-build-reload\\kingdom-after-lumber-build-after-reload.png"
+  ],
+  "errors": [],
+  "notFound": []
+}

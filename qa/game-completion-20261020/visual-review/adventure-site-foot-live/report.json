@@ -1,0 +1,500 @@
+{
+  "recordedAt": "2026-10-20T16:27:06.610Z",
+  "classification": "NATURAL_UI_ADVENTURE_DWELLING_CLAIM_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh campaign -> build Barracks -> leave town -> preview/cancel route -> confirm legal road route to dwelling -> on-foot site arrival -> ask for fixed offer -> back to road and reopen the same offer -> save/reload -> claim creatures -> verify Q3 ready -> claim its reward once -> save/reload -> verify roster and both rewards",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "jade-karst",
+    "layoutId": "jade-karst-layout-14",
+    "start": [
+      8,
+      4
+    ],
+    "destination": [
+      10,
+      3
+    ],
+    "cost": 3,
+    "cells": [
+      [
+        9,
+        4
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        10,
+        3
+      ]
+    ]
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [
+    {
+      "name": "dwelling-on-foot",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\dwelling-on-foot-825x375.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\dwelling-on-foot-933x424.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\dwelling-on-foot-1280x720.png"
+    },
+    {
+      "name": "dwelling-context-panel",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\dwelling-context-panel-825x375.png"
+    },
+    {
+      "name": "dwelling-context-panel",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\dwelling-context-panel-1280x720.png"
+    },
+    {
+      "name": "dwelling-offer-context",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\dwelling-offer-context-825x375.png"
+    },
+    {
+      "name": "dwelling-offer-reloaded",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\dwelling-offer-reloaded-1280x720.png"
+    },
+    {
+      "name": "dwelling-site-after-claim",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\dwelling-site-after-claim-825x375.png"
+    },
+    {
+      "name": "army-after-dwelling-claim",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\army-after-dwelling-claim-825x375.png"
+    },
+    {
+      "name": "q3-ready",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\q3-ready-825x375.png"
+    },
+    {
+      "name": "q3-claimed",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261020\\visual-review\\adventure-site-foot-live\\q3-claimed-1280x720.png"
+    }
+  ],
+  "campaignId": "campaign-209773af-8605-4627-8092-e278f561d0ee",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 8,
+    "y": 4,
+    "moves": 5,
+    "visited": [
+      "8,4"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 144,
+      "wood": 155,
+      "stone": 137,
+      "gold": 249
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 144,
+      "mineGold": 249
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "cancel": {
+    "preservedPosition": [
+      8,
+      4
+    ],
+    "preservedMoves": 5
+  },
+  "arrival": {
+    "adventure": {
+      "x": 10,
+      "y": 3,
+      "moves": 2,
+      "visited": [
+        "8,4",
+        "9,4",
+        "10,4",
+        "10,3"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 144,
+        "wood": 155,
+        "stone": 137,
+        "gold": 249
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 144,
+        "mineGold": 249
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "travelerMode": "on-foot",
+    "siteVisible": "dwelling",
+    "mountVisible": false
+  },
+  "panelComposition": [
+    {
+      "size": "825x375",
+      "panel": {
+        "left": 537,
+        "right": 817,
+        "top": 54,
+        "bottom": 335
+      },
+      "hero": {
+        "left": 177.36102294921875,
+        "right": 591.2891235351562,
+        "top": 82.32488250732422,
+        "bottom": 385.9675827026367
+      },
+      "heroAnchor": {
+        "x": 375.9000234603882,
+        "y": 254.9999924271251
+      },
+      "site": {
+        "left": 335.07275390625,
+        "right": 498.3818359375,
+        "top": 72.70148468017578,
+        "bottom": 218.54029083251953
+      },
+      "viewport": {
+        "width": 825,
+        "height": 375
+      }
+    },
+    {
+      "size": "1280x720",
+      "panel": {
+        "left": 922,
+        "right": 1272,
+        "top": 72,
+        "bottom": 640
+      },
+      "hero": {
+        "left": 364.8548583984375,
+        "right": 949.7551879882812,
+        "top": 116.63697052001953,
+        "bottom": 545.6987991333008
+      },
+      "heroAnchor": {
+        "x": 645.4000272750854,
+        "y": 360.6352497357293
+      },
+      "site": {
+        "left": 587.7091674804688,
+        "right": 818.4727172851562,
+        "top": 103.03865051269531,
+        "bottom": 309.1159362792969
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "size": "825x375",
+      "panel": {
+        "left": 537,
+        "right": 817,
+        "top": 54,
+        "bottom": 335
+      },
+      "hero": {
+        "left": 177.36102294921875,
+        "right": 591.2891235351562,
+        "top": 82.32488250732422,
+        "bottom": 385.9675827026367
+      },
+      "heroAnchor": {
+        "x": 375.9000234603882,
+        "y": 254.9999924271251
+      },
+      "site": {
+        "left": 335.07275390625,
+        "right": 498.3818359375,
+        "top": 72.70148468017578,
+        "bottom": 218.54029083251953
+      },
+      "viewport": {
+        "width": 825,
+        "height": 375
+      }
+    },
+    {
+      "size": "1280x720",
+      "panel": {
+        "left": 922,
+        "right": 1272,
+        "top": 72,
+        "bottom": 640
+      },
+      "hero": {
+        "left": 364.8548583984375,
+        "right": 949.7551879882812,
+        "top": 116.63697052001953,
+        "bottom": 545.6987991333008
+      },
+      "heroAnchor": {
+        "x": 645.4000272750854,
+        "y": 360.6352497357293
+      },
+      "site": {
+        "left": 587.7091674804688,
+        "right": 818.4727172851562,
+        "top": 103.03865051269531,
+        "bottom": 309.1159362792969
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "size": "825x375",
+      "panel": {
+        "left": 537,
+        "right": 817,
+        "top": 54,
+        "bottom": 335
+      },
+      "hero": {
+        "left": 177.36102294921875,
+        "right": 591.2891235351562,
+        "top": 82.32488250732422,
+        "bottom": 385.9675827026367
+      },
+      "heroAnchor": {
+        "x": 375.9000234603882,
+        "y": 254.9999924271251
+      },
+      "site": {
+        "left": 335.07275390625,
+        "right": 498.3818359375,
+        "top": 72.70148468017578,
+        "bottom": 218.54029083251953
+      },
+      "viewport": {
+        "width": 825,
+        "height": 375
+      }
+    }
+  ],
+  "offer": {
+    "choice": "offer-dwelling:wolf",
+    "terms": {
+      "id": "dwelling:dwelling:wolf",
+      "siteId": "dwelling",
+      "type": "wolf",
+      "count": 5,
+      "multiplier": 1,
+      "claimed": false
+    },
+    "payment": {
+      "food": 40,
+      "gold": 35
+    },
+    "resourcesUnchanged": true,
+    "phoneBounds": {
+      "claim": {
+        "x": 546,
+        "y": 147,
+        "width": 262,
+        "height": 48
+      },
+      "claimDom": [
+        {
+          "text": "Claim 5 Dire Wolf4035",
+          "box": {
+            "left": 546,
+            "top": 147,
+            "right": 808,
+            "bottom": 195
+          },
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "parent": "choices"
+        }
+      ],
+      "panel": {
+        "x": 537,
+        "y": 54,
+        "width": 280,
+        "height": 281
+      },
+      "choicesScrollTop": 0
+    },
+    "claimVisibleWithoutScrollAt825x375": true
+  },
+  "backAction": {
+    "panelClosed": true,
+    "offerPreserved": true,
+    "resourcesUnchanged": true
+  },
+  "reload": {
+    "campaignId": "campaign-209773af-8605-4627-8092-e278f561d0ee",
+    "adventure": {
+      "x": 10,
+      "y": 3,
+      "moves": 2,
+      "visited": [
+        "8,4",
+        "9,4",
+        "10,4",
+        "10,3"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 144,
+        "wood": 155,
+        "stone": 137,
+        "gold": 249
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 144,
+        "mineGold": 249
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "dwelling": {
+      "id": "dwelling:dwelling:wolf",
+      "siteId": "dwelling",
+      "type": "wolf",
+      "count": 5,
+      "multiplier": 1,
+      "claimed": false
+    },
+    "travelerMode": "on-foot"
+  },
+  "remainingOfferTypes": [
+    "bandit"
+  ],
+  "rosterScreen": {
+    "label": "Dire Wolf ×5",
+    "accessibleName": "Dire Wolf ×5. Rank 0 of 4 stars.",
+    "selected": true,
+    "imageLoaded": true,
+    "bounds": {
+      "left": 248,
+      "top": 85,
+      "right": 360,
+      "bottom": 201
+    },
+    "viewport": {
+      "width": 825,
+      "height": 375
+    }
+  },
+  "claim": {
+    "payment": {
+      "food": 40,
+      "gold": 35
+    },
+    "creatureType": "wolf",
+    "count": 5,
+    "armyStacksBefore": 2,
+    "armyStacksAfter": 3,
+    "resourcesBefore": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    },
+    "resourcesAfter": {
+      "food": 210,
+      "wood": 160,
+      "stone": 115,
+      "gold": 115
+    },
+    "claimed": true,
+    "historyRows": 1
+  },
+  "reloadAfterClaim": {
+    "campaignId": "campaign-209773af-8605-4627-8092-e278f561d0ee",
+    "claimed": true,
+    "creatureStack": {
+      "id": "army-928ce04a-30c8-4a42-a9c4-9ad2f74641cd",
+      "kind": "creature",
+      "type": "wolf",
+      "age": 0,
+      "count": 5,
+      "rank": 0,
+      "xp": 0
+    },
+    "resources": {
+      "food": 210,
+      "wood": 160,
+      "stone": 115,
+      "gold": 115
+    }
+  },
+  "q3": {
+    "ready": {
+      "quest": {
+        "claimed": false
+      },
+      "progress": "1 / 1 wild creature",
+      "status": "Ready to claim",
+      "reward": "Reward 200 150",
+      "claimPresent": true,
+      "claimDisabled": false
+    },
+    "payout": {
+      "food": 200,
+      "gold": 150
+    },
+    "reloadRepeatPayout": {
+      "food": 0,
+      "gold": 0
+    },
+    "claimed": true
+  },
+  "passed": true
+}

@@ -1,0 +1,1927 @@
+{
+  "classification": "OWNER_MAP_COORDINATE_GRID_DIAGNOSTIC",
+  "worldCount": 12,
+  "runtimeOwnerBoundWorlds": 4,
+  "worlds": [
+    {
+      "worldId": "grasslands",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+      "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+      "runtimeMatchesOwner": true,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          7
+        ]
+      ],
+      "bridgeDefinitions": [
+        {
+          "id": "grasslands-west-mill-crossing",
+          "rect": [
+            4,
+            4,
+            2,
+            1
+          ],
+          "cells": [
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          "approaches": [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "id": "grasslands-central-stone-bridge",
+          "rect": [
+            7,
+            2,
+            3,
+            2
+          ],
+          "cells": [
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              3
+            ]
+          ],
+          "approaches": [
+            [
+              6,
+              2
+            ],
+            [
+              9,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "grasslands-east-stone-bridge",
+          "rect": [
+            11,
+            4,
+            2,
+            1
+          ],
+          "cells": [
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              4
+            ]
+          ],
+          "approaches": [
+            [
+              10,
+              5
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              13,
+              4
+            ]
+          ]
+        }
+      ],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "approach": [
+            4,
+            3
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            1,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            6
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            14,
+            4,
+            2,
+            2
+          ],
+          "approach": [
+            13,
+            4
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            13,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            7
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            4,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            4,
+            6
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            6,
+            8,
+            1,
+            1
+          ],
+          "approach": [
+            6,
+            7
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\grasslands-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "tundra",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+      "runtimeFile": null,
+      "runtimeMatchesOwner": false,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [],
+      "bridgeDefinitions": [],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            9,
+            1,
+            4,
+            2
+          ],
+          "approach": [
+            10,
+            3
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            1,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            7
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            9,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            8,
+            6
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            1,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            3
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            5,
+            2,
+            2,
+            2
+          ],
+          "approach": [
+            7,
+            3
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            13,
+            4,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            4
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\tundra-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "haunted-marsh",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/03_Vast_Map_Autumn_Marsh_Thunderstorm.png",
+      "runtimeFile": null,
+      "runtimeMatchesOwner": false,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "bridgeDefinitions": [],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            11,
+            0,
+            4,
+            3
+          ],
+          "approach": [
+            10,
+            3
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            2,
+            5,
+            2,
+            2
+          ],
+          "approach": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            1,
+            2,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            2
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            7,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            9,
+            6
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            12,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            11,
+            7
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            8,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            8,
+            5
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\haunted-marsh-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "desert-volcano",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+      "runtimeFile": null,
+      "runtimeMatchesOwner": false,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "bridgeDefinitions": [],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            8,
+            1,
+            3,
+            2
+          ],
+          "approach": [
+            9,
+            3
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            1,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            6
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            5,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            7,
+            6
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            3,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            5,
+            3
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            0,
+            4,
+            2,
+            2
+          ],
+          "approach": [
+            2,
+            4
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            13,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            7
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\desert-volcano-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "underworld",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+      "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+      "runtimeMatchesOwner": true,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "bridgeDefinitions": [
+        {
+          "id": "underworld-crystal-river-bridge-6-7",
+          "rect": [
+            6,
+            7,
+            2,
+            1
+          ],
+          "cells": [
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          "approaches": [
+            [
+              5,
+              7
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        }
+      ],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            13,
+            2,
+            3,
+            4
+          ],
+          "approach": [
+            12,
+            5
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            4,
+            6,
+            2,
+            1
+          ],
+          "approach": [
+            4,
+            7
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            3,
+            5,
+            2,
+            1
+          ],
+          "approach": [
+            5,
+            5
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            0,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            2,
+            4
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            10,
+            1,
+            3,
+            2
+          ],
+          "approach": [
+            10,
+            3
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            10,
+            7,
+            1,
+            1
+          ],
+          "approach": [
+            9,
+            7
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\underworld-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "feywild",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+      "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+      "runtimeMatchesOwner": true,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "bridgeDefinitions": [
+        {
+          "id": "feywild-stone-waterfall-bridge-3-3",
+          "rect": [
+            3,
+            3,
+            1,
+            1
+          ],
+          "cells": [
+            [
+              3,
+              3
+            ]
+          ],
+          "approaches": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "id": "feywild-waterfall-footbridge-2-6",
+          "rect": [
+            2,
+            6,
+            2,
+            1
+          ],
+          "cells": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "approaches": [
+            [
+              1,
+              6
+            ],
+            [
+              4,
+              6
+            ]
+          ]
+        }
+      ],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            7,
+            3,
+            3,
+            2
+          ],
+          "approach": [
+            8,
+            5
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            7,
+            7,
+            1,
+            1
+          ],
+          "approach": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            12,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            11,
+            7
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "approach": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            10,
+            1,
+            3,
+            3
+          ],
+          "approach": [
+            13,
+            3
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            8,
+            7,
+            1,
+            1
+          ],
+          "approach": [
+            9,
+            7
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\feywild-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "archipelago",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+      "runtimeFile": null,
+      "runtimeMatchesOwner": false,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          14,
+          9
+        ],
+        [
+          15,
+          9
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          15,
+          6
+        ]
+      ],
+      "bridgeDefinitions": [],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            8,
+            5,
+            3,
+            2
+          ],
+          "approach": [
+            7,
+            5
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            8,
+            0,
+            2,
+            2
+          ],
+          "approach": [
+            8,
+            2
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            13,
+            5,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            5
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            2,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            4,
+            3
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            6,
+            1,
+            2,
+            2
+          ],
+          "approach": [
+            8,
+            3
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            0,
+            5,
+            2,
+            2
+          ],
+          "approach": [
+            2,
+            5
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\archipelago-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "mesa-savanna",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+      "runtimeFile": null,
+      "runtimeMatchesOwner": false,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [],
+      "bridgeDefinitions": [],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            1,
+            1,
+            3,
+            2
+          ],
+          "approach": [
+            4,
+            2
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            2,
+            5,
+            2,
+            2
+          ],
+          "approach": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            8,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            10,
+            3
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            13,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            3
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            13,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            6
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            6,
+            5,
+            2,
+            2
+          ],
+          "approach": [
+            6,
+            4
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\mesa-savanna-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "astral-peaks",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+      "runtimeFile": null,
+      "runtimeMatchesOwner": false,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [],
+      "bridgeDefinitions": [],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            1,
+            4,
+            3,
+            2
+          ],
+          "approach": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            10,
+            4,
+            2,
+            2
+          ],
+          "approach": [
+            9,
+            4
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            5,
+            1,
+            2,
+            2
+          ],
+          "approach": [
+            7,
+            2
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            13,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            7
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            13,
+            0,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            2
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            9,
+            2,
+            2,
+            2
+          ],
+          "approach": [
+            8,
+            3
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\astral-peaks-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "blood-moon",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/10_Vast_Map_Blood_Moon_Wasteland_Eclipse.png",
+      "runtimeFile": null,
+      "runtimeMatchesOwner": false,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [],
+      "bridgeDefinitions": [],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            7,
+            1,
+            3,
+            2
+          ],
+          "approach": [
+            8,
+            3
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            2
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            3,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            12,
+            4,
+            2,
+            2
+          ],
+          "approach": [
+            11,
+            4
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            12,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            11,
+            7
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            6,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            8,
+            6
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\blood-moon-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "jade-karst",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+      "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+      "runtimeMatchesOwner": true,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [
+        [
+          13,
+          2
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "bridgeDefinitions": [
+        {
+          "id": "jade-karst-west-bridge-4-6",
+          "rect": [
+            4,
+            6,
+            2,
+            1
+          ],
+          "cells": [
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "approaches": [
+            [
+              5,
+              5
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "id": "jade-karst-east-bridge-10-4",
+          "rect": [
+            10,
+            4,
+            2,
+            1
+          ],
+          "cells": [
+            [
+              10,
+              4
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "approaches": [
+            [
+              9,
+              4
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        }
+      ],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            7,
+            2,
+            3,
+            2
+          ],
+          "approach": [
+            8,
+            4
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            1,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            7
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            1,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            3
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            13,
+            6,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            6
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            10,
+            1,
+            2,
+            2
+          ],
+          "approach": [
+            10,
+            3
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            9,
+            7,
+            2,
+            2
+          ],
+          "approach": [
+            8,
+            7
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\jade-karst-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    },
+    {
+      "worldId": "sunken-jungle",
+      "ownerFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+      "runtimeFile": null,
+      "runtimeMatchesOwner": false,
+      "generatedMapFile": "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "worldToSource": [
+        86,
+        0,
+        0,
+        76.8,
+        0,
+        0
+      ],
+      "blockedCells": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "bridgeDefinitions": [],
+      "sites": [
+        {
+          "id": "town",
+          "rect": [
+            6,
+            0,
+            3,
+            2
+          ],
+          "approach": [
+            8,
+            2
+          ]
+        },
+        {
+          "id": "ruin",
+          "rect": [
+            1,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "mill",
+          "rect": [
+            13,
+            1,
+            2,
+            2
+          ],
+          "approach": [
+            12,
+            2
+          ]
+        },
+        {
+          "id": "mine",
+          "rect": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "approach": [
+            3,
+            2
+          ]
+        },
+        {
+          "id": "dwelling",
+          "rect": [
+            8,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            10,
+            3
+          ]
+        },
+        {
+          "id": "shrine",
+          "rect": [
+            11,
+            3,
+            2,
+            2
+          ],
+          "approach": [
+            11,
+            5
+          ]
+        }
+      ],
+      "output": "qa\\game-completion-20261021\\visual-review\\owner-map-source-grid-audit-20261021\\sunken-jungle-owner-source-16x10-grid.png",
+      "note": "Coordinate grid follows the current flat transform; this overlay is diagnostic only and does not certify complete per-world registration."
+    }
+  ]
+}

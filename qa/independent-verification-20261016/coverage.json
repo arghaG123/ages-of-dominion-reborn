@@ -1,0 +1,730 @@
+{
+  "date": "2026-10-16",
+  "verdict": "INCOMPLETE",
+  "G": [
+    {
+      "id": "G01",
+      "requirement": "Eight ages",
+      "status": "FAIL",
+      "evidence": "Core progression simulation and 32 imported views pass bounded; era/kit/style/scene acceptance fails.",
+      "findings": "F1 F4 F6"
+    },
+    {
+      "id": "G02",
+      "requirement": "Sparse Day 1 and economy",
+      "status": "PARTIAL",
+      "evidence": "Fresh resources, Hall/17 pads and paid Lumber Camp observed; final physical/composite acceptance remains open.",
+      "findings": "F0 F1 F6"
+    },
+    {
+      "id": "G03",
+      "requirement": "Construction and progression",
+      "status": "PARTIAL",
+      "evidence": "Core costs, build/upgrade/offline tests pass; natural build/export/restore observed; complete visible progression not replayed.",
+      "findings": "F2"
+    },
+    {
+      "id": "G04",
+      "requirement": "Adventure",
+      "status": "FAIL",
+      "evidence": "Navigation/guard logic tested; painted crossing/approach and mounted motion fail acceptance.",
+      "findings": "F1 F3"
+    },
+    {
+      "id": "G05",
+      "requirement": "Tactical",
+      "status": "PARTIAL",
+      "evidence": "Legal engine, morale and spell tests; live Skirmish/Auto/modal pass; formation/terrain/event/clip requirements open.",
+      "findings": "F1 F3 F9"
+    },
+    {
+      "id": "G06",
+      "requirement": "Defense",
+      "status": "PARTIAL",
+      "evidence": "Earned command simulation clears 20 Endless waves; visible role motion/physical lane and complete natural journey open.",
+      "findings": "F1 F2 F3"
+    },
+    {
+      "id": "G07",
+      "requirement": "Five War modes",
+      "status": "PARTIAL",
+      "evidence": "All entry/core/isolation paths covered in suite; complete visible setup/result/reload for all five unverified.",
+      "findings": "F2"
+    },
+    {
+      "id": "G08",
+      "requirement": "Hero/classes",
+      "status": "FAIL",
+      "evidence": "Eight class selection/body views inspected; Knight era mismatch, other unverified eras and incomplete kits.",
+      "findings": "F4 F5 F6"
+    },
+    {
+      "id": "G09",
+      "requirement": "Nine skills/eight spells",
+      "status": "PARTIAL",
+      "evidence": "Source/core tests including positive morale and all spells pass; natural earned Wisdom/Resurrection journey not independently complete.",
+      "findings": "F2 F9"
+    },
+    {
+      "id": "G10",
+      "requirement": "Six-slot equipment/Forge/bag",
+      "status": "PARTIAL",
+      "evidence": "Core recipes/qualities/slots tested; actual worn visual replacement and workshop/selected-item composition fail.",
+      "findings": "F2 F4 F6"
+    },
+    {
+      "id": "G11",
+      "requirement": "Army/eight creatures",
+      "status": "PARTIAL",
+      "evidence": "All eight earned core identities covered; complete natural dwelling/combat/rank/codex journeys and role gait open.",
+      "findings": "F2 F3"
+    },
+    {
+      "id": "G12",
+      "requirement": "Story/quests/Future",
+      "status": "PARTIAL",
+      "evidence": "Earned simulated chapters/milestones/six quests/Future pass; full visible branch/claim/return journey open.",
+      "findings": "F2 F6"
+    },
+    {
+      "id": "G13",
+      "requirement": "Market",
+      "status": "PARTIAL",
+      "evidence": "Core quotes/transactions and live Stone lock covered; ordinary Bronze buy/sell/error/cancel/reload not independently replayed.",
+      "findings": "F2"
+    },
+    {
+      "id": "G14",
+      "requirement": "Tutorial",
+      "status": "PARTIAL",
+      "evidence": "Core target sequence/skip/review tested and initial Build target observed; complete contextual visible sequence unverified.",
+      "findings": "F2 F6"
+    },
+    {
+      "id": "G15",
+      "requirement": "Save/recovery/settings",
+      "status": "PARTIAL",
+      "evidence": "Core fault tests and real export/import/Continue observed; long-browser quota failures and native/audio/performance closure remain.",
+      "findings": "F7 F8"
+    },
+    {
+      "id": "G16",
+      "requirement": "Shared consequences",
+      "status": "PARTIAL",
+      "evidence": "Core settlement/idempotency/practice isolation pass, bounded live Skirmish settles; full natural persistent multimode journey open.",
+      "findings": "F2 F7"
+    }
+  ],
+  "originalRequirements": [
+    {
+      "id": "OWN-01",
+      "requirement": "section feedback",
+      "status": "UNVERIFIED",
+      "related": [
+        "G01",
+        "G08",
+        "G10"
+      ],
+      "evidence": "Owner explicitly rejects current game look/plot grid/box walls and keeps this AI verifier-only; final acceptance not claimed."
+    },
+    {
+      "id": "OWN-02",
+      "requirement": "fresh rebuild",
+      "status": "PASS_BOUNDED",
+      "related": [],
+      "evidence": "Current source and local package scanned; no old executable imports found. Exhaustive code ancestry was not audited."
+    },
+    {
+      "id": "OWN-03",
+      "requirement": "existing art reuse",
+      "status": "PARTIAL",
+      "related": [
+        "G01",
+        "G04",
+        "G08",
+        "G10"
+      ],
+      "evidence": "Current assets/source hashes inspected for required consumers; whole provenance/archive transfer not re-audited."
+    },
+    {
+      "id": "OWN-04",
+      "requirement": "connected campaign",
+      "status": "PARTIAL",
+      "related": [
+        "G16"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-05",
+      "requirement": "exact composition",
+      "status": "PARTIAL",
+      "related": [
+        "G01",
+        "G04",
+        "G05",
+        "G06",
+        "G08",
+        "G10"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-06",
+      "requirement": "realistic first impression",
+      "status": "PARTIAL",
+      "related": [
+        "G01",
+        "G08"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-07",
+      "requirement": "Day1 footprints",
+      "status": "PARTIAL",
+      "related": [
+        "G02"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-08",
+      "requirement": "eight ages",
+      "status": "PARTIAL",
+      "related": [
+        "G01"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-09",
+      "requirement": "continuous terrain/sites",
+      "status": "PARTIAL",
+      "related": [
+        "G04"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-10",
+      "requirement": "true mount gait",
+      "status": "PARTIAL",
+      "related": [
+        "G04"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-11",
+      "requirement": "eight classes/kit eras",
+      "status": "PARTIAL",
+      "related": [
+        "G08"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-12",
+      "requirement": "Defense legality/roles",
+      "status": "PARTIAL",
+      "related": [
+        "G06"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-13",
+      "requirement": "grounded Tactical",
+      "status": "PARTIAL",
+      "related": [
+        "G05"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-14",
+      "requirement": "era-correct content",
+      "status": "PARTIAL",
+      "related": [
+        "G01",
+        "G08",
+        "G10"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-15",
+      "requirement": "quality/return play",
+      "status": "PARTIAL",
+      "related": [
+        "G12",
+        "G15",
+        "G16"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "OWN-16",
+      "requirement": "usable handoff",
+      "status": "PASS_BOUNDED",
+      "related": [],
+      "evidence": "Dated report, source snapshot, matrices and one complete portable executor continuation prepared; no Git publication/restore claim."
+    },
+    {
+      "id": "OWN-17",
+      "requirement": "no repeated setup",
+      "status": "PASS_BOUNDED",
+      "related": [],
+      "evidence": "Existing environment/version records reused and actual runner versions refreshed; no setup re-interview."
+    },
+    {
+      "id": "OWN-18",
+      "requirement": "image policy",
+      "status": "AUTHORITY_RECORDED_LIVE_UNVERIFIED",
+      "related": [],
+      "evidence": "Latest targeted extra $20 / absolute $100 ceiling documented. No live accounting/provider readiness refresh or paid call."
+    },
+    {
+      "id": "OWN-19",
+      "requirement": "offline/no-store/cloud",
+      "status": "PASS_STATIC_RUNTIME_UNVERIFIED",
+      "related": [
+        "G15"
+      ],
+      "evidence": "Latest package has zero declared permissions and current runtime has no remote URLs. No independent device/network run."
+    },
+    {
+      "id": "SYS-01",
+      "requirement": "economy",
+      "status": "PARTIAL",
+      "related": [
+        "G02",
+        "G03"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-02",
+      "requirement": "Army",
+      "status": "PARTIAL",
+      "related": [
+        "G11"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-03",
+      "requirement": "six functional equipment slots",
+      "status": "PARTIAL",
+      "related": [
+        "G10"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-04",
+      "requirement": "Forge/Market",
+      "status": "PARTIAL",
+      "related": [
+        "G10",
+        "G13"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-05",
+      "requirement": "Hero",
+      "status": "PARTIAL",
+      "related": [
+        "G08",
+        "G09"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-06",
+      "requirement": "Adventure",
+      "status": "PARTIAL",
+      "related": [
+        "G04"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-07",
+      "requirement": "Tactical",
+      "status": "PARTIAL",
+      "related": [
+        "G05"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-08",
+      "requirement": "Defense",
+      "status": "PARTIAL",
+      "related": [
+        "G06"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-09",
+      "requirement": "Story/objectives",
+      "status": "PARTIAL",
+      "related": [
+        "G12"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-10",
+      "requirement": "settings/audio",
+      "status": "PARTIAL",
+      "related": [
+        "G15"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-11",
+      "requirement": "tutorial",
+      "status": "PARTIAL",
+      "related": [
+        "G14"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-12",
+      "requirement": "saves",
+      "status": "PARTIAL",
+      "related": [
+        "G15"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-13",
+      "requirement": "shared progression",
+      "status": "PARTIAL",
+      "related": [
+        "G16"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    },
+    {
+      "id": "SYS-14",
+      "requirement": "native",
+      "status": "PARTIAL",
+      "related": [
+        "G15"
+      ],
+      "evidence": "Latest web package closure passes; native delivery binary differs and installed identity/full native performance remain unverified."
+    },
+    {
+      "id": "SYS-15",
+      "requirement": "mobile/performance",
+      "status": "PARTIAL",
+      "related": [
+        "G01",
+        "G05",
+        "G06",
+        "G15"
+      ],
+      "evidence": "52 requested screen/viewport visits; actual phone widths 826/934. Contrast, exact odd widths and dense Android FPS/memory/thermal not closed."
+    },
+    {
+      "id": "SYS-16",
+      "requirement": "five War options",
+      "status": "PARTIAL",
+      "related": [
+        "G07"
+      ],
+      "evidence": "See current related G rows; whole feature acceptance is not closed."
+    }
+  ],
+  "mockReferences": [
+    {
+      "reference": "01-home.jpg",
+      "requirement": "Correct Ages of Dominion title, panoramic world, compact book/menu treatment, visible save state and real Continue/New/Load/Settings.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    },
+    {
+      "reference": "02-kingdom-day1.jpg",
+      "requirement": "Sparse starting settlement, distinct upper civic site, all 17 empty selectable plots, separate perimeter and grounded first construction. Correct the mock's medieval Stone elements.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "03-kingdom-stone.jpg",
+      "requirement": "Mature Stone settlement with primitive structures/materials, appropriate workers and terrain; no stone cathedral/medieval armor.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "04-kingdom-bronze.jpg",
+      "requirement": "Bronze settlement transformation with coherent roads/fields/buildings and period troops/transport.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "05-kingdom-iron.jpg",
+      "requirement": "Iron treatment across the whole settlement, not only Town Hall.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "06-kingdom-medieval.jpg",
+      "requirement": "Medieval civic hierarchy, inhabited plots, perimeter, bridge and grounded settlement depth.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "07-kingdom-gunpowder.jpg",
+      "requirement": "Gunpowder architecture/people/transport and coherent road/field treatment.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "08-kingdom-industrial.jpg",
+      "requirement": "Industrial city treatment and matching production/transport/tower/army forms.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "09-kingdom-modern.jpg",
+      "requirement": "Modern settlement and matching military/civic props without leftover early-age structures.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "10-kingdom-future.jpg",
+      "requirement": "Future homeland with coherent advanced forms; correct mock rural carryovers and do not invent a Research Lab.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "11-adventure-overview.jpg",
+      "requirement": "Inhabited sites, readable landmarks, fog and hero position integrated into continuous terrain.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "12-adventure-crossing.jpg",
+      "requirement": "Actual committed route follows the painted crossing and banks; grounded mounted travel with legal picking.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "13-adventure-foot.jpg",
+      "requirement": "On-foot movement, site approach, selection and encounter interaction at appropriate scale.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "14-tactical-deployment.jpg",
+      "requirement": "Grounded formations and commander, legal deployment preview, visible roster and clear start/cancel state.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "15-tactical-action.jpg",
+      "requirement": "Readable active stack/initiative, ground targets, meaningful attacks/spells and clear action feedback.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "16-battle-result.jpg",
+      "requirement": "Composed victory/defeat/retreat result with actual survivors/casualties/XP/resources/loot and once-only return.",
+      "status": "PARTIAL",
+      "evidence": "Live pending result/apply works; composed actual survivor/reward/loot result reference not independently accepted."
+    },
+    {
+      "reference": "17-defense-preparation.jpg",
+      "requirement": "Scene-bound pads, tower selection/range preview, available owned roster and gate/wave preparation.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "18-defense-wave.jpg",
+      "requirement": "Readable threats, grounded motion/attacks, telegraphs/projectiles, concise wave/gate/pause controls and no battle treasury.",
+      "status": "FAIL_OR_UNVERIFIED",
+      "evidence": "Fresh runtime or all-age terrain overview inspected; physical registration/grounding/composition gates remain open (F1/F3/F6)."
+    },
+    {
+      "reference": "19-hero-equipment.jpg",
+      "requirement": "Dominant full figure in a believable chamber; Helmet/Weapon/Shield left and Chest/Greaves/Ring right; real selected item and period-correct appearance. Ignore invented gear names.",
+      "status": "FAIL",
+      "evidence": "Eight settled body views: flat chamber, wrong/unverified eras and icon overlays; coherent worn body still missing (F4/F5/F6)."
+    },
+    {
+      "reference": "20-skills.jpg",
+      "requirement": "Designed skill tree/panel with nine distinct square sigils, current rank, next effect, prerequisites and real point spending.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    },
+    {
+      "reference": "21-spells.jpg",
+      "requirement": "Designed spellbook/panel with eight distinct round glyphs, eligibility/mana/target information and actual legal selection.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    },
+    {
+      "reference": "22-forge.jpg",
+      "requirement": "Believable workshop and prominent correct selected item, six categories, quality/cost/material preview and visible crafting result.",
+      "status": "FAIL",
+      "evidence": "Fresh Forge shows generic SVG workshop/anvil rather than required prominent source-supported selected-item/workshop treatment (F6)."
+    },
+    {
+      "reference": "23-inventory.jpg",
+      "requirement": "Readable carried/equipped grid with rarity, identity, compatible slots, comparison and confirmation; real empty/full states.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    },
+    {
+      "reference": "24-army.jpg",
+      "requirement": "Cohesive roster/codex with actual troop/creature art, counts/rank/stats/capacity and contextual recruitment.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    },
+    {
+      "reference": "25-story.jpg",
+      "requirement": "Journal-like chapters/rival/branch presentation with saved choices and meaningful context.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    },
+    {
+      "reference": "26-quests.jpg",
+      "requirement": "Objective presentation with actual progress/reward/claim state; exclude mock device frame from the runtime.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    },
+    {
+      "reference": "27-tutorial.jpg",
+      "requirement": "Short anchored instruction pointing to the actual target without hiding the scene; exclude mock device frame.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    },
+    {
+      "reference": "28-settings.jpg",
+      "requirement": "Clear local music/SFX/reduced-motion controls, Help/Credits/Privacy and correct return/focus.",
+      "status": "PASS_BOUNDED_UNVERIFIED",
+      "evidence": "Basic local Settings/Home/save UI works in inspected states; full native, quota/recovery/contrast/visual composition remain open."
+    },
+    {
+      "reference": "29-save-recovery.jpg",
+      "requirement": "Usable slots/import/export/backup/recovery with explicit damaged versus absent state and safe replacement.",
+      "status": "PASS_BOUNDED_UNVERIFIED",
+      "evidence": "Basic local Settings/Home/save UI works in inspected states; full native, quota/recovery/contrast/visual composition remain open."
+    },
+    {
+      "reference": "30-icon-material-board.jpg",
+      "requirement": "Consistent materials, semantic icon vocabulary and distinguishable shapes; resolve duplicated motifs instead of copying ambiguity. This is a design-system reference, not another menu page.",
+      "status": "PARTIAL_UNVERIFIED",
+      "evidence": "Reference reviewed at overview; counterpart/elements exist. Full state-specific composition and native/phone fidelity are not accepted."
+    }
+  ],
+  "journeys": [
+    {
+      "id": "J01",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Independent fresh class/start and correct starter economy; full initial-target/cancel/class matrix remains bounded."
+    },
+    {
+      "id": "J02",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Independent ordinary Lumber Camp cost/completion/production and restored export; all upgrade/cancel/reload subcases not replayed here."
+    },
+    {
+      "id": "J03",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Core recruitment/capacity tests pass; complete ordinary visible recruit-to-combat journey not replayed."
+    },
+    {
+      "id": "J04",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Earned command progression and synthetic age views pass. Producer natural browser path grants resources/Hall (F2)."
+    },
+    {
+      "id": "J05",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Core navigation tests pass; all-age physical crossing/mount acceptance fails (F1/F3)."
+    },
+    {
+      "id": "J06",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Core fixed offers/guards tested; producer dwelling PASS leaves claimed false (F2)."
+    },
+    {
+      "id": "J07",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Live Skirmish opens; required manual action/flyer/morale queue cases not all replayed. Role motion fails (F3/F9)."
+    },
+    {
+      "id": "J08",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Independent Retreat focus trap/cancel and Auto/once-applied result pass bounded. Full victory/defeat/retreat/reload matrix open."
+    },
+    {
+      "id": "J09",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Core fixed-step/deploy/pause/reload tests pass. Complete natural visible Defense result and art gates remain open."
+    },
+    {
+      "id": "J10",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Five core mode entries covered. Independent Skirmish only; all five full natural flows not claimed."
+    },
+    {
+      "id": "J11",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Six slots/qualities tested in core and equipped visual fixtures. Producer natural Forge includes grants; appearance fails (F2/F4)."
+    },
+    {
+      "id": "J12",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Core point/skill/all-spell/Resurrection tests pass. Producer live spell uses injected Wisdom/wounded stack, not natural earned journey."
+    },
+    {
+      "id": "J13",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Eight creatures earned via command simulation. Current independent natural dwelling-to-combat/rank loop not completed."
+    },
+    {
+      "id": "J14",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Core seven chapters/six quests/eight milestones/Future covered. Full ordinary visible saved branch/conclusion/claim loop remains open."
+    },
+    {
+      "id": "J15",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Core quotes and transactions pass; live Stone locked state observed. Ordinary complete Bronze transaction/error/cancel loop unverified."
+    },
+    {
+      "id": "J16",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Independent real export/import/restored Continue observed; all slots/corrupt/unsupported/quota/recovery/native flows not fully rerun."
+    },
+    {
+      "id": "J17",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Basic Settings/text/rotation sampled; full heard audio, contrast, tutorial and keyboard journey not fully closed."
+    },
+    {
+      "id": "J18",
+      "status": "PARTIAL_NOT_COMPLETE",
+      "evidence": "Natural build and practice result plus preserved natural save; complete natural build/recruit/equip/travel/campaign-battle/defend/claim chain not proved."
+    }
+  ],
+  "counts": {
+    "G": 16,
+    "OWN": 19,
+    "SYS": 16,
+    "mocks": 30,
+    "journeys": 18
+  },
+  "scope": "Coverage accounting is not acceptance. Core simulation, imported visual fixtures, ordinary pointer play, package, device and owner gates remain separate."
+}

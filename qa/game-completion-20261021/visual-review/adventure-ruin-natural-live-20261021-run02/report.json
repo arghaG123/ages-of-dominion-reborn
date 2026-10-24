@@ -1,0 +1,205 @@
+{
+  "recordedAt": "2026-10-21T06:21:00.945Z",
+  "classification": "NATURAL_GRASSLANDS_RUIN_CLAIM_ON_FOOT_SAVE_RELOAD",
+  "journey": "Fresh visible Grasslands campaign -> cardinal route to ruin approach -> on-foot arrival -> claim offer -> save/reload",
+  "note": "Campaign, position, and resources are never injected. A read-only path search excludes unresolved guards; each move and the claim use visible game controls. SVG actor DOM bounds include transparent source-image margins, so on-foot visibility is reviewed in the saved pixels rather than inferred from that rectangle.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "steps": [
+    {
+      "position": [
+        8,
+        4
+      ],
+      "moves": 4,
+      "day": 1,
+      "revision": 11
+    },
+    {
+      "position": [
+        7,
+        4
+      ],
+      "moves": 3,
+      "day": 1,
+      "revision": 14
+    },
+    {
+      "position": [
+        6,
+        4
+      ],
+      "moves": 2,
+      "day": 1,
+      "revision": 16
+    },
+    {
+      "position": [
+        5,
+        4
+      ],
+      "moves": 1,
+      "day": 1,
+      "revision": 19
+    },
+    {
+      "position": [
+        5,
+        5
+      ],
+      "moves": 0,
+      "day": 1,
+      "revision": 22
+    },
+    {
+      "position": [
+        5,
+        6
+      ],
+      "moves": 4,
+      "day": 2,
+      "revision": 27
+    },
+    {
+      "position": [
+        4,
+        6
+      ],
+      "moves": 3,
+      "day": 2,
+      "revision": 30
+    },
+    {
+      "position": [
+        3,
+        6
+      ],
+      "moves": 2,
+      "day": 2,
+      "revision": 32
+    }
+  ],
+  "start": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "revision": 8,
+    "seed": 2543103373
+  },
+  "site": {
+    "id": "ruin",
+    "approach": [
+      3,
+      6
+    ],
+    "pathCells": [
+      [
+        8,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "pathLength": 8,
+    "offerKey": "ruinXp",
+    "offer": 90
+  },
+  "visualLabels": {
+    "visibleTexts": [
+      "Gold cache",
+      "Town",
+      "Ancient ruins",
+      "Creature dwelling"
+    ],
+    "minimapLabelCollisions": [],
+    "nearbyAccessibleAnchors": [],
+    "onFootHeroVisibleLabel": false,
+    "onFootHeroAccessibleName": "Your hero on foot",
+    "compactScale": 0.5995639534883721
+  },
+  "claim": {
+    "grant": {
+      "field": "heroXp",
+      "before": 0,
+      "after": 90,
+      "amount": 90,
+      "heroLevel": 1,
+      "unspentPoints": 0
+    },
+    "offer": 90,
+    "claimedSites": [
+      "ruin"
+    ],
+    "traveler": {
+      "mode": "on-foot",
+      "actor": {
+        "kind": "actor",
+        "id": "knight",
+        "domBoundsIncludeTransparentSourceMargins": true,
+        "bounds": {
+          "left": 44.45676803588867,
+          "top": 145.9606475830078,
+          "right": 305.8404655456543,
+          "bottom": 337.7022705078125
+        },
+        "visualReviewCaptureRequired": true,
+        "role": "img",
+        "accessibleName": "Your hero on foot"
+      }
+    },
+    "day": 2,
+    "revision": 36
+  },
+  "capture": "qa\\game-completion-20261021\\visual-review\\adventure-ruin-natural-live-20261021-run02\\grasslands-ruin-claimed-on-foot-825x375.jpg",
+  "reload": {
+    "position": [
+      3,
+      6
+    ],
+    "day": 2,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "heroXp": 90,
+    "heroLevel": 1,
+    "claimedSites": [
+      "ruin"
+    ],
+    "repeatedClaimButtonCount": 0,
+    "claimedCopy": "ANCIENT RUINS\n\nThis site has already been explored.\n\nTRAVEL\n\nDISCOVERED PLACES\n\nTown\nAncient ruins\nCreature dwelling\nRest · spend 1 move to restore mana\nEnd day · Restore daily movement\nReturn — Reach the town approach first.\nReview tutorial",
+    "revision": 39
+  },
+  "passed": true
+}

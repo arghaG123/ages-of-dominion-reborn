@@ -1,0 +1,47 @@
+<!doctype html><meta charset="utf-8"><title>Isolated IndexedDB verification</title>
+<h1>Disposable native IndexedDB probes</h1><p>This separate port is verification only. No owner campaign is touched.</p>
+<button id="run">Run probes once</button><pre id="result">Pending</pre>
+<script type="module">
+import { IndexedDBStorageAdapter } from '../../src/core/storage-adapter.js';
+import { newCampaign } from '../../src/core/campaign.js';
+import { encode } from '../../src/core/save.js';
+import data from '../../src/data/reference-data.json' with {type:'json'};
+import contract from '../../src/data/implementation-contract.json' with {type:'json'};
+document.querySelector('#run').onclick=async()=>{
+  document.querySelector('#run').disabled=true;
+  const rows=[];
+  const record=(name,expected,actual)=>rows.push({name,expected,actual,verdict:JSON.stringify(expected)===JSON.stringify(actual)?'PASS_BOUNDED':'FAIL'});
+  try {
+    await new Promise((resolve, reject) => {
+      const request = indexedDB.deleteDatabase('aod-reborn-probe-20261017');
+      request.onsuccess = () => resolve();
+      request.onerror = () => reject(request.error);
+    });
+    const a=new IndexedDBStorageAdapter(indexedDB, 'aod-reborn-probe-20261017');await a.open();
+    const s=newCampaign(contract,data,1000);s.revision=100;
+    let head=await a.commit(null,encode(s,data),data);
+    const t=structuredClone(s);t.revision=101;
+    let rejected=false;
+    try {await a.commit({...head,checksum:'wrong-checksum',campaignId:'wrong-identity'},encode(t,data),data);}catch(e){rejected=true;}
+    record('CAS checks campaignId and checksum',true,rejected);
+    let live=await a.loadLive(data);head=live.head;
+    const b=new IndexedDBStorageAdapter(indexedDB, 'aod-reborn-probe-20261017');await b.open();
+    const replacement=structuredClone(s);replacement.revision=200;
+    await a.replace(head,encode(replacement,data),data);
+    const stale=structuredClone(s);stale.revision=150;
+    rejected=false;
+    try {await b.replace(head,encode(stale,data),data);}catch(e){rejected=true;}
+    record('stale second writer replacement rejected',true,rejected);
+    live=await a.loadLive(data);record('newer replacement survives stale replacement',200,live.state.revision);
+    const old=newCampaign(contract,data,1000);old.revision=1;
+    const source=new Map([['aod-reborn-v1',encode(old,data)],['aod-reborn-v1-staged','preserve-staged-bytes']]);
+    const mig=await a.migrateFromLocalStorage({getItem:k=>source.get(k)??null},data);
+    live=await a.loadLive(data);
+    record('migration cannot overwrite newer existing DB',150,live.state.revision);
+    const exported=await a.export();
+    record('migration preserves staged bytes',true,Object.values(exported.campaigns).includes('preserve-staged-bytes'));
+    rows.push({name:'raw-native-store-export',head:exported.heads,keys:Object.keys(exported.campaigns),migration:mig});
+    document.querySelector('#result').textContent=JSON.stringify({classification:'NATIVE_BROWSER_ISOLATED_ADVERSARIAL_FIXTURE',rows},null,2);
+  }catch(e){document.querySelector('#result').textContent=JSON.stringify({rows,error:String(e),stack:e.stack},null,2);}
+};
+</script>

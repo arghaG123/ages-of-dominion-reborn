@@ -1,0 +1,42 @@
+- main:
+  - button "Menu" [active]:
+  - button "Save campaign":
+  - img "Stone Age forest tactical ground"
+  - img "Campaign scene"
+  - generic: Clubman 12
+  - generic: Slinger 7
+  - generic: Dire Wolf 4
+  - generic: Bandit 3
+  - generic: Cave Bear 2
+  - heading "Round 2" [level=2]
+  - paragraph: Clubman ×12 · Your turn
+  - generic "Living formations":
+    - generic "Dire Wolf ×4":
+      - img "Dire Wolf ×4"
+      - generic: "4"
+    - generic "Clubman ×12":
+      - img "Clubman ×12"
+      - generic: "12"
+    - generic "Bandit ×3":
+      - img "Bandit ×3"
+      - generic: "3"
+    - generic "Cave Bear ×2":
+      - img "Cave Bear ×2"
+      - generic: "2"
+    - generic "Slinger ×7":
+      - img "Slinger ×7"
+      - generic: "7"
+  - generic "Primary actions":
+    - button "Attack. 2 legal targets":
+    - button "Defend. Brace this stack"
+    - button "Wait. Act later this round":
+    - button "Spell. No cast" [disabled]
+    - button "More battle actions and targets":
+  - group "Knight, level 1, 0 experience. Attack 3, defense 3, power 1, knowledge 1.":
+    - strong: Knight · Level 1
+    - generic: XP 0
+    - generic: ATK 3 · DEF 3 · PWR 1 · KNO 1
+    - generic: Morale 0.0 · 0.0% bonus chance
+  - status "Round 2, Stone Age, day 1":
+    - strong: Round 2
+    - generic: Stone Age · Day 1

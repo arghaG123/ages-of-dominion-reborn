@@ -1,0 +1,434 @@
+{
+  "recordedAt": "2026-10-21T17:33:44.437Z",
+  "classification": "NATURAL_UI_TUNDRA_FULL_BRIDGES_AND_SITE_REWARDS_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Tundra -> naturally traverse every registered bridge deck -> visit and interact with Shrine, Ruin, Mill and Mine -> persist and reload map, rewards and discoveries",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "tundra-west-stone-bridge",
+    "tundra-east-ice-channel-bridge",
+    "tundra-south-channel-bridge"
+  ],
+  "campaignId": "campaign-0bc30252-70ad-4780-bb41-ec9713001605",
+  "layoutId": "tundra-layout-10",
+  "seed": 1192304709,
+  "renderBinding": {
+    "worldId": "tundra",
+    "terrainFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+    "renderModel": "integrated-map-art-plus-live-interactions",
+    "registeredBridgeCount": 3,
+    "playableCrossingCount": 3,
+    "artMode": "painted source bridges remain in the integrated owner painting; no duplicate generic bridge stamp is expected"
+  },
+  "start": {
+    "x": 3,
+    "y": 5,
+    "moves": 5,
+    "visited": [
+      "3,5"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 110,
+      "wood": 163,
+      "stone": 120,
+      "gold": 210
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 110,
+      "mineGold": 210
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [
+    {
+      "bridgeId": "tundra-west-stone-bridge",
+      "start": [
+        3,
+        5
+      ],
+      "nearBank": [
+        5,
+        6
+      ],
+      "farBank": [
+        8,
+        6
+      ],
+      "approachCells": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "deckCells": [
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "crossingCells": [
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "committedCells": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "movementCost": 10,
+      "daysEnded": 1,
+      "finalPosition": [
+        8,
+        6
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "tundra-east-ice-channel-bridge",
+      "start": [
+        8,
+        6
+      ],
+      "nearBank": [
+        11,
+        4
+      ],
+      "farBank": [
+        14,
+        4
+      ],
+      "approachCells": [
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ]
+      ],
+      "deckCells": [
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "crossingCells": [
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ]
+      ],
+      "committedCells": [
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ]
+      ],
+      "movementCost": 8,
+      "daysEnded": 2,
+      "finalPosition": [
+        14,
+        4
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "tundra-south-channel-bridge",
+      "start": [
+        14,
+        4
+      ],
+      "nearBank": [
+        8,
+        8
+      ],
+      "farBank": [
+        10,
+        8
+      ],
+      "approachCells": [
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "deckCells": [
+        [
+          9,
+          8
+        ]
+      ],
+      "crossingCells": [
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "committedCells": [
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "movementCost": 12,
+      "daysEnded": 3,
+      "finalPosition": [
+        10,
+        8
+      ],
+      "allDeckVisited": true
+    }
+  ],
+  "siteInteractions": [
+    {
+      "siteId": "shrine",
+      "start": [
+        10,
+        8
+      ],
+      "approach": [
+        8,
+        7
+      ],
+      "route": [
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "routeCost": 3,
+      "skillId": "tactics",
+      "choices": [
+        "tactics",
+        "archery"
+      ],
+      "claimed": true,
+      "skillRankBefore": 0,
+      "skillRankAfter": 1
+    }
+  ],
+  "captures": [
+    {
+      "name": "tundra-start",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run03\\tundra-start-1280x720.png"
+    },
+    {
+      "name": "after-tundra-west-stone-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run03\\after-tundra-west-stone-bridge-1280x720.png"
+    },
+    {
+      "name": "after-tundra-east-ice-channel-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run03\\after-tundra-east-ice-channel-bridge-1280x720.png"
+    },
+    {
+      "name": "after-tundra-south-channel-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run03\\after-tundra-south-channel-bridge-1280x720.png"
+    },
+    {
+      "name": "after-site-shrine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run03\\after-site-shrine-1280x720.png"
+    }
+  ],
+  "errors": [],
+  "notFound": [],
+  "passed": false,
+  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#world [data-adventure-cell=\"8,6\"]')\u001b[22m\n\u001b[2m    - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  2 × element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m    2 × <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m    2 × <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m    2 × <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m    2 × <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element was detached from the DOM, retrying\u001b[22m\n\u001b[2m      - locator resolved to <polygon stroke=\"none\" data-open=\"1\" fill=\"#00000000\" data-adventure-cell=\"8,6\" points=\"688,460.79999999999995 774,460.79999999999995 774,537.6 688,537.6\"></polygon>\u001b[22m\n\u001b[2m    - attempting click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 20ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m    - <image x=\"0\" y=\"0\" width=\"1024\" height=\"1024\" href=\"http://127.0.0.1:4179/assets/derivatives/rig-limbs-20261013/rigs/knight.png\"></image> from <g role=\"img\" data-arm=\"14\" data-shin=\"4\" data-spine=\"0\" data-thigh=\"8\" data-clip=\"idle\" data-forearm=\"8\" data-actor=\"knight\" data-gait=\"per-joint\" aria-label=\"Your hero on foot\" data-adventure-travel-mode=\"on-foot\" transform=\"translate(731 576) scale(0.2 0.2)\">…</g> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n\n    at moveNaturally (C:\\dev\\ages-of-dominion-reborn\\qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021.mjs:102:16)\n    at async file:///C:/dev/ages-of-dominion-reborn/qa/game-completion-20261021/visual-review/adventure-tundra-natural-bridge-crossings-live-20261021.mjs:214:7"
+}

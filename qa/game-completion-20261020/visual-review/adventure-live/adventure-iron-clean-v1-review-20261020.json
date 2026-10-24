@@ -1,0 +1,41 @@
+{
+  "schema": "scene-image-edit-candidate-review-v1",
+  "reviewDate": "2026-10-20",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "source": {
+    "path": "assets/derivatives/scene-edges-20261013/adventure-iron.png",
+    "sha256": "c0ee492c8aba95ad11324879c9569b86a52cf56f74e0c30b759557f0f13f3ce9",
+    "size": [1376, 768]
+  },
+  "candidate": {
+    "path": "assets/derivatives/visual-repair-20261020/scenes/adventure-iron-clean-v1.png",
+    "sha256": "212bf3c2cba60deca08a317ad4dbcd5acfc33e20602a05575878ec423f1fdaec",
+    "size": [1678, 937],
+    "format": "PNG"
+  },
+  "request": "Use case: precise-object-edit. Asset type: 16:9 semi-realistic historical Iron Age Adventure terrain background used beneath live game actors and route/site markers. Edit target: the supplied 1376x768 Iron Age terrain image. Remove only the editor/registration overlays baked into the image: every dark green rectangular site outline, every dotted guide/grid mark, every small black location label (food, wood, gold, stone, guard-ruin, guard-mine, hero), every red marker dot, and the horse-and-rider figure near the lower middle (a live traveler is rendered separately by the game). Inpaint those areas with natural, detailed terrain that matches nearby soil, grass, rocks, and road surfaces. Keep the existing site clearings subtle and naturally usable for dynamic buildings. Preserve the exact camera, framing, aspect ratio, terrain composition, riverbanks and water path, both stone bridges and their positions, cliffs, route roads and junctions, lighting, palette, and realistic semi-realistic Iron Age art style. Do not add structures, people, animals, symbols, text, HUD, numbers, labels, grids, colored markings, or new route branches. Do not rotate, warp, crop, zoom, or rearrange anything. Deliver a clean terrain-only candidate with the same 1376x768 canvas.",
+  "registrationComparison": {
+    "method": "SIFT feature matches and RANSAC partial-affine fit after candidate normalization to the source canvas",
+    "goodMatches": 2513,
+    "inliers": 2486,
+    "inlierRatio": 0.989,
+    "normalizedAffine": [[1.0005, -0.0, 0.1232], [0.0, 1.0005, -0.4155]],
+    "medianInlierResidualPx": 0.53,
+    "p90InlierResidualPx": 1.25,
+    "interpretation": "Strong source landmark registration; this is diagnostic alignment evidence and does not substitute for runtime route and site review."
+  },
+  "visualInspection": {
+    "greenSiteOutlinesRemoved": true,
+    "dottedGridMarksRemoved": true,
+    "locationLabelsRemoved": true,
+    "redMarkerDotsRemoved": true,
+    "bakedRiderRemoved": true,
+    "riverAndBothBridgesVisuallyRetained": true,
+    "runtimeRouteAndSiteReview": "PASS_NATURAL_UI_IRON_ADJACENT_ROUTE_8_7",
+    "runtimeEvidence": "qa/game-completion-20261020/visual-review/kingdom-live/natural-all-age-kingdom-live-20261020.json",
+    "runtimeResult": "Iron terrain loaded at 825x375 and 1280x720; visible road cell 8,7 previewed and confirmed; moves changed from 5 to 4; eight-age campaign saved and reloaded in Future; zero browser errors.",
+    "ownerAcceptance": "UNVERIFIED"
+  },
+  "result": "CANDIDATE_RUNTIME_REVIEWED_NOT_OWNER_ACCEPTED"
+}

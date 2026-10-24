@@ -1,0 +1,52 @@
+{
+  "reviewId": "M06-medieval-kingdom-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/06-kingdom-medieval.jpg",
+  "status": "FAIL_VISUAL_OPEN",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "loadedConfirmation": "Slot 2 loaded.",
+    "resourcesAtLoad": { "food": 1406, "wood": 420, "stone": 292, "gold": 3926 },
+    "wall": "Built level-1 Medieval stone-curtain wall, rendered as medieval kingdom stone-curtain.",
+    "provenance": "Isolated test copy advanced naturally through visible age-up controls; saved in slot 2 before visual review."
+  },
+  "viewport": { "requestedCss": [1280, 720], "observedCss": [1280, 720] },
+  "visualFindings": [
+    "This is an age-matched natural Medieval campaign, and the stone-curtain wall is integrated with the same Medieval ground family.",
+    "The M06 reference shows a dense, varied town enclosed by a large fortified boundary, a prominent central castle, fields, a left-side navigation rail, and a bottom-center Marketplace building inspector.",
+    "The live Kingdom render has roughly ten repeated mine-like structures, broad empty lots, most small settlement structures outside the wall, and no prominent central castle. The navigation is bottom-left and the scene does not approach the target's city density or hierarchy.",
+    "Opening the live Market produces a full-screen interior and four trade cards, not the in-world Marketplace building inspector shown by M06. This is a separate live screen, not an age-matched mock match."
+  ],
+  "evidence": {
+    "screenshotObservedInApprovedCUA": true,
+    "kingdomScreenshotRetainedAsFile": false,
+    "marketScreenshotRetainedAsFile": false,
+    "accessibilityState": ["Medieval Age · day 4 · storm", "Slot 2 loaded."],
+    "visualOwnerAccepted": false
+  },
+  "open": [
+    "Rework the Medieval settlement's truthful dynamic building density, focal castle and selected-building inspector to match M06 while preserving progression and age-family wall states.",
+    "Review all eight age compositions and M06 at exact target sizes with retained captures and owner acceptance.",
+    "Complete the remaining M01-M30, J01-J18 and independent desktop gates."
+  ],
+  "latestLiveUpdate": {
+    "date": "2026-10-22",
+    "route": "http://localhost:4174/?audit",
+    "viewport": [1280, 720],
+    "selection": "P02 Farm, level 1",
+    "inspectorBox": [432, 576, 416, 132],
+    "navigationRailBox": [12, 220, 58, 280],
+    "frameTransform": "translate(-10px, 0px) scale(0.9375)",
+    "layoutPartialAlignment": ["left navigation rail", "lower-center selected-building inspector"],
+    "remainingDirectFailures": ["12 repeated owned mine structures", "broad open inner plots", "no central castle artwork", "Farm inspector content differs from Marketplace mock"],
+    "browserConsole": { "warnings": 0, "errors": 0 },
+    "screenshotObserved": true,
+    "screenshotRetained": false,
+    "ownerAccepted": false,
+    "status": "FAIL_VISUAL_OPEN"
+  }
+}

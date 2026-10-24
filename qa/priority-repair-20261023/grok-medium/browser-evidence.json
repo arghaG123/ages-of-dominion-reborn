@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-23",
+  "role": "Medium usability executor",
+  "source": "live CUA preview at http://localhost:4543/?audit",
+  "isolation": {
+    "initial_state": "No campaign is stored on this device.",
+    "other_origin": "http://127.0.0.1:4543 unexpectedly showed a campaign; no interaction occurred there.",
+    "test_save": "A disposable campaign remains at the localhost test origin with Defense paused; reduced motion restored to false."
+  },
+  "viewports": [
+    {
+      "size": "825x375",
+      "screens": [
+        "Kingdom build preview",
+        "Army inspector",
+        "Spellbook",
+        "Defense HUD and tower inspection"
+      ]
+    },
+    {
+      "size": "933x424",
+      "screens": [
+        "Kingdom upgrade preview",
+        "Army inspector",
+        "Spellbook",
+        "Defense HUD and tower inspection"
+      ]
+    },
+    {
+      "size": "1280x720",
+      "screens": [
+        "Kingdom upgrade preview",
+        "Army inspector",
+        "Spellbook",
+        "Defense HUD and tower inspection"
+      ]
+    }
+  ],
+  "D1": {
+    "build_confirmation": "25 wood · 15 stone; P01 Level 0 -> 1; construction time 3 seconds.",
+    "completed_inspector": "Lumber Camp level 1; 0.45 Wood per second; upgrade 38 wood/23 stone; preview Level 1 -> 2 and 3 seconds.",
+    "duration_parity_cases": [
+      "lumber",
+      "quarry",
+      "townhall"
+    ]
+  },
+  "D2": {
+    "routes": [
+      "Quests -> Story/Quests",
+      "Bag -> Hero inventory",
+      "Camp -> Travel and Sites",
+      "Diplomacy -> Story/Rival records"
+    ],
+    "maps_changed": false
+  },
+  "D3": {
+    "defense_hud": "Wave 1 of 5 · 400 gate HP",
+    "tower_targets_css_px": {
+      "825x375": {
+        "diameter": 64,
+        "edge_gap_approx": 6.4
+      },
+      "933x424": {
+        "diameter": 64,
+        "edge_gap_approx": 15.7
+      },
+      "1280x720": {
+        "diameter": 64,
+        "edge_gap_approx": 45.3
+      }
+    },
+    "direct_label_taps": {
+      "825x375": "Sling Post opened HP 144/150, Range 2.9, Damage 10.",
+      "933x424": "Tar Pit opened HP 120/120, Range 2.3, Damage 3.",
+      "1280x720": "Sling Post opened HP 144/150, Range 2.9, Damage 10."
+    },
+    "campaign_battle": {
+      "result": "Victory",
+      "clubmen": "17 survivors, no losses",
+      "slingers": "7 survivors, 1 lost",
+      "rewards": [
+        "+150 gold",
+        "Offhand · Master",
+        "+110 Hero XP"
+      ],
+      "reload_readback": {
+        "clubmen": 17,
+        "slingers": 7,
+        "gold": 250,
+        "hero_mana": "5/10",
+        "inventory_items": 1,
+        "defense": "ACTIVE and paused, 0 of 5 cleared, 400 core HP"
+      }
+    },
+    "practice_battle": "Earlier natural isolated Skirmish showed casualties and no campaign rewards."
+  },
+  "D4": {
+    "mana": "5/10",
+    "eligible_and_affordable": [
+      "Magic Arrow, cost 5",
+      "Bless, cost 5"
+    ],
+    "eligible_but_insufficient": [
+      "Haste, cost 6",
+      "Cure, cost 6"
+    ],
+    "wisdom_locked": [
+      "Slow",
+      "Lightning Bolt",
+      "Fireball",
+      "Resurrection"
+    ],
+    "selected_low_mana_copy": "Unlocked · Not enough mana; current 5/10, cost 6.",
+    "inventory": "Offhand · Master; def +2; current DEF 3 to 5; equipped empty.",
+    "forge": "Item comparison works; normal Forge explains Armory prerequisite."
+  },
+  "D5": {
+    "before": {
+      "clubmen": 12,
+      "capacity": "2/2"
+    },
+    "transaction": {
+      "action": "Reinforce +5",
+      "price": "225 food, 50 gold"
+    },
+    "after": {
+      "clubmen": 17,
+      "capacity": "2/3",
+      "food": 25,
+      "gold": 100
+    },
+    "reload": {
+      "clubmen": 17,
+      "capacity": "2/3"
+    },
+    "next_attempt": "Disabled: Not enough resources."
+  },
+  "D6": {
+    "recovery_copy_cases": [
+      "no backup/no raw",
+      "backup only",
+      "raw only",
+      "backup and raw"
+    ],
+    "settings": "Reduced motion toggled on, survived reload, restored to off, and committed.",
+    "damaged_save_live_fixture": false
+  },
+  "test_results": {
+    "command": "node --test tests/kingdom-production.test.mjs tests/screen-presentation.test.mjs tests/defense-wave-presentation.test.mjs",
+    "passed": 29,
+    "failed": 0,
+    "main_syntax": "pass",
+    "screen_presentation_syntax": "pass",
+    "browser_errors_after_reload": 0
+  },
+  "visual_captures": "Screenshots were inspected live in CUA; image files were not persisted.",
+  "combined_recheck_20261023": {
+    "date": "2026-10-23",
+    "source": "live CUA preview at http://localhost:4544/?audit",
+    "originIsolation": "Fresh test origin; no campaign was present before this pass. The disposable campaign remains saved here. The user origin was not opened.",
+    "viewportReview": {
+      "825x375": "Populated Forge with equipped Flint Club; scroll exposed lower quality rows and selected-item summary.",
+      "933x424": "Populated Forge with equipped Flint Club; scroll exposed lower quality rows and selected-item summary.",
+      "1280x720": "Complete Forge panel, quality gates, equipped slot, carried item and selected-item summary visible.",
+      "screenshotsPersisted": false
+    },
+    "naturalDuel": {
+      "result": "Victory after one legal Clubman strike",
+      "clubmen": "17 survivors, 0 lost",
+      "slingers": "6 survivors, 2 lost",
+      "rewards": [
+        "+150 gold",
+        "Bone Circlet · Fine",
+        "Winged Spurs",
+        "+110 Hero XP"
+      ],
+      "returnedAndReloaded": "Campaign rewards, casualties and equipment remained."
+    },
+    "forgeCraft": {
+      "armory": "Built existing Armory at P04; 120 wood, 120 stone, 80 gold; construction time 3.1 seconds.",
+      "insufficientState": "Craft · Crude was disabled and reported the actual stone deficit; higher qualities reported Armory level requirements.",
+      "affordableState": "Craft · Crude enabled at 80 wood, 60 stone, 70 gold after natural Quarry production.",
+      "crafted": "Flint Club · Crude added to carried equipment.",
+      "comparison": "atk 3 to 4 with an empty weapon slot.",
+      "persistence": "Bone Circlet · Fine and equipped Flint Club · Crude remained equipped after reload."
+    },
+    "skillsAndSpells": {
+      "skillState": "No active offer; rank 0; 0 points. No natural skill offer reached.",
+      "spellState": "10/20 mana; Magic Arrow, Bless, Haste and Cure eligible at displayed costs; higher Wisdom spells locked at displayed Wisdom requirements."
+    },
+    "criticalEvidenceReviewed": {
+      "file": "qa/priority-repair-20261023/luna-critical/c1-c2-c3-browser-evidence.json",
+      "damagedSave": "Existing C1 live evidence records damaged-save export, backup restore, committed campaign state and preserved damaged bytes; not recreated in this recheck."
+    },
+    "unverifiedHere": [
+      "natural skill offer",
+      "live damaged-save fixture recreation",
+      "active Tactical effect animation",
+      "replay of Practice no-reward and Defense tower checks"
+    ],
+    "tests": {
+      "focusedVisualResponsive": "node --test tests/visual-responsive-20261018.test.mjs",
+      "focusedPassed": 39,
+      "focusedFailed": 0,
+      "fullSuite": "node --test tests/*.test.mjs",
+      "fullPassed": 303,
+      "fullFailed": 0,
+      "mediumFocusedPassed": 29,
+      "mediumFocusedFailed": 0,
+      "syntaxChecks": "node --check src/client/main.js; node --check src/client/screen-presentation.js"
+    },
+    "browserErrorsAfterActionsAndReload": 0,
+    "note": "Screenshots were reviewed in CUA but not written as PNG files.",
+    "changedFiles": [
+      "tests/visual-responsive-20261018.test.mjs",
+      "qa/priority-repair-20261023/grok-medium/CLOSEOUT.md",
+      "qa/priority-repair-20261023/grok-medium/browser-evidence.json",
+      "qa/priority-repair-20261023/grok-medium/source-hashes.json"
+    ],
+    "mediumImplementationFiles": [
+      "src/client/main.js",
+      "src/client/kingdom-production.js",
+      "src/client/polish.css",
+      "src/client/screen-presentation.js",
+      "tests/kingdom-production.test.mjs",
+      "tests/screen-presentation.test.mjs"
+    ],
+    "productionRuntimeChangedInRecheck": false,
+    "hashManifest": "qa/priority-repair-20261023/grok-medium/source-hashes.json"
+  }
+}

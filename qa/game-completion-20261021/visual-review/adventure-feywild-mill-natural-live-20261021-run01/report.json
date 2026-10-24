@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-10-21T12:43:26.026Z",
+  "classification": "NATURAL_UI_FEYWILD_MILL_HOTSPOT_ROUTE_CLAIM_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> Feywild -> travel to pictured windmill -> claim provisions -> reload",
+  "note": "Campaign state and travel are performed through visible UI controls. Geometry and snapshots are read-only assertions; no campaign state or position is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-0c24d344-9d1e-4937-baa7-fbae705d3872",
+  "previewCapture": "qa\\game-completion-20261021\\visual-review\\adventure-feywild-mill-natural-live-20261021-run01\\feywild-windmill-route-preview-825x375.png",
+  "result": "FAIL",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mounted'\n- 'on-foot'\n\n    at file:///C:/dev/ages-of-dominion-reborn/qa/game-completion-20261021/visual-review/adventure-feywild-mill-natural-live-20261021.mjs:108:10"
+}

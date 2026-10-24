@@ -1,0 +1,217 @@
+[
+  {
+    "id": "J01",
+    "manualLine": 510,
+    "assertions": [
+      "Open Home with no campaign in the isolated test origin; verify no false Continue. Start New and select a real class; verify correct identity/starting stats and only the selected class is chosen.",
+      "Enter Kingdom; assert age 0, Hall 1, 17 level-0 sites, Walls 0, 250/250/160/150 resources, empty worn gear, actual retained 12 melee/8 ranged and arrow/slow tower ownership. The scene must show that sparse state.",
+      "Verify tutorial targets the actual first Lumber site/action; a different/wrong/canceled action cannot falsely complete it. Reload and assert the same campaign/class/site state."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J02",
+    "manualLine": 516,
+    "assertions": [
+      "Select an empty actual site. Record resources/site/jobs. Open Lumber preview then cancel: all recorded durable values unchanged.",
+      "Confirm once: exact 25 wood/15 stone spend at current source price, one job, correct site/type, scaffold/work at that site. Double input cannot duplicate the spend/job.",
+      "Wait ordinary construction completion; inspect real level 1 and producer feedback. Preview/confirm its real upgrade with exact price, complete, save/reload and verify same ID/level/rates and correct upgraded appearance."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J03",
+    "manualLine": 522,
+    "assertions": [
+      "Build the real Barracks after prerequisite producers. Before it exists, inspect recruitment disabled reason and zero spend.",
+      "Recruit the selected legal role; assert source cost, +5 quantity or a new legal stack, capacity `2 + Barracks level`, stable entity ID and a correct era/role image.",
+      "Reinforce same-age stack through real rules; test a full-capacity new-stack rejection. Verify the same owned stack appears in Adventure and actual combat setup; reload retains it. No invented split/merge feature."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J04",
+    "manualLine": 528,
+    "assertions": [
+      "Before eligible Hall/payment, verify specific reasons and no partial spend. Upgrade the actual Hall and earn required resources through real producers/play.",
+      "Preview/cancel and confirm AGE_UP. Assert source `agePrice` exact deltas once, next age, unlocked facilities/Market and coherent terrain/building/worker/troop/tower/default-kit treatment.",
+      "Equipped old item IDs/stats/appearance persist; plot/road topology remains stable. Reload actual next age. All eight visual states additionally use explicitly labelled fixtures and earned core progression, never a grant called natural."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J05",
+    "manualLine": 534,
+    "assertions": [
+      "Leave town through the actual exit. Select a reachable destination and preview exact path/cost. Cancel retains position/moves/fog/visited state.",
+      "Confirm once; core commits destination/cost once, presentation follows that exact path with grounded feet/hooves, and no road crosses actual water/cliff outside valid crossing.",
+      "Save/reload preserves position/moves/fog. Resize/pan/zoom during a permitted presentation preserves alignment and inverse picking. Check real bridge approach/contact in M12 separately."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Day/rest/biome/weather supplement A06"
+  },
+  {
+    "id": "J06",
+    "manualLine": 540,
+    "assertions": [
+      "Reach a real site; inspect fixed loot/offer/claim terms, cancel and reload, then assert no reroll. Any claim spends/pays only once.",
+      "Reach a real guard and enter its Tactical encounter. Resolve through legal play/Auto; inspect actual pending result, settle and return to the same originating site.",
+      "Reload guard/site resolution and repeat claim attempt: no duplicate reward/encounter reset. Do not award PASS from offer text if a required visit/claim was not performed."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J07",
+    "manualLine": 546,
+    "assertions": [
+      "Use legal deployment/setup; select a real player stack using scene and accessible alternative. Assert actual queue and legal highlights/target details.",
+      "Exercise legal Move, Melee, Shoot, Defend, Wait and Spell in suitable actual states, plus illegal/out-of-range/occupied targets and no unintended mutation. Record committed actor/target/result and correctly timed animation.",
+      "Exercise a real flyer case and a seeded morale bonus case with the actual core coefficient 0.042, max morale 3, immediate one bonus action/no chains. If those are fixtures, label them and do not imply the ordinary first duel contained flyers/morale.",
+      "Save/reload mid-battle queue/status/mana and inspect unchanged legal continuation. Selecting an intent alone neither spends nor attacks."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J08",
+    "manualLine": 553,
+    "assertions": [
+      "Open Retreat; verify focus trap both Tab directions and background pointer/programmatic navigation rejection. Cancel/Escape/Back spends no turn, mana or casualty and restores focus.",
+      "Confirm real retreat; inspect proper campaign/practice consequences and apply exactly once. Cover victory and defeat in their own valid scenarios.",
+      "Auto uses ordinary rules, not a forced winner. Reload pending result and apply; repeat apply/reload yields no duplicate XP/gold/loot or revived losses. Verify actual return origin and composed result screen."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J09",
+    "manualLine": 559,
+    "assertions": [
+      "Enter actual preparation. Select a field pad/tower, preview range, test invalid/capacity/prerequisite/cost, cancel unchanged and perform a legal purchase/retrofit when intended.",
+      "Deploy owned hero/army once for zero added fee. Start a wave; identify visible real attackers, target ability and observe actual hit/HP results. Pause gives zero simulation progress; 2× advances the same rules at correct speed.",
+      "Save/reload active paused/running session with same entities/core/wave state. Complete a real session, inspect actual result, settle once and preserve survivor/resource/XP consequences. Final-wave blast regression stays covered."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J10",
+    "manualLine": 565,
+    "assertions": [
+      "Individually test setup, cost/consequence explanation, start, legal actions/result and return for Campaign Siege, Tactical Duel, Endless, Skirmish and Challenge. A visit to War is not five-mode coverage.",
+      "For Skirmish/Challenge compare full durable campaign resources, XP, items, mana, army/casualties and story before/after; practice cannot leak effects. Match actual source-specific Challenge rules and seed/label behavior; repeat same descriptor reproduces relevant setup/results under equal inputs.",
+      "Test local Challenge export/import/cancel/invalid descriptor while preserving usable campaign. For Endless verify at least ten actually cleared non-leaked waves and continued generation beyond the old finite boundary. Ten clears is not a victory/end event: continue legal play to actual core defeat, then settle once and verify best flag/q6 eligibility and losses. Never assign RESOLVED, zero core or winner to force this natural result. See section 9 for source/return details. A paused start cannot close it."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "A07 natural clear-to-defeat-to-settle; no forced resolution"
+  },
+  {
+    "id": "J11",
+    "manualLine": 571,
+    "assertions": [
+      "Reach real Armory and pay for a genuine craft; before unlock/affordability, verify precise disabled reason. Select category/quality/item, cancel unchanged and confirm once with exact current cost.",
+      "Inspect actual new unique item in bag; preview delta/cancel, confirm equip and assert old item handling, actual stats AND visible worn item. Unequip restores real base and correct item inventory; reload retains identities.",
+      "Repeat functional coverage for helm/weapon/offhand/armor/boots/accessory and four qualities in legal tests. Provide ordinary visible craft/equip journey plus explicitly labelled full visual fixtures; no resource/Hall assignment masquerading as natural production."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "A06/A07 all artifacts/qualities/age; no invented cap"
+  },
+  {
+    "id": "J12",
+    "manualLine": 577,
+    "assertions": [
+      "Gain real XP/point/offer through legitimate play; record initial XP and actual gains/count/time. Inspect and choose a valid offered skill or stat point; verify exact effect/point delta and reload. “No point available” is UNVERIFIED, not a successful spend.",
+      "Reach Wisdom 3 by legitimate choices for natural evidence. In a real Tactical session keep a living friendly stack wounded below its original cap, sufficient mana and legal spell eligibility.",
+      "Preview/cancel, cast Resurrection and verify actual HP/unit recovery capped correctly, exact mana spend, caster/target event and settled casualty consequences. Separately label injected wounds/Wisdom cases as useful spell-boundary fixtures."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "A04 independent points/offers; full-health rules"
+  },
+  {
+    "id": "J13",
+    "manualLine": 583,
+    "assertions": [
+      "Reach eligible dwelling and save/reload fixed offer. Earn actual required food/gold/capacity; click the real Claim and verify spend/quantity/identity once. Disabled claim with `claimed:false` cannot pass recruitment.",
+      "Inspect roster/codex, use that creature in real combat and preserve actual survivors/rank/XP into the campaign and reload.",
+      "Supplement with legal earned simulations for wolf, bandit, bear, harpy, golem, griffin, wyvern, drone, including four flyer traits. Provide style/role/gait review for each source consumer."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J14",
+    "manualLine": 589,
+    "assertions": [
+      "Choose a real rival and chapter branch; cancel/locked choices retain state, actual choice persists with correct log/flag/reward. Reload and verify no reroll or second award.",
+      "Complete and claim a real quest/milestone; assert readiness, actual exact reward first time and zero second time/reload. Cover all six quests/eight milestones in legal simulation and relevant visible states.",
+      "Read Future “The Valley We Keep” from saved prior branches/rival; no invented conclusion reward. A Stone closed-Future note is not a completed final-story journey."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J15",
+    "manualLine": 595,
+    "assertions": [
+      "In Stone verify locked state and no transaction. Reach Bronze naturally for this journey, then inspect actual current quotes/balance and the documented 100-unit size.",
+      "Test insufficient resource, preview/cancel unchanged, successful buy and sell with exact deltas and no partial/duplicate spend. Gold is price/treasury, not a newly batched commodity rule.",
+      "Reload balances and return to invoking Kingdom location/focus. Market remains a context sheet, not an invented new building."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "Retain original natural/simulation/fixture classification and all subassertions."
+  },
+  {
+    "id": "J16",
+    "manualLine": 601,
+    "assertions": [
+      "Save three distinguishable valid states into slots 1–3 and load each; verify campaign/entity/state differences, not just button presence. Older autosave cannot overwrite the loaded replacement.",
+      "Export/import exact valid campaign, cancel replacement, import damaged checksum and unsupported schema; usable live/backup remains. Recover deliberately damaged live from valid backup without overwriting valid live incorrectly.",
+      "Run actual long-campaign bounded-browser/quota/abort/reload cases from R09. Verify Saved only after durable completion and usable recovery after failure. Native picker/export/lifecycle cases remain on the later exact-package device matrix."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "A05 epochs/commit acknowledgement/all-key migration"
+  },
+  {
+    "id": "J17",
+    "manualLine": 607,
+    "assertions": [
+      "Change Music and SFX independently with a user gesture; observe actual saved values and appropriate local audio feedback, no network. Toggle reduced motion; logical results remain correct while motion is reduced.",
+      "Skip/review tutorial and return/reload without economy or step corruption. Follow keyboard focus for compact nav/context sheet/modal, close and restore to actual invoker.",
+      "Rotate to portrait and back; show the accessible rotate message with campaign unchanged. Verify four landscape text/target/overlap/contrast states, including long disabled reasons and open inspectors."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "A02/A03 insets, dense hit ownership, accessibility"
+  },
+  {
+    "id": "J18",
+    "manualLine": 613,
+    "assertions": [
+      "Use ONE fresh campaign and retain identity continuity through build → recruit → craft/equip → legal travel → real campaign Tactical → loot/settle → return to town → real Siege/Defense → settle → claim actual objective → save/export/relaunch/Continue.\n\nRecord every shared hero/army/item ID; resource/XP/mana/casualty/quest deltas reconcile exactly once. Cancel the relevant previews without spend and inspect real return origins. Do not substitute an imported mature save, practice-only battle, an Armory/weapon existence predicate or a separate simulated session for this chain. Record any actual unmet dependency rather than assigning COMPLETE."
+    ],
+    "semanticDisposition": "SPECIFIED_PLUS_A06_SUBMECHANICS",
+    "implementationAcceptance": "NOT_TESTED",
+    "corrections": "A06/A08 actual complete identity/delta chain and loss recovery"
+  }
+]

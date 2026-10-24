@@ -1,0 +1,82 @@
+{
+  "classification": "ACTUAL_BROWSER_INDEXEDDB_ADVERSARIAL_FIXTURES",
+  "database": "owner-repair-fixture-fb03a682-03c9-49ed-af56-9d16fd85a85d",
+  "rows": [
+    {
+      "name": "wrong full head rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "lower revision autosave rejected even at correct head",
+      "result": "PASS"
+    },
+    {
+      "name": "different campaign cannot autosave at correct head",
+      "result": "PASS"
+    },
+    {
+      "name": "second writer old replacement rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "newer revision survives stale replacement",
+      "result": "PASS"
+    },
+    {
+      "name": "migration cannot overwrite another campaign even with larger revision",
+      "result": "PASS"
+    },
+    {
+      "name": "staged bytes and source marker preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "repeat migration retains newer slot",
+      "result": "PASS"
+    },
+    {
+      "name": "three distinct slots roundtrip",
+      "result": "PASS"
+    },
+    {
+      "name": "valid live refuses backup restore",
+      "result": "PASS"
+    },
+    {
+      "name": "same campaign lower revision import advances epoch",
+      "result": "PASS"
+    },
+    {
+      "name": "old epoch autosave rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "replacement view commits with head",
+      "result": "PASS"
+    },
+    {
+      "name": "request success / transaction abort rejects",
+      "result": "PASS"
+    },
+    {
+      "name": "aborted candidate leaves head unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "lost first readback reconciles without replay",
+      "result": "PASS"
+    },
+    {
+      "name": "pending is not committed",
+      "result": "PASS"
+    },
+    {
+      "name": "replacement invalidates older queued autosave",
+      "result": "PASS"
+    },
+    {
+      "name": "two writers at one head have exactly one winner",
+      "result": "PASS"
+    }
+  ]
+}

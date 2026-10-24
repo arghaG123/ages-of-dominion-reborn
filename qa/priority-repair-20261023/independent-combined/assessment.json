@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-23",
+  "scope": "Independent integration verification of the three priority repair sets",
+  "productAcceptance": "INCOMPLETE",
+  "productionEditedByVerifier": false,
+  "tests": {"command": "node --test tests/*.test.mjs", "pass": 303, "fail": 0, "skipped": 0, "cancelled": 0, "todo": 0, "durationMs": 21873.0118, "provenance": "Independent run in parent portion of this audit, before requested chat transfer; source fingerprints still match"},
+  "executorFingerprintMatches": {"matched": 10, "total": 10},
+  "confirmedActive": [
+    {"id": "H-01", "severity": "High", "status": "CONFIRMED_FAIL", "title": "Bless plays a damage hit pose; sampled tactical figures remain whole-image plates", "mocks": ["M15", "M21"], "files": ["src/client/committed-motion.js", "src/client/main.js", "src/client/actor.js"], "evidence": ["committed-cast-probe.json", "practice-bless-immediate.png", "practice-committed-move.png"]},
+    {"id": "D-01", "severity": "Medium", "status": "CONFIRMED_FAIL", "title": "Casting allowance copy says once per stack instead of once per commander round", "files": ["src/client/tactical-ui.js"], "engineAuthority": "src/core/battle.js castThisRound and nextRound", "repairRule": "Change explanation, preserve casting rule"},
+    {"id": "D-02", "severity": "Medium", "status": "CONFIRMED_FAIL", "title": "Zero battle mana omitted from visible and accessible hero status", "files": ["src/client/main.js"], "evidence": ["zero-mana-dom.txt", "zero-mana-omitted-825.png"]}
+  ],
+  "critical": {"reproducedDefectsRemaining": 0, "scope": "Bounded current checks; not unrestricted whole-game acceptance"},
+  "deferred": [{"id": "H-DEFERRED", "severity": "High", "status": "DEFERRED_OWNER", "title": "M03 developed Kingdom density/composition", "freshMatureSceneRecreated": false}],
+  "verificationGaps": ["all eight ages and class/kit/worn-slot variants", "all wall phases/site footprints", "all required natural journeys", "full Defense/Endless/Challenge endpoints", "every Adventure crossing/world", "native quota and long-horizon closure", "complete accessibility/performance checks", "independent populated Forge screenshot review"],
+  "browserOrigins": {"natural": "http://localhost:4567/?audit", "nativeFixture": "http://127.0.0.1:4567/?audit", "existingUserOriginsUsed": false},
+  "report": "REPORT.md"
+}

@@ -1,0 +1,73 @@
+{
+  "reviewId": "save-conflict-export-affordance-20261023",
+  "date": "2026-10-23",
+  "route": "http://localhost:4174/?audit",
+  "status": "STALE_PAGE_CAS_CONFLICT_RECOVERED; FAILED_SAVE_BUTTON_EXPORT_ACTION_REPAIRED",
+  "observation": {
+    "surface": "Hero > Inventory, then Compare in Forge overlay",
+    "campaignId": "campaign-8be86723-842b-4775-b29b-e988acd7bec6",
+    "age": "Medieval Age",
+    "day": 4,
+    "inMemoryRevision": 83874,
+    "queueSequence": 148,
+    "saveStatus": "failed",
+    "error": "CAS head mismatch: expected revision 83619",
+    "visibleSaveActionName": "Save failed. Export your unsaved campaign",
+    "gameplayTransactionsInThisReview": false,
+    "onlyActionBeforeConflictWas": "Opened the read-only Compare in Forge view"
+  },
+  "recovery": {
+    "method": "Reloaded the existing approved localhost tab to read the current committed IndexedDB head, then continued the campaign",
+    "sameCampaignId": true,
+    "age": "Medieval Age",
+    "day": 4,
+    "inventoryCount": 1,
+    "equippedWeapon": "Knight's Longsword · Crude",
+    "firstObservedFreshHead": {
+      "epoch": 13,
+      "revision": 84253
+    },
+    "explicitSaveAcknowledgement": {
+      "epoch": 13,
+      "revision": 84329,
+      "status": "committed"
+    },
+    "slot1Touched": false,
+    "browserErrors": 0,
+    "browserWarnings": 0
+  },
+  "repair": {
+    "source": "src/client/main.js",
+    "helper": "src/client/save-feedback.js",
+    "behavior": "A failed CAS status now makes the save button export the current unsaved campaign JSON. It does not retry a stale snapshot or adopt another writer's head. Committed saves retain the Save campaign action; pending writes expose Saving campaign.",
+    "failedButtonLiveDownload": "NOT_EXERCISED; helper mapping and source wiring are covered by regression tests",
+    "sourceReloadVerification": {
+      "view": "hero",
+      "campaignId": "campaign-8be86723-842b-4775-b29b-e988acd7bec6",
+      "saveStatus": "committed",
+      "headEpoch": 13,
+      "headRevision": 84853,
+      "saveButtonName": "Save campaign",
+      "browserErrors": 0,
+      "browserWarnings": 0
+    }
+  },
+  "verification": {
+    "nodeSuite": "273/273 passed",
+    "syntaxChecks": [
+      "node --check src/client/main.js: PASS",
+      "node --check src/client/save-feedback.js: PASS"
+    ],
+    "mainJsLineEndings": {
+      "crlf": 5263,
+      "bareLf": 0
+    },
+    "screenshotRetained": false
+  },
+  "remaining": [
+    "The complete M01-M30 and J01-J18 visual and gameplay acceptance is open.",
+    "Exercise stale-save recovery and export behavior in a controlled same-origin multi-tab review without replacing protected saves.",
+    "Verify import/export, browser/native persistence, quota/recovery, final desktop candidate, package, device, and owner gates separately."
+  ],
+  "wholeGameStatus": "INCOMPLETE"
+}

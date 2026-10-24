@@ -1,0 +1,382 @@
+{
+  "recordedAt": "2026-10-20T11:45:56.882Z",
+  "classification": "NATURAL_UI_ALL_CAMPAIGN_WORLDS",
+  "journey": "For each of 12 worlds: new campaign -> select map -> enter valley -> leave town -> one legal move -> save/reload",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "note": "Each world uses an isolated browser profile and visible controls. No campaign, selected world, map position, or movement state is injected.",
+  "results": [
+    {
+      "worldId": "grasslands",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "width": 1672,
+        "height": 940,
+        "world": "grasslands",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 1479076791,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\grasslands-1280x720.png",
+      "reload": {
+        "worldId": "grasslands",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 21
+      },
+      "passed": true
+    },
+    {
+      "worldId": "tundra",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "tundra",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2748346301,
+      "move": {
+        "direction": "east",
+        "destination": [
+          11,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\tundra-1280x720.png",
+      "reload": {
+        "worldId": "tundra",
+        "position": [
+          11,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "haunted-marsh",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "haunted-marsh",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 3321781514,
+      "move": {
+        "direction": "north",
+        "destination": [
+          10,
+          2
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\haunted-marsh-1280x720.png",
+      "reload": {
+        "worldId": "haunted-marsh",
+        "position": [
+          10,
+          2
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "desert-volcano",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "width": 1672,
+        "height": 940,
+        "world": "desert-volcano",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 804965636,
+      "move": {
+        "direction": "east",
+        "destination": [
+          10,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\desert-volcano-1280x720.png",
+      "reload": {
+        "worldId": "desert-volcano",
+        "position": [
+          10,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "underworld",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "underworld",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 832389169,
+      "move": {
+        "direction": "north",
+        "destination": [
+          3,
+          5
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\underworld-1280x720.png",
+      "reload": {
+        "worldId": "underworld",
+        "position": [
+          3,
+          5
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "feywild",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "feywild",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 3505576429,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\feywild-1280x720.png",
+      "reload": {
+        "worldId": "feywild",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "archipelago",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "archipelago",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 1997814665,
+      "move": {
+        "direction": "north",
+        "destination": [
+          7,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\archipelago-1280x720.png",
+      "reload": {
+        "worldId": "archipelago",
+        "position": [
+          7,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "mesa-savanna",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "mesa-savanna",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2069249913,
+      "move": {
+        "direction": "north",
+        "destination": [
+          4,
+          1
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\mesa-savanna-1280x720.png",
+      "reload": {
+        "worldId": "mesa-savanna",
+        "position": [
+          4,
+          1
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "astral-peaks",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "astral-peaks",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 3272816130,
+      "move": {
+        "direction": "north",
+        "destination": [
+          4,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\astral-peaks-1280x720.png",
+      "reload": {
+        "worldId": "astral-peaks",
+        "position": [
+          4,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "blood-moon",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "blood-moon",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2054895266,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\blood-moon-1280x720.png",
+      "reload": {
+        "worldId": "blood-moon",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "jade-karst",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "jade-karst",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 1296320891,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\jade-karst-1280x720.png",
+      "reload": {
+        "worldId": "jade-karst",
+        "position": [
+          9,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "sunken-jungle",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "sunken-jungle",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 3624657604,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          2
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261020\\visual-review\\adventure-all-worlds-label-clearance-live-20261020\\sunken-jungle-1280x720.png",
+      "reload": {
+        "worldId": "sunken-jungle",
+        "position": [
+          9,
+          2
+        ],
+        "revision": 13
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

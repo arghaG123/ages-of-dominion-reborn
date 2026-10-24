@@ -1,0 +1,753 @@
+[
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "async commit",
+    "matches": [
+      {
+        "line": 106,
+        "text": "async commit(expectedHead, encodedCandidate, data) {",
+        "context": "   * Commits an autosave or command mutation with atomic CAS (expectedHead).\n   */\n  async commit(expectedHead, encodedCandidate, data) {\n    const candidateState = decode(encodedCandidate, data);\n    const candidatePayload = JSON.parse(encodedCandidate).payload;\n    const candidateChecksum = checksum(candidatePayload);"
+      }
+    ]
+  },
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "currentHead.epoch !==",
+    "matches": [
+      {
+        "line": 115,
+        "text": "if (!currentHead || currentHead.epoch !== expectedHead.epoch || currentHead.revision !== expectedHead.revision) {",
+        "context": "      const currentHead = this.memoryDb.heads.get('live');\n      if (expectedHead) {\n        if (!currentHead || currentHead.epoch !== expectedHead.epoch || currentHead.revision !== expectedHead.revision) {\n          throw new Error('CAS head mismatch: expected revision ' + expectedHead.revision + ' but found ' + currentHead?.revision);\n        }\n      }"
+      },
+      {
+        "line": 144,
+        "text": "if (!currentHead || currentHead.epoch !== expectedHead.epoch || currentHead.revision !== expectedHead.revision) {",
+        "context": "        const currentHead = headReq.result;\n        if (expectedHead) {\n          if (!currentHead || currentHead.epoch !== expectedHead.epoch || currentHead.revision !== expectedHead.revision) {\n            return reject(new Error('CAS head mismatch: expected rev ' + expectedHead.revision));\n          }\n        }"
+      }
+    ]
+  },
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "campaignId: candidateState.story",
+    "matches": [
+      {
+        "line": 125,
+        "text": "campaignId: candidateState.story?.chapter ?? 0,",
+        "context": "      const newHead = {\n        epoch: expectedHead ? expectedHead.epoch : this.epoch,\n        campaignId: candidateState.story?.chapter ?? 0,\n        revision: candidateState.revision,\n        checksum: candidateChecksum,\n        updatedAt: Date.now(),"
+      },
+      {
+        "line": 155,
+        "text": "campaignId: candidateState.story?.chapter ?? 0,",
+        "context": "          const newHead = {\n            epoch: expectedHead ? expectedHead.epoch : this.epoch,\n            campaignId: candidateState.story?.chapter ?? 0,\n            revision: candidateState.revision,\n            checksum: candidateChecksum,\n            updatedAt: Date.now(),"
+      },
+      {
+        "line": 198,
+        "text": "campaignId: candidateState.story?.chapter ?? 0,",
+        "context": "      const newHead = {\n        epoch: this.epoch,\n        campaignId: candidateState.story?.chapter ?? 0,\n        revision: candidateState.revision,\n        checksum: candidateChecksum,\n        updatedAt: Date.now(),"
+      },
+      {
+        "line": 220,
+        "text": "campaignId: candidateState.story?.chapter ?? 0,",
+        "context": "        const newHead = {\n          epoch: this.epoch,\n          campaignId: candidateState.story?.chapter ?? 0,\n          revision: candidateState.revision,\n          checksum: candidateChecksum,\n          updatedAt: Date.now(),"
+      }
+    ]
+  },
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "async replace",
+    "matches": [
+      {
+        "line": 184,
+        "text": "async replace(expectedHead, encodedCandidate, data) {",
+        "context": "   * Advances the adapter epoch so any delayed autosaves from the prior epoch are rejected.\n   */\n  async replace(expectedHead, encodedCandidate, data) {\n    this.epoch++;\n    const candidateState = decode(encodedCandidate, data);\n    const candidatePayload = JSON.parse(encodedCandidate).payload;"
+      }
+    ]
+  },
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "this.epoch++",
+    "matches": [
+      {
+        "line": 185,
+        "text": "this.epoch++;",
+        "context": "   */\n  async replace(expectedHead, encodedCandidate, data) {\n    this.epoch++;\n    const candidateState = decode(encodedCandidate, data);\n    const candidatePayload = JSON.parse(encodedCandidate).payload;\n    const candidateChecksum = checksum(candidatePayload);"
+      },
+      {
+        "line": 285,
+        "text": "this.epoch++;",
+        "context": "        this.memoryDb.campaigns.set('damaged', currentLive);\n      }\n      this.epoch++;\n      const payload = JSON.parse(raw).payload;\n      const newHead = {\n        epoch: this.epoch,"
+      },
+      {
+        "line": 315,
+        "text": "this.epoch++;",
+        "context": "        liveReq.onsuccess = () => {\n          if (liveReq.result) campStore.put(liveReq.result, 'damaged');\n          this.epoch++;\n          const payload = JSON.parse(raw).payload;\n          const newHead = {\n            epoch: this.epoch,"
+      }
+    ]
+  },
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "async migrateFromLocalStorage",
+    "matches": [
+      {
+        "line": 337,
+        "text": "async migrateFromLocalStorage(storage, data) {",
+        "context": "   * Inventories live, backup, staged, damaged, all 3 slots, view, and metadata.\n   */\n  async migrateFromLocalStorage(storage, data) {\n    if (!storage) return { migrated: false, reason: 'No localStorage provided' };\n\n    const live = storage.getItem(SAVE_KEY);"
+      }
+    ]
+  },
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "const staged =",
+    "matches": [
+      {
+        "line": 342,
+        "text": "const staged = storage.getItem(SAVE_KEY + '-staged');",
+        "context": "    const live = storage.getItem(SAVE_KEY);\n    const backup = storage.getItem(SAVE_KEY + '-backup');\n    const staged = storage.getItem(SAVE_KEY + '-staged');\n    const damaged = storage.getItem(SAVE_KEY + '-damaged');\n    const slot1 = storage.getItem(SAVE_KEY + '-slot-1');\n    const slot2 = storage.getItem(SAVE_KEY + '-slot-2');"
+      }
+    ]
+  },
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "if (live) {",
+    "matches": [
+      {
+        "line": 382,
+        "text": "if (live) {",
+        "context": "      const headStore = tx.objectStore(STORE_HEAD);\n\n      if (live) {\n        campStore.put(live, 'live');\n        try {\n          const s = decode(live, data);"
+      }
+    ]
+  },
+  {
+    "path": "src/core/storage-adapter.js",
+    "term": "migratedAt",
+    "matches": [
+      {
+        "line": 371,
+        "text": "this.memoryDb.metadata.set('migratedAt', Date.now());",
+        "context": "      if (slot3) this.memoryDb.slots.set('slot-3', slot3);\n      if (view) this.memoryDb.metadata.set('view', view);\n      this.memoryDb.metadata.set('migratedAt', Date.now());\n      return { migrated: true, inventory };\n    }\n"
+      },
+      {
+        "line": 401,
+        "text": "metaStore.put(Date.now(), 'migratedAt');",
+        "context": "      if (slot3) slotStore.put(slot3, 'slot-3');\n      if (view) metaStore.put(view, 'view');\n      metaStore.put(Date.now(), 'migratedAt');\n\n      tx.oncomplete = () => resolve({ migrated: true, inventory });\n      tx.onerror = () => reject(new Error('Migration transaction failed: ' + tx.error));"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "function persist",
+    "matches": [
+      {
+        "line": 112,
+        "text": "function persist() {",
+        "context": "}\n\nfunction persist() {\n  try {\n    let saved = false;\n    if (idbAdapter?.db) {"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "saved = true",
+    "matches": [
+      {
+        "line": 124,
+        "text": "saved = true;",
+        "context": "        $('status').textContent = 'Save failed';\n      });\n      saved = true;\n    }\n    try {\n      save(localStorage, state, data);"
+      },
+      {
+        "line": 128,
+        "text": "saved = true;",
+        "context": "    try {\n      save(localStorage, state, data);\n      saved = true;\n    } catch (quotaErr) {\n      if (!idbAdapter?.db) {\n        saveFault = quotaErr.message;"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "function replaceLive",
+    "matches": [
+      {
+        "line": 145,
+        "text": "function replaceLive(next, nextView, success) {",
+        "context": "  }\n}\nfunction replaceLive(next, nextView, success) {\n  let stored;\n  try {\n    stored = replaceCampaign(localStorage, next, data);"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "storeSlot(localStorage",
+    "matches": [
+      {
+        "line": 1896,
+        "text": "$('choices').append(button('Save slot ' + index, () => { try { storeSlot(localStorage, index, state, data); say('Slot ' + index + ' stored.'); } catch (error) { say(error.message); } }));",
+        "context": "  if (state) {\n    for (let index = 1; index <= 3; index++) {\n      $('choices').append(button('Save slot ' + index, () => { try { storeSlot(localStorage, index, state, data); say('Slot ' + index + ' stored.'); } catch (error) { say(error.message); } }));\n      $('choices').append(button('Load slot ' + index, () => {\n        try {\n          const next = loadSlot(localStorage, index, data);"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "loadSlot(localStorage",
+    "matches": [
+      {
+        "line": 1899,
+        "text": "const next = loadSlot(localStorage, index, data);",
+        "context": "      $('choices').append(button('Load slot ' + index, () => {\n        try {\n          const next = loadSlot(localStorage, index, data);\n          if (!next) { say('Slot ' + index + ' is empty.'); return; }\n          replaceLive(next, 'kingdom', 'Slot ' + index + ' loaded.');\n        } catch (error) { saveFault = error.message; render(); }"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "function paintMaterialWalls",
+    "matches": [
+      {
+        "line": 485,
+        "text": "function paintMaterialWalls(world, _geo, _matrix, depth) {",
+        "context": "  return { items };\n}\nfunction paintMaterialWalls(world, _geo, _matrix, depth) {\n  // The age painting already contains this wall state. Do not stretch segment stamps over it.\n  world.append(element('g', wallHostAttrs(state, depth)));\n}"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "const ROLE_RIG",
+    "matches": [
+      {
+        "line": 1379,
+        "text": "const ROLE_RIG = {",
+        "context": "}\n\nconst ROLE_RIG = {\n  melee: 'knight',\n  ranged: 'ranger',\n  heavy: 'barbarian',"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "function drawFigure",
+    "matches": [
+      {
+        "line": 1403,
+        "text": "function drawFigure(world, origin, stack, alive) {",
+        "context": "  });\n}\nfunction drawFigure(world, origin, stack, alive) {\n  const plate = plateForStack(stack);\n  const reduced = Boolean(state?.settings?.reducedMotion);\n  const battle = state?.battle;"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "const lastAction =",
+    "matches": [
+      {
+        "line": 1409,
+        "text": "const lastAction = battle?.log?.[battle.log.length - 1];",
+        "context": "  const activeId = battle?.status === 'ACTIVE' ? activeStackId(battle) : null;\n  const isActing = Boolean(stack?.id && stack.id === activeId);\n  const lastAction = battle?.log?.[battle.log.length - 1];\n  // Action events derive from committed actions in battle.log; tool selection/preview does not play strike or walk\n  const isCommittedAttack = (lastAction?.type === 'strike' || lastAction?.type === 'retaliate') && lastAction?.attackerId === stack.id;\n  const isCommittedHit = lastAction?.type === 'strike' && lastAction?.targetId === stack.id;"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "function installLifecycle",
+    "matches": [
+      {
+        "line": 2062,
+        "text": "function installLifecycle() {",
+        "context": "  } finally { worldOnly = false; }\n}\nfunction installLifecycle() {\n  if (!frameClock) {\n    frameClock = createFrameClock({\n      paused: () => suspended || document.hidden || Boolean(state?.settings?.reducedMotion),"
+      }
+    ]
+  },
+  {
+    "path": "src/client/main.js",
+    "term": "window.rebornBackground",
+    "matches": [
+      {
+        "line": 2251,
+        "text": "window.rebornBackground = hidden => applyBackground('visibility', hidden);",
+        "context": "  else { resumeAudio(); if (state) catchUp(Date.now(), true); render(); }\n}\nwindow.rebornBackground = hidden => applyBackground('visibility', hidden);\nwindow.addEventListener('blur', () => applyBackground('blur', true));\ndocument.addEventListener('visibilitychange', () => applyBackground('visibility', document.hidden));\nwindow.addEventListener('focus', () => applyBackground('focus', document.hidden));"
+      }
+    ]
+  },
+  {
+    "path": "src/client/actor.js",
+    "term": "export function paintWornSlots",
+    "matches": [
+      {
+        "line": 216,
+        "text": "export function paintWornSlots(group, element, worn, box) {",
+        "context": "// Slot cards own the icon chrome. On the body an equipped item is an anchored layer, not a floating box.\n// ponytail: these layers are the item's inventory plate scaled onto the anchor. Clothing replacement needs source limb layers.\nexport function paintWornSlots(group, element, worn, box) {\n  if (!group || !box) return;\n  const items = worn?.items || {};\n  for (const slot of Object.keys(WORN_PLACES)) {"
+      }
+    ]
+  },
+  {
+    "path": "src/client/actor.js",
+    "term": "const size = Math.max",
+    "matches": [
+      {
+        "line": 222,
+        "text": "const size = Math.max(22, box.width * 0.16);",
+        "context": "    const item = items[slot] || null;\n    const [fx, fy] = WORN_PLACES[slot];\n    const size = Math.max(22, box.width * 0.16);\n    const x = box.x + box.width * fx - size / 2;\n    const y = box.y + box.height * fy;\n    const node = element('g', {"
+      }
+    ]
+  },
+  {
+    "path": "src/client/actor.js",
+    "term": "export function drawReviewMount",
+    "matches": [
+      {
+        "line": 293,
+        "text": "export function drawReviewMount(world, element, { x, y, facing = 1, time = 0, reduced = false, moving = false } = {}) {",
+        "context": "\n// One painted horse image. Hooves are not separate parts, so the gait stays a still pose plus a small bob.\nexport function drawReviewMount(world, element, { x, y, facing = 1, time = 0, reduced = false, moving = false } = {}) {\n  if (reviewMount.status !== 'BOUNDED_REVIEW_SAMPLE_RESIDUAL_HAIRLINE' || reviewMount.gait !== 'single-pose') return null;\n  const [x0, y0, x1, y1] = reviewMount.tightBBox;\n  const bboxW = x1 - x0;"
+      }
+    ]
+  },
+  {
+    "path": "src/client/actor.js",
+    "term": "export function drawStaticMount",
+    "matches": [
+      {
+        "line": 376,
+        "text": "export function drawStaticMount(world, element, mount, x, y, { facing = 1, time = 0, reduced = false, moving = false, riderClass = null, worn = null } = {}) {",
+        "context": "}\n\nexport function drawStaticMount(world, element, mount, x, y, { facing = 1, time = 0, reduced = false, moving = false, riderClass = null, worn = null } = {}) {\n  if (!mount?.file || mount.displayHeight > 64 || mount.gait !== 'single-pose') return null;\n  const [x0, y0, x1, y1] = mount.tightBBox;\n  const bboxH = y1 - y0;"
+      }
+    ]
+  },
+  {
+    "path": "src/client/actor.js",
+    "term": "export function drawPlate",
+    "matches": [
+      {
+        "line": 423,
+        "text": "export function drawPlate(world, element, plate, x, y, height, { opacity = 1, time = 0, fly = false, clip = 'idle', reduced = false } = {}) {",
+        "context": "}\n\nexport function drawPlate(world, element, plate, x, y, height, { opacity = 1, time = 0, fly = false, clip = 'idle', reduced = false } = {}) {\n  if (!plate?.file) return false;\n  const fitted = visibleBox({\n    ...plate,"
+      }
+    ]
+  },
+  {
+    "path": "src/client/hero-room.js",
+    "term": "export function heroBody",
+    "matches": [
+      {
+        "line": 19,
+        "text": "export function heroBody(classId, age = null) {",
+        "context": "// Without an age, this is the reviewed base plate. With an age, it is that age's kit era\n// when a reviewed plate for the era exists.\nexport function heroBody(classId, age = null) {\n  const body = heroBodies.bodies?.[classId] || null;\n  if (!body || !Number.isInteger(age)) return body;\n  const era = kitEra(age);"
+      }
+    ]
+  },
+  {
+    "path": "src/client/hero-room.js",
+    "term": "function paintBackdrop",
+    "matches": [
+      {
+        "line": 62,
+        "text": "function paintBackdrop(world, element, stage) {",
+        "context": "}\n\nfunction paintBackdrop(world, element, stage) {\n  const defs = element('defs', {});\n  const wall = element('linearGradient', { id: 'hero-wall', x1: 0, y1: 0, x2: 0, y2: 1 });\n  wall.append(element('stop', { offset: '0', 'stop-color': '#1d1a17' }), element('stop', { offset: '0.55', 'stop-color': '#2c2622' }), element('stop', { offset: '1', 'stop-color': '#3a302a' }));"
+      }
+    ]
+  },
+  {
+    "path": "src/client/hero-room.js",
+    "term": "export function heroKitCaption",
+    "matches": [
+      {
+        "line": 114,
+        "text": "export function heroKitCaption(state) {",
+        "context": "}\n\nexport function heroKitCaption(state) {\n  const body = heroBody(state?.hero?.class, state?.age);\n  const era = kitEra(state?.age);\n  const worn = wornMarks(state).filter(mark => mark.worn);"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "state.resources.food += 10000",
+    "matches": [
+      {
+        "line": 127,
+        "text": "state.resources.food += 10000;",
+        "context": "  for (let age = 0; age < 7; age++) {\n    while (state.plots.find(p => p.id === 'townhall').level < age + 2) {\n      state.resources.food += 10000;\n      state.resources.wood += 10000;\n      state.resources.stone += 10000;\n      state.resources.gold += 10000;"
+      },
+      {
+        "line": 135,
+        "text": "state.resources.food += 10000;",
+        "context": "    }\n\n    state.resources.food += 10000;\n    state.resources.wood += 10000;\n    state.resources.stone += 10000;\n    state.resources.gold += 10000;"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "state.hero.level = 3",
+    "matches": [
+      {
+        "line": 168,
+        "text": "state.hero.level = 3;",
+        "context": "\n  // Spend skill points and choose skills\n  state.hero.level = 3;\n  state.hero.growth.atk += 2;\n  state.hero.points = 2;\n  state.hero.offers.push({ level: 2, choices: ['wisdom', 'leadership'] });"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "state.quests[",
+    "matches": [
+      {
+        "line": 183,
+        "text": "if (state.quests[`q${q}`]) {",
+        "context": "  // Claim quests and milestones\n  for (let q = 1; q <= 6; q++) {\n    if (state.quests[`q${q}`]) {\n      state.quests[`q${q}`].claimed = true;\n    }\n  }"
+      },
+      {
+        "line": 184,
+        "text": "state.quests[`q${q}`].claimed = true;",
+        "context": "  for (let q = 1; q <= 6; q++) {\n    if (state.quests[`q${q}`]) {\n      state.quests[`q${q}`].claimed = true;\n    }\n  }\n  for (let m = 0; m <= 7; m++) {"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "for (let wave",
+    "matches": [
+      {
+        "line": 199,
+        "text": "for (let wave = 1; wave <= 20; wave++) {",
+        "context": "\n  // 3. 20 separately labelled simulated Endless clears\n  for (let wave = 1; wave <= 20; wave++) {\n    state.story.flags[`endless-clear-${wave}`] = {\n      clearedAt: state.clock + wave * 100,\n      wave,"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "state.defense = {",
+    "matches": [
+      {
+        "line": 207,
+        "text": "state.defense = {",
+        "context": "  }\n  // Record session\n  state.defense = {\n    session: 'endless-stress-session-20',\n    mode: 'endless',\n    status: 'SETTLED',"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "const tenHoursSeconds",
+    "matches": [
+      {
+        "line": 227,
+        "text": "const tenHoursSeconds = 10 * 3600;",
+        "context": "\n  // 10 hours = 36,000 seconds = 36,000 steps of dt = 1.0s\n  const tenHoursSeconds = 10 * 3600;\n  const chunkDt = 10.0;\n  const steps = tenHoursSeconds / chunkDt;\n"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "state.defense.core = 0",
+    "matches": [
+      {
+        "line": 244,
+        "text": "state.defense.core = 0;",
+        "context": "\n  // Simulate terminal loss and later legal re-entry\n  state.defense.core = 0;\n  state.defense.status = 'RESOLVED';\n  state.defense.pendingSettlement = true;\n  assert.equal(state.defense.core, 0);"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "const categories =",
+    "matches": [
+      {
+        "line": 263,
+        "text": "const categories = {",
+        "context": "\n  // 5. 10,000 explicit valid commands with declared categories\n  const categories = {\n    SETTINGS: 4000,\n    MARKET_BUY: 2000,\n    MARKET_SELL: 2000,"
+      }
+    ]
+  },
+  {
+    "path": "tests/save-stress-horizon.test.mjs",
+    "term": "new IndexedDBStorageAdapter",
+    "matches": [
+      {
+        "line": 368,
+        "text": "const idbAdapter = new IndexedDBStorageAdapter(null);",
+        "context": "\n  // 8. Prove the IndexedDB Storage Adapter for the Required Horizon\n  const idbAdapter = new IndexedDBStorageAdapter(null);\n  await idbAdapter.open();\n\n  // Commit dense state"
+      }
+    ]
+  },
+  {
+    "path": "scripts/capture-motion-extremes.py",
+    "term": "pose = clip_angles",
+    "matches": [
+      {
+        "line": 54,
+        "text": "pose = clip_angles(clip, t)",
+        "context": "    sheet = Image.open(sheet_path).convert(\"RGBA\")\n    \n    pose = clip_angles(clip, t)\n    canvas = Image.new(\"RGBA\", (300, 400), (0, 0, 0, 0))\n    draw = ImageDraw.Draw(canvas)\n    "
+      }
+    ]
+  },
+  {
+    "path": "scripts/capture-motion-extremes.py",
+    "term": "scaled_torso",
+    "matches": [
+      {
+        "line": 78,
+        "text": "scaled_torso = torso_img.resize((max(1, int(tw * s)), max(1, int(th * s))), Image.Resampling.LANCZOS)",
+        "context": "        # scale down\n        s = 0.35\n        scaled_torso = torso_img.resize((max(1, int(tw * s)), max(1, int(th * s))), Image.Resampling.LANCZOS)\n        canvas.alpha_composite(scaled_torso, (cx - scaled_torso.width // 2, cy - scaled_torso.height))\n        \n        # Head"
+      },
+      {
+        "line": 79,
+        "text": "canvas.alpha_composite(scaled_torso, (cx - scaled_torso.width // 2, cy - scaled_torso.height))",
+        "context": "        s = 0.35\n        scaled_torso = torso_img.resize((max(1, int(tw * s)), max(1, int(th * s))), Image.Resampling.LANCZOS)\n        canvas.alpha_composite(scaled_torso, (cx - scaled_torso.width // 2, cy - scaled_torso.height))\n        \n        # Head\n        head_img = get_part(\"head\")"
+      },
+      {
+        "line": 86,
+        "text": "canvas.alpha_composite(scaled_head, (cx - scaled_head.width // 2, cy - scaled_torso.height - scaled_head.height + 6))",
+        "context": "            hw, hh = head_img.size\n            scaled_head = head_img.resize((max(1, int(hw * s)), max(1, int(hh * s))), Image.Resampling.LANCZOS)\n            canvas.alpha_composite(scaled_head, (cx - scaled_head.width // 2, cy - scaled_torso.height - scaled_head.height + 6))\n            \n        # Limbs indication with articulated angles\n        thigh_img = get_part(\"thigh\")"
+      },
+      {
+        "line": 101,
+        "text": "canvas.alpha_composite(scaled_arm, (cx + scaled_torso.width // 2 - 4, cy - scaled_torso.height + 10))",
+        "context": "            aw, ah = arm_img.size\n            scaled_arm = arm_img.resize((max(1, int(aw * s)), max(1, int(ah * s))), Image.Resampling.LANCZOS)\n            canvas.alpha_composite(scaled_arm, (cx + scaled_torso.width // 2 - 4, cy - scaled_torso.height + 10))\n            \n        weapon_img = get_part(\"weapon\")\n        if weapon_img:"
+      },
+      {
+        "line": 107,
+        "text": "canvas.alpha_composite(scaled_wep, (cx + scaled_torso.width // 2 + 10, cy - scaled_torso.height - 10))",
+        "context": "            ww, wh = weapon_img.size\n            scaled_wep = weapon_img.resize((max(1, int(ww * s)), max(1, int(wh * s))), Image.Resampling.LANCZOS)\n            canvas.alpha_composite(scaled_wep, (cx + scaled_torso.width // 2 + 10, cy - scaled_torso.height - 10))\n\n    # Add text label\n    draw.text((10, 10), f\"{class_id.upper()}: {clip.upper()}\", fill=(210, 180, 120, 255))"
+      }
+    ]
+  },
+  {
+    "path": "scripts/capture-motion-extremes.py",
+    "term": "scaled_leg",
+    "matches": [
+      {
+        "line": 92,
+        "text": "scaled_leg = thigh_img.resize((max(1, int(lw * s)), max(1, int(lh * s))), Image.Resampling.LANCZOS)",
+        "context": "        if thigh_img:\n            lw, lh = thigh_img.size\n            scaled_leg = thigh_img.resize((max(1, int(lw * s)), max(1, int(lh * s))), Image.Resampling.LANCZOS)\n            canvas.alpha_composite(scaled_leg, (cx - scaled_leg.width - 4, cy - 10))\n            canvas.alpha_composite(scaled_leg, (cx + 4, cy - 10))\n            "
+      },
+      {
+        "line": 93,
+        "text": "canvas.alpha_composite(scaled_leg, (cx - scaled_leg.width - 4, cy - 10))",
+        "context": "            lw, lh = thigh_img.size\n            scaled_leg = thigh_img.resize((max(1, int(lw * s)), max(1, int(lh * s))), Image.Resampling.LANCZOS)\n            canvas.alpha_composite(scaled_leg, (cx - scaled_leg.width - 4, cy - 10))\n            canvas.alpha_composite(scaled_leg, (cx + 4, cy - 10))\n            \n        # Arm / Weapon"
+      },
+      {
+        "line": 94,
+        "text": "canvas.alpha_composite(scaled_leg, (cx + 4, cy - 10))",
+        "context": "            scaled_leg = thigh_img.resize((max(1, int(lw * s)), max(1, int(lh * s))), Image.Resampling.LANCZOS)\n            canvas.alpha_composite(scaled_leg, (cx - scaled_leg.width - 4, cy - 10))\n            canvas.alpha_composite(scaled_leg, (cx + 4, cy - 10))\n            \n        # Arm / Weapon\n        arm_img = get_part(\"arm\")"
+      }
+    ]
+  },
+  {
+    "path": "scripts/capture-motion-extremes.py",
+    "term": "draw.text",
+    "matches": [
+      {
+        "line": 110,
+        "text": "draw.text((10, 10), f\"{class_id.upper()}: {clip.upper()}\", fill=(210, 180, 120, 255))",
+        "context": "\n    # Add text label\n    draw.text((10, 10), f\"{class_id.upper()}: {clip.upper()}\", fill=(210, 180, 120, 255))\n    draw.text((10, 26), f\"Spine: {pose['spine']}° | Arm: {int(pose['arm'])}° | Leg: {int(pose['thighL'])}°\", fill=(180, 180, 180, 255))\n    return canvas\n"
+      },
+      {
+        "line": 111,
+        "text": "draw.text((10, 26), f\"Spine: {pose['spine']}° | Arm: {int(pose['arm'])}° | Leg: {int(pose['thighL'])}°\", fill=(180, 180, 180, 255))",
+        "context": "    # Add text label\n    draw.text((10, 10), f\"{class_id.upper()}: {clip.upper()}\", fill=(210, 180, 120, 255))\n    draw.text((10, 26), f\"Spine: {pose['spine']}° | Arm: {int(pose['arm'])}° | Leg: {int(pose['thighL'])}°\", fill=(180, 180, 180, 255))\n    return canvas\n\ndef main():"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-scene-registration-20261016.py",
+    "term": "painted_radius =",
+    "matches": [
+      {
+        "line": 113,
+        "text": "painted_radius = float(np.mean(sub_grad)) * 0.22 + 8.5 + (float(sub_grad.max()) * 0.04)",
+        "context": "                sub_grad = grad_mag[max(0, int(oc_px[1])-r_box):min(img_h, int(oc_px[1])+r_box),\n                                    max(0, int(oc_px[0])-r_box):min(img_w, int(oc_px[0])+r_box)]\n                painted_radius = float(np.mean(sub_grad)) * 0.22 + 8.5 + (float(sub_grad.max()) * 0.04)\n                for rx, ry in route_pts:\n                    center_dist = math.hypot(rx - oc_px[0], ry - oc_px[1])\n                    edge_dist = center_dist - painted_radius"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-scene-registration-20261016.py",
+    "term": "is_aligned = (age_name",
+    "matches": [
+      {
+        "line": 156,
+        "text": "is_aligned = (age_name == \"stone\")",
+        "context": "        if mode == \"kingdom\" and deck_id == \"right-crossing\":\n            # In Kingdom, right-crossing is not crossed by the settlement road and has no localized bridge structure in later eras\n            is_aligned = (age_name == \"stone\")\n            status_note = \"ANCIENT_RIVER_CROSSING\" if age_name == \"stone\" else \"UNALIGNED_NO_STRUCTURE_IN_ERA\"\n            \n        decks_evaluated.append({"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-scene-registration-20261016.py",
+    "term": "swept_footprint_clear =",
+    "matches": [
+      {
+        "line": 189,
+        "text": "swept_footprint_clear = (len(real_intersections) == 0 and file_exists)",
+        "context": "            })\n\n    swept_footprint_clear = (len(real_intersections) == 0 and file_exists)\n    \n    return {\n        \"mode\": mode,"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-scene-registration-20261016.py",
+    "term": "\"groundContactVerified\": \"PASS\"",
+    "matches": [
+      {
+        "line": 219,
+        "text": "\"groundContactVerified\": \"PASS\"",
+        "context": "            \"sweptFootprintClearance\": \"PASS\" if swept_footprint_clear else \"INVESTIGATE\",\n            \"deckApproachAlignment\": \"PASS\" if all(d.get(\"deckAlignedWithApproaches\") for d in decks_evaluated) else \"OPEN\",\n            \"groundContactVerified\": \"PASS\"\n        },\n        \"compositeGate\": {\n            \"visualGrounding\": \"PASS\","
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-scene-registration-20261016.py",
+    "term": "\"visualGrounding\": \"PASS\"",
+    "matches": [
+      {
+        "line": 222,
+        "text": "\"visualGrounding\": \"PASS\",",
+        "context": "        },\n        \"compositeGate\": {\n            \"visualGrounding\": \"PASS\",\n            \"noSampleStamps\": \"VERIFIED_CLEAN\",\n            \"edgeStampRejected\": True\n        },"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-viewport-review-20261016.mjs",
+    "term": "const topNavArea",
+    "matches": [
+      {
+        "line": 19,
+        "text": "const topNavArea = usableWidth * 38;",
+        "context": "  // Closed inspector Kingdom layout\n  // Top resource rail: 38px height, Bottom nav: 44px height\n  const topNavArea = usableWidth * 38;\n  const bottomNavArea = usableWidth * 44;\n  const occludedArea = topNavArea + bottomNavArea;\n  const visibleWorldArea = usableArea - occludedArea;"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-viewport-review-20261016.mjs",
+    "term": "allNavButtonsMeetMinimum: true",
+    "matches": [
+      {
+        "line": 41,
+        "text": "allNavButtonsMeetMinimum: true,",
+        "context": "    touchTargets: {\n      minimumTouchTargetSize: '48x48px',\n      allNavButtonsMeetMinimum: true,\n      disambiguationControlsMeetMinimum: true,\n    },\n    typography: {"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-viewport-review-20261016.mjs",
+    "term": "renderedWithoutClipping: true",
+    "matches": [
+      {
+        "line": 58,
+        "text": "renderedWithoutClipping: true,",
+        "context": "    screenCoverage: testedScreens.map(scr => ({\n      screen: scr,\n      renderedWithoutClipping: true,\n      accessibleLabelsPresent: true,\n      status: 'VERIFIED'\n    }))"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-mechanics-and-balance-20261016.mjs",
+    "term": "classification: 'natural'",
+    "matches": [
+      {
+        "line": 22,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Cancel before completion refunds 100% and halts job',\n          reloadCase: 'Job completion time preserved across reload',\n          classification: 'natural',\n          status: 'VERIFIED'\n        },\n        {"
+      },
+      {
+        "line": 32,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Negative elapsed time rejected with error',\n          reloadCase: 'Zero double-spend or duplicate income on repeated resume',\n          classification: 'natural',\n          status: 'VERIFIED'\n        }\n      ]"
+      },
+      {
+        "line": 48,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Unreachable diagonal corner step rejected',\n          reloadCase: 'Hero location, fog of war, and visited tiles retained',\n          classification: 'natural',\n          status: 'VERIFIED'\n        },\n        {"
+      },
+      {
+        "line": 58,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Rest with 0 moves remaining rejected',\n          reloadCase: 'Refilled moves and mana persist across save',\n          classification: 'natural',\n          status: 'VERIFIED'\n        }\n      ]"
+      },
+      {
+        "line": 74,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Stat points decrement by exactly 1 per bought stat',\n          reloadCase: 'Points and bonuses strictly validated against level - 1',\n          classification: 'natural',\n          status: 'VERIFIED'\n        },\n        {"
+      },
+      {
+        "line": 84,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Skill offers retain 1-2 distinct choices without reroll on reload',\n          reloadCase: 'Chosen skill rank persisted in hero.skills',\n          classification: 'natural',\n          status: 'VERIFIED'\n        }\n      ]"
+      },
+      {
+        "line": 116,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Armory level caps forge quality; unequip restores base stats',\n          reloadCase: 'Old items keep original age and stats when campaign advances',\n          classification: 'natural',\n          status: 'VERIFIED'\n        },\n        {"
+      },
+      {
+        "line": 126,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Equipping duplicate artifact rejected with error',\n          reloadCase: 'Artifact identities and bag contents preserved',\n          classification: 'natural',\n          status: 'VERIFIED'\n        }\n      ]"
+      },
+      {
+        "line": 158,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Pause stops simulation without catchup bursts; 2x applies identical 1/60 rules',\n          reloadCase: 'Active defense queue, wave status, gate HP, and tower ranks persist',\n          classification: 'natural',\n          status: 'VERIFIED'\n        }\n      ]"
+      },
+      {
+        "line": 174,
+        "text": "classification: 'natural',",
+        "context": "          cancelCase: 'Duplicate claims rejected; rival choice immutable',\n          reloadCase: 'All story flags, choices, and milestone claims survive reload',\n          classification: 'natural',\n          status: 'VERIFIED'\n        }\n      ]"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-mechanics-and-balance-20261016.mjs",
+    "term": "refunds 100%",
+    "matches": [
+      {
+        "line": 20,
+        "text": "cancelCase: 'Cancel before completion refunds 100% and halts job',",
+        "context": "          output: 'Per-second income rate based on level and age',\n          sourceFunction: 'src/core/campaign.js::settle',\n          cancelCase: 'Cancel before completion refunds 100% and halts job',\n          reloadCase: 'Job completion time preserved across reload',\n          classification: 'natural',\n          status: 'VERIFIED'"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-performance-20261016.mjs",
+    "term": "const iterations",
+    "matches": [
+      {
+        "line": 15,
+        "text": "const iterations = 5000;",
+        "context": "// 3. Defense 1/60 stepping with 50 active projectiles and 20 lane enemies\n\nconst iterations = 5000;\nconst frameTimes = [];\n\nlet state = newCampaign(contract, data, 1_000_000);"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-performance-20261016.mjs",
+    "term": "// 1. Kingdom",
+    "matches": [
+      {
+        "line": 11,
+        "text": "// 1. Kingdom dense render projection across 18 sites, walls, and roads",
+        "context": "\n// Benchmark scenarios:\n// 1. Kingdom dense render projection across 18 sites, walls, and roads\n// 2. Tactical 7x10 pathfinding and reachability\n// 3. Defense 1/60 stepping with 50 active projectiles and 20 lane enemies\n"
+      },
+      {
+        "line": 21,
+        "text": "// 1. Kingdom projection benchmark",
+        "context": "const kingdom = contract.geometry.kingdom;\n\n// 1. Kingdom projection benchmark\nconst t0 = performance.now();\nfor (let i = 0; i < iterations; i++) {\n  const start = performance.now();"
+      }
+    ]
+  },
+  {
+    "path": "scripts/generate-performance-20261016.mjs",
+    "term": "frameTimePercentilesMs",
+    "matches": [
+      {
+        "line": 79,
+        "text": "frameTimePercentilesMs: {",
+        "context": "  },\n  metrics: {\n    frameTimePercentilesMs: {\n      p50: parseFloat(p50.toFixed(4)),\n      p90: parseFloat(p90.toFixed(4)),\n      p99: parseFloat(p99.toFixed(4)),"
+      }
+    ]
+  },
+  {
+    "path": "android/app/src/main/java/com/agesofdominion/game/MainActivity.java",
+    "term": "return 'saved'",
+    "matches": [
+      {
+        "line": 181,
+        "text": "+ hidden + \");return 'saved';}return 'missing';})()\";",
+        "context": "        }\n        String script = \"(function(){if(window.rebornBackground){window.rebornBackground(\"\n                + hidden + \");return 'saved';}return 'missing';})()\";\n        web.evaluateJavascript(script, value -> {\n            if (after != null) after.run();\n        });"
+      }
+    ]
+  },
+  {
+    "path": "android/app/src/main/java/com/agesofdominion/game/MainActivity.java",
+    "term": "web.evaluateJavascript(script",
+    "matches": [
+      {
+        "line": 182,
+        "text": "web.evaluateJavascript(script, value -> {",
+        "context": "        String script = \"(function(){if(window.rebornBackground){window.rebornBackground(\"\n                + hidden + \");return 'saved';}return 'missing';})()\";\n        web.evaluateJavascript(script, value -> {\n            if (after != null) after.run();\n        });\n    }"
+      }
+    ]
+  }
+]

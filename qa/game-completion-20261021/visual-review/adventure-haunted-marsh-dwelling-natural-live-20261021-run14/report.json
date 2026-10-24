@@ -1,0 +1,173 @@
+{
+  "recordedAt": "2026-10-21T16:55:25.156Z",
+  "classification": "NATURAL_UI_ADVENTURE_DWELLING_CLAIM_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh campaign -> build Barracks -> leave town -> preview/cancel route -> confirm legal road route to dwelling -> on-foot site arrival -> ask for fixed offer -> back to road and reopen the same offer -> save/reload -> claim creatures -> verify Q3 ready -> claim its reward once -> save/reload -> verify roster and both rewards",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "haunted-marsh",
+    "layoutId": "haunted-marsh-layout-18",
+    "start": [
+      3,
+      8
+    ],
+    "destination": [
+      11,
+      7
+    ],
+    "cost": 11,
+    "cells": [
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        11,
+        7
+      ]
+    ]
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [
+    {
+      "name": "dwelling-on-foot",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run14\\dwelling-on-foot-825x375.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run14\\dwelling-on-foot-933x424.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run14\\dwelling-on-foot-1280x720.png"
+    },
+    {
+      "name": "dwelling-context-panel",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run14\\dwelling-context-panel-825x375.png"
+    }
+  ],
+  "campaignId": "campaign-83e25399-dd89-4805-82ab-143b9bacb9a0",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 3,
+    "y": 8,
+    "moves": 5,
+    "visited": [
+      "3,8"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 144,
+      "wood": 153,
+      "stone": 103,
+      "gold": 239
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 144,
+      "mineGold": 239
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "cancel": {
+    "preservedPosition": [
+      3,
+      8
+    ],
+    "preservedMoves": 5
+  },
+  "arrivalVisibleLabelCount": 1,
+  "arrival": {
+    "adventure": {
+      "x": 11,
+      "y": 7,
+      "moves": 3,
+      "visited": [
+        "3,8",
+        "4,8",
+        "5,8",
+        "6,9",
+        "7,9",
+        "8,9",
+        "9,9",
+        "10,8",
+        "11,7"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 144,
+        "wood": 153,
+        "stone": 103,
+        "gold": 239
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 144,
+        "mineGold": 239
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "daysEnded": 2,
+    "totalMovesCommitted": 11,
+    "travelerMode": "on-foot",
+    "siteVisible": "dwelling",
+    "mountVisible": false
+  },
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: the on-foot hero, readable integrated-map site label, and inspector have measurable screen bounds"
+}

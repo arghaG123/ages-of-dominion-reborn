@@ -1,0 +1,604 @@
+{
+  "recordedAt": "2026-10-21T18:41:09.527Z",
+  "classification": "NATURAL_UI_ARCHIPELAGO_OWNER_MAP_TWO_BRIDGES_SIX_SITES_TOWN_RETURN_REENTRY_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Stormbound Isles -> naturally traverse both registered bridge decks -> visit and interact with all six registered sites -> return to Town and re-enter Adventure -> persist and reload position, rewards and discoveries",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "archipelago-west-stone-bridge",
+    "archipelago-southeast-stone-bridge"
+  ],
+  "campaignId": "campaign-6f7c9d80-8cce-4483-9023-492d192bac5c",
+  "layoutId": "archipelago-layout-19",
+  "seed": 513700958,
+  "renderBinding": {
+    "worldId": "archipelago",
+    "terrainFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+    "renderModel": "integrated-map-art-plus-live-interactions",
+    "registeredBridgeCount": 2,
+    "playableCrossingCount": 2,
+    "artMode": "painted source bridges remain in the integrated owner painting; no duplicate generic bridge stamp is expected"
+  },
+  "start": {
+    "x": 10,
+    "y": 3,
+    "moves": 5,
+    "visited": [
+      "10,3"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 142,
+      "wood": 134,
+      "stone": 139,
+      "gold": 213
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 142,
+      "mineGold": 213
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [
+    {
+      "bridgeId": "archipelago-west-stone-bridge",
+      "start": [
+        10,
+        3
+      ],
+      "nearBank": [
+        7,
+        3
+      ],
+      "farBank": [
+        10,
+        3
+      ],
+      "approachCells": [
+        [
+          9,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "deckCells": [
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "crossingCells": [
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "committedCells": [
+        [
+          9,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "movementCost": 6,
+      "daysEnded": 1,
+      "finalPosition": [
+        10,
+        3
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "archipelago-southeast-stone-bridge",
+      "start": [
+        10,
+        3
+      ],
+      "nearBank": [
+        11,
+        5
+      ],
+      "farBank": [
+        14,
+        5
+      ],
+      "approachCells": [
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          5
+        ]
+      ],
+      "deckCells": [
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ]
+      ],
+      "crossingCells": [
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          14,
+          5
+        ]
+      ],
+      "committedCells": [
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          14,
+          5
+        ]
+      ],
+      "movementCost": 6,
+      "daysEnded": 1,
+      "finalPosition": [
+        14,
+        5
+      ],
+      "allDeckVisited": true
+    }
+  ],
+  "siteInteractions": [
+    {
+      "siteId": "shrine",
+      "start": [
+        14,
+        5
+      ],
+      "approach": [
+        6,
+        4
+      ],
+      "route": [
+        [
+          13,
+          5
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "routeCost": 11,
+      "skillId": "leadership",
+      "choices": [
+        "leadership",
+        "armorer"
+      ],
+      "claimed": true,
+      "skillRankBefore": 0,
+      "skillRankAfter": 1
+    },
+    {
+      "siteId": "ruin",
+      "start": [
+        6,
+        4
+      ],
+      "approach": [
+        8,
+        2
+      ],
+      "route": [
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "routeCost": 4,
+      "choiceText": "Study the ruins · +90 XP",
+      "xpBefore": 0,
+      "xpAfter": 90,
+      "levelBefore": 1,
+      "levelAfter": 1,
+      "claimed": true
+    },
+    {
+      "siteId": "mill",
+      "start": [
+        8,
+        2
+      ],
+      "approach": [
+        2,
+        5
+      ],
+      "route": [
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "routeCost": 9,
+      "choiceText": "Collect provisions · +142 food",
+      "amount": 142,
+      "resource": "food",
+      "claimed": true
+    },
+    {
+      "siteId": "mine",
+      "start": [
+        2,
+        5
+      ],
+      "approach": [
+        4,
+        3
+      ],
+      "route": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "routeCost": 4,
+      "choiceText": "Recover gold · +213",
+      "amount": 213,
+      "resource": "gold",
+      "claimed": true
+    },
+    {
+      "siteId": "dwelling",
+      "start": [
+        4,
+        3
+      ],
+      "approach": [
+        7,
+        3
+      ],
+      "route": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "routeCost": 3,
+      "offerChoice": "offer-dwelling:wolf",
+      "terms": {
+        "id": "dwelling:dwelling:wolf",
+        "siteId": "dwelling",
+        "type": "wolf",
+        "count": 5,
+        "multiplier": 1,
+        "claimed": false
+      },
+      "payment": {
+        "food": 40,
+        "gold": 35
+      },
+      "claimed": true
+    }
+  ],
+  "townReturn": {
+    "start": [
+      7,
+      3
+    ],
+    "route": [
+      [
+        8,
+        3
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        10,
+        3
+      ]
+    ],
+    "routeCost": 3,
+    "townApproach": [
+      10,
+      3
+    ],
+    "atTown": true,
+    "kingdomView": true
+  },
+  "townReentry": {
+    "position": [
+      10,
+      3
+    ],
+    "atTown": false,
+    "visitedCount": 21,
+    "claimedSites": [
+      "shrine",
+      "ruin",
+      "mill",
+      "mine"
+    ]
+  },
+  "captures": [
+    {
+      "name": "archipelago-start",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\archipelago-start-1280x720.png"
+    },
+    {
+      "name": "after-archipelago-west-stone-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\after-archipelago-west-stone-bridge-1280x720.png"
+    },
+    {
+      "name": "after-archipelago-southeast-stone-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\after-archipelago-southeast-stone-bridge-1280x720.png"
+    },
+    {
+      "name": "after-site-shrine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\after-site-shrine-1280x720.png"
+    },
+    {
+      "name": "after-site-ruin",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\after-site-ruin-1280x720.png"
+    },
+    {
+      "name": "after-site-mill",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\after-site-mill-1280x720.png"
+    },
+    {
+      "name": "after-site-mine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\after-site-mine-1280x720.png"
+    },
+    {
+      "name": "after-site-dwelling",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\after-site-dwelling-1280x720.png"
+    },
+    {
+      "name": "archipelago-town-approach",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\archipelago-town-approach-1280x720.png"
+    },
+    {
+      "name": "returned-to-kingdom",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\returned-to-kingdom-1280x720.png"
+    },
+    {
+      "name": "archipelago-reentered-adventure",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\archipelago-reentered-adventure-1280x720.png"
+    }
+  ],
+  "responsiveCaptures": [
+    {
+      "name": "archipelago-start",
+      "viewport": "825x375",
+      "layout": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "world": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 460.4651184082031,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 495.3442077636719,
+          "top": 81.2842788696289,
+          "right": 583.2329711914062,
+          "bottom": 145.75631713867188
+        },
+        "documentScroll": {
+          "width": 825,
+          "height": 375
+        }
+      },
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\archipelago-start-825x375.png"
+    },
+    {
+      "name": "archipelago-start",
+      "viewport": "933x424",
+      "layout": {
+        "viewport": {
+          "width": 933,
+          "height": 424
+        },
+        "world": {
+          "left": 0,
+          "top": 0,
+          "right": 933,
+          "bottom": 520.744140625,
+          "width": 933,
+          "height": 520.744140625
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 566.2191772460938,
+          "top": 102.3819351196289,
+          "right": 654.1079711914062,
+          "bottom": 166.85398864746094
+        },
+        "documentScroll": {
+          "width": 933,
+          "height": 424
+        }
+      },
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-archipelago-owner-map-natural-live-20261022-run01\\archipelago-start-933x424.png"
+    }
+  ],
+  "errors": [],
+  "notFound": [],
+  "reload": {
+    "campaignId": "campaign-6f7c9d80-8cce-4483-9023-492d192bac5c",
+    "position": [
+      10,
+      3
+    ],
+    "allDecksRemainVisited": true,
+    "revision": 259,
+    "browserView": "adventure",
+    "siteClaimsPersisted": true,
+    "dwellingClaimPersisted": true
+  },
+  "totalDaysEnded": 9,
+  "passed": true
+}

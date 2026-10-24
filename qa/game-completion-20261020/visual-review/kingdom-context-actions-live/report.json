@@ -1,0 +1,201 @@
+{
+  "recordedAt": "2026-10-20T04:41:08.572Z",
+  "classification": "BOUNDED_LIVE_UI_VISUAL_AND_INTERACTION_EVIDENCE_NOT_FULL_GAME_OR_OWNER_ACCEPTANCE",
+  "note": "Each viewport uses an isolated browser profile and a campaign created through the real UI. Build preview is canceled, proving the test does not spend resources or alter a user save.",
+  "runs": [
+    {
+      "viewport": [
+        825,
+        375
+      ],
+      "classification": "FRESH_UI_CAMPAIGN_CONTEXT_ACTION_INTERACTION_AND_VISUAL_REVIEW",
+      "selectedInspector": {
+        "visibleButtons": [
+          {
+            "action": "build-picker:P01",
+            "label": "Choose a building"
+          },
+          {
+            "action": "kingdom-actions-open",
+            "label": "Kingdom actions"
+          },
+          {
+            "action": "tutorial-toggle",
+            "label": "Skip tutorial"
+          }
+        ],
+        "noUnrelatedBuildCosts": true
+      },
+      "buildOptions": [
+        {
+          "choice": "build:P01:farm",
+          "accessibleName": "Build Farm. 35 wood",
+          "height": 75.390625,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:lumber",
+          "accessibleName": "Build Lumber Camp. 25 wood, 15 stone",
+          "height": 75.390625,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:quarry",
+          "accessibleName": "Build Quarry. 45 wood, 15 stone",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:mine",
+          "accessibleName": "Build Gold Mine. 70 wood, 50 stone",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:barracks",
+          "accessibleName": "Build Barracks. 90 wood, 45 stone",
+          "height": 75.390625,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:workshop",
+          "accessibleName": "Build Siege Workshop. 70 wood, 95 stone",
+          "height": 75.390625,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:hall",
+          "accessibleName": "Build Hero Hall. 110 wood, 70 stone, 60 gold",
+          "height": 78.84375,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:armory",
+          "accessibleName": "Build Armory. 120 wood, 120 stone, 80 gold",
+          "height": 78.84375,
+          "artLoaded": true,
+          "missingCostText": false
+        }
+      ],
+      "cancelPreservedCampaign": true,
+      "actions": [
+        "Town Hall",
+        "Walls",
+        "end day"
+      ],
+      "dayAdvanced": true,
+      "screenshots": [
+        "qa\\game-completion-20261020\\visual-review\\kingdom-context-actions-live\\825x375-site.png",
+        "qa\\game-completion-20261020\\visual-review\\kingdom-context-actions-live\\825x375-build-picker.png",
+        "qa\\game-completion-20261020\\visual-review\\kingdom-context-actions-live\\825x375-build-picker-end.png",
+        "qa\\game-completion-20261020\\visual-review\\kingdom-context-actions-live\\825x375-kingdom-actions.png"
+      ],
+      "errors": [],
+      "failedResponses": []
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "classification": "FRESH_UI_CAMPAIGN_CONTEXT_ACTION_INTERACTION_AND_VISUAL_REVIEW",
+      "selectedInspector": {
+        "visibleButtons": [
+          {
+            "action": "build-picker:P01",
+            "label": "Choose a building"
+          },
+          {
+            "action": "kingdom-actions-open",
+            "label": "Kingdom actions"
+          },
+          {
+            "action": "tutorial-toggle",
+            "label": "Skip tutorial"
+          }
+        ],
+        "noUnrelatedBuildCosts": true
+      },
+      "buildOptions": [
+        {
+          "choice": "build:P01:farm",
+          "accessibleName": "Build Farm. 35 wood",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:lumber",
+          "accessibleName": "Build Lumber Camp. 25 wood, 15 stone",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:quarry",
+          "accessibleName": "Build Quarry. 45 wood, 15 stone",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:mine",
+          "accessibleName": "Build Gold Mine. 70 wood, 50 stone",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:barracks",
+          "accessibleName": "Build Barracks. 90 wood, 45 stone",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:workshop",
+          "accessibleName": "Build Siege Workshop. 70 wood, 95 stone",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:hall",
+          "accessibleName": "Build Hero Hall. 110 wood, 70 stone, 60 gold",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        },
+        {
+          "choice": "build:P01:armory",
+          "accessibleName": "Build Armory. 120 wood, 120 stone, 80 gold",
+          "height": 70,
+          "artLoaded": true,
+          "missingCostText": false
+        }
+      ],
+      "cancelPreservedCampaign": true,
+      "actions": [
+        "Town Hall",
+        "Walls",
+        "end day"
+      ],
+      "dayAdvanced": true,
+      "screenshots": [
+        "qa\\game-completion-20261020\\visual-review\\kingdom-context-actions-live\\1280x720-site.png",
+        "qa\\game-completion-20261020\\visual-review\\kingdom-context-actions-live\\1280x720-build-picker.png",
+        "qa\\game-completion-20261020\\visual-review\\kingdom-context-actions-live\\1280x720-build-picker-end.png",
+        "qa\\game-completion-20261020\\visual-review\\kingdom-context-actions-live\\1280x720-kingdom-actions.png"
+      ],
+      "errors": [],
+      "failedResponses": []
+    }
+  ]
+}

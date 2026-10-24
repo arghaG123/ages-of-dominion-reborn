@@ -1,0 +1,41 @@
+{
+  "recordedAt": "2026-10-21T05:30:46.761Z",
+  "classification": "NATURAL_GRASSLANDS_FOG_REPAIR_WITH_LEGAL_MOVE_AND_RELOAD",
+  "journey": "Fresh UI campaign -> choose Grasslands -> enter Adventure -> inspect fog -> legal one-cell move -> save/reload",
+  "note": "Campaign state is created and changed through visible controls. Snapshot reads are assertions only; no campaign, visited cells, route, or movement state is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "initialFog": {
+    "fill": "rgba(16, 23, 27, 0.82)",
+    "fillOpacity": "1",
+    "mask": "url(#adventure-fog-mask)",
+    "state": "saved-unvisited",
+    "visitedCells": 1,
+    "world": "grasslands"
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-fog-repair-live-20261021-run02\\grasslands-initial-fog-panel-open-1280x720.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-fog-repair-live-20261021-run02\\grasslands-after-legal-move-1280x720.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-fog-repair-live-20261021-run02\\grasslands-after-legal-move-825x375.png"
+  ],
+  "move": {
+    "direction": "east",
+    "destination": [
+      9,
+      3
+    ],
+    "movesLeft": 4,
+    "visitedCells": 2
+  },
+  "reload": {
+    "worldId": "grasslands",
+    "position": [
+      9,
+      3
+    ],
+    "visitedCells": 2,
+    "fogFill": "rgba(16, 23, 27, 0.82)"
+  },
+  "passed": true
+}

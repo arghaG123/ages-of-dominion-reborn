@@ -18,6 +18,7 @@ Tests:
 
 from pathlib import Path
 import json
+import hashlib
 import time
 import os
 import sys
@@ -284,14 +285,14 @@ def run_tests():
         img_sha = sha256_bytes(img_bytes)
         img_b64 = base64.b64encode(img_bytes).decode("utf-8")
 
-        # Properly bound write-ahead and response
-        wa_data = {
-            "status": "SUCCEEDED",
-            "itemId": "t7-item",
-            "sha256": img_sha,
-            "bodySHA256": "valid-body-sha"
+        # Properly bound write-ahead, request body, and response
+        req_data = {
+            "contents": [{"parts": [{"text": "Test Prompt"}]}]
         }
-        (t7_pack / "write_ahead_request.json").write_text(json.dumps(wa_data, indent=2), encoding="utf-8")
+        req_bytes = json.dumps(req_data, indent=2).encode("utf-8")
+        req_sha = hashlib.sha256(req_bytes).hexdigest()
+        (t7_pack / "request_body.json").write_bytes(req_bytes)
+
         resp_data = {
             "candidates": [
                 {
@@ -304,7 +305,18 @@ def run_tests():
             ],
             "usage": {"tokens": 100}
         }
-        (t7_pack / "response.json").write_text(json.dumps(resp_data, indent=2), encoding="utf-8")
+        resp_bytes = json.dumps(resp_data, indent=2).encode("utf-8")
+        resp_sha = hashlib.sha256(resp_bytes).hexdigest()
+        (t7_pack / "response.json").write_bytes(resp_bytes)
+
+        wa_data = {
+            "status": "SUCCEEDED",
+            "itemId": "t7-item",
+            "sha256": img_sha,
+            "bodySHA256": req_sha,
+            "responseSHA256": resp_sha
+        }
+        (t7_pack / "write_ahead_request.json").write_text(json.dumps(wa_data, indent=2), encoding="utf-8")
 
         def forbid_transport(*a, **k):
             raise AssertionError("Transport must NOT be called when reusing success")

@@ -1,0 +1,184 @@
+{
+  "recordedAt": "2026-10-21T06:33:38.966Z",
+  "classification": "CURRENT_SOURCE_NATURAL_GRASSLANDS_GUARD_ENCOUNTER_SETTLEMENT_RELOAD",
+  "viewport": "825x375",
+  "route": "fresh visible Grasslands -> new knight campaign -> build Barracks -> recruit 5 Melee -> leave town -> preview and confirm seed-bound guard route -> Tactical manual Move -> UI auto-resolve remainder -> settle -> durable acknowledgement -> reload",
+  "world": {
+    "id": "grasslands",
+    "seed": 1181008884,
+    "layoutId": "grasslands-layout-9"
+  },
+  "campaignId": "campaign-99275ccb-237b-406a-bc52-5759bd2765de",
+  "construction": {
+    "plotId": "P01",
+    "building": "barracks",
+    "level": 1
+  },
+  "recruitment": {
+    "before": 12,
+    "after": 17,
+    "armyStacks": 2
+  },
+  "adventure": {
+    "start": {
+      "x": 8,
+      "y": 3,
+      "moves": 5,
+      "visited": [
+        "8,3"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 117,
+        "wood": 163,
+        "stone": 105,
+        "gold": 224
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 117,
+        "mineGold": 224
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "route": {
+      "destination": [
+        10,
+        4
+      ],
+      "cost": 3,
+      "cells": [
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          4
+        ]
+      ]
+    },
+    "travelSteps": [
+      {
+        "action": "move",
+        "position": [
+          9,
+          3
+        ],
+        "day": 1,
+        "moves": 4
+      },
+      {
+        "action": "move",
+        "position": [
+          10,
+          4
+        ],
+        "day": 1,
+        "moves": 2
+      }
+    ],
+    "guardId": "guard-ruin",
+    "guardKey": "10,4",
+    "guardPresentation": {
+      "visibleLabel": "Bandit patrol",
+      "activeFocusRingCount": 1,
+      "accessibleName": "Bandit patrol. Preview a route to this location"
+    },
+    "markerCounts": {
+      "staleSpawnBeforeBattle": 0,
+      "worldBeforeBattle": 1,
+      "minimapBeforeBattle": 1,
+      "worldAfterSettlement": 0,
+      "minimapAfterSettlement": 0,
+      "worldAfterReload": 0,
+      "staleSpawnAfterReload": 0,
+      "minimapAfterReload": 0
+    },
+    "preview": {
+      "status": "Stone Age · day 1 · clear",
+      "destination": [
+        {
+          "text": "2",
+          "title": "Confirm route · cost 2 · 4 moves available"
+        },
+        {
+          "text": "Confirm route · cost 2",
+          "title": ""
+        }
+      ]
+    },
+    "encounter": {
+      "id": "guard-10,4",
+      "cell": [
+        10,
+        4
+      ],
+      "origin": [
+        9,
+        3
+      ],
+      "status": "UNRESOLVED",
+      "pack": {
+        "stacks": [
+          {
+            "kind": "creature",
+            "type": "bandit",
+            "age": 0,
+            "rank": 0,
+            "count": 7
+          },
+          {
+            "kind": "creature",
+            "type": "wolf",
+            "age": 0,
+            "rank": 0,
+            "count": 8
+          }
+        ],
+        "boss": false,
+        "power": 1.3104,
+        "row": 2,
+        "carry": -0.4400000000000013
+      }
+    },
+    "resolvedGuards": [
+      "10,4"
+    ]
+  },
+  "battle": {
+    "id": "battle-guard-10,4-r47",
+    "encounterId": "guard-10,4",
+    "winner": "p",
+    "pendingSettlement": true,
+    "afterSettlementOpen": false,
+    "settledMeleeCount": 14,
+    "persistedMeleeCount": 14
+  },
+  "manualMove": {
+    "activeStackId": "army-1",
+    "start": [
+      1,
+      8
+    ],
+    "destination": [
+      2,
+      8
+    ],
+    "legalChoiceCount": 10
+  },
+  "spellCast": null,
+  "screenshots": [
+    "army-after-recruit.png",
+    "adventure-guard-encounter.png",
+    "tactical-encounter-start.png",
+    "tactical-after-manual-move.png",
+    "tactical-result-before-settlement.png",
+    "adventure-after-battle-reload.png"
+  ],
+  "errors": [],
+  "notFound": []
+}

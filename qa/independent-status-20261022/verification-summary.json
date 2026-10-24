@@ -1,0 +1,107 @@
+{
+  "reviewDate": "2026-10-22",
+  "timezone": "Asia/Calcutta",
+  "status": "INCOMPLETE",
+  "nodeSuite": {
+    "command": "node --test tests/*.test.mjs",
+    "total": 258,
+    "pass": 257,
+    "fail": 1,
+    "failure": "Astral Peaks gold is on walkable ground",
+    "testLine": 997,
+    "seconds": 24.198
+  },
+  "live": {
+    "origin": "http://127.0.0.1:4543",
+    "freshCampaign": true,
+    "stateInjected": false,
+    "viewports": [
+      [
+        825,
+        375
+      ],
+      [
+        1280,
+        720
+      ]
+    ],
+    "adventureCompact": {
+      "viewportHeight": 375,
+      "mapBottom": 460.8,
+      "overflowBottom": 85.8
+    },
+    "storyCompact": {
+      "lowerChoicesBottom": 309.35,
+      "navTop": 311.6,
+      "overlapPixelsSquared": 0
+    },
+    "siegeVisibleStartActions": 2,
+    "browserWarningsErrors": 0,
+    "limits": "Targeted UI and pixel review; not complete natural journeys or all-screen acceptance."
+  },
+  "sourceHashes": {
+    "src\\client\\actor.js": "2647bf2ce0be92b4051d3a25fbd6c989e847003793ebc1057b42698d82ad032d",
+    "src\\client\\adventure-map-source.js": "489938c4dee18794cd07b77d886a143e077e29fdc7663db0d4ed1b66a9ed4354",
+    "src\\client\\anatomy.js": "0d0ab2db75cc41bf97720ff74d6ad135360da5d5b2f6845dabcb0ffc06045347",
+    "src\\client\\audio.js": "bad66265d4f89d33ce35bafa4adce49cd1318d5d970b6302839923b4bf74766b",
+    "src\\client\\choices.js": "377fe041cd02add23b9237f701f5eb67a2d398ba712c6e2d77c545b5dda5a611",
+    "src\\client\\committed-motion.js": "66d1d9c8c1a0ebd8fa40a85d633f83e0295d57d63c7153fdba4576a4c9efd626",
+    "src\\client\\consumer-adapter.js": "e469d6b2fb69647a644df27e006e38f600637595f90c9fa983f7f3e7b8d17309",
+    "src\\client\\game.css": "f383dac6a6cacc3cab00de7d5ded7624e2b914489d5fe36ac6c02026f6ef46f0",
+    "src\\client\\hero-room.js": "671a5484daf806ef8c091608ce57e35cc37e2f78d139fb7263b5445b31468eb3",
+    "src\\client\\kingdom-view.js": "f0bbb9050b60a6dcaaf84a70aefb46470fd8e793ff73993f30d7a01e76240c65",
+    "src\\client\\main.js": "03af0e241d2a1fc9c15fae8e8e0cc14981b6c5626ceff55cd79c0072d360b02a",
+    "src\\client\\motion.js": "3a14adb20828f9cec9ddbff78524c4815a013aa5a438043e0534e93173b0ed50",
+    "src\\client\\polish.css": "e230894089a3cbc6cb90e66411a17c62a9d64b992700fc3fe371a05d28a66d66",
+    "src\\client\\portraits.js": "5ad964df6292887c6442363acf174a42ec844f25fcc82b3d459b69e7dfcded70",
+    "src\\client\\presentation.js": "f49dd754fc6f7ec32e22dada6a37d23213dcda92c38112e5fed2cddfe95395d7",
+    "src\\client\\projection.js": "8cc90d0075f549f6b137a2776547328975139e5b774b4cf9c1fd7dd81c8796d8",
+    "src\\client\\resource-bar.js": "7c516ae77b021dda34ab836285ceb0ae55e1bf8dbbb9093d288d3c10c22fb5e7",
+    "src\\client\\rig.js": "fd8900bc79d1cf5d2c9513e800e6e89c800b2e017cd987478e8be4b34337be79",
+    "src\\client\\screen-presentation.js": "9a3daf554c91f9744816a08e9d56d2a50be21e15e02b39a6572db11fee1ba10d",
+    "src\\client\\story-view.js": "6f0a705d7d3e4f8cf6948a385b1323901ac22dda658b0c28d435fc74be0ec619",
+    "src\\client\\tactical-ui.js": "82a39be3fe2a742a2fd602d0b838da611eed36c6dd6fd7e5f980258041693080",
+    "src\\client\\visible-size.js": "a6a54e5af11a692ae6893b8094879757d541ca81f457a641682d71dbe4f02b00",
+    "src\\core\\battle.js": "e407169cc87ab3825db58541f2eefa4aa3a8f12196107ee50d7fcbe0ca7c15e3",
+    "src\\core\\campaign.js": "ffe8c99d1f7a61b5bfda74074edd3e84055f7b344537b781c3ac01f685bbcbdc",
+    "src\\core\\challenge.js": "701cb69b664615d34401702004a7050e29d5d8c25d79154a1c938ee5f9551bda",
+    "src\\core\\defense.js": "6f4f8c4b134c20644accc5b7fbf64b714ab28bd2ed23581a7992182814de360e",
+    "src\\core\\mechanics.js": "79baada41f9d3c8bc52c3a1e316be7729fb5bd63c0c108eac32c8f3792395bc5",
+    "src\\core\\navigation.js": "71da3d369a343a2538c85c7b9a3e70c2c4b3f08d6299d1ec73421616deb2fa7b",
+    "src\\core\\rng.js": "d60f92defd278a5a980000f19162183adc64bb375eed5c31fe7319efb9d780de",
+    "src\\core\\rules.js": "879eb10ddf526383579d413d3e40968c857697559355c6a69bc73bdc2d7d243e",
+    "src\\core\\save-queue.js": "3827e904487a8eccb916c300385e190f45b4227c65ec16f643616034153271d1",
+    "src\\core\\save.js": "eabba2f2302d05849fa8bf619f8cda393c222f92bce65bebf925681e9e745478",
+    "src\\core\\storage-adapter.js": "6e29c03904a5887ab6c067647148a2f093c24221a013e7d766c147cb9bfcce35",
+    "src\\data\\actor-atlas.json": "641db436fc498269ec6571ec9f1ba88df84befa6b13e5413e733962f9029bde7",
+    "src\\data\\adventure-worlds.json": "6b5cef016aa4880478655a04d48531a93d9735ad3aafe77e0ee9dc42757d8ec8",
+    "src\\data\\age-buildings.json": "5ab754dd315d87d9036a2d7ac781e2170c21c49e4337dcd933c32a6658fc04e7",
+    "src\\data\\anatomy-binding-v1.json": "657e6329eccae1879e9dc50840ba3337c8ebaff465172b2c7172a833065cc998",
+    "src\\data\\building-pad-fit-v1.json": "f14a58b8b7bfa3fa0d50e1b6af07f0a7dbdd13b193a021899ca3ac8817213d5b",
+    "src\\data\\consumer-catalog-20261007.json": "932c15491ebe7b8980b0a3dcf9a828bfd8c39008a0d7119baeecf073ea08b143",
+    "src\\data\\gear-icons-20261007.json": "75fbbaa37775df01bad1b592245317b40d7430b050679d93fe2482ae7958e93c",
+    "src\\data\\hero-bodies-20261011.json": "b01c1f53f4c89981cb1cc47a616fe2264147764fe1c0b757b4b94af1d17f4b85",
+    "src\\data\\hero-kit-eras-20261017.json": "4b81bdc0c79fac8a234a135fc4ca6c103d7c3594cdc514ac5c6c1a1bccb81b2c",
+    "src\\data\\implementation-contract.json": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd",
+    "src\\data\\mode-scenes.json": "08630372daa87c271b14cf689b1a5cfb4bf58dbdbf93b076810cc86087160aea",
+    "src\\data\\mount-review-v1.json": "7c80e5a896075e824d5bfe35ec64b5ac7803e1f6337a8682cb6d773602cb3456",
+    "src\\data\\plate-catalog.json": "dc78d72ac9528d565e2da4ca314b42be03de8230b5f3b96a9d2c60f8ea71decd",
+    "src\\data\\plate-overrides-20261007.json": "90af3f54b2eed2b3db8388ddccce4161761cd0ca369779afec5ccfb8d8a57717",
+    "src\\data\\portrait-cards.json": "c605b5d08bfe030579ced33a9aaf1c8583b4183fbd2337ff2e45ea89f08a99fb",
+    "src\\data\\reference-data.json": "2f36de5df95006fb22c5bf7cfb5538d4903e396e8fc4d01df785b1fead50a1c9",
+    "src\\data\\reviewed-source-selection.json": "ed81e8627a3854b99518da25d24403f2cb43a31c57b74d995dada166c73854bb",
+    "src\\data\\static-mounts-v1.json": "df03116b2eada965defb46854ddb916fa2701b2412b7fb9ea404748f6298d1f5",
+    "src\\data\\stone-scene.json": "32e4306459fe280f418f60ca2e4cb1bb5341f0aff7bc6a4d343dce9438e33922",
+    "src\\data\\wall-segments-20261016.json": "ad2654157960d0ac7e39ca45342de0cf1c78b8f5fccab6e812ff29fe460930cc"
+  },
+  "evidenceHashes": {
+    "adventure-live-825x375.png": "78b4fdc4fb53fb593ef0c0b8913d51683a124560320d0fa6d76f2c318c81dc2d",
+    "all-layout-anchor-probe.json": "cfebf7c6edb82e620248b94f29b986a9e20b08e6c7fb0af994baabecad0bf245",
+    "asset-dependency-audit.json": "4dd04783fe9d3cfc3864a8741199a19484eca261a41febd20440b144abdb41f9",
+    "forge-live-1280x720.png": "4cc03753c6757dbcc697b9174f2c45765eb01881e334609b490ad9e53a8db6ec",
+    "package-source-audit.json": "8d54fde17dfa10dc384075f244c40c8cc2ae550927a701aa42c47a5d2c2e299f",
+    "siege-preparation-live-825x375.png": "c351df458fffd2e458f47c1e02cd91cf2f878726fa908e9fb634709fd22cc51f",
+    "story-live-825x375.png": "3af284a42a64326836e71ed4baef4f803fe6e68781227095d390bdfe8d40fe5d",
+    "VERIFICATION.md": "9c8f0884ab814e5790f92d455d58743317721d7f6d4626290fa4e609775fe5e0"
+  }
+}

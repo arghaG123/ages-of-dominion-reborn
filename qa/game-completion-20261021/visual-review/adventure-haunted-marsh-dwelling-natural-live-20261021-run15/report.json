@@ -1,0 +1,1061 @@
+{
+  "recordedAt": "2026-10-21T16:58:15.790Z",
+  "classification": "NATURAL_UI_ADVENTURE_DWELLING_CLAIM_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh campaign -> build Barracks -> leave town -> preview/cancel route -> confirm legal road route to dwelling -> on-foot site arrival -> ask for fixed offer -> back to road and reopen the same offer -> save/reload -> claim creatures -> verify Q3 ready -> claim its reward once -> save/reload -> verify roster and both rewards",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "haunted-marsh",
+    "layoutId": "haunted-marsh-layout-1",
+    "start": [
+      3,
+      8
+    ],
+    "destination": [
+      11,
+      7
+    ],
+    "cost": 9,
+    "cells": [
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        11,
+        7
+      ]
+    ]
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [
+    {
+      "name": "dwelling-on-foot",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\dwelling-on-foot-825x375.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\dwelling-on-foot-933x424.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\dwelling-on-foot-1280x720.png"
+    },
+    {
+      "name": "dwelling-context-panel",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\dwelling-context-panel-825x375.png"
+    },
+    {
+      "name": "dwelling-context-panel",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\dwelling-context-panel-1280x720.png"
+    },
+    {
+      "name": "dwelling-offer-context",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\dwelling-offer-context-825x375.png"
+    },
+    {
+      "name": "dwelling-offer-reloaded",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\dwelling-offer-reloaded-1280x720.png"
+    },
+    {
+      "name": "dwelling-site-after-claim",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\dwelling-site-after-claim-825x375.png"
+    },
+    {
+      "name": "army-after-dwelling-claim",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\army-after-dwelling-claim-825x375.png"
+    },
+    {
+      "name": "q3-ready",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\q3-ready-825x375.png"
+    },
+    {
+      "name": "q3-claimed",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run15\\q3-claimed-1280x720.png"
+    }
+  ],
+  "campaignId": "campaign-723d269f-83c9-419b-9baa-04d98c5cf25a",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 3,
+    "y": 8,
+    "moves": 5,
+    "visited": [
+      "3,8"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 146,
+      "wood": 160,
+      "stone": 116,
+      "gold": 236
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 146,
+      "mineGold": 236
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "cancel": {
+    "preservedPosition": [
+      3,
+      8
+    ],
+    "preservedMoves": 5
+  },
+  "arrivalVisibleLabelCount": 1,
+  "arrival": {
+    "adventure": {
+      "x": 11,
+      "y": 7,
+      "moves": 1,
+      "visited": [
+        "3,8",
+        "4,8",
+        "5,8",
+        "6,8",
+        "7,8",
+        "8,8",
+        "9,8",
+        "10,8",
+        "11,7"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 146,
+        "wood": 160,
+        "stone": 116,
+        "gold": 236
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 146,
+        "mineGold": 236
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "daysEnded": 1,
+    "totalMovesCommitted": 9,
+    "travelerMode": "on-foot",
+    "siteVisible": "dwelling",
+    "mountVisible": false
+  },
+  "panelComposition": [
+    {
+      "size": "825x375",
+      "panel": {
+        "left": 537,
+        "right": 817,
+        "top": 54,
+        "bottom": 335
+      },
+      "hero": {
+        "left": 133.24127197265625,
+        "right": 639.1533813476562,
+        "top": 43.95263671875,
+        "bottom": 415.071533203125
+      },
+      "heroAnchor": {
+        "x": 375.90001714229584,
+        "y": 254.99999237060547
+      },
+      "siteLabel": null,
+      "matchingSiteLabels": [],
+      "mapLabels": [],
+      "mapGeometry": {
+        "frame": {
+          "left": -771.7999877929688,
+          "right": 825.0000610351562,
+          "top": -413.42791748046875,
+          "bottom": 477.80926513671875
+        },
+        "terrain": {
+          "left": -771.7999877929688,
+          "right": 825.0000610351562,
+          "top": -413.42791748046875,
+          "bottom": 477.80926513671875
+        },
+        "siteHotspot": {
+          "left": 425.79998779296875,
+          "right": 625.3999633789062,
+          "top": 210.4381103515625,
+          "bottom": 388.68560791015625
+        },
+        "siteHotspots": [
+          {
+            "id": "dwelling",
+            "left": 425.79998779296875,
+            "right": 625.3999633789062,
+            "top": 210.4381103515625,
+            "bottom": 388.68560791015625
+          },
+          {
+            "id": "town",
+            "left": -771.7999877929688,
+            "right": -472.3999938964844,
+            "top": 121.31439208984375,
+            "bottom": 477.80926513671875
+          }
+        ],
+        "projectedDwellingSourcePoint": {
+          "x": 525.600017786026,
+          "y": 388.45348131656647
+        },
+        "frameFit": {
+          "width": 537,
+          "height": 375,
+          "inset": 288,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 825,
+            "height": 375,
+            "top": 0,
+            "right": 825,
+            "bottom": 375,
+            "left": 0
+          },
+          "fit": {
+            "scale": 1.1604651162790698,
+            "offset": [
+              -771.8,
+              -413.4279069767442
+            ],
+            "mode": "focus-cover",
+            "window": [
+              665.0781563126252,
+              356.2605210420842,
+              710.9218436873747,
+              323.14629258517033
+            ]
+          },
+          "worldWidth": 825,
+          "boardGeometry": true,
+          "edgeSafety": null
+        },
+        "stage": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        },
+        "stageField": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        },
+        "labelsHost": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        }
+      },
+      "viewport": {
+        "width": 825,
+        "height": 375
+      }
+    },
+    {
+      "size": "1280x720",
+      "panel": {
+        "left": 922,
+        "right": 1272,
+        "top": 72,
+        "bottom": 640
+      },
+      "hero": {
+        "left": 302.51153564453125,
+        "right": 1017.3897094726562,
+        "top": 191.37991333007812,
+        "bottom": 715.7888488769531
+      },
+      "heroAnchor": {
+        "x": 645.4000209569931,
+        "y": 489.5999984741211
+      },
+      "siteLabel": {
+        "left": 803.921875,
+        "right": 909.921875,
+        "top": 573.203125,
+        "bottom": 595
+      },
+      "matchingSiteLabels": [
+        {
+          "left": 803.921875,
+          "right": 909.921875,
+          "top": 573.203125,
+          "bottom": 595,
+          "styleLeft": "803.933px",
+          "styleTop": "573.203px"
+        }
+      ],
+      "mapLabels": [
+        "Stone cache",
+        "Creature dwelling"
+      ],
+      "mapGeometry": {
+        "frame": {
+          "left": -976.3555297851562,
+          "right": 1279.9999389648438,
+          "top": -454.9209289550781,
+          "bottom": 804.4402770996094
+        },
+        "terrain": {
+          "left": -976.3555297851562,
+          "right": 1279.9999389648438,
+          "top": -454.9209289550781,
+          "bottom": 804.4402770996094
+        },
+        "siteHotspot": {
+          "left": 715.9110717773438,
+          "right": 997.9556274414062,
+          "top": 426.6318664550781,
+          "bottom": 678.5042724609375
+        },
+        "siteHotspots": [
+          {
+            "id": "dwelling",
+            "left": 715.9110717773438,
+            "right": 997.9556274414062,
+            "top": 426.6318664550781,
+            "bottom": 678.5042724609375
+          },
+          {
+            "id": "town",
+            "left": -976.3555297851562,
+            "right": -553.2888793945312,
+            "top": 300.6957702636719,
+            "bottom": 804.4403076171875
+          }
+        ],
+        "projectedDwellingSourcePoint": {
+          "x": 856.9333536624908,
+          "y": 678.1762253046036
+        },
+        "frameFit": {
+          "width": 922,
+          "height": 720,
+          "inset": 358,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720,
+            "top": 0,
+            "right": 1280,
+            "bottom": 720,
+            "left": 0
+          },
+          "fit": {
+            "scale": 1.6397932816537468,
+            "offset": [
+              -976.3555555555557,
+              -454.92093023255813
+            ],
+            "mode": "focus-cover",
+            "window": [
+              595.4138039710054,
+              277.42578001890956,
+              780.5861960289947,
+              439.07973526630946
+            ]
+          },
+          "worldWidth": 1280,
+          "boardGeometry": true,
+          "edgeSafety": null
+        },
+        "stage": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        },
+        "stageField": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        },
+        "labelsHost": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "size": "825x375",
+      "panel": {
+        "left": 537,
+        "right": 817,
+        "top": 54,
+        "bottom": 335
+      },
+      "hero": {
+        "left": 133.24127197265625,
+        "right": 639.1533813476562,
+        "top": 43.95263671875,
+        "bottom": 415.071533203125
+      },
+      "heroAnchor": {
+        "x": 375.90001714229584,
+        "y": 254.99999237060547
+      },
+      "siteLabel": null,
+      "matchingSiteLabels": [],
+      "mapLabels": [],
+      "mapGeometry": {
+        "frame": {
+          "left": -771.7999877929688,
+          "right": 825.0000610351562,
+          "top": -413.42791748046875,
+          "bottom": 477.80926513671875
+        },
+        "terrain": {
+          "left": -771.7999877929688,
+          "right": 825.0000610351562,
+          "top": -413.42791748046875,
+          "bottom": 477.80926513671875
+        },
+        "siteHotspot": {
+          "left": 425.79998779296875,
+          "right": 625.3999633789062,
+          "top": 210.4381103515625,
+          "bottom": 388.68560791015625
+        },
+        "siteHotspots": [
+          {
+            "id": "dwelling",
+            "left": 425.79998779296875,
+            "right": 625.3999633789062,
+            "top": 210.4381103515625,
+            "bottom": 388.68560791015625
+          },
+          {
+            "id": "town",
+            "left": -771.7999877929688,
+            "right": -472.3999938964844,
+            "top": 121.31439208984375,
+            "bottom": 477.80926513671875
+          }
+        ],
+        "projectedDwellingSourcePoint": {
+          "x": 525.600017786026,
+          "y": 388.45348131656647
+        },
+        "frameFit": {
+          "width": 537,
+          "height": 375,
+          "inset": 288,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 825,
+            "height": 375,
+            "top": 0,
+            "right": 825,
+            "bottom": 375,
+            "left": 0
+          },
+          "fit": {
+            "scale": 1.1604651162790698,
+            "offset": [
+              -771.8,
+              -413.4279069767442
+            ],
+            "mode": "focus-cover",
+            "window": [
+              665.0781563126252,
+              356.2605210420842,
+              710.9218436873747,
+              323.14629258517033
+            ]
+          },
+          "worldWidth": 825,
+          "boardGeometry": true,
+          "edgeSafety": null
+        },
+        "stage": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        },
+        "stageField": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        },
+        "labelsHost": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        }
+      },
+      "viewport": {
+        "width": 825,
+        "height": 375
+      }
+    },
+    {
+      "size": "1280x720",
+      "panel": {
+        "left": 922,
+        "right": 1272,
+        "top": 72,
+        "bottom": 640
+      },
+      "hero": {
+        "left": 302.51153564453125,
+        "right": 1017.3897094726562,
+        "top": 191.37991333007812,
+        "bottom": 715.7888488769531
+      },
+      "heroAnchor": {
+        "x": 645.4000209569931,
+        "y": 489.5999984741211
+      },
+      "siteLabel": {
+        "left": 803.921875,
+        "right": 909.921875,
+        "top": 573.203125,
+        "bottom": 595
+      },
+      "matchingSiteLabels": [
+        {
+          "left": 803.921875,
+          "right": 909.921875,
+          "top": 573.203125,
+          "bottom": 595,
+          "styleLeft": "803.933px",
+          "styleTop": "573.203px"
+        }
+      ],
+      "mapLabels": [
+        "Stone cache",
+        "Creature dwelling"
+      ],
+      "mapGeometry": {
+        "frame": {
+          "left": -976.3555297851562,
+          "right": 1279.9999389648438,
+          "top": -454.9209289550781,
+          "bottom": 804.4402770996094
+        },
+        "terrain": {
+          "left": -976.3555297851562,
+          "right": 1279.9999389648438,
+          "top": -454.9209289550781,
+          "bottom": 804.4402770996094
+        },
+        "siteHotspot": {
+          "left": 715.9110717773438,
+          "right": 997.9556274414062,
+          "top": 426.6318664550781,
+          "bottom": 678.5042724609375
+        },
+        "siteHotspots": [
+          {
+            "id": "dwelling",
+            "left": 715.9110717773438,
+            "right": 997.9556274414062,
+            "top": 426.6318664550781,
+            "bottom": 678.5042724609375
+          },
+          {
+            "id": "town",
+            "left": -976.3555297851562,
+            "right": -553.2888793945312,
+            "top": 300.6957702636719,
+            "bottom": 804.4403076171875
+          }
+        ],
+        "projectedDwellingSourcePoint": {
+          "x": 856.9333536624908,
+          "y": 678.1762253046036
+        },
+        "frameFit": {
+          "width": 922,
+          "height": 720,
+          "inset": 358,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720,
+            "top": 0,
+            "right": 1280,
+            "bottom": 720,
+            "left": 0
+          },
+          "fit": {
+            "scale": 1.6397932816537468,
+            "offset": [
+              -976.3555555555557,
+              -454.92093023255813
+            ],
+            "mode": "focus-cover",
+            "window": [
+              595.4138039710054,
+              277.42578001890956,
+              780.5861960289947,
+              439.07973526630946
+            ]
+          },
+          "worldWidth": 1280,
+          "boardGeometry": true,
+          "edgeSafety": null
+        },
+        "stage": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        },
+        "stageField": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        },
+        "labelsHost": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "size": "825x375",
+      "panel": {
+        "left": 537,
+        "right": 817,
+        "top": 54,
+        "bottom": 335
+      },
+      "hero": {
+        "left": 133.24127197265625,
+        "right": 639.1533813476562,
+        "top": 43.95263671875,
+        "bottom": 415.071533203125
+      },
+      "heroAnchor": {
+        "x": 375.90001714229584,
+        "y": 254.99999237060547
+      },
+      "siteLabel": null,
+      "matchingSiteLabels": [],
+      "mapLabels": [],
+      "mapGeometry": {
+        "frame": {
+          "left": -771.7999877929688,
+          "right": 825.0000610351562,
+          "top": -413.42791748046875,
+          "bottom": 477.80926513671875
+        },
+        "terrain": {
+          "left": -771.7999877929688,
+          "right": 825.0000610351562,
+          "top": -413.42791748046875,
+          "bottom": 477.80926513671875
+        },
+        "siteHotspot": {
+          "left": 425.79998779296875,
+          "right": 625.3999633789062,
+          "top": 210.4381103515625,
+          "bottom": 388.68560791015625
+        },
+        "siteHotspots": [
+          {
+            "id": "dwelling",
+            "left": 425.79998779296875,
+            "right": 625.3999633789062,
+            "top": 210.4381103515625,
+            "bottom": 388.68560791015625
+          },
+          {
+            "id": "town",
+            "left": -771.7999877929688,
+            "right": -472.3999938964844,
+            "top": 121.31439208984375,
+            "bottom": 477.80926513671875
+          }
+        ],
+        "projectedDwellingSourcePoint": {
+          "x": 525.600017786026,
+          "y": 388.45348131656647
+        },
+        "frameFit": {
+          "width": 537,
+          "height": 375,
+          "inset": 288,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 825,
+            "height": 375,
+            "top": 0,
+            "right": 825,
+            "bottom": 375,
+            "left": 0
+          },
+          "fit": {
+            "scale": 1.1604651162790698,
+            "offset": [
+              -771.8,
+              -413.4279069767442
+            ],
+            "mode": "focus-cover",
+            "window": [
+              665.0781563126252,
+              356.2605210420842,
+              710.9218436873747,
+              323.14629258517033
+            ]
+          },
+          "worldWidth": 825,
+          "boardGeometry": true,
+          "edgeSafety": null
+        },
+        "stage": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        },
+        "stageField": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        },
+        "labelsHost": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        }
+      },
+      "viewport": {
+        "width": 825,
+        "height": 375
+      }
+    }
+  ],
+  "siteLabelBinding": [
+    {
+      "size": "825x375",
+      "labelVisible": false,
+      "anchorVisible": false
+    },
+    {
+      "size": "1280x720",
+      "labelVisible": true,
+      "horizontalOverlap": 106,
+      "verticalGap": 0
+    },
+    {
+      "size": "825x375",
+      "labelVisible": false,
+      "anchorVisible": false
+    },
+    {
+      "size": "1280x720",
+      "labelVisible": true,
+      "horizontalOverlap": 106,
+      "verticalGap": 0
+    },
+    {
+      "size": "825x375",
+      "labelVisible": false,
+      "anchorVisible": false
+    }
+  ],
+  "offer": {
+    "choice": "offer-dwelling:wolf",
+    "terms": {
+      "id": "dwelling:dwelling:wolf",
+      "siteId": "dwelling",
+      "type": "wolf",
+      "count": 5,
+      "multiplier": 1,
+      "claimed": false
+    },
+    "payment": {
+      "food": 40,
+      "gold": 35
+    },
+    "resourcesUnchanged": true,
+    "phoneBounds": {
+      "claim": {
+        "x": 546,
+        "y": 147,
+        "width": 262,
+        "height": 48
+      },
+      "claimDom": [
+        {
+          "text": "Claim 5 Dire Wolf4035",
+          "box": {
+            "left": 546,
+            "top": 147,
+            "right": 808,
+            "bottom": 195
+          },
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "parent": "choices"
+        }
+      ],
+      "panel": {
+        "x": 537,
+        "y": 54,
+        "width": 280,
+        "height": 281
+      },
+      "choicesScrollTop": 0
+    },
+    "claimVisibleWithoutScrollAt825x375": true
+  },
+  "backAction": {
+    "panelClosed": true,
+    "offerPreserved": true,
+    "resourcesUnchanged": true
+  },
+  "reload": {
+    "campaignId": "campaign-723d269f-83c9-419b-9baa-04d98c5cf25a",
+    "adventure": {
+      "x": 11,
+      "y": 7,
+      "moves": 1,
+      "visited": [
+        "3,8",
+        "4,8",
+        "5,8",
+        "6,8",
+        "7,8",
+        "8,8",
+        "9,8",
+        "10,8",
+        "11,7"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 146,
+        "wood": 160,
+        "stone": 116,
+        "gold": 236
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 146,
+        "mineGold": 236
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "dwelling": {
+      "id": "dwelling:dwelling:wolf",
+      "siteId": "dwelling",
+      "type": "wolf",
+      "count": 5,
+      "multiplier": 1,
+      "claimed": false
+    },
+    "travelerMode": "on-foot"
+  },
+  "remainingOfferTypes": [
+    "bandit"
+  ],
+  "rosterScreen": {
+    "label": "Dire Wolf ×5",
+    "accessibleName": "Dire Wolf ×5. Rank 0 of 4 stars.",
+    "selected": true,
+    "imageLoaded": true,
+    "bounds": {
+      "left": 269,
+      "top": 243,
+      "right": 361,
+      "bottom": 303
+    },
+    "viewport": {
+      "width": 825,
+      "height": 375
+    }
+  },
+  "claim": {
+    "payment": {
+      "food": 40,
+      "gold": 35
+    },
+    "creatureType": "wolf",
+    "count": 5,
+    "armyStacksBefore": 2,
+    "armyStacksAfter": 3,
+    "resourcesBefore": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    },
+    "resourcesAfter": {
+      "food": 210,
+      "wood": 160,
+      "stone": 115,
+      "gold": 115
+    },
+    "claimed": true,
+    "historyRows": 1
+  },
+  "reloadAfterClaim": {
+    "campaignId": "campaign-723d269f-83c9-419b-9baa-04d98c5cf25a",
+    "claimed": true,
+    "creatureStack": {
+      "id": "army-60f592d7-2909-4e3c-8724-dfc0a0aa140b",
+      "kind": "creature",
+      "type": "wolf",
+      "age": 0,
+      "count": 5,
+      "rank": 0,
+      "xp": 0
+    },
+    "resources": {
+      "food": 210,
+      "wood": 160,
+      "stone": 115,
+      "gold": 115
+    }
+  },
+  "q3": {
+    "ready": {
+      "quest": {
+        "claimed": false
+      },
+      "progress": "1 / 1 wild creature",
+      "status": "Ready to claim",
+      "reward": "Reward 200 150",
+      "claimPresent": true,
+      "claimDisabled": false
+    },
+    "payout": {
+      "food": 200,
+      "gold": 150
+    },
+    "reloadRepeatPayout": {
+      "food": 0,
+      "gold": 0
+    },
+    "claimed": true
+  },
+  "passed": true
+}

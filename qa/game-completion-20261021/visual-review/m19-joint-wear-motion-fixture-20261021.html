@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <title>M19 joint wear motion fixture</title>
+  <style>
+    :root { color-scheme: dark; font-family: "Segoe UI", sans-serif; background: #111618; color: #eee3c8; }
+    body { margin: 0; padding: 24px; }
+    h1 { margin: 0 0 8px; font: 600 22px/1.2 Georgia, serif; }
+    p { margin: 0 0 20px; color: #c4b898; font-size: 13px; }
+    main { display: grid; grid-template-columns: repeat(3, minmax(220px, 1fr)); gap: 16px; max-width: 1040px; }
+    figure { margin: 0; border: 1px solid #82714e; background: linear-gradient(#283234, #161c1e 76%); }
+    figcaption { padding: 10px 12px; color: #e9d6a6; font-size: 12px; text-transform: uppercase; letter-spacing: .12em; }
+    svg { display: block; width: 100%; height: min(68vh, 500px); }
+    @media (max-width: 760px) { body { padding: 12px; } main { grid-template-columns: 1fr; } svg { height: 420px; } }
+  </style>
+</head>
+<body>
+  <h1>M19 wearable joint motion</h1>
+  <p>Isolated render fixture using the current articulated actor and reviewed Future Knight wear layers. It does not modify a campaign or prove a natural battle.</p>
+  <main id="poses"></main>
+  <script type="module">
+    import { drawActor } from '/src/client/actor.js';
+    import { wornGearArt, wornWeaponArt } from '/src/client/hero-room.js';
+
+    const ns = 'http://www.w3.org/2000/svg';
+    const make = (name, attributes = {}) => {
+      const node = document.createElementNS(ns, name);
+      for (const [key, value] of Object.entries(attributes)) node.setAttribute(key, String(value));
+      return node;
+    };
+    const slots = ['helm', 'offhand', 'armor', 'boots', 'accessory'];
+    const items = Object.fromEntries(slots.map(slot => [slot, {
+      id: `future-${slot}`,
+      wearLayer: wornGearArt({ kind: 'gear', slot, age: 7 }, 'knight'),
+    }]));
+    items.weapon = {
+      id: 'future-weapon',
+      wearLayer: wornWeaponArt({ kind: 'gear', slot: 'weapon', age: 7 }, 'knight'),
+    };
+    const worn = { items };
+    const main = document.querySelector('#poses');
+    for (const { label, time } of [
+      { label: 'Wind-up', time: 0.1 },
+      { label: 'Strike', time: 0.5 },
+      { label: 'Recovery', time: 0.9 },
+    ]) {
+      const figure = document.createElement('figure');
+      const caption = document.createElement('figcaption');
+      caption.textContent = label;
+      const svg = make('svg', { viewBox: '0 0 512 600', role: 'img', 'aria-label': `Knight attack ${label.toLowerCase()} with equipped gear` });
+      drawActor(svg, make, 'knight', { x: 256, y: 552, scale: 0.86, clip: 'attack', time, worn });
+      figure.append(caption, svg);
+      main.append(figure);
+    }
+  </script>
+</body>
+</html>

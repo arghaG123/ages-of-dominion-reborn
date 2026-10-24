@@ -1,0 +1,605 @@
+{
+  "recordedAt": "2026-10-21T19:19:23.318Z",
+  "classification": "NATURAL_UI_ALL_CAMPAIGN_WORLDS",
+  "journey": "For each of 12 worlds: new campaign -> select map -> enter valley -> leave town -> one legal move -> save/reload",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "note": "Each world uses an isolated browser profile and visible controls. No campaign, selected world, map position, or movement state is injected. The report distinguishes runtime-bound owner paintings from generated fallbacks and records the compact landscape crop.",
+  "results": [
+    {
+      "worldId": "grasslands",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+        "width": 1376,
+        "height": 768,
+        "world": "grasslands",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/01_Vast_Map_Grasslands_Sunny.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 1295670708,
+      "move": {
+        "direction": "north",
+        "destination": [
+          4,
+          2
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\grasslands-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\grasslands-825x375.png",
+      "reload": {
+        "worldId": "grasslands",
+        "position": [
+          4,
+          2
+        ],
+        "revision": 17
+      },
+      "passed": true
+    },
+    {
+      "worldId": "tundra",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+        "width": 1376,
+        "height": 768,
+        "world": "tundra",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 4204427096,
+      "move": {
+        "direction": "west",
+        "destination": [
+          2,
+          5
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\tundra-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\tundra-825x375.png",
+      "reload": {
+        "worldId": "tundra",
+        "position": [
+          2,
+          5
+        ],
+        "revision": 16
+      },
+      "passed": true
+    },
+    {
+      "worldId": "haunted-marsh",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/03_Vast_Map_Autumn_Marsh_Thunderstorm.png",
+        "width": 1376,
+        "height": 768,
+        "world": "haunted-marsh",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/03_Vast_Map_Autumn_Marsh_Thunderstorm.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/03_Vast_Map_Autumn_Marsh_Thunderstorm.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 494734892,
+      "move": {
+        "direction": "north",
+        "destination": [
+          3,
+          7
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\haunted-marsh-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": -85.46511840820312,
+          "bottom": 375,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 0
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\haunted-marsh-825x375.png",
+      "reload": {
+        "worldId": "haunted-marsh",
+        "position": [
+          3,
+          7
+        ],
+        "revision": 36
+      },
+      "passed": true
+    },
+    {
+      "worldId": "desert-volcano",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+        "width": 1376,
+        "height": 768,
+        "world": "desert-volcano",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 717058630,
+      "move": {
+        "direction": "east",
+        "destination": [
+          8,
+          6
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\desert-volcano-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": -44.30232620239258,
+          "bottom": 416.16279220581055,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 41.16279220581055
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\desert-volcano-825x375.png",
+      "reload": {
+        "worldId": "desert-volcano",
+        "position": [
+          8,
+          6
+        ],
+        "revision": 16
+      },
+      "passed": true
+    },
+    {
+      "worldId": "underworld",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+        "width": 1376,
+        "height": 768,
+        "world": "underworld",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/05_Vast_Map_Subterranean_Underworld_Cavern.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 1809533863,
+      "move": {
+        "direction": "north",
+        "destination": [
+          12,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\underworld-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": -29.172758102416992,
+          "bottom": 602.3222370147705,
+          "height": 631.4949951171875
+        },
+        "bottomClippedBy": 227.3222370147705
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\underworld-825x375.png",
+      "reload": {
+        "worldId": "underworld",
+        "position": [
+          12,
+          4
+        ],
+        "revision": 16
+      },
+      "passed": true
+    },
+    {
+      "worldId": "feywild",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+        "width": 1376,
+        "height": 768,
+        "world": "feywild",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/06_Vast_Map_Sylvan_Cherry_Blossom_Feywild.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 1316001760,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          5
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\feywild-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\feywild-825x375.png",
+      "reload": {
+        "worldId": "feywild",
+        "position": [
+          9,
+          5
+        ],
+        "revision": 16
+      },
+      "passed": true
+    },
+    {
+      "worldId": "archipelago",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+        "width": 1376,
+        "height": 768,
+        "world": "archipelago",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/07_Vast_Map_Tropical_Archipelago_Monsoon.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 1579208062,
+      "move": {
+        "direction": "north",
+        "destination": [
+          10,
+          2
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\archipelago-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\archipelago-825x375.png",
+      "reload": {
+        "worldId": "archipelago",
+        "position": [
+          10,
+          2
+        ],
+        "revision": 16
+      },
+      "passed": true
+    },
+    {
+      "worldId": "mesa-savanna",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+        "width": 1376,
+        "height": 768,
+        "world": "mesa-savanna",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 1088099420,
+      "move": {
+        "direction": "east",
+        "destination": [
+          7,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\mesa-savanna-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\mesa-savanna-825x375.png",
+      "reload": {
+        "worldId": "mesa-savanna",
+        "position": [
+          7,
+          3
+        ],
+        "revision": 17
+      },
+      "passed": true
+    },
+    {
+      "worldId": "astral-peaks",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+        "width": 1376,
+        "height": 768,
+        "world": "astral-peaks",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 858292701,
+      "move": {
+        "direction": "east",
+        "destination": [
+          5,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\astral-peaks-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\astral-peaks-825x375.png",
+      "reload": {
+        "worldId": "astral-peaks",
+        "position": [
+          5,
+          3
+        ],
+        "revision": 16
+      },
+      "passed": true
+    },
+    {
+      "worldId": "blood-moon",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "blood-moon",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/10_Vast_Map_Blood_Moon_Wasteland_Eclipse.png",
+        "runtimeFile": null,
+        "boundToOwnerPainting": false
+      },
+      "seed": 1502217462,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\blood-moon-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\blood-moon-825x375.png",
+      "reload": {
+        "worldId": "blood-moon",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 14
+      },
+      "passed": true
+    },
+    {
+      "worldId": "jade-karst",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+        "width": 1376,
+        "height": 768,
+        "world": "jade-karst",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 3678431476,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\jade-karst-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\jade-karst-825x375.png",
+      "reload": {
+        "worldId": "jade-karst",
+        "position": [
+          9,
+          4
+        ],
+        "revision": 17
+      },
+      "passed": true
+    },
+    {
+      "worldId": "sunken-jungle",
+      "errors": [],
+      "failedResponses": [],
+      "image": {
+        "source": "/assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+        "width": 1376,
+        "height": 768,
+        "world": "sunken-jungle",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "ownerSourceBinding": {
+        "ownerPainting": "assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+        "runtimeFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/12_Vast_Map_Sunken_Jungle_Ruins_Ziggurat.png",
+        "boundToOwnerPainting": true
+      },
+      "seed": 2094970193,
+      "move": {
+        "direction": "north",
+        "destination": [
+          8,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\sunken-jungle-1280x720.png",
+      "compactLayout": {
+        "viewport": [
+          825,
+          375
+        ],
+        "world": {
+          "top": 0,
+          "bottom": 460.4651184082031,
+          "height": 460.4651184082031
+        },
+        "bottomClippedBy": 85.46511840820312
+      },
+      "compactCapture": "qa\\game-completion-20261022\\visual-review\\adventure-all-worlds-natural-live-20261022-run01\\sunken-jungle-825x375.png",
+      "reload": {
+        "worldId": "sunken-jungle",
+        "position": [
+          8,
+          3
+        ],
+        "revision": 16
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "ownerPaintingBindings": {
+    "bound": 11,
+    "total": 12,
+    "unboundWorldIds": [
+      "blood-moon"
+    ]
+  }
+}

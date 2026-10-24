@@ -1,0 +1,49 @@
+{
+  "reviewId": "M12-cross-bridge-action-repair-20261023",
+  "reviewDate": "2026-10-23",
+  "mockId": "M12",
+  "status": "OPEN_M12_NATURAL_CROSSING_VISUAL_REVIEW_UNVERIFIED",
+  "change": {
+    "summary": "When a legal route preview includes cells from an authored bridge deck, the commit action now reads Cross Bridge, exposes the crossing ID to review tooling, and uses matching accessible copy. The existing MOVE command, movement cost, path, and save semantics are unchanged.",
+    "sourceFiles": [
+      "src/client/adventure-travel-presentation.js",
+      "src/client/main.js"
+    ],
+    "tests": [
+      "tests/adventure-travel-presentation.test.mjs"
+    ]
+  },
+  "verification": {
+    "command": "node --test tests/adventure-travel-presentation.test.mjs tests/adventure-worlds.test.mjs",
+    "tests": 24,
+    "passed": 24,
+    "failed": 0,
+    "syntax": {
+      "command": "node --check src/client/main.js && node --check src/client/adventure-travel-presentation.js",
+      "passed": true
+    },
+    "lineEndings": {
+      "file": "src/client/main.js",
+      "crlf": 5270,
+      "bareLf": 0
+    }
+  },
+  "browserReview": {
+    "route": "http://localhost:4174/?audit",
+    "observedState": "Rotate to landscape to play. Your campaign stays saved.",
+    "retry": "The same orientation screen appeared in a temporary bottom-panel tab; that duplicate was closed and the original user tab was preserved.",
+    "naturalBridgeStateReached": false,
+    "crossingCommitted": false,
+    "screenshotRetained": false
+  },
+  "sourceHashes": {
+    "src/client/main.js": "072D3B6F60505135E9E53F4D690BE1CF2E9E3F2F5786DCE91D6328C50696ED15",
+    "src/client/adventure-travel-presentation.js": "555B11AE67A3DB7A707E4C8FE70A3478B865E81F4AFE2B7238A9D344287E50FB",
+    "tests/adventure-travel-presentation.test.mjs": "8DAB1F07168B1431BF93777F3D714F28651C78F1641FF02C1B263CA64AD48327"
+  },
+  "remaining": [
+    "Reach the target bridge crossing in a natural campaign and capture the selected bridge, mounted hero, both approaches, and action at the required landscape viewport.",
+    "Verify movement debit, deck contact, animation, hero health presentation, save/reload position, and exact mock comparison before changing M12 from OPEN."
+  ],
+  "ownerAccepted": false
+}

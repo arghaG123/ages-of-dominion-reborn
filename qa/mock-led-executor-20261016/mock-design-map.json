@@ -1,0 +1,652 @@
+{
+  "evaluatedAt": "2026-10-17T12:16:14.778Z",
+  "governingSection": "Section 6 and M01-M30",
+  "mockDirectory": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images",
+  "totalMocks": 30,
+  "mocks": [
+    {
+      "id": "M01",
+      "filename": "01-home.jpg",
+      "title": "Panoramic Game Entry & Book Menu",
+      "screen": "home",
+      "implementationModule": "src/client/main.js::home",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/01-home.jpg",
+      "exists": true,
+      "sizeBytes": 266013,
+      "sha256": "86c6d29014b007880ddc2360e3004b63ca22db4f52d2846b07850a77b047d159",
+      "keyComponents": [
+        "panoramic depth background",
+        "brass-inlaid title",
+        "four-button parchment menu (Continue, New Game, Load, Settings)",
+        "local save status banner"
+      ],
+      "deviations": [
+        "Omitted cloud/online login buttons from AI generated mock; runtime remains 100% offline with zero device permissions"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M02",
+      "filename": "02-kingdom-day1.jpg",
+      "title": "Sparse Day 1 Stone Settlement",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/02-kingdom-day1.jpg",
+      "exists": true,
+      "sizeBytes": 327417,
+      "sha256": "2f709bf6173af1c8d38405ae8a4b25844b4856da11924cea43d807fe45e4e1f6",
+      "keyComponents": [
+        "Town Hall 1 landmark",
+        "17 unselected natural ground plots (no brass grid)",
+        "Walls 0 (invisible unbuilt)",
+        "river and bridge terrain alignment"
+      ],
+      "deviations": [
+        "Removed AI fantasy cathedral; replaced with authentic primitive Stone Town Hall with thatched roof"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M03",
+      "filename": "03-kingdom-stone.jpg",
+      "title": "Developed Stone Settlement",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom, paintMaterialWalls",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/03-kingdom-stone.jpg",
+      "exists": true,
+      "sizeBytes": 362778,
+      "sha256": "aad0d7277ee8854af5064101ad5af58b499b76ec529a12fce5bd3e9e3b492eb2",
+      "keyComponents": [
+        "timber palisade wall segments with corner bastions and gate",
+        "timber staging and scaffolding during construction",
+        "ground shadows"
+      ],
+      "deviations": [
+        "Fixed wall segments from village crop to real vertical timber palisade modules"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M04",
+      "filename": "04-kingdom-bronze.jpg",
+      "title": "Bronze Age Transformation",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/04-kingdom-bronze.jpg",
+      "exists": true,
+      "sizeBytes": 387654,
+      "sha256": "ea1b8faca981cfc4cfae6b03801093f6a9c02143bf8029bf2e4cfe0cd564f414",
+      "keyComponents": [
+        "Bronze masonry and clay tiles",
+        "bronze forge and smelter facilities",
+        "market unlock integration"
+      ],
+      "deviations": [
+        "Preserved continuous road and river topology from contract geometry"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M05",
+      "filename": "05-kingdom-iron.jpg",
+      "title": "Iron Age Settlement",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/05-kingdom-iron.jpg",
+      "exists": true,
+      "sizeBytes": 373842,
+      "sha256": "e646336f428e9fde63c2b657a10d7375b177a5689944c7a44e8a80aae8821694",
+      "keyComponents": [
+        "cut ashlar stone walls",
+        "iron armory and barracks",
+        "grounded heavy infantry and archers"
+      ],
+      "deviations": [
+        "Retained authentic iron weapons; excluded gunpowder elements"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M06",
+      "filename": "06-kingdom-medieval.jpg",
+      "title": "Fortified Medieval City",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/06-kingdom-medieval.jpg",
+      "exists": true,
+      "sizeBytes": 344833,
+      "sha256": "5dd5adb7585e97be03048f1fac97535b67d40387387f5f314a17da92e1db0809",
+      "keyComponents": [
+        "crenellated curtain walls and stone gatehouse",
+        "high keep Town Hall",
+        "deep moat and drawbridge"
+      ],
+      "deviations": [
+        "Dynamic multi-layer building sprites instead of static flattened backdrop"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M07",
+      "filename": "07-kingdom-gunpowder.jpg",
+      "title": "Gunpowder Bastion Settlement",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/07-kingdom-gunpowder.jpg",
+      "exists": true,
+      "sizeBytes": 340135,
+      "sha256": "f5a8eba1e3cee149ffcb36bb2481a71b0db0172a4eb521fc3ce7aab19e9192b3",
+      "keyComponents": [
+        "low earthen/brick ramparts",
+        "artillery workshops",
+        "musket barracks and cannon towers"
+      ],
+      "deviations": [
+        "Grounded gun emplacements aligned with Defense tower pads"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M08",
+      "filename": "08-kingdom-industrial.jpg",
+      "title": "Industrial Age City",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/08-kingdom-industrial.jpg",
+      "exists": true,
+      "sizeBytes": 390620,
+      "sha256": "845714405780e04ff9fb887296dbcfd7a30ce3a9d402be3c15c53369426e8f3e",
+      "keyComponents": [
+        "brick factories and smokestacks",
+        "wrought iron perimeter fencing",
+        "cobblestone roads and rail tracks"
+      ],
+      "deviations": [
+        "Controlled smoke opacity to avoid obscuring interactive build pads"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M09",
+      "filename": "09-kingdom-modern.jpg",
+      "title": "Modern Metropolis",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/09-kingdom-modern.jpg",
+      "exists": true,
+      "sizeBytes": 408088,
+      "sha256": "3f22f3fe01890d388eeebc999c74019113f270b1cdd8802d9dd73ffaf7c1bf15",
+      "keyComponents": [
+        "concrete and steel civic center",
+        "reinforced perimeter barrier",
+        "paved roads and vehicle depot"
+      ],
+      "deviations": [
+        "Maintained consistent 18-site logical footprint mapping"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M10",
+      "filename": "10-kingdom-future.jpg",
+      "title": "Futuristic Eco-Citadel",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::kingdom",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/10-kingdom-future.jpg",
+      "exists": true,
+      "sizeBytes": 377306,
+      "sha256": "94fd03c0ea803d4538c696989c65c1f22700d57c7ae78b71ee0dd3ca32e54443",
+      "keyComponents": [
+        "nanocomposite arcology landmark",
+        "energy barrier perimeter walls",
+        "solar farms and drone hangars"
+      ],
+      "deviations": [
+        "Source-bound palette matching adopted Future terrain and building catalogs"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M11",
+      "filename": "11-adventure-overview.jpg",
+      "title": "Adventure Map Regional Overview",
+      "screen": "adventure",
+      "implementationModule": "src/client/main.js::adventure",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/11-adventure-overview.jpg",
+      "exists": true,
+      "sizeBytes": 355428,
+      "sha256": "d8a090a128fe15ccc037c225f347b9064fb2624f0586fba1508eb06a18651c95",
+      "keyComponents": [
+        "16x10 regional navigation mesh",
+        "fog of war boundaries",
+        "clearings, guarded sites, and resource pickups"
+      ],
+      "deviations": [
+        "Preserved hidden 16x10 topological grid beneath organic landscape painting"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M12",
+      "filename": "12-adventure-crossing.jpg",
+      "title": "Adventure River Crossing & Chokepoint",
+      "screen": "adventure",
+      "implementationModule": "src/client/main.js::adventure",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/12-adventure-crossing.jpg",
+      "exists": true,
+      "sizeBytes": 363119,
+      "sha256": "9ef148954dbafa22c3ca497efe0af03c83b5ea1e9f52452aa56ba6162b305f13",
+      "keyComponents": [
+        "timber/stone bridge approach alignment",
+        "continuous route preview over walkable ground",
+        "river bank collision clearance"
+      ],
+      "deviations": [
+        "Footprint swept envelope strictly on walkable bridge deck; 0 water intersection"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M13",
+      "filename": "13-adventure-foot.jpg",
+      "title": "Adventure Hero Travel Presentation",
+      "screen": "adventure",
+      "implementationModule": "src/client/main.js::adventure, motion.js",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/13-adventure-foot.jpg",
+      "exists": true,
+      "sizeBytes": 338582,
+      "sha256": "40e2e30f2fe640796451f2cabcd063e9d1a779b98607c3ce787fd69985b2c295",
+      "keyComponents": [
+        "grounded hero sprite with foot contact",
+        "mount gait progression",
+        "revealed terrain tiles"
+      ],
+      "deviations": [
+        "Committed foot/mount movement follows real movement point consumption"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M14",
+      "filename": "14-tactical-deployment.jpg",
+      "title": "Tactical Combat Deployment Grid",
+      "screen": "tactical",
+      "implementationModule": "src/client/main.js::tactical",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/14-tactical-deployment.jpg",
+      "exists": true,
+      "sizeBytes": 318278,
+      "sha256": "0fb2b7f2cc30b2df3222ed5e5052268b1b7a7e2354eba858e26671caf9f22f7e",
+      "keyComponents": [
+        "7x10 tactical battlefield",
+        "highlighted deployment columns 0-1",
+        "initiative turn queue bar",
+        "readable stack counts"
+      ],
+      "deviations": [
+        "Accessible high-contrast cell highlights and stack badges"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M15",
+      "filename": "15-tactical-action.jpg",
+      "title": "Tactical Action, Intent & Combat Preview",
+      "screen": "tactical",
+      "implementationModule": "src/client/main.js::tactical, battle.js",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/15-tactical-action.jpg",
+      "exists": true,
+      "sizeBytes": 341129,
+      "sha256": "94d29bdaf82ea21a77e01b7414c912aabd8402e866ff4d29c8a32d429cd032de",
+      "keyComponents": [
+        "Move, Melee, Shoot, Defend, Wait, Spell action dock",
+        "movement range footprint",
+        "targeted enemy reticle"
+      ],
+      "deviations": [
+        "Decoupled tool selection from attack animation; strikes trigger only on committed battle log events"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M16",
+      "filename": "16-battle-result.jpg",
+      "title": "Battle Victory/Defeat Composed Results",
+      "screen": "tactical",
+      "implementationModule": "src/client/main.js::tactical, campaign.js",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/16-battle-result.jpg",
+      "exists": true,
+      "sizeBytes": 260256,
+      "sha256": "30bb2f1526d64d659cb53810011e1ab7d70ba04eab45b127c92a602c4c29f791",
+      "keyComponents": [
+        "victory laurels or defeat broken standard",
+        "casualties breakdown table",
+        "XP and gold spoils breakdown",
+        "Return to Origin button"
+      ],
+      "deviations": [
+        "Result settles campaign treasury and casualties exactly once; replay-proof"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M17",
+      "filename": "17-defense-preparation.jpg",
+      "title": "Lane Defense Tower Deployment",
+      "screen": "defense",
+      "implementationModule": "src/client/main.js::defense",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/17-defense-preparation.jpg",
+      "exists": true,
+      "sizeBytes": 337125,
+      "sha256": "3c8fafdbd0f8939e0d3782c7d0da5a8c3601a46f537093a16cdc0cd24fdb1fa5",
+      "keyComponents": [
+        "9x15 winding lane terrain",
+        "tower construction pads with range overlays",
+        "hero and army deployment zones",
+        "wave composition preview"
+      ],
+      "deviations": [
+        "Retained 1/60 deterministic simulation timing; zero deployment fees"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M18",
+      "filename": "18-defense-wave.jpg",
+      "title": "Active Defense Wave Engagement",
+      "screen": "defense",
+      "implementationModule": "src/client/main.js::defense, defense.js",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/18-defense-wave.jpg",
+      "exists": true,
+      "sizeBytes": 335883,
+      "sha256": "ac6a416633f666fcc531d5291b9d02ec74332d26f2340d1b08c32c5fbe6cc7d5",
+      "keyComponents": [
+        "visible attacker role models (brute, runner, archer, sapper, shaman)",
+        "tower projectiles and area blast rings",
+        "gate HP status bar",
+        "speed (1x/2x) and pause controls"
+      ],
+      "deviations": [
+        "Pause freezes simulation completely with 0 advance; 2x applies exact same 1/60 stepping"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M19",
+      "filename": "19-hero-equipment.jpg",
+      "title": "Hero Full-Body Chamber & 6 Gear Slots",
+      "screen": "hero",
+      "implementationModule": "src/client/hero-room.js, actor.js",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/19-hero-equipment.jpg",
+      "exists": true,
+      "sizeBytes": 244670,
+      "sha256": "6a3a4e08e823a00a9069960af331af6d95b9ebb6629ecc31b5a0e7ac17939f2e",
+      "keyComponents": [
+        "prominent 2K hero character figure",
+        "6 worn equipment slots (helm, weapon, offhand, armor, boots, accessory)",
+        "primary stats radar / values (Atk, Def, Pwr, Knw)"
+      ],
+      "deviations": [
+        "Replaced 5-part Healer cutout with seamless matte-repaired single complete body with anatomically attached gear"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M20",
+      "filename": "20-skills.jpg",
+      "title": "Hero Skill Tree & Progression",
+      "screen": "hero",
+      "implementationModule": "src/client/main.js::hero",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/20-skills.jpg",
+      "exists": true,
+      "sizeBytes": 287862,
+      "sha256": "997fb3d80fb5ea5f15d4ad972cb8af4bc093c268e937102ae075c8b38fc9bc0c",
+      "keyComponents": [
+        "9 core skills grid (offense, archery, armorer, wisdom, leadership, luck, tactics, logistics, firstaid)",
+        "skill rank pips (0-3)",
+        "available stat points allocator"
+      ],
+      "deviations": [
+        "Point allocation (primary stats) separated from level-up skill offer selection"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M21",
+      "filename": "21-spells.jpg",
+      "title": "Spellbook & Tactical Casting Deck",
+      "screen": "tactical",
+      "implementationModule": "src/client/main.js::tactical, battle.js",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/21-spells.jpg",
+      "exists": true,
+      "sizeBytes": 312161,
+      "sha256": "b5289f2c8eae4be22e1b7b58201e73779bc151d326e66f6832656099c3b00a77",
+      "keyComponents": [
+        "8 adopted spells (arrow, bless, haste, cure, slow, bolt, fireball, resurrect)",
+        "mana cost runes and cooldowns",
+        "valid target indicators"
+      ],
+      "deviations": [
+        "Enforced one-commander-cast-per-round and living friendly target rules for Cure/Resurrect"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M22",
+      "filename": "22-forge.jpg",
+      "title": "Armory Workshop & Equipment Crafting",
+      "screen": "forge",
+      "implementationModule": "src/client/main.js::forge",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/22-forge.jpg",
+      "exists": true,
+      "sizeBytes": 165912,
+      "sha256": "f5253c7524352e1f57aff00d7623ada1d3858216cdc04296f9dae4bc3e9ba560",
+      "keyComponents": [
+        "anvil crafting station",
+        "slot recipe selector",
+        "quality preview (Crude, Fine, Master, Relic)",
+        "resource cost breakdown"
+      ],
+      "deviations": [
+        "Armory building level sets quality cap; item costs scale by era"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M23",
+      "filename": "23-inventory.jpg",
+      "title": "Backpack Inventory & Item Comparison",
+      "screen": "hero",
+      "implementationModule": "src/client/main.js::hero",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/23-inventory.jpg",
+      "exists": true,
+      "sizeBytes": 179720,
+      "sha256": "083b299ebfb716625babc2a6648102dd28d8de0198b1b6a2cf47df440ef40d7e",
+      "keyComponents": [
+        "scrollable item grid",
+        "item stat card tooltip",
+        "side-by-side comparison with currently equipped slot",
+        "Equip / Unequip actions"
+      ],
+      "deviations": [
+        "Preserved unbounded bag capacity from adopted rules without artificial item caps"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M24",
+      "filename": "24-army.jpg",
+      "title": "Army Roster, Unit Codex & Capacity",
+      "screen": "army",
+      "implementationModule": "src/client/main.js::army",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/24-army.jpg",
+      "exists": true,
+      "sizeBytes": 308685,
+      "sha256": "9728db38e960a2117e7b52b1fb5795cb3a7e9080a12b9f3f65bd0b1e0cc0105f",
+      "keyComponents": [
+        "troop roster slots",
+        "unit rank stars (0-4) based on combat XP",
+        "role stat inspector (Melee, Ranged, Heavy)",
+        "army capacity meter"
+      ],
+      "deviations": [
+        "Unit stats derived from age and role coefficients without invented merge/split rules"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M25",
+      "filename": "25-story.jpg",
+      "title": "Campaign Journal, Rival & Branch History",
+      "screen": "story",
+      "implementationModule": "src/client/main.js::story",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/25-story.jpg",
+      "exists": true,
+      "sizeBytes": 312592,
+      "sha256": "2f00b9c71582d1649cb60690f305f41437bebe73a4d79912149e800e97705ac6",
+      "keyComponents": [
+        "parchment chronicle journal",
+        "selected rival portrait and dossier",
+        "7 adopted chapter choices",
+        "branch milestone flags"
+      ],
+      "deviations": [
+        "Rival selection is permanent; chapters pay rewards once only"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M26",
+      "filename": "26-quests.jpg",
+      "title": "Objective Quests & Milestones",
+      "screen": "story",
+      "implementationModule": "src/client/main.js::story",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/26-quests.jpg",
+      "exists": true,
+      "sizeBytes": 306513,
+      "sha256": "c0ffa993cb4b6bcac60a9047065d58483897e25cb63f9e9a1a95c560a78bb833",
+      "keyComponents": [
+        "6 core campaign quests (q1-q6) checklist",
+        "8 age milestone claims",
+        "claim reward buttons with immediate treasury settlement"
+      ],
+      "deviations": [
+        "Objective predicates check live campaign state directly; double claims rejected"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M27",
+      "filename": "27-tutorial.jpg",
+      "title": "Interactive Guided Tutorial Overlay",
+      "screen": "kingdom",
+      "implementationModule": "src/client/main.js::tutorial",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/27-tutorial.jpg",
+      "exists": true,
+      "sizeBytes": 250576,
+      "sha256": "2fe0a3334873b14a6577c2a625deed78f139e852a0d94ce873abc9d1121d591f",
+      "keyComponents": [
+        "anchored tooltip pointer",
+        "highlighted target building site or action button",
+        "step progress dots",
+        "Skip / Review tutorial controls"
+      ],
+      "deviations": [
+        "Wrong clicks do not advance tutorial step; step progress persisted across reloads"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M28",
+      "filename": "28-settings.jpg",
+      "title": "Settings, Audio & Accessibility",
+      "screen": "settings",
+      "implementationModule": "src/client/main.js::settings",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/28-settings.jpg",
+      "exists": true,
+      "sizeBytes": 293126,
+      "sha256": "10454cf23925a875cdae13d4c321a25632a9aa8de7cea7a8368913a087fef641",
+      "keyComponents": [
+        "Music volume slider (0-100%)",
+        "SFX volume slider (0-100%)",
+        "Reduced Motion toggle",
+        "Credits, Help and Privacy policy tabs"
+      ],
+      "deviations": [
+        "Pure local audio synthesizer / Web Audio buffers; zero remote network calls"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M29",
+      "filename": "29-save-recovery.jpg",
+      "title": "Save Management, Multi-Slot & Recovery",
+      "screen": "settings",
+      "implementationModule": "src/client/main.js::settings, save.js, storage-adapter.js",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/29-save-recovery.jpg",
+      "exists": true,
+      "sizeBytes": 270329,
+      "sha256": "8a54fedd84d91e2f144940eae298c178e078b205aec6ac1ead703af8f49135d1",
+      "keyComponents": [
+        "3 save slots manager (Slot 1, Slot 2, Slot 3)",
+        "Export campaign JSON button",
+        "Import campaign file dialog",
+        "Damaged save quarantine and Last-Good Backup recovery button"
+      ],
+      "deviations": [
+        "Atomic IndexedDB adapter with CAS and epoch advancement as primary engine; localStorage fallback"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "M30",
+      "filename": "30-icon-material-board.jpg",
+      "title": "Unified Design System & Material Tokens",
+      "screen": "global",
+      "implementationModule": "src/client/game.css",
+      "filePath": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/30-icon-material-board.jpg",
+      "exists": true,
+      "sizeBytes": 225392,
+      "sha256": "9e927748289178edc5d2ce132ad4a6a053051dc976df1d7d2dfee990cc40b1d3",
+      "keyComponents": [
+        "slate, stone, brass, and gold palette tokens",
+        "8pt spatial grid rhythm",
+        "16/20/25/31 modular typographic hierarchy",
+        "consistent button 5-state styling"
+      ],
+      "deviations": [
+        "Preserved 48x48px touch targets for mobile accessibility"
+      ],
+      "visualEvaluation": "MATCHES_MOCK_HIERARCHY_AND_PALETTE",
+      "status": "VERIFIED"
+    }
+  ]
+}

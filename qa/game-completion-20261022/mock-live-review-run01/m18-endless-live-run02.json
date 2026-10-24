@@ -1,0 +1,48 @@
+{
+  "reviewDate": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "runKind": "natural-visible-gameplay",
+  "mode": "endless",
+  "start": {
+    "age": "Stone",
+    "day": 1,
+    "walls": 0,
+    "towers": ["arrow", "slow"],
+    "armyRoster": [
+      { "type": "melee", "count": 12 },
+      { "type": "ranged", "count": 8 },
+      { "type": "heavy", "count": 5 }
+    ],
+    "mana": 10
+  },
+  "actions": [
+    "Selected Endless in the visible War preparation UI.",
+    "Deployed the hero and Slinger x8 through visible controls; no deployment fee was charged.",
+    "Selected 2x speed and resumed through the visible controls."
+  ],
+  "result": {
+    "status": "defeat",
+    "clearedNonLeakedWaves": 2,
+    "waveHorizonAtDefeat": 6,
+    "coreAtResolution": -27.0548,
+    "arrowTowerHp": 0,
+    "slowTowerHp": 0,
+    "heroHp": 0,
+    "deployedSlingerHp": 0,
+    "slingerCasualties": 8,
+    "endlessTenWaveRequirement": "FAIL"
+  },
+  "settlement": {
+    "appliedOnce": true,
+    "postSettlementArmyFormations": 2,
+    "loadedSlot": 1,
+    "restoredRoster": [
+      { "type": "melee", "count": 12 },
+      { "type": "ranged", "count": 8 },
+      { "type": "heavy", "count": 5 }
+    ],
+    "restoredFormationCount": "3/3"
+  },
+  "interpretation": "Observed natural setup and failure only. This is not ten-wave acceptance or a balance-rule change. The live state is Stone with no walls and two starter towers; M18 mock comparison still needs a matched age/defense state.",
+  "screenshot": "A live CUA screenshot was observed in-session; no image file was added by this run."
+}

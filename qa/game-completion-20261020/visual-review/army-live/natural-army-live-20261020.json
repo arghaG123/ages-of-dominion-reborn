@@ -1,0 +1,85 @@
+{
+  "recordedAt": "2026-10-19T22:58:44.992Z",
+  "classification": "FRESH_NATURAL_UI_JOURNEY_ISOLATED_BROWSER",
+  "journey": "new campaign -> build Barracks -> select the Stone melee formation -> recruit/reinforce five -> save and reload",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "checks": {
+    "barracksStarted": {
+      "id": "d9e48c03-4f17-4027-8c44-4de50152ba39",
+      "plotId": "P01",
+      "type": "barracks",
+      "targetLevel": 1,
+      "completesAt": 1792450730762
+    },
+    "barracksBuilt": {
+      "level": 1,
+      "resources": {
+        "food": 250,
+        "wood": 160,
+        "stone": 115,
+        "gold": 150
+      }
+    },
+    "preview": {
+      "selectedRole": "true",
+      "recruitButtonVisible": true,
+      "recruitButtonLabel": "Reinforce +5. 225 food, 50 gold",
+      "formationCount": 2
+    },
+    "recruited": {
+      "stack": {
+        "id": "army-1",
+        "kind": "role",
+        "type": "melee",
+        "age": 0,
+        "count": 17,
+        "rank": 0,
+        "xp": 0
+      },
+      "formationCount": 2,
+      "capacity": 3,
+      "caption": "Clubman ×17",
+      "accessibleName": "Clubman ×17. Rank 0 of 4 stars.",
+      "rankStars": "☆☆☆☆",
+      "nextActionLabel": "Reinforce +5. 225 food, 50 gold. Not enough resources.",
+      "resources": {
+        "food": 25,
+        "wood": 160,
+        "stone": 115,
+        "gold": 100
+      }
+    },
+    "reload": {
+      "army": [
+        {
+          "id": "army-1",
+          "type": "melee",
+          "count": 17,
+          "rank": 0
+        },
+        {
+          "id": "army-2",
+          "type": "ranged",
+          "count": 8,
+          "rank": 0
+        }
+      ],
+      "age": 0
+    },
+    "desktop": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "rosterCards": 2,
+      "selectedCountText": "Clubman ×17. Rank 0 of 4 stars."
+    }
+  },
+  "screenshots": {
+    "recruitPreview": "qa\\game-completion-20261020\\visual-review\\army-live\\recruit-preview-825x375.png",
+    "armyRecruitedPhone": "qa\\game-completion-20261020\\visual-review\\army-live\\army-recruited-825x375.png",
+    "armyRecruitedDesktop": "qa\\game-completion-20261020\\visual-review\\army-live\\army-recruited-1280x720.png"
+  },
+  "passed": true
+}

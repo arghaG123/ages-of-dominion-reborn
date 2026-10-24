@@ -1,0 +1,564 @@
+{
+  "recordedAt": "2026-10-21T17:36:53.070Z",
+  "classification": "NATURAL_UI_TUNDRA_FULL_BRIDGES_AND_SITE_REWARDS_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Tundra -> naturally traverse every registered bridge deck -> visit and interact with Shrine, Ruin, Mill and Mine -> persist and reload map, rewards and discoveries",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "tundra-west-stone-bridge",
+    "tundra-east-ice-channel-bridge",
+    "tundra-south-channel-bridge"
+  ],
+  "campaignId": "campaign-9b18d0d5-a955-436c-91c0-112b01c1ca50",
+  "layoutId": "tundra-layout-3",
+  "seed": 807924197,
+  "renderBinding": {
+    "worldId": "tundra",
+    "terrainFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+    "renderModel": "integrated-map-art-plus-live-interactions",
+    "registeredBridgeCount": 3,
+    "playableCrossingCount": 3,
+    "artMode": "painted source bridges remain in the integrated owner painting; no duplicate generic bridge stamp is expected"
+  },
+  "start": {
+    "x": 3,
+    "y": 5,
+    "moves": 5,
+    "visited": [
+      "3,5"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 115,
+      "wood": 136,
+      "stone": 126,
+      "gold": 223
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 115,
+      "mineGold": 223
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [
+    {
+      "bridgeId": "tundra-west-stone-bridge",
+      "start": [
+        3,
+        5
+      ],
+      "nearBank": [
+        5,
+        6
+      ],
+      "farBank": [
+        8,
+        6
+      ],
+      "approachCells": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "deckCells": [
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "crossingCells": [
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "committedCells": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "movementCost": 10,
+      "daysEnded": 1,
+      "finalPosition": [
+        8,
+        6
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "tundra-east-ice-channel-bridge",
+      "start": [
+        8,
+        6
+      ],
+      "nearBank": [
+        11,
+        4
+      ],
+      "farBank": [
+        14,
+        4
+      ],
+      "approachCells": [
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ]
+      ],
+      "deckCells": [
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "crossingCells": [
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ]
+      ],
+      "committedCells": [
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ]
+      ],
+      "movementCost": 8,
+      "daysEnded": 2,
+      "finalPosition": [
+        14,
+        4
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "tundra-south-channel-bridge",
+      "start": [
+        14,
+        4
+      ],
+      "nearBank": [
+        8,
+        8
+      ],
+      "farBank": [
+        10,
+        8
+      ],
+      "approachCells": [
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "deckCells": [
+        [
+          9,
+          8
+        ]
+      ],
+      "crossingCells": [
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "committedCells": [
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "movementCost": 12,
+      "daysEnded": 3,
+      "finalPosition": [
+        10,
+        8
+      ],
+      "allDeckVisited": true
+    }
+  ],
+  "siteInteractions": [
+    {
+      "siteId": "shrine",
+      "start": [
+        10,
+        8
+      ],
+      "approach": [
+        8,
+        7
+      ],
+      "route": [
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "routeCost": 3,
+      "skillId": "leadership",
+      "choices": [
+        "leadership",
+        "luck"
+      ],
+      "claimed": true,
+      "skillRankBefore": 0,
+      "skillRankAfter": 1
+    },
+    {
+      "siteId": "ruin",
+      "start": [
+        8,
+        7
+      ],
+      "approach": [
+        8,
+        4
+      ],
+      "route": [
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "routeCost": 3,
+      "choiceText": "Study the ruins · +90 XP",
+      "xpBefore": 0,
+      "xpAfter": 90,
+      "levelBefore": 1,
+      "levelAfter": 1,
+      "claimed": true
+    },
+    {
+      "siteId": "mill",
+      "start": [
+        8,
+        4
+      ],
+      "approach": [
+        4,
+        6
+      ],
+      "route": [
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "routeCost": 6,
+      "choiceText": "Collect provisions · +115 food",
+      "amount": 115,
+      "resource": "food",
+      "claimed": true
+    },
+    {
+      "siteId": "mine",
+      "start": [
+        4,
+        6
+      ],
+      "approach": [
+        2,
+        6
+      ],
+      "route": [
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "routeCost": 4,
+      "choiceText": "Recover gold · +223",
+      "amount": 223,
+      "resource": "gold",
+      "claimed": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "tundra-start",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run04\\tundra-start-1280x720.png"
+    },
+    {
+      "name": "after-tundra-west-stone-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run04\\after-tundra-west-stone-bridge-1280x720.png"
+    },
+    {
+      "name": "after-tundra-east-ice-channel-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run04\\after-tundra-east-ice-channel-bridge-1280x720.png"
+    },
+    {
+      "name": "after-tundra-south-channel-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run04\\after-tundra-south-channel-bridge-1280x720.png"
+    },
+    {
+      "name": "after-site-shrine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run04\\after-site-shrine-1280x720.png"
+    },
+    {
+      "name": "after-site-ruin",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run04\\after-site-ruin-1280x720.png"
+    },
+    {
+      "name": "after-site-mill",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run04\\after-site-mill-1280x720.png"
+    },
+    {
+      "name": "after-site-mine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run04\\after-site-mine-1280x720.png"
+    }
+  ],
+  "errors": [],
+  "notFound": [],
+  "reload": {
+    "campaignId": "campaign-9b18d0d5-a955-436c-91c0-112b01c1ca50",
+    "position": [
+      2,
+      6
+    ],
+    "allDecksRemainVisited": true,
+    "revision": 238,
+    "browserView": "adventure",
+    "siteClaimsPersisted": true
+  },
+  "totalDaysEnded": 9,
+  "passed": true
+}

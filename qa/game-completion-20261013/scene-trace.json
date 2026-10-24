@@ -4,16 +4,16 @@
   "closerScriptRun": false,
   "legalCellsMoved": false,
   "paidCall": false,
-  "acceptance": "PASS",
-  "pass": 32,
-  "fail": 0,
+  "acceptance": "NOT_ACCEPTED",
+  "pass": 24,
+  "fail": 8,
   "blocked": 0,
   "rows": [
     {
       "scene": "kingdom",
       "age": 0,
       "ageName": "stone",
-      "source": "assets/derivatives/scene-edges-20261013/kingdom-stone.png",
+      "source": "assets/derivatives/mock-led-20261016/kingdom/kingdom-stone-ground.png",
       "nativeWidth": 1376,
       "nativeHeight": 768,
       "worldToSource": [
@@ -38,15 +38,15 @@
           "blockedIntersectionCount": 0,
           "edge": {
             "samples": 50,
-            "aligned": 50,
-            "agreement": 1.0,
-            "controlAgreement": 0.16,
-            "localized": true
+            "aligned": 1,
+            "agreement": 0.02,
+            "controlAgreement": 0.06,
+            "localized": false
           },
           "medianRgb": [
-            176,
-            135,
-            95
+            175,
+            134,
+            94
           ]
         },
         "banks": {
@@ -54,10 +54,10 @@
           "samples": 110,
           "edge": {
             "samples": 110,
-            "aligned": 106,
-            "agreement": 0.9636,
-            "controlAgreement": 0.1,
-            "localized": true
+            "aligned": 3,
+            "agreement": 0.0273,
+            "controlAgreement": 0.0909,
+            "localized": false
           },
           "medianRgb": [
             89,
@@ -84,14 +84,14 @@
             "roadIntersectionCount": 0,
             "edge": {
               "samples": 11,
-              "aligned": 11,
-              "agreement": 1.0,
+              "aligned": 1,
+              "agreement": 0.0909,
               "controlAgreement": 0.0,
-              "localized": true
+              "localized": false
             },
             "medianRgb": [
               139,
-              110,
+              106,
               74
             ]
           }
@@ -326,15 +326,15 @@
           "medianRgb": null
         }
       },
-      "geometryGate": "PASS",
-      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "geometryGate": "FAIL",
+      "reviewNotes": "The painting has no localized edge along the legal road.",
       "colourUsedAsPassPredicate": false
     },
     {
       "scene": "kingdom",
       "age": 1,
       "ageName": "bronze",
-      "source": "assets/derivatives/scene-edges-20261013/kingdom-bronze.png",
+      "source": "assets/derivatives/mock-led-20261016/kingdom/kingdom-bronze-ground.png",
       "nativeWidth": 1376,
       "nativeHeight": 768,
       "worldToSource": [
@@ -359,10 +359,10 @@
           "blockedIntersectionCount": 0,
           "edge": {
             "samples": 50,
-            "aligned": 50,
-            "agreement": 1.0,
-            "controlAgreement": 0.26,
-            "localized": true
+            "aligned": 9,
+            "agreement": 0.18,
+            "controlAgreement": 0.2,
+            "localized": false
           },
           "medianRgb": [
             169,
@@ -375,10 +375,10 @@
           "samples": 110,
           "edge": {
             "samples": 110,
-            "aligned": 106,
-            "agreement": 0.9636,
+            "aligned": 0,
+            "agreement": 0.0,
             "controlAgreement": 0.0545,
-            "localized": true
+            "localized": false
           },
           "medianRgb": [
             102,
@@ -405,10 +405,10 @@
             "roadIntersectionCount": 0,
             "edge": {
               "samples": 11,
-              "aligned": 11,
-              "agreement": 1.0,
+              "aligned": 0,
+              "agreement": 0.0,
               "controlAgreement": 0.0,
-              "localized": true
+              "localized": false
             },
             "medianRgb": [
               89,
@@ -647,15 +647,15 @@
           "medianRgb": null
         }
       },
-      "geometryGate": "PASS",
-      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "geometryGate": "FAIL",
+      "reviewNotes": "The painting has no localized edge along the legal road.",
       "colourUsedAsPassPredicate": false
     },
     {
       "scene": "kingdom",
       "age": 2,
       "ageName": "iron",
-      "source": "assets/derivatives/scene-edges-20261013/kingdom-iron.png",
+      "source": "assets/derivatives/mock-led-20261016/kingdom/kingdom-iron-ground.png",
       "nativeWidth": 1376,
       "nativeHeight": 768,
       "worldToSource": [
@@ -680,15 +680,15 @@
           "blockedIntersectionCount": 0,
           "edge": {
             "samples": 50,
-            "aligned": 50,
-            "agreement": 1.0,
-            "controlAgreement": 0.22,
-            "localized": true
+            "aligned": 7,
+            "agreement": 0.14,
+            "controlAgreement": 0.08,
+            "localized": false
           },
           "medianRgb": [
             181,
             150,
-            119
+            118
           ]
         },
         "banks": {
@@ -696,10 +696,10 @@
           "samples": 110,
           "edge": {
             "samples": 110,
-            "aligned": 106,
-            "agreement": 0.9636,
+            "aligned": 2,
+            "agreement": 0.0182,
             "controlAgreement": 0.1455,
-            "localized": true
+            "localized": false
           },
           "medianRgb": [
             100,
@@ -726,14 +726,14 @@
             "roadIntersectionCount": 0,
             "edge": {
               "samples": 11,
-              "aligned": 11,
-              "agreement": 1.0,
+              "aligned": 2,
+              "agreement": 0.1818,
               "controlAgreement": 0.2727,
-              "localized": true
+              "localized": false
             },
             "medianRgb": [
               192,
-              164,
+              163,
               134
             ]
           }
@@ -968,15 +968,15 @@
           "medianRgb": null
         }
       },
-      "geometryGate": "PASS",
-      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "geometryGate": "FAIL",
+      "reviewNotes": "The painting has no localized edge along the legal road.",
       "colourUsedAsPassPredicate": false
     },
     {
       "scene": "kingdom",
       "age": 3,
       "ageName": "medieval",
-      "source": "assets/derivatives/scene-edges-20261013/kingdom-medieval.png",
+      "source": "assets/derivatives/mock-led-20261016/kingdom/kingdom-medieval-ground.png",
       "nativeWidth": 1376,
       "nativeHeight": 768,
       "worldToSource": [
@@ -1001,10 +1001,10 @@
           "blockedIntersectionCount": 0,
           "edge": {
             "samples": 50,
-            "aligned": 50,
-            "agreement": 1.0,
-            "controlAgreement": 0.28,
-            "localized": true
+            "aligned": 2,
+            "agreement": 0.04,
+            "controlAgreement": 0.06,
+            "localized": false
           },
           "medianRgb": [
             187,
@@ -1017,10 +1017,10 @@
           "samples": 110,
           "edge": {
             "samples": 110,
-            "aligned": 106,
-            "agreement": 0.9636,
+            "aligned": 5,
+            "agreement": 0.0455,
             "controlAgreement": 0.0909,
-            "localized": true
+            "localized": false
           },
           "medianRgb": [
             86,
@@ -1047,10 +1047,10 @@
             "roadIntersectionCount": 0,
             "edge": {
               "samples": 11,
-              "aligned": 11,
-              "agreement": 1.0,
+              "aligned": 0,
+              "agreement": 0.0,
               "controlAgreement": 0.2727,
-              "localized": true
+              "localized": false
             },
             "medianRgb": [
               182,
@@ -1289,15 +1289,15 @@
           "medianRgb": null
         }
       },
-      "geometryGate": "PASS",
-      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "geometryGate": "FAIL",
+      "reviewNotes": "The painting has no localized edge along the legal road.",
       "colourUsedAsPassPredicate": false
     },
     {
       "scene": "kingdom",
       "age": 4,
       "ageName": "gunpowder",
-      "source": "assets/derivatives/scene-edges-20261013/kingdom-gunpowder.png",
+      "source": "assets/derivatives/mock-led-20261016/kingdom/kingdom-gunpowder-ground.png",
       "nativeWidth": 1376,
       "nativeHeight": 768,
       "worldToSource": [
@@ -1322,15 +1322,15 @@
           "blockedIntersectionCount": 0,
           "edge": {
             "samples": 50,
-            "aligned": 50,
-            "agreement": 1.0,
+            "aligned": 10,
+            "agreement": 0.2,
             "controlAgreement": 0.04,
-            "localized": true
+            "localized": false
           },
           "medianRgb": [
-            168,
-            143,
-            109
+            167,
+            142,
+            108
           ]
         },
         "banks": {
@@ -1338,10 +1338,10 @@
           "samples": 110,
           "edge": {
             "samples": 110,
-            "aligned": 106,
-            "agreement": 0.9636,
+            "aligned": 0,
+            "agreement": 0.0,
             "controlAgreement": 0.1182,
-            "localized": true
+            "localized": false
           },
           "medianRgb": [
             104,
@@ -1368,10 +1368,10 @@
             "roadIntersectionCount": 0,
             "edge": {
               "samples": 11,
-              "aligned": 11,
-              "agreement": 1.0,
+              "aligned": 1,
+              "agreement": 0.0909,
               "controlAgreement": 0.2727,
-              "localized": true
+              "localized": false
             },
             "medianRgb": [
               168,
@@ -1610,15 +1610,15 @@
           "medianRgb": null
         }
       },
-      "geometryGate": "PASS",
-      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "geometryGate": "FAIL",
+      "reviewNotes": "The painting has no localized edge along the legal road.",
       "colourUsedAsPassPredicate": false
     },
     {
       "scene": "kingdom",
       "age": 5,
       "ageName": "industrial",
-      "source": "assets/derivatives/scene-edges-20261013/kingdom-industrial.png",
+      "source": "assets/derivatives/mock-led-20261016/kingdom/kingdom-industrial-ground.png",
       "nativeWidth": 1376,
       "nativeHeight": 768,
       "worldToSource": [
@@ -1643,14 +1643,14 @@
           "blockedIntersectionCount": 0,
           "edge": {
             "samples": 50,
-            "aligned": 50,
-            "agreement": 1.0,
-            "controlAgreement": 0.38,
-            "localized": true
+            "aligned": 4,
+            "agreement": 0.08,
+            "controlAgreement": 0.34,
+            "localized": false
           },
           "medianRgb": [
-            137,
-            112,
+            139,
+            113,
             91
           ]
         },
@@ -1659,10 +1659,10 @@
           "samples": 110,
           "edge": {
             "samples": 110,
-            "aligned": 106,
-            "agreement": 0.9636,
+            "aligned": 3,
+            "agreement": 0.0273,
             "controlAgreement": 0.1091,
-            "localized": true
+            "localized": false
           },
           "medianRgb": [
             92,
@@ -1689,10 +1689,10 @@
             "roadIntersectionCount": 0,
             "edge": {
               "samples": 11,
-              "aligned": 11,
-              "agreement": 1.0,
+              "aligned": 0,
+              "agreement": 0.0,
               "controlAgreement": 0.1818,
-              "localized": true
+              "localized": false
             },
             "medianRgb": [
               82,
@@ -1931,15 +1931,15 @@
           "medianRgb": null
         }
       },
-      "geometryGate": "PASS",
-      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "geometryGate": "FAIL",
+      "reviewNotes": "The painting has no localized edge along the legal road.",
       "colourUsedAsPassPredicate": false
     },
     {
       "scene": "kingdom",
       "age": 6,
       "ageName": "modern",
-      "source": "assets/derivatives/scene-edges-20261013/kingdom-modern.png",
+      "source": "assets/derivatives/mock-led-20261016/kingdom/kingdom-modern-ground.png",
       "nativeWidth": 1376,
       "nativeHeight": 768,
       "worldToSource": [
@@ -1964,15 +1964,15 @@
           "blockedIntersectionCount": 0,
           "edge": {
             "samples": 50,
-            "aligned": 50,
-            "agreement": 1.0,
-            "controlAgreement": 0.24,
-            "localized": true
+            "aligned": 10,
+            "agreement": 0.2,
+            "controlAgreement": 0.06,
+            "localized": false
           },
           "medianRgb": [
-            99,
-            86,
-            77
+            101,
+            88,
+            80
           ]
         },
         "banks": {
@@ -1980,10 +1980,10 @@
           "samples": 110,
           "edge": {
             "samples": 110,
-            "aligned": 106,
-            "agreement": 0.9636,
+            "aligned": 0,
+            "agreement": 0.0,
             "controlAgreement": 0.0455,
-            "localized": true
+            "localized": false
           },
           "medianRgb": [
             73,
@@ -2010,8 +2010,8 @@
             "roadIntersectionCount": 0,
             "edge": {
               "samples": 11,
-              "aligned": 11,
-              "agreement": 1.0,
+              "aligned": 4,
+              "agreement": 0.3636,
               "controlAgreement": 0.0909,
               "localized": true
             },
@@ -2252,15 +2252,15 @@
           "medianRgb": null
         }
       },
-      "geometryGate": "PASS",
-      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "geometryGate": "FAIL",
+      "reviewNotes": "The painting has no localized edge along the legal road.",
       "colourUsedAsPassPredicate": false
     },
     {
       "scene": "kingdom",
       "age": 7,
       "ageName": "future",
-      "source": "assets/derivatives/scene-edges-20261013/kingdom-future.png",
+      "source": "assets/derivatives/mock-led-20261016/kingdom/kingdom-future-ground.png",
       "nativeWidth": 1376,
       "nativeHeight": 768,
       "worldToSource": [
@@ -2285,15 +2285,15 @@
           "blockedIntersectionCount": 0,
           "edge": {
             "samples": 50,
-            "aligned": 50,
-            "agreement": 1.0,
-            "controlAgreement": 0.24,
+            "aligned": 25,
+            "agreement": 0.5,
+            "controlAgreement": 0.04,
             "localized": true
           },
           "medianRgb": [
             134,
-            115,
-            94
+            116,
+            93
           ]
         },
         "banks": {
@@ -2301,10 +2301,10 @@
           "samples": 110,
           "edge": {
             "samples": 110,
-            "aligned": 106,
-            "agreement": 0.9636,
-            "controlAgreement": 0.1091,
-            "localized": true
+            "aligned": 7,
+            "agreement": 0.0636,
+            "controlAgreement": 0.1,
+            "localized": false
           },
           "medianRgb": [
             86,
@@ -2331,10 +2331,10 @@
             "roadIntersectionCount": 0,
             "edge": {
               "samples": 11,
-              "aligned": 11,
-              "agreement": 1.0,
+              "aligned": 0,
+              "agreement": 0.0,
               "controlAgreement": 0.0909,
-              "localized": true
+              "localized": false
             },
             "medianRgb": [
               135,
@@ -2573,8 +2573,8 @@
           "medianRgb": null
         }
       },
-      "geometryGate": "PASS",
-      "reviewNotes": "Legal roads, banks, decks, and lanes meet localized edges on this painting.",
+      "geometryGate": "FAIL",
+      "reviewNotes": "The painting has no localized edge along the legal bank.",
       "colourUsedAsPassPredicate": false
     },
     {

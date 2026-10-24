@@ -1,0 +1,52 @@
+{
+  "reviewId": "M07-gunpowder-natural-current-review-20261023",
+  "mock": "M07",
+  "status": "FAIL_M07_GUNPOWDER_SCENE_AND_HUD_MISMATCH",
+  "reviewedAt": "2026-10-23",
+  "viewport": {
+    "css": [1280, 720],
+    "screenshot": "qa/game-completion-20261023/m07-gunpowder-foundry-natural-current-20261023.png",
+    "screenshotSHA256": "3B0BBE86AF663877188557FF67E9AE0A185D948EC291054D0ACE65FA8936FC05"
+  },
+  "reference": {
+    "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/07-kingdom-gunpowder.jpg",
+    "sha256": "F5A8EBA1E3CEE149FFCB36BB2481A71B0DB0172A4EB521FC3CE7AAB19E9192B3"
+  },
+  "source": {
+    "mainJsSHA256": "8E1BC107B6072A1E6473EB0530C7B0CC20E38D5753A657D4246C181FA3DA23AF",
+    "gameCssSHA256": "28C7F82297508DC977C9FB5F76D6E9196873DCB6BA431AA15A288AF47AF78577"
+  },
+  "naturalState": {
+    "campaignId": "campaign-8be86723-842b-4775-b29b-e988acd7bec6",
+    "age": 4,
+    "day": 1,
+    "view": "kingdom",
+    "selected": "Artillery Foundry · level 1",
+    "selectedSite": "P07",
+    "selectedType": "workshop",
+    "plots": 18,
+    "occupiedPlots": 18,
+    "wallLevel": 2,
+    "storageButtonState": "committed",
+    "saveRevision": 31310,
+    "panel": {
+      "sheet": "kingdom-building",
+      "rect": [432, 588.8, 416, 119.2]
+    }
+  },
+  "sourceChanges": [
+    "Added the age-specific Gunpowder display name Artillery Foundry for the existing workshop building, preserving its internal type and mechanics.",
+    "Kept the building inspector focused by removing the unrelated tutorial skip control from selected-site inspectors."
+  ],
+  "visualFindings": [
+    "The age and selected site now match M07, and the inspector now names Artillery Foundry with a working Upgrade action.",
+    "The reference is a dense city inside a tall stone wall with a hero and army portrait HUD. The live registered scene remains a sparse settlement with large open interior, a brick-bastion wall, and no hero/army profile HUD.",
+    "The reference's lower Artillery Foundry card contains a building image and compact upgrade controls; the live inspector has text and an Upgrade button but no building thumbnail or matching card contents."
+  ],
+  "remainingWork": [
+    "Repair the registered Gunpowder ground and integrated wall composition while preserving legal site geometry and dynamic building layers.",
+    "Add truthful age-matched hero/army profile information and the foundry image/control layout from available accepted campaign state and art.",
+    "Repeat the exact natural Gunpowder/Artillery Foundry review after those changes."
+  ],
+  "acceptance": "FAIL: the Gunpowder age and selected Artillery Foundry state are matched, and its presentation label was repaired, but the dominant city scene and HUD still fail the reference comparison. M07 joins the later failure pass; it is not closed."
+}

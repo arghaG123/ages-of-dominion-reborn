@@ -30,6 +30,16 @@ export function paintedPose(clip, time, reduced = false) {
   } else if (clip === 'work') {
     pose.bow = -36 + swing * 18;
     pose.thighL = 6;
+  } else if (clip === 'cast') {
+    pose.bow = -32 + swing * 14;
+    pose.head = -6;
+    pose.thighL = 4;
+  } else if (clip === 'buff' || clip === 'heal') {
+    pose.bow = -22 + swing * 10;
+    pose.head = -4;
+  } else if (clip === 'debuff') {
+    pose.head = 8;
+    pose.bow = 6;
   } else if (clip === 'hit') {
     pose.head = 14;
     pose.thighL = 10;
@@ -121,7 +131,8 @@ export function drawBoundActor(world, element, classId, { x = 0, y = 0, scale = 
   const left = [binding.hips.left[0] * torsoSize.width, binding.hips.left[1]];
   const right = [binding.hips.right[0] * torsoSize.width, binding.hips.right[1]];
   drawLeg(element, hips, binding.legs.left, left, pose);
-  const quiver = binding.accessories.find(item => item.part === 'quiver');
+  const showRigWeapon = worn == null || Boolean(worn.items?.weapon);
+  const quiver = showRigWeapon ? binding.accessories.find(item => item.part === 'quiver') : null;
   if (quiver) {
     const part = binding.parts[quiver.part];
     const joint = element('g', {
@@ -140,7 +151,7 @@ export function drawBoundActor(world, element, classId, { x = 0, y = 0, scale = 
   });
   appendPart(element, neck, head, pose.head);
   trunk.append(neck);
-  const bowSpec = binding.accessories.find(item => item.part === 'bow');
+  const bowSpec = showRigWeapon ? binding.accessories.find(item => item.part === 'bow') : null;
   if (bowSpec) {
     const part = binding.parts.bow;
     const hand = element('g', {

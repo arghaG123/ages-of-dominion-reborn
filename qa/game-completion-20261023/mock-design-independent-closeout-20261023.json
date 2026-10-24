@@ -1,0 +1,92 @@
+{
+  "reviewId": "mock-design-independent-closeout-20261023",
+  "date": "2026-10-23",
+  "scope": "Independent status check of all 30 current landscape mock designs, one mock at a time",
+  "result": {
+    "closed": 0,
+    "partial": 15,
+    "visualOrStateFail": 9,
+    "openUnmatchedState": 6,
+    "wholeGame": "INCOMPLETE"
+  },
+  "route": {
+    "url": "http://localhost:4174/?audit",
+    "browser": "Codex in-app browser, approved localhost route",
+    "currentViewport": [402, 709],
+    "currentAccessibleState": "Rotate to landscape to play. Your campaign stays saved.",
+    "landscapeReviewAvailable": false,
+    "reason": "The approved tab is portrait and the app presents its rotate-to-landscape gate. The current browser API exposed no viewport-resize control. No alternate browser or route was used."
+  },
+  "preservation": {
+    "campaignInteraction": "None during this closeout",
+    "saveSlotsChanged": false,
+    "campaignChoicesOrTransactions": false,
+    "providerOrImageGeneration": false,
+    "buildOrDeviceAction": false,
+    "gitOrCleanupAction": false
+  },
+  "referenceSet": {
+    "directory": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images",
+    "expectedCount": 30,
+    "presentCount": 30
+  },
+  "currentSourceSnapshot": {
+    "src/client/main.js": "06C59F8EBE312D1F9A79169DB663B347B26F58A618ECA61FED6EF6F36A198794",
+    "src/client/game.css": "28C7F82297508DC977C9FB5F76D6E9196873DCB6BA431AA15A288AF47AF78577",
+    "src/client/polish.css": "02E67B377FD8E92ED12154DF96F57313A15328506FDFEC6FE2A58157F09D65D9",
+    "src/client/story-view.js": "D187DA1F28CEEE0711210001BCFF20A6996C76318A4D51EB857530820767F8CA",
+    "src/client/adventure-travel-presentation.js": "0F7C9BD9788DFC7E82E86C73C0EF36C726007D86F90A1D1193612EB6E6F8CD5B",
+    "src/client/adventure-map-source.js": "0D5E6B5C98854D48889E83FD30D0E85B6DAF14FBAA2FE6ABA873CEE1215C5C19",
+    "src/core/navigation.js": "03D7742F11447E20AE76484BD55505380635F2672A002832982DA0AB468BF51A",
+    "src/data/adventure-worlds.json": "EFD4FF11D5CFEE4824134A1EB1224C791D58BE75AA508C8124AF15143AC1646D"
+  },
+  "sourceCurrentness": {
+    "finding": "Several 23 October evidence records bind to different main.js snapshots than the current checkout. Their images and observations are retained as historical findings, not current matched-source acceptance.",
+    "currentMainJs": "06C59F8EBE312D1F9A79169DB663B347B26F58A618ECA61FED6EF6F36A198794",
+    "reportedMainJsSnapshots": {
+      "M02/M03/M06": "A784A3BEBC2F455023BF2402FF7E2779159AC42DA38EA171CA94FEC035E0FD7A",
+      "M04": "E63AA08CCE5608779BCFE2AAC4F497F03A067F8E8C017AAE8D78D30C969BB2FE",
+      "M05": "5F1533109D3FBEB86E2CB3ADD6E6C655954D31FE8C9E47FA9ABAE15DC9C3F7E7",
+      "M07/M12/M13": "8E1BC107B6072A1E6473EB0530C7B0CC20E38D5753A657D4246C181FA3DA23AF",
+      "M25": "DDB196EE49DDDB2E72FBE85A7DE3B13AA1573543473009183BBB3C2B829798CB"
+    },
+    "currentCodeReview": "The current checkout contains the Bronze/Gunpowder workshop display names, Cross Bridge action label, dwelling offer rendering, and Story/Objectives controls. Static presence does not substitute for a current landscape render or the missing natural state."
+  },
+  "testEvidence": {
+    "newTestsRun": false,
+    "note": "Earlier QA records report bounded test passes for individual slices, including 275/275 on 23 October. They were not rerun for this visual closeout, and they do not establish pixel acceptance."
+  },
+  "mocks": [
+    { "id": "M01", "status": "PARTIAL", "basis": "Saved-campaign gate hierarchy was previously observed, but exact compact width, new-campaign state, damaged-save flow, current landscape capture, and the M01 journey remain open.", "evidence": ["qa/game-completion-20261023/mock-live-review-run03/REPORT.md", "qa/game-completion-20261022/mock-live-review-run01/m01-home-live-review-20261022.json"] },
+    { "id": "M02", "status": "FAIL", "basis": "Truthful Stone day-1 Walls level 0 has no perimeter wall or central keep; the mock depicts a completed circular wall. No safe visual change can misstate progression.", "blocker": "Owner/design resolution: revise the Day-1 target to a no-wall state or accept a naturally built-wall comparison, then review that matched state.", "evidence": ["qa/game-completion-20261023/m02-day1-wall-state-reconciliation-20261023.json", "qa/game-completion-20261022/mock-live-review-run01/m02-stone-day1-live-review-20261022.json"] },
+    { "id": "M03", "status": "FAIL", "basis": "Natural Stone settlement remains sparse, with structures outside the integrated wall and Quarry selected instead of the target Sawmill inspector. The duplicate inspector draft was removed; no density correction is evidenced.", "evidence": ["qa/game-completion-20261023/m03-dynamic-stone-inspector-repair-20261023.json", "qa/game-completion-20261022/mock-live-review-run01/m03-stone-wall-live-review-20261022.json"] },
+    { "id": "M04", "status": "FAIL", "basis": "Natural Bronze day-1 state and Clay Workshop were reached; the city remains open-centered versus the dense target and inspector/navigation/resource hierarchy differ. No retained screenshot; report main.js hash differs from current checkout.", "evidence": ["qa/game-completion-20261023/m04-bronze-natural-current-review-20261023.json"] },
+    { "id": "M05", "status": "FAIL", "basis": "Natural Iron/Market state and batch-100 trade affordance were checked. The live settlement/wall, missing truthful hero profile, compact navigation, and lack of market-building thumbnail differ materially from the target. Screenshot inspected; report main.js hash differs from current checkout.", "evidence": ["qa/game-completion-20261023/m05-iron-market-natural-current-review-20261023.json", "qa/game-completion-20261023/m05-iron-market-natural-current-20261023.png"] },
+    { "id": "M06", "status": "FAIL", "basis": "Current BUILDINGS and Medieval art catalog contain no Marketplace mechanic/art or castle asset; the existing Market is a separate trade screen. The available Town Hall is manor-like, not the target central castle.", "blocker": "Needs accepted Marketplace-versus-existing-Market scope and reviewed Medieval castle/Marketplace art; do not add inert controls or invent prices/levels.", "evidence": ["qa/game-completion-20261023/m06-civic-landmark-marketplace-audit-20261023.json", "qa/game-completion-20261022/mock-live-review-run01/m06-medieval-kingdom-live-review-20261022.json"] },
+    { "id": "M07", "status": "FAIL", "basis": "Natural Gunpowder/Artillery Foundry and Upgrade action were reached, but current captured world is sparse with open interior and brick-bastion wall, and lacks target hero/army HUD and foundry thumbnail. Screenshot inspected; report main.js hash differs from current checkout.", "evidence": ["qa/game-completion-20261023/m07-gunpowder-natural-current-review-20261023.json", "qa/game-completion-20261023/m07-gunpowder-foundry-natural-current-20261023.png"] },
+    { "id": "M08", "status": "OPEN", "basis": "Industrial age was not naturally reached; the latest reviewed campaign remained Gunpowder. Do not promote a later-age fixture to natural evidence.", "evidence": ["qa/game-completion-20261023/m08-industrial-natural-age-gate-review-20261023.json", "qa/game-completion-20261023/m08-industrial-not-reached-current-20261023.png"] },
+    { "id": "M09", "status": "OPEN", "basis": "Modern age and Residential Tower inspector were not naturally reached; the current campaign evidence is two ages earlier.", "evidence": ["qa/game-completion-20261023/m09-modern-natural-age-gate-review-20261023.json"] },
+    { "id": "M10", "status": "OPEN", "basis": "Future age and Advanced Research Lab inspector were not naturally reached; the current campaign evidence is three ages earlier.", "evidence": ["qa/game-completion-20261023/m10-future-natural-age-gate-review-20261023.json"] },
+    { "id": "M11", "status": "PARTIAL", "basis": "Natural Adventure map, minimap, labels and hero marker exist, but world focal layout, readable resource/hero hierarchy, and Quests/Bag/Camp/Diplomacy controls do not match the target. Compact current captures are absent.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m11-adventure-overview-natural-medieval-live-review-20261022.json"] },
+    { "id": "M12", "status": "FAIL", "basis": "Natural bridge crossing mechanics passed: Cross Bridge cost 1, movement 5 to 4, and save committed. The reviewed live screen remained a wide strategic map with a travel panel and small marker, not the foreground mounted crossing scene. Screenshot inspected; report main.js hash differs from current checkout.", "evidence": ["qa/game-completion-20261023/m12-cross-bridge-natural-current-review-20261023.json", "qa/game-completion-20261023/m12-cross-bridge-natural-current-20261023.png", "qa/game-completion-20261023/m12-crossing-focus-guard-repair-20261023.json"] },
+    { "id": "M13", "status": "FAIL", "basis": "Natural dwelling review remained a strategic map with a farmstead offer, not the target Woodcutter's Hut, nearby mount and 20-wood Recruit state. Existing claim action label was repaired, but the natural site/economy match is unverified. Screenshot inspected; report main.js hash differs from current checkout.", "evidence": ["qa/game-completion-20261023/m13-dwelling-offer-natural-current-review-20261023.json", "qa/game-completion-20261023/m13-dwelling-offer-natural-current-20261023.png", "qa/game-completion-20261023/m13-dwelling-recruit-copy-repair-20261023.json"] },
+    { "id": "M14", "status": "OPEN", "basis": "A practice-deployment PNG exists, but has no paired review record or matched natural campaign deployment evidence. The inspected target requires the populated river-gorge board, legal placement state, troop tray and initiative context.", "evidence": ["qa/game-completion-20261023/m14-practice-deployment-natural-current-20261023.png", "qa/game-completion-20261022/mock-live-review-run01/m14-tactical-deployment-skirmish-state-unmatched-live-review-20261022.json"] },
+    { "id": "M15", "status": "FAIL", "basis": "Earlier matched tactical action review showed a swamp with two formations and a different action dock/hero hierarchy from the many-unit gorge battle target. No current-source matched render was available.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m15-tactical-action-skirmish-live-review-20261022.json", "qa/game-completion-20261022/tactical-m14-live-review/M14-M16-LIVE-REVIEW.md"] },
+    { "id": "M16", "status": "PARTIAL", "basis": "A practice victory panel was reviewed, but it had no campaign rewards/loot/XP/casualties and its compact centered layout/backdrop differs from the target campaign result.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m16-battle-result-practice-result-partial-live-review-20261022.json"] },
+    { "id": "M17", "status": "PARTIAL", "basis": "Defense preparation controls and tower roster exist, but the observed swamp/right-panel scene has no deployed hero/army or owned-roster tray and differs from the target gorge/castle composition.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m17-defense-preparation-natural-medieval-live-review-20261022.json"] },
+    { "id": "M18", "status": "OPEN", "basis": "Active wave-counter source repair uses clearedWaves + 1 with the configured horizon, but no natural active Endless view matched the target wave 14/20 gate scene. The prior natural attempt ended after two clears.", "evidence": ["qa/game-completion-20261023/m18-active-wave-counter-repair-20261023.json", "qa/game-completion-20261022/mock-live-review-run01/m18-endless-wave-natural-preparation-unmatched-live-review-20261022.json", "qa/game-completion-20261022/mock-live-review-run01/m18-endless-live-run02.json"] },
+    { "id": "M19", "status": "PARTIAL", "basis": "Hero room and six sockets are present, but the natural Knight appeared armored while all six sockets were empty; target includes named worn gear, item comparison and attribute panel.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m19-hero-equipment-natural-medieval-live-review-20261022.json"] },
+    { "id": "M20", "status": "PARTIAL", "basis": "All nine skill nodes and ranks were visible, but scene/resource hierarchy differs and no natural learned/available-offer state matched the target.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m20-skills-natural-medieval-live-review-20261022.json"] },
+    { "id": "M21", "status": "PARTIAL", "basis": "The eight spell families and availability are present, but review occurred on a campaign map rather than the target fortified battle; targeting, mana debit and effects remain unverified.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m21-spellbook-natural-medieval-live-review-20261022.json"] },
+    { "id": "M22", "status": "PARTIAL", "basis": "Forge composition strongly matches the target, but the complete categories, quality tiers, recipes, affordability states and inventory path remain unreviewed.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m22-forge-natural-medieval-live-review-20261022.json"] },
+    { "id": "M23", "status": "PARTIAL", "basis": "Inventory layout repair exists, but the natural state contains only one carried item and lacks the populated grid, selected War Axe details, durability/weight and verified equip/unequip persistence.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m23-inventory-natural-medieval-live-review-20261022.json", "qa/game-completion-20261022/mock-live-review-run01/m23-forge-inventory-selected-1280x720.jpg"] },
+    { "id": "M24", "status": "PARTIAL", "basis": "Medieval Army scene and one natural Man-at-Arms recruitment/reload exist, but lineup/Codex/roster differ, exact compact captures are missing, and the retained historical screenshot is not current-source matched.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m24-army-natural-medieval-live-review-20261022.json", "qa/game-completion-20261022/mock-live-review-run01/m24-army-mock-layout-review-20261022.json"] },
+    { "id": "M25", "status": "PARTIAL", "basis": "Current source includes chapter-derived Story copy, Objectives and Settings controls plus Story HUD positioning. The reported 23 October HUD visual check was not reached due stale CAS; no current landscape capture proves the repair.", "evidence": ["qa/game-completion-20261023/m25-story-hud-source-repair-20261023.json", "qa/game-completion-20261022/mock-live-review-run01/m25-story-chapter4-live-review-20261022.json"] },
+    { "id": "M26", "status": "PARTIAL", "basis": "Journal/quest flow exists, but the natural Chapter IV state does not match the target Chapter III castle journal, its objectives/reward colors, age meter or resource/hero hierarchy.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m26-quests-natural-medieval-chapter4-live-review-20261022.json"] },
+    { "id": "M27", "status": "OPEN", "basis": "Tutorial target selection source repair is bounded, but no natural Stone Build Farm tutorial state or current matched screenshot shows target anchoring, callout and progression.", "evidence": ["qa/game-completion-20261023/m27-tutorial-target-selection-repair-20261023.json", "qa/game-completion-20261022/mock-live-review-run01/m27-tutorial-natural-medieval-live-review-20261022.json"] },
+    { "id": "M28", "status": "PARTIAL", "basis": "Settings controls and local graphics/reduced-motion preferences functioned in a previous compact review, but the settings-over-city composition differs and exact requested viewports/current captures are missing.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m28-settings-natural-medieval-live-review-20261022.json"] },
+    { "id": "M29", "status": "PARTIAL", "basis": "Healthy save-manager path exists and failed-save export affordance was repaired, but damaged-save detection, valid backup recovery, last-known-good preservation, reload and compact visual flow remain unverified.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m29-save-load-current-live-review-20261022.json", "qa/game-completion-20261023/save-conflict-export-20261023.json"] },
+    { "id": "M30", "status": "PARTIAL", "basis": "Some resource symbols, navigation, portraits and controls exist, but the bronze/steel dimensional icon vocabulary has not been mapped across the required screens and exact compact captures are absent.", "evidence": ["qa/game-completion-20261022/mock-live-review-run01/m30-icon-material-board-live-review-20261022.json"] }
+  ],
+  "closureRule": "No mock is closed from a source edit, test count, candidate image, practice state, missing screenshot, or historical capture alone. Each mock still requires a current-source matched landscape view and its natural functional contract; owner visual acceptance remains separate."
+}

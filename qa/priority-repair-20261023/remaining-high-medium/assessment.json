@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-10-24T05:29:30.000Z",
+  "scope": "priority-repair-20261023-remaining-high-medium",
+  "authority": [
+    "docs/plan/MOCK-ADOPTION-PRIORITIES-AND-BOUNDED-REPAIR-2026-10-23.md",
+    "qa/priority-repair-20261023/independent-combined/REPORT.md"
+  ],
+  "items": {
+    "H-01": {
+      "title": "Tactical spell presentation, immediate post-command motion, positive spell reaction, self-cast preservation, and distinct category feedback",
+      "severity": "High",
+      "status": "PASS_WITH_PARTIAL_ASSET_LIMITATION",
+      "subgates": {
+        "positiveSpellNoDamageRecoil": "PASS",
+        "selfCastPreservesCasterAndTargetFeedback": "PASS",
+        "immediatePostCommandMotionDeterministic": "PASS",
+        "distinctSpellCategoryFeedback": "PASS",
+        "articulatedTroopSpriteMotion": "PARTIAL_ASSET_LIMITATION"
+      },
+      "rootCausesFixed": [
+        "src/client/main.js act() previously offset new battle command event start times behind unfinished prior-command animations (start + end - motionTime), causing immediate post-cast sampling to observe the previous turn's walk animation instead of the newly committed cast/buff/hit animation. New battle commands now replace battleEvents immediately at motionTime while preserving multi-step sequencing within a single command.",
+        "src/client/main.js drawFigure() previously lacked pointer-events: none on figGroup, allowing unit <image> plates to intercept board cell clicks ([data-cell]) and target pad clicks ([data-target]) at adjacent coordinates.",
+        "src/client/committed-motion.js committedBattleEvents() and motionFor() now preserve spellId, effectCategory (damage, buff, heal, debuff), selfTarget, and affectedTargets across single-target and AoE spells, iterating backward so the latest active event wins.",
+        "src/client/actor.js clipAngles/plateOffset and src/client/anatomy.js paintedPose now support cast, buff, heal, and debuff clips so friendly buffs/heals never trigger rotate(14) hit recoil or rotate(70) death tilt.",
+        "src/client/committed-motion.js activeCommittedFeedback() now scopes to the latest committed actionId so prior commands' spell overlays do not linger across subsequent player commands."
+      ],
+      "assetLimitationNote": "Current runtime troop and creature sprites (assets/runtime-code-20261007/troops/*.png, assets/derivatives/image-vertex-repair-20261009/actors/troops/*.png, assets/derivatives/image-complete-20261011/actors/plates/*.png) are single-pose/plate whole-image PNGs rendered via drawPlate with whole-image translate/rotate transforms rather than multi-part jointed rig anatomy. Full multi-part troop limb articulation remains PARTIAL_ASSET_LIMITATION unless new multi-part troop rig assets are authored."
+    },
+    "D-01": {
+      "title": "Tactical spell allowance guidance and explicit disabled-state reasons",
+      "severity": "Medium",
+      "status": "PASS",
+      "rootCausesFixed": [
+        "src/client/tactical-ui.js intentSentence() updated from 'A stack casts once this round.' to 'Choose one listed cast. Your hero casts once per battle round.' to match battle.castThisRound reset in nextRound.",
+        "src/client/tactical-ui.js spellAvailability() and battleSpellAvailability() distinguish available, round-used, insufficient-mana, no-known-spell, and no-target.",
+        "src/client/main.js exposes the allowance state visibly in the status bar ([data-spell-allowance]), in the Spellbook panel ([data-spell-guidance]), and on the dock Spell button (data-spell-reason, title, aria-label) without relying on hover."
+      ]
+    },
+    "D-02": {
+      "title": "Zero battle mana visibility in Tactical hero plaque",
+      "severity": "Medium",
+      "status": "PASS",
+      "rootCausesFixed": [
+        "src/client/tactical-ui.js tacticalHeroPlaqueCopy() and src/client/main.js paintTacticalHeroPlaque() now check Number.isFinite(mana) instead of battle.mana > 0 so 'Mana 0' remains visible and in aria-label when mana is exhausted, with identical 70px plaque height."
+      ]
+    },
+    "M03": {
+      "title": "Developed Kingdom density/composition",
+      "severity": "High",
+      "status": "DEFERRED_OWNER",
+      "note": "Preserved untouched per owner deferral directive."
+    }
+  },
+  "verification": {
+    "focusedTests": {
+      "command": "node --test tests/committed-motion.test.mjs tests/tactical-ui-20261005.test.mjs tests/tactical-action-bar-20261022.test.mjs",
+      "pass": 17,
+      "fail": 0,
+      "logFile": "qa/priority-repair-20261023/remaining-high-medium/focused-tests.log"
+    },
+    "fullTestSuite": {
+      "command": "node --test tests/*.test.mjs",
+      "pass": 311,
+      "fail": 0,
+      "logFile": "qa/priority-repair-20261023/remaining-high-medium/full-suite.log"
+    },
+    "livePlaywright": {
+      "script": "qa/priority-repair-20261023/remaining-high-medium/verify-live.mjs",
+      "viewports": ["825x375", "933x424", "1280x720"],
+      "spellsVerified": ["fireball", "arrow", "bolt", "bless", "haste", "cure", "resurrect", "slow"],
+      "allowanceReasonsVerified": ["available", "round-used", "insufficient-mana", "no-known-spell", "no-target"],
+      "usefulWorldRatio825x375": 0.9094,
+      "plaqueHeightWithManaPx": 70,
+      "plaqueHeightZeroManaPx": 70,
+      "deploymentLegalCellsSelfHit": "11/11 at 825x375, 933x424, 1280x720",
+      "defenseTowerPadsSelfHit": "4/4 (~64x64px) at 825x375, 933x424, 1280x720"
+    }
+  },
+  "modifiedFiles": {
+    "src/client/committed-motion.js": {
+      "bytes": 8196,
+      "sha256": "461db5a6de89c27300bc0810c28a0eb0f8ae987424ba0b80ab771c0d5288b987"
+    },
+    "src/client/tactical-ui.js": {
+      "bytes": 12746,
+      "sha256": "6c0afd646a7e00ba6b3f015edb3cd9f40eb83d42efed99d1b8cb075dd4ac7a5b"
+    },
+    "src/client/actor.js": {
+      "bytes": 27942,
+      "sha256": "73ca55e44dd8ab233ba36315815c3f39342590c7095917b4a889c708c9f85068"
+    },
+    "src/client/anatomy.js": {
+      "bytes": 6385,
+      "sha256": "c47edf06b3f38b9dfbc97b8070ef84c9d98ed79353a0f2c2af73cdf6e66eb78d"
+    },
+    "src/client/main.js": {
+      "bytes": 305885,
+      "sha256": "461fca7396f582ac4834b72b5d684d13e8c6567fb95c0fded7e70197f3678987"
+    },
+    "tests/committed-motion.test.mjs": {
+      "bytes": 8719,
+      "sha256": "d4c4ed042d9a8cfb7e12ebefa3ac508d5cf1333220752bf895d1d3a9f00c59e1"
+    },
+    "tests/tactical-ui-20261005.test.mjs": {
+      "bytes": 7921,
+      "sha256": "0bffe5f60522cb847922861c560564d3952ef8e31f13f3028dc9ae628c57a9e3"
+    },
+    "tests/tactical-action-bar-20261022.test.mjs": {
+      "bytes": 2067,
+      "sha256": "89fcec369ff48141cefc0852e73f379d950a621bf5d4eff427ab17f9bf394e27"
+    }
+  }
+}

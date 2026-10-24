@@ -1,0 +1,42 @@
+<!doctype html><meta charset="utf-8"><title>Dense browser storage verification</title>
+<h1>Dense campaign and failure verification</h1><p>Legal simulation payloads plus an explicitly injected size fixture. A new disposable database is used. This is not natural gameplay.</p>
+<button id="run">Run dense browser store checks</button><pre id="result">Pending</pre>
+<script type="module">
+import { IndexedDBStorageAdapter } from '../../../src/core/storage-adapter.js';
+import { encode,decode } from '../../../src/core/save.js';
+import data from '../../../src/data/reference-data.json' with {type:'json'};
+document.querySelector('#run').onclick=async()=>{
+ const rows=[],name='owner-dense-fixture-'+crypto.randomUUID();document.querySelector('#run').disabled=true;
+ const check=(name,ok,actual)=>{rows.push({name,result:ok?'PASS':'FAIL',actual});if(!ok)throw new Error(name);};
+ try{
+  const raws=await Promise.all(['legal-horizon-campaign.json','legal-trained-campaign.json','legal-endless-continuation-campaign.json'].map(async file=>{const response=await fetch(file);if(!response.ok)throw new Error(file+' unavailable');return response.text();}));
+  const states=raws.map(raw=>decode(raw,data));
+  const a=new IndexedDBStorageAdapter(indexedDB,name);let head=await a.commit(null,raws[0],data);
+  for(let i=0;i<3;i++)await a.storeSlot(i+1,raws[i],data);
+  const recovered=await Promise.all([1,2,3].map(i=>a.loadSlot(i,data)));
+  check('three distinct populated legal snapshots roundtrip',recovered.every((s,i)=>encode(s,data)===raws[i]),raws.map(s=>s.length));
+  head=await a.replace(head,raws[2],data,'kingdom');
+  const before=await a.export();
+  const original=a.db.transaction.bind(a.db);
+  a.db.transaction=(...args)=>{if(args[1]==='readwrite')throw new DOMException('Injected full backend','QuotaExceededError');return original(...args);};
+  let rejected=false;try{await a.replace(head,raws[1],data);}catch{rejected=true;}
+  a.db.transaction=original;
+  const after=await a.export();
+  check('quota failure rejects replacement without losing live/backup/slots',rejected&&JSON.stringify(before)===JSON.stringify(after));
+  // A valid encoded size fixture. These additional history records are injected
+  // solely to measure capacity; they are never called earned user commands.
+  const dense=structuredClone(states[2]);let i=0;let raw=encode(dense,data);
+  const target=Math.max(raws[0].length*2,975011*2);
+  while(raw.length<target){for(let n=0;n<200;n++)dense.settledTransactions['injected-size-fixture-'+(++i)]=JSON.stringify({type:'SETTINGS',payload:dense.settings});raw=encode(dense,data);}
+  head=await a.replace(head,raw,data);
+  for(let slot=1;slot<=3;slot++)await a.storeSlot(slot,raw,data);
+  const b=new IndexedDBStorageAdapter(indexedDB,name);
+  const load=await b.loadLive(data), exported=await b.export();
+  check('reopened browser store retains double-size payload and backup',load.status==='VALID'&&encode(load.state,data)===raw&&exported.campaigns.backup===raws[2],{payloadCharacters:raw.length,fixtureInjectedHistory:i,targetCharacters:target,historyCount:Object.keys(dense.settledTransactions).length});
+  check('all three dense slots decode after reopening',(await Promise.all([1,2,3].map(slot=>b.loadSlot(slot,data)))).every(state=>encode(state,data)===raw));
+  const bytes=Object.values(exported.campaigns).concat(Object.values(exported.slots)).reduce((sum,s)=>sum+new Blob([s]).size,0);
+  rows.push({name:'measured copies',classification:'LEGAL_PAYLOADS_PLUS_INJECTED_VALID_DOUBLE_SIZE_FIXTURE',storedBytes:bytes,stores:Object.fromEntries(Object.entries(exported).map(([key,value])=>[key,Object.keys(value).length]))});
+ }catch(error){rows.push({result:'ERROR',error:String(error),stack:error.stack});}
+ document.querySelector('#result').textContent=JSON.stringify({classification:'ACTUAL_INDEXEDDB_CAPACITY_AND_INJECTED_QUOTA_FIXTURE',database:name,rows},null,2);
+};
+</script>

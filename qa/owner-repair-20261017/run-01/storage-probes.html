@@ -1,0 +1,84 @@
+<!doctype html><meta charset="utf-8"><title>Owner repair storage regression</title>
+<h1>Disposable browser storage regressions</h1>
+<p>Injected adversarial fixtures. Separate named database; no owner save deletion or mutation.</p>
+<button id="run">Run storage regressions</button><pre id="result">Pending</pre>
+<script type="module">
+import { IndexedDBStorageAdapter } from '../../../src/core/storage-adapter.js';
+import { SaveQueue } from '../../../src/core/save-queue.js';
+import { newCampaign } from '../../../src/core/campaign.js';
+import { encode } from '../../../src/core/save.js';
+import data from '../../../src/data/reference-data.json' with {type:'json'};
+import contract from '../../../src/data/implementation-contract.json' with {type:'json'};
+document.querySelector('#run').onclick = async () => {
+  document.querySelector('#run').disabled = true;
+  const rows = [], name = 'owner-repair-fixture-' + crypto.randomUUID();
+  const a = new IndexedDBStorageAdapter(indexedDB, name);
+  const check = (name, ok, actual) => { rows.push({name, result:ok?'PASS':'FAIL', actual}); if (!ok) throw new Error(name); };
+  const rejects = async fn => { try { await fn(); return false; } catch { return true; } };
+  try {
+    const s = newCampaign(contract,data,1000); s.id = 'fixture-campaign-A'; s.revision = 100;
+    let h = await a.commit(null,encode(s,data),data,'adventure');
+    check('wrong full head rejected',await rejects(()=>a.commit({...h,campaignId:'wrong',checksum:'wrong'},encode(s,data),data)));
+    const lower = {...s,revision:99};
+    check('lower revision autosave rejected even at correct head',await rejects(()=>a.commit(h,encode(lower,data),data)));
+    check('different campaign cannot autosave at correct head',await rejects(()=>a.commit(h,encode({...s,id:'fixture-B'},data),data)));
+    const b = new IndexedDBStorageAdapter(indexedDB,name); await b.open();
+    const stale = h; h = await a.replace(h,encode({...s,revision:200},data),data);
+    check('second writer old replacement rejected',await rejects(()=>b.replace(stale,encode({...s,revision:150},data),data)));
+    check('newer revision survives stale replacement',(await a.loadLive(data)).state.revision===200);
+    const legacy = new Map([['aod-reborn-v1',encode({...s,id:'different-legacy',revision:999},data)],['aod-reborn-v1-staged','retain-exact-invalid-staged']]);
+    await a.migrateFromLocalStorage({getItem:k=>legacy.get(k)??null},data);
+    check('migration cannot overwrite another campaign even with larger revision',(await a.loadLive(data)).state.id===s.id);
+    check('staged bytes and source marker preserved',Object.values((await a.export()).campaigns).includes('retain-exact-invalid-staged'));
+    for(let i=1;i<=3;i++) await a.storeSlot(i,encode({...s,id:'slot-'+i,revision:i},data),data);
+    await a.migrateFromLocalStorage({getItem:k=>k.endsWith('slot-1')?encode(s,data):null},data);
+    check('repeat migration retains newer slot',(await a.loadSlot(1,data)).id==='slot-1');
+    check('three distinct slots roundtrip',(await Promise.all([1,2,3].map(i=>a.loadSlot(i,data)))).map(s=>s.id).join(',')==='slot-1,slot-2,slot-3');
+    check('valid live refuses backup restore',await rejects(()=>a.restoreBackup(data)));
+    h = (await a.loadLive(data)).head;
+    const lowImport = {...s,revision:1}; const imported = await a.replace(h,encode(lowImport,data),data,'hero');
+    check('same campaign lower revision import advances epoch',imported.epoch>h.epoch && imported.revision===1);
+    check('old epoch autosave rejected',await rejects(()=>b.commit(h,encode({...s,revision:10000},data),data)));
+    check('replacement view commits with head',(await a.loadLive(data)).view==='hero');
+    // Request success followed by a real IndexedDB transaction abort.
+    const native = a.db, original = native.transaction.bind(native);
+    let abortNext = true;
+    native.transaction = (...args) => {
+      const tx = original(...args);
+      if(args[1]==='readwrite' && abortNext) {
+        abortNext=false;
+        const store = tx.objectStore.bind(tx);
+        tx.objectStore = name => {
+          const object = store(name), put = object.put.bind(object);
+          object.put = (...values) => { const req=put(...values); req.addEventListener('success',()=>{try{tx.abort();}catch{}}); return req; };
+          return object;
+        };
+      }
+      return tx;
+    };
+    check('request success / transaction abort rejects',await rejects(()=>a.commit(imported,encode({...lowImport,revision:2},data),data)));
+    native.transaction = original;
+    check('aborted candidate leaves head unchanged',(await a.loadLive(data)).head.revision===1);
+    let failRead = true;
+    native.transaction = (...args) => {
+      if(args[1]==='readonly' && failRead){failRead=false;throw new Error('Injected acknowledgement read failure');}
+      return original(...args);
+    };
+    h = await a.commit(imported,encode({...lowImport,revision:2},data),data);
+    native.transaction = original;
+    check('lost first readback reconciles without replay',h.revision===2 && (await a.loadLive(data)).state.revision===2);
+    const q = new SaveQueue(a,data,h);
+    const oldSave = q.write(encode({...lowImport,revision:3},data),'kingdom');
+    const replacement = q.write(encode({...s,id:'replaced-B',revision:0},data),'hero',true);
+    check('pending is not committed',q.status.kind==='pending');
+    await Promise.all([oldSave,replacement]);
+    check('replacement invalidates older queued autosave',(await a.loadLive(data)).state.id==='replaced-B' && q.status.kind==='committed');
+    // Simultaneous writers can never both consume the same expected head.
+    h = (await a.loadLive(data)).head;
+    const base=(await a.loadLive(data)).state;
+    const race = await Promise.allSettled([a.commit(h,encode({...base,revision:1},data),data), b.commit(h,encode({...base,revision:2},data),data)]);
+    check('two writers at one head have exactly one winner',race.filter(r=>r.status==='fulfilled').length===1);
+  } catch(error) { rows.push({result:'ERROR',error:String(error),stack:error.stack}); }
+  document.querySelector('#result').textContent=JSON.stringify({classification:'ACTUAL_BROWSER_INDEXEDDB_ADVERSARIAL_FIXTURES',database:name,rows},null,2);
+};
+</script>

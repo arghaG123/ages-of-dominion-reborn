@@ -1,0 +1,4501 @@
+{
+  "version": "mock-led-body-kit-gear-matrix-20261016",
+  "generatedAt": "2026-10-17T12:16:24.295Z",
+  "authority": "MOCK-LED-IMPLEMENTATION-SOLUTIONS-MANUAL-2026-10-16.md Section 5, 8 & 10.2 (OC07, OC08)",
+  "summary": {
+    "totalClassKitRows": 32,
+    "classesCount": 8,
+    "kitErasCount": 4,
+    "slotsPerHero": 6,
+    "totalSlotDecisions": 192,
+    "matchedRows": 2,
+    "mismatchedRows": 30,
+    "acceptance": "OPEN"
+  },
+  "anchoringContract": {
+    "rule": "Equipped gear renders as anatomically anchored layers over hero figure with natural scaling and contact shadows. Empty slots render no graphic.",
+    "retainedGearPreservation": "Older era items (e.g. Stone Flint Club) keep their origin age, name, and stat bonuses when advanced to higher ages."
+  },
+  "matrix": [
+    {
+      "classId": "knight",
+      "kitEra": "ancient",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-knight-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-knight-standing-body.png",
+        "sha256": "e0919ba5c1400231b287a957cd9d6fbfd289341ecccc67be12c8ed1e87e98f21",
+        "bytes": 983700,
+        "dimensions": [
+          601,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-stone-helm",
+            "age": 0,
+            "name": "stone helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-stone-weapon",
+            "age": 0,
+            "name": "stone weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-stone-offhand",
+            "age": 0,
+            "name": "stone offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-stone-armor",
+            "age": 0,
+            "name": "stone armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-stone-boots",
+            "age": 0,
+            "name": "stone boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-stone-accessory",
+            "age": 0,
+            "name": "stone accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "knight",
+      "kitEra": "medieval",
+      "isDefaultKitMatch": true,
+      "bodySource": {
+        "id": "class-knight-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-knight-standing-body.png",
+        "sha256": "e0919ba5c1400231b287a957cd9d6fbfd289341ecccc67be12c8ed1e87e98f21",
+        "bytes": 983700,
+        "dimensions": [
+          601,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-helm",
+            "age": 3,
+            "name": "medieval helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-weapon",
+            "age": 3,
+            "name": "medieval weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-offhand",
+            "age": 3,
+            "name": "medieval offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-armor",
+            "age": 3,
+            "name": "medieval armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-boots",
+            "age": 3,
+            "name": "medieval boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-accessory",
+            "age": 3,
+            "name": "medieval accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        }
+      },
+      "compositeVerdict": "PASS_ANCHORED_GEAR_ATTACHMENTS"
+    },
+    {
+      "classId": "knight",
+      "kitEra": "powder",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-knight-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-knight-standing-body.png",
+        "sha256": "e0919ba5c1400231b287a957cd9d6fbfd289341ecccc67be12c8ed1e87e98f21",
+        "bytes": 983700,
+        "dimensions": [
+          601,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-helm",
+            "age": 4,
+            "name": "gunpowder helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-weapon",
+            "age": 4,
+            "name": "gunpowder weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-offhand",
+            "age": 4,
+            "name": "gunpowder offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-armor",
+            "age": 4,
+            "name": "gunpowder armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-boots",
+            "age": 4,
+            "name": "gunpowder boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-accessory",
+            "age": 4,
+            "name": "gunpowder accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "knight",
+      "kitEra": "mech",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-knight-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-knight-standing-body.png",
+        "sha256": "e0919ba5c1400231b287a957cd9d6fbfd289341ecccc67be12c8ed1e87e98f21",
+        "bytes": 983700,
+        "dimensions": [
+          601,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-modern-helm",
+            "age": 6,
+            "name": "modern helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-modern-weapon",
+            "age": 6,
+            "name": "modern weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-modern-offhand",
+            "age": 6,
+            "name": "modern offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-modern-armor",
+            "age": 6,
+            "name": "modern armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-modern-boots",
+            "age": 6,
+            "name": "modern boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-modern-accessory",
+            "age": 6,
+            "name": "modern accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "ranger",
+      "kitEra": "ancient",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-ranger-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-ranger-standing-body.png",
+        "sha256": "ba651f83e03b84497a1ef511769cdfea25d17ab4d8a887692c6e69479894d53d",
+        "bytes": 1329089,
+        "dimensions": [
+          1061,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-stone-helm",
+            "age": 0,
+            "name": "stone helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-stone-weapon",
+            "age": 0,
+            "name": "stone weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-stone-offhand",
+            "age": 0,
+            "name": "stone offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-stone-armor",
+            "age": 0,
+            "name": "stone armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-stone-boots",
+            "age": 0,
+            "name": "stone boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-stone-accessory",
+            "age": 0,
+            "name": "stone accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "ranger",
+      "kitEra": "medieval",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-ranger-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-ranger-standing-body.png",
+        "sha256": "ba651f83e03b84497a1ef511769cdfea25d17ab4d8a887692c6e69479894d53d",
+        "bytes": 1329089,
+        "dimensions": [
+          1061,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-helm",
+            "age": 3,
+            "name": "medieval helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-weapon",
+            "age": 3,
+            "name": "medieval weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-offhand",
+            "age": 3,
+            "name": "medieval offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-armor",
+            "age": 3,
+            "name": "medieval armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-boots",
+            "age": 3,
+            "name": "medieval boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-accessory",
+            "age": 3,
+            "name": "medieval accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "ranger",
+      "kitEra": "powder",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-ranger-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-ranger-standing-body.png",
+        "sha256": "ba651f83e03b84497a1ef511769cdfea25d17ab4d8a887692c6e69479894d53d",
+        "bytes": 1329089,
+        "dimensions": [
+          1061,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-helm",
+            "age": 4,
+            "name": "gunpowder helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-weapon",
+            "age": 4,
+            "name": "gunpowder weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-offhand",
+            "age": 4,
+            "name": "gunpowder offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-armor",
+            "age": 4,
+            "name": "gunpowder armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-boots",
+            "age": 4,
+            "name": "gunpowder boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-accessory",
+            "age": 4,
+            "name": "gunpowder accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "ranger",
+      "kitEra": "mech",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-ranger-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-ranger-standing-body.png",
+        "sha256": "ba651f83e03b84497a1ef511769cdfea25d17ab4d8a887692c6e69479894d53d",
+        "bytes": 1329089,
+        "dimensions": [
+          1061,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-modern-helm",
+            "age": 6,
+            "name": "modern helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-modern-weapon",
+            "age": 6,
+            "name": "modern weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-modern-offhand",
+            "age": 6,
+            "name": "modern offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-modern-armor",
+            "age": 6,
+            "name": "modern armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-modern-boots",
+            "age": 6,
+            "name": "modern boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-modern-accessory",
+            "age": 6,
+            "name": "modern accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "warlock",
+      "kitEra": "ancient",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-warlock-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-warlock-standing-body.png",
+        "sha256": "4229174740dc3d4917b12cd5d950faefe88cc328a5f6c5a0763a45b7c8b9201c",
+        "bytes": 1394447,
+        "dimensions": [
+          669,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-stone-helm",
+            "age": 0,
+            "name": "stone helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-stone-weapon",
+            "age": 0,
+            "name": "stone weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-stone-offhand",
+            "age": 0,
+            "name": "stone offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-stone-armor",
+            "age": 0,
+            "name": "stone armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-stone-boots",
+            "age": 0,
+            "name": "stone boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-stone-accessory",
+            "age": 0,
+            "name": "stone accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "warlock",
+      "kitEra": "medieval",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-warlock-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-warlock-standing-body.png",
+        "sha256": "4229174740dc3d4917b12cd5d950faefe88cc328a5f6c5a0763a45b7c8b9201c",
+        "bytes": 1394447,
+        "dimensions": [
+          669,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-helm",
+            "age": 3,
+            "name": "medieval helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-weapon",
+            "age": 3,
+            "name": "medieval weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-offhand",
+            "age": 3,
+            "name": "medieval offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-armor",
+            "age": 3,
+            "name": "medieval armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-boots",
+            "age": 3,
+            "name": "medieval boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-accessory",
+            "age": 3,
+            "name": "medieval accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "warlock",
+      "kitEra": "powder",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-warlock-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-warlock-standing-body.png",
+        "sha256": "4229174740dc3d4917b12cd5d950faefe88cc328a5f6c5a0763a45b7c8b9201c",
+        "bytes": 1394447,
+        "dimensions": [
+          669,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-helm",
+            "age": 4,
+            "name": "gunpowder helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-weapon",
+            "age": 4,
+            "name": "gunpowder weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-offhand",
+            "age": 4,
+            "name": "gunpowder offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-armor",
+            "age": 4,
+            "name": "gunpowder armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-boots",
+            "age": 4,
+            "name": "gunpowder boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-accessory",
+            "age": 4,
+            "name": "gunpowder accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "warlock",
+      "kitEra": "mech",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-warlock-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-warlock-standing-body.png",
+        "sha256": "4229174740dc3d4917b12cd5d950faefe88cc328a5f6c5a0763a45b7c8b9201c",
+        "bytes": 1394447,
+        "dimensions": [
+          669,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-modern-helm",
+            "age": 6,
+            "name": "modern helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-modern-weapon",
+            "age": 6,
+            "name": "modern weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-modern-offhand",
+            "age": 6,
+            "name": "modern offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-modern-armor",
+            "age": 6,
+            "name": "modern armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-modern-boots",
+            "age": 6,
+            "name": "modern boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-modern-accessory",
+            "age": 6,
+            "name": "modern accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "mage",
+      "kitEra": "ancient",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-mage-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-mage-standing-body.png",
+        "sha256": "4cc5ce5218f8a6f52ffaf52ec600e6a7a8b32684a82506ce98739550137a2a49",
+        "bytes": 1208970,
+        "dimensions": [
+          607,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-stone-helm",
+            "age": 0,
+            "name": "stone helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-stone-weapon",
+            "age": 0,
+            "name": "stone weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-stone-offhand",
+            "age": 0,
+            "name": "stone offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-stone-armor",
+            "age": 0,
+            "name": "stone armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-stone-boots",
+            "age": 0,
+            "name": "stone boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-stone-accessory",
+            "age": 0,
+            "name": "stone accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "mage",
+      "kitEra": "medieval",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-mage-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-mage-standing-body.png",
+        "sha256": "4cc5ce5218f8a6f52ffaf52ec600e6a7a8b32684a82506ce98739550137a2a49",
+        "bytes": 1208970,
+        "dimensions": [
+          607,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-helm",
+            "age": 3,
+            "name": "medieval helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-weapon",
+            "age": 3,
+            "name": "medieval weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-offhand",
+            "age": 3,
+            "name": "medieval offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-armor",
+            "age": 3,
+            "name": "medieval armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-boots",
+            "age": 3,
+            "name": "medieval boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-accessory",
+            "age": 3,
+            "name": "medieval accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "mage",
+      "kitEra": "powder",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-mage-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-mage-standing-body.png",
+        "sha256": "4cc5ce5218f8a6f52ffaf52ec600e6a7a8b32684a82506ce98739550137a2a49",
+        "bytes": 1208970,
+        "dimensions": [
+          607,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-helm",
+            "age": 4,
+            "name": "gunpowder helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-weapon",
+            "age": 4,
+            "name": "gunpowder weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-offhand",
+            "age": 4,
+            "name": "gunpowder offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-armor",
+            "age": 4,
+            "name": "gunpowder armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-boots",
+            "age": 4,
+            "name": "gunpowder boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-accessory",
+            "age": 4,
+            "name": "gunpowder accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "mage",
+      "kitEra": "mech",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-mage-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-mage-standing-body.png",
+        "sha256": "4cc5ce5218f8a6f52ffaf52ec600e6a7a8b32684a82506ce98739550137a2a49",
+        "bytes": 1208970,
+        "dimensions": [
+          607,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-modern-helm",
+            "age": 6,
+            "name": "modern helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-modern-weapon",
+            "age": 6,
+            "name": "modern weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-modern-offhand",
+            "age": 6,
+            "name": "modern offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-modern-armor",
+            "age": 6,
+            "name": "modern armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-modern-boots",
+            "age": 6,
+            "name": "modern boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-modern-accessory",
+            "age": 6,
+            "name": "modern accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "paladin",
+      "kitEra": "ancient",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-paladin-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-paladin-standing-body.png",
+        "sha256": "a756d8fd92e44f2dcb2285ef3f1db977bf85ca61ac2b18fd36dbac155b4d99ed",
+        "bytes": 1118855,
+        "dimensions": [
+          592,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-stone-helm",
+            "age": 0,
+            "name": "stone helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-stone-weapon",
+            "age": 0,
+            "name": "stone weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-stone-offhand",
+            "age": 0,
+            "name": "stone offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-stone-armor",
+            "age": 0,
+            "name": "stone armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-stone-boots",
+            "age": 0,
+            "name": "stone boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-stone-accessory",
+            "age": 0,
+            "name": "stone accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "paladin",
+      "kitEra": "medieval",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-paladin-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-paladin-standing-body.png",
+        "sha256": "a756d8fd92e44f2dcb2285ef3f1db977bf85ca61ac2b18fd36dbac155b4d99ed",
+        "bytes": 1118855,
+        "dimensions": [
+          592,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-helm",
+            "age": 3,
+            "name": "medieval helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-weapon",
+            "age": 3,
+            "name": "medieval weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-offhand",
+            "age": 3,
+            "name": "medieval offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-armor",
+            "age": 3,
+            "name": "medieval armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-boots",
+            "age": 3,
+            "name": "medieval boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-accessory",
+            "age": 3,
+            "name": "medieval accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "paladin",
+      "kitEra": "powder",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-paladin-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-paladin-standing-body.png",
+        "sha256": "a756d8fd92e44f2dcb2285ef3f1db977bf85ca61ac2b18fd36dbac155b4d99ed",
+        "bytes": 1118855,
+        "dimensions": [
+          592,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-helm",
+            "age": 4,
+            "name": "gunpowder helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-weapon",
+            "age": 4,
+            "name": "gunpowder weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-offhand",
+            "age": 4,
+            "name": "gunpowder offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-armor",
+            "age": 4,
+            "name": "gunpowder armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-boots",
+            "age": 4,
+            "name": "gunpowder boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-accessory",
+            "age": 4,
+            "name": "gunpowder accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "paladin",
+      "kitEra": "mech",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-paladin-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-paladin-standing-body.png",
+        "sha256": "a756d8fd92e44f2dcb2285ef3f1db977bf85ca61ac2b18fd36dbac155b4d99ed",
+        "bytes": 1118855,
+        "dimensions": [
+          592,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-modern-helm",
+            "age": 6,
+            "name": "modern helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-modern-weapon",
+            "age": 6,
+            "name": "modern weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-modern-offhand",
+            "age": 6,
+            "name": "modern offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-modern-armor",
+            "age": 6,
+            "name": "modern armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-modern-boots",
+            "age": 6,
+            "name": "modern boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-modern-accessory",
+            "age": 6,
+            "name": "modern accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "barbarian",
+      "kitEra": "ancient",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-barbarian-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-barbarian-standing-body.png",
+        "sha256": "ca230f764843e8e92a47a496ddb91c1c692eeacb0edf6e90eab4b87e05c10a94",
+        "bytes": 1276569,
+        "dimensions": [
+          627,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-stone-helm",
+            "age": 0,
+            "name": "stone helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-stone-weapon",
+            "age": 0,
+            "name": "stone weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-stone-offhand",
+            "age": 0,
+            "name": "stone offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-stone-armor",
+            "age": 0,
+            "name": "stone armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-stone-boots",
+            "age": 0,
+            "name": "stone boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-stone-accessory",
+            "age": 0,
+            "name": "stone accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "barbarian",
+      "kitEra": "medieval",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-barbarian-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-barbarian-standing-body.png",
+        "sha256": "ca230f764843e8e92a47a496ddb91c1c692eeacb0edf6e90eab4b87e05c10a94",
+        "bytes": 1276569,
+        "dimensions": [
+          627,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-helm",
+            "age": 3,
+            "name": "medieval helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-weapon",
+            "age": 3,
+            "name": "medieval weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-offhand",
+            "age": 3,
+            "name": "medieval offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-armor",
+            "age": 3,
+            "name": "medieval armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-boots",
+            "age": 3,
+            "name": "medieval boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-accessory",
+            "age": 3,
+            "name": "medieval accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "barbarian",
+      "kitEra": "powder",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-barbarian-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-barbarian-standing-body.png",
+        "sha256": "ca230f764843e8e92a47a496ddb91c1c692eeacb0edf6e90eab4b87e05c10a94",
+        "bytes": 1276569,
+        "dimensions": [
+          627,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-helm",
+            "age": 4,
+            "name": "gunpowder helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-weapon",
+            "age": 4,
+            "name": "gunpowder weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-offhand",
+            "age": 4,
+            "name": "gunpowder offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-armor",
+            "age": 4,
+            "name": "gunpowder armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-boots",
+            "age": 4,
+            "name": "gunpowder boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-accessory",
+            "age": 4,
+            "name": "gunpowder accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "barbarian",
+      "kitEra": "mech",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-barbarian-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-barbarian-standing-body.png",
+        "sha256": "ca230f764843e8e92a47a496ddb91c1c692eeacb0edf6e90eab4b87e05c10a94",
+        "bytes": 1276569,
+        "dimensions": [
+          627,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-modern-helm",
+            "age": 6,
+            "name": "modern helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-modern-weapon",
+            "age": 6,
+            "name": "modern weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-modern-offhand",
+            "age": 6,
+            "name": "modern offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-modern-armor",
+            "age": 6,
+            "name": "modern armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-modern-boots",
+            "age": 6,
+            "name": "modern boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-modern-accessory",
+            "age": 6,
+            "name": "modern accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "necromancer",
+      "kitEra": "ancient",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-necromancer-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-necromancer-standing-body.png",
+        "sha256": "cbbf39bc8126daac14783f1d818834406a9cb0eba602002358fc5781c4d61794",
+        "bytes": 1099889,
+        "dimensions": [
+          583,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-stone-helm",
+            "age": 0,
+            "name": "stone helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-stone-weapon",
+            "age": 0,
+            "name": "stone weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-stone-offhand",
+            "age": 0,
+            "name": "stone offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-stone-armor",
+            "age": 0,
+            "name": "stone armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-stone-boots",
+            "age": 0,
+            "name": "stone boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-stone-accessory",
+            "age": 0,
+            "name": "stone accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "necromancer",
+      "kitEra": "medieval",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-necromancer-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-necromancer-standing-body.png",
+        "sha256": "cbbf39bc8126daac14783f1d818834406a9cb0eba602002358fc5781c4d61794",
+        "bytes": 1099889,
+        "dimensions": [
+          583,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-helm",
+            "age": 3,
+            "name": "medieval helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-weapon",
+            "age": 3,
+            "name": "medieval weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-offhand",
+            "age": 3,
+            "name": "medieval offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-armor",
+            "age": 3,
+            "name": "medieval armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-boots",
+            "age": 3,
+            "name": "medieval boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-accessory",
+            "age": 3,
+            "name": "medieval accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "necromancer",
+      "kitEra": "powder",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-necromancer-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-necromancer-standing-body.png",
+        "sha256": "cbbf39bc8126daac14783f1d818834406a9cb0eba602002358fc5781c4d61794",
+        "bytes": 1099889,
+        "dimensions": [
+          583,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-helm",
+            "age": 4,
+            "name": "gunpowder helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-weapon",
+            "age": 4,
+            "name": "gunpowder weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-offhand",
+            "age": 4,
+            "name": "gunpowder offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-armor",
+            "age": 4,
+            "name": "gunpowder armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-boots",
+            "age": 4,
+            "name": "gunpowder boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-accessory",
+            "age": 4,
+            "name": "gunpowder accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "necromancer",
+      "kitEra": "mech",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-necromancer-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-necromancer-standing-body.png",
+        "sha256": "cbbf39bc8126daac14783f1d818834406a9cb0eba602002358fc5781c4d61794",
+        "bytes": 1099889,
+        "dimensions": [
+          583,
+          1400
+        ],
+        "matteStatus": "CLEAN_STUDIO"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-modern-helm",
+            "age": 6,
+            "name": "modern helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-modern-weapon",
+            "age": 6,
+            "name": "modern weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-modern-offhand",
+            "age": 6,
+            "name": "modern offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-modern-armor",
+            "age": 6,
+            "name": "modern armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-modern-boots",
+            "age": 6,
+            "name": "modern boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-modern-accessory",
+            "age": 6,
+            "name": "modern accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "healer",
+      "kitEra": "ancient",
+      "isDefaultKitMatch": true,
+      "bodySource": {
+        "id": "class-healer-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png",
+        "sha256": "f50a1d2530492b194ab4098566a43f38f96f426a2d7e842574f996a25d15a4be",
+        "bytes": 1619580,
+        "dimensions": [
+          832,
+          1385
+        ],
+        "matteStatus": "VERIFIED_CLEAN_MATTE"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-stone-helm",
+            "age": 0,
+            "name": "stone helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-stone-weapon",
+            "age": 0,
+            "name": "stone weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-stone-offhand",
+            "age": 0,
+            "name": "stone offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-stone-armor",
+            "age": 0,
+            "name": "stone armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-stone-boots",
+            "age": 0,
+            "name": "stone boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-stone-accessory",
+            "age": 0,
+            "name": "stone accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-stone-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "PASS"
+        }
+      },
+      "compositeVerdict": "PASS_ANCHORED_GEAR_ATTACHMENTS"
+    },
+    {
+      "classId": "healer",
+      "kitEra": "medieval",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-healer-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png",
+        "sha256": "f50a1d2530492b194ab4098566a43f38f96f426a2d7e842574f996a25d15a4be",
+        "bytes": 1619580,
+        "dimensions": [
+          832,
+          1385
+        ],
+        "matteStatus": "VERIFIED_CLEAN_MATTE"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-helm",
+            "age": 3,
+            "name": "medieval helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-weapon",
+            "age": 3,
+            "name": "medieval weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-offhand",
+            "age": 3,
+            "name": "medieval offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-armor",
+            "age": 3,
+            "name": "medieval armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-boots",
+            "age": 3,
+            "name": "medieval boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-medieval-accessory",
+            "age": 3,
+            "name": "medieval accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-medieval-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "healer",
+      "kitEra": "powder",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-healer-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png",
+        "sha256": "f50a1d2530492b194ab4098566a43f38f96f426a2d7e842574f996a25d15a4be",
+        "bytes": 1619580,
+        "dimensions": [
+          832,
+          1385
+        ],
+        "matteStatus": "VERIFIED_CLEAN_MATTE"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-helm",
+            "age": 4,
+            "name": "gunpowder helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-weapon",
+            "age": 4,
+            "name": "gunpowder weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-offhand",
+            "age": 4,
+            "name": "gunpowder offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-armor",
+            "age": 4,
+            "name": "gunpowder armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-boots",
+            "age": 4,
+            "name": "gunpowder boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-gunpowder-accessory",
+            "age": 4,
+            "name": "gunpowder accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-gunpowder-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    },
+    {
+      "classId": "healer",
+      "kitEra": "mech",
+      "isDefaultKitMatch": false,
+      "bodySource": {
+        "id": "class-healer-standing-body",
+        "file": "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png",
+        "sha256": "f50a1d2530492b194ab4098566a43f38f96f426a2d7e842574f996a25d15a4be",
+        "bytes": 1619580,
+        "dimensions": [
+          832,
+          1385
+        ],
+        "matteStatus": "VERIFIED_CLEAN_MATTE"
+      },
+      "identityStability": "STABLE_COHERENT_ANATOMY",
+      "slotAttachmentDecisions": {
+        "helm": {
+          "slot": "helm",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.02,
+            "scaleW": 0.26,
+            "scaleH": 0.16,
+            "anchorName": "head-crown"
+          },
+          "representativeGear": {
+            "id": "gear-modern-helm",
+            "age": 6,
+            "name": "modern helm",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-helm.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "weapon": {
+          "slot": "weapon",
+          "anchors": {
+            "fx": 0.82,
+            "fy": 0.36,
+            "scaleW": 0.22,
+            "scaleH": 0.46,
+            "anchorName": "right-hand-grip"
+          },
+          "representativeGear": {
+            "id": "gear-modern-weapon",
+            "age": 6,
+            "name": "modern weapon",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-weapon.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "offhand": {
+          "slot": "offhand",
+          "anchors": {
+            "fx": 0.12,
+            "fy": 0.4,
+            "scaleW": 0.28,
+            "scaleH": 0.3,
+            "anchorName": "left-forearm-shield"
+          },
+          "representativeGear": {
+            "id": "gear-modern-offhand",
+            "age": 6,
+            "name": "modern offhand",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-offhand.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "armor": {
+          "slot": "armor",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.28,
+            "scaleW": 0.44,
+            "scaleH": 0.34,
+            "anchorName": "torso-chest"
+          },
+          "representativeGear": {
+            "id": "gear-modern-armor",
+            "age": 6,
+            "name": "modern armor",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-armor.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "boots": {
+          "slot": "boots",
+          "anchors": {
+            "fx": 0.5,
+            "fy": 0.86,
+            "scaleW": 0.36,
+            "scaleH": 0.14,
+            "anchorName": "feet-ground-contact"
+          },
+          "representativeGear": {
+            "id": "gear-modern-boots",
+            "age": 6,
+            "name": "modern boots",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-boots.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        },
+        "accessory": {
+          "slot": "accessory",
+          "anchors": {
+            "fx": 0.32,
+            "fy": 0.18,
+            "scaleW": 0.14,
+            "scaleH": 0.14,
+            "anchorName": "neckline-brooch"
+          },
+          "representativeGear": {
+            "id": "gear-modern-accessory",
+            "age": 6,
+            "name": "modern accessory",
+            "file": "assets/derivatives/image-residual-executor-20261007/actors/gear/gear-modern-accessory.png"
+          },
+          "retainedOldItemSupport": true,
+          "statsApplied": true,
+          "emptyStateRendersNoGraphic": true,
+          "attachmentVerification": "KIT_MISMATCH_OPEN"
+        }
+      },
+      "compositeVerdict": "KIT_MISMATCH_OPEN"
+    }
+  ]
+}

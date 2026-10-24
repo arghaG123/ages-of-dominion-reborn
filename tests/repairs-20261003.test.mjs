@@ -2,22 +2,25 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
-import { command, newCampaign, validate } from '../src/core/campaign.js';
+import adventureWorlds from '../src/data/adventure-worlds.json' with { type: 'json' };
+import { adoptProgress, command, newCampaign, validate } from '../src/core/campaign.js';
 import { legalTargets, meleeCommand, startBattle, strike, validateBattle } from '../src/core/battle.js';
+import { adventureGeometryForWorld } from '../src/core/navigation.js';
 import { checksum, decode, encode, load, replaceCampaign, restoreBackup, save, SAVE_KEY } from '../src/core/save.js';
 import scene from '../src/data/stone-scene.json' with { type: 'json' };
 import { camera, inverse, kingdomFocusBounds, project, TARGET_PX, targetSourceSize } from '../src/client/projection.js';
 
 const fresh = () => newCampaign(contract, data, 1000);
 const act = (state, id, type, payload, now = 1000) => command(state, { id, type, payload }, now, data);
-const dwelling = contract.geometry.adventure.sites.find(site => site.id === 'dwelling');
-
 function atDwelling(state) {
+  const world = adventureWorlds.find(item => item.id === state.adventureWorldId);
+  const dwelling = adventureGeometryForWorld(contract.geometry.adventure, world, state.seed).sites.find(site => site.id === 'dwelling');
   state.adventure = {
     x: dwelling.approach[0], y: dwelling.approach[1], moves: 1,
     visited: [`${dwelling.approach[0]},${dwelling.approach[1]}`],
     resolvedGuards: [], pendingEncounter: null, atTown: false,
   };
+  adoptProgress(state, data);
   validate(state, data);
   return state;
 }

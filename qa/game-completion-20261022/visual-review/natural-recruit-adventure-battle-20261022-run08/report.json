@@ -1,0 +1,362 @@
+{
+  "recordedAt": "2026-10-21T19:32:40.781Z",
+  "classification": "NATURAL_UI_BROWSER_JOURNEY_FRESH_PROFILE_BUILD_RECRUIT_ADVENTURE_TACTICAL_AND_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "viewport": "1280x720",
+  "route": "fresh isolated profile -> new knight campaign -> build Barracks -> recruit 5 Melee -> leave town -> preview and confirm guard route -> Tactical manual Move -> UI auto-resolve remainder -> settle -> durable acknowledgement -> reload",
+  "campaignId": "campaign-61a8f7e6-1443-47fe-89f3-88767f313e88",
+  "construction": {
+    "plotId": "P01",
+    "building": "barracks",
+    "level": 1
+  },
+  "recruitment": {
+    "before": 12,
+    "after": 17,
+    "armyStacks": 2
+  },
+  "adventure": {
+    "start": {
+      "x": 4,
+      "y": 3,
+      "moves": 5,
+      "visited": [
+        "4,3"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 149,
+        "wood": 156,
+        "stone": 105,
+        "gold": 213
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 149,
+        "mineGold": 213
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "route": {
+      "destination": [
+        11,
+        6
+      ],
+      "cost": 10,
+      "cells": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          6
+        ]
+      ]
+    },
+    "guardId": "guard-mine",
+    "guardKey": "11,6",
+    "markerCounts": {
+      "staleSpawnBeforeBattle": 0,
+      "worldBeforeBattle": 1,
+      "minimapBeforeBattle": 1,
+      "worldAfterSettlement": 0,
+      "minimapAfterSettlement": 0,
+      "worldAfterReload": 0,
+      "staleSpawnAfterReload": 0,
+      "minimapAfterReload": 0
+    },
+    "preview": {
+      "intendedDestination": [
+        11,
+        6
+      ],
+      "intendedCost": 10,
+      "intendedCells": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          6
+        ]
+      ],
+      "journey": [
+        {
+          "action": "move",
+          "from": [
+            4,
+            3
+          ],
+          "to": [
+            5,
+            3
+          ],
+          "day": 1,
+          "movesBefore": 5,
+          "movesAfter": 4,
+          "previewTitle": "Confirm route · cost 1 · 5 moves available"
+        },
+        {
+          "action": "move",
+          "from": [
+            5,
+            3
+          ],
+          "to": [
+            5,
+            4
+          ],
+          "day": 1,
+          "movesBefore": 4,
+          "movesAfter": 3,
+          "previewTitle": "Confirm route · cost 1 · 4 moves available"
+        },
+        {
+          "action": "move",
+          "from": [
+            5,
+            4
+          ],
+          "to": [
+            5,
+            5
+          ],
+          "day": 1,
+          "movesBefore": 3,
+          "movesAfter": 2,
+          "previewTitle": "Confirm route · cost 1 · 3 moves available"
+        },
+        {
+          "action": "move",
+          "from": [
+            5,
+            5
+          ],
+          "to": [
+            6,
+            5
+          ],
+          "day": 1,
+          "movesBefore": 2,
+          "movesAfter": 1,
+          "previewTitle": "Confirm route · cost 1 · 2 moves available"
+        },
+        {
+          "action": "move",
+          "from": [
+            6,
+            5
+          ],
+          "to": [
+            7,
+            5
+          ],
+          "day": 1,
+          "movesBefore": 1,
+          "movesAfter": 0,
+          "previewTitle": "Confirm route · cost 1 · 1 move available"
+        },
+        {
+          "action": "end-day",
+          "from": [
+            7,
+            5
+          ],
+          "dayBefore": 1,
+          "dayAfter": 2,
+          "movesBefore": 0,
+          "movesAfter": 5
+        },
+        {
+          "action": "move",
+          "from": [
+            7,
+            5
+          ],
+          "to": [
+            8,
+            5
+          ],
+          "day": 2,
+          "movesBefore": 5,
+          "movesAfter": 4,
+          "previewTitle": "Confirm route · cost 1 · 5 moves available"
+        },
+        {
+          "action": "move",
+          "from": [
+            8,
+            5
+          ],
+          "to": [
+            9,
+            5
+          ],
+          "day": 2,
+          "movesBefore": 4,
+          "movesAfter": 3,
+          "previewTitle": "Confirm route · cost 1 · 4 moves available"
+        },
+        {
+          "action": "move",
+          "from": [
+            9,
+            5
+          ],
+          "to": [
+            10,
+            5
+          ],
+          "day": 2,
+          "movesBefore": 3,
+          "movesAfter": 2,
+          "previewTitle": "Confirm route · cost 1 · 3 moves available"
+        },
+        {
+          "action": "move",
+          "from": [
+            10,
+            5
+          ],
+          "to": [
+            11,
+            6
+          ],
+          "day": 2,
+          "movesBefore": 2,
+          "movesAfter": 0,
+          "previewTitle": "Confirm route · cost 2 · 2 moves available"
+        }
+      ]
+    },
+    "encounter": {
+      "id": "guard-11,6",
+      "cell": [
+        11,
+        6
+      ],
+      "origin": [
+        10,
+        5
+      ],
+      "status": "UNRESOLVED",
+      "pack": {
+        "stacks": [
+          {
+            "kind": "creature",
+            "type": "bandit",
+            "age": 0,
+            "rank": 0,
+            "count": 7
+          },
+          {
+            "kind": "creature",
+            "type": "wolf",
+            "age": 0,
+            "rank": 0,
+            "count": 8
+          }
+        ],
+        "boss": false,
+        "power": 1.3104,
+        "row": 2,
+        "carry": -0.4400000000000013
+      }
+    },
+    "resolvedGuards": [
+      "11,6"
+    ]
+  },
+  "battle": {
+    "id": "battle-guard-11,6-r68",
+    "encounterId": "guard-11,6",
+    "winner": "p",
+    "pendingSettlement": true,
+    "afterSettlementOpen": false,
+    "settledMeleeCount": 14,
+    "persistedMeleeCount": 14
+  },
+  "manualMove": {
+    "activeStackId": "army-1",
+    "start": [
+      1,
+      8
+    ],
+    "destination": [
+      2,
+      8
+    ],
+    "legalChoiceCount": 10
+  },
+  "spellCast": null,
+  "screenshots": [
+    "army-after-recruit.png",
+    "adventure-guard-encounter.png",
+    "tactical-encounter-start.png",
+    "tactical-after-manual-move.png",
+    "tactical-result-before-settlement.png",
+    "adventure-after-battle-reload.png"
+  ],
+  "errors": [],
+  "notFound": []
+}

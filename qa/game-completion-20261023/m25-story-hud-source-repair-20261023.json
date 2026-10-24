@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-23",
+  "scope": "M25 Story HUD source repair and bounded regression verification",
+  "status": "PARTIAL",
+  "changes": [
+    "The Story header derives its visible chapter/conclusion title and progress from saved campaign state without mutating that state.",
+    "The Story control is labeled Objectives and exposes a direct Settings action through the existing settings flow.",
+    "Story HUD CSS places progress/resources at upper left, title at center, and Chronicle/Objectives/Settings controls at upper right, with a compact breakpoint.",
+    "The 23 October failed-save export affordance remains present and unchanged by this slice."
+  ],
+  "verification": {
+    "command": "node --test --test-reporter=spec tests/*.test.mjs",
+    "tests": 275,
+    "pass": 275,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "durationMs": 24266.7161,
+    "focusedCommand": "node --test tests/story-support.test.mjs tests/save-feedback.test.mjs tests/visual-responsive-20261018.test.mjs",
+    "focusedPass": 44,
+    "focusedFail": 0,
+    "syntaxChecks": [
+      "node --check src/client/main.js",
+      "node --check src/client/story-view.js",
+      "node --check src/client/save-feedback.js"
+    ],
+    "mainJsLineEndings": { "crlf": 5263, "bareLf": 0 }
+  },
+  "sourceSha256": {
+    "src/client/main.js": "ddb196ee49ddbd2e72fbe85a7de3b13aa1573543473009183bbb3c2b829798cb",
+    "src/client/story-view.js": "d187da1f28ceee0711210001bcff20a6996c76318a4d51eb857530820767f8ca",
+    "src/client/polish.css": "def1b831d7dcc6c983bb6f801d42f1800044ad94c1186eeb99b63fc008a11ecb",
+    "src/client/save-feedback.js": "74bfb91008b84bc94bd2a91577a4f70df70b52aaa14c7b88bd2b1ca37746a983",
+    "tests/story-support.test.mjs": "d49bc0a113c26406550c99b5665255acb1b38f763a48ae635c8d8dfe312813e2",
+    "tests/visual-responsive-20261018.test.mjs": "60a9cc50b3151d63ad0c1bb1d905e80800023df48df4eb8e7575120121f828b0",
+    "tests/save-feedback.test.mjs": "cc5abeb108d06809886003963a7673f38e0dd3acc6944a10333ff30aa9f31a0e"
+  },
+  "liveReview": {
+    "route": "http://localhost:4174/?audit",
+    "viewport": [1280, 720],
+    "storyHudAfterChange": "UNVERIFIED",
+    "reason": "The approved tab resumed a campaign but exposed a stale CAS head (expected revision 84183) and Save failed status. It was reloaded to the campaign gate without a Story-screen comparison. No gameplay choice, construction, craft, recruitment, spell, save, or export action was invoked.",
+    "browserErrors": 0,
+    "computedCssFilters": "none on title, body, and stage",
+    "fontFaceSet": "loaded",
+    "capture": "CUA observation was a 1280x720 JPEG and was not retained; its compressed text/art detail is not pixel-acceptance evidence."
+  },
+  "acceptance": {
+    "M25": "PARTIAL",
+    "wholeGame": "INCOMPLETE",
+    "visualOwnerAcceptance": "UNVERIFIED",
+    "finalPackage": "NOT_BUILT",
+    "deviceAcceptance": "NOT_STARTED"
+  }
+}

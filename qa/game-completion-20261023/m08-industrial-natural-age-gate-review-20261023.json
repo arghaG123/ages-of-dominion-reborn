@@ -1,0 +1,42 @@
+{
+  "reviewId": "M08-industrial-natural-age-gate-review-20261023",
+  "mock": "M08",
+  "status": "OPEN_M08_INDUSTRIAL_AGE_NOT_REACHED",
+  "reviewedAt": "2026-10-23",
+  "reference": {
+    "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/08-kingdom-industrial.jpg",
+    "sha256": "845714405780E04FF9FB887296DBCFD7A30CE3A9D402BE3C15C53369426E8F3E"
+  },
+  "currentScreenshot": {
+    "file": "qa/game-completion-20261023/m08-industrial-not-reached-current-20261023.png",
+    "sha256": "3A9101DC766D7B2E6785ADDBB9CC00FE1A8E5CA63AE37F1029C73B775F34C8DF",
+    "viewport": [1280, 720]
+  },
+  "source": {
+    "mainJsSHA256": "8E1BC107B6072A1E6473EB0530C7B0CC20E38D5753A657D4246C181FA3DA23AF",
+    "gameCssSHA256": "28C7F82297508DC977C9FB5F76D6E9196873DCB6BA431AA15A288AF47AF78577"
+  },
+  "naturalState": {
+    "campaignId": "campaign-8be86723-842b-4775-b29b-e988acd7bec6",
+    "currentAge": 4,
+    "currentView": "kingdom",
+    "selected": "Artillery Foundry · level 3",
+    "townHallLevel": 6,
+    "p07": { "type": "workshop", "level": 3 },
+    "storage": "committed",
+    "revision": 32272,
+    "resources": { "food": 6844.16, "wood": 3228.87, "stone": 2430.01, "gold": 724.28 },
+    "incomePerSecond": { "food": 2.75, "wood": 1.35, "stone": 1.05, "gold": 1.75 }
+  },
+  "completedPreparation": [
+    "Town Hall was naturally upgraded to level 6 through the Kingdom stewardship UI.",
+    "P07 was naturally upgraded to level 3 through the selected-building inspector, matching M08's requested level."
+  ],
+  "remainingGate": {
+    "targetAge": 5,
+    "advanceCost": { "food": 13782, "wood": 12863, "stone": 10107, "gold": 8269 },
+    "shortfallAtCapture": { "food": 6937.84, "wood": 9634.13, "stone": 7676.99, "gold": 7544.72 },
+    "note": "At the current saved producer rates, the largest resource gap needs about two hours of uninterrupted natural production. Continue with other reachable open mocks and revisit this age gate later."
+  },
+  "acceptance": "OPEN: Town Hall level 6 and the P07 level-3 workshop are prepared, but the campaign remains Gunpowder and the Industrial reference state has not been reached. No M08 visual pass or failure is claimed."
+}

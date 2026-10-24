@@ -1,0 +1,87 @@
+{
+  "reviewId": "M29-save-recovery-current-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/29-save-recovery.jpg",
+    "sha256": "8A54FEDD84D91E2F144940EAE298C178E078B205AEC6AC1EAD703AF8F49135D1",
+    "dimensions": [
+      1376,
+      768
+    ]
+  },
+  "status": "PARTIAL_HEALTHY_SAVE_MANAGER_ONLY_CORRUPTION_FLOW_OPEN",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "campaignText": "Sunlit Riverlands · Medieval Age, day 4. Continue keeps this save.",
+    "slot1Touched": false
+  },
+  "screen": {
+    "surface": "Title gate Save/Load panel opened from Settings > Open saves",
+    "viewportCss": [
+      1280,
+      720
+    ],
+    "visibleActions": [
+      "Restore valid backup",
+      "Export campaign",
+      "Import campaign",
+      "Save slot 1",
+      "Load slot 1",
+      "Save slot 2",
+      "Load slot 2",
+      "Save slot 3",
+      "Load slot 3",
+      "Continue",
+      "New campaign"
+    ],
+    "saveIndicator": "AX text 'saving' repeated across three observations; completion status not independently verified",
+    "slotOrRecoveryActionsInvoked": [],
+    "continueClickedAfterCapture": true,
+    "continueResult": "Resumed the existing Medieval day-4 campaign; no slot, backup, import/export, or new-campaign action was invoked."
+  },
+  "visualFindings": [
+    "The M29 mock shows a centered save-corruption warning over a city scene, with explicit recovery and New Game choices plus a last-known-good-save timestamp.",
+    "The live screen shows the healthy campaign title gate and a right-side Save/Load panel over the title panorama. Restore valid backup, import/export, three save/load slot pairs, Continue, and New campaign are visible, but no corruption warning, damage explanation, or recovery timestamp is present in this healthy state.",
+    "The visible recovery manager can be reviewed without touching save data, but it does not exercise M29 damaged-save recovery. The full mock is not accepted from this healthy state."
+  ],
+  "evidence": {
+    "screenshotPath": "m29-save-load-manager-natural-medieval-1280x720.jpg",
+    "screenshotBytes": 103445,
+    "screenshotSha256": "BB686AD13838C56BEB4FA122BFA14CA69F38DF72C512FBE19163EF63CFFBE9CB",
+    "screenshotObservedThroughApprovedCUA": true,
+    "accessibilityState": [
+      "CAMPAIGN I: THE SHATTERED KINGDOM",
+      "Sunlit Riverlands · Medieval Age, day 4. Continue keeps this save.",
+      "Restore valid backup",
+      "Export campaign",
+      "Import campaign",
+      "Save slot 1",
+      "Load slot 1",
+      "Save slot 2",
+      "Load slot 2",
+      "Save slot 3",
+      "Load slot 3",
+      "Continue",
+      "New campaign",
+      "saving"
+    ],
+    "saveIndicatorObservationCount": 3,
+    "saveManagerOpened": true,
+    "saveSlotOrLoadSlotClicked": false,
+    "continueClickedAfterCapture": true,
+    "backupRestoreClicked": false,
+    "exportOrImportClicked": false,
+    "newCampaignClicked": false,
+    "sourceOrTestChanges": false,
+    "ownerAccepted": false
+  },
+  "open": [
+    "Exercise damaged-save detection and recovery in a separate isolated browser origin/profile; do not corrupt or replace the current browser's slot 1, slot 2, or slot 3.",
+    "Verify a genuinely valid backup, preserve the last-known-good record, and confirm recovery does not overwrite unrelated healthy slots.",
+    "Compare the corruption warning, save timestamp, recovery action, New Game warning, hierarchy, and city background to M29.",
+    "Review exact compact sizes and complete the remaining mock, journey, independent desktop, package, device, and owner gates."
+  ]
+}

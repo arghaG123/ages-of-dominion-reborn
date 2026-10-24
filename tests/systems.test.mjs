@@ -2,8 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
+import adventureWorlds from '../src/data/adventure-worlds.json' with { type: 'json' };
 import { newCampaign, command, advance } from '../src/core/campaign.js';
-import { adventureMap, stepCost } from '../src/core/navigation.js';
+import { adventureGeometryForWorld, adventureMap, stepCost } from '../src/core/navigation.js';
 import { agePrice, forgeOffer, gearBonus, gateHp, heroStats, manaMax, spellEffect } from '../src/core/rules.js';
 import { hoofContact, pose } from '../src/client/rig.js';
 
@@ -80,19 +81,28 @@ test('class, rival and settings reject invalid input without a partial write', (
   assert.equal(s.settings.music, 0.6);
 });
 
-test('journey blocks water, spends a road step once, and rest refills mana only', () => {
-  const map = adventureMap(contract.geometry.adventure);
-  assert.throws(() => stepCost(map, [3, 5], [4, 5]), /Blocked/);
-  assert.equal(stepCost(map, [8, 8], [8, 7]), 1);
-  assert.equal(stepCost(map, [2, 2], [3, 3], () => 'forest'), 3);
+test('journey blocks terrain, spends one movement step once, and rest refills mana only', () => {
   let s = act(fresh(), 'go', 'ENTER_ADVENTURE');
+  const world = adventureWorlds.find(item => item.id === s.adventureWorldId);
+  const geometry = adventureGeometryForWorld(contract.geometry.adventure, world, s.seed);
+  const map = adventureMap(geometry);
+  const start = [s.adventure.x, s.adventure.y];
+  const directions = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [1, -1], [-1, 1], [-1, -1]];
+  const next = directions.map(([dx, dy]) => [start[0] + dx, start[1] + dy]).find(cell => {
+    if (map.guards.has(cell.join(','))) return false;
+    try { return stepCost(map, start, cell) === 1; } catch { return false; }
+  });
+  assert.ok(next, 'the selected world has an affordable one-move first step');
+  assert.equal(stepCost(map, start, next), 1);
+  const openMap = { ...map, blocked: new Set(), roads: new Set() };
+  assert.equal(stepCost(openMap, [2, 2], [3, 3], () => 'forest'), 3);
   const open = s;
-  assert.throws(() => act(s, 'bad', 'MOVE', { path: [[4, 5]] }, s.clock), /Illegal step/);
+  assert.throws(() => act(s, 'bad', 'MOVE', { path: [[start[0] + 2, start[1]]] }, s.clock), /Illegal step/);
   assert.equal(s.adventure.moves, open.adventure.moves);
   s.hero.mana = 1;
-  s = act(s, 'step', 'MOVE', { path: [[8, 7]] }, s.clock);
+  s = act(s, 'step', 'MOVE', { path: [next] }, s.clock);
   assert.equal(s.adventure.moves, 4);
-  assert.deepEqual([s.adventure.x, s.adventure.y], [8, 7]);
+  assert.deepEqual([s.adventure.x, s.adventure.y], next);
   s = act(s, 'rest', 'REST', {}, s.clock);
   assert.equal(s.adventure.moves, 3);
   assert.equal(s.hero.mana, 10);

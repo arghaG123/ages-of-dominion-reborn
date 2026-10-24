@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-10-21T05:35:32.693Z",
+  "classification": "NATURAL_GRASSLANDS_ROUTE_PREVIEW_CANCEL_BRIDGE_SAVE_RELOAD",
+  "journey": "Fresh visible campaign -> Grasslands -> preview legal bridge route -> cancel unchanged -> confirm -> reload",
+  "note": "All campaign actions use visible controls. Snapshot reads and imported geometry are assertions only; no campaign state, route, or movement is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "start": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "revision": 8,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "bridgeCell": [
+      8,
+      5
+    ],
+    "expectedRoute": {
+      "cost": 2,
+      "cells": [
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "destination": [
+        8,
+        5
+      ]
+    }
+  },
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: preview does not commit a state revision\n\n9 !== 8\n"
+}

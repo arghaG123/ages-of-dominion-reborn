@@ -1,0 +1,403 @@
+{
+  "recordedAt": "2026-10-21T17:30:08.237Z",
+  "classification": "NATURAL_UI_TUNDRA_FULL_BRIDGE_CROSSINGS_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Tundra -> naturally approach and traverse each registered bridge deck -> persist and reload final position/visited cells",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "tundra-west-stone-bridge",
+    "tundra-east-ice-channel-bridge",
+    "tundra-south-channel-bridge"
+  ],
+  "campaignId": "campaign-13dd7eda-8bb2-4c80-b55e-3306683ed110",
+  "layoutId": "tundra-layout-20",
+  "seed": 2109135227,
+  "renderBinding": {
+    "worldId": "tundra",
+    "terrainFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/02_Vast_Map_Glacial_Tundra_Blizzard.png",
+    "renderModel": "integrated-map-art-plus-live-interactions",
+    "registeredBridgeCount": 3,
+    "playableCrossingCount": 3,
+    "artMode": "painted source bridges remain in the integrated owner painting; no duplicate generic bridge stamp is expected"
+  },
+  "start": {
+    "x": 3,
+    "y": 5,
+    "moves": 5,
+    "visited": [
+      "3,5"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 140,
+      "wood": 155,
+      "stone": 138,
+      "gold": 213
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 140,
+      "mineGold": 213
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [
+    {
+      "bridgeId": "tundra-west-stone-bridge",
+      "start": [
+        3,
+        5
+      ],
+      "nearBank": [
+        5,
+        6
+      ],
+      "farBank": [
+        8,
+        6
+      ],
+      "approachCells": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "deckCells": [
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "crossingCells": [
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "committedCells": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "movementCost": 10,
+      "daysEnded": 1,
+      "finalPosition": [
+        8,
+        6
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "tundra-east-ice-channel-bridge",
+      "start": [
+        8,
+        6
+      ],
+      "nearBank": [
+        11,
+        4
+      ],
+      "farBank": [
+        14,
+        4
+      ],
+      "approachCells": [
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ]
+      ],
+      "deckCells": [
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      "crossingCells": [
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ]
+      ],
+      "committedCells": [
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ]
+      ],
+      "movementCost": 8,
+      "daysEnded": 2,
+      "finalPosition": [
+        14,
+        4
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "tundra-south-channel-bridge",
+      "start": [
+        14,
+        4
+      ],
+      "nearBank": [
+        8,
+        8
+      ],
+      "farBank": [
+        10,
+        8
+      ],
+      "approachCells": [
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "deckCells": [
+        [
+          9,
+          8
+        ]
+      ],
+      "crossingCells": [
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "committedCells": [
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "movementCost": 12,
+      "daysEnded": 3,
+      "finalPosition": [
+        10,
+        8
+      ],
+      "allDeckVisited": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "tundra-start",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run02\\tundra-start-1280x720.png"
+    },
+    {
+      "name": "after-tundra-west-stone-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run02\\after-tundra-west-stone-bridge-1280x720.png"
+    },
+    {
+      "name": "after-tundra-east-ice-channel-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run02\\after-tundra-east-ice-channel-bridge-1280x720.png"
+    },
+    {
+      "name": "after-tundra-south-channel-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-tundra-natural-bridge-crossings-live-20261021-run02\\after-tundra-south-channel-bridge-1280x720.png"
+    }
+  ],
+  "errors": [],
+  "notFound": [],
+  "reload": {
+    "campaignId": "campaign-13dd7eda-8bb2-4c80-b55e-3306683ed110",
+    "position": [
+      10,
+      8
+    ],
+    "allDecksRemainVisited": true,
+    "revision": 149,
+    "browserView": "adventure"
+  },
+  "totalDaysEnded": 6,
+  "passed": true
+}

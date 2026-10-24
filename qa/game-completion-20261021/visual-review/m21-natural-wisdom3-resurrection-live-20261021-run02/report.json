@@ -1,0 +1,244 @@
+{
+  "recordedAt": "2026-10-21T04:57:57.573Z",
+  "classification": "NATURAL_UI_CAMPAIGN_CONTROLLED_BROWSER",
+  "journey": "fresh isolated browser -> new campaign through visible world/class choices -> repeat visible War/Tactical Duel/Auto/settlement -> choose only visibly offered skills -> reload at Wisdom 3 -> cast visible Resurrection on a naturally wounded living campaign stack",
+  "viewport": {
+    "width": 1280,
+    "height": 720,
+    "deviceScaleFactor": 1
+  },
+  "selectedClass": "mage",
+  "maxBattles": 80,
+  "battles": [
+    {
+      "index": 1,
+      "id": "duel-1-5",
+      "winner": "p",
+      "rounds": 1,
+      "mana": 35,
+      "alliedStacks": [
+        {
+          "id": "army-1",
+          "campaignId": "army-1",
+          "count": 12,
+          "maxCount": 12,
+          "top": 11,
+          "uhp": 11,
+          "dead": false
+        },
+        {
+          "id": "army-2",
+          "campaignId": "army-2",
+          "count": 6,
+          "maxCount": 8,
+          "top": 3,
+          "uhp": 8,
+          "dead": false
+        }
+      ],
+      "enemyStacks": [
+        {
+          "id": "duel-e",
+          "count": 0,
+          "dead": true
+        }
+      ],
+      "hero": {
+        "level": 1,
+        "xp": 110,
+        "wisdom": 0,
+        "mana": 35
+      },
+      "armyAfter": [
+        {
+          "id": "army-1",
+          "type": "melee",
+          "count": 12
+        },
+        {
+          "id": "army-2",
+          "type": "ranged",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "duel-1-14",
+      "winner": "p",
+      "rounds": 1,
+      "mana": 30,
+      "alliedStacks": [
+        {
+          "id": "army-1",
+          "campaignId": "army-1",
+          "count": 12,
+          "maxCount": 12,
+          "top": 11,
+          "uhp": 11,
+          "dead": false
+        },
+        {
+          "id": "army-2",
+          "campaignId": "army-2",
+          "count": 4,
+          "maxCount": 6,
+          "top": 5,
+          "uhp": 8,
+          "dead": false
+        }
+      ],
+      "enemyStacks": [
+        {
+          "id": "duel-e",
+          "count": 0,
+          "dead": true
+        }
+      ],
+      "hero": {
+        "level": 2,
+        "xp": 80,
+        "wisdom": 0,
+        "mana": 40
+      },
+      "armyAfter": [
+        {
+          "id": "army-1",
+          "type": "melee",
+          "count": 12
+        },
+        {
+          "id": "army-2",
+          "type": "ranged",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "duel-1-22",
+      "winner": "p",
+      "rounds": 1,
+      "mana": 35,
+      "alliedStacks": [
+        {
+          "id": "army-1",
+          "campaignId": "army-1",
+          "count": 12,
+          "maxCount": 12,
+          "top": 11,
+          "uhp": 11,
+          "dead": false
+        },
+        {
+          "id": "army-2",
+          "campaignId": "army-2",
+          "count": 2,
+          "maxCount": 4,
+          "top": 7,
+          "uhp": 8,
+          "dead": false
+        }
+      ],
+      "enemyStacks": [
+        {
+          "id": "duel-e",
+          "count": 0,
+          "dead": true
+        }
+      ],
+      "hero": {
+        "level": 2,
+        "xp": 190,
+        "wisdom": 0,
+        "mana": 35
+      },
+      "armyAfter": [
+        {
+          "id": "army-1",
+          "type": "melee",
+          "count": 12
+        },
+        {
+          "id": "army-2",
+          "type": "ranged",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "duel-1-30",
+      "winner": "p",
+      "rounds": 1,
+      "mana": 30,
+      "alliedStacks": [
+        {
+          "id": "army-1",
+          "campaignId": "army-1",
+          "count": 12,
+          "maxCount": 12,
+          "top": 12,
+          "uhp": 12,
+          "dead": false
+        },
+        {
+          "id": "army-2",
+          "campaignId": "army-2",
+          "count": 1,
+          "maxCount": 2,
+          "top": 4,
+          "uhp": 9,
+          "dead": false
+        }
+      ],
+      "enemyStacks": [
+        {
+          "id": "duel-e",
+          "count": 0,
+          "dead": true
+        }
+      ],
+      "hero": {
+        "level": 3,
+        "xp": 20,
+        "wisdom": 0,
+        "mana": 50
+      },
+      "armyAfter": [
+        {
+          "id": "army-1",
+          "type": "melee",
+          "count": 12
+        },
+        {
+          "id": "army-2",
+          "type": "ranged",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "skillSelections": [],
+  "errors": [],
+  "screenshots": {},
+  "passed": false,
+  "campaign": {
+    "id": "campaign-f2700f67-2401-488c-a375-926a5a3a43f6",
+    "seed": 672048819,
+    "age": 0,
+    "startingArmy": [
+      {
+        "id": "army-1",
+        "type": "melee",
+        "count": 12
+      },
+      {
+        "id": "army-2",
+        "type": "ranged",
+        "count": 8
+      }
+    ]
+  },
+  "failure": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#choices [data-choice=\"skill:wisdom\"]').first() to be visible\u001b[22m\n\u001b[2m    24 × locator resolved to hidden <button type=\"button\" class=\"sigil\" data-choice=\"skill:wisdom\" data-skill-offer=\"available\" aria-label=\"Wisdom, rank 0 of 3. Unlocks level 2/3/4 spells Skill offer available: select to review learning this rank.\">…</button>\u001b[22m\n\n    at click (C:\\dev\\ages-of-dominion-reborn\\qa\\game-completion-20261021\\visual-review\\m21-natural-wisdom3-resurrection-live-20261021.mjs:36:17)\n    at resolveVisibleSkillOffers (C:\\dev\\ages-of-dominion-reborn\\qa\\game-completion-20261021\\visual-review\\m21-natural-wisdom3-resurrection-live-20261021.mjs:62:11)\n    at async file:///C:/dev/ages-of-dominion-reborn/qa/game-completion-20261021/visual-review/m21-natural-wisdom3-resurrection-live-20261021.mjs:124:76"
+}

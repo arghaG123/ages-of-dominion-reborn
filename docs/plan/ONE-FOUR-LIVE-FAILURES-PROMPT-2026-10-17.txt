@@ -1,0 +1,46 @@
+You are the implementation executor for Ages of Dominion Reborn. A live session already reached the Future age after a test-only resource grant. These four failures were still on screen. Fix them in the running game, then prove each one. Do not stop at a note.
+
+WORKSPACE
+C:\dev\ages-of-dominion-reborn
+
+AUTHORITY
+The binding handoff remains:
+C:\dev\ages-of-dominion-reborn\docs\plan\ONE-COMPLETE-EXECUTOR-CONTINUATION-2026-10-16.txt
+This prompt adds the repairs below. It does not shrink the rest of that handoff.
+
+The session at http://127.0.0.1:4517/ was given 1000000000000 of each resource so cost would not block the check. That save is now Future, Hall 8, Walls 2, day 1, with a forged item in the bag. It is an injected fixture. Do not call it a natural journey, and do not use it as the fresh-start proof. Evidence: qa/mock-led-executor-20261016/resource-fixture-check.json
+
+WHAT TO REPAIR
+
+1. Empty plots and fitted walls.
+The Future kingdom drew kingdom-future-ground.png, and the empty sites were still bare rectangles. The same rectangles were on the Stone ground before the grant. In src/client/main.js the empty-plot branch only sets data-clearing="ground" and draws a dashed outline on the tutorial site. The rectangles are in the displayed ground paintings.
+Remove those baked rectangles from every displayed kingdom ground, Stone through Future. An unselected empty site shows the surrounding ground. The single tutorial target may keep one dashed outline. A built site shows that building's art on the ground, not a blank pad.
+
+Do not finish the wall by fitting run, corner, and gate stamps onto the kingdom painting. paintMaterialWalls currently stretches those separate pieces along the perimeter, and they do not belong to the ground they sit on. For each age, produce a kingdom painting of that same kind with the wall already in it: the same light, perspective, materials, and ground contact as that age's terrain. Stone gets a timber palisade in the Stone painting. Each later age gets its own wall in its own painting. The gate stays open on the road, and the plots stay on their current legal ground.
+
+Keep the wall states as paintings of that same kind, not as a fitted overlay:
+- Walls level 0: the age's kingdom with no wall.
+- A wall job: scaffold of that age, and no finished wall yet.
+- A finished wall: the age's kingdom with its matching wall.
+- A taller upgrade: the same wall kind, built higher, still in that age's painting.
+
+Show the painting that matches the current age and wall state. Stop using the stretched segment course as the finished wall. Review an existing same-kind source before making a new one. A new image, if one is required, follows the handoff's budget, mutex, and pacing rules. The absolute ceiling stays $100.
+
+2. Resource numbers cover Menu and Save.
+resources() in src/client/main.js writes the full integer into each chip and does not constrain the row. With a large balance the food and wood chips ran over Menu and Save.
+Keep food, wood, stone, gold, Menu, and Save in separate bounds at 825×375 and 1280×720. The largest balance a legal campaign can reach must still be readable, including a full-value tooltip or accessible name if the chip shows a compact form. Do not change stored amounts, prices, or income.
+
+3. A forged weapon is not worn on the body.
+Forge created a weapon and the bag count became 1. The hero caption in paintHero still says a matching plate "is a static pose, not a worn attachment." The Knight caption says the plate is the wrong kit. The other class captions say the era is unverified.
+After a real forge and equip, the item leaves the bag, occupies the matching slot, changes the stated stat, and is drawn on the body at that slot's anchor. Unequip reverses all three. Do this for helm, weapon, offhand, armor, boots, and accessory. The standing body for each class must be that class's current kit era. The Healer's staff must not continue below the feet. A Compare label is not worn gear.
+
+4. Future age does not by itself open the ending.
+At Future, Hall 8, Story was still "Chapter I — The First Fire." The conclusion is behind the real choices: STORY_CHOICE advances one chapter, and ACK_FUTURE runs only when age is at least 7 and every chapter choice is already stored. The ending text is "The Valley We Keep" and it grants nothing.
+Play each open chapter choice in order, then Keep the valley. The Story screen must show that conclusion and the resources must be unchanged by it. If a legal choice is blocked, or the conclusion stays hidden after those choices, repair that gate. Do not mark the conclusion done because the age index is 7, and do not skip the choices automatically when the age changes.
+
+PROOF
+Use a fresh campaign for the empty-plot and wall-level-0 proof. Use a separate save for the large-balance layout, the equip round trip, and the seven story choices plus the Future conclusion. Reload after each of those three and show the same result. Capture the Future kingdom, one earlier age with its own wall painting, the no-wall and scaffold states, the resource bar at both landscape sizes, the hero with the weapon worn and then removed, and the Story conclusion.
+
+Leave the product INCOMPLETE until the rest of the binding handoff is also closed. Do not award independent, device, or owner acceptance.
+
+Begin with the four repairs above, in the order listed.

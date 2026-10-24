@@ -1,0 +1,111 @@
+{
+  "schema": "game-screen-family-runtime-review/v1",
+  "reviewedAt": "2026-10-18",
+  "screen": "army",
+  "status": "CANDIDATE_FAMILY_RUNTIME_REVIEWED_PENDING_SEMANTIC_GEOMETRY_RESPONSIVE_AND_OWNER_ACCEPTANCE",
+  "mock": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/24-army.jpg",
+    "sha256": "9728db38e960a2117e7b52b1fb5795cb3a7e9080a12b9f3f65bd0b1e0cc0105f"
+  },
+  "runtime": {
+    "url": "http://localhost:4176/?audit=ageprogress",
+    "campaignAge": "stone",
+    "previewMechanism": "Army screen age-preview controls; this reviews roster art for each age without changing or claiming natural campaign progression.",
+    "viewport": [1280, 720],
+    "commonFindings": [
+      "Each preview rendered its own age-specific muster-yard art without the previous square blank Kingdom construction plots.",
+      "The two current formation cards, three preview recruitment cards, Army inspector, combat stats and Barracks lock explanation stayed legible at the reviewed viewport.",
+      "The preview uses current Stone formations alongside the selected age's recruitment roster; this is a visual candidate check, not a natural journey through all eight ages.",
+      "Mock 24 shows a medieval garrison yard and standing troops; the live product retains operational formation cards, recruitment cards and a separate details inspector. Layout fidelity, character geometry at dense sizes and owner acceptance remain open."
+    ]
+  },
+  "ages": [
+    {
+      "index": 0,
+      "age": "stone",
+      "candidate": "assets/derivatives/professional-20261018/army/army-stone-muster-v1.png",
+      "sha256": "03522e24d6ad1d3ea6c6c299770cbe3142ed558b20967cf11af2f7b3b758b3ce",
+      "dimensions": [1672, 941],
+      "runtimeFinding": "Natural prehistoric hide-and-timber perimeter, palisade and hillside around a broad open muster yard; current formation, recruit and inspector controls remain readable."
+    },
+    {
+      "index": 1,
+      "age": "bronze",
+      "candidate": "assets/derivatives/professional-20261018/army/army-bronze-muster-v1.png",
+      "sha256": "bcb1b38ff975ea4f78656d57b4843c5b3e3599d0d6c8a9eda07176425e8b357e",
+      "dimensions": [1672, 941],
+      "runtimeFinding": "Mudbrick, timber and reed structures frame a broad packed-earth yard; old blank construction patches are absent in the roster preview."
+    },
+    {
+      "index": 2,
+      "age": "iron",
+      "candidate": "assets/derivatives/professional-20261018/army/army-iron-muster-v1.png",
+      "sha256": "e3d9f819fc73abfeaf21fa31a100a3cb8fc6785a4e301ba109f04a07e7a0df43",
+      "dimensions": [1672, 941],
+      "runtimeFinding": "Hillfort and palisade frame an open yard with no visible Kingdom plot grid; differentiation from Stone and Bronze still needs age-family semantic review."
+    },
+    {
+      "index": 3,
+      "age": "medieval",
+      "candidate": "assets/derivatives/professional-20261018/army/army-medieval-muster-v1.png",
+      "sha256": "dabeaca7ec0cc48aba545ed311618abb9321d4106e3e2beca34fa6876f253877",
+      "dimensions": [1672, 941],
+      "runtimeFinding": "Stone curtain wall, gate and timber courtyard provide the closest scene match to mock 24; open ground keeps roster content visible."
+    },
+    {
+      "index": 4,
+      "age": "gunpowder",
+      "candidate": "assets/derivatives/professional-20261018/army/army-gunpowder-muster-v1.png",
+      "sha256": "8ea233d19e52eb47c45323a8755e9e5bfa499cb1356781af3e4bb32c53200439",
+      "dimensions": [1672, 941],
+      "runtimeFinding": "Early-modern brick fort and bastion details frame an uncluttered muster yard; cards and inspector remain readable."
+    },
+    {
+      "index": 5,
+      "age": "industrial",
+      "candidate": "assets/derivatives/professional-20261018/army/army-industrial-muster-v1.png",
+      "sha256": "1c2e303024aebf21790a83bb0346befabca2e2d59b89a3534a721dd818d8e8ec",
+      "dimensions": [1672, 941],
+      "runtimeFinding": "Brick industrial works, a water tower and fenced storage establish the period around an open troop yard; Industrial recruitment labels remain readable."
+    },
+    {
+      "index": 6,
+      "age": "modern",
+      "candidate": "assets/derivatives/professional-20261018/army/army-modern-muster-v1.png",
+      "sha256": "2cc9749c935ba0bb5bd7b8da934c818718f895ab1784494b53405f175e707a91",
+      "dimensions": [1672, 941],
+      "runtimeFinding": "Modern depot, hangar, storage, fencing and communications mast establish the period; contemporary troop cards and details remain readable."
+    },
+    {
+      "index": 7,
+      "age": "future",
+      "candidate": "assets/derivatives/professional-20261018/army/army-future-muster-v1.png",
+      "sha256": "b1ec729e7cd2d07a9ccfa643b11b239533246c38f2780c04547ba56ab90a467a",
+      "dimensions": [1672, 941],
+      "runtimeFinding": "Advanced city base and broad paved muster apron frame Future recruitment; the previously prominent square floor seams are no longer visible at 1280 by 720."
+    }
+  ],
+  "verification": {
+    "allEightReferencedByRuntime": true,
+    "pngSha256AndDimensionsRecomputed": true,
+    "assetDependencyClosure": {
+      "referencedFiles": 773,
+      "missing": 0,
+      "templates": 2,
+      "unresolvedTemplates": 0
+    },
+    "nodeTests": {
+      "command": "node --test tests/*.test.mjs",
+      "passed": 191,
+      "failed": 0,
+      "durationMs": 25705
+    }
+  },
+  "notClaimed": [
+    "Owner visual acceptance",
+    "Natural campaign progression or roster testing at every age",
+    "All required viewport and dense-layout checks",
+    "Scene-character placement and full mock fidelity",
+    "Final desktop, packaged, device or release acceptance"
+  ]
+}

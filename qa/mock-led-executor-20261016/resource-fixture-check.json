@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-17",
+  "session": "http://127.0.0.1:4517/?fixture=resources",
+  "fixture": "Injected test grant of 1000000000000 food, wood, stone, and gold. This is not a natural journey.",
+  "before": {
+    "age": "Stone",
+    "hall": 1,
+    "walls": 1,
+    "emptySites": 17,
+    "resources": { "food": 250, "wood": 210, "stone": 40, "gold": 150 }
+  },
+  "after": {
+    "age": "Future",
+    "day": 1,
+    "hall": 2,
+    "walls": 2,
+    "emptySites": 10,
+    "sites": {
+      "P01": "lumber 1",
+      "P02": "farm 1",
+      "P03": "quarry 1",
+      "P04": "barracks 1",
+      "P05": "armory 1",
+      "P06": "workshop 1",
+      "P07": "hall 1"
+    },
+    "army": "Clubman ×17, Slinger ×8, Axeman ×5, capacity 3/3",
+    "market": "Bronze market accepted Buy 100 food for 120 gold",
+    "forge": "Bag holds 1. The visible action is Compare Bronze Sword · Crude. Weapon was still empty before that click.",
+    "resourcesRemain": "about 999999998890 of each, so later prices are not blocked"
+  },
+  "paidAndCompleted": [
+    "Town Hall 1 to 2",
+    "Walls 1 to 2",
+    "Lumber Camp, Farm, Quarry, Barracks, Armory, Siege Workshop, Hero Hall",
+    "Hall upgrades and age advances through Iron, Medieval, Gunpowder, Industrial, Modern, and Future. Final state is Future, Hall 8, Walls 2, day 1.",
+    "Melee recruit",
+    "Bronze market purchase",
+    "One forged weapon entered the bag"
+  ],
+  "stillFailingWithResources": [
+    "Empty plots are still pale rectangles on the Bronze ground.",
+    "The trillion-resource counters overflow and cover Menu and Save.",
+    "The forged weapon was not shown as worn.",
+    "Ten sites are still empty pale rectangles on the Future ground.",
+    "Story is still Chapter I. The Future conclusion did not appear. The Bronze quest is claimable.",
+    "The resource counters overflow into Menu and Save.",
+    "Journeys, battles, and the other kit eras were not played."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "classification": "ACTUAL_INDEXEDDB_CAPACITY_AND_INJECTED_QUOTA_FIXTURE",
+  "database": "owner-dense-fixture-55734b70-000e-45c8-98ec-b29fbd27ec81",
+  "rows": [
+    {
+      "name": "three distinct populated legal snapshots roundtrip",
+      "result": "PASS",
+      "actual": [
+        1296084,
+        1366968,
+        1368190
+      ]
+    },
+    {
+      "name": "quota failure rejects replacement without losing live/backup/slots",
+      "result": "PASS"
+    },
+    {
+      "name": "reopened browser store retains double-size payload and backup",
+      "result": "PASS",
+      "actual": {
+        "payloadCharacters": 2601883,
+        "fixtureInjectedHistory": 8400,
+        "targetCharacters": 2592168,
+        "historyCount": 19038
+      }
+    },
+    {
+      "name": "all three dense slots decode after reopening",
+      "result": "PASS"
+    },
+    {
+      "name": "measured copies",
+      "classification": "LEGAL_PAYLOADS_PLUS_INJECTED_VALID_DOUBLE_SIZE_FIXTURE",
+      "storedBytes": 11775722,
+      "stores": {
+        "heads": 1,
+        "campaigns": 2,
+        "slots": 3,
+        "metadata": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "reviewId": "M01-home-live-review-20261023-followup-run03",
+  "date": "2026-10-23",
+  "status": "PARTIAL",
+  "follows": "M01-home-live-review-20261023-followup",
+  "reference": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/01-home.jpg",
+  "origin": "http://localhost:4174/?audit",
+  "summary": "Reduced the saved-gate minimum width from 320px to 260px. At the 825x375 request, the observed gate occupies 31.5% of the stage and every action label fits. The no-save and damaged-save states remain open because temporary preview tabs unexpectedly presented populated campaigns.",
+  "sourceChanges": [
+    {
+      "file": "src/client/polish.css",
+      "change": "Changed the campaign-gate responsive width from clamp(320px, 30vw, 400px) to clamp(260px, 30vw, 400px), keeping the book-like panel close to one-third of compact landscape width."
+    },
+    {
+      "file": "tests/visual-responsive-20261018.test.mjs",
+      "change": "Updated the M01 width assertion for the narrower compact gate."
+    }
+  ],
+  "browserReview": {
+    "primaryTab": "http://localhost:4174/?audit",
+    "primaryTabState": "Saved campaign gate visible; no slot action invoked.",
+    "compactViewport": {
+      "requested": [825, 375],
+      "observedInner": [826, 375],
+      "stage": [825.6, 375.2],
+      "gateWidth": 260,
+      "gatePercentOfStage": 31.5,
+      "continueAndNewCampaignButtons": [222.4, 52],
+      "settingsAndSaveLoadButtons": [106.2, 48],
+      "allLabelsFit": true,
+      "allControlsInsideGate": true,
+      "panoramicSceneHasSideGutters": false,
+      "screenshotRetained": false
+    },
+    "activeDefenseResume": "Observed in a temporary preview: Continue returned to paused defense, 0/5 waves and 400 gate HP. Preview unexpectedly presented a pre-populated save, so this does not count as isolated clean-state acceptance.",
+    "noSaveState": "OPEN_UNVERIFIED",
+    "damagedSaveState": "OPEN_UNVERIFIED",
+    "newCampaignCancel": "Previously verified in run02; not repeated.",
+    "continueAfterSettingsBack": "Previously verified in run02; not repeated.",
+    "exact933Capture": "NOT_REPEATED",
+    "exactDesktopCapture": "NOT_REPEATED"
+  },
+  "verification": {
+    "focusedTestFile": "tests/visual-responsive-20261018.test.mjs",
+    "focusedTests": "39/39 PASS",
+    "fullNodeSuite": "279/279 PASS before this CSS-only change; not rerun"
+  },
+  "ownerAccepted": false,
+  "limitations": [
+    "The browser viewport API produces an inner width one pixel larger than the requested compact width and an earlier screenshot raster one pixel narrower.",
+    "The temporary preview origins opened populated campaigns; no-save and damaged-save live review could not be isolated safely.",
+    "No compact screenshot was retained in this run."
+  ]
+}

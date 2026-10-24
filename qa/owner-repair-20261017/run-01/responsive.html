@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>Exact CSS viewport game review</title>
+<style>body{margin:0;background:#222;color:white;font:16px sans-serif}iframe{display:block;border:0;width:825px;height:375px}nav{position:fixed;bottom:0;padding:8px;background:#111;display:flex;gap:12px}button{min-height:48px;font:inherit}</style>
+<iframe id="game" title="Natural campaign in exact CSS viewport" src="/?audit=owner-repair-responsive"></iframe>
+<nav aria-label="Review viewport">
+<button data-width="825" data-height="375">825 × 375</button>
+<button data-width="933" data-height="424">933 × 424</button>
+<button data-width="1180" data-height="820">1180 × 820</button>
+<button data-width="1280" data-height="720">1280 × 720</button>
+</nav>
+<script>for(const button of document.querySelectorAll('button'))button.onclick=()=>{const frame=document.querySelector('iframe');frame.style.width=button.dataset.width+'px';frame.style.height=button.dataset.height+'px';};</script>

@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-10-21T04:57:22.418Z",
+  "classification": "NATURAL_UI_CAMPAIGN_CONTROLLED_BROWSER",
+  "journey": "fresh isolated browser -> new campaign through visible world/class choices -> repeat visible War/Tactical Duel/Auto/settlement -> choose only visibly offered skills -> reload at Wisdom 3 -> cast visible Resurrection on a naturally wounded living campaign stack",
+  "viewport": {
+    "width": 1280,
+    "height": 720,
+    "deviceScaleFactor": 1
+  },
+  "selectedClass": "mage",
+  "maxBattles": 80,
+  "battles": [],
+  "skillSelections": [],
+  "errors": [],
+  "screenshots": {},
+  "passed": false,
+  "campaign": {
+    "id": "campaign-005ff29f-71f1-497c-9b1d-c671d311fe31",
+    "seed": 2476402557,
+    "age": 0,
+    "startingArmy": [
+      {
+        "id": "army-1",
+        "type": "melee",
+        "count": 12
+      },
+      {
+        "id": "army-2",
+        "type": "ranged",
+        "count": 8
+      }
+    ]
+  },
+  "failure": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-choice=\"settle-battle\"]').first() to be visible\u001b[22m\n\u001b[2m    24 × locator resolved to hidden <button type=\"button\" data-choice=\"settle-battle\">Apply the battle result</button>\u001b[22m\n\n    at click (C:\\dev\\ages-of-dominion-reborn\\qa\\game-completion-20261021\\visual-review\\m21-natural-wisdom3-resurrection-live-20261021.mjs:36:17)\n    at C:\\dev\\ages-of-dominion-reborn\\qa\\game-completion-20261021\\visual-review\\m21-natural-wisdom3-resurrection-live-20261021.mjs:114:11"
+}

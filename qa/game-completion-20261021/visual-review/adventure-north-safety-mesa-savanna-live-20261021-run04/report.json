@@ -1,0 +1,371 @@
+{
+  "recordedAt": "2026-10-21T08:00:56.158Z",
+  "classification": "NATURAL_CARDINAL_JOURNEY_TO_NORTH_EDGE_CAMERA_SAFETY_SOURCE_MASK",
+  "journey": "Fresh visible campaign -> mesa-savanna -> cardinal moves to an unblocked outer map cell -> save/reload",
+  "note": "Campaign, world, and movement state are never injected. A read-only path search selects an open reachable north-edge cell while excluding guards; every step is then previewed and committed through visible game controls. Source-level 128px north inset, matching biome backdrop, and top-edge terrain mask are checked against live header and traveler bounds; screenshot review is recorded separately from geometry assertions.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "steps": [
+    {
+      "direction": "north",
+      "position": [
+        4,
+        1
+      ],
+      "moves": 4,
+      "day": 1,
+      "revision": 11,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            0
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            0,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 460.4651184082031
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "header": {
+          "left": 10,
+          "top": 8,
+          "right": 815,
+          "bottom": 56
+        },
+        "heroScreen": [
+          232.03125,
+          69.06976744186046
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 174.44448852539062,
+              "top": 7.919103622436523,
+              "right": 278.55596923828125,
+              "bottom": 119.4304256439209
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 174.44448852539062,
+              "top": 7.919103622436523,
+              "right": 278.55596923828125,
+              "bottom": 110.68629264831543
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": true,
+        "boardGeometry": true,
+        "edgeSafety": null,
+        "stageBackground": "none",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 174.44448852539062,
+              "top": 7.919103622436523,
+              "right": 278.55596923828125,
+              "bottom": 119.4304256439209
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "direction": "north",
+      "position": [
+        4,
+        0
+      ],
+      "moves": 3,
+      "day": 1,
+      "revision": 14,
+      "camera": {
+        "viewport": [
+          825,
+          375
+        ],
+        "fit": {
+          "scale": 0.5995639534883721,
+          "offset": [
+            0,
+            128
+          ],
+          "mode": "focus-cover",
+          "window": [
+            0,
+            -213.48848484848486,
+            1376,
+            625.4545454545455
+          ]
+        },
+        "frame": {
+          "left": 0,
+          "top": 128,
+          "right": 825,
+          "bottom": 588.465087890625
+        },
+        "stage": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 375
+        },
+        "header": {
+          "left": 10,
+          "top": 8,
+          "right": 815,
+          "bottom": 56
+        },
+        "heroScreen": [
+          232.03125,
+          151.02325581395348
+        ],
+        "heroVisible": true,
+        "actors": [
+          {
+            "kind": "mount",
+            "id": "horse",
+            "bounds": {
+              "left": 174.44448852539062,
+              "top": 84.19352722167969,
+              "right": 278.55596923828125,
+              "bottom": 207.2500762939453
+            },
+            "withinViewport": true
+          },
+          {
+            "kind": "actor",
+            "id": "knight",
+            "bounds": {
+              "left": 174.44448852539062,
+              "top": 84.19352722167969,
+              "right": 278.55596923828125,
+              "bottom": 186.96072387695312
+            },
+            "withinViewport": true
+          }
+        ],
+        "allActorsWithinViewport": true,
+        "frameCoversViewport": false,
+        "boardGeometry": true,
+        "edgeSafety": {
+          "side": "north",
+          "stageOffsetY": 128,
+          "backdropWorldId": "mesa-savanna"
+        },
+        "stageBackground": "linear-gradient(rgba(16, 23, 27, 0.78), rgba(16, 23, 27, 0.78)), url(\"http://127.0.0.1:4179/assets/derivatives/adventure-world-terrain-generated-20261020/mesa-savanna-terrain-v1.png\")",
+        "traveler": [
+          {
+            "tag": "g",
+            "mode": null,
+            "rider": null,
+            "mount": "horse",
+            "bounds": {
+              "left": 174.44448852539062,
+              "top": 84.19352722167969,
+              "right": 278.55596923828125,
+              "bottom": 207.2500762939453
+            },
+            "withinViewport": true
+          }
+        ],
+        "position": [
+          4,
+          0
+        ]
+      }
+    }
+  ],
+  "start": {
+    "position": [
+      4,
+      2
+    ],
+    "moves": 5,
+    "revision": 8,
+    "seed": 2754330706,
+    "worldId": "mesa-savanna"
+  },
+  "edge": {
+    "position": [
+      4,
+      0
+    ],
+    "pathLength": 2,
+    "path": [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "candidateCount": 16,
+    "mapSize": [
+      16,
+      10
+    ]
+  },
+  "compactStartCamera": {
+    "viewport": [
+      825,
+      375
+    ],
+    "fit": {
+      "scale": 0.5995639534883721,
+      "offset": [
+        0,
+        0
+      ],
+      "mode": "focus-cover",
+      "window": [
+        0,
+        0,
+        1376,
+        625.4545454545455
+      ]
+    },
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "right": 825,
+      "bottom": 460.4651184082031
+    },
+    "stage": {
+      "left": 0,
+      "top": 0,
+      "right": 825,
+      "bottom": 375
+    },
+    "header": {
+      "left": 10,
+      "top": 8,
+      "right": 815,
+      "bottom": 56
+    },
+    "heroScreen": [
+      232.03125,
+      115.11627906976744
+    ],
+    "heroVisible": true,
+    "actors": [
+      {
+        "kind": "mount",
+        "id": "horse",
+        "bounds": {
+          "left": 185.9691925048828,
+          "top": 35.237770080566406,
+          "right": 273.85797119140625,
+          "bottom": 121.09320831298828
+        },
+        "withinViewport": true
+      },
+      {
+        "kind": "actor",
+        "id": "knight",
+        "bounds": {
+          "left": 185.9691925048828,
+          "top": 35.237770080566406,
+          "right": 273.85797119140625,
+          "bottom": 99.70980834960938
+        },
+        "withinViewport": true
+      }
+    ],
+    "allActorsWithinViewport": true,
+    "frameCoversViewport": true,
+    "boardGeometry": true,
+    "edgeSafety": null,
+    "stageBackground": "none",
+    "traveler": [
+      {
+        "tag": "g",
+        "mode": null,
+        "rider": null,
+        "mount": "horse",
+        "bounds": {
+          "left": 185.9691925048828,
+          "top": 35.237770080566406,
+          "right": 273.85797119140625,
+          "bottom": 121.09320831298828
+        },
+        "withinViewport": true
+      }
+    ],
+    "position": [
+      4,
+      2
+    ]
+  },
+  "destination": {
+    "position": [
+      4,
+      0
+    ],
+    "moves": 3,
+    "day": 1,
+    "visited": [
+      "4,2",
+      "4,1",
+      "4,0"
+    ],
+    "revision": 14
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-north-safety-mesa-savanna-live-20261021-run04\\mesa-savanna-north-edge-safe-825x375.jpg"
+  ],
+  "reload": {
+    "worldId": "mesa-savanna",
+    "position": [
+      4,
+      0
+    ],
+    "visited": [
+      "4,2",
+      "4,1",
+      "4,0"
+    ],
+    "revision": 17
+  },
+  "passed": true
+}

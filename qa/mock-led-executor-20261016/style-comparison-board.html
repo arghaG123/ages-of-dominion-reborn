@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ages of Dominion Reborn — Style Comparison Board & Asset Review</title>
+<style>
+  :root {
+    --bg-primary: #12151a;
+    --bg-card: #1c212a;
+    --border-gold: #c9a35b;
+    --text-primary: #e6e9f0;
+    --text-secondary: #9aa3b2;
+    --accent-blue: #70b9c5;
+    --badge-reuse: #2e7d32;
+    --badge-repair: #e65100;
+  }
+  body {
+    margin: 0;
+    padding: 24px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  h1, h2, h3 { color: var(--border-gold); margin-top: 0; }
+  .header-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border-gold);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .stat-card {
+    background: rgba(0,0,0,0.3);
+    border-radius: 6px;
+    padding: 12px 16px;
+    border-left: 4px solid var(--border-gold);
+  }
+  .stat-val { font-size: 24px; font-weight: bold; color: var(--text-primary); }
+  .stat-lbl { font-size: 13px; color: var(--text-secondary); text-transform: uppercase; }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #333d4b;
+    padding-bottom: 8px;
+    margin: 32px 0 16px;
+  }
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .asset-card {
+    background: var(--bg-card);
+    border: 1px solid #2d3542;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .asset-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-gold);
+  }
+  .asset-thumb {
+    width: 100%;
+    height: 180px;
+    background: #0a0c0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .asset-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .asset-info {
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+  }
+  .asset-id { font-weight: bold; color: var(--text-primary); font-size: 14px; }
+  .asset-desc { color: var(--text-secondary); line-height: 1.4; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .badge-reuse { background: var(--badge-reuse); color: #fff; }
+  .badge-repair { background: var(--badge-repair); color: #fff; }
+  .mock-row {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 16px;
+  }
+  .mock-item {
+    flex: 0 0 320px;
+    background: var(--bg-card);
+    border: 1px solid #333d4b;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .mock-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  .mock-label {
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--border-gold);
+  }
+</style>
+</head>
+<body>
+<div class="header-panel">
+  <h1>Ages of Dominion Reborn — Style Comparison Board</h1>
+  <p style="color:var(--text-secondary); max-width: 900px; line-height: 1.5;">
+    Authoritative visual review cataloging all active gameplay assets alongside the 30 advanced landscape mocks (M01–M30).
+    Enforces the single coherent realistic/semi-realistic strategy game aesthetic: natural human anatomy, believable materials (wood, stone, forged metal), period-authentic structures, coherent upper-left daylighting, and zero cartoon/chibi substitutes.
+  </p>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-val">${summary.totalAssets}</div>
+      <div class="stat-lbl">Active Assets Cataloged</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">${summary.byDisposition.REUSE}</div>
+      <div class="stat-lbl">High-Fidelity Reused</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">${summary.byDisposition.LOCAL_REPAIR}</div>
+      <div class="stat-lbl">Local Repairs Applied</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">0</div>
+      <div class="stat-lbl">Blocked / Defective Assets</div>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">
+  <h2>Target Landscape Aesthetic Mocks (M01–M30 Reference Gallery)</h2>
+</div>
+<div class="mock-row">
+  ${[
+    ['01-home.jpg', 'M01: Home Panoramic Settlement'],
+    ['02-kingdom-day1.jpg', 'M02: Stone Kingdom Day 1'],
+    ['03-kingdom-stone.jpg', 'M03: Stone Developed Valley'],
+    ['04-kingdom-bronze.jpg', 'M04: Bronze Kingdom Settlement'],
+    ['05-kingdom-iron.jpg', 'M05: Iron Age Fortification'],
+    ['06-kingdom-medieval.jpg', 'M06: Medieval Castle & Moat'],
+    ['07-kingdom-gunpowder.jpg', 'M07: Gunpowder Bastion'],
+    ['08-kingdom-industrial.jpg', 'M08: Industrial Foundry Town'],
+    ['09-kingdom-modern.jpg', 'M09: Modern Metropolis Base'],
+    ['10-kingdom-future.jpg', 'M10: Future Citadel Complex'],
+    ['14-tactical-deployment.jpg', 'M14: Tactical Battle Formation'],
+    ['17-defense-preparation.jpg', 'M17: Defense Siege Perimeter'],
+    ['19-hero-equipment.jpg', 'M19: Hero Equipment Chamber'],
+    ['22-forge.jpg', 'M22: Blacksmith Forge & Crafting'],
+  ].map(([img, lbl]) => `
+    <div class="mock-item">
+      <img src="../../design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/${img}" alt="${lbl}" loading="lazy">
+      <div class="mock-label">${lbl}</div>
+    </div>
+  `).join('')}
+</div>
+
+<div class="section-title">
+  <h2>Repaired Key Outliers (Local Repairs Resolved)</h2>
+</div>
+<div class="grid-cards">
+  ${summary.resolvedOutliers.map(o => `
+    <div class="asset-card" style="border-color: var(--border-gold);">
+      <div class="asset-info">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="asset-id">${o.asset}</span>
+          <span class="badge badge-repair">RESOLVED</span>
+        </div>
+        <div class="asset-desc"><strong>Defect:</strong> ${o.issue}</div>
+        <div class="asset-desc" style="color:#a7f3d0;"><strong>Action:</strong> ${o.action}</div>
+      </div>
+    </div>
+  `).join('')}
+</div>
+
+<div class="section-title">
+  <h2>Active Gameplay Assets Inventory (All 8 Ages)</h2>
+</div>
+<div class="grid-cards">
+  ${inventory.slice(0, 48).map(i => `
+    <div class="asset-card">
+      <div class="asset-thumb">
+        ${i.file.endsWith('.png') || i.file.endsWith('.jpg') || i.file.endsWith('.webp') ? `
+          <img src="../../${i.file}" alt="${i.id}" loading="lazy">
+        ` : `
+          <span style="color:#666;">${i.id}</span>
+        `}
+      </div>
+      <div class="asset-info">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="asset-id">${i.id}</span>
+          <span class="badge ${i.disposition === 'LOCAL_REPAIR' ? 'badge-repair' : 'badge-reuse'}">${i.disposition}</span>
+        </div>
+        <div class="asset-desc"><strong>Role:</strong> ${i.role} (${i.era})</div>
+        <div class="asset-desc">${i.repairNotes}</div>
+        <div class="asset-desc" style="font-size:11px; color:#6b7280; word-break:break-all;">${i.file}</div>
+      </div>
+    </div>
+  `).join('')}
+</div>
+
+</body>
+</html>

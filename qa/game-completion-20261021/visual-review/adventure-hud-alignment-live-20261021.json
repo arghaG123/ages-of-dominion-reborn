@@ -1,0 +1,58 @@
+{
+  "recordedAt": "2026-10-21T08:52:23Z",
+  "classification": "ADVENTURE_HUD_MINIMAP_AND_FIXED_STAGE_VIEWPORT",
+  "result": "PASS_FOR_TARGETED_LAYOUT_ONLY",
+  "journey": "Fresh isolated localhost campaign through visible controls -> enter Adventure -> leave town -> inspect closed map and open travel inspector",
+  "isolation": {
+    "origin": "http://localhost:4179/?audit=1",
+    "initialState": "No campaign was stored on this origin",
+    "existing127OriginModified": false,
+    "movementCommitted": false
+  },
+  "changes": [
+    "The Adventure minimap sits upper-right while the inspector is closed.",
+    "The minimap moves upper-left while the right inspector is open.",
+    "The idle Adventure status keeps the location and move count without a tap instruction.",
+    "The fixed stage uses overflow: clip so panel opening cannot scroll scene chrome out of view."
+  ],
+  "observations": {
+    "compactClosed": {
+      "viewportCssPx": [826, 375],
+      "statusLines": ["Sunlit Riverlands", "5 moves left."],
+      "minimap": {"x": 693.6, "y": 60, "width": 122, "height": 122, "right": 10},
+      "screenshotReviewed": true
+    },
+    "compactInspectorOpen": {
+      "viewportCssPx": [826, 375],
+      "stageOverflow": "clip",
+      "stageScrollTop": 0,
+      "stageFieldY": 0,
+      "panel": {"x": 537.6, "y": 54, "width": 280, "height": 281.2},
+      "minimap": {"x": 10, "y": 60, "width": 122, "height": 122},
+      "screenshotReviewed": true
+    },
+    "desktopInspectorOpen": {
+      "viewportCssPx": [1280, 720],
+      "panelOpen": true,
+      "minimap": {"x": 14, "y": 64, "width": 132, "height": 132},
+      "screenshotReviewed": true
+    },
+    "beforeStageClip": {
+      "compactInspectorOpenStageOverflow": "hidden",
+      "stageScrollTop": 85.6,
+      "stageFieldY": -85.6,
+      "panelY": -31.6,
+      "minimapY": -25.6
+    }
+  },
+  "browserConsoleErrorsAndWarnings": [],
+  "verification": {
+    "javascriptSyntax": "PASS: node --check src/client/main.js",
+    "nodeTests": {"command": "node --test tests/*.test.mjs", "passed": 237, "failed": 0}
+  },
+  "limits": [
+    "This is a focused live HUD layout check, not full Adventure or game acceptance.",
+    "The live screenshots were inspected in the browser but not saved as image artifacts.",
+    "No route, movement, encounter, save/reload, mock-fidelity, independent desktop, package, device, or owner acceptance was established."
+  ]
+}

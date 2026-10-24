@@ -1,0 +1,162 @@
+{
+  "recordedAt": "2026-10-21T06:12:00.176Z",
+  "classification": "NATURAL_GRASSLANDS_MINE_CLAIM_ON_FOOT_SAVE_RELOAD",
+  "journey": "Fresh visible Grasslands campaign -> cardinal route to Mine approach -> on-foot arrival -> recover gold -> save/reload",
+  "note": "Campaign, position, and resources are never injected. A read-only path search excludes unresolved guards; each move and the claim use visible game controls.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "steps": [
+    {
+      "position": [
+        9,
+        3
+      ],
+      "moves": 4,
+      "day": 1,
+      "revision": 11
+    },
+    {
+      "position": [
+        10,
+        3
+      ],
+      "moves": 3,
+      "day": 1,
+      "revision": 14
+    },
+    {
+      "position": [
+        11,
+        3
+      ],
+      "moves": 2,
+      "day": 1,
+      "revision": 22
+    },
+    {
+      "position": [
+        12,
+        3
+      ],
+      "moves": 1,
+      "day": 1,
+      "revision": 25
+    },
+    {
+      "position": [
+        12,
+        4
+      ],
+      "moves": 0,
+      "day": 1,
+      "revision": 28
+    },
+    {
+      "position": [
+        12,
+        5
+      ],
+      "moves": 4,
+      "day": 2,
+      "revision": 33
+    },
+    {
+      "position": [
+        12,
+        6
+      ],
+      "moves": 3,
+      "day": 2,
+      "revision": 36
+    },
+    {
+      "position": [
+        12,
+        7
+      ],
+      "moves": 2,
+      "day": 2,
+      "revision": 39
+    }
+  ],
+  "start": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "revision": 8,
+    "seed": 3956328861
+  },
+  "site": {
+    "id": "mine",
+    "approach": [
+      12,
+      7
+    ],
+    "pathCells": [
+      [
+        9,
+        3
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        4
+      ],
+      [
+        12,
+        5
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        12,
+        7
+      ]
+    ],
+    "pathLength": 8,
+    "offer": 217
+  },
+  "claim": {
+    "beforeGold": 150,
+    "offer": 217,
+    "afterGold": 367,
+    "claimedSites": [
+      "mine"
+    ],
+    "traveler": {
+      "mode": "on-foot",
+      "actor": {
+        "kind": "actor",
+        "id": "knight",
+        "bounds": {
+          "left": 63.91015625,
+          "top": -16.3466796875,
+          "right": 714.3685302734375,
+          "bottom": 460.80621337890625
+        },
+        "withinStage": false
+      }
+    },
+    "day": 2,
+    "revision": 45
+  },
+  "capture": "qa\\game-completion-20261021\\visual-review\\adventure-mine-natural-live-20261021-run01\\grasslands-mine-claimed-on-foot-825x375.jpg",
+  "passed": false,
+  "failure": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#choices .adventure-site-claimed') to be visible\u001b[22m\n"
+}

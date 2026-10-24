@@ -2,51 +2,49 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
+import adventureWorlds from '../src/data/adventure-worlds.json' with { type: 'json' };
 import { command, newCampaign, validate } from '../src/core/campaign.js';
-import { adventureMap, isOpen, routeCost, routeTo } from '../src/core/navigation.js';
-import { castSpell, legalMoves, move, startBattle, strike, validateBattle, wait } from '../src/core/battle.js';
+import { adventureGeometryForWorld, adventureMap, isOpen, routeCost, routeTo } from '../src/core/navigation.js';
+import { castSpell, effectiveSpeed, legalMoves, move, startBattle, strike, validateBattle, wait } from '../src/core/battle.js';
 import { decode, encode } from '../src/core/save.js';
+import { completeSkirmishDeployment } from './battle-deployment-helpers-20261022.mjs';
 
 const fresh = () => newCampaign(contract, data, 1000);
-const act = (state, id, type, payload, now = 1000) => command(state, { id, type, payload }, now, data);
+const act = (state, id, type, payload, now = state.clock) => command(state, { id, type, payload }, now, data);
 const stack = (id, side, x, y, extra = {}) => ({
   id, side, x, y, count: 2, maxCount: 2, atk: 4, def: 4, dmin: 1, dmax: 1, uhp: 20, top: 20, spd: 4, rng: 0, shots: 0, fly: 0, ...extra,
 });
 
 function reachGuard(state) {
-  const map = adventureMap(contract.geometry.adventure);
+  const world = adventureWorlds.find(item => item.id === state.adventureWorldId);
+  const geometry = adventureGeometryForWorld(contract.geometry.adventure, world, state.seed);
+  const map = adventureMap(geometry);
   let cursor = state;
-  let guard = null;
-  for (let day = 0; day < 12 && !guard; day++) {
-    if (day) cursor = act(cursor, `dawn-${day}`, 'END_DAY', {}, 1000 + day);
+  for (let day = 0; day < 40; day++) {
     const start = [cursor.adventure.x, cursor.adventure.y];
-    const queue = [{ cell: start, path: [], cost: 0 }];
-    const seen = new Set();
-    while (queue.length && !guard) {
-      queue.sort((a, b) => a.cost - b.cost);
-      const node = queue.shift();
-      const key = node.cell.join(',');
-      if (seen.has(key)) continue;
-      seen.add(key);
-      if (map.guards.has(key) && node.path.length) {
-        guard = node;
-        break;
-      }
-      for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
-        if (!dx && !dy) continue;
-        const step = [node.cell[0] + dx, node.cell[1] + dy];
-        if (!isOpen(map, step[0], step[1])) continue;
-        const next = [...node.path, step];
-        try {
-          const cost = routeCost(map, start, next).cost;
-          if (cost <= cursor.adventure.moves) queue.push({ cell: step, path: next, cost });
-        } catch { /* closed diagonal */ }
-      }
+    const routes = [...map.guards]
+      .filter(key => !cursor.adventure.resolvedGuards.includes(key))
+      .flatMap(key => {
+        const target = key.split(',').map(Number);
+        try { return [routeTo(map, start, target)]; } catch { return []; }
+      })
+      .sort((first, second) => first.cost - second.cost || first.cells.length - second.cells.length);
+    assert.ok(routes.length, 'an unresolved guard has a legal production-map route');
+    const route = routes[0];
+    if (route.cost <= cursor.adventure.moves) {
+      return act(cursor, `approach-guard-${cursor.revision}`, 'MOVE', { path: route.cells });
     }
-    if (guard) cursor = act(cursor, `approach-${day}`, 'MOVE', { path: guard.path }, 1000 + day);
+    let prefix = 0;
+    for (let count = 1; count < route.cells.length; count++) {
+      if (routeCost(map, start, route.cells.slice(0, count)).cost > cursor.adventure.moves) break;
+      prefix = count;
+    }
+    assert.ok(prefix > 0, 'the selected guard route makes legal progress within one day');
+    cursor = act(cursor, `guard-route-${cursor.revision}`, 'MOVE', { path: route.cells.slice(0, prefix) });
+    if (cursor.adventure.pendingEncounter) return cursor;
+    cursor = act(cursor, `dawn-${cursor.revision}`, 'END_DAY');
   }
-  assert.ok(guard, 'a legal guard route exists');
-  return cursor;
+  assert.fail('a legal guard route should be reachable within the bounded campaign journey');
 }
 
 test('positioned saves reject illegal health, speed, cells and queue ids before damage', () => {
@@ -101,6 +99,106 @@ test('documented spells, wait and a crossing obey the same predicates', () => {
   assert.throws(() => castSpell(opened, { id: 'resurrect', lv: 4, mana: 20, type: 'res' }, 'missing', 1));
 });
 
+test('all eight campaign spells apply their documented effects, costs and target rules', () => {
+  const open = ({ mana = 30, wisdom = 3 } = {}) => startBattle({
+    id: 'spell-coverage', positioned: true, rngState: 11, mana, wisdom,
+    stacks: [
+      stack('caster', 'p', 1, 8, { spd: 12, dmin: 1, dmax: 5 }),
+      stack('ally', 'p', 1, 7, { count: 2, maxCount: 4, uhp: 10, top: 5, spd: 1 }),
+      stack('e0', 'e', 2, 7, { count: 2, maxCount: 2, uhp: 100, top: 100, spd: 8, dmin: 0, dmax: 0 }),
+      stack('e1', 'e', 2, 8, { count: 2, maxCount: 2, uhp: 100, top: 100, spd: 4, dmin: 0, dmax: 0 }),
+      stack('e2', 'e', 5, 3, { count: 2, maxCount: 2, uhp: 100, top: 100, spd: 3, dmin: 0, dmax: 0 }),
+    ],
+  });
+  const spell = id => ({ ...data.SPELLS[id], id });
+  const hp = state => {
+    const target = state.stacks.find(item => item.id === 'e0');
+    return (target.count - 1) * target.uhp + target.top;
+  };
+
+  const arrowStart = open();
+  const arrow = castSpell(arrowStart, spell('arrow'), 'e0', 1);
+  assert.equal(hp(arrow), 180, 'Magic Arrow deals 20 damage at Power 1');
+  assert.equal(arrow.mana, 25);
+  assert.equal(arrow.log.at(-1).id, 'arrow');
+  assert.throws(() => castSpell(arrow, spell('bless'), 'caster', 1), /Spell already cast/);
+
+  const blessStart = open();
+  const blessed = castSpell(blessStart, spell('bless'), 'caster', 1);
+  assert.equal(blessed.stacks.find(item => item.id === 'caster').blessCounter, 2);
+  const blessedStrike = strike(blessed, 'caster', 'e0', { forceMelee: true });
+  assert.equal(blessedStrike.log.find(item => item.type === 'strike').damage, 10, 'Bless selects maximum damage for both caster units');
+  assert.equal(blessedStrike.stacks.find(item => item.id === 'caster').blessCounter, 1, 'Bless decays after the affected stack acts');
+  assert.equal(blessed.mana, 25);
+
+  const haste = castSpell(open(), spell('haste'), 'caster', 1);
+  assert.equal(haste.stacks.find(item => item.id === 'caster').hasteCounter, 3);
+  assert.equal(effectiveSpeed(haste.stacks.find(item => item.id === 'caster')), 15);
+  assert.equal(haste.mana, 24);
+
+  const cure = castSpell(open(), spell('cure'), 'ally', 1);
+  const curedAlly = cure.stacks.find(item => item.id === 'ally');
+  assert.equal((curedAlly.count - 1) * curedAlly.uhp + curedAlly.top, 35, 'Cure restores 20 HP at Power 1');
+  assert.equal(cure.mana, 24);
+
+  const slow = castSpell(open(), spell('slow'), 'e0', 1);
+  assert.equal(slow.stacks.find(item => item.id === 'e0').slowCounter, 3);
+  assert.equal(effectiveSpeed(slow.stacks.find(item => item.id === 'e0')), 5);
+  assert.equal(slow.mana, 22);
+
+  const bolt = castSpell(open(), spell('bolt'), 'e0', 1);
+  assert.equal(hp(bolt), 165, 'Lightning Bolt deals 35 damage at Power 1');
+  assert.equal(bolt.mana, 20);
+
+  const fireball = castSpell(open(), spell('fireball'), 'e0', 1);
+  assert.equal(hp(fireball), 170, 'Fireball damages its selected stack');
+  const neighbour = fireball.stacks.find(item => item.id === 'e1');
+  assert.equal((neighbour.count - 1) * neighbour.uhp + neighbour.top, 170, 'Fireball damages an adjacent stack');
+  assert.equal(fireball.stacks.find(item => item.id === 'e2').top, 100, 'Fireball leaves a non-neighbour unchanged');
+  assert.equal(fireball.mana, 16);
+
+  const resurrect = castSpell(open(), spell('resurrect'), 'ally', 0.2);
+  const restoredAlly = resurrect.stacks.find(item => item.id === 'ally');
+  assert.equal(restoredAlly.count, 3, 'Resurrection restores one lost unit at Power 0.2');
+  assert.equal(restoredAlly.top, 5);
+  assert.equal(resurrect.mana, 10);
+
+  const full = open();
+  const fullAlly = full.stacks.find(item => item.id === 'ally');
+  fullAlly.count = fullAlly.maxCount;
+  fullAlly.top = fullAlly.uhp;
+  const fullBeforeHp = (fullAlly.count - 1) * fullAlly.uhp + fullAlly.top;
+  const fullCure = castSpell(full, spell('cure'), 'ally', 1);
+  const fullAfter = fullCure.stacks.find(item => item.id === 'ally');
+  assert.equal((fullAfter.count - 1) * fullAfter.uhp + fullAfter.top, fullBeforeHp, 'Cure caps at full health');
+  assert.equal(fullCure.mana, 24, 'a legal full-health cast uses its documented mana');
+
+  const illegal = open();
+  const illegalBefore = structuredClone(illegal);
+  assert.throws(() => castSpell(illegal, spell('arrow'), 'ally', 1), /Illegal spell target/);
+  assert.deepEqual(illegal, illegalBefore, 'an illegal target does not mutate the original battle');
+  assert.throws(() => castSpell(illegal, spell('bless'), 'e0', 1), /Illegal spell target/);
+  assert.throws(() => castSpell(illegal, spell('slow'), 'ally', 1), /Illegal spell target/);
+
+  const locked = open({ wisdom: 0 });
+  const lockedBefore = structuredClone(locked);
+  assert.throws(() => castSpell(locked, spell('bolt'), 'e0', 1), /Spell is not known/);
+  assert.deepEqual(locked, lockedBefore, 'Wisdom-locked spells leave battle state unchanged');
+  const shortMana = open({ mana: 9 });
+  const shortManaBefore = structuredClone(shortMana);
+  assert.throws(() => castSpell(shortMana, spell('bolt'), 'e0', 1), /Not enough mana/);
+  assert.deepEqual(shortMana, shortManaBefore, 'insufficient mana leaves battle state unchanged');
+
+  const dead = open();
+  const deadAlly = dead.stacks.find(item => item.id === 'ally');
+  deadAlly.dead = true;
+  deadAlly.count = 0;
+  deadAlly.top = 0;
+  const deadBefore = structuredClone(dead);
+  assert.throws(() => castSpell(dead, spell('resurrect'), 'ally', 1), /Dead stacks/);
+  assert.deepEqual(dead, deadBefore, 'dead stacks remain unsupported Resurrection targets');
+});
+
 test('a guard battle settles once, retreat keeps the guard, and skirmish stays isolated', () => {
   let state = act(fresh(), 'enter', 'ENTER_ADVENTURE');
   state = reachGuard(state);
@@ -133,19 +231,21 @@ test('a guard battle settles once, retreat keeps the guard, and skirmish stays i
   let retreated = act(fresh(), 'enter-2', 'ENTER_ADVENTURE');
   retreated = reachGuard(retreated);
   const retreatOrigin = retreated.adventure.pendingEncounter.origin;
-  const counts = retreated.army.map(item => item.count);
   retreated = act(retreated, 'begin-2', 'BEGIN_ENCOUNTER');
+  const counts = retreated.battle.stacks
+    .filter(item => item.side === 'p' && item.campaignId && item.count > 0)
+    .map(item => ({ id: item.campaignId, count: item.count }));
   retreated = act(retreated, 'fall-back', 'BATTLE', { action: 'retreat', confirm: true });
   const afterRetreat = act(retreated, 'settle-retreat', 'SETTLE_BATTLE');
   assert.deepEqual(afterRetreat.adventure.pendingEncounter.cell, retreated.adventure.adventureCell ?? afterRetreat.adventure.pendingEncounter.cell);
   assert.equal(afterRetreat.adventure.pendingEncounter.status.startsWith('UNRESOLVED'), true);
   assert.deepEqual([afterRetreat.adventure.x, afterRetreat.adventure.y], retreatOrigin);
   assert.equal(afterRetreat.resources.gold, 150);
-  assert.deepEqual(afterRetreat.army.map(item => item.count), counts);
+  assert.deepEqual(afterRetreat.army.map(({ id, count }) => ({ id, count })), counts);
   assert.throws(() => act(afterRetreat, 'walk', 'MOVE', { path: [[afterRetreat.adventure.x + 1, afterRetreat.adventure.y]] }), /Unresolved encounter/);
   const skirmishHost = fresh();
   const snapshot = structuredClone(skirmishHost);
-  let practice = act(skirmishHost, 'practice', 'START_SKIRMISH');
+  let practice = completeSkirmishDeployment(skirmishHost, data, 'practice');
   assert.equal(practice.battle.practice, 'skirmish');
   practice = act(practice, 'practice-auto', 'BATTLE', { action: 'auto' });
   practice = act(practice, 'practice-settle', 'SETTLE_BATTLE');
@@ -170,4 +270,11 @@ test('routeTo previews one legal path and refuses a site footprint', () => {
   assert.equal(route.cost, routeCost(map, start, route.cells).cost);
   const blocked = geometry.sites.find(site => site.id === 'town').rect;
   assert.throws(() => routeTo(map, start, [blocked[0], blocked[1]]), /Blocked terrain/);
+});
+
+test('routeTo minimizes movement cost instead of accepting an earlier diagonal detour', () => {
+  const map = adventureMap({ cols: 3, rows: 3, blocked: [], obstacles: [], bridges: [], sites: [], roads: [], anchors: {} });
+  const route = routeTo(map, [0, 1], [2, 1]);
+  assert.equal(route.cost, 2);
+  assert.deepEqual(route.cells, [[1, 1], [2, 1]]);
 });

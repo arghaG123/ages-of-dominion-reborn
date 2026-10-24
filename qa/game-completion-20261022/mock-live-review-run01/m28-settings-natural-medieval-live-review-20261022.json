@@ -1,0 +1,76 @@
+{
+  "reviewId": "M28-settings-natural-medieval-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/28-settings.jpg",
+    "sha256": "10454CF23925A875CDAE13D4C321A25632A9AA8DE7CEA7A8368913A087FEF641",
+    "dimensions": [
+      1376,
+      768
+    ]
+  },
+  "status": "PARTIAL_SETTINGS_CONTROLS_PRESENT_VISUAL_MATCH_OPEN",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "underlyingStory": "Chapter IV — The Divided Gate",
+    "naturalCampaignState": true,
+    "slot1Touched": false
+  },
+  "screen": {
+    "surface": "Settings opened from the visible game menu",
+    "viewportCss": [
+      1280,
+      720
+    ],
+    "musicVolume": 0.6,
+    "soundVolume": 0.8,
+    "graphicsQuality": "High",
+    "reducedMotion": false,
+    "language": "English",
+    "languageControlDisabled": true,
+    "localSave": "Observed Saved locally, then Saving locally, then Saved locally across consecutive reads",
+    "openSavesActionVisible": true,
+    "openSavesDestination": "Campaign title gate with Continue, New campaign, Save/Load, and Settings",
+    "backActionVisible": true,
+    "enableAudioActionVisible": true,
+    "networkPermissionNotice": "Local tones only. No account and no network permission."
+  },
+  "visualFindings": [
+    "The live settings form includes the same main categories as M28: music, sound, graphics, accessibility, language, local save, and Back.",
+    "M28 places the settings card over a bright medieval walled-city panorama, with the hero/progress card and labeled resource tray at upper left and Menu/Quests/Buildings at upper right. Live places a larger dark settings form over the Chapter IV gate confrontation, with compact unlabeled resource chips at upper right and the standard bottom-left navigation.",
+    "Both use a centered settings panel and show High graphics, Off reduced motion, English, and Back. The live form adds a visible Open saves action, local-save status, and Enable audio. The city backdrop and surrounding HUD hierarchy differ materially, and compact sizes are unreviewed; the overall M28 match remains PARTIAL."
+  ],
+  "evidence": {
+    "screenshotPath": "m28-settings-natural-medieval-1280x720.jpg",
+    "screenshotBytes": 97658,
+    "screenshotSha256": "3047A1A799A6711FCDFE10C013720DA4083C1E707080E983F718BAAED11E5B1C",
+    "screenshotObservedThroughApprovedCUA": true,
+    "accessibilityState": [
+      "Medieval Age · day 4 · storm",
+      "Settings",
+      "Music volume 0.6",
+      "Sound volume 0.8",
+      "Graphics quality High",
+      "Reduced motion off",
+      "Language English; only in-game language currently available",
+      "Local save: Saved locally; a later read briefly showed Saving locally before returning to Saved locally",
+      "Open saves",
+      "Local tones only. No account and no network permission.",
+      "Back",
+      "Enable audio"
+    ],
+    "settingsChangedDuringReview": false,
+    "sourceOrTestChanges": false,
+    "ownerAccepted": false
+  },
+  "open": [
+    "Restore the mock's medieval city panorama and surrounding hero/resource/navigation hierarchy around the settings panel.",
+    "Review Settings at exact 825 × 375 and 933 × 424 sizes, including scroll, focus, and Back routing.",
+    "Verify graphics and reduced-motion preference persistence without conflating local preferences with campaign save records.",
+    "Complete the remaining mock, journey, independent desktop, package, device, and owner acceptance gates."
+  ]
+}

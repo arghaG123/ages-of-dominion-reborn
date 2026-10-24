@@ -1,0 +1,352 @@
+[
+  {
+    "id": "OWN-01",
+    "originalRequirement": "Latest: plan and section previews before another AI codes",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 15,
+    "manualCoverage": "A01/A08; M01–M30",
+    "planDisposition": "SUFFICIENT_WITH_CURRENT_OVERRIDE",
+    "semanticAssessment": "No interim pre-code approval; independent desktop then later device/owner.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-02",
+    "originalRequirement": "Fresh code in a different folder",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 16,
+    "manualCoverage": "A01; section 2",
+    "planDisposition": "SUFFICIENT",
+    "semanticAssessment": "Independent source/read-only reference boundaries; no old executable imports.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-03",
+    "originalRequirement": "Reuse generated images and installation settings",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 17,
+    "manualCoverage": "R03–R07/A08",
+    "planDisposition": "SUFFICIENT_WITH_RESIDUAL",
+    "semanticAssessment": "Reuse and source lineage explicit; missing historical records remain UNKNOWN.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-04",
+    "originalRequirement": "AoE III Kingdom + Heroes VII Adventure/Tactical + tower defence",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 18,
+    "manualCoverage": "J18/A06",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "Whole connected campaign plus explicit shared consequences and lost-army recovery.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-05",
+    "originalRequirement": "Exact mock composition and controls",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 19,
+    "manualCoverage": "M01–M30/A02",
+    "planDisposition": "CORRECTED_LAYOUT_GAP",
+    "semanticAssessment": "Mock composition with actual state; concrete contain/HUD feasibility and focused-sheet fallback.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-06",
+    "originalRequirement": "Semi-realistic/realistic first impression",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 20,
+    "manualCoverage": "section 3.1/R04/A08",
+    "planDisposition": "SUFFICIENT_WITH_RESIDUAL",
+    "semanticAssessment": "Coherent realistic treatment; pixel quality and affordability still unverified.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-07",
+    "originalRequirement": "Real Day1 build footprints",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 21,
+    "manualCoverage": "R01/R02/J01–J02/A03",
+    "planDisposition": "CORRECTED_DENSE_PICKING_GAP",
+    "semanticAssessment": "Hall1+17 empty+Walls0; natural clearings and actual contextual target ownership.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-08",
+    "originalRequirement": "OWNER §§2–4: all eight ages across every channel",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 22,
+    "manualCoverage": "R03/R05/M02–M10/A06–A07",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "All eight age families; item-age distinct from campaign age; caps and derived stats.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-09",
+    "originalRequirement": "OWNER §5: continuous terrain and meaningful sites",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 23,
+    "manualCoverage": "R03/J05–J06/A06/A08",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "16×10 paths/sites, full physical traces and terrain/weather/day/rest.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-10",
+    "originalRequirement": "OWNER §6: true horse/rider gait",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 24,
+    "manualCoverage": "R07/M12/A07",
+    "planDisposition": "SUFFICIENT_WITH_RESIDUAL",
+    "semanticAssessment": "True mount gait/rider/vehicle requirements specified; sources/contact outcomes unverified.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-11",
+    "originalRequirement": "OWNER §7: classes and period appearance",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 25,
+    "manualCoverage": "R05/R06/M19/A04/A07",
+    "planDisposition": "CORRECTED_MECHANICS_LANGUAGE",
+    "semanticAssessment": "Eight classes/four kits/192 slot decisions; skill offers separate from points.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-12",
+    "originalRequirement": "OWNER §8: offscreen archer/range/melee/flying faults",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 26,
+    "manualCoverage": "R03/R07/J09/A06",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "Visible entry, range, role/telegraph/flight and density assertions.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-13",
+    "originalRequirement": "OWNER §9: grounded tactical warfare",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 27,
+    "manualCoverage": "M14–M16/J07–J08/A03/A06",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "Grounding/actions/targets, queue, RNG and retaliation cases.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-14",
+    "originalRequirement": "OWNER §10: quarry/enemy/gear/tower era mismatch",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 28,
+    "manualCoverage": "R05–R07/A07",
+    "planDisposition": "SUFFICIENT_WITH_RESIDUAL",
+    "semanticAssessment": "Era/role/gear/worn source matrices specified; no art completion claim.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-15",
+    "originalRequirement": "OWNER §§1/12: quality and return play",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 29,
+    "manualCoverage": "J14/J18/A06/A08",
+    "planDisposition": "CORRECTED_BALANCE_GAP",
+    "semanticAssessment": "Retain full progression and measure real timing/loss recovery; no guessed rebalance.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-16",
+    "originalRequirement": "OWNER §13: detailed handoff for another AI",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 30,
+    "manualCoverage": "A01/A08; single executor file",
+    "planDisposition": "CORRECTED_REFERENCE_GAP",
+    "semanticAssessment": "One consistent prompt, exact input paths and inherited section resolution.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-17",
+    "originalRequirement": "Latest: no repeated setup questions",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 31,
+    "manualCoverage": "section 2/A01",
+    "planDisposition": "SUFFICIENT",
+    "semanticAssessment": "Refresh installed facts; no stale absolute runtime path dependence or setup re-interview.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-18",
+    "originalRequirement": "Latest: exactly30 images per batch, one active only",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 32,
+    "manualCoverage": "section 2/A08",
+    "planDisposition": "SUFFICIENT_WITH_RESIDUAL",
+    "semanticAssessment": "Targeted extra20/absolute100/reserve once and serialized provider controls; live budget UNKNOWN.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "OWN-19",
+    "originalRequirement": "Latest: no Cloud/account/Play Store work",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 33,
+    "manualCoverage": "R10/A08",
+    "planDisposition": "SUFFICIENT_WITH_RESIDUAL",
+    "semanticAssessment": "Offline local runtime, zero permissions; provider dev tooling separate, native/device unverified.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-01",
+    "originalRequirement": "Economy",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 39,
+    "manualCoverage": "R01/R02/J02/J04/A06",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "Per-instance producers/unique facilities, chronology/caps/costs and offline report.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-02",
+    "originalRequirement": "Army",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 40,
+    "manualCoverage": "M24/J03/J13/A06–A07",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "24 role names/eight creatures/flyers/ranks/reinforcement/IDs.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-03",
+    "originalRequirement": "Equipment",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 41,
+    "manualCoverage": "R06/J11/A06–A07",
+    "planDisposition": "CORRECTED_CAPACITY_AMBIGUITY",
+    "semanticAssessment": "Six worn and functional slots; no invented bag cap; artifacts/quality/age assertions.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-04",
+    "originalRequirement": "Forge/Market",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 42,
+    "manualCoverage": "M22/J11/J15/A06",
+    "planDisposition": "SUFFICIENT_WITH_ADDED_ASSERTIONS",
+    "semanticAssessment": "Real Armory quality/cost/craft and Bronze buy/sell; Gold is price.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-05",
+    "originalRequirement": "Hero",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 43,
+    "manualCoverage": "M19–M21/J12/A04/A06",
+    "planDisposition": "CORRECTED_MECHANICS_LANGUAGE",
+    "semanticAssessment": "Points/offers and full-health target expectations corrected; all skills/spells/effects.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-06",
+    "originalRequirement": "Adventure",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 44,
+    "manualCoverage": "M11–M13/J05–J06/A06",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "All site/day/rest/terrain/weather transitions, fixed offers/fog and guard return.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-07",
+    "originalRequirement": "Tactical",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 45,
+    "manualCoverage": "M14–M16/J07–J08/A03/A06",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "Full action/queue/flight/effect/RNG/damage/retaliation scope.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-08",
+    "originalRequirement": "Defence",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 46,
+    "manualCoverage": "M17–M18/J09–J10/A06–A07",
+    "planDisposition": "CORRECTED_TERMINAL_ROUTE",
+    "semanticAssessment": "Four tower/five attacker behavior and natural Endless clear-to-defeat-to-settlement route.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-09",
+    "originalRequirement": "Story/objectives",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 47,
+    "manualCoverage": "M25–M26/J14/A06",
+    "planDisposition": "SUFFICIENT_WITH_ADDED_ASSERTIONS",
+    "semanticAssessment": "Seven chapters plus Future, six rivals/quests/eight milestones and branch effects.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-10",
+    "originalRequirement": "Settings/audio",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 48,
+    "manualCoverage": "M28/J17/A03/A08",
+    "planDisposition": "SUFFICIENT_WITH_RESIDUAL",
+    "semanticAssessment": "Music/SFX/local media/motion/help/privacy; heard/native/device evidence separate.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-11",
+    "originalRequirement": "Tutorial",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 49,
+    "manualCoverage": "M27/J01/J17/A03",
+    "planDisposition": "SUFFICIENT",
+    "semanticAssessment": "Anchored correct-command tutorial with cancel/skip/review/reload.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-12",
+    "originalRequirement": "Saves",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 50,
+    "manualCoverage": "R09/J16/A05",
+    "planDisposition": "CORRECTED_FAILURE_AND_RACE_GAPS",
+    "semanticAssessment": "Atomicity vs acknowledgement, epoch/CAS, all-key migration and adversarial schedules.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-13",
+    "originalRequirement": "Shared progression",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 51,
+    "manualCoverage": "J18/A05–A06",
+    "planDisposition": "CORRECTED_ASSERTION_GAP",
+    "semanticAssessment": "Shared campaign IDs/costs/rewards/mana/casualties and storage replacement ordering.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-14",
+    "originalRequirement": "Native",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 52,
+    "manualCoverage": "R10/A08",
+    "planDisposition": "SUFFICIENT_WITH_RESIDUAL",
+    "semanticAssessment": "Exact final binary/native manifest/preview identity/device matrix, no early device action.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-15",
+    "originalRequirement": "Mobile/performance",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 53,
+    "manualCoverage": "section 3.2/R10/A02–A03/A08",
+    "planDisposition": "CORRECTED_LAYOUT_GAP",
+    "semanticAssessment": "Four landscape sizes, dense selection/insets/readability and measured performance.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  },
+  {
+    "id": "SYS-16",
+    "originalRequirement": "War options",
+    "originalSource": "docs/plan/REQUIREMENTS-TRACEABILITY.md",
+    "sourceLine": 54,
+    "manualCoverage": "J10/A06–A07",
+    "planDisposition": "CORRECTED_TERMINAL_ROUTE",
+    "semanticAssessment": "All five options; deterministic Challenge/isolation; Endless not a ten-wave victory.",
+    "implementationAcceptance": "NOT_TESTED_BY_PLAN_AUDIT"
+  }
+]

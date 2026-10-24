@@ -1,0 +1,210 @@
+{
+  "head": "a004a54a08ae67161468debb41c1c609275e39a6",
+  "dirty": [
+    " M CURRENT-STATUS.md",
+    " M android/app/src/main/AndroidManifest.xml",
+    " M android/app/src/main/java/com/agesofdominion/game/MainActivity.java",
+    " M android/gradle/wrapper/gradle-wrapper.jar",
+    " M android/gradle/wrapper/gradle-wrapper.properties",
+    " M android/gradlew",
+    " M android/gradlew.bat",
+    " M docs/BUILD-PROGRESS.md",
+    " M docs/SESSION-HANDOFF.md",
+    " M qa/code-image-complete-20261011/earned-journey.json",
+    " M qa/code-image-complete-20261011/package-check.json",
+    " M qa/code-image-repair-20261011/layout.json",
+    " M qa/game-completion-20261013/browser-journeys.json",
+    " M qa/game-completion-20261013/browser-journeys.mjs",
+    " M qa/recovery-executor-20261003/dist-closure.json",
+    " M qa/test-runner-safeguards-20261004/t1_race_mutex.json",
+    " M qa/test-runner-safeguards-20261004/t1_race_mutex.json.excl",
+    " M qa/test-runner-safeguards-20261004/t4_mutex.json",
+    " M qa/test-runner-safeguards-20261004/t4_mutex.json.excl",
+    " M qa/test-runner-safeguards-20261004/t5_pack/write_ahead_request.json",
+    " M qa/test-runner-safeguards-20261004/t5_pack/write_ahead_subattempt_1.json",
+    " M qa/test-runner-safeguards-20261004/t7_pack/response.json",
+    " M qa/test-runner-safeguards-20261004/t7_pack/write_ahead_request.json",
+    " M qa/test-runner-safeguards-20261004/t7_unbound/write_ahead_request.json",
+    " M qa/test-runner-safeguards-20261004/t7_unbound/write_ahead_subattempt_1.json",
+    " M qa/test-runner-safeguards-20261004/t7_unbound/write_ahead_subattempt_1_no_image.json",
+    " M qa/test-runner-safeguards-20261004/t7_unbound_pacing.json",
+    " M qa/test-runner-safeguards-20261004/t8_pacing.json",
+    " M qa/test-runner-safeguards-20261004/test_results.json",
+    " M src/client/actor.js",
+    " M src/client/hero-room.js",
+    " M src/client/main.js",
+    " M tests/test_runner_safeguards_offline.py",
+    "?? docs/PHYSICAL-DEVICE-VERIFICATION-CHECKLIST.md",
+    "?? qa/game-completion-20261013/combat-quest-milestones.json",
+    "?? qa/independent-verification-20261016/",
+    "?? qa/physical-device-audit-20261016/",
+    "?? qa/test-runner-safeguards-20261004/t7_pack/request_body.json",
+    "?? scripts/verify-combat-quest-milestones.mjs"
+  ],
+  "files": {
+    "src/client/actor.js": {
+      "bytes": 19664,
+      "sha256": "bcf46221076882a90a06d9f2418878481c7387d45519b842e206200ff45ecf8b"
+    },
+    "src/client/anatomy.js": {
+      "bytes": 5978,
+      "sha256": "0dcb0d3fef002a3cf35ae347c76cb7f3a802e1e933b6aef5da820f4579ea51ae"
+    },
+    "src/client/audio.js": {
+      "bytes": 2997,
+      "sha256": "bad66265d4f89d33ce35bafa4adce49cd1318d5d970b6302839923b4bf74766b"
+    },
+    "src/client/choices.js": {
+      "bytes": 744,
+      "sha256": "377fe041cd02add23b9237f701f5eb67a2d398ba712c6e2d77c545b5dda5a611"
+    },
+    "src/client/consumer-adapter.js": {
+      "bytes": 15187,
+      "sha256": "e469d6b2fb69647a644df27e006e38f600637595f90c9fa983f7f3e7b8d17309"
+    },
+    "src/client/game.css": {
+      "bytes": 21066,
+      "sha256": "f0a1a28273eee0ba058011a7eb50114f7bfa33f2b45740a44556748c126e8473"
+    },
+    "src/client/hero-room.js": {
+      "bytes": 7219,
+      "sha256": "ac5eb52cbe233ce93081a9a02061ce9590d130db9e9890b4f9344a978498ac28"
+    },
+    "src/client/main.js": {
+      "bytes": 115590,
+      "sha256": "4f1067d4b3d2cbb73ba5367705fef85f554217101095245619bd05054cdcc939"
+    },
+    "src/client/motion.js": {
+      "bytes": 2041,
+      "sha256": "3a14adb20828f9cec9ddbff78524c4815a013aa5a438043e0534e93173b0ed50"
+    },
+    "src/client/portraits.js": {
+      "bytes": 620,
+      "sha256": "5ad964df6292887c6442363acf174a42ec844f25fcc82b3d459b69e7dfcded70"
+    },
+    "src/client/presentation.js": {
+      "bytes": 2977,
+      "sha256": "8498314137ea88e0b5f81d31fa89f09330c85ff75b47c77f8460acf428ba42c3"
+    },
+    "src/client/projection.js": {
+      "bytes": 3436,
+      "sha256": "b9f819d8c6bf507737f977773b4246e279430f5ed55dcc8f669dc8c7181a82da"
+    },
+    "src/client/rig.js": {
+      "bytes": 3870,
+      "sha256": "fd8900bc79d1cf5d2c9513e800e6e89c800b2e017cd987478e8be4b34337be79"
+    },
+    "src/client/tactical-ui.js": {
+      "bytes": 6433,
+      "sha256": "82a39be3fe2a742a2fd602d0b838da611eed36c6dd6fd7e5f980258041693080"
+    },
+    "src/client/visible-size.js": {
+      "bytes": 1523,
+      "sha256": "7ec82342aa2944cb7e5e8680b6145bd4ff4f9777192f848c30e0433e13739b85"
+    },
+    "src/core/battle.js": {
+      "bytes": 33367,
+      "sha256": "bae43ddf5f4033afba015f046a72fca91f9b9f459eb6e21d63642af53298be5b"
+    },
+    "src/core/campaign.js": {
+      "bytes": 47270,
+      "sha256": "ef45d3069c0a4e6ea2216cebc4b821c554de16e84c16d24af8a0d0c3be4e09e5"
+    },
+    "src/core/challenge.js": {
+      "bytes": 4704,
+      "sha256": "701cb69b664615d34401702004a7050e29d5d8c25d79154a1c938ee5f9551bda"
+    },
+    "src/core/defense.js": {
+      "bytes": 36093,
+      "sha256": "86467b8992a2791860d1e2a69a2ab18bdbfe109756caf2e348d84bba469e3adc"
+    },
+    "src/core/mechanics.js": {
+      "bytes": 14668,
+      "sha256": "154dbc81edba10dbac2e8b18b69f170e58d0a1389c91b66a3367704cea95ea78"
+    },
+    "src/core/navigation.js": {
+      "bytes": 4091,
+      "sha256": "9aa736a02b59a6d337f94a8c800aa416f3bd68d39c27bd837ac881da4f854719"
+    },
+    "src/core/rng.js": {
+      "bytes": 680,
+      "sha256": "d60f92defd278a5a980000f19162183adc64bb375eed5c31fe7319efb9d780de"
+    },
+    "src/core/rules.js": {
+      "bytes": 5613,
+      "sha256": "879eb10ddf526383579d413d3e40968c857697559355c6a69bc73bdc2d7d243e"
+    },
+    "src/core/save.js": {
+      "bytes": 5510,
+      "sha256": "3afd8cb73cdafc06027cacc8f61f2288bbd8355d9be71a72fe1aa6cc1157b160"
+    },
+    "src/data/actor-atlas.json": {
+      "bytes": 18775,
+      "sha256": "ddd649d262cf27f4680e35c5b5143245aef070d7ebe50583d893c1f4b3fa3f38"
+    },
+    "src/data/age-buildings.json": {
+      "bytes": 38224,
+      "sha256": "9cd0127ecb22efe40fad0f0bd86342d1737b726a7cec50f12f3b3a69323d7d61"
+    },
+    "src/data/anatomy-binding-v1.json": {
+      "bytes": 11701,
+      "sha256": "657e6329eccae1879e9dc50840ba3337c8ebaff465172b2c7172a833065cc998"
+    },
+    "src/data/building-pad-fit-v1.json": {
+      "bytes": 980,
+      "sha256": "f14a58b8b7bfa3fa0d50e1b6af07f0a7dbdd13b193a021899ca3ac8817213d5b"
+    },
+    "src/data/consumer-catalog-20261007.json": {
+      "bytes": 668602,
+      "sha256": "932c15491ebe7b8980b0a3dcf9a828bfd8c39008a0d7119baeecf073ea08b143"
+    },
+    "src/data/gear-icons-20261007.json": {
+      "bytes": 11146,
+      "sha256": "ac1925934ca99436957ed87321d44d334ae42d78d9173625a0ba64f4d5b91376"
+    },
+    "src/data/hero-bodies-20261011.json": {
+      "bytes": 20306,
+      "sha256": "85360732c62b18b93c86315e67748af8e015d55fdcc16e72a015099e1ffde28c"
+    },
+    "src/data/implementation-contract.json": {
+      "bytes": 23160,
+      "sha256": "43553411b583a6df5fdcf620d2b3efecd82a0cd6f783895165a5910e577b0fcd"
+    },
+    "src/data/mode-scenes.json": {
+      "bytes": 2230,
+      "sha256": "8d7cfb3c597f551d8712bc44d909597e125a0831ec434add5d5effe85eafe11a"
+    },
+    "src/data/mount-review-v1.json": {
+      "bytes": 775,
+      "sha256": "7c80e5a896075e824d5bfe35ec64b5ac7803e1f6337a8682cb6d773602cb3456"
+    },
+    "src/data/plate-catalog.json": {
+      "bytes": 44208,
+      "sha256": "dc78d72ac9528d565e2da4ca314b42be03de8230b5f3b96a9d2c60f8ea71decd"
+    },
+    "src/data/plate-overrides-20261007.json": {
+      "bytes": 58643,
+      "sha256": "90af3f54b2eed2b3db8388ddccce4161761cd0ca369779afec5ccfb8d8a57717"
+    },
+    "src/data/portrait-cards.json": {
+      "bytes": 2817,
+      "sha256": "c605b5d08bfe030579ced33a9aaf1c8583b4183fbd2337ff2e45ea89f08a99fb"
+    },
+    "src/data/reference-data.json": {
+      "bytes": 29462,
+      "sha256": "44f1a5081a3364a0fdbf28c8639172a4bfe69fd5ab6820df10156d5eb275744c"
+    },
+    "src/data/reviewed-source-selection.json": {
+      "bytes": 12887,
+      "sha256": "ad51269364a09d0d3ff9083177e8863e35a29c58d97d1e013989bd90f7e582ba"
+    },
+    "src/data/static-mounts-v1.json": {
+      "bytes": 1399,
+      "sha256": "df03116b2eada965defb46854ddb916fa2701b2412b7fb9ea404748f6298d1f5"
+    },
+    "src/data/stone-scene.json": {
+      "bytes": 835,
+      "sha256": "32e4306459fe280f418f60ca2e4cb1bb5341f0aff7bc6a4d343dce9438e33922"
+    }
+  }
+}

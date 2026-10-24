@@ -208,6 +208,10 @@ function offerSkills(state) {
   return { level: state.hero.level, choices, declined: false };
 }
 
+export function createSkillOffer(state) {
+  return offerSkills(state);
+}
+
 export function grantHeroXp(state, data, rewardXp, hallLevel) {
   requireRange('reward', rewardXp, 0, 1000000, false);
   requireRange('hall', hallLevel, 0, 20);

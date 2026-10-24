@@ -1,0 +1,40 @@
+{
+  "reviewId": "M27-tutorial-target-selection-repair-20261023",
+  "date": "2026-10-23",
+  "status": "OPEN_MATCHED_STONE_TUTORIAL_VISUAL_AND_NATURAL_FLOW_UNVERIFIED",
+  "mock": "M27",
+  "reference": {
+    "sha256": "2fe0a3334873b14a6577c2a625deed78f139e852a0d94ce873abc9d1121d591f",
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/27-tutorial.jpg",
+    "dimensions": [
+      1376,
+      768
+    ]
+  },
+  "repair": {
+    "files": [
+      "src/client/kingdom-view.js",
+      "src/client/main.js",
+      "src/client/game.css"
+    ],
+    "summary": "Assign one truly empty, job-free non-town plot as the target for each of tutorial build steps 0-3; brighten that single target with a gold translucent fill and glow."
+  },
+  "verification": {
+    "lineEndings": "main.js and game.css CRLF preserved; kingdom-view.js LF retained",
+    "result": "PASS 4/4 focused tests; combined focused M12/M13/M18/M27 run PASS 12/12",
+    "command": "node --test tests/m27-tutorial-target.test.mjs",
+    "syntax": "node --check src/client/main.js and src/client/kingdom-view.js passed",
+    "sourceSha256": {
+      "tests/m27-tutorial-target.test.mjs": "74525ee73b64c2a29535f014076b776616b8ad9e1790e5b107a41cfac1e8caff",
+      "src/client/kingdom-view.js": "6c68db3435f0db62d060e239b31750a835670457376f74295c1c27f2f6b4c67c",
+      "src/client/main.js": "a784a3bebc2f455023bf2402ff7e2779159ac42da38ea171ca94fec035e0fd7a",
+      "src/client/game.css": "74bc6b6dd9804408114019463a27c8bbdb71a7296fce2345035644206288143b"
+    }
+  },
+  "limitation": "The approved browser route remained in portrait layout. The required matched natural Stone-age Build Farm step, exact screenshot, legal build and save/reload progression could not be reviewed. No campaign action or save was invoked.",
+  "next": [
+    "Review M27 in a fresh natural Stone-age Build Farm step and retain an exact landscape screenshot plus accessible-state record.",
+    "Verify target anchoring, affordance, legal construction, tutorial step advancement, skip/review and save/reload without touching preserved slot 1 or the active slot-2 campaign.",
+    "Complete independent desktop, package, device and owner acceptance gates."
+  ]
+}

@@ -1,0 +1,982 @@
+TAP version 13
+# Subtest: pad-fit building and actor selection bindings match on-disk derivatives
+ok 1 - pad-fit building and actor selection bindings match on-disk derivatives
+  ---
+  duration_ms: 40.1431
+  type: 'test'
+  ...
+# Subtest: background stops the motif timer and resume keeps one timer
+ok 2 - background stops the motif timer and resume keeps one timer
+  ---
+  duration_ms: 1380.6482
+  type: 'test'
+  ...
+# Subtest: music and sound gains are independent, and focus does not resume a hidden page
+ok 3 - music and sound gains are independent, and focus does not resume a hidden page
+  ---
+  duration_ms: 456.36
+  type: 'test'
+  ...
+# Subtest: positive morale grants one unchainable bonus action and ignores excluded actions
+ok 4 - positive morale grants one unchainable bonus action and ignores excluded actions
+  ---
+  duration_ms: 20.8293
+  type: 'test'
+  ...
+# Subtest: morale does not fire for a dead actor, a killing blow, a bonus action, or a spell
+ok 5 - morale does not fire for a dead actor, a killing blow, a bonus action, or a spell
+  ---
+  duration_ms: 4.6194
+  type: 'test'
+  ...
+# Subtest: auto and manual morale use the same roll, and reload does not grant it twice
+ok 6 - auto and manual morale use the same roll, and reload does not grant it twice
+  ---
+  duration_ms: 24.3922
+  type: 'test'
+  ...
+# Subtest: hero experience uses the completed Hero Hall, and resurrection restores a living stack once
+ok 7 - hero experience uses the completed Hero Hall, and resurrection restores a living stack once
+  ---
+  duration_ms: 22.1901
+  type: 'test'
+  ...
+# Subtest: defense experience credits one lethal blow and the hero blast spends mana without experience
+ok 8 - defense experience credits one lethal blow and the hero blast spends mana without experience
+  ---
+  duration_ms: 12.1312
+  type: 'test'
+  ...
+# Subtest: dwelling history keeps one offer per type and blocks a second claim
+ok 9 - dwelling history keeps one offer per type and blocks a second claim
+  ---
+  duration_ms: 49.76
+  type: 'test'
+  ...
+# Subtest: battle morale snapshot subtracts storm and keeps the Ancient Banner
+ok 10 - battle morale snapshot subtracts storm and keeps the Ancient Banner
+  ---
+  duration_ms: 0.6241
+  type: 'test'
+  ...
+# Subtest: the preview port is selected without stopping another listener
+ok 11 - the preview port is selected without stopping another listener
+  ---
+  duration_ms: 3.2248
+  type: 'test'
+  ...
+# Subtest: an occupied selected port reports the port and leaves the listener running
+ok 12 - an occupied selected port reports the port and leaves the listener running
+  ---
+  duration_ms: 812.7889
+  type: 'test'
+  ...
+# Subtest: npm dev reports a selected port instead of hopping to Vite
+ok 13 - npm dev reports a selected port instead of hopping to Vite
+  ---
+  duration_ms: 1.014
+  type: 'test'
+  ...
+# Subtest: the v4 horse is a single-pose review and the floored v3 horse stays withheld
+ok 14 - the v4 horse is a single-pose review and the floored v3 horse stays withheld
+  ---
+  duration_ms: 15.6928
+  type: 'test'
+  ...
+# Subtest: the ancient knight crop stays pending and the medieval card stays gated
+ok 15 - the ancient knight crop stays pending and the medieval card stays gated
+  ---
+  duration_ms: 2.9365
+  type: 'test'
+  ...
+# Subtest: reviewed substitution plates keep their measured hashes and roles
+ok 16 - reviewed substitution plates keep their measured hashes and roles
+  ---
+  duration_ms: 8.5426
+  type: 'test'
+  ...
+# Subtest: the ranger binding uses corrected roles and keeps the active kingdom contract
+ok 17 - the ranger binding uses corrected roles and keeps the active kingdom contract
+  ---
+  duration_ms: 2.2898
+  type: 'test'
+  ...
+# Subtest: kept v4 plates match their files and rejected slabs stay unbound
+ok 18 - kept v4 plates match their files and rejected slabs stay unbound
+  ---
+  duration_ms: 102.0021
+  type: 'test'
+  ...
+# Subtest: painted overlap is remeasured from the part pixels
+ok 19 - painted overlap is remeasured from the part pixels
+  ---
+  duration_ms: 1339.6566
+  type: 'test'
+  ...
+# Subtest: connected starter journey: build/recruit/adventure/defense/story/save without fixture grants
+ok 20 - connected starter journey: build/recruit/adventure/defense/story/save without fixture grants
+  ---
+  duration_ms: 65.3063
+  type: 'test'
+  ...
+# Subtest: negative actions: duplicate settle and skirmish isolation stay blocked
+ok 21 - negative actions: duplicate settle and skirmish isolation stay blocked
+  ---
+  duration_ms: 15.3191
+  type: 'test'
+  ...
+# Subtest: J01 Fresh start: class choice, sparse Kingdom, correct starter plots and contract resources
+ok 22 - J01 Fresh start: class choice, sparse Kingdom, correct starter plots and contract resources
+  ---
+  duration_ms: 37.9505
+  type: 'test'
+  ...
+# Subtest: J02 Build/upgrade: empty plot preview, cancel unchanged, build completion, upgrade, reload
+ok 23 - J02 Build/upgrade: empty plot preview, cancel unchanged, build completion, upgrade, reload
+  ---
+  duration_ms: 32.5243
+  type: 'test'
+  ...
+# Subtest: J03 Recruitment: barracks unlock, recruit stack, capacity feedback, army roster persistence
+ok 24 - J03 Recruitment: barracks unlock, recruit stack, capacity feedback, army roster persistence
+  ---
+  duration_ms: 3.8816
+  type: 'test'
+  ...
+# Subtest: J04 Age progression: Hall payment gate, next-age world transformation, retained identities, reload
+ok 25 - J04 Age progression: Hall payment gate, next-age world transformation, retained identities, reload
+  ---
+  duration_ms: 5.2528
+  type: 'test'
+  ...
+# Subtest: J05 Adventure travel: leave town, route preview/cancel, legal move, fog uncover, reload
+ok 26 - J05 Adventure travel: leave town, route preview/cancel, legal move, fog uncover, reload
+  ---
+  duration_ms: 4.1278
+  type: 'test'
+  ...
+# Subtest: J06 Site/guard: encounter initiation, battle state entry, persistence without reroll
+ok 27 - J06 Site/guard: encounter initiation, battle state entry, persistence without reroll
+  ---
+  duration_ms: 5.0973
+  type: 'test'
+  ...
+# Subtest: J07 Tactical interaction: unit selection, initiative queue, legal actions, battle log
+ok 28 - J07 Tactical interaction: unit selection, initiative queue, legal actions, battle log
+  ---
+  duration_ms: 15.2177
+  type: 'test'
+  ...
+# Subtest: J08 Retreat/Auto/results: retreat confirmation, auto resolution, settlement once-only
+ok 29 - J08 Retreat/Auto/results: retreat confirmation, auto resolution, settlement once-only
+  ---
+  duration_ms: 10.3783
+  type: 'test'
+  ...
+# Subtest: J09 Defense: preparation, deployment, ticking, pause control, save/reload
+ok 30 - J09 Defense: preparation, deployment, ticking, pause control, save/reload
+  ---
+  duration_ms: 17.1457
+  type: 'test'
+  ...
+# Subtest: J10 War modes: Siege, Duel, Endless, Skirmish, Challenge practice isolation and seed reproducibility
+ok 31 - J10 War modes: Siege, Duel, Endless, Skirmish, Challenge practice isolation and seed reproducibility
+  ---
+  duration_ms: 18.9289
+  type: 'test'
+  ...
+# Subtest: J11 Craft/equip: Armory forge, quality/cost, equip/unequip, stat changes, 6 slots coverage
+ok 32 - J11 Craft/equip: Armory forge, quality/cost, equip/unequip, stat changes, 6 slots coverage
+  ---
+  duration_ms: 9.5079
+  type: 'test'
+  ...
+# Subtest: J12 Hero progression: spend point, choose skill, wisdom level and resurrection eligibility
+ok 33 - J12 Hero progression: spend point, choose skill, wisdom level and resurrection eligibility
+  ---
+  duration_ms: 1.4579
+  type: 'test'
+  ...
+# Subtest: J13 Creatures/roster: dwelling offer, cancel keeps terms, claim recruits creature stack to army
+ok 34 - J13 Creatures/roster: dwelling offer, cancel keeps terms, claim recruits creature stack to army
+  ---
+  duration_ms: 3.1978
+  type: 'test'
+  ...
+# Subtest: J14 Story/quests: rival choice, story milestone, quest claim once-only, future conclusion
+ok 35 - J14 Story/quests: rival choice, story milestone, quest claim once-only, future conclusion
+  ---
+  duration_ms: 2.7541
+  type: 'test'
+  ...
+# Subtest: J15 Market: locked in Stone, unlocked in Bronze, insufficient balance, legal buy/sell deltas
+ok 36 - J15 Market: locked in Stone, unlocked in Bronze, insufficient balance, legal buy/sell deltas
+  ---
+  duration_ms: 2.7188
+  type: 'test'
+  ...
+# Subtest: J16 Recovery: multi-slot store/load, encode/decode export, corrupt file protection
+ok 37 - J16 Recovery: multi-slot store/load, encode/decode export, corrupt file protection
+  ---
+  duration_ms: 1.0249
+  type: 'test'
+  ...
+# Subtest: J17 Settings/tutorial: independent music/sfx, reduced motion, tutorial skip/review
+ok 38 - J17 Settings/tutorial: independent music/sfx, reduced motion, tutorial skip/review
+  ---
+  duration_ms: 1.5292
+  type: 'test'
+  ...
+# Subtest: J18 Whole-game continuity: build -> recruit -> craft -> travel -> fight -> return -> defend -> save/reload
+ok 39 - J18 Whole-game continuity: build -> recruit -> craft -> travel -> fight -> return -> defend -> save/reload
+  ---
+  duration_ms: 9.4678
+  type: 'test'
+  ...
+# Subtest: dimension and contact normalizers reject malformed values and accept both shapes
+ok 40 - dimension and contact normalizers reject malformed values and accept both shapes
+  ---
+  duration_ms: 8.1381
+  type: 'test'
+  ...
+# Subtest: a missing transform is not replaced with an identity matrix
+ok 41 - a missing transform is not replaced with an identity matrix
+  ---
+  duration_ms: 1.9282
+  type: 'test'
+  ...
+# Subtest: outline derivatives and support screens are not promoted
+ok 42 - outline derivatives and support screens are not promoted
+  ---
+  duration_ms: 0.8749
+  type: 'test'
+  ...
+# Subtest: a no-output joint row is metadata and a failed link stays failed
+ok 43 - a no-output joint row is metadata and a failed link stays failed
+  ---
+  duration_ms: 0.4448
+  type: 'test'
+  ...
+# Subtest: source contacts outside the crop are mapped by the recorded affine
+ok 44 - source contacts outside the crop are mapped by the recorded affine
+  ---
+  duration_ms: 0.7227
+  type: 'test'
+  ...
+# Subtest: retreat focus returns to the trigger after cancel and stays in the dialog while open
+ok 45 - retreat focus returns to the trigger after cancel and stays in the dialog while open
+  ---
+  duration_ms: 0.37
+  type: 'test'
+  ...
+# Subtest: visible size uses the lower of the CSS cap and the world cap on both sides
+ok 46 - visible size uses the lower of the CSS cap and the world cap on both sides
+  ---
+  duration_ms: 0.7194
+  type: 'test'
+  ...
+# Subtest: starter towers fire inside their range and an undeployed siege still loses
+ok 47 - starter towers fire inside their range and an undeployed siege still loses
+  ---
+  duration_ms: 262.3327
+  type: 'test'
+  ...
+# Subtest: grouped archers do not freeze outside a dead tower
+ok 48 - grouped archers do not freeze outside a dead tower
+  ---
+  duration_ms: 4.77
+  type: 'test'
+  ...
+# Subtest: a workshop and a splash tower make the starter siege winnable
+ok 49 - a workshop and a splash tower make the starter siege winnable
+  ---
+  duration_ms: 454.6563
+  type: 'test'
+  ...
+# Subtest: internal defense steps do not append a transaction for every tick
+ok 50 - internal defense steps do not append a transaction for every tick
+  ---
+  duration_ms: 75.3401
+  type: 'test'
+  ...
+# Subtest: domain validation rejects the probed illegal saves
+ok 51 - domain validation rejects the probed illegal saves
+  ---
+  duration_ms: 8.4154
+  type: 'test'
+  ...
+# Subtest: returning and reloading keep the remaining movement until End Day
+ok 52 - returning and reloading keep the remaining movement until End Day
+  ---
+  duration_ms: 21.1575
+  type: 'test'
+  ...
+# Subtest: illegal routes and unresolved guards do not spend movement or reroll
+ok 53 - illegal routes and unresolved guards do not spend movement or reroll
+  ---
+  duration_ms: 9.8146
+  type: 'test'
+  ...
+# Subtest: every class can be chosen before the hero is committed
+ok 54 - every class can be chosen before the hero is committed
+  ---
+  duration_ms: 19.6974
+  type: 'test'
+  ...
+# Subtest: earned scope reaches the legal campaign gates
+ok 55 - earned scope reaches the legal campaign gates
+  ---
+  duration_ms: 5201.663
+  type: 'test'
+  ...
+# Subtest: positioned saves reject illegal health, speed, cells and queue ids before damage
+ok 56 - positioned saves reject illegal health, speed, cells and queue ids before damage
+  ---
+  duration_ms: 6.3398
+  type: 'test'
+  ...
+# Subtest: documented spells, wait and a crossing obey the same predicates
+ok 57 - documented spells, wait and a crossing obey the same predicates
+  ---
+  duration_ms: 4.3451
+  type: 'test'
+  ...
+# Subtest: a guard battle settles once, retreat keeps the guard, and skirmish stays isolated
+ok 58 - a guard battle settles once, retreat keeps the guard, and skirmish stays isolated
+  ---
+  duration_ms: 51.2063
+  type: 'test'
+  ...
+# Subtest: routeTo previews one legal path and refuses a site footprint
+ok 59 - routeTo previews one legal path and refuses a site footprint
+  ---
+  duration_ms: 0.9113
+  type: 'test'
+  ...
+# Subtest: frozen adoption: eight-age extensions and all twenty baseline tables
+ok 60 - frozen adoption: eight-age extensions and all twenty baseline tables
+  ---
+  duration_ms: 15.5995
+  type: 'test'
+  ...
+# Subtest: sparse18sites, real stored starting ownership, zero built production
+ok 61 - sparse18sites, real stored starting ownership, zero built production
+  ---
+  duration_ms: 4.538
+  type: 'test'
+  ...
+# Subtest: build replay spends once, conflicting transaction fails, prior state remains unchanged
+ok 62 - build replay spends once, conflicting transaction fails, prior state remains unchanged
+  ---
+  duration_ms: 6.2966
+  type: 'test'
+  ...
+# Subtest: unique facilities rejected before mutation, every producer instance independent
+ok 63 - unique facilities rejected before mutation, every producer instance independent
+  ---
+  duration_ms: 3.2592
+  type: 'test'
+  ...
+# Subtest: wrong Hall/Wall destination and unaffordable upgrade cannot spend
+ok 64 - wrong Hall/Wall destination and unaffordable upgrade cannot spend
+  ---
+  duration_ms: 1.8487
+  type: 'test'
+  ...
+# Subtest: chronological offline construction produces only after completion, capped report cannot duplicate
+ok 65 - chronological offline construction produces only after completion, capped report cannot duplicate
+  ---
+  duration_ms: 1.6325
+  type: 'test'
+  ...
+# Subtest: resume report states the same credit once and records the screen outside the campaign
+ok 66 - resume report states the same credit once and records the screen outside the campaign
+  ---
+  duration_ms: 4.9845
+  type: 'test'
+  ...
+# Subtest: backward clock does not award income or finish jobs
+ok 67 - backward clock does not award income or finish jobs
+  ---
+  duration_ms: 2.2313
+  type: 'test'
+  ...
+# Subtest: initial tutorial budget builds four facilities and cost levelgrowth follows oracle
+ok 68 - initial tutorial budget builds four facilities and cost levelgrowth follows oracle
+  ---
+  duration_ms: 2.7371
+  type: 'test'
+  ...
+# Subtest: save distinguishes absent from corruption and offers last valid backup
+ok 69 - save distinguishes absent from corruption and offers last valid backup
+  ---
+  duration_ms: 10.4451
+  type: 'test'
+  ...
+# Subtest: quota failure during promotion leaves valid live and backup recoverable; stale writes rejected
+ok 70 - quota failure during promotion leaves valid live and backup recoverable; stale writes rejected
+  ---
+  duration_ms: 2.8641
+  type: 'test'
+  ...
+# Subtest: save checksum/domain rejects tampering, invalidresources, duplicateIDs and unsupported schemas
+ok 71 - save checksum/domain rejects tampering, invalidresources, duplicateIDs and unsupported schemas
+  ---
+  duration_ms: 1.5437
+  type: 'test'
+  ...
+# Subtest: all world coordinates round-trip and one camera fit at all landscape targets
+ok 72 - all world coordinates round-trip and one camera fit at all landscape targets
+  ---
+  duration_ms: 1.3477
+  type: 'test'
+  ...
+# Subtest: a fresh campaign shows open ground and one tutorial outline
+ok 73 - a fresh campaign shows open ground and one tutorial outline
+  ---
+  duration_ms: 9.5056
+  type: 'test'
+  ...
+# Subtest: empty-site footprints on every age ground match the surrounding earth
+ok 74 - empty-site footprints on every age ground match the surrounding earth
+  ---
+  duration_ms: 3045.7557
+  type: 'test'
+  ...
+# Subtest: wall states are same-kind paintings and the stretched course is not used
+ok 75 - wall states are same-kind paintings and the stretched course is not used
+  ---
+  duration_ms: 41.0955
+  type: 'test'
+  ...
+# Subtest: aging to Medieval then building the wall paints that age, including the taller upgrade
+ok 76 - aging to Medieval then building the wall paints that age, including the taller upgrade
+  ---
+  duration_ms: 2.7207
+  type: 'test'
+  ...
+# Subtest: medieval through future walls are textured paintings and the future scaffold is not timber
+ok 77 - medieval through future walls are textured paintings and the future scaffold is not timber
+  ---
+  duration_ms: 1673.1776
+  type: 'test'
+  ...
+# Subtest: food, wood, stone, gold, Menu and Save stay in separate bounds
+ok 78 - food, wood, stone, gold, Menu and Save stay in separate bounds
+  ---
+  duration_ms: 1.5719
+  type: 'test'
+  ...
+# Subtest: forge equip and unequip draw each slot on its anchor and reload
+ok 79 - forge equip and unequip draw each slot on its anchor and reload
+  ---
+  duration_ms: 7.6628
+  type: 'test'
+  ...
+# Subtest: every class standing body matches the age kit, and the healer staff ends at the feet
+ok 80 - every class standing body matches the age kit, and the healer staff ends at the feet
+  ---
+  duration_ms: 287.4156
+  type: 'test'
+  ...
+# Subtest: seven chapter choices then Keep the valley grants nothing and reloads
+ok 81 - seven chapter choices then Keep the valley grants nothing and reloads
+  ---
+  duration_ms: 7.4244
+  type: 'test'
+  ...
+# Subtest: hero body contract: eight static standing bodies exist with pinned bytes
+ok 82 - hero body contract: eight static standing bodies exist with pinned bytes
+  ---
+  duration_ms: 67.7064
+  type: 'test'
+  ...
+# Subtest: fitBody rests the feet on the floor line and honours the 600 CSS cap
+ok 83 - fitBody rests the feet on the floor line and honours the 600 CSS cap
+  ---
+  duration_ms: 0.8821
+  type: 'test'
+  ...
+# Subtest: kitEra maps the eight ages onto the four MASTER-PLAN kit eras
+ok 84 - kitEra maps the eight ages onto the four MASTER-PLAN kit eras
+  ---
+  duration_ms: 2.768
+  type: 'test'
+  ...
+# Subtest: the reviewed steel knight is not worn Stone gear, and icons follow the item age
+ok 85 - the reviewed steel knight is not worn Stone gear, and icons follow the item age
+  ---
+  duration_ms: 0.5178
+  type: 'test'
+  ...
+# Subtest: ready static plates are the consumer and the previous files stay on disk
+ok 86 - ready static plates are the consumer and the previous files stay on disk
+  ---
+  duration_ms: 224.4818
+  type: 'test'
+  ...
+# Subtest: plateOffset and drawPlate apply motion clips to single-pose plates
+ok 87 - plateOffset and drawPlate apply motion clips to single-pose plates
+  ---
+  duration_ms: 4.1471
+  type: 'test'
+  ...
+# Subtest: tactical activeStackId accurately resolves active stack and queue
+ok 88 - tactical activeStackId accurately resolves active stack and queue
+  ---
+  duration_ms: 1.4809
+  type: 'test'
+  ...
+# Subtest: hero-bodies healer uses the complete standing figure, not the failed paste
+ok 89 - hero-bodies healer uses the complete standing figure, not the failed paste
+  ---
+  duration_ms: 1.5925
+  type: 'test'
+  ...
+# Subtest: kitEra covers all eight ages into the canonical four kit eras
+ok 90 - kitEra covers all eight ages into the canonical four kit eras
+  ---
+  duration_ms: 0.2821
+  type: 'test'
+  ...
+# Subtest: tactical figure clip distinguishes turn waiting, movement, attack strike and death
+ok 91 - tactical figure clip distinguishes turn waiting, movement, attack strike and death
+  ---
+  duration_ms: 0.7413
+  type: 'test'
+  ...
+# Subtest: hero room 6 equipment sockets have valid coordinates and non-zero dimensions
+ok 92 - hero room 6 equipment sockets have valid coordinates and non-zero dimensions
+  ---
+  duration_ms: 0.4094
+  type: 'test'
+  ...
+# Subtest: v2 stays beside the live contract and the uniform frame
+ok 93 - v2 stays beside the live contract and the uniform frame
+  ---
+  duration_ms: 3.9759
+  type: 'test'
+  ...
+# Subtest: the townhall pad follows the visible foot and the cobble stays an approach
+ok 94 - the townhall pad follows the visible foot and the cobble stays an approach
+  ---
+  duration_ms: 2.4888
+  type: 'test'
+  ...
+# Subtest: review chrome, mature doors and the collected painting stay honest
+ok 95 - review chrome, mature doors and the collected painting stay honest
+  ---
+  duration_ms: 25.095
+  type: 'test'
+  ...
+# Subtest: candidate is reviewable and leaves the active contract alone
+ok 96 - candidate is reviewable and leaves the active contract alone
+  ---
+  duration_ms: 3.7707
+  type: 'test'
+  ...
+# Subtest: Hall envelope stays in frame and the entrance cobble meets the terrace front
+ok 97 - Hall envelope stays in frame and the entrance cobble meets the terrace front
+  ---
+  duration_ms: 2.5625
+  type: 'test'
+  ...
+# Subtest: eighteen sites stay apart, off the Hall sprite, and pickable beside the open panel
+ok 98 - eighteen sites stay apart, off the Hall sprite, and pickable beside the open panel
+  ---
+  duration_ms: 2.9247
+  type: 'test'
+  ...
+# Subtest: roads stay off the seventeen plots and the guide is a 1376x768 review file
+ok 99 - roads stay off the seventeen plots and the guide is a 1376x768 review file
+  ---
+  duration_ms: 26.1837
+  type: 'test'
+  ...
+# Subtest: collection discovery follows the files on disk
+ok 100 - collection discovery follows the files on disk
+  ---
+  duration_ms: 48.7143
+  type: 'test'
+  ...
+# Subtest: each class assembles its own measured rig
+ok 101 - each class assembles its own measured rig
+  ---
+  duration_ms: 3.533
+  type: 'test'
+  ...
+# Subtest: clips move limbs and mount hooves do not all lift together
+ok 102 - clips move limbs and mount hooves do not all lift together
+  ---
+  duration_ms: 1.1782
+  type: 'test'
+  ...
+# Subtest: army plates follow creature and age, and reject the steam-walker rifleman
+ok 103 - army plates follow creature and age, and reject the steam-walker rifleman
+  ---
+  duration_ms: 0.9773
+  type: 'test'
+  ...
+# Subtest: choice identity survives a scrolled retarget
+ok 104 - choice identity survives a scrolled retarget
+  ---
+  duration_ms: 0.3442
+  type: 'test'
+  ...
+# Subtest: challenge seed and code are validated locally
+ok 105 - challenge seed and code are validated locally
+  ---
+  duration_ms: 0.733
+  type: 'test'
+  ...
+# Subtest: eight ages have measured building feet
+ok 106 - eight ages have measured building feet
+  ---
+  duration_ms: 0.2881
+  type: 'test'
+  ...
+# Subtest: the frame clock freezes while paused and advances while running
+ok 107 - the frame clock freezes while paused and advances while running
+  ---
+  duration_ms: 2.1608
+  type: 'test'
+  ...
+# Subtest: travel samples the route and a reload has no second charge
+ok 108 - travel samples the route and a reload has no second charge
+  ---
+  duration_ms: 10.0163
+  type: 'test'
+  ...
+# Subtest: duel-v1 roundtrips and reproduces across two campaigns
+ok 109 - duel-v1 roundtrips and reproduces across two campaigns
+  ---
+  duration_ms: 35.4203
+  type: 'test'
+  ...
+# Subtest: derived unit and tower stats match the documented examples
+ok 110 - derived unit and tower stats match the documented examples
+  ---
+  duration_ms: 4.9476
+  type: 'test'
+  ...
+# Subtest: damage, preview and retaliation use the documented multipliers
+ok 111 - damage, preview and retaliation use the documented multipliers
+  ---
+  duration_ms: 1.7579
+  type: 'test'
+  ...
+# Subtest: hero experience, loot, dwellings and waves follow the addendum
+ok 112 - hero experience, loot, dwellings and waves follow the addendum
+  ---
+  duration_ms: 12.6651
+  type: 'test'
+  ...
+# Subtest: legal combat corrections cover wait, resurrection, skirmish and the dead
+ok 113 - legal combat corrections cover wait, resurrection, skirmish and the dead
+  ---
+  duration_ms: 107.792
+  type: 'test'
+  ...
+# Subtest: class cards stay era-gated and the mounted master stays rejected
+ok 114 - class cards stay era-gated and the mounted master stays rejected
+  ---
+  duration_ms: 14.642
+  type: 'test'
+  ...
+# Subtest: a blast that clears the last enemy resolves siege or extends endless
+ok 115 - a blast that clears the last enemy resolves siege or extends endless
+  ---
+  duration_ms: 13.7821
+  type: 'test'
+  ...
+# Subtest: blast targeting uses world distance, spends 40 mana once, and rejects a bad point
+ok 116 - blast targeting uses world distance, spends 40 mana once, and rejects a bad point
+  ---
+  duration_ms: 16.3559
+  type: 'test'
+  ...
+# Subtest: clearing one spawned wave does not award a premature victory
+ok 117 - clearing one spawned wave does not award a premature victory
+  ---
+  duration_ms: 2.6179
+  type: 'test'
+  ...
+# Subtest: a blast ignores a leaked enemy and does not revive it
+ok 118 - a blast ignores a leaked enemy and does not revive it
+  ---
+  duration_ms: 1.4763
+  type: 'test'
+  ...
+# Subtest: forged morale, negative defense experience and contradictory dwelling terms are rejected
+ok 119 - forged morale, negative defense experience and contradictory dwelling terms are rejected
+  ---
+  duration_ms: 6.21
+  type: 'test'
+  ...
+# Subtest: deployed stacks use the source count factor, block, scaled range and survivor count
+ok 120 - deployed stacks use the source count factor, block, scaled range and survivor count
+  ---
+  duration_ms: 24.8387
+  type: 'test'
+  ...
+# Subtest: dwelling claim checks capacity, site and tier before payment and keeps the saved offer
+ok 121 - dwelling claim checks capacity, site and tier before payment and keeps the saved offer
+  ---
+  duration_ms: 18.5489
+  type: 'test'
+  ...
+# Subtest: tactical saves reject corrupt numbers, empty queues, false victories and flyer water endings
+ok 122 - tactical saves reject corrupt numbers, empty queues, false victories and flyer water endings
+  ---
+  duration_ms: 2.9543
+  type: 'test'
+  ...
+# Subtest: advertised melee sends the legal approach and still rejects a remote hit
+ok 123 - advertised melee sends the legal approach and still rejects a remote hit
+  ---
+  duration_ms: 6.7997
+  type: 'test'
+  ...
+# Subtest: a damaged live save can be replaced without dropping the preserved bytes or the backup
+ok 124 - a damaged live save can be replaced without dropping the preserved bytes or the backup
+  ---
+  duration_ms: 10.5722
+  type: 'test'
+  ...
+# Subtest: a quota failure while replacing a valid campaign keeps the latest live recoverable
+ok 125 - a quota failure while replacing a valid campaign keeps the latest live recoverable
+  ---
+  duration_ms: 5.061
+  type: 'test'
+  ...
+# Subtest: a save from before story fields still loads
+ok 126 - a save from before story fields still loads
+  ---
+  duration_ms: 1.2181
+  type: 'test'
+  ...
+# Subtest: intentional replacement keeps a lower revision and autosave still refuses it
+ok 127 - intentional replacement keeps a lower revision and autosave still refuses it
+  ---
+  duration_ms: 6.5583
+  type: 'test'
+  ...
+# Subtest: malformed present story fields stay damaged and keep their bytes
+ok 128 - malformed present story fields stay damaged and keep their bytes
+  ---
+  duration_ms: 2.3388
+  type: 'test'
+  ...
+# Subtest: all 18 kingdom targets stay inside short stages, safe area and an open panel
+ok 129 - all 18 kingdom targets stay inside short stages, safe area and an open panel
+  ---
+  duration_ms: 5.5648
+  type: 'test'
+  ...
+# Subtest: fault injection: corrupt live write keeps the latest valid campaign recoverable
+ok 130 - fault injection: corrupt live write keeps the latest valid campaign recoverable
+  ---
+  duration_ms: 31.8387
+  type: 'test'
+  ...
+# Subtest: fault injection: staged cleanup debt does not disguise a durable commit
+ok 131 - fault injection: staged cleanup debt does not disguise a durable commit
+  ---
+  duration_ms: 4.218
+  type: 'test'
+  ...
+# Subtest: present null story and quest fields stay damaged and keep their bytes
+ok 132 - present null story and quest fields stay damaged and keep their bytes
+  ---
+  duration_ms: 5.5075
+  type: 'test'
+  ...
+# Subtest: absent legacy story fields still migrate; wrong-type and chapter mismatch stay damaged
+ok 133 - absent legacy story fields still migrate; wrong-type and chapter mismatch stay damaged
+  ---
+  duration_ms: 3.9188
+  type: 'test'
+  ...
+# Subtest: eight ages, six slots and blocked combat stay in scope
+ok 134 - eight ages, six slots and blocked combat stay in scope
+  ---
+  duration_ms: 16.5581
+  type: 'test'
+  ...
+# Subtest: Stone Hall contact uses the shared kingdom camera without a second transform
+ok 135 - Stone Hall contact uses the shared kingdom camera without a second transform
+  ---
+  duration_ms: 6.2254
+  type: 'test'
+  ...
+# Subtest: seven chapters, future conclusion and rival survive reload without a second grant
+ok 136 - seven chapters, future conclusion and rival survive reload without a second grant
+  ---
+  duration_ms: 42.5414
+  type: 'test'
+  ...
+# Subtest: a false cleared flag is not a win and cannot be saved
+ok 137 - a false cleared flag is not a win and cannot be saved
+  ---
+  duration_ms: 2.4754
+  type: 'test'
+  ...
+# Subtest: quest claims are once-only and full gear means six slots
+ok 138 - quest claims are once-only and full gear means six slots
+  ---
+  duration_ms: 23.8345
+  type: 'test'
+  ...
+# Subtest: creature and role stacks resolve without using the other table
+ok 139 - creature and role stacks resolve without using the other table
+  ---
+  duration_ms: 1.5985
+  type: 'test'
+  ...
+# Subtest: tutorial review returns the cues and battle steps advance in order
+ok 140 - tutorial review returns the cues and battle steps advance in order
+  ---
+  duration_ms: 7.4683
+  type: 'test'
+  ...
+# Subtest: age gate, market and retrofit refuse before payment
+ok 141 - age gate, market and retrofit refuse before payment
+  ---
+  duration_ms: 10.8008
+  type: 'test'
+  ...
+# Subtest: completed barracks reinforces the current-age stack once
+ok 142 - completed barracks reinforces the current-age stack once
+  ---
+  duration_ms: 6.6561
+  type: 'test'
+  ...
+# Subtest: armory forges one item, equip changes attack, unequip returns it
+ok 143 - armory forges one item, equip changes attack, unequip returns it
+  ---
+  duration_ms: 2.9638
+  type: 'test'
+  ...
+# Subtest: bronze market buy and sell are exact and idempotent
+ok 144 - bronze market buy and sell are exact and idempotent
+  ---
+  duration_ms: 2.7821
+  type: 'test'
+  ...
+# Subtest: class, rival and settings reject invalid input without a partial write
+ok 145 - class, rival and settings reject invalid input without a partial write
+  ---
+  duration_ms: 3.1659
+  type: 'test'
+  ...
+# Subtest: journey blocks water, spends a road step once, and rest refills mana only
+ok 146 - journey blocks water, spends a road step once, and rest refills mana only
+  ---
+  duration_ms: 3.3429
+  type: 'test'
+  ...
+# Subtest: tutorial advances only on the requested action
+ok 147 - tutorial advances only on the requested action
+  ---
+  duration_ms: 1.6753
+  type: 'test'
+  ...
+# Subtest: spell magnitudes and articulated clips stay inside their documented bounds
+ok 148 - spell magnitudes and articulated clips stay inside their documented bounds
+  ---
+  duration_ms: 1.478
+  type: 'test'
+  ...
+# Subtest: tactical modes prefer a move and keep a still-legal choice
+ok 149 - tactical modes prefer a move and keep a still-legal choice
+  ---
+  duration_ms: 5.5716
+  type: 'test'
+  ...
+# Subtest: tactical labels name the cell and the target without packing every action into one row
+ok 150 - tactical labels name the cell and the target without packing every action into one row
+  ---
+  duration_ms: 1.8285
+  type: 'test'
+  ...
+# Subtest: map activation accepts one still-legal release and drops a stale or illegal one
+ok 151 - map activation accepts one still-legal release and drops a stale or illegal one
+  ---
+  duration_ms: 0.9441
+  type: 'test'
+  ...
+# Subtest: an open Retreat blocks background navigation and keeps the battle on Tactical
+ok 152 - an open Retreat blocks background navigation and keeps the battle on Tactical
+  ---
+  duration_ms: 2.6136
+  type: 'test'
+  ...
+# Subtest: retreat notice names the consequences and keeps cancel free of a resolution
+ok 153 - retreat notice names the consequences and keeps cancel free of a resolution
+  ---
+  duration_ms: 1.0064
+  type: 'test'
+  ...
+# Subtest: the hero card stays inside the stage and the camera focus contains it
+ok 154 - the hero card stays inside the stage and the camera focus contains it
+  ---
+  duration_ms: 2.0996
+  type: 'test'
+  ...
+# Subtest: Stone day 1 keeps the active affine, hall, seventeen sites and a separate wall trace
+ok 155 - Stone day 1 keeps the active affine, hall, seventeen sites and a separate wall trace
+  ---
+  duration_ms: 5.2135
+  type: 'test'
+  ...
+# Subtest: schematic walk and mount clips plant and lift feet without using a card transform
+ok 156 - schematic walk and mount clips plant and lift feet without using a card transform
+  ---
+  duration_ms: 1.2271
+  type: 'test'
+  ...
+# Subtest: mode paintings cover eight ages and the hero card has no side figure
+ok 157 - mode paintings cover eight ages and the hero card has no side figure
+  ---
+  duration_ms: 6.2384
+  type: 'test'
+  ...
+# Subtest: the five war options start, and skirmish and challenge leave campaign gold alone
+ok 158 - the five war options start, and skirmish and challenge leave campaign gold alone
+  ---
+  duration_ms: 43.4579
+  type: 'test'
+  ...
+# Subtest: defense pause stores no attack, 2x takes twice the steps, and hero deployment is free
+ok 159 - defense pause stores no attack, 2x takes twice the steps, and hero deployment is free
+  ---
+  duration_ms: 11.7529
+  type: 'test'
+  ...
+# Subtest: a leaked attacker damages the core once and a cleared siege wave pays one early call
+ok 160 - a leaked attacker damages the core once and a cleared siege wave pays one early call
+  ---
+  duration_ms: 33.4582
+  type: 'test'
+  ...
+# Subtest: defense saves reject corruption and endless keeps extending without a victory payout
+ok 161 - defense saves reject corruption and endless keeps extending without a victory payout
+  ---
+  duration_ms: 9.9997
+  type: 'test'
+  ...
+# Subtest: final-wave boss, army deploy, entry targeting and role shots are distinct
+ok 162 - final-wave boss, army deploy, entry targeting and role shots are distinct
+  ---
+  duration_ms: 18.6804
+  type: 'test'
+  ...
+1..162
+# tests 162
+# suites 0
+# pass 162
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5689.9266

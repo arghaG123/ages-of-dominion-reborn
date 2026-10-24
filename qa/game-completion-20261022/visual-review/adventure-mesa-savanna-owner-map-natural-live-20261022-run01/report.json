@@ -1,0 +1,948 @@
+{
+  "recordedAt": "2026-10-21T18:55:36.811Z",
+  "classification": "NATURAL_UI_MESA_SAVANNA_OWNER_MAP_FOUR_BRIDGES_SIX_SITES_TOWN_RETURN_REENTRY_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Red Mesa Frontier -> naturally traverse all four registered bridge decks -> visit and interact with all six registered sites -> return to Town and re-enter Adventure -> persist and reload position, rewards and discoveries",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "mesa-west-north-rope-bridge",
+    "mesa-west-south-rope-bridge",
+    "mesa-east-north-rope-bridge",
+    "mesa-east-south-rope-bridge"
+  ],
+  "campaignId": "campaign-fb890679-3916-4b75-a7a3-e5cf6ae5c71b",
+  "layoutId": "mesa-savanna-layout-11",
+  "seed": 3583177659,
+  "renderBinding": {
+    "worldId": "mesa-savanna",
+    "terrainFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/08_Vast_Map_Highland_Mesa_Canyon_Savanna.png",
+    "renderModel": "integrated-map-art-plus-live-interactions",
+    "registeredBridgeCount": 4,
+    "playableCrossingCount": 4,
+    "artMode": "painted source bridges remain in the integrated owner painting; no duplicate generic bridge stamp is expected"
+  },
+  "start": {
+    "x": 6,
+    "y": 3,
+    "moves": 5,
+    "visited": [
+      "6,3"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 132,
+      "wood": 136,
+      "stone": 123,
+      "gold": 228
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 132,
+      "mineGold": 228
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [
+    {
+      "bridgeId": "mesa-west-north-rope-bridge",
+      "start": [
+        6,
+        3
+      ],
+      "nearBank": [
+        5,
+        3
+      ],
+      "farBank": [
+        1,
+        3
+      ],
+      "approachCells": [
+        [
+          5,
+          3
+        ]
+      ],
+      "deckCells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "crossingCells": [
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "committedCells": [
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "movementCost": 5,
+      "daysEnded": 0,
+      "finalPosition": [
+        1,
+        3
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "mesa-west-south-rope-bridge",
+      "start": [
+        1,
+        3
+      ],
+      "nearBank": [
+        1,
+        6
+      ],
+      "farBank": [
+        5,
+        6
+      ],
+      "approachCells": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "deckCells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "crossingCells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "committedCells": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "movementCost": 7,
+      "daysEnded": 2,
+      "finalPosition": [
+        5,
+        6
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "mesa-east-north-rope-bridge",
+      "start": [
+        5,
+        6
+      ],
+      "nearBank": [
+        8,
+        3
+      ],
+      "farBank": [
+        13,
+        3
+      ],
+      "approachCells": [
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "deckCells": [
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ]
+      ],
+      "crossingCells": [
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ]
+      ],
+      "committedCells": [
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          3
+        ]
+      ],
+      "movementCost": 11,
+      "daysEnded": 2,
+      "finalPosition": [
+        13,
+        3
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "mesa-east-south-rope-bridge",
+      "start": [
+        13,
+        3
+      ],
+      "nearBank": [
+        8,
+        6
+      ],
+      "farBank": [
+        12,
+        6
+      ],
+      "approachCells": [
+        [
+          12,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "deckCells": [
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ]
+      ],
+      "crossingCells": [
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      "committedCells": [
+        [
+          12,
+          3
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      "movementCost": 12,
+      "daysEnded": 3,
+      "finalPosition": [
+        12,
+        6
+      ],
+      "allDeckVisited": true
+    }
+  ],
+  "siteInteractions": [
+    {
+      "siteId": "shrine",
+      "start": [
+        12,
+        6
+      ],
+      "approach": [
+        6,
+        6
+      ],
+      "route": [
+        [
+          11,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "routeCost": 6,
+      "skillId": "wisdom",
+      "choices": [
+        "wisdom",
+        "archery"
+      ],
+      "claimed": true,
+      "skillRankBefore": 0,
+      "skillRankAfter": 1
+    },
+    {
+      "siteId": "ruin",
+      "start": [
+        6,
+        6
+      ],
+      "approach": [
+        12,
+        7
+      ],
+      "route": [
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          7
+        ]
+      ],
+      "routeCost": 7,
+      "choiceText": "Study the ruins · +90 XP",
+      "xpBefore": 0,
+      "xpAfter": 90,
+      "levelBefore": 1,
+      "levelAfter": 1,
+      "claimed": true
+    },
+    {
+      "siteId": "mill",
+      "start": [
+        12,
+        7
+      ],
+      "approach": [
+        8,
+        8
+      ],
+      "route": [
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "routeCost": 7,
+      "choiceText": "Collect provisions · +132 food",
+      "amount": 132,
+      "resource": "food",
+      "claimed": true
+    },
+    {
+      "siteId": "mine",
+      "start": [
+        8,
+        8
+      ],
+      "approach": [
+        1,
+        3
+      ],
+      "route": [
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "routeCost": 12,
+      "choiceText": "Recover gold · +228",
+      "amount": 228,
+      "resource": "gold",
+      "claimed": true
+    },
+    {
+      "siteId": "dwelling",
+      "start": [
+        1,
+        3
+      ],
+      "approach": [
+        12,
+        6
+      ],
+      "route": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      "routeCost": 14,
+      "offerChoice": "offer-dwelling:wolf",
+      "terms": {
+        "id": "dwelling:dwelling:wolf",
+        "siteId": "dwelling",
+        "type": "wolf",
+        "count": 5,
+        "multiplier": 1,
+        "claimed": false
+      },
+      "payment": {
+        "food": 40,
+        "gold": 35
+      },
+      "claimed": true
+    }
+  ],
+  "townReturn": {
+    "start": [
+      12,
+      6
+    ],
+    "route": [
+      [
+        11,
+        6
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        6,
+        3
+      ]
+    ],
+    "routeCost": 9,
+    "townApproach": [
+      6,
+      3
+    ],
+    "atTown": true,
+    "kingdomView": true
+  },
+  "townReentry": {
+    "position": [
+      6,
+      3
+    ],
+    "atTown": false,
+    "visitedCount": 35,
+    "claimedSites": [
+      "shrine",
+      "ruin",
+      "mill",
+      "mine"
+    ]
+  },
+  "captures": [
+    {
+      "name": "mesa-savanna-start",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\mesa-savanna-start-1280x720.png"
+    },
+    {
+      "name": "after-mesa-west-north-rope-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-mesa-west-north-rope-bridge-1280x720.png"
+    },
+    {
+      "name": "after-mesa-west-south-rope-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-mesa-west-south-rope-bridge-1280x720.png"
+    },
+    {
+      "name": "after-mesa-east-north-rope-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-mesa-east-north-rope-bridge-1280x720.png"
+    },
+    {
+      "name": "after-mesa-east-south-rope-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-mesa-east-south-rope-bridge-1280x720.png"
+    },
+    {
+      "name": "after-site-shrine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-site-shrine-1280x720.png"
+    },
+    {
+      "name": "after-site-ruin",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-site-ruin-1280x720.png"
+    },
+    {
+      "name": "after-site-mill",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-site-mill-1280x720.png"
+    },
+    {
+      "name": "after-site-mine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-site-mine-1280x720.png"
+    },
+    {
+      "name": "after-site-dwelling",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\after-site-dwelling-1280x720.png"
+    },
+    {
+      "name": "mesa-savanna-town-approach",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\mesa-savanna-town-approach-1280x720.png"
+    },
+    {
+      "name": "returned-to-kingdom",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\returned-to-kingdom-1280x720.png"
+    },
+    {
+      "name": "mesa-savanna-reentered-adventure",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\mesa-savanna-reentered-adventure-1280x720.png"
+    }
+  ],
+  "responsiveCaptures": [
+    {
+      "name": "mesa-savanna-start",
+      "viewport": "825x375",
+      "layout": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "world": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 460.4651184082031,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 289.0942077636719,
+          "top": 81.2842788696289,
+          "right": 376.98297119140625,
+          "bottom": 145.75631713867188
+        },
+        "documentScroll": {
+          "width": 825,
+          "height": 375
+        }
+      },
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\mesa-savanna-start-825x375.png"
+    },
+    {
+      "name": "mesa-savanna-start",
+      "viewport": "933x424",
+      "layout": {
+        "viewport": {
+          "width": 933,
+          "height": 424
+        },
+        "world": {
+          "left": 0,
+          "top": 0,
+          "right": 933,
+          "bottom": 520.744140625,
+          "width": 933,
+          "height": 520.744140625
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 332.96917724609375,
+          "top": 102.3819351196289,
+          "right": 420.85797119140625,
+          "bottom": 166.85398864746094
+        },
+        "documentScroll": {
+          "width": 933,
+          "height": 424
+        }
+      },
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-mesa-savanna-owner-map-natural-live-20261022-run01\\mesa-savanna-start-933x424.png"
+    }
+  ],
+  "errors": [],
+  "notFound": [],
+  "reload": {
+    "campaignId": "campaign-fb890679-3916-4b75-a7a3-e5cf6ae5c71b",
+    "position": [
+      6,
+      3
+    ],
+    "allDecksRemainVisited": true,
+    "revision": 438,
+    "browserView": "adventure",
+    "siteClaimsPersisted": true,
+    "dwellingClaimPersisted": true
+  },
+  "totalDaysEnded": 18,
+  "passed": true
+}

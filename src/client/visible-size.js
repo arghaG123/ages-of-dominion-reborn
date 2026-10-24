@@ -34,3 +34,19 @@ export function visibleBox(plate, requestedHeight, cssPerWorld) {
     capCss,
   };
 }
+
+export function footAwareVisibleBox(plate, requestedHeight, cssPerWorld, groundY, offsetY = 0, topMarginCss = 12) {
+  const scale = Number.isFinite(cssPerWorld) && cssPerWorld > 0 ? cssPerWorld : 1;
+  const width = Number(plate?.width);
+  const height = Number(plate?.height);
+  const footY = Number(plate?.foot?.[1]);
+  if (!(width > 0 && height > 0 && footY > 0 && footY <= 1 && Number.isFinite(groundY) && Number.isFinite(offsetY))) {
+    throw new RangeError('Foot-aware art needs positive dimensions, a normalized foot, and a finite ground position');
+  }
+  const aspect = width / height;
+  const availableCssHeight = Math.max(0, (groundY * scale + offsetY - topMarginCss) / footY);
+  const frameCap = availableCssHeight * Math.max(1, aspect);
+  const declaredCap = Number(plate.maxVisibleCssPx) > 0 ? Number(plate.maxVisibleCssPx) : Infinity;
+  if (!(frameCap > 0)) throw new RangeError('Art foot is above the visible scene area');
+  return visibleBox({ ...plate, maxVisibleCssPx: Math.min(declaredCap, frameCap) }, requestedHeight, scale);
+}

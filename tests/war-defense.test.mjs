@@ -3,16 +3,29 @@ import assert from 'node:assert/strict';
 import data from '../src/data/reference-data.json' with { type: 'json' };
 import contract from '../src/data/implementation-contract.json' with { type: 'json' };
 import { command, newCampaign } from '../src/core/campaign.js';
-import { advanceDefense, createDefense, deployArmy, deployHero, defenseMarkers, validateDefense } from '../src/core/defense.js';
-import { playOut } from '../src/core/battle.js';
+import { advanceDefense, createDefense, deployArmy, deployHero, defenseMarkers, defensePreparationMarkers, validateDefense } from '../src/core/defense.js';
+import { activeStackId, createDuelBattle, playOut } from '../src/core/battle.js';
+import { completeSkirmishDeployment } from './battle-deployment-helpers-20261022.mjs';
 
 const fresh = () => newCampaign(contract, data, 1000);
 const act = (state, id, type, payload, now = 1000) => command(state, { id, type, payload }, now, data);
 
+test('battle startup passes an opening enemy turn before returning player controls', () => {
+  const host = newCampaign(contract, data, 1000, 1);
+  const raw = createDuelBattle(host, data);
+  const rawActiveId = activeStackId(raw);
+  assert.equal(raw.stacks.find(stack => stack.id === rawActiveId)?.side, 'e', 'seed 1 reproduces enemy initiative');
+
+  const started = act(host, 'duel-start-enemy-first', 'START_DUEL');
+  const activeId = activeStackId(started.battle);
+  assert.equal(started.battle.stacks.find(stack => stack.id === activeId)?.side, 'p', 'the opening enemy action resolves before the player receives control');
+  assert.ok(started.battle.log.length > 0, 'the opening enemy action is recorded in the battle log');
+});
+
 test('the five war options start, and skirmish and challenge leave campaign gold alone', () => {
   const host = fresh();
   const snapshot = structuredClone(host);
-  let skirmish = act(host, 'skirmish', 'START_SKIRMISH');
+  let skirmish = completeSkirmishDeployment(host, data, 'skirmish');
   skirmish = act(skirmish, 'skirmish-auto', 'BATTLE', { action: 'auto' });
   skirmish = act(skirmish, 'skirmish-settle', 'SETTLE_BATTLE');
   assert.equal(skirmish.resources.gold, snapshot.resources.gold);
@@ -52,6 +65,16 @@ test('the five war options start, and skirmish and challenge leave campaign gold
   assert.equal(endless.defense.waves, 3);
 });
 
+test('defense preparation previews owned towers on the same pads used at session start', () => {
+  const state = fresh();
+  const prepared = defensePreparationMarkers(state, data);
+  const session = createDefense(state, data, { practice: 'siege', waves: 5 });
+  assert.deepEqual(prepared.towers.map(tower => ({ id: tower.id, fam: tower.fam, at: tower.at })), session.towers.map(tower => ({ id: tower.id, fam: tower.fam, at: [tower.x, tower.y] })));
+  assert.deepEqual(prepared.enemies, []);
+  assert.equal(prepared.hero, null);
+  assert.equal(prepared.army, null);
+});
+
 test('defense pause stores no attack, 2x takes twice the steps, and hero deployment is free', () => {
   let state = act(fresh(), 'siege', 'START_SIEGE');
   const paused = act(state, 'pause', 'DEFENSE', { dt: 1, paused: true });
@@ -66,6 +89,17 @@ test('defense pause stores no attack, 2x takes twice the steps, and hero deploym
   assert.equal(state.resources.gold, gold);
   assert.equal(state.defense.heroDeployed, true);
   assert.throws(() => act(state, 'deploy-again', 'DEPLOY_DEFENSE'), /already deployed/);
+});
+
+test('changing Endless speed while paused preserves the pause until Resume is chosen', () => {
+  let state = act(fresh(), 'endless', 'START_ENDLESS');
+  state = act(state, 'pause', 'DEFENSE', { dt: 0, paused: true });
+  state = act(state, 'speed', 'DEFENSE', { dt: 0, paused: state.defense.paused, speed: 2 });
+  assert.equal(state.defense.paused, true, 'speed selection does not silently resume the wave');
+  assert.equal(state.defense.speed, 2);
+  state = act(state, 'resume', 'DEFENSE', { dt: 0, paused: false });
+  assert.equal(state.defense.paused, false, 'only the Resume control starts the wave');
+  assert.equal(state.defense.speed, 2);
 });
 
 test('a leaked attacker damages the core once and a cleared siege wave pays one early call', () => {

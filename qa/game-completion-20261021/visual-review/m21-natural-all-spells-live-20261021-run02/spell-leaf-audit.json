@@ -1,0 +1,94 @@
+{
+  "recordedAt": "2026-10-21T08:38:12.881Z",
+  "classification": "NATURAL_VISIBLE_CAMPAIGN_CAST_LEAF_AUDIT",
+  "wisdom3NaturallyEarnedAndReloaded": true,
+  "allEightSpellCastsEffectsAndReloadsPassed": true,
+  "spells": {
+    "arrow": {
+      "cast": true,
+      "effect": true,
+      "manaCost": 5,
+      "event": true,
+      "reloadPersisted": true,
+      "beforeMana": 300,
+      "afterMana": 295,
+      "targetId": "duel-e"
+    },
+    "bless": {
+      "cast": true,
+      "effect": true,
+      "manaCost": 5,
+      "event": true,
+      "reloadPersisted": true,
+      "beforeMana": 295,
+      "afterMana": 290,
+      "targetId": "army-1"
+    },
+    "haste": {
+      "cast": true,
+      "effect": true,
+      "manaCost": 6,
+      "event": true,
+      "reloadPersisted": true,
+      "beforeMana": 290,
+      "afterMana": 284,
+      "targetId": "army-1"
+    },
+    "cure": {
+      "cast": true,
+      "effect": true,
+      "manaCost": 6,
+      "event": true,
+      "reloadPersisted": true,
+      "beforeMana": 300,
+      "afterMana": 294,
+      "targetId": "army-1"
+    },
+    "slow": {
+      "cast": true,
+      "effect": true,
+      "manaCost": 8,
+      "event": true,
+      "reloadPersisted": true,
+      "beforeMana": 284,
+      "afterMana": 276,
+      "targetId": "duel-e"
+    },
+    "bolt": {
+      "cast": true,
+      "effect": true,
+      "manaCost": 10,
+      "event": true,
+      "reloadPersisted": true,
+      "beforeMana": 276,
+      "afterMana": 266,
+      "targetId": "duel-e"
+    },
+    "fireball": {
+      "cast": true,
+      "effect": true,
+      "manaCost": 14,
+      "event": true,
+      "reloadPersisted": true,
+      "beforeMana": 266,
+      "afterMana": 252,
+      "targetId": "duel-e"
+    },
+    "resurrect": {
+      "cast": true,
+      "effect": true,
+      "manaCost": 20,
+      "event": true,
+      "reloadPersisted": true,
+      "beforeMana": 294,
+      "afterMana": 274,
+      "targetId": "army-1"
+    }
+  },
+  "browserErrors": 0,
+  "aggregateRunnerStatus": "FAILED_AFTER_CAST_COVERAGE",
+  "aggregateFailure": "Error: natural guard encounter 1 ended e; campaign spell evidence cannot continue safely.\n    at settleVisibleCampaignBattle (file:///C:/dev/ages-of-dominion-reborn/qa/game-completion-20261021/visual-review/m21-natural-all-spells-live-20261021-run02.mjs:318:29)\n    at async file:///C:/dev/ages-of-dominion-reborn/qa/game-completion-20261021/visual-review/m21-natural-all-spells-live-20261021-run02.mjs:456:34",
+  "failureScope": "The natural guard battle ended in defeat during settlement after Cure and Resurrection had each been cast, logged, applied, and reloaded successfully. This is not an all-eight spell-effect or persistence failure.",
+  "sourceReport": "report.json",
+  "sourceReportSha256": "e88006a3d1c9453c8e22686007a190b91f2e81832413004f60c0238fd03398fc"
+}

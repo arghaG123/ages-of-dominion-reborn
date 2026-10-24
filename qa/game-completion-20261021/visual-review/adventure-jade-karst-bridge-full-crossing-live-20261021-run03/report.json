@@ -1,0 +1,1636 @@
+{
+  "recordedAt": "2026-10-21T11:20:53.314Z",
+  "classification": "NATURAL_JADE_KARST_FULL_BRIDGE_CROSSING_MOTION_SAVE_RELOAD",
+  "journey": "Fresh visible campaign -> Jade Karst -> approach registered bridge -> preview -> confirm -> capture mounted travel -> reload",
+  "note": "All campaign actions use visible controls in a fresh browser context. Imported geometry computes the expected route but does not alter campaign state, route, or movement.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-full-crossing-live-20261021-run03\\jade-karst-bridge-approach-preview-1280x720.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-full-crossing-live-20261021-run03\\jade-karst-bridge-full-route-preview-1280x720.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-full-crossing-live-20261021-run03\\jade-karst-bridge-route-phone-825x375.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-full-crossing-live-20261021-run03\\jade-karst-bridge-motion-120ms-825x375.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-full-crossing-live-20261021-run03\\jade-karst-bridge-motion-420ms-825x375.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-full-crossing-live-20261021-run03\\jade-karst-bridge-motion-720ms-825x375.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-jade-karst-bridge-full-crossing-live-20261021-run03\\jade-karst-bridge-far-bank-after-reload-825x375.jpg"
+  ],
+  "sourceGeometry": {
+    "mapFile": "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+    "referenceFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/11_Vast_Map_Jade_Bamboo_Karst_Clean.png",
+    "worldToSource": [
+      86,
+      0,
+      0,
+      76.8,
+      0,
+      0
+    ],
+    "bridge": {
+      "id": "jade-karst-west-bridge-4-6",
+      "rect": [
+        4,
+        6,
+        2,
+        1
+      ],
+      "cells": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "approaches": [
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    },
+    "blockedCellsIncludeBridgeDeck": true
+  },
+  "start": {
+    "position": [
+      8,
+      4
+    ],
+    "moves": 5,
+    "revision": 8
+  },
+  "approachRoute": {
+    "cost": 5,
+    "cells": [
+      [
+        7,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "destination": [
+      4,
+      5
+    ]
+  },
+  "approachMove": {
+    "position": [
+      4,
+      5
+    ],
+    "moves": 0,
+    "cost": 5,
+    "visited": [
+      "8,4",
+      "7,4",
+      "6,4",
+      "5,4",
+      "4,4",
+      "4,5"
+    ]
+  },
+  "crossingRoute": {
+    "cost": 3,
+    "cells": [
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "destination": [
+      6,
+      6
+    ]
+  },
+  "crossingCommit": {
+    "position": [
+      6,
+      6
+    ],
+    "moves": 2,
+    "visited": [
+      "8,4",
+      "7,4",
+      "6,4",
+      "5,4",
+      "4,4",
+      "4,5",
+      "4,6",
+      "5,6",
+      "6,6"
+    ],
+    "revision": 24
+  },
+  "motion": {
+    "frameCount": 217,
+    "movingFrames": 189,
+    "mountedFrames": 217,
+    "distinctMarkerPositions": 191,
+    "samples": [
+      {
+        "elapsedMs": 3,
+        "marker": [
+          387,
+          429.56800000000004
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 429.56800000000004) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 37,
+        "marker": [
+          387,
+          435.47306666666657
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 435.47306666666657) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 72,
+        "marker": [
+          387,
+          441.3951999999998
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 441.3951999999998) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 106,
+        "marker": [
+          387,
+          447.30026666666646
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 447.30026666666646) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 141,
+        "marker": [
+          387,
+          453.2223999999997
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 453.2223999999997) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 176,
+        "marker": [
+          387,
+          459.14453333333296
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 459.14453333333296) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 211,
+        "marker": [
+          387,
+          465.06666666666644
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 465.06666666666644) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 245,
+        "marker": [
+          387,
+          470.9887999999997
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 470.9887999999997) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 280,
+        "marker": [
+          387,
+          476.91093333333293
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 476.91093333333293) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 315,
+        "marker": [
+          387,
+          482.8159999999996
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 482.8159999999996) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 349,
+        "marker": [
+          387,
+          488.72106666666616
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 488.72106666666616) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 384,
+        "marker": [
+          387,
+          494.67733333333285
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(387 494.67733333333285) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 419,
+        "marker": [
+          388.56711111111053,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(388.56711111111053 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 453,
+        "marker": [
+          395.17955555555477,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(395.17955555555477 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 488,
+        "marker": [
+          401.8111111111104,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(401.8111111111104 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 523,
+        "marker": [
+          408.44266666666584,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(408.44266666666584 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 557,
+        "marker": [
+          415.0742222222213,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(415.0742222222213 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 592,
+        "marker": [
+          421.66755555555466,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(421.66755555555466 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 627,
+        "marker": [
+          428.33733333333237,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(428.33733333333237 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 661,
+        "marker": [
+          434.9497777777768,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(434.9497777777768 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 696,
+        "marker": [
+          441.5813333333322,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(441.5813333333322 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 731,
+        "marker": [
+          448.21288888888773,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(448.21288888888773 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 766,
+        "marker": [
+          454.84444444444335,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(454.84444444444335 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 800,
+        "marker": [
+          461.4759999999988,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(461.4759999999988 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 835,
+        "marker": [
+          468.1075555555543,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(468.1075555555543 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 870,
+        "marker": [
+          474.71999999999866,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(474.71999999999866 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 904,
+        "marker": [
+          481.3515555555541,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(481.3515555555541 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 939,
+        "marker": [
+          488.0022222222209,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(488.0022222222209 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 974,
+        "marker": [
+          494.6337777777763,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(494.6337777777763 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1008,
+        "marker": [
+          501.2462222222206,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(501.2462222222206 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1043,
+        "marker": [
+          507.8777777777764,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(507.8777777777764 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(-32)",
+            "pose": "lifted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1078,
+        "marker": [
+          514.509333333332,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(514.509333333332 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1112,
+        "marker": [
+          521.1408888888876,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(521.1408888888876 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1147,
+        "marker": [
+          527.7724444444431,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(527.7724444444431 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1182,
+        "marker": [
+          534.3848888888878,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(534.3848888888878 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1216,
+        "marker": [
+          541.0164444444433,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(541.0164444444433 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1251,
+        "marker": [
+          547.6479999999989,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(547.6479999999989 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1286,
+        "marker": [
+          554.2795555555545,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "1",
+        "gait": "legged",
+        "mountTransform": "translate(554.2795555555545 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(-32)",
+            "pose": "lifted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1320,
+        "marker": [
+          558.9997420000001,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "0",
+        "gait": "legged",
+        "mountTransform": "translate(558.9997420000001 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1355,
+        "marker": [
+          558.9997420000001,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "0",
+        "gait": "legged",
+        "mountTransform": "translate(558.9997420000001 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1390,
+        "marker": [
+          558.9997420000001,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "0",
+        "gait": "legged",
+        "mountTransform": "translate(558.9997420000001 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1425,
+        "marker": [
+          558.9997420000001,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "0",
+        "gait": "legged",
+        "mountTransform": "translate(558.9997420000001 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1460,
+        "marker": [
+          558.9997420000001,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "0",
+        "gait": "legged",
+        "mountTransform": "translate(558.9997420000001 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      },
+      {
+        "elapsedMs": 1494,
+        "marker": [
+          558.9997420000001,
+          499.2
+        ],
+        "mode": "mounted",
+        "moving": "0",
+        "gait": "legged",
+        "mountTransform": "translate(558.9997420000001 499.2) scale(0.09340121212121212 0.09340121212121212)",
+        "hooves": [
+          {
+            "joint": "hoof-0",
+            "transform": "translate(132 -473) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-1",
+            "transform": "translate(230.5 -478) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-2",
+            "transform": "translate(504.5 -361) rotate(6)",
+            "pose": "planted"
+          },
+          {
+            "joint": "hoof-3",
+            "transform": "translate(586 -361) rotate(6)",
+            "pose": "planted"
+          }
+        ]
+      }
+    ]
+  },
+  "reload": {
+    "worldId": "jade-karst",
+    "position": [
+      6,
+      6
+    ],
+    "moves": 2,
+    "visited": [
+      "8,4",
+      "7,4",
+      "6,4",
+      "5,4",
+      "4,4",
+      "4,5",
+      "4,6",
+      "5,6",
+      "6,6"
+    ],
+    "revision": 42,
+    "saveState": "committed"
+  },
+  "passed": true,
+  "finishedAt": "2026-10-21T11:21:01.847Z"
+}

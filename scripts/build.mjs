@@ -2,7 +2,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { collectAssetDependencies } from './asset-dependencies.mjs';
 const root = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
+const dependencies = await collectAssetDependencies(root);
+if (dependencies.missing.length || dependencies.unresolvedTemplates.length) throw new Error('Unresolved current dependencies: ' + JSON.stringify({missing:dependencies.missing,templates:dependencies.unresolvedTemplates}));
 const dist = path.join(root, 'dist');
 await fs.rm(dist, { recursive: true, force: true });
 await fs.mkdir(dist, { recursive: true });
@@ -18,6 +21,9 @@ const modeScenes = JSON.parse(await fs.readFile(path.join(root, 'src/data/mode-s
 const plateOverrides = JSON.parse(await fs.readFile(path.join(root, 'src/data/plate-overrides-20261007.json'), 'utf8'));
 const gearIcons = JSON.parse(await fs.readFile(path.join(root, 'src/data/gear-icons-20261007.json'), 'utf8'));
 const heroBodies = JSON.parse(await fs.readFile(path.join(root, 'src/data/hero-bodies-20261011.json'), 'utf8'));
+const wallSegments = JSON.parse(await fs.readFile(path.join(root, 'src/data/wall-segments-20261016.json'), 'utf8').catch(() => '{}'));
+const staticMounts = JSON.parse(await fs.readFile(path.join(root, 'src/data/static-mounts-v1.json'), 'utf8').catch(() => '{}'));
+const mountReview = JSON.parse(await fs.readFile(path.join(root, 'src/data/mount-review-v1.json'), 'utf8').catch(() => '{}'));
 const consumerCatalog = JSON.parse(await fs.readFile(path.join(root, 'src/data/consumer-catalog-20261007.json'), 'utf8').catch(() => '{"assets":[]}'));
 const files = new Set();
 const visit = (value) => {
@@ -36,6 +42,9 @@ visit(portraitCards);
 visit(plateOverrides);
 visit(gearIcons);
 visit(heroBodies);
+visit(wallSegments);
+visit(staticMounts);
+visit(mountReview);
 for (const asset of consumerCatalog.assets || []) {
   if (asset.gates?.runtime === 'PASS' && typeof asset.outputPath === 'string') files.add(asset.outputPath);
 }
@@ -43,6 +52,7 @@ for (const mode of ['adventure', 'tactical', 'defense']) {
   for (const file of modeScenes[mode] || []) files.add(file);
 }
 const closure = [];
+for (const file of dependencies.files) files.add(file);
 for (const relative of files) {
   const source = path.join(root, relative);
   const target = path.join(dist, relative);
@@ -73,8 +83,9 @@ for (const file of textFiles) {
 const missing = [];
 for (const item of closure) if (!await fs.stat(path.join(dist, item.file)).catch(() => null)) missing.push(item.file);
 const report = { files: closure.length, assets: closure, missing, escaping, svgNamespaceIdentifiers: namespaces.length, networkDependency: escaping.length > 0 };
-await fs.mkdir(path.join(root, 'qa/recovery-executor-20261003'), { recursive: true });
-await fs.writeFile(path.join(root, 'qa/recovery-executor-20261003/dist-closure.json'), JSON.stringify(report, null, 2) + '\n');
+const reportPath = path.resolve(root, process.env.DIST_CLOSURE_OUT || 'dist/dependency-closure.json');
+await fs.mkdir(path.dirname(reportPath), { recursive: true });
+await fs.writeFile(reportPath, JSON.stringify(report, null, 2) + '\n');
 if (missing.length || escaping.length) {
   console.error(JSON.stringify(report));
   process.exit(1);

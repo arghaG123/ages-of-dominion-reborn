@@ -6,7 +6,7 @@ import { KINGDOM_PAD_PRESENTATION, cardInsideStage, heroStage } from '../src/cli
 import { plateOffset } from '../src/client/actor.js';
 
 test('mode paintings cover eight ages and the hero card has no side figure', () => {
-  assert.equal(KINGDOM_PAD_PRESENTATION, 'kingdom-pad-state-v2');
+  assert.equal(KINGDOM_PAD_PRESENTATION, 'kingdom-pad-state-v3');
   for (const mode of ['adventure', 'tactical', 'defense']) {
     assert.equal(modeScenes[mode].length, 8);
     for (const file of modeScenes[mode]) assert.equal(fs.existsSync(file), true);

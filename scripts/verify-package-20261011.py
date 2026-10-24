@@ -1,7 +1,7 @@
 """Verifies the 11 October web/APK package: dist == www == APK bytes for every expected current file,
 APK CRC, application id, zero declared permissions, no remote URLs. Writes
 qa/code-image-complete-20261011/package-check.json. Read-only apart from that report."""
-import hashlib, json, re, struct, sys, zipfile
+import hashlib, json, re, struct, sys, zipfile, subprocess, argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -9,27 +9,23 @@ APK = ROOT / 'android/app/build/outputs/apk/release/ages-of-dominion-reborn-prev
 DIST = ROOT / 'dist'
 WWW = ROOT / 'android/app/src/main/assets/www'
 OUT = ROOT / 'qa/code-image-complete-20261011/package-check.json'
+args = argparse.ArgumentParser(description=__doc__)
+args.add_argument('--apk', type=Path, default=APK)
+args.add_argument('--out', type=Path, required=True, help='New evidence output; historical reports are never overwritten by default')
+options = args.parse_args()
+APK = options.apk.resolve()
+OUT = options.out.resolve()
 load = lambda rel: json.loads((ROOT / rel).read_text(encoding='utf-8-sig'))
 sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
 def closure():
-    files = set()
-    def visit(v):
-        if isinstance(v, dict):
-            for k, x in v.items():
-                if isinstance(x, str) and (k in ['file', 'terrain', 'uiFile', 'sourceFile', 'displayFile'] or k.endswith('File')): files.add(x)
-                else: visit(x)
-        elif isinstance(v, list):
-            for x in v: visit(x)
-    for name in ['reviewed-source-selection', 'stone-scene', 'actor-atlas', 'plate-catalog', 'age-buildings', 'portrait-cards', 'plate-overrides-20261007', 'gear-icons-20261007', 'hero-bodies-20261011']:
-        visit(load('src/data/' + name + '.json'))
-    for r in load('src/data/consumer-catalog-20261007.json').get('assets', []):
-        if r.get('gates', {}).get('runtime') == 'PASS' and isinstance(r.get('outputPath'), str): files.add(r['outputPath'])
-    mode = load('src/data/mode-scenes.json')
-    for name in ['adventure', 'tactical', 'defense']: files.update(mode.get(name, []))
-    expected = ['index.html'] + [p.relative_to(ROOT).as_posix() for p in (ROOT / 'src').rglob('*') if p.is_file()] + sorted(files)
-    return expected
+    # Share the real runtime selector/catalog discovery with the web builder.
+    scan = subprocess.run(['node', str(ROOT / 'scripts/asset-dependencies.mjs')], cwd=ROOT, text=True, capture_output=True, check=True)
+    current = json.loads(scan.stdout)
+    if current['missing'] or current['unresolvedTemplates']:
+        raise RuntimeError('Unresolved current asset dependencies: ' + json.dumps(current))
+    return ['index.html'] + [p.relative_to(ROOT).as_posix() for p in (ROOT / 'src').rglob('*') if p.is_file()] + current['files']
 
 
 def manifest_strings(blob):

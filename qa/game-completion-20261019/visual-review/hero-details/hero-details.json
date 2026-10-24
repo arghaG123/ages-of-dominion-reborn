@@ -1,0 +1,401 @@
+{
+  "recordedAt": "2026-10-19T18:56:02.824Z",
+  "url": "http://127.0.0.1:4179/",
+  "viewports": [
+    {
+      "name": "1280x720",
+      "captures": {
+        "base": "qa/game-completion-20261019/visual-review/hero-details/hero-standing-1280x720.png",
+        "skills": "qa/game-completion-20261019/visual-review/hero-details/hero-skills-1280x720.png",
+        "skillsScrolled": "qa/game-completion-20261019/visual-review/hero-details/hero-skills-scrolled-1280x720.png",
+        "spells": "qa/game-completion-20261019/visual-review/hero-details/hero-spells-1280x720.png",
+        "spellsScrolled": "qa/game-completion-20261019/visual-review/hero-details/hero-spells-scrolled-1280x720.png",
+        "weaponDetail": "qa/game-completion-20261019/visual-review/hero-details/hero-weapon-empty-detail-1280x720.png"
+      },
+      "sixSlots": [
+        "scene-hero-slot:helm",
+        "scene-hero-slot:weapon",
+        "scene-hero-slot:offhand",
+        "scene-hero-slot:armor",
+        "scene-hero-slot:boots",
+        "scene-hero-slot:accessory"
+      ],
+      "skills": [
+        {
+          "label": "Offense, rank 0 of 3. +10/20/30% melee damage No active offer; select to inspect.",
+          "width": 98.65625,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Archery, rank 0 of 3. +10/25/50% shooter damage No active offer; select to inspect.",
+          "width": 98.671875,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Armorer, rank 0 of 3. -5/10/15% damage taken No active offer; select to inspect.",
+          "width": 98.65625,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Wisdom, rank 0 of 3. Unlocks level 2/3/4 spells No active offer; select to inspect.",
+          "width": 98.65625,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Leadership, rank 0 of 3. +1/2/3 morale (chance of extra turn) No active offer; select to inspect.",
+          "width": 98.671875,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Luck, rank 0 of 3. +1/2/3 luck (chance of double damage) No active offer; select to inspect.",
+          "width": 98.65625,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Tactics, rank 0 of 3. +1/2/3 deployment rows No active offer; select to inspect.",
+          "width": 98.65625,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Logistics, rank 0 of 3. +1/2/3 moves on the region map No active offer; select to inspect.",
+          "width": 98.671875,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "First Aid, rank 0 of 3. Recover 15/30/45% of losses after a won battle No active offer; select to inspect.",
+          "width": 98.65625,
+          "height": 68,
+          "imageLoaded": true
+        }
+      ],
+      "spells": [
+        {
+          "label": "Magic Arrow. 10 + 10×Power damage Mana 5.",
+          "disabled": false,
+          "width": 72.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Bless. Friendly stack always rolls max damage Mana 5.",
+          "disabled": false,
+          "width": 72.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Haste. +3 speed to a friendly stack Mana 6.",
+          "disabled": false,
+          "width": 72.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Cure. Heals 10 + 10×Power Mana 6.",
+          "disabled": false,
+          "width": 72.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Slow needs Wisdom 1. Spell unavailable until Wisdom 1.",
+          "disabled": true,
+          "width": 72.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Lightning Bolt needs Wisdom 1. Spell unavailable until Wisdom 1.",
+          "disabled": true,
+          "width": 72.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Fireball needs Wisdom 2. Spell unavailable until Wisdom 2.",
+          "disabled": true,
+          "width": 72.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Resurrection needs Wisdom 3. Spell unavailable until Wisdom 3.",
+          "disabled": true,
+          "width": 72.5,
+          "height": 86,
+          "imageLoaded": true
+        }
+      ],
+      "skillsBeforeScroll": {
+        "top": 0,
+        "max": 0
+      },
+      "skillsAfterScroll": {
+        "top": 0,
+        "max": 0,
+        "viewport": [
+          72,
+          640
+        ],
+        "last": [
+          364,
+          432
+        ],
+        "lastSkillVisible": true
+      },
+      "spellsBeforeScroll": {
+        "top": 0,
+        "max": 0
+      },
+      "spellsAfterScroll": {
+        "top": 0,
+        "max": 0,
+        "viewport": [
+          72,
+          640
+        ],
+        "last": [
+          308,
+          394
+        ],
+        "lastSpellVisible": true
+      },
+      "weaponActions": [
+        {
+          "choice": "hero-forge:weapon",
+          "label": "Open forge",
+          "disabled": false,
+          "rect": [
+            895,
+            227,
+            308,
+            48
+          ]
+        },
+        {
+          "choice": "tutorial-toggle",
+          "label": "Skip tutorial",
+          "disabled": false,
+          "rect": [
+            895,
+            283,
+            308,
+            48
+          ]
+        }
+      ],
+      "panel": {
+        "scrollHeight": 566,
+        "clientHeight": 566,
+        "scrollWidth": 388,
+        "clientWidth": 388
+      }
+    },
+    {
+      "name": "825x375",
+      "captures": {
+        "base": "qa/game-completion-20261019/visual-review/hero-details/hero-standing-825x375.png",
+        "skills": "qa/game-completion-20261019/visual-review/hero-details/hero-skills-825x375.png",
+        "skillsScrolled": "qa/game-completion-20261019/visual-review/hero-details/hero-skills-scrolled-825x375.png",
+        "spells": "qa/game-completion-20261019/visual-review/hero-details/hero-spells-825x375.png",
+        "spellsScrolled": "qa/game-completion-20261019/visual-review/hero-details/hero-spells-scrolled-825x375.png",
+        "weaponDetail": "qa/game-completion-20261019/visual-review/hero-details/hero-weapon-empty-detail-825x375.png"
+      },
+      "sixSlots": [
+        "scene-hero-slot:helm",
+        "scene-hero-slot:weapon",
+        "scene-hero-slot:offhand",
+        "scene-hero-slot:armor",
+        "scene-hero-slot:boots",
+        "scene-hero-slot:accessory"
+      ],
+      "skills": [
+        {
+          "label": "Offense, rank 0 of 3. +10/20/30% melee damage No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Archery, rank 0 of 3. +10/25/50% shooter damage No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Armorer, rank 0 of 3. -5/10/15% damage taken No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Wisdom, rank 0 of 3. Unlocks level 2/3/4 spells No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Leadership, rank 0 of 3. +1/2/3 morale (chance of extra turn) No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Luck, rank 0 of 3. +1/2/3 luck (chance of double damage) No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Tactics, rank 0 of 3. +1/2/3 deployment rows No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "Logistics, rank 0 of 3. +1/2/3 moves on the region map No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        },
+        {
+          "label": "First Aid, rank 0 of 3. Recover 15/30/45% of losses after a won battle No active offer; select to inspect.",
+          "width": 88,
+          "height": 68,
+          "imageLoaded": true
+        }
+      ],
+      "spells": [
+        {
+          "label": "Magic Arrow. 10 + 10×Power damage Mana 5.",
+          "disabled": false,
+          "width": 64.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Bless. Friendly stack always rolls max damage Mana 5.",
+          "disabled": false,
+          "width": 64.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Haste. +3 speed to a friendly stack Mana 6.",
+          "disabled": false,
+          "width": 64.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Cure. Heals 10 + 10×Power Mana 6.",
+          "disabled": false,
+          "width": 64.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Slow needs Wisdom 1. Spell unavailable until Wisdom 1.",
+          "disabled": true,
+          "width": 64.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Lightning Bolt needs Wisdom 1. Spell unavailable until Wisdom 1.",
+          "disabled": true,
+          "width": 64.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Fireball needs Wisdom 2. Spell unavailable until Wisdom 2.",
+          "disabled": true,
+          "width": 64.5,
+          "height": 86,
+          "imageLoaded": true
+        },
+        {
+          "label": "Resurrection needs Wisdom 3. Spell unavailable until Wisdom 3.",
+          "disabled": true,
+          "width": 64.5,
+          "height": 86,
+          "imageLoaded": true
+        }
+      ],
+      "skillsBeforeScroll": {
+        "top": 0,
+        "max": 276
+      },
+      "skillsAfterScroll": {
+        "top": 194,
+        "max": 276,
+        "viewport": [
+          54,
+          311
+        ],
+        "last": [
+          148,
+          216
+        ],
+        "lastSkillVisible": true
+      },
+      "spellsBeforeScroll": {
+        "top": 0,
+        "max": 238
+      },
+      "spellsAfterScroll": {
+        "top": 62,
+        "max": 238,
+        "viewport": [
+          54,
+          311
+        ],
+        "last": [
+          224,
+          310
+        ],
+        "lastSpellVisible": true
+      },
+      "weaponActions": [
+        {
+          "choice": "hero-forge:weapon",
+          "label": "Open forge",
+          "disabled": false,
+          "rect": [
+            476,
+            205,
+            276,
+            48
+          ]
+        },
+        {
+          "choice": "tutorial-toggle",
+          "label": "Skip tutorial",
+          "disabled": false,
+          "rect": [
+            476,
+            261,
+            276,
+            48
+          ]
+        }
+      ],
+      "panel": {
+        "scrollHeight": 374,
+        "clientHeight": 255,
+        "scrollWidth": 348,
+        "clientWidth": 348
+      }
+    }
+  ],
+  "errors": []
+}

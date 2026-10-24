@@ -1,0 +1,174 @@
+{
+  "recordedAt": "2026-10-21T05:41:34.368Z",
+  "classification": "NATURAL_GRASSLANDS_ROUTE_PREVIEW_CANCEL_BRIDGE_SAVE_RELOAD",
+  "journey": "Fresh visible campaign -> Grasslands -> preview legal bridge route -> cancel unchanged -> confirm -> reload",
+  "note": "All campaign actions use visible controls. Snapshot reads and imported geometry are assertions only; no campaign state, route, or movement is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "start": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "revision": 8,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "bridgeCell": [
+      8,
+      5
+    ],
+    "expectedRoute": {
+      "cost": 2,
+      "cells": [
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "destination": [
+        8,
+        5
+      ]
+    }
+  },
+  "openPanelCancelControls": {
+    "panelClear": 1,
+    "panelCancel": 0,
+    "dockCancel": 0
+  },
+  "preview": {
+    "status": "Sunlit RiverlandsCost 2 · 5 moves left · Confirm to travel.",
+    "actualPoints": "731,268.8 731,345.59999999999997 731,422.4",
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "revisionBefore": 8,
+    "revisionAfter": 9,
+    "gameplayStateUnchanged": true
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-bridge-preview-cancel-live-20261021-run05\\grasslands-bridge-route-preview-1280x720.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-bridge-preview-cancel-live-20261021-run05\\grasslands-bridge-route-dock-1280x720.jpg",
+    "qa\\game-completion-20261021\\visual-review\\adventure-bridge-preview-cancel-live-20261021-run05\\grasslands-bridge-crossing-825x375.jpg"
+  ],
+  "cancel": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "revision": 9
+  },
+  "closedPanelCancelControls": {
+    "panelClear": 0,
+    "panelCancel": 0,
+    "dockCancel": 1
+  },
+  "closedPanelCancel": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    }
+  },
+  "move": {
+    "position": [
+      8,
+      5
+    ],
+    "moves": 3,
+    "cost": 2,
+    "visited": [
+      "8,3",
+      "8,4",
+      "8,5"
+    ],
+    "saveState": "committed"
+  },
+  "compactLayout": {
+    "innerWidth": 825,
+    "innerHeight": 375,
+    "devicePixelRatio": 1,
+    "app": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "stage": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "stageField": {
+      "x": 0,
+      "y": 0,
+      "width": 825,
+      "height": 375,
+      "cssWidth": "825px"
+    },
+    "frame": {
+      "x": 76.5625,
+      "y": 0,
+      "width": 671.875,
+      "height": 375,
+      "cssWidth": "1376px"
+    },
+    "terrain": {
+      "x": 76.5625,
+      "y": 0,
+      "width": 671.875,
+      "height": 375,
+      "cssWidth": "1376px"
+    },
+    "mapImageWidth": 1672
+  },
+  "reload": {
+    "worldId": "grasslands",
+    "position": [
+      8,
+      5
+    ],
+    "moves": 3,
+    "visited": [
+      "8,3",
+      "8,4",
+      "8,5"
+    ],
+    "revision": 21
+  },
+  "passed": true
+}

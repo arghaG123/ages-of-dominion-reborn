@@ -1,0 +1,100 @@
+{
+  "recordedAt": "2026-10-22T05:17:39.525Z",
+  "classification": "NATURAL_UI_CAMPAIGN_SIEGE_DEPLOYMENT_ONE_WAVE_PAUSE_RELOAD",
+  "url": "http://127.0.0.1:4173/?audit=1",
+  "viewport": "1280x720",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-62c9e443-23eb-418e-ac48-2da7db11a7bb",
+  "deploymentControls": [
+    {
+      "id": "defense-pause",
+      "label": "Resume. Resume continues this wave",
+      "disabled": false
+    },
+    {
+      "id": "defense-speed",
+      "label": "Speed 2×. Changes how fast the wave advances",
+      "disabled": false
+    },
+    {
+      "id": "deploy-hero",
+      "label": "Deploy hero on the lane",
+      "disabled": false
+    },
+    {
+      "id": "deploy-army:army-1",
+      "label": "Deploy Clubman ×12 rank 0",
+      "disabled": false
+    },
+    {
+      "id": "deploy-army:army-2",
+      "label": "Deploy Slinger ×8 rank 0",
+      "disabled": false
+    },
+    {
+      "id": "inspect:defense",
+      "label": "Defense actions",
+      "disabled": false
+    }
+  ],
+  "deployedState": {
+    "heroDeployed": true,
+    "armyDeployed": true,
+    "defense": "ACTIVE",
+    "campaignId": "campaign-62c9e443-23eb-418e-ac48-2da7db11a7bb"
+  },
+  "waveState": {
+    "campaignId": "campaign-62c9e443-23eb-418e-ac48-2da7db11a7bb",
+    "defense": "ACTIVE",
+    "paused": false,
+    "clearedWaves": 1,
+    "pendingSettlement": false,
+    "core": 400,
+    "heroDeployed": true,
+    "armyDeployed": true,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "army": [
+      {
+        "id": "army-1",
+        "count": 12
+      },
+      {
+        "id": "army-2",
+        "count": 8
+      }
+    ]
+  },
+  "reloadState": {
+    "campaignId": "campaign-62c9e443-23eb-418e-ac48-2da7db11a7bb",
+    "defense": "ACTIVE",
+    "paused": true,
+    "clearedWaves": 1,
+    "pendingSettlement": false,
+    "core": 400,
+    "heroDeployed": true,
+    "armyDeployed": true,
+    "resources": {
+      "food": 250,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "army": [
+      {
+        "id": "army-1",
+        "count": 12
+      },
+      {
+        "id": "army-2",
+        "count": 8
+      }
+    ]
+  },
+  "passed": true
+}

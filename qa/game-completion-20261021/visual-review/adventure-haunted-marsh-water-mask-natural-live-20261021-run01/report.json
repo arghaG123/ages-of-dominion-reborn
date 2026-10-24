@@ -1,0 +1,74 @@
+{
+  "recordedAt": "2026-10-21T12:00:26.488Z",
+  "classification": "NATURAL_UI_HAUNTED_MARSH_MAP_LOAD_MOVE_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> select Haunted Marsh -> enter Adventure -> inspect registered bog-pool blockers -> commit a legal adjacent step -> save and reload",
+  "note": "All campaign and movement actions use visible controls. Imported map geometry and read-only snapshots are assertions only.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-93b1ba71-b0f1-418a-b1b4-d5f918b42d3f",
+  "map": {
+    "worldId": "haunted-marsh",
+    "seed": 3067818562,
+    "layoutId": "haunted-marsh-layout-3",
+    "start": [
+      10,
+      3
+    ],
+    "blockers": [
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ]
+    ],
+    "blockedInLiveRenderer": true,
+    "renderedCells": 160
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-water-mask-natural-live-20261021-run01\\haunted-marsh-water-mask-start-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-water-mask-natural-live-20261021-run01\\haunted-marsh-water-mask-after-move-825x375.png"
+  ],
+  "move": {
+    "from": [
+      10,
+      3
+    ],
+    "to": [
+      10,
+      4
+    ],
+    "route": [
+      [
+        10,
+        4
+      ]
+    ],
+    "cost": 1,
+    "movesRemaining": 4,
+    "visited": [
+      "10,3",
+      "10,4"
+    ],
+    "saveState": "committed"
+  },
+  "reload": {
+    "position": [
+      10,
+      4
+    ],
+    "moves": 4,
+    "visited": [
+      "10,3",
+      "10,4"
+    ]
+  },
+  "result": "PASS_BOUNDED_LIVE_MAP_LOAD_LEGAL_MOVE_SAVE_RELOAD; NOT_FULL_JOURNEY_OR_MAP_ART_ACCEPTANCE"
+}

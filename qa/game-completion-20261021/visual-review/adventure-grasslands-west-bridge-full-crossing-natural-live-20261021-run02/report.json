@@ -1,0 +1,137 @@
+{
+  "recordedAt": "2026-10-21T13:05:22.691Z",
+  "classification": "NATURAL_UI_GRASSLANDS_WEST_MILL_BRIDGE_FULL_CROSSING_SAVE_RELOAD",
+  "journey": "fresh visible Grasslands campaign -> reach east approach -> end day -> cross both west mill deck cells -> save and reload on west bank",
+  "note": "All campaign and movement actions use visible UI controls. Geometry and read-only snapshots are assertions only; no state or position is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-4b76c69b-20f0-4192-ba81-e5df952ce36c",
+  "map": {
+    "worldId": "grasslands",
+    "seed": 715587578,
+    "layoutId": "grasslands-layout-15",
+    "start": [
+      8,
+      3
+    ],
+    "blockedCells": 28,
+    "oldApproach": [
+      3,
+      3
+    ],
+    "correctedApproaches": [
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "bridge": {
+      "id": "grasslands-west-mill-crossing",
+      "cells": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "approaches": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    },
+    "renderedCells": 160
+  },
+  "approachTravel": {
+    "from": [
+      8,
+      3
+    ],
+    "to": [
+      6,
+      5
+    ],
+    "path": [
+      [
+        8,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "cost": 4,
+    "movesRemaining": 1
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-grasslands-west-bridge-full-crossing-natural-live-20261021-run02\\grasslands-west-bridge-east-bank-preview-825x375.png",
+    "qa\\game-completion-20261021\\visual-review\\adventure-grasslands-west-bridge-full-crossing-natural-live-20261021-run02\\grasslands-west-bridge-east-bank-arrival-825x375.png"
+  ],
+  "rest": {
+    "day": 2,
+    "movesRestored": 5
+  },
+  "crossingPreview": {
+    "from": [
+      6,
+      5
+    ],
+    "to": [
+      4,
+      3
+    ],
+    "path": [
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "cost": 4,
+    "deckCells": [
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        4
+      ]
+    ]
+  },
+  "result": "FAIL",
+  "error": "page.evaluate: Error: traveler did not settle after west bridge crossing\n    at sample (eval at evaluate (:311:30), <anonymous>:13:39)\n    at waitForTravelerSettled (C:\\dev\\ages-of-dominion-reborn\\qa\\game-completion-20261021\\visual-review\\adventure-grasslands-west-bridge-full-crossing-natural-live-20261021.mjs:39:14)\n    at C:\\dev\\ages-of-dominion-reborn\\qa\\game-completion-20261021\\visual-review\\adventure-grasslands-west-bridge-full-crossing-natural-live-20261021.mjs:168:9"
+}

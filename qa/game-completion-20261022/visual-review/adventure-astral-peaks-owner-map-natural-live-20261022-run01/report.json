@@ -1,0 +1,927 @@
+{
+  "recordedAt": "2026-10-21T19:05:16.157Z",
+  "classification": "NATURAL_UI_ASTRAL_PEAKS_OWNER_MAP_FOUR_BRIDGES_SIX_SITES_TOWN_RETURN_REENTRY_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Astral Cloudpeaks -> naturally traverse all four registered bridge decks -> visit and interact with all six registered sites -> return to Town and re-enter Adventure -> persist and reload position, rewards and discoveries",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "astral-west-north-stone-viaduct",
+    "astral-west-south-stone-bridge",
+    "astral-east-north-gold-viaduct",
+    "astral-east-south-stone-viaduct"
+  ],
+  "campaignId": "campaign-675318b7-7160-4293-9688-c40df886a4ba",
+  "layoutId": "astral-peaks-layout-2",
+  "seed": 1702208068,
+  "renderBinding": {
+    "worldId": "astral-peaks",
+    "terrainFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/09_Vast_Map_Celestial_Cloud_Peaks_Astral.png",
+    "renderModel": "integrated-map-art-plus-live-interactions",
+    "registeredBridgeCount": 4,
+    "playableCrossingCount": 4,
+    "artMode": "painted source bridges remain in the integrated owner painting; no duplicate generic bridge stamp is expected",
+    "sourceSize": [
+      1376,
+      768
+    ]
+  },
+  "start": {
+    "x": 4,
+    "y": 3,
+    "moves": 5,
+    "visited": [
+      "4,3"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 143,
+      "wood": 142,
+      "stone": 108,
+      "gold": 243
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 143,
+      "mineGold": 243
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [
+    {
+      "bridgeId": "astral-west-north-stone-viaduct",
+      "start": [
+        4,
+        3
+      ],
+      "nearBank": [
+        4,
+        3
+      ],
+      "farBank": [
+        8,
+        3
+      ],
+      "approachCells": [],
+      "deckCells": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "crossingCells": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "committedCells": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "movementCost": 4,
+      "daysEnded": 0,
+      "finalPosition": [
+        8,
+        3
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "astral-west-south-stone-bridge",
+      "start": [
+        8,
+        3
+      ],
+      "nearBank": [
+        7,
+        7
+      ],
+      "farBank": [
+        3,
+        7
+      ],
+      "approachCells": [
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "deckCells": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "crossingCells": [
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "committedCells": [
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "movementCost": 9,
+      "daysEnded": 2,
+      "finalPosition": [
+        3,
+        7
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "astral-east-north-gold-viaduct",
+      "start": [
+        3,
+        7
+      ],
+      "nearBank": [
+        8,
+        4
+      ],
+      "farBank": [
+        12,
+        4
+      ],
+      "approachCells": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      "deckCells": [
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ]
+      ],
+      "crossingCells": [
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "committedCells": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "movementCost": 12,
+      "daysEnded": 3,
+      "finalPosition": [
+        12,
+        4
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "astral-east-south-stone-viaduct",
+      "start": [
+        12,
+        4
+      ],
+      "nearBank": [
+        12,
+        7
+      ],
+      "farBank": [
+        8,
+        7
+      ],
+      "approachCells": [
+        [
+          12,
+          5
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          7
+        ]
+      ],
+      "deckCells": [
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "crossingCells": [
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "committedCells": [
+        [
+          12,
+          5
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      "movementCost": 7,
+      "daysEnded": 1,
+      "finalPosition": [
+        8,
+        7
+      ],
+      "allDeckVisited": true
+    }
+  ],
+  "siteInteractions": [
+    {
+      "siteId": "shrine",
+      "start": [
+        8,
+        7
+      ],
+      "approach": [
+        12,
+        5
+      ],
+      "route": [
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          5
+        ]
+      ],
+      "routeCost": 6,
+      "skillId": "tactics",
+      "choices": [
+        "tactics",
+        "firstaid"
+      ],
+      "claimed": true,
+      "skillRankBefore": 0,
+      "skillRankAfter": 1
+    },
+    {
+      "siteId": "ruin",
+      "start": [
+        12,
+        5
+      ],
+      "approach": [
+        13,
+        6
+      ],
+      "route": [
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ]
+      ],
+      "routeCost": 2,
+      "choiceText": "Study the ruins · +90 XP",
+      "xpBefore": 0,
+      "xpAfter": 90,
+      "levelBefore": 1,
+      "levelAfter": 1,
+      "claimed": true
+    },
+    {
+      "siteId": "mill",
+      "start": [
+        13,
+        6
+      ],
+      "approach": [
+        13,
+        3
+      ],
+      "route": [
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          13,
+          3
+        ]
+      ],
+      "routeCost": 5,
+      "choiceText": "Collect provisions · +143 food",
+      "amount": 143,
+      "resource": "food",
+      "claimed": true
+    },
+    {
+      "siteId": "mine",
+      "start": [
+        13,
+        3
+      ],
+      "approach": [
+        2,
+        7
+      ],
+      "route": [
+        [
+          13,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "routeCost": 15,
+      "choiceText": "Recover gold · +243",
+      "amount": 243,
+      "resource": "gold",
+      "claimed": true
+    },
+    {
+      "siteId": "dwelling",
+      "start": [
+        2,
+        7
+      ],
+      "approach": [
+        12,
+        4
+      ],
+      "route": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "routeCost": 13,
+      "offerChoice": "offer-dwelling:wolf",
+      "terms": {
+        "id": "dwelling:dwelling:wolf",
+        "siteId": "dwelling",
+        "type": "wolf",
+        "count": 5,
+        "multiplier": 1,
+        "claimed": false
+      },
+      "payment": {
+        "food": 40,
+        "gold": 35
+      },
+      "claimed": true
+    }
+  ],
+  "townReturn": {
+    "start": [
+      12,
+      4
+    ],
+    "route": [
+      [
+        11,
+        4
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "routeCost": 9,
+    "townApproach": [
+      4,
+      3
+    ],
+    "atTown": true,
+    "kingdomView": true
+  },
+  "townReentry": {
+    "position": [
+      4,
+      3
+    ],
+    "atTown": false,
+    "visitedCount": 34,
+    "claimedSites": [
+      "shrine",
+      "ruin",
+      "mill",
+      "mine"
+    ]
+  },
+  "captures": [
+    {
+      "name": "astral-peaks-start",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\astral-peaks-start-1280x720.png"
+    },
+    {
+      "name": "after-astral-west-north-stone-viaduct",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-astral-west-north-stone-viaduct-1280x720.png"
+    },
+    {
+      "name": "after-astral-west-south-stone-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-astral-west-south-stone-bridge-1280x720.png"
+    },
+    {
+      "name": "after-astral-east-north-gold-viaduct",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-astral-east-north-gold-viaduct-1280x720.png"
+    },
+    {
+      "name": "after-astral-east-south-stone-viaduct",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-astral-east-south-stone-viaduct-1280x720.png"
+    },
+    {
+      "name": "after-site-shrine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-site-shrine-1280x720.png"
+    },
+    {
+      "name": "after-site-ruin",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-site-ruin-1280x720.png"
+    },
+    {
+      "name": "after-site-mill",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-site-mill-1280x720.png"
+    },
+    {
+      "name": "after-site-mine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-site-mine-1280x720.png"
+    },
+    {
+      "name": "after-site-dwelling",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\after-site-dwelling-1280x720.png"
+    },
+    {
+      "name": "astral-peaks-town-approach",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\astral-peaks-town-approach-1280x720.png"
+    },
+    {
+      "name": "returned-to-kingdom",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\returned-to-kingdom-1280x720.png"
+    },
+    {
+      "name": "astral-peaks-reentered-adventure",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\astral-peaks-reentered-adventure-1280x720.png"
+    }
+  ],
+  "responsiveCaptures": [
+    {
+      "name": "astral-peaks-start",
+      "viewport": "825x375",
+      "layout": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "world": {
+          "left": 0,
+          "top": 0,
+          "right": 825,
+          "bottom": 460.4651184082031,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 185.9691925048828,
+          "top": 81.2842788696289,
+          "right": 273.85797119140625,
+          "bottom": 145.75631713867188
+        },
+        "documentScroll": {
+          "width": 825,
+          "height": 375
+        }
+      },
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\astral-peaks-start-825x375.png"
+    },
+    {
+      "name": "astral-peaks-start",
+      "viewport": "933x424",
+      "layout": {
+        "viewport": {
+          "width": 933,
+          "height": 424
+        },
+        "world": {
+          "left": 0,
+          "top": 0,
+          "right": 933,
+          "bottom": 520.744140625,
+          "width": 933,
+          "height": 520.744140625
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 216.3441619873047,
+          "top": 102.3819351196289,
+          "right": 304.2329406738281,
+          "bottom": 166.85398864746094
+        },
+        "documentScroll": {
+          "width": 933,
+          "height": 424
+        }
+      },
+      "file": "qa\\game-completion-20261022\\visual-review\\adventure-astral-peaks-owner-map-natural-live-20261022-run01\\astral-peaks-start-933x424.png"
+    }
+  ],
+  "errors": [],
+  "notFound": [],
+  "reload": {
+    "campaignId": "campaign-675318b7-7160-4293-9688-c40df886a4ba",
+    "position": [
+      4,
+      3
+    ],
+    "allDecksRemainVisited": true,
+    "revision": 489,
+    "browserView": "adventure",
+    "siteClaimsPersisted": true,
+    "dwellingClaimPersisted": true
+  },
+  "totalDaysEnded": 16,
+  "passed": true
+}

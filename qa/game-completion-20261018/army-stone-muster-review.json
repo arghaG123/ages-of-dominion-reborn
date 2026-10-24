@@ -1,0 +1,30 @@
+{
+  "schema": "game-screen-candidate-review/v1",
+  "reviewedAt": "2026-10-18",
+  "screen": "army",
+  "ageIndex": 0,
+  "age": "stone",
+  "status": "CANDIDATE_RUNTIME_REVIEWED_PENDING_AGE_FAMILY_GEOMETRY_AND_OWNER_ACCEPTANCE",
+  "mock": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/24-army.jpg",
+    "sha256": "9728db38e960a2117e7b52b1fb5795cb3a7e9080a12b9f3f65bd0b1e0cc0105f"
+  },
+  "candidate": {
+    "path": "assets/derivatives/professional-20261018/army/army-stone-muster-v1.png",
+    "sha256": "03522e24d6ad1d3ea6c6c299770cbe3142ed558b20967cf11af2f7b3b758b3ce",
+    "width": 1672,
+    "height": 941,
+    "source": "C:\\Users\\pupan\\.codex\\generated_images\\01a14d31-4376-7570-bde1-ae01df1f91de\\exec-c403b906-07bc-443a-a2ef-c5bbfd923bca.png"
+  },
+  "runtimeReview": {
+    "url": "http://127.0.0.1:4176/?audit=1&visualfit=probe",
+    "viewport": [1280, 720],
+    "visibleState": "Stone Age day 12 Army screen; two current formations, three age-appropriate recruitment cards, selected formation inspector, recruitment disabled with the Barracks requirement explained.",
+    "findings": [
+      "The ground is a broad natural muster yard with Stone Age hide-and-timber structures, palisade, hills and readable negative space behind the live cards.",
+      "The screen hierarchy and live controls remain legible over the candidate: formations, recruit choices, six combat stats, capacity and the locked-action reason.",
+      "Compared with mock 24, the current functional layout uses formation cards and an inspector rather than full-size standing units and a fixed quantity selector; this remains a layout-fidelity review item.",
+      "Only the Stone Army backdrop is supplied here. Other age backdrops, source-bound character placement, dense viewport checks and owner acceptance remain open."
+    ]
+  }
+}

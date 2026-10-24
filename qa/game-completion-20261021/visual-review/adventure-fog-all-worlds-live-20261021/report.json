@@ -1,0 +1,574 @@
+{
+  "recordedAt": "2026-10-21T05:32:54.807Z",
+  "classification": "NATURAL_UI_ALL_12_CAMPAIGN_WORLDS_WITH_FOG_REPAIR",
+  "journey": "For each of 12 worlds: new campaign -> select map -> enter valley -> leave town -> one legal move -> save/reload",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "note": "Each world uses a fresh isolated browser context and visible controls. No campaign, selected world, map position, or movement state is injected. Every world checks the repaired fog veil, minimap terrain, one legal move and reload persistence; each receives an 825x375 landscape capture.",
+  "results": [
+    {
+      "worldId": "grasslands",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "width": 1672,
+        "height": 940,
+        "world": "grasslands",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 80938321,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\grasslands-fog-825x375.jpg",
+      "reload": {
+        "worldId": "grasslands",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 14
+      },
+      "passed": true
+    },
+    {
+      "worldId": "tundra",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/tundra-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "tundra",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2844918853,
+      "move": {
+        "direction": "east",
+        "destination": [
+          11,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\tundra-fog-825x375.jpg",
+      "reload": {
+        "worldId": "tundra",
+        "position": [
+          11,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "haunted-marsh",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/haunted-marsh-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "haunted-marsh",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2971182729,
+      "move": {
+        "direction": "north",
+        "destination": [
+          10,
+          2
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\haunted-marsh-fog-825x375.jpg",
+      "reload": {
+        "worldId": "haunted-marsh",
+        "position": [
+          10,
+          2
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "desert-volcano",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/desert-volcano-adventure-v1.png",
+        "width": 1672,
+        "height": 940,
+        "world": "desert-volcano",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2615596307,
+      "move": {
+        "direction": "east",
+        "destination": [
+          10,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\desert-volcano-fog-825x375.jpg",
+      "reload": {
+        "worldId": "desert-volcano",
+        "position": [
+          10,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "underworld",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/underworld-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "underworld",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 1538822897,
+      "move": {
+        "direction": "north",
+        "destination": [
+          3,
+          5
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\underworld-fog-825x375.jpg",
+      "reload": {
+        "worldId": "underworld",
+        "position": [
+          3,
+          5
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "feywild",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/feywild-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "feywild",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2236035735,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\feywild-fog-825x375.jpg",
+      "reload": {
+        "worldId": "feywild",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "archipelago",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/archipelago-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "archipelago",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 648964821,
+      "move": {
+        "direction": "north",
+        "destination": [
+          7,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\archipelago-fog-825x375.jpg",
+      "reload": {
+        "worldId": "archipelago",
+        "position": [
+          7,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "mesa-savanna",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/mesa-savanna-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "mesa-savanna",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 843779529,
+      "move": {
+        "direction": "north",
+        "destination": [
+          4,
+          1
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\mesa-savanna-fog-825x375.jpg",
+      "reload": {
+        "worldId": "mesa-savanna",
+        "position": [
+          4,
+          1
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "astral-peaks",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/astral-peaks-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "astral-peaks",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 1826251214,
+      "move": {
+        "direction": "north",
+        "destination": [
+          4,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\astral-peaks-fog-825x375.jpg",
+      "reload": {
+        "worldId": "astral-peaks",
+        "position": [
+          4,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "blood-moon",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/blood-moon-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "blood-moon",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2050200307,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          3
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\blood-moon-fog-825x375.jpg",
+      "reload": {
+        "worldId": "blood-moon",
+        "position": [
+          9,
+          3
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "jade-karst",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/jade-karst-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "jade-karst",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 4081996720,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          4
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\jade-karst-fog-825x375.jpg",
+      "reload": {
+        "worldId": "jade-karst",
+        "position": [
+          9,
+          4
+        ],
+        "revision": 13
+      },
+      "passed": true
+    },
+    {
+      "worldId": "sunken-jungle",
+      "errors": [],
+      "failedResponses": [],
+      "fog": {
+        "fill": "rgba(16, 23, 27, 0.82)",
+        "state": "saved-unvisited",
+        "mask": "url(#adventure-fog-mask)"
+      },
+      "minimap": {
+        "visible": true,
+        "withinViewport": true,
+        "sources": [
+          "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+          "assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png"
+        ],
+        "exploredCellCount": 1,
+        "mask": true,
+        "feather": true
+      },
+      "image": {
+        "source": "/assets/derivatives/adventure-world-maps-generated-20261020/sunken-jungle-adventure-v1.png",
+        "width": 1672,
+        "height": 941,
+        "world": "sunken-jungle",
+        "renderModel": "integrated-map-art-plus-live-interactions"
+      },
+      "seed": 2801529266,
+      "move": {
+        "direction": "east",
+        "destination": [
+          9,
+          2
+        ],
+        "movesLeft": 4
+      },
+      "capture": "qa\\game-completion-20261021\\visual-review\\adventure-fog-all-worlds-live-20261021\\sunken-jungle-fog-825x375.jpg",
+      "reload": {
+        "worldId": "sunken-jungle",
+        "position": [
+          9,
+          2
+        ],
+        "revision": 13
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

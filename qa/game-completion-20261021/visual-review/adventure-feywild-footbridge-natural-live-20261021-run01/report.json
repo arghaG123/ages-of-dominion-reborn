@@ -1,0 +1,104 @@
+{
+  "recordedAt": "2026-10-21T12:29:10.192Z",
+  "classification": "NATURAL_UI_FEYWILD_FOOTBRIDGE_CROSSING_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> Feywild -> route from east to west bank through the footbridge -> save and reload",
+  "note": "Campaign and all movement use visible UI controls. Read-only state, geometry, and path calculations are assertions only; no campaign state or position is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "movementSegments": [
+    {
+      "from": [
+        8,
+        3
+      ],
+      "to": [
+        5,
+        5
+      ],
+      "path": [
+        [
+          7,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "cost": 5,
+      "movesRemaining": 0,
+      "saveState": "committed"
+    }
+  ],
+  "campaignId": "campaign-96256db0-f9ba-48f7-b11c-4b25da63126d",
+  "map": {
+    "worldId": "feywild",
+    "seed": 2662502910,
+    "layoutId": "feywild-layout-15",
+    "start": [
+      8,
+      3
+    ],
+    "blockers": [
+      [
+        3,
+        5
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        10,
+        9
+      ],
+      [
+        11,
+        9
+      ]
+    ],
+    "bridge": {
+      "id": "feywild-waterfall-footbridge-2-6",
+      "cells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "approaches": [
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    "renderedCells": 160
+  },
+  "result": "FAIL",
+  "error": "page.waitForFunction: Timeout 30000ms exceeded.\n    at C:\\dev\\ages-of-dominion-reborn\\qa\\game-completion-20261021\\visual-review\\adventure-feywild-footbridge-natural-live-20261021.mjs:129:18"
+}

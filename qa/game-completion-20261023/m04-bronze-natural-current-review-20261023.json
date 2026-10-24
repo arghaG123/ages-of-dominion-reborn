@@ -1,0 +1,48 @@
+{
+  "reviewId": "M04-bronze-natural-current-review-20261023",
+  "reviewDate": "2026-10-23",
+  "mockId": "M04",
+  "status": "FAIL_M04_BRONZE_SCENE_DENSITY_AND_WORKSHOP_ACTION_PANEL",
+  "route": "http://localhost:4174/?audit",
+  "viewportCss": [1280, 720],
+  "target": {
+    "image": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/04-kingdom-bronze.jpg",
+    "sha256": "EA1B8FACA981CFC4CFAE6B03801093F6A9C02143BF8029BF2E4CFE0CD564F414",
+    "age": "Bronze",
+    "selectedBuilding": "Clay Workshop"
+  },
+  "liveCampaign": {
+    "natural": true,
+    "age": "Bronze",
+    "day": 1,
+    "wallLevel": 2,
+    "occupiedSites": 18,
+    "emptySites": 0,
+    "selectedPlot": "P07",
+    "selectedBuilding": "Clay Workshop",
+    "workshopLevel": 1,
+    "saveCommitted": true,
+    "slot1Touched": false
+  },
+  "repair": {
+    "file": "src/client/main.js",
+    "summary": "Show the Bronze workshop as Clay Workshop in Kingdom labels and accessible names while retaining the underlying workshop type and mechanics.",
+    "sourceSha256": "E63AA08CCE5608779BCFE2AAC4F497F03A067F8E8C017AAE8D78D30C969BB2FE",
+    "syntaxCheck": "node --check src/client/main.js passed"
+  },
+  "visualReview": {
+    "screenshotObservedThroughApprovedCUA": true,
+    "screenshotRetained": false,
+    "ageAndSelectedBuildingMatched": true,
+    "findings": [
+      "The live terrain keeps a large open center even after all 17 registered building plots were filled; the target depicts a dense built-up city.",
+      "The live Clay Workshop inspector offers Upgrade and Kingdom actions; the target shows Build, Research, Recruit, and Units.",
+      "The live Kingdom navigation and resource HUD composition still differ from the target."
+    ]
+  },
+  "remaining": [
+    "Repair the Bronze city density and workshop action presentation without adding inert controls or misrepresenting ownership of buildings.",
+    "Retain a current matched live capture and verify the full M04 comparison before closing it."
+  ],
+  "ownerAccepted": false
+}

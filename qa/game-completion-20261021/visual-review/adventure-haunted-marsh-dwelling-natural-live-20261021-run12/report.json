@@ -1,0 +1,433 @@
+{
+  "recordedAt": "2026-10-21T16:51:41.131Z",
+  "classification": "NATURAL_UI_ADVENTURE_DWELLING_CLAIM_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh campaign -> build Barracks -> leave town -> preview/cancel route -> confirm legal road route to dwelling -> on-foot site arrival -> ask for fixed offer -> back to road and reopen the same offer -> save/reload -> claim creatures -> verify Q3 ready -> claim its reward once -> save/reload -> verify roster and both rewards",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "route": {
+    "worldId": "haunted-marsh",
+    "layoutId": "haunted-marsh-layout-12",
+    "start": [
+      3,
+      8
+    ],
+    "destination": [
+      11,
+      7
+    ],
+    "cost": 9,
+    "cells": [
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        11,
+        7
+      ]
+    ]
+  },
+  "viewportSizes": [
+    "825x375",
+    "933x424",
+    "1280x720"
+  ],
+  "errors": [],
+  "notFound": [],
+  "captures": [
+    {
+      "name": "dwelling-on-foot",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run12\\dwelling-on-foot-825x375.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "933x424",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run12\\dwelling-on-foot-933x424.png"
+    },
+    {
+      "name": "dwelling-on-foot",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run12\\dwelling-on-foot-1280x720.png"
+    },
+    {
+      "name": "dwelling-context-panel",
+      "size": "825x375",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run12\\dwelling-context-panel-825x375.png"
+    },
+    {
+      "name": "dwelling-context-panel",
+      "size": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-haunted-marsh-dwelling-natural-live-20261021-run12\\dwelling-context-panel-1280x720.png"
+    }
+  ],
+  "campaignId": "campaign-781fc03c-ad44-4ccc-bad8-913f84a3ed67",
+  "building": {
+    "plotId": "P01",
+    "type": "barracks",
+    "level": 1,
+    "resourcesAfterBuild": {
+      "food": 250,
+      "wood": 160,
+      "stone": 115,
+      "gold": 150
+    }
+  },
+  "start": {
+    "x": 3,
+    "y": 8,
+    "moves": 5,
+    "visited": [
+      "3,8"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 139,
+      "wood": 144,
+      "stone": 104,
+      "gold": 233
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 139,
+      "mineGold": 233
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "resourcesBefore": {
+    "food": 250,
+    "wood": 160,
+    "stone": 115,
+    "gold": 150
+  },
+  "cancel": {
+    "preservedPosition": [
+      3,
+      8
+    ],
+    "preservedMoves": 5
+  },
+  "arrivalVisibleLabelCount": 1,
+  "arrival": {
+    "adventure": {
+      "x": 11,
+      "y": 7,
+      "moves": 1,
+      "visited": [
+        "3,8",
+        "4,8",
+        "5,8",
+        "6,8",
+        "7,8",
+        "8,8",
+        "9,8",
+        "10,8",
+        "11,7"
+      ],
+      "resolvedGuards": [],
+      "cacheOffers": {
+        "food": 139,
+        "wood": 144,
+        "stone": 104,
+        "gold": 233
+      },
+      "collectedCaches": [],
+      "siteOffers": {
+        "ruinXp": 90,
+        "millFood": 139,
+        "mineGold": 233
+      },
+      "claimedSites": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "daysEnded": 1,
+    "totalMovesCommitted": 9,
+    "travelerMode": "on-foot",
+    "siteVisible": "dwelling",
+    "mountVisible": false
+  },
+  "panelComposition": [
+    {
+      "size": "825x375",
+      "panel": {
+        "left": 537,
+        "right": 817,
+        "top": 54,
+        "bottom": 335
+      },
+      "hero": {
+        "left": 133.24127197265625,
+        "right": 639.1533813476562,
+        "top": 43.95263671875,
+        "bottom": 415.071533203125
+      },
+      "heroAnchor": {
+        "x": 375.90001714229584,
+        "y": 254.99999237060547
+      },
+      "siteLabel": {
+        "left": 423,
+        "right": 529,
+        "top": 213.796875,
+        "bottom": 235.59375
+      },
+      "matchingSiteLabels": [
+        {
+          "left": 423,
+          "right": 529,
+          "top": 213.796875,
+          "bottom": 235.59375,
+          "styleLeft": "423px",
+          "styleTop": "213.797px",
+          "anchorY": "388.6855813953488",
+          "safeBottom": "250",
+          "placement": "below",
+          "placedTop": "213.796875"
+        }
+      ],
+      "mapGeometry": {
+        "frame": {
+          "left": -771.7999877929688,
+          "right": 825.0000610351562,
+          "top": -413.42791748046875,
+          "bottom": 477.80926513671875
+        },
+        "terrain": {
+          "left": -771.7999877929688,
+          "right": 825.0000610351562,
+          "top": -413.42791748046875,
+          "bottom": 477.80926513671875
+        },
+        "siteHotspot": {
+          "left": 425.79998779296875,
+          "right": 625.3999633789062,
+          "top": 210.4381103515625,
+          "bottom": 388.68560791015625
+        },
+        "projectedDwellingSourcePoint": {
+          "x": 525.600017786026,
+          "y": 388.45348131656647
+        },
+        "frameFit": {
+          "width": 537,
+          "height": 375,
+          "inset": 288,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 825,
+            "height": 375,
+            "top": 0,
+            "right": 825,
+            "bottom": 375,
+            "left": 0
+          },
+          "fit": {
+            "scale": 1.1604651162790698,
+            "offset": [
+              -771.8,
+              -413.4279069767442
+            ],
+            "mode": "focus-cover",
+            "window": [
+              665.0781563126252,
+              356.2605210420842,
+              710.9218436873747,
+              323.14629258517033
+            ]
+          },
+          "worldWidth": 825,
+          "boardGeometry": true,
+          "edgeSafety": null
+        },
+        "stage": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        },
+        "stageField": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        },
+        "labelsHost": {
+          "left": 0,
+          "right": 825,
+          "top": 0,
+          "bottom": 375,
+          "width": 825,
+          "height": 375
+        }
+      },
+      "viewport": {
+        "width": 825,
+        "height": 375
+      }
+    },
+    {
+      "size": "1280x720",
+      "panel": {
+        "left": 922,
+        "right": 1272,
+        "top": 72,
+        "bottom": 640
+      },
+      "hero": {
+        "left": 302.51153564453125,
+        "right": 1017.3897094726562,
+        "top": 191.37991333007812,
+        "bottom": 715.7888488769531
+      },
+      "heroAnchor": {
+        "x": 645.4000209569931,
+        "y": 489.5999984741211
+      },
+      "siteLabel": {
+        "left": 803.921875,
+        "right": 909.921875,
+        "top": 227.796875,
+        "bottom": 249.59375
+      },
+      "matchingSiteLabels": [
+        {
+          "left": 803.921875,
+          "right": 909.921875,
+          "top": 227.796875,
+          "bottom": 249.59375,
+          "styleLeft": "803.933px",
+          "styleTop": "227.797px",
+          "anchorY": "678.5041860465116",
+          "safeBottom": "595",
+          "placement": "below",
+          "placedTop": "227.796875"
+        }
+      ],
+      "mapGeometry": {
+        "frame": {
+          "left": -976.3555297851562,
+          "right": 1279.9999389648438,
+          "top": -454.9209289550781,
+          "bottom": 804.4402770996094
+        },
+        "terrain": {
+          "left": -976.3555297851562,
+          "right": 1279.9999389648438,
+          "top": -454.9209289550781,
+          "bottom": 804.4402770996094
+        },
+        "siteHotspot": {
+          "left": 715.9110717773438,
+          "right": 997.9556274414062,
+          "top": 426.6318664550781,
+          "bottom": 678.5042724609375
+        },
+        "projectedDwellingSourcePoint": {
+          "x": 856.9333536624908,
+          "y": 678.1762253046036
+        },
+        "frameFit": {
+          "width": 922,
+          "height": 720,
+          "inset": 358,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 720,
+            "top": 0,
+            "right": 1280,
+            "bottom": 720,
+            "left": 0
+          },
+          "fit": {
+            "scale": 1.6397932816537468,
+            "offset": [
+              -976.3555555555557,
+              -454.92093023255813
+            ],
+            "mode": "focus-cover",
+            "window": [
+              595.4138039710054,
+              277.42578001890956,
+              780.5861960289947,
+              439.07973526630946
+            ]
+          },
+          "worldWidth": 1280,
+          "boardGeometry": true,
+          "edgeSafety": null
+        },
+        "stage": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        },
+        "stageField": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        },
+        "labelsHost": {
+          "left": 0,
+          "right": 1280,
+          "top": 0,
+          "bottom": 720,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ],
+  "siteLabelBinding": [
+    {
+      "size": "825x375",
+      "horizontalOverlap": 103.20001220703125,
+      "verticalGap": 0
+    }
+  ],
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: the integrated-map dwelling label remains attached to its registered painted footprint"
+}

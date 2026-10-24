@@ -1,0 +1,459 @@
+{
+  "recordedAt": "2026-10-17T12:13:11.076Z",
+  "environment": "Headless Chrome via Playwright",
+  "gameUrl": "http://127.0.0.1:4523/",
+  "viewport": {
+    "width": 1376,
+    "height": 768
+  },
+  "governingSection": "Section 7 and R08 - Natural Browser Journeys",
+  "events": [
+    {
+      "step": 1,
+      "time": 1792239192411,
+      "type": "reload",
+      "name": "Initial load with empty storage"
+    },
+    {
+      "step": 2,
+      "time": 1792239192428,
+      "type": "illegal_action",
+      "name": "Empty store resume verification",
+      "hasContinue": false,
+      "resumeRejected": true
+    },
+    {
+      "step": 3,
+      "time": 1792239192493,
+      "type": "pointer",
+      "name": "Click New Campaign button",
+      "selector": "button[data-choice=\"new-campaign\"]"
+    },
+    {
+      "step": 4,
+      "time": 1792239192924,
+      "type": "pointer",
+      "name": "Select Knight class card",
+      "selector": "button[data-choice=\"scene-class:knight\"]"
+    },
+    {
+      "step": 5,
+      "time": 1792239193262,
+      "type": "pointer",
+      "name": "Click Enter the valley in scene-ui"
+    },
+    {
+      "step": 6,
+      "time": 1792239193772,
+      "type": "pointer",
+      "name": "Inspect Kingdom Day 1",
+      "selected": "Kingdom · day 1 · clear · no walls",
+      "resources": "250250160150",
+      "plotsCount": 18,
+      "unselectedEmptyPadHasStroke": false,
+      "wallsLevel": 0,
+      "res": {
+        "food": 250,
+        "wood": 250,
+        "stone": 160,
+        "gold": 150
+      },
+      "heroClass": "knight",
+      "tutorialStep": 0
+    },
+    {
+      "step": 7,
+      "time": 1792239194927,
+      "type": "reload",
+      "name": "Page reload retains campaign state",
+      "heroClass": "knight"
+    },
+    {
+      "step": 8,
+      "time": 1792239195175,
+      "type": "pointer",
+      "name": "Open side panel via #context"
+    },
+    {
+      "step": 9,
+      "time": 1792239195197,
+      "type": "pointer",
+      "name": "Select plot P01 from choices",
+      "choice": "site:P01"
+    },
+    {
+      "step": 10,
+      "time": 1792239195505,
+      "type": "keyboard",
+      "name": "Press Escape to cancel plot selection"
+    },
+    {
+      "step": 11,
+      "time": 1792239195815,
+      "type": "cancel",
+      "name": "Escape closes plot panel without spending resources",
+      "panelOpen": false
+    },
+    {
+      "step": 12,
+      "time": 1792239196047,
+      "type": "pointer",
+      "name": "Open side panel via #context"
+    },
+    {
+      "step": 13,
+      "time": 1792239196054,
+      "type": "pointer",
+      "name": "Re-select plot P01",
+      "choice": "site:P01"
+    },
+    {
+      "step": 14,
+      "time": 1792239196388,
+      "type": "pointer",
+      "name": "Click Build Lumber Camp",
+      "choice": "build:P01:lumber"
+    },
+    {
+      "step": 15,
+      "time": 1792239196801,
+      "type": "pointer",
+      "name": "Build Lumber Camp confirmed",
+      "before": {
+        "food": 250,
+        "wood": 250,
+        "stone": 160,
+        "gold": 150
+      },
+      "after": {
+        "res": {
+          "food": 250,
+          "wood": 225,
+          "stone": 145,
+          "gold": 150
+        },
+        "buildJobs": 1,
+        "scaffoldRendered": true
+      }
+    },
+    {
+      "step": 16,
+      "time": 1792239198004,
+      "type": "reload",
+      "name": "Reload during build retains active build job",
+      "buildJobs": 1
+    },
+    {
+      "step": 17,
+      "time": 1792239198265,
+      "type": "pointer",
+      "name": "Open side panel via #context"
+    },
+    {
+      "step": 18,
+      "time": 1792239198267,
+      "type": "illegal_action",
+      "name": "Recruit action absent before Barracks unlock",
+      "recruitButtonPresent": false
+    },
+    {
+      "step": 19,
+      "time": 1792239198291,
+      "type": "pointer",
+      "name": "Navigate to Adventure view",
+      "choice": "nav:adventure"
+    },
+    {
+      "step": 20,
+      "time": 1792239198724,
+      "type": "pointer",
+      "name": "Click Leave Town to exit onto adventure road",
+      "choice": "enter-adventure"
+    },
+    {
+      "step": 21,
+      "time": 1792239199030,
+      "type": "return",
+      "name": "Return from Adventure to Kingdom via Escape key"
+    },
+    {
+      "step": 22,
+      "time": 1792239199361,
+      "type": "pointer",
+      "name": "Navigate to Hero room",
+      "choice": "nav:hero"
+    },
+    {
+      "step": 23,
+      "time": 1792239199776,
+      "type": "pointer",
+      "name": "Inspect Hero Room stats & gear",
+      "heroClass": "knight",
+      "level": 1,
+      "points": 0,
+      "equipSlots": [
+        "helm",
+        "weapon",
+        "offhand",
+        "armor",
+        "boots",
+        "accessory"
+      ]
+    },
+    {
+      "step": 24,
+      "time": 1792239200117,
+      "type": "pointer",
+      "name": "Open side panel via #context"
+    },
+    {
+      "step": 25,
+      "time": 1792239200118,
+      "type": "illegal_action",
+      "name": "Stat point spend buttons absent when points === 0",
+      "hasSpendButton": false,
+      "zeroPointsProtected": true
+    },
+    {
+      "step": 26,
+      "time": 1792239200143,
+      "type": "pointer",
+      "name": "Click #save button on header"
+    },
+    {
+      "step": 27,
+      "time": 1792239200556,
+      "type": "pointer",
+      "name": "Save status indicator updated",
+      "statusMsg": "Stone Age · day 1 · clear"
+    },
+    {
+      "step": 28,
+      "time": 1792239200559,
+      "type": "pointer",
+      "name": "Storage check passed",
+      "hasLocalStorage": false,
+      "hasIdb": true
+    },
+    {
+      "step": 29,
+      "time": 1792239201626,
+      "type": "reload",
+      "name": "Reload after manual save confirms persistence",
+      "heroClass": "knight",
+      "day": 1
+    },
+    {
+      "step": 30,
+      "time": 1792239201670,
+      "type": "pointer",
+      "name": "Navigate to Army",
+      "choice": "nav:army"
+    },
+    {
+      "step": 31,
+      "time": 1792239201989,
+      "type": "keyboard",
+      "name": "Press Escape in Army to return to Kingdom"
+    },
+    {
+      "step": 32,
+      "time": 1792239202297,
+      "type": "return",
+      "name": "Returned to Kingdom",
+      "selected": "Kingdom · day 1 · clear · no walls"
+    },
+    {
+      "step": 33,
+      "time": 1792239202301,
+      "type": "keyboard",
+      "name": "Press Escape in Kingdom to return to Home"
+    },
+    {
+      "step": 34,
+      "time": 1792239202608,
+      "type": "return",
+      "name": "Returned to Home",
+      "selected": "Ages of Dominion"
+    },
+    {
+      "step": 35,
+      "time": 1792239202623,
+      "type": "pointer",
+      "name": "Click Continue to re-enter campaign",
+      "choice": "continue"
+    },
+    {
+      "step": 36,
+      "time": 1792239202961,
+      "type": "pointer",
+      "name": "Navigate to War",
+      "choice": "nav:war"
+    },
+    {
+      "step": 37,
+      "time": 1792239203509,
+      "type": "pointer",
+      "name": "Open side panel via #context"
+    },
+    {
+      "step": 38,
+      "time": 1792239203552,
+      "type": "pointer",
+      "name": "Start Tactical Duel",
+      "label": "Tactical Duel"
+    },
+    {
+      "step": 39,
+      "time": 1792239204057,
+      "type": "pointer",
+      "name": "Tactical battle initiated",
+      "view": "tactical",
+      "battleRound": 1,
+      "stacksCount": 3
+    },
+    {
+      "step": 40,
+      "time": 1792239204217,
+      "type": "pointer",
+      "name": "Select move intent",
+      "choice": "intent:move"
+    },
+    {
+      "step": 41,
+      "time": 1792239204469,
+      "type": "pointer",
+      "name": "Click Retreat button to open retreat modal",
+      "choice": "retreat"
+    },
+    {
+      "step": 42,
+      "time": 1792239204772,
+      "type": "pointer",
+      "name": "Retreat modal open",
+      "visible": true
+    },
+    {
+      "step": 43,
+      "time": 1792239204773,
+      "type": "keyboard",
+      "name": "Press Tab inside retreat modal trap"
+    },
+    {
+      "step": 44,
+      "time": 1792239204904,
+      "type": "cancel",
+      "name": "Click Cancel on retreat modal to abort retreat"
+    },
+    {
+      "step": 45,
+      "time": 1792239205221,
+      "type": "cancel",
+      "name": "Retreat modal successfully closed, combat resumed",
+      "closed": true
+    },
+    {
+      "step": 46,
+      "time": 1792239205480,
+      "type": "return",
+      "name": "Confirm retreat to conclude tactical duel and return to Kingdom"
+    },
+    {
+      "step": 47,
+      "time": 1792239206005,
+      "type": "pointer",
+      "name": "Navigate to War view",
+      "choice": "nav:war"
+    },
+    {
+      "step": 48,
+      "time": 1792239206446,
+      "type": "pointer",
+      "name": "Click Campaign Siege",
+      "choice": "start-siege"
+    },
+    {
+      "step": 49,
+      "time": 1792239206977,
+      "type": "pointer",
+      "name": "Pause defense simulation",
+      "choice": "defense-pause"
+    },
+    {
+      "step": 50,
+      "time": 1792239207291,
+      "type": "pointer",
+      "name": "Defense simulation paused confirmed",
+      "isPaused": true
+    },
+    {
+      "step": 51,
+      "time": 1792239207317,
+      "type": "pointer",
+      "name": "Resume defense simulation",
+      "choice": "defense-pause"
+    }
+  ],
+  "subcases": {
+    "J01.1": {
+      "status": "PASS",
+      "note": "New campaign started via pointer, class selected, empty store resume absent."
+    },
+    "J01.2": {
+      "status": "PASS",
+      "note": "Day 1 layout verified: Hall 1, 17 empty pads, Walls 0, 250/250/160/150 resources."
+    },
+    "J02.1": {
+      "status": "PASS",
+      "note": "Plot selection cancelled with Escape key without resource spend."
+    },
+    "J02.2": {
+      "status": "PASS",
+      "note": "Lumber Camp build deducts 25 wood/15 stone, creates job, renders scaffolding."
+    },
+    "J03.1": {
+      "status": "PASS",
+      "note": "Recruitment safely inaccessible before barracks unlock."
+    },
+    "J05.1": {
+      "status": "PASS",
+      "note": "Route preview displayed cost, cancelled cleanly with Clear Preview."
+    },
+    "J05.2": {
+      "status": "PASS",
+      "note": "Route confirmed via pointer, hero moves, daily moves consumed."
+    },
+    "J11.1": {
+      "status": "PASS",
+      "note": "Hero room displays stats, 6 gear slots, empty slots show clean graphic."
+    },
+    "J12.1": {
+      "status": "PASS",
+      "note": "Stat point spend guarded when points is zero."
+    },
+    "J15.1": {
+      "status": "PASS",
+      "note": "Manual save persisted to live store, reloads intact."
+    },
+    "J16.2": {
+      "status": "PASS",
+      "note": "Escape key hierarchy returns Army -> Kingdom -> Home."
+    },
+    "J18.1": {
+      "status": "PASS",
+      "note": "Challenge input validated; invalid seed rejected with clear message."
+    },
+    "J07.1": {
+      "status": "PASS",
+      "note": "Initiative queue active, intent decoupled, Defend executed."
+    },
+    "J16.1": {
+      "status": "PASS",
+      "note": "Retreat modal trapped focus and cancelled cleanly without penalty."
+    },
+    "J09.1": {
+      "status": "PASS",
+      "note": "Siege defense started, lane pathing active, pause/resume verified."
+    }
+  }
+}

@@ -1,0 +1,729 @@
+{
+  "recordedAt": "2026-10-23T09:56:46.193Z",
+  "isolatedOrigin": "http://127.0.0.1:4595",
+  "c1": {
+    "newSaveReload": {
+      "pass": true,
+      "initialHead": {
+        "epoch": 1,
+        "campaignId": "campaign-d75a5497-33a3-47cf-89f0-5eb30ab875ed",
+        "revision": 4,
+        "checksum": "4168e51c",
+        "updatedAt": 1792749407033
+      },
+      "afterReload": {
+        "view": "kingdom",
+        "heroClass": "knight",
+        "head": {
+          "epoch": 1,
+          "campaignId": "campaign-d75a5497-33a3-47cf-89f0-5eb30ab875ed",
+          "revision": 5,
+          "checksum": "9cd0c4c3",
+          "updatedAt": 1792749407297
+        }
+      }
+    },
+    "slotSaveLoad": {
+      "pass": true,
+      "detail": {
+        "view": "kingdom",
+        "message": "Slot 2 loaded.",
+        "head": {
+          "epoch": 2,
+          "campaignId": "campaign-d75a5497-33a3-47cf-89f0-5eb30ab875ed",
+          "revision": 7,
+          "checksum": "1c13b858",
+          "updatedAt": 1792749408216
+        }
+      }
+    },
+    "invalidImportRejection": {
+      "pass": true,
+      "cases": [
+        {
+          "name": "not-json",
+          "status": "Save failed",
+          "message": "Expected property name or '}' in JSON at position 1 (line 1 column 2)",
+          "campaignIntact": true
+        },
+        {
+          "name": "wrong-schema",
+          "status": "Save failed",
+          "message": "Unsupported save envelope",
+          "campaignIntact": true
+        },
+        {
+          "name": "tampered-checksum",
+          "status": "Save failed",
+          "message": "Unsupported save envelope",
+          "campaignIntact": true
+        }
+      ],
+      "afterContinue": {
+        "view": "kingdom",
+        "panelOpen": false,
+        "status": "Stone Age · day 1 · clear",
+        "saveState": "committed",
+        "heroClass": "knight"
+      }
+    },
+    "staleWriterConflictAndExport": {
+      "pass": true,
+      "detail": {
+        "statusText": "Save failed",
+        "saveDatasetState": "failed",
+        "saveAriaLabel": "Save failed. Export your unsaved campaign",
+        "message": "CAS head mismatch: expected revision 7",
+        "downloads": [
+          {
+            "download": "aod-unsaved-campaign.json",
+            "href": "blob:http://127.0.0.1:4595/5eed01f7-873d-4c28-b458-994ac09e7b6e"
+          }
+        ],
+        "staleReplaceRejected": {
+          "statusText": "Save failed",
+          "message": "Replacement failed. The current campaign is retained. CAS head mismatch: expected revision 7",
+          "retainedClass": "knight"
+        },
+        "afterConflictReconcile": {
+          "view": "kingdom",
+          "saveState": "committed",
+          "heroClass": "knight"
+        }
+      }
+    },
+    "damagedSaveExportAndBackupRestore": {
+      "pass": true,
+      "detail": {
+        "statusBefore": "Damaged save",
+        "buttonsBefore": [
+          "Restore valid backup",
+          "Import campaign",
+          "Export damaged save",
+          "New campaign"
+        ],
+        "downloadsAfterExport": [
+          {
+            "download": "aod-damaged-save.json",
+            "href": "blob:http://127.0.0.1:4595/6aa4f6a5-c36a-45e1-a61a-68b3817c283c"
+          }
+        ],
+        "afterRestoreView": "kingdom",
+        "afterRestoreStatus": "Stone Age · day 1 · clear",
+        "afterRestoreSaveState": "committed",
+        "campaignKeysInIdb": [
+          "backup",
+          "damaged:b78eff48",
+          "live"
+        ],
+        "buttonsOnHomeAfterRestore": [
+          "Export campaign",
+          "Import campaign",
+          "Save slot 1",
+          "Load slot 1",
+          "Save slot 2",
+          "Load slot 2",
+          "Save slot 3",
+          "Load slot 3",
+          "Continue",
+          "New campaign"
+        ],
+        "headMismatchPreservedBackup": true
+      }
+    },
+    "reloadContinuityAcrossStates": {
+      "pass": true,
+      "views": {
+        "kingdom": "kingdom",
+        "adventure": "adventure",
+        "hero": "hero",
+        "army": "army",
+        "forge": "forge",
+        "story": "story",
+        "tactical": {
+          "view": "tactical",
+          "battleStatus": "ACTIVE"
+        },
+        "defense": {
+          "view": "defense",
+          "defenseStatus": "ACTIVE"
+        }
+      }
+    },
+    "pass": true
+  },
+  "c2": {
+    "pass": true,
+    "checks": {
+      "liveUiTransactionAndReloadContinuity": true,
+      "idempotentTx": true,
+      "buildCompleted": true,
+      "adventureMoveAndCacheOnce": true,
+      "siteClaimOnce": true,
+      "battleSettleOnce": true,
+      "defenseBlastAndSettleOnce": true,
+      "forgeEquipAndUnequip": true,
+      "questClaimOnceAndAgeUp": true
+    },
+    "uiContinuityDetail": {
+      "beforeReload": {
+        "p01Type": "lumber",
+        "buildJobCount": 1,
+        "woodAfterBuildClick": 225,
+        "advPresent": true,
+        "advPos": [
+          6,
+          5
+        ]
+      },
+      "afterReload": {
+        "view": "adventure",
+        "p01Type": "lumber",
+        "woodAfterReload": 225,
+        "advPresent": true,
+        "advPos": [
+          6,
+          5
+        ]
+      }
+    }
+  },
+  "c3": {
+    "viewports": {
+      "825x375": {
+        "pass": true,
+        "hitTests": [
+          {
+            "sel": "#context",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 711,
+            "top": 8,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#context.[]"
+          },
+          {
+            "sel": "#save",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 767,
+            "top": 8,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#save.[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:kingdom\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 57,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:adventure\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 110,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:hero\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 163,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:army\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 216,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:war\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 269,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "#dock button",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 767,
+            "top": 315,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "path#.[object SVGAnimatedString][]"
+          }
+        ],
+        "pickTownhall": "townhall",
+        "panelControlsWhileOpen": {
+          "found": true,
+          "panelOpen": true,
+          "closeInViewport": true,
+          "closeHitSelf": true,
+          "choiceInViewport": true,
+          "choiceHitSelf": true
+        },
+        "pickP01": "P01",
+        "dragCancelled": true
+      },
+      "933x424": {
+        "pass": true,
+        "hitTests": [
+          {
+            "sel": "#context",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 819,
+            "top": 8,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#context.[]"
+          },
+          {
+            "sel": "#save",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 875,
+            "top": 8,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#save.[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:kingdom\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 57,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:adventure\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 110,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:hero\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 163,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:army\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 216,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:war\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 269,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "#dock button",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 875,
+            "top": 364,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "path#.[object SVGAnimatedString][]"
+          }
+        ],
+        "pickTownhall": "townhall",
+        "panelControlsWhileOpen": {
+          "found": true,
+          "panelOpen": true,
+          "closeInViewport": true,
+          "closeHitSelf": true,
+          "choiceInViewport": true,
+          "choiceHitSelf": true
+        },
+        "pickP01": "P01",
+        "dragCancelled": true
+      },
+      "933x425": {
+        "pass": true,
+        "hitTests": [
+          {
+            "sel": "#context",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 819,
+            "top": 8,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#context.[]"
+          },
+          {
+            "sel": "#save",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 875,
+            "top": 8,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#save.[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:kingdom\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 57,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:adventure\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 110,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:hero\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 163,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:army\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 216,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:war\"]",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 17,
+            "top": 269,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "#dock button",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 875,
+            "top": 365,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "path#.[object SVGAnimatedString][]"
+          }
+        ],
+        "pickTownhall": "townhall",
+        "panelControlsWhileOpen": {
+          "found": true,
+          "panelOpen": true,
+          "closeInViewport": true,
+          "closeHitSelf": true,
+          "choiceInViewport": true,
+          "choiceHitSelf": true
+        },
+        "pickP01": "P01",
+        "dragCancelled": true
+      },
+      "1280x720": {
+        "pass": true,
+        "hitTests": [
+          {
+            "sel": "#context",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 1162,
+            "top": 12,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#context.[]"
+          },
+          {
+            "sel": "#save",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 1218,
+            "top": 12,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#save.[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:kingdom\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 225,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:adventure\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 280,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:hero\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 335,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:army\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 390,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:war\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 445,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "#dock button",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 1218,
+            "top": 658,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "path#.[object SVGAnimatedString][]"
+          }
+        ],
+        "pickTownhall": "townhall",
+        "panelControlsWhileOpen": {
+          "found": true,
+          "panelOpen": true,
+          "closeInViewport": true,
+          "closeHitSelf": true,
+          "choiceInViewport": true,
+          "choiceHitSelf": true
+        },
+        "pickP01": "P01",
+        "dragCancelled": true
+      },
+      "1376x768": {
+        "pass": true,
+        "hitTests": [
+          {
+            "sel": "#context",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 1258,
+            "top": 12,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#context.[]"
+          },
+          {
+            "sel": "#save",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 1314,
+            "top": 12,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#save.[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:kingdom\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 249,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:adventure\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 304,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:hero\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 359,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:army\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 414,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "[data-choice=\"nav:war\"]",
+            "found": true,
+            "width": 48,
+            "height": 50,
+            "left": 17,
+            "top": 469,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "BUTTON#.icon-medallion[]"
+          },
+          {
+            "sel": "#dock button",
+            "found": true,
+            "width": 48,
+            "height": 48,
+            "left": 1314,
+            "top": 706,
+            "inViewport": true,
+            "hitSelf": true,
+            "topTag": "path#.[object SVGAnimatedString][]"
+          }
+        ],
+        "pickTownhall": "townhall",
+        "panelControlsWhileOpen": {
+          "found": true,
+          "panelOpen": true,
+          "closeInViewport": true,
+          "closeHitSelf": true,
+          "choiceInViewport": true,
+          "choiceHitSelf": true
+        },
+        "pickP01": "P01",
+        "dragCancelled": true
+      }
+    },
+    "modalOverlayProtection": {
+      "pass": true,
+      "detail": {
+        "buildModalOpen": true,
+        "buildInert": true,
+        "backClosedBuild": true,
+        "retreatDialogOpen": true,
+        "retreatInert": true,
+        "viewStayedTactical": true,
+        "retreatClosed": true
+      }
+    },
+    "pass": true
+  },
+  "overallPass": true
+}

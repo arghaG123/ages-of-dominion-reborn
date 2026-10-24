@@ -1,0 +1,51 @@
+{
+  "reviewId": "M05-iron-market-natural-current-review-20261023",
+  "mock": "M05",
+  "status": "FAIL_M05_IRON_KINGDOM_SCENE_AND_HUD_MISMATCH",
+  "reviewedAt": "2026-10-23",
+  "viewport": {
+    "css": [1280, 720],
+    "screenshot": "qa/game-completion-20261023/m05-iron-market-natural-current-20261023.png",
+    "screenshotSHA256": "77FB50B3D32CABDC20C61BB646DE5505517F4A39C027058E0BCE845E047787D0"
+  },
+  "reference": {
+    "file": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/05-kingdom-iron.jpg",
+    "sha256": "E646336F428E9FDE63C2B657A10D7375B177A5689944C7A44E8A80AAE8821694"
+  },
+  "source": {
+    "mainJsSHA256": "5F1533109D3FBEB86E2CB3ADD6E6C655954D31FE8C9E47FA9ABAE15DC9C3F7E7",
+    "gameCssSHA256": "28CB0BC9F80929E65B8B3E69EEA9AD8BBF116533E883326AD120C1809D5C1BE4"
+  },
+  "naturalState": {
+    "campaignId": "campaign-8be86723-842b-4775-b29b-e988acd7bec6",
+    "age": 2,
+    "day": 1,
+    "view": "market",
+    "selected": "Market",
+    "plots": 18,
+    "occupiedPlots": 18,
+    "wallLevel": 2,
+    "storage": "committed",
+    "saveRevision": 29676,
+    "panel": {
+      "sheet": "market-inspector",
+      "rect": [460, 576, 360, 134]
+    }
+  },
+  "verifiedBehavior": [
+    "The natural Iron campaign opens Market over its registered Kingdom scene.",
+    "The default Market status and Edit control are bottom-centered in the target location.",
+    "Edit exposes accessible buy/sell controls for exact batches of 100; no trade was submitted."
+  ],
+  "visualFindings": [
+    "The reference has a dense walled Iron city, a stone city wall, and a broad river crossing. The live Iron-family scene is a sparse settlement with an Iron stake wall and large open interior, so its dominant world composition and wall material do not match.",
+    "The reference includes a named Lady Elara portrait/health card and a left Build/Army/Research/Diplomacy rail. The current screen has no hero profile card and keeps the compact bottom primary-navigation medallions.",
+    "The Market panel placement and status/Edit interaction now match the reference structure, but it has no market-building thumbnail."
+  ],
+  "remainingWork": [
+    "Replace or materially repair the registered Iron-family Kingdom ground and wall treatment while preserving legal site geometry and truthful dynamic building layers.",
+    "Implement a truthful hero profile and contextual left rail using state the campaign actually owns; do not invent the mock's name or health values.",
+    "Reopen the exact natural Iron/Market state and review the resulting pixels before accepting."
+  ],
+  "acceptance": "FAIL: the state is now matched and the Market panel/trade path was reviewed, but the main scene and HUD remain materially different from M05. This mock joins the later failure pass; it is not closed."
+}

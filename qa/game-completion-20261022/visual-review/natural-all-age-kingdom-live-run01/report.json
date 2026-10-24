@@ -1,0 +1,12 @@
+{
+  "recordedAt": "2026-10-21T19:10:27.402Z",
+  "classification": "NATURAL_UI_CAMPAIGN_CONTROLLED_BROWSER_CLOCK",
+  "journey": "new campaign -> skip the optional tutorial for a clean visual pass -> build four income sites -> upgrade Hall and walls -> pay each legal age gate -> capture current-age Kingdom and Adventure scenes -> preview and confirm one Iron Adventure road step -> save/reload Future",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "note": "All construction, age advancement, map entry, and save actions use visible game controls. Playwright fast-forwards only idle elapsed time to verify legal production and construction; no campaign state or resources are injected. Adventure is entered in Stone and its age-specific visible terrain is captured at every legal age transition.",
+  "errors": [],
+  "ages": [],
+  "screenshots": [],
+  "error": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-choice=\"scene-class:knight\"]').first() to be visible\u001b[22m\n",
+  "passed": false
+}

@@ -1,0 +1,167 @@
+{
+  "recordedAt": "2026-10-21T06:18:36.815Z",
+  "classification": "NATURAL_GRASSLANDS_MILL_CLAIM_ON_FOOT_SAVE_RELOAD",
+  "journey": "Fresh visible Grasslands campaign -> cardinal route to mill approach -> on-foot arrival -> claim offer -> save/reload",
+  "note": "Campaign, position, and resources are never injected. A read-only path search excludes unresolved guards; each move and the claim use visible game controls. SVG actor DOM bounds include transparent source-image margins, so on-foot visibility is reviewed in the saved pixels rather than inferred from that rectangle.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "steps": [
+    {
+      "position": [
+        8,
+        4
+      ],
+      "moves": 4,
+      "day": 1,
+      "revision": 11
+    },
+    {
+      "position": [
+        7,
+        4
+      ],
+      "moves": 3,
+      "day": 1,
+      "revision": 14
+    },
+    {
+      "position": [
+        6,
+        4
+      ],
+      "moves": 2,
+      "day": 1,
+      "revision": 17
+    },
+    {
+      "position": [
+        5,
+        4
+      ],
+      "moves": 1,
+      "day": 1,
+      "revision": 24
+    },
+    {
+      "position": [
+        4,
+        4
+      ],
+      "moves": 0,
+      "day": 1,
+      "revision": 27
+    }
+  ],
+  "start": {
+    "position": [
+      8,
+      3
+    ],
+    "moves": 5,
+    "revision": 8,
+    "seed": 1196035133
+  },
+  "site": {
+    "id": "mill",
+    "approach": [
+      4,
+      4
+    ],
+    "pathCells": [
+      [
+        8,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "pathLength": 5,
+    "offerKey": "millFood",
+    "offer": 149
+  },
+  "visualLabels": {
+    "visibleTexts": [
+      "Town",
+      "Water mill"
+    ],
+    "nearbyAccessibleAnchors": [
+      {
+        "id": "wood",
+        "label": "Wood cache",
+        "visibleMarkerCount": 1
+      }
+    ],
+    "onFootHeroVisibleLabel": false,
+    "onFootHeroAccessibleName": "Your hero on foot",
+    "compactScale": 0.5995639534883721
+  },
+  "claim": {
+    "grant": {
+      "field": "food",
+      "before": 250,
+      "after": 399,
+      "amount": 149
+    },
+    "offer": 149,
+    "claimedSites": [
+      "mill"
+    ],
+    "traveler": {
+      "mode": "on-foot",
+      "actor": {
+        "kind": "actor",
+        "id": "knight",
+        "domBoundsIncludeTransparentSourceMargins": true,
+        "bounds": {
+          "left": 96.0192642211914,
+          "top": 98.16993713378906,
+          "right": 357.40296173095703,
+          "bottom": 289.9115905761719
+        },
+        "visualReviewCaptureRequired": true,
+        "role": "img",
+        "accessibleName": "Your hero on foot"
+      }
+    },
+    "day": 1,
+    "revision": 31
+  },
+  "capture": "qa\\game-completion-20261021\\visual-review\\adventure-mill-natural-live-20261021-run01\\grasslands-mill-claimed-on-foot-825x375.jpg",
+  "reload": {
+    "position": [
+      4,
+      4
+    ],
+    "day": 1,
+    "resources": {
+      "food": 399,
+      "wood": 250,
+      "stone": 160,
+      "gold": 150
+    },
+    "heroXp": 0,
+    "heroLevel": 1,
+    "claimedSites": [
+      "mill"
+    ],
+    "repeatedClaimButtonCount": 0,
+    "claimedCopy": "WATER MILL\n\nThis site has already been explored.\n\nTRAVEL\n\nDISCOVERED PLACES\n\nTown\nWater mill\nRest · spend 1 move to restore mana\nEnd day · Restore daily movement\nReturn — Reach the town approach first.\nReview tutorial",
+    "revision": 34
+  },
+  "passed": true
+}

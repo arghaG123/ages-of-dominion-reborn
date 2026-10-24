@@ -6,19 +6,20 @@
 <title>Ages of Dominion</title>
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="src/client/game.css">
+<link rel="stylesheet" href="src/client/polish.css">
 </head>
 <body>
 <input id="import-file" type="file" accept="application/json,.json" hidden aria-label="Import campaign file">
 <input id="challenge-file" type="file" accept="application/json,.json" hidden aria-label="Import challenge file">
 <div id="rotate">Rotate to landscape to play. Your campaign stays saved.</div>
 <main id="app">
+  <div id="notification" hidden role="alert"><p id="notification-text"></p><button id="notification-close" type="button" aria-label="Dismiss notification">×</button></div>
   <header>
     <h1>Ages of Dominion</h1>
     <span id="status" role="status"></span>
     <div id="resources" aria-label="Campaign resources"></div>
-    <p id="resume" role="status" hidden></p>
-    <button id="context" type="button" aria-expanded="false" aria-controls="panel">All actions</button>
-    <button id="save" type="button">Save</button>
+    <button id="context" type="button" aria-label="Menu" aria-expanded="false" aria-controls="panel"></button>
+    <button id="save" type="button" aria-label="Save"></button>
   </header>
   <section id="stage">
     <div id="stage-field">
@@ -34,11 +35,17 @@
         <p id="gate-kicker">Stone valley</p>
         <h2 id="gate-title">Ages of Dominion</h2>
         <p id="gate-line"></p>
+        <details id="gate-report" hidden>
+          <summary role="status">Away-time report</summary>
+          <p id="gate-report-copy"></p>
+          <button type="button" id="gate-report-dismiss">Dismiss report</button>
+        </details>
       </div>
       <div id="gate-actions" aria-label="Campaign gate"></div>
     </div>
     <div id="dock" aria-label="Primary actions"></div>
     <aside id="panel">
+      <button id="panel-close" type="button" aria-label="Close details">×</button>
       <h2 id="selected">Kingdom</h2>
       <div id="choices"></div>
       <p id="message" role="alert"></p>
@@ -50,6 +57,15 @@
       <div>
         <button type="button" id="retreat-cancel" data-choice="retreat-cancel">Cancel</button>
         <button type="button" id="retreat-confirm" data-choice="retreat-confirm">Confirm retreat</button>
+      </div>
+    </div>
+    <div id="build-confirm" role="dialog" aria-modal="true" aria-labelledby="build-title" hidden>
+      <h2 id="build-title"></h2>
+      <p id="build-price"></p>
+      <p id="build-detail"></p>
+      <div>
+        <button type="button" id="build-cancel">Cancel</button>
+        <button type="button" id="build-commit">Confirm construction</button>
       </div>
     </div>
   </section>

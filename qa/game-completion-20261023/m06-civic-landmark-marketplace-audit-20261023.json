@@ -1,0 +1,39 @@
+{
+  "reviewId": "M06-medieval-civic-landmark-and-marketplace-audit-20261023",
+  "date": "2026-10-23",
+  "mock": "M06",
+  "status": "FAIL_MISSING_MARKETPLACE_MECHANIC_AND_CASTLE_ART",
+  "reference": {
+    "sha256": "5dd5adb7585e97be03048f1fac97535b67d40387387f5f314a17da92e1db0809",
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/06-kingdom-medieval.jpg",
+    "dimensions": [
+      1376,
+      768
+    ]
+  },
+  "priorMatchedEvidence": "qa/game-completion-20261022/mock-live-review-run01/m06-medieval-kingdom-live-review-20261022.json",
+  "sourceAudit": {
+    "castleAssetsFound": false,
+    "buildingTypes": "The current campaign BUILDINGS catalog has no market or marketplace building; the Market trade screen is separate.",
+    "medievalArtCatalog": "The Medieval age-building catalog has no Marketplace entry.",
+    "marketplaceAssetsFound": false,
+    "civicArt": "Available Medieval Town Hall artwork is a manor-house style sprite, not the large fortified castle shown in M06.",
+    "sha256": {
+      "src/data/age-buildings.json": "5ab754dd315d87d9036a2d7ac781e2170c21c49e4337dcd933c32a6658fc04e7",
+      "src/client/main.js": "a784a3bebc2f455023bf2402ff7e2779159ac42da38ea171ca94fec035e0fd7a",
+      "src/data/reference-data.json": "2f36de5df95006fb22c5bf7cfb5538d4903e396e8fc4d01df785b1fead50a1c9",
+      "src/client/game.css": "74bc6b6dd9804408114019463a27c8bbdb71a7296fce2345035644206288143b"
+    }
+  },
+  "repairState": {
+    "m06Closed": false,
+    "sharedInspector": "The existing bottom-center Kingdom inspector and left rail are in src/client/polish.css from the 22 October work; no duplicate source change was retained in this pass.",
+    "reason": "The shared inspector cannot create a missing buildable Marketplace, its legal cost and level behavior, its art, or the central castle."
+  },
+  "next": [
+    "Adopt or create reviewed Medieval castle and Marketplace art, then bind them to actual dynamic saved-state layers.",
+    "Define Marketplace costs, levels, and actions in the game contract if it remains a buildable facility; otherwise revise the mock to the existing separate Market screen.",
+    "Rework the natural Medieval settlement using real saved buildings and preserve site identities, production levels, and wall progression.",
+    "Retain matched landscape screenshots and verify the closed and open inspector, wall phases, actor occlusion, and exact landscape sizes before closing M06."
+  ]
+}

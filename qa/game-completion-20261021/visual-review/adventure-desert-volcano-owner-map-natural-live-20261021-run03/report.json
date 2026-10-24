@@ -1,0 +1,836 @@
+{
+  "recordedAt": "2026-10-21T18:09:13.885Z",
+  "classification": "NATURAL_UI_DESERT_VOLCANO_OWNER_MAP_TWO_BRIDGES_SIX_SITES_TOWN_RETURN_REENTRY_WITH_RELOAD_BOUNDED_NOT_FULL_MAP_OR_OWNER_ACCEPTANCE",
+  "journey": "fresh visible campaign -> build Barracks -> enter Desert Volcano -> naturally traverse both registered bridge decks -> visit and interact with all six registered sites -> return to Town and re-enter Adventure -> persist and reload position, rewards and discoveries",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "viewport": "1280x720",
+  "bridgeOrder": [
+    "desert-west-canyon-bridge",
+    "desert-east-lava-bridge"
+  ],
+  "campaignId": "campaign-e47a5c00-4f84-4d15-ab58-02d353b9bea9",
+  "layoutId": "desert-volcano-layout-2",
+  "seed": 3453186635,
+  "renderBinding": {
+    "worldId": "desert-volcano",
+    "terrainFile": "assets/mocks/owner-approved-vast-adventure-maps-20261020/04_Vast_Map_Desert_Volcanic_Sandstorm.png",
+    "renderModel": "integrated-map-art-plus-live-interactions",
+    "registeredBridgeCount": 2,
+    "playableCrossingCount": 2,
+    "artMode": "painted source bridges remain in the integrated owner painting; no duplicate generic bridge stamp is expected",
+    "sourceSize": [
+      1376,
+      768
+    ]
+  },
+  "start": {
+    "x": 7,
+    "y": 6,
+    "moves": 5,
+    "visited": [
+      "7,6"
+    ],
+    "resolvedGuards": [],
+    "cacheOffers": {
+      "food": 145,
+      "wood": 141,
+      "stone": 103,
+      "gold": 246
+    },
+    "collectedCaches": [],
+    "siteOffers": {
+      "ruinXp": 90,
+      "millFood": 145,
+      "mineGold": 246
+    },
+    "claimedSites": [],
+    "pendingEncounter": null,
+    "atTown": false
+  },
+  "crossings": [
+    {
+      "bridgeId": "desert-west-canyon-bridge",
+      "start": [
+        7,
+        6
+      ],
+      "nearBank": [
+        1,
+        1
+      ],
+      "farBank": [
+        3,
+        2
+      ],
+      "approachCells": [
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "deckCells": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "crossingCells": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "committedCells": [
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "movementCost": 18,
+      "daysEnded": 3,
+      "finalPosition": [
+        3,
+        2
+      ],
+      "allDeckVisited": true
+    },
+    {
+      "bridgeId": "desert-east-lava-bridge",
+      "start": [
+        3,
+        2
+      ],
+      "nearBank": [
+        9,
+        7
+      ],
+      "farBank": [
+        12,
+        7
+      ],
+      "approachCells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          7
+        ]
+      ],
+      "deckCells": [
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "crossingCells": [
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ]
+      ],
+      "committedCells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ]
+      ],
+      "movementCost": 18,
+      "daysEnded": 4,
+      "finalPosition": [
+        12,
+        7
+      ],
+      "allDeckVisited": true
+    }
+  ],
+  "siteInteractions": [
+    {
+      "siteId": "shrine",
+      "start": [
+        12,
+        7
+      ],
+      "approach": [
+        3,
+        2
+      ],
+      "route": [
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "routeCost": 18,
+      "skillId": "logistics",
+      "choices": [
+        "logistics",
+        "archery"
+      ],
+      "claimed": true,
+      "skillRankBefore": 0,
+      "skillRankAfter": 1
+    },
+    {
+      "siteId": "ruin",
+      "start": [
+        3,
+        2
+      ],
+      "approach": [
+        8,
+        6
+      ],
+      "route": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "routeCost": 15,
+      "choiceText": "Study the ruins · +90 XP",
+      "xpBefore": 0,
+      "xpAfter": 90,
+      "levelBefore": 1,
+      "levelAfter": 1,
+      "claimed": true
+    },
+    {
+      "siteId": "mill",
+      "start": [
+        8,
+        6
+      ],
+      "approach": [
+        7,
+        7
+      ],
+      "route": [
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "routeCost": 2,
+      "choiceText": "Collect provisions · +145 food",
+      "amount": 145,
+      "resource": "food",
+      "claimed": true
+    },
+    {
+      "siteId": "mine",
+      "start": [
+        7,
+        7
+      ],
+      "approach": [
+        2,
+        4
+      ],
+      "route": [
+        [
+          7,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "routeCost": 10,
+      "choiceText": "Recover gold · +246",
+      "amount": 246,
+      "resource": "gold",
+      "claimed": true
+    },
+    {
+      "siteId": "dwelling",
+      "start": [
+        2,
+        4
+      ],
+      "approach": [
+        5,
+        4
+      ],
+      "route": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "routeCost": 3,
+      "offerChoice": "offer-dwelling:wolf",
+      "terms": {
+        "id": "dwelling:dwelling:wolf",
+        "siteId": "dwelling",
+        "type": "wolf",
+        "count": 5,
+        "multiplier": 1,
+        "claimed": false
+      },
+      "payment": {
+        "food": 40,
+        "gold": 35
+      },
+      "claimed": true
+    }
+  ],
+  "townReturn": {
+    "start": [
+      5,
+      4
+    ],
+    "route": [
+      [
+        6,
+        3
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        7,
+        6
+      ]
+    ],
+    "routeCost": 10,
+    "townApproach": [
+      7,
+      6
+    ],
+    "atTown": true,
+    "kingdomView": true
+  },
+  "townReentry": {
+    "position": [
+      7,
+      6
+    ],
+    "atTown": false,
+    "visitedCount": 38,
+    "claimedSites": [
+      "shrine",
+      "ruin",
+      "mill",
+      "mine"
+    ]
+  },
+  "captures": [
+    {
+      "name": "desert-volcano-start",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\desert-volcano-start-1280x720.png"
+    },
+    {
+      "name": "after-desert-west-canyon-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\after-desert-west-canyon-bridge-1280x720.png"
+    },
+    {
+      "name": "after-desert-east-lava-bridge",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\after-desert-east-lava-bridge-1280x720.png"
+    },
+    {
+      "name": "after-site-shrine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\after-site-shrine-1280x720.png"
+    },
+    {
+      "name": "after-site-ruin",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\after-site-ruin-1280x720.png"
+    },
+    {
+      "name": "after-site-mill",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\after-site-mill-1280x720.png"
+    },
+    {
+      "name": "after-site-mine",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\after-site-mine-1280x720.png"
+    },
+    {
+      "name": "after-site-dwelling",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\after-site-dwelling-1280x720.png"
+    },
+    {
+      "name": "desert-volcano-town-approach",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\desert-volcano-town-approach-1280x720.png"
+    },
+    {
+      "name": "returned-to-kingdom",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\returned-to-kingdom-1280x720.png"
+    },
+    {
+      "name": "desert-volcano-reentered-adventure",
+      "viewport": "1280x720",
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\desert-volcano-reentered-adventure-1280x720.png"
+    }
+  ],
+  "responsiveCaptures": [
+    {
+      "name": "desert-volcano-start",
+      "viewport": "825x375",
+      "layout": {
+        "viewport": {
+          "width": 825,
+          "height": 375
+        },
+        "world": {
+          "left": 0,
+          "top": -44.30232620239258,
+          "right": 825,
+          "bottom": 416.16279220581055,
+          "width": 825,
+          "height": 460.4651184082031
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 340.6567077636719,
+          "top": 175.1215057373047,
+          "right": 428.54547119140625,
+          "bottom": 239.5935516357422
+        },
+        "documentScroll": {
+          "width": 825,
+          "height": 375
+        }
+      },
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\desert-volcano-start-825x375.png"
+    },
+    {
+      "name": "desert-volcano-start",
+      "viewport": "933x424",
+      "layout": {
+        "viewport": {
+          "width": 933,
+          "height": 424
+        },
+        "world": {
+          "left": 0,
+          "top": -50.163719177246094,
+          "right": 933,
+          "bottom": 470.5804214477539,
+          "width": 933,
+          "height": 520.744140625
+        },
+        "mapCellCount": 160,
+        "hero": {
+          "left": 391.28167724609375,
+          "top": 208.44149780273438,
+          "right": 479.17047119140625,
+          "bottom": 272.91351318359375
+        },
+        "documentScroll": {
+          "width": 933,
+          "height": 424
+        }
+      },
+      "file": "qa\\game-completion-20261021\\visual-review\\adventure-desert-volcano-owner-map-natural-live-20261021-run03\\desert-volcano-start-933x424.png"
+    }
+  ],
+  "errors": [],
+  "notFound": [],
+  "reload": {
+    "campaignId": "campaign-e47a5c00-4f84-4d15-ab58-02d353b9bea9",
+    "position": [
+      7,
+      6
+    ],
+    "allDecksRemainVisited": true,
+    "revision": 440,
+    "browserView": "adventure",
+    "siteClaimsPersisted": true,
+    "dwellingClaimPersisted": true
+  },
+  "totalDaysEnded": 18,
+  "passed": true
+}

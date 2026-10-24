@@ -1,0 +1,51 @@
+{
+  "reviewId": "M11-adventure-overview-natural-medieval-live-review-20261022",
+  "reviewDate": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "runKind": "natural-visible-campaign-state-screen-review",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/11-adventure-overview.jpg",
+    "sha256": "D8A090A128FE15CCC037C225F347B9064FB2624F0586FBA1508EB06A18651C95",
+    "dimensions": [1376, 768]
+  },
+  "status": "PARTIAL_NATURAL_ADVENTURE_MAP_PRESENT_HUD_AND_WORLD_COMPOSITION_MISMATCH",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "naturalCampaignState": true,
+    "slot1Touched": false
+  },
+  "screen": {
+    "surface": "Adventure overview map",
+    "viewportCss": [1280, 720],
+    "world": "Sunlit Riverlands",
+    "movesLeft": 5,
+    "hero": "Knight level 1, XP 0, mana 10/10",
+    "army": "4 stacks, 30 units",
+    "visibleLocationLabels": ["Town", "Shrine · explored"],
+    "returnEnabled": false,
+    "travelAndSitesEnabled": true,
+    "heroMovementInvoked": false
+  },
+  "visualFindings": [
+    "M11 shows a full landscape Adventure map with the King's Road minimap, labeled Oakhaven, Northern Woods, Ruined Watchtower, Stonebridge and Forest Dwelling, a mounted hero near lower center, a top-right named resource tray and a detailed hero panel, plus Quests, Bag, Camp and Diplomacy controls at lower right.",
+    "Live shows a wide detailed river-valley map, a circular Valley minimap, central castle, fields, roads, a Town and explored Shrine label, and the hero marker near lower center. The top-right chips abbreviate resources; the hero panel shows Knight level 1, XP and mana, with Army counts, while bottom navigation occupies lower left and only two controls appear at lower right.",
+    "The broad full-map landscape, minimap, hero position and location labeling align. The map's focal composition, labeled locations, resource and hero hierarchy, health/experience content, and adventure action bar differ from M11."
+  ],
+  "evidence": {
+    "liveScreenshotObservedThroughApprovedCUA": true,
+    "liveScreenshotRetained": false,
+    "noHeroMovementOrLocationActionInvoked": true,
+    "noSaveOrBattleActionInvoked": true,
+    "resourceIncreaseFromPassiveCampaignProductionObserved": true,
+    "sourceOrTestChanges": false,
+    "ownerAccepted": false
+  },
+  "open": [
+    "Compare the full natural Medieval map and all required Adventure controls against M11 at the exact desktop and compact viewports, retaining captures.",
+    "Review natural map labels, hero health/experience hierarchy, resource tray, and Quests/Bag/Camp/Diplomacy controls without treating map geometry tests as visual acceptance.",
+    "Complete M01-M30 and J01-J18 plus independent desktop, final package, device, and owner acceptance gates."
+  ]
+}

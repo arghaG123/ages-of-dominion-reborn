@@ -1,0 +1,140 @@
+{
+  "recordedAt": "2026-10-20T03:24:42.514Z",
+  "classification": "NATURAL_UI_BROWSER_JOURNEY_FRESH_PROFILE_BUILD_RECRUIT_ADVENTURE_TACTICAL_AND_RELOAD_NOT_FULL_JOURNEY_OR_OWNER_ACCEPTANCE",
+  "viewport": "1280x720",
+  "route": "fresh isolated profile -> new warlock campaign -> inspect spellbook -> build Barracks -> recruit 5 Melee -> leave town -> preview and confirm guard route -> Tactical cast Magic Arrow -> manual Move -> UI auto-resolve remainder -> settle -> durable acknowledgement -> reload",
+  "campaignId": "campaign-9c08d87b-9243-45da-8b76-932be39edb22",
+  "construction": {
+    "plotId": "P01",
+    "building": "barracks",
+    "level": 1
+  },
+  "recruitment": {
+    "before": 12,
+    "after": 17,
+    "armyStacks": 2
+  },
+  "adventure": {
+    "start": {
+      "x": 8,
+      "y": 8,
+      "moves": 5,
+      "visited": [
+        "8,8"
+      ],
+      "resolvedGuards": [],
+      "pendingEncounter": null,
+      "atTown": false
+    },
+    "route": {
+      "destination": [
+        10,
+        5
+      ],
+      "cost": 5,
+      "cells": [
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          5
+        ]
+      ]
+    },
+    "preview": {
+      "status": "Stone Age · day 1 · clear",
+      "destination": [
+        {
+          "text": "5",
+          "title": "Confirm route · cost 5 · 5 moves available"
+        },
+        {
+          "text": "Confirm route · cost 5",
+          "title": ""
+        }
+      ]
+    },
+    "encounter": {
+      "id": "guard-10,5",
+      "cell": [
+        10,
+        5
+      ],
+      "origin": [
+        9,
+        6
+      ],
+      "status": "UNRESOLVED",
+      "pack": {
+        "stacks": [
+          {
+            "kind": "creature",
+            "type": "bandit",
+            "age": 0,
+            "rank": 0,
+            "count": 7
+          },
+          {
+            "kind": "creature",
+            "type": "bandit",
+            "age": 0,
+            "rank": 0,
+            "count": 8
+          }
+        ],
+        "boss": false,
+        "power": 1.3104,
+        "row": 2,
+        "carry": -0.4400000000000013
+      }
+    }
+  },
+  "battle": {
+    "id": "battle-guard-10,5-r39",
+    "encounterId": "guard-10,5",
+    "winner": "p",
+    "pendingSettlement": true,
+    "afterSettlementOpen": false,
+    "settledMeleeCount": 14,
+    "persistedMeleeCount": 14
+  },
+  "manualMove": {
+    "activeStackId": "army-1",
+    "start": [
+      1,
+      8
+    ],
+    "destination": [
+      2,
+      5
+    ],
+    "legalChoiceCount": 20
+  },
+  "spellCast": {
+    "mana": 25,
+    "lastAction": {
+      "type": "spell",
+      "id": "arrow",
+      "casterId": "army-1",
+      "targetId": "e0"
+    }
+  },
+  "screenshots": [
+    "hero-spellbook.png",
+    "army-after-recruit.png",
+    "adventure-guard-encounter.png",
+    "tactical-encounter-start.png",
+    "tactical-after-magic-arrow.png",
+    "tactical-after-manual-move.png",
+    "tactical-result-before-settlement.png",
+    "adventure-after-battle-reload.png"
+  ],
+  "errors": [],
+  "notFound": []
+}

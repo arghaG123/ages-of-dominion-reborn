@@ -1,0 +1,140 @@
+{
+  "recordedAt": "2026-10-20T16:28:45.257Z",
+  "classification": "NATURAL_UI_VETERAN_RANK_QUEST_CLAIM_RELOAD",
+  "journey": "fresh campaign -> visible War menu -> repeat campaign duels with normal Tactical Auto action until a stack reaches Veteran -> inspect and claim Q4 -> save/reload and verify one-time payout",
+  "note": "All battles and claims use visible game controls. No campaign state, stack XP, or resources are injected.",
+  "battles": [
+    {
+      "index": 1,
+      "winner": "p",
+      "battleXp": [
+        {
+          "campaignId": "army-1",
+          "dealt": 0,
+          "survivors": 12
+        },
+        {
+          "campaignId": "army-2",
+          "dealt": 36,
+          "survivors": 7
+        }
+      ],
+      "armyAfter": [
+        {
+          "id": "army-1",
+          "type": "melee",
+          "kind": "role",
+          "count": 12,
+          "xp": 20,
+          "rank": 0
+        },
+        {
+          "id": "army-2",
+          "type": "ranged",
+          "kind": "role",
+          "count": 7,
+          "xp": 22,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "winner": "p",
+      "battleXp": [
+        {
+          "campaignId": "army-1",
+          "dealt": 0,
+          "survivors": 12
+        },
+        {
+          "campaignId": "army-2",
+          "dealt": 30,
+          "survivors": 6
+        }
+      ],
+      "armyAfter": [
+        {
+          "id": "army-1",
+          "type": "melee",
+          "kind": "role",
+          "count": 12,
+          "xp": 40,
+          "rank": 0
+        },
+        {
+          "id": "army-2",
+          "type": "ranged",
+          "kind": "role",
+          "count": 6,
+          "xp": 44,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "winner": "p",
+      "battleXp": [
+        {
+          "campaignId": "army-1",
+          "dealt": 0,
+          "survivors": 12
+        },
+        {
+          "campaignId": "army-2",
+          "dealt": 27,
+          "survivors": 5
+        }
+      ],
+      "armyAfter": [
+        {
+          "id": "army-1",
+          "type": "melee",
+          "kind": "role",
+          "count": 12,
+          "xp": 60,
+          "rank": 1
+        },
+        {
+          "id": "army-2",
+          "type": "ranged",
+          "kind": "role",
+          "count": 5,
+          "xp": 65,
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "captures": [
+    "qa\\game-completion-20261020\\visual-review\\m26-q4-veteran-claim-live-20261020\\q4-ready-825x375.png",
+    "qa\\game-completion-20261020\\visual-review\\m26-q4-veteran-claim-live-20261020\\q4-claimed-1280x720.png"
+  ],
+  "campaignId": "campaign-06f4f206-cc04-4c1c-a63d-80d5644d60b6",
+  "worldId": "jade-karst",
+  "veteran": {
+    "id": "army-1",
+    "kind": "role",
+    "type": "melee",
+    "age": 0,
+    "count": 12,
+    "rank": 1,
+    "xp": 60
+  },
+  "ready": {
+    "quest": {
+      "claimed": false
+    },
+    "progress": "1 / 1 Veteran stack",
+    "status": "Ready to claim",
+    "reward": "Reward 250",
+    "claimPresent": true,
+    "claimDisabled": false
+  },
+  "payout": 250,
+  "repeatPayoutAfterReload": 0,
+  "passed": true
+}

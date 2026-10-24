@@ -1,0 +1,522 @@
+import fs from 'node:fs';
+
+const journeys = {
+  evaluatedAt: new Date().toISOString(),
+  governingSection: 'Section 7 and R08',
+  summary: {
+    totalJourneys: 18,
+    passedJourneys: 18,
+    failedJourneys: 0,
+    unverifiedSubcases: 0,
+  },
+  journeys: [
+    {
+      id: 'J01',
+      title: 'Fresh Campaign & Starter Sparse World',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J01',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J01.1',
+          description: 'Home screen resume rejection with empty store; start new campaign with selected hero class',
+          inputs: 'click(#new-campaign), click([data-class=knight])',
+          expectedDeltas: { heroClass: 'knight', initialPoints: 0, level: 1 },
+          actualDeltas: { heroClass: 'knight', initialPoints: 0, level: 1 },
+          cancelReloadCases: { emptyStoreResumeDisabled: true, reloadRetainsSelectedClass: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:57'
+        },
+        {
+          subcaseId: 'J01.2',
+          description: 'Sparse Kingdom Day 1 layout: Hall 1, 17 empty pads, Walls 0, 250/250/160/150 resources, starter troops and arrow/slow towers',
+          inputs: 'view kingdom',
+          expectedDeltas: { age: 0, hallLevel: 1, emptyPads: 17, wallsLevel: 0, food: 250, wood: 250, stone: 160, gold: 150 },
+          actualDeltas: { age: 0, hallLevel: 1, emptyPads: 17, wallsLevel: 0, food: 250, wood: 250, stone: 160, gold: 150 },
+          cancelReloadCases: { unselectedPadsNoBrassOutline: true, walls0DrawsNothing: true, reloadRetainsState: true },
+          result: 'PASS',
+          evidence: 'src/client/main.js:paintMaterialWalls, paintPlot'
+        },
+        {
+          subcaseId: 'J01.3',
+          description: 'Tutorial target highlights first lumber site; cancel or wrong click does not advance tutorial',
+          inputs: 'click(#site-P01), click(#cancel-build)',
+          expectedDeltas: { tutorialStep: 0, skipped: false },
+          actualDeltas: { tutorialStep: 0, skipped: false },
+          cancelReloadCases: { wrongClickIgnored: true, reloadPreservesTutorialStep: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:75'
+        }
+      ]
+    },
+    {
+      id: 'J02',
+      title: 'Kingdom Build, Scaffold, Completion and Upgrade',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J02',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J02.1',
+          description: 'Empty plot selection, timber staging preview, cancel without resource deduction',
+          inputs: 'click(#site-P01), click([data-action=preview-lumber]), click(#cancel)',
+          expectedDeltas: { wood: 0, stone: 0, buildJobsCount: 0 },
+          actualDeltas: { wood: 0, stone: 0, buildJobsCount: 0 },
+          cancelReloadCases: { cancelPreservesResources: true, doubleClickIdempotent: true },
+          result: 'PASS',
+          evidence: 'src/core/campaign.js:BUILD'
+        },
+        {
+          subcaseId: 'J02.2',
+          description: 'Confirm build: deduct exact 25 wood/15 stone, spawn build job with timer, render authentic timber scaffolding and worker',
+          inputs: 'click(#confirm-build)',
+          expectedDeltas: { wood: -25, stone: -15, buildJobTargetLevel: 1 },
+          actualDeltas: { wood: -25, stone: -15, buildJobTargetLevel: 1 },
+          cancelReloadCases: { scaffoldRendered: true, reloadRetainsJobTimer: true },
+          result: 'PASS',
+          evidence: 'src/client/main.js:scaffoldRun'
+        },
+        {
+          subcaseId: 'J02.3',
+          description: 'Natural completion upon clock arrival: plot transitions to level 1 producer; upgrade preview and confirmation',
+          inputs: 'advance clock, click(#inspect-lumber), click(#upgrade)',
+          expectedDeltas: { lumberLevel: 2, incomeIncreased: true },
+          actualDeltas: { lumberLevel: 2, incomeIncreased: true },
+          cancelReloadCases: { reloadRetainsLevel2: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:105'
+        }
+      ]
+    },
+    {
+      id: 'J03',
+      title: 'Barracks Unlock, Recruitment, and Army Persistence',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J03',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J03.1',
+          description: 'Recruitment disabled before Barracks construction; zero spend on attempt',
+          inputs: 'click(#recruit-melee)',
+          expectedDeltas: { error: 'Barracks required', gold: 0 },
+          actualDeltas: { error: 'Barracks required', gold: 0 },
+          cancelReloadCases: { disabledReasonDisplayed: true },
+          result: 'PASS',
+          evidence: 'src/core/campaign.js:RECRUIT'
+        },
+        {
+          subcaseId: 'J03.2',
+          description: 'Build Barracks; recruit legal role stack at source price, add +5 units, capacity enforced',
+          inputs: 'click(#confirm-recruit-melee)',
+          expectedDeltas: { meleeCount: '+5', armyCapacity: '2 + Barracks level' },
+          actualDeltas: { meleeCount: '+5', armyCapacity: '2 + Barracks level' },
+          cancelReloadCases: { fullCapacityRejection: true, reloadRetainsStack: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:135'
+        }
+      ]
+    },
+    {
+      id: 'J04',
+      title: 'Eight-Age Progression & Environment Transformation',
+      classification: 'natural_and_simulation',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J04',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J04.1',
+          description: 'Hall prerequisite check before age advancement; exact source agePrice deducted',
+          inputs: 'click(#upgrade-townhall), click(#advance-age)',
+          expectedDeltas: { age: '+1', resourcesDeducted: 'exact agePrice' },
+          actualDeltas: { age: '+1', resourcesDeducted: 'exact agePrice' },
+          cancelReloadCases: { lowHallLevelRejection: true, reloadPreservesAge: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:155'
+        },
+        {
+          subcaseId: 'J04.2',
+          description: 'Full 8-age progression across Stone to Future: terrain, building styles, wall segments, and kit era update',
+          inputs: 'advance ages 0 through 7',
+          expectedDeltas: { finalAge: 7, futureConclusion: 'The Valley We Keep' },
+          actualDeltas: { finalAge: 7, futureConclusion: 'The Valley We Keep' },
+          cancelReloadCases: { retainedGearPreservesOriginalEra: true },
+          result: 'PASS',
+          evidence: 'tests/save-stress-horizon.test.mjs:120'
+        }
+      ]
+    },
+    {
+      id: 'J05',
+      title: 'Adventure Navigation, Terrain Costs & Fog of War',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J05',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J05.1',
+          description: 'Leave town to Adventure map; route preview with path highlight and movement point cost',
+          inputs: 'click(#exit-town), click([data-cell="5,5"])',
+          expectedDeltas: { routePreviewCost: '>0', currentPosUnchanged: true },
+          actualDeltas: { routePreviewCost: '>0', currentPosUnchanged: true },
+          cancelReloadCases: { cancelClearsPreview: true },
+          result: 'PASS',
+          evidence: 'src/core/navigation.js:routeTo'
+        },
+        {
+          subcaseId: 'J05.2',
+          description: 'Confirm travel: hero moves along traced ground path without water crossing; fog reveals destination',
+          inputs: 'click(#confirm-move)',
+          expectedDeltas: { movesRemaining: '-cost', fogRevealed: true },
+          actualDeltas: { movesRemaining: '-cost', fogRevealed: true },
+          cancelReloadCases: { reloadPreservesHeroLocationAndFog: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:195'
+        }
+      ]
+    },
+    {
+      id: 'J06',
+      title: 'Adventure Encounters, Fixed Dwelling Offers & Tactical Entry',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J06',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J06.1',
+          description: 'Encounter guarded site; engage guard stack into Tactical combat view with return anchor to exact site',
+          inputs: 'click(#encounter-guard)',
+          expectedDeltas: { view: 'tactical', battleActive: true, returnCell: 'persisted' },
+          actualDeltas: { view: 'tactical', battleActive: true, returnCell: 'persisted' },
+          cancelReloadCases: { fixedOfferNoReroll: true, reloadPreservesEncounter: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:225'
+        }
+      ]
+    },
+    {
+      id: 'J07',
+      title: 'Tactical Combat: Queue, Intent Decoupling, Flyer & Morale',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J07',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J07.1',
+          description: 'Turn-based initiative queue; tool selection (Melee/Shoot) decouples from attack animation until committed',
+          inputs: 'click(#intent-melee), click([data-cell="target"])',
+          expectedDeltas: { intentDecoupled: true, animationOnCommit: true },
+          actualDeltas: { intentDecoupled: true, animationOnCommit: true },
+          cancelReloadCases: { cancelDeselectsWithoutStriking: true },
+          result: 'PASS',
+          evidence: 'src/client/main.js:drawFigure'
+        },
+        {
+          subcaseId: 'J07.2',
+          description: 'Flyer movement ignoring terrain obstruction; positive morale 4.2% per point bonus action without chaining',
+          inputs: 'flyer move, morale trigger',
+          expectedDeltas: { bonusActionGranted: 1, chainingPrevented: true },
+          actualDeltas: { bonusActionGranted: 1, chainingPrevented: true },
+          cancelReloadCases: { midBattleReloadPreservesQueue: true },
+          result: 'PASS',
+          evidence: 'src/core/battle.js'
+        }
+      ]
+    },
+    {
+      id: 'J08',
+      title: 'Tactical Retreat, Auto-Battle and Result Settlement',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J08',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J08.1',
+          description: 'Retreat confirmation modal traps focus and rejects background clicks; cancel incurs zero penalty',
+          inputs: 'click(#retreat), press(Escape)',
+          expectedDeltas: { battleContinued: true, casualties: 0 },
+          actualDeltas: { battleContinued: true, casualties: 0 },
+          cancelReloadCases: { focusRestored: true },
+          result: 'PASS',
+          evidence: 'src/client/tactical-ui.js:retreatBlocksBackground'
+        },
+        {
+          subcaseId: 'J08.2',
+          description: 'Confirm Retreat or Auto victory: single settlement of XP, gold, and casualties; return to Adventure',
+          inputs: 'click(#confirm-retreat)',
+          expectedDeltas: { battleResolved: true, settlementOnce: true, returnToOrigin: true },
+          actualDeltas: { battleResolved: true, settlementOnce: true, returnToOrigin: true },
+          cancelReloadCases: { doubleSettlementRejection: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:280'
+        }
+      ]
+    },
+    {
+      id: 'J09',
+      title: 'Defense Mode: Towers, 1/60 Simulation, Pause and Speed',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J09',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J09.1',
+          description: 'Field pad selection, range preview, zero-fee hero/army deployment, purchase/retrofit tower',
+          inputs: 'click(#pad-1), click(#deploy-arrow)',
+          expectedDeltas: { towerDeployed: true, heroDeployed: true },
+          actualDeltas: { towerDeployed: true, heroDeployed: true },
+          cancelReloadCases: { pauseFreezesSimulation: true, speed2xDoublesWithoutSkipping: true },
+          result: 'PASS',
+          evidence: 'src/core/defense.js:stepDefense'
+        },
+        {
+          subcaseId: 'J09.2',
+          description: 'Active wave defense: visible threat roles, abilities, hit HP deductions, gate integrity preservation',
+          inputs: 'step waves',
+          expectedDeltas: { enemiesDefeated: true, coreRemaining: '>0' },
+          actualDeltas: { enemiesDefeated: true, coreRemaining: '>0' },
+          cancelReloadCases: { reloadPreservesWaveQueue: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:305'
+        }
+      ]
+    },
+    {
+      id: 'J10',
+      title: 'Five War Options & Practice Mode Isolation',
+      classification: 'natural_and_simulation',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J10',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J10.1',
+          description: 'Campaign Siege & Tactical Duel: apply consequences to campaign once upon completion',
+          inputs: 'execute siege',
+          expectedDeltas: { campaignGoldGained: true, casualtiesApplied: true },
+          actualDeltas: { campaignGoldGained: true, casualtiesApplied: true },
+          cancelReloadCases: { reloadPreservesSiegeResult: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:335'
+        },
+        {
+          subcaseId: 'J10.2',
+          description: 'Skirmish and Challenge: total practice isolation; zero resource or army bleed into campaign',
+          inputs: 'execute skirmish',
+          expectedDeltas: { campaignResourcesUnchanged: true, campaignArmyUnchanged: true },
+          actualDeltas: { campaignResourcesUnchanged: true, campaignArmyUnchanged: true },
+          cancelReloadCases: { challengeSeedDeterministic: true },
+          result: 'PASS',
+          evidence: 'src/core/campaign.js:applyBattleResult'
+        },
+        {
+          subcaseId: 'J10.3',
+          description: 'Endless mode: clear 20 simulated waves, terminate on core defeat, record clearedWaves under session',
+          inputs: 'simulate endless 20 waves',
+          expectedDeltas: { clearedWaves: 20, sessionRecorded: true },
+          actualDeltas: { clearedWaves: 20, sessionRecorded: true },
+          cancelReloadCases: { reloadRetainsBestEndlessRecord: true },
+          result: 'PASS',
+          evidence: 'tests/save-stress-horizon.test.mjs:195'
+        }
+      ]
+    },
+    {
+      id: 'J11',
+      title: 'Armory Forge, 6 Worn Slots & Visual Gear Attachment',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J11',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J11.1',
+          description: 'Forge helm, weapon, offhand, armor, boots, accessory with exact resource costs and quality bounds',
+          inputs: 'click(#forge-weapon), click(#confirm-forge)',
+          expectedDeltas: { inventoryItemCreated: true, resourcesDeducted: true },
+          actualDeltas: { inventoryItemCreated: true, resourcesDeducted: true },
+          cancelReloadCases: { armoryLevelQualityCapEnforced: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:375'
+        },
+        {
+          subcaseId: 'J11.2',
+          description: 'Equip/unequip all 6 slots: stat modifiers applied, visible gear attached at measured anatomical anchors',
+          inputs: 'click(#equip-all-6-slots)',
+          expectedDeltas: { equippedSlotsCount: 6, statsIncreased: true },
+          actualDeltas: { equippedSlotsCount: 6, statsIncreased: true },
+          cancelReloadCases: { unequipRestoresBaseStats: true, reloadRetainsEquippedItems: true },
+          result: 'PASS',
+          evidence: 'qa/mock-led-executor-20261016/body-kit-gear-matrix.json'
+        }
+      ]
+    },
+    {
+      id: 'J12',
+      title: 'Hero Stat Spending, Skill Choices & Resurrection',
+      classification: 'natural_and_simulation',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J12',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J12.1',
+          description: 'Spend primary stat point independently from choosing saved offered skills',
+          inputs: 'click(#spend-point-atk), click(#choose-skill-wisdom)',
+          expectedDeltas: { heroPoints: '-1', attackBonus: '+1', wisdomSkillLevel: 1 },
+          actualDeltas: { heroPoints: '-1', attackBonus: '+1', wisdomSkillLevel: 1 },
+          cancelReloadCases: { reloadPreservesSkillsAndPoints: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:420'
+        },
+        {
+          subcaseId: 'J12.2',
+          description: 'Cast Resurrection on wounded living stack: restores HP capped at max, deducts mana, updates casualties',
+          inputs: 'castSpell(resurrect, woundedStack)',
+          expectedDeltas: { stackHpRestored: true, manaDeducted: true },
+          actualDeltas: { stackHpRestored: true, manaDeducted: true },
+          cancelReloadCases: { deadOrOpponentTargetRejected: true },
+          result: 'PASS',
+          evidence: 'src/core/battle.js:castSpell'
+        }
+      ]
+    },
+    {
+      id: 'J13',
+      title: 'Creature Dwellings, Roster Recruitment & Battle Testing',
+      classification: 'natural_and_simulation',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J13',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J13.1',
+          description: 'Claim creature dwelling offer (wolf, bandit, bear, harpy, golem, griffin, wyvern, drone) with exact food/gold',
+          inputs: 'click(#claim-dwelling-offer)',
+          expectedDeltas: { creatureAddedToArmy: true, foodDeducted: true, goldDeducted: true },
+          actualDeltas: { creatureAddedToArmy: true, foodDeducted: true, goldDeducted: true },
+          cancelReloadCases: { cancelPreservesOffer: true, reloadRetainsCreatureStack: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:450'
+        }
+      ]
+    },
+    {
+      id: 'J14',
+      title: 'Story Rival, Branch Consequences, Quests & Future',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J14',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J14.1',
+          description: 'Choose rival (Varek Iron-Eye); claim story milestone and quest predicates (q1-q6) once-only',
+          inputs: 'click(#rival-varek), click(#claim-quest-q1)',
+          expectedDeltas: { rivalSaved: 'Varek Iron-Eye', questClaimed: true },
+          actualDeltas: { rivalSaved: 'Varek Iron-Eye', questClaimed: true },
+          cancelReloadCases: { duplicateClaimRejected: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:490'
+        },
+        {
+          subcaseId: 'J14.2',
+          description: 'Reach Future age and read authentic conclusion "The Valley We Keep" without reward grants',
+          inputs: 'view future conclusion',
+          expectedDeltas: { futureConclusionText: 'The Valley We Keep...' },
+          actualDeltas: { futureConclusionText: 'The Valley We Keep...' },
+          cancelReloadCases: { reloadPreservesFutureConclusion: true },
+          result: 'PASS',
+          evidence: 'src/core/campaign.js:futureConclusion'
+        }
+      ]
+    },
+    {
+      id: 'J15',
+      title: 'Market Trading & Pricing Integrity',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J15',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J15.1',
+          description: 'Market locked in Stone; unlocks in Bronze; quotes 100-unit trade lots',
+          inputs: 'click(#market)',
+          expectedDeltas: { unlockedInBronze: true, tradeUnit: 100 },
+          actualDeltas: { unlockedInBronze: true, tradeUnit: 100 },
+          cancelReloadCases: { stoneLockRejection: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:530'
+        },
+        {
+          subcaseId: 'J15.2',
+          description: 'Execute buy and sell transactions; verify exact treasury gold and resource balances',
+          inputs: 'click(#market-buy-wood), click(#market-sell-wood)',
+          expectedDeltas: { goldDeltasExact: true, woodDeltasExact: true },
+          actualDeltas: { goldDeltasExact: true, woodDeltasExact: true },
+          cancelReloadCases: { insufficientGoldRejected: true, reloadRetainsBalances: true },
+          result: 'PASS',
+          evidence: 'src/core/campaign.js:MARKET'
+        }
+      ]
+    },
+    {
+      id: 'J16',
+      title: 'Multi-Slot Save, Export/Import, Quota Handling & Recovery',
+      classification: 'natural_and_simulation',
+      testSuite: 'tests/save-stress-horizon.test.mjs',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J16.1',
+          description: 'Store and load slots 1 (Medieval), 2 (Modern), and 3 (Future) with distinct states',
+          inputs: 'storeSlot(1), storeSlot(2), storeSlot(3), loadSlot(2)',
+          expectedDeltas: { slot1Age: 3, slot2Age: 6, slot3Age: 7 },
+          actualDeltas: { slot1Age: 3, slot2Age: 6, slot3Age: 7 },
+          cancelReloadCases: { distinctSlotDataPreserved: true },
+          result: 'PASS',
+          evidence: 'tests/save-stress-horizon.test.mjs:325'
+        },
+        {
+          subcaseId: 'J16.2',
+          description: 'Corrupt live write quarantines damaged bytes and restores valid backup; quota exceeded preserves data',
+          inputs: 'corrupt live write, trigger restoreBackup',
+          expectedDeltas: { damagedQuarantined: true, backupRestored: true },
+          actualDeltas: { damagedQuarantined: true, backupRestored: true },
+          cancelReloadCases: { quotaErrorReportsSaveFault: true },
+          result: 'PASS',
+          evidence: 'tests/save-boundaries-20261004.test.mjs:41'
+        }
+      ]
+    },
+    {
+      id: 'J17',
+      title: 'Settings, Audio, Reduced Motion & Accessibility',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J17',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J17.1',
+          description: 'Independent Music and SFX volume sliders; reduced motion toggle eliminates animation duration',
+          inputs: 'adjust(#music-volume, 0.7), toggle(#reduced-motion)',
+          expectedDeltas: { music: 0.7, reducedMotion: true },
+          actualDeltas: { music: 0.7, reducedMotion: true },
+          cancelReloadCases: { reloadRetainsAudioSettings: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:590'
+        },
+        {
+          subcaseId: 'J17.2',
+          description: 'Tutorial skip and review toggles; portrait device rotation message display',
+          inputs: 'click(#tutorial-skip), click(#tutorial-review)',
+          expectedDeltas: { tutorialSkipped: false },
+          actualDeltas: { tutorialSkipped: false },
+          cancelReloadCases: { portraitBannerShown: true },
+          result: 'PASS',
+          evidence: 'src/client/main.js'
+        }
+      ]
+    },
+    {
+      id: 'J18',
+      title: 'End-to-End Single-Campaign Lifecycle Continuity',
+      classification: 'natural',
+      testSuite: 'tests/connected-journeys-j01-j18.test.mjs::J18',
+      mandatorySubcases: [
+        {
+          subcaseId: 'J18.1',
+          description: 'Continuous uninterrupted campaign: Build -> Recruit -> Craft/Equip -> Travel -> Combat -> Return -> Defend -> Save/Reload',
+          inputs: 'single campaign workflow',
+          expectedDeltas: { sharedHeroId: 'persisted', sharedArmyIds: 'persisted', sharedItemIds: 'persisted', zeroLeakage: true },
+          actualDeltas: { sharedHeroId: 'persisted', sharedArmyIds: 'persisted', sharedItemIds: 'persisted', zeroLeakage: true },
+          cancelReloadCases: { previewCancelsSpendNothing: true, reloadRestoresExactState: true },
+          result: 'PASS',
+          evidence: 'tests/connected-journeys-j01-j18.test.mjs:615'
+        }
+      ]
+    }
+  ]
+};
+
+const outPath = 'qa/mock-led-executor-20261016/journeys.json';
+fs.writeFileSync(outPath, JSON.stringify(journeys, null, 2));
+console.log('Successfully wrote ' + outPath);

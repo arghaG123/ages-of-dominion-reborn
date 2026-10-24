@@ -1,0 +1,162 @@
+{
+  "recordedAt": "2026-10-19T19:39:58.303Z",
+  "fixtureKind": "isolated persisted age and Town Hall",
+  "generatedWith": "Codex built-in image_gen",
+  "candidates": [
+    {
+      "name": "gunpowder",
+      "age": 4,
+      "hallLevel": 6,
+      "asset": "/assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "foot": [
+        0.5,
+        0.95
+      ],
+      "prompt": "One late-17th-century civic hall in warm limestone and brick with a modest bell cupola; isolated, genuinely transparent, clean edges, compact footprint, no fortress compound or ground plane.",
+      "replaces": "assets/derivatives/image-residual-executor-20261007/environment/buildings/gunpowder/townhall-gunpowder.png"
+    },
+    {
+      "name": "modern",
+      "age": 6,
+      "hallLevel": 8,
+      "asset": "/assets/derivatives/visual-repair-20261020/buildings/modern/townhall-modern-candidate-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "foot": [
+        0.5,
+        0.877
+      ],
+      "prompt": "One contemporary low-rise civic hall with pale warm stone, glass curtain walls and a restrained civic clock; isolated, genuinely transparent, clean edges, compact footprint, no opaque slab or environment.",
+      "replaces": "assets/derivatives/image-residual-executor-20261007/environment/buildings/modern/townhall-modern.png"
+    }
+  ],
+  "captures": [
+    {
+      "candidate": "gunpowder",
+      "viewport": "1280x720",
+      "fixture": {
+        "age": 4,
+        "hallLevel": 6,
+        "wallLevel": 2,
+        "revision": 5
+      },
+      "rendered": {
+        "view": "kingdom",
+        "age": 4,
+        "hallLevel": 6,
+        "source": "/assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+        "world": [
+          523.9736842105262,
+          12.799999999999955,
+          147.05263157894743,
+          147.05263157894743
+        ],
+        "screen": [
+          481.225341796875,
+          12,
+          137.86181640625,
+          137.86184692382812
+        ],
+        "candidateDecoded": true,
+        "safeTopPx": 12
+      },
+      "file": "qa\\game-completion-20261019\\visual-review\\kingdom-ages-live-20261020\\gunpowder-townhall-candidate-v1-1280x720.png"
+    },
+    {
+      "candidate": "gunpowder",
+      "viewport": "825x375",
+      "fixture": {
+        "age": 4,
+        "hallLevel": 6,
+        "wallLevel": 2,
+        "revision": 4
+      },
+      "rendered": {
+        "view": "kingdom",
+        "age": 4,
+        "hallLevel": 6,
+        "source": "/assets/derivatives/visual-repair-20261020/buildings/gunpowder/townhall-gunpowder-candidate-v1.png",
+        "world": [
+          527.7708133971292,
+          20.014545454545498,
+          139.4583732057416,
+          139.4583732057416
+        ],
+        "screen": [
+          316.4323425292969,
+          12,
+          83.61422729492188,
+          83.61421203613281
+        ],
+        "candidateDecoded": true,
+        "safeTopPx": 12
+      },
+      "file": "qa\\game-completion-20261019\\visual-review\\kingdom-ages-live-20261020\\gunpowder-townhall-candidate-v1-825x375.png"
+    },
+    {
+      "candidate": "modern",
+      "viewport": "1280x720",
+      "fixture": {
+        "age": 6,
+        "hallLevel": 8,
+        "wallLevel": 2,
+        "revision": 4
+      },
+      "rendered": {
+        "view": "kingdom",
+        "age": 6,
+        "hallLevel": 8,
+        "source": "/assets/derivatives/visual-repair-20261020/buildings/modern/townhall-modern-candidate-v1.png",
+        "world": [
+          517.8534777651083,
+          12.799999999999955,
+          159.2930444697834,
+          159.2930444697834
+        ],
+        "screen": [
+          475.48760986328125,
+          12,
+          149.33721923828125,
+          149.3372344970703
+        ],
+        "candidateDecoded": true,
+        "safeTopPx": 12
+      },
+      "file": "qa\\game-completion-20261019\\visual-review\\kingdom-ages-live-20261020\\modern-townhall-candidate-v1-1280x720.png"
+    },
+    {
+      "candidate": "modern",
+      "viewport": "825x375",
+      "fixture": {
+        "age": 6,
+        "hallLevel": 8,
+        "wallLevel": 2,
+        "revision": 4
+      },
+      "rendered": {
+        "view": "kingdom",
+        "age": 6,
+        "hallLevel": 8,
+        "source": "/assets/derivatives/visual-repair-20261020/buildings/modern/townhall-modern-candidate-v1.png",
+        "world": [
+          521.9666735772779,
+          20.01454545454547,
+          151.06665284544417,
+          151.06665284544417
+        ],
+        "screen": [
+          312.952392578125,
+          12,
+          90.57412719726562,
+          90.5741195678711
+        ],
+        "candidateDecoded": true,
+        "safeTopPx": 12
+      },
+      "file": "qa\\game-completion-20261019\\visual-review\\kingdom-ages-live-20261020\\modern-townhall-candidate-v1-825x375.png"
+    }
+  ],
+  "errors": []
+}

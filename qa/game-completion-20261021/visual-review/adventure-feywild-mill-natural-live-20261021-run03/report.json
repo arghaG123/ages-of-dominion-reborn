@@ -1,0 +1,72 @@
+{
+  "recordedAt": "2026-10-21T12:46:46.065Z",
+  "classification": "NATURAL_UI_FEYWILD_MILL_HOTSPOT_ROUTE_CLAIM_SAVE_RELOAD",
+  "journey": "fresh visible campaign -> Feywild -> travel to pictured windmill -> claim provisions -> reload",
+  "note": "Campaign state and travel are performed through visible UI controls. Geometry and snapshots are read-only assertions; no campaign state or position is injected.",
+  "url": "http://127.0.0.1:4179/?audit=1",
+  "errors": [],
+  "failedResponses": [],
+  "campaignId": "campaign-96fcc6f8-64e6-4fd9-8f08-28f8e45f74d5",
+  "previewCapture": "qa\\game-completion-20261021\\visual-review\\adventure-feywild-mill-natural-live-20261021-run03\\feywild-windmill-route-preview-825x375.png",
+  "claimPanel": {
+    "panelOpen": true,
+    "sheet": "content",
+    "claimLabel": "Collect provisions · +121 food"
+  },
+  "arrival": {
+    "position": [
+      11,
+      7
+    ],
+    "route": [
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        11,
+        7
+      ]
+    ],
+    "cost": 5,
+    "movesRemaining": 0,
+    "hotspot": {
+      "site": "mill",
+      "artMode": "map-hotspot",
+      "polygon": "1032,537.6 1204,537.6 1204,691.1999999999999 1032,691.1999999999999",
+      "travelerMode": "on-foot",
+      "approached": "mill"
+    }
+  },
+  "claim": {
+    "site": "mill",
+    "foodBefore": 250,
+    "reward": 121,
+    "foodAfter": 371,
+    "claimedSites": [
+      "mill"
+    ]
+  },
+  "captures": [
+    "qa\\game-completion-20261021\\visual-review\\adventure-feywild-mill-natural-live-20261021-run03\\feywild-windmill-arrival-claimed-825x375.png"
+  ],
+  "reload": {
+    "position": [
+      11,
+      7
+    ],
+    "food": 371,
+    "claimedSites": [
+      "mill"
+    ]
+  },
+  "result": "PASS_BOUNDED_NATURAL_FEYWILD_MILL_HOTSPOT_CLAIM_SAVE_RELOAD; NOT_FULL_WORLD_OR_MOCK_ACCEPTANCE"
+}

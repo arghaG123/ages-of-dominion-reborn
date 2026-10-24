@@ -1,0 +1,457 @@
+{
+  "recordedAt": "2026-10-21T04:47:34.269Z",
+  "classification": "NATURAL_UI_M21_SPELLBOOK_LAYOUT_AND_TACTICAL_CANCEL",
+  "viewports": [
+    {
+      "viewport": "825x375",
+      "spellbook": {
+        "screen": "hero-spellbook",
+        "context": "adventure",
+        "board": "",
+        "worldId": "grasslands",
+        "terrainFile": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "backgroundImage": "linear-gradient(rgba(16, 22, 27, 0.04), rgba(12, 17, 24, 0.13)), url(\"http://127.0.0.1:4179/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png\")",
+        "backgroundLoaded": true,
+        "layout": {
+          "app": [
+            0,
+            0,
+            825,
+            375
+          ],
+          "stage": [
+            0,
+            0,
+            825,
+            375
+          ],
+          "field": [
+            0,
+            0,
+            825,
+            375
+          ],
+          "frame": [
+            98,
+            12,
+            629,
+            351
+          ],
+          "terrainHidden": true,
+          "terrainDisplay": "none",
+          "worldChildren": 0,
+          "fieldBackgroundSize": "cover, cover",
+          "frameBackground": "rgba(0, 0, 0, 0)",
+          "fieldBackgroundColor": "rgb(18, 23, 26)",
+          "footerBounds": [
+            547,
+            311,
+            264,
+            56
+          ],
+          "genericMessageDisplay": "none",
+          "tutorialActionDisplay": "none",
+          "visibleSpellCards": 8
+        },
+        "selectedSpell": true,
+        "feedback": "Magic Arrow · 10 + 10×Power damage · Effect 40 · 5 mana",
+        "panelOpen": true,
+        "panelBounds": [
+          14,
+          70,
+          350,
+          257
+        ]
+      },
+      "screenshots": {
+        "spellbook": "spellbook-world-825x375.png",
+        "targetsBeforeCancel": "spell-targets-before-cancel-825x375.png",
+        "castAfterCancel": "magic-arrow-after-cancel-825x375.png"
+      },
+      "cancellation": {
+        "before": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 3,
+          "round": 1
+        },
+        "after": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 3,
+          "round": 1,
+          "panelOpen": false,
+          "cancelVisible": false
+        },
+        "afterReload": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 3,
+          "round": 1
+        },
+        "targetCount": 9
+      },
+      "cast": {
+        "after": {
+          "mana": 25,
+          "castThisRound": true,
+          "log": {
+            "type": "spell",
+            "id": "arrow",
+            "casterId": "army-1",
+            "targetId": "e0"
+          }
+        },
+        "afterReload": {
+          "mana": 25,
+          "castThisRound": true,
+          "spell": {
+            "type": "spell",
+            "id": "arrow",
+            "casterId": "army-1",
+            "targetId": "e0"
+          }
+        }
+      }
+    },
+    {
+      "viewport": "933x424",
+      "spellbook": {
+        "screen": "hero-spellbook",
+        "context": "adventure",
+        "board": "",
+        "worldId": "grasslands",
+        "terrainFile": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "backgroundImage": "linear-gradient(rgba(16, 22, 27, 0.04), rgba(12, 17, 24, 0.13)), url(\"http://127.0.0.1:4179/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png\")",
+        "backgroundLoaded": true,
+        "layout": {
+          "app": [
+            0,
+            0,
+            933,
+            424
+          ],
+          "stage": [
+            0,
+            0,
+            933,
+            424
+          ],
+          "field": [
+            0,
+            0,
+            933,
+            424
+          ],
+          "frame": [
+            108,
+            12,
+            717,
+            400
+          ],
+          "terrainHidden": true,
+          "terrainDisplay": "none",
+          "worldChildren": 0,
+          "fieldBackgroundSize": "cover, cover",
+          "frameBackground": "rgba(0, 0, 0, 0)",
+          "fieldBackgroundColor": "rgb(18, 23, 26)",
+          "footerBounds": [
+            655,
+            360,
+            264,
+            56
+          ],
+          "genericMessageDisplay": "none",
+          "tutorialActionDisplay": "none",
+          "visibleSpellCards": 8
+        },
+        "selectedSpell": true,
+        "feedback": "Magic Arrow · 10 + 10×Power damage · Effect 40 · 5 mana",
+        "panelOpen": true,
+        "panelBounds": [
+          14,
+          103,
+          350,
+          273
+        ]
+      },
+      "screenshots": {
+        "spellbook": "spellbook-world-933x424.png",
+        "targetsBeforeCancel": "spell-targets-before-cancel-933x424.png",
+        "castAfterCancel": "magic-arrow-after-cancel-933x424.png"
+      },
+      "cancellation": {
+        "before": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 4,
+          "round": 1
+        },
+        "after": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 4,
+          "round": 1,
+          "panelOpen": false,
+          "cancelVisible": false
+        },
+        "afterReload": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 4,
+          "round": 1
+        },
+        "targetCount": 9
+      },
+      "cast": {
+        "after": {
+          "mana": 25,
+          "castThisRound": true,
+          "log": {
+            "type": "spell",
+            "id": "arrow",
+            "casterId": "army-1",
+            "targetId": "e0"
+          }
+        },
+        "afterReload": {
+          "mana": 25,
+          "castThisRound": true,
+          "spell": {
+            "type": "spell",
+            "id": "arrow",
+            "casterId": "army-1",
+            "targetId": "e0"
+          }
+        }
+      }
+    },
+    {
+      "viewport": "1180x820",
+      "spellbook": {
+        "screen": "hero-spellbook",
+        "context": "adventure",
+        "board": "",
+        "worldId": "grasslands",
+        "terrainFile": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "backgroundImage": "linear-gradient(rgba(16, 22, 27, 0.04), rgba(12, 17, 24, 0.13)), url(\"http://127.0.0.1:4179/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png\")",
+        "backgroundLoaded": true,
+        "layout": {
+          "app": [
+            0,
+            0,
+            1180,
+            820
+          ],
+          "stage": [
+            0,
+            0,
+            1180,
+            820
+          ],
+          "field": [
+            0,
+            0,
+            1180,
+            820
+          ],
+          "frame": [
+            12,
+            87,
+            1156,
+            645
+          ],
+          "terrainHidden": true,
+          "terrainDisplay": "none",
+          "worldChildren": 0,
+          "fieldBackgroundSize": "cover, cover",
+          "frameBackground": "rgba(0, 0, 0, 0)",
+          "fieldBackgroundColor": "rgb(18, 23, 26)",
+          "footerBounds": [
+            892,
+            750,
+            274,
+            58
+          ],
+          "genericMessageDisplay": "none",
+          "tutorialActionDisplay": "none",
+          "visibleSpellCards": 8
+        },
+        "selectedSpell": true,
+        "feedback": "Magic Arrow · 10 + 10×Power damage · Effect 40 · 5 mana",
+        "panelOpen": true,
+        "panelBounds": [
+          14,
+          391,
+          519,
+          345
+        ]
+      },
+      "screenshots": {
+        "spellbook": "spellbook-world-1180x820.png",
+        "targetsBeforeCancel": "spell-targets-before-cancel-1180x820.png",
+        "castAfterCancel": "magic-arrow-after-cancel-1180x820.png"
+      },
+      "cancellation": {
+        "before": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 3,
+          "round": 1
+        },
+        "after": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 3,
+          "round": 1,
+          "panelOpen": false,
+          "cancelVisible": false
+        },
+        "afterReload": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 3,
+          "round": 1
+        },
+        "targetCount": 9
+      },
+      "cast": {
+        "after": {
+          "mana": 25,
+          "castThisRound": true,
+          "log": {
+            "type": "spell",
+            "id": "arrow",
+            "casterId": "army-1",
+            "targetId": "e0"
+          }
+        },
+        "afterReload": {
+          "mana": 25,
+          "castThisRound": true,
+          "spell": {
+            "type": "spell",
+            "id": "arrow",
+            "casterId": "army-1",
+            "targetId": "e0"
+          }
+        }
+      }
+    },
+    {
+      "viewport": "1280x720",
+      "spellbook": {
+        "screen": "hero-spellbook",
+        "context": "adventure",
+        "board": "",
+        "worldId": "grasslands",
+        "terrainFile": "assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png",
+        "backgroundImage": "linear-gradient(rgba(16, 22, 27, 0.04), rgba(12, 17, 24, 0.13)), url(\"http://127.0.0.1:4179/assets/derivatives/adventure-world-maps-generated-20261020/grasslands-adventure-v1.png\")",
+        "backgroundLoaded": true,
+        "layout": {
+          "app": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "stage": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "field": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "frame": [
+            17,
+            12,
+            1247,
+            696
+          ],
+          "terrainHidden": true,
+          "terrainDisplay": "none",
+          "worldChildren": 0,
+          "fieldBackgroundSize": "cover, cover",
+          "frameBackground": "rgba(0, 0, 0, 0)",
+          "fieldBackgroundColor": "rgb(18, 23, 26)",
+          "footerBounds": [
+            992,
+            650,
+            274,
+            58
+          ],
+          "genericMessageDisplay": "none",
+          "tutorialActionDisplay": "none",
+          "visibleSpellCards": 8
+        },
+        "selectedSpell": true,
+        "feedback": "Magic Arrow · 10 + 10×Power damage · Effect 40 · 5 mana",
+        "panelOpen": true,
+        "panelBounds": [
+          14,
+          291,
+          563,
+          345
+        ]
+      },
+      "screenshots": {
+        "spellbook": "spellbook-world-1280x720.png",
+        "targetsBeforeCancel": "spell-targets-before-cancel-1280x720.png",
+        "castAfterCancel": "magic-arrow-after-cancel-1280x720.png"
+      },
+      "cancellation": {
+        "before": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 2,
+          "round": 1
+        },
+        "after": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 2,
+          "round": 1,
+          "panelOpen": false,
+          "cancelVisible": false
+        },
+        "afterReload": {
+          "mana": 30,
+          "castThisRound": false,
+          "logLength": 2,
+          "round": 1
+        },
+        "targetCount": 8
+      },
+      "cast": {
+        "after": {
+          "mana": 25,
+          "castThisRound": true,
+          "log": {
+            "type": "spell",
+            "id": "arrow",
+            "casterId": "army-1",
+            "targetId": "e0"
+          }
+        },
+        "afterReload": {
+          "mana": 25,
+          "castThisRound": true,
+          "spell": {
+            "type": "spell",
+            "id": "arrow",
+            "casterId": "army-1",
+            "targetId": "e0"
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "passed": true
+}

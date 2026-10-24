@@ -1,0 +1,55 @@
+{
+  "reviewId": "M27-tutorial-natural-medieval-live-review-20261022",
+  "date": "2026-10-22",
+  "route": "http://localhost:4174/?audit",
+  "reference": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/27-tutorial.jpg",
+    "sha256": "2FE0A3334873B14A6577C2A625DEED78F139E852A0D94CE873ABC9D1121D591F",
+    "dimensions": [
+      1376,
+      768
+    ]
+  },
+  "status": "OPEN_CURRENT_MEDIEVAL_KINGDOM_NOT_TUTORIAL_STEP_MATCHED",
+  "campaign": {
+    "slot": 2,
+    "age": "Medieval Age",
+    "day": 4,
+    "weather": "storm",
+    "naturalCampaignState": true,
+    "slot1Touched": false
+  },
+  "screen": {
+    "surface": "Kingdom",
+    "viewportCss": [
+      1280,
+      720
+    ],
+    "tutorialCalloutVisible": false,
+    "tutorialStepTextVisible": false,
+    "nextActionVisible": false,
+    "visiblePlotOutline": "One thin cyan plot outline; no Build Farm label or bright tutorial highlight",
+    "visibleResourceHud": "Compact resource chips at upper right",
+    "navigationPosition": "Bottom left",
+    "constructionActionInvoked": false,
+    "saveActionInvoked": false
+  },
+  "visualFindings": [
+    "M27 depicts a Stone-age Kingdom tutorial step: a centered Build Farm cue and Next action point to one bright plot, with progress 8 at upper right, labeled resource values at upper left, and Map/Quests/Inventory controls at lower right.",
+    "The current natural slot-2 screen is Medieval Age, day 4. Kingdom shows an existing stone-curtain settlement, compact resources at upper right and navigation at lower left. A thin cyan plot outline is visible, but there is no tutorial step copy, Build Farm cue, Next action, progress marker or bright target treatment.",
+    "This is a current-state mismatch, not an M27 FAIL: the campaign age and tutorial step differ from the reference, so the live view does not verify anchored teaching or affordability at the mock step. No construction, tutorial-skip or save action was invoked."
+  ],
+  "evidence": {
+    "liveScreenshotObservedThroughApprovedCUA": true,
+    "liveScreenshotRetained": false,
+    "referenceHashVerified": true,
+    "slot1Touched": false,
+    "sourceOrTestChanges": false,
+    "ownerAccepted": false
+  },
+  "open": [
+    "Review M27 in a fresh natural Stone-age Build Farm tutorial step with a legal target and affordable cost; retain an exact matched screenshot and accessible-state record.",
+    "Verify target anchoring, callout/Next focus, legal construction, step advancement, skip/review and save/reload behavior without overwriting preserved slot 1 or the active slot-2 Chapter IV campaign.",
+    "Complete remaining M01-M30 and J01-J18 verification, independent desktop review, package, device and owner gates."
+  ]
+}

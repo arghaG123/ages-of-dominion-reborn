@@ -1,0 +1,43 @@
+{
+  "evaluatedAt": "2026-10-17T12:16:05.637Z",
+  "governingSection": "Section 8 (performance.json) and Gate H",
+  "hardwareEnvironment": {
+    "platform": "win32",
+    "arch": "x64",
+    "cpus": 16,
+    "cpuModel": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "totalMemoryBytes": 16831729664
+  },
+  "scenario": {
+    "name": "Dense Kingdom Projection & 1/60 Deterministic Defense Stepping",
+    "projectionIterations": 5000,
+    "defenseStepIterations": 1000,
+    "activeEntities": {
+      "kingdomSites": 18,
+      "defenseLaneLength": 15,
+      "defenseWaveQueue": 185
+    }
+  },
+  "metrics": {
+    "frameTimePercentilesMs": {
+      "p50": 0.0008,
+      "p90": 0.0018,
+      "p99": 0.008,
+      "max": 0.3363
+    },
+    "defenseStepTimePercentilesMs": {
+      "p50": 0.6416,
+      "p90": 0.864,
+      "p99": 1.2671
+    },
+    "sixteenMsBudgetCompliance": true,
+    "longTasksCountOver16ms": 0,
+    "memoryFootprintBytes": {
+      "rss": 75034624,
+      "heapTotal": 25157632,
+      "heapUsed": 8603768,
+      "external": 2077346
+    }
+  },
+  "status": "VERIFIED"
+}

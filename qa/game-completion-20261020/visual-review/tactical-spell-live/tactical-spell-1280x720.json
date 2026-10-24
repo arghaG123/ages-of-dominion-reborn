@@ -1,0 +1,126 @@
+{
+  "recordedAt": "2026-10-19T22:58:52.451Z",
+  "viewport": "1280x720",
+  "journey": "fresh campaign -> Knight -> Valley -> legal travel -> natural guard battle -> Magic Arrow",
+  "battle": {
+    "statusBefore": "ACTIVE",
+    "statusAfter": "ACTIVE",
+    "activeActorId": "army-1",
+    "manaBefore": 10,
+    "manaAfter": 5,
+    "cast": {
+      "type": "spell",
+      "id": "arrow",
+      "casterId": "army-1",
+      "targetId": "e0"
+    }
+  },
+  "targetChoice": "spellcast:arrow:e0",
+  "lastTargetProbe": {
+    "name": "Cure on Slinger ×6 · 6 mana",
+    "scrollHeight": 653,
+    "clientHeight": 566,
+    "scrollTop": 0,
+    "rect": [
+      935,
+      519,
+      268,
+      48
+    ],
+    "panelRect": [
+      922,
+      72,
+      350,
+      568
+    ],
+    "hitTarget": "spellcast:cure:army-2"
+  },
+  "offeredSpellTargets": [
+    {
+      "id": "spellcast:arrow:e0",
+      "name": "Magic Arrow on Bandit ×7 · 5 mana",
+      "rect": [
+        935,
+        127,
+        268,
+        48
+      ]
+    },
+    {
+      "id": "spellcast:arrow:e1",
+      "name": "Magic Arrow on Bandit ×8 · 5 mana",
+      "rect": [
+        935,
+        183,
+        268,
+        48
+      ]
+    },
+    {
+      "id": "spellcast:bless:army-1",
+      "name": "Bless on Clubman ×12 · 5 mana",
+      "rect": [
+        935,
+        239,
+        268,
+        48
+      ]
+    },
+    {
+      "id": "spellcast:bless:army-2",
+      "name": "Bless on Slinger ×6 · 5 mana",
+      "rect": [
+        935,
+        295,
+        268,
+        48
+      ]
+    },
+    {
+      "id": "spellcast:haste:army-1",
+      "name": "Haste on Clubman ×12 · 6 mana",
+      "rect": [
+        935,
+        351,
+        268,
+        48
+      ]
+    },
+    {
+      "id": "spellcast:haste:army-2",
+      "name": "Haste on Slinger ×6 · 6 mana",
+      "rect": [
+        935,
+        407,
+        268,
+        48
+      ]
+    },
+    {
+      "id": "spellcast:cure:army-1",
+      "name": "Cure on Clubman ×12 · 6 mana",
+      "rect": [
+        935,
+        463,
+        268,
+        48
+      ]
+    },
+    {
+      "id": "spellcast:cure:army-2",
+      "name": "Cure on Slinger ×6 · 6 mana",
+      "rect": [
+        935,
+        519,
+        268,
+        48
+      ]
+    }
+  ],
+  "captures": {
+    "spellPanel": "qa\\game-completion-20261020\\visual-review\\tactical-spell-live\\spell-targets-1280x720.png",
+    "spellPanelBottom": "qa\\game-completion-20261020\\visual-review\\tactical-spell-live\\spell-targets-bottom-1280x720.png",
+    "spellResult": "qa\\game-completion-20261020\\visual-review\\tactical-spell-live\\spell-cast-1280x720.png"
+  },
+  "errors": []
+}

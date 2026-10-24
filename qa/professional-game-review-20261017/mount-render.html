@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Mount render regression</title>
+<style>body{background:#70805a;color:white;font:18px system-ui}svg{width:100%;height:600px;background:#33432b}</style>
+<h1>Actual drawMount render, no campaign state</h1><svg id="mount" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"></svg>
+<script type="module">
+import { drawMount } from '/src/client/actor.js';
+const world = document.querySelector('#mount');
+const element = (name, attributes) => {
+  const node = document.createElementNS('http://www.w3.org/2000/svg', name);
+  for (const [key, value] of Object.entries(attributes)) node.setAttribute(key, value);
+  return node;
+};
+drawMount(world, element, { x: 500, y: 500, scale: .4, riderClass: 'knight', reduced: true });
+world.querySelectorAll('image').forEach(image => image.setAttribute('href', '/' + image.getAttribute('href')));
+</script></html>

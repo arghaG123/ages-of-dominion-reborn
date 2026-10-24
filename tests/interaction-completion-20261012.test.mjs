@@ -63,20 +63,13 @@ test('tactical activeStackId accurately resolves active stack and queue', () => 
   assert.equal(active, 'player-1', 'faster unit player-1 must be active first');
 });
 
-test('hero-bodies healer has verified multi-part composite assembly provenance', () => {
+test('hero-bodies healer uses the complete standing figure, not the failed paste', () => {
   const healer = heroBodies.bodies.healer;
-  assert.ok(healer, 'healer body must exist');
-  assert.ok(healer.assembly, 'healer must have assembly provenance');
-  assert.equal(healer.assembly.method, 'five-part-composite');
-  assert.equal(healer.assembly.parts.length, 6, 'must document all 6 assembled parts including mirrored boot');
-  
-  const partNames = healer.assembly.parts.map(p => p.part);
-  assert.ok(partNames.includes('head'));
-  assert.ok(partNames.includes('torso'));
-  assert.ok(partNames.includes('skirt'));
-  assert.ok(partNames.includes('staff_arms'));
-  assert.ok(partNames.includes('boot_left'));
-  assert.ok(partNames.includes('boot_right'));
+  assert.equal(healer.assembly.method, 'complete-body-extraction');
+  assert.equal(healer.file, 'assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png');
+  assert.deepEqual(healer.assembly.classFocusProps, ['staff', 'basket']);
+  assert.equal(healer.rejectedAssembly.method, 'five-part-composite');
+  assert.equal(healer.notRig, true);
 });
 
 test('kitEra covers all eight ages into the canonical four kit eras', () => {

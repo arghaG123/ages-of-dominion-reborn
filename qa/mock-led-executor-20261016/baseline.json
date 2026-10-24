@@ -1,0 +1,210 @@
+{
+  "evaluatedAt": "2026-10-16T16:52:30.911Z",
+  "environment": {
+    "gitHead": "a004a54a08ae67161468debb41c1c609275e39a6",
+    "gitBranch": "main",
+    "nodeVersion": "v24.19.0",
+    "pythonVersion": "Python 3.13.15",
+    "workspace": "C:\\dev\\ages-of-dominion-reborn"
+  },
+  "gitDirtyFiles": [
+    "M AGENTS.md",
+    " M CURRENT-STATUS.md",
+    " M DECISIONS.md",
+    " M START-HERE.md",
+    " M android/app/src/main/AndroidManifest.xml",
+    " M android/app/src/main/java/com/agesofdominion/game/MainActivity.java",
+    " M android/gradle/wrapper/gradle-wrapper.jar",
+    " M android/gradle/wrapper/gradle-wrapper.properties",
+    " M android/gradlew",
+    " M android/gradlew.bat",
+    " M docs/BUILD-PROGRESS.md",
+    " M docs/SESSION-HANDOFF.md",
+    " M docs/plan/COMPLETE-GAME-DESIGN-AND-INTERACTION-EXECUTOR-PLAN-2026-10-12.md",
+    " M docs/plan/FULL-IMPLEMENTATION-SPEC.md",
+    " M docs/plan/MASTER-PLAN.md",
+    " M docs/plan/README.md",
+    " M docs/plan/image-production/budget-ledger.json",
+    " M docs/plan/image-production/submission.mutex.json",
+    " M index.html",
+    " M qa/code-image-complete-20261011/earned-journey.json",
+    " M qa/code-image-complete-20261011/package-check.json",
+    " M qa/code-image-repair-20261011/layout.json",
+    " M qa/game-completion-20261013/browser-journeys.json",
+    " M qa/game-completion-20261013/browser-journeys.mjs",
+    " M qa/game-completion-20261013/scene-trace.json",
+    " M qa/mock-audit-20261012/AUDIT-REPORT.md",
+    " M qa/mock-audit-20261012/audit-report.json",
+    " M qa/recovery-executor-20261003/dist-closure.json",
+    " M qa/test-runner-safeguards-20261004/t1_race_mutex.json",
+    " M qa/test-runner-safeguards-20261004/t1_race_mutex.json.excl",
+    " M qa/test-runner-safeguards-20261004/t4_mutex.json",
+    " M qa/test-runner-safeguards-20261004/t4_mutex.json.excl",
+    " M qa/test-runner-safeguards-20261004/t5_pack/write_ahead_request.json",
+    " M qa/test-runner-safeguards-20261004/t5_pack/write_ahead_subattempt_1.json",
+    " M qa/test-runner-safeguards-20261004/t7_pack/response.json",
+    " M qa/test-runner-safeguards-20261004/t7_pack/write_ahead_request.json",
+    " M qa/test-runner-safeguards-20261004/t7_unbound/write_ahead_request.json",
+    " M qa/test-runner-safeguards-20261004/t7_unbound/write_ahead_subattempt_1.json",
+    " M qa/test-runner-safeguards-20261004/t7_unbound/write_ahead_subattempt_1_no_image.json",
+    " M qa/test-runner-safeguards-20261004/t7_unbound_pacing.json",
+    " M qa/test-runner-safeguards-20261004/t8_pacing.json",
+    " M qa/test-runner-safeguards-20261004/test_results.json",
+    " M scripts/build.mjs",
+    " M scripts/verify-package-20261011.py",
+    " M src/client/actor.js",
+    " M src/client/game.css",
+    " M src/client/hero-room.js",
+    " M src/client/main.js",
+    " M src/client/presentation.js",
+    " M src/core/campaign.js",
+    " M src/data/hero-bodies-20261011.json",
+    " M src/data/mode-scenes.json",
+    " M src/data/reviewed-source-selection.json",
+    " M tests/hero-room-20261011.test.mjs",
+    " M tests/interaction-completion-20261012.test.mjs",
+    " M tests/test_runner_safeguards_offline.py",
+    " M tests/visual-placement-20261004.test.mjs",
+    " M tests/visual-shell-20261005.test.mjs",
+    "?? docs/PHYSICAL-DEVICE-VERIFICATION-CHECKLIST.md",
+    "?? docs/plan/INDEPENDENT-PLAN-SEMANTIC-AUDIT-2026-10-16.md",
+    "?? docs/plan/INDEPENDENT-WHOLE-GAME-COVERAGE-2026-10-16.md",
+    "?? docs/plan/INDEPENDENT-WHOLE-GAME-VERIFICATION-2026-10-16.md",
+    "?? docs/plan/MOCK-LED-IMPLEMENTATION-SOLUTIONS-MANUAL-2026-10-16.md",
+    "?? docs/plan/ONE-COMPLETE-EXECUTOR-CONTINUATION-2026-10-16.txt",
+    "?? docs/plan/OWNER-ART-STYLE-HEALER-AND-BUDGET-2026-10-16.md",
+    "?? docs/plan/OWNER-GAME-LOOK-PRIORITY-AND-ORIGINAL-COMPARISON-2026-10-16.md",
+    "?? qa/game-completion-20261013/combat-quest-milestones.json",
+    "?? qa/independent-verification-20261016/",
+    "?? qa/mock-led-executor-20261016/",
+    "?? qa/physical-device-audit-20261016/",
+    "?? qa/plan-authority-contract-20261016/",
+    "?? qa/plan-semantic-audit-20261016/",
+    "?? qa/planner-detailed-solutions-20261016/",
+    "?? qa/test-runner-safeguards-20261004/t7_pack/request_body.json",
+    "?? scripts/apply-healer-matte-20261016.mjs",
+    "?? scripts/extract-wall-modules-20261016.py",
+    "?? scripts/extract-wall-segments-20261016.py",
+    "?? scripts/generate-baseline-20261016.mjs",
+    "?? scripts/generate-body-kit-gear-matrix-20261016.mjs",
+    "?? scripts/generate-journeys-20261016.mjs",
+    "?? scripts/generate-role-clip-matrix-20261016.mjs",
+    "?? scripts/generate-scene-registration-20261016.py",
+    "?? scripts/generate-style-review-20261016.mjs",
+    "?? scripts/style-body-repair-20261016.py",
+    "?? scripts/verify-combat-quest-milestones.mjs",
+    "?? src/core/storage-adapter.js",
+    "?? src/data/wall-segments-20261016.json",
+    "?? tests/defense-ledger-20261016.test.mjs",
+    "?? tests/save-stress-horizon.test.mjs"
+  ],
+  "repairedAssets": {
+    "healerStandingBody": {
+      "path": "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png",
+      "sha256": "dcfd8f6cdfc984e4bf123e3c32d46172659d452653307b448cff2a2b4cf81924",
+      "matteCleaned": true,
+      "whiteRemnantBelowStaffRemoved": true
+    },
+    "stoneWalls": {
+      "run": {
+        "exists": true,
+        "sizeBytes": 296842,
+        "sha256": "806f9cd4b8d36e6aeb913647460a1a69bf3839df0d5815a73e0d2b7c0679fe69"
+      },
+      "corner": {
+        "exists": true,
+        "sizeBytes": 109720,
+        "sha256": "a4c3726174d6d347c222f43b6e284508ff1b41e11bc1d1cce072234672726fb2"
+      },
+      "gate": {
+        "exists": true,
+        "sizeBytes": 372885,
+        "sha256": "95f6976cb555abaf5db273426ea428c4f67f2ce35f0bcd2aafdece6f55354ae7"
+      },
+      "timberPalisadeExtracted": true
+    }
+  },
+  "keyFileInventory": {
+    "src/client/main.js": {
+      "exists": true,
+      "sizeBytes": 128304,
+      "sha256": "f619f277bb86793fb3851a517c6b57969c784997534d34e72c9d5f3cd81e536c"
+    },
+    "src/client/presentation.js": {
+      "exists": true,
+      "sizeBytes": 4115,
+      "sha256": "fa3d758530840d471186d30dcf0dcb3ab6629402647ccd2f700412f77263fce8"
+    },
+    "src/client/actor.js": {
+      "exists": true,
+      "sizeBytes": 20119,
+      "sha256": "36c37bece18f74d7356d0b8bb307ee5a3a8c0eead988a06686a07e44bae51ea0"
+    },
+    "src/client/hero-room.js": {
+      "exists": true,
+      "sizeBytes": 7315,
+      "sha256": "f876b57434872a6eb832221ca1e33afa72d6426a8be044542c0245d0ec1f1c6f"
+    },
+    "src/core/campaign.js": {
+      "exists": true,
+      "sizeBytes": 47660,
+      "sha256": "fc93b4e021ca591e91c0a0b536590e0f1cc6b1bc3e906bd0637627fb8d330acc"
+    },
+    "src/core/battle.js": {
+      "exists": true,
+      "sizeBytes": 33367,
+      "sha256": "bae43ddf5f4033afba015f046a72fca91f9b9f459eb6e21d63642af53298be5b"
+    },
+    "src/core/defense.js": {
+      "exists": true,
+      "sizeBytes": 36093,
+      "sha256": "86467b8992a2791860d1e2a69a2ab18bdbfe109756caf2e348d84bba469e3adc"
+    },
+    "src/core/save.js": {
+      "exists": true,
+      "sizeBytes": 5510,
+      "sha256": "3afd8cb73cdafc06027cacc8f61f2288bbd8355d9be71a72fe1aa6cc1157b160"
+    },
+    "src/core/storage-adapter.js": {
+      "exists": true,
+      "sizeBytes": 17216,
+      "sha256": "37bf610f51c779984c38375b708047ed548b9467d59f49e849945e29f26f21be"
+    },
+    "src/data/wall-segments-20261016.json": {
+      "exists": true,
+      "sizeBytes": 3939,
+      "sha256": "39d9d116aca6838332410681c1f676b79b5cd408f4f5c09b2dd9475ef6b3673a"
+    },
+    "src/data/hero-bodies-20261011.json": {
+      "exists": true,
+      "sizeBytes": 20994,
+      "sha256": "1c99c051121d7ed85559cd766f42e2ae66f3cec0d8e30892a5fc7e04fb50c96c"
+    },
+    "src/data/mode-scenes.json": {
+      "exists": true,
+      "sizeBytes": 2275,
+      "sha256": "2861e7e4149cce77ea3c7f9708532a7a38325c3ba8ace41e05b91eabb8432563"
+    },
+    "assets/derivatives/mock-led-20261016/walls/stone/run.png": {
+      "exists": true,
+      "sizeBytes": 296842,
+      "sha256": "806f9cd4b8d36e6aeb913647460a1a69bf3839df0d5815a73e0d2b7c0679fe69"
+    },
+    "assets/derivatives/mock-led-20261016/walls/stone/corner.png": {
+      "exists": true,
+      "sizeBytes": 109720,
+      "sha256": "a4c3726174d6d347c222f43b6e284508ff1b41e11bc1d1cce072234672726fb2"
+    },
+    "assets/derivatives/mock-led-20261016/walls/stone/gate.png": {
+      "exists": true,
+      "sizeBytes": 372885,
+      "sha256": "95f6976cb555abaf5db273426ea428c4f67f2ce35f0bcd2aafdece6f55354ae7"
+    },
+    "assets/derivatives/mock-led-20261016/bodies/class-healer-standing-body.png": {
+      "exists": true,
+      "sizeBytes": 1637736,
+      "sha256": "dcfd8f6cdfc984e4bf123e3c32d46172659d452653307b448cff2a2b4cf81924"
+    }
+  },
+  "governingContract": "docs/plan/ONE-COMPLETE-EXECUTOR-CONTINUATION-2026-10-16.txt"
+}

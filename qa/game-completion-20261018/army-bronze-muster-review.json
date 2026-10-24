@@ -1,0 +1,32 @@
+{
+  "schema": "game-screen-candidate-review/v1",
+  "reviewedAt": "2026-10-18",
+  "screen": "army",
+  "ageIndex": 1,
+  "age": "bronze",
+  "status": "CANDIDATE_RUNTIME_REVIEWED_PENDING_AGE_FAMILY_GEOMETRY_AND_OWNER_ACCEPTANCE",
+  "mock": {
+    "path": "design-preview/generated/landscape-mocks-20261003-efcd7a7e/images/24-army.jpg",
+    "sha256": "9728db38e960a2117e7b52b1fb5795cb3a7e9080a12b9f3f65bd0b1e0cc0105f"
+  },
+  "candidate": {
+    "path": "assets/derivatives/professional-20261018/army/army-bronze-muster-v1.png",
+    "sha256": "bcb1b38ff975ea4f78656d57b4843c5b3e3599d0d6c8a9eda07176425e8b357e",
+    "width": 1672,
+    "height": 941,
+    "source": "C:\\Users\\pupan\\.codex\\generated_images\\01a14d31-4376-7570-bde1-ae01df1f91de\\exec-dc487d6a-2391-4351-9894-5ec3dcf7974f.png"
+  },
+  "runtimeReview": {
+    "url": "http://localhost:4176/?audit=ageprogress",
+    "campaignAge": "stone",
+    "rosterPreviewAge": "bronze",
+    "viewport": [1280, 720],
+    "visibleState": "Isolated Stone Age day 1 campaign; Bronze recruitment preview; two live Stone formations; three Bronze recruit cards; details panel open.",
+    "findings": [
+      "The old Bronze Kingdom background had blank square construction sites; the live roster now uses the generated Bronze muster court instead.",
+      "The yard's packed natural center remains low-detail beneath formation and recruitment cards, with Bronze Age mudbrick, timber and reed structures at the perimeter.",
+      "Formation cards, Bronze recruit labels, selected formation stats, disabled Barracks requirement and capacity remain visible at 1280 by 720.",
+      "Mock 24's medieval scene and full-size recruits are a guide; the current roster uses age-labeled formation and recruitment cards with a separate inspector. The seven remaining ages and owner acceptance stay open."
+    ]
+  }
+}

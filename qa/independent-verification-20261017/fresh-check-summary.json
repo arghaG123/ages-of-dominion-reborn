@@ -1,0 +1,112 @@
+{
+  "dateIST": "2026-10-17",
+  "generatedUTC": "2026-10-17T06:58:45.535750+00:00",
+  "Node": "24.19.0",
+  "Python": "3.13.15",
+  "nodeSuite": {
+    "passed": 162,
+    "failed": 0,
+    "excluded": "save-stress-horizon copied with only import/output path redirects; run separately"
+  },
+  "stressFixture": {
+    "passed": 1,
+    "classification": "injected memory/bounded-store fixture; not legal full progression, actual Endless clears or long native browser persistence"
+  },
+  "nativeStorage": {
+    "classification": "NATIVE_BROWSER_ISOLATED_ADVERSARIAL_FIXTURE",
+    "rows": [
+      {
+        "name": "CAS checks campaignId and checksum",
+        "expected": true,
+        "actual": false,
+        "verdict": "FAIL"
+      },
+      {
+        "name": "stale second writer replacement rejected",
+        "expected": true,
+        "actual": false,
+        "verdict": "FAIL"
+      },
+      {
+        "name": "newer replacement survives stale replacement",
+        "expected": 200,
+        "actual": 150,
+        "verdict": "FAIL"
+      },
+      {
+        "name": "migration cannot overwrite newer existing DB",
+        "expected": 150,
+        "actual": 1,
+        "verdict": "FAIL"
+      },
+      {
+        "name": "migration preserves staged bytes",
+        "expected": true,
+        "actual": false,
+        "verdict": "FAIL"
+      },
+      {
+        "name": "raw-native-store-export",
+        "head": {
+          "live": {
+            "epoch": 1,
+            "campaignId": 0,
+            "revision": 1,
+            "checksum": "5275c0da",
+            "migratedFromLocalStorage": true
+          }
+        },
+        "keys": [
+          "backup",
+          "live"
+        ],
+        "migration": {
+          "migrated": true,
+          "inventory": {
+            "hasLive": true,
+            "hasBackup": false,
+            "hasStaged": true,
+            "hasDamaged": false,
+            "hasSlots": [
+              false,
+              false,
+              false
+            ],
+            "view": "kingdom"
+          }
+        }
+      }
+    ]
+  },
+  "citedExecutorRasters": 103,
+  "rasterDecodeFailures": [],
+  "motion": [
+    {
+      "role": "knight",
+      "distinctPosePixelHashesIgnoringLabels": 1,
+      "clipsCompared": 5
+    },
+    {
+      "role": "ranger",
+      "distinctPosePixelHashesIgnoringLabels": 1,
+      "clipsCompared": 5
+    },
+    {
+      "role": "barbarian",
+      "distinctPosePixelHashesIgnoringLabels": 1,
+      "clipsCompared": 5
+    },
+    {
+      "role": "warlock",
+      "distinctPosePixelHashesIgnoringLabels": 1,
+      "clipsCompared": 5
+    },
+    {
+      "role": "healer",
+      "distinctPosePixelHashesIgnoringLabels": 1,
+      "clipsCompared": 5
+    }
+  ],
+  "staffHistoricalFinding": "Retired as current bare below-foot assertion: current field is 0 and test passes bounded. Full coherent body/rig/style acceptance remains OPEN.",
+  "sourceBoundary": "Planner verifier only; QA/docs and disposable origins; no production/provider/build/Git/device/cleanup/dispatch."
+}

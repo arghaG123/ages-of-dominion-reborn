@@ -1,0 +1,47 @@
+================================================================================
+RUNNING REPAIRED RUNNER SAFEGUARD TEST SUITE (NEW SANDBOX)
+Sandbox: c:\dev\ages-of-dominion-reborn\qa\independent-verification-20261016\offline-sandbox
+================================================================================
+
+[TEST 1] Real Concurrent Acquisition Barrier...
+  -> PASS: Exactly 1 contender acquired lock. Contenders: [{'owner': 'image-ai-continuity-runner-97a04bb8-pid18056', 'error': 'Mutex acquisition collision: exclusive token t1_race_mutex.json.excl already held by an active contender.', 'acquired': False}, {'owner': 'image-ai-continuity-runner-56127694-pid18056', 'acquired': True}]
+
+[TEST 2] Dead-PID UNKNOWN Lock Fail-Closed...
+  -> Lock acquisition correctly blocked: Mutex held with unresolved UNKNOWN state by 'crashed-unknown-runner'. Manual/owner reconciliation required before acquiring.
+
+[TEST 3] Crash / Resume Liability Retention...
+  -> Correctly halted with retained liability: Item 'item-crash-test' has unfinalized SENDING_POST from previous run prior-crashed-pid-12345. State is UNKNOWN; retaining liability and halting duplicate call.
+
+[TEST 4] Queue Continuation & Release Denial...
+  -> [UNKNOWN RETAINED] Item 't4-unresolved-item' has recorded UNKNOWN status from prior-run. Retaining liability and halting queue.
+[WARN] Mutex NOT released: ambiguous outcome UNKNOWN or unresolved items (['t4-unresolved-item']) must retain lock and liability.
+  -> PASS: Normal release denied; active lock and UNKNOWN state retained.
+
+[TEST 5] Exact Wire / Config / Input Byte Equality...
+  -> PASS: Byte equality verified (366 bytes, SHA: 5e041c450c87724c...)
+
+[TEST 6] History Corruption Fail-Closed...
+  -> PASS: Corrupted journal failed closed without overwriting.
+
+[TEST 7] Success Reuse with Full Decode & Hash Verification...
+  -> [REUSE] Item 't7-item' validated and verified (SHA: 96793f7ef2e73703...). Reusing existing output.
+  -> PASS: Reused existing success without transport dispatch (SHA: 96793f7ef2e73703...)
+  -> Dispatching POST for 't7-unbound' (Subattempt 1)...
+  -> [CONSUMED NO_IMAGE] Item 't7-unbound' returned NO_IMAGE. Cost: $0.000005. Advancing to next ready item.
+  -> PASS: Unbound output correctly rejected from reuse.
+
+[TEST 8] Persisted Restart Deadlines...
+  -> [PACING] Waiting 12.00s before next POST...
+  -> PASS: Restarted runner respected persisted deadline and waited remaining 12.0s.
+
+[TEST 9] Both Retry-After Header Forms...
+  -> PASS: Correctly parsed numeric ('75' -> 75.0s) and HTTP-date ('Sun, 15 Jun 2025 15:08:10 GMT' -> 90.0s).
+
+[TEST 10] Role-Specific Pack Validations...
+  -> PASS: All role-specific pack validations passed.
+
+================================================================================
+TEST SUITE SUMMARY:
+Total: 10 | PASS: 10 | FAIL: 0
+================================================================================
+ALL TESTS PASSED WITH 100% SUCCESS.

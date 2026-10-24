@@ -1,0 +1,128 @@
+[
+  {
+    "id": "J01",
+    "sourceAssertion": "### J01 — fresh campaign\n\n1. Open Home with no campaign in the isolated test origin; verify no false Continue. Start New and select a real class; verify correct identity/starting stats and only the selected class is chosen.\n2. Enter Kingdom; assert age 0, Hall 1, 17 level-0 sites, Walls 0, 250/250/160/150 resources, empty worn gear, actual retained 12 melee/8 ranged and arrow/slow tower ownership. The scene must show that sparse state.\n3. Verify tutorial targets the actual first Lumber site/action; a different/wrong/canceled action cannot falsely complete it. Reload and assert the same campaign/class/site state.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J02",
+    "sourceAssertion": "### J02 — build and upgrade\n\n1. Select an empty actual site. Record resources/site/jobs. Open Lumber preview then cancel: all recorded durable values unchanged.\n2. Confirm once: exact 25 wood/15 stone spend at current source price, one job, correct site/type, scaffold/work at that site. Double input cannot duplicate the spend/job.\n3. Wait ordinary construction completion; inspect real level 1 and producer feedback. Preview/confirm its real upgrade with exact price, complete, save/reload and verify same ID/level/rates and correct upgraded appearance.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J03",
+    "sourceAssertion": "### J03 — recruit and reinforce\n\n1. Build the real Barracks after prerequisite producers. Before it exists, inspect recruitment disabled reason and zero spend.\n2. Recruit the selected legal role; assert source cost, +5 quantity or a new legal stack, capacity `2 + Barracks level`, stable entity ID and a correct era/role image.\n3. Reinforce same-age stack through real rules; test a full-capacity new-stack rejection. Verify the same owned stack appears in Adventure and actual combat setup; reload retains it. No invented split/merge feature.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J04",
+    "sourceAssertion": "### J04 — age advance\n\n1. Before eligible Hall/payment, verify specific reasons and no partial spend. Upgrade the actual Hall and earn required resources through real producers/play.\n2. Preview/cancel and confirm AGE_UP. Assert source `agePrice` exact deltas once, next age, unlocked facilities/Market and coherent terrain/building/worker/troop/tower/default-kit treatment.\n3. Equipped old item IDs/stats/appearance persist; plot/road topology remains stable. Reload actual next age. All eight visual states additionally use explicitly labelled fixtures and earned core progression, never a grant called natural.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J05",
+    "sourceAssertion": "### J05 — travel\n\n1. Leave town through the actual exit. Select a reachable destination and preview exact path/cost. Cancel retains position/moves/fog/visited state.\n2. Confirm once; core commits destination/cost once, presentation follows that exact path with grounded feet/hooves, and no road crosses actual water/cliff outside valid crossing.\n3. Save/reload preserves position/moves/fog. Resize/pan/zoom during a permitted presentation preserves alignment and inverse picking. Check real bridge approach/contact in M12 separately.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J06",
+    "sourceAssertion": "### J06 — site, saved offer and guard\n\n1. Reach a real site; inspect fixed loot/offer/claim terms, cancel and reload, then assert no reroll. Any claim spends/pays only once.\n2. Reach a real guard and enter its Tactical encounter. Resolve through legal play/Auto; inspect actual pending result, settle and return to the same originating site.\n3. Reload guard/site resolution and repeat claim attempt: no duplicate reward/encounter reset. Do not award PASS from offer text if a required visit/claim was not performed.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J07",
+    "sourceAssertion": "### J07 — manual Tactical actions\n\n1. Use legal deployment/setup; select a real player stack using scene and accessible alternative. Assert actual queue and legal highlights/target details.\n2. Exercise legal Move, Melee, Shoot, Defend, Wait and Spell in suitable actual states, plus illegal/out-of-range/occupied targets and no unintended mutation. Record committed actor/target/result and correctly timed animation.\n3. Exercise a real flyer case and a seeded morale bonus case with the actual core coefficient 0.042, max morale 3, immediate one bonus action/no chains. If those are fixtures, label them and do not imply the ordinary first duel contained flyers/morale.\n4. Save/reload mid-battle queue/status/mana and inspect unchanged legal continuation. Selecting an intent alone neither spends nor attacks.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J08",
+    "sourceAssertion": "### J08 — Retreat, Auto and outcomes\n\n1. Open Retreat; verify focus trap both Tab directions and background pointer/programmatic navigation rejection. Cancel/Escape/Back spends no turn, mana or casualty and restores focus.\n2. Confirm real retreat; inspect proper campaign/practice consequences and apply exactly once. Cover victory and defeat in their own valid scenarios.\n3. Auto uses ordinary rules, not a forced winner. Reload pending result and apply; repeat apply/reload yields no duplicate XP/gold/loot or revived losses. Verify actual return origin and composed result screen.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J09",
+    "sourceAssertion": "### J09 — Defense preparation to result\n\n1. Enter actual preparation. Select a field pad/tower, preview range, test invalid/capacity/prerequisite/cost, cancel unchanged and perform a legal purchase/retrofit when intended.\n2. Deploy owned hero/army once for zero added fee. Start a wave; identify visible real attackers, target ability and observe actual hit/HP results. Pause gives zero simulation progress; 2× advances the same rules at correct speed.\n3. Save/reload active paused/running session with same entities/core/wave state. Complete a real session, inspect actual result, settle once and preserve survivor/resource/XP consequences. Final-wave blast regression stays covered.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J10",
+    "sourceAssertion": "### J10 — all five War options\n\n1. Individually test setup, cost/consequence explanation, start, legal actions/result and return for Campaign Siege, Tactical Duel, Endless, Skirmish and Challenge. A visit to War is not five-mode coverage.\n2. For Skirmish/Challenge compare full durable campaign resources, XP, items, mana, army/casualties and story before/after; practice cannot leak effects. Match actual source-specific Challenge rules and seed/label behavior; repeat same descriptor reproduces relevant setup/results under equal inputs.\n3. Test local Challenge export/import/cancel/invalid descriptor while preserving usable campaign. For Endless verify at least ten actually cleared non-leaked waves and continued generation beyond the old finite boundary. Ten clears is not a victory/end event: continue legal play to actual core defeat, then settle once and verify best flag/q6 eligibility and losses. Never assign RESOLVED, zero core or winner to force this natural result. See section 9 for source/return details. A paused start cannot close it.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J11",
+    "sourceAssertion": "### J11 — craft, equip and all six slots\n\n1. Reach real Armory and pay for a genuine craft; before unlock/affordability, verify precise disabled reason. Select category/quality/item, cancel unchanged and confirm once with exact current cost.\n2. Inspect actual new unique item in bag; preview delta/cancel, confirm equip and assert old item handling, actual stats AND visible worn item. Unequip restores real base and correct item inventory; reload retains identities.\n3. Repeat functional coverage for helm/weapon/offhand/armor/boots/accessory and four qualities in legal tests. Provide ordinary visible craft/equip journey plus explicitly labelled full visual fixtures; no resource/Hall assignment masquerading as natural production.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J12",
+    "sourceAssertion": "### J12 — earned point/skill and Resurrection\n\n1. Gain real XP/point/offer through legitimate play; record initial XP and actual gains/count/time. Inspect and choose a valid offered skill or stat point; verify exact effect/point delta and reload. “No point available” is UNVERIFIED, not a successful spend.\n2. Reach Wisdom 3 by legitimate choices for natural evidence. In a real Tactical session keep a living friendly stack wounded below its original cap, sufficient mana and legal spell eligibility.\n3. Preview/cancel, cast Resurrection and verify actual HP/unit recovery capped correctly, exact mana spend, caster/target event and settled casualty consequences. Separately label injected wounds/Wisdom cases as useful spell-boundary fixtures.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J13",
+    "sourceAssertion": "### J13 — dwelling creature through battle\n\n1. Reach eligible dwelling and save/reload fixed offer. Earn actual required food/gold/capacity; click the real Claim and verify spend/quantity/identity once. Disabled claim with `claimed:false` cannot pass recruitment.\n2. Inspect roster/codex, use that creature in real combat and preserve actual survivors/rank/XP into the campaign and reload.\n3. Supplement with legal earned simulations for wolf, bandit, bear, harpy, golem, griffin, wyvern, drone, including four flyer traits. Provide style/role/gait review for each source consumer.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J14",
+    "sourceAssertion": "### J14 — branches, quests, milestones and Future\n\n1. Choose a real rival and chapter branch; cancel/locked choices retain state, actual choice persists with correct log/flag/reward. Reload and verify no reroll or second award.\n2. Complete and claim a real quest/milestone; assert readiness, actual exact reward first time and zero second time/reload. Cover all six quests/eight milestones in legal simulation and relevant visible states.\n3. Read Future “The Valley We Keep” from saved prior branches/rival; no invented conclusion reward. A Stone closed-Future note is not a completed final-story journey.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J15",
+    "sourceAssertion": "### J15 — Market\n\n1. In Stone verify locked state and no transaction. Reach Bronze naturally for this journey, then inspect actual current quotes/balance and the documented 100-unit size.\n2. Test insufficient resource, preview/cancel unchanged, successful buy and sell with exact deltas and no partial/duplicate spend. Gold is price/treasury, not a newly batched commodity rule.\n3. Reload balances and return to invoking Kingdom location/focus. Market remains a context sheet, not an invented new building.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J16",
+    "sourceAssertion": "### J16 — save, slots, files and recovery\n\n1. Save three distinguishable valid states into slots 1–3 and load each; verify campaign/entity/state differences, not just button presence. Older autosave cannot overwrite the loaded replacement.\n2. Export/import exact valid campaign, cancel replacement, import damaged checksum and unsupported schema; usable live/backup remains. Recover deliberately damaged live from valid backup without overwriting valid live incorrectly.\n3. Run actual long-campaign bounded-browser/quota/abort/reload cases from R09. Verify Saved only after durable completion and usable recovery after failure. Native picker/export/lifecycle cases remain on the later exact-package device matrix.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J17",
+    "sourceAssertion": "### J17 — settings, tutorial and accessibility\n\n1. Change Music and SFX independently with a user gesture; observe actual saved values and appropriate local audio feedback, no network. Toggle reduced motion; logical results remain correct while motion is reduced.\n2. Skip/review tutorial and return/reload without economy or step corruption. Follow keyboard focus for compact nav/context sheet/modal, close and restore to actual invoker.\n3. Rotate to portrait and back; show the accessible rotate message with campaign unchanged. Verify four landscape text/target/overlap/contrast states, including long disabled reasons and open inspectors.\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  },
+  {
+    "id": "J18",
+    "sourceAssertion": "### J18 — whole campaign continuity\n\nUse ONE fresh campaign and retain identity continuity through build → recruit → craft/equip → legal travel → real campaign Tactical → loot/settle → return to town → real Siege/Defense → settle → claim actual objective → save/export/relaunch/Continue.\n\nRecord every shared hero/army/item ID; resource/XP/mana/casualty/quest deltas reconcile exactly once. Cancel the relevant previews without spend and inspect real return origins. Do not substitute an imported mature save, practice-only battle, an Armory/weapon existence predicate or a separate simulated session for this chain. Record any actual unmet dependency rather than assigning COMPLETE.\n\n## 8. Concrete evidence files and execution checks\n\nAll filenames below marked **PLANNED_NEW** are executor deliverables in `qa/mock-led-executor-20261016/`, with large media in an explicitly documented ignored `output/` subdirectory. Preserve all prior QA/native/source evidence. Give each rerun a unique subfolder; do not overwrite earlier results to hide a failure.\n\n| Deliverable | Required contents |\n|---|---|\n| `baseline.json` | Actual commit/dirty source hashes, versions, old passing evidence treated as dated baseline, preserved paths |\n| `mock-design-map.json` | Exactly M01–M30; source path/hash/native size, component layout, current implementation paths, functional actions, screenshot state/viewport, visual judgment and exact deviations |\n| `style-review.json` | Every active style-outlier disposition with real paths/hashes, role/era/neighbor comparison, repair/replacement result and budget route |\n| `scene-registration.json` | Exactly 32 mode×age rows with displayed source binding, measured physical traces and real geometry/contact/composite gates |\n| `body-kit-gear-matrix.json` | Eight classes×four era kits; neutral/equipped appearances, six item anchors/identities, source/provenance and actual render review |\n| `role-clip-matrix.json` | All active role/direction/clip families, actual used parts/events, extreme-pose/ground/attachment evidence; no static role called articulated |\n| `journeys.json` | J01–J18 each with mandatory subassertions, natural/simulation/fixture label, input/results/deltas/reload/origin and missing-case statuses |\n| `storage-growth.json` | Real serialized key/DB sizes and histories, timer-transaction growth before/after, compatibility/migration/fault/quota/reload results |\n| `viewport-review.json` | Actual dimensions and asserted view/age/class/session, pixel text sizes, owned target/occlusion/focus/contrast/world-visible union, open/closed sheet states and images decoded |\n| `performance.json` | Declared desktop hardware/scenario/actor count/runtime/build, sampling duration, frame-time percentiles/long tasks and memory where available; no invented Android FPS |\n| `package.json` | Exact final source/art/web/www/APK identities, closure, CRC, preview ID/permissions/network references, delivered APK full hash |\n| `remaining.json` | Exact failed/blocked/unverified IDs, actual attempt/evidence, dependency and next action; no unrelated global STOP |\n",
+    "currentResult": "OPEN_FULL_ACCEPTANCE",
+    "executorResult": "OPEN",
+    "evidenceRule": "Use matching current state and all mandatory subcases; test/source presence is bounded evidence only."
+  }
+]

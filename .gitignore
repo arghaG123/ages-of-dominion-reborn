@@ -93,3 +93,9 @@ service_account*.json
 # Owner-requested today's asset delta and retained APK deliveries stay local.
 /output/device-transfer-20261011/
 /delivery/
+
+# Raw image-generation wires stay local with their source assets and receipts.
+/qa/**/request_body.json
+/qa/**/prepared-wire.json
+/qa/**/response.json
+/qa/**/responses/*.json
