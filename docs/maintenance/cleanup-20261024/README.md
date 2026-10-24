@@ -1,25 +1,26 @@
-# Storage and publication audit - 24 October 2026
+# Storage cleanup and publication - 24 October 2026
 
-Owner authorized checking pushability, removing unnecessary files and QA older than ten days, then commit/push. This authority is scoped to maintenance/publication; no gameplay or image generation changes were made here.
+**Cleanup COMPLETE.** After the owner updated the session permission mode, the verified deletions succeeded. Removed 3,133 files totaling 4,267,361,735 bytes (4.27 GB / 3.97 GiB). The earlier blocked attempts deleted nothing; their status is superseded by the receipts here.
 
-The initial inventory totals 19,803,875,105 bytes (about 19.81 GB / 18.45 GiB). Largest folders: assets 5.85 GB, .git 4.77 GB, qa 4.65 GB, android 2.52 GB, dist 1.20 GB. Most QA volume is from 20-22 October and is inside the requested retention window.
+## What was removed
 
-## Push scope
+- Generated `dist`, Android web copies/intermediates/cache: 3,065,893,374 bytes. Existing APK outputs retained.
+- Obsolete QA from run folders dated before 14 October: 82,978,021 bytes.
+- Untracked Python caches: 192,228 bytes.
+- Exactly 80 abandoned Git `tmp_obj_` files dated before 22 October: 1,118,298,112 bytes. Confirmed no Git processes were active before deletion. Newer temporary files remain. No named object, commit, pack or history was removed.
 
-Publish current source, tests, Android source/wrapper, configuration, plans, durable budget/provenance records, compact QA reports, and this audit. Existing Git exclusions retain assets, APKs, generated builds, captures, credentials and archives locally. Added exclusions keep raw image request/response wires local. The local asset SHA256 manifest records 4,082 assets; their bytes are not included in Git. A Git clone alone is insufficient to restore the playable art. Do not discard the local assets.
+Every file matched its recorded size before removal and every resolved target stayed inside the canonical workspace. `cleanup-manifest.json` lists the exact removal set; the two phase receipts record non-Git removals and Git temporary-file removals. `dist` was removed separately after confirming it held no tracked files. No manifest target remains after the verification suite.
 
-The eligible-file scan found no private-key/GitHub-token patterns or embedded image payloads; no eligible file exceeded 5 MB. This is a bounded scan, not a general security certification.
+## What was preserved
 
-## Cleanup outcome
+All 4,082 assets were independently SHA256-checked after cleanup: **zero missing, zero changed**. See `local-asset-sha256.json` and `asset-verification.json`. Current source/work, all APKs, browser state/saves, dependencies, plans and generation accounting/receipts remain. QA dated 14 October or later remains. Required older helpers, fixtures, exact guides and transitive code/asset-contract inputs were retained. The majority of QA volume comes from 20-22 October and falls within the retention window.
 
-**BLOCKED; zero files deleted and zero bytes reclaimed.** Automatic approval review rejected both the exact manifest deletion and a narrower generated-build-only command, returning only `blocked by policy`. No alternate deletion mechanism was used.
+Before cleanup the project held 19,803,875,105 bytes (19.80 GB / 18.44 GiB). The immediate post-cleanup inventory was 15,539,829,353 bytes (15.54 GB / 14.47 GiB), including added audit/commit records. The removed-file byte sum is the authoritative reclaimed amount; Git and documentation can grow slightly during publication.
 
-`cleanup-manifest.json` lists 3,133 exact proposed removals totaling 4,267,361,735 bytes: 3,065,893,374 generated build/cache bytes, 1,118,298,112 abandoned Git temporary-object bytes dated before 22 October, 82,978,021 obsolete QA bytes, and 192,228 Python-cache bytes. It is a proposed manifest, not a deletion receipt. Recheck existence, size, active writers and references before any later execution.
+## Git scope and validation
 
-The QA cutoff is 14 October 2026, using the run date encoded in each QA folder. Retained older QA includes executable helpers, production receipts/accounting, exact guides, inputs referenced from source/tests/scripts/asset contracts, and their transitive metadata dependencies. Date alone cannot identify those as disposable. Historical documentation can still cite proposed obsolete outputs; they would become intentionally expired evidence after deletion, never current acceptance proof.
+Source, tests, Android source/wrapper, configuration, plans, compact QA reports and durable provenance are versioned. Assets, APKs, captures, archives and raw image request/response wires remain local and excluded from new Git additions. A Git clone alone cannot restore the art; preserve the local asset folder. The earlier eligible-file scan found no credential patterns or embedded image payloads in the publication candidates.
 
-Preserve all assets, existing APKs, current QA, source/plans, dependencies, browser state/saves, named Git objects and commit history. No history rewrite, forced push, Git prune, asset deletion, package build, device action, or paid call was performed.
+After cleanup, `node --test tests/*.test.mjs`: **311 passed, 0 failed**. This is bounded Node evidence only; no new browser/visual/natural-player/native/device/owner acceptance or package build. The whole game remains **INCOMPLETE**. Future QA must match the current source.
 
-## Validation
-
-`node --test tests/*.test.mjs`: **311 passed, 0 failed**, 24 October 2026. Tests can regenerate their existing QA fixture outputs. This is bounded Node evidence only. No new browser, visual, natural-player, native/device or owner acceptance was performed. The game remains **INCOMPLETE**; future QA must match the current game source.
+The owner already authorized cleanup and commit/push. No game source/asset repair, paid call, history rewrite, forced push, device action or additional backup/archive was performed in this maintenance pass.

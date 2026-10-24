@@ -895,3 +895,8 @@ A mock-by-mock audit of all 30 landscape references found **0 closed, 15 partial
 ## 24 October 2026 - storage and Git publication audit
 
 Owner authorized maintenance and publication. See [storage/publication audit](docs/maintenance/cleanup-20261024/README.md) for push exclusions, current asset hashes, and the proposed 4.27 GB cleanup manifest. Automatic approval review blocked both deletion commands; zero files deleted and zero bytes reclaimed. Current Node suite: 311/311 passed; bounded test evidence only. Assets/APKs remain local and excluded from Git. No gameplay repairs, new visual/native/device acceptance or new package build; whole game remains INCOMPLETE.
+
+
+## 24 October 2026 - cleanup completed after permission update
+
+The earlier blocked cleanup status is superseded. Removed 3,133 verified files / 4,267,361,735 bytes (4.27 GB): generated build copies/caches, obsolete QA before 14 October, and 80 abandoned Git temporary files. All 4,082 asset SHA256 hashes remain unchanged; current work, APKs, recent QA, required older fixtures/receipts and Git history retained. Post-cleanup Node suite: 311 passed / 0 failed. See [cleanup receipts and verification](docs/maintenance/cleanup-20261024/README.md). Whole-game acceptance remains INCOMPLETE.
