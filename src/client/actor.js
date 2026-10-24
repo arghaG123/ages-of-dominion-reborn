@@ -1,3 +1,4 @@
+import { resolveAssetUrl } from './asset-url.js';
 // Measured part assembly. Joints rotate. The whole sheet is never shown as the actor.
 import atlas from '../data/actor-atlas.json' with { type: 'json' };
 import reviewMount from '../data/mount-review-v1.json' with { type: 'json' };
@@ -15,6 +16,7 @@ export function beginActorFrame() {
   actorImages = new Map();
 }
 function actorImage(element, attributes) {
+  attributes = { ...attributes, href: resolveAssetUrl(attributes.href) };
   const key = attributes.href;
   const available = reusableImages.get(key);
   const image = available?.pop() || element('image', attributes);
@@ -124,7 +126,7 @@ function sheetCrop(element, href, box, pivot) {
   const [px, py] = pivot;
   const group = element('g', { transform: `translate(${-bw * px} ${-bh * py})` });
   const crop = element('svg', { x: 0, y: 0, width: bw, height: bh, viewBox: `${bx} ${by} ${bw} ${bh}`, overflow: 'hidden', preserveAspectRatio: 'none' });
-  crop.append(actorImage(element, { href: new URL(`../../${href}`, import.meta.url).href, x: 0, y: 0, width: 1024, height: 1024 }));
+  crop.append(actorImage(element, { href: new URL(`../../${resolveAssetUrl(href)}`, import.meta.url).href, x: 0, y: 0, width: 1024, height: 1024 }));
   group.append(crop);
   return { node: group, length: bh * (1 - py) };
 }

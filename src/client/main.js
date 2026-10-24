@@ -1,3 +1,4 @@
+import { resolveAssetUrl } from './asset-url.js';
 import data from '../data/reference-data.json' with { type: 'json' };
 import contract from '../data/implementation-contract.json' with { type: 'json' };
 import selection from '../data/reviewed-source-selection.json' with { type: 'json' };
@@ -365,7 +366,7 @@ function act(type, payload) {
 }
 function element(name, attrs) {
   const node = document.createElementNS(svgNS, name);
-  for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
+  for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, k === 'href' || k === 'src' ? resolveAssetUrl(v) : v);
   return node;
 }
 function queueLabel(text, x, y, details = {}) {
@@ -530,7 +531,7 @@ function resourceIcon(key) {
   const file = chosen?.uiFile || chosen?.file;
   if (!file) return null;
   const icon = document.createElement('img');
-  icon.src = file;
+  icon.src = resolveAssetUrl(file);
   icon.alt = '';
   return icon;
 }
@@ -552,7 +553,7 @@ function costButton(title, payment, onClick, disabled, choiceId = '', dock = fal
       label.className = 'cost-label';
       const art = document.createElement('img');
       art.className = 'cost-art';
-      art.src = artFile;
+      art.src = resolveAssetUrl(artFile);
       art.alt = '';
       label.append(art);
       const name = document.createElement('span');
@@ -628,7 +629,7 @@ function resources() {
     if (iconFile && span.querySelector('img')?.getAttribute('src') !== iconFile) {
       span.querySelector('img')?.remove();
       const icon = document.createElement('img');
-      icon.src = iconFile;
+      icon.src = resolveAssetUrl(iconFile);
       icon.alt = '';
       icon.width = 18;
       icon.height = 18;
@@ -679,7 +680,7 @@ function choiceHeading(text) {
 function showTerrain(file, alt, status) {
   const terrain = $('terrain');
   terrain.hidden = false;
-  if (file && terrain.getAttribute('src') !== file) terrain.src = file;
+  if (file && terrain.getAttribute('src') !== resolveAssetUrl(file)) terrain.src = resolveAssetUrl(file);
   terrain.alt = alt;
   terrain.dataset.terrainStatus = status;
 }
@@ -798,7 +799,7 @@ function equipmentGoalPanel(s) {
     const icon = selectGearIcon(gearIcons.icons, slot, item);
     if (icon?.file) {
       const image = document.createElement('img');
-      image.src = icon.file;
+      image.src = resolveAssetUrl(icon.file);
       image.alt = '';
       image.dataset.gearIcon = icon.id;
       tile.append(image);
@@ -869,7 +870,7 @@ function mountSupportChrome(kind, title, subtitle) {
     if (rivalPortrait) {
       const portrait = document.createElement('img');
       portrait.className = 'story-rival-portrait';
-      portrait.src = rivalPortrait;
+      portrait.src = resolveAssetUrl(rivalPortrait);
       portrait.alt = `Portrait of ${state.story.rival}`;
       portrait.dataset.rivalPortrait = state.story.rival;
       head.prepend(portrait);
@@ -999,7 +1000,7 @@ function mountSupportChrome(kind, title, subtitle) {
       });
       const art = CHAPTER_BACKDROPS[index];
       if (art) {
-        card.style.backgroundImage = `linear-gradient(180deg, rgba(12, 16, 20, 0.72) 0%, rgba(12, 16, 20, 0.92) 100%), url("${art}")`;
+        card.style.backgroundImage = `linear-gradient(180deg, rgba(12, 16, 20, 0.72) 0%, rgba(12, 16, 20, 0.92) 100%), url("${resolveAssetUrl(art)}")`;
         card.style.backgroundSize = 'cover';
         card.style.backgroundPosition = 'center';
       }
@@ -1470,7 +1471,7 @@ function kingdom() {
         const iconFile = resourceArt?.uiFile || resourceArt?.file;
         if (iconFile) {
           const icon = document.createElement('img');
-          icon.src = iconFile;
+          icon.src = resolveAssetUrl(iconFile);
           icon.alt = '';
           icon.width = 22;
           icon.height = 22;
@@ -1594,7 +1595,7 @@ function paintAdventureHeroPanel(host) {
   let portrait = panel.querySelector('img');
   if (body?.file) {
     if (!portrait) { portrait = document.createElement('img'); portrait.alt = ''; panel.prepend(portrait); }
-    if (portrait.getAttribute('src') !== body.file) portrait.src = body.file;
+    if (portrait.getAttribute('src') !== resolveAssetUrl(body.file)) portrait.src = resolveAssetUrl(body.file);
   } else portrait?.remove();
   let copy = panel.querySelector('.adventure-hero-copy');
   if (!copy) { copy = document.createElement('div'); copy.className = 'adventure-hero-copy'; panel.append(copy); }
@@ -1669,7 +1670,7 @@ function paintTacticalHeroPlaque(host, battle) {
   let image = panel.querySelector('img');
   if (portrait?.file) {
     if (!image) { image = document.createElement('img'); image.alt = ''; panel.prepend(image); }
-    if (image.getAttribute('src') !== portrait.file) image.src = portrait.file;
+    if (image.getAttribute('src') !== resolveAssetUrl(portrait.file)) image.src = resolveAssetUrl(portrait.file);
   } else image?.remove();
 
   let copy = panel.querySelector('.tactical-hero-copy');
@@ -1733,7 +1734,7 @@ function paintDeploymentTray(status, battle) {
     const plate = plateForStack(stack);
     if (plate?.file) {
       const image = document.createElement('img');
-      image.src = plate.file;
+      image.src = resolveAssetUrl(plate.file);
       image.alt = '';
       image.loading = 'lazy';
       card.append(image);
@@ -1955,7 +1956,7 @@ function showCombatResult(kind) {
     card.className = 'result-force-card';
     if (plate?.file) {
       const art = document.createElement('img');
-      art.src = plate.file;
+      art.src = resolveAssetUrl(plate.file);
       art.alt = '';
       card.append(art);
     }
@@ -1987,7 +1988,7 @@ function showCombatResult(kind) {
     const icon = selectGearIcon(gearIcons.icons, item.slot, item);
     if (icon?.file) {
       const image = document.createElement('img');
-      image.src = icon.file;
+      image.src = resolveAssetUrl(icon.file);
       image.alt = '';
       image.setAttribute('aria-hidden', 'true');
       image.dataset.lootGearIcon = icon.id;
@@ -2882,8 +2883,8 @@ function heroSlotButton(slot) {
   const icon = item ? selectGearIcon(gearIcons.icons, slot, item) : null;
   if (icon?.file) {
     const img = document.createElement('img');
-    img.src = icon.file;
-    img.setAttribute('href', icon.file);
+    img.src = resolveAssetUrl(icon.file);
+    img.setAttribute('href', resolveAssetUrl(icon.file));
     img.alt = '';
     img.dataset.gearIcon = icon.id;
     node.append(img);
@@ -2891,7 +2892,7 @@ function heroSlotButton(slot) {
     const preview = selectGearIcon(gearIcons.icons, slot, { kind: 'gear', slot, age: state.age, quality: 0 });
     if (preview?.file) {
       const art = document.createElement('img');
-      art.src = preview.file;
+      art.src = resolveAssetUrl(preview.file);
       art.alt = '';
       art.className = 'socket-ghost';
       node.append(art);
@@ -2947,7 +2948,7 @@ function mountHeroChrome() {
       const card = reviewedPortrait || heroBody(id, state.age) || pendingPortrait(id, state.age);
       if (card?.file) {
         const img = document.createElement('img');
-        img.src = card.file;
+        img.src = resolveAssetUrl(card.file);
         img.alt = '';
         if (!reviewedPortrait) img.className = 'portrait-body-crop';
         node.append(img);
@@ -3001,7 +3002,7 @@ function paintHero() {
   if (heroDetailTab === 'spells' && !selectedHeroSlot && terrainFile && !classChoiceOpen()) {
     const stageField = $('stage-field');
     stageField.classList.add('hero-spellbook-context');
-    stageField.style.setProperty('--spellbook-world-image', `url("${new URL(terrainFile, document.baseURI).href}")`);
+    stageField.style.setProperty('--spellbook-world-image', `url("${new URL(resolveAssetUrl(terrainFile), document.baseURI).href}")`);
     $('terrain').alt = `${campaignWorld.title} campaign world behind the Spellbook`;
     world.dataset.screen = 'hero-spellbook';
     world.dataset.heroContext = 'adventure';
@@ -3062,7 +3063,7 @@ function appendHeroInventoryDetails(host, item) {
   const icon = selectGearIcon(gearIcons.icons, item.slot, item);
   if (icon?.file) {
     const image = document.createElement('img');
-    image.src = icon.file;
+    image.src = resolveAssetUrl(icon.file);
     image.alt = '';
     image.className = 'hero-inventory-selected-icon';
     detail.append(image);
@@ -3133,7 +3134,7 @@ function buildHeroInventoryPanel() {
     card.setAttribute('aria-pressed', String(selected));
     if (icon?.file) {
       const image = document.createElement('img');
-      image.src = icon.file;
+      image.src = resolveAssetUrl(icon.file);
       image.alt = '';
       card.append(image);
     }
@@ -3244,7 +3245,7 @@ function hero() {
         const cardStateCopy = heroSkillStateCopy(level, offered);
         node.setAttribute('aria-label', skill.n + '. ' + cardStateCopy + ' ' + skill.d);
         const img = document.createElement('img');
-        img.src = `assets/derivatives/image-residual-executor-20261007/environment/icons/skills/skill-${id}.png`;
+        img.src = resolveAssetUrl(`assets/derivatives/image-residual-executor-20261007/environment/icons/skills/skill-${id}.png`);
         img.alt = '';
         const offerBadge = offered ? document.createElement('span') : null;
         if (offerBadge) {
@@ -3302,7 +3303,7 @@ function hero() {
           : hasMana ? 'Unlocked and mana is sufficient.' : 'Unlocked but current mana is insufficient.';
         node.setAttribute('aria-label', spell.n + '. ' + spell.d + ' ' + availability + ' Current mana ' + currentMana + ' of ' + maximumMana + '; spell cost ' + spell.mana + '.');
         const img = document.createElement('img');
-        img.src = 'assets/derivatives/image-residual-executor-20261007/environment/icons/spells/spell-' + id + '.png';
+        img.src = resolveAssetUrl(`assets/derivatives/image-residual-executor-20261007/environment/icons/spells/spell-${id}.png`);
         img.alt = '';
         const stateBadge = !eligible || !hasMana ? document.createElement('span') : null;
         if (stateBadge) {
@@ -3332,7 +3333,7 @@ function armyCard(src, caption, capCss, attrs, onSelect = null) {
   if (onSelect) card.setAttribute('aria-label', caption);
   if (src) {
     const img = document.createElement('img');
-    img.src = src;
+    img.src = resolveAssetUrl(src);
     img.alt = '';
     img.dataset.plate = src;
     const cap = Number.isFinite(capCss) && capCss > 0 ? capCss : 116;
@@ -3395,7 +3396,7 @@ function paintArmy() {
     world.append(element('image', { href: chamber, x: -260, y: -40, width: 1896, height: 848, preserveAspectRatio: 'xMidYMid slice', opacity: armyBackdrop ? '0.98' : '0.85', 'data-chamber-backdrop': armyBackdrop ? 'army-muster' : 'garrison' }));
   }
   board.style.backgroundImage = chamber
-    ? `linear-gradient(180deg, rgba(12, 17, 21, 0.04) 0%, rgba(12, 17, 21, 0.14) 100%), url("${chamber}")`
+    ? `linear-gradient(180deg, rgba(12, 17, 21, 0.04) 0%, rgba(12, 17, 21, 0.14) 100%), url("${resolveAssetUrl(chamber)}")`
     : '';
   board.style.backgroundSize = 'cover';
   board.style.backgroundPosition = 'center 35%';
@@ -3426,7 +3427,7 @@ function paintArmy() {
     model.addEventListener('click', () => { selectedRecruitRole = role; armyCatalogOpen = true; selectedCodexCreature = ''; render(); });
     if (plate?.file) {
       const image = document.createElement('img');
-      image.src = plate.file;
+      image.src = resolveAssetUrl(plate.file);
       image.alt = '';
       image.draggable = false;
       image.dataset.musterPlate = `${reviewAge}-${role}`;
@@ -3542,7 +3543,7 @@ function paintArmy() {
     const plate = creaturePlate(type);
     if (plate?.file) {
       const image = document.createElement('img');
-      image.src = plate.file;
+      image.src = resolveAssetUrl(plate.file);
       image.alt = '';
       image.draggable = false;
       card.append(image);
@@ -3723,7 +3724,7 @@ function mountForgeChrome(offer, offerError) {
   const previewIcon = previewItem ? selectGearIcon(gearIcons.icons, forgeSlot, previewItem) : null;
   if (previewIcon?.file) {
     const image = document.createElement('img');
-    image.src = previewIcon.file;
+    image.src = resolveAssetUrl(previewIcon.file);
     image.alt = itemTitle(previewItem);
     image.className = 'forge-item-preview';
     image.dataset.gearIcon = previewIcon.id;
@@ -3747,8 +3748,8 @@ function mountForgeChrome(offer, offerError) {
     const icon = selectGearIcon(gearIcons.icons, slot, item);
     if (icon?.file && item) {
       const img = document.createElement('img');
-      img.src = icon.file;
-      img.setAttribute('href', icon.file);
+      img.src = resolveAssetUrl(icon.file);
+      img.setAttribute('href', resolveAssetUrl(icon.file));
       img.alt = '';
       img.dataset.gearIcon = icon.id;
       img.dataset.gearAge = String(item.age);
@@ -3757,8 +3758,8 @@ function mountForgeChrome(offer, offerError) {
       const preview = selectGearIcon(gearIcons.icons, slot, { kind: 'gear', slot, age: state.age, quality: 0 });
       if (preview?.file) {
         const img = document.createElement('img');
-        img.src = preview.file;
-        img.setAttribute('href', preview.file);
+        img.src = resolveAssetUrl(preview.file);
+        img.setAttribute('href', resolveAssetUrl(preview.file));
         img.alt = '';
         img.className = 'slot-preview-art';
         img.dataset.slotPreview = slot;
@@ -3807,7 +3808,7 @@ function mountForgeChrome(offer, offerError) {
       const itemIcon = selectGearIcon(gearIcons.icons, item.slot, item);
       if (itemIcon?.file) {
         const img = document.createElement('img');
-        img.src = itemIcon.file;
+        img.src = resolveAssetUrl(itemIcon.file);
         img.alt = '';
         img.dataset.gearIcon = itemIcon.id;
         img.dataset.gearAge = String(item.age);
@@ -3863,7 +3864,7 @@ function forge() {
     const icon = selectGearIcon(gearIcons.icons, preview.slot, preview);
     if (icon?.file) {
       const image = document.createElement('img');
-      image.src = icon.file;
+      image.src = resolveAssetUrl(icon.file);
       image.alt = '';
       image.dataset.gearIcon = icon.id;
       summary.append(image);
@@ -4360,7 +4361,7 @@ function tactical() {
     token.title = battleTitle(stack);
     if (plate?.file) {
       const portrait = document.createElement('img');
-      portrait.src = plate.file;
+      portrait.src = resolveAssetUrl(plate.file);
       portrait.alt = battleTitle(stack);
       token.append(portrait);
     }
@@ -4438,7 +4439,7 @@ function tactical() {
       dockNode.title = row.detail;
       if (ACTION_ART[row.id]) {
         const image = document.createElement('img');
-        image.src = ACTION_ART[row.id];
+        image.src = resolveAssetUrl(ACTION_ART[row.id]);
         image.alt = '';
         image.className = 'action-art';
         dockNode.append(image);
@@ -4959,7 +4960,7 @@ function campaignMapSelect() {
     option.setAttribute('aria-pressed', String(world.id === chosen.id));
     option.dataset.worldId = world.id;
     const image = document.createElement('img');
-    image.src = campaignMapImage(world);
+    image.src = resolveAssetUrl(campaignMapImage(world));
     image.alt = '';
     image.loading = 'lazy';
     const copy = document.createElement('span');
@@ -5170,7 +5171,7 @@ function render() {
       const card = portraitCard(state.hero.class, state.age ?? 0) || heroBody(state.hero.class, state.age ?? 0) || pendingPortrait(state.hero.class, state.age ?? 0);
       if (card?.file && node.querySelector('img')?.getAttribute('src') !== card.file) {
         const img = document.createElement('img');
-        img.src = card.file;
+        img.src = resolveAssetUrl(card.file);
         img.alt = '';
         node.replaceChildren(img);
       } else if (!card?.file && !node.querySelector('svg')) node.replaceChildren(glyph(navGlyphs.hero));

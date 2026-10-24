@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "file": "browser-verification.json",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "imageDecodes": 584,
+      "screenCases": 196,
+      "uniqueViews": [
+        "adventure",
+        "army",
+        "defense",
+        "forge",
+        "help",
+        "hero",
+        "home",
+        "kingdom",
+        "market",
+        "settings",
+        "story",
+        "tactical",
+        "war"
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "file": "browser-825x375.json",
+      "viewport": {
+        "width": 825,
+        "height": 375
+      },
+      "imageDecodes": 584,
+      "screenCases": 204,
+      "uniqueViews": [
+        "adventure",
+        "army",
+        "campaignMapSelect",
+        "defense",
+        "forge",
+        "help",
+        "hero",
+        "home",
+        "kingdom",
+        "market",
+        "settings",
+        "story",
+        "tactical",
+        "war"
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "file": "browser-933x424.json",
+      "viewport": {
+        "width": 933,
+        "height": 424
+      },
+      "imageDecodes": 584,
+      "screenCases": 204,
+      "uniqueViews": [
+        "adventure",
+        "army",
+        "campaignMapSelect",
+        "defense",
+        "forge",
+        "help",
+        "hero",
+        "home",
+        "kingdom",
+        "market",
+        "settings",
+        "story",
+        "tactical",
+        "war"
+      ],
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "totalSuccessfulRenderCases": 604,
+  "allPassed": true,
+  "nativeStatus": "PARTIAL; owner stopped further QA on 24 October. See existing android action records; no full-game/device acceptance.",
+  "compressionStatus": "COMPLETE for the existing build snapshot: 584 runtime assets, 34.3% smaller, all 4082 originals unchanged.",
+  "publicationStatus": "HOLD: owner explicitly instructed no commit/push while another AI repairs the game.",
+  "currentSourceStatus": "Concurrent game fixes postdate APK; see snapshot-currentness-final.json. No new build or game changes in this continuation."
+}

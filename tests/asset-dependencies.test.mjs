@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { collectAssetDependencies } from '../scripts/asset-dependencies.mjs';
 import worlds from '../src/data/adventure-worlds.json' with { type: 'json' };
 import { SKILL_IDS } from '../src/core/rules.js';
+import data from '../src/data/reference-data.json' with { type: 'json' };
 
 const root = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 test('package closure keeps every production map, skill icon and Kingdom wall phase', async () => {
@@ -16,6 +17,9 @@ test('package closure keeps every production map, skill icon and Kingdom wall ph
   }
   for (const id of SKILL_IDS) {
     assert.ok(closure.files.includes(`assets/derivatives/image-residual-executor-20261007/environment/icons/skills/skill-${id}.png`), id);
+  }
+  for (const id of Object.keys(data.SPELLS)) {
+    assert.ok(closure.files.includes(`assets/derivatives/image-residual-executor-20261007/environment/icons/spells/spell-${id}.png`), id);
   }
   assert.equal(closure.files.filter(file => file.includes('/kingdom-families-20261018/')).length, 28);
   assert.equal(closure.files.filter(file => file.includes('/kingdom-stone-populated-20261021/')).length, 4);

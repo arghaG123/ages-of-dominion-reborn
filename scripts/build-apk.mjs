@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { verifyWebBuild } from './verify-web-build.mjs';
 
 const root = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 const dist = path.join(root, 'dist');
@@ -93,7 +94,11 @@ if (process.argv.includes('--preserve-existing')) {
   const preserved = await preserveExisting();
   console.log('Preserved existing APK copies: ' + (preserved.length ? JSON.stringify(preserved) : 'none present'));
 }
-await run(process.execPath, [path.join(root, 'scripts', 'build.mjs')], root);
+if (process.argv.includes('--use-existing-web')) {
+  console.log('Verified existing web build: ' + JSON.stringify(await verifyWebBuild(root)));
+} else {
+  await run(process.execPath, [path.join(root, 'scripts', 'build.mjs')], root);
+}
 const sync = await syncWww();
 console.log(`Synchronized ${sync.copied} generated files into android www. Removed ${sync.removed} stale www files.`);
 const androidDir = path.join(root, 'android');
